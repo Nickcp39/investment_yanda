@@ -15,6 +15,7 @@ The intent is to keep method separate from evidence:
 ```text
 frameworks/
   investor_agents.md
+  tech_investor_watchlist.md
   agent_testing/
     README.md
     preference_adjusted_panel.md
@@ -33,6 +34,7 @@ frameworks/
     checklist.md
     mental_models.md
   duan-yongping/
+    application_example.md
     principles.md
     checklist.md
     quotes_and_sources.md
