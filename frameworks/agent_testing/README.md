@@ -92,6 +92,9 @@ Buffett 来源忠实度和公司分析测试后，才可以进入实际研究流
 repo 内的 agent 卡片，而不是外部已训练 agent 的真实输出。外部 agent 接入后
 仍需要单独跑题库和打分。
 
+当前使用偏好和 ratio 见 `preference_adjusted_panel.md`。注意：ratio 是研究
+偏好，评分是测试结果，二者不要混在一起。
+
 ## 推荐输出格式
 
 每次测试输出都应该包含：

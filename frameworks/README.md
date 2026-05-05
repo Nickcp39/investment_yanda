@@ -17,6 +17,8 @@ frameworks/
   investor_agents.md
   agent_testing/
     README.md
+    preference_adjusted_panel.md
+    approved_agents.md
     rubric.md
     benchmark_cases.md
     benchmark_cases.jsonl

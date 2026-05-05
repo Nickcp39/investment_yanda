@@ -136,3 +136,13 @@ Case 8, cross-agent debate:
 
 The project should not run all 13 agents blindly. Use 8 now, 4 conditionally,
 and hold 1.
+
+## Preference Adjustment
+
+After the initial screen, the working preference changed: the project should put
+more weight on newer business-operator, product, user-value, and culture lenses.
+That means Duan Yongping moves forward in the actual panel even though his source
+pack remains conditional.
+
+Use `preference_adjusted_panel.md` as the current ratio file. Treat the scores
+above as test/source-readiness scores, not portfolio-style voting weights.

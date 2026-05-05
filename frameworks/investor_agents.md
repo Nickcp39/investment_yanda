@@ -10,6 +10,10 @@ source fidelity, framework boundaries, case application, and adversarial prompts
 
 ## How To Use
 
+For the current preferred setup, start with the ratio in
+`agent_testing/preference_adjusted_panel.md`. In short, Duan Yongping and Li Lu
+move earlier in the workflow, while older value frameworks stay as guardrails.
+
 For a company memo, run at least three passes:
 
 - Business quality: Buffett, Munger, Li Lu, Duan Yongping, Fisher, Terry Smith.
