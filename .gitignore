@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Data outputs
+data/raw/
+data/interim/
+data/processed/
+*.parquet
+*.feather
+*.sqlite
+*.db
+
+# Local files
+.env
+.DS_Store
+Thumbs.db
