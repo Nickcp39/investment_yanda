@@ -84,6 +84,14 @@ Buffett 来源忠实度和公司分析测试后，才可以进入实际研究流
 5. 把结果写入 `scorecard_template.md`。
 6. 只有 approved agent 可以用于正式公司 memo。
 
+## 当前筛选结果
+
+当前可用名单见 `approved_agents.md`。
+
+初筛报告见 `results/initial_screening_2026-05-05.md`。这份报告筛选的是当前
+repo 内的 agent 卡片，而不是外部已训练 agent 的真实输出。外部 agent 接入后
+仍需要单独跑题库和打分。
+
 ## 推荐输出格式
 
 每次测试输出都应该包含：
