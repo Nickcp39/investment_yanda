@@ -15,6 +15,13 @@ The intent is to keep method separate from evidence:
 ```text
 frameworks/
   investor_agents.md
+  agent_testing/
+    README.md
+    rubric.md
+    benchmark_cases.md
+    benchmark_cases.jsonl
+    scorecard_template.md
+    source_grounding_matrix.md
   buffett/
     principles.md
     checklist.md
@@ -33,6 +40,10 @@ frameworks/
 Start with `investor_agents.md` when you want a quick multi-agent panel before
 writing a full thesis. Expand individual folders when one investor lens becomes
 important enough to deserve deeper source notes and checklists.
+
+Use `agent_testing/` before trusting any generated or pre-trained investor
+agent. A named agent should be treated as unapproved until it passes source
+fidelity, boundary, application, adversarial, and cross-agent debate tests.
 
 Each framework should separate:
 

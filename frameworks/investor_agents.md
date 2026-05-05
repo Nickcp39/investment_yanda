@@ -4,6 +4,10 @@ This file summarizes reusable investor "agents" derived from public investment
 frameworks. They are not meant to impersonate the people. Treat them as lenses:
 each agent asks a different set of questions before a thesis is accepted.
 
+Important: do not trust a named or pre-trained agent just because it sounds
+plausible. Before using it in a real memo, test it with `agent_testing/` for
+source fidelity, framework boundaries, case application, and adversarial prompts.
+
 ## How To Use
 
 For a company memo, run at least three passes:
@@ -478,4 +482,3 @@ Primary and high-quality anchors to expand individual frameworks:
   Works."
 - George Soros: *The Alchemy of Finance* and public writing on reflexivity.
 - Terry Smith: Fundsmith annual owner letters and *Investing for Growth*.
-
