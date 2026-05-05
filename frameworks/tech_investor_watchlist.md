@@ -9,6 +9,38 @@ It is not a pure performance ranking. Many funds have private returns, changing
 mandates, drawdowns, and incomplete public data. The purpose is to identify
 useful lenses that can be tested and converted into agent cards later.
 
+## Famous Heavy Tech Allocators
+
+This is the better starting list if the question is:
+
+```text
+Who became well known over the last 20 years by making large, concentrated
+technology or internet bets?
+```
+
+| Investor | Public / Private | Signature Tech Bets | Why Famous | Agent Priority |
+| --- | --- | --- | --- | --- |
+| James Anderson / Tom Slater | Public + private via Scottish Mortgage | Tesla, Amazon, Tencent, private growth companies | One of the clearest examples of listed-market investors becoming famous through long-duration tech/growth concentration. | Very high |
+| Brad Gerstner | Public + private crossover | Meta, Nvidia, Snowflake, Uber, cloud/AI platforms | Modern tech hedge fund voice; concentrated AI/platform public-market investor; Meta open letter made him more public. | Very high |
+| Philippe Laffont | Public + private crossover | Large global tech and internet exposure through Coatue | One of the best-known Tiger Cub tech specialists; important for data-driven crossover investing. | High |
+| Chase Coleman | Public + private crossover | Internet platforms, software, global tech via Tiger Global | Became very famous as a tech/growth Tiger Cub; must study both the boom and the drawdown. | Medium-high, with risk tests |
+| Ron Baron | Public + private growth | Tesla, SpaceX, xAI and founder-led growth companies | Famous for extreme long-term conviction in Elon Musk-led companies and founder-led compounding. | High, but specialized |
+| Cathie Wood | Public thematic ETF | Tesla, genomics, fintech, AI, disruptive tech | Very famous for concentrated disruptive-tech exposure. Use mostly as a boom-bust and valuation-discipline stress test. | Caution |
+| David Gardner | Public stock recommendations | Amazon, Netflix, Tesla-style rule breakers | Not a hedge fund manager, but a well-known public stock picker for disruptive growth. | Medium |
+| Bill Miller | Public equities | Amazon, selected tech/crypto-adjacent bets | Famous value investor who treated Amazon as value before many traditional investors did. | Medium |
+| Nick Sleep / Qais Zakaria | Public equities | Amazon and internet-scale compounding | Less mainstream, but very respected among serious investors for long-term compounder thinking. | Medium |
+
+Short answer: yes, there are plenty. For our project, the first four to build
+into new technology-stock agents should be:
+
+1. James Anderson / Tom Slater
+2. Brad Gerstner
+3. Philippe Laffont
+4. Bill Gurley, even though he is more venture/marketplace than public equities
+
+Ron Baron should be a specialist founder-led concentration lens. Cathie Wood
+should be a cautionary test case, not a default investing agent.
+
 ## Public Market / Crossover Investors
 
 | Investor | Vehicle | Why Study | Main Risk |
@@ -79,4 +111,3 @@ Priority 3 / caution:
   https://www.baroncapitalgroup.com/article/letter-ron-q1-2026
 - David Gardner Rule Breaker discussion:
   https://www.fool.com/investing/general/2015/10/26/how-to-find-rule-breaking-stock.aspx
-
