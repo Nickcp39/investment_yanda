@@ -14,6 +14,7 @@ The intent is to keep method separate from evidence:
 
 ```text
 frameworks/
+  investor_agents.md
   buffett/
     principles.md
     checklist.md
@@ -28,6 +29,10 @@ frameworks/
     quotes_and_sources.md
   _template.md
 ```
+
+Start with `investor_agents.md` when you want a quick multi-agent panel before
+writing a full thesis. Expand individual folders when one investor lens becomes
+important enough to deserve deeper source notes and checklists.
 
 Each framework should separate:
 
