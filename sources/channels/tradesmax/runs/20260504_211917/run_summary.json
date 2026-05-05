@@ -1,0 +1,24 @@
+{
+  "cache_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\metadata",
+  "channel_slug": "tradesmax",
+  "corrupt_checkpoints": 0,
+  "end_date": "2026-12-31",
+  "exported_rows": 132,
+  "failed_this_run": 15,
+  "generated_at": "2026-05-04T21:34:17-04:00",
+  "input": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax_videos_flat_2026-05-01.csv",
+  "missing_or_failed": 15,
+  "output_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\manifests",
+  "outputs": {
+    "csv": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\manifests\\tradesmax_videos_2024_to_2026_2026-05-04.csv",
+    "jsonl": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\manifests\\tradesmax_videos_2024_to_2026_2026-05-04.jsonl",
+    "markdown": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\manifests\\tradesmax_videos_2024_to_2026_2026-05-04.md"
+  },
+  "processed_this_run": 422,
+  "run_failures": 15,
+  "skipped_this_run": 0,
+  "start_date": "2024-01-01",
+  "state_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\tradesmax\\runs\\20260504_211917",
+  "success_checkpoints": 422,
+  "total_items": 437
+}

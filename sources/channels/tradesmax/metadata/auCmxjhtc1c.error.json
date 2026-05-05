@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:20:06.418717+00:00",
+  "id": "auCmxjhtc1c",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:20:04.847803+00:00",
+  "stderr": "ERROR: [youtube] auCmxjhtc1c: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "量化交易员教你如何构建第一个股票量化因子 Alpha2 #量化交易",
+  "url": "https://www.youtube.com/watch?v=auCmxjhtc1c"
+}

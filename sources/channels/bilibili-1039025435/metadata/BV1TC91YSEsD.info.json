@@ -1,0 +1,193 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:12:12.086653+00:00",
+    "source_index": 114,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1TC91YSEsD"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 114119881588966_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 326,
+  "description": "",
+  "display_id": "BV1TC91YSEsD",
+  "duration": 816.182,
+  "duration_string": "13:36",
+  "dynamic_range": "SDR",
+  "epoch": 1777947132,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 20823206,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 816.182,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 6637107,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1TC91YSEsD",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/17/52/28736555217/28736555217-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&mid=0&deadline=1777954331&uipk=5&gen=playurlv3&nbs=1&trid=c1d7a214f8d14fad99bb99afc6a6c05u&oi=2892325852&os=cosovbv&og=hw&upsig=3fbe91f9a1f46b73ff3ef4266ddb96d2&uparams=e,platform,mid,deadline,uipk,gen,nbs,trid,oi,os,og&bvc=vod&nettype=0&bw=98327&build=0&dl=0&f=u_0_0&qn_dyeid=7b4a59677661ea5600de07bb69f951fb&agrr=0&buvid=46BF058D-34D5-18E7-E088-77474C21035628969infoc&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 816.182,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 11416336,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1TC91YSEsD",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/17/52/28736555217/28736555217-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&mid=0&deadline=1777954330&oi=2892325852&nbs=1&gen=playurlv3&os=cosovbv&platform=pc&trid=960876f4951e4cc79d54608ecc1bff0u&uipk=5&og=cos&upsig=67ef0cca5fb212e4f3b6c6cf1243f1c3&uparams=e,mid,deadline,oi,nbs,gen,os,platform,trid,uipk,og&bvc=vod&nettype=0&bw=169130&buvid=46BF058D-34D5-18E7-E088-77474C21035628969infoc&build=0&dl=0&f=u_0_0&qn_dyeid=d0fecb32591e75600091d16b69f951fa&agrr=0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 816.182,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 20823206,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1TC91YSEsD",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/17/52/28736555217/28736555217-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&trid=4b50dd7af0a84d7f82dd261ea78ba36u&mid=0&gen=playurlv3&oi=2892325852&deadline=1777954331&nbs=1&uipk=5&platform=pc&os=cosovbv&og=cos&upsig=46fc5b7210241c2c30b6f8768dd9188d&uparams=e,trid,mid,gen,oi,deadline,nbs,uipk,platform,os,og&bvc=vod&nettype=0&bw=308491&qn_dyeid=5be023edbb648b59009daf5869f951fb&agrr=0&buvid=46BF058D-34D5-18E7-E088-77474C21035628969infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "3月19日美联储会议与日本央行会议极其重要",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1TC91YSEsD",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+  },
+  "id": "BV1TC91YSEsD",
+  "like_count": 5739,
+  "original_url": "https://www.bilibili.com/video/BV1TC91YSEsD",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "3月19日美联储会议与日本央行会议极其重要 [BV1TC91YSEsD].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "3月19日美联储会议与日本央行会议极其重要 [BV1TC91YSEsD].mp4",
+      "filesize": 20823206,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1TC91YSEsD",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/17/52/28736555217/28736555217-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&trid=4b50dd7af0a84d7f82dd261ea78ba36u&mid=0&gen=playurlv3&oi=2892325852&deadline=1777954331&nbs=1&uipk=5&platform=pc&os=cosovbv&og=cos&upsig=46fc5b7210241c2c30b6f8768dd9188d&uparams=e,trid,mid,gen,oi,deadline,nbs,uipk,platform,os,og&bvc=vod&nettype=0&bw=308491&qn_dyeid=5be023edbb648b59009daf5869f951fb&agrr=0&buvid=46BF058D-34D5-18E7-E088-77474C21035628969infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "硬核财经知识必看",
+    "美联储",
+    "美债",
+    "青年用「财」图鉴5.0"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i0.hdslb.com/bfs/archive/533eb6a28373edb71d52e29b87f3f8637e3bf397.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i0.hdslb.com/bfs/archive/533eb6a28373edb71d52e29b87f3f8637e3bf397.jpg"
+    }
+  ],
+  "timestamp": 1741331642,
+  "title": "3月19日美联储会议与日本央行会议极其重要",
+  "upload_date": "20250307",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/17/52/28736555217/28736555217-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&trid=4b50dd7af0a84d7f82dd261ea78ba36u&mid=0&gen=playurlv3&oi=2892325852&deadline=1777954331&nbs=1&uipk=5&platform=pc&os=cosovbv&og=cos&upsig=46fc5b7210241c2c30b6f8768dd9188d&uparams=e,trid,mid,gen,oi,deadline,nbs,uipk,platform,os,og&bvc=vod&nettype=0&bw=308491&qn_dyeid=5be023edbb648b59009daf5869f951fb&agrr=0&buvid=46BF058D-34D5-18E7-E088-77474C21035628969infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 263586,
+  "webpage_url": "https://www.bilibili.com/video/BV1TC91YSEsD",
+  "webpage_url_basename": "BV1TC91YSEsD",
+  "webpage_url_domain": "bilibili.com"
+}

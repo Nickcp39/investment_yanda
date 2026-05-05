@@ -1,0 +1,17 @@
+{
+  "audio_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\zhanguoshidai\\audio",
+  "channel_slug": "zhanguoshidai",
+  "compute_type": "int8",
+  "device": "cpu",
+  "downloaded_or_reused_audio_this_run": 30,
+  "failed_this_run": 0,
+  "input": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\zhanguoshidai_videos_detailed_2026-05-05.csv",
+  "language": "zh",
+  "model": "base",
+  "processed_this_run": 30,
+  "skipped_this_run": 1,
+  "state_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\zhanguoshidai\\runs\\asr_20260504_232538",
+  "total_items": 81,
+  "transcripts_dir": "D:\\work\\investment\\financial-analysis-lab\\sources\\channels\\zhanguoshidai\\transcripts",
+  "updated_at": "2026-05-05T01:11:15-04:00"
+}

@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:25:28.308183+00:00",
+  "id": "4j9yYc5aEt4",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:25:26.862678+00:00",
+  "stderr": "ERROR: [youtube] 4j9yYc5aEt4: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化策略 - 网络交易法【量化交易第四课】",
+  "url": "https://www.youtube.com/watch?v=4j9yYc5aEt4"
+}

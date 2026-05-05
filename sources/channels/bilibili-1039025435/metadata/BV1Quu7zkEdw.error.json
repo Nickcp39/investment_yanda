@@ -1,0 +1,12 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T02:18:32.064937+00:00",
+  "id": "BV1Quu7zkEdw",
+  "message": "",
+  "returncode": 1,
+  "started_at": "2026-05-05T02:18:29.031800+00:00",
+  "stderr": "ERROR: 1Quu7zkEdw: An extractor error has occurred. (caused by KeyError('data')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
+  "stdout": "null\n",
+  "title": "",
+  "url": "https://www.bilibili.com/video/BV1Quu7zkEdw"
+}

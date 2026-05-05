@@ -80,3 +80,46 @@ Create an index of a YouTube channel's videos:
 ```
 
 The script writes CSV, JSONL, and Markdown files under `sources/channels/`.
+
+## Bilibili Space Metadata Queue
+
+First freeze a flat Bilibili space manifest:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\channel_video_index.py "https://space.bilibili.com/1039025435" --name bilibili_1039025435_flat_2026-05-05
+```
+
+Then fetch per-video metadata with checkpointing:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\bilibili_channel_queue.py `
+  --input .\sources\channels\bilibili_1039025435_flat_2026-05-05.csv `
+  --channel-slug bilibili-1039025435
+```
+
+Default outputs:
+
+- `sources/channels/bilibili-1039025435/metadata/<BVID>.info.json`
+- `sources/channels/bilibili-1039025435/metadata/<BVID>.error.json`
+- `sources/channels/bilibili-1039025435/manifests/*.csv`
+- `sources/channels/bilibili-1039025435/runs/<timestamp>/*.csv`
+
+## YouTube ASR Queue
+
+Use this when YouTube videos do not expose official subtitles or automatic
+captions. It downloads best-audio only, then writes one ASR transcript per
+video.
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\youtube_asr_queue.py `
+  --input .\sources\channels\zhanguoshidai_videos_detailed_2026-05-05.csv `
+  --channel-slug zhanguoshidai `
+  --model base
+```
+
+Default outputs:
+
+- `sources/channels/zhanguoshidai/audio/<video_id>.*`
+- `sources/channels/zhanguoshidai/transcripts/<video_id>_asr.md`
+- `sources/channels/zhanguoshidai/transcripts/<video_id>_asr.json`
+- `sources/channels/zhanguoshidai/runs/asr_<timestamp>/*.csv`

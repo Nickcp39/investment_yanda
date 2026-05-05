@@ -1,0 +1,904 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T01:32:11.531519+00:00",
+    "source_index": 373,
+    "source_title": "美股分析 | 如果买下TikTok，微软股票的市值能上涨多少？TikTok估值如何计算？",
+    "source_url": "https://www.youtube.com/watch?v=rQpgkBj8-vo"
+  },
+  "_format_sort_fields": [
+    "quality",
+    "res",
+    "fps",
+    "hdr:12",
+    "source",
+    "vcodec",
+    "channels",
+    "acodec",
+    "lang",
+    "proto"
+  ],
+  "_has_drm": null,
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "acodec": "mp4a.40.2",
+  "age_limit": 0,
+  "aspect_ratio": 1.78,
+  "asr": 44100,
+  "audio_channels": 2,
+  "audio_ext": "none",
+  "automatic_captions": {},
+  "availability": "public",
+  "available_at": 1777944731,
+  "average_rating": null,
+  "categories": [
+    "Science & Technology"
+  ],
+  "channel": "美股投资网",
+  "channel_follower_count": 130000,
+  "channel_id": "UCWyPo32TSKPr8Py7gb7NhYw",
+  "channel_url": "https://www.youtube.com/channel/UCWyPo32TSKPr8Py7gb7NhYw",
+  "chapters": null,
+  "comment_count": 24,
+  "creators": null,
+  "description": "【前纽约证交所分析师频道】Tiktok对微软的服务和产品有什么好处？500亿市值微软是不是买贵了？\n1. 官网 https://www.tradesmax.com/ \n2. 微信公众号 美股投资网 id: TradesMax \n3. 前纽约证券交易所分析师 微信号 MaxTrades\n\n➡️老虎证券开户福利链接https://tradeup.marsco.com/accounts?invite=TRADESMAX 0佣金交易\n➡️老虎证券中国开户优惠链接 https://itiger.com/accounts?invite=TRADESMAX 能打新股\n➡️开户入金任意金额就可获得抽股票机会2次，价值在$2.5 - $1,000之间\n➡️入金最高返现200刀\n\n4. Twitter https://twitter.com/TradesMax \n5. Facebook https://www.facebook.com/TradesMax/ \n6. 微博 美股投资网 \n7. 粉丝群 TeleGram https://t.me/MeiguX\n#微软 #MSFT股票 #字节跳动 #MSFT",
+  "display_id": "rQpgkBj8-vo",
+  "downloader_options": {
+    "http_chunk_size": 10485760
+  },
+  "duration": 441,
+  "duration_string": "7:21",
+  "dynamic_range": "SDR",
+  "epoch": 1777944731,
+  "ext": "mp4",
+  "extractor": "youtube",
+  "extractor_key": "Youtube",
+  "filesize": null,
+  "filesize_approx": 19074431,
+  "format": "18 - 640x360 (360p)",
+  "format_id": "18",
+  "format_note": "360p",
+  "formats": [
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "audio_ext": "none",
+      "columns": 10,
+      "ext": "mhtml",
+      "filesize_approx": null,
+      "format": "sb2 - 48x27 (storyboard)",
+      "format_id": "sb2",
+      "format_note": "storyboard",
+      "fps": 0.22675736961451248,
+      "fragments": [
+        {
+          "duration": 441.0,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L0/default.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLActdzL7TVdjO--aAaTXHWe6VU_1A"
+        }
+      ],
+      "height": 27,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "protocol": "mhtml",
+      "resolution": "48x27",
+      "rows": 10,
+      "tbr": null,
+      "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L0/default.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLActdzL7TVdjO--aAaTXHWe6VU_1A",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": 48
+    },
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "audio_ext": "none",
+      "columns": 10,
+      "ext": "mhtml",
+      "filesize_approx": null,
+      "format": "sb1 - 80x45 (storyboard)",
+      "format_id": "sb1",
+      "format_note": "storyboard",
+      "fps": 0.20408163265306123,
+      "fragments": [
+        {
+          "duration": 441.0,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L1/M0.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLDO7f04ilQ2HkhLgcDPBk5g-mPPaQ"
+        }
+      ],
+      "height": 45,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "protocol": "mhtml",
+      "resolution": "80x45",
+      "rows": 10,
+      "tbr": null,
+      "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L1/M$M.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLDO7f04ilQ2HkhLgcDPBk5g-mPPaQ",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": 80
+    },
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "audio_ext": "none",
+      "columns": 5,
+      "ext": "mhtml",
+      "filesize_approx": null,
+      "format": "sb0 - 160x90 (storyboard)",
+      "format_id": "sb0",
+      "format_note": "storyboard",
+      "fps": 0.20408163265306123,
+      "fragments": [
+        {
+          "duration": 122.5,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L2/M0.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLD90IspHGIzM2c-309byNRIqrvAAA"
+        },
+        {
+          "duration": 122.5,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L2/M1.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLD90IspHGIzM2c-309byNRIqrvAAA"
+        },
+        {
+          "duration": 122.5,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L2/M2.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLD90IspHGIzM2c-309byNRIqrvAAA"
+        },
+        {
+          "duration": 73.5,
+          "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L2/M3.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLD90IspHGIzM2c-309byNRIqrvAAA"
+        }
+      ],
+      "height": 90,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "protocol": "mhtml",
+      "resolution": "160x90",
+      "rows": 5,
+      "tbr": null,
+      "url": "https://i.ytimg.com/sb/rQpgkBj8-vo/storyboard3_L2/M$M.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCK2jsvkF&sigh=rs$AOn4CLD90IspHGIzM2c-309byNRIqrvAAA",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": 160
+    },
+    {
+      "abr": 48.805,
+      "acodec": "mp4a.40.5",
+      "aspect_ratio": null,
+      "asr": 22050,
+      "audio_channels": 2,
+      "audio_ext": "m4a",
+      "available_at": 1777944731,
+      "container": "m4a_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": null,
+      "ext": "m4a",
+      "filesize": 2691210,
+      "filesize_approx": 2691180,
+      "format": "139 - audio only (low)",
+      "format_id": "139",
+      "format_note": "low",
+      "fps": null,
+      "has_drm": false,
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 2.0,
+      "resolution": "audio only",
+      "source_preference": -1,
+      "tbr": 48.805,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=2691210&dur=441.132&lmt=1596756402069801&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6311222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgSH13BkLja3K_cGvRToTstvpRqU4Mp6p56i_1VpCPA3QCIDVxT9G25gvU1kzMpLnw-HUEsDNIs00a-KTS6bs71cmP&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": null
+    },
+    {
+      "abr": 129.492,
+      "acodec": "mp4a.40.2",
+      "aspect_ratio": null,
+      "asr": 44100,
+      "audio_channels": 2,
+      "audio_ext": "m4a",
+      "available_at": 1777944731,
+      "container": "m4a_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": null,
+      "ext": "m4a",
+      "filesize": 7139301,
+      "filesize_approx": 7139266,
+      "format": "140 - audio only (medium)",
+      "format_id": "140",
+      "format_note": "medium",
+      "fps": null,
+      "has_drm": false,
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 3.0,
+      "resolution": "audio only",
+      "source_preference": -1,
+      "tbr": 129.492,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=7139301&dur=441.063&lmt=1596756402069008&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6311222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIgVp3Q7whzZ1wfsD8BMAIDKrqp_NujXfnYSGzcvkQsUdoCIQC1aR8YKgS2K8B9erlgssXGwVhjgsJ35JNHESbX_xvZgg%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": null
+    },
+    {
+      "abr": 107.921,
+      "acodec": "opus",
+      "aspect_ratio": null,
+      "asr": 48000,
+      "audio_channels": 2,
+      "audio_ext": "webm",
+      "available_at": 1777944731,
+      "container": "webm_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": null,
+      "ext": "webm",
+      "filesize": 5949731,
+      "filesize_approx": 5949698,
+      "format": "251 - audio only (medium)",
+      "format_id": "251",
+      "format_note": "medium",
+      "fps": null,
+      "has_drm": false,
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 3.0,
+      "resolution": "audio only",
+      "source_preference": -1,
+      "tbr": 107.921,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=5949731&dur=441.041&lmt=1596756387028077&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6311222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIhANfQOugIMMB4P-megzCc2nE_QAPghnSsW4xm8jMZjr9wAiAW4Fp64DprksD9wsYt7szNOsM9jML6S7iPVVGHBkv7dQ%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 0,
+      "vcodec": "none",
+      "video_ext": "none",
+      "width": null
+    },
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "asr": null,
+      "audio_channels": null,
+      "audio_ext": "none",
+      "available_at": 1777944731,
+      "container": "mp4_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 2727940,
+      "filesize_approx": 2727909,
+      "format": "160 - 256x144 (144p)",
+      "format_id": "160",
+      "format_note": "144p",
+      "fps": 30,
+      "has_drm": false,
+      "height": 144,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 0.0,
+      "resolution": "256x144",
+      "source_preference": -1,
+      "tbr": 49.486,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=160&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=2727940&dur=440.999&lmt=1596756389139218&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIhAJ4FUwotIUzEfRQVDpAylVoptWTirbm-ovY4g8jUojIOAiAuNgnJNcbMIh5ScWmKEahh1NIdCgvozzp1IfHGrjBcyA%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 49.486,
+      "vcodec": "avc1.4d400c",
+      "video_ext": "mp4",
+      "width": 256
+    },
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "asr": null,
+      "audio_channels": null,
+      "audio_ext": "none",
+      "available_at": 1777944731,
+      "container": "mp4_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 12007973,
+      "filesize_approx": 12007961,
+      "format": "134 - 640x360 (360p)",
+      "format_id": "134",
+      "format_note": "360p",
+      "fps": 30,
+      "has_drm": false,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 6.0,
+      "resolution": "640x360",
+      "source_preference": -1,
+      "tbr": 217.832,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=134&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=12007973&dur=440.999&lmt=1596756389139765&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgEpaDfsaO4y4_05Yd6YSbE_5msIHuhwtbeun7U4N3d0sCIGNn8UggpJ1gNZHtuQcGNJwL8u8PNWkSDAcYX12UFc_9&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 217.832,
+      "vcodec": "avc1.4d401e",
+      "video_ext": "mp4",
+      "width": 640
+    },
+    {
+      "abr": null,
+      "acodec": "mp4a.40.2",
+      "aspect_ratio": 1.78,
+      "asr": 44100,
+      "audio_channels": 2,
+      "audio_ext": "none",
+      "available_at": 1777944731,
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": null,
+      "filesize_approx": 19074431,
+      "format": "18 - 640x360 (360p)",
+      "format_id": "18",
+      "format_note": "360p",
+      "fps": 30,
+      "has_drm": false,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 6.0,
+      "resolution": "640x360",
+      "source_preference": -1,
+      "tbr": 345.972,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwppl9GgcGB8pGce27C4M56tdZRj6JkNxe6lBJMWDdn9mOvvzhqXE0iP0N7dpK2QYGNtLbnGo1Zu&spc=96Xrvx7Tc21sDgYSE6lfKYI7luHz9JJjBmc274zwDWkVCRjPRuI7&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=441.063&lmt=1663296424045678&mt=1777944307&fvip=5&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhAK_7277OnhxVTf_AAM2XjaUwf3BcNokZFCSHlVGTXz8vAiEA4Mw9vj-drwu93C8-uePk-7TSYgJNGLI8P5nZXDctyMM%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": null,
+      "vcodec": "avc1.42001E",
+      "video_ext": "mp4",
+      "width": 640
+    },
+    {
+      "abr": 0,
+      "acodec": "none",
+      "aspect_ratio": 1.78,
+      "asr": null,
+      "audio_channels": null,
+      "audio_ext": "none",
+      "available_at": 1777944731,
+      "container": "mp4_dash",
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 48368155,
+      "filesize_approx": 48368108,
+      "format": "136 - 1280x720 (720p)",
+      "format_id": "136",
+      "format_note": "720p",
+      "fps": 30,
+      "has_drm": false,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language": null,
+      "language_preference": -1,
+      "preference": null,
+      "protocol": "https",
+      "quality": 8.0,
+      "resolution": "1280x720",
+      "source_preference": -1,
+      "tbr": 877.428,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=136&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwqM2SKnjYOx0yBS8y7WZYOW17x-TWb6HWySsnjQ5wzEfw6SMY5BOcurEpBoHsAXrAwBwbB16Tkm&spc=96XrvzTaSWheBgQqO6gdEaom1OST6AhjVmtU_wXpD0Ee&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=48368155&dur=440.999&lmt=1596756389141916&mt=1777944307&fvip=5&keepalive=yes&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRgIhAIO6riqjZmzSGItFEPD90xn4EOBWqrVG4ZQaKg04qxPqAiEAm8_JeP5EbI6oZE8BNC7phl43pg4Q4KUc4rXcbjKKP-g%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vbr": 877.428,
+      "vcodec": "avc1.64001f",
+      "video_ext": "mp4",
+      "width": 1280
+    }
+  ],
+  "fps": 30,
+  "fulltitle": "美股分析 | 如果买下TikTok，微软股票的市值能上涨多少？TikTok估值如何计算？",
+  "has_drm": false,
+  "heatmap": null,
+  "height": 360,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+  },
+  "id": "rQpgkBj8-vo",
+  "is_live": false,
+  "language": null,
+  "language_preference": -1,
+  "like_count": 124,
+  "live_status": "not_live",
+  "location": "美国",
+  "media_type": "video",
+  "original_url": "https://www.youtube.com/watch?v=rQpgkBj8-vo",
+  "playable_in_embed": true,
+  "playlist": null,
+  "playlist_index": null,
+  "preference": null,
+  "protocol": "https",
+  "quality": 6.0,
+  "release_timestamp": null,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "美股分析 ｜ 如果买下TikTok，微软股票的市值能上涨多少？TikTok估值如何计算？ [rQpgkBj8-vo].mp4",
+      "acodec": "mp4a.40.2",
+      "aspect_ratio": 1.78,
+      "asr": 44100,
+      "audio_channels": 2,
+      "audio_ext": "none",
+      "available_at": 1777944731,
+      "downloader_options": {
+        "http_chunk_size": 10485760
+      },
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "美股分析 ｜ 如果买下TikTok，微软股票的市值能上涨多少？TikTok估值如何计算？ [rQpgkBj8-vo].mp4",
+      "filesize_approx": 19074431,
+      "format": "18 - 640x360 (360p)",
+      "format_id": "18",
+      "format_note": "360p",
+      "fps": 30,
+      "has_drm": false,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+      },
+      "language_preference": -1,
+      "protocol": "https",
+      "quality": 6.0,
+      "resolution": "640x360",
+      "source_preference": -1,
+      "tbr": 345.972,
+      "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwppl9GgcGB8pGce27C4M56tdZRj6JkNxe6lBJMWDdn9mOvvzhqXE0iP0N7dpK2QYGNtLbnGo1Zu&spc=96Xrvx7Tc21sDgYSE6lfKYI7luHz9JJjBmc274zwDWkVCRjPRuI7&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=441.063&lmt=1663296424045678&mt=1777944307&fvip=5&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhAK_7277OnhxVTf_AAM2XjaUwf3BcNokZFCSHlVGTXz8vAiEA4Mw9vj-drwu93C8-uePk-7TSYgJNGLI8P5nZXDctyMM%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+      "vcodec": "avc1.42001E",
+      "video_ext": "mp4",
+      "width": 640
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "640x360",
+  "source_preference": -1,
+  "subtitles": {
+    "zh": [
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "json3",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=json3"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "srv1",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=srv1"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "srv2",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=srv2"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "srv3",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=srv3"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "ttml",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=ttml"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "srt",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=srt"
+      },
+      {
+        "__yt_dlp_client": "android_vr",
+        "ext": "vtt",
+        "impersonate": true,
+        "name": "Chinese",
+        "url": "https://www.youtube.com/api/timedtext?v=rQpgkBj8-vo&ei=m0j5adXEJLS_kucPwqrAkQE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1777969931&sparams=ip%2Cipbits%2Cexpire%2Cv%2Cei%2Ccaps%2Copi%2Cxoaf&signature=9F7FE6256A847DE73E8B76F8A56E2EF9250CB177.39C3002E8AC576E5ED59D00104BE6918CEDC19E6&key=yt8&lang=zh&fmt=vtt"
+      }
+    ]
+  },
+  "tags": [
+    "美股走势",
+    "美股抄底",
+    "美股熊市",
+    "美股行情",
+    "美股投资机会",
+    "美股牛市",
+    ".预测美股",
+    "美股走势分析",
+    "美股大盘",
+    "下周美股",
+    "特斯拉",
+    "TSLA股票",
+    "tesla股票",
+    "tesla分析",
+    "TSLA分析",
+    "tsla美股",
+    "tesla美股",
+    "特斯拉前景",
+    "特斯拉财报",
+    "美股投资",
+    "美股",
+    "美股交易",
+    "美股策略",
+    "炒美股",
+    "交易美股",
+    "华尔街",
+    "纳斯达克",
+    "道琼斯",
+    "标普500",
+    "美股开户",
+    "Day Trade",
+    "短线交易",
+    "日内交易",
+    "美股机构",
+    "Robinhood",
+    "看好美股",
+    "值得投资美股",
+    "美股大牛股",
+    "美股财报",
+    "微软股票",
+    "MSFT股票",
+    "Tiktok"
+  ],
+  "tbr": 345.972,
+  "thumbnail": "https://i.ytimg.com/vi/rQpgkBj8-vo/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "preference": -37,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/3.jpg"
+    },
+    {
+      "id": "1",
+      "preference": -36,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/3.webp"
+    },
+    {
+      "id": "2",
+      "preference": -35,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/2.jpg"
+    },
+    {
+      "id": "3",
+      "preference": -34,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/2.webp"
+    },
+    {
+      "id": "4",
+      "preference": -33,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/1.jpg"
+    },
+    {
+      "id": "5",
+      "preference": -32,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/1.webp"
+    },
+    {
+      "id": "6",
+      "preference": -31,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/mq3.jpg"
+    },
+    {
+      "id": "7",
+      "preference": -30,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/mq3.webp"
+    },
+    {
+      "id": "8",
+      "preference": -29,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/mq2.jpg"
+    },
+    {
+      "id": "9",
+      "preference": -28,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/mq2.webp"
+    },
+    {
+      "id": "10",
+      "preference": -27,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/mq1.jpg"
+    },
+    {
+      "id": "11",
+      "preference": -26,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/mq1.webp"
+    },
+    {
+      "id": "12",
+      "preference": -25,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hq3.jpg"
+    },
+    {
+      "id": "13",
+      "preference": -24,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/hq3.webp"
+    },
+    {
+      "id": "14",
+      "preference": -23,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hq2.jpg"
+    },
+    {
+      "id": "15",
+      "preference": -22,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/hq2.webp"
+    },
+    {
+      "id": "16",
+      "preference": -21,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hq1.jpg"
+    },
+    {
+      "id": "17",
+      "preference": -20,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/hq1.webp"
+    },
+    {
+      "id": "18",
+      "preference": -19,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/sd3.jpg"
+    },
+    {
+      "id": "19",
+      "preference": -18,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/sd3.webp"
+    },
+    {
+      "id": "20",
+      "preference": -17,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/sd2.jpg"
+    },
+    {
+      "id": "21",
+      "preference": -16,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/sd2.webp"
+    },
+    {
+      "id": "22",
+      "preference": -15,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/sd1.jpg"
+    },
+    {
+      "id": "23",
+      "preference": -14,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/sd1.webp"
+    },
+    {
+      "height": 90,
+      "id": "24",
+      "preference": -13,
+      "resolution": "120x90",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/default.jpg",
+      "width": 120
+    },
+    {
+      "id": "25",
+      "preference": -12,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/default.webp"
+    },
+    {
+      "height": 180,
+      "id": "26",
+      "preference": -11,
+      "resolution": "320x180",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/mqdefault.jpg",
+      "width": 320
+    },
+    {
+      "id": "27",
+      "preference": -10,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/mqdefault.webp"
+    },
+    {
+      "id": "28",
+      "preference": -9,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/0.jpg"
+    },
+    {
+      "id": "29",
+      "preference": -8,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/0.webp"
+    },
+    {
+      "height": 94,
+      "id": "30",
+      "preference": -7,
+      "resolution": "168x94",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDoGh0me76kViwDGuAVA1HhjBXYNw",
+      "width": 168
+    },
+    {
+      "height": 110,
+      "id": "31",
+      "preference": -7,
+      "resolution": "196x110",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hqdefault.jpg?sqp=-oaymwEiCMQBEG5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAQlftRd_XoMhy6WJGJIHgtth85Iw",
+      "width": 196
+    },
+    {
+      "height": 138,
+      "id": "32",
+      "preference": -7,
+      "resolution": "246x138",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDrxTT3NYdBIIuJQuWwgG0hCobY7w",
+      "width": 246
+    },
+    {
+      "height": 188,
+      "id": "33",
+      "preference": -7,
+      "resolution": "336x188",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCZBEayajsxs_HwxE_8yh2g37hVJA",
+      "width": 336
+    },
+    {
+      "height": 360,
+      "id": "34",
+      "preference": -7,
+      "resolution": "480x360",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hqdefault.jpg",
+      "width": 480
+    },
+    {
+      "id": "35",
+      "preference": -6,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/hqdefault.webp"
+    },
+    {
+      "height": 480,
+      "id": "36",
+      "preference": -5,
+      "resolution": "640x480",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/sddefault.jpg",
+      "width": 640
+    },
+    {
+      "id": "37",
+      "preference": -4,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/sddefault.webp"
+    },
+    {
+      "id": "38",
+      "preference": -3,
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/hq720.jpg"
+    },
+    {
+      "id": "39",
+      "preference": -2,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/hq720.webp"
+    },
+    {
+      "height": 1080,
+      "id": "40",
+      "preference": -1,
+      "resolution": "1920x1080",
+      "url": "https://i.ytimg.com/vi/rQpgkBj8-vo/maxresdefault.jpg",
+      "width": 1920
+    },
+    {
+      "id": "41",
+      "preference": 0,
+      "url": "https://i.ytimg.com/vi_webp/rQpgkBj8-vo/maxresdefault.webp"
+    }
+  ],
+  "timestamp": 1596757081,
+  "title": "美股分析 | 如果买下TikTok，微软股票的市值能上涨多少？TikTok估值如何计算？",
+  "upload_date": "20200806",
+  "uploader": "美股投资网",
+  "uploader_id": "@TradesMax",
+  "uploader_url": "https://www.youtube.com/@TradesMax",
+  "url": "https://rr3---sn-vgqskn6r.googlevideo.com/videoplayback?expire=1777966331&ei=m0j5adXEJLS_kucPwqrAkQE&ip=172.101.99.220&id=o-ACfLlQfPuI8o1k-pMQZrZtMCFNVHtMH0MaLKD1_-Lv4G&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1777944731%2C&mh=cl&mm=31%2C26&mn=sn-vgqskn6r%2Csn-ab5l6nrr&ms=au%2Conr&mv=m&mvi=3&pl=18&rms=au%2Cau&initcwndbps=3500000&bui=AbKmrwppl9GgcGB8pGce27C4M56tdZRj6JkNxe6lBJMWDdn9mOvvzhqXE0iP0N7dpK2QYGNtLbnGo1Zu&spc=96Xrvx7Tc21sDgYSE6lfKYI7luHz9JJjBmc274zwDWkVCRjPRuI7&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=441.063&lmt=1663296424045678&mt=1777944307&fvip=5&fexp=51565116%2C51565682&c=ANDROID_VR&txp=6318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhAK_7277OnhxVTf_AAM2XjaUwf3BcNokZFCSHlVGTXz8vAiEA4Mw9vj-drwu93C8-uePk-7TSYgJNGLI8P5nZXDctyMM%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgUA7bjE3VLn1J5grk3G9B9R3XL-pgvDxMuZrOY4wGGQMCIHqZTZanvplVQSDJePmRmdLWgZZNiD4apJN3O8dX_0iY",
+  "vbr": null,
+  "vcodec": "avc1.42001E",
+  "video_ext": "mp4",
+  "view_count": 3237,
+  "was_live": false,
+  "webpage_url": "https://www.youtube.com/watch?v=rQpgkBj8-vo",
+  "webpage_url_basename": "watch",
+  "webpage_url_domain": "youtube.com",
+  "width": 640
+}

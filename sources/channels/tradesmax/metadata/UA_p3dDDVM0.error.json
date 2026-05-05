@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:24:35.575217+00:00",
+  "id": "UA_p3dDDVM0",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:24:34.234579+00:00",
+  "stderr": "ERROR: [youtube] UA_p3dDDVM0: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化分析，金融数据处理 【量化交易第八课】",
+  "url": "https://www.youtube.com/watch?v=UA_p3dDDVM0"
+}

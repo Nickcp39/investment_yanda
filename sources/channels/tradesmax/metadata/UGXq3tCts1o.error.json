@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:25:02.205012+00:00",
+  "id": "UGXq3tCts1o",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:25:00.558910+00:00",
+  "stderr": "ERROR: [youtube] UGXq3tCts1o: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化交易流程 整合提炼金融数据 【量化交易第六课】",
+  "url": "https://www.youtube.com/watch?v=UGXq3tCts1o"
+}

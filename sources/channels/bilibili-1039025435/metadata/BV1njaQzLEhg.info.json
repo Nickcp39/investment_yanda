@@ -1,0 +1,193 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:08:11.276156+00:00",
+    "source_index": 60,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1njaQzLEhg"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 115147469229605_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 100,
+  "description": "",
+  "display_id": "BV1njaQzLEhg",
+  "duration": 1840.135,
+  "duration_string": "30:40",
+  "dynamic_range": "SDR",
+  "epoch": 1777946891,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 9516813,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1840.135,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 3851618,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1njaQzLEhg",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/24/52/32165135224/32165135224-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&deadline=1777954091&trid=b819b7bcd53d433daf124e71755be57u&og=cos&platform=pc&uipk=5&oi=2892325852&nbs=1&gen=playurlv3&os=cosovbv&mid=0&upsig=f1259a1edad77658fa6183c00524d833&uparams=e,deadline,trid,og,platform,uipk,oi,nbs,gen,os,mid&bvc=vod&nettype=0&bw=102709&qn_dyeid=21e6e3421ffbdbe20025a0d369f9510b&agrr=0&buvid=DB10619B-099B-B57F-3BB4-97E4CD35ADA488083infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1840.135,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 5008354,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1njaQzLEhg",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/24/52/32165135224/32165135224-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&nbs=1&uipk=5&gen=playurlv3&os=cosovbv&deadline=1777954090&og=ali&platform=pc&trid=7afe9b99b1ea4af487ee44e0b84d93au&oi=2892325852&mid=0&upsig=2f4ae9527792fe6ebd9bf9af77d1ebe1&uparams=e,nbs,uipk,gen,os,deadline,og,platform,trid,oi,mid&bvc=vod&nettype=0&bw=133556&qn_dyeid=151ecbd16fb21dd500fe24cf69f9510a&agrr=0&buvid=DB10619B-099B-B57F-3BB4-97E4CD35ADA488083infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1840.135,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 9516813,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1njaQzLEhg",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/24/52/32165135224/32165135224-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&mid=0&gen=playurlv3&deadline=1777954090&uipk=5&os=cosovbv&og=ali&trid=78876712119d4a07af7fe4ce0413c48u&oi=2892325852&nbs=1&upsig=c9a63b48f1ae2c3f0a0225b16f194971&uparams=e,platform,mid,gen,deadline,uipk,os,og,trid,oi,nbs&bvc=vod&nettype=0&bw=253781&qn_dyeid=1e17fc6e8406299b003db91b69f9510a&agrr=0&buvid=DB10619B-099B-B57F-3BB4-97E4CD35ADA488083infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "问答：美国YCC政策的影响，西方福利制度与YCC，YCC与制造业的关系",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1njaQzLEhg",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+  },
+  "id": "BV1njaQzLEhg",
+  "like_count": 1208,
+  "original_url": "https://www.bilibili.com/video/BV1njaQzLEhg",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "问答：美国YCC政策的影响，西方福利制度与YCC，YCC与制造业的关系 [BV1njaQzLEhg].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "问答：美国YCC政策的影响，西方福利制度与YCC，YCC与制造业的关系 [BV1njaQzLEhg].mp4",
+      "filesize": 9516813,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1njaQzLEhg",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/24/52/32165135224/32165135224-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&mid=0&gen=playurlv3&deadline=1777954090&uipk=5&os=cosovbv&og=ali&trid=78876712119d4a07af7fe4ce0413c48u&oi=2892325852&nbs=1&upsig=c9a63b48f1ae2c3f0a0225b16f194971&uparams=e,platform,mid,gen,deadline,uipk,os,og,trid,oi,nbs&bvc=vod&nettype=0&bw=253781&qn_dyeid=1e17fc6e8406299b003db91b69f9510a&agrr=0&buvid=DB10619B-099B-B57F-3BB4-97E4CD35ADA488083infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "青年用「财」图鉴",
+    "财经",
+    "产业",
+    "商业"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i2.hdslb.com/bfs/archive/3a71b26f94de11c90085767d4f64cd25babc1fb6.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i2.hdslb.com/bfs/archive/3a71b26f94de11c90085767d4f64cd25babc1fb6.jpg"
+    }
+  ],
+  "timestamp": 1757011135,
+  "title": "问答：美国YCC政策的影响，西方福利制度与YCC，YCC与制造业的关系",
+  "upload_date": "20250904",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/24/52/32165135224/32165135224-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&mid=0&gen=playurlv3&deadline=1777954090&uipk=5&os=cosovbv&og=ali&trid=78876712119d4a07af7fe4ce0413c48u&oi=2892325852&nbs=1&upsig=c9a63b48f1ae2c3f0a0225b16f194971&uparams=e,platform,mid,gen,deadline,uipk,os,og,trid,oi,nbs&bvc=vod&nettype=0&bw=253781&qn_dyeid=1e17fc6e8406299b003db91b69f9510a&agrr=0&buvid=DB10619B-099B-B57F-3BB4-97E4CD35ADA488083infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 85185,
+  "webpage_url": "https://www.bilibili.com/video/BV1njaQzLEhg",
+  "webpage_url_basename": "BV1njaQzLEhg",
+  "webpage_url_domain": "bilibili.com"
+}

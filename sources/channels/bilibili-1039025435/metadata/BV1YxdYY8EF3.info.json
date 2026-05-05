@@ -1,0 +1,193 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:11:26.228479+00:00",
+    "source_index": 104,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1YxdYY8EF3"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 114326425830904_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 297,
+  "description": "",
+  "display_id": "BV1YxdYY8EF3",
+  "duration": 1428.631,
+  "duration_string": "23:48",
+  "dynamic_range": "SDR",
+  "epoch": 1777947086,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 11619281,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1428.631,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 3687353,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/06/91/29381169106/29381169106-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&deadline=1777954286&gen=playurlv3&os=cosovbv&og=hw&trid=a9c09787d7ea4aaaa4821c7be27f327u&oi=2892325852&nbs=1&uipk=5&mid=0&upsig=07f46a57d6256b6a824618e06be7bba7&uparams=e,platform,deadline,gen,os,og,trid,oi,nbs,uipk,mid&bvc=vod&nettype=0&bw=98329&qn_dyeid=929015a94cf24ad200f32b5669f951ce&agrr=0&buvid=65036992-10F0-A738-6F90-587E5193B98E83063infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1428.631,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 6159407,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/06/91/29381169106/29381169106-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&og=cos&nbs=1&uipk=5&trid=ecab3674ab10423b880da3b7cc0eff6u&mid=0&oi=2892325852&platform=pc&os=cosovbv&deadline=1777954285&gen=playurlv3&upsig=f63e0a17481c8f7e8b0e95d785593642&uparams=e,og,nbs,uipk,trid,mid,oi,platform,os,deadline,gen&bvc=vod&nettype=0&bw=164250&dl=0&f=u_0_0&qn_dyeid=b16192d765c7e87500d472f569f951cd&agrr=0&buvid=65036992-10F0-A738-6F90-587E5193B98E83063infoc&build=0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1428.631,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 11619281,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/06/91/29381169106/29381169106-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&trid=e9bfe83008d1466ba1761f5fe148ef1u&platform=pc&gen=playurlv3&og=hw&deadline=1777954285&uipk=5&mid=0&os=cosovbv&upsig=26a60717fd0e72fe1ae96a46124cbb23&uparams=e,oi,nbs,trid,platform,gen,og,deadline,uipk,mid,os&bvc=vod&nettype=0&bw=309847&qn_dyeid=a19fa103b1db0ff800d3925969f951cd&agrr=0&buvid=65036992-10F0-A738-6F90-587E5193B98E83063infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "美债基差套利，SOFR概念解析，TGA账户抽水",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+  },
+  "id": "BV1YxdYY8EF3",
+  "like_count": 2784,
+  "original_url": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "美债基差套利，SOFR概念解析，TGA账户抽水 [BV1YxdYY8EF3].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "美债基差套利，SOFR概念解析，TGA账户抽水 [BV1YxdYY8EF3].mp4",
+      "filesize": 11619281,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/06/91/29381169106/29381169106-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&trid=e9bfe83008d1466ba1761f5fe148ef1u&platform=pc&gen=playurlv3&og=hw&deadline=1777954285&uipk=5&mid=0&os=cosovbv&upsig=26a60717fd0e72fe1ae96a46124cbb23&uparams=e,oi,nbs,trid,platform,gen,og,deadline,uipk,mid,os&bvc=vod&nettype=0&bw=309847&qn_dyeid=a19fa103b1db0ff800d3925969f951cd&agrr=0&buvid=65036992-10F0-A738-6F90-587E5193B98E83063infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "硬核财经知识必看",
+    "美股",
+    "美债",
+    "青年用「财」图鉴6.0"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i0.hdslb.com/bfs/archive/2386379c6ea59155503e08ac173c4ecdd8e66493.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i0.hdslb.com/bfs/archive/2386379c6ea59155503e08ac173c4ecdd8e66493.jpg"
+    }
+  ],
+  "timestamp": 1744483367,
+  "title": "美债基差套利，SOFR概念解析，TGA账户抽水",
+  "upload_date": "20250412",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/06/91/29381169106/29381169106-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&trid=e9bfe83008d1466ba1761f5fe148ef1u&platform=pc&gen=playurlv3&og=hw&deadline=1777954285&uipk=5&mid=0&os=cosovbv&upsig=26a60717fd0e72fe1ae96a46124cbb23&uparams=e,oi,nbs,trid,platform,gen,og,deadline,uipk,mid,os&bvc=vod&nettype=0&bw=309847&qn_dyeid=a19fa103b1db0ff800d3925969f951cd&agrr=0&buvid=65036992-10F0-A738-6F90-587E5193B98E83063infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 145258,
+  "webpage_url": "https://www.bilibili.com/video/BV1YxdYY8EF3",
+  "webpage_url_basename": "BV1YxdYY8EF3",
+  "webpage_url_domain": "bilibili.com"
+}

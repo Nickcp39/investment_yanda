@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:24:03.280088+00:00",
+  "id": "RK1mNLqvk2o",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:24:01.677356+00:00",
+  "stderr": "ERROR: [youtube] RK1mNLqvk2o: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "构建美股量化指标，可视化金融数据 【量化交易第九课】",
+  "url": "https://www.youtube.com/watch?v=RK1mNLqvk2o"
+}

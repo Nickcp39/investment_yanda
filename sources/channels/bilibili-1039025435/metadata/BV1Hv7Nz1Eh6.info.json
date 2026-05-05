@@ -1,0 +1,190 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:10:25.974484+00:00",
+    "source_index": 92,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 114601723167132_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 688,
+  "description": "征求大家意见",
+  "display_id": "BV1Hv7Nz1Eh6",
+  "duration": 2944.488,
+  "duration_string": "49:04",
+  "dynamic_range": "SDR",
+  "epoch": 1777947025,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 150106292,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 2944.488,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 44880813,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/67/28/30246702867/30246702867-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&nbs=1&mid=0&oi=2892325852&platform=pc&trid=52c506fdc4174efbb854329f7ad4d8cu&gen=playurlv3&os=cosovbv&og=hw&deadline=1777954225&uipk=5&upsig=626e5e60547c36e18a69781c92b7fec9&uparams=e,nbs,mid,oi,platform,trid,gen,os,og,deadline,uipk&bvc=vod&nettype=0&bw=123596&build=0&dl=0&f=u_0_0&qn_dyeid=f83911ef60ce59d30038affe69f95191&agrr=0&buvid=F41D8C5C-03A2-7FDB-3366-603EDED7B56B22718infoc&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 2944.488,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 72446743,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/67/28/30246702867/30246702867-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&uipk=5&nbs=1&gen=playurlv3&trid=0112ed0d012141849550de61701412bu&platform=pc&os=cosovbv&og=hw&mid=0&deadline=1777954224&upsig=2a99bd3ef7194cae9b0f11c6a1d10bf1&uparams=e,oi,uipk,nbs,gen,trid,platform,os,og,mid,deadline&bvc=vod&nettype=0&bw=199509&buvid=F41D8C5C-03A2-7FDB-3366-603EDED7B56B22718infoc&build=0&dl=0&f=u_0_0&qn_dyeid=7a90ae1d6cc56c77002ccfe869f95190&agrr=0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 2944.488,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 150106292,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/67/28/30246702867/30246702867-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&uipk=5&mid=0&gen=playurlv3&platform=pc&trid=91eb8da36772407491ceb40457bfb31u&deadline=1777954225&os=cosovbv&og=cos&upsig=4368ded96e4c8401aeab1b66b53fa52c&uparams=e,oi,nbs,uipk,mid,gen,platform,trid,deadline,os,og&bvc=vod&nettype=0&bw=413373&qn_dyeid=aba5344b6885ca9500e4e93a69f95191&agrr=0&buvid=F41D8C5C-03A2-7FDB-3366-603EDED7B56B22718infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "近期投资回顾，征求大家意见",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+  },
+  "id": "BV1Hv7Nz1Eh6",
+  "like_count": 1430,
+  "original_url": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "近期投资回顾，征求大家意见 [BV1Hv7Nz1Eh6].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "近期投资回顾，征求大家意见 [BV1Hv7Nz1Eh6].mp4",
+      "filesize": 150106292,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/67/28/30246702867/30246702867-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&uipk=5&mid=0&gen=playurlv3&platform=pc&trid=91eb8da36772407491ceb40457bfb31u&deadline=1777954225&os=cosovbv&og=cos&upsig=4368ded96e4c8401aeab1b66b53fa52c&uparams=e,oi,nbs,uipk,mid,gen,platform,trid,deadline,os,og&bvc=vod&nettype=0&bw=413373&qn_dyeid=aba5344b6885ca9500e4e93a69f95191&agrr=0&buvid=F41D8C5C-03A2-7FDB-3366-603EDED7B56B22718infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "投资"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i2.hdslb.com/bfs/archive/922eea49ce685bc96690fa6af21b84fa01731e79.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i2.hdslb.com/bfs/archive/922eea49ce685bc96690fa6af21b84fa01731e79.jpg"
+    }
+  ],
+  "timestamp": 1748685121,
+  "title": "近期投资回顾，征求大家意见",
+  "upload_date": "20250531",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/67/28/30246702867/30246702867-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&nbs=1&uipk=5&mid=0&gen=playurlv3&platform=pc&trid=91eb8da36772407491ceb40457bfb31u&deadline=1777954225&os=cosovbv&og=cos&upsig=4368ded96e4c8401aeab1b66b53fa52c&uparams=e,oi,nbs,uipk,mid,gen,platform,trid,deadline,os,og&bvc=vod&nettype=0&bw=413373&qn_dyeid=aba5344b6885ca9500e4e93a69f95191&agrr=0&buvid=F41D8C5C-03A2-7FDB-3366-603EDED7B56B22718infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 56591,
+  "webpage_url": "https://www.bilibili.com/video/BV1Hv7Nz1Eh6",
+  "webpage_url_basename": "BV1Hv7Nz1Eh6",
+  "webpage_url_domain": "bilibili.com"
+}

@@ -23,3 +23,13 @@ data/processed/
 .env
 .DS_Store
 Thumbs.db
+
+# Claude Code project-level skills (cloned/forked from upstream, install via skills/install.md)
+.claude/skills/*/
+.claude/settings.local.json
+
+# Channel ingestion artifacts (large binaries / regenerable)
+sources/channels/*/audio/
+sources/channels/*/transcripts/
+sources/channels/*/asr_tests/
+sources/channels/*/logs/

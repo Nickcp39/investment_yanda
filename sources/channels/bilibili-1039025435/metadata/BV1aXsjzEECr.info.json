@@ -1,0 +1,193 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:07:32.197110+00:00",
+    "source_index": 51,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1aXsjzEECr"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 115427078377427_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 373,
+  "description": "",
+  "display_id": "BV1aXsjzEECr",
+  "duration": 1188.862,
+  "duration_string": "19:48",
+  "dynamic_range": "SDR",
+  "epoch": 1777946852,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 4582531,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1188.862,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 2728980,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1aXsjzEECr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-hz-mirrorakam.akamaized.net/upgcxcode/07/91/33345769107/33345769107-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&os=akam&mid=0&deadline=1777954051&nbs=1&og=cos&uipk=5&trid=05d0bc6635da4c9b8eaa229bdc01252u&oi=2892325852&platform=pc&gen=playurlv3&upsig=31b7e81601ccf6e8ec3a1b75821b2e0a&uparams=e,os,mid,deadline,nbs,og,uipk,trid,oi,platform,gen&hdnts=exp=1777954051~hmac=645690a0ba148556f515653e0e5b637359576646741dca3ab4efada60d458f65&bvc=vod&nettype=0&bw=121965&qn_dyeid=d38259c6bffd70e40086492669f950e3&agrr=0&buvid=EA898425-F3C9-4FF4-255B-A78BABC173F148960infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1188.862,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 3268284,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1aXsjzEECr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/07/91/33345769107/33345769107-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&nbs=1&trid=0d30026885c74eadbb713ab58947c24u&og=hw&uipk=5&platform=pc&deadline=1777954050&gen=playurlv3&os=cosovbv&oi=2892325852&mid=0&upsig=2e1ef2fdf9a27908a10bba62188bffd9&uparams=e,nbs,trid,og,uipk,platform,deadline,gen,os,oi,mid&bvc=vod&nettype=0&bw=146068&build=0&dl=0&f=u_0_0&qn_dyeid=f7f63b8a02d4f08300ff525869f950e2&agrr=0&buvid=EA898425-F3C9-4FF4-255B-A78BABC173F148960infoc&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1188.862,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 4582531,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1aXsjzEECr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/07/91/33345769107/33345769107-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&trid=b30fa9406577475680f74f64ecebb5eu&oi=2892325852&gen=playurlv3&og=cos&deadline=1777954051&mid=0&os=cosovbv&nbs=1&uipk=5&upsig=33ec66192e2667548b5d1b0d6f737427&uparams=e,platform,trid,oi,gen,og,deadline,mid,os,nbs,uipk&bvc=vod&nettype=0&bw=204805&qn_dyeid=7151148edda9e2af00315c8969f950e3&agrr=0&buvid=EA898425-F3C9-4FF4-255B-A78BABC173F148960infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "问答：黄金风险，大宗商品，向心坍缩？ (1-2)",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1aXsjzEECr",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+  },
+  "id": "BV1aXsjzEECr",
+  "like_count": 1979,
+  "original_url": "https://www.bilibili.com/video/BV1aXsjzEECr",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "问答：黄金风险，大宗商品，向心坍缩？ (1-2) [BV1aXsjzEECr].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "问答：黄金风险，大宗商品，向心坍缩？ (1-2) [BV1aXsjzEECr].mp4",
+      "filesize": 4582531,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1aXsjzEECr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/07/91/33345769107/33345769107-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&trid=b30fa9406577475680f74f64ecebb5eu&oi=2892325852&gen=playurlv3&og=cos&deadline=1777954051&mid=0&os=cosovbv&nbs=1&uipk=5&upsig=33ec66192e2667548b5d1b0d6f737427&uparams=e,platform,trid,oi,gen,og,deadline,mid,os,nbs,uipk&bvc=vod&nettype=0&bw=204805&qn_dyeid=7151148edda9e2af00315c8969f950e3&agrr=0&buvid=EA898425-F3C9-4FF4-255B-A78BABC173F148960infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "热点深度观察",
+    "财经",
+    "商业",
+    "产业"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i2.hdslb.com/bfs/archive/2280f5531d586c2b64bf142f547ff562a3dfc8e1.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i2.hdslb.com/bfs/archive/2280f5531d586c2b64bf142f547ff562a3dfc8e1.jpg"
+    }
+  ],
+  "timestamp": 1761277845,
+  "title": "问答：黄金风险，大宗商品，向心坍缩？ (1-2)",
+  "upload_date": "20251024",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/07/91/33345769107/33345769107-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&trid=b30fa9406577475680f74f64ecebb5eu&oi=2892325852&gen=playurlv3&og=cos&deadline=1777954051&mid=0&os=cosovbv&nbs=1&uipk=5&upsig=33ec66192e2667548b5d1b0d6f737427&uparams=e,platform,trid,oi,gen,og,deadline,mid,os,nbs,uipk&bvc=vod&nettype=0&bw=204805&qn_dyeid=7151148edda9e2af00315c8969f950e3&agrr=0&buvid=EA898425-F3C9-4FF4-255B-A78BABC173F148960infoc&build=0&dl=0&f=u_0_0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 132331,
+  "webpage_url": "https://www.bilibili.com/video/BV1aXsjzEECr",
+  "webpage_url_basename": "BV1aXsjzEECr",
+  "webpage_url_domain": "bilibili.com"
+}

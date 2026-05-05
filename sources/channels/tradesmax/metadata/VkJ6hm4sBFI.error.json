@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:25:48.833760+00:00",
+  "id": "VkJ6hm4sBFI",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:25:47.589883+00:00",
+  "stderr": "ERROR: [youtube] VkJ6hm4sBFI: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化交易模型 入门必修第一课",
+  "url": "https://www.youtube.com/watch?v=VkJ6hm4sBFI"
+}

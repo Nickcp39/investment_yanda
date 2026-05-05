@@ -1,0 +1,193 @@
+{
+  "_collector": {
+    "fetched_at": "2026-05-05T02:06:47.498958+00:00",
+    "source_index": 41,
+    "source_title": "",
+    "source_url": "https://www.bilibili.com/video/BV1jqSxBoEKr"
+  },
+  "_has_drm": null,
+  "_old_archive_ids": [
+    "bilibili 115648571116391_part1"
+  ],
+  "_type": "video",
+  "_version": {
+    "current_git_head": null,
+    "release_git_head": "04d6974f502bbdfaed72c624344f262e30ad9708",
+    "repository": "yt-dlp/yt-dlp",
+    "version": "2026.03.17"
+  },
+  "abr": null,
+  "aspect_ratio": null,
+  "audio_ext": "none",
+  "chapters": null,
+  "comment_count": 284,
+  "description": "",
+  "display_id": "BV1jqSxBoEKr",
+  "duration": 1576.754,
+  "duration_string": "26:16",
+  "dynamic_range": "SDR",
+  "epoch": 1777946807,
+  "ext": "mp4",
+  "extractor": "BiliBili",
+  "extractor_key": "BiliBili",
+  "filesize": 8593254,
+  "format": "64 - 720p (720P 准高清)",
+  "format_id": "64",
+  "format_note": "720P 准高清",
+  "formats": [
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1576.754,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 5506619,
+      "format": "16 - 360p (360P 流畅)",
+      "format_id": "16",
+      "format_note": "360P 流畅",
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 16,
+      "resolution": "360p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/59/87/34441268759/34441268759-1-400.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&gen=playurlv3&og=cos&trid=9efecb8df6a6402fbe55a5c7ef8089eu&mid=0&platform=pc&deadline=1777954007&nbs=1&os=cosovbv&uipk=5&oi=2892325852&upsig=abcbd3e5c7cbe6df67944a6461453eab&uparams=e,gen,og,trid,mid,platform,deadline,nbs,os,uipk,oi&bvc=vod&nettype=0&bw=147334&agrr=0&buvid=0062A27E-7E60-23CD-6F41-DDC6D86F689E04188infoc&build=0&dl=0&f=u_0_0&qn_dyeid=4413492f54c93fb700a7add469f950b7&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1576.754,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 6583749,
+      "format": "32 - 480p (480P 标清)",
+      "format_id": "32",
+      "format_note": "480P 标清",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 32,
+      "resolution": "480p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/59/87/34441268759/34441268759-1-416.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&og=cos&trid=49956d468ea847a9a42d8cd1b5d8988u&deadline=1777954006&nbs=1&oi=2892325852&uipk=5&os=cosovbv&mid=0&platform=pc&gen=playurlv3&upsig=44bbd0ffc8913a1e3b18cfe0e69b6766&uparams=e,og,trid,deadline,nbs,oi,uipk,os,mid,platform,gen&bvc=vod&nettype=0&bw=176153&build=0&dl=0&f=u_0_0&qn_dyeid=8b415bc6cc781f3700fda12569f950b6&agrr=0&buvid=0062A27E-7E60-23CD-6F41-DDC6D86F689E04188infoc&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    },
+    {
+      "abr": null,
+      "aspect_ratio": null,
+      "audio_ext": "none",
+      "duration": 1576.754,
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filesize": 8593254,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "tbr": null,
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/59/87/34441268759/34441268759-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&platform=pc&gen=playurlv3&os=cosovbv&nbs=1&trid=2598ae96c21049c985b4570e43b2c54u&deadline=1777954006&uipk=5&mid=0&og=ali&upsig=7bf69a872bea5c60c682f8d7d1baec79&uparams=e,oi,platform,gen,os,nbs,trid,deadline,uipk,mid,og&bvc=vod&nettype=0&bw=229919&f=u_0_0&qn_dyeid=16f7f5f59315fa3500d7f66369f950b6&agrr=0&buvid=0062A27E-7E60-23CD-6F41-DDC6D86F689E04188infoc&build=0&dl=0&orderid=0,2",
+      "vbr": null,
+      "video_ext": "mp4"
+    }
+  ],
+  "fulltitle": "近期金银数据和思路，再谈日本问题和台海问题（1）",
+  "height": 720,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-us,en;q=0.5",
+    "Referer": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+    "Sec-Fetch-Mode": "navigate",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+  },
+  "id": "BV1jqSxBoEKr",
+  "like_count": 1998,
+  "original_url": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+  "playlist": null,
+  "playlist_index": null,
+  "protocol": "https",
+  "quality": 64,
+  "release_year": null,
+  "requested_downloads": [
+    {
+      "__write_download_archive": false,
+      "_filename": "近期金银数据和思路，再谈日本问题和台海问题（1） [BV1jqSxBoEKr].mp4",
+      "audio_ext": "none",
+      "dynamic_range": "SDR",
+      "ext": "mp4",
+      "filename": "近期金银数据和思路，再谈日本问题和台海问题（1） [BV1jqSxBoEKr].mp4",
+      "filesize": 8593254,
+      "format": "64 - 720p (720P 准高清)",
+      "format_id": "64",
+      "format_note": "720P 准高清",
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-us,en;q=0.5",
+        "Referer": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+        "Sec-Fetch-Mode": "navigate",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "quality": 64,
+      "resolution": "720p",
+      "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/59/87/34441268759/34441268759-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&platform=pc&gen=playurlv3&os=cosovbv&nbs=1&trid=2598ae96c21049c985b4570e43b2c54u&deadline=1777954006&uipk=5&mid=0&og=ali&upsig=7bf69a872bea5c60c682f8d7d1baec79&uparams=e,oi,platform,gen,os,nbs,trid,deadline,uipk,mid,og&bvc=vod&nettype=0&bw=229919&f=u_0_0&qn_dyeid=16f7f5f59315fa3500d7f66369f950b6&agrr=0&buvid=0062A27E-7E60-23CD-6F41-DDC6D86F689E04188infoc&build=0&dl=0&orderid=0,2",
+      "video_ext": "mp4"
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": "720p",
+  "subtitles": {},
+  "tags": [
+    "热点深度观察",
+    "财经",
+    "产业",
+    "商业"
+  ],
+  "tbr": null,
+  "thumbnail": "http://i1.hdslb.com/bfs/archive/ae6e6793c9c79d6695dfa8fc63c7a530bed0ef06.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://i1.hdslb.com/bfs/archive/ae6e6793c9c79d6695dfa8fc63c7a530bed0ef06.jpg"
+    }
+  ],
+  "timestamp": 1764657295,
+  "title": "近期金银数据和思路，再谈日本问题和台海问题（1）",
+  "upload_date": "20251202",
+  "uploader": "战国时代_姜汁汽水",
+  "uploader_id": "1039025435",
+  "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/59/87/34441268759/34441268759-1-448.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&oi=2892325852&platform=pc&gen=playurlv3&os=cosovbv&nbs=1&trid=2598ae96c21049c985b4570e43b2c54u&deadline=1777954006&uipk=5&mid=0&og=ali&upsig=7bf69a872bea5c60c682f8d7d1baec79&uparams=e,oi,platform,gen,os,nbs,trid,deadline,uipk,mid,og&bvc=vod&nettype=0&bw=229919&f=u_0_0&qn_dyeid=16f7f5f59315fa3500d7f66369f950b6&agrr=0&buvid=0062A27E-7E60-23CD-6F41-DDC6D86F689E04188infoc&build=0&dl=0&orderid=0,2",
+  "vbr": null,
+  "video_ext": "mp4",
+  "view_count": 111806,
+  "webpage_url": "https://www.bilibili.com/video/BV1jqSxBoEKr",
+  "webpage_url_basename": "BV1jqSxBoEKr",
+  "webpage_url_domain": "bilibili.com"
+}

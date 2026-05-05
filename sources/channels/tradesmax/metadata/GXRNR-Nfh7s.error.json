@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:25:10.205727+00:00",
+  "id": "GXRNR-Nfh7s",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:25:08.800116+00:00",
+  "stderr": "ERROR: [youtube] GXRNR-Nfh7s: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化编程工具安装，获取股票交易数据【量化交易第五课】",
+  "url": "https://www.youtube.com/watch?v=GXRNR-Nfh7s"
+}

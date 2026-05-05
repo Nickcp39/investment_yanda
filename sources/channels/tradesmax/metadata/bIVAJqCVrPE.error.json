@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:21:58.315505+00:00",
+  "id": "bIVAJqCVrPE",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:21:56.768024+00:00",
+  "stderr": "ERROR: [youtube] bIVAJqCVrPE: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "量化交易员教你如何用夏普比率与隐含波动率优化投资决策",
+  "url": "https://www.youtube.com/watch?v=bIVAJqCVrPE"
+}

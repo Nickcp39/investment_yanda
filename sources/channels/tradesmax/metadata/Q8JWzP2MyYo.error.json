@@ -1,0 +1,11 @@
+{
+  "error_type": "yt-dlp",
+  "finished_at": "2026-05-05T01:25:44.654565+00:00",
+  "id": "Q8JWzP2MyYo",
+  "returncode": 1,
+  "started_at": "2026-05-05T01:25:43.170841+00:00",
+  "stderr": "ERROR: [youtube] Q8JWzP2MyYo: Join this channel to get access to members-only content like this video, and other exclusive perks.\n",
+  "stdout": "null\n",
+  "title": "美股量化交易第二课 最值得阅读的量化交易书籍",
+  "url": "https://www.youtube.com/watch?v=Q8JWzP2MyYo"
+}

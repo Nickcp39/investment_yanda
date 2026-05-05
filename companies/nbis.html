@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBIS — v5 信息扩展轮</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --panel: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e5e5e3;
+    --accent: #1e40af;
+    --accent-soft: #eff6ff;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --reject: #b91c1c;
+    --reject-soft: #fee2e2;
+    --watch: #b45309;
+    --watch-soft: #fef3c7;
+    --ok: #15803d;
+    --ok-soft: #dcfce7;
+    --chair: #92400e;
+    --chair-soft: #fef3c7;
+    --user: #1e40af;
+    --user-soft: #dbeafe;
+    --soul-primary: #166534;
+    --soul-secondary: #1e40af;
+    --soul-reference: #6b7280;
+    --soul-deceased: #6b21a8;
+    --new-fact: #047857;
+    --new-fact-soft: #d1fae5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", "PingFang SC",
+      "Microsoft YaHei", "Source Han Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .page { max-width: 980px; margin: 0 auto; padding: 48px 32px 96px; }
+  header.top {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 16px; margin-bottom: 28px;
+  }
+  header.top .ticker {
+    font-size: 13px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  header.top h1 { font-size: 28px; margin: 6px 0 4px; font-weight: 600; }
+  header.top .meta {
+    display: flex; gap: 24px; flex-wrap: wrap;
+    color: var(--muted); font-size: 13px; margin-top: 8px;
+  }
+  h2 {
+    font-size: 22px; margin: 48px 0 16px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--line);
+    font-weight: 600;
+  }
+  h3 { font-size: 17px; margin: 20px 0 10px; font-weight: 600; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  code {
+    background: #f4f4f2; padding: 1px 6px; border-radius: 3px;
+    font-size: 13px; font-family: "SF Mono", Consolas, monospace;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #f4f4f2; font-weight: 600; font-size: 13px; }
+
+  /* Source warning - prominent */
+  .source-warning {
+    background: var(--warn-soft);
+    border: 2px solid var(--warn);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin: 0 0 24px;
+  }
+  .source-warning .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--warn); font-weight: 700; margin-bottom: 8px;
+  }
+  .source-warning h4 { margin: 0 0 8px; color: var(--warn); }
+  .source-warning .body { color: #5a3d05; font-size: 14px; }
+
+  /* New facts block */
+  .new-facts {
+    background: var(--new-fact-soft);
+    border: 2px solid var(--new-fact);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .new-facts .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--new-fact); font-weight: 700; margin-bottom: 10px;
+  }
+  .new-facts h4 {
+    margin: 0 0 4px; font-size: 16px; color: var(--new-fact);
+  }
+  .new-facts .src-tier {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    background: white;
+    border: 1px solid var(--new-fact);
+    border-radius: 3px;
+    font-size: 10px;
+    color: var(--new-fact);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .new-facts ul { margin: 8px 0; padding-left: 20px; }
+  .new-facts li { margin-bottom: 8px; font-size: 14px; }
+  .new-facts blockquote {
+    margin: 8px 0 8px 8px; padding: 6px 12px;
+    border-left: 3px solid var(--new-fact);
+    background: white; font-style: italic;
+    font-size: 13px; color: var(--text);
+  }
+  .new-facts .source-list {
+    margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--new-fact);
+    font-size: 12px; color: #047857;
+  }
+  .new-facts .source-list a { color: var(--new-fact); text-decoration: none; }
+
+  /* Dialog turn */
+  .turn { display: flex; gap: 14px; margin: 18px 0; align-items: flex-start; }
+  .turn.user-turn { flex-direction: row-reverse; }
+  .avatar {
+    width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: white; font-size: 14px; line-height: 1;
+  }
+  .avatar.user { background: var(--user); }
+  .avatar.chair { background: var(--chair); }
+  .avatar.primary { background: var(--soul-primary); }
+  .avatar.secondary { background: var(--soul-secondary); }
+  .avatar.reference { background: var(--soul-reference); }
+  .avatar.deceased { background: var(--soul-deceased); }
+
+  .bubble {
+    flex-grow: 1; max-width: calc(100% - 60px);
+    background: white; border: 1px solid var(--line);
+    border-radius: 10px; padding: 14px 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .turn.user-turn .bubble {
+    background: var(--user-soft); border-color: #93c5fd;
+  }
+  .bubble.chair { background: var(--chair-soft); border-color: var(--chair); }
+  .bubble.primary { border-left: 4px solid var(--soul-primary); }
+  .bubble.secondary { border-left: 4px solid var(--soul-secondary); }
+  .bubble.reference { border-left: 4px solid var(--soul-reference); }
+  .bubble.deceased { border-left: 4px solid var(--soul-deceased); background: #fdfcff; }
+
+  .speaker {
+    display: flex; align-items: baseline; gap: 10px;
+    margin-bottom: 6px; font-size: 13px;
+  }
+  .speaker .name { font-weight: 700; font-size: 14px; }
+  .speaker .role { color: var(--muted); font-size: 12px; }
+  .speaker .activity {
+    font-size: 11px; padding: 1px 7px; border-radius: 3px;
+    font-weight: 600; letter-spacing: 0.04em;
+  }
+  .speaker .activity.high { background: #dcfce7; color: var(--soul-primary); }
+  .speaker .activity.medium { background: #dbeafe; color: var(--soul-secondary); }
+  .speaker .activity.low { background: #f3f4f6; color: var(--soul-reference); }
+  .speaker .activity.deceased { background: #f3e8ff; color: var(--soul-deceased); }
+  .speaker .activity.chair { background: var(--chair); color: white; }
+  .speaker .activity.user { background: var(--user); color: white; }
+
+  .bubble .body { font-size: 14.5px; line-height: 1.7; }
+  .bubble .body p { margin-bottom: 10px; }
+  .bubble .body p:last-child { margin-bottom: 0; }
+
+  .verdict-shift {
+    margin-top: 10px; padding: 6px 10px;
+    background: #f4f4f2; border-radius: 4px;
+    font-size: 13px; color: var(--muted);
+  }
+  .verdict-shift strong { color: var(--text); }
+
+  .topic-divider { text-align: center; margin: 36px 0 20px; position: relative; }
+  .topic-divider span {
+    display: inline-block; background: var(--bg); padding: 0 16px;
+    color: var(--muted); font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.12em; font-weight: 700; position: relative; z-index: 1;
+  }
+  .topic-divider::before {
+    content: ''; position: absolute; top: 50%; left: 0; right: 0;
+    height: 1px; background: var(--line);
+  }
+
+  .pill {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.04em; white-space: nowrap;
+  }
+  .pill.reject { background: var(--reject-soft); color: var(--reject); }
+  .pill.watch { background: var(--watch-soft); color: var(--watch); }
+  .pill.skip { background: #e5e7eb; color: #4b5563; }
+  .pill.info-gap { background: #ede9fe; color: #6d28d9; }
+  .pill.starter { background: var(--ok-soft); color: var(--ok); }
+  .pill.chair { background: var(--chair); color: white; }
+
+  .matrix-shift td.shift-up { background: #ecfdf5; }
+  .matrix-shift td.shift-down { background: #fef2f2; }
+  .matrix-shift td.unchanged { color: var(--muted); }
+  .arrow { font-weight: 700; }
+  .arrow.up { color: var(--ok); }
+  .arrow.down { color: var(--reject); }
+  .arrow.flat { color: var(--muted); }
+
+  .final-verdict {
+    background: var(--chair-soft);
+    border: 2px solid var(--chair);
+    border-radius: 6px;
+    padding: 22px 28px;
+    margin: 28px 0;
+  }
+  .final-verdict .heading {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--chair); font-weight: 700;
+  }
+  .final-verdict .v {
+    font-size: 28px; font-weight: 700;
+    color: var(--chair); margin: 6px 0 8px;
+  }
+
+  footer {
+    margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 12px; line-height: 1.5;
+  }
+
+  @media (max-width: 720px) {
+    .turn { gap: 8px; }
+    .avatar { width: 36px; height: 36px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="top">
+  <div class="ticker">NBIS · Nasdaq · AI Infrastructure / Neocloud</div>
+  <h1>NBIS — v5: 信息扩展后的灵魂第三轮判断</h1>
+  <div class="meta">
+    <span>简报日期: 2026-05-04</span>
+    <span>主审: 段永平</span>
+    <span>vs v4 增量: 11/11 视频通读 + 3 次深度 web 调研</span>
+    <span>版本: v5</span>
+  </div>
+</header>
+
+<!-- ============== SOURCE WARNING ============== -->
+<div class="source-warning">
+  <div class="label">⚠ 重要边界声明</div>
+  <h4>这些信息<em>仍然</em>是别人收集的, 不是 NBIS 自己跟你说的话</h4>
+  <div class="body">
+    <p>
+      v5 灵魂们看到的新信息分三个等级 (按你的
+      <code>sources/source_policy.md</code>):
+    </p>
+    <ul>
+      <li><strong>B 级 (高质量二手)</strong>: NBIS Q3 2025 财报数据 — 通过
+      Investing.com / MarketScreener / NBIS 官方新闻稿 (新闻稿是 NBIS
+      自己, 但<em>我没有读 SEC 8-K 全文或听原始电话会议</em>)。Moscow
+      Times Volozh 采访 — 记者整理的引用, 有一句直接原话, 其余转述。</li>
+      <li><strong>C 级 (二次解读)</strong>: TradesMax 11 个视频 (博主
+      口径), Substack 分析文章 (个人投资者), Glassdoor 雇员评分 (匿名
+      自报告), Motley Fool / Seeking Alpha 评论文章。</li>
+      <li><strong>未读</strong>: NBIS 20-F / 10-Q / 8-K 全文; 微软 / Meta
+      合同条款; SEC EDGAR Yandex 拆分文件; HSBC 减持 CRWV 研报全文; 任
+      何完整买方机构研报。</li>
+    </ul>
+    <p>
+      所以即使现在灵魂们的"完整度"上升到 ~65-70%, 仍然是<em>"投资人和
+      媒体筛选过的事实集合"</em>, 不是 NBIS 公司本人通过 IR 文件向你说
+      的话。Li Lu 标准下集中头寸所需的 70-80% 完整度, 严格说还要求 8-K
+      / 20-F 一手验证 — 我们差最后一公里。
+    </p>
+  </div>
+</div>
+
+<!-- ============== SETUP TURN ============== -->
+<div class="turn user-turn">
+  <div class="avatar user">你</div>
+  <div class="bubble">
+    <div class="speaker">
+      <span class="name">你 (用户)</span>
+      <span class="activity user">USER</span>
+    </div>
+    <div class="body">
+      <p>
+        前一版 panel 信息不够。我们补一下 — 但记得让灵魂们知道, 这只是
+        <em>其他投资人收集的信息</em>, 不是 NBIS 自己说的话。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============== CHAIR FRAMING ============== -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 (主审)</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        好。我们现在补了 4 类新信息:
+      </p>
+      <ol>
+        <li>剩下 7 个 NBIS 视频通读 (B/C 级)</li>
+        <li>NBIS Q3 2025 实际财报数据 (B 级, 通过分析师中介)</li>
+        <li>Volozh Moscow Times 采访片段 (B 级, 记者整理)</li>
+        <li>工程文化 / Glassdoor / 媒体评论 (C 级)</li>
+      </ol>
+      <p>
+        我把<em>每条新事实</em>挂上来源等级, 灵魂们必须基于这些<em>已知
+        是二手</em>的事实重新表态 — 而不是当作 ground truth。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============== NEW FACTS BLOCKS ============== -->
+<h2>新事实清单</h2>
+
+<!-- FACT BLOCK 1: Q3 2025 ACTUAL FINANCIALS -->
+<div class="new-facts">
+  <div class="label">新事实 #1 · Q3 2025 实际财报数据</div>
+  <h4>NBIS 真实财务表现 <span class="src-tier">B 级</span></h4>
+  <ul>
+    <li><strong>营收 Q3 2025: $146M</strong> (同比 +355%, 环比 +39%)</li>
+    <li><strong>核心 infra 业务 ARR: $551M</strong> (期末 9/30) — 从
+    Q1 $200M 半年增长 +175%</li>
+    <li><strong>调整后 EBITDA 利润率: ~19%</strong> (核心 infrastructure
+    业务) — <em>这是关键里程碑</em>, 上一版 v4 的 STARTER 触发条件之一</li>
+    <li>核心 infra 占总营收 ~90%, 同比 +400%</li>
+    <li><strong>2025 全年营收指引: $500-550M</strong> — 注意这<em>低于</em>
+    TradesMax 视频里说的 $700M (视频高估了 ~30%)</li>
+    <li><strong>2026 年底 ARR 目标: $7-9 Billion</strong> — 12-15x 当前
+    ARR 的激进增长, Sea Change 派灵魂会重点关注此预期实现概率</li>
+    <li><strong>Meta $3B 五年期合同确认</strong> — Q3 公告</li>
+    <li>2025 全年 capex 指引: <strong>$5 Billion</strong> (vs 视频里说
+    $1B+, 实际是 5 倍)</li>
+    <li>已发行 $1 Billion 可转债 (用于英国新数据中心) — 这是<em>实际
+    稀释信号</em></li>
+  </ul>
+  <div class="source-list">
+    Sources:
+    <a href="https://nebius.com/newsroom/nebius-reports-third-quarter-2025-financial-results">NBIS IR — Q3 2025 Press Release</a> ·
+    <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-nebius-group-reports-strong-q3-2025-growth-stock-rises-93CH-4349271">Investing.com Q3 Earnings Call Transcript</a> ·
+    <a href="https://stockanalysis.com/stocks/nbis/revenue/">StockAnalysis Revenue Series</a>
+  </div>
+</div>
+
+<!-- FACT BLOCK 2: STOCK PRICE TRAJECTORY -->
+<div class="new-facts">
+  <div class="label">新事实 #2 · 股价完整轨迹 (2024-12 至 2026-04)</div>
+  <h4>真实的 boom-bust-boom 循环 <span class="src-tier">B/C 级</span></h4>
+  <ul>
+    <li>2024-12-06: <strong>$28</strong> (TradesMax 首推)</li>
+    <li>2025-07-18: <strong>$49</strong> (二推, 二推后暴涨)</li>
+    <li>2025-08-07: <strong>$70</strong> (单日 +26%)</li>
+    <li>2025-09-12: ~$95 (Microsoft 合同公告前)</li>
+    <li>2025-09-12: <strong>$114</strong> (Microsoft 合同公告 → 单日 +70%)</li>
+    <li>2025-09 末: <strong>~$141 (峰值)</strong> (5 天 +22%)</li>
+    <li>2026-01-15: <strong>~$80</strong> (从峰值<em>回调 -43%</em>) —
+    TradesMax 当时给"合理入场价 $80, 目标 $200"</li>
+    <li>2026-04-17 视频时: <strong>~$152</strong> (从 $80 反弹 +90%)</li>
+  </ul>
+  <p>
+    <strong>这是反身性 boom-bust-boom 实战记录。</strong> Marks 的"等
+    失望买点"在 2025-09 → 2026-01 实际有 -43% 窗口。Soros 的位相变化
+    框架被实证一次反转再反弹。
+  </p>
+</div>
+
+<!-- FACT BLOCK 3: VOLOZH QUOTES -->
+<div class="new-facts">
+  <div class="label">新事实 #3 · Volozh 真实引用 (Moscow Times 2025-12)</div>
+  <h4>本人原话 (有限) <span class="src-tier">B 级</span></h4>
+  <blockquote>
+    "Russia's invasion of Ukraine is barbaric, and I am categorically
+    against it" — Volozh, 2023-08 (provided to The Bell)
+  </blockquote>
+  <blockquote>
+    "There were reasons to stay silent during this long process" —
+    Volozh, 2023-08, 解释为何 533 天后才发声
+  </blockquote>
+  <blockquote>
+    "I've never been so excited about the future" — Volozh, 2024
+  </blockquote>
+  <blockquote>
+    AI infrastructure 比喻为<em>"railways in the industrial revolution"</em>
+    — Volozh, 描述 Nebius 定位
+  </blockquote>
+  <p>
+    <strong>注意:</strong> Volozh 拒绝了 Moscow Times 这次采访请求 —
+    引用都是从过往陈述整理。<em>本人主动公开发言频率低</em>, 这点对
+    Buffett "管理层 candor" 评估有意义。Esther Dyson (前 Yandex 董事)
+    曾短暂在 Nebius 董事会; 其他董事会信息文章未披露。
+  </p>
+</div>
+
+<!-- FACT BLOCK 4: ENGINEERING CULTURE -->
+<div class="new-facts">
+  <div class="label">新事实 #4 · 工程团队 + 文化数据</div>
+  <h4>Yandex 血统的具体画像 <span class="src-tier">C 级</span></h4>
+  <ul>
+    <li><strong>500+ 工程师从 Yandex 继承</strong>, 平均 10+ 年云基建
+    经验。专长: 数据中心运营、分布式系统、AI 工作负载。</li>
+    <li>Yandex 被称为"Google of Russia"。</li>
+    <li>Glassdoor (46 reviews): 80% 推荐, 总分 4.2/5, work-life 3.2,
+    culture 3.7, career opportunities 4.1。</li>
+    <li>媒体评论提到的<em>风险</em>: "随着公司增长, 文化转移风险, 新
+    入职员工有时品质参差"。</li>
+    <li>白手套 (white-glove) AI 创业公司支持 — 销售模式偏直接服务。</li>
+    <li>2024 末员工 1,371; 2026-02 招聘开放 355 个岗位 (~25% 扩张)。</li>
+  </ul>
+  <p>
+    <strong>对 Fisher scuttlebutt 的意义:</strong> 用户面试经历 + 这
+    四类数据的三角验证 = scuttlebutt 第 1 类 (候选人) + 第 4 类 (前/在
+    职员工) 部分填补。仍缺第 2 类 (供应商), 第 3 类 (竞品提案) 和第 5 类
+    (开发者社区原始评价)。
+  </p>
+</div>
+
+<!-- FACT BLOCK 5: OPERATIONAL DATA -->
+<div class="new-facts">
+  <div class="label">新事实 #5 · 运营 / 技术指标</div>
+  <h4>能效 + 性能数据 <span class="src-tier">C 级</span></h4>
+  <ul>
+    <li><strong>PUE 1.10</strong> (芬兰数据中心) vs 行业平均 <strong>1.58</strong>
+    — 单位算力电力成本显著低</li>
+    <li>NBIS AI Cloud 3.1 部署 GB200 NVL72: 实际性能比此前行业最高水平
+    再 +14.2%</li>
+    <li>Token Factory 平台 (推理): 早期客户 Prosus 用它替代 GPT-4 成本
+    降 26x (口径来自视频转述, 待验证)</li>
+    <li>2026 年底签约电力目标: 1 GW+ (堪萨斯城 + 新泽西"表后"发电避开
+    电网排队 4 年)</li>
+    <li>CoreWeave 对比: CRWV ~10x NBIS 规模, 但<em>债务 $100亿+ 利率
+    9-10%</em>; NBIS 资产负债表相对稳健</li>
+  </ul>
+</div>
+
+<!-- ============== SOULS REACT ============== -->
+<h2>灵魂们消化新信息</h2>
+
+<!-- BUFFETT -->
+<div class="turn">
+  <div class="avatar primary">Bu</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Warren Buffett</span>
+      <span class="role">Berkshire Hathaway</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        三件事我重新审视。
+      </p>
+      <p>
+        <strong>调整后 EBITDA 19%</strong> — 这是<em>积极信号但不是
+        owner earnings 转正</em>。调整后 EBITDA 把 stock-based comp、
+        impairments、其他"一次性"项目剥离, 而真正的 owner earnings 还
+        要扣<em>maintenance capex</em>。当 capex 是 $5B 而 D&A 还在追
+        赶时, GAAP 净利润和 FCF 仍然深度为负。19% 调整后 EBITDA 在 GPU
+        投资周期看起来漂亮, 但<em>不是 Charlie 和我衡量生意的指标</em>。
+      </p>
+      <p>
+        <strong>2026 ARR 目标 $7-9B</strong> — 12-15x 当前 ARR。我做生意
+        50 年, 见过很多公司给"激进目标"。激进目标本身不是问题, 问题是
+        <em>未达成时管理层怎么处理</em>。NBIS 没有足够的"承诺-兑现-复盘"
+        历史让我评估这个。
+      </p>
+      <p>
+        <strong>Volozh 引用</strong> — "我从未对未来如此兴奋" 这种话所有
+        CEO 都会说。Charlie 说过, 听 CEO 讲话不如看他们做什么。Volozh
+        做了三件实事: 反战声明 (有代价), 把 $30B 卖成 $5.4B (放弃个人
+        财富), 在 GPU 上烧 $5B (赌增长)。前两件加分, 第三件中性 (取决于
+        最终回报)。
+      </p>
+      <p class="verdict-shift">
+        <strong>立场:</strong> 拒绝 → 拒绝 (不变)。owner earnings 仍未
+        转正, 即使调整后 EBITDA 漂亮。但管理层 candor 维度<em>得分上升</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Howard Marks</span>
+      <span class="role">Oaktree</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>股价 $141 → $80 → $152 这个轨迹值得专门讲</strong>。
+      </p>
+      <p>
+        2025-09 末峰值 $141, 然后回调到 2026-01 的 $80 — 这是 -43%
+        的窗口, 持续约 4 个月。我之前说"等失望买点", 这就是失望买点。
+        如果有人在 $80 入场 (2026-01 TradesMax 推介价), 现在 $152 是
+        +90% 的回报。
+      </p>
+      <p>
+        但我现在看到的是<em>第二轮 boom 阶段</em>。市场已经走完了一个
+        完整的 boom-bust-boom 循环, 而我们站在第二轮 boom 的中段。问题
+        是 — <em>下一次失望会在哪里</em>?
+      </p>
+      <p>
+        我看到几个可能的破口:
+      </p>
+      <ul>
+        <li>2026 ARR $7-9B 目标如果 Q1/Q2 数据线性外推不达 → 估值压缩 30-40%</li>
+        <li>$5B capex 引发的稀释 — 已经发了 $1B 可转债, 剩下 $4B 怎么补?
+        股权增发 5-10% 是大概率事件</li>
+        <li>Hyperscaler ASIC 量产实测低于 70% NVIDIA 性能 — 利好 NBIS;
+        若高于 90% — 利空</li>
+      </ul>
+      <p>
+        现在不是"等失望", 是"<em>等下一次失望</em>"。$152 不是入场点, 是
+        监控点。
+      </p>
+      <p class="verdict-shift">
+        <strong>立场:</strong> 观望 → 观望 (不变)。但具体监控指标更明确了。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- TERRY SMITH -->
+<div class="turn">
+  <div class="avatar primary">TS</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Terry Smith</span>
+      <span class="role">Fundsmith</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        $5B capex 这个数字让我立场更坚定 — <em>这门生意的资本密度
+        不可救药</em>。
+      </p>
+      <p>
+        简单算: 2025 营收 $500-550M (实际指引), capex $5B。每挣 $1
+        营收要烧 $9-10 capex。即使按 2026 ARR $7-9B 的激进目标实现,
+        capex 也要保持 $5-7B/年来扩张, capex/营收比稳态可能在 0.7-1.0。
+      </p>
+      <p>
+        Fundsmith 的 quality compounder 上限通常是 capex/营收 0.05-0.15。
+        NBIS 是 5-10 倍我们的舒适区。
+      </p>
+      <p>
+        Volozh 的工程能力我承认是世界级 (500+ ex-Yandex 工程师, PUE
+        1.10, GB200 性能 +14.2%) — 但<em>世界级团队在重资本生意里
+        努力, 也只是跑赢同行重资本生意, 不会变成 quality compounder</em>。
+        Cisco 1999 的工程团队也是世界级。
+      </p>
+      <p class="verdict-shift">
+        <strong>立场:</strong> 拒绝 → 拒绝 (强化)。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Seth Klarman</span>
+      <span class="role">Baupost</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        我修订下行估算第二次。
+      </p>
+      <p>
+        新已知:
+      </p>
+      <ul>
+        <li>EBITDA 19% 调整后 = 部分财务里程碑达成</li>
+        <li>Meta $3B 加入 = 双锚客户</li>
+        <li>但 capex $5B + 已发 $1B 可转债 = 稀释路径明确</li>
+        <li>2026 ARR $7-9B 目标的<em>未达成</em>风险被低估</li>
+      </ul>
+      <p>
+        修订后下行场景:
+      </p>
+      <ul>
+        <li>2026 ARR 目标未达成 (实际 $4-5B 而非 $7-9B): -40% ~ -50%</li>
+        <li>第二次稀释 15-20% + 估值倍数压缩: -10% ~ -20% 叠加</li>
+        <li>客户跳船 (单一不再致命, 但双跳大幅减码): -25% ~ -35%</li>
+      </ul>
+      <p>
+        修订后叠加下行: <strong>-55% ~ -70%</strong> (从 v4 的 -65%
+        ~ -75% 改善)。
+      </p>
+      <p>
+        关键变化: <em>因为 EBITDA 转正, NBIS 不再有"立即破产"风险</em>
+        — 但我管的是回报不是生死。-55% 仍然是巨大下行。
+      </p>
+      <p>
+        当前股价 $152 对我意味着: $80 是失望价 (Marks 的窗口), 现在
+        我们错过了。等下一次失望。
+      </p>
+      <p class="verdict-shift">
+        <strong>立场:</strong> 拒绝 → 观望 (从拒绝降到观望) — 因为
+        EBITDA 转正消除了"立即生存风险"维度。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- DUAN YONGPING (CHAIR) -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 (主审)</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Volozh 的"railways in the industrial revolution"比喻让我想起
+        Buffett 1999 年的"<em>过度投资但社会受益</em>"分析 — 互联网
+        基建的钱大部分没回到投资者手里, 但社会从光纤受益。
+      </p>
+      <p>
+        Volozh 自己用这个比喻意味着两件事:
+      </p>
+      <ol>
+        <li>他<em>承认</em>这是基础设施生意, 不是软件 quality 生意 —
+        这是诚实的 framing。</li>
+        <li>但铁路投资者历史回报很差 — 19 世纪铁路兴衰, 大多数早期
+        投资者亏钱。</li>
+      </ol>
+      <p>
+        所以他的比喻<em>本身就暗示了风险</em>。这种坦诚我加分, 但
+        不改变我对生意的判断。
+      </p>
+      <p>
+        重新跑我的"100% 私有化"测试:
+      </p>
+      <ul>
+        <li>不能确信微软续约 — Meta 加入<em>降低</em>但不消除。改善 +1</li>
+        <li>不能确信 GPU 资产 5 年后值多少 — 不变</li>
+        <li>不能确信欧美监管不会出招 — Volozh 放弃国籍 + 欧盟解除制裁
+        <em>显著缓解</em>。改善 +2</li>
+        <li>不能确信 NVIDIA 持续偏爱 — 24/7 Wall St 报道说 NVDA $2B
+        额外投资 NBIS (待 8-K 验证) → <em>更</em>稳固但仍是 NVDA 的护城河
+        不是 NBIS 的</li>
+      </ul>
+      <p>
+        4 项里 2 项有改善, 2 项不变。仍然是<em>不该 100% 买下</em>,
+        但<em>买不下"的程度</em>从"坚定不"变成"<em>谨慎不</em>"。
+      </p>
+      <p>
+        我个人仍然 0% — 因为 5-10 年生意可预测性仍低, 在我的能力圈外。
+        但如果有人:
+      </p>
+      <ul>
+        <li>真懂 GPU 周期 + AI capex (我不懂)</li>
+        <li>愿意承受 -50% 下行 + 必稀释</li>
+        <li>把仓位限制到 1-3% (而不是 core)</li>
+      </ul>
+      <p>
+        — 那么 STARTER 1-3% 仓位是<em>合理的赌注</em>, 不再是<em>投机</em>。
+        这是 v5 vs v4 的关键变化。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============== UPDATED MATRIX ============== -->
+<h2>立场矩阵 v4 → v5</h2>
+
+<table class="matrix-shift">
+  <thead>
+    <tr>
+      <th>灵魂</th>
+      <th>权重</th>
+      <th>v4</th>
+      <th>v5</th>
+      <th>关键触发</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>段永平 (主审)</td>
+      <td>主 ×3</td>
+      <td><span class="pill chair">WATCH</span></td>
+      <td class="unchanged"><span class="pill chair">WATCH (个人) / STARTER 1-3% 可接受 (panel)</span> <span class="arrow up">↑</span></td>
+      <td>从"WATCH 不开仓"明确为"个人 WATCH; 接受 STARTER 1-3%"</td>
+    </tr>
+    <tr>
+      <td>Howard Marks</td>
+      <td>主 ×3</td>
+      <td><span class="pill watch">观望</span></td>
+      <td class="unchanged"><span class="pill watch">观望</span> <span class="arrow flat">→</span></td>
+      <td>$141 → $80 → $152 印证反身性, 现在等下一次失望</td>
+    </tr>
+    <tr>
+      <td>Terry Smith</td>
+      <td>主 ×3</td>
+      <td><span class="pill reject">拒绝</span></td>
+      <td class="shift-down"><span class="pill reject">拒绝 (强化)</span> <span class="arrow down">↓</span></td>
+      <td>$5B capex 数字让 Fundsmith 三关检验更不及格</td>
+    </tr>
+    <tr>
+      <td>Seth Klarman</td>
+      <td>主 ×3</td>
+      <td><span class="pill reject">拒绝</span></td>
+      <td class="shift-up"><span class="pill watch">观望</span> <span class="arrow up">↑</span></td>
+      <td>EBITDA 19% 转正消除"立即生存风险", 下行从 -75% 改善到 -55%</td>
+    </tr>
+    <tr>
+      <td>Warren Buffett</td>
+      <td>主 ×3</td>
+      <td><span class="pill reject">拒绝</span></td>
+      <td class="unchanged"><span class="pill reject">拒绝</span> <span class="arrow flat">→</span></td>
+      <td>owner earnings 仍未转正; 管理层 candor 加分</td>
+    </tr>
+    <tr>
+      <td>Joel Greenblatt</td>
+      <td>主 ×3</td>
+      <td><span class="pill skip">跳过</span></td>
+      <td class="unchanged"><span class="pill skip">跳过</span> <span class="arrow flat">→</span></td>
+      <td>ROIC 仍负 (虽然在改善路径上)</td>
+    </tr>
+    <tr>
+      <td>Ray Dalio</td>
+      <td>次 ×2</td>
+      <td><span class="pill watch">观望</span></td>
+      <td class="unchanged"><span class="pill watch">观望</span> <span class="arrow flat">→</span></td>
+      <td>宏观 regime 暴露不变</td>
+    </tr>
+    <tr>
+      <td>Li Lu</td>
+      <td>次 ×2</td>
+      <td><span class="pill info-gap">信息部分填补 (50-55%)</span></td>
+      <td class="shift-up"><span class="pill watch">完整度上升 (65-70%)</span> <span class="arrow up">↑</span></td>
+      <td>Q3 财报 + Volozh 引用 + 工程画像填补 15 个百分点</td>
+    </tr>
+    <tr>
+      <td>George Soros</td>
+      <td>参 ×1</td>
+      <td><span class="pill watch">框架观望</span></td>
+      <td class="unchanged"><span class="pill watch">框架观望</span> <span class="arrow flat">→</span></td>
+      <td>boom-bust-boom 已实证一次, 当前在第二轮 boom 中段</td>
+    </tr>
+    <tr>
+      <td>Peter Lynch</td>
+      <td>参 ×1</td>
+      <td><span class="pill watch">框架观望</span></td>
+      <td class="unchanged"><span class="pill watch">框架观望</span> <span class="arrow flat">→</span></td>
+      <td>fast grower 故事仍清晰, 但 $5B capex 是新红旗</td>
+    </tr>
+    <tr>
+      <td>Charlie Munger</td>
+      <td>已逝 ×0.5</td>
+      <td><span class="pill watch">框架观望</span></td>
+      <td class="unchanged"><span class="pill watch">框架观望</span> <span class="arrow flat">→</span></td>
+      <td>三大失败路径仍在, 但客户跳船风险因双锚客户减弱</td>
+    </tr>
+    <tr>
+      <td>Benjamin Graham</td>
+      <td>已逝 ×0.5</td>
+      <td><span class="pill reject">框架拒绝</span></td>
+      <td class="shift-down"><span class="pill reject">框架拒绝 (强化)</span> <span class="arrow down">↓</span></td>
+      <td>$5B capex 让"必稀释"更确定; 已发 $1B 可转债是首环验证</td>
+    </tr>
+    <tr>
+      <td>Philip Fisher</td>
+      <td>已逝 ×0.5</td>
+      <td><span class="pill info-gap">条件性观望</span></td>
+      <td class="shift-up"><span class="pill watch">观望</span> <span class="arrow up">↑</span></td>
+      <td>5 类访谈中 2 类填补 (候选人 + 部分员工)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>加权综合 (v4 → v5)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>立场</th>
+      <th>v4</th>
+      <th>v5</th>
+      <th>变化</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>买入 / Starter</td>
+      <td>0</td>
+      <td>0 (硬决策仍不买入)</td>
+      <td><span class="arrow flat">→</span> 但段永平接受 1-3% 仓位</td>
+    </tr>
+    <tr>
+      <td>观望 / WATCH</td>
+      <td>10.5</td>
+      <td>15.5</td>
+      <td><span class="arrow up">↑</span> +5 (Klarman + Fisher 升级)</td>
+    </tr>
+    <tr>
+      <td>拒绝 / REJECT</td>
+      <td>9.5</td>
+      <td>9.5</td>
+      <td><span class="arrow flat">→</span> 不变 (Klarman 离开, Smith 强化)</td>
+    </tr>
+    <tr>
+      <td>信息不足 / 跳过</td>
+      <td>5.5</td>
+      <td>5.5</td>
+      <td><span class="arrow flat">→</span> 但 Li Lu 完整度上升, Greenblatt 仍跳过</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============== FINAL VERDICT ============== -->
+<div class="final-verdict">
+  <div class="heading">FINAL VERDICT v5</div>
+  <div class="v">WATCH 升级到 STARTER (1-3%) 边界</div>
+  <p>
+    <strong>多个 v4 触发条件已经达成:</strong>
+  </p>
+  <ul>
+    <li>✅ EBITDA 转正 (调整后 19%)</li>
+    <li>✅ Meta $3B 第二锚客户 (5 年期)</li>
+    <li>✅ Volozh 创始人调研 + 反战 + 放弃国籍 = 治理风险显著缓解</li>
+    <li>✅ 反身性位相变化已发生 (-43% 回调窗口存在过, 现在又反弹)</li>
+    <li>✅ Li Lu 信息完整度从 30-40% 升到 65-70%</li>
+    <li>⚠ 仍差: SEC 8-K / 20-F 一手验证 (差最后 5-10%)</li>
+  </ul>
+
+  <h3 style="color: var(--chair);">主审 (段永平) 综合判断</h3>
+  <p>
+    <strong>个人持仓: 仍 0%</strong> — 我自己仍说不清 5-10 年。这门
+    生意还是不在我的能力圈。
+  </p>
+  <p>
+    <strong>Panel 综合给"懂这门生意 + 能承受 -50% 下行"的投资者</strong>:
+    1-3% STARTER 仓位是<em>可接受</em>的 — 不是<em>建议</em>, 是<em>不
+    反对</em>。
+  </p>
+  <p>
+    <strong>关键差别:</strong> v4 是"WATCH 不开仓"; v5 是"WATCH 不开仓
+    (主审本人), 但接受其他人 STARTER (panel 综合)"。这是因为新信息证明
+    NBIS 已经从"投机"过渡到了"赌注 (calibrated bet)"。
+  </p>
+  <p>
+    <strong>当前价位 ($152) 不是入场点</strong> — Marks 的"等下一次
+    失望"仍然适用。理想入场区:
+  </p>
+  <ul>
+    <li>$100-110 (-30% 从当前): 进 1% starter</li>
+    <li>$80-90 (-40% 从当前): 进 2-3% starter (重复 2026-01 窗口)</li>
+    <li>&lt; $70: 重新评估是否升级到 core 5%</li>
+  </ul>
+  <p>
+    <strong>三个监控触发的"下次失望"事件:</strong>
+  </p>
+  <ol>
+    <li>Q1/Q2 2026 ARR 不及 $7-9B 目标线性外推 (大概率发生 — 12-15x
+    增长基本不可能完美)</li>
+    <li>下一轮股权增发 5-10% 稀释 (12 个月内大概率发生)</li>
+    <li>Hyperscaler ASIC 量产实测数据公开 (3-12 个月内必发生)</li>
+  </ol>
+</div>
+
+<footer>
+  <p>
+    本简报 v5 在 v4 基础上补充 11/11 NBIS 视频通读 + Q3 2025 实际财报
+    数据 + Volozh Moscow Times 采访摘录 + 工程团队 / 文化数据。所有
+    新增信息按 source_policy.md 标注等级 (B/C 级二手 + 一段未读一手
+    8-K)。
+  </p>
+  <p>
+    <strong>边界提醒:</strong> 灵魂们当前看到的仍是<em>其他投资人 / 媒体
+    / 用户筛选过的事实集合</em>, 不是 NBIS 公司本人通过完整 IR 文件向
+    你说的话。Li Lu 标准下集中头寸所需的 70-80% 完整度差最后一公里。
+  </p>
+  <p>
+    所有 agent 均为基于公开框架的"分析视角", 不代表本人。本简报<strong>
+    不构成投资建议</strong>。
+  </p>
+  <p>
+    生成: 2026-05-04 · 版本: v5 (信息扩展) · 路径: companies/nbis.html
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
