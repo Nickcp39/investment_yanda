@@ -1,6 +1,6 @@
 # 当前进度 (Current Process)
 
-最后更新: 2026-05-05
+最后更新: 2026-05-06
 
 ## 这份文档的用途
 
@@ -21,7 +21,44 @@ push 时刷新一次，避免回头时丢失上下文。
 
 ---
 
-## 最近一轮工作 (2026-05-05)
+## 最近一轮工作 (2026-05-06)
+
+### 测试结论：ai-hedge-fund 全部 agent 不采纳
+
+跑了 ai-hedge-fund 仓库里的 investor personas (Munger / Cathie Wood /
+Damodaran 等) 之后,结论:**水平整体不如我们自训的灵魂卡 +
+buffett-perspective 的组合**。
+
+观察到的问题:
+
+- 输出形态是 trading signal (buy/sell/hold + confidence),**不是
+  investment memo lens** — 用途不匹配
+- prompt 偏短,一手原文引用少,内部矛盾声明基本没有
+- 框架边界声明缺失,"灵魂感"弱,不像本人风格
+- 5/4 audit 里"fork ai-hedge-fund Munger / Cathie Wood / Damodaran"
+  的 P1 计划**撤销**
+
+### 影响:外部 Skill 采纳通道收窄
+
+之前 hybrid_adoption_plan 是 **Adopt > Fork > Build** 三档。今天测试
+之后:
+
+- **Adopt 档**:目前只有 buffett-perspective 一个真正过关
+- **Fork 档**:基本作废 (ai-hedge-fund 是该领域 43k 星的标杆,它都不行,
+  其他 fork 来源希望也低)
+- **Build 档**:回到原计划——Marks / Klarman / 段永平 / Li Lu / Cathie Wood
+  / Damodaran 全部走自建
+
+也就是说:**hybrid plan 实际上退化成了 "Adopt(Buffett) + Build(其他全部)"
+的两档**。Fork 这一档先放进 backlog,除非将来有新的高质量候选出现。
+
+### 无代码改动
+
+今天纯测试 + 决策修订,没动文件 (除了本文档)。
+
+---
+
+## 上一轮工作 (2026-05-05)
 
 ### 已落地
 
@@ -92,7 +129,8 @@ push 时刷新一次，避免回头时丢失上下文。
 1. **跑 buffett-perspective 全 benchmark** — `benchmark_cases.jsonl` 至少 5 个
    不同类型案例，rubric 5 项打分，过 75 分门槛即正式采纳
 2. **跑 expert-munger 全 benchmark** — 同上
-3. **Howard Marks 候选评估** — 找现成 Skill 或确认 Build 路径
+3. **Howard Marks Build 路径启动** — 收集 Oaktree memo 全集,自建灵魂卡
+   (5/6 测试后已确认 Fork 档不可行,直接 Build)
 4. **段永平雪球 export pipeline** — 中文专属，没人做过，必须自建
 5. **将本次会话的两个验证记录化** — 把 NBIS Munger / Apple Buffett /
    Apple-sale candor 测试沉淀为 `results/` 下独立 sanity check 文件
