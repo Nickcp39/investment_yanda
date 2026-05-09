@@ -33,3 +33,7 @@ sources/channels/*/audio/
 sources/channels/*/transcripts/
 sources/channels/*/asr_tests/
 sources/channels/*/logs/
+sources/channels/*/caption_scan/
+sources/channels/*/polish_qc/
+sources/channels/*/polished_transcripts/
+sources/channels/*/runs/

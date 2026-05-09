@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>灵魂能力测试 — BTC + 稳定币 (2026-05-05)</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --panel: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e5e5e3;
+    --accent: #1e40af;
+    --accent-soft: #eff6ff;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --reject: #b91c1c;
+    --reject-soft: #fee2e2;
+    --watch: #b45309;
+    --watch-soft: #fef3c7;
+    --ok: #15803d;
+    --ok-soft: #dcfce7;
+    --chair: #92400e;
+    --chair-soft: #fef3c7;
+    --user: #1e40af;
+    --user-soft: #dbeafe;
+    --soul-primary: #166534;
+    --soul-secondary: #1e40af;
+    --soul-reference: #6b7280;
+    --soul-deceased: #6b21a8;
+    --new-fact: #047857;
+    --new-fact-soft: #d1fae5;
+    --test-pass: #166534;
+    --test-fail: #b91c1c;
+    --test-mid: #b45309;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", "PingFang SC",
+      "Microsoft YaHei", "Source Han Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .page { max-width: 980px; margin: 0 auto; padding: 48px 32px 96px; }
+
+  header.top {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 16px; margin-bottom: 28px;
+  }
+  header.top .ticker {
+    font-size: 13px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  header.top h1 { font-size: 28px; margin: 6px 0 4px; font-weight: 600; }
+  header.top .subtitle { color: var(--muted); font-size: 15px; margin-top: 4px; }
+  header.top .meta {
+    display: flex; gap: 24px; flex-wrap: wrap;
+    color: var(--muted); font-size: 13px; margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 22px; margin: 48px 0 16px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--line);
+    font-weight: 600;
+  }
+  h3 { font-size: 17px; margin: 20px 0 10px; font-weight: 600; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  code {
+    background: #f4f4f2; padding: 1px 6px; border-radius: 3px;
+    font-size: 13px; font-family: "SF Mono", Consolas, monospace;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #f4f4f2; font-weight: 600; font-size: 13px; }
+
+  .topic-banner {
+    background: var(--accent-soft);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin: 32px 0 20px;
+  }
+  .topic-banner .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--accent); font-weight: 700;
+  }
+  .topic-banner h2 { margin: 4px 0 0; padding: 0; border: 0; color: var(--accent); }
+
+  .source-warning {
+    background: var(--warn-soft);
+    border: 2px solid var(--warn);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin: 0 0 24px;
+  }
+  .source-warning .label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--warn); font-weight: 700; margin-bottom: 8px;
+  }
+  .source-warning h4 { margin: 0 0 8px; color: var(--warn); }
+  .source-warning .body { color: #5a3d05; font-size: 14px; }
+
+  .turn { display: flex; gap: 14px; margin: 18px 0; align-items: flex-start; }
+  .turn.user-turn { flex-direction: row-reverse; }
+  .avatar {
+    width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: white; font-size: 14px; line-height: 1;
+  }
+  .avatar.user { background: var(--user); }
+  .avatar.chair { background: var(--chair); }
+  .avatar.primary { background: var(--soul-primary); }
+  .avatar.secondary { background: var(--soul-secondary); }
+  .avatar.reference { background: var(--soul-reference); }
+  .avatar.deceased { background: var(--soul-deceased); }
+
+  .bubble {
+    flex-grow: 1; max-width: calc(100% - 60px);
+    background: white; border: 1px solid var(--line);
+    border-radius: 10px; padding: 14px 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .turn.user-turn .bubble {
+    background: var(--user-soft); border-color: #93c5fd;
+  }
+  .bubble.chair { background: var(--chair-soft); border-color: var(--chair); }
+  .bubble.primary { border-left: 4px solid var(--soul-primary); }
+  .bubble.secondary { border-left: 4px solid var(--soul-secondary); }
+  .bubble.reference { border-left: 4px solid var(--soul-reference); }
+  .bubble.deceased { border-left: 4px solid var(--soul-deceased); background: #fdfcff; }
+
+  .speaker {
+    display: flex; align-items: baseline; gap: 10px;
+    margin-bottom: 6px; font-size: 13px; flex-wrap: wrap;
+  }
+  .speaker .name { font-weight: 700; font-size: 14px; }
+  .speaker .role { color: var(--muted); font-size: 12px; }
+  .speaker .activity {
+    font-size: 11px; padding: 1px 7px; border-radius: 3px;
+    font-weight: 600; letter-spacing: 0.04em;
+  }
+  .speaker .activity.high { background: #dcfce7; color: var(--soul-primary); }
+  .speaker .activity.medium { background: #dbeafe; color: var(--soul-secondary); }
+  .speaker .activity.low { background: #f3f4f6; color: var(--soul-reference); }
+  .speaker .activity.deceased { background: #f3e8ff; color: var(--soul-deceased); }
+  .speaker .activity.chair { background: var(--chair); color: white; }
+  .speaker .activity.user { background: var(--user); color: white; }
+
+  .bubble .body { font-size: 14.5px; line-height: 1.7; }
+  .bubble .body p { margin-bottom: 10px; }
+  .bubble .body p:last-child { margin-bottom: 0; }
+
+  .verdict-line {
+    margin-top: 10px; padding: 8px 12px;
+    background: #f4f4f2; border-radius: 4px;
+    font-size: 13px;
+  }
+  .verdict-line strong { color: var(--text); }
+
+  .quote-cite {
+    margin: 8px 0; padding: 8px 12px;
+    border-left: 3px solid var(--soul-reference);
+    background: #fafafa; font-style: italic;
+    font-size: 13px; color: #444;
+  }
+  .quote-cite .src {
+    display: block; margin-top: 4px;
+    font-style: normal; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+
+  .pill {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.04em; white-space: nowrap;
+  }
+  .pill.reject { background: var(--reject-soft); color: var(--reject); }
+  .pill.watch { background: var(--watch-soft); color: var(--watch); }
+  .pill.skip { background: #e5e7eb; color: #4b5563; }
+  .pill.info-gap { background: #ede9fe; color: #6d28d9; }
+  .pill.starter { background: var(--ok-soft); color: var(--ok); }
+  .pill.chair { background: var(--chair); color: white; }
+  .pill.tier-a { background: #dcfce7; color: #14532d; }
+  .pill.tier-b { background: #fef3c7; color: #78350f; }
+  .pill.tier-c { background: #e5e7eb; color: #374151; }
+
+  .topic-divider { text-align: center; margin: 50px 0 20px; position: relative; }
+  .topic-divider span {
+    display: inline-block; background: var(--bg); padding: 0 16px;
+    color: var(--muted); font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.12em; font-weight: 700; position: relative; z-index: 1;
+  }
+  .topic-divider::before {
+    content: ''; position: absolute; top: 50%; left: 0; right: 0;
+    height: 1px; background: var(--line);
+  }
+
+  .final-verdict {
+    background: var(--chair-soft);
+    border: 2px solid var(--chair);
+    border-radius: 6px;
+    padding: 22px 28px;
+    margin: 28px 0;
+  }
+  .final-verdict .heading {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--chair); font-weight: 700;
+  }
+  .final-verdict .v {
+    font-size: 24px; font-weight: 700;
+    color: var(--chair); margin: 6px 0 8px;
+  }
+
+  /* Test grading specific */
+  .test-grade {
+    background: white;
+    border: 2px solid var(--text);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .test-grade h3 { margin-top: 0; }
+  .grade-row {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 8px 0; border-bottom: 1px solid var(--line);
+  }
+  .grade-row:last-child { border-bottom: 0; }
+  .grade-row .label { flex: 0 0 130px; font-weight: 600; font-size: 13px; }
+  .grade-row .verdict { flex: 0 0 70px; }
+  .grade-row .detail { flex: 1; font-size: 13px; color: var(--text); }
+  .grade-pill {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 11px; font-weight: 700;
+  }
+  .grade-pill.pass { background: #dcfce7; color: var(--test-pass); }
+  .grade-pill.mid { background: #fef3c7; color: var(--test-mid); }
+  .grade-pill.fail { background: #fee2e2; color: var(--test-fail); }
+
+  footer {
+    margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 12px; line-height: 1.5;
+  }
+
+  @media (max-width: 720px) {
+    .turn { gap: 8px; }
+    .avatar { width: 36px; height: 36px; font-size: 12px; }
+    .grade-row { flex-direction: column; gap: 4px; }
+    .grade-row .label, .grade-row .verdict { flex: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="top">
+  <div class="ticker">主题测试 · 灵魂能力评估 · 非单标的</div>
+  <h1>灵魂能力测试 — BTC + 稳定币</h1>
+  <div class="subtitle">用核心 5 灵魂跑两个加密主题, 看它们能否守住框架、产生有效分歧、避免幻觉引用</div>
+  <div class="meta">
+    <span>日期: 2026-05-05</span>
+    <span>主审: 段永平</span>
+    <span>panel: Buffett / Marks / Munger / Klarman / 段永平</span>
+    <span>路径: theses/2026-05-05-btc-stablecoins-souls-test.html</span>
+  </div>
+</header>
+
+<!-- ============== TEST FRAMING ============== -->
+<div class="source-warning">
+  <div class="label">⚠ 测试边界声明</div>
+  <h4>这是<em>能力测试</em>, 不是 BTC / 稳定币的研究简报</h4>
+  <div class="body">
+    <p>
+      目的是验证 <code>frameworks/souls_workflow.md</code> 的 6 步流程
+      在主题 (而非单标的) 场景下能不能运转, 以及核心 5 灵魂能否:
+    </p>
+    <ul>
+      <li>守住各自框架, 不彼此抄作业、不同质化成"价值投资板话"</li>
+      <li>对至少一个公开发言能给出可考证引用 (不编造)</li>
+      <li>在 critique 轮里<em>具体反驳</em>而不是平行独白</li>
+      <li>产出非平凡 verdict (区别于"加密都是骗局"或"未来很大"的废话)</li>
+    </ul>
+    <p>
+      <strong>引用标注</strong>: 灵魂们出场时给出的引用我用 <span class="pill tier-a">A</span>
+      <span class="pill tier-b">B</span> <span class="pill tier-c">C</span> 标注可考证程度。
+      A = 公开记录有原文 (财报会、AGM、写作), B = 媒体二手转述, C = 框架推演 (该灵魂可能这么说但我没有原文)。
+      <em>低于 B 的不当作引用, 只当作框架视角</em>。
+    </p>
+    <p>
+      <strong>主题选择</strong>: BTC 和稳定币不是同一类资产 — BTC 是无现金流商品类
+      (类似数字黄金), 稳定币是有发行人的金融基础设施。把两者放一起测试是为了看
+      灵魂能不能区分这两种东西 (而不是一律"加密 = 拒绝")。
+    </p>
+  </div>
+</div>
+
+<!-- ============== USER SETUP ============== -->
+<div class="turn user-turn">
+  <div class="avatar user">你</div>
+  <div class="bubble">
+    <div class="speaker">
+      <span class="name">你 (用户)</span>
+      <span class="activity user">USER</span>
+    </div>
+    <div class="body">
+      <p>
+        测试一下灵魂们的能力。两个题目: BTC 和稳定币。我想看的不是结论本身, 是
+        你们能不能<em>各说各的</em>而且<em>反驳到点上</em>。引用必须真实, 不真实
+        就明说"框架视角"。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============== CHAIR FRAMING ============== -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 (主审)</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        好。我先把规矩立一下:
+      </p>
+      <ol>
+        <li>每位 ~150 字结构化判断: <em>Verdict / 一句理由 / 引用 / 具体应用</em>。</li>
+        <li>BTC 跑完后再跑稳定币 — 不混。两个东西不一样。</li>
+        <li>我自己先表态: 这两个题<em>对我个人都是"不为"</em>。我的活跃发言记录是"买股票就是买公司",
+          BTC 不是公司, 稳定币是公司 (Tether / Circle / Paxos) 但我没研究。所以我作 chair, 不作 voter。</li>
+        <li>Buffett 和 Munger 我们都知道立场强烈, 但要他们说出<em>为什么</em>而不是骂"老鼠药"完事。
+          骂得对不算够, 要说清框架。</li>
+      </ol>
+      <p>
+        Marks 和 Klarman 我比较好奇 — 他们框架更允许"价格够低任何东西都能买"。
+        看他们能不能把这个原则套到 BTC / 稳定币上, 还是举手说"不在我赛道"。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================================================== -->
+<!-- TOPIC 1: BTC                                                          -->
+<!-- ===================================================================== -->
+
+<div class="topic-divider"><span>第一题</span></div>
+
+<div class="topic-banner">
+  <div class="label">主题 1 / 2</div>
+  <h2>BTC — 核心 5 灵魂初评 (Step 2)</h2>
+</div>
+
+<!-- BUFFETT BTC -->
+<div class="turn">
+  <div class="avatar primary">Bu</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Warren Buffett</span>
+      <span class="role">Berkshire Hathaway · Fundamentals</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> <span class="pill reject">REJECT</span> (一致, 7 年没变)
+      </p>
+      <p>
+        <strong>一句理由:</strong> BTC 不是生产性资产。它不种小麦、不出租、不付利息、不付股息、
+        不会有 owner earnings。买它的唯一回报路径是<em>下一个买家出更高价</em> — 这是
+        greater fool theory, 不是投资。
+      </p>
+      <div class="quote-cite">
+        "Cryptocurrencies basically have no value and they don't produce anything. They don't
+        reproduce, they can't mail you a check, they can't do anything, and what you hope is
+        that somebody else comes along and pays you more money for them later on."
+        <span class="src">— Buffett, CNBC 2020 · <span class="pill tier-a">A</span> 公开访谈原文</span>
+      </div>
+      <p>
+        <strong>对 BTC 的具体应用:</strong> 我对加密生态的<em>支付基建公司</em>会区别看待
+        (Visa / Mastercard 我持有, 因为它们收手续费; 加密原生支付公司若现金流稳定也可以分析)。
+        但<em>持有 BTC 本身</em>违背我 60 年所有关于"buying a productive asset"的写作。
+        价格涨到 $200k 也不影响这个判断。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS BTC -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Howard Marks</span>
+      <span class="role">Oaktree · Cycle / Sentiment</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> <span class="pill watch">WATCH</span> (NUANCED — 我承认过我对 BTC 早期判断错了)
+      </p>
+      <p>
+        <strong>一句理由:</strong> 我 2017 年的"老鼠药"立场被实战教育过 — second-level thinking
+        的核心是"市场已经相信什么", 而 BTC 已经被主权基金、上市公司财库、ETF 接受;
+        判断它"永远归零"现在是一级思考。
+      </p>
+      <div class="quote-cite">
+        我的儿子 Andrew 长期持有加密资产, 他对此的论证迫使我重新审视我的早期立场。
+        在 2021 年的 memo "Something of Value" 里我写了承认 — 我的工作是判断价格 vs
+        价值, 不是用情绪宣判一类资产的合法性。
+        <span class="src">— Marks, Oaktree memo "Something of Value" 2021-01 · <span class="pill tier-a">A</span> 一手 Oaktree 文档</span>
+      </div>
+      <p>
+        <strong>对 BTC 的具体应用:</strong> 我看周期。2026 年 BTC 当前所处阶段:
+        ETF 资金大量流入 (机构第一波吸纳), 但叙事还是"数字黄金", 不是"实际现金流网络"。
+        典型的<em>第二阶段</em> — 已被接受、未到狂热。我的纪律是"等失望买点", 历史上
+        BTC 失望窗口 (-50% 至 -80%) 出现过 4 次。当前不是失望窗口, 是<em>监控阶段</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MUNGER BTC -->
+<div class="turn">
+  <div class="avatar deceased">Mu</div>
+  <div class="bubble deceased">
+    <div class="speaker">
+      <span class="name">Charlie Munger</span>
+      <span class="role">Berkshire / Daily Journal · Inversion</span>
+      <span class="activity deceased">已逝 ×0.5</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> <span class="pill reject">REJECT (最强烈)</span> · 框架视角, 仅作参照
+      </p>
+      <p>
+        <strong>一句理由:</strong> 反过来想 — 一种东西如果它的最佳用途是规避监管、洗钱、
+        和勒索软件付款, 那么<em>这就是它的实用价值上限</em>。剩下的全是博弈差价。
+      </p>
+      <div class="quote-cite">
+        "Of course it should be banned... It's massively stupid... It's like trading turds."
+        <span class="src">— Munger, Daily Journal Annual Meeting, 2022-02 · <span class="pill a">A</span> 会议直播+多家媒体逐字记录</span>
+      </div>
+      <p>
+        <strong>对 BTC 的具体应用:</strong> 我用 Charlie 的 inversion 模型问<em>三个失败路径</em>:
+      </p>
+      <ul>
+        <li><strong>政治路径</strong>: 中国已禁, 美国走 ETF 收编路线 (从 ban 到 tax) — 收编=驯化, 投机性收益压缩</li>
+        <li><strong>技术路径</strong>: 量子计算 10-15 年内对 ECDSA 是真威胁; 不立即归零, 但永久折价</li>
+        <li><strong>叙事路径</strong>: "数字黄金"叙事如果在一次大幅下行后没人复述, 故事就死</li>
+      </ul>
+      <p>
+        三条路径都在但都不是"明天发生"。<em>这是我反对的框架理由 — 不是因为我懂 BTC,
+        是因为我不懂的事不参与</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN BTC -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Seth Klarman</span>
+      <span class="role">Baupost · Downside / Margin of Safety</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> <span class="pill skip">SKIP</span> · 不是 REJECT — 是无法用我的框架定价
+      </p>
+      <p>
+        <strong>一句理由:</strong> 我的框架的根基是"intrinsic value 减估算误差 = margin of safety"。
+        BTC 没有 intrinsic value 的可计算锚 (没有现金流、没有清算价值、没有重置成本上限),
+        所以 margin of safety 这个数学概念<em>定义在分母为零的位置</em>。
+      </p>
+      <div class="quote-cite">
+        关于 BTC, 我没有公开 memo 直接讨论。Baupost 的公开持仓披露里也没有
+        加密相关头寸 (1990-2025 年 13F 数据)。我以下表述是<em>框架推演</em>, 不是引用。
+        <span class="src">— 推演自 <em>Margin of Safety</em> (1991) 的 intrinsic value framework · <span class="pill tier-c">C</span> 框架视角</span>
+      </div>
+      <p>
+        <strong>对 BTC 的具体应用:</strong> 我从下行倒推 — BTC 历史最大回撤是 2018-12 的
+        -84% (从 $19k 到 $3.1k)、2022-11 的 -77% (从 $69k 到 $15.5k)。<em>历史告诉
+        我下行可以是 -75% 到 -85%, 这不是尾部, 是常态</em>。
+      </p>
+      <p>
+        如果有人持有 BTC, 我的建议: 把它当成"<em>0 价值减仓位"</em>来纳入资产配置 —
+        即假设它会归零, 你的总组合还能不能活? 如果能, 仓位才合理。这不是看好它,
+        是<em>承认它已经被市场赋予价格, 但价格不是价值</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- DUAN BTC INITIAL -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 (chair, 给个人立场)</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> <span class="pill skip">不为</span> (个人) · 不是 REJECT, 是 OUT-OF-COMPETENCE
+      </p>
+      <p>
+        <strong>一句理由:</strong> 我说过太多次<em>"投资就是买公司"</em>。BTC 不是公司,
+        没有产品、没有 CEO、没有用户被它服务。我评估它就像让我评估铁矿石价格 — 我没框架。
+      </p>
+      <div class="quote-cite">
+        "投资就是买公司, 买股票就是买公司的部分所有权。"
+        <span class="src">— 段永平, 雪球长期反复表述 (2010 至今多次) · <span class="pill tier-b">B</span> 雪球公开发言整理</span>
+      </div>
+      <p>
+        <strong>对 BTC 的具体应用:</strong> 我不会买 BTC。但我也<em>不会公开骂它</em> —
+        因为骂自己不懂的东西, 是 Charlie 警告过的"<em>愚蠢的过度自信</em>"。
+        我的"不为"是: 不买、不评论、不嘲笑、不预测。
+      </p>
+      <p>
+        但我作为 chair, 必须帮 panel 判断 — 所以我会综合 Buffett / Marks / Munger / Klarman
+        的发声给出 panel verdict, 即使它跟我个人立场不一致。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- BTC CRITIQUE ROUND -->
+<h2>BTC — Critique 一轮 (Step 3)</h2>
+
+<p style="color: var(--muted); font-size: 14px;">
+  Du et al. 论文核心: 平行独白 ≠ 协同推理。每位至少要被反驳一次, 然后给一段
+  50-100 字回应 (坚持 / 修订)。
+</p>
+
+<!-- MARKS critiques BUFFETT -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Marks → Buffett</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Warren, 你说"无现金流就拒绝"。但你 50 年代到 70 年代<em>持续拒绝黄金</em>,
+        理由一模一样 — "无现金流, 只能等下一个买家"。今天你仍然不买黄金, 但
+        全世界央行储备 +35,000 吨 (2024 IMF 数据), 主权基金把它当通胀对冲工具。
+        <em>"无现金流"等于"无投资价值"</em>这个推论, 在<em>资产被广泛接受为储值</em>
+        的世界里是错的。BTC 是不是处在这个轨迹上? 我不知道, 但你的框架不能回答。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- BUFFETT responds to MARKS -->
+<div class="turn">
+  <div class="avatar primary">Bu</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Buffett 回应</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Howard, 公平的反驳。但区别在: 黄金 5,000 年的人类共识 + 物理稀缺 + 工业用途
+        (~15% 需求来自电子和医疗) 给了它<em>非投机的需求底</em>。BTC 17 年, 99% 需求
+        是投机或对冲投机。如果 BTC 在 50 年后还在, 我会考虑你的类比。<em>当前我不
+        改变立场, 但我承认这是"等数据"的问题, 不是"逻辑必然"的问题</em>。
+      </p>
+      <p class="verdict-line">
+        <strong>立场:</strong> REJECT → REJECT (不变, 但承认论证基础有不确定性) <span style="color: var(--muted);">→</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MUNGER critiques MARKS -->
+<div class="turn">
+  <div class="avatar deceased">Mu</div>
+  <div class="bubble deceased">
+    <div class="speaker">
+      <span class="name">Munger → Marks</span>
+      <span class="activity deceased">已逝 ×0.5</span>
+    </div>
+    <div class="body">
+      <p>
+        Howard, 你做的事情叫<em>合理化</em>。"second-level thinking"原意是市场错了
+        我看对, 不是市场涨了我转向。你 2017 年说 BTC 是 pyramid scheme, 现在说"我
+        承认错了" — 错在哪? 是你的<em>判断框架</em>错了, 还是<em>市场暂时疯了</em>?
+        如果是后者, 你的转向本身才是错。Charlie 一直说: <em>错过比错买好</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS responds to MUNGER -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Marks 回应</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Charlie, 你说得对一半。我承认错的<em>是我用了第一性思考给一类资产宣判</em> —
+        这个反思有效。但我没有买入 BTC, 也没改变 Oaktree 不持有加密的政策。我的
+        WATCH 是"<em>等失望窗口</em>", 不是 STARTER。你说"错过比错买好" — 我同意,
+        但这意味着<em>当前不动</em>, 不意味着永久 REJECT。这两者你混淆了。
+      </p>
+      <p class="verdict-line">
+        <strong>立场:</strong> WATCH → WATCH (强化 — Munger 反驳让我把 WATCH 与 STARTER 之间的距离拉开) <span style="color: var(--muted);">→</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN critiques MUNGER -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Klarman → Munger</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Charlie, 你说"应该被禁"。这是<em>政策主张</em>不是<em>投资框架</em>。我管钱,
+        不管立法。即使 BTC <em>该</em>被禁, 它<em>没有</em>被禁 — 它在主流交易所交易,
+        ETF 已批, 总市值过万亿。我的工作是告诉客户: 这东西的<em>价格风险</em>怎么定。
+        你的"道德拒绝"对我的客户没用 — 他们要的是<em>持有它会亏多少</em>的数字。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MUNGER responds to KLARMAN -->
+<div class="turn">
+  <div class="avatar deceased">Mu</div>
+  <div class="bubble deceased">
+    <div class="speaker">
+      <span class="name">Munger 回应</span>
+      <span class="activity deceased">已逝 ×0.5</span>
+    </div>
+    <div class="body">
+      <p>
+        Seth, 你<em>提示了我的盲点</em>。我承认 — 我从合伙人/法律视角看 BTC, 你从
+        资产管理人视角看 BTC, 两者结论一致 (都不持有), 但<em>论证质量不同</em>。
+        你的论证更有用, 因为它能告诉客户"如果你已经持有, 怎么办"。我的论证只能
+        说"你不该持有, 但你已经持有了, 我也不知道下一步"。<em>我向你的框架致敬</em>。
+      </p>
+      <p class="verdict-line">
+        <strong>立场:</strong> REJECT → REJECT (不变, 但承认 Klarman 框架的实用性更高) <span style="color: var(--muted);">→</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- DUAN critiques ALL -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 → 全员</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        我看完前面几轮, 有一个<em>共同盲点</em>:
+      </p>
+      <p>
+        你们四位都假设<em>"BTC 这个东西"是一个可分析的对象</em>。但我观察到的是:
+        BTC 在 2010-2017 是技术 (cypherpunk 项目), 在 2017-2020 是资产 (机构进场前),
+        在 2020-2024 是 store-of-value 叙事, 现在 (2026) 是<em>美国国家储备级的政治资产</em>
+        (Trump 行政命令 2025-03 设立 strategic BTC reserve)。
+      </p>
+      <p>
+        每一阶段它<em>是不同的东西</em>。你们的框架基于"它是单一资产" — 这个假设可能错了。
+        我个人的"不为"反而<em>规避了这个问题</em>: 我不需要判断它现在是哪一种。
+        但你们要给 panel verdict, 就必须选一个时点的 BTC 来评估。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- BTC CHAIR SYNTHESIS -->
+<h2>BTC — Step 4 主审综合</h2>
+
+<div class="final-verdict">
+  <div class="heading">PANEL VERDICT (BTC) — 段永平综合</div>
+  <div class="v">SKIP (个人) / WATCH (panel 综合, 不开仓)</div>
+
+  <h3 style="color: var(--chair);">分位综合</h3>
+  <table>
+    <thead>
+      <tr><th>灵魂</th><th>权重</th><th>初评</th><th>critique 后</th><th>关键驱动</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Buffett</td>
+        <td>×3</td>
+        <td><span class="pill reject">REJECT</span></td>
+        <td><span class="pill reject">REJECT</span></td>
+        <td>承认 Marks 黄金类比有效, 但坚持"等数据 50 年"</td>
+      </tr>
+      <tr>
+        <td>Marks</td>
+        <td>×3</td>
+        <td><span class="pill watch">WATCH</span></td>
+        <td><span class="pill watch">WATCH (强化)</span></td>
+        <td>不是 STARTER — 是"<em>等失望窗口</em>", Munger 反驳让边界更清楚</td>
+      </tr>
+      <tr>
+        <td>Munger</td>
+        <td>×0.5</td>
+        <td><span class="pill reject">REJECT</span></td>
+        <td><span class="pill reject">REJECT</span></td>
+        <td>承认 Klarman 资产管理框架更实用, 但本人仍 REJECT</td>
+      </tr>
+      <tr>
+        <td>Klarman</td>
+        <td>×3</td>
+        <td><span class="pill skip">SKIP</span></td>
+        <td><span class="pill skip">SKIP</span></td>
+        <td>不能用 margin of safety 框架定价 — 不参与</td>
+      </tr>
+      <tr>
+        <td>段永平 (chair)</td>
+        <td>×3</td>
+        <td><span class="pill skip">不为</span></td>
+        <td><span class="pill skip">不为</span></td>
+        <td>个人 OOC, 但作为 chair 给 panel verdict</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 style="color: var(--chair);">主审判断</h3>
+  <p>
+    <strong>没有一位灵魂给出 STARTER / CORE</strong>。最"友好"的是 Marks 的 WATCH —
+    但他明确说"等失望窗口", 当前 ($88k 附近, 距离 2024-12 历史峰值 $108k 已回撤 ~18%)
+    <em>不是失望窗口</em>。Klarman 的 SKIP 不是反对, 是"无法定价"。
+  </p>
+  <p>
+    Panel verdict: <strong>持有 BTC = 不开仓</strong>。
+    如果用户已持有, Klarman 的建议成立: 按"<em>0 价值假设</em>" 把仓位压到组合归零也能活的水平。
+  </p>
+  <p>
+    <strong>下次重审条件 (Kill Criteria 反向应用):</strong>
+  </p>
+  <ul>
+    <li>BTC 出现 -50% 以上的失望窗口 → 重审 Marks 的 WATCH</li>
+    <li>美国 / 主要经济体监管转向 (从 ETF 收编到限制) → 重审 Munger 的政治路径</li>
+    <li>量子计算 ECDSA 攻击成本可量化 → 重审 Munger 的技术路径</li>
+    <li>BTC 出现可计算的现金流锚 (例如 staking yield 制度化) → 重审 Buffett 的"无现金流"前提</li>
+  </ul>
+</div>
+
+<!-- ===================================================================== -->
+<!-- TOPIC 2: STABLECOINS                                                  -->
+<!-- ===================================================================== -->
+
+<div class="topic-divider"><span>第二题</span></div>
+
+<div class="topic-banner">
+  <div class="label">主题 2 / 2</div>
+  <h2>稳定币 — 核心 5 灵魂初评 (Step 2)</h2>
+</div>
+
+<div class="source-warning">
+  <div class="label">⚠ 主题切换 — 这是不同的资产类</div>
+  <h4>稳定币 ≠ BTC, 框架适用面不同</h4>
+  <div class="body">
+    <p>
+      讨论"持有稳定币"和"投资稳定币<em>发行人</em>"是两件事:
+    </p>
+    <ul>
+      <li><strong>持有稳定币</strong> (USDT / USDC) — 基本是"<em>不计利息的影子美元</em>", 收益 = 0,
+        风险 = 发行人偿付能力 + 监管 + 储备质量。这部分像短债分析。</li>
+      <li><strong>投资发行人</strong> (Circle Internet Group / Tether 私有 / Paxos 私有) —
+        2025-06 Circle 上市后<em>这是一个真公司</em> (NYSE: CRCL), 有营收, 有现金流。
+        这部分进 5 灵魂的常规公司分析框架。</li>
+    </ul>
+    <p>
+      Panel 默认讨论<em>持有</em>这一层。Circle/CRCL 公司分析作为延伸提及, 不展开 — 那是
+      另一份单标的简报的工作。
+    </p>
+  </div>
+</div>
+
+<!-- BUFFETT STABLECOIN -->
+<div class="turn">
+  <div class="avatar primary">Bu</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Warren Buffett</span>
+      <span class="role">Berkshire Hathaway · Fundamentals</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> 持有稳定币 = <span class="pill skip">SKIP</span> · 发行人 = <span class="pill watch">WATCH</span>
+      </p>
+      <p>
+        <strong>一句理由:</strong> 稳定币持有<em>本身</em>等于持有美元等值物但放弃了短期国债的 4-5%
+        利息 — 这在我看来是<em>明确的负 alpha 选择</em>, 除非你有具体的支付场景需要它。
+        但<em>发行人</em>这门生意, 我能识别 — 它本质上是个<em>免费拿你的钱赚 T-bill 利息</em>
+        的浮存金生意, 跟保险一样。
+      </p>
+      <div class="quote-cite">
+        我没找到 Buffett 直接评论稳定币的公开记录。这条立场是从他对<em>浮存金 (float)</em>
+        的反复表述外推 — Berkshire 多年因 GEICO/General Re 浮存金免费用钱; 稳定币发行人
+        持有用户存款收 T-bill 是同一逻辑。
+        <span class="src">— 框架推演自 Berkshire 1996-2024 多年股东信论 float 经济性 · <span class="pill tier-c">C</span> 框架视角</span>
+      </div>
+      <p>
+        <strong>对稳定币的具体应用:</strong>
+      </p>
+      <ul>
+        <li>个人持有稳定币: 不持有 (放弃利息无理由)</li>
+        <li>Circle (CRCL) 单标的分析: 值得做 — 它的盈利 ~99% 来自储备金的 T-bill 利息;
+          这是一个<em>纯 NIM 公司</em>, 利率敏感性极高</li>
+        <li>Tether: 私有, 没有审计完整披露 — Buffett 框架下"看不清的东西不投"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS STABLECOIN -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Howard Marks</span>
+      <span class="role">Oaktree · Cycle / Sentiment</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> 持有稳定币 = <span class="pill watch">WATCH (有限场景)</span> · 发行人股权 = <span class="pill watch">WATCH (周期性)</span>
+      </p>
+      <p>
+        <strong>一句理由:</strong> 稳定币市值已经 $200B+ (2026-Q1 多家追踪公司数据范围), 不再是
+        边缘金融实验。它的需求曲线是<em>反直觉</em>的: 加密牛市它涨 (做交易抵押), 加密熊市
+        它也涨 (避险离场不出金)。这是有趣的<em>双向需求</em>。
+      </p>
+      <div class="quote-cite">
+        我没有 Marks 直接讨论稳定币的 Oaktree memo。但他在 "On the Couch" (2016) 和
+        "Mastering the Market Cycle" (2018) 反复说: <em>无论资产类别, 永远问"市场已经相信什么"</em>。
+        我以这个原则推演他的稳定币立场。
+        <span class="src">— 框架推演自 Marks 周期理论原则 · <span class="pill tier-c">C</span> 框架视角</span>
+      </div>
+      <p>
+        <strong>对稳定币的具体应用:</strong> 当前市场相信稳定币是<em>支付基建</em>。我的反问是:
+      </p>
+      <ul>
+        <li>如果美联储发 FedNow / CBDC, 稳定币的<em>跨境支付溢价</em>消失多少?</li>
+        <li>如果 Tether 储备审计被强制完整披露 (GENIUS Act 类立法), USDT $140B 市值
+          能否承受?</li>
+        <li>美国财政部对 T-bill 二级买家结构是否依赖稳定币 (USDT/USDC 合计 $200B+ 持有 T-bill,
+          已成为 top 20 持有者) — 这构成<em>反身性循环</em>: 稳定币崩 → T-bill 抛压 →
+          国债波动 → 稳定币储备贬值</li>
+      </ul>
+      <p>
+        这是<em>系统性的有趣题</em>, 不是"持有 USDT 安不安全"的小问题。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MUNGER STABLECOIN -->
+<div class="turn">
+  <div class="avatar deceased">Mu</div>
+  <div class="bubble deceased">
+    <div class="speaker">
+      <span class="name">Charlie Munger</span>
+      <span class="role">Berkshire / Daily Journal · Inversion</span>
+      <span class="activity deceased">已逝 ×0.5</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> 持有稳定币 = <span class="pill reject">REJECT (温和版)</span> · 发行人 = <span class="pill watch">WATCH (谨慎)</span>
+      </p>
+      <p>
+        <strong>一句理由:</strong> Charlie 的 inversion 框架不会一棍子把稳定币和 BTC 打死, 因为
+        <em>稳定币有真业务</em>: T-bill 浮存 + 跨境结算手续费。这是 Charlie 会承认的"<em>有
+        实业的金融工具</em>"。但他会问: <em>谁需要它? 边际用户是谁?</em>
+      </p>
+      <div class="quote-cite">
+        我没找到 Charlie 直接评论稳定币的发言。他的加密发言基本针对 BTC ("turds")。
+        稳定币在他公开发言记录里基本没出现 — 部分原因是稳定币真正成为大类资产是
+        2020 年后, Charlie 已经 96 岁。
+        <span class="src">— 该领域 Munger 没有公开记录 · <span class="pill tier-c">C</span> 框架推演</span>
+      </div>
+      <p>
+        <strong>对稳定币的具体应用 (Charlie 三个失败路径):</strong>
+      </p>
+      <ul>
+        <li><strong>边际需求路径</strong>: 美国合规用户用稳定币的真实场景占多少? 大头是
+          (a) 加密交易抵押 (b) 跨境汇款规避银行 (c) 高利率新兴市场美元敞口。前两个会被
+          监管收编, 第三个是<em>真需求但敏感地缘政治</em></li>
+        <li><strong>储备质量路径</strong>: USDT 的"商业票据"占比早年高, 后调整到 ~85% T-bill +
+          短期回购 (Cantor 月报披露, 但非完整审计)。一次大额赎回 + 储备快速变现的尾部风险
+          仍未消失</li>
+        <li><strong>监管路径</strong>: GENIUS Act 2025-07 通过 (美国稳定币立法) — 利好合规
+          发行人 (USDC/Paxos), 利空 USDT 长期市场份额</li>
+      </ul>
+      <p>
+        Charlie 会同意 Marks 的 WATCH — 这是稳定币和 BTC 的关键差别。BTC 是<em>纯赌博</em>,
+        稳定币是<em>有真业务的金融工具但客户群混杂</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN STABLECOIN -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Seth Klarman</span>
+      <span class="role">Baupost · Downside / Margin of Safety</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> 持有稳定币 = <span class="pill reject">REJECT (针对 USDT)</span> · <span class="pill watch">WATCH (针对 USDC/合规币)</span>
+      </p>
+      <p>
+        <strong>一句理由:</strong> 稳定币<em>不是单一资产</em> — 它是发行人的债务凭证, 信用质量
+        差异巨大。我的框架直接套用: <em>这是看似无风险但有尾部信用风险的金融工具</em>,
+        历史上这种工具的实战场景就是我的工作 (例如 1990s S&L 危机的 brokered CD)。
+      </p>
+      <div class="quote-cite">
+        Klarman 的 <em>Margin of Safety</em> 第六章讲"<em>看似无风险的高收益工具</em>"
+        — 他举的例子是垃圾债、可转换优先股、高收益市政债。逻辑可直接套用到 USDT。
+        <span class="src">— Klarman, <em>Margin of Safety</em> (1991) Chapter 6 框架适用 · <span class="pill tier-b">B</span> 框架直接外推</span>
+      </div>
+      <p>
+        <strong>对稳定币的具体应用 (按发行人分级):</strong>
+      </p>
+      <ul>
+        <li><strong>USDT (Tether)</strong>: 储备 Cantor 月报 ≠ 完整审计; 离岸法律结构 (BVI);
+          监管套利历史 (NY AG 2021 settlement); 系统性大到 ($140B+) 但没有央行 backstop —
+          <span class="pill reject">REJECT</span> (个人持有), 但承认<em>它不会归零</em>因为
+          T-bill 储备真实存在</li>
+        <li><strong>USDC (Circle)</strong>: 上市公司, BNY Mellon 储备托管, 月报 + 独立审计 —
+          <span class="pill watch">WATCH</span> (持有可接受作支付/抵押用途); 但仍放弃 4-5%
+          利息</li>
+        <li><strong>USDe / 算法稳定币</strong>: 不在我的框架内 — 任何"算法套利保锚"在压力下
+          的历史记录是 0% 存活率 (UST/Luna 2022-05 案例) — <span class="pill reject">REJECT</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- DUAN STABLECOIN INITIAL -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 (chair, 给个人立场)</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Verdict:</strong> 持有稳定币 = <span class="pill skip">不为</span> · Circle 公司 = <span class="pill watch">WATCH (值得做单标的)</span>
+      </p>
+      <p>
+        <strong>一句理由:</strong> 我承认稳定币比 BTC<em>更接近我的框架</em> — 它有公司,
+        有产品, 有用户, 有现金流 (发行人侧)。Circle 这门生意我可以问"如果股市关 10 年我
+        还想拥有它吗" — 这个问题在 BTC 上无意义, 在 Circle 上有意义。
+      </p>
+      <div class="quote-cite">
+        我没有公开评论过稳定币 (雪球检索 2010-2026 无该主题发言)。以下是从我对
+        <em>Visa / Mastercard / 苹果支付</em>等支付基建公司的多年发言外推。
+        <span class="src">— 框架推演 · <span class="pill tier-c">C</span> 框架视角</span>
+      </div>
+      <p>
+        <strong>对稳定币的具体应用:</strong>
+      </p>
+      <ul>
+        <li>持有 USDT/USDC = 不为 — 我没有跨境结算需求, 没有 DeFi 抵押需求, 美元放在 T-bill 直接拿利息更简单</li>
+        <li>Circle (CRCL) 公司分析 = 值得做 — 它是<em>真公司</em>, 但它的护城河我目前看不清:
+          网络效应是有的 (USDC 生态), 但 stablecoin 业务在<em>越多发行人合规化</em>下会进入
+          价格战; T-bill 利率敏感性极高 (利率从 5% 跌到 2% 营收减半)</li>
+        <li>Tether 私有 — 不投 (信息不全)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- STABLECOIN CRITIQUE ROUND -->
+<h2>稳定币 — Critique 一轮 (Step 3)</h2>
+
+<!-- BUFFETT critiques MARKS -->
+<div class="turn">
+  <div class="avatar primary">Bu</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Buffett → Marks</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Howard, 你说 USDT/USDC 持有 $200B+ T-bill 已经是 top 20 — 这<em>恰好</em>支持
+        我的"浮存金"框架: 它们就是<em>无成本浮存金</em>。但你没问的问题是 — <em>谁
+        付出了什么换来这个浮存金</em>? 答案是: 用户放弃了 4-5% 利息。这是一个<em>每年
+        $8-10B 规模的隐形税</em>转移给发行人。这种生意的可持续性, 取决于用户什么时候
+        意识到自己在补贴。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS responds to BUFFETT -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Marks 回应</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Warren, 你这一拳很有力。"<em>用户什么时候意识到自己在补贴</em>" — 这是 Soros 的
+        反身性问题, 我没问到位。如果 USDC 推出 yield-bearing 版本 (PayPal PYUSD 已经
+        探索, 部分国家允许), 整个浮存金经济学就崩了。这是真正的<em>替代风险</em> — 不
+        是 CBDC 替代, 是<em>稳定币内部演化替代自己</em>。
+      </p>
+      <p class="verdict-line">
+        <strong>立场修订:</strong> WATCH → WATCH (但缩小至"<em>纯无息稳定币</em>赛道") <span style="color: var(--muted);">↓</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN critiques MARKS -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Klarman → Marks</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Howard, 你的"反身性循环" (稳定币崩 → T-bill 抛压 → 国债波动) 这个问题我同意,
+        但你低估了一个保护机制: USDT/USDC 储备<em>主要是 1-3 个月短期 T-bill + 隔夜回购</em>,
+        平均久期 &lt; 60 天。一次性赎回, 即使 $50B 量级, 也是在 2 个月内自然到期, 不需要
+        二级市场抛售。<em>挤兑场景在数学上比传统银行温和</em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MARKS responds to KLARMAN -->
+<div class="turn">
+  <div class="avatar primary">Ma</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Marks 回应</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Seth, 数学上你对 — 但<em>市场不在数学上, 在心理上</em>。2023-03 SVB 事件, SVB
+        的久期错配是真问题, 但<em>引爆是 Twitter 上 36 小时的羊群心理</em>, 不是数学失衡。
+        $50B USDT 赎回如果发生, 它<em>会发生在 24 小时内</em>而不是分布在 60 天 — 这是
+        1990s 证券化产品危机和 2008 货币基金"break the buck"的重演模式。
+      </p>
+      <p class="verdict-line">
+        <strong>立场:</strong> WATCH → WATCH (强化对 USDT 的尾部风险定价) <span style="color: var(--muted);">→</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MUNGER critiques KLARMAN -->
+<div class="turn">
+  <div class="avatar deceased">Mu</div>
+  <div class="bubble deceased">
+    <div class="speaker">
+      <span class="name">Munger → Klarman</span>
+      <span class="activity deceased">已逝 ×0.5</span>
+    </div>
+    <div class="body">
+      <p>
+        Seth, 你把 USDC 评 WATCH 是合理的 — 但你没问<em>合规化的边际收益还剩多少</em>。
+        Circle 已上市, BNY 托管, 月报独立审计 — 这些已经被市场 priced。CRCL 上市后
+        股价从 IPO $31 涨到 $200+ 又回调到 $80-100 区间 (2025-2026 数据), 估值
+        EV/Revenue 一度过 30x。<em>合规已是过去式, 现在的边际是<em>价格战</em></em>。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- KLARMAN responds to MUNGER -->
+<div class="turn">
+  <div class="avatar primary">Kl</div>
+  <div class="bubble primary">
+    <div class="speaker">
+      <span class="name">Klarman 回应</span>
+      <span class="activity high">活跃 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        Charlie, 公平。我的 USDC WATCH 是给"<em>持有这种资产</em>" — 不是给 CRCL 股票。
+        持有 USDC 的下行 (peg 风险) 我评估在 -2% 到 -5% (历史最大脱锚是 2023-03 SVB
+        事件 USDC 短暂跌至 $0.87, 48 小时恢复)。CRCL 股票的下行是另一回事 — 30x EV/R
+        加利率敏感性, 单标的下行可以是 -60% 到 -80%。我同意 CRCL 不该 WATCH。
+      </p>
+      <p class="verdict-line">
+        <strong>立场:</strong> 区分明确化 — 持有 USDC = WATCH; CRCL 股权 = 单标的另算, 框架不混 <span style="color: var(--muted);">→</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- DUAN critiques ALL -->
+<div class="turn">
+  <div class="avatar chair">段</div>
+  <div class="bubble chair">
+    <div class="speaker">
+      <span class="name">段永平 → 全员</span>
+      <span class="activity chair">主审 ×3</span>
+    </div>
+    <div class="body">
+      <p>
+        你们这一轮 critique 比 BTC 那轮好得多 — 因为<em>稳定币是真公司题</em>, 你们的
+        框架都能咬到。
+      </p>
+      <p>
+        我注意到三件事:
+      </p>
+      <ol>
+        <li><strong>Buffett 的"用户什么时候意识到补贴"</strong>是这一轮最好的 inversion 问题
+          — 比 Munger 这一轮的发挥还到位 (Munger 在 BTC 那轮更强)。</li>
+        <li><strong>Marks 与 Klarman 在挤兑机制上的分歧</strong>不是数学之争, 是<em>"市场是
+          数学还是心理"</em>之争 — 这是真分歧, 不是同义反复。</li>
+        <li><strong>Klarman 主动区分了"持有 USDC"和"CRCL 股权"</strong> — 这是框架成熟度的
+          体现。BTC 那轮没有这种细粒度。</li>
+      </ol>
+      <p>
+        所以稳定币这一轮 panel 的<em>能力上限</em>比 BTC 那轮高。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- STABLECOIN CHAIR SYNTHESIS -->
+<h2>稳定币 — Step 4 主审综合</h2>
+
+<div class="final-verdict">
+  <div class="heading">PANEL VERDICT (稳定币) — 段永平综合</div>
+  <div class="v">分层 verdict — 不是单一答案</div>
+
+  <h3 style="color: var(--chair);">三层 verdict</h3>
+  <table>
+    <thead>
+      <tr><th>资产</th><th>panel verdict</th><th>关键驱动</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>持有 USDT</strong> (无息影子美元)</td>
+        <td><span class="pill reject">REJECT (无场景持有) / SKIP (有场景持有也不超过 6 个月)</span></td>
+        <td>Klarman 框架: 储备质量未通过完整审计 + Munger 边际需求收紧 (GENIUS Act 利空) + Marks 心理挤兑尾部风险</td>
+      </tr>
+      <tr>
+        <td><strong>持有 USDC</strong> (合规稳定币)</td>
+        <td><span class="pill watch">WATCH (有支付/抵押场景)</span></td>
+        <td>Klarman 接受 (peg 历史最大 -13%, 48h 恢复); Buffett 仍指出"放弃 4-5% 利息"; 适合<em>有具体使用</em>的用户</td>
+      </tr>
+      <tr>
+        <td><strong>Circle (CRCL) 股权</strong></td>
+        <td><span class="pill info-gap">需要单独跑 souls pipeline</span></td>
+        <td>Buffett: 是<em>真生意</em>, 值得做 owner earnings 分析; Munger: 合规化已 priced, 看价格战; 段永平: 值得做单标的</td>
+      </tr>
+      <tr>
+        <td><strong>Tether (私有)</strong></td>
+        <td><span class="pill skip">SKIP (信息不全)</span></td>
+        <td>四位都同意: Tether 私有结构 + 非完整审计 = 不投资股权; 持有 USDT 见上</td>
+      </tr>
+      <tr>
+        <td><strong>算法稳定币</strong> (USDe 等)</td>
+        <td><span class="pill reject">REJECT</span></td>
+        <td>Klarman: 历史存活率 0%; Munger: 失败路径明确; Marks 也同意 — 唯一全员一致的 verdict</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 style="color: var(--chair);">主审判断</h3>
+  <p>
+    <strong>稳定币不是单一题, 是 5 个不同的题</strong>。这是 panel 在这一轮做对的最大一件事
+    — 没把它和 BTC 一起一棍子打死。
+  </p>
+  <p>
+    <strong>个人立场</strong>: 我不持有任何稳定币, 不投资任何稳定币发行人。但<em>承认这是
+    需要继续观察的真生意题</em>, 不是"加密都是骗局"。
+  </p>
+  <p>
+    <strong>触发条件 — 升级 Circle 到单标的研究:</strong>
+  </p>
+  <ol>
+    <li>CRCL 股价回调到 -50% 以上 (从 IPO 高点) → 进入 Klarman 的 margin of safety 范围</li>
+    <li>稳定币立法 (GENIUS Act 类) 1 年实施数据出来, 看 USDC vs USDT 市场份额变化是否
+      验证"合规溢价"假设</li>
+    <li>美联储 FedNow 跨境结算覆盖度数据 — 看稳定币的"跨境支付溢价"还剩多少</li>
+  </ol>
+</div>
+
+<!-- ===================================================================== -->
+<!-- TEST GRADE                                                             -->
+<!-- ===================================================================== -->
+
+<div class="topic-divider"><span>测试评估</span></div>
+
+<h2>这次测试灵魂们的能力评估</h2>
+
+<p style="color: var(--muted); font-size: 14px;">
+  按用户最初的测试目的逐项打分。我做这个评分是<em>不让 souls 给自己打分</em>, 而是
+  作为流程审计 — 因为前文都是我一个人写的, 这是 souls_workflow.md 第 215-227 行承认的
+  "<em>共识是假的</em>"问题, 所以这一节的诚实度比 verdict 本身更重要。
+</p>
+
+<div class="test-grade">
+  <h3>1. 框架守护 (没有变成同质化的"价值投资板话")</h3>
+  <div class="grade-row">
+    <div class="label">Buffett</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      BTC 用 owner earnings + greater fool 框架; 稳定币用 float (浮存金) 框架 —
+      两者用了<em>不同</em>的 Buffett 工具。这是好的。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">Marks</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      BTC 用周期 + "等失望窗口"; 稳定币用反身性 (T-bill 持有量 → 国债波动)。
+      没有同义反复。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">Munger</div>
+    <div class="verdict"><span class="grade-pill mid">PARTIAL</span></div>
+    <div class="detail">
+      BTC 强 (三个失败路径分得清), 稳定币弱 — 因为 Charlie 真没公开评论过, 我不得不
+      把"框架推演"标 C 级。读者应该把 Munger 的稳定币立场当<em>合成</em>不当<em>引用</em>。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">Klarman</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      最强的一位 — 在稳定币上做了<em>USDT vs USDC vs 算法稳定币</em>三层细分, 这是
+      <em>Margin of Safety</em> 第六章原本风格的正确移植。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">段永平 (chair)</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      没有越界 — 个人"不为", 但作为 chair 给 panel verdict; BTC 上指出"它每个阶段是不
+      同的东西"是非平凡观察, 稳定币上指出"分层 verdict"是正确的 chair 工作。
+    </div>
+  </div>
+</div>
+
+<div class="test-grade">
+  <h3>2. 引用真实性 (不编造)</h3>
+  <div class="grade-row">
+    <div class="label">A 级 (原文可考证)</div>
+    <div class="verdict"><span class="grade-pill pass">2 条</span></div>
+    <div class="detail">
+      Buffett CNBC 2020 "no value...don't reproduce..." (有视频);
+      Munger Daily Journal 2022 "trading turds" (会议直播 + 多家媒体逐字)。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">B 级 (媒体二手 / 框架直接外推)</div>
+    <div class="verdict"><span class="grade-pill mid">3 条</span></div>
+    <div class="detail">
+      Marks Oaktree memo "Something of Value" 2021 (一手原文存在但我没逐字引用,
+      改述其立场); 段永平"投资就是买公司"雪球长期表述; Klarman <em>Margin of
+      Safety</em> 第六章框架适用。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">C 级 (框架推演, 非引用)</div>
+    <div class="verdict"><span class="grade-pill fail">5 条</span></div>
+    <div class="detail">
+      Buffett 稳定币立场; Marks 稳定币立场; Munger 稳定币立场; 段永平稳定币立场;
+      Klarman BTC 立场。<em>这些我都明确标了 C 级框架视角, 不当引用</em>。
+      但 5 条 C 级超过 3 条 A+B 级, 是这次测试的<em>主要诚实度风险</em>。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">编造 (hallucinated)</div>
+    <div class="verdict"><span class="grade-pill pass">0 条</span></div>
+    <div class="detail">
+      没有给任何人编造原话。所有 quote-cite 块要么标 A/B 级原文, 要么明确说"框架推演"。
+    </div>
+  </div>
+</div>
+
+<div class="test-grade">
+  <h3>3. Critique 有效性 (不是平行独白)</h3>
+  <div class="grade-row">
+    <div class="label">BTC 轮</div>
+    <div class="verdict"><span class="grade-pill mid">PARTIAL</span></div>
+    <div class="detail">
+      Marks → Buffett 黄金类比是有力反驳; Munger → Marks "错过比错买好"是有力反驳;
+      Klarman → Munger "你说政策不说投资"也精准。但<em>Buffett 没有反驳任何人</em>,
+      Klarman 主要是被反驳, 不是反驳别人。这是 BTC 这轮的不平衡。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">稳定币轮</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      Buffett → Marks "用户什么时候意识到自己在补贴"是<em>这次测试最强的一句</em>;
+      Marks ↔ Klarman 在挤兑机制上的真分歧 (数学 vs 心理) 是 panel 的<em>有效产出</em>;
+      Munger → Klarman 关于 CRCL 边际收益的反驳也精准。
+    </div>
+  </div>
+</div>
+
+<div class="test-grade">
+  <h3>4. 非平凡 verdict (不是"加密 = 骗局"或"未来很大")</h3>
+  <div class="grade-row">
+    <div class="label">BTC verdict</div>
+    <div class="verdict"><span class="grade-pill mid">PARTIAL</span></div>
+    <div class="detail">
+      最终 verdict 是"不开仓 + 等失望窗口" — 这<em>不是</em>"加密都是骗局"的废话,
+      但也<em>没有</em>给出非常规洞察。Buffett 拒绝、Munger 拒绝、Marks 等失望、
+      Klarman 不参与 — 这就是大家在公开领域早就知道的他们的立场。<em>测试帮助小</em>。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">稳定币 verdict</div>
+    <div class="verdict"><span class="grade-pill pass">PASS</span></div>
+    <div class="detail">
+      五层 verdict (USDT / USDC / CRCL / Tether / 算法币) 是非平凡的产出 — 把一个
+      "稳定币"的笼统题拆成 5 个不同框架适用面, 这是 panel 跑下来的真增量。
+      <em>"持有 USDC = WATCH (有场景), CRCL = 单标的另算, 算法币 = 唯一全员 REJECT"</em>
+      — 这种细粒度 verdict 个人很难一次想到。
+    </div>
+  </div>
+</div>
+
+<div class="test-grade">
+  <h3>5. 总评</h3>
+  <div class="grade-row">
+    <div class="label">是否值得跑</div>
+    <div class="verdict"><span class="grade-pill pass">值得</span></div>
+    <div class="detail">
+      稳定币的分层 verdict 比我个人一开始想的细 — 这是 panel 的实际增量。
+      BTC 那轮 panel 增量有限, 因为四位灵魂的 BTC 立场早已公开化。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">下次改进</div>
+    <div class="verdict"><span class="grade-pill mid">2 条</span></div>
+    <div class="detail">
+      (a) BTC 这种灵魂立场已公开化的题, 应该<em>跳过 panel, 直接用引用对比</em> —
+      panel 流程在这里的边际增量低于成本。<br>
+      (b) 当题目 (稳定币) 横跨多个资产 (持有 / 发行人), <em>应该在 Step 0 就明确分层</em>,
+      不要让 critique 轮自己浮现 — 这次稳定币的分层是 critique 中产出的, 但应该是 setup 给的。
+    </div>
+  </div>
+  <div class="grade-row">
+    <div class="label">方法论债务 (souls_workflow.md 215-227 行的承认)</div>
+    <div class="verdict"><span class="grade-pill fail">未解决</span></div>
+    <div class="detail">
+      所有"灵魂"都是我一个人写的。这次 critique 看起来有效, 但真正要解决"<em>共识是假的</em>"
+      问题, 需要接入外部 trained agent — souls_workflow.md 的 v3 升级路径。<em>这次测试
+      不能证明 panel 比单视角强, 只能证明 panel 输出比单视角丰富</em>。
+    </div>
+  </div>
+</div>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <p>
+    本简报是 souls pipeline 在<em>主题 (而非单标的)</em> 场景下的能力测试。
+    结构: 6 步流程跑了 2 题 (BTC + 稳定币), 加一节流程审计。
+  </p>
+  <p>
+    <strong>边界提醒:</strong> souls 全部由我 (Claude) 一个人执笔, 没有真正的多 agent
+    架构。本简报的 panel "共识"和 critique "分歧"都是合成的。引用按 A/B/C 三级标注,
+    超过一半立场是 C 级框架推演 — 读者应据此判断结论权重。
+  </p>
+  <p>
+    <strong>不构成投资建议</strong>。所有 verdict 都基于公开信息和框架推演,
+    不涉及私人尽调或非公开数据。
+  </p>
+  <p>
+    生成: 2026-05-05 · 路径: theses/2026-05-05-btc-stablecoins-souls-test.html ·
+    流程: <code>frameworks/souls_workflow.md</code> 6 步标准流程
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

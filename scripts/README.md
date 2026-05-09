@@ -123,3 +123,24 @@ Default outputs:
 - `sources/channels/zhanguoshidai/transcripts/<video_id>_asr.md`
 - `sources/channels/zhanguoshidai/transcripts/<video_id>_asr.json`
 - `sources/channels/zhanguoshidai/runs/asr_<timestamp>/*.csv`
+
+## Local Transcript Polish
+
+Use this after ASR when you want a conservative local cleanup pass without
+calling external LLM CLIs. It preserves every timestamped line and writes QC
+reports comparing source and polished text.
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\transcript_local_polish.py `
+  --input-dir .\sources\channels\zhanguoshidai\transcripts `
+  --output-dir .\sources\channels\zhanguoshidai\polished_transcripts `
+  --qc-dir .\sources\channels\zhanguoshidai\polish_qc `
+  --force
+```
+
+Outputs:
+
+- `sources/channels/zhanguoshidai/polished_transcripts/<video_id>_polished.md`
+- `sources/channels/zhanguoshidai/polish_qc/polish_summary_*.csv`
+- `sources/channels/zhanguoshidai/polish_qc/polish_changes_*.csv`
+- `sources/channels/zhanguoshidai/polish_qc/polish_low_similarity_*.md`
