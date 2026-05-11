@@ -3,6 +3,21 @@
 Use this folder for repeatable data collection, cleaning, analysis, and charting
 scripts.
 
+## Market Slope Scan
+
+Rank the latest QQQ rally speed against its own history:
+
+```powershell
+python .\scripts\qqq_slope_scan.py --symbol QQQ --windows 5,10,20,40,60,120
+```
+
+Default outputs are written under `data/processed/market_slope/`:
+
+- rolling slope data
+- top non-overlapping rally episodes
+- a Markdown summary report
+- a PNG chart when `matplotlib` is installed
+
 ## Video Notes
 
 Create a timestamped investment note from a YouTube URL:
