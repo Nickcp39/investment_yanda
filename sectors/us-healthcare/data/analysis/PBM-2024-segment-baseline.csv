@@ -1,0 +1,16 @@
+metric,unit,CVS_Health_Services,Cigna_Evernorth,UNH_OptumRx,source_id,notes
+revenue_2024,USD_billion,173.6,202.1,133.0_est,P1A-002+P1A-014+P1A-026,UNH Rx is derived from +15% growth on 2023 ~$116B
+revenue_YoY_2024,percent,-7.1,+32.0,+15.0,P1A-002+P1A-015+P1A-025,CVS lost Centene; CI gained Centene
+adj_operating_income_2024,USD_billion,7.2,8.0_est,5.8_est,P1A-004+(P1A-017+P1A-018 extrapolated)+P1A-032,CI from Q4 extrapolation; UNH from margin reverse
+operating_margin_2024,percent,4.15,~4.0,4.38,P1A-005+derived+P1A-031,Tight range across all 3
+script_volume_2024,billion_adj_scripts,1.9,1.9,1.62,P1A-009+P1A-021+P1A-028,CVS -18% / CI +40% / UNH +5%
+market_share_PBM_2024,percent,27,30,23,P1A-008+P1A-020+P1A-034,Top 3 = 80%
+specialty_pharmacy_revenue_2024,USD_billion,73.3_2023,~60_est,~50_est,external_specialty_pharmacy_sources,CVS Specialty actual $73.3B 2023; others derived
+managed_pharma_spend_2024,USD_billion,not_disclosed,not_disclosed,178,P1A-029,Only UNH discloses this metric clearly
+specialty_share_of_managed_spend,percent,not_disclosed,not_disclosed,41.6,P1A-030,$74B / $178B
+parent_company_total_revenue_2024,USD_billion,372.81,247.12,400.28,(known from search batch),Drug Channels + 10K
+PBM_segment_share_of_parent_revenue,percent,46.6,81.8,33.2,calculated,CI most exposed
+parent_market_cap_2026_05,USD_billion,90,90,330,P1A-037+P1A-038+P1A-039,UNH 3.7x larger despite lower PBM exposure pct
+DB_estimated_PBM_share_of_parent_OP,percent,~50,~40,~15,P1C-007,Deutsche Bank
+revenue_per_script,USD,91.4,106.4,82.1,calculated,CI specialty mix highest = highest rev per script
+notes,text,Pharmacy retail also part of CVS but separate,Most PBM-exposed pure-play,Largest parent but PBM smaller %,,,

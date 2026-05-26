@@ -1,0 +1,107 @@
+id,claim,value,unit,as_of_date,source_url,source_type,priority,notes
+P1A-001,CVS Health total revenue 2024,372.81,USD billion,2024-12-31,https://investors.cvshealth.com/news/news-details/2025/CVS-HEALTH-CORPORATION-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS/default.aspx,company-press,P1,Full-year 2024 result press release
+P1A-002,CVS Health Services Segment revenue 2024,173.6,USD billion,2024-12-31,https://www.healthcaredive.com/news/cvs-q4-2024-earnings-medical-costs-profit-slashed/739959/,industry-press,P1,Down 7.1% YoY due to Centene loss
+P1A-003,CVS Health Services Segment revenue 2023,186.8,USD billion,2023-12-31,https://www.managedhealthcareexecutive.com/view/cvs-s-health-services-revenue-grew-to-186-8-billion,industry-press,P1,Pre-Centene loss
+P1A-004,CVS Health Services Adj Operating Income 2024,7.2,USD billion,2024-12-31,https://www.healthcaredive.com/news/cvs-q4-2024-earnings-medical-costs-profit-slashed/739959/,industry-press,P1,-0.9% YoY
+P1A-005,CVS Health Services Operating Margin 2024,4.15,percent,2024-12-31,calculated,derived,P1,7.2 / 173.6
+P1A-006,CVS Pharmacy & Consumer Wellness revenue 2024,124.5,USD billion,2024-12-31,https://www.webull.com/news/12300231250835456,company-10K-summary,P2,Retail segment (not PBM)
+P1A-007,CVS Pharmacy & Consumer Wellness Adj OI 2024,5.8,USD billion,2024-12-31,https://www.webull.com/news/12300231250835456,company-10K-summary,P2,-3.2% YoY retail pressure
+P1A-008,CVS PBM market share 2024,27,percent,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,Down from 34% in 2023 (Centene loss)
+P1A-009,CVS Caremark 2024 30-day equivalent claims,1.9,billion,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,-18.2% from 2.3B in 2023
+P1A-010,CVS 9000 retail stores,9000,store count,2024-12-31,https://www.webull.com/news/12300231250835456,company-10K-summary,P2,Continued store rationalization
+P1A-011,Cigna total revenue 2024,247.1,USD billion,2024-12-31,https://newsroom.thecignagroup.com/2025-01-30-The-Cigna-Group-Reports-Fourth-Quarter-and-Full-Year-2024-Results,company-press,P1,+27% YoY Evernorth driven
+P1A-012,Cigna Evernorth Pharmacy Benefit Services revenue 2024,111.8,USD billion,2024-12-31,https://newsroom.thecignagroup.com/2025-01-30-The-Cigna-Group-Reports-Fourth-Quarter-and-Full-Year-2024-Results,company-press,P1,+46% from 76.8B in 2023 (Centene win)
+P1A-013,Cigna Evernorth Specialty Care Services revenue 2024,90.3,USD billion,2024-12-31,https://www.managedhealthcareexecutive.com/view/cigna-s-27-revenue-increase-in-2024-and-the-outlook-on-2025,industry-press,P1,+18% from 76.7B in 2023
+P1A-014,Cigna Evernorth Total Adj Revenue 2024,202.1,USD billion,2024-12-31,calculated,derived,P1,PBS 111.8 + SCS 90.3
+P1A-015,Cigna Evernorth Adj Revenue Growth 2024,32,percent,2024-12-31,https://www.managedhealthcareexecutive.com/view/cigna-s-27-revenue-increase-in-2024-and-the-outlook-on-2025,industry-press,P1,Full year YoY
+P1A-016,Cigna Evernorth Adj Income From Operations Growth 2024,9,percent,2024-12-31,https://www.managedhealthcareexecutive.com/view/cigna-s-27-revenue-increase-in-2024-and-the-outlook-on-2025,industry-press,P1,YoY (absolute $ not stated)
+P1A-017,Cigna Express Scripts Q4 2024 adj operating income,1.2,USD billion,2024-12-31,https://www.modernhealthcare.com/insurance/mh-cigna-earnings-evernorth-health-express-scripts/,industry-press,P2,Q4 only - extrapolated annual ~4.5-5B
+P1A-018,Cigna Specialty Q4 2024 adj operating income,948,USD million,2024-12-31,https://www.modernhealthcare.com/insurance/mh-cigna-earnings-evernorth-health-express-scripts/,industry-press,P2,Q4 only +27% YoY
+P1A-019,Cigna Evernorth 2025 adj OI guidance,7.2,USD billion (min),2025-01-30,https://newsroom.thecignagroup.com/2025-01-30-The-Cigna-Group-Reports-Fourth-Quarter-and-Full-Year-2024-Results,company-press,P1,At least $7.2B for 2025
+P1A-020,Express Scripts PBM market share 2024,30,percent,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,Up from 23% in 2023 (Centene gain)
+P1A-021,Express Scripts 2024 retail Rx claims,1.9,billion,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,+40% from 1.3B in 2023
+P1A-022,UnitedHealth total revenue 2024,400.3,USD billion,2024-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,Full year 2024
+P1A-023,UNH Optum total revenue 2024,253,USD billion,2024-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,+12% YoY +$26.3B
+P1A-024,UNH Optum Health revenue 2024,105.4,USD billion,2024-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,Driven by VBC patients
+P1A-025,UNH Optum Rx revenue growth 2024,15,percent,2024-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,Absolute $ not stated officially
+P1A-026,UNH Optum Rx revenue 2024 estimated,133,USD billion,2024-12-31,calculated,derived,P2,Derived from 2023 ~$116B * 1.15
+P1A-027,UNH Optum Operating Earnings 2024,16.7,USD billion,2024-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,Adjusted $18.2B
+P1A-028,UNH Optum Rx 2024 scripts,1.62,billion adj-scripts,2024-12-31,https://www.businesswire.com/news/home/20250116305758/en/UnitedHealth-Group-Reports-2024-Results,company-press,P1,vs 1.54B 2023 (+5.2%)
+P1A-029,UNH Optum Rx 2024 managed pharma spend,178,USD billion,2024-12-31,https://www.businesswire.com/news/home/20250116305758/en/UnitedHealth-Group-Reports-2024-Results,company-press,P1,Includes 74B specialty (41.6%)
+P1A-030,UNH Optum Rx 2024 specialty spend,74,USD billion,2024-12-31,https://www.businesswire.com/news/home/20250116305758/en/UnitedHealth-Group-Reports-2024-Results,company-press,P1,41.6% of total managed
+P1A-031,UNH Optum Rx 2024 margin,4.38,percent,2024-12-31,https://intuitionlabs.ai/pdfs/the-big-3-pbms-an-analysis-of-market-share-dominance.pdf,industry-analyst,P2,Per IntuitionLabs report
+P1A-032,UNH Optum Rx 2024 OI estimated,5.8,USD billion,2024-12-31,calculated,derived,P3,Estimated 4.38% margin * 133B revenue
+P1A-033,UNH Optum Rx 2025 managed pharma spend,188,USD billion,2025-12-31,https://www.fiercehealthcare.com/payers/unitedhealth-group-posts-144b-profit-4003b-revenue-2024,industry-press,P1,Includes 87B specialty
+P1A-034,OptumRx PBM market share 2024,23,percent,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,Stable from 2023
+P1A-035,Top 3 PBMs total prescription share 2024,80,percent,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,High industry concentration
+P1A-036,Express Scripts Centene contract size,20,million members,2024-01-01,https://www.fiercehealthcare.com/payers/why-largest-pbms-may-be-focusing-specific-markets-study,industry-press,P1,5-year deal started Jan 2024
+P1A-037,CVS market cap 2026-05,90,USD billion,2026-05-15,https://companiesmarketcap.com/cvs-health/marketcap/,market-data,P2,Approximate
+P1A-038,CI market cap 2026-05,90,USD billion,2026-05-15,https://companiesmarketcap.com/cigna/marketcap/,market-data,P2,Approximate
+P1A-039,UNH market cap 2026-05,330,USD billion,2026-05-15,https://companiesmarketcap.com/united-health/marketcap/,market-data,P1,Approximate
+P1B-001,FTC 2nd Interim Report publication date,2025-01-14,date,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Specialty Generic Drugs report
+P1B-002,FTC study time period,2017-2022,years,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,6-year window of Big 3 PBM dispensing data
+P1B-003,FTC analyzed specialty generic drugs count,51,drugs,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Comprising 882 NDCs
+P1B-004,FTC analyzed NDCs count,882,NDC count,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,National Drug Codes within 51 drugs
+P1B-005,Big 3 PBM specialty generic markup revenue 2017-2022,7.3,USD billion (cumulative),2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Revenue in excess of NADAC acquisition cost
+P1B-006,Big 3 PBM specialty generic markup annual,1.2,USD billion per year,2025-01-14,calculated,derived,P1,7.3B / 6 years average
+P1B-007,Big 3 PBM spread pricing on specialty generics 2017-2022,1.4,USD billion (cumulative),2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Separate from F1 markup; spread on non-affiliated dispensings
+P1B-008,Big 3 PBM spread pricing annual,233,USD million per year,2025-01-14,calculated,derived,P2,1.4B / 6 years average
+P1B-009,PBM affiliated pharmacy revenue CAGR 2017-2021,42,percent,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Excess-over-NADAC dispensing revenue growth
+P1B-010,Top 10 specialty generic drugs concentration of $7.3B,85,percent,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Top 10 = 6.2B of 7.3B
+P1B-011,Top 10 drugs markup revenue,6.2,USD billion (cumulative),2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Top 10 drugs portion of $7.3B total
+P1B-012,Specialty generics marked up >100%,67,percent of drugs,2025-01-14,https://www.fiercehealthcare.com/payers/ftc-big-3-pbms-generated-73b-specialty-generic-drug-markups,industry-press,P1,Approximately 2/3 of analyzed drugs
+P1B-013,Specialty generics marked up >1000%,20,percent of drugs,2025-01-14,https://www.fiercehealthcare.com/payers/ftc-big-3-pbms-generated-73b-specialty-generic-drug-markups,industry-press,P1,Over 1 in 5 of analyzed drugs
+P1B-014,Tadalafil PBM affiliated pharmacy acquisition cost,27,USD per 30-day,2022-12-31,https://www.ajmc.com/view/ftc-report-highlights-prescription-drug-price-markups-by-pbms,industry-press,P1,2022 average
+P1B-015,Tadalafil PBM reimbursement rate,2106,USD per 30-day,2022-12-31,https://www.ajmc.com/view/ftc-report-highlights-prescription-drug-price-markups-by-pbms,industry-press,P1,Pulmonary hypertension indication
+P1B-016,Tadalafil markup percentage,7700,percent,2022-12-31,https://www.ajmc.com/view/ftc-report-highlights-prescription-drug-price-markups-by-pbms,industry-press,P1,Most extreme single-drug example in report
+P1B-017,Imatinib (generic Gleevec) markup,1000+,percent,2025-01-14,https://gabionline.net/reports/ftc-reveals-extent-of-pbm-drug-mark-ups-and-profits,industry-press,P1,Leukemia drug
+P1B-018,Abiraterone (generic Zytiga) markup,1000+,percent,2025-01-14,https://gabionline.net/reports/ftc-reveals-extent-of-pbm-drug-mark-ups-and-profits,industry-press,P1,Prostate cancer drug
+P1B-019,Affiliated vs unaffiliated reimbursement gap,higher on nearly every drug,qualitative,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Self-dealing evidence
+P1B-020,Named drugs in FTC report,Ampyra Gleevec Sensipar Myfortic Zytiga,drug names,2025-01-14,https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen,gov-primary,P1,Originator brand names of generics analyzed
+P1C-001,PBM Reform signed into law,2026-02-03,date,2026-02-03,https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency,industry-press,P1,Trump signed Consolidated Appropriations Act of 2026
+P1C-002,CBO 10-year federal deficit reduction from PBM reform,2.12,USD billion,2026-02-03,https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency,industry-press,P1,2026-2035 cumulative
+P1C-003,CBO 10-year savings from Medicare Part D delinking specifically,444,USD million,2026-02-03,https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency,industry-press,P1,Subset of $2.12B total
+P1C-004,Cigna Evernorth 2025 Adj Operating Income guidance,7.2,USD billion (min),2025-01-30,https://newsroom.thecignagroup.com/2025-01-30-The-Cigna-Group-Reports-Fourth-Quarter-and-Full-Year-2024-Results,company-press,P1,At least $7.2B for 2025
+P1C-005,Cigna Evernorth 2026 Adj Operating Income guidance,6.9,USD billion (min),2026-02-XX,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,At least $6.9B for 2026, down from 7.2B - PBM reform impact
+P1C-006,Cigna Evernorth YoY operating income change 2025-2026,-4.2,percent,2026-02-XX,calculated,derived,P1,6.9 vs 7.2
+P1C-007,Cigna mail and specialty pharmacy share of total operating profit (DB estimate),40,percent,2026-XX,https://www.ainvest.com/news/db-cvs-ci-etc-would-be-severely-impacted-if-us-congress-advances-pbm-reform-241210106ab463a2851ee27c/,sell-side-analyst,P1,Deutsche Bank estimate
+P1C-008,CVS Health 2025 total revenue,402.1,USD billion,2025-12-31,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,Up 7.9% YoY from 372.8B
+P1C-009,CVS Health 2025 cost cuts,2,USD billion,2025-12-31,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,Annual cost reduction
+P1C-010,CVS Q1 2026 goodwill impairment,5.7,USD billion,2026-Q1,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,Aetna-related
+P1C-011,CVS stock change 2025,+40,percent,2025-12-31,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P2,Joyner turnaround
+P1C-012,CVS new CEO David Joyner start date,2024-10,date,2024-10-XX,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P2,Replaced Karen Lynch
+P1C-013,UNH stock change 2025,-50,percent,2025-12-31,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,Multi-factor decline
+P1C-014,UNH CEO Andrew Witty resigned year,2025,year,2025-XX,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,CEO transition
+P1C-015,Brian Thompson assassination date,2024-12-04,date,2024-12-04,https://markets.financialcontent.com/stocks/article/marketminute-2026-2-10-cvs-health-navigates-a-stormy-2026,industry-press,P1,UnitedHealthcare CEO killed - triggered anti-PBM sentiment
+P1C-016,OptumRx rebate pass-through commitment effective,2026-01-01,date,2026-XX,https://www.ajmc.com/view/pbm-reforms-signed-into-law-reshaping-medicare-part-d-drug-pricing-transparency,industry-press,P1,Preempt legislation
+P1C-017,Cigna Express Scripts rebate-retention elimination announced,2025-10,date,2025-10-XX,https://www.drugchannels.net/2025/10/cignas-rebate-free-pharmacy-model-three.html,industry-analyst,P1,Adam Fein analysis
+P1C-018,Specialty pharmacy market size 2024,265,USD billion,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,Total specialty Rx revenues
+P1C-019,Top 3 PBM-owned specialty pharmacy share 2024,67,percent of $265B,2024-12-31,https://www.drugchannels.net/2025/03/the-top-pharmacy-benefit-managers-of.html,industry-analyst,P1,Two-thirds = ~$175B
+P1C-020,Specialty pharmacy share of PBM revenue 2024,41.8,percent,2024-12-31,https://market.us/report/global-pharmacy-benefit-management-market/,industry-analyst,P2,Per Market.us PBM report
+P1C-021,PBM total industry revenue 2024,571.1,USD billion,2024-12-31,https://market.us/report/global-pharmacy-benefit-management-market/,industry-analyst,P2,Per Market.us
+P1C-022,Mark Cuban Cost Plus Drugs 2024 revenue estimate,100+,USD million,2024-12-31,https://www.beckershospitalreview.com/pharmacy/mark-cubans-healthcare-playbook-explained/,industry-press,P2,Not officially disclosed
+P1C-023,Cost Plus Drugs catalog 2025-mid,4000,drug count,2025-06-XX,https://en.wikipedia.org/wiki/Cost_Plus_Drugs,wikipedia,P2,Generic + brand + biosimilar
+P1C-024,Cost Plus Drugs customer accounts month 13,2,million,2023-XX,https://en.wikipedia.org/wiki/Cost_Plus_Drugs,wikipedia,P2,By early 2023
+P1C-025,Cost Plus Drugs Dallas manufacturing facility,11,USD million,2024-XX,https://www.beckershospitalreview.com/pharmacy/mark-cubans-healthcare-playbook-explained/,industry-press,P2,22000 sqft sterile injectables
+P1C-026,Cost Plus Drugs partnerships with pass-through PBMs by mid-2025,25+,count,2025-06,https://techcrunch.com/2025/08/28/mark-cubans-war-on-americas-5-trillion-healthcare-machine-they-cant-react-as-quickly/,industry-press,P2,B2B traction
+P1C-027,Humana CenterWell + Cost Plus partnership,announced,event,2025-XX,https://www.fiercehealthcare.com/payers/humanas-centerwell-mark-cubans-cost-plus-drugs-handle-employers-prescriptions,industry-press,P1,First major health plan deal
+P1C-028,MCC theoretical Medicare Part D 90-day savings,8.6,USD billion,2024-08,https://www.statnews.com/2024/07/29/mark-cuban-cost-plus-drug-company-bigger-impact-drug-shortages-not-drug-costs/,academic,P2,PharmacoEconomics 2024
+P1D-001,CVS Health Glassdoor overall rating,3.1,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/CVS-Health-Reviews-E437.htm,glassdoor,P2,WLB rating
+P1D-002,CVS Health Glassdoor would recommend percent,44,percent,2026-05,https://www.glassdoor.com/Reviews/CVS-Health-Reviews-E437.htm,glassdoor,P2,Based on 46543 reviews
+P1D-003,CVS Health Data Scientist rating,3.6,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/CVS-Health-Data-Scientist-Reviews-EI_IE437.0,10_KO11,25.htm,glassdoor,P1,83 DS reviews
+P1D-004,CVS Health Data Scientist WLB,4.2,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/CVS-Health-Data-Scientist-Reviews-EI_IE437.0,10_KO11,25.htm,glassdoor,P1,Higher than company avg
+P1D-005,CVS Health Data Scientist would recommend,69,percent,2026-05,https://www.glassdoor.com/Reviews/CVS-Health-Data-Scientist-Reviews-EI_IE437.0,10_KO11,25.htm,glassdoor,P1,Technical roles favored
+P1D-006,Evernorth Blind overall rating,3.4,rating out of 5,2026-05,https://www.teamblind.com/company/Evernorth/reviews,blind,P1,35 reviews
+P1D-007,Evernorth Blind Work Life Balance,4.3,rating out of 5,2026-05,https://www.teamblind.com/company/Evernorth/reviews,blind,P1,Notably high WLB
+P1D-008,Evernorth Blind Compensation Benefits,2.6,rating out of 5,2026-05,https://www.teamblind.com/company/Evernorth/reviews,blind,P1,Notably low compensation
+P1D-009,Cigna Software Engineer total comp offer,110,USD K,2026-05,https://www.teamblind.com/company/Evernorth/reviews,blind,P2,After negotiation - one data point
+P1D-010,Cigna Senior Infrastructure Engineer base,135,USD K,2026-05,https://www.teamblind.com/company/Evernorth/reviews,blind,P2,No RSU no signing bonus
+P1D-011,OptumRx Glassdoor overall,3.2,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/Optumrx-Reviews-E4046065.htm,glassdoor,P2,849 reviews
+P1D-012,OptumRx Work Life Balance,3.3,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/Optumrx-Reviews-E4046065.htm,glassdoor,P2,Department variance high
+P1D-013,UnitedHealth Pharmacist Glassdoor rating,2.0,rating out of 5,2026-05,https://www.glassdoor.com/Reviews/UnitedHealth-Group-Pharmacist-Reviews-EI_IE1991.0,18_KO19,29.htm,glassdoor,P1,Pharmacist quality declined
+P1D-014,OptumRx vacation days,23,days,2026-05,https://www.glassdoor.com/Reviews/Optumrx-Reviews-E4046065.htm,glassdoor,P2,Per multiple reviewer mention
+P1D-015,PBM Financial Analyst national average base,110-150,USD K range,2026-05,https://www.indeed.com/q-pharmacy-benefit-management-financial-analyst-jobs.html,jobs-aggregate,P1,Indeed aggregated
+P1D-016,PBM industry median annual pay,92240,USD,2026-05,https://www.indeed.com/career-advice/finding-a-job/what-is-pbm,jobs-aggregate,P2,All PBM roles aggregated
+P1D-017,PBM 25th percentile pay,58000,USD,2026-05,https://www.indeed.com/career-advice/finding-a-job/what-is-pbm,jobs-aggregate,P2,Low end
+P1D-018,PBM 75th percentile pay,119500,USD,2026-05,https://www.indeed.com/career-advice/finding-a-job/what-is-pbm,jobs-aggregate,P2,High end
+P1D-019,Big Tech SWE total comp benchmark,250-400,USD K range,2026-05,levels.fyi-prior-knowledge,industry-knowledge,P3,For comparison vs Cigna SWE $110K

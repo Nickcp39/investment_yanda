@@ -1,0 +1,19 @@
+block,data_point,value,unit,as_of,source_type,source_url,note
+1.1,卫生总费用,90895.5,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,初步核算 NHC 2024 公报新闻解读稿
+1.1,占GDP比重,6.7,%,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,NHC 公报口径；WB 口径 2023=7.19%
+1.1,人均卫生总费用,6454.4,元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,NHC 公报
+1.1,政府卫生支出,22608,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比24.9% NHC 公报
+1.1,社会卫生支出,43280,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比47.6% NHC 公报
+1.1,个人卫生支出OOP,25007.5,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比27.5% NHC 公报
+1.1,医疗卫生机构总数,1093551,家,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,中新网转NHC公报
+1.1,医院数,38710,家,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,公私拆分待补 1.4
+1.1,卫生人员总数,1578,万人,2024,P1_official,https://www.163.com/dy/article/K7AGO6FG0519QIKK.html,网易转NHC新闻发布会
+1.1,卫生技术人员,1302.0,万人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,比上年+53.1万 +4.3%
+1.1,每千人执业医师,3.61,人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,NHC 公报
+1.1,每千人注册护士,4.16,人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,NHC 公报
+1.1,60岁以上人口,3.1,亿,2024,P1_official,https://www.cncaprc.gov.cn/u/cms/www/202507/24154203fka1.pdf,民政部 2024 老龄公报 占比22.0%
+1.1,65岁以上人口,2.2,亿,2024,P1_official,https://www.cncaprc.gov.cn/u/cms/www/202507/24154203fka1.pdf,民政部 2024 老龄公报 占比15.6%
+1.1,60+患高血压比率,58.3,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+患糖尿病比率,19.4,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+患高胆固醇比率,10.5,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+至少1种慢病比率,75.8,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究

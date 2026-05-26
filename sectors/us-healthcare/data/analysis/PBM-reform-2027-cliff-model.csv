@@ -1,0 +1,14 @@
+scenario,year,cigna_evernorth_adj_OI_USD_B,cvs_HS_adj_OI_USD_B,unh_optumrx_OI_USD_B,3-firm_total,YoY_change_total_pct,key_assumption,source
+actual,2024,8.0_est,7.2,5.8_est,21.0,baseline,P1A 段数据,reconciled estimate
+guidance,2025,7.2,7.2_est,6.5_est,20.9,-0.5,CI 给出 7.2B guidance; CVS/UNH 假设持平,P1C-004
+guidance,2026,6.9,7.0_est,6.7_est,20.6,-1.4,CI 给出 6.9B (-4.2% YoY) reform 影响起;预测 CVS 受 MA cost 压力略降;UNH 在 rebate pass-through 后稳定,P1C-005+P1C-006
+conservative,2027,6.5,6.7_est,6.5_est,19.7,-4.4,Medicare Part D delinking 第一年完整实施;CBO 联邦 deficit 影响 $200-300M/y 分摊;非常温和情景,P1C-002+P1C-003
+base,2027,6.0,6.2_est,6.0_est,18.2,-11.7,Medicare Part D + 部分 spread pricing 监管溢出到商保;-10% segment OI,Deutsche Bank PBM severely impacted 评估
+aggressive,2027,4.5,5.0_est,4.8_est,14.3,-30.6,FTC 第三份报告 + 更严厉立法 + specialty markup 受限 (FTC 2025 揭露 $7.3B annual run rate),P1B-005+P1B-008
+extreme,2027,3.5,3.5_est,4.0_est,11.0,-46.6,全面 vertical integration 拆分立法 + Cost Plus 抢 5-10% share,low probability 但 worst case
+conservative,2030,7.5,7.5_est,7.5_est,22.5,+14.2,saturated normalization + admin fee 替代 rebate,
+base,2030,5.5,5.8_est,6.0_est,17.3,-5.0,持续小幅下行,
+aggressive,2030,3.0,3.5_est,4.0_est,10.5,-26.6,specialty markup 完全失守 + Cost Plus 抢 20% share,
+sensitivity_per_1pct_PBM_segment_OI_decline,2027,0.080,0.072,0.058,0.210,equity_impact_via_12x_EBITDA,Cigna 最敏感,
+implied_market_cap_hit_aggressive_2027_USD_B,2027,30,18,12,60,total_$60B_cap_loss,vs current $510B combined 3 cap (CVS+CI+UNH),
+implied_market_cap_hit_pct_aggressive_2027,2027,-33,-20,-3.6,,worst case at parent level,UNH less exposed because OptumRx is smaller % of parent

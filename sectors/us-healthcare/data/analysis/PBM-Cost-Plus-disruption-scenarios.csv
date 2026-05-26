@@ -1,0 +1,28 @@
+year,revenue_USD_M,share_of_PBM_market_pct,scenario,driver,notes,source
+2022,5,0.001,actual,Launch year,Few million customers Q4,P1C-024 derived
+2023,30,0.005,actual_est,Strong growth Year 2,2200 drugs catalog,P1C-023+wikipedia
+2024,100,0.018,actual_est,Reached $100M run rate,Becker estimate "on track,P1C-022
+2025,200,0.035,actual_est,B2B wholesale + Humana partnership,25+ pass-through PBM deals,P1C-026+P1C-027
+total_PBM_industry_2024,571100,100.0,reference,US PBM total market,Per Market.us aggregator,P1C-021
+total_PBM_industry_2025_est,605000,100.0,reference,+5.9% growth,industry est
+bear_2026,300,0.05,bear,Slow growth,No mass employer adoption,projection
+bear_2030,800,0.13,bear,Niche player only,1B in revenue over 4y,projection
+bear_2034,1500,0.25,bear,Plateau,Cuban exits or quiet,projection
+base_2026,500,0.08,base,Continued momentum,More PBM partnerships,projection
+base_2030,3000,0.45,base,2B-3B annual revenue,Cuban's "future billions" achieved,projection
+base_2034,8000,1.20,base,$8B = small but real,Comparable to mid-PBM,projection
+bull_2026,800,0.13,bull,Reform tailwind accelerates,PBM reform legislation helps transparent PBMs,projection
+bull_2030,8000,1.20,bull,Material market share,$8B by 2030,projection
+bull_2034,25000,3.70,bull,Disruption real,$25B = small Big 3 PBM rival,projection
+extreme_2030,15000,2.25,extreme,Major employer mass migration,Walmart Amazon employers go MCC,extreme_scenario
+extreme_2034,80000,11.50,extreme,Cost Plus = "Amazon of drugs",10%+ market share,extreme_scenario
+big3_share_2024,80.0,n/a,reference,Top 3 PBM share,P1A-035
+big3_share_bear_2034,78.5,n/a,bear_for_MCC,Top 3 lose 1.5pp to Cost Plus,modest takeaway
+big3_share_base_2034,77.5,n/a,base_for_MCC,Top 3 lose 2.5pp,base takeaway
+big3_share_bull_2034,72.0,n/a,bull_for_MCC,Top 3 lose 8pp,bullish takeaway
+big3_share_extreme_2034,65.0,n/a,extreme,Top 3 lose 15pp,disruption scenario
+implied_big3_revenue_loss_base_2034_USD_B,n/a,n/a,base_for_MCC,Big 3 ~$455B 2034 vs $475B no-MCC,base takeaway equivalent
+implied_big3_revenue_loss_bull_2034_USD_B,n/a,n/a,bull_for_MCC,Big 3 ~$450B 2034 vs $570B no-MCC,$120B loss to MCC + other transparent
+key_inflection_point,2027,n/a,signal,Watch:if MCC monthly run rate hits $1B annual,That's 5x current,monitoring
+risk_factor,can_MCC_scale,n/a,binary,MCC manufacturing capacity is real bottleneck,$11M Dallas plant is starter scale,P1C-025
+key_partnership_2025,Humana_CenterWell,n/a,milestone,First major payer deal,Critical signal of legitimacy,P1C-027

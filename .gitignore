@@ -27,6 +27,7 @@ Thumbs.db
 # Claude Code project-level skills (cloned/forked from upstream, install via skills/install.md)
 .claude/skills/*/
 .claude/settings.local.json
+.claude/worktrees/
 
 # Channel ingestion artifacts (large binaries / regenerable)
 sources/channels/*/audio/

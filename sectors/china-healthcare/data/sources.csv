@@ -1,0 +1,167 @@
+block,data_point,value,unit,as_of,source_type,source_url,note
+1.1,卫生总费用,90895.5,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,初步核算 NHC 2024 公报新闻解读稿
+1.1,占GDP比重,6.7,%,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,NHC 公报口径；WB 口径 2023=7.19%
+1.1,人均卫生总费用,6454.4,元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,NHC 公报
+1.1,政府卫生支出,22608,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比24.9% NHC 公报
+1.1,社会卫生支出,43280,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比47.6% NHC 公报
+1.1,个人卫生支出OOP,25007.5,亿元RMB,2024,P1_official,https://www.nhc.gov.cn/guihuaxxs/c100132/202512/9db8db5488a748c4b1e1068a4a8c4455.shtml,占比27.5% NHC 公报
+1.1,医疗卫生机构总数,1093551,家,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,中新网转NHC公报
+1.1,医院数,38710,家,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,公私拆分待补 1.4
+1.1,卫生人员总数,1578,万人,2024,P1_official,https://www.163.com/dy/article/K7AGO6FG0519QIKK.html,网易转NHC新闻发布会
+1.1,卫生技术人员,1302.0,万人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,比上年+53.1万 +4.3%
+1.1,每千人执业医师,3.61,人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,NHC 公报
+1.1,每千人注册护士,4.16,人,2024,P1_official,https://www.chinanews.com.cn/gn/2025/12-02/10525049.shtml,NHC 公报
+1.1,60岁以上人口,3.1,亿,2024,P1_official,https://www.cncaprc.gov.cn/u/cms/www/202507/24154203fka1.pdf,民政部 2024 老龄公报 占比22.0%
+1.1,65岁以上人口,2.2,亿,2024,P1_official,https://www.cncaprc.gov.cn/u/cms/www/202507/24154203fka1.pdf,民政部 2024 老龄公报 占比15.6%
+1.1,60+患高血压比率,58.3,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+患糖尿病比率,19.4,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+患高胆固醇比率,10.5,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+1.1,60+至少1种慢病比率,75.8,%,2024_pub,P1_research,https://iehs.chinacdc.cn/kjpx/kyxx/202410/t20241024_301975.html,中国CDC BMJ研究
+L3.A.flow.01,国药控股 营业收入,5845.08,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/relnews/hk/2025-03-24/doc-ineqszqa3853988.shtml,1099.HK 年报；同比 -2.02% 15年来首次下降
+L3.A.flow.02,国药控股 归母净利润,70.5,亿元RMB,2024,P1_annual_report,https://stcn.com/article/detail/1606096.html,1099.HK 年报；同比 -22.14% 减值因素
+L3.A.flow.03,国药控股 员工总数,~120000,人,2024,P3_industry_report,https://finance.sina.com.cn/stock/relnews/hk/2025-03-24/doc-ineqszqa3853988.shtml,搜索摘要"约 12 万"；待年报 PDF 核
+L3.A.flow.04,国药控股 医药分销收入占比,73.16,%,2024,P1_annual_report,https://paper.cnstock.com/html/2025-03/20/content_2038575.htm,2024 年报；YoY +1.72 pp
+L3.A.flow.05,国药控股 医疗器械分销收入占比,19.41,%,2024,P1_annual_report,https://paper.cnstock.com/html/2025-03/20/content_2038575.htm,2024 年报；YoY -1.68 pp 器械分销失速
+L3.A.flow.06,国药控股 医药零售收入占比,5.92,%,2024,P1_annual_report,https://paper.cnstock.com/html/2025-03/20/content_2038575.htm,2024 年报；YoY +0.14 pp
+L3.A.flow.07,国药控股 零售门店总数,11213,家,2024-12-31,P1_annual_report,https://stcn.com/article/detail/1606096.html,2024 年报 国大 9569 + 专业药房 1644
+L3.A.flow.08,国药控股 国大药房门店数,9569,家,2024-12-31,P1_annual_report,https://stcn.com/article/detail/1606096.html,2024 年报
+L3.A.flow.09,国药控股 专业药房门店数,1644,家,2024-12-31,P1_annual_report,https://stcn.com/article/detail/1606096.html,2024 年报
+L3.A.flow.10,国药控股 双通道药房门店数,1211,家,2024-12-31,P1_annual_report,https://stcn.com/article/detail/1606096.html,2024 年报；2023=1127 同比 +7.4%
+L3.A.flow.11,国药控股 零售网络覆盖城市,297,城,2024,P1_annual_report,https://stcn.com/article/detail/1606096.html,覆盖 30 省
+L3.A.flow.12,国药控股 医药零售板块营收,359.81,亿元RMB,2024,P1_annual_report,https://stcn.com/article/detail/1606096.html,YoY +0.82% 几乎零增长
+L3.A.flow.13,国药控股 末期股息每股,0.68,元RMB含税,2024,P1_annual_report,https://finance.sina.com.cn/stock/relnews/hk/2025-03-24/doc-ineqszqa3853988.shtml,1099.HK 公告
+L3.A.flow.14,上海医药 营业收入,2752.51,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,601607 年报 YoY +5.75%
+L3.A.flow.15,上海医药 归母净利润,45.53,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,YoY +20.82%
+L3.A.flow.16,上海医药 员工总数,49402,人,2024-12-31,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,601607 年报 真实数字
+L3.A.flow.17,上海医药 医药商业销售收入,2515.20,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,YoY +7.47%
+L3.A.flow.18,上海医药 医药工业销售收入,237.31,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,2024 年报
+L3.A.flow.19,上海医药 商业利润贡献,33.85,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,YoY +1.05%
+L3.A.flow.20,上海医药 工业利润贡献,21.93,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,YoY +3.95%
+L3.A.flow.21,上海医药 分销收入占比,88.76,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,主营业务结构
+L3.A.flow.22,上海医药 工业收入占比,11.68,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,主营业务结构
+L3.A.flow.23,上海医药 零售收入占比,3.16,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,主营业务结构
+L3.A.flow.24,上海医药 经营现金流净流入,58.27,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aiassist/yjbg/2025-03-28/doc-inercrkf1812020.shtml,YoY +11.39%
+L3.A.flow.25,华润医药 总收益,2576.73,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,3320.HK 年报 YoY +5.3%
+L3.A.flow.26,华润医药 员工总数,~72700,人,2024,P3_industry_report,https://pitchbook.com/profiles/company/167834-71,PitchBook + 信用评级报告交叉
+L3.A.flow.27,华润医药 制药业务收入占比,16.1,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,业务分部
+L3.A.flow.28,华润医药 医药分销收入占比,80.0,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,业务分部
+L3.A.flow.29,华润医药 药品零售收入占比,3.9,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,业务分部
+L3.A.flow.30,华润医药 毛利,406.89,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,YoY +6.1%
+L3.A.flow.31,华润医药 毛利率,15.8,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,同比 +0.1 pp
+L3.A.flow.32,华润医药 零售门店总数,628,家,2024-12-31,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,专业 270 + 社会 358
+L3.A.flow.33,华润医药 专业药房,270,家,2024-12-31,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,2024 年报
+L3.A.flow.34,华润医药 双通道资质药房,182,家,2024-12-31,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,2024 年报
+L3.A.flow.35,华润医药 医保门店占比,85.35,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,628 家中医保门店
+L3.A.flow.36,华润医药 分销网络覆盖,28,省份,2024,P1_annual_report,https://finance.sina.com.cn/stock/bxjj/2025-03-26/doc-ineqyerq4914552.shtml,客户 27 万家
+L3.A.flow.37,九州通 营业收入,1518.10,亿元RMB,2024,P1_annual_report,https://www.jiemian.com/article/12708662.html,600998 年报 YoY +1.11%
+L3.A.flow.38,九州通 归母净利润,25.07,亿元RMB,2024,P1_annual_report,https://www.jiemian.com/article/12708662.html,YoY +15.33%
+L3.A.flow.39,九州通 员工总数,30169,人,2024,P1_annual_report,https://basic.10jqka.com.cn/600998/company.html,真实数字
+L3.A.flow.40,九州通 数字化项目数,47,个,2024,P1_annual_report,https://www.sohu.com/a/890871978_103207,已上线 45 个
+L3.A.flow.41,九州通 仓库数,141,座,2024,P1_annual_report,https://www.sohu.com/a/890871978_103207,经营设施 426 万平米
+L3.A.flow.42,九州通 物流覆盖区域,96+,%,2024,P1_annual_report,https://www.sohu.com/a/890871978_103207,全国覆盖率
+L3.B.retail.01,大参林 营业收入,264.96,亿元RMB,2024,P1_annual_report,https://www.vbdata.cn/newsDetail/e1875a10233a11f0b7af00163e034e34,603233 年报 YoY +8.01%
+L3.B.retail.02,大参林 归母净利润,9.14,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/stock/aigc/stockfs/2025-04-26/doc-ineunmfc8797409.shtml,YoY -21.58% 净利下滑
+L3.B.retail.03,大参林 门店总数,16622,家,2025-03-31,P1_annual_report,https://www.vbdata.cn/newsDetail/e1875a10233a11f0b7af00163e034e34,2024 年报披露至 2025 Q1
+L3.B.retail.04,大参林 2024 新增门店,3212,家,2024,P1_annual_report,https://www.vbdata.cn/newsDetail/e1875a10233a11f0b7af00163e034e34,关闭 733 净增 2479
+L3.B.retail.05,大参林 2024 净增门店,2479,家,2024,P1_annual_report,https://www.vbdata.cn/newsDetail/e1875a10233a11f0b7af00163e034e34,门店数同比 +17.61%
+L3.B.retail.06,大参林 员工总数,45466,人,2023-12-31,P1_annual_report,https://www.rccaijing.com/news-7190609931035932286.html,2023 年报；2024 应增至 ~53000
+L3.B.retail.07,大参林 人均创收,53.96,万元RMB,2023,P1_annual_report,https://www.rccaijing.com/news-7190609931035932286.html,2023 年报
+L3.B.retail.08,大参林 零售业务收入占比,84.76,%,2024,P1_annual_report,https://finance.sina.com.cn/stock/aigc/stockfs/2025-04-26/doc-ineunmfc8797409.shtml,主营 258.61 亿
+L3.B.retail.09,益丰药房 营业收入,240.62,亿元RMB,2024,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,603939 年报 YoY +6.53%
+L3.B.retail.10,益丰药房 归母净利润,15.29,亿元RMB,2024,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,YoY +8.26% 4 大唯一双增
+L3.B.retail.11,益丰药房 门店总数,14684,家,2024-12-31,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,含加盟 3812 家
+L3.B.retail.12,益丰药房 员工总数,40018,人,2024-12-31,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,全部全职
+L3.B.retail.13,益丰药房 ROE 加权平均,14.67,%,2024,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,2024 年报
+L3.B.retail.14,益丰药房 EPS,1.26,元,2024,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,2024 年报
+L3.B.retail.15,益丰药房 总资产,279.75,亿元RMB,2024-12-31,P1_annual_report,https://www.cfbond.com/2025/04/28/wap_991085792.html,YoY +15.90%
+L3.B.retail.16,老百姓 营业收入,223.58,亿元RMB,2024,P1_annual_report,http://www.stcn.com/article/detail/1742057.html,603883 年报 YoY -0.36% 首次同比下滑
+L3.B.retail.17,老百姓 归母净利润,5.19,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/roll/2025-04-29/doc-ineuwcvp5434304.shtml,YoY -44.13% 腰斩
+L3.B.retail.18,老百姓 门店总数,15277,家,2024-12-31,P1_annual_report,http://www.stcn.com/article/detail/1742057.html,直营 9981 + 加盟 5296
+L3.B.retail.19,老百姓 直营门店,9981,家,2024-12-31,P1_annual_report,http://www.stcn.com/article/detail/1742057.html,2024 年报
+L3.B.retail.20,老百姓 加盟门店,5296,家,2024-12-31,P1_annual_report,http://www.stcn.com/article/detail/1742057.html,2024 年报
+L3.B.retail.21,老百姓 覆盖省份,18,省,2024,P1_annual_report,http://www.stcn.com/article/detail/1742057.html,150+ 地级市
+L3.B.retail.22,一心堂 营业收入,180.00,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/jjxw/2025-04-28/doc-ineustcc6819987.shtml,002727 年报
+L3.B.retail.23,一心堂 归母净利润,1.14,亿元RMB,2024,P1_annual_report,https://finance.sina.com.cn/jjxw/2025-04-28/doc-ineustcc6819987.shtml,YoY -79.23% 重伤
+L3.B.retail.24,一心堂 门店总数,11291,家,2024-06-30,P1_annual_report,https://pdf.dfcfw.com/pdf/H3_AP202411111640811063_1.pdf,2024 H1 数据 全年待补
+L3.B.retail.25,一心堂 云南门店占比,49.1,%,2024-06,P1_annual_report,https://pdf.dfcfw.com/pdf/H3_AP202411111640811063_1.pdf,5546 家 区域龙头
+L3.B.retail.26,一心堂 毛利率,31.79,%,2024,P1_annual_report,https://finance.sina.com.cn/jjxw/2025-04-28/doc-ineustcc6819987.shtml,2024 年报
+L3.B.retail.27,一心堂 ROE,1.52,%,2024,P1_annual_report,https://finance.sina.com.cn/jjxw/2025-04-28/doc-ineustcc6819987.shtml,2024 年报
+L3.C.internet.01,京东健康 营业收入,582,亿元RMB,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,6618.HK 年报 YoY +8.6% 从 535 亿
+L3.C.internet.02,京东健康 净利率,7.16,%,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,推算净利约 41.6 亿
+L3.C.internet.03,京东健康 商品收入,488,亿元RMB,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,YoY +6.9%
+L3.C.internet.04,京东健康 自营商品收入占比,~85,%,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,2023 自营 457 亿；2024 自营估 ~516 亿
+L3.C.internet.05,京东健康 平台广告服务收入,7.9,亿元RMB,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,YoY +23.7%
+L3.C.internet.06,京东健康 第三方商家数,50000+,家,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,YoY +100% 战略加大开放
+L3.C.internet.07,京东健康 年活跃用户,1.84,亿,2024,P1_annual_report,https://reportify.cn/reports/1099959843013398528,2024 年报
+L3.C.internet.08,京东健康 员工总数,3118,人,2024,P3_industry_report,https://www.100ec.cn/detail--6649512.html,2024 公开数据
+L3.C.internet.09,阿里健康 营业收入,305.98,亿元RMB,FY2025,P1_annual_report,https://finance.sina.com.cn/roll/2025-05-21/doc-inexhnhk0638971.shtml,0241.HK FY 截至 2025-03-31 YoY +13.2%
+L3.C.internet.10,阿里健康 净利润,14.32,亿元RMB,FY2025,P1_annual_report,https://www.vbdata.cn/newsDetail/b56cca58359d11f0b7af00163e034e34,YoY +62.2%
+L3.C.internet.11,阿里健康 调整后净利,19.5,亿元RMB,FY2025,P1_annual_report,https://www.vbdata.cn/newsDetail/b56cca58359d11f0b7af00163e034e34,YoY +35.6%
+L3.C.internet.12,阿里健康 医药自营收入,261.24,亿元RMB,FY2025,P1_annual_report,https://www.vbdata.cn/newsDetail/b56cca58359d11f0b7af00163e034e34,YoY +10% 占比 85.38%
+L3.C.internet.13,阿里健康 医药电商平台收入,35.88,亿元RMB,FY2025,P1_annual_report,https://www.vbdata.cn/newsDetail/b56cca58359d11f0b7af00163e034e34,YoY +54% 增速最快
+L3.C.internet.14,阿里健康 医疗数字化服务收入,8.85,亿元RMB,FY2025,P1_annual_report,https://www.vbdata.cn/newsDetail/b56cca58359d11f0b7af00163e034e34,YoY -7.6% 唯一下滑
+L3.C.internet.15,阿里健康 天猫健康商家数,48300,家,FY2025,P1_annual_report,https://finance.sina.com.cn/roll/2025-05-21/doc-inexhnhk0638971.shtml,YoY +35%
+L3.C.internet.16,阿里健康 在线 SKU 数,1.33,亿,FY2025,P1_annual_report,https://finance.sina.com.cn/roll/2025-05-21/doc-inexhnhk0638971.shtml,YoY +91%
+L3.C.internet.17,阿里健康 签约医师药师营养师,250000+,人,2025-09-30,P1_annual_report,https://finance.sina.com.cn/roll/2025-05-21/doc-inexhnhk0638971.shtml,在线健康咨询服务 YoY +12%
+L3.C.internet.18,阿里健康 员工总数,1435,人,2024,P3_industry_report,https://www.100ec.cn/detail--6649512.html,2024 公开数据
+L3.C.internet.19,拼多多医药 GMV,~600,亿元RMB,2023,P2_news_investigative,https://www.yicai.com/news/102315936.html,第一财经独家调查
+L3.C.internet.20,拼多多医药 团队规模,10-15,人,2024,P2_news_investigative,https://www.yicai.com/news/102315936.html,常年 4-5 至 15 人
+L3.C.internet.21,拼多多医药 GMV 增速,30-50,%,2023,P2_news_investigative,https://www.yicai.com/news/102315936.html,
+L3.C.internet.22,拼多多医药 入驻连锁,4000+,家,2024,P2_news_investigative,https://www.yicai.com/news/102315936.html,
+L3.C.internet.23,平安健康 总收入,48.08,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,1833.HK 年报 YoY +2.9%
+L3.C.internet.24,平安健康 净利润,0.88,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,首次扭亏 2023 = 亏 3.35 亿
+L3.C.internet.25,平安健康 医疗服务收入,21.69,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,YoY +4.9%
+L3.C.internet.26,平安健康 养老服务收入,2.83,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,YoY +413.5%
+L3.C.internet.27,平安健康 健康服务收入,23.56,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,YoY -7.6%
+L3.C.internet.28,平安健康 F 端收入,24.16,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,YoY +9.6% 保险金融
+L3.C.internet.29,平安健康 B 端收入,14.31,亿元RMB,2024,P1_annual_report,https://www.popcj.com/depth/3352902503504726,YoY +32.7% 企业 2049 家
+L3.C.internet.30,平安健康 员工总数,1446,人,2024-06,P2_news_authoritative,https://m.21jingji.com/article/20240821/herald/94bbb270bcd895679b499587eb2ea159_zaker.html,从 2021 3425 -58%
+L3.D.DTP.01,思派健康 营业收入,49.3,亿元港币,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,0314.HK 年报
+L3.D.DTP.02,思派健康 净亏损,3.496,亿元港币,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,2024 年报
+L3.D.DTP.03,思派健康 特药药房收入占比,39.76,%,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,2024 年报；显著低于 2023H1 的 88.5%
+L3.D.DTP.04,思派健康 医生研究协助收入占比,25.47,%,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,2024 年报
+L3.D.DTP.05,思派健康 特药药房数,95,家,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,
+L3.D.DTP.06,思派健康 企业健康保覆盖员工,93,万人,2024,P1_annual_report,https://caifuhao.eastmoney.com/news/20250617203325702212710,服务 480+ 家企业
+L3.D.DTP.07,思派健康 2018 营收,1.3,亿元RMB,2018,P1_annual_report,https://www.vbdata.cn/52028,招股书 历史增速参考
+L3.D.DTP.08,思派健康 2019 营收,10.39,亿元RMB,2019,P1_annual_report,https://www.vbdata.cn/52028,YoY +681%
+L3.D.DTP.09,思派健康 2020 营收,26.99,亿元RMB,2020,P1_annual_report,https://www.vbdata.cn/52028,YoY +160%
+L3.D.DTP.10,镁信健康 营业收入,20.35,亿元RMB,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,招股书披露
+L3.D.DTP.11,镁信健康 智药解决方案收入,12.07,亿元RMB,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,占比 59.3%
+L3.D.DTP.12,镁信健康 智保解决方案收入,7.31,亿元RMB,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,占比 35.9%
+L3.D.DTP.13,镁信健康 面向消费者业务收入,0.98,亿元RMB,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,占比 4.8%
+L3.D.DTP.14,镁信健康 估值,116.775,亿元RMB,2023,P2_news_authoritative,https://finance.sina.com.cn/cj/2026-01-25/doc-inhipevv9080839.shtml,IPO 前最后一轮（C 轮）
+L3.D.DTP.15,镁信健康 累计融资,30+,亿元RMB,2024,P2_news_authoritative,https://finance.sina.com.cn/money/insurance/bxyx/2025-07-01/doc-infcyyfc5090993.shtml,7 轮融资
+L3.D.DTP.16,镁信健康 蚂蚁集团持股,10.63,%,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,上海云鑫
+L3.D.DTP.17,镁信健康 一码直付合作药房,3300+,家,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,平台模式
+L3.D.DTP.18,镁信健康 合作医院,20000+,家,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,
+L3.D.DTP.19,镁信健康 合作专家,6000+,人,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,
+L3.D.DTP.20,镁信健康 覆盖城市,295,城,2024,P1_prospectus,https://news.qq.com/rain/a/20260212A05FT400,
+L3.D.DTP.21,镁信健康 2025前10月营收,18.73,亿元RMB,2025-10,P1_prospectus,https://finance.sina.cn/2026-01-17/detail-inhhqhvz1956758.d.html,YoY +34%
+L3.D.DTP.22,镁信健康 2025 净亏损扩大,463,%,2025,P2_news_authoritative,https://finance.sina.cn/2026-01-17/detail-inhhqhvz1956758.d.html,招股书风险披露
+L3.D.DTP.23,圆心科技 港交所递表次数,5,次,2021-2023,P2_news_authoritative,https://finance.sina.com.cn/money/insurance/bxyx/2024-11-12/doc-incvuhur6580808.shtml,5 次递表至今未上
+L3.D.DTP.24,圆心科技 3.5 年累计亏损,~24,亿元RMB,2018-2021H1,P1_prospectus,https://finance.sina.cn/2023-12-25/detail-imzzheuq0436748.d.html,招股书
+L3.D.DTP.25,圆心科技 研发员工数,553,人,2021-12-31,P1_prospectus,https://www.36kr.com/p/1528640991872130,数据工程师 22 + 软件工程师 461 + 医疗专家 33
+L3.D.DTP.26,圆心科技 药房数,321,家,2023-06-30,P1_prospectus,https://www.36kr.com/p/1528640991872130,265 家在医院 1 公里内 / 121 家双通道
+L3.D.DTP.27,圆心科技 院外综合患者服务收入占比,94.6,%,2021,P1_prospectus,https://www.36kr.com/p/1528640991872130,= 主要为药房收入
+L3.D.DTP.28,圆心科技 2022 营收,77.75,亿元RMB,2022,P1_prospectus,https://finance.sina.cn/2023-12-25/detail-imzzheuq0436748.d.html,招股书
+L3.D.DTP.29,圆心科技 2022 亏损,-8.05,亿元RMB,2022,P1_prospectus,https://finance.sina.cn/2023-12-25/detail-imzzheuq0436748.d.html,招股书
+L3.D.DTP.30,圆心科技 销售费用占比,13-17,%,2018-2021,P1_prospectus,https://www.36kr.com/p/1528640991872130,招股书
+L3.E.industry.01,DTP 药房 2019 数量,3936,家,2019,P3_industry_report,https://bydrug.pharmcube.com/news/detail/278ad719f4fa5610b0b141a75f19d477,中康 CMH
+L3.E.industry.02,DTP 药房 2023 数量,7132,家,2023,P3_industry_report,https://bydrug.pharmcube.com/news/detail/278ad719f4fa5610b0b141a75f19d477,中康 CMH
+L3.E.industry.03,DTP 药房 2019-2023 CAGR,17.0,%,2019-2023,P3_industry_report,https://bydrug.pharmcube.com/news/detail/278ad719f4fa5610b0b141a75f19d477,中康 CMH
+L3.E.industry.04,DTP 市场规模 2023,~750,亿元RMB,2023,P3_industry_report,https://bydrug.pharmcube.com/news/detail/278ad719f4fa5610b0b141a75f19d477,中康 CMH
+L3.E.industry.05,DTP 市场规模 2024,~872,亿元RMB,2024,P3_industry_report,https://bydrug.pharmcube.com/news/detail/0fb0f1799df9f59f5335be252922b1d4,行业研究
+L3.E.industry.06,DTP 批零一体占比,35,%,2024,P3_industry_report,https://bydrug.pharmcube.com/news/detail/278ad719f4fa5610b0b141a75f19d477,中康 CMH 数据
+L3.E.industry.07,处方外流 2028 预测,7200,亿元RMB,2028,P3_industry_report,https://bydrug.pharmcube.com/news/detail/0fb0f1799df9f59f5335be252922b1d4,连锁药房承接 5000 亿
+L3.E.industry.08,医药流通 行业利润率 2010,2.2,%,2010,P3_industry_report,https://finance.sina.com.cn/stock/relnews/hk/2025-03-17/doc-inepxqht3734733.shtml,信用展望 2025 报告
+L3.E.industry.09,医药流通 行业利润率 2023,1.6,%,2023,P3_industry_report,https://finance.sina.com.cn/stock/relnews/hk/2025-03-17/doc-inepxqht3734733.shtml,信用展望 2025 报告
+L3.E.industry.10,4 大流通商合计营收,12692,亿元RMB,2024,P1_annual_report,multi,国药+上药+华润+九州通
+L3.E.industry.11,4 大连锁合计营收,909.16,亿元RMB,2024,P1_annual_report,multi,大参林+益丰+老百姓+一心堂
+L3.E.industry.12,4 大连锁合计门店,57874,家,2024,P1_annual_report,multi,大参林 16622+益丰 14684+老百姓 15277+一心堂 11291
+L3.F.salary.01,阿里健康 本科岗月薪 20-50K 占比,79.4,%,2024,P5_insider,https://www.jobui.com/company/13782933/salary/,职友集
+L3.F.salary.02,京东 T 序列年薪总包,60-100,万元RMB,2024,P5_insider,https://zhuanlan.zhihu.com/p/685140414,知乎 互联网大厂薪资
+L3.F.salary.03,京东 基层加薪幅度,10+,%,年度,P5_insider,https://zhuanlan.zhihu.com/p/685140414,
+L3.F.salary.04,京东 经理级加薪幅度,20+,%,年度,P5_insider,https://zhuanlan.zhihu.com/p/685140414,
+L3.F.salary.05,国药集团 员工年薪带,20-50,万元RMB,2024,P5_insider,https://zhuanlan.zhihu.com/p/870764012,知乎 大多 20-30 / 优秀 30-50 / 高管 50+
+L3.F.salary.06,国药集团 总部岗位年龄限制,35,岁,2024,P5_insider,https://zhuanlan.zhihu.com/p/870764012,知乎
+L3.F.salary.07,上海执业药师月薪,7500-12000,元RMB,2024,P5_insider,https://www.zhipin.com/zhaopin/625f7bf752a24c4d03x809y1GA~~/,BOSS 直聘搜索结果聚合

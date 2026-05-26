@@ -1,0 +1,25 @@
+year,markup_revenue_USD_B,YoY_growth_pct,scenario,note,source_basis
+2017,0.45,baseline,actual_derived,Back-calculated from CAGR 42% + cumulative $7.3B over 2017-2022,P1B-005+P1B-009 derived
+2018,0.64,+42,actual_derived,CAGR continues,derived
+2019,0.91,+42,actual_derived,,derived
+2020,1.30,+42,actual_derived,COVID specialty growth,derived
+2021,1.84,+42,actual_derived,,derived
+2022,2.61,+42,actual_derived,Tadalafil markup 7700% etc,P1B-014+P1B-015+P1B-016
+sum_2017_2022,7.75,n/a,actual_derived,vs FTC reported $7.3B = close (~6% over),P1B-005
+2023,3.71,+42,projected_continuation,CAGR continues if unchecked,projection
+2024,5.27,+42,projected_continuation,Saturation should start,projection
+2025,7.48,+42,projected_continuation,Peak if FTC report doesn't change PBM behavior,projection
+2026,7.50,0,base_case,Reform anticipation halts growth,P1C-001 立法生效 2026-02
+2027,5.00,-33,base_case,Reform implementation; markup constrained,projection_post_legislation
+2028,4.00,-20,base_case,New equilibrium,projection
+2029,3.50,-12.5,base_case,Steady state,projection
+2030,3.00,-14,base_case,Long-run normalized,projection
+2025,7.48,+42,bull_case,No reform; FTC 报告无效,counterfactual
+2027,9.00,+20,bull_case,Continued markup,counterfactual
+2030,12.00,+10,bull_case,PBM specialty dominance unchecked,counterfactual
+2025,6.00,-20,bear_case,Reform anticipation already biting,more aggressive
+2027,2.00,-66,bear_case,Specialty markup fully banned,bearish
+2030,1.00,-50,bear_case,Specialty pharmacy unbundled,bearish
+top10_concentration_2022,85,percent,reference,Top 10 drugs = $6.2B of $7.3B,P1B-010+P1B-011
+top10_concentration_2025_projected,80,percent,reference,More drugs entering specialty generic = mild dilution,projection
+implied_per_top_drug_avg_2022,250,USD_M_per_drug,reference,$6.2B / 10 = $620M for top 10 = $620M avg = but actual top has bigger,derived
