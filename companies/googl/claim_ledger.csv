@@ -1,0 +1,14 @@
+claim_id,source_id,layer,entity,date_or_period,claim_type,claim,status,confidence,notes
+C001,GOOGL-10K-2025,Evidence Engineering,Alphabet,FY2025,identity,"Alphabet Inc. reports Google Services, Google Cloud, and Other Bets as business segments.",seed_needs_audit,medium,"Seeded from topical memo; verify against filing before promotion."
+C002,GOOGL-10K-2025,Accounting Translation,Alphabet,FY2025,reported_number,"Alphabet total revenue was $402.836B in FY2025.",seed_needs_audit,medium,"Verify exact table and unit."
+C003,GOOGL-10K-2025,Business Understanding,Google Services,FY2025,reported_number,"Google Search & other revenue was $224.532B in FY2025.",seed_needs_audit,medium,"Core search revenue fact."
+C004,GOOGL-10K-2025,Business Understanding,Google Cloud,FY2025,reported_number,"Google Cloud revenue was $58.705B in FY2025.",seed_needs_audit,medium,"Cloud scale fact."
+C005,GOOGL-Q1-2026-ER,Accounting Translation,Alphabet,Q1 2026,reported_number,"Alphabet total revenue was $109.896B in Q1 2026.",seed_needs_audit,medium,"Verify against Q1 release."
+C006,GOOGL-Q1-2026-ER,Business Understanding,Google Search & other,Q1 2026,reported_number,"Google Search & other revenue was $60.399B in Q1 2026.",seed_needs_audit,medium,"Used to test AI disruption thesis."
+C007,GOOGL-Q1-2026-ER,Accounting Translation,Google Cloud,Q1 2026,reported_number,"Google Cloud revenue was $20.028B and operating income was $6.598B in Q1 2026.",seed_needs_audit,medium,"Key cloud margin claim."
+C008,GOOGL-Q1-2026-ER,Accounting Translation,Alphabet,Q1 2026,reported_number,"Q1 2026 operating cash flow was $45.790B and purchases of property and equipment were $35.674B.",seed_needs_audit,medium,"Key owner-earnings pressure point."
+C009,BRK-13F-2026Q1,Operator / Capital Allocation,Berkshire Hathaway,Q1 2026,filing_position,"Berkshire Hathaway reported Alphabet Class A and Class C holdings in its Q1 2026 13F.",seed_needs_audit,medium,"Need exact share counts and value reconciliation."
+C010,GOOGL-FWP-2026-06,Decision / Monitoring,Alphabet / Berkshire,June 2026,financing,"Alphabet disclosed a private placement to Berkshire Hathaway in June 2026.",seed_needs_audit,medium,"Separate from Q1 13F open-market/manager holdings."
+C011,HH-13F-2025Q4,Operator / Capital Allocation,H&H International Investment,Q4 2025,filing_position,"H&H International Investment reported GOOG holdings in Q4 2025.",seed_needs_audit,medium,"Do not equate manager filing with personal real-time Duan trade log."
+C012,HH-13F-2026Q1,Operator / Capital Allocation,H&H International Investment,Q1 2026,filing_position,"H&H International Investment reported a larger GOOG position in Q1 2026 than Q4 2025.",seed_needs_audit,medium,"Verify exact shares and value."
+

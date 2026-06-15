@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>买方投研 Pipeline 全景图</title>
+  <style>
+    :root {
+      --bg: #f6f7f2;
+      --surface: #ffffff;
+      --surface-2: #eef3ef;
+      --ink: #1d2424;
+      --muted: #5f6b68;
+      --line: #d7ded7;
+      --blue: #295f8d;
+      --green: #2f6f5e;
+      --amber: #a56a18;
+      --coral: #a94b3f;
+      --violet: #67528f;
+      --shadow: 0 10px 28px rgba(32, 42, 40, 0.08);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.58;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 256px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 20px 16px;
+      border-right: 1px solid var(--line);
+      background: #fbfcf8;
+      overflow: auto;
+    }
+
+    aside h1 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 750;
+    }
+
+    aside .subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    nav {
+      display: grid;
+      gap: 6px;
+    }
+
+    nav a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 6px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      background: var(--surface-2);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 24px 32px 56px;
+      max-width: 1420px;
+      width: 100%;
+    }
+
+    section {
+      margin: 0 0 34px;
+    }
+
+    .band {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .section-head {
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin: 0 0 14px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .note {
+      color: var(--muted);
+      max-width: 920px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: #fbfcf8;
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .mermaid-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcf8;
+      padding: 12px;
+    }
+
+    .mermaid {
+      min-width: 860px;
+    }
+
+    .ability-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .ability {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcf8;
+      padding: 12px;
+      min-height: 126px;
+    }
+
+    .ability strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .ability span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .ability.direction {
+      border-top: 4px solid var(--blue);
+    }
+
+    .ability.evidence {
+      border-top: 4px solid var(--green);
+    }
+
+    .ability.accounting {
+      border-top: 4px solid var(--amber);
+    }
+
+    .ability.risk {
+      border-top: 4px solid var(--coral);
+    }
+
+    .ability.decision {
+      border-top: 4px solid var(--violet);
+    }
+
+    .stage-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcf8;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 12px 14px;
+      font-weight: 700;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 76px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    .stage-code {
+      color: #ffffff;
+      background: var(--blue);
+      border-radius: 5px;
+      padding: 3px 7px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .stage-body {
+      border-top: 1px solid var(--line);
+      padding: 14px;
+    }
+
+    .quad {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .quad-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 10px;
+    }
+
+    .quad-item h4 {
+      margin: 0 0 6px;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .quad-item ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .matrix th,
+    .matrix td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .matrix th {
+      background: var(--surface-2);
+      font-weight: 700;
+    }
+
+    .swimlanes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .lane {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcf8;
+      padding: 14px;
+    }
+
+    .lane h3 {
+      margin-top: 0;
+    }
+
+    .lane ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .check {
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius);
+      background: #fbfcf8;
+      padding: 10px 12px;
+    }
+
+    .check strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    code {
+      background: #edf1ed;
+      border: 1px solid #dde5dd;
+      border-radius: 5px;
+      padding: 1px 4px;
+      font-family: Consolas, "Cascadia Mono", monospace;
+      font-size: 13px;
+    }
+
+    pre {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #111918;
+      color: #e8f1ef;
+      padding: 14px;
+      font-size: 13px;
+    }
+
+    .warning {
+      border-left: 5px solid var(--coral);
+      background: #fff7f4;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      color: #53342f;
+    }
+
+    .greenline {
+      border-left: 5px solid var(--green);
+      background: #f2faf5;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      color: #233f35;
+    }
+
+    @media (max-width: 1050px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: relative;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .ability-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .quad,
+      .swimlanes,
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      nav {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 14px;
+      }
+
+      .band {
+        padding: 16px;
+      }
+
+      summary {
+        grid-template-columns: 64px minmax(0, 1fr) auto;
+      }
+
+      .ability-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({
+      startOnLoad: true,
+      securityLevel: "loose",
+      theme: "base",
+      themeVariables: {
+        fontFamily: "Segoe UI, Microsoft YaHei, Arial",
+        primaryColor: "#eef3ef",
+        primaryTextColor: "#1d2424",
+        primaryBorderColor: "#6e8f82",
+        lineColor: "#6f7d79",
+        secondaryColor: "#f7efe2",
+        tertiaryColor: "#edf2f8"
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>买方投研 Pipeline 全景图</h1>
+      <p class="subtitle">方向雷达只是入口。真正的投研系统要完成证据、理解、估值、决策和复盘。</p>
+      <nav>
+        <a href="#overview">总流程</a>
+        <a href="#ability-map">10 层能力</a>
+        <a href="#three-lines">三条主线</a>
+        <a href="#stages">Stage A-L</a>
+        <a href="#direction">方向雷达细节</a>
+        <a href="#evidence">证据工程</a>
+        <a href="#analysis">分析模块</a>
+        <a href="#decision">决策门槛</a>
+        <a href="#google">Google 应用</a>
+        <a href="#operating">每日口令</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="overview" class="band">
+        <div class="section-head">
+          <h2>总流程</h2>
+          <span class="tag">L0 Operating Map</span>
+        </div>
+        <p class="note">这张图是整个 Research OS 的主干。方向雷达在最左侧，只负责发现值得研究的战场；真正决定能不能投的是后面的证据、理解、估值、风险和复盘。</p>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart LR
+  A["A 方向雷达<br/>发现值得研究的主题"] --> B["B 开题<br/>定义问题、范围、时间维度"]
+  B --> C["C 本地盘点<br/>旧资料、旧结论、旧 source"]
+  C --> D["D 研究计划<br/>拆 block、source budget、停止条件"]
+  D --> E["E 原始资料<br/>只收集，不下结论"]
+  E --> F["F Claim Ledger<br/>每条事实入账"]
+  F --> G["G Facts Foundation<br/>事实底稿"]
+  G --> H["H 分析模块<br/>生意、行业、护城河、管理层、反向、估值"]
+  H --> I["I 审计<br/>来源、冲突、污染、缺口、verdict ceiling"]
+  I --> J["J IC Panel<br/>Buffett / Munger / Duan / Marks / Klarman"]
+  J --> K["K 决策 Memo<br/>REJECT / INFO-GAP / WATCH / STARTER / CORE"]
+  K --> L["L 跟踪复盘<br/>monitor / memory / postmortem"]
+  I -- "信息不足，回补资料" --> D
+  K -- "只可跟踪，不能下注" --> L
+
+  classDef entry fill:#edf2f8,stroke:#295f8d,color:#1d2424;
+  classDef evidence fill:#eef7f1,stroke:#2f6f5e,color:#1d2424;
+  classDef analysis fill:#fff4e3,stroke:#a56a18,color:#1d2424;
+  classDef decision fill:#f7eded,stroke:#a94b3f,color:#1d2424;
+  class A,B,C,D entry;
+  class E,F,G,I evidence;
+  class H,J analysis;
+  class K,L decision;
+          </pre>
+        </div>
+        <div class="tag-row">
+          <span class="tag">方向不是结论</span>
+          <span class="tag">证据先于观点</span>
+          <span class="tag">估值先于仓位</span>
+          <span class="tag">复盘先于进化</span>
+        </div>
+      </section>
+
+      <section id="ability-map" class="band">
+        <div class="section-head">
+          <h2>10 层能力地图</h2>
+          <span class="tag">From Idea To Capital</span>
+        </div>
+        <p class="note">如果只做第 1 层，就是选题能力；做到第 1-6 层，是行业研究；做到第 1-10 层，才接近买方投资研究。</p>
+        <div class="ability-grid">
+          <div class="ability direction"><strong>1. Direction Selection</strong><span>现在值得研究什么。看资金流、瓶颈、催化剂、错杀、机构争议。</span></div>
+          <div class="ability evidence"><strong>2. Evidence Engineering</strong><span>哪些事实是真的。建立 raw、claim ledger、facts、audit。</span></div>
+          <div class="ability accounting"><strong>3. Accounting Translation</strong><span>把报表数字转成真实经济。利润、现金流、capex、SBC、ROIC。</span></div>
+          <div class="ability accounting"><strong>4. Business Understanding</strong><span>公司怎么赚钱。谁付钱、为什么付钱、是否经常性、10 年后在不在。</span></div>
+          <div class="ability direction"><strong>5. Industry / Value Chain</strong><span>钱在产业链哪里被赚走。上游、下游、成本、定价权、供需。</span></div>
+          <div class="ability direction"><strong>6. Moat / Bottleneck</strong><span>为什么别人抢不走。网络、规模、数据、分发、切换成本、物理瓶颈。</span></div>
+          <div class="ability risk"><strong>7. Operator Underwriting</strong><span>谁在经营。创始人、CEO、CFO、董事会、激励、文化、资本配置。</span></div>
+          <div class="ability risk"><strong>8. Inversion / Risk</strong><span>如果失败，会怎么失败。攻击面、永久损伤、短期波动、反证条件。</span></div>
+          <div class="ability decision"><strong>9. Valuation / MOS</strong><span>价格是否足够便宜。owner earnings、情景、10 年 IRR、安全边际。</span></div>
+          <div class="ability decision"><strong>10. Decision / Monitoring</strong><span>买不买、买多少、错了怎么办。memo、verdict、monitor、postmortem。</span></div>
+        </div>
+      </section>
+
+      <section id="three-lines" class="band">
+        <div class="section-head">
+          <h2>三条主线</h2>
+          <span class="tag">Fact / Understanding / Decision</span>
+        </div>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart TB
+  subgraph S1["事实线: 防止被故事骗"]
+    A1["source"] --> A2["raw"] --> A3["claim_ledger"] --> A4["facts"] --> A5["audit"]
+  end
+  subgraph S2["理解线: 判断是不是好生意"]
+    B1["business model"] --> B2["value chain"] --> B3["moat"] --> B4["operator"] --> B5["inversion"]
+  end
+  subgraph S3["决策线: 判断能不能下注"]
+    C1["owner earnings"] --> C2["valuation"] --> C3["margin of safety"] --> C4["verdict"] --> C5["monitor"]
+  end
+  A5 --> B1
+  B5 --> C1
+          </pre>
+        </div>
+        <div class="swimlanes">
+          <div class="lane">
+            <h3>事实线</h3>
+            <ol>
+              <li>来源分级</li>
+              <li>原始资料落盘</li>
+              <li>每条 claim 入账</li>
+              <li>facts.md 汇总</li>
+              <li>审计冲突和缺口</li>
+            </ol>
+          </div>
+          <div class="lane">
+            <h3>理解线</h3>
+            <ol>
+              <li>理解客户和收入</li>
+              <li>拆产业链和利润池</li>
+              <li>识别护城河和瓶颈</li>
+              <li>判断管理层和文化</li>
+              <li>反向拆失败路径</li>
+            </ol>
+          </div>
+          <div class="lane">
+            <h3>决策线</h3>
+            <ol>
+              <li>重构 owner earnings</li>
+              <li>做 bear/base/bull</li>
+              <li>算 10 年 IRR</li>
+              <li>决定 verdict ceiling</li>
+              <li>建立 monitor 和 kill criteria</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="stages" class="band">
+        <div class="section-head">
+          <h2>Stage A-L 细节</h2>
+          <span class="tag">Input / Action / Output / Gate</span>
+        </div>
+        <p class="note">每个阶段都必须留下文件痕迹。没有产出物，就等于没有完成。</p>
+        <div class="stage-list">
+          <details open>
+            <summary><span class="stage-code">A</span><span>方向雷达: 发现值得研究的主题</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>美股投资网标题</li><li>Serenity / X / Reddit 线索</li><li>财报日历、IPO、政策、投行争议</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>填 10 行方向表</li><li>六雷达打分</li><li>判断是否进入 queue</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>research_queue.md</code></li><li>方向评分</li><li>核心变量和 kill condition</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>0-8 停止</li><li>9-14 watchlist</li><li>15-19 research note</li><li>20-24 full plan</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">B</span><span>开题: 把兴趣变成可回答的问题</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>方向评分</li><li>用户问题</li><li>公司/行业/主题边界</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>定义 research question</li><li>确定时间维度</li><li>写 non-goals</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>research_status.md</code></li><li><code>plan.md</code></li><li>verdict 目标</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>问题必须能被证据回答</li><li>不能只是“会不会涨”</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">C</span><span>本地盘点: 先读自己的仓库</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>ticker</li><li>公司名</li><li>主题关键词</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li><code>rg -n</code> 搜旧资料</li><li>找旧 memo 和 source</li><li>识别过期结论</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li>Local inventory</li><li>Reusable modules</li><li>Stale/conflict list</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>不知道旧资料在哪里，不能开新计划</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">D</span><span>研究计划: 拆 block 和 source budget</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>开题问题</li><li>本地盘点</li><li>source policy</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>拆 12 个 block</li><li>列来源和停止条件</li><li>决定 L1/L2/L3 投入</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>step0_plan.md</code></li><li><code>raw/</code> 目录</li><li>block status</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有 plan 不许收资料</li><li>没有 stop condition 不许跑深调</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">E</span><span>原始资料: 只收集不下结论</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>当前 pending block</li><li>SEC / IR / filings / news</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>记录 URL 和 retrieval date</li><li>摘录原文或 close paraphrase</li><li>标 source tier</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>raw/blockNN_name.md</code></li><li>candidate claims</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>raw 阶段禁止写 buy/sell</li><li>付费墙/404 进入 gap</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">F</span><span>Claim Ledger: 每条事实入账</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li><code>raw/*.md</code></li><li>source policy</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>拆成一条条 claim</li><li>记录 value/unit/as_of</li><li>标 destination</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>claim_ledger.csv</code></li><li>source_id system</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>关键数字没有 source_id 不能进 facts</li><li>D1 不能进 EVIDENCE</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">G</span><span>Facts Foundation: 形成事实底稿</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li><code>claim_ledger.csv</code></li><li><code>raw/*.md</code></li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>分 EVIDENCE / INTERPRETATION / SENTIMENT</li><li>列 contradictions</li><li>列 open questions</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>facts.md</code></li><li>coverage check</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>facts 不完整只能 INFO-GAP/WATCH</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">H</span><span>分析模块: 从事实走向判断</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li><code>facts.md</code></li><li><code>claim_ledger.csv</code></li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>生意模式</li><li>财务质量</li><li>产业链</li><li>护城河/瓶颈</li><li>管理层</li><li>反向失败</li><li>估值</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>moat_map.md</code></li><li><code>operator_underwriting.md</code></li><li><code>inversion_map.md</code></li><li><code>valuation.md</code></li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>模块必须引用 source_id</li><li>估计值必须标 estimate</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">I</span><span>审计: 查证据、冲突、污染、缺口</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>facts</li><li>all modules</li><li>valuation</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>查无来源 claim</li><li>查 D1 污染</li><li>查模型口径</li><li>设 verdict ceiling</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>audit.md</code></li><li>verdict ceiling</li><li>补资料清单</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有 valuation/inversion/operator 不能 STARTER/CORE</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">J</span><span>IC Panel: 多框架批判同一份事实</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>facts</li><li>audit</li><li>valuation</li><li>analysis modules</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>Buffett: 10 年和 owner earnings</li><li>Munger: 反向和激励</li><li>Duan: 懂生意和用户价值</li><li>Marks/Klarman: 周期和下行</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>ic_panel.md</code></li><li>支持和反对票</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>Panel 不能新增未经来源支持的事实</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">K</span><span>决策 Memo: 可执行、可复盘的结论</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>所有上游文件</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>写 what has to be true</li><li>证据正反两面</li><li>价格和安全边际</li><li>kill criteria</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>memo-v1.md</code></li><li>verdict</li><li>monitor plan</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有 kill criteria 的 memo 不合格</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">L</span><span>跟踪复盘: 让研究活着</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>Input</h4><ul><li>memo</li><li>kill criteria</li><li>财报和催化剂日历</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>更新 monitor</li><li>记录 changed-mind log</li><li>3/6/12 个月复盘</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>memory.md</code></li><li><code>monitor.md</code></li><li><code>postmortem.md</code></li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有复盘，pipeline 不算完成</li></ul></div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="direction" class="band">
+        <div class="section-head">
+          <h2>方向雷达细节</h2>
+          <span class="tag">Stage A Subflow</span>
+        </div>
+        <p class="note">方向雷达是大流程中的小流程。它的价值是把市场噪音整理成候选研究项目，而不是直接给投资结论。</p>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart TD
+  A["市场噪音<br/>视频标题、研报、新闻、X、财报日历"] --> B["六雷达扫描"]
+  B --> C1["Capex<br/>谁在花真钱"]
+  B --> C2["Bottleneck<br/>什么变稀缺"]
+  B --> C3["Catalyst<br/>什么事件会重估"]
+  B --> C4["Dislocation<br/>价格是否错杀"]
+  B --> C5["Institutional Debate<br/>机构争的变量"]
+  B --> C6["Narrative Gap<br/>叙事哪里太懒"]
+  C1 --> D["10 行方向表"]
+  C2 --> D
+  C3 --> D
+  C4 --> D
+  C5 --> D
+  C6 --> D
+  D --> E["方向评分 0-24"]
+  E --> F1["0-8<br/>Ignore"]
+  E --> F2["9-14<br/>Watchlist"]
+  E --> F3["15-19<br/>Research Note"]
+  E --> F4["20-24<br/>Full Research Plan"]
+          </pre>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr><th>雷达</th><th>看什么</th><th>典型证据</th><th>常见误区</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Capex</td><td>大公司真正在花钱的地方</td><td>capex guide、RPO、订单、产能、长期合同</td><td>把管理层叙事当成真投入</td></tr>
+            <tr><td>Bottleneck</td><td>主题实现时最短缺的环节</td><td>扩产周期、认证门槛、材料/设备约束</td><td>只看热门龙头，不看上游卡点</td></tr>
+            <tr><td>Catalyst</td><td>什么时候市场必须更新</td><td>财报、发布会、IPO、监管、合同</td><td>好 thesis 没有可见催化剂</td></tr>
+            <tr><td>Dislocation</td><td>价格是否比基本面动得更快</td><td>暴跌、降级、短报、恐慌、流动性冲击</td><td>把真坏消息当错杀</td></tr>
+            <tr><td>Institutional Debate</td><td>专业资金在争哪个变量</td><td>投行研报、13F、会议纪要、consensus revision</td><td>只抄结论，不拆假设</td></tr>
+            <tr><td>Narrative Gap</td><td>市场叙事哪里过度简化</td><td>“AI 受益”“SaaS 已死”“搜索被颠覆”</td><td>用口号代替机制</td></tr>
+          </tbody>
+        </table>
+        <pre>Theme:
+Why now:
+Capital flow evidence:
+Bottleneck:
+Listed companies:
+Primary sources needed:
+Catalyst:
+Key metric:
+Kill condition:
+Initial direction score:</pre>
+      </section>
+
+      <section id="evidence" class="band">
+        <div class="section-head">
+          <h2>证据工程</h2>
+          <span class="tag">Source Discipline</span>
+        </div>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart LR
+  A["A1/A2<br/>一手文件"] --> D["EVIDENCE"]
+  B["B1/B2<br/>高质二手/专业解读"] --> E["INTERPRETATION"]
+  C["C2/D1<br/>视频、社媒、社区"] --> F["SENTIMENT 或 OPEN_QUESTION"]
+  G["AI 输出"] --> H["estimate / scenario<br/>不能作来源"]
+  D --> I["claim_ledger.csv"]
+  E --> I
+  F --> I
+  H --> I
+  I --> J["facts.md"]
+          </pre>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr><th>Tier</th><th>来源</th><th>能否支持 thesis</th><th>处理方式</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A1/A2</td><td>SEC、10-K、10-Q、8-K、proxy、IR、监管、客户/供应商公告</td><td>可以</td><td>进入 EVIDENCE</td></tr>
+            <tr><td>B1</td><td>Reuters、Bloomberg、WSJ、FT 等</td><td>辅助支持</td><td>关键数字回溯到 A</td></tr>
+            <tr><td>B2</td><td>sell-side、咨询、行业报告</td><td>只作解读</td><td>进入 INTERPRETATION</td></tr>
+            <tr><td>C2/D1</td><td>YouTube、X、小红书、Reddit、雪球</td><td>不能单独支持</td><td>只作线索或情绪</td></tr>
+            <tr><td>E1</td><td>AI 总结、模型推断</td><td>不能作事实</td><td>只能标 estimate/scenario</td></tr>
+          </tbody>
+        </table>
+        <div class="warning">
+          没有 source_id 的事实，不进入 memo。社媒和视频可以帮我们发现战场，但不能替我们决定资本配置。
+        </div>
+      </section>
+
+      <section id="analysis" class="band">
+        <div class="section-head">
+          <h2>分析模块</h2>
+          <span class="tag">Understanding Modules</span>
+        </div>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart TB
+  F["facts.md + claim_ledger.csv"] --> B["Business Model<br/>怎么赚钱"]
+  F --> Q["Financial Quality<br/>真实经济质量"]
+  F --> V["Value Chain<br/>产业链和利润池"]
+  V --> C["Bottleneck<br/>卡点和稀缺层"]
+  B --> M["Moat<br/>为什么抢不走"]
+  Q --> VAL["Valuation<br/>owner earnings / IRR"]
+  M --> O["Operator<br/>经营者和激励"]
+  O --> R["Inversion<br/>如何失败"]
+  C --> R
+  VAL --> R
+  R --> A["audit.md"]
+          </pre>
+        </div>
+        <div class="checklist">
+          <div class="check"><strong>Business Model</strong><span>谁付钱、为什么付钱、收入是否经常性、10 年后还在不在。</span></div>
+          <div class="check"><strong>Financial Quality</strong><span>revenue、margin、FCF、ROIC、SBC、capex、回购、股本稀释。</span></div>
+          <div class="check"><strong>Value Chain</strong><span>上游、下游、客户、供应商、利润池、定价权、成本压力。</span></div>
+          <div class="check"><strong>Bottleneck</strong><span>需求冲击、关键性、供应集中度、认证门槛、替代风险。</span></div>
+          <div class="check"><strong>Moat</strong><span>品牌、网络、切换成本、规模、数据、分发、监管、技术 know-how。</span></div>
+          <div class="check"><strong>Operator</strong><span>创始人、CEO、CFO、董事会、薪酬、文化、资本配置。</span></div>
+          <div class="check"><strong>Inversion</strong><span>如果我要让它失败，会攻击哪里；哪些风险会永久损害内在价值。</span></div>
+          <div class="check"><strong>Valuation</strong><span>owner earnings、bear/base/bull、10 年 IRR、margin of safety。</span></div>
+        </div>
+      </section>
+
+      <section id="decision" class="band">
+        <div class="section-head">
+          <h2>决策门槛</h2>
+          <span class="tag">Verdict Discipline</span>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr><th>Verdict</th><th>含义</th><th>最低要求</th><th>不能出现的问题</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>REJECT</td><td>逻辑或证据不成立</td><td>说明核心假设为什么错</td><td>因为“不喜欢”而拒绝</td></tr>
+            <tr><td>INFO-GAP</td><td>信息不足，不能判断</td><td>列出缺口和下一步来源</td><td>信息不足还强行下结论</td></tr>
+            <tr><td>WATCH</td><td>值得跟踪，但不够买</td><td>关键变量和催化剂明确</td><td>没有 monitor plan</td></tr>
+            <tr><td>STARTER</td><td>可讨论研究仓/小仓</td><td>facts、估值、反向、管理层基本完成</td><td>没有安全边际或 kill criteria</td></tr>
+            <tr><td>CORE</td><td>高理解度、高质量、高赔率、高安全边际</td><td>信息完整度 > 80%，多框架都过关</td><td>靠单一叙事或 KOL 背书</td></tr>
+          </tbody>
+        </table>
+        <div class="greenline">
+          仓位不是因为故事精彩而来，是因为证据完整、价格便宜、下行可承受、错了能及时知道。
+        </div>
+      </section>
+
+      <section id="google" class="band">
+        <div class="section-head">
+          <h2>Google 应用</h2>
+          <span class="tag">Next Research Batch</span>
+        </div>
+        <p class="note">Google 当前不该直接写最终 memo。先补证据底座，再跑分析模块。</p>
+        <div class="mermaid-wrap">
+          <pre class="mermaid">
+flowchart LR
+  A["FY2025 10-K<br/>Q1 2026<br/>Proxy<br/>13F"] --> B["claim_ledger.csv"]
+  B --> C["facts.md<br/>收入、Cloud、capex、FCF、治理、持仓"]
+  C --> D["moat_map.md<br/>Search / YouTube / Cloud / TPU / Android"]
+  C --> E["inversion_map.md<br/>AI answer / 监管 / capex / 广告迁移"]
+  C --> F["valuation.md<br/>owner earnings / 10y IRR / MOS"]
+  D --> G["audit.md"]
+  E --> G
+  F --> G
+  G --> H["memo-v1.md"]
+          </pre>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr><th>问题</th><th>要看的证据</th><th>可能的 kill condition</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>AI 是否削弱搜索广告</td><td>query depth、commercial conversion、ad load、search revenue trend</td><td>高意图广告经济性持续下降</td></tr>
+            <tr><td>TPU/capex 是护城河还是 FCF 黑洞</td><td>capex、depreciation、Cloud margin、TPU 成本、RPO</td><td>capex 增长但回报路径不可见</td></tr>
+            <tr><td>Cloud 能否成为第二引擎</td><td>Google Cloud revenue、operating income、RPO、客户案例</td><td>增长放缓且利润率被 AI 成本吞噬</td></tr>
+            <tr><td>治理是否靠谱</td><td>Page/Brin/Pichai、Class B、board、compensation</td><td>控制权和资本配置损害外部股东</td></tr>
+            <tr><td>Berkshire 买入意味着什么</td><td>13F、交易结构、价格、规模、历史口径</td><td>买入原因主要是特殊结构而非长期安全边际</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="operating" class="band">
+        <div class="section-head">
+          <h2>每日开工口令</h2>
+          <span class="tag">Operating Prompt</span>
+        </div>
+        <pre>1. 我们到底要回答什么问题？
+2. 本地有没有旧资料？
+3. 这个方向为什么现在值得研究？
+4. 需要哪些一手来源？
+5. 哪些只是社媒或视频线索？
+6. 哪个事实会改变结论？
+7. 做完后最高允许给什么 verdict？</pre>
+        <div class="warning">
+          如果这 7 句答不清，就不开 full research。先做方向扫描或信息补全。
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

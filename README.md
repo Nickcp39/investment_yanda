@@ -52,3 +52,22 @@ and treat this repo as research input.
 4. Write the thesis with explicit assumptions.
 5. Track what would change your mind.
 6. Revisit the memo when new data arrives.
+
+## Buy-Side Research OS
+
+The current operating model is a small buy-side research department:
+
+- `research_queue.md` - idea queue and stage tracking
+- `companies/_company_research_template/` - canonical company research template
+- `companies/googl/` - first pilot using the company template
+- `frameworks/buy_side_research_department.md` - roles, stages, gates, IC loop
+- `frameworks/research_os_flowchart.md` - visual map of the full research workflow
+- `frameworks/investment_research_pipeline_visual.html` - interactive visual map of the full pipeline
+- `frameworks/investment_research_pipeline_detailed.md` - detailed step-by-step operating pipeline
+- `frameworks/professional_competency_ladder.md` - skills ladder beyond certificate collecting
+- `frameworks/meigu_touziwang_playbook.md` - lessons from the 美股投资网 content/research workflow
+- `frameworks/topic_selection_engine.md` - repeatable radar for choosing research directions
+- `frameworks/professional_research_pipeline.md` - end-to-end research pipeline
+- `sources/source_policy.md` - source tiers and claim ledger rules
+- `companies/_research_status_template.md` - per-company stage tracker
+- `companies/_buy_side_memo_template.md` - final investment memo template

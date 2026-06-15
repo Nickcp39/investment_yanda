@@ -1,0 +1,3 @@
+claim_id,source_id,layer,entity,date_or_period,claim_type,claim,status,confidence,notes
+C001,SRC-001,Evidence Engineering,<company>,YYYY,reported_number,"Replace with a precise claim from primary source.",needs_audit,medium,"Do not promote to facts.md until checked."
+
