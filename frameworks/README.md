@@ -45,6 +45,12 @@ Start with `investor_agents.md` when you want a quick multi-agent panel before
 writing a full thesis. Expand individual folders when one investor lens becomes
 important enough to deserve deeper source notes and checklists.
 
+Start with `one_page_quality_company_checklist.md` when opening a new company.
+It is the hypothesis version of Layer 2, `Business Thesis / Quality Gate`: if
+the business cannot be explained in one minute through demand, payer, scarce
+control point, profit pool, moat, attack surface, operator discipline, and owner
+earnings, do not jump into valuation.
+
 Use `agent_testing/` before trusting any generated or pre-trained investor
 agent. A named agent should be treated as unapproved until it passes source
 fidelity, boundary, application, adversarial, and cross-agent debate tests.

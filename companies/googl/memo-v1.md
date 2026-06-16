@@ -6,41 +6,41 @@
 | **Analyst** | 买方研究 OS · 第 9 步（决策 Memo），承接 IC Panel（第 8 步）+ Audit（第 7 步） |
 | **Version** | v1 |
 | **Verdict** | **WATCH** |
-| **Verdict ceiling** | **WATCH**（audit §11.2：模块齐全、硬规则封顶已解除；ceiling 来自 valuation 实质——$370 现价无安全边际，非信息不足） |
-| **Position rule** | **Watch only / 0% 仓位（个人 & panel 均不开仓）**；回调到 **~$95–113** 区间才重开 panel 讨论 starter（试仓 1–3%） |
+| **Verdict ceiling** | **WATCH**（audit §11.2：模块齐全、硬规则封顶已解除；ceiling 来自 driver + valuation 实质——收入上行真实，但 AI capex / owner earnings 证据未闭合，且 $370 现价无安全边际） |
+| **Position rule** | **Watch only / 0% 仓位（个人 & panel 均不开仓）**；需要 driver 证据收敛 + 安全边际价格，才重开 panel 讨论 starter（试仓 1–3%） |
 
-> 本 memo 是把扎实研究落成"可执行 + 可复盘"的结论：**生意要、价格不要**。五灵魂五票一致 WATCH、段永平主审 WATCH（个人 0%），与本 memo verdict 完全一致。所有关键数字挂 `[source_id]`（一手 A1 = SEC EDGAR），上游论证 Reference 指向对应分析 md，不在本 memo 重复推导。
+> 本 memo 是把扎实研究落成"可执行 + 可复盘"的结论：**先拆生意驱动，再谈价格**。五灵魂五票一致 WATCH、段永平主审 WATCH（个人 0%），与本 memo verdict 完全一致。所有关键数字挂 `[source_id]`（一手 A1 = SEC EDGAR），上游论证 Reference 指向对应分析 md，不在本 memo 重复推导。
 
 ---
 
 ## 1. One-Line View（一句话观点）
 
-Alphabet 是一门"用十亿级免费产品聚合商业意图、再卖给广告主 + 卖算力给云客户"的高质量双边平台生意（Services 分部营业利润率 ~40.7% [GOOG.A1.2025K.009/.010]、Cloud 两年从微利做到 $13.9B 营业利润 [GOOG.A1.2025K.012]）——**之所以 WATCH 而非买入，唯一卡点是价格：$370 = 69x owner earnings、起始 owner-earnings yield 仅 1.45% [valuation §3]，连最乐观情景十年 IRR 也只有 +5.2%，是"用乐观假设也难赚 8%"的价格，不是"打折买好公司"的价格。**
+Alphabet 是一门"用十亿级免费产品聚合商业意图、再卖给广告主 + 卖算力给云客户"的高质量双边平台生意（Services 分部营业利润率 ~40.7% [GOOG.A1.2025K.009/.010]、Cloud 两年从微利做到 $13.9B 营业利润 [GOOG.A1.2025K.012]）——**之所以 WATCH 而非买入，不是只因为价格，而是收入概率树和支出概率树还没闭合：Search +19%、Cloud +63%、backlog >$460B 说明收入上行真实，但 2026 capex $180–190B 且 2027 继续增加，使 owner earnings 是否能跟随收入增长仍未证实；$370 = 69x owner earnings 只是最后一道安全边际检查。**
 
 ---
 
 ## 2. Decision Question（决策问题，抄开题可证伪问题）
 
-> 本 memo 支持的决策：**现在是否应以 ~$370 建仓 GOOGL？若不是，在什么价格 / 什么证据下才进入 starter？**
+> 本 memo 支持的决策：**Alphabet 的收入增长机会、收入下降风险、支出上升压力和支出下降机会，是否已经足够清楚，使我们能承保 10 年 owner earnings？若不能，还需要什么证据 / 什么价格才进入 starter？**
 
-可证伪形式（开题问题）：**"在 ~$370 买入 Alphabet，未来十年能否赚到 ≥8% 的年化 IRR（机会成本门槛，对照 QQQ 4 年 2.03× 基准 `qqq_4yr_doubling_benchmark`）？"**
-- 证伪条件：若 owner earnings 十年复合增速达不到 ~22%（即十年做到 ~7x，valuation §3 反推），则 $370 买入注定跑不赢门槛 → 答案为"否" → 不买。
-- 当前裁决：**答案为否**（三情景 IRR bear −13.1% / base −3.0% / bull +5.2%，全部 < 8% [valuation §3]）。决策因此落在 WATCH：研究已扎实，结论是好公司但当前价不值得买。
+可证伪形式（开题问题）：**"Google 的增量收入，是否会超过 AI capex、折旧、TAC、SBC 和监管成本的增量，从而让 owner earnings 在十年维度持续增长？"**
+- 证伪条件：若 Search/YouTube/Cloud 的增量美元不能转成 FCF/share，或 AI capex 只是防守性支出，则 owner earnings 会被稀释；即使收入增长，也不能买。
+- 当前裁决：**答案还不够清楚，因此 WATCH**。在这个前提下再看价格：$370 对应三情景 IRR bear −13.1% / base −3.0% / bull +5.2%，全部 < 8% [valuation §3]，没有给研究误差留安全边际。
 
 ---
 
 ## 3. What Must Be True（多头论点成立的前提，每条挂 1 条 kill criteria + 1 个监控指标）
 
-> 这些是"在合理价格买入并长期持有 GOOGL"成立的前提。当前价不满足第 6 条（价格），故即便其余成立也只到 WATCH。每条带 checkbox，对应 §11 的 K-A..K-E 与 monitor.md 的 KPI。
+> 这些是"能承保 10 年 owner earnings，并在合理价格买入长期持有 GOOGL"成立的前提。前五条解决业务驱动，第六条解决安全边际；二者缺一不可。每条带 checkbox，对应 §11 的 K-A..K-E 与 monitor.md 的 KPI。
 
 - [ ] **WMBT-1｜搜索现金牛不被 AI 界面结构性绕过**：Search & other 在 AI Overviews/AI Mode 渗透上升的同时仍维持双位数增长（当前 Q1'26 **+19%** [GOOG.A1.2026Q1.004]）。→ 对应 **K-A**（连 2 季同比 ≤+8% 且管理层归因 AI）；监控指标 = Search & other 同比增速。
 - [ ] **WMBT-2｜AI capex 是高回报成长而非低回报黑洞**：capex 高峰后 2–3 年内 FCF per share 重新增长、incremental ROIC 维持高位（当前 capex/OCF：FY25 ~56%、Q1'26 ~78% 已踩线 [GOOG.A1.2025K.016/.015 / GOOG.A1.2026Q1.024/.023]，TTM FCF $64.4B 已被压缩 [GOOG.A1.2026Q1.025]）。→ 对应 **K-B**；监控指标 = FCF per share 趋势 + capex/营业现金流比率。
 - [ ] **WMBT-3｜管理层对 AI capex 有可见的回报纪律**：在 earnings call / 公开沟通给出 capex 的 hurdle rate / 预期 ROIC / 利用率框架（当前一手披露中**该框架不存在** [operator 红旗1 / audit §8]）。→ 对应 **K-C**；监控指标 = 管理层是否披露 capex ROI 门槛 / 是否出现数据中心/TPU 减值。
 - [ ] **WMBT-4｜监管止于罚款或行为救济，而非结构性拆分**：DOJ adtech / search 最终救济为纯罚款或行为救济（如 EC 模式），默认搜索分销协议得以保留（当前 DOJ adtech 部分败诉、结构性救济待裁、"could have a material adverse effect" [GOOG.A1.2025K.026 notes]）。→ 对应 **K-D**；监控指标 = DOJ adtech 救济判决形态（罚款 / 行为 / 结构剥离）。
 - [ ] **WMBT-5｜owner earnings 区间可收敛到可定 base**：拿到维护 vs 成长 capex 拆分 / 单位经济，使 owner earnings 从 $52–82B 大区间收敛（当前完全压在不可观测拆分上 [financial_quality §1.3 / valuation §2]）。→ 证据触发（可上修 verdict）；监控指标 = 10-K 现金流量表 D&A 坐实 + 年度 capex 维护/成长拆分披露。
-- [ ] **WMBT-6｜价格回到有安全边际的水平（当前唯一硬否决项）**：买入价隐含十年 IRR ≥ 8%（≈ 价格 ≤ ~$134 见 8% 门槛、≤ ~$113 见 base 10%）。当前 $370 严重违反（IRR base −3.0% [valuation §3]）。→ 对应 **K-E**；监控指标 = 股价 vs buy-below 阶梯（$134 / $113 / $95 / $48）。
+- [ ] **WMBT-6｜证据和价格同时给安全边际**：先让 owner earnings 区间收敛，再要求买入价隐含十年 IRR ≥ 8%（≈ 价格 ≤ ~$134 见 8% 门槛、≤ ~$113 见 base 10%）。当前 $370 严重违反（IRR base −3.0% [valuation §3]）。→ 对应 **K-E**；监控指标 = driver 证据状态 + 股价 vs buy-below 阶梯（$134 / $113 / $95 / $48）。
 
-> **裁决**：WMBT-1 当前成立（搜索仍 +19%）、WMBT-4 待裁、WMBT-2/3/5 证据缺失（押注非定价）、**WMBT-6 明确不成立**。WMBT-6 单独一条即把 verdict 锁死在 WATCH——这是"价格端封顶"。
+> **裁决**：WMBT-1 当前成立（搜索仍 +19%）、WMBT-4 待裁、WMBT-2/3/5 证据缺失（押注非定价）、**WMBT-6 明确不成立**。verdict 锁死在 WATCH 的原因是双重的：driver 证据还不能承保 owner earnings，价格也没有给研究误差留安全边际。
 
 ---
 

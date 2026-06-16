@@ -1,0 +1,18 @@
+assumption,value,unit,source_or_formula,interpretation,status
+GOOGL_price_anchor,372.63,USD_per_share,finance_snapshot_2026_06_16,"Current-like anchor for v2 implied expectations; update before any decision.",needs_refresh_before_trade
+shares_outstanding,12116,shares_M,GOOG.A1.2026Q1.991,"A/B/C shares as of Q1 2026 release.",verified_A1
+market_cap,4514.8,USD_B,price_x_shares,"Approximate equity value at price anchor.",derived
+net_cash_marketable_prior_anchor,80.3,USD_B,existing_valuation_model,"Uses prior net cash anchor; must update after Q1 debt and financing.",needs_update
+OE_defensive_base,52,USD_B,owner_earnings_bridge.csv,"Defensive owner earnings starting point.",carried_forward_needs_rebuild
+OE_mid_base,65,USD_B,owner_earnings_bridge.csv,"Midpoint owner earnings starting point.",carried_forward_needs_rebuild
+OE_growth_base,80,USD_B,owner_earnings_bridge.csv,"Growth-capex owner earnings starting point.",carried_forward_needs_rebuild
+P_to_OE_defensive_at_price,86.8,x,market_cap/OE,"Current price is very demanding if capex is defensive.",derived
+P_to_OE_mid_at_price,69.5,x,market_cap/OE,"Even midpoint owner earnings trades at a high multiple.",derived
+P_to_OE_growth_at_price,56.4,x,market_cap/OE,"Even growth case requires sustained compounding.",derived
+OE_yield_defensive,1.15,pct,OE/market_cap,"Low starting owner earnings yield.",derived
+OE_yield_mid,1.44,pct,OE/market_cap,"Low starting owner earnings yield.",derived
+OE_yield_growth,1.77,pct,OE/market_cap,"Low starting owner earnings yield.",derived
+required_OE_CAGR_for_8pct_IRR_22x_exit_no_payout,21.1,pct,derived_no_interim_payout_net_cash_80.3,"Approximation; interim payout would lower required CAGR but capex may suppress payout.",derived_draft
+required_OE_CAGR_for_10pct_IRR_22x_exit_no_payout,23.3,pct,derived_no_interim_payout_net_cash_80.3,"Shows current price requires very high owner-earnings compounding.",derived_draft
+required_OE_CAGR_for_12pct_IRR_22x_exit_no_payout,25.6,pct,derived_no_interim_payout_net_cash_80.3,"True margin-of-safety hurdle is much higher.",derived_draft
+valuation_status,,text,,"Implied expectations model is now directional only; final buy-below requires updated net cash, financing dilution, and rebuilt OE branches.",draft

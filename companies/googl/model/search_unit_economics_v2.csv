@@ -1,0 +1,13 @@
+metric,Q1_2025,Q1_2026,change,unit,source_id,interpretation,status
+Google Search & other revenue,50702,60399,19.13,pct_yoy,GOOG.A1.2026Q1.991,"Core Search revenue still strong; not just headline company growth.",verified_A1
+paid_clicks_index,100,113,13.00,pct_yoy,GOOG.A1.2026Q1.10Q,"Volume/engagement contribution to Search growth.",verified_A1_indexed
+cost_per_click_index,100,105,5.00,pct_yoy,GOOG.A1.2026Q1.10Q,"Price/auction contribution to Search growth.",verified_A1_indexed
+paid_clicks_x_cpc_index,100,118.65,18.65,pct_yoy,derived,"Paid-click growth and CPC growth roughly reconcile to Search & other +19.13%.",derived
+YouTube ads revenue,8927,9883,10.71,pct_yoy,GOOG.A1.2026Q1.991,"Growing but slower than Search.",verified_A1
+Google Network revenue,7256,6971,-3.93,pct_yoy,GOOG.A1.2026Q1.991,"Open-web / third-party network weakening; important value-chain signal.",verified_A1
+Google advertising revenue,66885,77253,15.50,pct_yoy,GOOG.A1.2026Q1.991,"Total ad business growth below Search due to Network weakness.",verified_A1
+Google subscriptions_platforms_devices,10379,12384,19.32,pct_yoy,GOOG.A1.2026Q1.991,"Consumer subscriptions / platforms / devices grew at Search-like pace.",verified_A1
+Google Services total revenue,77264,89637,16.01,pct_yoy,GOOG.A1.2026Q1.991,"Services remains strong but mix matters.",verified_A1
+total_TAC,13748,15228,10.77,pct_yoy,GOOG.A1.2026Q1.991,"TAC grew slower than Google advertising revenue.",verified_A1
+TAC_rate_to_google_advertising,20.55,19.71,-0.84,pp,derived,"TAC / Google advertising improved, consistent with mix shift to owned high-intent Search.",derived
+Search_AI_monetization_RPM,,,,unknown,OPEN,"No disclosed AI Overviews / AI Mode RPM versus traditional Search; this is the top evidence gap.",open

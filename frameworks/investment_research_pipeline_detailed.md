@@ -9,9 +9,9 @@
 3. 产出什么文件
 4. 过不了关时不能往下走到哪里
 
-核心原则: 方向雷达只是入口，不是投研本身。完整能力包括方向发现、证据工程、会计和财务重构、产业链和护城河分析、管理层判断、反向失败分析、估值、安全边际、仓位纪律、跟踪复盘。
+核心原则: 方向雷达只是入口，不是投研本身。完整能力包括方向发现、一分钟好生意承保、证据工程、会计和财务趋势验证、产业链和护城河分析、管理层判断、反向失败分析、估值、安全边际、仓位纪律、跟踪复盘。
 
-先选方向，再选公司；先建证据，再写观点；先算风险，再谈收益；先确定价格是否便宜，再谈是不是好公司。
+先选方向，再用一句话讲清楚为什么可能是好公司；先理解经济机器，再用证据和财报验证；先算风险，再谈收益；先承保未来 owner earnings，再让价格和安全边际最后登场。
 
 ---
 
@@ -20,7 +20,8 @@
 ```mermaid
 flowchart TD
   A["方向雷达: 发现值得研究的主题"] --> B["开题: 明确问题和范围"]
-  B --> C["本地盘点: 查旧资料和已有结论"]
+  B --> B0["一分钟好生意承保: 需求/付费/稀缺/利润池/攻击面"]
+  B0 --> C["本地盘点: 查旧资料和已有结论"]
   C --> D["研究计划: 拆 block 和 source budget"]
   D --> E["原始资料: 只收集不下结论"]
   E --> F["Claim Ledger: 每条事实入账"]
@@ -50,28 +51,36 @@ flowchart TD
 - 风险是否可承受
 - 应不应该买、买多少、什么时候卖
 
-所以完整 research pipeline 必须分成 10 个能力层:
+所以完整 research pipeline 必须分成 **10 个能力层**:
 
 | 能力层 | 核心问题 | 对应产出 |
 |---|---|---|
 | 1. Direction Selection | 现在值得研究什么 | research_queue.md |
-| 2. Evidence Engineering | 哪些事实是真的 | raw/, claim_ledger.csv, facts.md |
-| 3. Accounting Translation | 报表数字如何转成真实经济 | financial_quality.md, model/*.csv |
-| 4. Business Understanding | 这家公司到底如何赚钱 | business_model.md |
+| 2. Business Thesis / Quality Gate | 一分钟能否讲清为什么是好生意；证据后能否承保 | `one_page_quality_company_checklist.md`, `business_model.md` |
+| 3. Evidence Engineering | 哪些事实是真的 | raw/, claim_ledger.csv, facts.md |
+| 4. Accounting Trend Validation | 财报趋势是否验证经济机器，哪里出现反证 | financial_quality.md, model/*.csv |
 | 5. Industry / Value Chain | 钱在产业链哪里被赚走 | value_chain_map.md |
 | 6. Moat / Bottleneck | 为什么别人抢不走 | moat_map.md, bottleneck_map.md |
 | 7. Operator Underwriting | 谁在经营，性格和激励如何 | operator_underwriting.md |
 | 8. Inversion / Risk | 如果失败，会怎么失败 | inversion_map.md |
-| 9. Valuation / Margin Of Safety | 价格是否足够便宜 | valuation.md |
+| 9. Valuation / Margin Of Safety | 价格是否足够便宜；市场已经相信了什么 | valuation.md |
 | 10. Decision / Monitoring | 买不买、买多少、错了怎么办 | memo-v1.md, monitor.md, postmortem.md |
 
-如果只做第 1 层，就是选题号；如果做到第 1-6 层，是行业研究；如果做到第 1-10 层，才是买方投资研究。
+如果只做第 1 层，就是选题号；如果第 2 层讲不清楚，后面最多是资料整理；如果做到第 1-6 层，是行业和生意研究；如果做到第 1-10 层，才是买方投资研究。
 
 ---
 
-## 0.2 三条主线
+## 0.2 四条主线
 
-所有项目都同时跑三条线:
+所有项目都同时跑四条线:
+
+### A0. 生意本质线
+
+```text
+one-minute thesis -> demand -> payer -> scarce control point -> profit pool -> attack surface
+```
+
+作用: 防止我们一上来沉迷财报和估值，先回答“这家公司为什么可能是好生意”。
 
 ### A. 事实线
 
@@ -84,7 +93,7 @@ source -> raw -> claim_ledger -> facts -> audit
 ### B. 理解线
 
 ```text
-business model -> value chain -> moat -> operator -> inversion
+one-minute thesis -> business model -> value chain -> moat -> operator -> inversion
 ```
 
 作用: 判断这是不是一个好生意，以及为什么好。
@@ -92,12 +101,12 @@ business model -> value chain -> moat -> operator -> inversion
 ### C. 决策线
 
 ```text
-owner earnings -> valuation -> margin of safety -> verdict -> monitor
+financial trends -> owner earnings -> valuation -> margin of safety -> verdict -> monitor
 ```
 
-作用: 判断价格、赔率、仓位和跟踪纪律。
+作用: 用财报趋势验证未来经济质量，再判断价格、赔率、仓位和跟踪纪律。
 
-方向雷达只在三条线之前提供入口。它不替代任何一条线。
+方向雷达只在四条线之前提供入口。它不替代任何一条线。
 
 ---
 
@@ -164,13 +173,14 @@ Initial direction score:
 
 ## 2. Stage B: 开题
 
-目的: 把一个模糊兴趣变成一个可回答的问题。
+目的: 把一个模糊兴趣变成一个可回答的问题，并先过“一分钟好生意承保”。如果一句话讲不清为什么可能是好公司，就先补理解，不直接进入估值。
 
 ### 输入
 
 - 方向雷达表
 - 用户的问题
 - 研究对象: company / sector / theme / rumor / method
+- `frameworks/one_page_quality_company_checklist.md`
 
 ### 具体怎么做
 
@@ -187,11 +197,24 @@ Output artifact:
 Non-goals:
 ```
 
+然后写一段 **One-minute thesis**:
+
+```text
+One-minute thesis:
+[公司] 为 [长期、反复、真实的需求] 服务；
+[付钱的人] 愿意持续付钱，因为 [不付钱会损失什么]；
+公司控制 [稀缺节点/关键资源]，所以 [利润池] 会被它拿走；
+随着规模扩大，[边际经济/资本强度] 让收入更容易/更难变成 owner earnings；
+竞争者最难攻击的是 [护城河]，最危险的攻击面是 [反向失败路径]。
+```
+
+如果写不出，就把缺口写进 `Open questions`，并把 verdict ceiling 先压到 `INFO-GAP/WATCH`。
+
 例子:
 
 ```text
 Research question:
-Google 是否仍是一个可以持有 10 年的好生意？当前价格是否给足安全边际？
+Google 是否仍能控制商业意图入口，并把 AI 时代的收入增长转成 owner earnings？当前价格是否给足安全边际？
 
 Object:
 Alphabet / GOOGL, GOOG
@@ -204,6 +227,9 @@ REJECT / WATCH / STARTER / CORE
 
 Non-goals:
 不做短线财报赌博，不根据单个 KOL 观点下结论。
+
+One-minute thesis:
+Google 控制全球最强的商业意图入口；用户主动搜索问题、商品和服务时，广告主愿意为高意图流量付钱。真正要研究的是 AI 会增强这个入口，还是绕过这个入口，以及 AI capex 会不会把收入增长吃掉。
 ```
 
 ### 产出
@@ -220,6 +246,7 @@ Non-goals:
 - 护城河是否被 AI 攻破
 - 管理层是否值得信任
 - 价格是否低于保守内在价值
+- 一分钟 thesis 中哪一个环节最可能错
 
 ---
 
@@ -284,14 +311,15 @@ Local inventory:
 
 ### 具体怎么做
 
-公司研究默认拆 12 个 block:
+公司研究默认先做 **1 个 thesis gate + 12 个证据 block**。Block 00 是第 2 层的开题假设版，不是单独能力层:
 
 | Block | 名称 | 要解决的问题 | 主要来源 |
 |---|---|---|---|
+| 00 | Business Thesis / Quality Gate | 一句话能否讲清长期需求、付费理由、稀缺控制点、利润池、护城河、攻击面 | `one_page_quality_company_checklist.md`, 本地旧 memo |
 | 01 | Identity | 公司到底是谁，业务边界是什么 | 10-K, IR, SEC |
 | 02 | Segment Revenue | 钱从哪里来，各业务增长如何 | 10-K, 10-Q |
 | 03 | Unit Economics | 每条收入线赚钱吗，利润率如何 | filings, calls |
-| 04 | 10y Financials | 10 年收入、利润、FCF、ROIC、股本 | SEC/XBRL |
+| 04 | 10y Financial Trends | 10 年收入、利润、FCF/share、ROIC、股本趋势；验证 thesis，而非静态打分 | SEC/XBRL |
 | 05 | Industry Map | 所处行业结构和竞争格局 | filings, B1/B2 |
 | 06 | Value Chain | 产业链上下游和瓶颈 | filings, supplier/customer data |
 | 07 | Moat | 护城河机制和被攻击面 | filings, product data, competitors |
@@ -321,6 +349,7 @@ What to skip:
 
 没有 plan，不开始收资料。  
 每个 block 都必须有来源清单和停止条件。
+Block 00 不通过时，不直接进入 valuation；先补生意理解或放回 watchlist。证据完成后，同一层必须在 `business_model.md` 写承保版。
 
 ---
 
@@ -480,15 +509,18 @@ facts.md 里每条关键事实都必须能回到 `source_id`。
 
 目的: 从事实走向判断。模块可以并行，但都必须引用 facts 和 claim ledger。
 
-### H1. Business Model
+### H1. Business Thesis / Quality Gate
 
 问题:
 
+- 一分钟 thesis 是否成立: 长期需求、付费理由、稀缺控制点、利润池、护城河、攻击面是否能讲清
 - 公司怎么赚钱
 - 谁付钱，为什么付钱
+- 不付钱的客户会损失什么
 - 收入是否经常性
 - 单位经济是否变好
 - 10 年后这门生意还在不在
+- 十年后是更强，还是只是更大
 
 输出:
 
@@ -496,14 +528,16 @@ facts.md 里每条关键事实都必须能回到 `source_id`。
 business_model.md
 ```
 
-### H2. Revenue And Financial Quality
+### H2. Revenue And Financial Trend Quality
 
 问题:
 
-- 10 年 revenue、gross margin、operating margin、FCF、ROIC 怎么变
-- 增长是否创造价值
+- 10 年 revenue、gross margin、operating margin、FCF/share、ROIC、股本、SBC、capex intensity 怎么变
+- 财务趋势是否验证 H1 的经济机器，还是给出反证
+- 收入增长是否真的创造价值，还是靠更重资本、更高营销、更高 SBC 换来
 - SBC、折旧、capex、营运资本是否扭曲利润
 - 回购是否创造价值，还是掩盖稀释
+- 哪些趋势是拐点: margin、cash conversion、capex/OCF、FCF/share、稀释、负债
 
 输出:
 
@@ -609,11 +643,12 @@ inversion_map.md
 
 ### H8. Valuation
 
-必须至少做三层:
+估值最后登场。必须至少做四层:
 
-1. Owner earnings bridge
-2. Base / bear / bull scenario
-3. 10 年 IRR 和 margin of safety
+1. 市场已经相信什么: 当前价格隐含的增长、利润率、capex、退出倍数
+2. Owner earnings bridge
+3. Base / bear / bull scenario
+4. 10 年 IRR 和 margin of safety
 
 问题:
 
@@ -621,6 +656,7 @@ inversion_map.md
 - 如果增长放缓，是否仍有合理回报
 - capex 是维护性还是增长性
 - 估值是否依赖过多乐观假设
+- 价格是否给了“我们对 H1-H7 判断可能错”的保护
 
 输出:
 

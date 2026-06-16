@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>买方研究 OS — 10 步执行细节</title>
+<title>买方研究 OS — 10 步执行细节 + 好生意前置闸门</title>
 <style>
 :root{
   --bg:#ffffff; --fg:#1a1a1a; --fg2:#555; --info:#2563eb; --info-bg:#eff4ff;
@@ -77,13 +77,13 @@ code,.file{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:12px;
 </head>
 <body>
 <div class="wrap">
-<h1>买方研究 OS — 10 步执行细节</h1>
+<h1>买方研究 OS — 10 步执行细节 + 好生意前置闸门</h1>
 <p class="lede">点任意步骤展开它的「怎么做 / 输入 / 产出 / 质量门 / 非线性 / 交接 / 常见错误 / GOOGL 实例」。总览流程图见 <a href="research_os_pipeline.html">research_os_pipeline.html</a>。创建 2026-06-16。</p>
 <div class="legend">🟦 一条主干 <code>1→2→3→4→5→6→[B 分析层并行]→7→8→9→10↻</code> · 🟩 质量门 = 进下一步的硬条件 · 🟧 非线性 = 回流/并行/可跳过（input↔output 不是绝对线性）</div>
 
 <div class="nav" id="nav"></div>
 <div id="cards"></div>
-<p class="muted">由 11 个并行调查 agent 生成并交叉校验衔接链 · 数据可改：编辑本文件的 STEPS 数组即可</p>
+<p class="muted">由多个并行调查 agent 生成并交叉校验衔接链 · 数据可改：编辑本文件的 STEPS 数组即可</p>
 </div>
 
 <script>
@@ -110,18 +110,19 @@ const STEPS = [
 },
 {
  no:"2", cn:"Triage 初筛 / 开题", en:"Triage & Scoping", zone:"A",
- purpose:"把一个模糊兴趣变成「可被证据回答的问题」，并用 5-8 个高质量来源快速判断值不值得深研（含本地盘点旧资料）。核心是省时间：用最小证据成本排除明显烂生意/太贵/无证据的 idea。",
- inputs:["第 1 步：候选 queue item + 10 行 Theme 表 + 方向评分","用户的原始问题/兴趣（需改写成可证伪子问题）","研究对象类型：company/sector/theme/rumor/method","本地仓库：companies/、sectors/、notes/videos/、frameworks/、sources/"],
+ purpose:"把一个模糊兴趣变成「可被证据回答的问题」，并先过一分钟好生意承保：长期需求、付费理由、稀缺控制点、利润池、护城河和攻击面讲不清，就不直接估值。核心是省时间：用最小证据成本排除明显烂生意/太贵/无证据的 idea。",
+ inputs:["第 1 步：候选 queue item + 10 行 Theme 表 + 方向评分","用户的原始问题/兴趣（需改写成可证伪子问题）","frameworks/one_page_quality_company_checklist.md","研究对象类型：company/sector/theme/rumor/method","本地仓库：companies/、sectors/、notes/videos/、frameworks/、sources/"],
  how:[
   "快扫 5-8 个高质量来源（只为判断值不值得做，不收全）：优先一手锚点——最新 10-K、最近一季 10-Q/earnings、proxy、相关 13F；再加 1-2 个高质二手。只读关键页，不下结论。",
-  "写清开题 8 件事并落到 research_status.md：Research question（必须可证伪）/ Object / Ticker|universe / Geography / Time horizon / Decision needed / Output artifact / Non-goals。",
+   "写清开题 8 件事并落到 research_status.md：Research question（必须可证伪）/ Object / Ticker|universe / Geography / Time horizon / Decision needed / Output artifact / Non-goals。",
+   "补 One-minute thesis：公司服务什么长期需求、谁付钱、为什么付钱、不付钱损失什么、控制哪个稀缺节点、利润池为何被它拿走、最危险攻击面是什么。写不出则 verdict ceiling 先压 INFO-GAP/WATCH。",
   "把问题改写成可证据回答的形式：不写『它会不会涨』，拆成可观测变量——收入质量是否变差 / capex 能否转 owner earnings / 护城河是否被 AI 攻破 / 管理层是否可信 / 价格是否低于保守内在价值。",
   "本地盘点用 rg：`rg -n \"&lt;ticker|关键词&gt;\" .` 与 `rg --files | rg \"&lt;关键词&gt;\"`，捞四类——旧 memo / 视频笔记 / 适用 framework / 已有 facts·ledger·valuation；写进 research_status 的 Local inventory（含 stale/conflicting 与可复用模块）。",
   "判断升级 vs 出口：对照三个否决条件——明显烂生意（不懂怎么赚钱）、明显太贵、明显无证据（线索全是社媒）。任一明显成立→Reject/Park 并记原因；都不成立且价值足够→升级。",
   "设 verdict ceiling 并过 7 句开工口令自检（要回答什么/有无旧料/为何现在/需哪些一手源/哪些只是社媒/哪个事实改判/最高允许什么 verdict）；答不清就先不开 full research。"
  ],
- outputs:["triage note（companies/&lt;ticker&gt;/&lt;topic&gt;-&lt;date&gt;.md 或 sectors/&lt;theme&gt;/plan.md）——标注 topical memo，非完整 L1","research_status.md（含开题 8 件事 + Local inventory + Stage Checklist + Verdict ceiling 骨架）","research_queue.md 状态更新（Triage→Plan，或标 Reject/Park 附原因）"],
- gate:"升级门槛 = 不是明显烂生意（说得清怎么赚钱）+ 不是明显太贵 + 不是明显无证据（有一手源、线索不全是社媒）。三项都过且价值足够才进第 3 步。社媒为主证据→封顶 INFO-GAP；不懂生意→REJECT/INFO-GAP。",
+  outputs:["triage note（companies/&lt;ticker&gt;/&lt;topic&gt;-&lt;date&gt;.md 或 sectors/&lt;theme&gt;/plan.md）——标注 topical memo，非完整 L1","research_status.md（含开题 8 件事 + One-minute thesis + Local inventory + Stage Checklist + Verdict ceiling 骨架）","research_queue.md 状态更新（Triage→Plan，或标 Reject/Park 附原因）"],
+  gate:"升级门槛 = One-minute thesis 能讲清 + 不是明显烂生意（说得清怎么赚钱）+ 不是明显太贵 + 不是明显无证据（有一手源、线索不全是社媒）。三项都过且价值足够才进第 3 步。社媒为主证据→封顶 INFO-GAP；不懂生意→REJECT/INFO-GAP。",
  handoff:"triage note + research_status → 第 3 步：Research question 决定拆哪些 block，Decision needed 决定 verdict ceiling，已识别的官方来源锚点直接填进各 block 的 source budget，Local inventory 的可复用模块让计划跳过已完成部分。",
  nonlinear:"这是真正的分流闸——可直接走 Reject（归档，除新证据）或 Park/Watch（进监控但不进昂贵的 evidence build），下游完全不触发；与第 1 步交界可回流（方向表写不实就打回重评分）；本地盘点命中成熟 facts/valuation 可从第 2 步直接跳到第 7 阶段（分析层）复用。",
  pitfalls:["把 triage 当收全证据（应严格限深度）","研究问题不可证伪（写成『会不会涨』）","跳过本地盘点导致重复劳动或忘记旧结论","让社媒/视频冒充证据","该 Reject/Park 却因沉没成本硬升级","triage note 里偷偷下买卖结论","Non-goals 留空导致范围膨胀"],
@@ -130,22 +131,22 @@ const STEPS = [
 },
 {
  no:"3", cn:"研究计划", en:"Research Plan", zone:"A",
- purpose:"把研究问题拆成可暂停/恢复/审计的执行清单（默认 12 block），每 block 预写死『回答什么、去哪拿、产出什么、何时停、砍什么』。它是整条流水线的施工图——没图纸不准动手收资料，把『先证据后观点』变成可强制执行的纪律。",
+ purpose:"把研究问题拆成可暂停/恢复/审计的执行清单（默认 1 个 thesis gate + 12 个证据 block，Block 00 是 Business Thesis / Quality Gate 的开题假设版），每 block 预写死『回答什么、去哪拿、产出什么、何时停、砍什么』。它是整条流水线的施工图——没图纸不准动手收资料，把『先证据后观点』变成可强制执行的纪律。",
  inputs:["第 2 步：研究问题 + Decision needed + Non-goals + time horizon","第 2 步本地盘点：可复用模块 / 过期或冲突的旧结论 / 已有 source_id","Stage 0 Identify：legal name/ticker/CIK/EDGAR 入口/最近 filing 日期/业务边界/特殊情况","sources/source_policy.md + companies/_step0_plan_template.md"],
  how:[
   "先填 plan 顶部两张表定基调：①『已确认的事实』表（legal name/ticker/exchange/CIK/sector/主营/最近 10-K/最近季报/特殊情况，每行带 Tier 与来源）；② 复杂度系数→时间预算（普通 1.0×≈2.5-4.5h，年轻公司+30%，加密/高监管/跨境+50%）。",
-  "套 12 block 骨架并裁剪：01 Identity / 02 Segment Revenue / 03 Unit Economics / 04 10y Financials / 05 Industry Map / 06 Value Chain / 07 Moat / 08 Operator / 09 Ownership / 10 Risk-Inversion / 11 Valuation / 12 Sentiment-Catalyst。本地盘点已覆盖的标 done、Non-goals 排除的标 skip、用户最关心的专题可在 12 block 前插『专题 Block A/B/C』先跑。",
+   "套 1+12 骨架并裁剪：00 Business Thesis / Quality Gate / 01 Identity / 02 Segment Revenue / 03 Unit Economics / 04 10y Financial Trends / 05 Industry Map / 06 Value Chain / 07 Moat / 08 Operator / 09 Ownership / 10 Risk-Inversion / 11 Valuation / 12 Sentiment-Catalyst。本地盘点已覆盖的标 done、Non-goals 排除的标 skip、用户最关心的专题可在标准 block 前插『专题 Block A/B/C』先跑。",
   "每个 block 写满五要素（缺一不算合格 plan）：Questions（3-5 个具体问句）/ Sources to fetch（具体到 filing 类型甚至 URL/accession）/ Expected output（落到哪个 raw 文件）/ Stop condition（命中即停的客观信号）/ What to skip（主动放弃项进 OPEN QUESTIONS）。",
   "Source budget 自下而上估：先给地板（最新 10-K≥1、10-Q≥1、proxy≥1、transcript 2-4、竞品 2-5、行业源 2-5），再按复杂度系数加成，逐 block 填预计调用次数与分钟并汇总。",
   "plan 写完必须 stop 让用户 confirm scope 再动手（plan-first 执行点）：来源预算是用户真实成本、block 取舍是 scope 决策、开收后返工成本远高于计划期调整。",
   "每个 block 配 status（pending/in-progress/done/skipped/blocked）并实时回写——plan 同时是施工图与进度看板，中断后下次找第一个 pending block 即可恢复。"
  ],
- outputs:["step0_plan.md（已确认事实表 + 复杂度·时间预算 + 12(±专题) block 五要素 + 砍掉项清单 + 总调用预算 + status）","raw/ 目录骨架（按 block 预留文件名 block01_identity.md … block12_*.md）"],
+  outputs:["step0_plan.md（已确认事实表 + 复杂度·时间预算 + 1 个 thesis gate + 12(±专题) 证据 block 五要素 + 砍掉项清单 + 总调用预算 + status）","raw/ 目录骨架（按 block 预留文件名 block00_business_thesis.md、block01_identity.md … block12_*.md）"],
  gate:"没 plan 不收资料；每 block 必须有具体来源清单 + 客观停止条件 + 明确砍掉项；五要素缺一不算合格；plan 写完先 stop 等用户 confirm scope。",
  handoff:"所有 status=pending 的 block 构成第 4 步的工作队列：第 4 步逐个取出 pending block，严格按其 Sources to fetch 去拿、命中 Stop condition 就停、写进指定 raw 文件、回写 done。",
- nonlinear:"① block 可并行（Identity / 10y Financials / Ownership 无强依赖）；② block 可砍可插队（Non-goals 命中当场 skip，专题 Block 插队先跑）；③ 审计回流是核心反向边——第 7 步发现关键数字无 source_id 或覆盖不足，回到本步新增补漏 block 置 pending 再回第 4 步。plan 是会被多轮往回改、不断长出新 block 的活文件。",
- pitfalls:["stop condition 太软（『尽量多查』）导致无限深挖","What to skip 留空，分不清『没查到』与『主动没查』","Sources 写成泛指（『SEC filings』）无法照单执行","复杂度系数/预算拍脑袋，年轻或跨境公司严重低估","把社媒当 EVIDENCE 级来源写进 block","plan 写完不 stop 直接开收","12 block 当僵硬模板，既不砍也不复用旧 facts"],
- tools:["investment_research_pipeline_detailed.md §4（12 block 表 + 五要素 + I→D 回流边）","companies/_step0_plan_template.md（详版：checklist/预计调用/砍掉项/执行节奏）","companies/_company_research_template/step0_plan.md（精简版）","sources/source_policy.md（tier 分级）","WebSearch / WebFetch / rg（按 block 估算调用）"],
+  nonlinear:"① block 可并行（Identity / 10y Financial Trends / Ownership 无强依赖）；② block 可砍可插队（Non-goals 命中当场 skip，专题 Block 插队先跑）；③ 审计回流是核心反向边——第 7 步发现关键数字无 source_id 或覆盖不足，回到本步新增补漏 block 置 pending 再回第 4 步。plan 是会被多轮往回改、不断长出新 block 的活文件。",
+  pitfalls:["stop condition 太软（『尽量多查』）导致无限深挖","What to skip 留空，分不清『没查到』与『主动没查』","Sources 写成泛指（『SEC filings』）无法照单执行","复杂度系数/预算拍脑袋，年轻或跨境公司严重低估","把社媒当 EVIDENCE 级来源写进 block","plan 写完不 stop 直接开收","1+12 骨架当僵硬模板，既不砍也不复用旧 facts"],
+  tools:["investment_research_pipeline_detailed.md §4（1 thesis gate + 12 evidence blocks + 五要素 + I→D 回流边）","companies/_step0_plan_template.md（详版：checklist/预计调用/砍掉项/执行节奏）","companies/_company_research_template/step0_plan.md（精简版）","sources/source_policy.md（tier 分级）","WebSearch / WebFetch / rg（按 block 估算调用）"],
  googl:"companies/googl/step0_plan.md 是非线性裁剪的真实范例：没从 Block 1 顺序铺开，而是先按用户三个问题开三个插队专题——Block A 营收结构（FY2025 10-K + Q1 2026 earnings）、Block B Berkshire 持仓与理由（Berkshire 13F + June 2026 FWP/424B5，约束『filing 事实与推测理由分开』）、Block C 段永平·H&H（两份 13F 对比），三者已标 done；完整 L1/L2 的 8 个 block 全部 pending 排队等 confirm。文件底部还维护了 Sources Opened So Far 的真实 SEC URL 清单。"
 },
 {
@@ -202,7 +203,7 @@ const STEPS = [
  ],
  outputs:["facts.md（文件头声明 status + 五区 EVIDENCE/INTERPRETATION/SENTIMENT/OPEN_QUESTIONS/Contradictions + 结构化表每行带 source_id + 末尾 Minimum Coverage Check 与灵魂开口度自查）"],
  gate:"每条关键事实(value+unit+as_of)可回到可验证的 source_id；EVIDENCE 区不得含 D 级来源；冲突数字必须在 Contradictions 并列而非私自裁决；Minimum Coverage 未全绿（或未给 gap 说明）则 facts 不完整，下游封顶 INFO-GAP(<40%)/WATCH(40-60%)。",
- handoff:"facts.md 作为第 7 阶段全部 8 模块的共同 input：每个模块只能引用 EVIDENCE（及复核后的 INTERPRETATION）推导，禁止绕过 facts 直接从 raw 取数；同一份 EVIDENCE 喂所有模块，保证财务质量用的收入数字与估值用的收入数字完全一致，避免模块间口径漂移。",
+ handoff:"facts.md 作为第 7 阶段全部 8 模块的共同 input：每个模块只能引用 EVIDENCE（及复核后的 INTERPRETATION）推导，禁止绕过 facts 直接从 raw 取数；同一份 EVIDENCE 喂所有模块，保证财务趋势质量用的收入数字与估值用的收入数字完全一致，避免模块间口径漂移。",
  nonlinear:"① 向上回流补料——facts 不全（source_id 查不到/缺 as_of/某模块覆盖不够）时回流第 3-5 步补料而非硬往下；② 累积式可多次追加（seed→verified 反复提级）；③ 下游模块发现缺口（估值缺 10 年序列、operator 缺 proxy）可回头补 facts 再重跑该模块——事实线与理解线是双向。",
  pitfalls:["把分析师观点/目标价当事实塞进 EVIDENCE","把社媒情绪当信号用作 thesis","私自裁决冲突数字","断链事实（写了数字但 source_id 缺失）","把 seed 当 audited 喂给下游","漏 as_of/unit/口径（GAAP vs non-GAAP）","Minimum Coverage 未全绿却写 STARTER/CORE"],
  tools:["claim_ledger.csv（主输入）","raw/*.md（verbatim 回链）","source_register.md + source_policy.md（source_id + 4 级 tier）","companies/_company_research_template/facts.md（结构模板）","SEC EDGAR（EVIDENCE 底料）/ Bloomberg·Reuters·WSJ（B1）/ TipRanks·研报（INTERPRETATION）/ 社媒（SENTIMENT）","info_collection_pipeline.md 维度 B（三分判定 + 5 灵魂开口门槛）"],
@@ -213,26 +214,26 @@ const STEPS = [
  purpose:"从事实走向判断。8 个模块都只读同一份 facts.md + claim_ledger，可并行；把『是真的』转成『是不是好生意 / 值不值这个价』，每个模块回答一个硬问题，产出供第 7 步审计逐条核验。",
  inputs:["第 6 步：facts.md（五区）+ claim_ledger.csv（每条挂 source_id+tier+as_of+destination）","第 6 步 Minimum Coverage Check（标出哪些模块事实已够、哪些要先回流补料）","frameworks 方法论模板：moat_technical_analysis / operator_underwriting / munger·inversion_checklist / buffett·research_checklist（owner earnings 桥 + 安全边际口径）"],
  how:[
-  "扇出并行：8 模块只读同一 facts + ledger，互不写对方文件，可同时开工；无固定先后，先做事实最齐、最影响 verdict 的模块（GOOGL 优先级：财务质量→护城河→反演→估值，因核心争议是 AI capex 能否转 owner earnings）。",
+  "扇出并行：8 模块只读同一 facts + ledger，互不写对方文件，可同时开工；无固定先后，但必须先过 Business Thesis / Quality Gate，再做事实最齐、最影响 verdict 的模块（GOOGL 优先级：生意承保→财务趋势→护城河→反演→估值，因核心争议是 AI capex 能否转 owner earnings）。",
   "统一引用纪律：每个模块关键数字/判断必须回挂 facts 的 source_id，不得在分析层凭空引入新数字；要新数字就回流第 4-6 步补 raw→claim→facts 再回来。",
-  "软依赖链：估值依赖财务质量先产出 owner earnings 桥 + 维护/成长 capex 拆分；反演依赖护城河的 attack surface；价值链是瓶颈的上游。其余模块基本独立可任意顺序。",
+  "软依赖链：估值依赖财务趋势质量先产出 owner earnings 桥 + 维护/成长 capex 拆分；反演依赖护城河的 attack surface；价值链是瓶颈的上游。其余模块基本独立可任意顺序。",
   "证据分级落盘：每条判断标 Strong/Medium/Weak/Negative——一手披露/长期 ROIC 才算 Strong 可支撑 thesis，sell-side/transcript 为 Medium，管理层说法/KOL/社媒只能 Weak，负面信号必须进风险。",
   "每个模块固定两栏收口：『引用了哪些 source_id』+『open questions（缺什么、回流到哪步）』，让第 7 步审计能逐模块核对覆盖度并卡 verdict ceiling。结构化数字/情景落到 model/*.csv（历史与预测分离、单位显式、source_id 写 notes）。"
  ],
  submodules:[
-  {cn:"生意模式", en:"Business Model", purpose:"讲清怎么赚钱、谁付钱为什么付、收入是否经常性、10 年后还在不在。", how:["一句话写清生意 + 『谁付钱』表 + 『收入引擎』表（计价/量驱动/价驱动/风险）","十年存在性测试：客户问题还在吗？为何仍是最佳解？技术/监管/分发若变会怎样？","填生意质量记分卡，每行挂 facts 证据"], output:"business_model.md", kt:"客户为什么付钱、这价值 10 年后是否仍可货币化（GOOGL：AI answers 减少链接后搜索意图还能否变现）？"},
-  {cn:"财务质量（会计重构）", en:"Financial Quality", purpose:"把报表数字翻成真实经济：重构 owner earnings，识别 SBC/折旧/capex/营运资本扭曲，判断增长是否创造价值。", how:["建『会计→经济』桥：净利→+D&A→−维护 capex→−常态化 SBC/稀释→±营运资本→= owner earnings","建 10 年时间序列落到 model/financial_history.csv（历史与预测分离）","capex 拆维护 vs 成长/防御；查红旗（收入涨但每股 owner earnings 停滞、SBC 快于营业利润）"], output:"financial_quality.md + model/financial_history.csv", kt:"增量 AI capex 是创造可持续 owner earnings，还是只维持旧护城河的消耗（GOOGL Q1'26 OCF $45.79B vs PPE 购置 $35.674B）？"},
+  {cn:"生意承保", en:"Business Thesis / Quality Gate", purpose:"先用一分钟讲清为什么可能是好生意，再用事实承保怎么赚钱、谁付钱为什么付、收入是否经常性、10 年后还在不在。", how:["开题时填假设版：长期需求 / 付费理由 / 不付钱的损失 / 稀缺控制点 / 利润池 / 护城河 / 攻击面","证据后写承保版：一句话生意 + 『谁付钱』表 + 『收入引擎』表（计价/量驱动/价驱动/风险）","十年存在性测试：客户问题还在吗？为何仍是最佳解？技术/监管/分发若变会怎样？","填生意质量记分卡，每行挂 facts 证据"], output:"business_model.md", kt:"客户为什么付钱、这价值 10 年后是否仍可货币化（GOOGL：AI answers 减少链接后搜索意图还能否变现）？"},
+  {cn:"财务趋势质量（会计重构）", en:"Financial Trend Quality", purpose:"财报不是起点，而是趋势和反证系统：重构 owner earnings，识别 SBC/折旧/capex/营运资本扭曲，判断增长是否真的创造价值。", how:["先看趋势：revenue / margin / FCF per share / ROIC / SBC / capex intensity / share count / debt 至少 3-10 年方向","建『会计→经济』桥：净利→+D&A→−维护 capex→−常态化 SBC/稀释→±营运资本→= owner earnings","建 10 年时间序列落到 model/financial_history.csv（历史与预测分离）","capex 拆维护 vs 成长/防御；查红旗（收入涨但每股 owner earnings 停滞、SBC 快于营业利润）"], output:"financial_quality.md + model/financial_history.csv", kt:"财务趋势是在验证这门生意变强，还是说明增长被资本强度吃掉（GOOGL Q1'26 OCF $45.79B vs PPE 购置 $35.674B）？"},
   {cn:"价值链", en:"Value Chain", purpose:"画上下游链条 + 利润池分布，找出钱在哪层被赚走、谁有定价权、卡点在哪。", how:["定义行业边界，多业务分别建链（搜索广告/视频/移动生态/云/AI 计算栈）","做利润池表（各层玩家/收入池/回报特征/议价能力）+ 量化 unit economics 与集中度","用五力 + 利润池 + bottleneck ownership 分析供需与替代品"], output:"value_chain_map.md", kt:"每条链上价值由公司、广告主/客户、芯片商还是模型层捕获——公司是瓶颈拥有者还是仅 capex 出资方？"},
   {cn:"护城河", en:"Moat", purpose:"把『有护城河』从形容词拆成可验证机制，并写清每条怎么被攻破。", how:["逐条填表（来源/证据/指标/durability/attack surface），只有造成持续超额回报/定价权/低成本/强分发/高留存的才算","套 ROIC−WACC 透镜：当前 ROIC、估 WACC、价差、再投资跑道、竞争优势期","每条写 attack surface + 三层时间测试 + falsification 清单，证据分级，负面进风险"], output:"moat_map.md", kt:"AI capex 抬升后能否在增量资本上维持高回报；旧护城河被削弱速度 vs 新护城河形成速度？"},
   {cn:"瓶颈层", en:"Bottleneck", purpose:"识别哪环节短期扩不出、稀缺在哪、谁控制它——可能是定价权也可能是成本黑洞。仅特定行业适用。", how:["适用判定：AI 基建/半导体/机器人/电力/云/医药制造/国防供应链才做，纯软件/广告可跳过","建瓶颈清单表（瓶颈/类型/谁控制/证据/持续时间/受益者）","四问：能否绕过买通？暂时还是结构性？拥有还是依赖？解决它改善经济还是毁回报？"], output:"bottleneck_map.md", kt:"AI 基础设施（数据中心/电力/TPU）对这家是护城河、收费公路，还是 capex 陷阱？"},
   {cn:"管理层尽调", en:"Operator Underwriting", purpose:"研究谁在经营、控制权、性格激励、资本配置历史、董事会约束；只用可观察行为做证据，不做心理诊断。", how:["画 people map（创始人/CEO/CFO/董事会/关键技术负责人 + power source）","建资本配置表（再投资/M&A/回购/分红/发股债的 track record + 现行政策 + 判断）","填 8 维性格记分卡；证据优先级：Proxy→10-K risk→股东信→危机期 call→法庭监管文件"], output:"operator_underwriting.md", kt:"AI 转型期是 wartime operator 还是 consensus manager；双层股权保护长期复利还是削弱外部约束；capex 是否被回报门槛约束？"},
   {cn:"反演 / 失败", en:"Inversion", purpose:"先反问『若要让它十年内失去超额利润会怎么攻击』，把失败具体到机制，区分永久损害 vs 短期波动、已 price-in vs 未 price-in。", how:["扮竞争者/监管者/技术替代者/内部破坏者，建 failure map（路径/攻击者/机制/时间/今日证据/预警），≥9 类","区分短期波动 vs 永久减值并给监控指标","每条失败路径接到护城河 attack surface；影响大但证据不足的写进 Kill Criteria；写 disconfirming evidence 保证可证伪"], output:"inversion_map.md", kt:"哪条失败路径一旦发生会永久损害内在价值、现在是否已有强证据且无对冲？"},
-  {cn:"估值 + 安全边际", en:"Valuation", purpose:"判断价格是否足够便宜：至少三层——owner earnings 桥、bear/base/bull 情景、10 年 IRR 与 margin of safety。", how:["承接财务质量的 owner earnings 与 capex 拆分（无此前置则只能停 shell）","建情景表（各自 revenue CAGR/margin/capex/terminal multiple/10y IRR）落 model/scenario_model.csv","反推当前价格隐含的增长与利润率；定 margin of safety 表（折扣 20/30/40%、buy below、starter、core、avoid above）"], output:"valuation.md + model/scenario_model.csv", kt:"保守 owner earnings（已扣 AI capex/SBC/稀释/监管）下什么价格才给足安全边际；买入后估值压缩 30-50% 基本面能否弥补？"}
+  {cn:"估值 + 安全边际", en:"Valuation", purpose:"估值最后登场：先问市场已经相信什么，再用 owner earnings 桥、bear/base/bull、10 年 IRR 与 margin of safety 判断好生意是不是好投资。", how:["承接财务趋势质量的 owner earnings 与 capex 拆分（无此前置则只能停 shell）","先反推当前价格隐含的增长、利润率、capex 强度和退出倍数","建情景表（各自 revenue CAGR/margin/capex/terminal multiple/10y IRR）落 model/scenario_model.csv","定 margin of safety 表（折扣 20/30/40%、buy below、starter、core、avoid above）"], output:"valuation.md + model/scenario_model.csv", kt:"保守 owner earnings（已扣 AI capex/SBC/稀释/监管）下什么价格才给足安全边际；买入后估值压缩 30-50% 基本面能否弥补？"}
  ],
  outputs:["business_model / financial_quality / value_chain_map / moat_map / bottleneck_map / operator_underwriting / inversion_map / valuation 共 8 类文件（关键判断挂 source_id，文末附 open questions 与回流去向）","model/*.csv（historicals / segments / owner_earnings_bridge / scenario_model / sensitivity，单位显式、历史与预测分离）"],
  gate:"每个模块必须 ① 关键数字/判断回挂 facts 的 source_id，无未入账的新事实；② 文末列 open questions 与回流去向；③ 证据标 Strong/Medium/Weak/Negative，负面进风险。任一模块未引用 facts 或未列 open questions，审计据此压低 verdict ceiling。",
  handoff:"8 模块产出 + model/*.csv 一起汇入第 7 步审计：逐模块核对 source coverage / 无 source_id 的关键 claim / 冲突 / 污染 / 模型错误 / 未验证管理层说法 / 过激估值假设 / 未量化风险，据 Minimum Coverage 完整度卡 verdict ceiling。",
- nonlinear:"8 模块只读同一 facts、互不写对方文件，无固定顺序可完全并行（fan-out）；某模块发现缺口即回流第 4-6 步补料再回来，绝不在分析层造数；模块间有软依赖（估值依赖财务质量、反演依赖护城河、价值链是瓶颈上游）；瓶颈层仅强供给约束行业适用，纯软件/广告可跳过。",
+ nonlinear:"8 模块只读同一 facts、互不写对方文件，无固定顺序可完全并行（fan-out）；某模块发现缺口即回流第 4-6 步补料再回来，绝不在分析层造数；模块间有软依赖（估值依赖财务趋势质量、反演依赖护城河、价值链是瓶颈上游）；瓶颈层仅强供给约束行业适用，纯软件/广告可跳过。",
  pitfalls:["在分析层凭空引入 facts 没有的数字而不回挂 source_id","护城河写成形容词（『生态』『平台』『AI』）却给不出机制/证据/attack surface","估值在 owner earnings 桥未完成时硬做，或用激进 terminal multiple 挽救弱当期回报","反演只写『竞争加剧/AI 威胁』笼统话，不到机制、不区分永久 vs 短期","管理层尽调滑向 vibes 心理诊断而非可观察证据","对不适用行业硬套瓶颈层，或对 AI 基建公司跳过瓶颈"],
  tools:["唯一事实源：facts.md + claim_ledger.csv（社媒只能 SENTIMENT/OPEN_QUESTION）","方法论：moat_technical_analysis.md / operator_underwriting.md / munger·inversion_checklist.md / buffett·research_checklist.md","结构模板：_company_research_template 下各 *_map.md / financial_quality.md / valuation.md / model/README.md","补料回流用一手源：10-K/10-Q/8-K、call transcript、proxy、13F、Form 4"],
  googl:"companies/googl 下 8 模块当前多为 skeleton（有框架无数据）。例 1：financial_quality.md 已把 5 个 seed 数字挂上 claim id（FY25 营收 $402.836B-C002、Q1'26 OCF $45.79B 与 PPE $35.674B-C008、Cloud Q1'26 营业利润 $6.598B-C007）并立了会计假设，但 10 年序列、维护 vs 成长 capex 拆分、owner earnings 桥全在 Work To Do——正是估值无法启动的软依赖卡点。例 2：moat_map.md 列 6 类护城河候选 + 各自 attack surface + 4 条 falsification，但标注『Status: skeleton, 勿当结论』，与 inversion_map 的失败路径互为镜像。valuation.md 标 not started，故 verdict ceiling 仍 INFO-GAP。"

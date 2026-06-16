@@ -1,0 +1,8 @@
+metric,Q1_2025,Q1_2026,change,unit,source_id,interpretation,status
+Google_Cloud_revenue,12260,20028,63.36,pct_yoy,GOOG.A1.2026Q1.991,"Cloud growth accelerated sharply.",verified_A1
+Google_Cloud_operating_income,2177,6598,203.08,pct_yoy,GOOG.A1.2026Q1.991,"Cloud operating income grew much faster than revenue.",verified_A1
+Google_Cloud_operating_margin,17.76,32.94,15.18,pp,derived,"Cloud margin roughly doubled; must be validated over multiple quarters.",derived
+Cloud_backlog,,over_460000,,USD_M,GOOG.A1.2026Q1.991,"Backlog over $460B; strong visibility but conversion timing and margins still unknown.",verified_A1_text
+Cloud_growth_driver,,enterprise_AI_solutions_and_infrastructure,,text,GOOG.A1.2026Q1.991,"Management attributes acceleration to GCP, enterprise AI solutions, enterprise AI infrastructure, and core GCP.",verified_A1_text
+Cloud_margin_sustainability,,,,unknown,OPEN,"Need multi-quarter trend and utilization / accounting explanation.",open
+Cloud_RPO_conversion_timing,,,,unknown,OPEN,"Backlog size is not enough; conversion timing and margin matter.",open

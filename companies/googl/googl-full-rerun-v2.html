@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOOGL v2 Full Rerun - 10-Layer Buy-Side Research</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #596273;
+      --line: #d9dde5;
+      --panel: #ffffff;
+      --soft: #f5f7fa;
+      --soft2: #eef4f8;
+      --green: #216e4e;
+      --yellow: #8a5a00;
+      --red: #9a3412;
+      --blue: #2457a6;
+      --purple: #6b3fa0;
+      --shadow: 0 14px 36px rgba(25, 35, 55, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+      background: #f1f3f6;
+      line-height: 1.55;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f7fafc 0%, #ffffff 46%, #eef4f8 100%);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: 34px;
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0 0 12px; }
+
+    .lead {
+      max-width: 980px;
+      font-size: 17px;
+      color: #334155;
+    }
+
+    .status-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .status {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 112px;
+    }
+
+    .status strong {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 7px;
+    }
+
+    .status span {
+      display: block;
+      font-size: 18px;
+      font-weight: 750;
+      line-height: 1.28;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .tag.watch { color: var(--yellow); background: #fff7df; border-color: #ead083; }
+    .tag.done { color: var(--green); background: #e8f5ee; border-color: #b9dbc9; }
+    .tag.open { color: var(--red); background: #fff0e8; border-color: #efc5ad; }
+    .tag.info { color: var(--blue); background: #eaf1ff; border-color: #bdd0fb; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      padding: 22px;
+      margin-top: 18px;
+    }
+
+    .section.soft { background: var(--soft); box-shadow: none; }
+
+    .callout {
+      border-left: 4px solid var(--blue);
+      background: #f3f7ff;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+
+    .callout.warning {
+      border-left-color: var(--yellow);
+      background: #fff8e8;
+    }
+
+    .callout.danger {
+      border-left-color: var(--red);
+      background: #fff2ec;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .step {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 150px;
+    }
+
+    .step .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #172033;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .step b { display: block; margin-bottom: 5px; }
+    .step p { color: var(--muted); font-size: 13px; margin-bottom: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 2px;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      color: #334155;
+      background: #f6f8fb;
+      font-weight: 750;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px;
+      background: #fff;
+      min-height: 95px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .metric span {
+      display: block;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .metric small {
+      display: block;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .two-col {
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 0;
+    }
+
+    li { margin: 6px 0; break-inside: avoid; }
+
+    .mono {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      background: #f2f4f7;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 2px 5px;
+    }
+
+    .layer {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      margin-top: 22px;
+    }
+
+    .layer:first-of-type { border-top: none; padding-top: 0; }
+
+    .layer-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .layer-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .layer-title .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 7px;
+      background: #172033;
+      color: white;
+      font-weight: 800;
+    }
+
+    .layer-title h2 { margin: 0; }
+
+    footer {
+      color: var(--muted);
+      padding: 26px 4px 8px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1100px) {
+      .status-row, .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+      .two-col { columns: 1; }
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 14px; }
+      header, .section { padding: 18px; }
+      h1 { font-size: 26px; }
+      .status-row, .metric-grid, .flow { grid-template-columns: 1fr; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 6px; }
+      .layer-head { display: block; }
+      .tag { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="eyebrow">Alphabet / GOOGL - 10-layer buy-side rerun</div>
+      <h1>Google v2 全量重跑汇总：好公司成立，买入承保不成立</h1>
+      <p class="lead">
+        这份 HTML 是多 agent 并行后的总控版。它不是把 Google 简化成一个 PE 或目标价，而是按“方向选择、事实工程、会计翻译、产业链、护城河、经营者、反向失败、估值、安全边际、监控”完整跑一遍。
+      </p>
+      <div class="status-row">
+        <div class="status"><strong>Checker status</strong><span>V2_LAYER_RERUN_COMPLETE_PUBLIC_DATA_LIMITS</span></div>
+        <div class="status"><strong>Decision</strong><span><span class="tag watch">WATCH / 0%</span></span></div>
+        <div class="status"><strong>Price anchor</strong><span>$373 附近</span><small>2026-06-16 盘中刷新；模型用 $373.19</small></div>
+        <div class="status"><strong>Core unresolved issue</strong><span>AI capex 能否变成 owner earnings</span></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>先讲一句话</h2>
+      <div class="callout">
+        Alphabet 仍然像一个优秀生意：它控制商业意图、广告拍卖、YouTube、Android/Chrome 分发、Cloud、TPU、Gemini 和数据中心。但现在真正要投的不是“过去的搜索引擎”，而是“商业意图能否迁移到 AI answers / agents，同时巨额 AI capex 能否转成普通股东的 owner earnings per share”。
+      </div>
+      <div class="callout warning">
+        当前答案：业务值得继续研究，股票不值得在当前价格直接买。原因不是 Google 烂，而是 $373 附近已经要求很强的 AI capex 成功分支；公开资料尚未证明 AI Search RPM、维护/成长 capex 拆分、Cloud backlog margin、capex ROI/payback。
+      </div>
+    </section>
+
+    <section class="section soft">
+      <h2>10 层流程图</h2>
+      <div class="flow">
+        <div class="step"><span class="num">1</span><b>Direction Selection</b><p>先判断现在研究 Google 是否比研究 NVDA、MSFT、AMZN、META、AVGO、TSM 更有信息价值。</p></div>
+        <div class="step"><span class="num">2</span><b>Business Thesis</b><p>一分钟讲清公司为什么好，谁付钱，为什么付钱，未来会不会还付。</p></div>
+        <div class="step"><span class="num">3</span><b>Evidence Engineering</b><p>raw、source register、claim ledger、facts、audit，先把事实和观点分开。</p></div>
+        <div class="step"><span class="num">4</span><b>Accounting Translation</b><p>把会计利润翻译成真实经济：FCF、SBC、capex、owner earnings、per-share。</p></div>
+        <div class="step"><span class="num">5</span><b>Value Chain</b><p>判断钱到底被谁赚走：界面、广告、Cloud、芯片、封装、电力、agent。</p></div>
+        <div class="step"><span class="num">6</span><b>Moat / Bottleneck</b><p>看别人为什么抢不走，也看哪些瓶颈会把利润转移走。</p></div>
+        <div class="step"><span class="num">7</span><b>Operator</b><p>承保 Page、Brin、Pichai、CFO、董事会、激励和资本配置。</p></div>
+        <div class="step"><span class="num">8</span><b>Inversion / Risk</b><p>反过来想：如果 Google 作为投资失败，会怎么失败。</p></div>
+        <div class="step"><span class="num">9</span><b>Valuation / MOS</b><p>反推价格隐含什么，再看安全边际，而不是先算一个目标价。</p></div>
+        <div class="step"><span class="num">10</span><b>Decision / Monitor</b><p>买不买、买多少、错了怎么办，全部变成季度监控指标。</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>核心数据快照</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>Q1 2026 revenue</strong><span>$109.9B</span><small>+22% YoY</small></div>
+        <div class="metric"><strong>Search & other</strong><span>$60.4B</span><small>+19% YoY；paid clicks +13%，CPC +5%</small></div>
+        <div class="metric"><strong>Google Cloud</strong><span>$20.0B</span><small>+63% YoY；OI margin 32.9%</small></div>
+        <div class="metric"><strong>Q1 capex / OCF</strong><span>77.9%</span><small>$35.7B capex / $45.8B OCF</small></div>
+        <div class="metric"><strong>2026 capex guide</strong><span>$180-190B</span><small>2027 expected significantly higher</small></div>
+        <div class="metric"><strong>TTM FCF</strong><span>$64.4B</span><small>capex 压缩后</small></div>
+        <div class="metric"><strong>Owner earnings range</strong><span>$51-83B</span><small>TTM Q1 2026 branch range</small></div>
+        <div class="metric"><strong>Base IRR at $373</strong><span>~2.4%</span><small>bull case 才约 11.9%</small></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">1</span><h2>Direction Selection</h2></div>
+          <span class="tag done">完成到公开资料边界</span>
+        </div>
+        <p>Google 值得研究，因为它是旧互联网利润池和新 AI 利润池碰撞最明显的公司。旧池是 Search intent -> ad auction -> advertiser ROI；新池是 user task -> AI answer / agent -> transaction / workflow -> compute -> chips / power / cloud / model monetization。</p>
+        <table>
+          <tr><th>如果想研究</th><th>更纯的公司</th><th>Google 的意义</th></tr>
+          <tr><td>当前 AI 算力瓶颈</td><td>NVDA / AVGO / TSM</td><td>Google 是买方和部分替代方，TPU 是 hedge，但仍承受 capex。</td></tr>
+          <tr><td>企业 AI 工作流</td><td>MSFT</td><td>Google 有 Workspace/GCP/Gemini，但企业工作流分发不如 MSFT 纯。</td></tr>
+          <tr><td>Commerce ads + cloud</td><td>AMZN</td><td>Google 的商业意图更广，Amazon 更靠近交易。</td></tr>
+          <tr><td>AI-enhanced ads</td><td>META</td><td>Meta 少了 Search 被 AI answer 替代的风险。</td></tr>
+          <tr><td>Search 商业意图迁移</td><td>GOOGL</td><td>最核心、最值得研究。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">2</span><h2>Business Thesis / Quality Gate</h2></div>
+          <span class="tag done">研究候选通过</span>
+        </div>
+        <p>一分钟版本：Alphabet 聚合用户注意力和商业意图，通过 Search、YouTube、Android、Chrome、Maps、Gmail、Gemini 捕获需求，再用广告、Cloud、Workspace、订阅和 AI 基础设施变现。</p>
+        <table>
+          <tr><th>客户</th><th>为什么付钱</th><th>增长机会</th><th>下降风险</th></tr>
+          <tr><td>广告主</td><td>可衡量的高意图获客</td><td>AI 理解更复杂 query，提升 coverage / conversion</td><td>AI answers 减少点击、广告位、归因和 RPM</td></tr>
+          <tr><td>企业</td><td>GCP、Workspace、AI infra、Gemini Enterprise</td><td>Cloud backlog、AI workloads、data gravity</td><td>低毛利算力、折旧追上、价格战</td></tr>
+          <tr><td>消费者</td><td>YouTube Premium、Google One、Gemini plans</td><td>AI subscriptions 和多产品 bundle</td><td>消费者 AI 付费意愿不足</td></tr>
+          <tr><td>开发者</td><td>API、云、模型、平台分发</td><td>Gemini/Vertex/TPU 生态</td><td>开源模型、OpenAI/MSFT/Anthropic 抢走工作流</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">3</span><h2>Evidence Engineering</h2></div>
+          <span class="tag done">证据链已建</span>
+        </div>
+        <p>这次不把管理层叙事直接当事实。A1 是 SEC / filing；A2 是官方电话会，作为管理层解释；模型输出是 inference；未知项必须标 OPEN。</p>
+        <table>
+          <tr><th>产物</th><th>路径</th><th>用途</th></tr>
+          <tr><td>Source register</td><td><span class="mono">source_register_v2_addendum.md</span></td><td>列出每个来源、可靠性和限制。</td></tr>
+          <tr><td>Claim ledger candidates</td><td><span class="mono">claim_ledger_v2_candidates.csv</span></td><td>把 claim 拆成层级、来源、状态、置信度。</td></tr>
+          <tr><td>Facts addendum</td><td><span class="mono">facts_v2_addendum.md</span></td><td>只放已经验证的事实，不放观点。</td></tr>
+          <tr><td>Audit notes</td><td><span class="mono">audit_notes_v2.md</span></td><td>防止把未证实叙事升级成事实。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">4</span><h2>Accounting Trend Validation</h2></div>
+          <span class="tag done">10 年序列已重建</span>
+        </div>
+        <p>财报不是结论，而是趋势验证。Google 的收入、营业利润、OCF 都非常强，但 capex 增长更快，FCF/share 最近被压缩。</p>
+        <table>
+          <tr><th>指标</th><th>FY2016</th><th>FY2025</th><th>TTM Q1 2026</th><th>读法</th></tr>
+          <tr><td>Revenue</td><td>$90.3B</td><td>$402.8B</td><td>$422.5B</td><td>2016-2025 CAGR 18.1%</td></tr>
+          <tr><td>Operating income</td><td>$23.7B</td><td>$129.0B</td><td>$138.1B</td><td>CAGR 20.7%，经营引擎仍强</td></tr>
+          <tr><td>OCF</td><td>$36.0B</td><td>$164.7B</td><td>$174.4B</td><td>CAGR 18.4%</td></tr>
+          <tr><td>Capex</td><td>$10.2B</td><td>$91.4B</td><td>$109.9B</td><td>CAGR 27.6%，资本强度抬升</td></tr>
+          <tr><td>FCF</td><td>$25.8B</td><td>$73.3B</td><td>$64.4B</td><td>TTM 已低于 FY2025</td></tr>
+          <tr><td>Capex / OCF</td><td>28.3%</td><td>55.5%</td><td>63.1%</td><td>AI/data-center 投入开始改变经济图像</td></tr>
+        </table>
+        <h3>Owner earnings 分支</h3>
+        <table>
+          <tr><th>Branch</th><th>TTM Q1 2026 OE</th><th>OE/share</th><th>必须成立的条件</th></tr>
+          <tr><td>Growth capex</td><td>$82.9B</td><td>$6.84</td><td>AI capex 多数是高回报成长投资，capex/OCF 见顶，FCF/share 恢复。</td></tr>
+          <tr><td>Mixed / delay</td><td>$67.6B</td><td>$5.58</td><td>一部分是防守，一部分是成长，回收期较长。</td></tr>
+          <tr><td>Defensive capex</td><td>$51.1B</td><td>$4.22</td><td>很多 AI capex 是保住旧 Search/Cloud moat 的税。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">5</span><h2>Industry / Value Chain</h2></div>
+          <span class="tag done">利润池已拆</span>
+        </div>
+        <p>Google 既是 toll collector，也是 toll payer。它在 Search / ads / Cloud / AI interface 抓利润，同时向芯片、封装、数据中心、电力、服务器、网络设备交钱。</p>
+        <table>
+          <tr><th>利润池</th><th>当前赢家</th><th>Google 位置</th><th>风险</th></tr>
+          <tr><td>Search ads</td><td>Google</td><td>核心现金引擎</td><td>AI agents 夺走 commercial task initiation</td></tr>
+          <tr><td>Cloud / AI infra</td><td>AWS / Azure / GCP / OCI</td><td>高速增长且盈利改善</td><td>backlog margin 和折旧后回报未证实</td></tr>
+          <tr><td>Accelerators / networking</td><td>NVDA / AVGO</td><td>买方，TPU 部分对冲</td><td>上游吃掉 AI capex 利润</td></tr>
+          <tr><td>Foundry / packaging</td><td>TSMC</td><td>间接依赖</td><td>先进制程和封装成为瓶颈</td></tr>
+          <tr><td>AI agents</td><td>OpenAI / Google / MSFT / Anthropic / Perplexity</td><td>Gemini + 分发优势</td><td>用户任务从 Search 前被截流</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">6</span><h2>Moat / Bottleneck</h2></div>
+          <span class="tag done">机制和攻击面已列</span>
+        </div>
+        <p>护城河不是一句“Google 有 moat”就结束。v2 的问题是：旧护城河是否能迁移到 AI task / agent 时代。</p>
+        <table>
+          <tr><th>护城河</th><th>强度</th><th>证据</th><th>攻击面</th></tr>
+          <tr><td>Search habit / default</td><td>强，但受监管削弱</td><td>Search +19%，paid clicks +13%，CPC +5%</td><td>DOJ/EU remedies，AI browser，device agents</td></tr>
+          <tr><td>Ad auction liquidity</td><td>owned surfaces 强</td><td>CPC 和 paid clicks 同增，TAC rate 改善</td><td>retail media，agentic commerce，adtech remedies</td></tr>
+          <tr><td>YouTube network</td><td>中强</td><td>YouTube ads +11%，subscriptions growth</td><td>TikTok/Reels/AI video/rights cost</td></tr>
+          <tr><td>Cloud switching / data gravity</td><td>增强</td><td>Cloud +63%，margin 32.9%，backlog $462B</td><td>低毛利 AI compute、depreciation、capacity</td></tr>
+          <tr><td>TPU / full-stack infra</td><td>潜在强</td><td>Google full-stack position</td><td>unit cost / utilization 未披露</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">7</span><h2>Operator Underwriting</h2></div>
+          <span class="tag done">条件通过</span>
+        </div>
+        <p>经营者评分是 28 / 40：Page / Brin 技术创始人控制、Pichai 大规模执行能力、CFO/Porat/Ashkenazi 财务班底都加分；但 dual-class control、AI capex ROI 不透明、买回暂停和 $80B 融资让资本配置必须打折承保。</p>
+        <table>
+          <tr><th>维度</th><th>读法</th></tr>
+          <tr><td>创始人控制</td><td>Page + Brin 约 52.7% voting power。长期主义是优势，错误下注时也是风险放大器。</td></tr>
+          <tr><td>Pichai</td><td>产品和规模执行强，Search/Cloud 当前数字好；但 AI Search monetization 没有硬披露。</td></tr>
+          <tr><td>CFO / capital discipline</td><td>财务班底可信，但现在进入超大 capex 和融资新阶段，历史 buyback 逻辑已变。</td></tr>
+          <tr><td>Berkshire</td><td>$10B private placement 是外部资本认可，不等于公开市场安全边际背书。</td></tr>
+          <tr><td>H&H / 段永平线索</td><td>H&H 13F 显示持仓翻倍到 3.706M Class C shares，但不是段永平个人实时交易证明。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">8</span><h2>Inversion / Risk</h2></div>
+          <span class="tag done">9 条失败路径已建</span>
+        </div>
+        <p>最危险的失败不是 Search 明天崩盘，而是收入还在增长，但每一美元增长需要越来越多 AI compute、capex、depreciation、SBC、dilution 和 financing。</p>
+        <table>
+          <tr><th>失败路径</th><th>kill criteria 示例</th></tr>
+          <tr><td>AI answer / agent disintermediation</td><td>Search & other 连续两季低于 8% 且非宏观原因。</td></tr>
+          <tr><td>Search RPM risk</td><td>AI Search RPM 低于传统 Search 20%+，或 CPC 连续两季为负。</td></tr>
+          <tr><td>Capex black hole</td><td>capex/OCF 两年高于 70%，且没有 ROI 证据。</td></tr>
+          <tr><td>Cloud margin crack</td><td>Cloud OI margin 连续两季低于 20%，或收入增长但 OI 不增。</td></tr>
+          <tr><td>Regulatory structural remedy</td><td>adtech / default distribution 出现结构性拆分或 TAC/share 明显受损。</td></tr>
+          <tr><td>Valuation no MOS</td><td>当前价格在保守 owner-earnings branch 下无法给 8% IRR。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">9</span><h2>Valuation / Margin of Safety</h2></div>
+          <span class="tag watch">价格端不过关</span>
+        </div>
+        <p>估值不是先套 PE，而是问当前价格已经相信了什么。$373 附近约等于 $4.5T equity value，对 $52B / $65B / $82B owner earnings base 分别是约 87x / 70x / 55x。</p>
+        <table>
+          <tr><th>Scenario</th><th>关键假设</th><th>10Y IRR at $373</th><th>读法</th></tr>
+          <tr><td>Bear / defensive capex</td><td>收入 5% 后 3%，AI capex 多为防守，exit 16x</td><td>-11.9%</td><td>如果 capex 是税，当前价格很危险。</td></tr>
+          <tr><td>Base / mixed delay</td><td>收入 10% 后 7%，OE CAGR 约 14%，exit 22x</td><td>2.4%</td><td>质量仍强，但回报不够。</td></tr>
+          <tr><td>Bull / growth capex</td><td>收入 14% 后 10%，OE CAGR 约 19%，exit 26x</td><td>11.9%</td><td>只有强牛分支能解释当前价格。</td></tr>
+        </table>
+        <table>
+          <tr><th>Zone</th><th>价格/条件</th><th>动作</th></tr>
+          <tr><td>Buy-below</td><td>$180-$220，并且 AI RPM / capex ROI 证据改善</td><td>base branch 开始有 8%-10% 10Y IRR。</td></tr>
+          <tr><td>Watch</td><td>$220-$300，或更高但必须有硬证据升级</td><td>继续研究，不急着买。</td></tr>
+          <tr><td>Reject for new capital</td><td>$300 以上且无 AI RPM / capex ROI / FCF/share 证据</td><td>当前更接近这一区域。</td></tr>
+        </table>
+      </div>
+
+      <div class="layer">
+        <div class="layer-head">
+          <div class="layer-title"><span class="num">10</span><h2>Decision / Monitoring</h2></div>
+          <span class="tag watch">WATCH / 0%</span>
+        </div>
+        <p>最终动作不是“否定 Google”，而是把它放进 watchlist，用季度指标等证据。好公司也必须有价格和安全边际。</p>
+        <table>
+          <tr><th>监控指标</th><th>当前 baseline</th><th>红线</th></tr>
+          <tr><td>Search & other growth</td><td>+19.1%</td><td>连续两季低于 8%</td></tr>
+          <tr><td>Paid clicks / CPC</td><td>+13% / +5%</td><td>paid clicks 负增长或 CPC 连续两季为负</td></tr>
+          <tr><td>TAC rate</td><td>19.7%</td><td>同比上升 300 bps 或 default remedies 推高</td></tr>
+          <tr><td>Cloud margin</td><td>32.9%</td><td>连续两季低于 20%</td></tr>
+          <tr><td>Capex / OCF</td><td>Q1 77.9%</td><td>全年或两年高于 70% 且无 ROI 证据</td></tr>
+          <tr><td>FCF/share</td><td>TTM 约 $5.32</td><td>两年下降且 capex 继续高企</td></tr>
+          <tr><td>Share count / dilution</td><td>Q1 buyback $0</td><td>两年净股本增加 >2% 且 FCF/share 不增长</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>和 v1 最大的不同</h2>
+      <table>
+        <tr><th>v1 问法</th><th>v2 问法</th><th>为什么更专业</th></tr>
+        <tr><td>Google 是好公司吗？贵不贵？</td><td>Google 的商业意图控制权能否迁移到 AI task/agent？</td><td>从静态质量转为动态护城河迁移。</td></tr>
+        <tr><td>看收入、利润、估值倍数。</td><td>看收入增长概率、下降路径、支出上升/下降机会、capex 的经济属性。</td><td>财报变成趋势验证，而不是研究起点。</td></tr>
+        <tr><td>看到 Berkshire / H&H 买就加分。</td><td>把 13F、private placement、个人交易和安全边际分开。</td><td>避免“名人背书”替代独立承保。</td></tr>
+        <tr><td>估值算目标价。</td><td>反推当前价格隐含多少 owner earnings CAGR。</td><td>更接近 Mauboussin / expectations investing。</td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>最终 blocker</h2>
+      <div class="grid">
+        <div class="callout danger">
+          <h3>不能被公开资料证明的关键项</h3>
+          <ul>
+            <li>AI Overviews / AI Mode RPM 是否等于或高于传统 Search。</li>
+            <li>AI/data-center capex 中 maintenance vs growth 的真实拆分。</li>
+            <li>Cloud backlog 的利润率、取消风险、TPU hardware mix。</li>
+            <li>管理层数字化的 capex hurdle rate、utilization、payback。</li>
+            <li>ATM、preferred、Berkshire placement、SBC 后的真实 per-share dilution。</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h3>需要什么证据才可能升级</h3>
+          <ul>
+            <li>Search AI monetization 可比或更好。</li>
+            <li>Cloud margin 在折旧追上后仍接近 30% 或以上。</li>
+            <li>capex/OCF 见顶并回落到 60%-70% 以下。</li>
+            <li>TTM FCF/share 转正增长。</li>
+            <li>share count 稳定或下降。</li>
+            <li>价格进入 MOS 区间，或者基本面证据足以把 MOS band 上移。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>文件索引</h2>
+      <table>
+        <tr><th>层</th><th>主要文件</th></tr>
+        <tr><td>1 / 5</td><td><a href="peer_profit_pool_v2.md">peer_profit_pool_v2.md</a>, <a href="value_chain_v2.md">value_chain_v2.md</a></td></tr>
+        <tr><td>2</td><td><a href="memo-v2.md">memo-v2.md</a>, <a href="driver_tree_v2.md">driver_tree_v2.md</a></td></tr>
+        <tr><td>3</td><td><a href="source_register_v2_addendum.md">source_register_v2_addendum.md</a>, <a href="claim_ledger_v2_candidates.csv">claim_ledger_v2_candidates.csv</a>, <a href="facts_v2_addendum.md">facts_v2_addendum.md</a>, <a href="audit_notes_v2.md">audit_notes_v2.md</a></td></tr>
+        <tr><td>4</td><td><a href="financials/accounting_trend_v2.md">financials/accounting_trend_v2.md</a>, <a href="model/financial_history_10y_v2.csv">model/financial_history_10y_v2.csv</a>, <a href="model/capex_owner_earnings_bridge_v2.csv">model/capex_owner_earnings_bridge_v2.csv</a></td></tr>
+        <tr><td>6</td><td><a href="moat_bottleneck_v2.md">moat_bottleneck_v2.md</a></td></tr>
+        <tr><td>7</td><td><a href="operator_underwriting_v2.md">operator_underwriting_v2.md</a></td></tr>
+        <tr><td>8 / 10</td><td><a href="inversion_risk_v2.md">inversion_risk_v2.md</a>, <a href="monitor-v2.md">monitor-v2.md</a></td></tr>
+        <tr><td>9</td><td><a href="valuation_v2.md">valuation_v2.md</a>, <a href="model/scenario_model_v2.csv">model/scenario_model_v2.csv</a>, <a href="model/implied_expectations_v2_final.csv">model/implied_expectations_v2_final.csv</a></td></tr>
+        <tr><td>Checker</td><td><a href="completion_checker_v2.md">completion_checker_v2.md</a></td></tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>主要来源</h2>
+      <ul class="two-col">
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">Alphabet Q1 2026 Exhibit 99.1</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm">Alphabet Q1 2026 Form 10-Q</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm">Alphabet FY2025 Form 10-K</a></li>
+        <li><a href="https://abc.xyz/investor/events/event-details/2026/2026-Q1-Earnings-Call-2026-nW8kCrBAKS/default.aspx">Alphabet Q1 2026 official earnings call transcript</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526251733/d160205dfwp.htm">Alphabet June 2026 FWP</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526257690/d159942d424b5.htm">Alphabet June 2026 424B5</a></li>
+        <li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json">SEC companyfacts CIK0001652044</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1067983/000119312526226661/xslForm13F_X02/53405.xml">Berkshire Hathaway Q1 2026 13F</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1759760/000175976026000005/xslForm13F_X02/infotable.xml">H&H International Investment Q1 2026 13F</a></li>
+        <li><a href="https://finance.yahoo.com/quote/GOOGL/">Yahoo Finance GOOGL quote page</a></li>
+        <li><a href="https://www.google.com/finance/quote/GOOGL:NASDAQ">Google Finance GOOGL quote page</a></li>
+        <li><a href="https://www.nasdaq.com/market-activity/stocks/googl">Nasdaq GOOGL quote page</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      This is a research-process artifact, not investment advice. Last updated 2026-06-16. Verdict: WATCH / 0%.
+    </footer>
+  </div>
+</body>
+</html>
+

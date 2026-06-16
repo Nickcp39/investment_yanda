@@ -31,6 +31,21 @@ h1{font-family:var(--serif);font-size:24px;margin:0}
 .rung.cur{background:var(--amber);color:#fff;border-color:var(--amber);transform:scale(1.04)}
 .rung.todo{background:transparent;color:var(--fg2)}
 h2{font-family:var(--serif);font-size:16px;margin:26px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--bd2)}
+.principle{border:1px solid var(--info);background:var(--info-bg);border-radius:10px;padding:13px 15px;margin:10px 0 12px;font-size:13px}
+.redo{border:1px solid var(--red);background:var(--red-bg);border-radius:10px;padding:13px 15px;margin:14px 0 12px;font-size:13px}
+.redo b{color:var(--red)}
+.equation{font-family:ui-monospace,Consolas,monospace;font-size:12px;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 12px;margin:8px 0;color:var(--fg)}
+.driver-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:10px;margin:8px 0 12px}
+.driver-card{border:1px solid var(--bd);border-radius:10px;padding:11px 13px;background:var(--card)}
+.driver-card h3{margin:0 0 6px;font-size:13px}
+.driver-card p{margin:4px 0 0;font-size:11.5px;color:var(--fg2)}
+.prob{display:inline-block;font-size:10.5px;border-radius:999px;padding:2px 7px;margin:1px 4px 6px 0;border:1px solid var(--bd);font-weight:700}
+.prob.up{background:var(--green-bg);color:var(--green);border-color:var(--green)}
+.prob.mid{background:var(--amber-bg);color:var(--amber);border-color:var(--amber)}
+.prob.down{background:var(--red-bg);color:var(--red);border-color:var(--red)}
+.driver-table th,.driver-table td{text-align:left;vertical-align:top}
+.driver-table td:nth-child(2),.driver-table td:nth-child(3){white-space:nowrap;font-weight:700}
+.note{font-size:12px;color:var(--fg2);margin:6px 0 0}
 .val{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:8px 0}
 .kpi{border:1px solid var(--bd);border-radius:10px;padding:11px 13px;background:var(--card)}
 .kpi .l{font-size:11px;color:var(--fg2)}
@@ -73,26 +88,69 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 
 <div class="top">
 <div><h1>GOOGL · Alphabet 投资研究简报</h1>
-<p class="sub">v1 · 2026-06-16 · 买方研究 OS pilot（11 stage 全程跑通）· 数据全部 SEC 一手 A1</p></div>
+<p class="sub">v1 · 2026-06-16 · 买方研究 OS pilot（失败试点 / 需按 10 层新 pipeline 重跑）· 数据主要来自 SEC 一手 A1</p></div>
 <div class="pill">WATCH <span class="s">· 0% 仓位</span></div>
 </div>
 
+<div class="redo">
+<b>质量标记：这不是合格最终 memo。</b> 旧版最大问题是太早进入估值和 WATCH 结论，Business Thesis、收入/支出概率树、AI capex 的 incremental ROIC、以及“Google 会如何失败”的反证条件没有先打牢。后续应把本页降级为 <b>archive / failed pilot</b>，按新 10 层 pipeline 重跑：先承保“Google 是否仍控制商业意图入口”，再看财报趋势和 owner earnings，最后才估值。
+</div>
+
 <div class="banner">
-<p class="ol" style="margin:0"><b>好生意，价格不要。</b> Alphabet 是 10 年级别的高质量生意（Services ~40.7% 营业利润率、Cloud 两年从微利做到 $13.9B 营业利润），但 $370 ≈ 69× owner earnings、起始 OE 收益率仅 <b>1.45%</b>——连最乐观情景十年 IRR 也只有 <b>+5.2%</b>。唯一卡点是价格；全部不确定性压在「维护 vs 成长 capex 拆分（incremental ROIC）」这一不可观测变量上。</p>
+<p class="ol" style="margin:0"><b>先看生意驱动，再看价格。</b> Alphabet 的核心问题不是“今天股价怎么算”，而是三组概率：营收增长机会、营收下降风险、支出/资本开支上升或下降的路径。当前判断：收入端仍有真实上行分支（Search +19%、Cloud +63%、backlog &gt;$460B），但支出端上升的确定性更高（2026 capex 指引 $180–190B，2027 继续显著增加），而支出下降或 AI ROI 兑现还缺证据。因此 verdict 是 <b>WATCH</b>：不是因为只会算价格，而是 owner earnings 的分布还太宽，价格只是最后一层纪律。</p>
 <div class="ladder">
 <div class="rung done">INFO-GAP<br><span style="font-weight:400">起点</span></div>
-<div class="rung cur">WATCH<br><span style="font-weight:400">← 当前（价格封顶）</span></div>
-<div class="rung todo">STARTER<br><span style="font-weight:400">需回调 ~$113</span></div>
-<div class="rung todo">CORE<br><span style="font-weight:400">~$95</span></div>
+<div class="rung cur">WATCH<br><span style="font-weight:400">← 当前（驱动未闭合）</span></div>
+<div class="rung todo">STARTER<br><span style="font-weight:400">证据 + MOS</span></div>
+<div class="rung todo">CORE<br><span style="font-weight:400">长期复利确认</span></div>
 </div>
 </div>
 
-<h2>⭐ 为什么是 WATCH：估值无安全边际</h2>
+<h2>一、第一性原理：Google 不是一张估值表</h2>
+<div class="principle">
+真正要研究的是：十年后，用户的商业意图、广告预算、云计算需求和 AI 算力需求，是否仍会被 Google 捕获；捕获之后，增量收入是否会被算力、TAC、折旧、SBC 和监管成本吃掉。
+<div class="equation">owner earnings = 商业意图 × 分发入口 × 变现效率 − AI 算力成本 − 流量获取成本 − 人才/监管/折旧成本</div>
+所以本页先判断增长/下降的概率，再把这些概率翻译成 owner earnings，最后才进入估值和安全边际。
+</div>
+
+<h2>二、营收：增长机会 vs 下降机会</h2>
+<table class="driver-table">
+<thead><tr><th>收入引擎</th><th>增长机会</th><th>下降风险</th><th>第一性原理 / 需要验证的机制</th></tr></thead>
+<tbody>
+<tr><td>Search & other</td><td><span class="prob up">高</span></td><td><span class="prob mid">中</span></td><td>增长来自商业意图没有消失、AI 可能提高查询深度和广告匹配；下降来自 AI assistant / agent 绕过搜索框、点击减少、默认入口被监管削弱。当前事实：Q1'26 Search +19%，说明“AI 立刻杀死搜索变现”没有被证实。</td></tr>
+<tr><td>YouTube / subscription</td><td><span class="prob up">中高</span></td><td><span class="prob mid">中低</span></td><td>增长来自 CTV、Shorts 变现、订阅捆绑和创作者生态；下降来自 TikTok/Meta/Amazon 抢预算、内容成本、监管和品牌安全。关键不是播放量，而是每分钟注意力能否转成广告/订阅美元。</td></tr>
+<tr><td>Google Cloud / AI infra</td><td><span class="prob up">高</span></td><td><span class="prob mid">中</span></td><td>增长来自 backlog &gt;$460B、AI 工作负载、TPU/Gemini/GCP 绑定；下降来自 AWS/Azure 价格战、neocloud 供给、AI 算力商品化。要看 backlog 转收入速度和 Cloud margin 是否能维持。</td></tr>
+<tr><td>Network / legacy adtech</td><td><span class="prob down">低</span></td><td><span class="prob down">高</span></td><td>这是较弱收入池：流量分散、隐私限制、DOJ adtech 结构性救济都可能压缩价值。它不应支撑 bull case，只能作为下行监控项。</td></tr>
+</tbody>
+</table>
+<p class="note">这里的“高/中/低”是研究判断，不是假装精确的统计概率。专业投研先把变量拆清，再随着证据更新概率。</p>
+
+<h2>三、支出：上升压力 vs 下降机会</h2>
+<table class="driver-table">
+<thead><tr><th>成本/资本开支项</th><th>上升概率</th><th>下降机会</th><th>第一性原理 / 需要验证的机制</th></tr></thead>
+<tbody>
+<tr><td>AI data center capex</td><td><span class="prob down">高</span></td><td><span class="prob mid">低</span></td><td>AI 推理和训练把 Google 从“轻资本广告机器”推向更重资本的算力平台。管理层已给 2026 $180–190B capex 指引，并提示 2027 还会显著增加；这是目前最确定的支出上行项。</td></tr>
+<tr><td>折旧 / 维护 capex</td><td><span class="prob down">高</span></td><td><span class="prob mid">低中</span></td><td>今天的机房投入会在未来几年变成折旧和维护负担。除非利用率和单位算力成本改善足够快，否则净利润增长不一定转成 owner earnings 增长。</td></tr>
+<tr><td>TAC / 分发成本</td><td><span class="prob mid">中</span></td><td><span class="prob mid">中</span></td><td>默认入口越重要，分发伙伴议价权越强；若监管削弱默认协议，TAC 可能下降，但流量入口也可能受损。这里不能只看成本下降，要同时看收入留存。</td></tr>
+<tr><td>SBC / AI 人才 / R&D</td><td><span class="prob mid">中高</span></td><td><span class="prob mid">中低</span></td><td>AI 竞争会推高顶级人才、模型研发和产品迭代成本；下降机会来自组织效率和 AI 自身提高工程/销售效率，但目前证据不足以作为 base case。</td></tr>
+<tr><td>TPU / 垂直整合 / 利用率</td><td><span class="prob mid">中</span></td><td><span class="prob up">中高</span></td><td>这是最重要的成本下降路径：如果 TPU 成本曲线、数据中心利用率、Cloud 定价和广告 AI ROI 同时成立，capex 可以从防守支出变成高回报成长投资。现在的问题是证据还没有细到足以量化 incremental ROIC。</td></tr>
+</tbody>
+</table>
+
+<h2>四、把概率树翻译成 owner earnings</h2>
+<div class="driver-grid">
+<div class="driver-card"><h3>好分支：收入增长 > 资本强度上升</h3><span class="prob up">可买条件</span><p>Search/YouTube/Cloud 同时增长，AI capex 带来更高广告 RPM、Cloud 收入和 TPU 成本优势，FCF/share 在 capex 高峰后恢复增长。</p></div>
+<div class="driver-card"><h3>中性分支：收入增长被 capex 吃掉</h3><span class="prob mid">当前 base</span><p>收入仍增长，但折旧、机房、人才、TAC 和监管成本同步上升，报表利润好看，owner earnings 增长慢。</p></div>
+<div class="driver-card"><h3>坏分支：AI 改变入口，Google 被迫重投</h3><span class="prob down">必须反向思考</span><p>搜索入口被 agent/assistant 分流，Cloud 竞争压价，AI 投资更像防守军备竞赛。此时 capex 是保护旧生意的成本，不是新护城河。</p></div>
+</div>
+<p class="note">所以我们不应该先问“目标价多少”，而要先问：Google 的增量美元到底来自哪里，又被谁拿走了。</p>
+
+<h2>五、为什么仍是 WATCH：概率树未闭合，估值只是最后一关</h2>
 <div class="val">
-<div class="kpi"><div class="l">当前价（锚）</div><div class="v">~$370</div><div class="n">stockanalysis + Berkshire 私募 $350 交叉验证</div></div>
-<div class="kpi"><div class="l">owner earnings</div><div class="v">$52–82B</div><div class="n">报表净利 $132–160B 高估 2–3×</div></div>
-<div class="kpi"><div class="l">起始 OE 收益率</div><div class="v red">1.45%</div><div class="n">≈69× owner earnings</div></div>
-<div class="kpi"><div class="l">隐含需求</div><div class="v">~22%</div><div class="n">当前价隐含 OE 十年复合增速</div></div>
+<div class="kpi"><div class="l">收入上行证据</div><div class="v green">真实</div><div class="n">Search +19%、Cloud +63%、backlog &gt;$460B</div></div>
+<div class="kpi"><div class="l">支出上行证据</div><div class="v red">更确定</div><div class="n">capex 2026 $180–190B，2027 继续增</div></div>
+<div class="kpi"><div class="l">owner earnings 区间</div><div class="v">$52–82B</div><div class="n">报表净利 $132–160B 不能直接当真</div></div>
+<div class="kpi"><div class="l">当前价要求</div><div class="v red">很高</div><div class="n">~$370 ≈69× OE，要求乐观分支持续兑现</div></div>
 </div>
 <table>
 <thead><tr><th>10 年 IRR 情景</th><th>假设</th><th>IRR</th></tr></thead>
@@ -102,7 +160,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 <tr><td>Bull</td><td>OE $80B · 营收 ~15% · 退出 26×</td><td class="amber">+5.2%</td></tr>
 </tbody>
 </table>
-<p style="font-size:12px;color:var(--fg2);margin:4px 0">⚠ <b>连 bull 都低于 8% 门槛</b>，且审计判定假设方向偏保守、DOJ 拆分尾部尚未压进 bear——真实安全边际只会更差。</p>
+<p class="note">估值在这里不是研究起点，而是概率树的输出。当前价格要求“收入高增长 + AI capex 高 ROIC + 监管不伤筋骨 + 退出倍数不压缩”同时成立，赔率不够宽。</p>
 <table>
 <thead><tr><th>安全边际买入阶梯</th><th>隐含 IRR</th><th>vs $370</th></tr></thead>
 <tbody>
@@ -115,15 +173,15 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 
 <h2>IC Panel — 五灵魂一致 WATCH</h2>
 <div class="souls">
-<div class="soul"><h4>Buffett</h4><div class="vd">WATCH</div><p>好生意，但 OE 收益率 1.45% 太贵，价值锚不允许买。</p></div>
-<div class="soul"><h4>Munger</h4><div class="vd">WATCH</div><p>F1×F3 合流最致命；capex 缺回报纪律恐为 FOMO。</p></div>
-<div class="soul"><h4>段永平 <span style="font-weight:400;font-size:10px">主审</span></h4><div class="vd">WATCH · 0%</div><p>懂这生意，但当前价「不为」；等回调或等 capex 拆分证据。</p></div>
-<div class="soul"><h4>Marks</h4><div class="vd">WATCH</div><p>市场对 AI 侵蚀搜索是「押注」非「定价」；赔率不对称。</p></div>
-<div class="soul"><h4>Klarman</h4><div class="vd">WATCH</div><p>下行无保护，buy-below ~$113 才有真实安全边际。</p></div>
+<div class="soul"><h4>Buffett</h4><div class="vd">WATCH</div><p>先要确定 owner earnings：收入是真增长，还是被 capex 和折旧吃掉。</p></div>
+<div class="soul"><h4>Munger</h4><div class="vd">WATCH</div><p>反向看最致命：AI 改变入口，同时 capex 变成防守军备竞赛。</p></div>
+<div class="soul"><h4>段永平 <span style="font-weight:400;font-size:10px">主审</span></h4><div class="vd">WATCH · 0%</div><p>懂这生意，但先看 AI 投入是否有效；不为，不急，不用价格替代研究。</p></div>
+<div class="soul"><h4>Marks</h4><div class="vd">WATCH</div><p>市场在押“AI 强化 Google”，但还没有把坏分支充分定价。</p></div>
+<div class="soul"><h4>Klarman</h4><div class="vd">WATCH</div><p>安全边际来自证据和价格共同给保护，二者缺一不可。</p></div>
 </div>
-<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">五票一致、critique 后零变动；主审与多数一致。分歧不在 verdict，而在「WATCH 之后等什么」——主审统一采价格锚 ~$113 作硬触发以防择时。</p>
+<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">五票一致不是“只嫌贵”，而是收入概率树和支出概率树还没有闭合。下一步应优先补证据：Search/YouTube/Cloud 的增量美元，以及 AI capex 的 incremental ROIC。</p>
 
-<h2>生意质量 vs 价格的矛盾</h2>
+<h2>生意质量 vs 成本强度的矛盾</h2>
 <div class="two">
 <div class="box g"><h3>✅ 好生意的证据（verified A1）</h3><ul>
 <li>Search Q1'26 +19%（AI 时代仍加速，反驳「AI 杀搜索变现」）</li>
@@ -132,7 +190,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 <li>护城河整体 Strong（搜索分发 + 拍卖流动性 + 数据 + 生态）</li>
 <li>净现金、轻资本存量回报宽 ROIC-WACC 价差</li>
 </ul></div>
-<div class="box r"><h3>⚠ 价格 / 结构性问题</h3><ul>
+<div class="box r"><h3>⚠ 成本 / 结构性问题</h3><ul>
 <li>capex 爆炸：FY25 $91B(+74%)→2026 指引 $180-190B→2027 再增</li>
 <li>FCF 被压缩（TTM $64B↓）、回购暂停、$80B 融资 + 发债</li>
 <li>Q1'26 净利 +81% 是假象（含 $36.9B 未实现收益）</li>
@@ -148,7 +206,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 <li>管理层对 AI capex 有可见回报纪律（hurdle rate / ROIC 框架）</li>
 <li>监管止于罚款/行为救济，而非结构性拆分</li>
 <li>owner earnings 区间能收敛到可定 base（拿到 capex 拆分）</li>
-<li>价格回到隐含 10y IRR ≥8% 水平（≤~$134/$113）— 唯一硬否决项</li>
+<li>证据和价格同时给安全边际：owner earnings 区间先收敛，再看隐含 10y IRR ≥8%（≤~$134/$113）</li>
 </ol>
 
 <h2>Kill Criteria（监控中 · 红黄绿现状）</h2>
@@ -157,14 +215,14 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 <li><span class="dot am"></span><b>K-B capex 黑洞</b>：FCF/share 连 2 年降 且 capex/OCF >70% — <span class="amber">黄（Q1'26 ~78% 踩线）</span></li>
 <li><span class="dot am"></span><b>K-C 资本配置纪律</b>：连 2 季无 capex ROI 框架 — <span class="amber">黄/红（框架缺失）</span></li>
 <li><span class="dot am"></span><b>K-D 监管尾部</b>：结构性救济而非纯罚款 — <span class="amber">黄（DOJ 待裁）</span></li>
-<li><span class="dot rd"></span><b>K-E 估值纪律</b>：买入价隐含 10y IRR &lt;8%（价 &gt;~$134）— <span class="red">红（现 $370 已触发，锁死 WATCH）</span></li>
+<li><span class="dot rd"></span><b>K-E 估值纪律</b>：在概率树未闭合前，买入价仍隐含 10y IRR &lt;8%（价 &gt;~$134）— <span class="red">红（现 $370，不能用乐观叙事硬买）</span></li>
 </ul>
 
-<h2>11-Stage 流水线（1 天全程跑通）</h2>
+<h2>旧流程产物（保留供审计，不等于合格）</h2>
 <div class="flow">
 <span class="st">①方向</span><span class="st">②Triage</span><span class="st">③计划</span><span class="st">④证据</span><span class="st">⑤Ledger</span><span class="st">⑥Facts</span><span class="st">⑦分析×8</span><span class="st">⑧审计</span><span class="st">⑨IC Panel</span><span class="st">⑩Memo</span><span class="st">⑪监控</span>
 </div>
-<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">completeness ~75% · ~50 条 verified A1 facts · 零 D1 污染 · 模型算术全勾稽 · 口径纪律统一（净利 vs 营业利润、owner earnings、Berkshire 私募定性全 8 模块一致）。</p>
+<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">这些文件证明旧流程能产出材料，但不证明投资判断合格。问题在于分析顺序和判断重心：Business Thesis 没有先承保，收入/支出概率树不够深，估值过早成为页面中心。后续重跑应使用新版 10 层 pipeline。</p>
 
 <h2>产出文件（companies/googl/）</h2>
 <table class="files">
@@ -182,10 +240,12 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var
 
 <h2>下一步 / 解除 WATCH 的路径</h2>
 <div class="next">
-<b>两条触发器（满足其一即重开 IC 讨论上修）：</b><br>
-① <b>价格</b>回调到 ~$95–113（base 10% IRR）→ 讨论 starter 试仓 1–3%；~$134 先进观察。<br>
-② <b>证据</b>补强：拿到 capex 维护/成长拆分 + 管理层 ROI 框架，使 owner earnings 区间（$52–82B）收敛、base case 落点上移。<br>
-<b>下次复盘</b>：Q2 2026 财报（~2026-07 下旬）——看 Search 增速、capex 拆分披露、capex/OCF 全年是否坐实 >70%、Cloud 利润率可持续性；事件触发 DOJ adtech 救济判决、2027 capex 量级。
+<b>先补驱动证据，再重算估值：</b><br>
+① <b>收入审计</b>：拆 Search query / ad load / CPC / AI RPM；拆 YouTube CTV 与 Shorts 变现；拆 Cloud backlog 转收入速度、AI workload 占比、margin 可持续性。<br>
+② <b>支出审计</b>：拆 capex 维护/成长、折旧滞后、TPU 单位成本、数据中心利用率、TAC 与默认入口风险、SBC 和 AI 人才成本。<br>
+③ <b>概率更新</b>：把每个收入引擎和支出项标成上行/中性/下行，更新 owner earnings 区间，而不是直接改目标价。<br>
+④ <b>最后才看价格</b>：只有当证据让 base case 收敛，且价格给 8–10%+ 十年 IRR 的安全边际，才讨论 starter；否则继续 WATCH。<br>
+<b>下次复盘</b>：Q2 2026 财报（~2026-07 下旬）——重点看 Search 增速质量、AI 产品变现、Cloud 利润率、capex/OCF、管理层是否披露 AI capex ROI 框架；事件触发 DOJ adtech 救济判决、2027 capex 量级。
 </div>
 
 <p class="muted">买方研究 OS · GOOGL pilot v1 · 全部结论可回溯至 SEC 一手 source_id（见 claim_ledger.csv）· 本简报为研究判断，非交易建议</p>

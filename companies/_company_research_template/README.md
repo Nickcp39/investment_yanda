@@ -4,6 +4,7 @@
 
 核心原则:
 
+0. 开题前先过 `../../frameworks/one_page_quality_company_checklist.md`: 一分钟讲不清为什么是好生意，就先补理解，不直接估值。
 1. `raw/` 只放原始材料和摘录，不写结论。
 2. `claim_ledger.csv` 记录每一条事实主张、来源、状态和置信度。
 3. `facts.md` 只写已经审计过的事实，不写观点。
@@ -40,13 +41,12 @@ companies/<ticker>/
 | Layer | File |
 |---|---|
 | 1. Direction Selection | `../../research_queue.md`, `step0_plan.md` |
-| 2. Evidence Engineering | `source_register.md`, `raw/`, `claim_ledger.csv`, `facts.md` |
-| 3. Accounting Translation | `financials/financial_quality.md`, `model/` |
-| 4. Business Understanding | `business_model.md` |
+| 2. Business Thesis / Quality Gate | `../../frameworks/one_page_quality_company_checklist.md`, `business_model.md` 开头 |
+| 3. Evidence Engineering | `source_register.md`, `raw/`, `claim_ledger.csv`, `facts.md` |
+| 4. Accounting Trend Validation | `financials/financial_quality.md`, `model/` |
 | 5. Industry / Value Chain | `value_chain_map.md` |
 | 6. Moat / Bottleneck | `moat_map.md`, `bottleneck_map.md` |
 | 7. Operator / Capital Allocation | `operator_underwriting.md` |
 | 8. Inversion / Risk | `inversion_map.md` |
 | 9. Valuation / MOS | `valuation.md` |
 | 10. Decision / Portfolio Rules / Monitoring | `memo-v1.md`, `monitor.md`, `postmortem.md` |
-

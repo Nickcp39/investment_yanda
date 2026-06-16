@@ -201,6 +201,10 @@
       border-top: 4px solid var(--blue);
     }
 
+    .ability.analysis {
+      border-top: 4px solid var(--green);
+    }
+
     .ability.evidence {
       border-top: 4px solid var(--green);
     }
@@ -316,7 +320,7 @@
 
     .swimlanes {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
       margin-top: 14px;
     }
@@ -465,11 +469,12 @@
   <div class="layout">
     <aside>
       <h1>买方投研 Pipeline 全景图</h1>
-      <p class="subtitle">方向雷达只是入口。真正的投研系统要完成证据、理解、估值、决策和复盘。</p>
+      <p class="subtitle">方向雷达只是入口。真正的投研系统先讲清好生意，再用证据、财报趋势、估值、决策和复盘验证。</p>
       <nav>
         <a href="#overview">总流程</a>
         <a href="#ability-map">10 层能力</a>
-        <a href="#three-lines">三条主线</a>
+        <a href="#layer-details">10 层细节</a>
+        <a href="#three-lines">四条主线</a>
         <a href="#stages">Stage A-L</a>
         <a href="#direction">方向雷达细节</a>
         <a href="#evidence">证据工程</a>
@@ -486,12 +491,13 @@
           <h2>总流程</h2>
           <span class="tag">L0 Operating Map</span>
         </div>
-        <p class="note">这张图是整个 Research OS 的主干。方向雷达在最左侧，只负责发现值得研究的战场；真正决定能不能投的是后面的证据、理解、估值、风险和复盘。</p>
+        <p class="note">这张图是整个 Research OS 的主干。方向雷达只负责发现值得研究的战场；真正决定能不能投的是一句话好生意承保、证据、财报趋势、估值、风险和复盘。</p>
         <div class="mermaid-wrap">
           <pre class="mermaid">
 flowchart LR
   A["A 方向雷达<br/>发现值得研究的主题"] --> B["B 开题<br/>定义问题、范围、时间维度"]
-  B --> C["C 本地盘点<br/>旧资料、旧结论、旧 source"]
+  B --> B0["B0 一分钟好生意承保<br/>需求、付费、稀缺、利润池、攻击面"]
+  B0 --> C["C 本地盘点<br/>旧资料、旧结论、旧 source"]
   C --> D["D 研究计划<br/>拆 block、source budget、停止条件"]
   D --> E["E 原始资料<br/>只收集，不下结论"]
   E --> F["F Claim Ledger<br/>每条事实入账"]
@@ -517,7 +523,8 @@ flowchart LR
         <div class="tag-row">
           <span class="tag">方向不是结论</span>
           <span class="tag">证据先于观点</span>
-          <span class="tag">估值先于仓位</span>
+          <span class="tag">好生意先于财报</span>
+          <span class="tag">估值最后登场</span>
           <span class="tag">复盘先于进化</span>
         </div>
       </section>
@@ -527,29 +534,164 @@ flowchart LR
           <h2>10 层能力地图</h2>
           <span class="tag">From Idea To Capital</span>
         </div>
-        <p class="note">如果只做第 1 层，就是选题能力；做到第 1-6 层，是行业研究；做到第 1-10 层，才接近买方投资研究。</p>
+        <p class="note">如果只做第 1 层，就是选题能力；如果第 2 层讲不清楚，后面最多是资料整理；做到第 1-10 层，才接近买方投资研究。</p>
         <div class="ability-grid">
           <div class="ability direction"><strong>1. Direction Selection</strong><span>现在值得研究什么。看资金流、瓶颈、催化剂、错杀、机构争议。</span></div>
-          <div class="ability evidence"><strong>2. Evidence Engineering</strong><span>哪些事实是真的。建立 raw、claim ledger、facts、audit。</span></div>
-          <div class="ability accounting"><strong>3. Accounting Translation</strong><span>把报表数字转成真实经济。利润、现金流、capex、SBC、ROIC。</span></div>
-          <div class="ability accounting"><strong>4. Business Understanding</strong><span>公司怎么赚钱。谁付钱、为什么付钱、是否经常性、10 年后在不在。</span></div>
+          <div class="ability analysis"><strong>2. Business Thesis / Quality Gate</strong><span>一分钟讲清为什么是好生意；证据后验证谁付钱、为什么付钱、利润池和攻击面。</span></div>
+          <div class="ability evidence"><strong>3. Evidence Engineering</strong><span>哪些事实是真的。建立 raw、claim ledger、facts、audit。</span></div>
+          <div class="ability accounting"><strong>4. Accounting Trend Validation</strong><span>财报是趋势和反证系统。看 FCF/share、ROIC、capex 强度、SBC、股本和现金转换。</span></div>
           <div class="ability direction"><strong>5. Industry / Value Chain</strong><span>钱在产业链哪里被赚走。上游、下游、成本、定价权、供需。</span></div>
           <div class="ability direction"><strong>6. Moat / Bottleneck</strong><span>为什么别人抢不走。网络、规模、数据、分发、切换成本、物理瓶颈。</span></div>
           <div class="ability risk"><strong>7. Operator Underwriting</strong><span>谁在经营。创始人、CEO、CFO、董事会、激励、文化、资本配置。</span></div>
           <div class="ability risk"><strong>8. Inversion / Risk</strong><span>如果失败，会怎么失败。攻击面、永久损伤、短期波动、反证条件。</span></div>
-          <div class="ability decision"><strong>9. Valuation / MOS</strong><span>价格是否足够便宜。owner earnings、情景、10 年 IRR、安全边际。</span></div>
+          <div class="ability decision"><strong>9. Valuation / MOS</strong><span>价格是否足够便宜。市场预期、owner earnings、情景、10 年 IRR、安全边际。</span></div>
           <div class="ability decision"><strong>10. Decision / Monitoring</strong><span>买不买、买多少、错了怎么办。memo、verdict、monitor、postmortem。</span></div>
+        </div>
+      </section>
+
+      <section id="layer-details" class="band">
+        <div class="section-head">
+          <h2>10 层细节操作版</h2>
+          <span class="tag">What To Do / Output / Gate</span>
+        </div>
+        <p class="note">这版是用来执行的，不是用来欣赏流程图的。每一层都必须能留下文件痕迹；过不了 gate，就不能假装进入下一层。</p>
+        <div class="warning">
+          Google v1 的问题：太快把研究推到 valuation / WATCH 结论，Business Thesis、收入/支出概率树、capex ROI、反证条件没有先被充分承保。因此它只能作为失败试点和流程校正样本，不能作为合格研究成果。
+        </div>
+        <div class="stage-list" style="margin-top:12px">
+          <details open>
+            <summary><span class="stage-code">1</span><span>Direction Selection — 在大行业里选研究入口</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>大方向里哪一层利润池最大</li><li>哪一层短期供给最紧</li><li>哪家公司有上市暴露</li><li>市场现在争的变量是什么</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>画行业地图和价值链</li><li>找 capex、订单、库存、价格、产能证据</li><li>比较子赛道：设备、材料、封装、HBM、ASIC、EDA、云、电力</li><li>只把社媒/KOL 当线索</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>research_queue.md</code></li><li>主题评分表</li><li>候选公司清单</li><li>每个候选的 kill condition</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>说不清利润池在哪，不开公司研究</li><li>没有上市公司暴露，不开 full plan</li><li>没有可证伪指标，只进 watchlist</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details open>
+            <summary><span class="stage-code">2</span><span>Business Thesis / Quality Gate — 开题假设版 + 证据承保版</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>长期需求是什么</li><li>谁付钱，为什么反复付钱</li><li>公司控制什么稀缺节点</li><li>利润池为什么被它拿走</li><li>十年后会更强还是只是更大</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>开题先写 One-minute thesis</li><li>证据后重写承保版</li><li>拆客户、付费理由、收入引擎、边际经济</li><li>写攻击面：谁能绕开它</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>one_page_quality_company_checklist.md</code> 填写版</li><li><code>business_model.md</code></li><li>Customer / payer map</li><li>Revenue engine table</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>一分钟讲不清，最高 INFO-GAP/WATCH</li><li>只会讲行业大，不合格</li><li>不能说明客户不付钱损失什么，不合格</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">3</span><span>Evidence Engineering — 事实是不是真的</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>哪些是一手事实</li><li>哪些只是解释或情绪</li><li>关键数字有没有 source_id</li><li>事实之间有没有冲突</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>source_register 分级</li><li>raw 只收集不下结论</li><li>claim_ledger 每条事实入账</li><li>facts.md 只放审计过的事实</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>source_register.md</code></li><li><code>raw/*.md</code></li><li><code>claim_ledger.csv</code></li><li><code>facts.md</code></li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>关键 claim 无 source_id，不进 memo</li><li>社媒不能进 EVIDENCE</li><li>AI 总结不能当来源</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">4</span><span>Accounting Trend Validation — 财报是趋势和反证系统</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>收入增长有没有变成 FCF/share</li><li>ROIC 和 margin 是变强还是变弱</li><li>capex、SBC、折旧、股本是否吃掉增长</li><li>管理层资本配置是否诚实</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>看 3-10 年趋势，不迷信单年绝对值</li><li>重构 owner earnings</li><li>拆维护 capex vs 成长 capex</li><li>看 cash conversion 和 dilution</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>financial_quality.md</code></li><li><code>model/financial_history.csv</code></li><li><code>owner_earnings_bridge.csv</code></li><li>红黄绿趋势表</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>财报只能验证 thesis，不能替代 thesis</li><li>收入涨但 FCF/share 不涨，必须解释</li><li>capex/OCF 上升必须进入风险</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">5</span><span>Industry / Value Chain — 钱在链条哪里被赚走</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>行业增长传导到哪一层</li><li>谁有定价权</li><li>客户、供应商、平台谁拿走利润</li><li>利润池是否迁移</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>画上下游和替代品</li><li>列各层玩家、收入池、毛利率、集中度</li><li>比较成本压力和议价权</li><li>找利润池迁移证据</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>value_chain_map.md</code></li><li>Profit pool table</li><li>Supplier/customer dependency map</li><li>行业供需指标</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>行业大但公司不赚钱，不能过</li><li>说不清谁付钱给谁，不能过</li><li>利润池可能被上游拿走，必须写明</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">6</span><span>Moat / Bottleneck — 为什么别人抢不走</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>护城河是机制还是口号</li><li>瓶颈是公司拥有，还是公司依赖</li><li>切换成本、网络效应、规模、数据、分发哪个真的强</li><li>攻击面在哪里</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>每条护城河写机制、证据、指标、反证</li><li>用 ROIC-WACC 透镜验证</li><li>瓶颈层判断拥有者/受益者/受害者</li><li>写竞争者如何攻击</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>moat_map.md</code></li><li><code>bottleneck_map.md</code></li><li>Attack surface table</li><li>Moat falsification list</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>不能只写“生态/品牌/AI”</li><li>没有财务或行为证据，最多 Weak</li><li>瓶颈若只是成本黑洞，不算护城河</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">7</span><span>Operator Underwriting — 资本交给谁</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>谁真正控制公司</li><li>CEO/CFO 的资本配置历史如何</li><li>激励是否鼓励长期 owner earnings</li><li>董事会能不能约束错误下注</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>读 proxy、股权结构、薪酬指标</li><li>复盘并购、回购、发股、发债、capex</li><li>看危机期行为，不看宣传片</li><li>只用可观察证据，不做心理诊断</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>operator_underwriting.md</code></li><li>People map</li><li>Capital allocation log</li><li>Incentive scorecard</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>双层股权 + 巨额 capex 必须重点审</li><li>没有 ROI 框架，不能无条件信任</li><li>管理层说法不能直接当事实</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">8</span><span>Inversion / Risk — 如果失败，会怎么失败</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>谁能打穿它</li><li>哪条风险是永久损伤</li><li>哪条只是短期波动</li><li>什么证据会证明我们错</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>扮演竞争者、监管者、供应商、客户、内部错误管理层</li><li>逐条写失败机制和时间尺度</li><li>把每条失败路径接到 kill criteria</li><li>区分已定价和未定价风险</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>inversion_map.md</code></li><li>Failure map</li><li>Kill criteria</li><li>Disconfirming evidence list</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>只写“竞争加剧”不合格</li><li>没有触发阈值不合格</li><li>不能说明会不会永久伤害内在价值，不合格</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">9</span><span>Valuation / MOS — 估值最后登场</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>市场已经相信什么</li><li>当前价格隐含什么增长、margin、capex、退出倍数</li><li>owner earnings 能否承保</li><li>价格是否给研究错误留保护</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>反推 implied expectations</li><li>建 owner earnings bridge</li><li>做 bear/base/bull 和 10 年 IRR</li><li>定 buy-below / starter / core / avoid 区间</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>valuation.md</code></li><li><code>scenario_model.csv</code></li><li>MOS ladder</li><li>Implied expectations table</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有 H2-H8，不做估值结论</li><li>没有 bear case，不合格</li><li>连 bull 都不达门槛，不能买</li></ul></div>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="stage-code">10</span><span>Decision / Monitoring — 买不买，错了怎么办</span></summary>
+            <div class="stage-body">
+              <div class="quad">
+                <div class="quad-item"><h4>要回答</h4><ul><li>当前 verdict 是什么</li><li>仓位为什么是 0%、1%、3%、10%</li><li>错了看什么指标</li><li>下次何时复盘</li></ul></div>
+                <div class="quad-item"><h4>怎么做</h4><ul><li>写 memo，不写散文</li><li>每条 WMBT 接一条 kill criteria</li><li>监控指标必须可观察</li><li>3/6/12 月复盘过程质量</li></ul></div>
+                <div class="quad-item"><h4>产出</h4><ul><li><code>memo-v1.md</code></li><li><code>monitor.md</code></li><li><code>postmortem.md</code></li><li>Changed-mind log</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>没有 kill criteria 的 memo 不合格</li><li>没有监控计划，不进入仓位讨论</li><li>结果好但过程烂，不能奖励流程</li></ul></div>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
       <section id="three-lines" class="band">
         <div class="section-head">
-          <h2>三条主线</h2>
-          <span class="tag">Fact / Understanding / Decision</span>
+          <h2>四条主线</h2>
+          <span class="tag">Thesis / Fact / Understanding / Decision</span>
         </div>
         <div class="mermaid-wrap">
           <pre class="mermaid">
 flowchart TB
+  subgraph S0["生意本质线: 先讲清为什么可能是好公司"]
+    T1["长期需求"] --> T2["付费理由"] --> T3["稀缺控制点"] --> T4["利润池"] --> T5["攻击面"]
+  end
   subgraph S1["事实线: 防止被故事骗"]
     A1["source"] --> A2["raw"] --> A3["claim_ledger"] --> A4["facts"] --> A5["audit"]
   end
@@ -557,13 +699,24 @@ flowchart TB
     B1["business model"] --> B2["value chain"] --> B3["moat"] --> B4["operator"] --> B5["inversion"]
   end
   subgraph S3["决策线: 判断能不能下注"]
-    C1["owner earnings"] --> C2["valuation"] --> C3["margin of safety"] --> C4["verdict"] --> C5["monitor"]
+    C0["financial trends"] --> C1["owner earnings"] --> C2["valuation"] --> C3["margin of safety"] --> C4["verdict"] --> C5["monitor"]
   end
+  T5 --> B1
   A5 --> B1
-  B5 --> C1
+  B5 --> C0
           </pre>
         </div>
         <div class="swimlanes">
+          <div class="lane">
+            <h3>生意本质线</h3>
+            <ol>
+              <li>一句话 thesis</li>
+              <li>长期需求和付费理由</li>
+              <li>稀缺控制点和利润池</li>
+              <li>护城河和攻击面</li>
+              <li>讲不清则停在 INFO-GAP</li>
+            </ol>
+          </div>
           <div class="lane">
             <h3>事实线</h3>
             <ol>
@@ -587,6 +740,7 @@ flowchart TB
           <div class="lane">
             <h3>决策线</h3>
             <ol>
+              <li>用财报趋势验证 thesis</li>
               <li>重构 owner earnings</li>
               <li>做 bear/base/bull</li>
               <li>算 10 年 IRR</li>
@@ -621,9 +775,9 @@ flowchart TB
             <div class="stage-body">
               <div class="quad">
                 <div class="quad-item"><h4>Input</h4><ul><li>方向评分</li><li>用户问题</li><li>公司/行业/主题边界</li></ul></div>
-                <div class="quad-item"><h4>Action</h4><ul><li>定义 research question</li><li>确定时间维度</li><li>写 non-goals</li></ul></div>
-                <div class="quad-item"><h4>Output</h4><ul><li><code>research_status.md</code></li><li><code>plan.md</code></li><li>verdict 目标</li></ul></div>
-                <div class="quad-item"><h4>Gate</h4><ul><li>问题必须能被证据回答</li><li>不能只是“会不会涨”</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>定义 research question</li><li>写一分钟好生意 thesis</li><li>确定时间维度和 non-goals</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>research_status.md</code></li><li>One-minute thesis</li><li>verdict 目标</li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>问题必须能被证据回答</li><li>一句话讲不清则 INFO-GAP/WATCH</li><li>不能只是“会不会涨”</li></ul></div>
               </div>
             </div>
           </details>
@@ -645,7 +799,7 @@ flowchart TB
             <div class="stage-body">
               <div class="quad">
                 <div class="quad-item"><h4>Input</h4><ul><li>开题问题</li><li>本地盘点</li><li>source policy</li></ul></div>
-                <div class="quad-item"><h4>Action</h4><ul><li>拆 12 个 block</li><li>列来源和停止条件</li><li>决定 L1/L2/L3 投入</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>先写 Block 00 Business Thesis 假设</li><li>再拆 12 个证据 block</li><li>列来源和停止条件</li></ul></div>
                 <div class="quad-item"><h4>Output</h4><ul><li><code>step0_plan.md</code></li><li><code>raw/</code> 目录</li><li>block status</li></ul></div>
                 <div class="quad-item"><h4>Gate</h4><ul><li>没有 plan 不许收资料</li><li>没有 stop condition 不许跑深调</li></ul></div>
               </div>
@@ -693,9 +847,9 @@ flowchart TB
             <div class="stage-body">
               <div class="quad">
                 <div class="quad-item"><h4>Input</h4><ul><li><code>facts.md</code></li><li><code>claim_ledger.csv</code></li></ul></div>
-                <div class="quad-item"><h4>Action</h4><ul><li>生意模式</li><li>财务质量</li><li>产业链</li><li>护城河/瓶颈</li><li>管理层</li><li>反向失败</li><li>估值</li></ul></div>
-                <div class="quad-item"><h4>Output</h4><ul><li><code>moat_map.md</code></li><li><code>operator_underwriting.md</code></li><li><code>inversion_map.md</code></li><li><code>valuation.md</code></li></ul></div>
-                <div class="quad-item"><h4>Gate</h4><ul><li>模块必须引用 source_id</li><li>估计值必须标 estimate</li></ul></div>
+                <div class="quad-item"><h4>Action</h4><ul><li>一分钟 thesis 验证</li><li>生意模式</li><li>财报趋势和真实现金</li><li>产业链/利润池</li><li>护城河/瓶颈</li><li>管理层</li><li>反向失败</li><li>最后估值</li></ul></div>
+                <div class="quad-item"><h4>Output</h4><ul><li><code>business_model.md</code></li><li><code>financial_quality.md</code></li><li><code>moat_map.md</code></li><li><code>operator_underwriting.md</code></li><li><code>inversion_map.md</code></li><li><code>valuation.md</code></li></ul></div>
+                <div class="quad-item"><h4>Gate</h4><ul><li>模块必须引用 source_id</li><li>财报只作趋势/反证，不作静态崇拜</li><li>估计值必须标 estimate</li></ul></div>
               </div>
             </div>
           </details>
@@ -848,12 +1002,12 @@ flowchart LR
         <div class="mermaid-wrap">
           <pre class="mermaid">
 flowchart TB
-  F["facts.md + claim_ledger.csv"] --> B["Business Model<br/>怎么赚钱"]
+  F["facts.md + claim_ledger.csv"] --> B["Business Thesis / Quality Gate<br/>一句话 + 怎么赚钱"]
   F --> Q["Financial Quality<br/>真实经济质量"]
   F --> V["Value Chain<br/>产业链和利润池"]
   V --> C["Bottleneck<br/>卡点和稀缺层"]
   B --> M["Moat<br/>为什么抢不走"]
-  Q --> VAL["Valuation<br/>owner earnings / IRR"]
+  Q --> VAL["Valuation<br/>market expectations / owner earnings / IRR"]
   M --> O["Operator<br/>经营者和激励"]
   O --> R["Inversion<br/>如何失败"]
   C --> R
@@ -862,14 +1016,14 @@ flowchart TB
           </pre>
         </div>
         <div class="checklist">
-          <div class="check"><strong>Business Model</strong><span>谁付钱、为什么付钱、收入是否经常性、10 年后还在不在。</span></div>
-          <div class="check"><strong>Financial Quality</strong><span>revenue、margin、FCF、ROIC、SBC、capex、回购、股本稀释。</span></div>
+          <div class="check"><strong>Business Thesis / Quality Gate</strong><span>开题时写假设版；证据后写承保版。长期需求、付费理由、稀缺控制点、利润池、收入引擎和攻击面必须讲清。</span></div>
+          <div class="check"><strong>Financial Trend Quality</strong><span>财报是趋势和反证系统：revenue、margin、FCF/share、ROIC、SBC、capex 强度、股本稀释。</span></div>
           <div class="check"><strong>Value Chain</strong><span>上游、下游、客户、供应商、利润池、定价权、成本压力。</span></div>
           <div class="check"><strong>Bottleneck</strong><span>需求冲击、关键性、供应集中度、认证门槛、替代风险。</span></div>
           <div class="check"><strong>Moat</strong><span>品牌、网络、切换成本、规模、数据、分发、监管、技术 know-how。</span></div>
           <div class="check"><strong>Operator</strong><span>创始人、CEO、CFO、董事会、薪酬、文化、资本配置。</span></div>
           <div class="check"><strong>Inversion</strong><span>如果我要让它失败，会攻击哪里；哪些风险会永久损害内在价值。</span></div>
-          <div class="check"><strong>Valuation</strong><span>owner earnings、bear/base/bull、10 年 IRR、margin of safety。</span></div>
+          <div class="check"><strong>Valuation</strong><span>市场预期、owner earnings、bear/base/bull、10 年 IRR、margin of safety，最后登场。</span></div>
         </div>
       </section>
 
@@ -897,34 +1051,42 @@ flowchart TB
 
       <section id="google" class="band">
         <div class="section-head">
-          <h2>Google 应用</h2>
-          <span class="tag">Next Research Batch</span>
+          <h2>Google 重跑计划</h2>
+          <span class="tag">V1 Failed Pilot → Redo</span>
         </div>
-        <p class="note">Google 当前不该直接写最终 memo。先补证据底座，再跑分析模块。</p>
+        <p class="note">Google v1 不能当作合格研究结果。它证明了文件流水线能跑通，但没有证明投资判断合格：Business Thesis 没有先承保，收入/支出概率树太浅，capex ROI 没有被拆穿，估值结论出现太早。</p>
+        <div class="warning">
+          重跑原则：先问“Google 十年后是否仍控制商业意图入口，以及 AI capex 是否会把收入增长吃掉”，再补证据、财报趋势、护城河、反演和估值。旧版 brief 只能作为反例，不作为最终 memo。
+        </div>
         <div class="mermaid-wrap">
           <pre class="mermaid">
 flowchart LR
-  A["FY2025 10-K<br/>Q1 2026<br/>Proxy<br/>13F"] --> B["claim_ledger.csv"]
-  B --> C["facts.md<br/>收入、Cloud、capex、FCF、治理、持仓"]
-  C --> D["moat_map.md<br/>Search / YouTube / Cloud / TPU / Android"]
-  C --> E["inversion_map.md<br/>AI answer / 监管 / capex / 广告迁移"]
-  C --> F["valuation.md<br/>owner earnings / 10y IRR / MOS"]
-  D --> G["audit.md"]
-  E --> G
-  F --> G
-  G --> H["memo-v1.md"]
+  A["Business Thesis<br/>商业意图入口 + AI capex 胜负手"] --> B["Evidence Plan<br/>Search / YouTube / Cloud / Capex / Operator"]
+  B --> C["facts.md<br/>只放可审计事实"]
+  C --> D["Revenue Probability Tree<br/>增长机会 / 下降风险"]
+  C --> E["Expense Probability Tree<br/>capex / TAC / SBC / depreciation"]
+  D --> F["Owner Earnings Distribution<br/>不是单点估值"]
+  E --> F
+  F --> G["Moat + Inversion<br/>入口是否被绕过"]
+  G --> H["Valuation Last<br/>implied expectations + MOS"]
+  H --> I["New Memo<br/>旧 v1 作废或降级为 archive"]
           </pre>
         </div>
         <table class="matrix">
           <thead>
-            <tr><th>问题</th><th>要看的证据</th><th>可能的 kill condition</th></tr>
+            <tr><th>10 层</th><th>Google 重跑要问什么</th><th>旧版哪里差</th></tr>
           </thead>
           <tbody>
-            <tr><td>AI 是否削弱搜索广告</td><td>query depth、commercial conversion、ad load、search revenue trend</td><td>高意图广告经济性持续下降</td></tr>
-            <tr><td>TPU/capex 是护城河还是 FCF 黑洞</td><td>capex、depreciation、Cloud margin、TPU 成本、RPO</td><td>capex 增长但回报路径不可见</td></tr>
-            <tr><td>Cloud 能否成为第二引擎</td><td>Google Cloud revenue、operating income、RPO、客户案例</td><td>增长放缓且利润率被 AI 成本吞噬</td></tr>
-            <tr><td>治理是否靠谱</td><td>Page/Brin/Pichai、Class B、board、compensation</td><td>控制权和资本配置损害外部股东</td></tr>
-            <tr><td>Berkshire 买入意味着什么</td><td>13F、交易结构、价格、规模、历史口径</td><td>买入原因主要是特殊结构而非长期安全边际</td></tr>
+            <tr><td>1 Direction</td><td>AI 应用入口、云算力、广告预算、TPU/数据中心，哪个才是真正战场</td><td>直接从 GOOGL 入手，没有先比较同主题其他公司暴露</td></tr>
+            <tr><td>2 Business Thesis</td><td>Google 控制的是“搜索框”还是更底层的“商业意图入口”</td><td>一句话 thesis 太晚出现，而且没有被证据后重写</td></tr>
+            <tr><td>3 Evidence</td><td>Search query、AI ad RPM、Cloud backlog、capex、TAC、SBC、治理事实逐条入账</td><td>事实有了，但没有服务于核心问题排序</td></tr>
+            <tr><td>4 Accounting Trend</td><td>收入增长是否变成 FCF/share；capex/OCF、折旧、SBC 是否压住 owner earnings</td><td>会计桥有了，但先服务估值，没先服务生意承保</td></tr>
+            <tr><td>5 Value Chain</td><td>AI 时代利润池在分发入口、模型、云、芯片、数据中心哪一层</td><td>没有先判断钱会从哪层被赚走</td></tr>
+            <tr><td>6 Moat/Bottleneck</td><td>AI 是加强 Google 入口，还是绕开入口；TPU 是护城河还是成本压力</td><td>护城河判断太像列表，不够机制化</td></tr>
+            <tr><td>7 Operator</td><td>管理层巨额 AI capex 有没有 hurdle rate、复盘机制和股东约束</td><td>经营者分析没有真正决定结论权重</td></tr>
+            <tr><td>8 Inversion</td><td>如果我想让 Google 失败，如何用 AI agent 绕开搜索并迫使它重投 capex</td><td>反演有写，但没有前置到核心 thesis</td></tr>
+            <tr><td>9 Valuation</td><td>市场已经相信 Google 的哪条 AI 分支；当前价格要求哪个分支必须成立</td><td>估值出现太早，给人感觉只是算股价</td></tr>
+            <tr><td>10 Decision</td><td>WATCH 是因为哪些机制没闭合，而不仅是价格不便宜</td><td>旧 verdict 太像“好公司太贵”，不够像“概率树未闭合”</td></tr>
           </tbody>
         </table>
       </section>
