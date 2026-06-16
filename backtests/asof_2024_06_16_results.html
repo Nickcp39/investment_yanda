@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>As-Of Backtest 2024-06-16 - GOOGL / NVDA</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif; background: #f3f5f7; color: #172033; line-height: 1.55; }
+    .page { max-width: 1280px; margin: 0 auto; padding: 28px; }
+    header, section { background: white; border: 1px solid #d9dde5; border-radius: 8px; padding: 24px; margin-bottom: 18px; box-shadow: 0 10px 28px rgba(20,30,50,.07); }
+    h1 { margin: 0 0 10px; font-size: 32px; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 22px; }
+    h3 { margin: 18px 0 8px; font-size: 16px; }
+    p { margin: 0 0 12px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { padding: 10px 8px; border-bottom: 1px solid #d9dde5; text-align: left; vertical-align: top; }
+    th { background: #f7f9fb; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .tag { display: inline-block; border-radius: 6px; padding: 4px 8px; font-size: 12px; font-weight: 700; }
+    .pass { color: #216e4e; background: #e8f5ee; border: 1px solid #b9dbc9; }
+    .partial { color: #8a5a00; background: #fff7df; border: 1px solid #ead083; }
+    .watch { color: #2457a6; background: #eaf1ff; border: 1px solid #bdd0fb; }
+    .danger { color: #9a3412; background: #fff0e8; border: 1px solid #efc5ad; }
+    .callout { border-left: 4px solid #2457a6; background: #f3f7ff; padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 14px 0; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 6px 0; }
+    a { color: #2457a6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .page { padding: 14px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>As-Of 回测：如果只给 2024-06-16 以前的信息，pipeline 会怎么做？</h1>
+      <p>这不是事后解释。规则是：先锁定 2024-06-16 的信息集和 2024-06-14 收盘价，再跑 10 层框架。后来的 Berkshire / Duan 行动只允许放在最后评分。</p>
+      <p><span class="tag pass">GOOGL: PASS</span> <span class="tag partial">NVDA: PARTIAL -> PASS with patch</span></p>
+    </header>
+
+    <section>
+      <h2>测试协议</h2>
+      <table>
+        <tr><th>项目</th><th>规则</th></tr>
+        <tr><td>截止日期</td><td>2024-06-16；因当天为周日，价格用 2024-06-14 close。</td></tr>
+        <tr><td>允许数据</td><td>截止日前已经公开的 10-K、10-Q、earnings release、官方新闻稿、价格。</td></tr>
+        <tr><td>禁止数据</td><td>任何 2025/2026 财报、后来的大师交易、当前价格、后来已经发生的结果。</td></tr>
+        <tr><td>评分</td><td>看 pipeline 的 blind verdict 是否接近后来大师的方向和动作。</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Case A - Google as of 2024-06-16</h2>
+      <div class="callout">
+        Blind verdict: <b>STARTER / BUY WITH MONITOR</b>. 不是 all-in；是 2%-4% starter，然后监控 AI Search、Cloud 和监管。
+      </div>
+      <div class="grid">
+        <div>
+          <h3>当时硬事实</h3>
+          <ul>
+            <li>GOOGL 2024-06-14 close: $176.79。</li>
+            <li>Q1 2024 revenue $80.5B，+15%。</li>
+            <li>Q1 2024 operating income $25.5B，margin 约 32%。</li>
+            <li>Q1 2024 OCF 约 $28.8B，capex 约 $12.0B，FCF 约 $16.8B。</li>
+            <li>FY2023 FCF 约 $69.5B。</li>
+            <li>首次分红 + $70B buyback authorization。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>为什么通过</h3>
+          <ul>
+            <li>商业意图和广告拍卖的护城河很清楚。</li>
+            <li>AI 风险存在，但当时没有硬证据显示 Search economics 受损。</li>
+            <li>Cloud 由亏转盈，第二增长曲线改善。</li>
+            <li>capex 还没有 2026 那种失控式压力。</li>
+            <li>价格不便宜，但对质量 compounder 可接受。</li>
+          </ul>
+        </div>
+      </div>
+      <table>
+        <tr><th>目标行为</th><th>pipeline 行为</th><th>评分</th></tr>
+        <tr><td>巴菲特式：好公司、能拿十年、价格尚可时买。</td><td>STARTER / BUY WITH MONITOR。</td><td><span class="tag pass">PASS</span></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Case B - NVIDIA as of 2024-06-16</h2>
+      <div class="callout">
+        Blind verdict without patch: <b>WATCH / exceptional quality, no classic MOS</b>. Corrected verdict: <b>EXCEPTIONAL BOTTLENECK STARTER / STRUCTURED ENTRY</b>.
+      </div>
+      <div class="grid">
+        <div>
+          <h3>当时硬事实</h3>
+          <ul>
+            <li>NVDA 2024-06-14 close: $131.88，post-split adjusted。</li>
+            <li>Q1 FY2025 revenue $26.0B，+262%。</li>
+            <li>Data Center revenue $22.6B，+427%。</li>
+            <li>GAAP gross margin 78.4%，non-GAAP gross margin 78.9%。</li>
+            <li>CUDA + GPU + networking + systems + Blackwell product cycle。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>为什么原框架会犹豫</h3>
+          <ul>
+            <li>质量极强，但价格已经 $3T+ market cap。</li>
+            <li>经典 MOS 很难过。</li>
+            <li>需要处理周期、ASIC 替代、出口管制、客户集中。</li>
+            <li>如果 action layer 只有普通股 BUY/WATCH/REJECT，就可能错过。</li>
+          </ul>
+        </div>
+      </div>
+      <table>
+        <tr><th>目标行为</th><th>pipeline 行为</th><th>评分</th></tr>
+        <tr><td>段永平式：承认好公司，但用 buy-write / 卖期权降低有效成本。</td><td>没有补丁时只会 WATCH；加入 Exceptional Bottleneck / Position Engineering 后会允许结构化入场。</td><td><span class="tag partial">PARTIAL -> PASS</span></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>测试结论</h2>
+      <table>
+        <tr><th>问题</th><th>答案</th></tr>
+        <tr><td>两年前 Google，pipeline 能不能得到巴菲特式结果？</td><td><span class="tag pass">能，大概率给 STARTER / BUY WITH MONITOR。</span></td></tr>
+        <tr><td>两年前 NVDA，pipeline 能不能得到段永平式结果？</td><td><span class="tag partial">原版不稳；补 Exceptional Bottleneck + Position Engineering 后可以。</span></td></tr>
+      </table>
+      <div class="callout">
+        关键发现：这个框架对 Buffett-style compounder 已经够用；对 NVDA 这种极端瓶颈股，需要新增“贵但真瓶颈”的行动模块，否则会因为没有经典安全边际而错过。
+      </div>
+    </section>
+
+    <section>
+      <h2>需要加入 pipeline 的补丁</h2>
+      <p><b>Exceptional Bottleneck / Position Engineering</b></p>
+      <ul>
+        <li>只在方向、增长、毛利、生态、经营者、客户 ROI 全部极强时触发。</li>
+        <li>普通股太贵时，不自动拒绝，而是测试小仓位、sell put、buy-write、covered call 等结构。</li>
+        <li>禁止买 call 赌方向；禁止用杠杆硬凑估值；禁止对不了解的公司卖期权。</li>
+        <li>目标不是投机，而是像段永平那样：好公司 + 好价格/好结构 + 风险可承受。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204424000047/googexhibit991q12024.htm">Alphabet Q1 2024 Exhibit 99.1</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/goog-20240331.htm">Alphabet Q1 2024 Form 10-Q</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm">Alphabet FY2023 Form 10-K</a></li>
+        <li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025">NVIDIA Q1 FY2025 official release</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm">NVIDIA Q1 FY2025 Form 10-Q</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm">NVIDIA FY2024 Form 10-K</a></li>
+        <li><a href="https://www.gurufocus.com/news/2745054/nvidia-nvda-stock-strategy-duan-yongpings-925-million-buywrite-strategy">GuruFocus Duan Yongping NVDA buy-write article</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
+

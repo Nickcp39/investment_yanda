@@ -1,0 +1,4 @@
+ticker,asof_date,market_date,close,adj_close,source_url,notes
+GOOGL,2024-06-16,2024-06-14,176.7899932861328,175.43727111816406,https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1718323200&period2=1718668800&interval=1d&events=history&includeAdjustedClose=true,2024-06-16 was a Sunday; last market close before cutoff used.
+NVDA,2024-06-16,2024-06-14,131.8800048828125,131.66299438476562,https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1718323200&period2=1718668800&interval=1d&events=history&includeAdjustedClose=true,Post-split adjusted price after the June 2024 10-for-1 split.
+
