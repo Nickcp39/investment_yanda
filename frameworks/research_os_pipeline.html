@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>买方研究 OS — 公司研究流水线总图</title>
+<style>
+:root{
+  --color-background-primary:#ffffff;
+  --color-text-primary:#1a1a1a;
+  --color-text-secondary:#555555;
+  --color-text-info:#2563eb;
+  --color-border-secondary:#cccccc;
+  --color-border-tertiary:#e6e6e6;
+  --font-serif:Georgia,"Songti SC",serif;
+  --border-radius-md:8px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --color-background-primary:#1f1f1f;
+    --color-text-primary:#ededed;
+    --color-text-secondary:#a8a8a8;
+    --color-text-info:#6ea8fe;
+    --color-border-secondary:#454545;
+    --color-border-tertiary:#363636;
+  }
+}
+body{margin:0;background:var(--color-background-primary);color:var(--color-text-primary);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-family:var(--font-serif);font-size:20px;margin:0 0 2px}
+.meta{font-size:12.5px;color:var(--color-text-secondary);margin:4px 0 18px;line-height:1.5}
+svg{width:100%;height:auto;display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>买方研究 OS — 公司研究流水线总图</h1>
+<p class="meta">创建 2026-06-16 · 一条可复用流程：任意公司同一入口进，出一份能下注/否决/复盘的判断<br>
+配套文档：frameworks/research_os_flowchart.md · investment_research_pipeline_detailed.md · buy_side_research_department.md</p>
+
+<svg viewBox="0 0 980 1060" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
+  <title id="ttl">买方研究 OS：一条可复用的公司研究流水线</title>
+  <desc id="desc">任意公司从同一入口进入，依次经过事实工程、分析、决策与跟踪三个阶段，分析阶段可并行，审计与监控环节回流形成迭代闭环，最终输出五档 verdict。</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--color-text-secondary)"/>
+    </marker>
+    <marker id="arri" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--color-text-info)"/>
+    </marker>
+    <style>
+      .ttl{font-family:var(--font-serif);font-size:21px;fill:var(--color-text-primary);font-weight:700}
+      .sub{font-family:system-ui,sans-serif;font-size:12.5px;fill:var(--color-text-secondary)}
+      .zl{font-family:system-ui,sans-serif;font-size:13px;fill:var(--color-text-info);font-weight:700}
+      .bx{fill:var(--color-background-primary);stroke:var(--color-border-secondary);stroke-width:1.2}
+      .st{font-family:system-ui,sans-serif;font-size:13.5px;fill:var(--color-text-primary);font-weight:600}
+      .ss{font-family:system-ui,sans-serif;font-size:10.5px;fill:var(--color-text-secondary)}
+      .gb{font-family:system-ui,sans-serif;font-size:12px;fill:var(--color-text-primary);font-weight:600}
+      .num{font-family:system-ui,sans-serif;font-size:11px;fill:var(--color-text-info);font-weight:700}
+      .flow{fill:none;stroke:var(--color-text-secondary);stroke-width:1.6}
+      .ref{fill:none;stroke:var(--color-text-info);stroke-width:1.4;stroke-dasharray:5 4}
+      .rl{font-family:system-ui,sans-serif;font-size:10px;fill:var(--color-text-info);font-weight:600}
+      .sbt{font-family:system-ui,sans-serif;font-size:13px;fill:var(--color-text-primary);font-weight:700}
+      .sbb{font-family:system-ui,sans-serif;font-size:11px;fill:var(--color-text-secondary)}
+      .pill{fill:var(--color-background-primary);stroke:var(--color-text-info);stroke-width:1.2}
+      .pt{font-family:system-ui,sans-serif;font-size:11px;fill:var(--color-text-primary);font-weight:600}
+    </style>
+  </defs>
+
+  <text x="40" y="34" class="ttl">买方研究 OS — 一条可复用的公司研究流水线</text>
+  <text x="40" y="56" class="sub">任意公司（GOOGL · META · MU · CRCL …）→ 同一条流程 → 一份能下注 / 能否决 / 能复盘的判断</text>
+
+  <rect x="92" y="132" width="516" height="384" rx="10" fill="var(--color-text-primary)" opacity="0.04"/>
+  <rect x="92" y="524" width="516" height="150" rx="10" fill="var(--color-text-info)" opacity="0.07"/>
+  <rect x="92" y="684" width="516" height="252" rx="10" fill="var(--color-text-primary)" opacity="0.04"/>
+
+  <text x="104" y="152" class="zl">阶段 A · 事实工程 — 别被故事骗</text>
+  <text x="104" y="544" class="zl">阶段 B · 分析 — 是不是好生意（吃同一份 facts，可并行）</text>
+  <text x="104" y="704" class="zl">阶段 C · 决策与跟踪 — 价格 · 赔率 · 仓位 · 纪律</text>
+
+  <rect x="180" y="78" width="340" height="40" rx="8" class="bx"/>
+  <text x="350" y="103" text-anchor="middle" class="st">输入：任意公司 / 主题</text>
+
+  <path class="flow" d="M350 118 L350 158" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 204 L350 220" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 266 L350 282" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 328 L350 344" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 390 L350 406" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 452 L350 468" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 514 L350 552" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 664 L350 706" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 760 L350 776" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 822 L350 838" marker-end="url(#arr)"/>
+  <path class="flow" d="M350 884 L350 900" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="205" y="160" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="183" class="num">1</text><text x="240" y="180" class="st">方向 / 选题</text>
+    <text x="240" y="196" class="ss">6 雷达打分 · research_queue.md</text>
+
+    <rect x="205" y="222" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="245" class="num">2</text><text x="240" y="242" class="st">Triage 初筛</text>
+    <text x="240" y="258" class="ss">5–8 源 · 值不值得深研？</text>
+
+    <rect x="205" y="284" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="307" class="num">3</text><text x="240" y="304" class="st">研究计划</text>
+    <text x="240" y="320" class="ss">拆 12 block + 停止条件 · step0_plan.md</text>
+
+    <rect x="205" y="346" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="369" class="num">4</text><text x="240" y="366" class="st">原始证据</text>
+    <text x="240" y="382" class="ss">raw/ · 只记录，不下结论</text>
+
+    <rect x="205" y="408" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="431" class="num">5</text><text x="240" y="428" class="st">Claim Ledger</text>
+    <text x="240" y="444" class="ss">每条事实入账 · 挂 source_id + tier</text>
+
+    <rect x="205" y="470" width="290" height="44" rx="8" class="bx"/>
+    <text x="223" y="493" class="num">6</text><text x="240" y="490" class="st">Facts 底稿</text>
+    <text x="240" y="506" class="ss">事实 / 解读 / 情绪 三分 · facts.md</text>
+  </g>
+
+  <g>
+    <rect x="104" y="556" width="116" height="44" rx="7" class="bx"/><text x="162" y="582" text-anchor="middle" class="gb">生意模式</text>
+    <rect x="232" y="556" width="116" height="44" rx="7" class="bx"/><text x="290" y="582" text-anchor="middle" class="gb">财务质量</text>
+    <rect x="360" y="556" width="116" height="44" rx="7" class="bx"/><text x="418" y="582" text-anchor="middle" class="gb">价值链</text>
+    <rect x="488" y="556" width="116" height="44" rx="7" class="bx"/><text x="546" y="582" text-anchor="middle" class="gb">护城河</text>
+    <rect x="104" y="610" width="116" height="44" rx="7" class="bx"/><text x="162" y="636" text-anchor="middle" class="gb">瓶颈层</text>
+    <rect x="232" y="610" width="116" height="44" rx="7" class="bx"/><text x="290" y="636" text-anchor="middle" class="gb">管理层尽调</text>
+    <rect x="360" y="610" width="116" height="44" rx="7" class="bx"/><text x="418" y="636" text-anchor="middle" class="gb">反演 / 失败</text>
+    <rect x="488" y="610" width="116" height="44" rx="7" class="bx"/><text x="546" y="636" text-anchor="middle" class="gb">估值 + 安边</text>
+  </g>
+
+  <g>
+    <rect x="205" y="714" width="290" height="46" rx="8" class="bx"/>
+    <text x="223" y="738" class="num">7</text><text x="240" y="735" class="st">审计 · 质量闸门</text>
+    <text x="240" y="751" class="ss">查证据/冲突/污染 → 定 verdict 上限</text>
+
+    <rect x="205" y="776" width="290" height="46" rx="8" class="bx"/>
+    <text x="223" y="800" class="num">8</text><text x="240" y="797" class="st">IC Panel（五灵魂评审）</text>
+    <text x="240" y="813" class="ss">巴菲特·芒格·段永平·Marks·Klarman</text>
+
+    <rect x="205" y="838" width="290" height="46" rx="8" class="bx"/>
+    <text x="223" y="862" class="num">9</text><text x="240" y="859" class="st">决策 Memo</text>
+    <text x="240" y="875" class="ss">thesis + kill criteria · memo-v1.md</text>
+
+    <rect x="205" y="900" width="290" height="46" rx="8" class="bx"/>
+    <text x="220" y="924" class="num">10</text><text x="240" y="921" class="st">监控 · 记忆 · 复盘</text>
+    <text x="240" y="937" class="ss">monitor / memory / postmortem</text>
+  </g>
+
+  <path class="ref" d="M205 737 L60 737 L60 306 L205 306" marker-end="url(#arri)"/>
+  <text x="64" y="525" class="rl">信息不足 ↻ 补料</text>
+  <path class="ref" d="M205 923 L34 923 L34 100 L178 100" marker-end="url(#arri)"/>
+  <text x="38" y="540" class="rl">新证据 ↻ 重启</text>
+
+  <text x="92" y="972" class="zl">产出 verdict（五档，上限由信息完整度决定）</text>
+  <g>
+    <rect x="92" y="982" width="86" height="30" rx="15" class="pill"/><text x="135" y="1001" text-anchor="middle" class="pt">REJECT</text>
+    <rect x="188" y="982" width="96" height="30" rx="15" class="pill"/><text x="236" y="1001" text-anchor="middle" class="pt">INFO-GAP</text>
+    <rect x="294" y="982" width="82" height="30" rx="15" class="pill"/><text x="335" y="1001" text-anchor="middle" class="pt">WATCH</text>
+    <rect x="386" y="982" width="92" height="30" rx="15" class="pill"/><text x="432" y="1001" text-anchor="middle" class="pt">STARTER</text>
+    <rect x="488" y="982" width="78" height="30" rx="15" class="pill"/><text x="527" y="1001" text-anchor="middle" class="pt">CORE</text>
+  </g>
+
+  <rect x="636" y="132" width="326" height="392" rx="10" class="bx"/>
+  <text x="656" y="160" class="sbt">贯穿全程的铁律</text>
+  <text x="656" y="188" class="sbb">· 默认 INFO-GAP，买入需层层举证</text>
+  <text x="656" y="212" class="sbb">· 先方向，后公司</text>
+  <text x="656" y="236" class="sbb">· 先证据，后观点</text>
+  <text x="656" y="260" class="sbb">· 先风险，后收益</text>
+  <text x="656" y="284" class="sbb">· 先看价格便宜，再谈好公司</text>
+  <text x="656" y="316" class="sbt" style="font-size:12px">晋级链不可跳过</text>
+  <text x="656" y="338" class="sbb">source → raw → ledger → facts</text>
+  <text x="656" y="356" class="sbb">→ 分析模块 → memo</text>
+  <text x="656" y="388" class="sbt" style="font-size:12px">verdict 上限 = 信息完整度</text>
+  <text x="656" y="410" class="sbb">&lt; 40%  →  INFO-GAP</text>
+  <text x="656" y="430" class="sbb">40–60%  →  WATCH</text>
+  <text x="656" y="450" class="sbb">60–80%  →  STARTER</text>
+  <text x="656" y="470" class="sbb">&gt; 80%  →  CORE 可讨论</text>
+  <text x="656" y="500" class="sbb" style="fill:var(--color-text-info)">结论由功课决定，不由兴奋决定</text>
+
+  <rect x="636" y="540" width="326" height="134" rx="10" class="bx"/>
+  <text x="656" y="566" class="sbt">KOL / 美股投资网的位置</text>
+  <text x="656" y="592" class="sbb">只是阶段 A 第 1 步的「线索入口」</text>
+  <text x="656" y="612" class="sbb">= D1 社媒级，只能进 SENTIMENT</text>
+  <text x="656" y="632" class="sbb">不经一手验证，永不能支撑 BUY</text>
+  <text x="656" y="658" class="sbb" style="fill:var(--color-text-info)">整条流水线就是它的「提纯机」</text>
+</svg>
+
+</div>
+</body>
+</html>

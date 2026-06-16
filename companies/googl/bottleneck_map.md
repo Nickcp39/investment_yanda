@@ -1,21 +1,95 @@
-# GOOGL Bottleneck Map
+# GOOGL 瓶颈层地图 (Bottleneck Map / H4)
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
-Status: skeleton.
+Status: `module_drafted`（H4 瓶颈层模块）。本文只引用 `facts.md` 已晋级的 EVIDENCE（每条挂 `[source_id]`）；凡 facts 底稿尚未量化的环节（TPU 产能、电力 MW、数据中心数、搜索份额、人才留存）一律标 **未挂证据 → 见文末 Open Questions**，不臆造数字。
+下游 verdict 上限仍为 **WATCH**（估值/inversion 未做，见 facts.md Minimum Coverage Check）；本模块**不**单独抬升 verdict。
 
-## Candidate Bottlenecks
+> 模块定位：识别 AI 时代哪个环节"短期扩不出"、稀缺在哪、谁控制。**铁律：瓶颈 ≠ 护城河**。瓶颈可能是 (a) 你拥有并收费的护城河，(b) 你必须排队购买的成本黑洞 (cost sink)，(c) 限制你自己增长的产能天花板。Alphabet 的特殊性在于：同一笔 AI 基建，**既可能是别人要付费的收费公路，又是 Alphabet 自己 FCF 被压缩的 capex 来源**——必须逐环节区分它站在瓶颈的哪一侧。
 
-| Bottleneck | Type | Google owns or depends? | Why it matters | Evidence needed |
-|---|---|---|---|---|
-| User distribution | Distribution | Owns/controls partly | Search, Chrome, Android, YouTube create demand capture | Market share, default agreements, regulatory filings |
-| AI data centers | Physical / capital | Owns and depends | AI product quality and Cloud capacity require compute | Capex, data center disclosures |
-| TPU stack | Hardware/software | Owns | Potential cost/performance advantage | TPU disclosures, Cloud AI demand |
-| Power and networking | Physical | Depends | May constrain AI capacity and capex returns | Capex plans, supplier data |
-| Commercial intent data | Data | Owns partly | Improves ad matching and monetization | Ads metrics, privacy/regulatory changes |
-| Developer / enterprise relationships | Distribution | Owns partly | Cloud and AI adoption | RPO/backlog, customer commentary |
+---
 
-## Core Question
+## 1. 瓶颈清单表 (Bottleneck Inventory)
 
-Is AI infrastructure a moat, a toll road, or a capex trap?
+类型分类：物理 / 数据 / 人才 / 资本 / 制程 / 电力 / 分发。
+"Alphabet 的位置"列是本模块的核心判断：**拥有(owns) / 依赖(depends) / 既拥有又依赖(both)**。
 
+| # | 瓶颈环节 | 类型 | 谁控制（卡点持有者） | 证据 (source_id) | 持续时间 | 受益者 | Alphabet 的位置 |
+|---|---|---|---|---|---|---|---|
+| B1 | **AI 算力（自有 fleet 规模）** | 物理/资本 | 拥有者全是超大规模厂商（Alphabet/MSFT/AMZN/Meta/OpenAI 集群）；增量受 capex 与供应链门控 | 2026 capex 指引 **$180–190B**，2027 仍"显著增加" [GOOGL-424B5-2026-06.009]；Q1'26 capex $35,674M ≈ Q1'25 的 2.07x [GOOG.A1.2026Q1.024]；FY2025 capex $91,447M (+74%) [GOOG.A1.2025K.016] | 结构性（多年；2027 加码） | 短期：设备/电力供应商。长期：能把算力变现的平台 | **既拥有又依赖**：自有 fleet 是资产，但增量受外部供应门控 |
+| B2 | **先进制程 / 高端封装 / HBM** | 制程/物理 | **极度集中、Alphabet 不持有**：晶圆代工 + 先进封装(CoWoS 类) + HBM 内存的全球产能集中在少数外部厂商 | facts 未量化（无 TPU 流片量/代工合同/HBM 采购口径）→ **未挂证据**；间接代理=capex 体量 [GOOGL-424B5-2026-06.009] | 结构性（建厂/扩产周期以年计） | 代工 + 封装 + HBM 三家寡头（上游真正收费的环节） | **依赖**（潜在 cost sink / 产能天花板）：即便自研 TPU，仍需排队买产能 |
+| B3 | **电力 / 电网接入 / 长周期电力合同** | 电力/物理 | 公用事业 + 电网 + 监管/选址审批；并网排队以年计 | facts 未量化（无 MW、PPA、能耗披露）→ **未挂证据**；间接代理=capex 规模需要的负荷增量 [GOOGL-424B5-2026-06.009] | 结构性（电网/选址周期最慢，可能是 2026–2028 真正硬约束） | 电力开发商、核电/可再生供应商、有现成电力的选址 | **依赖**（最可能的真实硬瓶颈 / 产能天花板） |
+| B4 | **数据中心建设（土建/变压器/液冷/工期）** | 物理/资本 | 自建 + EPC 承包 + 变压器/液冷等长交期设备供应链 | capex 翻倍即建设强度代理 [GOOG.A1.2026Q1.024]；FY2025 +74% [GOOG.A1.2025K.016] | 中期（设备交期/工期约束，1–3 年） | 建设承包商、变压器/冷却/电气长交期设备厂 | **既拥有又依赖**：自有园区是资产，工期/设备受外部门控 |
+| B5 | **商业意图数据（搜索查询 + 转化反馈）** | 数据 | **Alphabet 自有**（搜索/Maps/Chrome/Android/YouTube 面捕获意图与转化闭环） | 价值代理：FY2025 Services 营业利润 $139,404M [GOOG.A1.2025K.010]；Q1'26 Search & other $60,399M (+19%) [GOOG.A1.2026Q1.004]。⚠ **Network 营收 YoY 下滑** $6,971M [GOOG.A1.2026Q1.006] | 结构性但受攻击（AI 助手/agent 可能改道意图） | Alphabet 自己 | **拥有**（唯一明确"拥有并收费"的瓶颈——与 moat_map 高重叠） |
+| B6 | **顶尖 AI 人才（前沿研究/系统工程）** | 人才 | 分散在少数实验室与厂商之间；靠薪酬与算力可达性争夺 | facts 未量化（无留存率/人头/人才 SBC 拆分）→ **未挂证据**；间接：FY2025 SBC 总额 $27,100M [GOOG.A1.2025K.023] | 中期（可被薪酬/股权流动） | 顶尖研究员个人；能同时给"算力+薪酬"的平台 | **既拥有又依赖**（部分可被对手买走） |
+| B7 | **TPU 供应链（自研加速器栈）** | 制程/物理/资本 | 设计自有；但制造仍依赖外部代工/封装/HBM（见 B2） | facts 未量化（无 TPU 出货/代工/对外销量口径）→ **未挂证据**；间接：Cloud 营收 $58,705M(+36%) [GOOG.A1.2025K.011]、利润 $13,910M [GOOG.A1.2025K.012]、Q1'26 利润率 32.9% [GOOG.A1.2026Q1.015]、backlog **"over $460B"** [GOOG.A1.2026Q1.010] | 中-结构性（设计护城河可持续，制造端受 B2 门控） | Alphabet（设计/能效）＋上游代工封装 HBM | **既拥有又依赖**：设计自有(可能成本/能效优势)，制造端依赖 B2 |
+| B8 | **资本（为上述 capex 持续融资的能力）** | 资本 | 资本市场 + Alphabet 自身资产负债表/现金流 | $80B 股权融资明示用于 AI 基建/算力 [GOOGL-FWP-2026-06.001]；Berkshire $10B 私募 [GOOGL-424B5-2026-06.001]；**Q1'26 回购=$0**（Q1'25 $15,068M）[GOOG.A1.2026Q1.027]；发债 $31,379M [同块]；长期债务 $10,883M→$46,547M [GOOG.A1.2025K.021] | 周期性（取决于利率/资本市场情绪/自身现金流） | 提供资本者；能用最低资金成本扩产的玩家 | **拥有（相对优势）**：现金流+资产负债表使其比多数对手更能持续供血——但代价是 FCF/回购被牺牲 |
+
+### 表外关键读数（瓶颈的"代价"侧）
+- **FCF 正被 capex 吞噬**：FY2025 derived FCF $73,266M [GOOG.A1.2025K.017]；Q1'26 stated FCF 仅 $10,116M、TTM 已降至 $64,429M [GOOG.A1.2026Q1.025]。→ 瓶颈 B1/B4 的"解决方案"（砸 capex）正在**实时压缩 owner earnings**。
+- **资本配置转向**：回购从 FY2024 $62,222M → FY2025 $45,709M → **Q1'26 $0** [GOOG.A1.2025K.018 / GOOG.A1.2026Q1.027]，叠加 $80B 融资 [GOOGL-FWP-2026-06.001]。这是管理层"我们站在算力瓶颈的买方、必须先囤产能"的**用脚投票**。
+
+---
+
+## 2. 核心问题：AI 基建（数据中心/电力/TPU，$180–190B capex）对 Alphabet 是护城河、收费公路 (toll road)，还是 capex 陷阱？
+
+逐"四问"拆解（结论不是单选——**不同环节落在不同侧**）：
+
+### Q1 能否被绕过 / 买通？ (Can it be bought around?)
+- **B5 商业意图数据**：买不通。对手要复制需同时拿到搜索级分发 + 多年转化闭环。→ **真护城河侧**。⚠ 但可被**改道**（AI agent 绕开搜索框直接成交）——这是 attack surface，不是"买通"。
+- **B1/B4 算力与建设**：**可以用钱买/租**（云上租 GPU、租第三方数据中心）。任何资本雄厚者都能买入产能。→ 倾向 **收费公路/可竞争资本游戏**，不是天然垄断。
+- **B2/B3 制程与电力**：**短期买不到**（产能与并网要排队），但**谁都买不到**——这是行业共同约束，不是 Alphabet 专属优势。→ 对 Alphabet 是 **cost sink / 产能天花板**，不是护城河。
+- **B7 TPU**：设计买不到（自研），但**制造产能要和别人抢同一批代工/HBM**（B2）。→ 设计侧像护城河，制造侧像依赖。
+
+### Q2 暂时还是结构性？ (Temporary or structural?)
+- 结构性：B1/B2/B3/B7（多年；管理层明示 **2027 capex 仍"显著增加"** [GOOGL-424B5-2026-06.009]）。
+- 中期/周期：B4（设备交期会缓解）、B6（人才可流动）、B8（融资窗口随利率/情绪变化）。
+- → 最硬、最久的约束很可能是 **B3 电力**（电网/选址周期 > 建厂 > 设备）。facts 未量化是当前最大盲点。
+
+### Q3 拥有还是依赖？ (Own or depend?)
+- **拥有**：B5（数据）、B8（资本相对优势）、B7 的设计层。
+- **依赖**：B2（制程/封装/HBM）、B3（电力）——Alphabet 在这两环是**买方/排队方**，不是卡点持有者。
+- **既拥有又依赖**：B1、B4、B6、B7（自有资产 + 增量受外部门控）。
+- → **关键洞察**：Alphabet 真正"拥有的瓶颈"只有 B5（数据）+ 部分 B7（TPU 设计）+ B8（资本）。其余它都是**依赖方**。把"$180-190B capex"整体叫"护城河"是**口径错误**——大部分 capex 是在**向上游瓶颈持有者付过路费**（见 value_chain 上游利润池）。
+
+### Q4 解决它改善经济还是毁回报？ (Improve economics or destroy returns?)
+- **改善侧的证据**：Cloud 已从微利转大幅盈利（OI $1,716M→$6,112M→$13,910M [GOOG.A1.2025K.012]），Q1'26 利润率 32.9% [GOOG.A1.2026Q1.015]，backlog "over $460B" [GOOG.A1.2026Q1.010]——说明砸下去的算力**正在被需求接住、且在赚钱**。这一侧像**收费公路（变现端）**。
+- **毁回报侧的证据**：FCF 实时被压（TTM $64,429M 且在降 [GOOG.A1.2026Q1.025]）、回购归零 [GOOG.A1.2026Q1.027]、发债加杠杆 [GOOG.A1.2025K.021]。若需求/折旧节奏跟不上 capex，就是 **capex 陷阱**。
+- **未决的胜负手 = 折旧 vs 利用率 vs 寿命**：facts 未拆"维护性 vs 成长性 capex"（facts.md Open Question 已挂）、未给资产寿命/折旧假设、未给利用率。**没有这三项，无法判定增量资本回报率**——这正是 moat_map 的"关键测试"和 valuation 的前置，本模块无法替它裁决。
+
+**本模块的口径裁决（三选一不够，按环节分层）：**
+- 变现端（Cloud 把算力卖出去、B5 数据、B7 TPU 能效）→ **收费公路 + 局部护城河**。
+- 供给端（B2 制程、B3 电力、B4 设备）→ Alphabet 是**付费排队的依赖方**，是 **cost sink / 产能天花板**，**不是**它的护城河。
+- 整体能否成立 → 取决于 **Q4 的折旧/利用率/寿命**，**当前证据不足以判定是护城河还是 capex 陷阱**，倾向"**有收费公路潜质、但正处于回报未验证的重资本豪赌期**"。
+
+---
+
+## 3. 交叉引用（瓶颈 ≠ 护城河；与价值链上游、moat attack surface 对齐）
+
+### 3a. 与 value_chain_map（上游利润池）交叉
+- value_chain 的 Profit-Pool 问题"In AI, is Google a bottleneck owner or mostly a capex funder?"——**本模块答：两者皆是**。它**拥有**变现端瓶颈（B5/B7 设计/Cloud 分发），但在供给端 **B2/B3 是 capex funder（付费方）**，利润池在上游代工/封装/HBM/电力手里。
+- 即 $180-190B capex 中相当一部分是**流向上游瓶颈持有者的过路费**，不是沉淀为 Alphabet 专属护城河。→ value_chain 上游映射需把"代工/封装/HBM/电力"标为**真正收费的环节**。
+
+### 3b. 与 moat_map（attack surface）交叉
+- 重叠：B5 ↔ moat 的"Advertiser data / auction liquidity"与"Search habit"；B1/B7 ↔ moat 的"Cloud scale and AI infra"。
+- **关键区分（瓶颈 ≠ 护城河）**：
+  - 是护城河的瓶颈：**B5（数据）**、**B7 的设计/能效层**——满足"拥有 + 难买通 + 改善经济"。
+  - **不是护城河、只是 cost sink / 产能天花板**：**B2（制程）、B3（电力）、B4（设备）**——Alphabet 不持有卡点、必须排队付费，解决它先压 FCF。把它们当护城河会高估护城河、低估 capex 风险。
+- moat_map 的 falsification 项"Cloud growth requires structurally low returns on capital"与"AI assistants move commercial intent away"——正对应本模块 Q4（回报未验证）与 Q1（B5 可被 agent 改道）。**两个模块互为对照，结论一致：护城河存在但 attack surface 真实，重资本回报待验证。**
+
+### 3c. 反例提醒（cost sink 风险）
+- B3 电力、B2 制程是典型 cost sink：投入巨大、Alphabet 不控制卡点、且为行业共享约束 → **不产生相对优势**。若把它们计入"护城河"，是分类错误。
+- capex 翻倍 [GOOG.A1.2026Q1.024] + FCF 压缩 [GOOG.A1.2026Q1.025] + 回购归零 [GOOG.A1.2026Q1.027] 三连，是 cost sink 风险**正在发生**的实时信号；是否最终转为 toll road 收益，取决于折旧/利用率（未挂证据）。
+
+---
+
+## Open Questions（触发回流补料；多为 facts 底稿尚未量化、本模块不可臆造的瓶颈关键变量）
+
+- [ ] **B2 制程/封装/HBM**：Alphabet 的 TPU 代工/先进封装/HBM 采购口径、对外部代工的依赖度——facts 完全未挂证据，是"依赖 vs 拥有"判定的最大盲点。
+- [ ] **B3 电力（最可能的真实硬瓶颈）**：数据中心 MW 负荷、PPA/长周期电力合同、并网排队时长、自有发电占比——facts 无任何能源/电力数字。
+- [ ] **B4 建设**：数据中心数量/在建产能/变压器与液冷等长交期设备的交付节奏——无披露。
+- [ ] **B7 TPU**：TPU 出货量、对外（Cloud 客户/第三方）TPU 销量、相对 GPU 的能效/TCO 量化——无 EVIDENCE，仅以 Cloud 财务作间接代理。
+- [ ] **Q4 胜负手三件套**：capex 维护性 vs 成长性拆分（facts.md 已挂同名 OQ）、AI 资产寿命/折旧假设、数据中心利用率——**缺这三项无法判定增量资本回报率**，是 moat/valuation 共同前置。
+- [ ] **B5 attack surface 量化**：搜索市场份额、AI agent/AI Overviews 对查询量与 CPC 的影响、Network 营收下滑 [GOOG.A1.2026Q1.006] 是否为意图改道早期信号——facts 无份额数据。
+- [ ] **B6 人才**：顶尖研究员留存率、人才相关 SBC 拆分——facts 仅有 SBC 总额 [GOOG.A1.2025K.023]。
+- [ ] **Cloud backlog 质量**："over $460B" [GOOG.A1.2026Q1.010] 的确认周期/可取消性/客户集中度——决定变现端"收费公路"成色。

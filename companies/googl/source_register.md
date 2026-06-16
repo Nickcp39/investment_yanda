@@ -1,6 +1,6 @@
 # GOOGL Source Register
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16 (Evidence Build run: all A1 sources fetched & verbatim-verified)
 
 | source_id | Tier | Source | Date | URL / Local path | Notes |
 |---|---|---|---|---|---|
@@ -11,7 +11,10 @@ Last updated: 2026-06-15
 | BRK-13F-2026Q1 | A1 | Berkshire Hathaway Q1 2026 13F information table | 2026 | https://www.sec.gov/Archives/edgar/data/1067983/000119312526226661/xslForm13F_X02/53405.xml | Public holdings snapshot |
 | HH-13F-2025Q4 | A1 | H&H International Investment Q4 2025 13F information table | 2026 | https://www.sec.gov/Archives/edgar/data/1759760/000175976026000001/xslForm13F_X02/infotable.xml | Public holdings snapshot |
 | HH-13F-2026Q1 | A1 | H&H International Investment Q1 2026 13F information table | 2026 | https://www.sec.gov/Archives/edgar/data/1759760/000175976026000005/xslForm13F_X02/infotable.xml | Public holdings snapshot |
+| GOOGL-PROXY-2026 | A1 | Alphabet 2026 DEF 14A proxy statement | 2026-04-24 | https://www.sec.gov/Archives/edgar/data/0001652044/000130817926000342/goog-20260424.htm | Governance: voting structure, board, exec comp, related-party |
 | FORTUNE-BUFFETT-GOOG-2017 | C1 | Fortune article on Buffett/Munger comments about Google | 2017-05-06 | https://fortune.com/2017/05/06/warren-buffett-berkshire-hathaway-apple-google-stock/ | Secondary context only |
+
+Fetch note (2026-06-16): SEC blocked default WebFetch UA (HTTP 403); all A1 filings retrieved via compliant SEC User-Agent and parsed from primary HTML/XML. Every promoted claim carries a verbatim excerpt (see `raw/`).
 
 Tier rules: `../../sources/source_policy.md`.
 

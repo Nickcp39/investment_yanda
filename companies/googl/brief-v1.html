@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOOGL 投资研究简报 v1 — 2026-06-16</title>
+<style>
+:root{
+  --bg:#fff;--fg:#1a1a1a;--fg2:#555;--info:#2563eb;--info-bg:#eff4ff;
+  --bd:#dcdcdc;--bd2:#ededed;--card:#fafafa;--green:#15803d;--green-bg:#f0fdf4;
+  --amber:#b45309;--amber-bg:#fff7ed;--red:#b91c1c;--red-bg:#fef2f2;--serif:Georgia,"Songti SC",serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#1c1c1c;--fg:#ededed;--fg2:#a6a6a6;--info:#6ea8fe;--info-bg:#1a2438;
+  --bd:#444;--bd2:#333;--card:#242424;--green:#86efac;--green-bg:#16241a;
+  --amber:#fbbf77;--amber-bg:#2a2117;--red:#fca5a5;--red-bg:#2a1717;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;padding:24px}
+.wrap{max-width:960px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px}
+h1{font-family:var(--serif);font-size:24px;margin:0}
+.sub{color:var(--fg2);font-size:13px;margin:2px 0 0}
+.pill{display:inline-block;padding:6px 16px;border-radius:20px;font-weight:700;font-size:15px;background:var(--amber-bg);color:var(--amber);border:1.5px solid var(--amber)}
+.pill .s{font-size:11px;font-weight:500;opacity:.8}
+.banner{background:var(--amber-bg);border:1px solid var(--amber);border-radius:12px;padding:16px 18px;margin:16px 0 20px}
+.banner .ol{font-size:14px}
+.banner .ol b{color:var(--amber)}
+.ladder{display:flex;gap:6px;margin-top:14px}
+.rung{flex:1;text-align:center;padding:7px 4px;border-radius:7px;font-size:11.5px;font-weight:700;border:1px solid var(--bd)}
+.rung.done{background:var(--fg2);color:var(--bg);border-color:var(--fg2);opacity:.5}
+.rung.cur{background:var(--amber);color:#fff;border-color:var(--amber);transform:scale(1.04)}
+.rung.todo{background:transparent;color:var(--fg2)}
+h2{font-family:var(--serif);font-size:16px;margin:26px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--bd2)}
+.val{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:8px 0}
+.kpi{border:1px solid var(--bd);border-radius:10px;padding:11px 13px;background:var(--card)}
+.kpi .l{font-size:11px;color:var(--fg2)}
+.kpi .v{font-size:20px;font-weight:700;font-family:var(--serif)}
+.kpi .v.red{color:var(--red)}.kpi .v.green{color:var(--green)}
+.kpi .n{font-size:10.5px;color:var(--fg2);margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0}
+th,td{text-align:right;padding:6px 9px;border-bottom:1px solid var(--bd2)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--fg2);font-weight:600;font-size:11.5px;border-bottom:1px solid var(--bd)}
+.red{color:var(--red)}.green{color:var(--green)}.amber{color:var(--amber)}
+.souls{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.soul{border:1px solid var(--bd);border-left:3px solid var(--amber);border-radius:9px;padding:10px 12px;background:var(--card)}
+.soul h4{margin:0 0 2px;font-size:13px}
+.soul .vd{font-size:11px;font-weight:700;color:var(--amber)}
+.soul p{margin:4px 0 0;font-size:11.5px;color:var(--fg2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.box{border-radius:10px;padding:12px 14px;font-size:12.5px}
+.box.g{background:var(--green-bg);border:1px solid var(--green)}
+.box.r{background:var(--red-bg);border:1px solid var(--red)}
+.box h3{margin:0 0 7px;font-size:13px}.box.g h3{color:var(--green)}.box.r h3{color:var(--red)}
+.box ul{margin:0;padding-left:17px}.box li{margin:4px 0}
+.kill li{list-style:none;margin:6px 0;font-size:12.5px;display:flex;gap:8px;align-items:flex-start}
+.dot{flex:0 0 auto;width:10px;height:10px;border-radius:50%;margin-top:5px}
+.dot.gr{background:var(--green)}.dot.am{background:var(--amber)}.dot.rd{background:var(--red)}
+.wmbt{counter-reset:w;padding-left:0;list-style:none}
+.wmbt li{margin:5px 0;font-size:12.5px;padding-left:26px;position:relative}
+.wmbt li::before{counter-increment:w;content:counter(w);position:absolute;left:0;top:0;background:var(--info);color:#fff;width:18px;height:18px;border-radius:5px;font-size:11px;font-weight:700;text-align:center;line-height:18px}
+.flow{display:flex;flex-wrap:wrap;gap:5px;font-size:11px}
+.st{padding:4px 9px;border-radius:6px;background:var(--green-bg);border:1px solid var(--green);color:var(--green);font-weight:600}
+.files{font-size:12px}.files td:first-child{font-family:ui-monospace,Consolas,monospace;font-size:11px}
+.next{border:1px solid var(--info);border-radius:10px;padding:13px 15px;background:var(--info-bg);font-size:13px}
+.muted{color:var(--fg2);font-size:11px;margin-top:26px;text-align:center}
+code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var(--bd2);padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+<div><h1>GOOGL · Alphabet 投资研究简报</h1>
+<p class="sub">v1 · 2026-06-16 · 买方研究 OS pilot（11 stage 全程跑通）· 数据全部 SEC 一手 A1</p></div>
+<div class="pill">WATCH <span class="s">· 0% 仓位</span></div>
+</div>
+
+<div class="banner">
+<p class="ol" style="margin:0"><b>好生意，价格不要。</b> Alphabet 是 10 年级别的高质量生意（Services ~40.7% 营业利润率、Cloud 两年从微利做到 $13.9B 营业利润），但 $370 ≈ 69× owner earnings、起始 OE 收益率仅 <b>1.45%</b>——连最乐观情景十年 IRR 也只有 <b>+5.2%</b>。唯一卡点是价格；全部不确定性压在「维护 vs 成长 capex 拆分（incremental ROIC）」这一不可观测变量上。</p>
+<div class="ladder">
+<div class="rung done">INFO-GAP<br><span style="font-weight:400">起点</span></div>
+<div class="rung cur">WATCH<br><span style="font-weight:400">← 当前（价格封顶）</span></div>
+<div class="rung todo">STARTER<br><span style="font-weight:400">需回调 ~$113</span></div>
+<div class="rung todo">CORE<br><span style="font-weight:400">~$95</span></div>
+</div>
+</div>
+
+<h2>⭐ 为什么是 WATCH：估值无安全边际</h2>
+<div class="val">
+<div class="kpi"><div class="l">当前价（锚）</div><div class="v">~$370</div><div class="n">stockanalysis + Berkshire 私募 $350 交叉验证</div></div>
+<div class="kpi"><div class="l">owner earnings</div><div class="v">$52–82B</div><div class="n">报表净利 $132–160B 高估 2–3×</div></div>
+<div class="kpi"><div class="l">起始 OE 收益率</div><div class="v red">1.45%</div><div class="n">≈69× owner earnings</div></div>
+<div class="kpi"><div class="l">隐含需求</div><div class="v">~22%</div><div class="n">当前价隐含 OE 十年复合增速</div></div>
+</div>
+<table>
+<thead><tr><th>10 年 IRR 情景</th><th>假设</th><th>IRR</th></tr></thead>
+<tbody>
+<tr><td>Bear</td><td>OE $52B · 营收 ~6% · 退出 14×</td><td class="red">−13.1%</td></tr>
+<tr><td>Base</td><td>OE $65B · 营收 ~11% · 退出 20×</td><td class="red">−3.0%</td></tr>
+<tr><td>Bull</td><td>OE $80B · 营收 ~15% · 退出 26×</td><td class="amber">+5.2%</td></tr>
+</tbody>
+</table>
+<p style="font-size:12px;color:var(--fg2);margin:4px 0">⚠ <b>连 bull 都低于 8% 门槛</b>，且审计判定假设方向偏保守、DOJ 拆分尾部尚未压进 bear——真实安全边际只会更差。</p>
+<table>
+<thead><tr><th>安全边际买入阶梯</th><th>隐含 IRR</th><th>vs $370</th></tr></thead>
+<tbody>
+<tr><td>观察线（8% 门槛）</td><td>8%</td><td class="amber">~$134 (−64%)</td></tr>
+<tr><td><b>Starter 主锚（10%）</b></td><td>10%</td><td class="red"><b>~$113 (−70%)</b></td></tr>
+<tr><td>Core（12%）</td><td>12%</td><td class="red">~$95 (−74%)</td></tr>
+<tr><td>下行保护锚（bear 仍 8%）</td><td>—</td><td class="red">~$48</td></tr>
+</tbody>
+</table>
+
+<h2>IC Panel — 五灵魂一致 WATCH</h2>
+<div class="souls">
+<div class="soul"><h4>Buffett</h4><div class="vd">WATCH</div><p>好生意，但 OE 收益率 1.45% 太贵，价值锚不允许买。</p></div>
+<div class="soul"><h4>Munger</h4><div class="vd">WATCH</div><p>F1×F3 合流最致命；capex 缺回报纪律恐为 FOMO。</p></div>
+<div class="soul"><h4>段永平 <span style="font-weight:400;font-size:10px">主审</span></h4><div class="vd">WATCH · 0%</div><p>懂这生意，但当前价「不为」；等回调或等 capex 拆分证据。</p></div>
+<div class="soul"><h4>Marks</h4><div class="vd">WATCH</div><p>市场对 AI 侵蚀搜索是「押注」非「定价」；赔率不对称。</p></div>
+<div class="soul"><h4>Klarman</h4><div class="vd">WATCH</div><p>下行无保护，buy-below ~$113 才有真实安全边际。</p></div>
+</div>
+<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">五票一致、critique 后零变动；主审与多数一致。分歧不在 verdict，而在「WATCH 之后等什么」——主审统一采价格锚 ~$113 作硬触发以防择时。</p>
+
+<h2>生意质量 vs 价格的矛盾</h2>
+<div class="two">
+<div class="box g"><h3>✅ 好生意的证据（verified A1）</h3><ul>
+<li>Search Q1'26 +19%（AI 时代仍加速，反驳「AI 杀搜索变现」）</li>
+<li>Cloud +63%、营业利润率 17.8%→32.9%、backlog >$460B</li>
+<li>Services 营业利润率 ~40.7%；整体 32–36%</li>
+<li>护城河整体 Strong（搜索分发 + 拍卖流动性 + 数据 + 生态）</li>
+<li>净现金、轻资本存量回报宽 ROIC-WACC 价差</li>
+</ul></div>
+<div class="box r"><h3>⚠ 价格 / 结构性问题</h3><ul>
+<li>capex 爆炸：FY25 $91B(+74%)→2026 指引 $180-190B→2027 再增</li>
+<li>FCF 被压缩（TTM $64B↓）、回购暂停、$80B 融资 + 发债</li>
+<li>Q1'26 净利 +81% 是假象（含 $36.9B 未实现收益）</li>
+<li>Network 营收 YoY 下滑；DOJ adtech 结构性救济待裁</li>
+<li>Berkshire $10B 是私募融资定价，非安全边际背书</li>
+</ul></div>
+</div>
+
+<h2>What Must Be True（每条对应一条 Kill Criteria）</h2>
+<ol class="wmbt">
+<li>搜索现金牛不被 AI 界面结构性绕过（Search 维持双位数，现 +19%）</li>
+<li>AI capex 是高回报成长非黑洞（capex 高峰后 FCF/share 回升）</li>
+<li>管理层对 AI capex 有可见回报纪律（hurdle rate / ROIC 框架）</li>
+<li>监管止于罚款/行为救济，而非结构性拆分</li>
+<li>owner earnings 区间能收敛到可定 base（拿到 capex 拆分）</li>
+<li>价格回到隐含 10y IRR ≥8% 水平（≤~$134/$113）— 唯一硬否决项</li>
+</ol>
+
+<h2>Kill Criteria（监控中 · 红黄绿现状）</h2>
+<ul class="kill">
+<li><span class="dot gr"></span><b>K-A 搜索变现</b>：Search&other 连 2 季 ≤+8% 且归因 AI 迁移 — <span class="green">绿（现 +19%）</span></li>
+<li><span class="dot am"></span><b>K-B capex 黑洞</b>：FCF/share 连 2 年降 且 capex/OCF >70% — <span class="amber">黄（Q1'26 ~78% 踩线）</span></li>
+<li><span class="dot am"></span><b>K-C 资本配置纪律</b>：连 2 季无 capex ROI 框架 — <span class="amber">黄/红（框架缺失）</span></li>
+<li><span class="dot am"></span><b>K-D 监管尾部</b>：结构性救济而非纯罚款 — <span class="amber">黄（DOJ 待裁）</span></li>
+<li><span class="dot rd"></span><b>K-E 估值纪律</b>：买入价隐含 10y IRR &lt;8%（价 &gt;~$134）— <span class="red">红（现 $370 已触发，锁死 WATCH）</span></li>
+</ul>
+
+<h2>11-Stage 流水线（1 天全程跑通）</h2>
+<div class="flow">
+<span class="st">①方向</span><span class="st">②Triage</span><span class="st">③计划</span><span class="st">④证据</span><span class="st">⑤Ledger</span><span class="st">⑥Facts</span><span class="st">⑦分析×8</span><span class="st">⑧审计</span><span class="st">⑨IC Panel</span><span class="st">⑩Memo</span><span class="st">⑪监控</span>
+</div>
+<p style="font-size:12px;color:var(--fg2);margin:8px 0 0">completeness ~75% · ~50 条 verified A1 facts · 零 D1 污染 · 模型算术全勾稽 · 口径纪律统一（净利 vs 营业利润、owner earnings、Berkshire 私募定性全 8 模块一致）。</p>
+
+<h2>产出文件（companies/googl/）</h2>
+<table class="files">
+<tbody>
+<tr><td>memo-v1.md</td><td>决策 memo：WATCH，13 段，含 kill criteria + 必答三问</td></tr>
+<tr><td>valuation.md + model/scenario_model.csv</td><td>owner earnings 桥 + 三情景 IRR + 安全边际阶梯</td></tr>
+<tr><td>ic_panel.md</td><td>五灵魂四件套 + critique + 段永平主审</td></tr>
+<tr><td>audit.md</td><td>11 项质检 + completeness 75% + ceiling 推导</td></tr>
+<tr><td>moat / inversion / operator / business_model / value_chain / bottleneck _map.md</td><td>8 分析模块</td></tr>
+<tr><td>financials/financial_quality.md + model/×3 csv</td><td>会计重构 + owner earnings 桥</td></tr>
+<tr><td>facts.md · claim_ledger.csv · raw/×5 · source_register.md</td><td>证据底座（一手留底）</td></tr>
+<tr><td>monitor.md</td><td>8 KPI + kill 三态 + 事件日历（已生效）</td></tr>
+</tbody>
+</table>
+
+<h2>下一步 / 解除 WATCH 的路径</h2>
+<div class="next">
+<b>两条触发器（满足其一即重开 IC 讨论上修）：</b><br>
+① <b>价格</b>回调到 ~$95–113（base 10% IRR）→ 讨论 starter 试仓 1–3%；~$134 先进观察。<br>
+② <b>证据</b>补强：拿到 capex 维护/成长拆分 + 管理层 ROI 框架，使 owner earnings 区间（$52–82B）收敛、base case 落点上移。<br>
+<b>下次复盘</b>：Q2 2026 财报（~2026-07 下旬）——看 Search 增速、capex 拆分披露、capex/OCF 全年是否坐实 >70%、Cloud 利润率可持续性；事件触发 DOJ adtech 救济判决、2027 capex 量级。
+</div>
+
+<p class="muted">买方研究 OS · GOOGL pilot v1 · 全部结论可回溯至 SEC 一手 source_id（见 claim_ledger.csv）· 本简报为研究判断，非交易建议</p>
+</div>
+</body>
+</html>

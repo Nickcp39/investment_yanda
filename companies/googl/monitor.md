@@ -1,15 +1,71 @@
-# GOOGL Monitor
+# GOOGL Monitor（监控清单 · 第 10 步）
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
-Status: draft monitor variables. Use only after thesis is approved.
+> **thesis = WATCH，监控已生效（active）。** 仓位 0%，这是"等价格回调（~$95–113）+ 等证据补强（capex 拆分 / ROI 框架）"的观察名单，不是持仓监控。配套 `memo-v1.md`（第 9 步）。所有数字回挂 `facts.md` 的 verified A1（`[source_id]`）。
+>
+> 监控两类触发：① **证据触发（可上修 verdict）**——capex 拆分收敛 / 管理层给 ROI 框架 / 10 年序列补齐；② **证伪触发（可下修/放弃）**——下方 Kill Criteria 任一翻红。价格到位（≤~$113）则重开 IC panel。
 
-| Variable | Why it matters | Source | Frequency | Green | Yellow | Red |
-|---|---|---|---|---|---|---|
-| Search & other revenue growth | Tests AI disruption vs adaptation | Earnings release / 10-Q | Quarterly | Growth stable or accelerating | Deceleration needs explanation | Sustained decline or monetization pressure |
-| Google Cloud revenue and margin | Tests second engine quality | Earnings release / 10-Q | Quarterly | Growth with durable margin | Growth but margin compression | AI compute grows without profit |
-| Capex and depreciation | Tests owner earnings quality | Cash flow statement / calls | Quarterly | Productive capex with clear ROI | Capex rises faster than revenue | Capex consumes OCF structurally |
-| Share count / dilution | Tests per-share compounding | 10-Q / 10-K | Quarterly | Share count stable/down | Buybacks offset SBC only | Dilution increases during high capex |
-| Regulatory remedies | Tests distribution moat | Court / regulatory filings | Event-driven | Manageable fines | Behavioral remedies | Structural/default economics impaired |
-| Management capex commentary | Tests capital allocation discipline | Calls / letters / proxy | Quarterly | Clear ROI framework | Vague but improving | No credible return framework |
+---
 
+## 1. Thesis Variables（KPI 表，6–8 个对应 thesis）
+
+> 绿 = 多头前提成立 / 维持观望；黄 = 需解释、提高关注；红 = 触及 Kill Criteria 或论点结构性受损。每个变量对应 memo §3 的 WMBT 与 §11 的 K。
+
+| # | 变量 | 为何重要（对应 thesis） | 来源 | 频率 | 🟢 绿 | 🟡 黄 | 🔴 红 | 当前读数 |
+|---|---|---|---|---|---|---|---|---|
+| V1 | **Search & other 同比增速**（WMBT-1 / K-A） | 搜索现金牛是否被 AI 界面结构性绕过——最强单一信号 | 财报 / 10-Q [GOOG.A1.2026Q1.004] | 季度 | 维持双位数（≥+10%） | 单季降到 +8%~+10%，需解释 | **连 2 季 ≤+8% 且管理层归因 AI 迁移** | 🟢 Q1'26 **+19%** |
+| V2 | **FCF per share 趋势 + capex/营业现金流比率**（WMBT-2 / K-B） | AI capex 是高回报成长还是低回报黑洞——owner earnings 胜负手 | 现金流量表 / 财报 [GOOG.A1.2025K.016/.015 / GOOG.A1.2026Q1.024/.023/.025] | 季度 | FCF/share 回升 且 capex/OCF <60% | capex/OCF 60–70%、FCF/share 持平 | **FCF/share 连 2 年降 且 capex/OCF 持续 >70% 无 ROIC 回升** | 🟡 capex/OCF FY25 ~56%、**Q1'26 ~78% 已踩线**；TTM FCF $64.4B 被压缩 |
+| V3 | **管理层 capex ROI 纪律**（WMBT-3 / K-C） | 区分"纪律性押注"与"FOMO 军备竞赛"——证据现不存在 | Earnings call / letters / proxy [operator 红旗1 / GOOGL-424B5-2026-06.009] | 季度 | 给出 hurdle rate / 预期 ROIC / 利用率框架 | 口径模糊但在改善 | **连 2 个财报周期仍无 ROI 框架，或数据中心/TPU 减值** | 🟡/🔴 一手披露中**该框架不存在** |
+| V4 | **监管救济形态**（WMBT-4 / K-D） | 默认搜索分销 + adtech 利润池是否被结构性切走——尾部加速器 | 法院 / 监管文件 [GOOG.A1.2025K.026 notes] | 事件驱动 | 纯罚款 / 行为救济，默认协议保留 | 救济提案含结构性条款、判决临近 | **下达结构性救济（剥离 adtech / 禁默认协议 / 强制开放）** | 🟡 DOJ adtech 部分败诉、结构性救济待裁、"could have a material adverse effect" |
+| V5 | **owner earnings 收敛度**（WMBT-5 / 证据触发） | base case 落点能否从 $52–82B 大区间收敛——decide verdict 可否上修 | 10-K 现金流量表 / 维护vs成长 capex 拆分 / 单位经济 [financial_quality §1.3 / valuation §2] | 年度 + 财报口径 | 拿到拆分 / D&A 坐实，区间收敛到可定 base | 部分单位经济线索，区间略收窄 | （非红，缺失即维持 WATCH 上限） | 🔴 缺失：完全压在不可观测拆分上 |
+| V6 | **股本 / 稀释**（K-B 补充 / K9） | 回购暂停 + 持续增发是否让每股复利由正转负 | 10-Q / 10-K [GOOG.A1.2025K.022 / GOOG.A1.2026Q1.027 / GOOGL-FWP-2026-06.001] | 季度 | 股本稳定 / 下降、回购恢复 | 回购仅抵消 SBC | **回购长期暂停 + 增发致股本净增（稀释老股东）且 capex 回报未兑现** | 🟡 回购暂停（Q1'26 $0）、股本由 12,088M 升至 12,116M、$80B 股权融资 |
+| V7 | **Cloud 营收增速 + 营业利润率**（补充观察 / K5） | 第二支柱成色：32.9% 利润率是结构性还是一次性 | 财报 / 10-Q [GOOG.A1.2026Q1.010/.015] | 季度 | 增长 + 利润率 ≥30% 多季维持 | 增收但利润率回落 | **利润率连 2 季回落 >5pp，或增收而分部营业利润绝对额停滞/下降** | 🟢 Q1'26 +63% / 32.9%（可持续性未经多季验证） |
+| V8 | **股价 vs buy-below 阶梯**（WMBT-6 / K-E） | 唯一硬否决项：价格是否回到有安全边际水平 | WebSearch / 行情 [valuation §4] | 持续 | ≤~$113（base 10%，重开 panel） | ~$113–134（进观察） | >~$134（无安全边际，不开仓） | 🔴 ~$370（P/OE 69x，远在 avoid 区） |
+
+> 补充观察项（非主 Kill，季度扫一眼）：Google Network 负增长是否扩散至核心 Search（Network 已负 [GOOG.A1.2026Q1.006]）；关联交易（机库租赁）是否扩大 [GOOG.A1.PROXY2026.010]；DeepMind/Gemini 核心人才是否成批离职（公开报道，C/D 级，仅线索）。
+
+---
+
+## 2. Kill Criteria 三态跟踪（沿用 memo §11 / panel §3.4）
+
+> 三态：🟢 安全（离触发远）｜🟡 警戒（已踩线 / 待裁，需密切跟踪）｜🔴 触发（重新审视多头论点 / 下调或放弃"等回调"计划）。
+
+| Kill | 阈值（可观测） | 当前状态 | 当前读数 [source_id] | 触发后动作 |
+|---|---|:---:|---|---|
+| **K-A** [F1 搜索变现] | Search & other 连 2 季同比 ≤+8% 且管理层归因 AI 迁移 | 🟢 | Q1'26 +19% [GOOG.A1.2026Q1.004] | 多头核心前提破裂：即便价格到 buy-below 也需先确认搜索现金牛未被结构性绕过（防价值陷阱） |
+| **K-B** [F3 capex 黑洞] | FCF/share 连 2 年降 且 capex/OCF 持续 >70% 且无 incremental ROIC 回升 | 🟡 | capex/OCF FY25 ~56%、Q1'26 ~78% 踩线；TTM FCF 下滑 [GOOG.A1.2026Q1.024/.023/.025] | bear 概率上调：owner earnings 取防御下限（~$52B），下行锚下修 |
+| **K-C** [F3 资本配置纪律] | 连 2 个财报周期无 capex ROI 框架，或数据中心/TPU 减值 | 🟡/🔴 | 一手披露中框架不存在 [operator 红旗1] | "押注非定价"坐实：双层股权从护城河转为放大器，给控制权折价；减值出现则直接证伪 incremental ROIC |
+| **K-D** [F2 监管尾部] | 下达结构性救济（剥离 adtech / 禁默认协议 / 强制开放），非纯罚款 | 🟡 | DOJ adtech 部分败诉、结构性救济待裁 [GOOG.A1.2025K.026 notes] | 立即重估 bear：广告利润池被切，下行锚（~$48）需再下修 |
+| **K-E** [F9 估值纪律] | 买入价隐含 10y IRR <8%（≈价 >~$134） | 🔴 | ~$370，base IRR −3.0% [valuation §3/§4] | 当前已触发 → 维持 0% 仓位；唯有价格回到 ~$113 才解除进入 STARTER 讨论 |
+
+> **当前总览**：K-E 已触发（红，价格端封死）；K-B/K-C/K-D 处警戒（黄）；K-A 安全（绿）。**verdict 锁定 WATCH 的硬约束 = K-E。**
+
+---
+
+## 3. Event Calendar（事件日历）
+
+| 事件 | 预计日期 | 检查什么 | 行动规则 |
+|---|---|---|---|
+| **Q2 2026 财报**（最重要） | 2026-07 下旬（预估） | ① Search & other 增速是否仍 ≥ 双位数（K-A/V1）；② **capex 拆分披露**——维护 vs 成长 / 全年兑现路径 / 任何 ROI 门槛口径（K-C/V3/V5，解 owner earnings 收敛唯一路径）；③ capex/OCF 全年是否坐实 >70%（K-B/V2）；④ Cloud 32.9% 利润率多季可持续（V7）；⑤ 股本 / 回购是否恢复（V6） | 任一 Kill 翻红 → 重审多头论点；capex 拆分 / ROI 框架兑现 → 可上修 verdict（仍受价格封顶）；更新本文件 + memo §13 |
+| **DOJ adtech 救济判决** | 待定（救济阶段进行中） | 救济形态：纯罚款 / 行为救济 / 结构性剥离（K-D/V4） | 结构性剥离落地 → 立即重估 bear 下行锚（~$48 需再下修）；纯罚款/行为救济 → WMBT-4 成立，降权 F2 |
+| **年度 capex 指引更新** | 2026 各季报 + FY2025 10-K 已给 / 关注 FY2026 全年与 2027 量级 | 2027 "显著增加"的具体金额；capex/营收比 | capex 占营收持续 >20% 且无 ROIC 证据 → base 9% OE 增速假设偏乐观，下修 base 落点（valuation §6） |
+| FY2026 10-K（年报） | 2027-02 前后（预估） | 10 年序列补齐进度（G4）、D&A 绝对值坐实（G5）、Search 年度细分（G8）、维护 capex 锚 | 补齐则做 Buffett 漏桶分析 + owner earnings 收敛（V5），重估 base IRR |
+| Proxy（年度股东大会代理声明） | 2026 春季已出 / 下次 2027 春 | Pichai 多年期授予全貌、控制权结构、关联交易演化（V6 补充观察） | 关联交易扩大 / 治理弱化 → operator 记分卡下修 |
+
+---
+
+## 4. Change-My-Mind Log（改变主意日志，骨架）
+
+> 每次有新证据（财报 / 判决 / capex 披露 / 价格触及阶梯）即追加一行。记录"先前观点 → 新证据 → 更新观点 → 动作"，用于复盘"错在哪会知道"（memo §13）。
+
+| 日期 | 新证据（挂 source_id） | 先前观点 | 更新观点 | 动作 |
+|---|---|---|---|---|
+| 2026-06-16 | IC Panel 五票一致 WATCH + audit ceiling=WATCH（价格无安全边际，非信息不足） | （开题）好生意但价格待估 | **WATCH / 0% 仓位**；卡点=价格（base IRR −3.0%）+ capex 拆分缺失 | 落 memo-v1 + 启动监控；等 ~$95–113 或证据补强 |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+---
+
+*维护说明：本文件随每次 Q 财报 / 重大事件更新顶部 Last updated + 相关 KPI 当前读数 + Kill 三态 + Change-My-Mind 新增行。verdict 仍 WATCH 时保持监控生效；价格到 ~$113 或证据触发兑现时，回 IC panel 重评并在 memo 出 v2。*

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>买方研究 OS — 10 步执行细节</title>
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --fg2:#555; --info:#2563eb; --info-bg:#eff4ff;
+  --bd:#d8d8d8; --bd2:#ececec; --card:#fbfbfb; --warn:#b45309; --warn-bg:#fff7ed;
+  --green:#15803d; --green-bg:#f0fdf4; --serif:Georgia,"Songti SC",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1c1c1c; --fg:#ededed; --fg2:#a6a6a6; --info:#6ea8fe; --info-bg:#1a2438;
+    --bd:#444; --bd2:#333; --card:#242424; --warn:#fbbf77; --warn-bg:#2a2117;
+    --green:#86efac; --green-bg:#16241a; --serif:Georgia,"Songti SC",serif;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;padding:24px}
+.wrap{max-width:920px;margin:0 auto}
+h1{font-family:var(--serif);font-size:23px;margin:0 0 4px}
+.lede{color:var(--fg2);font-size:13.5px;margin:0 0 18px}
+.lede a{color:var(--info)}
+.legend{font-size:12px;color:var(--fg2);background:var(--card);border:1px solid var(--bd2);border-radius:8px;padding:8px 12px;margin-bottom:18px}
+.nav{display:flex;flex-direction:column;gap:14px;margin-bottom:26px}
+.navzone{border:1px solid var(--bd2);border-radius:10px;padding:10px 12px;background:var(--card)}
+.navzone h3{margin:0 0 8px;font-size:12.5px;color:var(--info);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{cursor:pointer;border:1px solid var(--bd);background:var(--bg);color:var(--fg);border-radius:7px;padding:5px 10px;font-size:12.5px;font-weight:600;transition:.12s}
+.chip:hover{border-color:var(--info);color:var(--info)}
+.chip b{color:var(--info);margin-right:4px}
+details{border:1px solid var(--bd);border-radius:11px;margin:0 0 12px;background:var(--card);overflow:hidden;scroll-margin-top:14px}
+details[open]{border-color:var(--info)}
+summary{cursor:pointer;padding:13px 16px;font-weight:700;font-size:15px;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .no{flex:0 0 auto;min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;background:var(--info);color:#fff;border-radius:7px;font-size:12.5px}
+summary .en{color:var(--fg2);font-weight:500;font-size:12.5px}
+summary .arrow{margin-left:auto;color:var(--fg2);font-size:12px}
+.body{padding:2px 16px 16px;border-top:1px solid var(--bd2)}
+.purpose{font-size:13.5px;margin:12px 0 14px;padding:10px 12px;background:var(--info-bg);border-radius:8px}
+.io{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;font-size:12.5px}
+.io .col{flex:1 1 280px;border:1px solid var(--bd2);border-radius:8px;padding:8px 10px}
+.io .col h4{margin:0 0 5px;font-size:11.5px;color:var(--fg2);text-transform:uppercase;letter-spacing:.04em}
+.io .col.in{border-left:3px solid var(--fg2)}
+.io .col.out{border-left:3px solid var(--info)}
+.io ul{margin:0;padding-left:16px}
+.io li{margin:2px 0}
+.sec{margin:14px 0}
+.sec h4{margin:0 0 6px;font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:6px}
+.sec ol,.sec ul{margin:0;padding-left:20px}
+.sec li{margin:4px 0;font-size:13px}
+.box{border-radius:8px;padding:10px 12px;font-size:13px}
+.box.gate{background:var(--green-bg);border:1px solid var(--green)}
+.box.gate h4{color:var(--green)}
+.box.non{background:var(--warn-bg);border:1px solid var(--warn)}
+.box.non h4{color:var(--warn)}
+.box.handoff{background:var(--info-bg);border:1px solid var(--info)}
+.box.handoff h4{color:var(--info)}
+.box h4{margin:0 0 5px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+code,.file{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:12px;background:var(--bd2);padding:1px 5px;border-radius:4px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;background:var(--bd2);border-radius:5px;padding:3px 8px}
+.googl{border:1px dashed var(--info);border-radius:8px;padding:10px 12px;font-size:12.5px;background:var(--bg)}
+.googl h4{margin:0 0 5px;font-size:12px;color:var(--info);font-weight:700}
+.subs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:8px}
+.sub{border:1px solid var(--bd2);border-radius:9px;padding:10px;background:var(--bg)}
+.sub h5{margin:0 0 3px;font-size:13px}
+.sub .en{color:var(--fg2);font-weight:400;font-size:11px}
+.sub p{margin:5px 0;font-size:12px}
+.sub .kt{font-size:11.5px;color:var(--info);margin-top:6px}
+.sub ul{margin:4px 0;padding-left:16px}
+.sub li{font-size:11.5px;margin:2px 0}
+.muted{color:var(--fg2);font-size:11px;margin-top:24px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>买方研究 OS — 10 步执行细节</h1>
+<p class="lede">点任意步骤展开它的「怎么做 / 输入 / 产出 / 质量门 / 非线性 / 交接 / 常见错误 / GOOGL 实例」。总览流程图见 <a href="research_os_pipeline.html">research_os_pipeline.html</a>。创建 2026-06-16。</p>
+<div class="legend">🟦 一条主干 <code>1→2→3→4→5→6→[B 分析层并行]→7→8→9→10↻</code> · 🟩 质量门 = 进下一步的硬条件 · 🟧 非线性 = 回流/并行/可跳过（input↔output 不是绝对线性）</div>
+
+<div class="nav" id="nav"></div>
+<div id="cards"></div>
+<p class="muted">由 11 个并行调查 agent 生成并交叉校验衔接链 · 数据可改：编辑本文件的 STEPS 数组即可</p>
+</div>
+
+<script>
+const STEPS = [
+{
+ no:"1", cn:"方向 / 选题", en:"Direction Selection", zone:"A",
+ purpose:"决定现在值得把研究资源投到哪个主题/公司——回答「研究什么」，不是「买什么」；这一步不下任何买入结论。",
+ inputs:["外部信号：美股投资网 / 投行研报标题 / 财经媒体 / 公司公告 / 财报+IPO+监管日历","本地：notes/videos 视频笔记 + research_queue.md 现有 backlog","framework：topic_selection_engine.md 六雷达 + 8 维记分卡","用户当下关注的主题或临时兴趣"],
+ how:[
+  "每个候选先填 10 行 Theme 表（Theme / Why now / Capital flow evidence / Bottleneck / Listed companies / Primary sources needed / Catalyst / Key metric / Kill condition / Initial score）；填不出「资金流证据」或「上市标的」的方向先搁置。",
+  "跑六雷达定性扫：Capex（钱真往哪花）、Bottleneck（哪环节短期扩不出）、Catalyst（什么事件逼重估）、Dislocation（股价是否比基本面动得快）、Institutional Debate（资金在争哪个变量）、Narrative Gap（叙事懒在哪）。",
+  "用 8 维记分卡各 0-3 分打：真实世界变化 / 资金流 / 瓶颈 / 上市标的暴露 / 催化剂 / 数据可验证性 / 估值差 / 风险清晰度。关键是把「信号」翻成「机制」（如把『AI 杀搜索』翻成『是减少点击，还是提高 query depth / 转化』）。",
+  "加总得 Initial direction score（满分 24），按阈值分流：0-8 忽略、9-14 watchlist、15-19 开简短 note、20-24 开 full plan。",
+  "每个候选必写 Kill condition（看到什么就证明这方向不值得做）；无可证伪 kill 的方向不许进 watchlist 以上。",
+  "验证数据可得性：只有社媒/视频支撑则该维封顶 1 分；过线候选写入 research_queue.md 一行并标 Priority，只允许 1-2 个 active deep research。"
+ ],
+ outputs:["research_queue.md 新增一行（ID/Idea/Type/Stage/Priority/Decision question/Next action/Owner）","10 行 Theme 表 + 六雷达结论 + 8 维评分（可审计依据）","占位产物：companies/&lt;ticker&gt;/research_status.md 或 sectors/&lt;theme&gt;/plan.md"],
+ gate:"Initial direction score 即门槛：<9 停、9-14 只进 watchlist、≥15 才进第 2 步（15-19 简短 note，20-24 full plan）。无 kill condition 或仅社媒证据的擦线项，停在 watchlist。",
+ handoff:"queue 条目 + Theme 表 → 第 2 步开题：Key metric→Research question，Listed companies→Object/Ticker，Kill condition→Non-goals 与 kill criteria 种子，score→决定开简短 note 还是 full plan。",
+ nonlinear:"六雷达与 8 维是对同一候选的并行多视角扫描；低分≠丢弃——9-14 挂 watchlist，等 Catalyst/Dislocation 触发再重评提级；若第 3 步发现一手源根本不存在可打回撤题；本地盘点命中成熟 facts 可压缩开题直接复用；active deep research 限 1-2 个。",
+ pitfalls:["因『必买/暴涨/all in』标题就开题","因 KOL 神秘履历就跳过证据","在方向阶段直接给买入结论","跳过『信号→机制』翻译，拿叙事当方向","不写 Kill condition 就放行","用社媒/视频抬高 Data verifiability 越过 15 分线"],
+ tools:["topic_selection_engine.md（六雷达 + 8 维记分卡）","research_queue.md","投行研报标题 / 13F 变动 / 公司公告","财报 + IPO + 监管日历","notes/videos/","rg 仓库检索"],
+ googl:"research_queue.md 现有唯一条目即真实产物：ID 2026-06-GOOGL，Type Company，已到 Stage 2，P0，Decision question『十年持有是否成立？AI/监管是否削弱搜索 owner earnings？Berkshire/H&H 买入是否改变安全边际？』，Next action『建 research_status.md 并补 facts/claim ledger』。六雷达全命中且一手源充分（10-K/10-Q/proxy/13F），评分进 20-24，故直接开 full plan 而非仅 watchlist。"
+},
+{
+ no:"2", cn:"Triage 初筛 / 开题", en:"Triage & Scoping", zone:"A",
+ purpose:"把一个模糊兴趣变成「可被证据回答的问题」，并用 5-8 个高质量来源快速判断值不值得深研（含本地盘点旧资料）。核心是省时间：用最小证据成本排除明显烂生意/太贵/无证据的 idea。",
+ inputs:["第 1 步：候选 queue item + 10 行 Theme 表 + 方向评分","用户的原始问题/兴趣（需改写成可证伪子问题）","研究对象类型：company/sector/theme/rumor/method","本地仓库：companies/、sectors/、notes/videos/、frameworks/、sources/"],
+ how:[
+  "快扫 5-8 个高质量来源（只为判断值不值得做，不收全）：优先一手锚点——最新 10-K、最近一季 10-Q/earnings、proxy、相关 13F；再加 1-2 个高质二手。只读关键页，不下结论。",
+  "写清开题 8 件事并落到 research_status.md：Research question（必须可证伪）/ Object / Ticker|universe / Geography / Time horizon / Decision needed / Output artifact / Non-goals。",
+  "把问题改写成可证据回答的形式：不写『它会不会涨』，拆成可观测变量——收入质量是否变差 / capex 能否转 owner earnings / 护城河是否被 AI 攻破 / 管理层是否可信 / 价格是否低于保守内在价值。",
+  "本地盘点用 rg：`rg -n \"&lt;ticker|关键词&gt;\" .` 与 `rg --files | rg \"&lt;关键词&gt;\"`，捞四类——旧 memo / 视频笔记 / 适用 framework / 已有 facts·ledger·valuation；写进 research_status 的 Local inventory（含 stale/conflicting 与可复用模块）。",
+  "判断升级 vs 出口：对照三个否决条件——明显烂生意（不懂怎么赚钱）、明显太贵、明显无证据（线索全是社媒）。任一明显成立→Reject/Park 并记原因；都不成立且价值足够→升级。",
+  "设 verdict ceiling 并过 7 句开工口令自检（要回答什么/有无旧料/为何现在/需哪些一手源/哪些只是社媒/哪个事实改判/最高允许什么 verdict）；答不清就先不开 full research。"
+ ],
+ outputs:["triage note（companies/&lt;ticker&gt;/&lt;topic&gt;-&lt;date&gt;.md 或 sectors/&lt;theme&gt;/plan.md）——标注 topical memo，非完整 L1","research_status.md（含开题 8 件事 + Local inventory + Stage Checklist + Verdict ceiling 骨架）","research_queue.md 状态更新（Triage→Plan，或标 Reject/Park 附原因）"],
+ gate:"升级门槛 = 不是明显烂生意（说得清怎么赚钱）+ 不是明显太贵 + 不是明显无证据（有一手源、线索不全是社媒）。三项都过且价值足够才进第 3 步。社媒为主证据→封顶 INFO-GAP；不懂生意→REJECT/INFO-GAP。",
+ handoff:"triage note + research_status → 第 3 步：Research question 决定拆哪些 block，Decision needed 决定 verdict ceiling，已识别的官方来源锚点直接填进各 block 的 source budget，Local inventory 的可复用模块让计划跳过已完成部分。",
+ nonlinear:"这是真正的分流闸——可直接走 Reject（归档，除新证据）或 Park/Watch（进监控但不进昂贵的 evidence build），下游完全不触发；与第 1 步交界可回流（方向表写不实就打回重评分）；本地盘点命中成熟 facts/valuation 可从第 2 步直接跳到第 7 阶段（分析层）复用。",
+ pitfalls:["把 triage 当收全证据（应严格限深度）","研究问题不可证伪（写成『会不会涨』）","跳过本地盘点导致重复劳动或忘记旧结论","让社媒/视频冒充证据","该 Reject/Park 却因沉没成本硬升级","triage note 里偷偷下买卖结论","Non-goals 留空导致范围膨胀"],
+ tools:["rg 本地盘点","SEC EDGAR：10-K / 10-Q / DEF 14A / 13F / 424B5·FWP","1-2 个高质二手（行业研报/专业财经媒体）","companies/、sectors/、notes/videos/、sources/source_policy.md","buy_side_research_department.md（Stage 1 门槛 + verdict ceiling）"],
+ googl:"GOOGL 的 triage 即真实文件 revenue-berkshire-duan-2026-06-15.md（标注 topical memo）。它没问『该不该买』，而改写成三个可证据回答的子问题（营收结构 / Berkshire 买入证据与理由 / 段永平·H&H 是否持有）。用一手锚点扫源：FY2025 10-K（Search 55.7%、Cloud 14.6%）、Q1 2026 earnings（Search +19.1%、Cloud +63.4% 且 32.9% 营业利润率）、Berkshire 与 H&H 13F、2026 proxy/FWP。严格区分 fact vs inference（Berkshire 理由全标为推测）。通过升级门槛（生意能讲清、价格未明显离谱、一手证据充足），故未走 Reject/Park 而是升级深研。"
+},
+{
+ no:"3", cn:"研究计划", en:"Research Plan", zone:"A",
+ purpose:"把研究问题拆成可暂停/恢复/审计的执行清单（默认 12 block），每 block 预写死『回答什么、去哪拿、产出什么、何时停、砍什么』。它是整条流水线的施工图——没图纸不准动手收资料，把『先证据后观点』变成可强制执行的纪律。",
+ inputs:["第 2 步：研究问题 + Decision needed + Non-goals + time horizon","第 2 步本地盘点：可复用模块 / 过期或冲突的旧结论 / 已有 source_id","Stage 0 Identify：legal name/ticker/CIK/EDGAR 入口/最近 filing 日期/业务边界/特殊情况","sources/source_policy.md + companies/_step0_plan_template.md"],
+ how:[
+  "先填 plan 顶部两张表定基调：①『已确认的事实』表（legal name/ticker/exchange/CIK/sector/主营/最近 10-K/最近季报/特殊情况，每行带 Tier 与来源）；② 复杂度系数→时间预算（普通 1.0×≈2.5-4.5h，年轻公司+30%，加密/高监管/跨境+50%）。",
+  "套 12 block 骨架并裁剪：01 Identity / 02 Segment Revenue / 03 Unit Economics / 04 10y Financials / 05 Industry Map / 06 Value Chain / 07 Moat / 08 Operator / 09 Ownership / 10 Risk-Inversion / 11 Valuation / 12 Sentiment-Catalyst。本地盘点已覆盖的标 done、Non-goals 排除的标 skip、用户最关心的专题可在 12 block 前插『专题 Block A/B/C』先跑。",
+  "每个 block 写满五要素（缺一不算合格 plan）：Questions（3-5 个具体问句）/ Sources to fetch（具体到 filing 类型甚至 URL/accession）/ Expected output（落到哪个 raw 文件）/ Stop condition（命中即停的客观信号）/ What to skip（主动放弃项进 OPEN QUESTIONS）。",
+  "Source budget 自下而上估：先给地板（最新 10-K≥1、10-Q≥1、proxy≥1、transcript 2-4、竞品 2-5、行业源 2-5），再按复杂度系数加成，逐 block 填预计调用次数与分钟并汇总。",
+  "plan 写完必须 stop 让用户 confirm scope 再动手（plan-first 执行点）：来源预算是用户真实成本、block 取舍是 scope 决策、开收后返工成本远高于计划期调整。",
+  "每个 block 配 status（pending/in-progress/done/skipped/blocked）并实时回写——plan 同时是施工图与进度看板，中断后下次找第一个 pending block 即可恢复。"
+ ],
+ outputs:["step0_plan.md（已确认事实表 + 复杂度·时间预算 + 12(±专题) block 五要素 + 砍掉项清单 + 总调用预算 + status）","raw/ 目录骨架（按 block 预留文件名 block01_identity.md … block12_*.md）"],
+ gate:"没 plan 不收资料；每 block 必须有具体来源清单 + 客观停止条件 + 明确砍掉项；五要素缺一不算合格；plan 写完先 stop 等用户 confirm scope。",
+ handoff:"所有 status=pending 的 block 构成第 4 步的工作队列：第 4 步逐个取出 pending block，严格按其 Sources to fetch 去拿、命中 Stop condition 就停、写进指定 raw 文件、回写 done。",
+ nonlinear:"① block 可并行（Identity / 10y Financials / Ownership 无强依赖）；② block 可砍可插队（Non-goals 命中当场 skip，专题 Block 插队先跑）；③ 审计回流是核心反向边——第 7 步发现关键数字无 source_id 或覆盖不足，回到本步新增补漏 block 置 pending 再回第 4 步。plan 是会被多轮往回改、不断长出新 block 的活文件。",
+ pitfalls:["stop condition 太软（『尽量多查』）导致无限深挖","What to skip 留空，分不清『没查到』与『主动没查』","Sources 写成泛指（『SEC filings』）无法照单执行","复杂度系数/预算拍脑袋，年轻或跨境公司严重低估","把社媒当 EVIDENCE 级来源写进 block","plan 写完不 stop 直接开收","12 block 当僵硬模板，既不砍也不复用旧 facts"],
+ tools:["investment_research_pipeline_detailed.md §4（12 block 表 + 五要素 + I→D 回流边）","companies/_step0_plan_template.md（详版：checklist/预计调用/砍掉项/执行节奏）","companies/_company_research_template/step0_plan.md（精简版）","sources/source_policy.md（tier 分级）","WebSearch / WebFetch / rg（按 block 估算调用）"],
+ googl:"companies/googl/step0_plan.md 是非线性裁剪的真实范例：没从 Block 1 顺序铺开，而是先按用户三个问题开三个插队专题——Block A 营收结构（FY2025 10-K + Q1 2026 earnings）、Block B Berkshire 持仓与理由（Berkshire 13F + June 2026 FWP/424B5，约束『filing 事实与推测理由分开』）、Block C 段永平·H&H（两份 13F 对比），三者已标 done；完整 L1/L2 的 8 个 block 全部 pending 排队等 confirm。文件底部还维护了 Sources Opened So Far 的真实 SEC URL 清单。"
+},
+{
+ no:"4", cn:"原始证据收集", en:"Raw Evidence Collection", zone:"A",
+ purpose:"按 plan 的 block 清单逐个抓一手/二手来源，把原文事实/数字/时间/主体精确落盘成可追溯、可暂停、可审计的证据底稿。本步只回答『来源说了什么』，绝不回答『所以该不该买』。",
+ inputs:["step0_plan.md 当前 pending block（Questions / Sources / Stop condition / What to skip）","sources/source_policy.md（8 级 tier + Hard Rules）","source_register.md（空表或部分填充，本步逐行回写）","companies/_raw_block_template.md（单 block 骨架）"],
+ how:[
+  "每个 raw block 只做五件事：① 记 source URL/path；② 记 retrieval date（抓取日，非事实日）；③ 按 source_policy 打 tier（A1/A2/B1/B2/C1/C2/D1/E1）；④ 摘关键原文 verbatim 或 close paraphrase（保留数字/时间/主体精确表述）；⑤ 标出可进 Claim Ledger 的 candidate claim（inline 标 tier）。五件之外的判断一律不写。",
+  "source_id 在 raw 阶段即按 ticker.tier.period.序号 命名并与 source_register 对齐（如 GOOGL-10K-2025 / BRK-13F-2026Q1）；进 ledger 时再细化到 claim 粒度。",
+  "verbatim vs close paraphrase 的界线：SEC 原文/财报数字/监管法院/招股书/管理层引语→必须 verbatim 用引用块；行业结构/背景叙述→可 close paraphrase 但紧贴原意不加分析。凡进引号必须能回到原文，禁止凭记忆补引号。",
+  "每个 verbatim/close 段下固定三行元数据：来源 URL/path、日期、Tier——缺一不算合格证据。",
+  "Calls made 段按时间记录每次调用（WebSearch/WebFetch/EDGAR/IR 下载），失败/超时/paywall/空结果也必须记——这是判断 source completeness 与复现路径的依据。",
+  "raw 文件禁止出现：『所以可以买』『这证明它是好公司』『我觉得』及任何 verdict 词——只存证据和待核验问题。"
+ ],
+ outputs:["raw/block&lt;N&gt;_&lt;name&gt;.md（五段式：Status / Calls made / Verbatim 输出 / 提取 claim / Open questions，与 plan block 一一对应）","source_register.md（全标的来源登记总表：source_id | Tier | Source | Date | URL/path | Notes）"],
+ gate:"raw 不允许任何结论性/判断性语言；每条 verbatim/close 段必须带 URL+retrieval date+tier；source completeness——每个 block 的 Questions 要么有证据回答，要么显式标 ❌(抓不到)/⏭(跳过) 并写原因，不留空白假装完成。覆盖不足→下游封顶 INFO-GAP/WATCH。",
+ handoff:"raw 的『提取 claim』段（已 inline 标 tier、带 Source/Date/Path/预判 destination）直接成为第 5 步 Claim Ledger 的输入行；verbatim 段提供 original_excerpt 字面来源；source_register 提供稳定 source_id 与 URL；Open questions 进 ledger 的 OPEN_QUESTION。",
+ nonlinear:"① 各 block 无强依赖可并行抓；② 单 block 可中断续抓（Status 标 🟡，下次从断点继续不重跑成功调用）；③ WebFetch 失败/paywall 时如实记录失败原因，换 EDGAR 直链/IR PDF 重试，实在拿不到就 ⏭ 跳过并在 Open questions 登记缺口，绝不为补全而编造。",
+ pitfalls:["close paraphrase 写成自己的解读（掺入因果/评价）","凭记忆补引号、改数字口径却标 verbatim","只记成功调用，漏记失败/paywall","retrieval date 与事实 as_of 混淆","把 D1 社媒/YouTube 当 EVIDENCE 候选","用 E1（LLM 总结/未审计 scrape）冒充来源","抓取超出 plan 范围临时扩题","raw 里直接写 verdict/建仓建议"],
+ tools:["WebFetch（抓 filing/IR/媒体页）","WebSearch（定位 source URL）","SEC EDGAR（10-K/10-Q/8-K/proxy/13F/FWP/424B5 直链）","公司 IR（earnings release / presentation PDF）","官方 transcript（A2）","Reuters/Bloomberg/WSJ/FT/财新（B1）"],
+ googl:"GOOGL 的 raw/README.md 列 8 个计划文件，与 source_register 的 8 个一手源精确对应：10k-2025 ← GOOGL-10K-2025(A1)；q1-2026-earnings ← GOOGL-Q1-2026-ER(A1)；proxy-2026；berkshire-13f-2026q1 ← BRK-13F-2026Q1(A1)；hh-13f-2025q4 / hh-13f-2026q1(A1)；alphabet-fwp 与 424b5（June 2026 融资/Berkshire 私募配售）。8 源全为 A1 一手披露，仅 Fortune 2017 Buffett/Munger 评论(C1)作 SENTIMENT 背景、不进 EVIDENCE。当前 8 个 raw 文件尚未写——这正是 GOOGL 卡在证据层的根因。"
+},
+{
+ no:"5", cn:"Claim Ledger", en:"Claim Ledger", zone:"A",
+ purpose:"把 raw 里的话拆成一条条最小、可审计、可追溯的 claim 入账。每条强制挂 source_id + tier + destination，关键数字强制带 value/unit/as_of。账本是事实与判断之间的闸门：只有锚定一手源(A1/A2/B1)的 claim 才能 promote 进 facts.md 的 EVIDENCE。",
+ inputs:["第 4 步 raw/block&lt;N&gt;_*.md：带 URL/tier/原文摘录的证据块 + 标出的 candidate claim","sources/source_policy.md：8 级分级 + Hard Rules + source_id 命名样例 + destination 四类枚举"],
+ how:[
+  "逐列填表（11 字段标准 schema）：source_id / claim / value / unit / as_of（事实对应日，非抓取日）/ retrieved_at / source_type（A1..E1）/ source_url_or_path / original_excerpt（不可凭记忆补引号）/ reliability_note（冲突/口径/二手）/ destination。",
+  "source_id 命名 = 主体.分级.来源批次.序号：GOOG.A1.2025K.001（10-K）、GOOG.A1.2026Q1.001（季报）、GOOG.B1.REUTERS.20260615.001、GOOG.C2.TRADESMAX.20260428.001、GOOG.D1.X.20260615.001。同一文件多条 claim 共享前三段、递增流水号。",
+  "destination 四类由 tier 驱动不可越级：A1/A2→EVIDENCE；B1→EVIDENCE（关键数字 note 注明需回溯到 A）；B2/C1→INTERPRETATION；C2 市场评论(公众号/YouTube/雪球) 与 D1 社媒(X/Reddit/股吧)→只能 SENTIMENT；来源不足/口径不清→OPEN_QUESTION。",
+  "关键数字四要素强制：凡出现数字，value/unit/as_of/source_id 缺一不可，否则不通过 gate、不得 promote。数字拆成结构化字段而非塞进句子。",
+  "seed→verified 状态流转：新 claim 先标 seed_needs_audit（占位、不得进 facts）；逐条打开 source_url 回原文核对 value/unit/as_of/excerpt→一致改 verified、confidence 升 high；对不上改 conflict 或并存；无法核验改 OPEN_QUESTION 回流补证据。只有 verified 且 destination=EVIDENCE 才能进第 6 步。",
+  "一条 claim 必须原子、可独立证伪：复合句（『营收涨且云转正』）拆成两条；claim_type 标清；close paraphrase 忠实原文不引申；冲突数字全部入库各占一行、不提前择优。"
+ ],
+ outputs:["claim_ledger.csv（每行一条可审计 claim，带 source_id+tier+destination+数字四要素+status；是 raw 到 facts 之间唯一的结构化中转账本，也是全流程『结论可反查 source_id』的索引根）"],
+ gate:"关键数字四要素（value/unit/as_of/source_id）齐全；社媒(X/Reddit/股吧) 与 YouTube/公众号(D1/C2) 不得进 EVIDENCE，只能 SENTIMENT/OPEN_QUESTION；E1（AI 输出/未审计 scrape）不得作事实来源。",
+ handoff:"第 6 步读 claim_ledger + raw，把 status=verified 的 claim 按 destination 分发进 facts.md：EVIDENCE 只收 A1/A2/B1 的 verified；INTERPRETATION 收 B2/C1；SENTIMENT 收 C2/D1；OPEN_QUESTION 收未验证；冲突行进 Contradictions。仍是 seed 的一律不 promote。",
+ nonlinear:"① claim 可标 OPEN_QUESTION 回流——缺证据/对不上原文的不删，降级回流触发第 4 步重开 raw block 补料，补全后回账本升 verified，形成闭环；② 与 raw 来回校验，发现摘录有误会反向修 raw；③ 冲突项并存不抹掉，全部各占一行带 reliability_note，留到 facts 的 Contradictions 区。",
+ pitfalls:["数字埋进自然语言句子不拆 value/unit/as_of","as_of 写成抓取日而非事实期间","把 C2/D1 直接判到 EVIDENCE","凭记忆补 quote 或对 excerpt 引申","看到冲突数字就提前择优只留一条","把 seed_needs_audit 直接 promote 进 facts","把 E1 当来源不标 estimate","把机构 13F 持仓等同个人实时交易（口径混淆）"],
+ tools:["sources/source_policy.md（tier/Hard Rules/字段/命名/destination 唯一权威）","raw/block&lt;N&gt;_*.md（excerpt 出处）","SEC EDGAR（10-K/10-Q/8-K/13F/FWP/proxy，A1 回溯目标）","公司 IR + 官方 transcript（A2）","Reuters/Bloomberg/WSJ/FT/财新（B1）","claim_ledger.csv 本体（可脚本校验四要素与 destination 合法性）"],
+ googl:"companies/googl/claim_ledger.csv 现有 12 条全为 seed_needs_audit（0 条 verified）。例：C002 营收行 source_id=GOOGL-10K-2025，claim『total revenue $402.836B FY2025』，note『Verify exact table and unit』——问题是 402.836 没拆成独立 value/unit/as_of 列，审计时应补 value=402.836 / unit=USD_B / as_of=FY2025 并核对 10-K 利润表那一行，一致后升 verified、destination=EVIDENCE 才可 promote。C009 Berkshire 行缺 share counts/USD value，按四要素不达 gate，审计前只能停 seed 或落 OPEN_QUESTION。"
+},
+{
+ no:"6", cn:"Facts 底稿", en:"Facts Foundation", zone:"A",
+ purpose:"把逐条入账的 claim 综合成一份单一、可回链、分区的事实底稿，让第 7 阶段全部 8 个分析模块吃同一份事实——避免各模块各自挑片段、口径打架。核心是三分纪律：事实(报表/SEC 一手) / 解读(sell-side/专业媒体) / 情绪(社媒) 物理隔离。",
+ inputs:["claim_ledger.csv（已分流的逐条 claim；facts 只搬运已入账项，不新增未入账事实）","raw/*.md（verbatim 原文，用于回链核对与并列冲突）","source_register.md / source_policy.md（source_id 权威定义 + 4 级 tier 映射）","companies/_company_research_template/facts.md（目标结构模板）"],
+ how:[
+  "五区物理隔离（严禁混用）：EVIDENCE 只放 A1/A2/B1 支撑的客观事实（可作 thesis 依据）；INTERPRETATION 放 sell-side 评级/研报观点/分析师 take（引用须复核回 EVIDENCE）；SENTIMENT 放 Reddit/X/小红书/YouTube vibe（只能当 contrarian/共识信号）；OPEN_QUESTIONS 放未验证问题；Contradictions 放冲突数字与说法。",
+  "Tier 准入硬规则：从 ledger 取 destination=EVIDENCE 的条目，再二次过滤——只有 tier 为 A1/A2/B1 的才落 EVIDENCE；社媒/视频即使描述『数字』也一律不得进 EVIDENCE；sell-side 一致预期/目标价进 INTERPRETATION。",
+  "每条事实回链 source_id：facts.md 每行/每 bullet 末尾必须带 source_id（如 GOOGL-10K-2025），且能在 source_register 查到 URL、在 raw 找到 verbatim。没有 source_id 的点不许进（OPEN_QUESTIONS 除外）。可选 inline tier 标记 [A1]/[B1]/[D4]。",
+  "冲突数字并列不裁决：两源对同一指标不同值时不私自取一个，在 Contradictions 区并列两值 + 各自 source_id + as_of + 口径说明，裁决留给分析或审计层。",
+  "Minimum Coverage Check：文末按 8 个模块逐项打钩『够用/不够用』并列缺的具体 source；同时对照 5 灵魂最低开口门槛（Buffett 需 10y ROIC + capital allocation 可描述、Klarman 需资产负债表 + 一次下行 drawdown 等）。任一不够→进 OPEN_QUESTIONS 触发回流。",
+  "促级与累积式追加：facts 区分『Audited Facts(已 promoted)』与『Seed Facts Pending Audit』两段；只有 ledger 里 status=verified 的才能提升到 Audited Facts；文件累积式、多次追加，每次更新 Last updated 与 status（如 seed_only）。"
+ ],
+ outputs:["facts.md（文件头声明 status + 五区 EVIDENCE/INTERPRETATION/SENTIMENT/OPEN_QUESTIONS/Contradictions + 结构化表每行带 source_id + 末尾 Minimum Coverage Check 与灵魂开口度自查）"],
+ gate:"每条关键事实(value+unit+as_of)可回到可验证的 source_id；EVIDENCE 区不得含 D 级来源；冲突数字必须在 Contradictions 并列而非私自裁决；Minimum Coverage 未全绿（或未给 gap 说明）则 facts 不完整，下游封顶 INFO-GAP(<40%)/WATCH(40-60%)。",
+ handoff:"facts.md 作为第 7 阶段全部 8 模块的共同 input：每个模块只能引用 EVIDENCE（及复核后的 INTERPRETATION）推导，禁止绕过 facts 直接从 raw 取数；同一份 EVIDENCE 喂所有模块，保证财务质量用的收入数字与估值用的收入数字完全一致，避免模块间口径漂移。",
+ nonlinear:"① 向上回流补料——facts 不全（source_id 查不到/缺 as_of/某模块覆盖不够）时回流第 3-5 步补料而非硬往下；② 累积式可多次追加（seed→verified 反复提级）；③ 下游模块发现缺口（估值缺 10 年序列、operator 缺 proxy）可回头补 facts 再重跑该模块——事实线与理解线是双向。",
+ pitfalls:["把分析师观点/目标价当事实塞进 EVIDENCE","把社媒情绪当信号用作 thesis","私自裁决冲突数字","断链事实（写了数字但 source_id 缺失）","把 seed 当 audited 喂给下游","漏 as_of/unit/口径（GAAP vs non-GAAP）","Minimum Coverage 未全绿却写 STARTER/CORE"],
+ tools:["claim_ledger.csv（主输入）","raw/*.md（verbatim 回链）","source_register.md + source_policy.md（source_id + 4 级 tier）","companies/_company_research_template/facts.md（结构模板）","SEC EDGAR（EVIDENCE 底料）/ Bloomberg·Reuters·WSJ（B1）/ TipRanks·研报（INTERPRETATION）/ 社媒（SENTIMENT）","info_collection_pipeline.md 维度 B（三分判定 + 5 灵魂开口门槛）"],
+ googl:"companies/googl/facts.md 当前正是『未促级前』形态：文件头标 status seed_only，明写『未通过证据审计前不得作 memo 支撑』；Audited Facts 段空（No facts promoted yet，0 条）；Seed Facts Pending Audit 表 11 行对应 C001-C012（全 seed_needs_audit），每条已带 source_id 但都未核验——示范『有 source_id 但尚未回链核验、不得进 EVIDENCE』的中间态；Open Fact Gaps 列 7 个缺口（Berkshire 精确股数、H&H 对账、10 年财务史、股本稀释史、proxy 治理、Q1'26 后分部利润率）→直接对应 Minimum Coverage 的『不够用』并触发回流。"
+},
+{
+ no:"B", cn:"分析层（8 模块并行）", en:"Analysis Modules", zone:"B",
+ purpose:"从事实走向判断。8 个模块都只读同一份 facts.md + claim_ledger，可并行；把『是真的』转成『是不是好生意 / 值不值这个价』，每个模块回答一个硬问题，产出供第 7 步审计逐条核验。",
+ inputs:["第 6 步：facts.md（五区）+ claim_ledger.csv（每条挂 source_id+tier+as_of+destination）","第 6 步 Minimum Coverage Check（标出哪些模块事实已够、哪些要先回流补料）","frameworks 方法论模板：moat_technical_analysis / operator_underwriting / munger·inversion_checklist / buffett·research_checklist（owner earnings 桥 + 安全边际口径）"],
+ how:[
+  "扇出并行：8 模块只读同一 facts + ledger，互不写对方文件，可同时开工；无固定先后，先做事实最齐、最影响 verdict 的模块（GOOGL 优先级：财务质量→护城河→反演→估值，因核心争议是 AI capex 能否转 owner earnings）。",
+  "统一引用纪律：每个模块关键数字/判断必须回挂 facts 的 source_id，不得在分析层凭空引入新数字；要新数字就回流第 4-6 步补 raw→claim→facts 再回来。",
+  "软依赖链：估值依赖财务质量先产出 owner earnings 桥 + 维护/成长 capex 拆分；反演依赖护城河的 attack surface；价值链是瓶颈的上游。其余模块基本独立可任意顺序。",
+  "证据分级落盘：每条判断标 Strong/Medium/Weak/Negative——一手披露/长期 ROIC 才算 Strong 可支撑 thesis，sell-side/transcript 为 Medium，管理层说法/KOL/社媒只能 Weak，负面信号必须进风险。",
+  "每个模块固定两栏收口：『引用了哪些 source_id』+『open questions（缺什么、回流到哪步）』，让第 7 步审计能逐模块核对覆盖度并卡 verdict ceiling。结构化数字/情景落到 model/*.csv（历史与预测分离、单位显式、source_id 写 notes）。"
+ ],
+ submodules:[
+  {cn:"生意模式", en:"Business Model", purpose:"讲清怎么赚钱、谁付钱为什么付、收入是否经常性、10 年后还在不在。", how:["一句话写清生意 + 『谁付钱』表 + 『收入引擎』表（计价/量驱动/价驱动/风险）","十年存在性测试：客户问题还在吗？为何仍是最佳解？技术/监管/分发若变会怎样？","填生意质量记分卡，每行挂 facts 证据"], output:"business_model.md", kt:"客户为什么付钱、这价值 10 年后是否仍可货币化（GOOGL：AI answers 减少链接后搜索意图还能否变现）？"},
+  {cn:"财务质量（会计重构）", en:"Financial Quality", purpose:"把报表数字翻成真实经济：重构 owner earnings，识别 SBC/折旧/capex/营运资本扭曲，判断增长是否创造价值。", how:["建『会计→经济』桥：净利→+D&A→−维护 capex→−常态化 SBC/稀释→±营运资本→= owner earnings","建 10 年时间序列落到 model/financial_history.csv（历史与预测分离）","capex 拆维护 vs 成长/防御；查红旗（收入涨但每股 owner earnings 停滞、SBC 快于营业利润）"], output:"financial_quality.md + model/financial_history.csv", kt:"增量 AI capex 是创造可持续 owner earnings，还是只维持旧护城河的消耗（GOOGL Q1'26 OCF $45.79B vs PPE 购置 $35.674B）？"},
+  {cn:"价值链", en:"Value Chain", purpose:"画上下游链条 + 利润池分布，找出钱在哪层被赚走、谁有定价权、卡点在哪。", how:["定义行业边界，多业务分别建链（搜索广告/视频/移动生态/云/AI 计算栈）","做利润池表（各层玩家/收入池/回报特征/议价能力）+ 量化 unit economics 与集中度","用五力 + 利润池 + bottleneck ownership 分析供需与替代品"], output:"value_chain_map.md", kt:"每条链上价值由公司、广告主/客户、芯片商还是模型层捕获——公司是瓶颈拥有者还是仅 capex 出资方？"},
+  {cn:"护城河", en:"Moat", purpose:"把『有护城河』从形容词拆成可验证机制，并写清每条怎么被攻破。", how:["逐条填表（来源/证据/指标/durability/attack surface），只有造成持续超额回报/定价权/低成本/强分发/高留存的才算","套 ROIC−WACC 透镜：当前 ROIC、估 WACC、价差、再投资跑道、竞争优势期","每条写 attack surface + 三层时间测试 + falsification 清单，证据分级，负面进风险"], output:"moat_map.md", kt:"AI capex 抬升后能否在增量资本上维持高回报；旧护城河被削弱速度 vs 新护城河形成速度？"},
+  {cn:"瓶颈层", en:"Bottleneck", purpose:"识别哪环节短期扩不出、稀缺在哪、谁控制它——可能是定价权也可能是成本黑洞。仅特定行业适用。", how:["适用判定：AI 基建/半导体/机器人/电力/云/医药制造/国防供应链才做，纯软件/广告可跳过","建瓶颈清单表（瓶颈/类型/谁控制/证据/持续时间/受益者）","四问：能否绕过买通？暂时还是结构性？拥有还是依赖？解决它改善经济还是毁回报？"], output:"bottleneck_map.md", kt:"AI 基础设施（数据中心/电力/TPU）对这家是护城河、收费公路，还是 capex 陷阱？"},
+  {cn:"管理层尽调", en:"Operator Underwriting", purpose:"研究谁在经营、控制权、性格激励、资本配置历史、董事会约束；只用可观察行为做证据，不做心理诊断。", how:["画 people map（创始人/CEO/CFO/董事会/关键技术负责人 + power source）","建资本配置表（再投资/M&A/回购/分红/发股债的 track record + 现行政策 + 判断）","填 8 维性格记分卡；证据优先级：Proxy→10-K risk→股东信→危机期 call→法庭监管文件"], output:"operator_underwriting.md", kt:"AI 转型期是 wartime operator 还是 consensus manager；双层股权保护长期复利还是削弱外部约束；capex 是否被回报门槛约束？"},
+  {cn:"反演 / 失败", en:"Inversion", purpose:"先反问『若要让它十年内失去超额利润会怎么攻击』，把失败具体到机制，区分永久损害 vs 短期波动、已 price-in vs 未 price-in。", how:["扮竞争者/监管者/技术替代者/内部破坏者，建 failure map（路径/攻击者/机制/时间/今日证据/预警），≥9 类","区分短期波动 vs 永久减值并给监控指标","每条失败路径接到护城河 attack surface；影响大但证据不足的写进 Kill Criteria；写 disconfirming evidence 保证可证伪"], output:"inversion_map.md", kt:"哪条失败路径一旦发生会永久损害内在价值、现在是否已有强证据且无对冲？"},
+  {cn:"估值 + 安全边际", en:"Valuation", purpose:"判断价格是否足够便宜：至少三层——owner earnings 桥、bear/base/bull 情景、10 年 IRR 与 margin of safety。", how:["承接财务质量的 owner earnings 与 capex 拆分（无此前置则只能停 shell）","建情景表（各自 revenue CAGR/margin/capex/terminal multiple/10y IRR）落 model/scenario_model.csv","反推当前价格隐含的增长与利润率；定 margin of safety 表（折扣 20/30/40%、buy below、starter、core、avoid above）"], output:"valuation.md + model/scenario_model.csv", kt:"保守 owner earnings（已扣 AI capex/SBC/稀释/监管）下什么价格才给足安全边际；买入后估值压缩 30-50% 基本面能否弥补？"}
+ ],
+ outputs:["business_model / financial_quality / value_chain_map / moat_map / bottleneck_map / operator_underwriting / inversion_map / valuation 共 8 类文件（关键判断挂 source_id，文末附 open questions 与回流去向）","model/*.csv（historicals / segments / owner_earnings_bridge / scenario_model / sensitivity，单位显式、历史与预测分离）"],
+ gate:"每个模块必须 ① 关键数字/判断回挂 facts 的 source_id，无未入账的新事实；② 文末列 open questions 与回流去向；③ 证据标 Strong/Medium/Weak/Negative，负面进风险。任一模块未引用 facts 或未列 open questions，审计据此压低 verdict ceiling。",
+ handoff:"8 模块产出 + model/*.csv 一起汇入第 7 步审计：逐模块核对 source coverage / 无 source_id 的关键 claim / 冲突 / 污染 / 模型错误 / 未验证管理层说法 / 过激估值假设 / 未量化风险，据 Minimum Coverage 完整度卡 verdict ceiling。",
+ nonlinear:"8 模块只读同一 facts、互不写对方文件，无固定顺序可完全并行（fan-out）；某模块发现缺口即回流第 4-6 步补料再回来，绝不在分析层造数；模块间有软依赖（估值依赖财务质量、反演依赖护城河、价值链是瓶颈上游）；瓶颈层仅强供给约束行业适用，纯软件/广告可跳过。",
+ pitfalls:["在分析层凭空引入 facts 没有的数字而不回挂 source_id","护城河写成形容词（『生态』『平台』『AI』）却给不出机制/证据/attack surface","估值在 owner earnings 桥未完成时硬做，或用激进 terminal multiple 挽救弱当期回报","反演只写『竞争加剧/AI 威胁』笼统话，不到机制、不区分永久 vs 短期","管理层尽调滑向 vibes 心理诊断而非可观察证据","对不适用行业硬套瓶颈层，或对 AI 基建公司跳过瓶颈"],
+ tools:["唯一事实源：facts.md + claim_ledger.csv（社媒只能 SENTIMENT/OPEN_QUESTION）","方法论：moat_technical_analysis.md / operator_underwriting.md / munger·inversion_checklist.md / buffett·research_checklist.md","结构模板：_company_research_template 下各 *_map.md / financial_quality.md / valuation.md / model/README.md","补料回流用一手源：10-K/10-Q/8-K、call transcript、proxy、13F、Form 4"],
+ googl:"companies/googl 下 8 模块当前多为 skeleton（有框架无数据）。例 1：financial_quality.md 已把 5 个 seed 数字挂上 claim id（FY25 营收 $402.836B-C002、Q1'26 OCF $45.79B 与 PPE $35.674B-C008、Cloud Q1'26 营业利润 $6.598B-C007）并立了会计假设，但 10 年序列、维护 vs 成长 capex 拆分、owner earnings 桥全在 Work To Do——正是估值无法启动的软依赖卡点。例 2：moat_map.md 列 6 类护城河候选 + 各自 attack surface + 4 条 falsification，但标注『Status: skeleton, 勿当结论』，与 inversion_map 的失败路径互为镜像。valuation.md 标 not started，故 verdict ceiling 仍 INFO-GAP。"
+},
+{
+ no:"7", cn:"审计 / 质量闸门", en:"Audit & Quality Gates", zone:"C",
+ purpose:"在事实与分析模块完成后、IC Panel 之前设一道独立质检闸门，专职回答『我们是不是被叙事/KOL/标题/模型/欲望带跑了』。它不产生新观点，只验证证据链是否扎实、数字是否自洽、污染是否混入 EVIDENCE，并按信息完整度给出 verdict 上限。",
+ inputs:["第 6 步 facts.md + claim_ledger.csv（全部 claim/source_id/destination/冲突/Minimum Coverage Check）","第 7 阶段 B 全部 8 个分析模块 + model/*.csv（审计核对它们是否真引用 facts，而非凭空生成）"],
+ how:[
+  "Source coverage 逐项查：把每个模块的关键论断回溯到 facts→回溯到 ledger 的 source_id；统计『有 source_id 的关键 claim / 关键 claim 总数』，找不到对应 EVIDENCE 的标记为悬空。",
+  "无 source_id 的关键 claim：对每条关键数字检查 value/unit/as_of/source_id 四件套，缺任一不得被引用，退回第 4 步补证据。",
+  "冲突数字：同一指标（capex/Cloud 收入/FCF/回购）交叉比对不同来源，不一致项汇总并标哪个来源更高阶（A1/A2 > B1 > C/D），冲突不得悄悄抹掉。",
+  "D1/C2 污染检查：核对 destination——社媒/YouTube/二手交易媒体绝不能出现在 EVIDENCE，一旦发现被当事实支撑某判断即判污染、相关结论降级（防 KOL/标题带跑的核心动作）。",
+  "Math/model 复核 + 一手源核对 + 管理层未验证 claim：复算 owner earnings 桥与 scenario 勾稽；核对关键判断至少有一条 A1/A2/B1 支撑；把管理层口径（『Cloud 利润率可持续』）单拎出标注是否已被独立数据验证。",
+  "completeness% 粗估（宁低勿高）+ 套 verdict ceiling：<40%→INFO-GAP、40-60%→WATCH、60-80%→STARTER、>80%→CORE 可议；再叠加硬否决规则，取『查表上限』与『硬规则上限』中更低者。"
+ ],
+ outputs:["audit.md（按 11 项清单逐项填：Source coverage / 无 source_id 的关键 claim / 冲突数字 / stale facts / D1-C2 污染 / 模型错误 / 缺一手源 / 管理层未验证 claim / 估值假设过激 / 风险未量化 / Verdict ceiling，并列暴露的缺口与各自回流去向）","⚠ 注意：audit.md 模板当前仓库尚未建，是个待补缺口"],
+ gate:"硬否决：无一手源 / 估值未完 / 反演未完 / operator 未完 / 关键数字无 source_id，命中任一→不得进 STARTER/CORE。叠加部门硬规则：无 valuation 或安全边际→封顶 WATCH；无 inversion→封顶 WATCH；无 operator→封顶 STARTER；社媒为主要证据→封顶 INFO-GAP。",
+ handoff:"audit.md 的 verdict ceiling 直接成为第 8 步 IC Panel 的硬约束——Panel 只能在 ceiling 之内讨论，不能把结论顶过上限；暴露的缺口清单成为 Panel 必须正面回应的质询点（如 Munger 问失败路径时直接引用『风险未量化』）。",
+ nonlinear:"审计是整条流水线唯一系统性『往回送』的节点（总流程图的 I→D 回边）：一旦 completeness 不足或命中硬否决，研究不前进 IC，而是回流——缺 block/范围没覆盖→回第 3 步加 block；关键 claim 无 source_id/缺一手源/污染→回第 4-5 步补证据。audit 是把『信息不足』翻译成『回到哪一步补什么』的分流器。",
+ pitfalls:["把审计写成『再夸一遍论点』（应是对抗性自查）","completeness 估高（把『写了文件』当『完成且有证据』）","悄悄抹掉冲突数字让叙事干净","让 D1/C2 以转述方式偷偷进 EVIDENCE","把管理层电话会口径直接当事实","估值只做 base/bull 没 bear 与安全边际却顶到 STARTER/CORE","查表得 ceiling 后忘叠加硬否决（两者取更低）","审计发现不足却仍向前推进 IC（架空闸门）"],
+ tools:["rg 全仓回溯 source_id 与关键数字","claim_ledger.csv（四件套 + destination 合法性）","facts.md（五区 + Minimum Coverage Check）","sources/source_policy.md（社媒禁入 EVIDENCE）","model/*.csv（复核勾稽）","一手源核对锚点：10-K / 最新 10-Q / proxy / 13F / Form 4","§9 审计清单 + verdict ceiling 表；buy_side §4 硬规则 + §7 Gate A-E"],
+ googl:"按 companies/googl/research_status.md 真实状态推断：Current stage 2，Evidence 与 4A-4E、IC Memo 全 ⏸；facts.md 与 claim_ledger 尚未建成。文件顶部自填 Verdict ceiling = INFO-GAP；底部 9 项 Quality Gates 全未勾。套审计逻辑：completeness ≈ 20-25% → 落 <40% 区间 → ceiling=INFO-GAP；再叠加硬否决，命中『无一手源(ledger 未建)+估值未完+反演未完+operator 未完+关键数字无 source_id』全部五条，硬规则同样封顶 INFO-GAP，与文件自评一致。回流指令：先建 ledger 与 facts（从 FY2025 10-K、Q1 2026、Berkshire/H&H 13F、2026 proxy），source completeness≥60% 再做估值与反演，方可抬到 STARTER 以上进 IC。"
+},
+{
+ no:"8", cn:"IC Panel（五灵魂评审）", en:"Investment Committee", zone:"C",
+ purpose:"让五个独立投资人格框架（巴菲特/芒格/段永平/Marks/Klarman）批判同一份已审计的事实，覆盖五个不重叠维度。先各自结构化初评，再一轮显式互相反驳，最后段永平主审综合并可与多数票不一致。铁律：IC 只解读/批判/加权已有事实，绝不新增无 source_id 的事实。",
+ inputs:["第 7 步 audit.md：审计结论 + verdict ceiling（panel 最高结论被天花板锁死）","第 0-6 步 facts.md + claim_ledger.csv：每条带 tier 与 source_id 的事实库（panel 唯一弹药，不能引用库外事实）","第 7 阶段 B 各模块：moat / operator / inversion / bottleneck / valuation + model（每灵魂主喂对口模块）"],
+ how:[
+  "五灵魂各按『必问表』只问自己那列：Buffett——能持有 10 年吗？owner earnings 是什么？够便宜吗？（吃 facts+valuation+moat）；Munger——最可能败在哪？激励是否有毒？有无愚蠢风险？（吃 inversion+operator）；段永平——你真懂吗？用户价值清不清？管理层靠谱吗？贵不贵？（吃全部 + 不为清单 + 100% 私有化测试）；Marks——共识是什么？周期/情绪位置？赔率是否不对称？；Klarman——下行保护在哪？安全边际是否真实？",
+  "每位初评走固定四件套（~150 字，刻意短）：① Verdict ∈ {REJECT/WATCH/STARTER/CORE/SKIP/INFO-GAP}；② 一句理由；③ 一条该灵魂 1-2 年内可考证的公开发言/行动（必须真实可溯源，不可编）；④ 一条对本 ticker 的具体应用。短促是为了让 critique 能逐条精确反驳。",
+  "一轮（且只一轮）显式 critique 链式互怼：Marks 反驳 Buffett『owner earnings 这维度市场已定价多少？』；Munger 反驳 Marks『择时怎么避免变 market timer？』；Klarman 反驳 Munger『当前价位补偿了这些尾部风险吗？』；段永平反驳全体『你们都默认懂这门生意 5-10 年，真懂吗？』。被反驳者给 50-100 字回应，verdict 变动用 ↑/↓/→ 标注。",
+  "段永平主审综合：汇总初评+critique，套『不为清单』4 项 + 100% 私有化测试（列 4 个不能确信的点），给 final verdict（含 STARTER 1-3% / CORE 5%+）+ 3-5 条 Kill Criteria 与监控触发器。关键：主审可与多数票显式不一致（多数票噪音、主审纪律），分歧须写明理由。",
+  "扩展灵魂只在核心 5 位指出特定缺口时按需召唤：Buffett『信息不够判断管理层』→ Li Lu + Fisher；Marks『分不清 alpha/beta』→ Lynch + Terry Smith；Munger『反身性在跑』→ Soros；高度宏观敏感 → Dalio；破产边缘 → Graham。全程纪律校验：引用 facts 外无 source_id 的『事实』即越界，作废退回。"
+ ],
+ outputs:["ic_panel.md（五灵魂四件套初评 + 一轮 critique 反驳与回应含 verdict 箭头 + 按需扩展灵魂 + 段永平主审综合(不为清单+私有化 4 不确信) + final verdict + 多数票 vs 主审分歧说明 + Kill Criteria 与触发器）","⚠ 注意：ic_panel.md 模板当前仓库尚未建，是个待补缺口"],
+ gate:"IC 不接受无 source_id 的事实 / 只有观点没证据的护城河 / 没下行情景的估值；且 panel 结论不得突破第 7 步 audit 的 verdict ceiling。",
+ handoff:"ic_panel.md 加权判断 → 第 9 步 Memo：主审 final verdict→One-line Verdict 与 Position Decision；五灵魂反方论点与 critique→Evidence Against 与 What Has To Be True；分歧点→Memo 需显式收敛或承认的开放风险；Kill Criteria + 触发器→Memo 的 Kill Criteria 与 Monitoring Plan。",
+ nonlinear:"① 信息弱时退回——audit 判 INFO-GAP 或某灵魂引用越界，不出伪 verdict，直接打回第 0/3 步补料（INFO-GAP 是合法 verdict）；② 可只请 1-2 灵魂轻量看而非开全 panel（『用 Marks 看一下周期位置』），明确不在能力圈时段永平一句『不为』即可；③ 扩展灵魂按缺口类型条件触发，非固定全跑；④ 对应 souls_workflow 的 Step 2+3+4，但默认不自动跑——只有用户明确要求（『请灵魂研究 X』『全 panel 看 X』『出 X 的简报』）才进全流程。",
+ pitfalls:["把五段独白拼起来当 panel（必须有真正 critique 互怼）","灵魂偷偷新增无源事实或杜撰名言（最致命越界）","主审为和稀泥强行向多数票靠拢（放弃 Chair 纪律）","在低信息完整度上硬跑给伪 verdict","灵魂串味/角色漂移（Buffett 跑去择时）","缺口没出现就无脑全召扩展灵魂（5 位是人脑记忆极限）","护城河/估值只给观点不给证据被 gate 拦下"],
+ tools:["souls_workflow.md（核心 5 灵魂 + 扩展触发 + Step 2/3/4 + memory）","buffett-perspective / expert-munger + expert-engine skill","investor_agents.md（各灵魂 Agent Card + Cross-Agent Debate Template）","investment_research_pipeline_detailed.md §10（6 角色必问表）","agent_testing/（防人格漂移的 sanity check）"],
+ googl:"用 companies/googl/research_status.md 的 8 条 Open Questions 演示各灵魂怎么追问：『AI answer 是否压缩商业 query 变现』——Munger 当头号反向失败路径（零点击答案吞掉询价广告→Search 现金牛断流），Marks 问市场是否已定价，Buffett 问是否动摇 10 年 owner earnings 根基；『Cloud Q1'26 利润率是否可持续』——Klarman 列为必须证伪的下行触发；『capex 多少是维护 vs 增长 vs 防御』——Buffett 直击 owner earnings 桥，Munger 问是不是 AI 军备竞赛 FOMO 导致资本错配；『Berkshire 原始 13F vs 2026-06 私募配售谁主导』——段永平钉死为『真懂吗』的能力圈试金石，提醒这是 C 级解读不能当 A 级事实。当前 verdict ceiling 锁 INFO-GAP，故 panel 只能给 WATCH/INFO-GAP 直到 facts+valuation 补全。"
+},
+{
+ no:"9", cn:"决策 Memo", en:"Decision Memo", zone:"C",
+ purpose:"把前 8 步压缩成一份可执行、可复盘的结论文件。它不是研究总结，而是一个动作：给出 verdict + position rule + kill criteria + 必答三问，让未来的自己知道该不该买、买多少、错了怎么知道、何时重看。",
+ inputs:["第 8 步 ic_panel.md：各灵魂加权批判 + 主审 final verdict + 分歧","第 7 步 audit.md：信息完整度 % 与 verdict ceiling + 硬否决规则","上游全部模块：facts.md / valuation.md / moat_map / operator_underwriting / inversion_map / financial_quality（memo 各 section 只引用、不新增无源事实）"],
+ how:[
+  "顶部元数据先定调：Date/Analyst/Version(v1…)/Verdict/Verdict ceiling（从 audit 抄）+ Position rule 一行。Verdict 必须 ≤ ceiling；valuation/inversion/operator 任一缺失则强制封到 INFO-GAP/WATCH。这一行写完，结论空间就被锁死，后面 section 只是论证而非翻盘。",
+  "§1 One-Line View 一句话浓缩『什么生意 + 为何这个 verdict + 卡在哪』；§2 Decision Question 抄第 2 步开题的可证伪问题，让 verdict 与最初问题对齐，防止跑题后用无关结论收尾。",
+  "§3 What Must Be True 列 3-6 条『否则论点崩』的命题，每条加 [ ] checkbox，且每条必须对应一条 kill criteria 和一个 monitoring 指标（三者一一映射）；写成可被未来事实证伪的形式。勾选状态直接决定 verdict 能爬多高：全空=INFO-GAP。",
+  "§4-§9 论证 section（Business Quality/Moat/Operator/Inversion/Financial/Valuation&MoS）每节顶部 Reference 指向上游 md，正文只做 1-3 句裁决式结论 + 关键数字（须可回溯 source_id）。Valuation&MoS 必须落到四个硬数：Current price / Base IRR / Downside IRR / Required buy price——没 required buy price，verdict 不得高于 WATCH。",
+  "§10 Evidence Against + §11 Kill Criteria 是诚实闸门：Evidence Against 逼自己写反方；Kill Criteria 每条必须可观测可量化有阈值（可做：『连续两季 Search 收入同比转负』；不可做：『增长变差』），每条反向对应 §3 某条 what-must-be-true。",
+  "§12 Position Decision 五选一带具体 % 上限（none / watch only / starter max X% / core max X%），写成条件句；§13 强制回答必答三问——(a) 我错在哪会知道（指向 kill criteria）；(b) 哪个单一事实会让我立刻改变主意（指向最脆弱的 what-must-be-true）；(c) 下次何时更新（具体到财报日/监管裁决日）。三问答不出=memo 不合格退回。"
+ ],
+ outputs:["memo-v1.md（顶部 verdict+ceiling+position rule；§1-§13：one-line view / decision question / what-must-be-true 带 checkbox / 各论证 section 引用上游 / evidence against / 可观测 kill criteria / monitoring plan 表 / position decision / 必答三问；版本化 v1→v2，新证据触发重写而非覆盖）"],
+ gate:"verdict ≤ audit 的天花板；valuation 缺失→封顶 WATCH（无 required buy price 不得 STARTER+）；inversion 缺失→不得 STARTER+；operator 缺失→不得 CORE；三问任一答不出，memo 不通过退回。",
+ handoff:"memo 是第 10 步的母文件：(1) verdict+position rule→决定该标的进 monitor 主动盯盘还是只进 watchlist；(2) kill criteria→逐条变成 monitor 的 Trigger 列（可观测阈值=可设报警）；(3) monitoring plan 表→直接成为 monitor.md 骨架；what-must-be-true 每条映射成一个待跟踪指标。",
+ nonlinear:"① 结论不必走到底——多数标的合理终点是 WATCH（转监控不下注，『不买』是合格产出）；② memo 是 vN 可迭代（v1→v2→v3），verdict 随信息完整度提升而升级或随证据恶化而降级；③ 新证据触发重写——一条 kill criteria 命中或一条 what-must-be-true 翻面，就回上游补 facts/valuation 后重出新版 memo。",
+ pitfalls:["verdict 突破信息完整度天花板（凑故事硬给买入）","kill criteria 写成不可观测的废话（『护城河变弱』）","有 verdict 无 position rule 或不给具体 %","三问缺失/敷衍，memo 无法被证伪","memo 里新增上游没有 source_id 的事实","用『业务质量好』替代『价格便宜』（没算 required buy price 就给 STARTER+）","把 memo 当一次性终点而非 vN"],
+ tools:["companies/_buy_side_memo_template.md（13 段完整模板：Verdict ceiling / Kill Criteria / Monitoring Plan 表）","companies/_company_research_template/memo-v1.md（精简：Position rule 五档 + buy/add/trim/kill 条件）","investment_research_pipeline_detailed.md §11（memo 结构 + 5 级 verdict）+ §9 verdict ceiling 表","上游：facts.md / valuation.md / model/scenario_model.csv / moat / operator / inversion / audit / ic_panel"],
+ googl:"companies/googl/memo-v1.md 当前为 v0 skeleton，Verdict=INFO-GAP，Position rule『no decision until evidence, valuation, and inversion modules are complete』。§3 的 5 条 what-must-be-true（搜索货币化存活 / Cloud&AI 基建产生有吸引力增量回报 / capex 不永久侵蚀 owner-EPS / 管理层理性配置资本 / 买价有真实安全边际）checkbox 全未勾；§4 明写『Evidence layer is not complete』；§5 Final Decision=Deferred。这正是 verdict ceiling 的活样本：完整度 <40% 故强制封 INFO-GAP，必须先回上游按 claim_ledger→facts→moat→inversion→valuation 顺序补料再出正式 memo。"
+},
+{
+ no:"10", cn:"监控 / 记忆 / 复盘", en:"Monitor, Memory & Postmortem", zone:"C",
+ purpose:"让研究活着而非写完就死。memo 落地那刻论点开始衰减。用三份活文件维持有效性：monitor.md 盯会改判的变量并打红黄绿灯，memory.md 把论点分长/中/短三层沉淀为可快速恢复的记忆，postmortem.md 在 3/6/12 月把结果归因到错误类型并改进流程本身。",
+ inputs:["第 9 步 memo-v1.md：verdict / what-has-to-be-true / 估值锚（base·bear·bull 与安全边际价位）/ 仓位等级","memo 的 Kill Criteria（逐条进 monitor 与 memory 的跟踪状态）","财报/监管/产品日历（下次财报、年报、proxy、investor day、法院裁决、GTC/I-O 的预期日期与到时看什么）","上游分析模块（business_model/moat/operator/inversion 提供长期底色沉淀进 memory 长期层）"],
+ how:[
+  "建 monitor.md 的 KPI 表（七列）：变量 | 为什么重要(对应哪条 thesis) | 来源 | 频率 | 绿 | 黄 | 红。每个变量必须能回答『它降级会动摇哪条 what-has-to-be-true』，来源优先 A 级一手，频率分 Quarterly 与 Event-driven，控制 6-8 个（多了变噪音）。阈值写成可证伪状态：绿=继续成立 / 黄=需解释的偏离 / 红=结构性恶化触发重估。",
+  "memory.md 分三层：长期（业务模型本质/护城河机制/管理层性格激励/结构性风险，年报或重大事件才改）；中期（最新季报数字/已签大合同/资产负债表节奏，季度更新）；短期（最近 boom-bust/叙事变化/panel 立场分布，1-3 月）。每层标更新日期，下次回到标的先读 memory(1 分钟) 再跑差量调研。",
+  "更新 kill criteria 跟踪状态：每条落成带勾选框的三态——未发生 / 部分（早期迹象，加密观察）/ 已发生（触发降级或清仓）。『部分』是关键中间态，避免到红线才反应；状态变化写进 memory 短期层与 monitor 的 Change-My-Mind 日志。",
+  "记 Change-My-Mind 日志（日期 | 新证据 | 此前观点 | 更新后观点 | 动作）：任何让变量翻灯或让 kill criteria 推进的证据都入账，强制显式记录『我因为什么改主意』，防事后自我合理化与论点漂移。",
+  "postmortem.md 在 3/6/12 月按错误类型归因：先记 Original Decision，再记 What Happened，最后强制勾选——事实错 / 模型错 / 估值错 / 时机或心理错 / 风险定档错 / 过程对但运气差 / 结果好但过程烂。区分『好过程坏结果』与『坏过程好结果』是核心，只奖励好过程。",
+  "回流 queue 与重写触发：任何红灯、kill criteria 推进到『已发生』、或 postmortem 暴露的系统性缺口，要么回流第 1 步 queue 开差量调研，要么直接触发 memo 重写；postmortem 的 Process Update 一栏专门回答『模板或本标的 monitor 该改哪条规则』，让复盘改进流程本身。"
+ ],
+ outputs:["monitor.md（6-8 个 thesis 变量的红黄绿阈值表 + Event Calendar + Change-My-Mind 日志；开头标注『仅在 thesis 通过后启用』）","memory.md（长/中/短三层 + Kill Criteria 三态跟踪 + 监控源清单：IR 路径/值得追的媒体/关键 X 或雪球 ID；覆盖更新，是下次研究的起点）","postmortem.md（Original Decision + What Happened + 七类错误归因勾选 + Process Update；仅真实下注后填，3/6/12 月各一次）"],
+ gate:"每个 WATCH/STARTER/CORE 标的离开本步前必须能答四问：下次看什么（具体事件+日期）、哪个指标降级（翻黄/翻红阈值）、哪个价格才有安全边际（对应估值的具体买入价位）、哪个事件会改判（哪条 kill criteria）。四问答不全，监控就是摆设。",
+ handoff:"新证据分三档回流：(1) 黄灯/单点异动→Change-My-Mind 日志记录并加密观察，暂不动仓；(2) 红灯或 kill criteria 推进→回流第 1 步 queue 开差量调研（只补受影响 block，不重做全流程），可能触发 memo 重写与仓位调整；(3) 结构性证据（护城河被攻破/管理层变质）→直接触发 memo 重写并可能回 panel 重审。memory 的短/中期层是回流时的最小上下文。",
+ nonlinear:"这是闭环回流的终点也是起点：新证据不必沿流水线顺序回退，可跳回任意上游——补 facts(第 6-7 步)、重估值(第 8 步分析层)、重开 panel(第 8 步)、甚至回第 1 步重判方向是否还值得占预算。更深一层：postmortem 不只修正单个判断，它把『这次为什么错』沉淀成模板规则（monitor 该加哪个变量、阈值该收紧、ceiling 该如何卡），让整条 pipeline 随每次复盘进化。三件文件互为输入。",
+ pitfalls:["thesis 没通过就启用监控（memo 仍 INFO-GAP 时 monitor 只是占位草稿）","阈值写成情绪而非可证伪状态（『有点担心』无法触发动作）","变量与 thesis 脱钩（盯了好查但不改判的指标）","结果导向复盘（涨了就算对、跌了就算错，混淆运气与技艺）","kill criteria 二值化缺『部分』中间态","memory 不分层、越写越长导致恢复更慢","复盘只改判断不改流程（Process Update 留空）","回流变重做（一有异动就全流程重跑）"],
+ tools:["A 级一手：10-K/10-Q/8-K、现金流量表、proxy、call transcript、法院与监管裁决文件（阈值判定首选）","财报/事件日历：IR 页、SEC EDGAR、交易所日历（建 Event Calendar）","B 级二手：Bloomberg/Reuters/WSJ（补背景，进 SENTIMENT/INTERPRETATION）","C 级情绪：X / 雪球 / 论坛（只用于 memory 短期层叙事跟踪，不作阈值依据）","本地：memo-v1.md / facts.md / research_queue.md","模板：_company_research_template 的 monitor.md / postmortem.md + souls_workflow.md 的 memory.md 分层模板"],
+ googl:"companies/googl/monitor.md 列 6 个监控变量，每个带红黄绿阈值并对应一条 thesis：① 搜索及其他收入增长（绿=稳定/加速、黄=减速需解释、红=持续下滑或货币化承压）；② Cloud 收入与利润率（红=AI 算力增长却不赚钱）；③ Capex 与折旧（红=结构性吞噬经营现金流）；④ 股本/稀释（红=高 capex 期稀释扩大）；⑤ 监管 remedies（红=结构性或默认分发经济受损）；⑥ 管理层 capex 表态（红=无可信回报框架）。关键前提：文件顶部明确标注『Use only after thesis is approved』——而 GOOGL 当前 memo 仍 INFO-GAP，所以这套监控表尚未生效，仅在升级到 WATCH/STARTER/CORE 后才转为活仪表盘并开始打灯、回流 queue。"
+}
+];
+
+const ICON={purpose:"🎯",how:"🛠",out:"📤",gate:"🚦",non:"↻",hand:"➡️",pit:"⚠️",tool:"🧰",googl:"🔬"};
+const ZONE={A:"阶段 A · 事实工程",B:"阶段 B · 分析层（并行）",C:"阶段 C · 决策与跟踪"};
+
+function esc(s){return s;}
+function list(arr,ord){const t=ord?"ol":"ul";return "<"+t+">"+arr.map(x=>"<li>"+x+"</li>").join("")+"</"+t+">";}
+
+function renderCard(s){
+  let h="<details id='step-"+s.no+"'><summary><span class='no'>"+s.no+"</span><span>"+s.cn+"</span><span class='en'>"+s.en+"</span><span class='arrow'>▾</span></summary><div class='body'>";
+  h+="<div class='purpose'>"+ICON.purpose+" "+s.purpose+"</div>";
+  h+="<div class='io'><div class='col in'><h4>⬅️ 输入（来自上游）</h4>"+list(s.inputs)+"</div><div class='col out'><h4>"+ICON.out+" 产出</h4>"+list(s.outputs)+"</div></div>";
+  h+="<div class='sec'><h4>"+ICON.how+" 怎么做 / 怎么处理</h4>"+list(s.how,true)+"</div>";
+  if(s.submodules){
+    h+="<div class='sec'><h4>🧩 8 个并行子模块</h4><div class='subs'>";
+    s.submodules.forEach(m=>{h+="<div class='sub'><h5>"+m.cn+" <span class='en'>"+m.en+"</span></h5><p>"+m.purpose+"</p>"+list(m.how)+"<p class='kt'>关键判定："+m.kt+"</p><p><span class='file'>"+m.output+"</span></p></div>";});
+    h+="</div></div>";
+  }
+  h+="<div class='sec box gate'><h4>"+ICON.gate+" 质量门 / 停止条件</h4>"+s.gate+"</div>";
+  h+="<div class='sec box non'><h4>"+ICON.non+" 非线性（回流 / 并行 / 可跳过）</h4>"+s.nonlinear+"</div>";
+  h+="<div class='sec box handoff'><h4>"+ICON.hand+" 交接下游</h4>"+s.handoff+"</div>";
+  h+="<div class='sec'><h4>"+ICON.pit+" 常见错误</h4>"+list(s.pitfalls)+"</div>";
+  h+="<div class='sec'><h4>"+ICON.tool+" 工具 / 来源</h4><div class='tags'>"+s.tools.map(t=>"<span class='tag'>"+t+"</span>").join("")+"</div></div>";
+  h+="<div class='sec googl'><h4>"+ICON.googl+" GOOGL 实例</h4>"+s.googl+"</div>";
+  h+="</div></details>";
+  return h;
+}
+
+function showStep(no){
+  const el=document.getElementById("step-"+no);
+  el.open=true; el.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+// nav
+const zones={A:[],B:[],C:[]};
+STEPS.forEach(s=>zones[s.zone].push(s));
+let navH="";
+["A","B","C"].forEach(z=>{
+  navH+="<div class='navzone'><h3>"+ZONE[z]+"</h3><div class='chips'>";
+  zones[z].forEach(s=>{navH+="<span class='chip' onclick=\"showStep('"+s.no+"')\"><b>"+s.no+"</b>"+s.cn+"</span>";});
+  navH+="</div></div>";
+});
+document.getElementById("nav").innerHTML=navH;
+document.getElementById("cards").innerHTML=STEPS.map(renderCard).join("");
+</script>
+</body>
+</html>

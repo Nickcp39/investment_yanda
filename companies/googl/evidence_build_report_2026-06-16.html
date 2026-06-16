@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOOGL 证据层实跑报告 — 2026-06-16</title>
+<style>
+:root{
+  --bg:#ffffff;--fg:#1a1a1a;--fg2:#555;--info:#2563eb;--info-bg:#eff4ff;
+  --bd:#dcdcdc;--bd2:#ededed;--card:#fafafa;--green:#15803d;--green-bg:#f0fdf4;
+  --warn:#b45309;--warn-bg:#fff7ed;--red:#b91c1c;--red-bg:#fef2f2;--serif:Georgia,"Songti SC",serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#1c1c1c;--fg:#ededed;--fg2:#a6a6a6;--info:#6ea8fe;--info-bg:#1a2438;
+  --bd:#444;--bd2:#333;--card:#242424;--green:#86efac;--green-bg:#16241a;
+  --warn:#fbbf77;--warn-bg:#2a2117;--red:#fca5a5;--red-bg:#2a1717;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;padding:24px}
+.wrap{max-width:940px;margin:0 auto}
+h1{font-family:var(--serif);font-size:23px;margin:0 0 4px}
+.sub{color:var(--fg2);font-size:13px;margin:0 0 18px}
+.banner{background:var(--green-bg);border:1px solid var(--green);border-radius:12px;padding:16px 18px;margin-bottom:20px}
+.banner .big{font-size:17px;font-weight:700}
+.banner .big b{color:var(--green)}
+.ladder{display:flex;gap:6px;margin:14px 0 6px}
+.rung{flex:1;text-align:center;padding:7px 4px;border-radius:7px;font-size:12px;font-weight:700;border:1px solid var(--bd)}
+.rung.done{background:var(--fg2);color:var(--bg);border-color:var(--fg2);opacity:.55}
+.rung.cur{background:var(--info);color:#fff;border-color:var(--info);transform:scale(1.05)}
+.rung.todo{background:transparent;color:var(--fg2)}
+.bar{height:9px;background:var(--bd2);border-radius:5px;overflow:hidden;margin-top:8px}
+.bar>i{display:block;height:100%;width:47%;background:var(--info)}
+.cap{font-size:11.5px;color:var(--fg2);margin-top:4px}
+h2{font-family:var(--serif);font-size:16px;margin:26px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--bd2)}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0}
+th,td{text-align:right;padding:6px 9px;border-bottom:1px solid var(--bd2)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--fg2);font-weight:600;font-size:11.5px;border-bottom:1px solid var(--bd)}
+.up{color:var(--green)}.dn{color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.c{border:1px solid var(--bd);border-radius:10px;padding:12px 14px;background:var(--card)}
+.c h3{margin:0 0 6px;font-size:13.5px}
+.c p{margin:0;font-size:12.5px;color:var(--fg2)}
+.c .n{font-size:11px;color:var(--info);font-weight:700;margin-bottom:2px}
+.flag{background:var(--red-bg);border:1px solid var(--red);border-radius:10px;padding:14px 16px;margin:10px 0}
+.flag h3{margin:0 0 6px;color:var(--red);font-size:14px}
+.flag p{margin:0;font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.box{border-radius:10px;padding:12px 14px;font-size:12.5px}
+.box.ok{background:var(--green-bg);border:1px solid var(--green)}
+.box.fix{background:var(--warn-bg);border:1px solid var(--warn)}
+.box h3{margin:0 0 7px;font-size:13px}
+.box.ok h3{color:var(--green)}.box.fix h3{color:var(--warn)}
+.box ul{margin:0;padding-left:17px}.box li{margin:4px 0}
+.files{font-size:12.5px}
+.files td:first-child{font-family:ui-monospace,Consolas,monospace;font-size:11.5px}
+.next{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.opt{flex:1 1 200px;border:1px solid var(--bd);border-left:3px solid var(--info);border-radius:8px;padding:10px 12px;font-size:12.5px}
+.opt b{display:block;margin-bottom:3px}
+.muted{color:var(--fg2);font-size:11px;margin-top:26px;text-align:center}
+code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;background:var(--bd2);padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>GOOGL 证据层实跑报告</h1>
+<p class="sub">OS 流水线 pilot 测试 · 2026-06-16 · 第 4–6 步（原始证据 → Claim Ledger → Facts）· 5 个并行 agent 拉 SEC 一手源</p>
+
+<div class="banner">
+<div class="big">✅ 测试结论：流水线证据层<b>端到端跑通</b></div>
+<p style="margin:6px 0 0;font-size:13px">GOOGL 被流程从 <b>INFO-GAP</b>（12 条全 seed、未核实）推进到 <b>证据层扎实</b>——~50 条挂一手 source_id 的 verified A1 facts。最关键的一环成立：<b>把「美股投资网叙事」提纯成了可追溯到 SEC 原文的事实底座。</b></p>
+<div class="ladder">
+<div class="rung done">INFO-GAP<br><span style="font-weight:400">起点</span></div>
+<div class="rung cur">WATCH<br><span style="font-weight:400">← 当前</span></div>
+<div class="rung todo">STARTER<br><span style="font-weight:400">需估值</span></div>
+<div class="rung todo">CORE<br><span style="font-weight:400">需全模块</span></div>
+</div>
+<div class="bar"><i></i></div>
+<div class="cap">信息完整度 ~45–50% · verdict ceiling = WATCH（事实线已强，但 valuation/inversion 未做，硬规则封顶）</div>
+</div>
+
+<h2>关键财务快照（全部 verified A1）</h2>
+<table>
+<thead><tr><th>年度指标</th><th>FY2023</th><th>FY2024</th><th>FY2025</th></tr></thead>
+<tbody>
+<tr><td>总营收</td><td>307,394</td><td>350,018</td><td><b>402,836</b></td></tr>
+<tr><td>营业利润</td><td>84,293</td><td>112,390</td><td><b>129,039</b></td></tr>
+<tr><td>净利</td><td>73,795</td><td>100,118</td><td>132,170</td></tr>
+<tr><td>经营现金流</td><td>101,746</td><td>125,299</td><td>164,713</td></tr>
+<tr><td>Capex</td><td>32,251</td><td>52,535</td><td class="dn"><b>91,447</b></td></tr>
+<tr><td>FCF（derived）</td><td>69,495</td><td>72,764</td><td>73,266</td></tr>
+<tr><td>回购</td><td>61,504</td><td>62,222</td><td>45,709</td></tr>
+</tbody>
+</table>
+<table>
+<thead><tr><th>季度指标</th><th>Q1 2025</th><th>Q1 2026</th><th>YoY</th></tr></thead>
+<tbody>
+<tr><td>总营收</td><td>90,234</td><td><b>109,896</b></td><td class="up">+22%</td></tr>
+<tr><td>营业利润</td><td>30,606</td><td>39,696</td><td class="up">+30%</td></tr>
+<tr><td>Google Cloud 营收</td><td>12,260</td><td>20,028</td><td class="up">+63%</td></tr>
+<tr><td>Cloud 营业利润（率）</td><td>2,177 (17.8%)</td><td>6,598 (<b>32.9%</b>)</td><td class="up">~3×</td></tr>
+<tr><td>Capex</td><td>17,197</td><td class="dn">35,674</td><td class="dn">+107%</td></tr>
+<tr><td>回购</td><td>15,068</td><td class="dn">0</td><td class="dn">暂停</td></tr>
+<tr><td>净利（含一次性）</td><td>34,540</td><td>62,578</td><td>+81%⚠</td></tr>
+</tbody>
+</table>
+<p class="cap">单位 USD millions。2026 全年 capex 指引 <b>$180–190B</b>，2027「显著增加」（来自 424B5）。</p>
+
+<h2>⭐ 「提纯机」生效的案例</h2>
+<div class="flag">
+<h3>Q1'26 净利 +81% 是假象</h3>
+<p>$62.578B 净利里有 <b>$36.9B 是非经营的未实现股权证券收益</b>（+$2.35 EPS）。KOL 会直接喊「净利暴涨 81%」——流程的 <b>Contradictions 区把它拦下了</b>，标明 <b>营业利润 +30% 才是干净的增长读数</b>。这正是这套 OS 设计的目的：不被叙事和会计噪音带跑。</p>
+</div>
+
+<h2>证据层挖出的 5 个硬事实（都 verified）</h2>
+<div class="grid">
+<div class="c"><div class="n">01 · 核心矛盾</div><h3>Capex 爆炸</h3><p>FY25 $91B(+74%) → 2026 指引 $180–190B → 2027 再显著增。owner earnings 能否扛住是核心问题。</p></div>
+<div class="c"><div class="n">02 · 资本配置转向</div><h3>回购暂停 + $80B 融资</h3><p>Q1'26 回购 $0，转向 capex + 发债 + $80B 股权融资。Alphabet 在为 AI 大举融资。</p></div>
+<div class="c"><div class="n">03 · 叙事重估</div><h3>Berkshire $10B 是私募</h3><p>@$351.81/$348.20 的定向私募融资，非纯二级增持。「安全边际背书」要重新理解为「参与了一轮 AI capex 融资」。</p></div>
+<div class="c"><div class="n">04 · 第二引擎</div><h3>Cloud 真盈利</h3><p>Q1'26 营业利润率 32.9%（一年前 17.8%），backlog &gt;$460B。可持续性待多季验证。</p></div>
+<div class="c"><div class="n">05 · 持仓与控制</div><h3>H&H 翻倍 · 创始人控盘</h3><p>H&H Class C 1.855M→3.706M 股（+99.74%）verified；Page+Brin 合计 52.7% 投票权（持股&lt;11%）。</p></div>
+</div>
+
+<h2>本轮产出（落盘 · companies/googl/）</h2>
+<table class="files">
+<thead><tr><th>文件</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>claim_ledger.csv</td><td>55 条入账，~50 条 verified A1（旧 12 seed 全部 promote/标注）</td></tr>
+<tr><td>facts.md</td><td>EVIDENCE 9 主题 + 三分 + Contradictions 口径警示 + 覆盖度自查</td></tr>
+<tr><td>raw/ × 5</td><td>10-K / Q1'26 / 13F / 融资 / proxy 的 verbatim 留底</td></tr>
+<tr><td>source_register.md</td><td>9 个源（补 proxy），标注一手验证</td></tr>
+<tr><td>research_status.md</td><td>Stage 3 ✅，ceiling→WATCH，下一步已定</td></tr>
+</tbody>
+</table>
+
+<h2>测试的两面：验证了什么 / 暴露了什么</h2>
+<div class="two">
+<div class="box ok"><h3>✅ 验证的 OS 机制</h3><ul>
+<li>一手验证 + source_id 全程可追溯（每条回得到 SEC 原文 + verbatim）</li>
+<li>三分隔离生效：TradesMax 锁在 SENTIMENT，不进 EVIDENCE</li>
+<li>Contradictions「提纯机」抓出净利假象</li>
+<li>verdict ceiling 正确卡位：没估值就不许升到可下注的 STARTER+</li>
+</ul></div>
+<div class="box fix"><h3>🔧 暴露的 4 个改进点</h3><ul>
+<li>SEC 抓取要合规 User-Agent（默认 WebFetch 被 403）</li>
+<li>超大 10-K 单 agent 有盲区（年度广告细分没抽全）→ 该拆分或用 XBRL</li>
+<li><code>step0_plan</code> source 挂错：capex 指引不在季报 8-K（最后从 424B5 拿到）</li>
+<li>10 年财务序列仍无解（10-K 只给 2–3 年）→ 需专门数据源策略</li>
+</ul></div>
+</div>
+
+<h2>为什么卡在 WATCH</h2>
+<p style="font-size:13px">证据线已强，但理解线与决策线未动：<b>valuation / owner-earnings 桥 / inversion 缺失</b>，按 OS 硬规则封顶 WATCH。这不是缺陷，是 ceiling 机制在正确工作——它不让你在没算价格、没想清楚怎么亏之前就喊买入。要抬到 STARTER+ 必须先做分析层 + 估值。</p>
+
+<h2>下一步</h2>
+<div class="next">
+<div class="opt"><b>① 继续往下跑</b>分析层（财务质量/owner earnings 桥 → 估值 → 护城河 → 反演），推到能出 memo + verdict。会再开一批并行 agent。</div>
+<div class="opt"><b>② 先验收证据层</b>你打开 facts.md 看质量，确认够扎实再往下。</div>
+<div class="opt"><b>③ 先修 OS</b>把 4 个改进点回填进流水线模板，再继续。</div>
+</div>
+
+<p class="muted">数据全部来自 SEC 一手 A1 文件，retrieved 2026-06-16 · 完整明细见 companies/googl/claim_ledger.csv 与 facts.md</p>
+</div>
+</body>
+</html>

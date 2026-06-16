@@ -1,28 +1,129 @@
-# GOOGL Business Model
+# GOOGL 生意模式 (H1)
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
-Status: skeleton.
+Status: `analysis_drafted`. 本模块为 OS 流水线第 4 步「分析模块」之 H1（生意模式）。所有数字一律引 `facts.md` 的 `[source_id]`（一手 A1 = SEC EDGAR）；解读句标注证据分级；缺口进文末 open questions。
 
-## One-Sentence Business
+> 单位：USD millions，除非标注。FY = 财年（截至 12/31）。「derived」= 非 10-K/季报直接列报、由 EVIDENCE 数字推算。
+> 证据分级：**A1** 一手已验证（facts EVIDENCE）｜**A1-derived** 一手数推算｜**B** 二手/一致预期（本轮未拉，多为 open question）｜**C** 行业常识/机制推断（无单一 source）｜**D** 情绪线索，永不入 thesis。
 
-Alphabet monetizes user attention, intent, cloud infrastructure, software subscriptions, platforms, and AI products through advertising, enterprise cloud, subscriptions, app/platform economics, and other bets.
+---
 
-## Revenue Engines
+## 1. 一句话生意 + 「谁付钱」
 
-| Engine | Who pays? | Why they pay | Key metric | Evidence needed |
+**一句话：** Alphabet 用"全球十亿级用户的免费产品（搜索/YouTube/Android/Chrome/Maps/Gmail）"把注意力与商业意图聚到自家平台，再把这份意图与受众**主要卖给广告主**（FY2025 广告占 Services 主体），同时把同一套全栈基础设施（数据中心 + 自研 TPU + 模型）以 **Google Cloud** 卖给企业、以**订阅（YouTube Premium/Music、Google One、订阅版 Gemini）与硬件**卖给消费者——一台"意图变现机器"加一条正在放量的"算力/AI 变现"第二曲线。[GOOG.A1.2025K.009 / .011 / GOOG.A1.2026Q1.004]
+
+**结构定性（C 级机制）：** 这是典型"免费聚合用户 → 第三方（广告主/企业）付钱"的双边平台，不是向终端用户直接收费为主的生意。终端用户付的是"注意力 + 数据"，现金主要来自广告主与云客户。订阅/硬件是向 C 端直接收费的较小补充。
+
+### 谁付钱（Who Pays）
+
+| 付钱方 | 付什么（产品/服务） | 为什么付（价值） | 是否经常性 | 证据 |
 |---|---|---|---|---|
-| Search advertising | Advertisers | Commercial intent and measurable customer acquisition | Search revenue, paid clicks, CPC, TAC | 10-K, earnings releases |
-| YouTube ads | Advertisers | Video reach, creators, brand/performance ads | YouTube ads revenue, watch time, ad load | 10-K, earnings calls |
-| Subscriptions / platforms / devices | Consumers, app developers, device buyers | YouTube, Google One, Play, hardware, Gemini monetization | Revenue line, users, ARPU if disclosed | 10-K, product disclosures |
-| Google Cloud | Enterprises, developers, AI companies | Compute, data, AI infra, productivity software | Cloud revenue, margin, backlog/RPO | 10-K, earnings releases |
-| Other Bets | Mixed | Optionality | Revenue/losses | 10-K |
+| **广告主** | Search & other 广告位、YouTube 视频广告、Network（AdSense/AdMob 第三方网络） | 触达有**商业意图**的用户、可衡量的转化与获客 ROI、十亿级覆盖 | **高经常性**（预算按效果持续投放，非一次性）；但 Network 段已**同比下滑**，显示第三方代销价值在被自营平台与隐私/AI 挤压 | Q1'26 Search & other **$60,399M (+19%)**、YouTube ads **$9,883M (+11%)**、Network **$6,971M（YoY 下滑** vs 7,256） [GOOG.A1.2026Q1.004/.005/.006] |
+| **云客户（企业/开发者/AI 公司）** | Google Cloud：GCP 算力/数据/AI 基础设施 + Workspace 生产力套件 | 弹性算力、托管 AI（Gemini/Vertex）、企业数据栈、生产力协作；AI 浪潮下的训练/推理算力 | **高经常性 + 合约锁定**：backlog "over $460B"（季环比近翻倍）= 已签未确认收入，可见度极强 | FY2025 Cloud **$58,705M (+36%)**；Q1'26 **$20,028M (+63%)**，backlog **>$460B** [GOOG.A1.2025K.011 / GOOG.A1.2026Q1.010] |
+| **订阅用户** | YouTube Premium/Music、Google One（存储/AI）、订阅版 Gemini、NFL Sunday Ticket 等 | 去广告体验、云存储、高级 AI 功能、独家内容 | **高经常性**（月/年订阅，习惯绑定） | 含在 Google Services "subscriptions, platforms, and devices" 内；**年度细分未由 10-K 单列验证**（open question） [GOOG.A1.2025K.009] |
+| **设备买家** | Pixel 手机、Nest、Fitbit、Chromecast 等硬件 | 一手 Google AI/Android 体验、生态入口 | **低经常性**（一次性购买 + 换机周期）；战略意义 > 利润贡献 | 含在 Services "devices" 内，未单列；属相对小且低毛利 [GOOG.A1.2025K.009]（C 级：硬件为生态卡位，非利润引擎） |
+| **开发者/内容生态（非现金对价）** | Android、Play、YouTube 创作者分成 | 触达用户与变现渠道；平台抽成回流 Alphabet | 经常性（平台税/分成） | 机制性，未在 facts 单列金额（C 级） |
 
-## 10-Year Questions
+**一句话读图：** 现金来源高度集中在**广告主（经常性强但面临 AI/隐私结构性挑战）** 与**云客户（经常性 + 合约锁定，正高速放量）**；订阅/硬件是黏性补充但盘子与披露都小。
 
-- Does search intent remain monetizable if AI answers reduce links?
-- Does Google control enough distribution to adapt search behavior?
-- Does Cloud become a high-return platform or a capital-intensive utility?
-- Does TPU/full-stack AI lower cost enough to create durable advantage?
-- Are subscriptions and YouTube large enough to diversify the ad engine?
+---
 
+## 2. 收入引擎拆解（量 vs 价、单位经济、最新增速）
+
+> 分段口径见 Note 15。报表三大段 = **Google Services / Google Cloud / Other Bets**；Services 内再分 Search & other / YouTube ads / Network / subscriptions-platforms-devices。
+
+### 2.0 公司层总览（增长底盘）
+- FY2025 总营收 **$402,836M (+15% YoY)**；营业利润 **$129,039M**、营业利润率 **32.0%**(derived)；净利 **$132,170M**。[GOOG.A1.2025K.001/.005/.006/.007]
+- Q1 2026 总营收 **$109,896M (+22% YoY，恒定汇率 +19%)**，**第 11 个连续两位数增长季**；营业利润 **$39,696M (+30%)**、营业利润率 **36.1%(+2pp)**。[GOOG.A1.2026Q1.001/.018/.019]
+- ⚠ Q1'26 净利 +81%/EPS +82% 被 **$36.9B 未实现股权证券收益**严重抬高（非经营）；**营业利润 +30% 才是干净的增长读数**。[GOOG.A1.2026Q1.020/.022 + facts Contradictions #1]
+
+### 2.1 Google Search & other（核心利润引擎）
+- **最新增速：** Q1'26 **$60,399M，+19% YoY**。[GOOG.A1.2026Q1.004]
+- **量 vs 价（C 级机制）：** 量驱动 = 搜索 query 量 × 商业 query 占比 × 广告负载（每页广告位）；价驱动 = 每次点击成本 CPC（拍卖竞价）。10-K/季报本轮**未抽 paid clicks / CPC 明细**（gap）；故"量 vs 价谁主导"在 GOOGL 当前证据下**未拆解**。
+- **单位经济（C 级）：** 边际近乎零——多一次搜索几乎不增成本，新增广告主竞价直接抬高 ARPU，是 Alphabet 32% 营业利润率与高 ROIC 的根源。
+- **盘子定性：** Search 是 Services 营业利润 **$139,404M** 的主体来源（FY2025 Services 营业利润率 ~40.7%，derived 139,404/342,721）。[GOOG.A1.2025K.009/.010]
+- **⚠ open question：** FY2025 Search & other **年度**金额（旧 memo seed $224,532M）**未经 10-K advertising disaggregation 表验证**，已降级 OPEN_QUESTION。[GOOG.SEED.SearchFY2025]
+
+### 2.2 YouTube ads
+- **最新增速：** Q1'26 **$9,883M，+11% YoY**——**显著慢于 Search(+19%)**。[GOOG.A1.2026Q1.005]
+- **量 vs 价（C 级）：** 量 = 观看时长 × 广告负载（含 Shorts 货币化爬坡）；价 = 品牌/效果广告 CPM。增速放缓提示：要么广告负载接近上限、要么 Shorts（短视频）变现单价低于长视频在拖累混合 ARPU。
+- **单位经济（C 级）：** 内容成本由创作者分成承担（UGC 模式，Alphabet 不自制大部分内容），故规模化后高利润；但分成 + 体育版权（NFL）抬高了相对 Search 的边际成本。
+- **黏性：** 广告 + 订阅（Premium/Music）双重变现，详见护城河（H2 模块）。
+
+### 2.3 Google Network（结构性逆风段）
+- **最新增速：** Q1'26 **$6,971M，YoY 下滑**（vs 7,256）。[GOOG.A1.2026Q1.006]
+- **机制（C 级）：** AdSense/AdMob——把广告卖到**第三方**网站/App，Alphabet 抽成。这是唯一**萎缩**的广告段，反映：广告主预算向自营高 ROI 平台（Search/YouTube/零售媒体）回流 + 隐私（Cookie/ATT）削弱第三方定向 + open-web 库存价值下降。
+- **判读：** Network 下滑是"广告主只为最优库存付钱"的市场信号，**对 Search/YouTube 自营盘反而是相对利好的需求集中**，但单看 Network 是 thesis 的瑕疵点。
+
+### 2.4 订阅 / 平台 / 设备（Subscriptions, platforms & devices）
+- **盘子：** 含在 Google Services **$342,721M** 内，**未由本轮证据单列**（gap）。[GOOG.A1.2025K.009]
+- **量 vs 价（C 级）：** 量 = 付费订阅用户数（YouTube Premium/Music、Google One）+ Play/硬件销量；价 = 订阅 ARPU + 设备单价。
+- **战略角色：** 把"免费用户"转一部分为"直接付费 + 经常性"，对冲广告周期性；Google One 已成为消费级 AI（Gemini 高级版）的收费载体。**经常性强但披露透明度低**——是本模块最大数据缺口之一。
+
+### 2.5 Google Cloud（第二支柱候选，正放量）
+- **最新增速：** FY2025 **$58,705M (+36%)**；Q1'26 **$20,028M (+63%)**——**全公司增长最快的段**。[GOOG.A1.2025K.011 / GOOG.A1.2026Q1.010]
+- **盈利拐点（关键）：** 营业利润 FY2023 **$1,716M** → FY2024 **$6,112M** → FY2025 **$13,910M**；Q1'26 单季 **$6,598M**，营业利润率 **32.9%(derived)**（Q1'25 ~17.8%）——**两年从微利到接近 Services 利润率水平**。[GOOG.A1.2025K.012 / GOOG.A1.2026Q1.014/.015]
+- **量 vs 价（C 级）：** 此阶段是**量驱动为主**（算力消费 + 席位扩张 + AI 工作负载激增），叠加**利用率改善带来的运营杠杆**推高利润率；backlog **>$460B**（季环比近翻倍）= 已签合约收入，**可见度极强**。[GOOG.A1.2026Q1.010]
+- **单位经济（C 级）：** 重资产——靠自研 TPU 压低单位算力成本是利润率能跳到 32.9% 的核心假设；但这正吃掉巨额 capex（见 2.7），owner-earnings 含义复杂。
+- **⚠ open question：** 32.9% 利润率**可持续性未验证**——可能含利用率/会计一次性因素，需多季趋势确认。
+
+### 2.6 Other Bets（期权价值，现金消耗）
+- FY2025 营收仅 **$1,537M**，营业亏损 **$(7,515)M**（含 Q4 Waymo $2.1B 估值补偿费用）。[GOOG.A1.2025K.014 + block04]
+- **角色：** 不是当前赚钱引擎，是长期期权（Waymo 自动驾驶等）；当前**净拖累** owner earnings，估值上多按期权或单独计。
+
+### 2.7 跨引擎核心矛盾：capex 正在压缩 FCF（必须并读）
+- 所有广告/云引擎的现金正被 AI 基础设施 capex 吸走：FY2025 capex **$91,447M (+74%)**，derived FCF **$73,266M**；Q1'26 capex **$35,674M (~2.07x YoY)**，stated FCF 单季降至 **$10,116M**（TTM FCF **$64,429M**）。[GOOG.A1.2025K.016/.017 / GOOG.A1.2026Q1.024/.025]
+- **2026 全年 capex 指引 $180–190B，2027 再"显著增加"**；同时**回购暂停**（Q1'26 $0 vs Q1'25 $15B）+ $80B 股权融资专款投 AI 算力。[GOOGL-424B5-2026-06.009 / GOOGL-FWP-2026-06.001 / GOOG.A1.2026Q1.027]
+- **生意模式含义：** 收入引擎质量极高（高利润、经常性、规模经济），但**"高回报再投"这一条正被天量 capex 实测**——增长是真的，FCF 转化率却在被压。这是 H1 与估值模块的交接点（owner-earnings 桥归 financial_quality / valuation 模块，不在此裁决）。
+
+---
+
+## 3. 十年存在性测试
+
+### 3.1 AI answers 减少蓝链点击后，搜索的商业意图变现还成立吗？
+**仍存在的客户问题（C 级框架）：** 用户"想买/想找/想决策"的**商业意图**是永久需求；广告主"用可衡量 ROI 触达高意图用户"的需求同样永久。变的是**界面**（蓝链 → AI 生成答案），不是底层意图。
+- **乐观侧（有证据支撑）：** Q1'26 Search & other 仍 **+19%**——在 AI overview/AI mode 已大规模铺开的 2026 年，**搜索广告不仅未失血，反而加速**。这是对"AI 杀死搜索变现"最有力的反证（A1 数据）。[GOOG.A1.2026Q1.004]
+- **风险侧（C 级，需 H3 inversion 量化）：** ① AI 答案若降低每次会话的广告位，单 query 货币化（ARPU）可能下降，需 query 量 / 更高意图广告位补偿；② 商业意图可能被**第三方 AI 助手/agent**（ChatGPT、购物 agent）截走入口；③ 监管（DOJ adtech 结构性救济、默认搜索协议）可能削弱分发。[GOOG.A1.2025K.026 notes]
+- **小结：** 十年存在性"是"——但变现**形式**会重构，关键看 Alphabet 能否把 AI 答案做成"更高意图、可插入商业模块"的新广告位。当前 +19% 说明短期迁移可控；长期是 H3 反演的头号 kill-test。
+
+### 3.2 Cloud 能否成为第二支柱？
+**证据上：已经在成为。** 不是"能否"，而是"质量与可持续性"问题。
+- 增速 **+63%(Q1'26)**、利润率从 ~17.8% 跳到 **32.9%**、backlog **>$460B** —— 规模、盈利、可见度三要素同时具备。[GOOG.A1.2026Q1.010/.014/.015]
+- **十年逻辑（C 级）：** AI 训练/推理对算力的需求是长期结构性的；Alphabet 全栈（TPU + 网络 + Gemini + 数据）理论上能持续压低单位成本，把算力做成高回报平台而非低回报公用事业。
+- **未决（open question）：** 32.9% 是否可持续 / 是否靠一次性利用率；天量 capex 的增量回报率（ROIIC）能否守住——这是"第二支柱"成色的核心，归 valuation/moat 模块。
+
+### 3.3 YouTube 护城河？
+- **机制（C 级）：** 双边网络效应——创作者（UGC 供给，Alphabet 不承担多数内容成本）↔ 观众规模 ↔ 推荐算法数据，自我强化；且**广告 + 订阅双变现**（Premium/Music），抗单一广告周期。
+- **证据：** Q1'26 YouTube ads **$9,883M (+11%)** 仍双位数增长，但**慢于 Search**，提示成熟段 + 短视频（Shorts）变现单价稀释。[GOOG.A1.2026Q1.005]
+- **十年存在性：** 视频消费需求长存、创作者生态迁移成本高 → 护城河大概率延续；风险是 TikTok/Reels 对**时长与短视频广告单价**的争夺。深度护城河机制留给 H2 moat 模块。
+
+---
+
+## 4. 生意质量记分卡
+
+> 评分：✅ 强（有 A1 证据支撑）｜🟡 中/有保留（部分证据或正被实测）｜🔴 弱/逆风。每行挂证据。
+
+| 维度 | 结论 | 证据 | 评分 |
+|---|---|---|---|
+| **付费意愿（广告主/云客户）** | 极强：广告主为可衡量商业意图持续付费、Search 在 AI 时代仍 +19%；云客户签下 **>$460B** backlog | Q1'26 Search +19% [GOOG.A1.2026Q1.004]；Cloud backlog >$460B [GOOG.A1.2026Q1.010] | ✅ 强 |
+| **经常性 / 习惯黏性** | 广告预算按效果持续投放 + Cloud 合约锁定 + 订阅月费 = 多层经常性；**唯 Network 段下滑**是瑕疵 | 11 连季两位数增长 [GOOG.A1.2026Q1.001]；Cloud backlog [.010]；Network YoY 下滑 [GOOG.A1.2026Q1.006] | ✅ 强（Network 🟡） |
+| **规模经济** | 显著：搜索边际成本近零、Cloud 利润率两年 1.7%→32.9% 体现运营杠杆；总营业利润率 32%→36.1% | Cloud OI 1,716→6,112→13,910 [GOOG.A1.2025K.012]；Q1'26 margin 36.1%(+2pp) [GOOG.A1.2026Q1.019] | ✅ 强 |
+| **高回报再投（资本再投资）** | **正被天量 AI capex 实测**：增长真实但 FCF 转化被压；2026 capex 指引 $180-190B、回购暂停、$80B 融资 → 增量回报率(ROIIC)未证 | capex $91.4B(+74%)→指引 $180-190B [GOOG.A1.2025K.016 / GOOGL-424B5-2026-06.009]；FCF TTM 压至 64.4B [GOOG.A1.2026Q1.025]；回购暂停 [.027] | 🟡 中（thesis 关键不确定项） |
+| **能力圈（可理解性）** | 高：广告竞价 + 云算力 + 订阅，是清晰可理解的双边平台 + 基础设施生意；复杂度在 capex/AI 走向，非商业模式本身 | 商业模式结构清晰（本模块 §1-2）；复杂度集中在 capex 矛盾 §2.7 | ✅ 强（对个人投资者友好） |
+
+---
+
+## Open Questions（触发回流补料）
+
+- [ ] **Search & other FY2025 年度金额**未由 10-K advertising disaggregation 表验证（seed $224,532M 降级待核）。[GOOG.SEED.SearchFY2025]
+- [ ] **量 vs 价拆解缺口**：paid clicks / CPC（Search）、watch time / ad load（YouTube）本轮未抽——故各引擎"量驱动 vs 价驱动"为 C 级机制推断，未由披露坐实。
+- [ ] **订阅/平台/设备 单段金额与订阅用户数 / ARPU** 未单列（10-K 仅给 Services 合计 $342,721M），订阅经常性强但盘子不透明。
+- [ ] **Cloud 32.9% 营业利润率可持续性**：需多季趋势 + 是否含利用率/会计一次性（决定"第二支柱"成色）。
+- [ ] **AI answers 对单 query 货币化(ARPU)的净影响**：+19% 是混合读数，量增 vs 单位货币化变化未分离 → 归 H3 inversion 量化（头号 kill-test）。
+- [ ] **AI capex 增量回报率(ROIIC)**：维护性 vs 成长性 capex 拆分 + owner-earnings 桥 → 归 financial_quality / valuation 模块（本模块不裁决）。
+- [ ] **第三方 AI 助手/agent 截流商业意图**的早期信号（入口迁移） → 监控项，归 H2 moat / H3 inversion。
+
+---
+
+*交接说明：本 H1 模块只判定"生意怎么赚钱 + 引擎质量"，不做 owner-earnings 桥、不做估值、不做护城河深度机制与攻击面（分别归 financial_quality / valuation / H2 moat / H3 inversion）。capex 矛盾在此仅作"高回报再投待证"标注，量化交下游。*

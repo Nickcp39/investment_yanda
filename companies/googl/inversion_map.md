@@ -1,25 +1,130 @@
-# GOOGL Inversion / Risk Map
+# GOOGL 反演 / 失败地图 (Inversion Map, H7)
 
-Last updated: 2026-06-15
+最后更新: 2026-06-16
+模块: 4C Inversion（买方研究 OS 第 4 步分析模块之一）
+作者视角: Munger「反过来想」——假设我是资源充足、耐心很长、没有历史包袱的竞争者/监管者/技术替代者/内部破坏者，我要让 Alphabet **十年内失去超额利润**，我会怎么攻击？
 
-Status: skeleton.
+数字全部回挂 `facts.md` 的 verified A1 claim（[source_id]）。**本模块只做"如何杀死它"与可证伪阈值，不给最终 verdict**（verdict 仍受 valuation 未做封顶 WATCH）。
 
-## If I Wanted Google To Fail
+> 方法纪律（来自 `frameworks/munger/inversion_checklist.md` §5）：
+> - 已发生且无对冲 → 推 REJECT/WATCH
+> - 可能发生但有监控指标 → 继续研究
+> - **影响巨大但证据不足 → 必须进 Kill Criteria（写成可观测阈值）**
 
-| Attack path | Mechanism | Early warning | Permanent damage? |
-|---|---|---|---|
-| Break search monetization | AI answers shift commercial intent away from search ads | Search growth slows, CPC declines, advertiser ROI shifts | Yes, if durable |
-| Force distribution remedies | Antitrust restricts default search / app store / platform economics | Court remedies, EU/US regulatory actions | Yes, if defaults lose economics |
-| Turn AI capex into a low-return race | Competitors force spend without pricing power | Capex/revenue rises, FCF per share falls | Yes, if structural |
-| Cloud margin disappointment | Growth comes from low-margin AI compute | Cloud margin falls with higher depreciation | Maybe |
-| Culture/product execution lag | Google has models but fails to package and monetize | Product adoption trails competitors | Maybe |
-| Capital allocation error | Buy high, issue low, dilute owners, overbuild capacity | Share count rises, buybacks stop, debt/equity issuance expands | Yes |
+---
 
-## Kill Criteria Draft
+## 0. 一句话攻击论点
 
-- [ ] Search & other revenue weakens for reasons tied to AI displacement, not macro.
-- [ ] Capex growth consumes incremental operating cash flow without credible owner-earnings path.
-- [ ] Regulatory remedies materially impair default distribution economics.
-- [ ] Cloud margin proves unsustainable under AI depreciation.
-- [ ] Management cannot explain return thresholds for AI capex.
+Alphabet 今天最干净的多头读数是「营业利润 +30%、Cloud 转盈、现金流强」[GOOG.A1.2026Q1.018/.010/.023]。要杀死它，**不必正面打赢搜索**——只需让它的**单位经济在 AI 界面迁移 + capex 军备竞赛 + 监管结构性救济**三者叠加下，**收入还在增、owner earnings 却被吃光**。最致命的不是"搜索收入崩盘"（短期不会），而是"**搜索仍增长但每美元收入要烧掉越来越多 capex 去防守，超额利润被永久稀释**"。
 
+---
+
+## 1. Failure Map（≥9 类）
+
+| # | 攻击路径 | 攻击者 | 机制（具体到单位经济） | 时间跨度 | 今日证据 [source_id] | 预警信号（可观测） |
+|---|---|---|---|---|---|---|
+| F1 | **AI answers 侵蚀搜索变现** | OpenAI/ChatGPT、Perplexity、Meta AI、Apple Intelligence；以及 Google **自己的 AI Overviews/AI Mode**（自我蚕食） | 用户在生成式答案页完成任务，不再点 10 条蓝链 → 高意图广告库存与点击归因下降；即便 query 增长，**每 query 变现（RPM）下滑**；AI 答案的算力成本 > 传统索引检索，**毛利结构变差** | 已开始，3–7 年见分晓 | Q1'26 Search & other 仍 **+19%**（$60,399M），尚无收入级损伤 [GOOG.A1.2026Q1.004]；但**事实层 OPEN：AI answer 是否削弱商业 query 变现尚无单位经济证据** [research_status Open Q] | Search & other 同比增速连续 2 季跌破 +8%；管理层停止/含糊披露 paid clicks 与 CPC 趋势；AI Overviews 渗透↑而 Search RPM↓ |
+| F2 | **监管结构性救济（DOJ adtech + EC）** | 美 DOJ、各州 AG、欧盟委员会 | DOJ adtech 案 2025-04 **部分败诉**，结构性救济提案"could have a **material adverse effect**"；若被迫剥离 ad exchange/拆分 adtech stack 或限制默认搜索分销协议 → 高毛利广告中介利润池被切，TAC/流量结构恶化 | 救济判决 1–3 年；上诉拖至 3–5 年 | DOJ adtech 部分败诉、结构性救济待裁 [GOOG.A1.2025K.026 notes]；EC adtech self-preferencing 罚 **€3.0B**、Q3'25 计提 **$3.5B**（已上诉）[GOOG.A1.2025K.026]；年末短期罚款/和解计提 **$15.6B** [GOOG.A1.2025K.026] | 法院下达**剥离/拆分**类（而非纯罚款）最终救济；默认搜索协议被禁或被迫开放；Network 收入加速下滑（已在跌，见 F4） |
+| F3 | **AI capex 变低回报黑洞** | 无需外部攻击者——**自我施加的军备竞赛**（被 OpenAI/Microsoft/Meta/xAI 逼迫不敢不投） | 收入还在增，但折旧+capex 增速远超营业利润，**owner earnings / FCF per share 被吃光**；若 AI 货币化不及预期，巨额数据中心资产**加速折旧/减值** | 已发生，2–5 年验真伪 | capex FY2025 **$91.4B (+74%)**、Q1'26 **$35.7B (~2.07x)**；**2026 指引 $180–190B、2027 再"显著增加"** [GOOG.A1.2025K.016 / GOOG.A1.2026Q1.024 / GOOGL-424B5-2026-06.009]；TTM FCF 已被压到 **$64.4B**（Q1'26 单季 FCF $10.1B）[GOOG.A1.2026Q1.025]；**回购暂停**（Q1'26 $0 vs Q1'25 $15B）+ 发债 $31.4B + **$80B 股权融资** [GOOG.A1.2026Q1.027 / GOOGL-FWP-2026-06.001] | FCF per share 连续 2 年下降；capex/营业现金流 > 70% 且无 ROIC 回升；管理层无法给出 AI capex 的回报门槛（hurdle rate）；出现数据中心/TPU 资产减值 |
+| F4 | **广告预算迁移（高意图查询外流）** | Amazon（商品搜索）、TikTok/Meta（发现式+社交电商）、垂直搜索（Booking/携程类）、未来 **AI commerce/agent 直接成交** | 商业 query 是搜索利润的核心；若购物起点从 Google 迁到 Amazon/TikTok/AI agent，**最赚钱的那部分库存被分走**，剩下低意图流量变现差 | 已开始（结构性），5–10 年 | **Google Network 收入 Q1'26 同比下滑**（$6,971M）[GOOG.A1.2026Q1.006]——第三方网络已是负增长；但核心 Search & other 仍 +19% [GOOG.A1.2026Q1.004]，主站尚稳 | Search & other 增速持续低于电商大盘；零售/旅游垂类广告主预算占比下降；Amazon Ads / Retail Media 增速持续数倍于 Google Search |
+| F5 | **Cloud 价格战 / 利润率坍塌** | AWS、Azure、Oracle/CoreWeave 等新 AI 云、开源模型（降低对托管 API 的依赖）、客户自建芯片 | 若 Cloud 增长靠**低毛利 AI 算力**堆出来，叠加价格战与高折旧，**32.9% 营业利润率回吐**；backlog 兑现需持续 capex 支撑，形成"增收不增利" | 2–4 年 | Cloud Q1'26 营收 **+63%**、营业利润率 **32.9%**（Q1'25 ~17.8%，刚转好）[GOOG.A1.2026Q1.010/.015]；**OPEN：该利润率是否受利用率/会计一次性抬高，尚无多季趋势** [research_status Open Q]；backlog "over $460B" 需 capex 兑现 [GOOG.A1.2026Q1] | Cloud 营业利润率连续 2 季回落 >5pp；Cloud 增收但分部营业利润绝对额停滞/下降；价格披露显示单位算力价格战 |
+| F6 | **组织速度落后（产品执行迟缓）** | OpenAI/Anthropic/xAI/Meta 等更激进、无历史包袱的团队 | 大公司流程、风险厌恶、为保护旧搜索利润而慢于新交互范式 → **有模型但晚一步把它做成默认入口与可货币化产品**，把平台让成 feature | 持续，3–7 年 | 间接证据：Other Bets FY2025 营业亏损 **$(7,515)M**（含 Waymo $2.1B 估值补偿）[GOOG.A1.2025K.014]——非核心投入大但回报慢；**正面证据：Cloud 两年从微利到大幅盈利、Q1'26 第 11 个连续两位数增长季** [GOOG.A1.2025K.012 / GOOG.A1.2026Q1.001] 反而显示执行不弱 | 旗舰 AI 产品发布持续晚于对手且采用率落后；关键产品线 DAU/采用率份额下滑；财报电话中反复"我们正在追赶"叙事 |
+| F7 | **创始人控制权风险（缺乏外部约束）** | 结构性内生风险——非外部攻击者 | Page 27.4% + Brin 25.3% = **52.7% 投票权**（持股<11%）[GOOG.A1.PROXY2026.004]；双重股权使外部股东**无法在 capex 失控/资本配置错误时施加纪律**；若创始人判断错误（如 over-build），少数股东无救济。注：同一结构也可正向（长期主义、敢逆周期投 AI） | 长期、低频高损 | 三层股权 B=10 票/A=1/C=0 [GOOG.A1.PROXY2026.001]；全体高管+董事 14 人合计 **54.3%** 投票权 [GOOG.A1.PROXY2026.009]；关联交易：向创始人关联实体机库租赁 ~$10M（审计委认公平）[GOOG.A1.PROXY2026.010] | 资本配置出现明显损害股东价值的决策而董事会无力纠偏；关联交易规模扩大/条款恶化；独立董事会主席（Hennessy）离任且制衡弱化 [GOOG.A1.PROXY2026.005] |
+| F8 | **关键人风险（AI/产品顶尖人才流失）** | 竞对挖角、明星研究员自立门户 | DeepMind/Gemini/TPU 的护城河高度依赖少数顶尖人才；若核心 AI 团队被高薪/股权激进对手挖走，技术代差扩大 | 中期，2–5 年 | 间接：CEO Pichai 2025 总薪酬仅 **$10.9M**（含 $8.8M 安保、**2025 零股票授予**——多年期授予使常态经济薪酬被低估）[GOOG.A1.PROXY2026.007]；SBC 总额 **$27.1B** [GOOG.A1.2025K.023]（留人成本高但也说明在用股权锁人） | 公开报道核心 DeepMind/Gemini 研究负责人成批离职；SBC 大增但产出未跟上；关键产品发布因人才断层延期 |
+| F9 | **估值过高 → 长期回报差（即便生意不坏）** | 市场情绪/买入价格——非公司本身 | 即使 Alphabet 仍是好生意，若以过高价格买入，未来十年 IRR 被压到低于机会成本（如 QQQ 4 年 2.03× 基准）；capex 高峰期 FCF 被压缩使估值更易高估 | 买入即锁定，10 年兑现 | **估值模块未做**——无 owner earnings 桥、无安全边际 [research_status: valuation ⏸ 封顶 WATCH]；Berkshire $10B 是 **$351.81/$348.20 私募融资**定价（非纯二级增持，不能当"安全边际背书"）[GOOGL-424B5-2026-06.001/.002] | 买入价隐含的 10 年 IRR < QQQ 历史基准；FCF yield 在 capex 高峰被人为压低却按高峰前估值定价 |
+
+> **覆盖核对**（对照 inversion_checklist §2 必覆盖项）：客户离开=F4 ✅／定价权丧失=F1+F5 ✅／技术替代=F1 ✅／分销入口被绕过=F1+F2 ✅／监管诉讼=F2 ✅／资本配置错误=F3+F7 ✅／文化人才恶化=F6+F8 ✅／财务杠杆或稀释=F3 ✅／估值过高=F9 ✅。
+
+---
+
+## 2. 永久减值 vs 短期波动
+
+| 路径 | 性质 | 理由 |
+|---|---|---|
+| F1 AI 侵蚀搜索变现 | **潜在永久**（若交互范式真的迁移） | 一旦用户行为从"点链接"迁到"读答案"，是结构性范式变化，不可逆；但若 Google 自己的 AI 界面货币化跟上，则只是过渡波动——**今日证据不足以判定，故进 Kill Criteria** |
+| F2 监管结构性救济 | **永久（若剥离/拆分）／短期（若仅罚款）** | €3.0B/$3.5B 罚款是**短期**一次性（占 FY2025 净利 $132.2B 的 ~2.6%，可吸收）[GOOG.A1.2025K.007]；但**结构性剥离 adtech 或禁默认协议是永久**——管理层自己标"material adverse effect" [GOOG.A1.2025K.026 notes] |
+| F3 AI capex 黑洞 | **可永久（若 ROIC 结构性下降）／可短期（若是投资期错配）** | capex 高峰本身不必然是坏事（可能是 ROIC 高的扩张）；坏的是"投了但回报不来"。**当前 FCF 压缩 + 回购暂停 + $80B 融资是真实的，但回报真伪要 2-3 年才见** → 核心待证矛盾 |
+| F4 广告预算迁移 | **永久（结构性）** | Network 已负增长 [GOOG.A1.2026Q1.006]，是慢性、单向、结构性流失；但主站 Search 尚未被攻破 |
+| F5 Cloud 利润率坍塌 | **多为短期/周期** | 价格战与利用率是周期性的；规模与全栈（TPU）长期反而可能扩利润。除非开源彻底瓦解托管需求才是永久 |
+| F6 组织速度落后 | **可永久（文化是慢变量、难逆转）** | 但 Cloud 转盈 + 连续 11 季两位数增长是反证，当前执行力**不弱** |
+| F7 创始人控制权 | **结构性常驻风险（低频高损）** | 双重股权十年内不会变；是"放大器"——把好/坏资本配置都放大，本身不裁多空 |
+| F8 关键人 | **中期、可恢复** | 人才可补充，但代差一旦拉开短期难追 |
+| F9 估值过高 | **买入即永久锁定回报** | 与生意质量正交；是**价格风险**不是**生意风险**，靠估值纪律对冲（估值模块未做，是最大盲区） |
+
+---
+
+## 3. 哪些已 price-in / 哪些没
+
+| 路径 | 市场是否已计入 | 判断依据 |
+|---|---|---|
+| F2 罚款（EC €3.0B/DOJ 罚金） | **大概率已 price-in** | 已公开计提、已上诉，是已知数；$15.6B 短期计提市场可见 [GOOG.A1.2025K.026] |
+| F3 capex 高峰 | **部分 price-in** | $180–190B 指引已公开 [GOOGL-424B5-2026-06.009]；但**回报真伪未 price-in**——市场目前给"AI 赢家"叙事溢价，若回报落空会有重定价 |
+| F1 AI 侵蚀搜索 | **未充分 price-in（双向）** | 既有空头叙事（搜索被颠覆）也有多头叙事（AI Mode 提升变现）；**因缺单位经济证据，市场在押注而非定价**——这是最大的认知套利/风险窗口 |
+| F2 结构性救济（剥离/拆分） | **未充分 price-in** | 尾部事件，概率难估；市场倾向假设"只罚款不拆分" |
+| F5 Cloud 利润率回吐 | **未 price-in** | 市场正按 32.9% 高利润率外推 [GOOG.A1.2026Q1.015]，若是一次性会失望 |
+| F9 估值 | **无法判断** | 估值模块未做，无法说当前价是否含足够安全边际——**研究最大缺口** |
+
+---
+
+## 4. 接到护城河的 attack surface（对照 `moat_map.md`）
+
+| 护城河来源（moat_map） | 对应攻击面 | 主攻路径 |
+|---|---|---|
+| 搜索习惯与默认分销（Chrome/Android/默认协议） | AI 原生交互绕过蓝链 + 监管禁默认协议 | **F1 + F2** |
+| 广告主数据 / 拍卖流动性 | 高意图流量外流至 Amazon/TikTok/AI agent | **F4** |
+| YouTube 网络效应 | 短视频/流媒体竞争（未单列，强度低于 F1/F4） | （次要） |
+| Cloud 规模与 AI 基建（数据中心/TPU） | 价格战 + 低毛利算力 + 自建芯片 | **F5 + F3** |
+| 生态分销（Android/Chrome/Play/Gmail/Maps） | 反垄断救济强拆/强开放 | **F2** |
+| 顶尖人才 / 模型（Gemini/DeepMind/TPU） | 人才被挖、执行迟缓 | **F6 + F8** |
+
+> moat_map 的核心测试「**AI capex 上升后，Alphabet 能否维持高增量资本回报？**」正是本反演 F3 的镜像——**两个模块共同把赌注压在同一个未解问题：incremental ROIC 是否撑得住 capex**。
+
+---
+
+## 5. Kill Criteria（可观测阈值清单）
+
+> 规则：影响大但证据不足 → 写成阈值监控。任一触发 = 重新审视多头论点 / 考虑下调或退出。
+
+- [ ] **K1 [F1 核心]**：**Search & other 收入连续两个季度同比增速 ≤ +8%**，且管理层归因于 AI 答案/界面迁移而非宏观或汇率。（**最强单一信号**；当前 Q1'26 为 +19% [GOOG.A1.2026Q1.004]，离触发尚远）
+- [ ] **K1b [F1 极端]**：**Search & other 收入连续两季同比转负**（用户级行为崩塌的确证）。
+- [ ] **K2 [F3]**：**FCF per share 连续两年下降**，且 capex / 营业现金流 **持续 > 70%**，同时无 incremental ROIC 回升证据。（当前 capex/OCF：FY2025 $91.4B/$164.7B≈56%；Q1'26 $35.7B/$45.8B≈78% 已偏高 [GOOG.A1.2025K.016/.015 / GOOG.A1.2026Q1.024/.023]——**Q1 已踩线，需看全年**）
+- [ ] **K3 [F3]**：管理层**两个财报周期内仍无法/拒绝给出 AI capex 的回报门槛（hurdle rate / 预期 ROIC）**，或出现**数据中心/TPU 资产减值**。
+- [ ] **K4 [F2]**：法院/监管下达**结构性救济**（剥离 adtech 资产、禁止默认搜索分销协议、强制开放平台），而非纯罚款。
+- [ ] **K5 [F5]**：**Cloud 营业利润率连续两季回落 > 5pp**，或 Cloud 增收但**分部营业利润绝对额停滞/下降**。（当前 32.9% [GOOG.A1.2026Q1.015]）
+- [ ] **K6 [F4]**：零售/旅游等高意图垂类广告预算占比持续下降，且 **Amazon Ads/Retail Media 增速持续数倍于 Google Search**；Network 负增长扩散至核心 Search（Network 已负 [GOOG.A1.2026Q1.006]）。
+- [ ] **K7 [F6/F8]**：旗舰 AI 产品采用率持续落后对手 **且** 公开报道核心 DeepMind/Gemini 研究负责人成批离职。
+- [ ] **K8 [F9 估值]**：买入价隐含的 10 年 IRR < QQQ 历史 4 年 2.03× 折算基准（`qqq_4yr_doubling_benchmark`）——**待估值模块建 owner earnings 桥后才能量化**。
+- [ ] **K9 [F3 资本配置]**：**回购暂停长期化 + 持续股权融资**导致**股本净增**（稀释老股东），而 capex 回报未兑现。（当前已回购暂停 + $80B 融资 [GOOG.A1.2026Q1.027 / GOOGL-FWP-2026-06.001]，但 FY2025 股本因回购仍**下降**至 12,088M [GOOG.A1.2025K.022]——拐点信号是股本由降转增）
+
+---
+
+## 6. Disconfirming Evidence（什么证据让 bear case 站不住）
+
+> 保证可证伪：以下任一成立，则对应空头路径**应被推翻或大幅降权**。
+
+- **驳 F1（AI 侵蚀）**：若管理层披露 **AI Overviews/AI Mode 的搜索 RPM/变现率 ≥ 传统搜索**，且 Search & other 在 AI 渗透率上升的同时**仍维持双位数增长**（如已发生的 Q1'26 +19% 持续 4+ 季）→ AI 是变现增量而非威胁。[GOOG.A1.2026Q1.004]
+- **驳 F3（capex 黑洞）**：若 capex 高峰后 **2-3 年内 FCF per share 重新增长**、Cloud + AI 产品收入兑现 backlog（$460B+ 逐步确认）、incremental ROIC 维持高位 → capex 是高回报扩张而非黑洞。[GOOG.A1.2026Q1 backlog / GOOG.A1.2025K.012 Cloud 两年转盈即先例]
+- **驳 F2（结构性救济）**：若最终判决为**纯罚款/行为救济**（如 EC 模式）而非剥离/拆分，且默认搜索协议得以保留 → 监管是可吸收成本（$15.6B 计提 vs $132B 净利）。[GOOG.A1.2025K.026 / .007]
+- **驳 F5（Cloud 利润率）**：若 Cloud 营业利润率在**多季（≥4 季）维持 30%+** 且绝对营业利润持续扩大 → 利润率是结构性而非一次性。[GOOG.A1.2026Q1.015]
+- **驳 F6（组织迟缓）**：Cloud 两年从微利($1.7B)到 $13.9B 营业利润、连续 11 季两位数增长，本身就是"大公司也能高速执行"的反证。[GOOG.A1.2025K.012 / GOOG.A1.2026Q1.001]
+  > 注：F7 预警里独立董事长由 `GOOG.A1.PROXY2026.005` 覆盖（董事会 10 人/7 独立 + Hennessy 任独立主席，2018-01 起）。
+- **驳 F4（广告迁移）**：若核心 Search & other 增速持续 ≥ 电商广告大盘，说明高意图流量并未实质外流（Network 下滑可被主站增长覆盖）。[GOOG.A1.2026Q1.004/.006]
+- **驳 F7（创始人控制权）**：若逆周期 AI 投资事后被证明是高回报、且无损害少数股东的关联交易扩张 → 双重股权的"长期主义"一面占优。[GOOG.A1.PROXY2026.010 审计委认公平]
+
+---
+
+## 7. 模块结论（一句话）
+
+**最致命的永久性失败路径 = F1×F3 的合流：AI 答案界面使搜索"每美元收入"变现下滑，同时被迫用越来越高的 capex 去防守与货币化 AI——收入仍增长，owner earnings 却被永久稀释**。单看任一项都可对冲（搜索仍 +19%、Cloud 已转盈），但两者叠加且 incremental ROIC 撑不住时，是不可逆的超额利润流失；监管结构性救济（F2 剥离/拆分）是低概率高破坏的尾部加速器。
+
+---
+
+## 8. Open Questions（触发回流补料）
+
+- [ ] **AI 答案的单位经济**：AI Overviews/AI Mode 的 RPM/变现率 vs 传统搜索？算力成本对搜索毛利的拖累多大？（F1 的胜负手，facts 层尚无证据）
+- [ ] **capex 维护性 vs 成长性拆分** + incremental ROIC：F3 与 K2/K3 的量化前置，10-K/季报未直接披露（与 financial_quality 模块共享缺口）。
+- [ ] **Cloud 32.9% 利润率的构成**：多季趋势、是否含利用率/会计一次性？（F5/K5 前置）
+- [ ] **DOJ adtech 最终救济形态**：纯罚款 vs 行为救济 vs 结构性剥离的概率分布与对广告利润池的量化影响（F2/K4 尾部）。
+- [ ] **高意图 query 份额**：Google Search 在零售/旅游商业查询的份额趋势 vs Amazon/垂直（F4/K6，无第三方数据）。
+- [ ] **估值锚**：buy-in 价隐含 10 年 IRR——K8 无法落地直到 valuation.md + owner earnings 桥完成（**封顶 WATCH 的根因**）。
+- [ ] **AI 人才流动**：DeepMind/Gemini 核心团队稳定性的可观测代理指标（F8/K7，目前只能靠公开报道）。

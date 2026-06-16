@@ -1,0 +1,29 @@
+period,line,value,unit,scenario,source_id,notes
+# ===== FY2025 owner earnings bridge =====,,,,,,
+FY2025,net_income_reported,132170,USD_M,both,GOOG.A1.2025K.007,"starting point"
+FY2025,less_nonrecurring_other_income,-29787,USD_M,both,block04_10k_fy2025,"Other income net 29787 (FY24 7425, FY23 1424) - mostly non-operating/unrealized; strip to get clean operating-based earnings. Conservative: remove all OI&E above a normalized ~1-2B"
+FY2025,add_back_normalized_other_income,1500,USD_M,both,ASSUMPTION,"add back a normalized ~1.5B steady investment/interest income (judgment, not a filed line) - OPEN"
+FY2025,net_income_normalized_operating,103883,USD_M,both,derived,"= 132170 - 29787 + 1500; closer to net of clean operating economics"
+FY2025,add_DandA,21100,USD_M,both,ASSUMPTION_TASK,"depreciation ~21.1B - TASK-SUPPLIED, NOT in facts.md/10-K pull; used as maintenance-capex floor reference; treat as estimate - OPEN"
+FY2025,less_SBC_real_cost,-27100,USD_M,both,GOOG.A1.2025K.023,"SBC is a REAL economic cost (Note 13 total); buybacks only partly offset dilution"
+FY2025,working_capital_adjustment,0,USD_M,both,ASSUMPTION,"set to 0 - not separately pulled; OCF-NI gap dominated by D&A+SBC+deferred tax, not WC; OPEN"
+FY2025,less_maintenance_capex_LOW,-21100,USD_M,maint_low,ASSUMPTION_TASK,"LOW maint capex = depreciation 21.1B (replacement floor). Implies ~70.3B of the 91.4B capex is growth"
+FY2025,owner_earnings_maint_low,76783,USD_M,maint_low,derived,"= 103883 + 21100 - 27100 + 0 - 21100; HIGH owner-earnings case (most capex treated as growth)"
+FY2025,less_maintenance_capex_HIGH,-45700,USD_M,maint_high,ASSUMPTION,"HIGH maint capex ~50% of 91.4B (~45.7B) - assumes much AI capex is defensive/required to hold the moat, not optional growth"
+FY2025,owner_earnings_maint_high,52183,USD_M,maint_high,derived,"= 103883 + 21100 - 27100 + 0 - 45700; LOW owner-earnings case (capex is largely maintenance/defensive)"
+# memo FY2025: owner earnings RANGE ~52B (defensive view) to ~77B (growth view),,,,,,
+# vs derived FCF 73266 and net income 132170; SBC + capex split are the swing factors,,,,,,
+# ===== TTM (Q1'26 trailing) owner earnings bridge =====,,,,,,
+TTM,net_income_reported,160208,USD_M,both,derived,"FY25 - Q1'25 + Q1'26; INCLUDES 36.9B Q1'26 unrealized equity gain - must strip"
+TTM,less_Q1_26_unrealized_equity_gain,-36915,USD_M,both,GOOG.A1.2026Q1.022,"one-time non-cash unrealized gain on equity securities; +2.35 EPS; NOT owner earnings"
+TTM,less_other_nonoperating_income_resid,-15000,USD_M,both,ASSUMPTION,"residual other income net above normalized run-rate across the TTM window; rough - OPEN"
+TTM,add_back_normalized_other_income,1500,USD_M,both,ASSUMPTION,"normalized steady investment income"
+TTM,net_income_normalized_operating,109793,USD_M,both,derived,"= 160208 - 36915 - 15000 + 1500; approx clean operating-based earnings TTM"
+TTM,add_DandA,24000,USD_M,both,ASSUMPTION,"~24B run-rate D&A (scaled up from FY25 21.1B as asset base grows) - ESTIMATE, OPEN"
+TTM,less_SBC_real_cost,-28000,USD_M,both,ASSUMPTION,"~28B run-rate SBC (scaled from FY25 27.1B) - ESTIMATE, OPEN"
+TTM,less_maintenance_capex_LOW,-24000,USD_M,maint_low,ASSUMPTION,"LOW maint = ~D&A 24B; implies ~86B of 109.9B TTM capex is growth"
+TTM,owner_earnings_maint_low,81793,USD_M,maint_low,derived,"= 109793 + 24000 - 28000 - 24000; HIGH owner-earnings case"
+TTM,less_maintenance_capex_HIGH,-55000,USD_M,maint_high,ASSUMPTION,"HIGH maint ~50% of 109.9B TTM capex"
+TTM,owner_earnings_maint_high,50793,USD_M,maint_high,derived,"= 109793 + 24000 - 28000 - 55000; LOW owner-earnings case"
+# memo TTM: owner earnings RANGE ~51B (defensive) to ~82B (growth); KEY: reported net income 160B overstates owner earnings by ~2-3x,,,,,,
+# capex 2026 guided to 180-190B (GOOGL-424B5-2026-06.009) and 2027 'significantly increase' -> forward owner earnings pressure intensifies,,,,,,

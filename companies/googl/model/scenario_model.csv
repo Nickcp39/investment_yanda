@@ -1,0 +1,58 @@
+scenario,driver,value,unit,source_id,notes
+# ===== Anchors (shared across scenarios) =====,,,,,
+shared,current_price,370.00,USD_per_share,WEBSEARCH-2026-06-15,"GOOGL Class A ~369-371 on 2026-06-15 (stockanalysis.com / Yahoo); ATH 402.38 (2026-05-13); 52wk 162.00-408.61"
+shared,shares_diluted,12116,shares_M,GOOG.A1.2026Q1,"3/31/26 A+B+C; buyback paused so count drifting UP"
+shared,market_cap,4483,USD_B,derived,"= 370 x 12,116M"
+shared,net_cash_marketable,80.3,USD_B,GOOG.A1.2025K.020/.021,"cash+marketable 126.843 - LT debt 46.547; IGNORES non-marketable 68.687 (conservative)"
+shared,berkshire_priv_placement_A,351.81,USD_per_share,GOOGL-424B5-2026-06.002,"Class A private placement price 2026-06; alt anchor"
+shared,berkshire_priv_placement_C,348.20,USD_per_share,GOOGL-424B5-2026-06.004,"Class C private placement price 2026-06"
+# ===== Owner-earnings starting base (year 0 run-rate) =====,,,,,
+# from owner_earnings_bridge.csv: FY25 defensive ~52B / growth ~77B ; TTM defensive ~51B / growth ~82B,,,,,
+bear,owner_earnings_y0,52,USD_B,owner_earnings_bridge.csv,"DEFENSIVE read: maint capex ~50% of 91.4B; most AI capex defensive"
+base,owner_earnings_y0,65,USD_B,owner_earnings_bridge.csv,"MIDPOINT of defensive(52) and growth(77/82) reads"
+bull,owner_earnings_y0,80,USD_B,owner_earnings_bridge.csv,"GROWTH read: maint capex ~= D&A 21-24B; most AI capex earns returns"
+# ===== Scenario assumptions =====,,,,,
+bear,revenue_cagr_10y,0.06,ratio,ASSUMPTION,"AI answer interfaces compress search ad load; cloud growth decelerates"
+base,revenue_cagr_10y,0.11,ratio,ASSUMPTION,"search adapts (AI Mode monetizes ~at parity); cloud scales; YouTube steady"
+bull,revenue_cagr_10y,0.15,ratio,ASSUMPTION,"Gemini extends search+apps; cloud becomes major profit pool"
+bear,operating_margin_path,32_to_28,pct,ASSUMPTION,"margin erodes; capex depreciation + regulatory drag"
+base,operating_margin_path,33_to_34,pct,ASSUMPTION,"cloud mix lifts blended margin; search holds 32%"
+bull,operating_margin_path,34_to_37,pct,ASSUMPTION,"operating leverage as capex normalizes; cloud 30%+ margin sustained"
+bear,capex_intensity_path,0.22_to_0.18,ratio_of_rev,GOOGL-424B5-2026-06.009,"stays elevated, low incremental return; 2026 guide 180-190B"
+base,capex_intensity_path,0.20_to_0.15,ratio_of_rev,GOOGL-424B5-2026-06.009,"peaks 2026-27 then normalizes toward mid-teens"
+bull,capex_intensity_path,0.18_to_0.13,ratio_of_rev,GOOGL-424B5-2026-06.009,"high-return infra; FCF inflects up post-peak"
+bear,owner_earnings_cagr_y1_5,0.02,ratio,ASSUMPTION,"OE grows ~flat real; capex eats growth"
+bear,owner_earnings_cagr_y6_10,0.02,ratio,ASSUMPTION,
+base,owner_earnings_cagr_y1_5,0.09,ratio,ASSUMPTION,"OE growth lags revenue near-term (capex peak) then catches up"
+base,owner_earnings_cagr_y6_10,0.07,ratio,ASSUMPTION,
+bull,owner_earnings_cagr_y1_5,0.14,ratio,ASSUMPTION,"capex converts to earnings; cloud operating leverage"
+bull,owner_earnings_cagr_y6_10,0.10,ratio,ASSUMPTION,
+bear,terminal_P_to_OE,14,x,ASSUMPTION,"low-growth utility-like multiple; ~7% terminal OE yield"
+base,terminal_P_to_OE,20,x,ASSUMPTION,"quality compounder at maturity; 5% terminal OE yield"
+bull,terminal_P_to_OE,26,x,ASSUMPTION,"durable high-return franchise premium"
+bear,payout_ratio_y1_5,0.25,ratio,ASSUMPTION,"div+buyback as share of OE; low during capex supercycle (buyback paused Q1'26)"
+bear,payout_ratio_y6_10,0.45,ratio,ASSUMPTION,
+base,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+base,payout_ratio_y6_10,0.55,ratio,ASSUMPTION,"capex normalizes -> cash returns resume"
+bull,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+bull,payout_ratio_y6_10,0.60,ratio,ASSUMPTION,
+# ===== Outputs (computed; see valuation.md methodology) =====,,,,,
+bear,owner_earnings_y10,63,USD_B,derived,"52 grown at 2%/2%"
+base,owner_earnings_y10,140,USD_B,derived,"65 grown at 9%/7%"
+bull,owner_earnings_y10,248,USD_B,derived,"80 grown at 14%/10%"
+bear,terminal_equity_value,968,USD_B,derived,"63x14 + 80 net cash"
+base,terminal_equity_value,2886,USD_B,derived,"140x20 + 80 net cash"
+bull,terminal_equity_value,6530,USD_B,derived,"248x26 + 80 net cash"
+bear,irr_10y_at_current_price,-0.131,ratio,derived,"-13.1% at 370; interim payout + terminal sale"
+base,irr_10y_at_current_price,-0.030,ratio,derived,"-3.0% at 370"
+bull,irr_10y_at_current_price,0.052,ratio,derived,"+5.2% at 370 -- best case STILL below 8-10% hurdle"
+shared,owner_earnings_yield_at_price_base,0.0145,ratio,derived,"base OE0 65 / mktcap 4483 = 1.45%; P/OE 69x"
+shared,mktcap_to_fcf_TTM,69.6,x,derived,"4483 / TTM FCF 64.429 -- price is ~70x trailing FCF"
+shared,implied_OE_cagr_for_10pct_at_22x,0.217,ratio,derived,"current price needs ~22% OE CAGR for 10y to clear 10% (terminal 22x)"
+# ===== Margin-of-safety buy-below (BASE path, term 20x, payout 30->55%) =====,,,,,
+mos,buy_below_8pct,134,USD_per_share,derived,"min acceptable 8% IRR; -64% vs 370"
+mos,buy_below_10pct_starter,113,USD_per_share,derived,"10% IRR starter; -70% vs 370"
+mos,buy_below_12pct_core,95,USD_per_share,derived,"12% IRR core / real MoS; -74% vs 370"
+mos,buy_below_15pct_deepvalue,75,USD_per_share,derived,"15% IRR deep value; -80% vs 370"
+mos,avoid_above,300,USD_per_share,JUDGMENT,"above ~300 even bull case IRR <8%; no MoS in any reasonable read"
+mos,downside_anchor_bear_8pct,48,USD_per_share,derived,"price where BEAR path still clears 8% (term 14x) -- true permanent-loss-protection level"

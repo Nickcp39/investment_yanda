@@ -1,28 +1,132 @@
-# GOOGL Financial Quality
+# GOOGL 财务质量 / 会计重构 (H2)
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
+Module: 财务质量 / 会计→经济重构（owner earnings 桥）
+Status: `built_on_3yr_evidence`（序列不足，见 §2 与 open questions）
 
-Status: skeleton.
+> 数字来源纪律：本文所有数字只引自 `companies/googl/facts.md` / `claim_ledger.csv` 中已 verified 的一手 A1（SEC）条目，并挂 `[source_id]`。任何标 `ASSUMPTION` 的项是分析判断或父任务给定参数（非已验证事实），一律列入文末 open questions，绝不当事实使用。单位 USD millions（除非标注）。
+>
+> 证据分级：**A1** = SEC 一手已验证；**Derived** = 由 A1 数字算术推导；**ASSUMPTION** = 本模块判断/外部给定，未入 facts。
 
-## Accounting To Economics Bridge
+---
 
-| Item | Current seed | Source / claim | Research question |
+## 0. 一句话结论（module verdict）
+
+**会计质量本身高（收入真实、现金转化历史强、无激进确认），但 2026 版 Alphabet 的"会计利润"严重高于"owner earnings"——TTM 报表净利 $160B 中约一半是不可重复的未实现股权收益，且 $90–110B 量级的 capex 把 FCF 压到与三年前持平。投资判断不能用净利或 EPS，必须用 owner earnings 区间（FY2025 约 $52B–77B），且该区间高度依赖"AI capex 是成长性还是防御性"这一未解问题。**
+
+---
+
+## 1. 会计 → 经济 Owner Earnings 桥
+
+### 1.1 桥的口径（Buffett owner earnings）
+
+owner earnings = 净利 + 非现金 D&A − 维护性 capex − 常态化 SBC（真实成本）± 营运资本 − 一次性/非经营收益。
+
+GOOGL 三个口径难点（先处理再上桥）：
+1. **Q1'26 净利含 $36,915M 未实现股权证券收益**（计入 Other income, net $37,716M），贡献 +$2.35 EPS，是净利 +81%/EPS +82% 的主因；**营业利润 +30% 才是干净读数**。→ 上桥前必须整笔剔除。[GOOG.A1.2026Q1.020 / .022 / .018]
+2. **SBC 两个口径**：Note 13 总额 $27,100M vs 现金流加回 $24,953M（差额 $2,147M 为现金结算/Waymo 类补偿）。owner earnings 取**真实成本口径 $27,100M**（更保守、更接近经济稀释）。[GOOG.A1.2025K.023]
+3. **capex $91,447M（FY25，+74% YoY）含大量 AI 成长性投资**，维护 vs 成长无披露——是 owner earnings 区间的最大摆动项（见 §1.3）。[GOOG.A1.2025K.016]
+
+### 1.2 FY2025 桥（两情景，单位 USD_M）
+
+| 项 | 数值 | 证据级 | 说明 / source_id |
 |---|---:|---|---|
-| FY2025 revenue | $402.836B | C002 | What is recurring vs cyclical vs AI-pull-forward? |
-| Q1 2026 revenue | $109.896B | C005 | Is acceleration broad-based? |
-| Q1 2026 operating cash flow | $45.790B | C008 | How much converts to owner earnings after capex? |
-| Q1 2026 PPE purchases | $35.674B | C008 | Maintenance, growth, defensive, or speculative AI capex? |
-| Google Cloud Q1 2026 operating income | $6.598B | C007 | Sustainable margin or utilization/accounting effect? |
+| 报表净利 | 132,170 | A1 | [GOOG.A1.2025K.007] |
+| − Other income, net（剔非经营） | (29,787) | A1 | FY25 OI&E 29,787（FY24 7,425、FY23 1,424，异常跳升）；多为投资重估/非经营 [block04] |
+| + 常态化投资/利息收益（加回） | 1,500 | ASSUMPTION | 判断值，非列报项 — OPEN |
+| = 常态化经营性净利 | 103,883 | Derived | = 132,170 − 29,787 + 1,500 |
+| + D&A | 21,100 | **ASSUMPTION（父任务给定）** | 折旧 ~$21.1B；**不在 facts.md/10-K 抽取**，作维护 capex 下限参考 — OPEN |
+| − SBC（真实成本） | (27,100) | A1 | Note 13 总额 [GOOG.A1.2025K.023] |
+| ± 营运资本 | 0 | ASSUMPTION | 未单独抽；OCF-NI 差额主要由 D&A+SBC+递延税驱动，非 WC — OPEN |
+| **情景 A：维护 capex = D&A 21,100（下限）** | | | 假设 ~$70.3B capex 为成长性 |
+| − 维护 capex | (21,100) | ASSUMPTION | |
+| **= owner earnings（成长视角，高）** | **76,783** | Derived | 大部分 capex 视为可选成长投资 |
+| **情景 B：维护 capex ≈ 50% capex = 45,700** | | | 假设大量 AI capex 是守住护城河的防御性支出 |
+| − 维护 capex | (45,700) | ASSUMPTION | |
+| **= owner earnings（防御视角，低）** | **52,183** | Derived | 把 AI capex 大部分当"保住旧利润的代价" |
 
-## Work To Do
+**FY2025 owner earnings 区间 ≈ $52B（防御）– $77B（成长）。** 对比 derived FCF $73,266M [GOOG.A1.2025K.017] 与报表净利 $132,170M——**owner earnings 仅为报表净利的 40–58%**。
 
-- [ ] Build 10-year revenue and segment table.
-- [ ] Build OCF, capex, FCF, SBC, buyback, share-count table.
-- [ ] Estimate maintenance capex vs growth/defensive AI capex.
-- [ ] Reconcile reported FCF to owner earnings.
-- [ ] Measure per-share economics, not only enterprise growth.
+### 1.3 维护性 vs 成长性 capex（核心难点，必须讲区间不讲点）
 
-## Initial Accounting Hypothesis
+- 10-K/季报**不披露**维护/成长拆分——这是结构性 gap，任何单点估计都是假装精确。[OPEN]
+- **下限锚（情景 A）**：折旧 $21.1B 作为"现有资产替换"的会计代理（父任务给定，未入 facts）。逻辑：稳态下维护 capex ≈ 折旧。但 GOOGL 折旧基数本身在快速膨胀（capex 远超折旧多年），用当期折旧低估了未来维护负担。
+- **上限/防御锚（情景 B）**：取 capex 的 ~50%。逻辑：AI 数据中心、TPU、电力是搜索/云**当前**竞争所必需，而非纯粹可选扩张——若停止，可能丢失现有 query/推理负载，故相当部分应记为"维护现有 owner earnings 的必要支出"。
+- **本模块立场**：在拿到管理层维护 capex 指引或单位经济（每 MW/每 TPU 产出）前，**用区间 $52B–77B，倾向防御端**，因为 2026 capex 指引 $180–190B、2027 还要"显著增加"[GOOGL-424B5-2026-06.009]——如果这些是纯成长，FCF 不该被压缩；FCF 被压缩本身暗示相当部分 capex 并未带来等比例的近端 owner earnings。
 
-Alphabet may still be a high-quality business, but the 2026 version is more capital intensive than the historical search-ad model. The research must prove whether incremental AI capex creates durable owner earnings or merely preserves the old moat.
+### 1.4 TTM（Q1'26 trailing）桥
 
+- 报表 TTM 净利 = FY25 132,170 − Q1'25 34,540 + Q1'26 62,578 = **160,208**（Derived）。
+- **剔除 Q1'26 未实现股权收益 36,915** [GOOG.A1.2026Q1.022] 后，再剔 TTM 窗口其余非经营 other income（约 −15,000，ASSUMPTION）→ 常态化经营性净利 ≈ 109,793（Derived）。
+- 上桥（D&A ~24,000、SBC ~28,000 均为按 FY25 比例放大的 ASSUMPTION）后：
+  - 情景 A（维护=D&A 24,000）：owner earnings ≈ **81,793**
+  - 情景 B（维护≈50% capex 55,000）：owner earnings ≈ **50,793**
+- **TTM owner earnings 区间 ≈ $51B–82B，而报表净利 $160B——报表高估 owner earnings 约 2–3 倍。** 详见 `model/owner_earnings_bridge.csv`。
+
+---
+
+## 2. 长周期质量（10 年视角）—— 序列不足，明确标 GAP
+
+> **GAP（硬）**：facts/ledger 仅有 FY2023–FY2025 + Q1'26/TTM 共 3 个完整年度。Buffett checklist §3 要求的 10 年序列、长周期 ROIC、累计 FCF vs 累计 SBC/回购/并购的"漏桶"分析，**当前无法完成**。这是下游 verdict ceiling 的主因之一。详见 `model/financial_history.csv`。
+
+就**现有 3 年 + TTM** 看趋势：
+
+| 指标 | FY2023 | FY2024 | FY2025 | TTM | 读数 |
+|---|---:|---:|---:|---:|---|
+| 营收 | 307,394 | 350,018 | 402,836 | 422,498 | 加速：+14%→+15%→TTM 强 [.001/.018] |
+| 营业利润 | 84,293 | 112,390 | 129,039 | 138,129 | 利润率 27%→32%→32%，质量稳 [.005] |
+| OCF | 101,746 | 125,299 | 164,713 | 174,353 | 强增长 [.015/.023] |
+| capex | 32,251 | 52,535 | 91,447 | 109,924 | **3 年 ~3.4 倍**，远快于收入 [.016/.024] |
+| derived FCF | 69,495 | 72,764 | 73,266 | 64,429 | **几乎不增、TTM 下滑** [.017/.025] |
+
+**核心矛盾**：营收 3 年 +31%、OCF +62%，但 **FCF 基本原地踏步、TTM 还跌**——差额全被 capex 吞掉。这正是 Buffett checklist §2 的红灯："增长吃掉 owner earnings 就不算（增量上的）好生意"。营业层经济仍优秀，但**自由现金流层的增长已被 capex 周期冻结**。
+
+owner earnings 趋势（按 §1 口径，倾向中值）：FY2025 ~$52–77B，TTM ~$51–82B——**两年级别基本持平甚至承压**，与营收/营业利润的上行明显背离。
+
+---
+
+## 3. 红旗检查（Buffett §2/§8 + 模板 Red Flags）
+
+| 红旗项 | 判定 | 证据 |
+|---|---|---|
+| 收入涨但 owner earnings/股停滞 | **🔴 命中** | 营收 3 年 +31%，但 FCF 73.3B→TTM 64.4B（−12%）；股本 FY24 12,211→FY25 12,088→Q1'26 **回升 12,116**（回购暂停后稀释回头）→ **每股 owner earnings 承压** [.017/.025/.022/.027] |
+| capex 快于耐久收入 | **🔴 命中（最强）** | capex 3 年 ~3.4x（32.3B→109.9B TTM）vs 营收 +31%；2026 指引 180–190B、2027 再"显著增加" [.016/.024/GOOGL-424B5-2026-06.009] |
+| SBC 占比 / 是否快于营业利润 | **🟡 中等** | FY25 SBC 27.1B ≈ 营业利润 129B 的 **21%**，量级大且是真实成本；FY23/24 SBC 未抽（GAP），无法判其增速 vs 营业利润 [.023, OPEN] |
+| 回购 vs 稀释（是否只是抵消稀释） | **🔴 命中** | 回购连降 61.5B→62.2B→**45.7B**，且 **Q1'26 = $0（暂停）**；同时 Q1'26 股本不降反升至 12,116M → 回购停摆期 SBC 稀释无对冲；现金转向 capex + 发债（FY25 净发债 ~64.6B、Q1'26 再 +31.4B）[.018/.027/.022/.021] |
+| 净利被一次性收益抬高 | **🔴 命中（会计质量警示）** | Q1'26 净利 +81% 主因是 36.9B 未实现股权收益，非经营 [.020/.022] |
+| 报表 FCF 高估 owner earnings | **🟡** | FCF 73.3B 已扣 capex，但**未扣 SBC 真实成本**；扣 SBC 后 owner earnings 明显低于 FCF（见 §1.2 情景 B 52B）[.017/.023] |
+| 杠杆/资本结构变化 | **🟡 监控** | 长期债务 FY24 10,883→FY25 **46,547**（+$35.7B），叠加 2026 共 $80B 股权融资明确用于 AI capex → 从"净现金自筹"转向"外部融资支撑增长"，触发 Buffett §3"若停止发股/发债能否自筹增长"的问号 [.021 / GOOGL-FWP-2026-06.001] |
+
+**红旗综合**：会计**确认与列报无激进迹象**（红旗不在"造假"层），但**资本配置与现金流结构**层面亮多盏灯——核心是 capex 超速 + 回购暂停 + 净利被一次性收益粉饰，三者共同把"高质量利润表"和"承压的 owner earnings"撕开。
+
+---
+
+## 4. 质量问答（模板 Quality Questions）
+
+- **收入性质**：搜索/YouTube 广告为高复现交易性收入，Cloud 含递延/backlog（over $460B）属高可见度——收入侧质量高。[GOOG.A1.2026Q1.010 注]
+- **增长是否需要上升的资本强度**：**是，且急剧上升**——capex/营收从 FY23 ~10% 升到 TTM ~26%。[.016/.024 derived]
+- **margin 扩张来自？**：营业利润率 27→32% 主因规模 + Cloud 转盈（Cloud OI 1,716→6,112→13,910），非会计粉饰；但 Cloud 32.9% 季度利润率可持续性未经多季验证。[GOOG.A1.2025K.012 / GOOG.A1.2026Q1.015, OPEN]
+- **SBC 是否真实成本**：是（27.1B），且回购暂停期无对冲，经济稀释正在显性化。[.023/.027]
+- **回购是减股还是只抵稀释**：FY25 减股有效（12,211→12,088），但 Q1'26 暂停后股本回升——**当前阶段回购已不再保护每股**。[.022/.027]
+- **报表 FCF 是否高估 owner earnings**：是，因 FCF 未扣 SBC；且若维护 capex 高于折旧，owner earnings 进一步低于 FCF。[.017/.023]
+
+---
+
+## 5. 证据强弱小结
+
+- **强（A1 一手）**：所有报表行（营收/营业利润/净利/OCF/capex/SBC/回购/债务/股本）、Q1'26 一次性收益拆分、2026 capex 指引。
+- **弱/缺（GAP→ owner earnings 不确定性来源）**：D&A 绝对值未入 facts（父任务给 21.1B）、维护 vs 成长 capex 拆分、营运资本明细、FY23/24 的 SBC、>3 年序列。
+- 因此 **owner earnings 只能给区间，不能给点**；区间宽度（52–77B）几乎全部来自 capex 拆分假设。
+
+---
+
+## Open Questions（触发回流补料）
+
+- [ ] **维护性 vs 成长性 capex 拆分**（owner earnings 区间的第一摆动项）——需管理层维护 capex 指引或单位经济（每 MW/每 TPU/每 query 推理成本）。当前用 [折旧下限, 50% capex] 区间。**ASSUMPTION**
+- [ ] **D&A 绝对值未入 facts.md**：本模块用父任务给定的 ~$21.1B（FY25）与 ~$24B（TTM 估）——需回 10-K 现金流量表/Note 验证并入 ledger。**ASSUMPTION**
+- [ ] **营运资本变动明细**：本桥设为 0；需拆 OCF-NI 差额确认 WC 影响。**ASSUMPTION**
+- [ ] **FY2023/FY2024 SBC 绝对值**未抽——无法判断 SBC 增速 vs 营业利润增速（红旗 §3 中等项的确证）。
+- [ ] **10 年财务序列**：当前仅 3 年 + TTM；长周期 ROIC、累计 FCF vs 累计回购/SBC 漏桶分析待补（Block 04 扩展）。
+- [ ] **Cloud 32.9% 季度利润率可持续性**：是否含利用率/会计一次性，需多季趋势。
+- [ ] **TTM 桥中 −15,000 其余非经营 other income**为粗略判断值，需逐季拆 Other income, net。**ASSUMPTION**
+- [ ] **2026–27 capex 兑现路径**：若 180–190B→2027 更高均为成长性，未来 owner earnings 何时回升？需追踪 capex 与增量 owner earnings 的滞后关系。
