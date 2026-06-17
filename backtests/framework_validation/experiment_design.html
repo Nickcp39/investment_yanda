@@ -1,0 +1,1464 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lean 投资 Pipeline 全流程</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --surface-2: #f0f3f6;
+      --ink: #172026;
+      --muted: #60707c;
+      --line: #d8dee5;
+      --blue: #245b8f;
+      --green: #26705a;
+      --amber: #9a6418;
+      --red: #a4433d;
+      --violet: #5d5390;
+      --shadow: 0 16px 40px rgba(23, 32, 38, 0.08);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    button, input, select { font: inherit; letter-spacing: 0; }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 264px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .side {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: #fbfcfd;
+      padding: 20px 16px;
+    }
+
+    .side h1 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+
+    .side p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    .nav {
+      display: grid;
+      gap: 6px;
+    }
+
+    .nav a {
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: 13px;
+    }
+
+    .nav a:hover {
+      background: var(--surface-2);
+      border-color: var(--line);
+    }
+
+    .main {
+      padding: 24px 30px 58px;
+      max-width: 1480px;
+      width: 100%;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 880px;
+    }
+
+    .rule {
+      display: inline-grid;
+      gap: 4px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 12px 14px;
+      min-width: 310px;
+      box-shadow: var(--shadow);
+    }
+
+    .rule span:first-child {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .rule code {
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .band {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .band h3 {
+      margin: 0 0 12px;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .node {
+      min-height: 116px;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 6px;
+      text-align: left;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: var(--radius);
+      background: #fbfcfd;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color .12s, background .12s, transform .12s;
+    }
+
+    .node:hover {
+      background: #f5f8fb;
+      border-color: #b9c7d4;
+    }
+
+    .node.active {
+      border-color: var(--blue);
+      background: #eef5fb;
+      transform: translateY(-1px);
+    }
+
+    .node.green { border-left-color: var(--green); }
+    .node.amber { border-left-color: var(--amber); }
+    .node.red { border-left-color: var(--red); }
+    .node.violet { border-left-color: var(--violet); }
+
+    .node .k {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      text-transform: uppercase;
+    }
+
+    .node .t {
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .node .s {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .node .role {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--muted);
+      padding: 1px 6px;
+      font-size: 11px;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+
+    .workbench {
+      display: grid;
+      grid-template-columns: minmax(320px, .92fr) minmax(420px, 1.08fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .mini-flow {
+      display: grid;
+      gap: 8px;
+    }
+
+    .mini-step {
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfd;
+    }
+
+    .mini-step strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .mini-step span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .mini-step code {
+      color: var(--blue);
+      font-weight: 750;
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .detail {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      overflow: hidden;
+    }
+
+    .detail-head {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfd;
+    }
+
+    .detail-head .eyebrow {
+      color: var(--blue);
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .detail-head h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
+    }
+
+    .detail-head p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfd;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--ink);
+      padding: 6px 9px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .tab.active {
+      background: var(--blue);
+      color: white;
+      border-color: var(--blue);
+    }
+
+    .tab-panel {
+      padding: 16px 18px 18px;
+      min-height: 272px;
+    }
+
+    .tab-panel h4 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .tab-panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .tab-panel li {
+      margin: 6px 0;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 132px minmax(0, 1fr);
+      gap: 8px 12px;
+      font-size: 13px;
+    }
+
+    .kv .key {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .codebox {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #0f1720;
+      color: #d8e3ec;
+      padding: 14px;
+      overflow: auto;
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .rule-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfd;
+      padding: 12px;
+    }
+
+    .rule-card b {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .rule-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 9px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      .shell { grid-template-columns: 1fr; }
+      .side { position: static; height: auto; }
+      .hero, .workbench { grid-template-columns: 1fr; }
+      .flow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      .main { padding: 18px 14px 42px; }
+      .flow-grid, .matrix { grid-template-columns: 1fr; }
+      .rule { min-width: 0; width: 100%; }
+      .kv { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="side">
+      <h1>Lean 投资 Pipeline</h1>
+      <p>六模块盲测流程。点击模块查看细节、输入、产出、质量门和失败模式。</p>
+      <nav class="nav">
+        <a href="#overview">全流程</a>
+        <a href="#mapping">10层映射</a>
+        <a href="#workbench">模块细节</a>
+        <a href="#outputs">交付物</a>
+        <a href="#weighting">评分与调权</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section class="hero" id="overview">
+        <div>
+          <h2>Pipeline 全流程：少文件，强决策，可回测</h2>
+          <p>这不是推翻旧 10 层，而是把 10 层从“文件清单”改成“能力地图”。实际执行时压缩成 6 个会影响仓位的裁决模块。美股投资网式的主题、催化剂、瓶颈和叙事敏感度被吸收到 M2/M3，不再额外增加一层。</p>
+        </div>
+        <div class="rule">
+          <span>Operating Rule</span>
+          <code>theme -> mechanism -> ticker -> evidence -> price -> size</code>
+        </div>
+      </section>
+
+      <section class="band">
+        <h3>一眼看全流程</h3>
+        <div class="flow-grid" id="nodeGrid"></div>
+      </section>
+
+      <section class="band" id="mapping">
+        <h3>旧 10 层并没有删除，只是被压进 6 个执行模块</h3>
+        <p class="note">旧 10 层适合做能力检查，确保没有漏看方向、生意、证据、财务、产业链、护城河、管理层、反演、估值和决策。新 6 模块适合实际跑 case，因为每个模块都必须输出 signal，最后能落到仓位。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>旧 10 层</th><th>新执行位置</th><th>为什么这样合并</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1. Direction Selection</td><td>M2 Theme / Mechanism</td><td>方向不单独成文，直接进入“为什么现在、市场重估什么、瓶颈是什么”。</td></tr>
+              <tr><td>2. Business Thesis / Quality Gate</td><td>M2 Theme / Mechanism</td><td>第一性原理和一页好生意承保是 thesis 的核心，不再另开文件。</td></tr>
+              <tr><td>3. Evidence Engineering</td><td>01 Source Pack + M1 Evidence Spine</td><td>原始材料和事实可信度分开，M1 只控制 confidence/haircut。</td></tr>
+              <tr><td>4. Accounting Trend Validation</td><td>M4 Financial Reality</td><td>财报必须回答机制是否被验证，而不是机械看利润表。</td></tr>
+              <tr><td>5. Industry / Value Chain</td><td>M3 Profit Pool / Durability</td><td>产业链只有在说明“谁拿走利润池”时才有决策意义。</td></tr>
+              <tr><td>6. Moat / Bottleneck</td><td>M3 Profit Pool / Durability</td><td>护城河和瓶颈合并判断：短期稀缺是否能变成持久经济性。</td></tr>
+              <tr><td>7. Operator Underwriting</td><td>M3 Profit Pool / Durability</td><td>管理层不单独漂浮，放进“利润能否被正确配置和保住”。</td></tr>
+              <tr><td>8. Inversion / Risk</td><td>M5 Inversion / Trap Test</td><td>反演升级成专门的 veto 模块，负责抓假便宜和永久损失。</td></tr>
+              <tr><td>9. Valuation / Margin of Safety</td><td>M6 Price / Position / Monitor</td><td>估值直接转成 buy-below、starter/add/trim 区间。</td></tr>
+              <tr><td>10. Decision / Monitoring</td><td>M6 + QA/Score</td><td>决策卡锁定仓位，后续 audit/score/tune 负责复盘学习。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="workbench" id="workbench">
+        <div class="band">
+          <h3>Runner 执行路径</h3>
+          <div class="mini-flow">
+            <div class="mini-step"><code>00</code><div><strong>Freeze Case</strong><span>锁 ticker、as-of date、禁止后视数据。</span></div></div>
+            <div class="mini-step"><code>01</code><div><strong>Build Source Pack</strong><span>只收 as-of 前 filings、call、news、price。</span></div></div>
+            <div class="mini-step"><code>M1</code><div><strong>Evidence Spine</strong><span>事实可信度进入 confidence，不直接杀死机会。</span></div></div>
+            <div class="mini-step"><code>M2</code><div><strong>Theme / Mechanism Thesis</strong><span>为什么现在、市场重估什么、瓶颈是什么。</span></div></div>
+            <div class="mini-step"><code>M3</code><div><strong>Profit Pool / Durability</strong><span>价值链、利润池、护城河、经营者。</span></div></div>
+            <div class="mini-step"><code>M4</code><div><strong>Financial Reality</strong><span>财报是否验证机制，周期位置是否看错。</span></div></div>
+            <div class="mini-step"><code>M5</code><div><strong>Inversion / Trap Test</strong><span>假便宜、结构衰退、永久损失。</span></div></div>
+            <div class="mini-step"><code>M6</code><div><strong>Decision Card</strong><span>价格、安全边际、仓位、加减仓。</span></div></div>
+            <div class="mini-step"><code>QA</code><div><strong>Audit / Score / Tune</strong><span>查前视泄漏，按结果评分，统计权重错误。</span></div></div>
+          </div>
+        </div>
+
+        <div class="detail" aria-live="polite">
+          <div class="detail-head">
+            <div class="eyebrow" id="detailCode">M2</div>
+            <h3 id="detailTitle">Theme / Mechanism Thesis</h3>
+            <p id="detailPurpose"></p>
+          </div>
+          <div class="tabs" id="tabs"></div>
+          <div class="tab-panel" id="tabPanel"></div>
+        </div>
+      </section>
+
+      <section class="band" id="outputs">
+        <h3>P1 Lean Case 默认交付物</h3>
+        <pre class="codebox">backtests/cases/&lt;ticker&gt;_&lt;as_of&gt;/
+  case_control.md
+  sources_used.csv
+  raw_extracts.md
+  evidence_spine.md
+  thesis_mechanism.md
+  profit_pool_durability.md
+  financial_reality.md
+  inversion_trap_test.md
+  decision_card.md
+  decision_card.json
+  lookahead_audit.md
+  outcome_score.md</pre>
+      </section>
+
+      <section class="band" id="weighting">
+        <h3>评分与调权逻辑</h3>
+        <div class="matrix">
+          <div class="rule-card"><b>M1 不是 veto</b><p>证据完整度只影响仓位 haircut 和监控强度，避免把早期赢家压成 WATCH / 0%。</p></div>
+          <div class="rule-card"><b>M2/M3/M4 形成 conviction</b><p>主题机制、利润池、财务现实一起决定是否值得拥有。</p></div>
+          <div class="rule-card"><b>M5 可以硬 veto</b><p>结构性衰退、假便宜、资产负债表死亡、永久损失可以把 size 设为 0。</p></div>
+          <div class="rule-card"><b>M6 输出仓位</b><p>价格不是一句贵/便宜，而是 buy-below、starter、add、trim、exit。</p></div>
+        </div>
+        <h3 style="margin-top:18px">聚合模型</h3>
+        <pre class="codebox">conviction_raw = W[context].M2 * signal[M2]
+               + W[context].M3 * signal[M3]
+               + W[context].M4 * signal[M4]
+
+risk_penalty = W[context].M5 * abs(min(signal[M5], 0))
+
+if hard_veto(context, M5, M4):
+  target_size = 0
+else:
+  conviction = conviction_raw - risk_penalty
+  target_size = size_function(context, conviction, M6.price, M1.confidence)</pre>
+      </section>
+
+      <section class="band">
+        <h3>Context 权重方向</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Context</th><th>主驱动</th><th>价格角色</th><th>主要防错</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>quality_compounder</td><td>M2, M3, M4</td><td>调节仓位，不自动 veto</td><td>不要因为经典倍数偏高就卖掉好生意。</td></tr>
+              <tr><td>exceptional_bottleneck</td><td>M2, M3, M4</td><td>结构化入场，控制下行</td><td>不要因为 PE/MOS 不舒服就错过小仓位 starter。</td></tr>
+              <tr><td>cyclical_inflection</td><td>M2, M4, M5</td><td>用正常化周期盈利</td><td>不要把 trough 或 peak earnings 当永久现实。</td></tr>
+              <tr><td>structural_decline_trap</td><td>M3, M4, M5</td><td>veto 后价格基本无关</td><td>低 P/E 不是安全边际。</td></tr>
+              <tr><td>false_cheap_value_trap</td><td>M4, M5</td><td>先正常化盈利再谈便宜</td><td>防 PFE/PYPL/INTC 式假便宜。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="footer">Files: COMPANY_MATERIAL_TEMPLATE.md · PROTOCOL.md · WEIGHTING_HARNESS.md · experiment_design.html</p>
+    </main>
+  </div>
+
+  <script>
+    const modules = [
+      {
+        id: "case",
+        code: "00",
+        title: "Freeze Case",
+        short: "锁定回测对象和时间边界",
+        color: "violet",
+        roles: ["control", "no-lookahead"],
+        purpose: "把历史测试变成可审计的盲测：固定 ticker、as-of 日期、价格日期、允许和禁止的数据范围。",
+        input: ["ticker / company", "as-of date", "decision question", "old framework or lean framework version"],
+        how: ["写 case_control.md。", "明确公开日期必须小于等于 as-of。", "把 later stock performance、later filings、guru actions 全部列为 forbidden。", "冻结后才允许 Runner 开始研究。"],
+        output: ["case_control.md", "sealed label 由 Scorer 保管，Runner 不可见"],
+        gate: ["没有 as-of 日期，不开跑。", "没有 forbidden evidence 列表，不开跑。"],
+        failures: ["自由挑日期", "Runner 看到赢家/陷阱标签", "把后来的股价或大师买入传给 Runner"],
+        signal: "不产生投资 signal，只提供测试边界。"
+      },
+      {
+        id: "source",
+        code: "01",
+        title: "Source Pack",
+        short: "收集 as-of 前证据",
+        color: "blue",
+        roles: ["evidence", "raw"],
+        purpose: "只收集可在 as-of 当时知道的材料，先保留原始证据，不提前下结论。",
+        input: ["case_control.md", "SEC filings", "earnings release / call", "historical price", "dated news / narrative"],
+        how: ["建立 sources_used.csv。", "给每条来源记录 public_date、url_or_path、type、used_for。", "把 filings/calls/news/price 的关键段落放进 raw_extracts.md。", "把 KOL、视频、社媒只标为 topic lead 或 sentiment。"],
+        output: ["sources_used.csv", "raw_extracts.md"],
+        gate: ["每个 load-bearing fact 必须能追到 source_id。", "任何 post-as-of 来源直接作废。"],
+        failures: ["用后来的 10-Q", "用当下股价倒推判断", "把视频观点当 primary evidence"],
+        signal: "为 M1 提供 confidence 输入。"
+      },
+      {
+        id: "m1",
+        code: "M1",
+        title: "Evidence Spine",
+        short: "事实可信度和信息缺口",
+        color: "blue",
+        roles: ["confidence"],
+        purpose: "回答截至 as-of 日我们到底知道什么、哪些是事实、哪些只是解释或情绪。",
+        input: ["sources_used.csv", "raw_extracts.md", "claim IDs if available"],
+        how: ["把信息分成 EVIDENCE、INTERPRETATION、SENTIMENT、OPEN QUESTIONS。", "标注源质量和矛盾数字。", "给 confidence: low / med / high。", "把信息缺口变成 haircut 或监控项，不直接自动 veto。"],
+        output: ["evidence_spine.md", "module signal in decision_card.json"],
+        gate: ["关键数字必须有 source_id、日期、单位。", "M1 低 confidence 时，M6 必须降低初始仓位或给明确 open question。"],
+        failures: ["confidence 被当成 verdict ceiling", "事实/观点/情绪混在一起", "source date 不可审计"],
+        signal: "role=confidence, signal 通常不进入 conviction，只改变仓位折扣和 band 宽度。"
+      },
+      {
+        id: "m2",
+        code: "M2",
+        title: "Theme / Mechanism Thesis",
+        short: "美股投资网式方法融入点",
+        color: "green",
+        roles: ["context", "conviction"],
+        purpose: "回答为什么现在值得研究、市场正在重估什么、机制是什么、瓶颈在哪里、哪个指标会逼市场更新。",
+        input: ["evidence_spine.md", "dated news / sentiment", "capital flow evidence", "industry catalyst"],
+        how: ["写 Theme、Why now、Market narrative。", "指出市场过度强调和低估的变量。", "从 demand shock、scarce resource、profit pool 推导机制。", "给 context_label，比如 quality_compounder、exceptional_bottleneck、cyclical_inflection、false_cheap_value_trap。", "写 one metric、catalyst、kill condition。"],
+        output: ["thesis_mechanism.md", "context_label", "M2 signal"],
+        gate: ["说不清机制，不能进入 STARTER。", "只有叙事没有可验证指标，最高 WATCH。"],
+        failures: ["只写 AI 受益，不写收入路径", "只有标题和热度，没有资本流或瓶颈", "没有 kill condition"],
+        signal: "role=context + conviction。强 bottleneck/dislocation 可给 +2。"
+      },
+      {
+        id: "m3",
+        code: "M3",
+        title: "Profit Pool / Durability",
+        short: "价值链、利润池、护城河、经营者",
+        color: "green",
+        roles: ["conviction"],
+        purpose: "判断公司是否真的拿得到利润池，以及为什么这件事可以持续。",
+        input: ["thesis_mechanism.md", "filings", "peer / industry evidence", "management and capital allocation facts"],
+        how: ["画价值链和付费链。", "分清长期 moat 和短期 bottleneck。", "检查客户 ROI、供应约束、定价权、替代路径。", "加入 operator / incentive / capital allocation 判断。"],
+        output: ["profit_pool_durability.md", "M3 signal"],
+        gate: ["利润池归属说不清，不能 CORE。", "护城河正在被侵蚀时，M5 必须重点检查 trap。"],
+        failures: ["把行业增长当公司增长", "把短期短缺当永久护城河", "忽略供应商或客户拿走利润"],
+        signal: "role=conviction。捕获利润池且耐久性强为 +2，利润池流失为 -2。"
+      },
+      {
+        id: "m4",
+        code: "M4",
+        title: "Financial Reality",
+        short: "财报是否验证机制",
+        color: "amber",
+        roles: ["conviction", "warning"],
+        purpose: "用收入、利润率、现金流、资产负债表、周期位置验证 M2/M3，而不是机械看 trailing PE。",
+        input: ["financial statements", "segment trends", "cash flow", "balance sheet", "cycle data"],
+        how: ["做 accounting-to-economics translation。", "区分 trough、mid-cycle、peak earnings。", "检查 capex、SBC、working capital、debt、dilution。", "做 owner earnings bridge 和 normalized earnings。"],
+        output: ["financial_reality.md", "M4 signal"],
+        gate: ["周期股不正常化盈利，不能给估值结论。", "balance sheet 无法撑到 thesis 验证，M5 进入 veto 检查。"],
+        failures: ["把 COVID 暴利当常态", "把 trough loss 当永久衰败", "忽略 capex 黑洞和稀释"],
+        signal: "role=conviction/warning。财务验证机制给 +1/+2，结构性恶化给 -1/-2。"
+      },
+      {
+        id: "m5",
+        code: "M5",
+        title: "Inversion / Trap Test",
+        short: "永久损失和假便宜检查",
+        color: "red",
+        roles: ["risk", "veto"],
+        purpose: "专门问如果这是陷阱会怎么死，避免被低 P/E、强品牌、旧利润和股息迷惑。",
+        input: ["M2 context", "M3 durability", "M4 financial reality", "risk factors", "litigation / regulation / debt"],
+        how: ["列出 thesis kill paths。", "检查结构性衰退、利润池转移、资产负债表死亡、管理层资本错配。", "把 false-cheap、yield trap、cyclical peak 标出来。", "判断是否 hard_veto。"],
+        flow: [
+          "Step 1 · 复述正向 thesis：从 M2/M3/M4 抄出当前买入理由，不允许自己重写成更容易反驳的版本。",
+          "Step 2 · 写 3-5 条失败路径：客户不再需要、利润池转移、竞争者绕过、周期见顶、财务杠杆压垮、监管/诉讼破坏。",
+          "Step 3 · 给每条失败路径分级：temporary volatility、earnings reset、permanent impairment、hard veto。",
+          "Step 4 · 做 false-cheap 检查：低 P/E、低 P/B、高股息、一次性高盈利、周期顶部利润，哪一个在伪装安全边际。",
+          "Step 5 · 做资产负债表和生存检查：债务、到期墙、capex 必需性、现金流缺口、稀释风险、融资窗口。",
+          "Step 6 · 做结构性衰退检查：份额流失、take-rate 下滑、定价权丢失、利润池迁移、旧护城河失效。",
+          "Step 7 · 给 risk_penalty 和 veto_flag：无永久损失则 -0/-1；永久损失路径清晰且补偿不足则 -2/hard veto。",
+          "Step 8 · 把 M5 结论交给 M6：如果不是 veto，写清楚允许 starter 的最大仓位和必须监控的 kill criteria。"
+        ],
+        deliverable: `inversion_trap_test.md
+
+# M5 Inversion / Trap Test
+
+## 0. Module Verdict
+Risk signal: -2 / -1 / 0
+Veto flag: true / false
+Risk penalty:
+Allowed max size after M5:
+
+## 1. Positive Thesis Being Tested
+- Context from M2:
+- Profit-pool claim from M3:
+- Financial claim from M4:
+- What has to be true:
+
+## 2. Failure Path Table
+| Failure path | Mechanism | Evidence as-of | Severity | Probability | Time horizon | Signal |
+|---|---|---|---|---|---|---|
+| Demand disappears / slows |  |  | volatility / reset / impairment / veto | low / med / high |  |  |
+| Profit pool shifts away |  |  |  |  |  |  |
+| Competition attacks moat |  |  |  |  |  |  |
+| Balance sheet or capex breaks thesis |  |  |  |  |  |  |
+| Management capital allocation destroys value |  |  |  |  |  |  |
+| Regulation / litigation causes permanent loss |  |  |  |  |  |  |
+
+## 3. False-Cheap Checklist
+- Low P/E based on normalized earnings? yes / no
+- Low P/B but assets impaired? yes / no
+- High dividend or buyback funded by debt? yes / no
+- Peak-cycle margin being capitalized? yes / no
+- One-time windfall being treated as recurring? yes / no
+- Reported EPS diverges from owner earnings? yes / no
+
+## 4. Structural Decline Test
+- Revenue quality:
+- Unit economics:
+- Pricing power:
+- Market share:
+- Customer behavior:
+- Substitute / bypass risk:
+- Profit-pool migration:
+
+## 5. Survival / Balance Sheet Test
+- Net debt / cash:
+- Debt maturities:
+- Required capex:
+- FCF after maintenance capex:
+- Dilution risk:
+- Liquidity or refinancing risk:
+
+## 6. Kill Criteria
+If any of these happen, M6 must cut size or exit:
+1.
+2.
+3.
+
+## 7. M5 Output To M6
+Risk signal:
+Veto flag:
+If no veto, max initial size allowed:
+If veto, required evidence to remove veto:
+Monitoring variable:
+Next event/date to check:`,
+        output: ["inversion_trap_test.md", "risk_penalty / veto flag"],
+        gate: ["永久损失路径强且无补偿，size = 0。", "下行不可承受时，不允许 starter。"],
+        failures: ["只写风险清单，不判断严重度", "看到低 P/E 就叫 MOS", "没有明确 kill criteria"],
+        signal: "role=risk/veto。-2 可以触发 hard veto。"
+      },
+      {
+        id: "m6",
+        code: "M6",
+        title: "Price / Position / Monitor",
+        short: "价格转成仓位和动作",
+        color: "violet",
+        roles: ["price", "output"],
+        purpose: "把研究变成可执行仓位：买不买、买多少、怎么加、怎么减、错了怎么知道。",
+        input: ["M1-M5 signals", "as-of price", "market cap", "scenario values", "portfolio risk assumptions"],
+        how: ["写 business verdict、new-money verdict、existing-position verdict。", "给 buy-below、starter zone、add zone、hold zone、trim/no-chase zone。", "把 uncertainty 转为 position size，不自动转为 0%。", "设 add/trim/exit triggers 和 next monitor event。"],
+        output: ["decision_card.md", "decision_card.json"],
+        gate: ["没有 buy-below 或 starter zone，不能 STARTER。", "没有 downside if wrong，不能给仓位。"],
+        failures: ["只有 BUY/WATCH，没有仓位", "新钱和已有仓位不分", "没有加仓/减仓规则"],
+        signal: "role=price/output。生成 target_size 和 verdict。"
+      },
+      {
+        id: "audit",
+        code: "QA",
+        title: "Lookahead Audit",
+        short: "检查有没有偷看未来",
+        color: "red",
+        roles: ["audit"],
+        purpose: "在评分前检查 Runner 有没有用了 as-of 之后的事实或结果导向语言。",
+        input: ["all runner files", "sources_used.csv", "decision_card.json"],
+        how: ["核对每个 source public_date。", "查 outcome-aware language。", "查 KOL/social 是否越权成 evidence。", "给 CLEAN 或 LEAK。"],
+        output: ["lookahead_audit.md"],
+        gate: ["LEAK case 直接作废重跑。"],
+        failures: ["晚于 as-of 的 source", "暗示 later rally", "使用 later guru action"],
+        signal: "不影响投资 signal，只决定 case 是否有效。"
+      },
+      {
+        id: "score",
+        code: "SC",
+        title: "Outcome Score / Weight Tune",
+        short: "用已知结果校准权重",
+        color: "amber",
+        roles: ["scoring", "learning"],
+        purpose: "把每个历史 case 变成 pipeline 学习样本：错在哪里、哪个模块权重过大或过小。",
+        input: ["locked decision_card.json", "sealed outcome label", "lookahead_audit.md"],
+        how: ["计算 size-distance error。", "判断 winner 是否至少 STARTER，trap 是否避免 STARTER。", "记录 dominant_module 是否正确。", "打 failure tags。", "至少 8 个 case 后再建议改权重。"],
+        output: ["outcome_score.md", "results.csv row", "CHANGELOG.md proposal"],
+        gate: ["单个 case 只能产生假设，不能直接改权重。", "调权必须有机制理由和 holdout 检查。"],
+        failures: ["一例一调参", "只优化错误率，没有投资机制", "买所有故事来提高 winner recall"],
+        signal: "反馈到 WEIGHTING_HARNESS，不回写已锁定 verdict。"
+      }
+    ];
+
+    const moduleDetailOverrides = {
+      case: {
+        flow: [
+          "Step 1 · 定义 case：写清 ticker、公司名、as-of date、price date、测试问题，以及本次使用的 pipeline 版本。",
+          "Step 2 · 冻结边界：列出允许使用的材料类型，并把所有晚于 as-of 的事实、价格走势、guru 后续动作列为 forbidden evidence。",
+          "Step 3 · 分离角色：Runner 只能看到 case_control 和 source pack；Scorer 单独保管 sealed outcome label。",
+          "Step 4 · 固定价格输入：记录 as-of price、market cap、share count、FX/ADR 口径，避免后续估值混用。",
+          "Step 5 · 写 audit hooks：为 QA 预留 public_date、source_id、allowed_or_forbidden 字段。",
+          "Step 6 · 冻结 case：冻结后不得改 as-of date 或补未来材料；如发现边界错误，废弃重开。"
+        ],
+        deliverable: `case_control.md
+
+# 00 Freeze Case
+
+## 1. Case Identity
+- Ticker:
+- Company:
+- Exchange / share class:
+- Pipeline version:
+- Runner:
+- Scorer:
+
+## 2. Time Boundary
+- As-of date:
+- Price date:
+- As-of price:
+- Market cap:
+- Share count / ADR ratio:
+- Currency:
+
+## 3. Decision Question
+- New money decision:
+- Existing position decision:
+- Expected output: WATCH / STARTER / ADD / HOLD / TRIM / EXIT
+
+## 4. Allowed Evidence
+| Evidence type | Cutoff rule | Notes |
+|---|---|---|
+| Filings | public_date <= as-of date |  |
+| Earnings release / call | public_date <= as-of date |  |
+| Price / volume | date <= price date |  |
+| News / narrative | public_date <= as-of date |  |
+| Industry data | public_date <= as-of date |  |
+
+## 5. Forbidden Evidence
+- Later stock performance:
+- Later filings:
+- Later management comments:
+- Later guru / fund actions:
+- Later macro or industry data:
+- Any article revised after as-of without archived timestamp:
+
+## 6. Sealed Outcome Label
+Scorer only, Runner cannot see:
+- Outcome class:
+- Measurement window:
+- Realized return:
+- Notes:
+
+## 7. Freeze Checklist
+- [ ] As-of date fixed
+- [ ] Price input fixed
+- [ ] Allowed evidence listed
+- [ ] Forbidden evidence listed
+- [ ] Runner / Scorer separated
+- [ ] Case ready for Source Pack`
+      },
+      source: {
+        flow: [
+          "Step 1 · 从 case_control 读取 as-of 边界，只收集 public_date 小于等于 as-of 的材料。",
+          "Step 2 · 建 sources_used.csv：每条材料必须有 source_id、public_date、url_or_path、source_type、used_for。",
+          "Step 3 · 抽取原文证据：把 filings、call、press release、dated news 的关键段落放入 raw_extracts.md。",
+          "Step 4 · 标注证据级别：primary evidence、secondary evidence、sentiment、topic lead 分开，不提前下投资结论。",
+          "Step 5 · 处理冲突数据：同一指标出现不同数字时，保留多个来源并标注口径差异。",
+          "Step 6 · 做 cutoff audit：任何日期不确定、修订日期晚于 as-of、或无法追溯的材料都进入 excluded_sources。"
+        ],
+        deliverable: `source_pack.md
+
+# 01 Source Pack
+
+## 1. Source Inventory
+| source_id | public_date | source_type | url_or_path | used_for | allowed? |
+|---|---|---|---|---|---|
+| S001 |  | filing / call / news / price / industry |  |  | yes / no |
+
+## 2. Primary Evidence Extracts
+### S001
+- Date:
+- Claim supported:
+- Extract:
+- Unit / period / segment:
+- Notes:
+
+## 3. Secondary Evidence
+| source_id | claim | why secondary | reliability |
+|---|---|---|---|
+|  |  |  | low / med / high |
+
+## 4. Narrative / Sentiment Leads
+| source_id | narrative | evidence value | allowed use |
+|---|---|---|---|
+|  |  | sentiment / topic lead only | cannot support core fact alone |
+
+## 5. Conflicting Data
+| metric | source A | source B | likely reason | chosen treatment |
+|---|---|---|---|---|
+|  |  |  | period / unit / adjusted vs GAAP |  |
+
+## 6. Excluded Sources
+| source | reason excluded |
+|---|---|
+|  | post-as-of / no date / revised later / unverifiable |
+
+## 7. Handoff To M1
+- Most load-bearing facts:
+- Weakest evidence areas:
+- Open source gaps:
+- Claims that require haircut later:`
+      },
+      m1: {
+        flow: [
+          "Step 1 · 把 raw extracts 拆成 claim：每个 claim 绑定 source_id、日期、指标口径和置信度。",
+          "Step 2 · 分类 claim：EVIDENCE、INTERPRETATION、SENTIMENT、OPEN QUESTION 分开写。",
+          "Step 3 · 检查 load-bearing facts：收入、利润率、现金流、债务、份额、客户、价格等关键事实必须可追溯。",
+          "Step 4 · 标注矛盾和缺口：不是自动否决，而是转成 confidence haircut 或 M6 monitoring item。",
+          "Step 5 · 给 M1 signal：high confidence 通常 0 或 +1；关键事实缺失时 -1；无法支撑核心判断时 -2。",
+          "Step 6 · 输出 evidence spine：后续 M2-M6 只能引用这里的事实骨架，不能偷偷新增未登记事实。"
+        ],
+        deliverable: `evidence_spine.md
+
+# M1 Evidence Spine
+
+## 0. Module Verdict
+- Confidence: low / medium / high
+- M1 signal: -2 / -1 / 0 / +1
+- Evidence haircut needed in M6:
+- Open questions that affect sizing:
+
+## 1. Load-Bearing Facts
+| claim_id | fact | source_id | public_date | period / unit | confidence |
+|---|---|---|---|---|---|
+| C001 |  | S001 |  |  | low / med / high |
+
+## 2. Evidence vs Interpretation
+### Evidence
+- C001:
+
+### Interpretation
+- What the fact may imply:
+- Competing interpretation:
+
+### Sentiment / Narrative Only
+- Claim:
+- Why it is not primary evidence:
+
+## 3. Contradictions
+| issue | source A | source B | treatment |
+|---|---|---|---|
+|  |  |  | use conservative number / keep range / exclude |
+
+## 4. Open Questions
+| question | why it matters | module affected | sizing treatment |
+|---|---|---|---|
+|  |  | M2 / M3 / M4 / M5 / M6 | haircut / monitor / no action |
+
+## 5. Handoff
+- Facts M2 can use:
+- Facts M3 can use:
+- Facts M4 must verify:
+- Risks M5 must invert:
+- Confidence note for M6:`
+      },
+      m2: {
+        flow: [
+          "Step 1 · 从 M1 事实出发，写清为什么现在值得研究，避免只写热门主题名。",
+          "Step 2 · 描述市场叙事：市场现在相信什么、忽略什么、错误定价可能来自哪里。",
+          "Step 3 · 推导机制：需求冲击、供给瓶颈、利润池迁移、监管变化、产品周期或资本周期如何传导到公司。",
+          "Step 4 · 找 one metric：选择一个最能迫使市场更新判断的指标，而不是堆一串无权重 KPI。",
+          "Step 5 · 给 context_label：quality_compounder、exceptional_bottleneck、cyclical_inflection、false_cheap_value_trap 等。",
+          "Step 6 · 写 catalyst 和 kill condition：什么会证明 thesis 开始工作，什么会证明 thesis 错了。",
+          "Step 7 · 给 M2 signal：机制清楚且可验证为 +1/+2；只有叙事无机制为 0/-1；机制被证伪为 -2。"
+        ],
+        deliverable: `thesis_mechanism.md
+
+# M2 Theme / Mechanism Thesis
+
+## 0. Module Verdict
+- Context label:
+- M2 signal: -2 / -1 / 0 / +1 / +2
+- Dominant mechanism:
+- One metric:
+
+## 1. Why Now
+- What changed before as-of:
+- Why the market may need to update:
+- Time horizon:
+
+## 2. Current Market Narrative
+- What bulls believe:
+- What bears believe:
+- What may be overemphasized:
+- What may be underpriced:
+
+## 3. Mechanism Chain
+| link | evidence | expected business impact | uncertainty |
+|---|---|---|---|
+| Demand / supply change |  |  |  |
+| Bottleneck or scarce asset |  |  |  |
+| Profit-pool effect |  |  |  |
+| Company-specific capture |  |  |  |
+
+## 4. Catalyst Map
+| catalyst | expected date / trigger | why it matters | module to verify |
+|---|---|---|---|
+|  |  |  | M3 / M4 / M6 |
+
+## 5. Kill Condition
+If these happen, M2 thesis is wrong:
+1.
+2.
+3.
+
+## 6. Handoff
+- Questions for M3:
+- Financial checks for M4:
+- Inversion points for M5:
+- Sizing implication for M6:`
+      },
+      m3: {
+        flow: [
+          "Step 1 · 画价值链：谁付钱、谁拿利润、谁承担成本、谁控制稀缺资源。",
+          "Step 2 · 检查利润池归属：公司拿到的是行业增长、短期价差、渠道优势、技术壁垒还是资本周期红利。",
+          "Step 3 · 区分 moat 和 bottleneck：长期护城河、短期供给瓶颈、周期性紧缺分别处理。",
+          "Step 4 · 验证客户 ROI：客户为什么愿意付钱，替代方案是什么，切换成本是否真实。",
+          "Step 5 · 检查竞争和替代：份额、价格、take-rate、供应商、客户议价权是否会把利润拿走。",
+          "Step 6 · 加入经营者判断：激励、资本配置、并购、回购、稀释、执行记录是否增强或削弱 thesis。",
+          "Step 7 · 给 M3 signal：可持续利润池 +2；短期瓶颈 +1；归属不清 0/-1；利润池迁移走 -2。"
+        ],
+        deliverable: `profit_pool_durability.md
+
+# M3 Profit Pool / Durability
+
+## 0. Module Verdict
+- M3 signal: -2 / -1 / 0 / +1 / +2
+- Profit-pool owner:
+- Durability: weak / medium / strong
+- Moat type:
+
+## 1. Value Chain
+| participant | role | pricing power | cost burden | profit share |
+|---|---|---|---|---|
+| Customer |  |  |  |  |
+| Company |  |  |  |  |
+| Supplier / platform / channel |  |  |  |  |
+| Competitor / substitute |  |  |  |  |
+
+## 2. Profit Pool Claim
+- Where profits are created:
+- Why this company can capture them:
+- What evidence supports capture:
+- What evidence weakens capture:
+
+## 3. Durability Tests
+| test | evidence | result |
+|---|---|---|
+| Customer ROI |  | pass / fail / unclear |
+| Switching cost |  | pass / fail / unclear |
+| Supply constraint |  | pass / fail / unclear |
+| Pricing power |  | pass / fail / unclear |
+| Substitute risk |  | pass / fail / unclear |
+
+## 4. Management / Capital Allocation
+- Incentives:
+- Reinvestment quality:
+- M&A discipline:
+- Buyback / dilution:
+- Balance between growth and returns:
+
+## 5. Risks For M5
+- Moat erosion path:
+- Profit-pool migration path:
+- Customer or supplier power path:
+
+## 6. Handoff
+- What M4 must confirm in numbers:
+- What M5 must try to kill:
+- Conviction implication for M6:`
+      },
+      m4: {
+        flow: [
+          "Step 1 · 把会计数字翻译成经济现实：收入质量、毛利率、经营利润、现金流、SBC、折旧、capex 分开看。",
+          "Step 2 · 做 segment / driver bridge：把 M2/M3 的机制映射到收入、单价、销量、份额、利润率。",
+          "Step 3 · 正常化盈利：区分 trough、mid-cycle、peak，周期股必须给 normalized earnings。",
+          "Step 4 · 做 owner earnings bridge：GAAP EPS 到 FCF after maintenance capex，检查 working capital 和一次性项目。",
+          "Step 5 · 检查资产负债表：现金、净债务、到期墙、利息覆盖、融资需求、稀释风险。",
+          "Step 6 · 判断财务是否验证 thesis：数字支持、滞后、矛盾，或显示结构性恶化。",
+          "Step 7 · 给 M4 signal：财务验证 +1/+2；混合或待验证 0；现金流或资产负债表恶化 -1/-2。"
+        ],
+        deliverable: `financial_reality.md
+
+# M4 Financial Reality
+
+## 0. Module Verdict
+- M4 signal: -2 / -1 / 0 / +1 / +2
+- Financial reality: improving / stable / mixed / deteriorating
+- Earnings basis: trough / mid-cycle / peak / normalized
+- Balance sheet risk:
+
+## 1. Accounting To Economics
+| item | reported | adjustment | economic number | note |
+|---|---:|---:|---:|---|
+| Revenue |  |  |  |  |
+| Gross profit |  |  |  |  |
+| Operating income |  |  |  |  |
+| Net income / EPS |  |  |  |  |
+| Operating cash flow |  |  |  |  |
+| Capex |  |  |  | maintenance / growth |
+| SBC / dilution |  |  |  |  |
+
+## 2. Mechanism Verification
+| M2 / M3 claim | financial line item | evidence | verdict |
+|---|---|---|---|
+|  | revenue / margin / FCF / ROIC |  | supports / mixed / refutes |
+
+## 3. Normalized Earnings
+- Current earnings:
+- Cycle position:
+- Mid-cycle revenue:
+- Mid-cycle margin:
+- Normalized EPS / FCF:
+- Key assumptions:
+
+## 4. Balance Sheet And Survival
+- Cash:
+- Debt:
+- Maturity wall:
+- Interest coverage:
+- Liquidity runway:
+- Dilution / refinancing risk:
+
+## 5. Red Flags
+- Revenue quality:
+- Margin sustainability:
+- Capex intensity:
+- Working capital:
+- Receivables / inventory:
+- One-time items:
+
+## 6. Handoff
+- Numbers M6 should use for valuation:
+- Financial risks M5 must invert:
+- Monitoring metrics:`
+      },
+      m6: {
+        flow: [
+          "Step 1 · 汇总 M1-M5 signals，先判断 business verdict，再判断 price verdict，不把好公司自动等于好买点。",
+          "Step 2 · 建情景：base、upside、downside、kill case；每个情景写关键假设和概率或权重。",
+          "Step 3 · 定价格区间：buy-below、starter zone、add zone、hold zone、trim/no-chase zone。",
+          "Step 4 · 转仓位：根据 conviction、confidence、downside、M5 veto、组合相关性决定 target_size。",
+          "Step 5 · 区分新钱和已有仓位：new-money verdict 与 existing-position verdict 可以不同。",
+          "Step 6 · 写交易规则：starter、add、trim、exit 的触发条件必须具体到价格、事实或指标。",
+          "Step 7 · 写监控表：下一次 earnings、filing、industry data、M5 kill criteria 的检查日期和阈值。",
+          "Step 8 · 输出 decision_card.md/json：让后续 QA 和 Scorer 可以直接读取。"
+        ],
+        deliverable: `decision_card.md
+
+# M6 Price / Position / Monitor
+
+## 0. Final Verdict
+- Business verdict: poor / mixed / good / exceptional
+- New-money verdict: WATCH / STARTER / ADD / PASS
+- Existing-position verdict: HOLD / ADD / TRIM / EXIT
+- Target size:
+- Max size allowed:
+- M5 veto flag:
+
+## 1. Module Signal Summary
+| module | signal | role | sizing effect |
+|---|---:|---|---|
+| M1 |  | confidence |  |
+| M2 |  | context / conviction |  |
+| M3 |  | conviction |  |
+| M4 |  | conviction / warning |  |
+| M5 |  | risk / veto |  |
+
+## 2. Scenario Table
+| scenario | assumptions | value / price | probability | action |
+|---|---|---:|---:|---|
+| Downside / wrong |  |  |  |  |
+| Base |  |  |  |  |
+| Upside |  |  |  |  |
+| Kill case |  |  |  |  |
+
+## 3. Price And Position Bands
+| band | price / valuation condition | action | max size |
+|---|---|---|---:|
+| Buy-below |  | STARTER |  |
+| Add zone |  | ADD |  |
+| Hold zone |  | HOLD |  |
+| Trim / no-chase |  | TRIM / PASS |  |
+
+## 4. Add / Trim / Exit Rules
+- Add if:
+- Do not add if:
+- Trim if:
+- Exit if:
+- Re-open if:
+
+## 5. Monitoring Plan
+| metric / event | threshold | date / cadence | owner module |
+|---|---|---|---|
+|  |  |  | M2 / M3 / M4 / M5 |
+
+## 6. JSON Fields
+- ticker:
+- as_of_date:
+- verdict:
+- target_size:
+- max_size:
+- buy_below:
+- add_zone:
+- trim_zone:
+- dominant_module:
+- kill_criteria:`
+      },
+      audit: {
+        flow: [
+          "Step 1 · 收集 Runner 产物：case_control、sources_used、M1-M6 文件、decision_card.json。",
+          "Step 2 · 检查每个 source public_date：晚于 as-of、日期缺失、修订日期不明都标红。",
+          "Step 3 · 检查 outcome-aware language：例如暗示后来涨跌、后来爆雷、后来被验证。",
+          "Step 4 · 检查证据越权：KOL、社媒、视频观点不能替代 primary evidence。",
+          "Step 5 · 检查新增事实：M2-M6 使用的关键事实必须能追溯到 Source Pack 和 M1。",
+          "Step 6 · 给 CLEAN / LEAK verdict：LEAK 直接废弃重跑；CLEAN 才能交给 Scorer。"
+        ],
+        deliverable: `lookahead_audit.md
+
+# QA Lookahead Audit
+
+## 0. Audit Verdict
+- Verdict: CLEAN / LEAK / NEEDS FIX
+- Auditor:
+- As-of date:
+- Files audited:
+
+## 1. Source Date Check
+| source_id | public_date | allowed? | issue |
+|---|---|---|---|
+|  |  | yes / no |  |
+
+## 2. Claim Traceability
+| claim | used in module | source_id | traceable? |
+|---|---|---|---|
+|  | M1 / M2 / M3 / M4 / M5 / M6 |  | yes / no |
+
+## 3. Outcome-Aware Language
+| file | phrase / issue | severity | required fix |
+|---|---|---|---|
+|  |  | low / med / high |  |
+
+## 4. Evidence Misuse
+| item | misuse type | required fix |
+|---|---|---|
+|  | KOL as evidence / social as fact / post-as-of source |  |
+
+## 5. Decision
+- CLEAN: send to Scorer
+- NEEDS FIX: revise and re-audit
+- LEAK: discard case and rerun from Freeze Case
+
+## 6. Notes For Scorer
+- Any residual uncertainty:
+- Any module with weak evidence:
+- Any excluded source that might explain later outcome:`
+      },
+      score: {
+        flow: [
+          "Step 1 · 打开 sealed outcome label，只有 QA 为 CLEAN 后才允许评分。",
+          "Step 2 · 计算结果：winner 是否至少 STARTER，trap 是否被避免，position size 是否接近应有仓位。",
+          "Step 3 · 记录 dominant_module：pipeline 当时主要依赖哪个模块，事后看是否依赖正确。",
+          "Step 4 · 打 failure tags：missed winner、false starter、oversized trap、underweighted theme、ignored M5 等。",
+          "Step 5 · 归因到模块：区分信息问题、机制问题、财务问题、反演问题、价格/仓位问题。",
+          "Step 6 · 更新 results.csv：单个 case 只记录，不立刻调参。",
+          "Step 7 · 至少 8 个 case 后写 WEIGHTING_HARNESS 调整建议，并保留 holdout 检查。"
+        ],
+        deliverable: `outcome_score.md
+
+# SC Outcome Score / Weight Tune
+
+## 0. Score Verdict
+- Case:
+- QA verdict:
+- Outcome label:
+- Pipeline decision:
+- Score:
+
+## 1. Outcome Measurement
+| field | value |
+|---|---|
+| As-of price |  |
+| Measurement window |  |
+| Realized return |  |
+| Drawdown |  |
+| Peer / benchmark return |  |
+| Outcome class | winner / neutral / trap / permanent loss |
+
+## 2. Decision Quality
+| question | answer | notes |
+|---|---|---|
+| Did winner receive at least STARTER? | yes / no / n.a. |  |
+| Did trap avoid STARTER? | yes / no / n.a. |  |
+| Was size directionally right? | yes / no |  |
+| Was dominant module correct? | yes / no |  |
+
+## 3. Module Attribution
+| module | original signal | hindsight assessment | adjustment hypothesis |
+|---|---:|---|---|
+| M1 |  |  |  |
+| M2 |  |  |  |
+| M3 |  |  |  |
+| M4 |  |  |  |
+| M5 |  |  |  |
+| M6 |  |  |  |
+
+## 4. Failure Tags
+- missed_winner:
+- false_starter:
+- oversized_trap:
+- underweighted_theme:
+- overtrusted_financials:
+- ignored_inversion:
+- price_too_rigid:
+
+## 5. Results.csv Row
+- case_id:
+- ticker:
+- as_of_date:
+- context_label:
+- verdict:
+- target_size:
+- outcome_class:
+- score:
+- dominant_module:
+- failure_tags:
+
+## 6. Weighting Proposal
+Only after enough cases:
+- Proposed change:
+- Evidence across cases:
+- Mechanism reason:
+- Holdout check:
+- Changelog entry:`
+      }
+    };
+
+    modules.forEach(m => Object.assign(m, moduleDetailOverrides[m.id] || {}));
+
+    const tabNames = [
+      ["input", "输入"],
+      ["flow", "执行流程"],
+      ["deliverable", "交付产物"],
+      ["gate", "质量门"],
+      ["failures", "常见错误"],
+      ["signal", "Signal"]
+    ];
+
+    let activeId = "m2";
+    let activeTab = "flow";
+
+    const nodeGrid = document.getElementById("nodeGrid");
+    const tabs = document.getElementById("tabs");
+    const tabPanel = document.getElementById("tabPanel");
+
+    function renderNodes() {
+      nodeGrid.innerHTML = modules.map(m => `
+        <button class="node ${m.color} ${m.id === activeId ? "active" : ""}" data-id="${m.id}" type="button">
+          <span class="k">${m.code}</span>
+          <span class="t">${m.title}</span>
+          <span class="s">${m.short}</span>
+          <span class="role">${m.roles.map(r => `<span class="pill">${r}</span>`).join("")}</span>
+        </button>
+      `).join("");
+      document.querySelectorAll(".node").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeId = btn.dataset.id;
+          activeTab = "flow";
+          renderAll();
+          document.getElementById("workbench").scrollIntoView({behavior: "smooth", block: "start"});
+        });
+      });
+    }
+
+    function renderTabs() {
+      tabs.innerHTML = tabNames.map(([id, label]) => `
+        <button type="button" class="tab ${id === activeTab ? "active" : ""}" data-tab="${id}">${label}</button>
+      `).join("");
+      document.querySelectorAll(".tab").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeTab = btn.dataset.tab;
+          renderTabs();
+          renderTabPanel();
+        });
+      });
+    }
+
+    function renderDetailHead() {
+      const m = modules.find(x => x.id === activeId);
+      document.getElementById("detailCode").textContent = `${m.code} · ${m.roles.join(" / ")}`;
+      document.getElementById("detailTitle").textContent = m.title;
+      document.getElementById("detailPurpose").textContent = m.purpose;
+    }
+
+    function renderList(title, items) {
+      return `<h4>${title}</h4><ul>${items.map(x => `<li>${x}</li>`).join("")}</ul>`;
+    }
+
+    function escapeHtml(text) {
+      return String(text)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderDeliverable(m) {
+      if (m.deliverable) {
+        return `<h4>交付产物模板</h4><pre class="codebox">${escapeHtml(m.deliverable)}</pre>`;
+      }
+      return renderList("交付产物", m.output);
+    }
+
+    function renderTabPanel() {
+      const m = modules.find(x => x.id === activeId);
+      const content = {
+        input: renderList("输入", m.input),
+        flow: renderList("执行流程", m.flow || m.how),
+        deliverable: renderDeliverable(m),
+        gate: renderList("质量门", m.gate),
+        failures: renderList("常见错误", m.failures),
+        signal: `<h4>Signal</h4><div class="kv">
+          <div class="key">Module</div><div>${m.code} · ${m.title}</div>
+          <div class="key">Role</div><div>${m.roles.map(r => `<span class="pill">${r}</span>`).join(" ")}</div>
+          <div class="key">Rule</div><div>${m.signal}</div>
+          <div class="key">Scale</div><div>+2 强正向，+1 弱正向，0 中性，-1 警告，-2 强警告或 veto candidate。</div>
+        </div>`
+      };
+      tabPanel.innerHTML = content[activeTab];
+    }
+
+    function renderAll() {
+      renderNodes();
+      renderDetailHead();
+      renderTabs();
+      renderTabPanel();
+    }
+
+    renderAll();
+  </script>
+</body>
+</html>

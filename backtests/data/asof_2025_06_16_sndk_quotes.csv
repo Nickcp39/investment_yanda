@@ -1,0 +1,3 @@
+ticker,asof_date,market_date,close,adj_close,source_url,notes
+SNDK,2025-06-16,2025-06-16,44.209999084472656,44.209999084472656,https://query1.finance.yahoo.com/v8/finance/chart/SNDK?period1=1749945600&period2=1750204800&interval=1d&events=history&includeAdjustedClose=true,First standalone public-company year; price used for blind as-of verdict.
+SNDK,2026-06-16,2026-06-16,1991.550048828125,1991.550048828125,https://query1.finance.yahoo.com/v8/finance/chart/SNDK?period1=1781481600&period2=1781654400&interval=1d&events=history&includeAdjustedClose=true,Current comparison anchor from Yahoo chart API regular-market close/price.
