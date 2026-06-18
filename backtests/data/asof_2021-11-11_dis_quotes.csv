@@ -1,0 +1,7 @@
+ticker,asof_date,market_date,close,adj_close,source_url,notes
+DIS,2021-11-11,2021-11-08,176.87,172.80,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1636156800&period2=1636934400&interval=1d&events=history&includeAdjustedClose=true,Pre-earnings close (Mon).
+DIS,2021-11-11,2021-11-09,175.11,171.08,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1636156800&period2=1636934400&interval=1d&events=history&includeAdjustedClose=true,Pre-earnings close (Tue).
+DIS,2021-11-11,2021-11-10,174.45,170.44,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1636156800&period2=1636934400&interval=1d&events=history&includeAdjustedClose=true,Q4 FY2021 earnings released after close on Nov 10.
+DIS,2021-11-11,2021-11-11,162.11,158.38,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1636156800&period2=1636934400&interval=1d&events=history&includeAdjustedClose=true,AS-OF CLOSE. First full session after earnings; ~7% drop on ~62M volume (vs ~11M prior day). Price used for blind as-of verdict.
+DIS,2021-11-11,52wk_high,201.91,201.91,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1604966400&period2=1636934400&interval=1d,Trailing-52-week intraday-close high (reached ~March 2021); shown for context only, not the as-of price.
+DIS,2021-11-11,52wk_low,135.52,135.52,https://query1.finance.yahoo.com/v8/finance/chart/DIS?period1=1604966400&period2=1636934400&interval=1d,Trailing-52-week closing low; context only.

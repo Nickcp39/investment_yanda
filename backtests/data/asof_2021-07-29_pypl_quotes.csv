@@ -1,0 +1,5 @@
+ticker,asof_date,market_date,open,high,low,close,adj_close,volume,source_url,notes
+PYPL,2021-07-29,2021-07-26,309.66,310.16,305.23,306.80,304.17,3805900,https://query2.finance.yahoo.com/v8/finance/chart/PYPL?period1=1627257600&period2=1627603200&interval=1d,Pre-earnings session; 310.16 intraday is the as-of-era all-time high reference.
+PYPL,2021-07-29,2021-07-27,305.50,306.34,294.89,300.48,297.90,6938400,https://query2.finance.yahoo.com/v8/finance/chart/PYPL?period1=1627257600&period2=1627603200&interval=1d,Two sessions before earnings.
+PYPL,2021-07-29,2021-07-28,300.74,302.43,296.78,301.98,299.39,9185000,https://query2.finance.yahoo.com/v8/finance/chart/PYPL?period1=1627257600&period2=1627603200&interval=1d,Q2 2021 results released after this close (Jul 28 2021).
+PYPL,2021-07-29,2021-07-29,285.37,289.00,281.60,283.17,280.74,18237000,https://query2.finance.yahoo.com/v8/finance/chart/PYPL?period1=1627257600&period2=1627603200&interval=1d,AS-OF CLOSE used for blind verdict. Gapped down post-earnings on ~2.6x volume.

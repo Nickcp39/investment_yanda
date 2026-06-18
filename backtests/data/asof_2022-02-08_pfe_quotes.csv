@@ -1,0 +1,7 @@
+ticker,asof_date,market_date,close,adj_close,source_url,notes
+PFE,2022-02-08,2022-02-01,53.07,42.13,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,Context: trading days surrounding the as-of date (Yahoo chart API daily close/adjclose).
+PFE,2022-02-08,2022-02-02,53.86,42.75,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,Context day.
+PFE,2022-02-08,2022-02-03,53.38,42.37,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,Context day.
+PFE,2022-02-08,2022-02-04,53.00,42.07,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,Context day.
+PFE,2022-02-08,2022-02-07,53.21,42.24,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,Context day (day before earnings).
+PFE,2022-02-08,2022-02-08,51.70,41.04,https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=1643673600&period2=1644537600&interval=1d&events=history&includeAdjustedClose=true,AS-OF DATE close. Q4/FY2021 earnings released pre-market Feb 8 2022; this is the closing price used for the blind as-of verdict.

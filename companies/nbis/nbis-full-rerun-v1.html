@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBIS — 10-Layer Pipeline Rerun (v1)</title>
+<style>
+  :root{
+    --ink:#1a1d21; --muted:#5b636c; --line:#e3e6ea; --bg:#fbfcfd; --card:#fff;
+    --accent:#1f6feb; --green:#1a7f4b; --amber:#b7791f; --red:#c0392b; --soft:#f1f5f9;
+  }
+  *{box-sizing:border-box}
+  body{font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+       color:var(--ink);background:var(--bg);margin:0;padding:0}
+  .wrap{max-width:920px;margin:0 auto;padding:32px 22px 80px}
+  h1{font-size:27px;margin:0 0 4px;letter-spacing:-.3px}
+  h2{font-size:20px;margin:34px 0 10px;padding-top:14px;border-top:2px solid var(--line)}
+  h3{font-size:16px;margin:18px 0 6px}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .verdict{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 6px}
+  .pill{display:inline-block;padding:4px 11px;border-radius:999px;font-size:13px;font-weight:600}
+  .pill.hold{background:#fef6e7;color:var(--amber);border:1px solid #f3dca0}
+  .pill.watch{background:#eaf2ff;color:var(--accent);border:1px solid #c5dbff}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .lead{background:#f4f9f5;border:1px solid #cce8d6}
+  .lead h3{margin-top:0;color:var(--green)}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:var(--soft);font-weight:600}
+  td.r,th.r{text-align:right;white-space:nowrap}
+  .g{color:var(--green);font-weight:600}.a{color:var(--amber);font-weight:600}.rd{color:var(--red);font-weight:600}
+  ul{margin:6px 0 6px 0;padding-left:20px}li{margin:3px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .kv{font-size:14px}.kv b{display:inline-block;min-width:120px;color:var(--muted);font-weight:600}
+  code{background:var(--soft);padding:1px 5px;border-radius:5px;font-size:13px}
+  .foot{color:var(--muted);font-size:13px;margin-top:26px;border-top:1px solid var(--line);padding-top:12px}
+  .tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Nebius Group (NBIS) — 10-Layer Pipeline Rerun</h1>
+  <p class="sub">New evidence-first pipeline · synthesis as of 2026-06-18 · replaces the old single-video brief <code>companies/nbis.md</code> (2026-05-04). All figures primary-sourced (SEC 20-F / 6-K / IR) unless flagged; see <code>claim_ledger.csv</code> / <code>facts.md</code>.</p>
+
+  <div class="verdict">
+    <span class="pill hold">HOLD existing position</span>
+    <span class="pill watch">WATCH for new capital (&lt;~$150–180)</span>
+    <span class="tag">priced for perfection at ~$288</span>
+  </div>
+
+  <div class="card lead">
+    <h3>★ Lead question: is power / "building power plants" the bottleneck?</h3>
+    <p style="margin:6px 0"><b>No — the premise is wrong on both counts.</b></p>
+    <ul>
+      <li><b>NBIS does not build power plants.</b> It builds/owns <b>data centers</b> (&gt;75% owned, 3 GW across 5 sites) drawing contracted grid power, plus <b>partner-built behind-the-meter gas</b> (NJ ~85% gas) and the Bloom Energy fuel-cell deal to <i>bypass</i> grid-interconnection queues.</li>
+      <li><b>Power availability is not the constraint.</b> Already <b>&gt;3.5 GW contracted</b> (guide &gt;4 GW YE2026), top-tier among pure-play neoclouds. Demand is the opposite of a problem — "everything we build is sold."</li>
+      <li><b>The real binding constraint is the build-and-energize cycle</b> — turning <i>contracted → connected → active</i> MW. Management's own words: <i>"capacity is the main bottleneck to revenue growth."</i></li>
+      <li><b>Hardest sub-link:</b> long-lead electrical gear — <i>"massive shortages in transformers and gas generators"</i> (Volozh). Not GPUs (de-risked), not capital, not demand.</li>
+      <li><b>The number that proves conversion — active MW — is the one NBIS stopped disclosing</b> after YE2025 (~170 MW). Watch it.</li>
+    </ul>
+    <p style="margin:6px 0 0;color:var(--muted);font-size:13.5px">Detail: <code>bottleneck_map.md</code>, <code>value_chain_map.md</code>.</p>
+  </div>
+
+  <h2>Snapshot</h2>
+  <div class="grid">
+    <div class="card">
+      <p class="kv"><b>Price (6/18)</b> ~$287.73 (ATH $298.61)</p>
+      <p class="kv"><b>52-wk</b> $43.89 – $298.61</p>
+      <p class="kv"><b>Market cap</b> ~$73B basic / ~$89B diluted</p>
+      <p class="kv"><b>Enterprise value</b> ~$72.5B</p>
+      <p class="kv"><b>Net cash</b> ~+$0.85B carrying (converts)</p>
+      <p class="kv"><b>Your basis</b> ~$190–195 → <span class="g">+~50%</span></p>
+    </div>
+    <div class="card">
+      <p class="kv"><b>FY2025 rev</b> $529.8M (+479%)</p>
+      <p class="kv"><b>Q1'26 rev</b> $399.0M (+684%)</p>
+      <p class="kv"><b>ARR (Mar'26)</b> $1.92B (+54% QoQ)</p>
+      <p class="kv"><b>RPO (Q1'26)</b> $33.6B <span class="tag">audited; not "$46B backlog"</span></p>
+      <p class="kv"><b>Capex FY25 / guide'26</b> $4.07B / $20–25B</p>
+      <p class="kv"><b>FCF FY25</b> <span class="rd">≈ −$3.7B</span></p>
+    </div>
+  </div>
+
+  <h2>The 10 layers, in one screen</h2>
+  <table>
+    <tr><th>Layer</th><th>Read</th><th>File</th></tr>
+    <tr><td>2 Business model</td><td>3-tier sales; ~98% AI Cloud; Token Factory inference small; weak switching costs</td><td>business_model.md</td></tr>
+    <tr><td>3–4 Financials</td><td>Hyper-growth + hyper-capital-intensity; FCF −$3.7B; <span class="a">4→5yr dep extension</span>, <span class="rd">2-yr adverse ICFR</span></td><td>financial_quality.md</td></tr>
+    <tr><td>5 Value chain</td><td>Strong-but-squeezed: subordinate to NVIDIA (supplier) + 2 buyers (MSFT/Meta)</td><td>value_chain_map.md</td></tr>
+    <tr><td>6 Moat / bottleneck ★</td><td>Bottleneck = build-and-energize, not power. Bottleneck ≠ moat; "moat" = early+funded, erodes</td><td>bottleneck_map.md, moat_map.md</td></tr>
+    <tr><td>7 Operator</td><td>Good operator + funding discipline; <span class="a">founder super-vote, share-price-only incentives</span></td><td>operator_underwriting.md</td></tr>
+    <tr><td>8 Inversion</td><td>Top risks: dilution+capex air-pocket; delivery slip → MSFT termination; depreciation shock</td><td>inversion_map.md</td></tr>
+    <tr><td>9 Valuation</td><td>EV ~2× <i>entire</i> RPO; prices YE26 ARR target as if achieved; <span class="rd">no margin of safety</span></td><td>valuation.md</td></tr>
+    <tr><td>10 Decision</td><td><b>Hold / Watch</b> — see below</td><td>memo-v1.md, monitor.md</td></tr>
+  </table>
+
+  <h2>Valuation scenarios (end-2028)</h2>
+  <table>
+    <tr><th>Scenario</th><th class="r">FY28 rev</th><th class="r">EV/Sales</th><th class="r">Implied price</th><th class="r">vs $288</th><th>Driver</th></tr>
+    <tr><td class="rd">Bear</td><td class="r">~$8B</td><td class="r">4×</td><td class="r">~$120–140</td><td class="r rd">−50%+</td><td>churn/clawback, commoditization, dilution</td></tr>
+    <tr><td class="a">Base</td><td class="r">~$15–17B</td><td class="r">5–6×</td><td class="r">~$330–400</td><td class="r a">+15–40%</td><td>backlog converts on plan</td></tr>
+    <tr><td class="g">Bull</td><td class="r">~$21B+</td><td class="r">7×</td><td class="r">~$560+</td><td class="r g">~+95%</td><td>flawless execution + 3rd anchor</td></tr>
+  </table>
+  <p class="sub" style="margin-top:4px">Owner-earnings DCF not usable (FCF negative through ≥2028) → EV/forward-sales triangulation. FY27 consensus revenue itself spans $4–11B = high uncertainty. See <code>model/scenario_model.csv</code>.</p>
+
+  <h2>Decision — for the holder</h2>
+  <div class="card">
+    <ul>
+      <li><b>Hold</b> the existing +50% position. It's a better, more-proven business than the old "Watch" brief could see on one video source.</li>
+      <li><b>Don't add at ~$288</b> — you're no longer paid for the asymmetric risks (concentration, dilution, depreciation, execution). New-money buy only <b>&lt;~$150–180</b>.</li>
+      <li><b>Trim on kill-criteria, not on price.</b> Trimming into a squeeze (Nasdaq-100 inclusion 6/22) is reasonable given the skew, but let the triggers — not the ticker — drive an exit.</li>
+    </ul>
+    <h3>Kill criteria (→ <code>monitor.md</code>)</h3>
+    <ul>
+      <li>Active/connected MW stalls vs the 800MW–1GW YE26 target, OR a MSFT/Meta tranche is missed/renegotiated.</li>
+      <li>Funding flips from customer-prepayment-funded to dilution-funded (deferred-rev growth stalls + ATM/equity accelerates).</li>
+      <li>A 2nd depreciation-life extension or a GPU impairment; or sequential decline in revenue per MW.</li>
+      <li>FY2026 capex confirmed at the $31–35B high end without commensurate active-MW/ARR conversion.</li>
+    </ul>
+  </div>
+
+  <h2>Caveats &amp; open items</h2>
+  <ul>
+    <li><b>Concentration:</b> ~90%+ of contracted backlog is 2 customers (MSFT+Meta); exact % not disclosed.</li>
+    <li><b>Take-or-pay resolved:</b> revenue is take-or-pay (protects NBIS on utilization) <i>and</i> NBIS carries a delivery obligation with termination/LDs (protects customer) — residual risk is execution/delivery, not customer walk-away.</li>
+    <li><b>Active power (MW)</b> undisclosed since YE2025 — the key conversion metric.</li>
+    <li><b>Capex'26:</b> $20–25B (call) vs $31–35B (some secondary) — confirm at Q2 2026 6-K (~Aug).</li>
+    <li><b>Russia legacy:</b> divestiture indemnities / contingent liabilities not confirmed from primary text.</li>
+  </ul>
+
+  <p class="foot">
+    Generated by the new 10-layer buy-side pipeline (<code>companies/_company_research_template</code>). Evidence chain: source_register → claim_ledger (51 claims) → facts → analysis → memo. Research run 2026-06-18 (5 workstreams + contract-quality cross-check; ~547k research tokens). Status &amp; resume notes: <code>research_status.md</code>. <b>This is research, not advice.</b>
+  </p>
+
+</div>
+</body>
+</html>
