@@ -93,3 +93,28 @@ Added to balance the set with the `planned` winners (META / AMZN / NVDA) and the
 All as-of closes VERIFIED; each pack = 5 files (4 material + `material_audit.md`). Notable look-ahead catches: NVDA Q1 FY24 10-Q (filed 2023-05-26, one day after as-of) excluded → numbers sourced from the 5/24 8-K; AMZN fenced a 2023-02-09 Motley Fool piece to narrative-only; INTC excluded the ~2021-05-09 Mercury Research share report.
 
 Pre-blind-run TODO (not part of material collection): independent (separate-agent) look-ahead checker pass + add per-case rows to `LOOKAHEAD_CHECKER.md` forbidden registry (each `material_audit.md` provides a derived row).
+
+---
+
+## Operator / Founder background (added 2026-06-17) — now a required pack file
+
+Founder/operator quality sets the **durability ceiling** (`METHODOLOGY.md`) and feeds M3. Every material pack now adds a **5th evidence file**:
+
+- `operator_background.md` — follow `../../companies/_operator_underwriting_template.md`: People Map · Operator Scorecard (8 dims) · **Founder & Core Team Life-Arc** = the 2–4 people who actually decide the 10y outcome (not the org chart), **formation-first** (family / home / place-era / schooling / university / first job weighted most — the unchooseable, truest signal of formed values), a **required dark-arc / bear case for every person** (no hagiography), team cohesion + key-man + succession, → durability-ceiling grade 1–5.
+
+As-of discipline: track record / tenure / capital-allocation / governance evidence must be public_date ≤ the case's as-of; **formation facts (childhood, schooling, early career) are timeless** — use them but cite. No post-as-of events/outcomes; evidence only; no unsupported psychological diagnosis. Min add: 3–6 dated operator sources (proxy / bios / interviews / shareholder letters / early-career records).
+
+Backfill (2026-06-17): one collector per case writes `operator_background.md`. GOOGL is a full re-do (legacy stub → `googl_2024-06-14` proper pack incl. operator file).
+
+| case | operator focus (verify) | status |
+|---|---|---|
+| googl_2024-06-14 | Pichai + Page/Brin (voting control) | full re-do |
+| nvda_2023-05-25 | Jensen Huang (founder-CEO 1993–) | backfill |
+| meta_2022-11-10 | Zuckerberg (founder control) | backfill |
+| aapl_2016-05-12 | Cook (post-Jobs) | backfill |
+| amzn_2023-02-03 | Jassy + Bezos | backfill |
+| intc_2024-08-02 | Gelsinger (mid-turnaround) | backfill |
+| intc_2021-04-23 | Gelsinger (brand-new CEO) | backfill |
+| dis_2021-11-11 | Chapek + Iger | backfill |
+| pfe_2022-02-08 | Bourla | backfill |
+| pypl_2021-07-29 | Schulman | backfill |

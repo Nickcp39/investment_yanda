@@ -95,3 +95,7 @@ Each item checked ABSENT:
 ## 8. Decision
 
 The material pack is CLEAN-WITH-NOTES and is recommended as test-ready after the two minor notes (A, B) are acknowledged. An independent checker pass remains advisable per framework policy.
+
+## 9. Addendum — operator_background.md added (2022-11-10 as-of)
+
+- 2022-11-10: Added `operator_background.md` (founder/operator dossier per `_operator_underwriting_template.md`) plus operator sources **S012–S019** in `sources_used.csv`. Self-audit verdict: **CLEAN-WITH-NOTES** — every operator source has public_date <= 2022-11-10 (proxy 2022-04-22 [S012], Sandberg departure 2022-06-01 [S016], CFO transition announce 2022-07-27 / effective 2022-11-01 [S015], FTC order 2019-07-24 [S017], Haugen testimony 2021-10-05 [S018], biographies S013/S014/S019 2022-10); no post-as-of events, no outcome-aware language, no decision/size; 8 dedicated operator sources (>= the 3–6 minimum); governance/control-risk dimension covered from the primary 2022 DEF 14A (Zuckerberg 56.9% voting power, "controlled company"). One open note: Susan Li's pre-Harvard formation facts are not reliably documented in dated sources <= as-of and are logged as a gap rather than guessed.

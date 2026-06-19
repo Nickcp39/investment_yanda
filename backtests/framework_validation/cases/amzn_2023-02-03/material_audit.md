@@ -91,3 +91,38 @@ The material pack is **CLEAN-WITH-NOTES** and is material-collection-complete. T
 note is S013's post-as-of public_date, mitigated by fencing it to a non-load-bearing use
 and excluding its quantitative figures. Recommended action for the independent checker:
 accept the fenced use or drop S013; the pack's integrity does not depend on it. No LEAK.
+
+---
+
+## 8. Addendum — operator_background.md added (2023-02-03 as-of)
+
+`operator_background.md` (founder/operator dossier per `companies/_operator_underwriting_template.md`)
+was added to this case on the as-of frame. It underwrites the people line — Jeff Bezos (founder /
+Executive Chairman), Andy Jassy (CEO since 2021-07-05, AWS-builder), Brian Olsavsky (CFO since 2015) —
+formation-first per person, compressed adult track ≤ as-of, required dark-arc per person, team-level
+cohesion/key-man/culture/succession, fracture inversion, and a team life-arc grade (4/5). It uses 8
+operator sources (O1–O8 + O5-comp) plus financial facts already in the pack (S001/S003/S004/S007/S009);
+it adds NO decision, thesis, or size.
+
+Self-applied Lookahead Checker on operator_background.md:
+- **Source-date check:** all operator sources have public_date <= 2023-02-03 (formation facts are
+  timeless/encyclopedic; the 1997 + 2020 shareholder letters and the 2021 succession coverage are
+  pre-as-of). The Jassy father-anecdote (O5) is self-narrated at a 2022 event and is explicitly
+  fenced to lowest-tier self-narrative.
+- **Outcome-aware language:** none. The one "later" occurrence is in a forward-looking *kill-criteria*
+  clause ("to test on later evidence — NOT evaluated here"), not hindsight about a known outcome.
+- **Post-cutoff intrusion:** ABSENT. Explicitly excluded as leaks and recorded in the dossier's source
+  appendix: any 2024+ "do the Leadership Principles survive Jassy" commentary, Bloomberg's 2026
+  Jassy/AI profile, the 2026 re-reporting of the father anecdote and its quoted multi-trillion market
+  cap, Jacklyn Gise's 2025 death, Olsavsky's 2024 CMU-board / 2025 CFO-of-the-Year, and any post-2022
+  revenue figure (e.g. the $638B 2024 number some bios carry).
+- **Evidence misuse:** Wikipedia used as a cited cross-check of primary facts (formation), not as core
+  proof of an outcome; management/self-narrative framing flagged as such; no KOL/social/video used as
+  proof.
+- **No decision / no outcome:** the dossier contains NO buy/sell/hold, NO size, NO valuation; the
+  open people-tension (does a founder-authored culture transmit to the first non-founder CEO) is
+  recorded as an open question, not resolved.
+
+**Addendum verdict: CLEAN-WITH-NOTES** — the only note is O5's self-narrated father anecdote, fenced
+to lowest-tier framing and not load-bearing. No LEAK. (An independent checker pass remains recommended
+per LOOKAHEAD_CHECKER.md — the independence is the point.)

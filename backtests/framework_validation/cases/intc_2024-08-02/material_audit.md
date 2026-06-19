@@ -75,3 +75,10 @@ Grep for decision/valuation verdict tokens: **0 matches.** evidence_spine §2 st
 ## 7. Decision
 
 The pack is **CLEAN** and test-ready. Forward guidance is correctly admitted as as-of knowable; no post-cutoff fact, no leadership-change leak, no decision present.
+
+---
+
+## 8. Addendum — `operator_background.md` added (2026-06-18)
+
+- **Added:** `operator_background.md` (founder/operator dossier — Gelsinger / Zinsner / Yeary / Holthaus + board), with 9 new operator sources **O01–O09** appended to `sources_used.csv`. All O01–O09 are public_date ≤ 2024-08-02 (oldest O09 book 2008; newest dated event used = Jan 2023 chair appointment). Materials only — no decision, no valuation, no size.
+- **Self-audit verdict: CLEAN.** Per-case forbidden registry re-checked and all ABSENT — notably the **Gelsinger Dec-2024 departure** (he appears only as the as-of sitting CEO) and the **Lip-Bu Tan board resignation of Aug 19 2024**, which was specifically caught as POST-as-of and excluded (Tan appears only as a sitting director as-of). No post-crash price, no 18A/foundry outcome, no CHIPS equity stake, no outcome-aware language. Public bios/interview used as character-pattern/governance-context tier only, never as EVIDENCE-tier hard claims.

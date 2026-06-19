@@ -77,3 +77,9 @@ Grep for decision/valuation verdict tokens (decision_card / REJECT / STARTER / B
 ## 7. Decision
 
 The pack is **CLEAN-WITH-NOTES** and test-ready after the trivial "S014"->"S007" reference fix in evidence_spine.md §3. No leak; the noted item is cosmetic and non-load-bearing.
+
+## 8. Addendum — operator_background.md added (2016-05-12 as-of)
+
+- **`operator_background.md` added** (formation-first founder/operator dossier per `companies/_operator_underwriting_template.md`): core team = Tim Cook (CEO), Jony Ive (CDO/design soul), Jeff Williams (COO), Luca Maestri (CFO), under the Steve Jobs (d.2011) legacy. Per-person formation→adult-track→dark-arc; team-level cohesion/key-man/culture-DNA/succession; fracture inversion; team life-arc grade 4/5; scorecard 28/40 (neutral, materials only — NO decision/size).
+- **Operator sources:** 14 dated/timeless operator sources (O001–O014) added in the file's own source table, reliability-tiered (unchooseable facts > third-party early-career > self-narrative); cross-referenced to in-case S003/S004/S005/S006/S011.
+- **Self-audit verdict: CLEAN.** Track-record/governance rows all `public_date ≤ 2016-05-12` (Jobs resignation 2011-08-24, 2012 Maps/Forstall, 2013–14 capital-return + 7:1 split, 2014 shareholder stance, Ive CDO 2015, Williams COO 2015-12-17). Formation facts are timeless/unchooseable and legitimately cited per the formation rule. No outcome-aware language, no post-as-of price, Berkshire 13F ABSENT (Icahn used + explicitly distinguished), AirPods/iPhone 7+/Services-boom/FY2016-H2+ ABSENT. Independent checker pass still recommended (LOOKAHEAD_CHECKER requires a different agent than the collector).

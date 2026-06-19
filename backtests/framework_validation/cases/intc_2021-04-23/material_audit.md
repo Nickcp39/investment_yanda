@@ -97,3 +97,20 @@ Per the strict-blind contrast constraint, each must be ABSENT — verified absen
 The INTC 2021-04-23 material pack is CLEAN and is test-ready for a future blind Runner pass.
 
 ### Issue count: 0 load-bearing issues. (1 noted exclusion: post-as-of Mercury Research share data correctly omitted.)
+
+## 8. Addendum — operator_background.md added (2021-04-23 as-of)
+
+- `operator_background.md` (founder/operator dossier per `companies/_operator_underwriting_template.md`) was
+  ADDED to this pack. It underwrites the people line (Gelsinger CEO, Davis CFO, Ishrak Chair; Swan as outgoing
+  context), formation-first with a required dark-arc per person, team-level + fracture inversion, and a team
+  life-arc grade of 3/5. Operator-specific sources S014–S023 (9 added; 6 dated ≤ as-of, 3 timeless-formation
+  profiles) extend `sources_used.csv`; S001/S004/S005/S007–S009 reused.
+- Self-audit (LOOKAHEAD_CHECKER, 6-point + INTC forbidden registry) re-run over the new file: every operator
+  source is public_date ≤ 2021-04-23 (or a timeless formation fact, cited); the central read is that Gelsinger
+  had been CEO only ~10 weeks, so he is underwritten on his PRIOR record (Intel 1979–2009, EMC, VMware) with
+  near-zero Intel-CEO results — that thinness is stated as the finding, not hidden. Grep scan found NO
+  hindsight phrasing tied to post-as-of events, NO post-2021-04-23 year/price, NO 18A / foundry-customer-win /
+  CHIPS-equity / Gelsinger-departure intrusion, and NO buy/sell/hold verdict or position size. ("later" appears
+  only in timeless formation narrative; "exit" only for pre-as-of CEO departures and a forward kill-criterion.)
+- **Self-audit verdict for operator_background.md: CLEAN** (0 load-bearing issues). Pack remains test-ready;
+  an independent checker pass is still recommended per protocol.

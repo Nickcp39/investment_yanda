@@ -77,3 +77,9 @@ Grep for decision/valuation verdict tokens: **0 matches.** Optical multiples are
 ## 7. Decision
 
 The pack is **CLEAN** and test-ready. The post-as-of 10-K trap is correctly handled; the "$25B" ambition is not the forbidden stock-price trap; no post-cutoff fact and no decision present.
+
+---
+
+## Addendum — operator_background.md added (2026-06-18)
+
+`operator_background.md` added (Bourla / D'Amelio / Dolsten operator dossier; formation-first life-arcs, per-person dark-arcs, team fracture inversion, life-arc grade 3/5; 10 dated operator sources O01-O12). Collector self-audit verdict: **CLEAN** — all operator sources public_date ≤ 2022-02-08; the FY2021 comp (2022 proxy/10-K, post-as-of), *Moonshot* (Mar 2022) and its reviews, and the 2022 Genesis Prize *award* are deliberately EXCLUDED, with pre-as-of equivalents (FY2020 ~$21M pay per the 2021 proxy; Jan-2020 combined Chair+CEO; 2021 Oxfam/People's Vaccine profiteering data) used instead; no outcome-aware language; no decision/size/valuation. The COVID-windfall capital-allocation tension is posed and left to the future blind test.

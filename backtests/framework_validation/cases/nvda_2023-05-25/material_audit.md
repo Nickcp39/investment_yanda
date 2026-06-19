@@ -89,3 +89,16 @@ The `LOOKAHEAD_CHECKER.md` registry does not yet have an NVDA row; the following
 ## 7. Decision
 
 The material pack is CLEAN-WITH-NOTES and is test-ready. The notes (10-Q +1-day exclusion, pre-split un-adjust convention, news-graded consensus) are documented and non-load-bearing. Recommend an INDEPENDENT checker pass before the future blind Runner locks any decision, and recommend adding an NVDA row to the `LOOKAHEAD_CHECKER.md` per-case forbidden registry using §4 above.
+
+---
+
+## 8. Addendum — operator_background.md (added 2026-06-18)
+
+`operator_background.md` (founder/operator dossier; people line, no decision) ADDED. Self-audit verdict: **CLEAN-WITH-NOTES**.
+- New operator-source namespace OPxx (OP01–OP14); every OPxx `public_date ≤ 2023-05-25`. Primary governance from the DEF 14A filed **2023-05-08** (board roster, 13 dir / 12 independent, independent Lead Director Stephen Neal, Huang ~3.77% beneficial ownership, one-share-one-vote / no dual class). FY2023 10-K (2023-02-24, = S004) reused for talent/risk facts.
+- Formation facts (births, family, Oneida Baptist Institute, Denny's, OSU/Stanford, UF/Santa Clara/RPI, HP/Sun/AMD/LSI/TI/Microsoft/Cisco) are timeless and each cited to biography/institutional tier (explicitly character-pattern tier, NOT EVIDENCE-tier).
+- Anti-narrative rule satisfied: every person (Huang, Kress, Malachowsky, Priem) carries a required dark-arc. Team life-arc grade 4/5.
+- **Sources affirmatively EXCLUDED for post-dating as-of** (verified, kept out): Globes "Trillion dollar woman" Kress profile (2023-07-23); Forbes/Tom's Hardware Priem "$70B / off-grid" profile (2023-11); 2024+ "60 direct reports / no 1-on-1s" interview quotes (flat-org used only as a pre-as-of structural LEAD, OP14); Melissa Lora board appointment (2023-07-24); Mark Stevens becoming board chair (2024); all post-as-of accolades ("world's best CEO").
+- Outcome-aware language scan: no "later / went on to / as we now know"; no post-as-of price/market-cap; crucible events referenced are all ≤1997. NO decision / thesis / size present (correct for material pack).
+- Notes (non-load-bearing): Kress family/childhood formation is a documented public GAP (left empty, not invented); pre-as-of capital-allocation track record is under-documented here and flagged as a GAP for the financial modules; birth-city minor source variance for Huang (Tainan/Taipei) noted in-file.
+- Recommend the same INDEPENDENT checker pass cover this file's OPxx date-integrity.
