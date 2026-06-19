@@ -1,0 +1,91 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2023-05-25",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "exceptional_bottleneck",
+  "as_of_price": 379.80,
+  "as_of_market_cap": 938000000000,
+  "share_basis_note": "PRE-split. 2.47B shares x $379.80 = ~$938B (~$0.94T). 10:1 split (2024-06-07) is AFTER as-of and is NOT applied.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Anchor quarter + full-year baseline are from primary company sources (8-K press release, CFO commentary, FY23 10-K), price locked from a series and corroborated by dated same-day news. Material completeness high on the quarter; medium on forward earnings power and precise AI-accelerator share. Gaps (forward P/E not derivable, share %, supply-to-revenue conversion) are haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S004", "S005", "S007"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Generative-AI / LLM build-out is a real, dated demand shock: Data Center a record $4.28B and a Q2 guide of $11.0B (~+53% Q/Q, vs ~$7.2B consensus) — a forced market update, not a story. The scarce resource is full-stack accelerated compute (Hopper GPU + CUDA + NVLink/InfiniBand networking + advanced packaging/HBM supply), the bottleneck the whole industry must route through. This is an exceptional_bottleneck, not a generic semi cycle. Open question carried: how much of the guide is durable vs pull-forward.",
+      "drivers": ["S001", "S002", "S006", "S004"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "NVDA captures the AI-compute profit pool via the CUDA/full-stack moat (software lock-in + GPU + networking from the Mellanox base), broad-based demand across CSPs/consumer-internet/enterprise, and a multi-year DC ramp ($6.7B->$10.6B->$15.0B). Operator grade 4/5: battle-tested 30y founder core (Huang+Malachowsky), clean one-share-one-vote governance, 12/13 independent board -> supports a HIGH durability read. Ceiling capped (not floored) by acute key-man/succession on a 60y founder with no disclosed heir, plus AMD MI300 (disclosed CES 2023) and latent hyperscaler custom silicon as the moat-erosion watch items.",
+      "drivers": ["S002", "S004", "S006", "OP01", "OP06", "S013"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Real, high-quality economics confirm the thesis: 64.6% GAAP / 66.8% non-GAAP GM rising to a guided 68.6%/70.0%; operating leverage (op income +70% Q/Q); fortress balance sheet ($15.32B cash+securities vs ~$10.95B debt; $2.91B OCF, $2.64B FCF). BUT the cycle position is split: Data Center inflecting hard while Gaming -38% Y/Y and ProViz -53% Y/Y, total FY23 revenue flat. Valuation is extreme on trailing numbers (GAAP P/E ~198x, non-GAAP ~124x) and a forward P/E is not derivable from primary sources. Net positive (margins/cash superb, growth durable-looking) but with a valuation/normalization warning that controls size.",
+      "drivers": ["S001", "S002", "S007", "S004"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths are real but not structural-impairment: (1) the $11B guide is partly AI pull-forward / double-ordering and DC demand normalizes -> the ~198x trailing multiple de-rates hard; (2) AMD MI300 + hyperscaler custom silicon erode the moat over the cycle; (3) supply/capacity + cloud obligations ($7.27B + $3.40B prepaid + $2.43B cloud) carry inventory/obligation risk if demand softens; (4) key-man event on Huang. None of these is permanent profit-pool loss or balance-sheet death at as-of, and management procured 2H supply with extended visibility. So this is a high-multiple / pull-forward / valuation-air-pocket risk that controls SIZE and downside, NOT a hard veto. The high multiple is NOT a false-cheap trap and the bottleneck reads real.",
+      "drivers": ["S002", "S006", "S013", "S007", "OP01"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At ~$0.94T and ~198x trailing GAAP, price is a structured-entry modulator, not a hard veto, for an exceptional_bottleneck (harness rule). Downside is an optical-valuation air-pocket (a de-rate toward normalized DC earnings could be -40-60% on a pull-forward miss), survivable at a STARTER size with a fortress balance sheet behind it. Asymmetry favors a structured starter that scales on the ONE metric that forces the update: whether the $11B Q2 guide and DC backlog convert (revenue + DC margin holding), not the share price. Do not chase the post-print spike at full size; build on confirmation or on any de-rate.",
+      "drivers": ["S007", "S001", "S002"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 3.0,
+  "suggested_max_size_pct": 12.0,
+  "buy_below_price": 379.80,
+  "starter_zone": "Structured starter ~3% at/around the as-of ~$379.80 (do NOT chase materially above the print spike); add into any de-rate toward ~$300-340 (the pre-print ~$305 close zone) on unchanged thesis.",
+  "add_zone": "Scale toward 8-12% ONLY on confirmation: Q2 FY24 revenue lands near/above the $11.0B guide AND Data Center margin holds toward the 70% non-GAAP guide AND demand reads broad/durable (not single-quarter pull-forward).",
+  "trim_or_no_chase_zone": "No-chase above the immediate post-print level on new money at full size; trim only on thesis disconfirmation, not on weight.",
+  "binding_constraint": "Demand durability vs pull-forward of the $11B Q2 guide (does the AI Data Center step-up convert and persist, or air-pocket) -> this, not the optical ~198x multiple, is what sizes the position; valuation only widens the band and caps initial size. Secondary cap: key-man/succession on Huang.",
+  "kill_criteria": [
+    "Q2 FY24 revenue materially misses the $11B guide (demand was pull-forward / double-ordering, not durable) -> cut back to tracking.",
+    "Data Center revenue rolls over sequentially or DC gross margin compresses sharply -> thesis (pricing power / bottleneck) disconfirmed.",
+    "Credible evidence of large-scale CSP design wins away from NVDA to AMD MI300 or in-house silicon at the expense of NVDA DC share -> moat erosion.",
+    "Inventory / supply-commitment writedowns signal the procured 2H supply did not convert to revenue.",
+    "Huang departure/incapacitation with no credible pre-built succession -> reassess durability ceiling (trim, not necessarily exit)."
+  ],
+  "runner_dissent": "Modest discomfort, recorded per protocol: buying ~198x trailing GAAP / ~124x non-GAAP after a +160% YTD run and a one-day ~24% spike is the textbook 'priced for perfection near a top' setup, and a single Q2 revenue point (no full-year EPS guide) is thin proof of durability vs pull-forward. The classic value instinct says WAIT for a de-rate. The framework deliberately overrides that to a STARTER (not REJECT/WATCH-0%) because: this is the WEIGHTING_HARNESS exceptional_bottleneck case where valuation is a structured-entry modulator not a hard veto, the mechanism (full-stack AI-compute bottleneck) and economics (rising 70%-ish margins, fortress balance sheet, multi-year DC ramp) are real and primary-sourced, M5 shows valuation-air-pocket risk but no permanent impairment or balance-sheet death, and downside is survivable at small size. The honest residual risk is too_large_for_uncertainty if the guide proves to be pull-forward; the honest opposite risk (the one the harness was built to fix, cf. SNDK) is too_small_missed_asymmetry by demanding full MOS on a genuine bottleneck. Net: structured STARTER with confirmation-gated adds is the calibrated answer; valuation controls size and band, not the go/no-go.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2023-05-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000087/q1fy24pr.htm"},
+    {"source_id": "S002", "public_date": "2023-05-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000087/q1fy24cfocommentary.htm"},
+    {"source_id": "S003", "public_date": "2023-05-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000087/nvda-20230524.htm"},
+    {"source_id": "S004", "public_date": "2023-02-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm"},
+    {"source_id": "S005", "public_date": "2023-02-22", "url_or_path": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023"},
+    {"source_id": "S006", "public_date": "2023-05-24", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2023/05/24/nvidia-nvda-q1-2024-earnings-call-transcript/"},
+    {"source_id": "S007", "public_date": "2023-05-25", "url_or_path": "../../../../data/asof_2023_05_25_nvda_quotes.csv"},
+    {"source_id": "S008", "public_date": "2023-05-24", "url_or_path": "https://www.cnbc.com/2023/05/24/nvidia-nvda-earnings-report-q1-2024.html"},
+    {"source_id": "S013", "public_date": "2023-01-05", "url_or_path": "https://www.servethehome.com/amd-instinct-mi300-breaks-cover-at-ces-2023/"},
+    {"source_id": "OP01", "public_date": "2023-05-08", "url_or_path": "SEC EDGAR DEF 14A nvda-20230508.htm"}
+  ]
+}

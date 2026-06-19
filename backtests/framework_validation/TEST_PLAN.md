@@ -20,6 +20,12 @@ Run each case fully (checker → runner → scorer) and report before starting t
 
 **[3] Scorer** — sees post-as-of data. Computes the REALIZED outcome itself (as-of price → +12 / +24 / +36 mo and to-today, vs SPY and SOXX/peer), classifies winner/trap, then grades the locked decision per `PROTOCOL.md` §6 + `METHODOLOGY.md` §7 (size-distance + reasoning + the rule that a winner sized only as a tiny STARTER LOSES points — "right direction, too small" is not full marks). Writes `outcome_score.md` and appends one row to `results.csv`.
 
+**Provenance gate (both Checker & Scorer enforce it).** The Checker confirms the card stamps
+`pipeline_version` / `weights_version` per [`VERSIONS.md`](VERSIONS.md); the Scorer copies those ids
+**verbatim** into the `results.csv` row (never invents them) and confirms they match the active registry.
+An unstamped or mismatched card **halts the case** until fixed — this is what guarantees every case is
+traceable to the exact pipeline version that produced it.
+
 ## Blindness / sealed outcomes
 
 - Checker & Runner never see the outcome. **Sealed outcomes are NOT stored in case folders.** The Scorer reconstructs the realized outcome from post-as-of market data at scoring time.
@@ -65,10 +71,10 @@ One row per scored case (schema = `WEIGHTING_HARNESS.md` §7):
 | 1 | googl_2024-06-14 | CLEAN | STARTER 4% / max 12% / HOLD | PASS · size-dist 1 · sound | ✅ WINNER +116% (back-loaded); old WATCH/0% disease fixed |
 | 2 | intc_2021-04-23 | CLEAN | WATCH / 0% / TRIM | PASS · size-dist 0 · sound | ✅ TRAP correctly avoided (M5 led) |
 | 3 | intc_2024-08-02 | CLEAN | WATCH / 0% / TRIM | FAIL · size-dist 3 · shallow | ❌ WINNER +445% MISSED — same trap frame as 2021 |
-| 4 | nvda_2023-05-25 | — | — | — | |
-| 5 | meta_2022-11-10 | — | — | — | |
-| 6 | amzn_2023-02-03 | — | — | — | |
-| 7 | aapl_2016-05-12 | — | — | — | |
+| 4 | nvda_2023-05-25 | CLEAN | STARTER 3% / max 12% | PASS · size-dist 1 · sound | ✅ WINNER +446%; too-small at the 12% ceiling |
+| 5 | meta_2022-11-10 | CLEAN | STARTER 3.5% / max 9% | PASS · size-dist 1 · sound | ✅ WINNER +465%; ceiling capped by founder-control discount (P1) |
+| 6 | amzn_2023-02-03 | CLEAN | STARTER 4% / max 12% | PASS · size-dist 0 · sound | ✅ WINNER +138%; mirror-correct of INTC-2024 |
+| 7 | aapl_2016-05-12 | CLEAN | STARTER 4% / max 11% | PASS · size-dist 1 · sound | ✅ WINNER +1318%; be braver at the ceiling |
 | 8 | pfe_2022-02-08 | — | — | — | |
 | 9 | pypl_2021-07-29 | — | — | — | |
 | 10 | dis_2021-11-11 | — | — | — | |

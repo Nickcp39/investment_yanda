@@ -1,0 +1,93 @@
+{
+  "ticker": "META",
+  "as_of": "2022-11-10",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "turnaround",
+  "as_of_price": 111.00,
+  "as_of_market_cap": 294300000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Strong primary base: Q3'22 release (S001), 10-Q (S002), and the SEC-filed Nov 9 layoff message (S003) carry all load-bearing financials, segment economics, balance sheet, guidance, and both anchor events; as-of price $111.00 verified (S005, web-corroborated). Only soft spots: transcript is paraphrased (S004, med) and the trailing-P/E uses one unsourced FY2021 EPS component (flagged approximate). Net: small haircut, not a cap.",
+      "drivers": ["S001", "S002", "S003", "S005"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Cost-panic washout inside an industry-wide ad downturn (Snap +6% worst-ever, Alphabet +6% confirm cyclical macro+ATT+FX, not Meta-specific death), on a still-dominant, profitable core franchise (3.71B MAP, impressions +17% YoY). The dated Nov 9 cost-discipline pivot (first-ever 13%/11,000 layoff, hiring freeze, 'more efficient cost structure than we outlined recently') is a real turnaround catalyst that post-dates the Oct 26 guidance by 14 days. Held to +1, not +2, by the Reality Labs overhang and founder-control governance.",
+      "drivers": ["S001", "S003", "S008", "S009"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Core ad profit pool is durable and large: Family of Apps Q3 segment operating income $9,336M on 3.71B MAP with network effects and growing engagement; the cost-discipline/layoff is a positive operating-leverage signal. Durability ceiling is capped by operator grade 3: founder-market-fit engineer-founder with a long-tenured complementary team and demonstrated error-ownership, but a HARD governance/control discount (Zuckerberg 56.9% voting power, Nasdaq 'controlled company', founder=chair=CEO; #2 counterweight Sandberg exiting; untested insider CFO). Net +1.",
+      "drivers": ["S001", "S003", "S012", "S016"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Confirms survivability + cheapness, flags the spend. Net cash ~$31.9B ($41.78B cash+securities vs $9.9B LT debt, no current debt); $21.1B repurchased over 9 months with $17.78B still authorized; 9-mo FCF proxy ~$13B even WITH elevated capex and the RL bleed; trailing P/E ~10.6x (approximate), EV ~$262.5B. Warning side: consolidated operating margin halved 36%->20%, RL loss $(3,672)M/qtr guided to grow, 2023 capex $34-39B + total-expense $96-101B guidance is heavy; the Nov 9 message signals intent to bend that cost curve down. On balance confirms the thesis with a flagged cost warning.",
+      "drivers": ["S001", "S002", "S003", "S007"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "SIZED RISK, NOT A HARD VETO. The genuine kill-paths are (a) Reality Labs as an un-vetoable, founder-controlled money pit ($285M revenue vs $(3,672)M loss/qtr, guided to grow, no governance mechanism to force reallocation), and (b) structural ad impairment from ATT signal loss + share competition rather than pure cycle. But: the core FoA franchise alone earns ~$9.3B/qtr operating income, the consolidated company is still profitable AFTER the full RL drag, the balance sheet is net cash, and RL spend is discretionary/reversible. So RL compresses earnings power and caps position size; it does not threaten survival or destroy the core economics. This is what separates META from a structural-decline value trap. Warning sizes down, does not zero.",
+      "drivers": ["S001", "S002", "S012"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At $111 (~$294B cap, EV ~$262.5B, ~10.6x trailing, net cash ~$31.9B), the price embeds deep pessimism on a still-dominant franchise even after haircutting earnings power for the RL loss and the ad cycle. Asymmetry is favorable with survivable downside (net-cash balance sheet, profitable core, no refinancing risk). Supports a tested starter with a defined add-trigger; not a full-size position until cost discipline confirms and the RL drag is capped.",
+      "drivers": ["S005", "S002", "S001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 3.5,
+  "suggested_max_size_pct": 9,
+  "buy_below_price": 125,
+  "starter_zone": "$95-$125 (near and below the as-of $111; the Oct 27 $97.94 multi-year low is a favorable add point)",
+  "add_zone": "$95-$115 on confirmation that 2023 cost/expense discipline is real (actual expense trajectory bent below the Oct 26 $96-101B guide) AND the Reality Labs operating loss is capped rather than expanding",
+  "trim_or_no_chase_zone": ">$180-$200 absent confirmed earnings-power recovery (i.e. if it re-rates back toward the pre-decline multiple before the cost turn is proven)",
+  "binding_constraint": "The Reality Labs operating loss under un-vetoable founder control: it both compresses normalized earnings power and is structurally un-reallocatable by outside owners (Zuckerberg 56.9% voting power, controlled company). This caps conviction and position size below the Core tier; it is NOT a survival/veto issue (net cash, profitable core franchise).",
+  "kill_criteria": [
+    "Core Family-of-Apps operating income / engagement deteriorates structurally (DAP/MAP decline + continued price-per-ad falls), indicating the ad franchise is impaired rather than cyclically soft.",
+    "Reality Labs operating loss keeps expanding with capex/opex rising and NO move toward the Nov 9 'more efficient cost structure' promise (cost-discipline pivot proves hollow).",
+    "Balance sheet deteriorates from net cash toward leverage and buybacks are cut to fund the spend.",
+    "Governance worsens (further entrenchment / no independent check) while the un-vetoable bet scales losses."
+  ],
+  "runner_dissent": "",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2022-10-26", "url_or_path": "https://www.prnewswire.com/news-releases/meta-reports-third-quarter-2022-results-301660429.html"},
+    {"source_id": "S002", "public_date": "2022-10-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000108/meta-20220930.htm"},
+    {"source_id": "S003", "public_date": "2022-11-09", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000116/nov092022exhibit991.htm"},
+    {"source_id": "S004", "public_date": "2022-10-26", "url_or_path": "https://s21.q4cdn.com/399680738/files/doc_financials/2022/q3/Meta-Q3-2022-Earnings-Call-Transcript.pdf"},
+    {"source_id": "S005", "public_date": "2022-11-10", "url_or_path": "https://www.statmuse.com/money/ask/meta-stock-closing-price-november-10-2022"},
+    {"source_id": "S006", "public_date": "2022-10-27", "url_or_path": "https://www.cnbc.com/2022/10/27/meta-stock-falls-23percent-on-earnings-miss-analyst-downgrades.html"},
+    {"source_id": "S007", "public_date": "2022-10-27", "url_or_path": "https://www.benzinga.com/analyst-ratings/analyst-color/22/10/29441523/2023-an-investment-year-for-meta-platforms-why-these-6-analysts-are-lowing-price-ta"},
+    {"source_id": "S008", "public_date": "2022-10-20", "url_or_path": "https://www.cnbc.com/2022/10/20/snap-earnings-q3-2022.html"},
+    {"source_id": "S009", "public_date": "2022-10-25", "url_or_path": "https://www.cnbc.com/2022/10/25/alphabet-googl-q3-2022-earnings-.html"},
+    {"source_id": "S010", "public_date": "2022-11-09", "url_or_path": "https://investorplace.com/2022/11/mark-zuckerberg-confirms-meta-layoffs-will-cut-11000-employees/"},
+    {"source_id": "S011", "public_date": "2022-11-10", "url_or_path": "https://www.home.saxo/content/articles/equities/market-insights-today-10-nov-2022-10112022"},
+    {"source_id": "S012", "public_date": "2022-04-22", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000043/meta2022definitiveproxysta.htm"},
+    {"source_id": "S015", "public_date": "2022-07-27", "url_or_path": "https://www.cnbc.com/2022/07/27/meta-gets-new-cfo-as-david-wehner-moves-to-chief-strategy-officer-role.html"},
+    {"source_id": "S016", "public_date": "2022-06-01", "url_or_path": "https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/sheryl-sandberg-stepping-down-as-meta-coo-will-remain-on-board-70635657"}
+  ]
+}

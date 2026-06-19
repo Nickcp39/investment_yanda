@@ -1,0 +1,93 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2016-05-12",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "quality_compounder",
+  "as_of_price": 90.34,
+  "as_of_market_cap": 494900000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Source quality high: core facts on Apple's own SEC filings (FY2015 10-K, Q2 FY2016 8-K + 10-Q) + same-day transcript, with two independent industry data sets (Strategy Analytics, IDC) corroborating the market-maturity context. Completeness high on financials/balance sheet/capital return/price; medium on forward demand (those are company commentary, not facts). The one decisive uncertainty - whether the iPhone unit decline is cyclical (6s-vs-6 compare) or structural (saturation) - is interpretive, not an evidence gap. Confidence is sufficient to know what would falsify the thesis. Per harness, M1 haircuts size but does not cap verdict.",
+      "drivers": ["S001", "S003", "S005", "S006", "S012", "S013"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: the market is repricing Apple from a growth name to ex-growth / melting hardware after the first revenue decline in 13 years, down to ~10x trailing earnings (~6.7x EV/earnings on ~$153B net cash). What the market overemphasizes: a single weak print against a brutal iPhone-6 supercycle comparison plus China/HK/FX, treated as the new trend. What it underemphasizes: a 1B+ active-device installed base annuity, Services +20% compounding (already > Mac and iPad), record switchers, India +56%, and that this is the most profitable consumer franchise on earth at ~6.7x EV/earnings with a fortress balance sheet. Real counter: independent data show the smartphone market itself stopped growing (-3% / flat) - this is partly industry saturation, not pure cycle, and iPhone is ~66% of revenue. Net: a durable quality_compounder mispriced as ex-growth - the classic 'avoid because the optic looks bad' failure - but the maturity risk is genuine, so conviction is +1 not +2.",
+      "drivers": ["S003", "S004", "S006", "S009", "S012", "S013"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Apple captures the premium tier of the smartphone profit pool: at ~15% unit share it takes the vast majority of industry profit, with pricing power (iPhone ASP +~11% in 2015) and a wide moat - ecosystem switching costs, brand premium, 1B+ installed base, Services attach (App Store ~90% more global revenue than Google Play; record ecosystem spend $9.9B, +27% YoY). This is a genuine durable moat, not a narrative bridge over hardware maturity. Operator: post-Jobs team graded 4/5 (scorecard 28/40, neutral) - a long-marinated, cohesive operating spine (Cook/Williams/Ive ~18-24y together), disciplined rules-based capital return, owner-minded, one-share-one-vote (low governance/control risk), documented candor and error-correction (2012 Maps apology). Reservation: the design-soul DNA is single-point (Ive moved to CDO 2015, stepping back) and there is no proven new-category author - which caps the GROWTH ceiling but supports the OPERATING/cash-machine durability. Net: raises the floor, caps the top.",
+      "drivers": ["S001", "S004", "S006", "O001", "O006", "O013"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Warnings present: gross margin compressing 40.1% FY2015 -> 39.4% Q2 FY2016 -> guided 37.5-38% Q3; trailing earnings sit on a possibly-peak FY2015 base. But the financials broadly confirm quality and cheapness: ~$232.9B cash + securities, ~$153.1B net cash, equity $130.5B; operating cash flow $11.6B in the quarter; share count shrinking via buyback (5,478M vs 5,579M). On normalized owner-earnings - haircut FY2015 peak ~15-20% for a maturing iPhone - the operating business (EV ~$342B) trades around ~7-8x earnings, with net cash ~31% of market cap. Per-share economics are actively improved by the $250B program / $175B buyback. The mechanism (cheap, fortress balance sheet, real buyback support) confirms; the warning (margin trend + peak-earnings base) tempers it to +1.",
+      "drivers": ["S001", "S003", "S005", "S008"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Trap test (structural_decline_trap / false_cheap_value_trap): for a hard veto I would need profit-pool loss or moat erosion (NOT present - moat intact, Services +20%, ecosystem spend +27%); normalized earnings far below trailing (NOT the case - the decline is modest, -13% off a supercycle compare, not a collapse); capex/debt/dilution absorbing owner earnings (opposite - fortress net cash, buying back stock); balance-sheet death (impossible at ~$153B net cash); downside not survivable at small size (no - net-cash floor + buyback protect it). Conclusion: this is MATURITY, not structural decline - a saturating iPhone converts to an installed-base + Services annuity rather than disappearing. Genuine warnings remain and haircut size: China single-point (supply + demand; Greater China -26%, Icahn exited on China policy risk), margin compression, iPhone saturation in a no-growth smartphone market, and capital-return scaled partly under activist pressure (EPS-support optic). Real risks, but NOT a hard veto.",
+      "drivers": ["S004", "S005", "S006", "S011", "S012"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "As-of $90.34 (~$494.9B cap; intraday low $89.47, first sub-$90 since 2014). ~10x trailing P/E, ~6.7x EV/TTM net income (net cash ~$153B = ~31% of cap), ~2.5% dividend yield. For a durable quality franchise this is a clearly attractive price with well-protected, survivable downside (net-cash floor + ongoing buyback shrinking the share count). Per quality_compounder gate, price is a modulator not a veto; the asymmetry favors ownership now at a starter size, with an explicit add trigger on confirmation that the iPhone decline is cyclical and Services keeps compounding.",
+      "drivers": ["S005", "S008", "S003"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 11,
+  "buy_below_price": 95,
+  "starter_zone": "<= ~$95 (~10.5x trailing / ~7x EV-earnings); at-the-money around the as-of $90.34",
+  "add_zone": "$80-92 on confirmation the iPhone decline is the 6s-vs-6 cyclical compare (not structural) AND Services/installed-base keep compounding; scale toward max only if durability of the operating/cash line is re-confirmed",
+  "trim_or_no_chase_zone": "would not chase a re-rating to >~15x trailing without normalized-earnings growth re-established; trim only on a broken thesis, not on weight",
+  "binding_constraint": "iPhone trajectory: is the unit decline a cyclical iPhone-6-supercycle comparison effect (-> maturity bridged by the 1B installed base + Services annuity, the bull) or the onset of structural saturation (-> a slow melt that drags normalized earnings)? This single variable governs whether normalized earnings hold and whether Services can carry a re-rate. China (transitory HK/FX vs deteriorating competitive/regulatory position) is the secondary swing factor.",
+  "kill_criteria": [
+    "iPhone units decline a second consecutive cycle with NO offsetting installed-base / Services growth (saturation confirmed structural, not cyclical)",
+    "Services growth decelerates materially toward flat (annuity thesis breaks)",
+    "Greater China deteriorates beyond HK/FX into sustained mainland share/regulatory loss",
+    "Gross margin compresses durably below the high-30s with no mix offset from Services",
+    "Capital allocation tilts to EPS-engineering (buyback up while R&D / product cadence falls) - design-soul / product-originator gap turning into a real product decline"
+  ],
+  "runner_dissent": "",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2015-10-28", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000119312515356351/d17062d10k.htm"},
+    {"source_id": "S002", "public_date": "2016-01-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000320193/000119312516438421/d22806dex991.htm"},
+    {"source_id": "S003", "public_date": "2016-04-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000119312516556520/d325078dex991.htm"},
+    {"source_id": "S004", "public_date": "2016-04-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000119312516556520/d325078dex992.htm"},
+    {"source_id": "S005", "public_date": "2016-04-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000119312516559625/d165350d10q.htm"},
+    {"source_id": "S006", "public_date": "2016-04-26", "url_or_path": "https://www.imore.com/apple-q2-2016-transcript"},
+    {"source_id": "S007", "public_date": "2016-03-21", "url_or_path": "https://www.apple.com/newsroom/2016/03/21Apple-Introduces-iPhone-SE-The-Most-Powerful-Phone-with-a-Four-inch-Display/"},
+    {"source_id": "S008", "public_date": "2016-05-12", "url_or_path": "backtests/data/asof_2016-05-12_aapl_quotes.csv"},
+    {"source_id": "S009", "public_date": "2016-05-12", "url_or_path": "https://money.com/apple-stock-price/"},
+    {"source_id": "S010", "public_date": "2016-04-26", "url_or_path": "https://www.engadget.com/2016-04-26-apple-q2-2016-earnings.html"},
+    {"source_id": "S011", "public_date": "2016-04-28", "url_or_path": "https://www.cnbc.com/2016/04/28/icahn-we-no-longer-have-a-position-in-apple.html"},
+    {"source_id": "S012", "public_date": "2016-04-27", "url_or_path": "https://www.prnewswire.com/news-releases/strategy-analytics-global-smartphone-shipments-decline-3-percent-in-q1-2016-300259095.html"},
+    {"source_id": "S013", "public_date": "2016-04-27", "url_or_path": "https://www.iclarified.com/54990/worldwide-smartphone-growth-goes-flat-in-q1-2016-apple-market-share-drops-to-153-chart"}
+  ]
+}

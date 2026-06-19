@@ -126,3 +126,91 @@ Self-applied Lookahead Checker on operator_background.md:
 **Addendum verdict: CLEAN-WITH-NOTES** — the only note is O5's self-narrated father anecdote, fenced
 to lowest-tier framing and not load-bearing. No LEAK. (An independent checker pass remains recommended
 per LOOKAHEAD_CHECKER.md — the independence is the point.)
+
+---
+
+## Independent Checker Pass (2026-06-19)
+
+Performed by an **independent checker** (NOT the collector) per `LOOKAHEAD_CHECKER.md`. Inputs: this
+case's six material files + the framework docs. The 6-point checklist and the `amzn_2023-02-03`
+per-case forbidden-registry row were run from scratch; the two highest-risk dates (as-of price; the
+FY2022 10-K filing date) were re-verified against independent public sources.
+
+### Verdict: **CLEAN-WITH-NOTES** — material-pack-complete, no LEAK.
+
+One-line: independent re-run reproduces the collector's verdict. All load-bearing facts trace to
+sources public ≤ 2023-02-03; the only note is S013 (public_date 2023-02-09), fenced to a
+non-load-bearing narrative-direction use with its quantitative figures excluded. Pack does not depend
+on it. No decision/thesis/size present. Safe to proceed to the blind run.
+
+### 1. Source-date check (independent)
+
+| source_id | claimed public_date | ≤ as-of? | independent check |
+|---|---|---|---|
+| S001–S005 | 2023-02-02 | yes | Q4'22 earnings release issued after-close 2023-02-02 — confirmed (CNBC/IR coverage same date). |
+| S006 (FY2022 10-K) | 2023-02-03 | yes | **Web-verified on SEC EDGAR submissions API:** accession `0001018724-23-000004`, **filingDate 2023-02-03**, reportDate 2022-12-31, acceptanceDateTime 2023-02-02T18:27:34Z. Filed on the as-of date itself (after-hours submission 2023-02-02 → EDGAR stamps next-business-day filing date 2023-02-03). Within bounds either reading. Accession matches the pack exactly. |
+| S007 | 2023-02-02 | yes | Q4'22 call held 2023-02-02 — confirmed. |
+| S008 (price) | 2023-02-03 | yes | **Web-verified independently (StatMuse):** AMZN close 2023-02-03 = **$103.39** (−1.8% on the day). Matches the pack's Yahoo-sourced figure exactly. Independent confirmation on a non-Yahoo source. |
+| S009 / S010 | 2023-01-04 / 2023-01-05 | yes | ~18,000-role-reduction announcement dated early Jan 2023 — established, well before as-of. |
+| S011 / S012 | 2023-02-02 | yes | Print-day coverage. |
+| S013 | **2023-02-09** | **NO** | **FLAGGED (concur with collector).** 6 days after as-of. Used only as a narrative-direction lead ("rally halted"), independently corroborated by the verified Feb-3 close decline (S008). Its quoted $244.65 price and $2.6T market cap are explicitly excluded as a later, non-comparable (also pre-/post-split-confused) level. Independent recommendation: **accept the fenced narrative-only use** — pack integrity does not depend on S013. |
+| S014 / S015 | 2023-01-24 / 2023-02-02 | yes | MSFT Q2 FY23 (2023-01-24) and Alphabet/Google Cloud Q4'22 (2023-02-02) — peer/cloud-cycle context, both ≤ as-of. |
+| O1–O8, O5-comp | ≤ 2022 / formation-timeless | yes | Operator sources: shareholder letters (1997/2020), 2015 & 2021 succession coverage, encyclopedic formation facts. O5 (2022 father anecdote) fenced as lowest-tier self-narrative. None post-as-of. |
+
+Highest-risk rows independently web-verified: **S008 price ($103.39 ✓ via StatMuse)** and **S006 10-K filingDate (2023-02-03 ✓ via SEC EDGAR, accession matches)**. Both confirm the pack.
+
+### 2. Claim traceability (independent)
+
+Spot-checked the load-bearing claim groups (C001–C022) against `sources_used.csv`. Every load-bearing
+claim traces to a source public ≤ 2023-02-03 (revenue/AWS/segment/charges/Rivian/cash-flow/headcount/
+guidance/price/balance-sheet/peer). **No load-bearing claim depends on S013.** Traceable: PASS.
+
+### 3. Outcome-aware language (independent regex sweep)
+
+Independently grepped all six files for hindsight markers (`later|subsequently|as we (now )?know|went on
+to|rebounded|rallied|recover(y)?|re-?accel|surge|collapsed to|eventually|ended up`) and post-as-of
+price/date tokens (`180|244|$15x–$24x|march 2023|q1'23 result|fy2023|2024|2025|2026|9,000`).
+
+- Every hit lands in **defensive exclusion text** (case_control §5 forbidden list; this audit's forbidden
+  registry; operator_background's explicit "EXCLUDED as post-as-of" block) or in **forward-looking
+  kill-criteria** ("to test on later evidence — NOT evaluated here").
+- No hit asserts a known post-as-of outcome in load-bearing text. The "$1.9–2.3B / 12,000 / Q1 2023"
+  tokens are **Alphabet/MSFT peer charges** (S014/S015, ≤ as-of), not AMZN outcomes. The "$120s
+  guidance" is the forward Q1'23 guidance *range issued 2023-02-02* (allowed — what management said, not a
+  realized result). The "$638B / 2026 Bloomberg profile / 2024-2025 events" tokens appear **only inside
+  exclusion lists** confirming absence.
+- No post-2023-02-03 price asserted as fact. Outcome-aware language: **NONE in load-bearing text.** PASS.
+
+### 4. Post-cutoff fact intrusion — `amzn_2023-02-03` forbidden registry row (each ABSENT)
+
+| forbidden item (registry row) | absent? | check |
+|---|---|---|
+| The 2023 recovery to $180+ | **absent** | No post-2023-02-03 price in any load-bearing text; S013's $244.65 explicitly excluded. |
+| AWS re-acceleration | **absent** | Only the *deceleration* path (37%→33%→28%→20% ex-FX; "mid-teens" into Jan) is recorded; no later re-accel/gen-AI narrative. |
+| The March-2023 additional ~9,000 layoffs | **absent** | Appears only in the case_control/audit exclusion lists; not used as a fact. |
+| Q1'23 results (late Apr 2023) | **absent** | Only the *forward Q1'23 guidance* (issued 2023-02-02) is present; no actual Q1'23 result. |
+| FY2023+ results | **absent** | No FY2023 10-K or later filing referenced as fact. |
+| The Rivian-mark recovery | **absent** | Only the FY22 −$12.7B / Q4 −$2.3B Rivian valuation *loss* is recorded; no later mark recovery. |
+
+### 5. Evidence misuse (independent)
+
+- No KOL/social/video source used as core proof. Peer filings (S014 MSFT, S015 GOOGL) used as
+  industry/cloud-cycle context only, not as proof of any AMZN-specific outcome.
+- Management's optimistic framing (S001 CEO quote; S007 "long-term trends still there") is explicitly
+  recorded as *management view*, not verified fact — confirmed in raw_extracts and evidence_spine.
+- Wikipedia (O1/O3/O6) used as a cited cross-check of *formation* facts, not as outcome proof; O5
+  father-anecdote fenced as lowest-tier self-narrative. S013 fenced to narrative-direction only. PASS.
+
+### 6. No decision / no outcome (material-pack gate)
+
+- No `decision_card`, no buy/sell/hold verdict, no thesis_mechanism, no valuation target, no position
+  size anywhere in the six files. The decision question is recorded in case_control §3 and explicitly
+  marked **DEFERRED**; evidence_spine §2 carries the boundary note that the trough-vs-structural question
+  is "NOT resolved here"; operator_background ends with open questions, not a verdict. PASS.
+
+### Independent Decision
+
+The pack is **CLEAN-WITH-NOTES** and material-collection-complete. The single note (S013 post-as-of
+public_date) is mitigated by fencing to a non-load-bearing use and excluding its figures; pack integrity
+does not depend on it. The two highest-risk facts were re-verified on independent sources and both match
+the pack. **No LEAK on any load-bearing fact.** Cleared to proceed to the blind 6-module run.

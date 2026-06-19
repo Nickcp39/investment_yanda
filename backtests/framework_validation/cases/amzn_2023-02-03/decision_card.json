@@ -1,0 +1,98 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2023-02-03",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "cyclical_inflection",
+  "as_of_price": 103.39,
+  "as_of_market_cap": 1059000000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Evidence quality is high and primary: all financials (Q4'22/FY22 segment economics, charge composition, capex/FCF, balance sheet, headcount) trace to the 2023-02-02 earnings release tables + the FY2022 10-K filed 2023-02-03; management framing to the 2023-02-02 call (S007); as-of price verified ($103.39, independently re-confirmed). The binding uncertainties are FORWARD/interpretive, not evidentiary: (a) whether the ~$2.7B charges + retail-segment operating losses are a cost/margin TROUGH or an ongoing run-rate, (b) whether AWS deceleration (+20% Q4 ex-FX, 'mid-teens' into Jan) is a cyclical optimization pause or a durable step-down, (c) whether FY22 FCF of -$11.6B normalizes as capex moderates. Per harness, these become a SIZE HAIRCUT + a wider add band, not a WATCH cap. Gaps a fuller pass would close: a normalized ex-charge NA operating margin, AWS backlog/RPO, a multi-year capex-vs-OCF series.",
+      "drivers": ["S001", "S002", "S003", "S004", "S005", "S007", "S008"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: a post-COVID demand+cost down-cycle has driven a high-quality two-engine franchise (dominant AWS cloud + scaled NA/Intl retail/logistics + a fast-growing ad pool) to a MARGIN TROUGH, while the market reprices it as a broken-economics retailer with a fading cloud. Mechanism for value: AWS is the structural profit engine ($80.1B sales / $22.8B FY op income / 28.5% margin) and ad services is a high-margin third pool now at a record $11.6B/qtr (+23% ex-FX); retail's FY22 operating loss is heavily loaded with ~$2.7B of mostly-NA charges and the digestion of a fulfillment footprint that ~doubled in two years, NOT obviously a permanent unit-economics break -- and management has made cost-to-serve reduction the explicit #1 priority (18,000 roles cut, capex shifting from build to optimize). What the market may over-weight: the headline FY net LOSS (which is a non-cash -$12.7B Rivian mark, not operations), the fourth straight quarter of AWS deceleration, and negative FCF. What it may under-weight: that reported operating income is still +$12.2B, AWS + ad are intact high-margin pools, the cost cuts are a self-help margin lever, and the cloud slowdown is industry-wide (MSFT Azure decel, Google Cloud miss) i.e. plausibly cyclical/optimization rather than share loss. Net mildly positive -- a genuine franchise at a cyclical/cost trough with a real, unresolved 'trough vs structural' question. Context label: cyclical_inflection (with a quality_compounder underlay).",
+      "drivers": ["S001", "S003", "S005", "S007", "S011", "S012", "S014", "S015"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Amazon captures multiple large, durable profit pools, but the durability READ is mixed at the as-of date. AWS is the crown jewel: $80.1B FY22 sales, $22.8B operating income (+23% YoY), 28.5% FY margin -- a structurally advantaged, switching-cost-heavy cloud-infrastructure annuity and the SOLE large operating-profit pool. Advertising is a second high-margin pool growing 23% ex-FX to an $11.6B Q4 record. The retail/logistics moat (Prime, selection, the largest fulfillment + last-mile network in the US) is real and scaled but is the LOW-margin, labor-heavy engine now running an operating loss (NA FY -$2.8B, Intl FY -$7.7B). Durability tensions held open: AWS growth decelerated four straight quarters to +20% Q4 / 'mid-teens' into Jan with margin compressing to 24.3% Q4 -- the open question is cyclical-optimization-pause vs durable-lower-baseline; and Intl's -$7.7B loss reflects an immature/over-built footprint. OPERATOR/team life-arc grade = 4/5 (operator_background.md): a long-tenured, complementary, CODIFIED-culture insider trio -- Bezos (founder/Exec-Chair, doctrine author, largest holder), Jassy (CEO, 24-yr insider who BUILT AWS, 10-yr-vesting RSUs = long-horizon skin-in-game), Olsavsky (ops-grounded 20-yr CFO) -- with a clean just-executed founder->insider succession and a single share class (no super-voting lock). This RAISES the durability ceiling vs a fragile/one-person operator. The single discount: the founder-authored 'Day 1'/long-term culture is in the hands of its FIRST non-founder CEO while Bezos disengages toward space, and Jassy's entire track is high-margin AWS now owning a low-margin retail/logistics machine mid-cost-cycle -- a key-person/transmission + domain-breadth caveat that caps the team just below top-tier. Net: powerful, durable economics with a live AWS-deceleration question and a transmission caveat = +1, not +2.",
+      "drivers": ["S001", "S003", "S005", "S007", "O2", "O4", "O8"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Accounting must be NORMALIZED -- the headline is a trap in BOTH directions, and once cleaned it CONFIRMS a profitable franchise at a trough rather than a broken one. The FY22 net LOSS of -$2.722B is almost entirely a non-cash, non-operating -$12.7B Rivian valuation mark; reported OPERATING income is still positive +$12.248B, and the cash engine (OCF $46.8B, ~flat YoY) did not break. Segment normalization: AWS earned $22.8B FY op income; ad is a high-margin record pool; the consolidated $12.2B op income is depressed by ~$2.7B of mostly-one-time-ish Q4 charges (severance $640M + Fresh/Go impairments $720M + self-insurance $1.3B) AND by both retail segments running losses -- i.e. trough, not steady-state, economics. The genuine warnings (why this is +1, not +2, and why it is cyclical_inflection not a clean compounder): (1) FY22 FREE CASH FLOW was an OUTFLOW of -$11.6B (worse than -$9.1B in FY21) on ~$64B gross capex -- the cash thesis depends on capex moderating, which management signals ('build -> optimize') but has NOT guided to a dollar figure; (2) Intl -$7.7B and NA -$2.8B FY operating losses are large and not yet proven to be cyclical; (3) AWS margin compressed to 24.3% Q4; (4) Q1'23 guidance is soft (sales +4-8%, operating income $0-$4.0B, i.e. could be breakeven). Balance sheet is survivable: $53.9B cash + $16.1B securities = ~$70B liquidity vs $67.2B LT debt (roughly net-cash-neutral), $146B equity, investment-grade -- a multi-year down-cycle is fundable; this is NOT a turnaround-with-survival-risk. Normalized read: a business whose owner-earnings are temporarily masked by a non-cash mark + a fulfillment-digestion cost trough + heavy (moderating) capex -- the trough is the opportunity and the negative FCF is the watch-item, not a refutation.",
+      "drivers": ["S001", "S002", "S003", "S004", "S005", "S007"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No hard veto -- this is NOT a structural-decline trap and NOT a false-cheap/balance-sheet trap on the harness criteria: the dominant profit pool (AWS) is still GROWING (+20% Q4) and hugely profitable, ad is growing, normalized operating earnings are POSITIVE (+$12.2B) and the loss is a non-cash mark (i.e. normalized earnings are not far below a real trailing base), and the balance sheet (~$70B liquidity vs $67B LT debt, IG) cannot fail in this cycle. So risk is a SIZE HAIRCUT, not a kill. Real, survivable risks that warrant entering below CORE and adding on confirmation: (1) THE central trap risk -- AWS deceleration (+40%->+20% over 2022, 'mid-teens' into Jan, margin 24.3% Q4) proves a DURABLE lower-growth/lower-margin baseline rather than an optimization pause (would re-rate the only profit engine); (2) the retail operating losses (Intl -$7.7B) prove STRUCTURAL rather than cyclical/over-build, so the 'margin trough' never normalizes; (3) negative FCF persists if capex does NOT moderate as management implies (no dollar guide given) -- empire-capex risk; (4) macro/consumer-demand deterioration deepens (management: consumers 'very careful', trading to value brands; Q1 guide could be breakeven); (5) operator transmission risk -- a founder-authored culture under its first non-founder CEO, with Jassy unproven in low-margin retail/logistics mid-cost-cycle. None is permanent-impairment-of-the-whole at this price/size; collectively they argue STARTER, not CORE, with adds gated on a forward margin/FCF confirmation.",
+      "drivers": ["S005", "S007", "S008", "S001", "S003", "O4"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At $103.39 (~$1.059T) AMZN trades on optically broken trailing metrics (FY22 net loss; trailing P/E meaningless; negative FCF) -- which is exactly the cyclical-inflection setup where trailing earnings must NOT be used as the anchor. On a normalized/sum-of-pools read the price is fair-to-mildly-attractive, NOT a chase: AWS alone (~$22.8B FY op income) plus a growing high-margin ad pool plus an optionable retail-margin-recovery lever are the bulk of the value; the equity is roughly net-cash-neutral so ~$1.06T is close to an enterprise read on those pools. The stock had just fallen from a $112.91 prior close to $103.39 on the print (elevated 144M volume) -- the market is repricing the miss/deceleration, which is where asymmetric entries live. Asymmetry is favorable at small-to-medium size: survivable downside (IG balance sheet, dominant cash-generative AWS, no bankruptcy path) against a re-rating if the margin trough normalizes and AWS growth stabilizes. Price supports a STARTER now with explicit room to add on a forward confirmation (capex moderation + retail-margin recovery + AWS-growth stabilization) or on further weakness; it does NOT support full-sizing into CORE before the trough-vs-structural question is answered.",
+      "drivers": ["S008", "S001", "S003", "S005"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 110,
+  "starter_zone": "<= ~$110 (at/around the as-of $103.39; up to ~$110 i.e. the pre-print area)",
+  "add_zone": "~$80-$95 on further weakness, OR at any price once a FORWARD confirmation lands: a clean quarter showing (a) NA/retail operating margin recovering off the trough (ex-charge), (b) capex moderating so TTM FCF turns back toward positive, AND (c) AWS YoY growth stabilizing rather than stepping down further",
+  "trim_or_no_chase_zone": "no-chase well above ~$120-$130 absent a confirmed margin-trough recovery; revisit/trim only on the four methodology triggers (thesis wrong, absurd price, better idea needs capital, thesis disconfirmed) -- not because the position got large",
+  "binding_constraint": "Whether the FY22 retail-segment operating losses + the ~$2.7B charges + the AWS deceleration are a NORMALIZABLE cost/margin TROUGH (look through it) or a STRUCTURAL step-down (NA/Intl economics impaired and AWS at a durable lower baseline), compounded by FY22 free cash flow of -$11.6B that only normalizes IF capex moderates as management implies but has not guided. This is a SIZE constraint, not a veto: the balance sheet is survivable and the profit pools (AWS, ad) are intact and growing, so it is ownable at STARTER now; but conviction into the 15-25% Core tier must be EARNED via a forward confirmation that the trough normalizes (retail margin recovery + FCF turning positive + AWS growth stabilizing), because at the as-of date that is genuinely unresolved.",
+  "kill_criteria": [
+    "AWS YoY revenue growth keeps stepping down past the 'mid-teens' into sustained low-double-digit/single-digit AND its operating margin keeps compressing below the low-20s% with no stabilization -> the sole profit engine is re-rating to a durably lower baseline (not an optimization pause); stop adding / cut back.",
+    "North America and/or International operating margin does NOT recover off the trough over subsequent quarters once the one-time charges roll off -> the retail losses were structural unit-economics impairment, not cyclical over-build; re-underwrite, likely trim.",
+    "Capex does NOT moderate and TTM free cash flow stays materially negative while OCF stalls -> the negative-FCF thesis was empire-capex, not a digestible build; do not add.",
+    "Consumer-demand environment deteriorates further (paid-unit growth negative, mix continues shifting to value) AND operating income guidance stays near breakeven -> the cyclical trough deepens into something structural.",
+    "Operator/transmission risk realizes: visible Bezos-Jassy authority conflict, a Jassy/AWS-leadership exit, capital-allocation discipline breaking (open-ended capex with no return), or the 'Day 1'/cost-discipline culture visibly hollowing under the first non-founder CEO -> the durability ceiling was over-credited.",
+    "Evidence that AWS deceleration is SHARE LOSS to Azure/Google Cloud rather than industry-wide cyclical digestion (peer cloud re-accelerates while AWS does not) -> the moat read was wrong."
+  ],
+  "runner_dissent": "Mild dissent on SIZE, two-sided, not on direction. Downward-pressure case: this is a cyclical_inflection with the cash-flow statement genuinely UGLY at the as-of date (FY22 FCF -$11.6B, both retail segments in operating loss, AWS decelerating four straight quarters, Q1 guide possibly breakeven) -- a stricter reading could park new money at the low end of STARTER (~3%) or even WATCH-with-trigger until ONE quarter confirms the capex/margin turn, since the entire bull case rests on an unconfirmed normalization. Upward-pressure case: the franchise quality is exceptional (AWS is one of the best businesses in the world, ad is a second high-margin pool, the balance sheet cannot fail, the FY net loss is a non-cash Rivian artifact, and a 4/5 long-arc operator team is running explicit self-help cost cuts), so a case exists for entering at 5% (top of Starter). I hold at STARTER 4% with a 12% Confirmed-tier ceiling: per METHODOLOGY a cyclical recovery caps around the Confirmed tier (NOT the 15-25% Core tier) until durability is proven, and the binding trough-vs-structural question is unresolved at the as-of date -- so the discipline is start real, add on the forward margin/FCF/AWS confirmation, and let durability (not the AWS quality alone) set the ceiling. The 12% (not higher) ceiling reflects that this is being underwritten as a margin-trough CYCLICAL inflection at entry, even though the quality_compounder underlay could justify a higher ceiling IF the retail trough proves cyclical and AWS growth stabilizes.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2023-02-02", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2022/q4/Q4-2022-Amazon-Earnings-Release.pdf"},
+    {"source_id": "S002", "public_date": "2023-02-02", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2022/q4/Q4-2022-Amazon-Earnings-Release.pdf"},
+    {"source_id": "S003", "public_date": "2023-02-02", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2022/q4/Q4-2022-Amazon-Earnings-Release.pdf"},
+    {"source_id": "S004", "public_date": "2023-02-02", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2022/q4/Q4-2022-Amazon-Earnings-Release.pdf"},
+    {"source_id": "S005", "public_date": "2023-02-02", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2022/q4/Q4-2022-Amazon-Earnings-Release.pdf"},
+    {"source_id": "S006", "public_date": "2023-02-03", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm"},
+    {"source_id": "S007", "public_date": "2023-02-02", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2023/02/02/amazoncom-amzn-q4-2022-earnings-call-transcript/"},
+    {"source_id": "S008", "public_date": "2023-02-03", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN"},
+    {"source_id": "S009", "public_date": "2023-01-04", "url_or_path": "https://www.cnbc.com/2023/01/04/amazon-says-it-will-cut-over-18000-jobs-more-than-initially-planned.html"},
+    {"source_id": "S010", "public_date": "2023-01-05", "url_or_path": "https://variety.com/2023/digital/news/amazon-layoffs-18000-employees-ceo-confirms-1235479353/"},
+    {"source_id": "S011", "public_date": "2023-02-02", "url_or_path": "https://www.cnbc.com/2023/02/02/amazon-amzn-earnings-q4-2022.html"},
+    {"source_id": "S012", "public_date": "2023-02-02", "url_or_path": "https://variety.com/2023/digital/news/amazon-q4-2022-revenue-beats-profit-falls-1235510405/"},
+    {"source_id": "S014", "public_date": "2023-01-24", "url_or_path": "https://www.cnbc.com/2023/01/24/microsoft-msft-earnings-q2-2023.html"},
+    {"source_id": "S015", "public_date": "2023-02-02", "url_or_path": "https://www.cnbc.com/2023/02/02/alphabet-googl-earnings-q4-2022.html"},
+    {"source_id": "O2", "public_date": "2021-04", "url_or_path": "operator_background.md (Amazon 2020 Letter to Shareholders)"},
+    {"source_id": "O4", "public_date": "2015-06-28", "url_or_path": "operator_background.md (Fortune AWS-origin profile)"},
+    {"source_id": "O8", "public_date": "2021-07-05", "url_or_path": "operator_background.md (Fortune Jassy-CEO succession coverage)"}
+  ]
+}

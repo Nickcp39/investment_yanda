@@ -99,3 +99,97 @@ The material pack is CLEAN-WITH-NOTES and is recommended as test-ready after the
 ## 9. Addendum — operator_background.md added (2022-11-10 as-of)
 
 - 2022-11-10: Added `operator_background.md` (founder/operator dossier per `_operator_underwriting_template.md`) plus operator sources **S012–S019** in `sources_used.csv`. Self-audit verdict: **CLEAN-WITH-NOTES** — every operator source has public_date <= 2022-11-10 (proxy 2022-04-22 [S012], Sandberg departure 2022-06-01 [S016], CFO transition announce 2022-07-27 / effective 2022-11-01 [S015], FTC order 2019-07-24 [S017], Haugen testimony 2021-10-05 [S018], biographies S013/S014/S019 2022-10); no post-as-of events, no outcome-aware language, no decision/size; 8 dedicated operator sources (>= the 3–6 minimum); governance/control-risk dimension covered from the primary 2022 DEF 14A (Zuckerberg 56.9% voting power, "controlled company"). One open note: Susan Li's pre-Harvard formation facts are not reliably documented in dated sources <= as-of and are logged as a gap rather than guessed.
+
+---
+
+## Independent Checker Pass (2026-06-19)
+
+> Performed by an INDEPENDENT checker (not the collector). Scope: all six material-pack files
+> (case_control.md, sources_used.csv, raw_extracts.md, evidence_spine.md, operator_background.md,
+> material_audit.md) against the 6-point LOOKAHEAD_CHECKER.md checklist + the `meta_2022-11-10`
+> forbidden-registry row (now present in LOOKAHEAD_CHECKER.md, line 37). High-risk dates web-verified.
+
+### Verdict: **CLEAN** (test-ready)
+
+No load-bearing post-cutoff fact, no outcome-aware language, no decision/thesis/size present. The
+collector's two prior notes (A: transcript paraphrase; B: unsourced FY2021 EPS component used only for an
+explicitly-"approximate" trailing P/E) are confirmed **non-load-bearing** — neither alters the as-of
+integrity of the pack — so this independent pass grades **CLEAN** (the collector's self-grade was the more
+conservative CLEAN-WITH-NOTES; both are "safe to proceed").
+
+### 1. Source-date check — all rows public_date <= 2022-11-10 (high-risk rows web-verified)
+
+| source_id | claimed date | independent verification | allowed? |
+|---|---|---|---|
+| S001 Q3'22 release | 2022-10-26 | Web-confirmed: Meta reported Q3'22 on **2022-10-26**, revenue ~$27.7B, EPS $1.64 (matches pack). | yes |
+| S003 Nov 9 layoff (8-K Ex.99.1) | 2022-11-09 | Web-confirmed: Zuckerberg "13% / >11,000" message dated **2022-11-09**; severance "16 weeks + 2/yr, no cap" + 6-mo healthcare matches S003 verbatim. | yes |
+| S005 as-of close | 2022-11-10 | Web-confirmed via StatMuse: META close **$111.00** on 2022-11-10 (date IS the as-of date). | yes |
+| S002 10-Q | 2022-10-27 | Filed on/before as-of (collector verified on EDGAR; date 1 day after Q3 release, plausible). | yes |
+| S004 Q3 call | 2022-10-26 | Same day as release. | yes |
+| S006 reaction | 2022-10-27 | Reaction-day article. | yes |
+| S007 analyst PT round-up | 2022-10-27 | Dated ~Oct 27. | yes |
+| S008 Snap Q3 | 2022-10-20 | Snap Q3 print. | yes |
+| S009 Alphabet Q3 | 2022-10-25 | Alphabet Q3 print. | yes |
+| S010 layoff news | 2022-11-09 | Layoff-day news. | yes |
+| S011 CPI day | 2022-11-10 | As-of-day macro context. | yes |
+| S012 DEF 14A | 2022-04-22 | 2022 proxy. | yes |
+| S013 Sandberg bio | 2022-10-15 | Formation facts (timeless), dated cite. | yes |
+| S014 Bosworth bio | 2022-10-20 | Formation facts (timeless), dated cite. | yes |
+| S015 CFO transition | 2022-07-27 | Wehner→CSO / Li→CFO eff. 2022-11-01 (effective date IS on-or-before as-of; pre-announced = known). | yes |
+| S016 Sandberg departure | 2022-06-01 | Announced 2022-06-01, official 2022-08-01. | yes |
+| S017 FTC $5B order | 2019-07-24 | Dark-arc anchor. | yes |
+| S018 Haugen testimony | 2021-10-05 | Dark-arc anchor. | yes |
+| S019 Zuckerberg bio | 2022-10-15 | Formation facts (timeless), dated cite. | yes |
+
+No source dated after 2022-11-10. **Note on web search:** general web results surfaced post-as-of events
+(2023 layoff round, recovery) — these were used ONLY to confirm the forbidden traps exist in reality and
+must stay excluded; NONE were imported into the pack or this audit.
+
+### 2. Claim traceability — every load-bearing claim traces to an allowed source_id
+
+Re-checked evidence_spine.md claims C001–C019 and operator_background People-Map / Scorecard claims: all
+trace to S001–S019. The two anchor financials (Q3 print, Nov 9 layoff) and the $111.00 price/market-cap
+chain (S005 × S002 share count) are fully sourced. PASS.
+
+### 3. Outcome-aware language check — ABSENT
+
+No "later / subsequently / as we now know / went on to / turned out / rallied / recovered" used as fact.
+The only forward-leaning lines are Zuckerberg's own dated statements (S003, e.g. "deeply underestimated,"
+"more efficient cost structure than we outlined to investors recently") and the S004 transcript paraphrase,
+each explicitly labeled **management framing**, not verified fact. The as-of $111.00 sitting above the
+Oct 27 $97.94 trough is explained by the dated Nov 9 layoff + Nov 10 CPI rally (S011) — not hindsight.
+
+### 4. Post-cutoff fact intrusion — `meta_2022-11-10` forbidden registry row, each ABSENT
+
+| forbidden item (per LOOKAHEAD_CHECKER.md row, after 2022-11-10) | present in pack? |
+|---|---|
+| 2023 "Year of Efficiency" (Feb 2023) framing/announcement | ABSENT |
+| Recovery to $300 → $400+ | ABSENT |
+| FY2022 full-year results (reported Feb 2023) | ABSENT |
+| 2023+ results | ABSENT |
+| Later Reality Labs losses (post-as-of quarters) | ABSENT |
+| The later AI-capex pivot | ABSENT |
+| Second (March 2023) ~10,000-job layoff round | ABSENT |
+| 2024 dividend initiation / later buybacks / later DAU-ad metrics | ABSENT |
+| Any post-2022-11-10 META price | ABSENT |
+
+The registry now contains the `meta_2022-11-10` row (collector's prior Note C is resolved — the row exists
+in LOOKAHEAD_CHECKER.md). PASS.
+
+### 5. Evidence misuse check — PASS
+
+No KOL / social / video sources. All sources are SEC filings, official releases, market data, reputable
+dated news, peer earnings, or biography-tier (used only for timeless formation facts, never EVIDENCE-tier
+hard claims). Management optimism (S003/S004) recorded as framing. Peer data (S008/S009) used as industry
+context, not Meta-specific proof. Analyst PTs (S007) used as sentiment.
+
+### 6. No decision / no outcome (material-pack gate) — PASS
+
+No buy/sell/hold verdict, no context label, no thesis, no position size, no buy-below, no decision_card in
+any of the six files. The decision question is recorded in case_control.md and explicitly deferred. All
+valuation figures (P/E ~10.6x [marked approximate], EV ~$262.5B, ~$31.9B net cash, FCF proxy) are presented
+as neutral arithmetic inputs.
+
+### Checker decision
+
+**CLEAN — no LEAK. The blind Runner (Step 2) may proceed on this pack.**
