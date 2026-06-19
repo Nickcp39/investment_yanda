@@ -1,0 +1,81 @@
+{
+  "ticker": "MU",
+  "as_of": "2025-03-21",
+  "context_label": "cyclical_inflection",
+  "as_of_price": 94.72,
+  "as_of_market_cap": 105600000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Primary filings give high-confidence facts on Q2 FY25, full-cycle history, mix, and a dated price; normalized-earnings and HBM-margin durability are the medium-confidence gaps -> modest size haircut, not a cap to WATCH.",
+      "drivers": ["S1", "S2", "S3", "S4", "S5"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Memory up-cycle plus structural data-center/HBM mix shift (data center >50% of revenue, HBM >$1B/qtr); market overweighting a one-quarter GM wobble and underweighting the rising earnings floor. Context = cyclical_inflection with an exceptional_bottleneck HBM sleeve.",
+      "drivers": ["S1", "S2", "S3", "S5"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Durable sleeve = HBM + data-center DRAM (scarce, pricing power, qualified-in) vs commodity DRAM/NAND (no moat, SBU still loss-making in FY24). Rational 3-player DRAM oligopoly + leading-edge node; but HBM premium is a contestable bottleneck rent, not a permanent moat.",
+      "drivers": ["S1", "S3"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Clearly mid-cycle UP-leg (FY22 +$8.7B peak, FY23 -$5.8B trough, FY24 +$0.8B recovery, FY25 1H ~$6.9B annualized). ~15x run-rate but ~21-35x normalized through-cycle EPS; FCF only $857M vs $3.1B/qtr capex. Balance sheet survives (net debt ~$4.76B, ND/equity ~0.10). Confirms up-cycle + survivability but refutes the 'optically cheap' reflex -> net neutral.",
+      "drivers": ["S1", "S3"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Live risks: cyclical-peak trap (buying above mid-cycle earnings), oversupply/capex black hole, HBM-premium compression from Samsung/SK Hynix. No hard veto: profit pool is growing not eroding and balance sheet survives a normal downcycle -> warning that caps size, not a zero.",
+      "drivers": ["S1", "S3", "S5"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "At $94.72 (post-~8% print de-rate) the entry is fair-not-cheap: ~15x up-leg run-rate, ~21-35x normalized. Acceptable for a small starter; real accumulation reserved $70-85; trim/no-chase >$115-120. Good company, only an acceptable buy-point.",
+      "drivers": ["S1", "S5"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 1.5,
+  "suggested_max_size_pct": 4.0,
+  "buy_below_price": 95.0,
+  "starter_zone": "$85-$95",
+  "add_zone": "$70-$85",
+  "trim_or_no_chase_zone": ">$115-$120",
+  "binding_constraint": "M5 cyclical-peak risk anchored by M4 normalization: paying ~21-35x normalized through-cycle earnings for a commodity-heavy memory cyclical in its up-leg caps the position to a small starter with adds staged lower; no hard veto because the balance sheet survives the cycle and the data-center/HBM profit pool is growing.",
+  "kill_criteria": [
+    "Two consecutive quarters of declining data-center/HBM revenue AND gross margin (up-cycle rolls over before the structural floor is proven).",
+    "HBM ASP/premium visibly compressing as Samsung/SK Hynix capacity floods the accelerator socket.",
+    "Industry capex signalling 2026 oversupply with Micron inventory building faster than revenue (NRV-write-down regime returning).",
+    "Balance-sheet deterioration: net debt rising materially with durably negative through-cycle FCF."
+  ],
+  "runner_dissent": "Mild. Harness logic (real bottleneck + survivable balance sheet + growing profit pool, no veto) supports a STARTER and I concur, but the entry is ABOVE mid-cycle earnings on a contestable HBM premium, so I deliberately kept initial size small (1.5%) and placed the true accumulation zone $10-25 lower. A strict cyclical-discipline investor could defend WATCH-until-$85; I chose a small STARTER because the data-center mix shift gives this cycle a credibly higher floor and the downside is survivable at this size. No post-as-of information was used.",
+  "sources_used": [
+    {"source_id": "S1", "public_date": "2025-03-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000006/a2025q2ex991-pressrelease.htm"},
+    {"source_id": "S2", "public_date": "2024-12-18", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000046/a2025q1ex991-pressrelease.htm"},
+    {"source_id": "S3", "public_date": "2024-10-04", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/mu-20240829.htm"},
+    {"source_id": "S4", "public_date": "2025-03-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000009/mu-20250227.htm"},
+    {"source_id": "S5", "public_date": "2025-03-21", "url_or_path": "https://stockanalysis.com/stocks/mu/history/"}
+  ]
+}
