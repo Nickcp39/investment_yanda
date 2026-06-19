@@ -76,3 +76,20 @@ All 5 packs present (4 files each) **and** each passes `LOOKAHEAD_CHECKER` = CLE
 2. Re-launch collectors **only for missing/incomplete packs**; do not re-collect completed ones.
 3. Run the checker on any pack that hasn't been audited.
 4. Mark each row done only after checker = CLEAN.
+
+---
+
+## Batch 2 (2026-06-17) — winners + INTC-2021 trap
+
+Added to balance the set with the `planned` winners (META / AMZN / NVDA) and the INTC value-trap-near-top contrast to `intc_2024-08-02`. Same rules; materials only; self-applied `LOOKAHEAD_CHECKER`. 4 parallel collector agents.
+
+| case | as-of close | mkt cap | sources | self-audit | status |
+|---|---|---|---|---|---|
+| meta_2022-11-10 | $111.00 ✓ | ~$294B | 11 | CLEAN-WITH-NOTES | test-ready |
+| amzn_2023-02-03 | $103.39 ✓ | ~$1.06T | 15 | CLEAN-WITH-NOTES | test-ready |
+| nvda_2023-05-25 | $379.80 ✓ (pre-split) | ~$938B | 14 | CLEAN-WITH-NOTES | test-ready |
+| intc_2021-04-23 | $59.24 ✓ | ~$239B | 13 | CLEAN | test-ready |
+
+All as-of closes VERIFIED; each pack = 5 files (4 material + `material_audit.md`). Notable look-ahead catches: NVDA Q1 FY24 10-Q (filed 2023-05-26, one day after as-of) excluded → numbers sourced from the 5/24 8-K; AMZN fenced a 2023-02-09 Motley Fool piece to narrative-only; INTC excluded the ~2021-05-09 Mercury Research share report.
+
+Pre-blind-run TODO (not part of material collection): independent (separate-agent) look-ahead checker pass + add per-case rows to `LOOKAHEAD_CHECKER.md` forbidden registry (each `material_audit.md` provides a derived row).
