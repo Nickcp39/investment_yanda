@@ -1,5 +1,10 @@
 # Company Research Template
 
+> ⚠️ **LEGACY(10 层老模板)。** Canonical 现在是 `backtests/framework_validation/` 的**精简 6 模块 pipeline**
+> (产出 `decision_card.json`,已 10 案盲测验证)。本模板的 10 层已被 6 模块吸收(映射见
+> `backtests/framework_validation/PIPELINE.md` 末尾),保留作参考 / 深度公司研究用。
+> **分析新公司请从 `backtests/framework_validation/USER_MANUAL.md` 起,不要从这里起。**
+
 用途: 这是单家公司买方投研的标准目录模板。复制本目录到 `companies/<ticker>/` 后，只填事实、假设和结论，不改结构。
 
 核心原则:
