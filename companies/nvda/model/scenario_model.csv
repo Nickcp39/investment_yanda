@@ -1,0 +1,5 @@
+scenario,oe_start_annual_usd_m,oe_5y_cagr_pct,oe_year5_usd_m,exit_multiple_p_oe,implied_ev_year5_usd_b,plus_netcash_usd_b,equity_value_year5_usd_b,per_share_year5_usd,price_now_usd,implied_5y_irr_pct,note
+bear,160000,-8,105000,18,1890,72,1962,80,145.48,-11,"AI capex pull-forward + custom-silicon erodes share + GM to ~58% + China gone; de-rate. Survivable (net cash), not permanent impairment."
+base,182000,12,321000,20,6420,72,6492,266,145.48,13,"growth decelerates from +85% to durable mid-teens; GM normalizes ~67%; China zero; share holds vs custom silicon. Forward P/E ~16-19x now -> margin of safety positive."
+bull,185000,22,500000,24,12000,72,12072,495,145.48,28,"inference demand secular + share defended + networking/systems expand TAM + sovereign AI; exit multiple holds. Story fully delivered."
+notes,,,,,,,,,,,"oe_start = operating owner earnings run-rate (non-GAAP net income basis, equity-security gains stripped). shares ~24,391M. price_now = 2026-06-18 close 145.48 (S006). IRR = (per_share_year5/price_now)^(1/5)-1. Discount hurdle = 8%. ALL scenarios are E1 estimates/scenarios, not facts."

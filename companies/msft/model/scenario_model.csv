@@ -1,0 +1,11 @@
+scenario,oe0_usd_b,oe_growth_10y_pct,exit_multiple_x,implied_10y_irr_pct,fair_value_price_at_8pct,note
+bear,73,8,18,0.1,~,"treat all capex as maintenance (OE=FCF $73B); AI capex underperforms; Azure decel back to ~20s; exit derates to 18x. IRR ~breakeven -> survivable, not permanent loss (net cash + dividend cushion)."
+base,112,11,22,9.5,436,"OE-mid $112B (~40% of capex is growth); revenue ~11% CAGR (cloud+AI offset Windows maturity); margins hold ~45-46%; exit 22x. IRR clears 8% hurdle at current $379.40."
+bull,120,14,26,15.2,~,"AI capex ROIC delivers; Azure sustains high-30s/40 longer; AI run-rate scales from $37B; Copilot attach broad; exit 26x re-rate. IRR mid-teens."
+,,,,,,
+# Required-return price grid (base assumptions: OE0=112B, g=11%, exit 22x),,,,,,
+price_at_8pct_hurdle,,,,8,436,"fair value; current $379 is BELOW this -> positive margin"
+price_at_10pct,,,,10,363,"~ current area; 10% IRR roughly at ~$363"
+price_at_12pct,,,,12,303,"add/core zone for 12% IRR"
+price_at_15pct_deep_value,,,,15,~250,"deep-value entry"
+current_price,379.40,,,9.5,,"as_of 2026-06-18 close; ~13% below base fair value, 32% below 52wH $555"

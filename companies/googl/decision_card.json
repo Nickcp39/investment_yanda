@@ -1,0 +1,87 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "great_business_no_margin_of_safety",
+  "as_of_price": 368.03,
+  "as_of_market_cap": 4459051480000,
+  "share_basis_note": "12,116M diluted shares (Q1'26, 3/31/26; buybacks paused so share count is rising 12,088M->12,116M) x $368.03 (2026-06-18 close, last <= as_of 2026-06-19) = ~$4.46T. Price from Yahoo chart API [S-YHOO]; 2026-06-19 intraday not used as freeze edge. Cross-anchor: Berkshire 2026-06 private placement priced A $351.81 / C $348.20 (~5% below market) [GOOGL-424B5-2026-06].",
+  "refresh_note": "LIGHT REFRESH of the existing v1/v2 dossier (as_of ~2026-06-16). 3-day delta (06-16 close $373.25 -> 06-18 close $368.03, -1.4%) is immaterial; no new 8-K, no DOJ adtech remedy ruling, no Q2 earnings (still ~late July). One C/D-tier talent item (Gemini engineer Shazeer -> OpenAI) already covered by monitor.md supplementary watch. Verdict/size/ceiling/buy-below UNCHANGED. Module signals carried forward from memo-v1.md and re-stamped to lean-6module-v1.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Anchor quarter (Q1'26) and FY2025 10-K are fully primary-sourced (~50 verified A1 claims): Services operating margin ~40.7%, Search & other +19% Y/Y, Cloud +63% / 32.9% op margin / backlog >$460B, capex guide $180-190B for 2026. Completeness ~75% -> caps verdict ceiling. Hard GAP: only a 3-year filed series (FY23-25 + Q1'26/TTM) so a Buffett 10-year leaky-bucket analysis cannot yet be done; maintenance-vs-growth capex split is undisclosed (the one unobservable that drives the base case). Gaps are haircuts, not vetoes.",
+      "drivers": ["GOOG.A1.2025K", "GOOG.A1.2026Q1", "GOOG.A1.PROXY2026"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "10-year-grade two-sided platform: aggregate billions of free-product users' commercial intent and sell it to advertisers, plus sell compute to Cloud customers. Revenue uptake is real and primary-sourced (Search +19% even after two years of ChatGPT/AI-answer pressure; Cloud +63%, backlog >$460B). The mechanism is durable; the open question is whether incremental revenue dollars survive AI-capex/D&A/TAC/SBC to reach owner earnings.",
+      "drivers": ["GOOG.A1.2026Q1", "GOOG.A1.2025K"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Strong existing moat (search habit + default distribution, ad-auction liquidity, Cloud scale + AI infra) with historically wide ROIC-WACC spread, but in a FORM-SHIFT: the INCREMENTAL moat (can post-AI-capex incremental capital keep earning high returns?) is unproven -- only indirect optimistic signals (Cloud margin/backlog), no owner-earnings bridge confirmation. Weakest/over-hyped claims (TPU cost edge, talent/model) have zero quantified primary evidence. Operator grade 28/40: founder-fit and long-termism strong, but $180B+/yr capex has NO visible return-discipline framework and 52.7% voting / <11% economic ownership = no external correction lever. Cyclicality of the ad pool + durability uncertainty cap size below Confirmed.",
+      "drivers": ["GOOG.A1.2025K", "GOOG.A1.2026Q1", "GOOG.A1.PROXY2026", "GOOGL-424B5-2026-06"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "Accounting quality is high but 2026 GAAP net income massively overstates owner earnings: TTM reported net income $160B vs owner earnings ~$51-82B (40-58% of reported); the clean read is operating income +30%, NOT the headline that includes $36.9B unrealized equity-security gains. Textbook red flag: revenue +31% over 3 years while derived FCF stalled ($69.5B FY23 -> $64.4B TTM) -> growth is being eaten by capex (capex/OCF Q1'26 ~78%). SBC real $27.1B with buybacks paused (Q1'26 $0 vs $15.1B Q1'25) so dilution is now naked; capital structure shifted to external funding ($80B+ raise + net debt issuance) to fund capex. Net negative on owner-earnings quality, but no balance-sheet survival risk -> warning, not veto.",
+      "drivers": ["GOOG.A1.2026Q1", "GOOG.A1.2025K", "GOOGL-FWP-2026-06"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but not structural impairment at as-of. Headline permanent-impairment path = F1xF3 confluence: AI answers compress per-query monetization (F1) while forced ever-higher defensive capex (F3) -> revenue still grows but owner earnings permanently diluted; each leg alone is hedgeable (Search still +19%, Cloud turned profitable), the combination is irreversible only if incremental ROIC fails. Tail accelerator = F2 DOJ adtech structural remedy ('could have a material adverse effect', remedy phase pending). All failure paths AND all valuation uncertainty collapse onto ONE unobservable: maintenance-vs-growth capex split (= incremental ROIC). This is a haircut/SIZE driver, not a hard veto.",
+      "drivers": ["GOOG.A1.2025K", "GOOG.A1.2026Q1"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "BINDING CONSTRAINT. At ~$368 (06-18 close), market cap ~$4.46T = ~69x base owner earnings, starting OE yield ~1.46%. Three-scenario 10y IRR at this price: bear -13.1% / base -3.0% / bull +5.2% -- ALL below the 8% hurdle. To earn 10% at $368 requires owner earnings to compound ~22%/yr for a decade (peak growth AND capex rolling over, two optimistic assumptions stacked). Balance sheet is LEVERING UP for capex, not protecting downside. No margin of safety -> price caps verdict at WATCH. Buy-below ladder: ~$134 (8% hurdle, observe) / ~$113 (base 10%, reopen panel for STARTER) / ~$95 (Core 12%) / ~$48 (bear-8% downside anchor). Avoid above ~$300.",
+      "drivers": ["valuation.md", "S-YHOO", "GOOGL-424B5-2026-06"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 113.0,
+  "starter_zone": "0% at current price. Reopen IC panel for a starter (1-3%) only on a pullback to ~$95-113 (base 10% IRR anchor); deliberately use the base/bear anchor, not the ~$134 8%-threshold, to avoid acting on a thin margin.",
+  "add_zone": "~$95 -> Core discussion (12% IRR); ~$48 -> deep-value / bear-8% downside anchor. Any add is gated on confirming the bull thesis (search resilience + capex turning into rising FCF/share + a management capex-ROI framework) is not structurally broken first.",
+  "trim_or_no_chase_zone": "Avoid above ~$300 (even the bull IRR is <8%). Current ~$368 is firmly in the avoid zone -> 0%, do not initiate.",
+  "binding_constraint": "Price has no margin of safety: at ~$368 the base-case 10y IRR is -3.0% and even the bull case is +5.2%, all below the 8% hurdle. Secondary: owner-earnings cannot be underwritten because the maintenance-vs-growth capex split (= incremental ROIC) is undisclosed; completeness ~75% caps the ceiling at WATCH. PRICE, not information, is the active hard cap (K-E).",
+  "kill_criteria": [
+    "K-A [F1 search monetization]: Search & other revenue <=+8% Y/Y for two consecutive quarters with management attributing it to AI-answer/interface migration (current Q1'26 +19%, green).",
+    "K-B [F3 capex black hole]: FCF/share declines two consecutive years AND capex/OCF stays >70% with no incremental-ROIC recovery (current FY25 ~56%, Q1'26 ~78% on the line, yellow).",
+    "K-C [F3 capital-allocation discipline]: management gives no capex ROI hurdle / expected ROIC for two consecutive reporting cycles, OR a data-center/TPU impairment appears (current: framework does not exist in primary disclosure, yellow/red).",
+    "K-D [F2 regulatory tail]: court/regulator orders a STRUCTURAL remedy (divest adtech / ban default search-distribution / forced platform opening) rather than a pure fine (current DOJ adtech partial loss, structural remedy pending, yellow).",
+    "K-E [F9 valuation discipline]: buy price implies 10y IRR <8% (~price > $134); current ~$368 grossly violates -> WATCH/0% until price returns to ~$113 to reopen STARTER (red, ACTIVE binding constraint)."
+  ],
+  "runner_dissent": "Recorded per protocol. The opposite risk (the missed-compounder error: a great business that almost never pulls back -70% to the ~$113 base anchor, so 'wait for the price' may be waiting for a price that never comes, bleeding opportunity cost vs the QQQ 4yr 2.03x benchmark) is real and explicitly logged in memo-v1 section 10. The framework nonetheless holds WATCH/0% (does NOT override to STARTER as it did for NVDA) because -- unlike NVDA -- PRICE IS THE CONSTRAINT here: at ~69x owner earnings even the bull 10y IRR is +5.2% (<8%), owner-earnings quality is poor (FCF stalled while revenue +31%, reported net income inflated ~2-3x by non-cash equity gains, buybacks paused so dilution is naked), and the balance sheet is levering UP for capex rather than protecting the downside. This is the GOOGL-style 'good business, wrong price' case the ceiling rule was built to stop from chasing; the residual capex/incremental-ROIC uncertainty would only matter once price gave a margin of safety. Verdict unchanged on the 3-day refresh.",
+  "sources_used": [
+    {"source_id": "GOOG.A1.2025K", "public_date": "2026-02-03", "url_or_path": "SEC EDGAR Alphabet FY2025 10-K (CIK 1652044); see companies/googl/raw/ + facts.md verified A1"},
+    {"source_id": "GOOG.A1.2026Q1", "public_date": "2026-04", "url_or_path": "SEC EDGAR Alphabet Q1'26 10-Q / 8-K earnings release; see companies/googl/raw/ + facts.md verified A1"},
+    {"source_id": "GOOG.A1.PROXY2026", "public_date": "2026-04", "url_or_path": "SEC EDGAR Alphabet 2026 DEF 14A proxy; see companies/googl/raw/ + facts.md"},
+    {"source_id": "GOOGL-424B5-2026-06", "public_date": "2026-06-02", "url_or_path": "SEC EDGAR Alphabet 424B5 / FWP (June 2026 $80B+ equity raise; Berkshire $10B private placement A $351.81 / C $348.20)"},
+    {"source_id": "S-YHOO", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL (2026-06-18 close $368.03, last daily close <= as_of 2026-06-19)"}
+  ]
+}

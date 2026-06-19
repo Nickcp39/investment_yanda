@@ -1,0 +1,18 @@
+line,value_usd_b,note,source
+# Owner earnings (Buffett def: net income + D&A - maintenance capex). MSFT key uncertainty = maintenance vs growth capex split (OPEN O2).,,,
+TTM net income,125.2,reported; quality high (little non-recurring vs GOOGL),MSFT.DERIVED.TTM.NI
+TTM operating cash flow,170.2,includes SBC addback + WC,MSFT.DERIVED (XBRL)
+TTM total capex (PP&E cash),97.3,all capex; mix of maintenance + AI growth,MSFT.DERIVED (XBRL)
+TTM FCF (OCF - all capex),72.9,conservative owner-earnings floor (treats ALL capex as maintenance),derived
+,,,
+# Owner earnings RANGE (depends on growth/maintenance split - unobservable, O2),,,
+OE low (treat all capex as maintenance = FCF),72.9,bear: every dollar of AI capex is just keeping up,derived
+OE mid (assume ~40% of capex is growth),111.8,base: NI-style; ~$39B of $97B capex is expansion not maintenance,derived-assumption
+OE high (assume ~55% of capex is growth),~125,bull: approaches reported net income; AI capex mostly expansionary,derived-assumption
+,,,
+# Yields on ~$2.82T market cap,,,
+Earnings yield (TTM NI / mcap),4.44,%,derived
+FCF yield (TTM FCF / mcap),2.59,%,derived
+OE-mid yield,~3.97,%,derived
+,,,
+# Contrast GOOGL (same batch): GOOGL OE yield was 1.45% at $370. MSFT starts ~3x higher because price already de-rated 32% from 52wH on capex shock.,,,

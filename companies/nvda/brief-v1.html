@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVDA 决策简报 — as_of 2026-06-19</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--ink:#e6edf3;--mut:#9aa7b4;--grn:#3fb950;--red:#f85149;--amb:#d29922;--acc:#58a6ff;--brd:#283039}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;line-height:1.5;padding:24px}
+  .wrap{max-width:1040px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px} h2{font-size:16px;margin:22px 0 10px;color:var(--acc);border-bottom:1px solid var(--brd);padding-bottom:6px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:14px}
+  .k{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em} .v{font-size:20px;font-weight:700;margin-top:4px}
+  .verdict{font-size:30px;font-weight:800;color:var(--grn)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px} th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--brd)} th{color:var(--mut);font-weight:600}
+  .pos{color:var(--grn)} .neg{color:var(--red)} .amb{color:var(--amb)} .mut{color:var(--mut)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:700}
+  .pill.g{background:rgba(63,185,80,.15);color:var(--grn)} .pill.r{background:rgba(248,81,73,.15);color:var(--red)} .pill.a{background:rgba(210,153,34,.15);color:var(--amb)}
+  ul{margin:6px 0;padding-left:18px} li{margin:3px 0;font-size:13px}
+  .note{font-size:12px;color:var(--mut);margin-top:8px}
+  .sig{font-weight:700}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>NVIDIA (NVDA) — 决策简报</h1>
+  <div class="sub">as_of 2026-06-19 · pipeline lean-6module-v1 · weights none · status <b>DECISION_DRAFT</b> · 完整度 ~65% · context: exceptional_bottleneck</div>
+
+  <div class="grid">
+    <div class="card"><div class="k">新钱 Verdict</div><div class="verdict">STARTER</div><div class="note">existing position: HOLD</div></div>
+    <div class="card"><div class="k">仓位</div><div class="v">3–5% → max ~12%</div><div class="note">周期股封 Confirmed 以下</div></div>
+    <div class="card"><div class="k">价格 / 市值</div><div class="v">$145.48 / ~$3.55T</div><div class="note">2026-06-18 收盘，贴 52 周低</div></div>
+    <div class="card"><div class="k">ceiling</div><div class="v">STARTER</div><div class="note">完整度封顶（非价格）</div></div>
+  </div>
+
+  <h2>核心论点（一句话）</h2>
+  <div class="card">NVDA 是 AI 全栈算力瓶颈（GPU+CUDA+网络+系统），owner earnings 异常干净（capex-light，FCF≈OE≈$182B run-rate）、净现金 ~$72B，且现价 forward ~19x / 起始 OE yield 5.1% / base 5y IRR +13% <b>留有正安全边际</b>——与 GOOGL"好生意错价格"相反，<b>这次价格站在买方这边</b>。卡点是"+85% 增速/75% 毛利率这些极值能持续多久（pull-forward + custom-silicon 份额）"——控制 size，不否决。</div>
+
+  <h2>六模块信号</h2>
+  <table>
+    <tr><th>模块</th><th>角色</th><th>信号</th><th>信心</th><th>一句话</th></tr>
+    <tr><td>M1 证据脊柱</td><td>confidence</td><td class="sig pos">+2</td><td>high</td><td>锚定季度+全年全回挂 A1/A2</td></tr>
+    <tr><td>M2 主题/机制</td><td>context+conviction</td><td class="sig pos">+2</td><td>high</td><td>瓶颈多季一手坐实：DC +92%、网络 +199%、Q2 指引 $91B</td></tr>
+    <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="sig pos">+2</td><td>med</td><td>CUDA+全栈捕获最大利润池；operator 4/5；推理份额是战场</td></tr>
+    <tr><td>M4 财务现实</td><td>conviction</td><td class="sig pos">+2</td><td>high</td><td>owner earnings 干净、净现金 $72B、无 capex 黑洞</td></tr>
+    <tr><td>M5 反演/陷阱</td><td>risk</td><td class="sig neg">−1</td><td>med</td><td>pull-forward+custom-silicon = size 控制；无结构性破裂 → 非 veto</td></tr>
+    <tr><td>M6 定价/仓位</td><td>price+output</td><td class="sig amb">+1</td><td>med</td><td>forward 19x、yield 5.1%、base IRR +13% → 价格友好</td></tr>
+  </table>
+
+  <h2>三情景（5y IRR，hurdle 8%）</h2>
+  <table>
+    <tr><th>情景</th><th>OE 起点</th><th>CAGR</th><th>退出 P/OE</th><th>y5 每股</th><th>5y IRR</th></tr>
+    <tr><td>Bear</td><td>$160B</td><td>−8%</td><td>18x</td><td>~$80</td><td class="neg">−11%</td></tr>
+    <tr><td>Base</td><td>$182B</td><td>+12%</td><td>20x</td><td>~$266</td><td class="pos">+13%</td></tr>
+    <tr><td>Bull</td><td>$185B</td><td>+22%</td><td>24x</td><td>~$495</td><td class="pos">+28%</td></tr>
+  </table>
+  <div class="note">赔率向上不对称（bull +28% / base +13% / bear −11% 可存活非永久减值）。情景为 E1 scenario，非事实。</div>
+
+  <h2>价格带</h2>
+  <div class="grid">
+    <div class="card"><div class="k">Starter 主锚</div><div class="v pos">$130–150</div><div class="note">现价区，initial 3–5%</div></div>
+    <div class="card"><div class="k">Add zone</div><div class="v">$110–130</div><div class="note">回撤/确认后加向 8–12%</div></div>
+    <div class="card"><div class="k">No-chase</div><div class="v neg">> ~$200</div><div class="note">隐含 IRR &lt;8%</div></div>
+    <div class="card"><div class="k">下行参考</div><div class="v amb">~$80 (−45%)</div><div class="note">bear，资产负债表存活</div></div>
+  </div>
+
+  <h2>五灵魂 IC（段永平主审）</h2>
+  <table>
+    <tr><th>灵魂</th><th>票</th><th>一句锚</th></tr>
+    <tr><td>Buffett</td><td><span class="pill g">STARTER</span></td><td>owner earnings 干净、价格合理，十年终局能力圈边缘</td></tr>
+    <tr><td>Munger</td><td><span class="pill g">STARTER</span></td><td>治理清洁、估值不疯，愚蠢风险=把 pull-forward 当永久</td></tr>
+    <tr><td>段永平（主审）</td><td><span class="pill g">STARTER</span></td><td>用户价值清楚、管理层靠谱、这次价格站我这边</td></tr>
+    <tr><td>Marks</td><td><span class="pill g">STARTER</span></td><td>情绪偏空、估值回撤、赔率向上不对称</td></tr>
+    <tr><td>Klarman</td><td><span class="pill g">STARTER</span></td><td>资产负债表护底、下行可存活、安全边际为正</td></tr>
+  </table>
+
+  <h2>Kill Criteria</h2>
+  <ul>
+    <li><b>K1</b> Q2/Q3 营收实质 miss $91B 指引（pull-forward）→ 砍回 tracking</li>
+    <li><b>K2</b> DC 连续环比降 或 DC 毛利率 &lt;65% → 瓶颈/定价权证伪</li>
+    <li><b>K3</b> 大规模 CSP 迁出致份额结构性下滑 → <b>唯一可升 veto，exit 候选</b></li>
+    <li><b>K4</b> 库存/供应承诺大额减值（参 FY26 $4.5B H20 计提）</li>
+    <li><b>K5</b> 价格 &gt; ~$200（隐含 IRR &lt;8%）→ no-chase</li>
+    <li><b>K6</b> Huang 离任/失能且无 succession → 下调耐久性天花板</li>
+  </ul>
+
+  <h2>OPEN（封顶完整度）</h2>
+  <div class="card note">O1 10-K 逐行 · O2 10 年精确序列 · O3 proxy/operator 细节 · <b>O4 custom-silicon 定量份额（blocking）</b> · O5 China 损失量级 · O6 供应承诺/库存风险。</div>
+
+  <div class="note" style="margin-top:18px">来源: NVDA Q1 FY27 8-K PR+CFO commentary [S001/S002]、FY26 10-K/Q4 PR [S003/S004]、官方 newsroom [S005]、Yahoo chart 价格 [S006]、stockanalysis [S007]。载荷数全 A1/A2。状态 DECISION_DRAFT，非 COMPLETE。</div>
+</div></body>
+</html>

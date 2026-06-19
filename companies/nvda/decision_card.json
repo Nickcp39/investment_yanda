@@ -1,0 +1,89 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "exceptional_bottleneck",
+  "as_of_price": 145.48,
+  "as_of_market_cap": 3548000000000,
+  "share_basis_note": "Post-split (10:1, 2024-06) basis. 24,391M diluted shares (Q1 FY27 weighted) x $145.48 (2026-06-18 close, last <= as_of) = ~$3.55T. Price from Yahoo chart API [S006]; 2026-06-19 intraday not used as freeze edge.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 FY27, ended 2026-04-26) and full-year FY26 baseline are fully primary-sourced (8-K PR + CFO commentary + 10-K): revenue $81.6B, DC $75.2B, GM 74.9%, FCF $48.6B, Q2 guide $91B. Price locked from a dated daily series. Material completeness high on current facts; gaps (custom-silicon quantitative share, 10-K line items, proxy, early 10-year series) are haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S003", "S004", "S006"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Full-stack accelerated compute (GPU + CUDA + NVLink/InfiniBand/Spectrum-X networking + systems) is the bottleneck the AI industry must route through. Demand is a multi-quarter, primary-sourced forced market update, not a story: DC $75.2B (+92% Y/Y), networking $14.8B (+199%), Q2 guide $91B, customer base broadening from hyperscalers to AI clouds/sovereign/enterprise. exceptional_bottleneck, more corroborated than the 2023 case. Open: how much is durable vs pull-forward.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "NVDA captures the largest single AI-compute profit pool via CUDA lock-in + full-stack systems + networking (widening moat, +199% Y/Y). Operator grade 4/5: 30y founder Jensen Huang, clean one-share-one-vote governance, capex-light + low-price buybacks. Durability HIGH on training side; MEDIUM on inference (custom-silicon battleground). Ceiling capped (not floored) by key-man/succession on Huang and undimensioned custom-silicon erosion (O4). Cyclical -> size capped below Confirmed.",
+      "drivers": ["S001", "S002", "S003"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Owner earnings are unusually clean: capex-light (FY26 $6.1B / revenue $215.9B), FCF/OCF ~96%, owner earnings ~= FCF ~= non-GAAP net income ~$182B run-rate (strip $30.2B marketable-equity-security gains from GAAP). Fortress balance sheet: net cash ~$72B. NO capex-black-hole problem (opposite of GOOGL). GAAP net income ($58.3B Q1) is inflated by non-operating equity gains -> use non-GAAP/operating owner earnings for valuation. Net strongly positive.",
+      "drivers": ["S001", "S002", "S003", "S004"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but not structural impairment at as-of: (1) AI capex pull-forward -> DC air-pocket if cycle retracts; (2) custom silicon (CSP ASICs) + AMD erode inference share -> the ONLY path that can escalate to structural breakage, but DC +92% shows no share collapse yet (O4 undimensioned); (3) China DC zeroed (already in scenarios); (4) inventory/commitment writedown risk (inventory $25.8B, FY26 had $4.5B H20 charge precedent); (5) Huang key-man. None is permanent profit-pool loss or balance-sheet death (net cash $72B). This is a pull-forward / share-durability risk that controls SIZE, NOT a hard veto. Not a false-cheap trap.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At ~$3.55T, forward P/E ~19x, starting OE yield ~5.1%, base 5y IRR +13% (>8% hurdle), price near 52-week low (-38% from high) -> price is FRIENDLY, not the binding constraint (opposite of GOOGL). Asymmetry favors a structured starter: bull +28% / base +13% / bear -11% (survivable, not permanent impairment). Build on confirmation (revenue meeting the $91B guide + DC margin/share holding), add into ~$110-130 de-rate, no-chase above ~$200.",
+      "drivers": ["S001", "S006"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 4.0,
+  "suggested_max_size_pct": 12.0,
+  "buy_below_price": 150.0,
+  "starter_zone": "Structured starter ~3-5% in the current ~$130-150 zone (forward ~19x, base IRR ~13%). Price is friendly; do not need a deep pullback to begin.",
+  "add_zone": "Scale toward 8-12% on confirmation (Q2/Q3 FY27 revenue meets/beats the $91B guide AND DC margin/share hold) OR into a de-rate toward ~$110-130 (move toward the 52-week low $142) on unchanged thesis.",
+  "trim_or_no_chase_zone": "No-chase above ~$200 (implied 5y IRR < 8%). Trim only on thesis disconfirmation (K1-K3), not on weight.",
+  "binding_constraint": "Demand durability vs pull-forward of the AI capex cycle + DC share vs custom silicon -> run-rate sustainability ($75B/qtr DC and 75% gross margin extremes), NOT price, is what sizes the position. Valuation is friendly and does not cap; completeness (~65%) caps the ceiling at STARTER and cyclicality caps size below Confirmed. Secondary: key-man/succession on Huang.",
+  "kill_criteria": [
+    "Q2/Q3 FY27 revenue materially misses the $91B guide (demand was pull-forward, not durable) -> cut back to tracking.",
+    "Data Center revenue rolls over sequentially OR DC gross margin compresses sharply (<65%) -> bottleneck/pricing-power disconfirmed.",
+    "Credible evidence of large-scale CSP design wins away from NVDA to custom silicon/AMD causing structural DC share decline -> moat erosion, reassess durability ceiling (possible exit). [ONLY path that can escalate to veto]",
+    "Large inventory / supply-commitment writedowns (procured Blackwell supply did not convert to revenue; cf FY26 $4.5B H20 charge).",
+    "Buy price implies 5y IRR < 8% (price > ~$200) -> valuation discipline no-chase.",
+    "Huang departure/incapacitation with no credible succession -> lower durability ceiling (trim, not necessarily exit)."
+  ],
+  "runner_dissent": "Recorded per protocol. The value instinct flags caution: $145 is near the 52-week low and -38% off the high, which CAN mean the market is pre-pricing an AI-capex pull-forward top, and a single Q2 $91B guide cannot falsify how much of the ~$75B/qtr DC run-rate is cycle-peak double-ordering vs durable. The classic move is WAIT for the cycle to prove out. The framework overrides to STARTER (not WATCH/REJECT) because, unlike GOOGL, PRICE IS NOT THE CONSTRAINT here: forward ~19x already embeds heavy deceleration, owner earnings are unusually clean (capex-light, FCF=OE, no capex black hole), the balance sheet is fortress (net cash ~$72B) so bear -45% is survivable not permanent impairment, the bottleneck is multi-quarter primary-sourced (not a 2023-style single-point story), and M5 shows no structural breakage or balance-sheet death. The honest opposite risk (the SNDK lesson the harness was built to fix) is too_small_missed_asymmetry by demanding a deep MOS on a genuine, cleanly-financed bottleneck trading at 19x. Net: structured STARTER with confirmation-gated adds and a hard ~$200 no-chase line; the residual pull-forward/custom-silicon uncertainty controls SIZE (capped at Confirmed ~12%, ceiling STARTER from 65% completeness), not the go/no-go. Lower-confidence items left OPEN: custom-silicon quantitative share (O4), 10-K line items (O1), proxy (O3).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm"},
+    {"source_id": "S002", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27cfocommentary.htm"},
+    {"source_id": "S003", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"},
+    {"source_id": "S004", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"},
+    {"source_id": "S005", "public_date": "2026-05-20", "url_or_path": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027"},
+    {"source_id": "S006", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA"},
+    {"source_id": "S007", "public_date": "2026-06-19", "url_or_path": "https://stockanalysis.com/stocks/nvda/financials/"}
+  ]
+}

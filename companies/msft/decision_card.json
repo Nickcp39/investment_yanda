@@ -1,0 +1,87 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "quality_compounder_de-rated_on_capex_shock",
+  "as_of_price": 379.40,
+  "as_of_market_cap": 2818000000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Evidence base is strong on the FINANCIALS: a 10-year audited series (SEC XBRL, CIK 0000789019) plus Q3 FY2026 official IR data anchor every load-bearing number to A1 (FY25 rev $281.7B / op income $128.5B / net income $101.8B; Q3 FY26 rev $82.9B +18%, op income $38.4B +20%, EPS $4.27; Azure +40%; Microsoft Cloud $54.5B; RPO $627B +99%; AI run-rate >$37B +123%). Price ($379.40 close 2026-06-18) via Yahoo chart API. BUT three material gaps cap completeness at ~65%: (O3) OpenAI relationship economics not primary-verified (how much of Azure +40% is OpenAI compute?), (O2) maintenance-vs-growth capex split / management ROIC framework absent, (O4) segment-level operating margins not extracted. Per the harness these are an evidentiary completeness cap (-> STARTER ceiling), distinct from GOOGL where the cap was price.",
+      "drivers": ["MSFT-XBRL-FACTS", "MSFT-Q3-2026-ER", "MSFT-Q3-2026-PERF", "YAHOO-MSFT-PRICE"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: Microsoft is the enterprise IT operating system (M365 productivity + Azure hyperscale cloud + a frontier-AI layer via Copilot/OpenAI), monetized as subscription + consumption with extreme switching cost. Mechanism: it captures the two fattest links of the value chain (high-margin apps + scaling infra) and layers AI on top. Q3 FY26 confirms re-acceleration that is DATED and primary: Azure +40% (above the 37-38% guide, reversing a multi-quarter decel), Microsoft Cloud first quarter above $50B, commercial RPO $627B (+99%) = contracted demand, AI run-rate >$37B (+123%). The market is over-weighting the FY26 ~$190B capex guide (the cost side) and under-weighting RPO/AI demand confirmation. Net mildly positive: a genuine compounder with a live capex-ROI question.",
+      "drivers": ["MSFT-Q3-2026-PERF", "MSFT-10K-2025", "MSFT-Q3-2026-ER"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Microsoft captures an enormous, high-margin, durable profit pool with multiple hard moats: switching cost (M365+Azure+Entra identity lock-in; RPO $627B is the financial expression), network effects (Teams/LinkedIn/GitHub), scale economics ($190B-class capex is itself a barrier), and brand/compliance. The base (M365, Windows commercial, server) is decade-durable cash even if AI underwhelms; the growth pool (Azure+AI) has primary demand confirmation (Azure +40%, AI run-rate +123%). OPERATOR/team life-arc = 5/5: Nadella (12-yr CEO who reinvented MSFT into cloud+AI, op margin 28.6%->45.6% on his watch) + Hood (13-yr CFO, capital-allocation discipline). CRITICAL governance advantage vs GOOGL/META: ONE-SHARE-ONE-VOTE, no founder voting control -> if the capex bet is wrong, shareholders have a correction lever (not an un-stoppable amplifier). Net +2 (stronger than GOOGL's +1): same capex question but more durable pool, harder switching cost, and a correctable governance structure.",
+      "drivers": ["MSFT-Q3-2026-PERF", "MSFT-PROXY-2025", "MSFT-10K-2025"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Accounting CONFIRMS the thesis and shows no trailing-earnings trap. 10-yr: revenue 91.2B->281.7B (~3.1x), operating margin 28.6%->45.6% (monotonic), net income 20.5B->101.8B. FY25 OCF $136.2B, FCF ~$71.6B. Fortress balance sheet: cash+STI ~$78.3B vs LT debt $31.4B = net cash ~$47B; debt DECLINING (not net-issuing to fund capex like GOOGL). Earnings quality high: little non-recurring vs GOOGL's large unrealized equity gains. The single watch-item is the capex curve: FY23 $28.1B -> FY24 $44.5B -> FY25 $64.6B, with a FY26 ~$190B guide (includes leased capacity + ~$25B component inflation; cash PP&E run-rate ~$107B annualized; capex/OCF TTM ~57%, below GOOGL's ~78%). TTM net income $125.2B, FCF $72.9B (compressed but large/positive). The capex intensity is a SIZE input, not a refutation. M4 = +1 (conviction with capex warning).",
+      "drivers": ["MSFT-XBRL-FACTS", "MSFT-10Q-Q3-2026"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No hard veto: profit pool is growing not eroding, normalized earnings are not far below trailing, and the balance sheet (net cash) cannot fail. Survivable risks warranting a size haircut: (F1) AI capex into unproven returns -- $190B-class spend with no disclosed ROIC hurdle (O2) could compress FCF long-term; partly offset by RPO +99% (demand-pulled, not FOMO-pushed) and a 57% capex/OCF (vs GOOGL 78%). (F4) OpenAI relationship economics are a BLACK BOX (O3) -- Azure growth partly depends on it and the economics are not primary-verified; this is the single most important information gap. (F2) AI value could migrate to the model layer / Copilot monetization may lag. (F3) Azure could re-decelerate once capacity catches up. None is permanent-impairment at this price; bear-case IRR is ~breakeven, not a loss, thanks to net cash + dividend. One-share-one-vote means founder-mistake amplification risk is LOW (unlike GOOGL/META). Net -1 (lighter than GOOGL's M5).",
+      "drivers": ["MSFT-XBRL-FACTS", "MSFT-Q3-2026-PERF", "MSFT-PROXY-2025"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $379.40 (~$2.82T) MSFT trades ~22.5x TTM net income, ~38.7x TTM FCF (FCF depressed by AI capex), TTM earnings yield 4.44%, FCF yield 2.59% -- and CRITICALLY ~32% below the 52-week high $555.45, near the 52-week low $356.28. The market already de-rated MSFT on the $190B capex shock. Owner-earnings DCF (base OE0 $112B, g 11%, exit 22x): 10y IRR bear ~0.1% / base ~9.5% / bull ~15.2%; base 8% fair value ~$436 (ABOVE current price -> ~13% positive margin), 10% ~$363, 12% ~$303. This is favorable, asymmetric-to-the-upside pricing (mirror-opposite of GOOGL where bull was only +5.2%). Price SUPPORTS a STARTER now; no-chase above ~$436; add/CORE-review anchor ~$303. M6 = +1 (price supports opening; do not full-size before capex ROI confirms).",
+      "drivers": ["YAHOO-MSFT-PRICE", "MSFT-XBRL-FACTS"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "ADD",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 9,
+  "buy_below_price": 436,
+  "starter_zone": "current area ~$363-379 (at/below the as-of $379.40; positive margin to ~$436 base fair value)",
+  "add_zone": "~$303 (12% IRR) and below, OR at any price once the two gaps close (OpenAI economics primary-verified AND a management capex-ROI framework lands); add into weakness toward Core only after that confirmation",
+  "trim_or_no_chase_zone": "no-chase above ~$436 (~26x net income / 8% IRR base); revisit/trim only on the methodology triggers (thesis wrong, absurd price, better idea, thesis disconfirmed) -- e.g. Azure decel below +25% on demand, OpenAI economics deteriorate, or capex/OCF stays >70% with no ROIC",
+  "binding_constraint": "Research COMPLETENESS (~65%), not price. Two information gaps cap the verdict at STARTER and bar CORE: (O3) OpenAI relationship economics are unverified -- a hidden dependency inside the Azure +40% growth that the thesis leans on; and (O2) the maintenance-vs-growth capex split / management ROIC framework is absent, leaving owner earnings a wide $73-125B range and the base-case ($112B) an assumption rather than evidence. Unlike GOOGL (capped by a NEGATIVE margin of safety at price), MSFT has a POSITIVE margin of safety (base fair value ~$436 > $379) -- so price permits entry, but completeness sets the size ceiling. Closing O2/O3 and lifting completeness above 80% is the only path to CORE.",
+  "kill_criteria": [
+    "K-A capex black hole: capex/OCF stays >70% for two consecutive years AND FCF per share declines AND no incremental-ROIC evidence AND management still discloses no ROIC hurdle -> spend-without-return, do not add / trim. (Now ~57% capex/OCF, yellow.)",
+    "K-B Azure demand: Azure growth falls to <=+25% YoY for two consecutive quarters attributed to demand (not FX/capacity) -> the growth engine stalls, the $190B capex strands. (Now +40%, green.)",
+    "K-C OpenAI: any material negative change in the OpenAI relationship/economics, revenue-share deterioration, or related impairment -> re-underwrite Azure growth quality. (Now an information gap, yellow -- top priority to resolve.)",
+    "K-D AI monetization: AI run-rate growth collapses AND Copilot attach/renewal weakens -> AI-layer value capture fails. (Now $37B run-rate, +123%, green.)",
+    "K-E valuation discipline: entry price implies a 10y IRR < 8% (~ price > $436 on base assumptions) -> no-chase. (Now $379 implies ~10%, green.)"
+  ],
+  "runner_dissent": "Mild caution-side dissent: the mechanical read lands STARTER (4%, ceiling 9%) and I am comfortable with the DIRECTION, but I flag that the STARTER verdict leans on an owner-earnings base case ($112B) that assumes ~40% of capex is growth -- if the true growth share is materially lower, base IRR slips below the 8% hurdle and the positive margin of safety thins. The single biggest reason this is not CORE despite an exceptional business at a de-rated price is the OpenAI black box (O3): a non-trivial part of the headline Azure +40% may be OpenAI-driven compute whose economics are unverified, so the demand-confirmation that separates MSFT from a capex trap is itself partly unaudited. Conversely, an upward-pressure case exists: net cash, one-share-one-vote (correctable governance), dividend support, RPO $627B (+99%), and a 32% drawdown that already priced the capex fear could justify 5-6% initial for a fortress compounder. I hold at 4% / ceiling 9% because METHODOLOGY caps size at realized conviction and two genuine gaps (OpenAI economics, capex ROI split) remain open at the as-of date. Note vs GOOGL (same batch, same AI-capex factor): the verdict legitimately diverges (WATCH vs STARTER) purely on price/margin-of-safety + balance sheet + governance -- evidence the harness discriminates within the factor rather than lumping all AI-capex names together.",
+  "sources_used": [
+    {"source_id": "MSFT-XBRL-FACTS", "public_date": "2026-06-19", "url_or_path": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/"},
+    {"source_id": "MSFT-10K-2025", "public_date": "2025-07-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"},
+    {"source_id": "MSFT-10Q-Q3-2026", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm"},
+    {"source_id": "MSFT-Q3-2026-ER", "public_date": "2026-04-29", "url_or_path": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast"},
+    {"source_id": "MSFT-Q3-2026-PERF", "public_date": "2026-04-29", "url_or_path": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/performance"},
+    {"source_id": "MSFT-PROXY-2025", "public_date": "2025-10-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm"},
+    {"source_id": "YAHOO-MSFT-PRICE", "public_date": "2026-06-18", "url_or_path": "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?range=1mo&interval=1d"}
+  ]
+}

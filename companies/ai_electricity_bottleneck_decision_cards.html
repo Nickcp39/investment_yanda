@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 电力瓶颈 · 3 龙头决策卡 (GEV / CEG / VRT)</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2128; --bd:#30363d;
+    --tx:#e6edf3; --mut:#8b949e; --dim:#6e7681;
+    --green:#3fb950; --amber:#d29922; --red:#f85149; --blue:#58a6ff; --purple:#bc8cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;font-size:15px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:28px 20px 80px}
+  a{color:var(--blue);text-decoration:none}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:.2px}
+  h2{font-size:19px;margin:38px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--bd)}
+  .sub{color:var(--mut);font-size:14px;margin:0 0 4px}
+  .chips{margin:14px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  .chip{font-size:12px;padding:3px 10px;border:1px solid var(--bd);border-radius:20px;color:var(--mut);background:var(--panel)}
+  .chip b{color:var(--tx)}
+  /* nav */
+  nav{position:sticky;top:0;z-index:5;background:rgba(13,17,23,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--bd);margin:18px -20px 0;padding:10px 20px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+  nav a{color:var(--mut)} nav a:hover{color:var(--tx)}
+  /* matrix */
+  table.mx{width:100%;border-collapse:collapse;margin-top:8px;font-size:13.5px}
+  table.mx th,table.mx td{padding:10px 11px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+  table.mx th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  table.mx tr:hover td{background:var(--panel)}
+  .tk{font-weight:700;font-size:15px}
+  .v{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:5px;letter-spacing:.3px}
+  .v.starter{background:rgba(63,185,80,.16);color:var(--green);border:1px solid rgba(63,185,80,.4)}
+  .v.watch{background:rgba(210,153,34,.16);color:var(--amber);border:1px solid rgba(210,153,34,.4)}
+  .rank{font-size:11px;color:var(--dim)}
+  .neg{color:var(--red)} .pos{color:var(--green)}
+  /* insight panel */
+  .panel{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:18px 20px;margin-top:8px}
+  .panel.key{border-left:3px solid var(--green)}
+  .panel.switch{border-left:3px solid var(--blue)}
+  .panel h3{margin:0 0 10px;font-size:16px}
+  .panel ul{margin:6px 0 0;padding-left:18px} .panel li{margin:5px 0}
+  .big{font-size:30px;font-weight:800;color:var(--blue);line-height:1}
+  .switchgrid{display:flex;gap:26px;flex-wrap:wrap;align-items:center;margin-top:6px}
+  .cap{text-align:center} .cap .lab{font-size:11px;color:var(--mut);margin-top:2px}
+  /* cards */
+  .card{background:var(--panel);border:1px solid var(--bd);border-radius:12px;margin-top:22px;overflow:hidden}
+  .card.lead{border:1px solid rgba(63,185,80,.45);box-shadow:0 0 0 1px rgba(63,185,80,.12)}
+  .chead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    padding:16px 20px;background:var(--panel2);border-bottom:1px solid var(--bd);flex-wrap:wrap}
+  .chead .l .tk{font-size:21px}
+  .chead .layer{color:var(--mut);font-size:13px;margin-top:2px}
+  .chead .r{text-align:right}
+  .px{font-size:21px;font-weight:700}
+  .pxsub{font-size:12px;color:var(--mut)}
+  .cbody{padding:6px 20px 20px}
+  .sec{margin-top:18px}
+  .sec h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--mut)}
+  .answer{font-size:14.5px}
+  .answer b{color:var(--tx)}
+  .fa{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  @media(max-width:680px){.fa{grid-template-columns:1fr}}
+  .for,.against{border-radius:8px;padding:11px 13px;font-size:13px}
+  .for{background:rgba(63,185,80,.07);border:1px solid rgba(63,185,80,.22)}
+  .against{background:rgba(248,81,73,.07);border:1px solid rgba(248,81,73,.22)}
+  .for .t{color:var(--green)} .against .t{color:var(--red)}
+  .for .t,.against .t{font-weight:700;font-size:12px;letter-spacing:.3px;margin-bottom:4px}
+  /* valuation track */
+  .track{position:relative;height:46px;margin:14px 0 4px;background:var(--panel2);border:1px solid var(--bd);border-radius:7px}
+  .band{position:absolute;top:0;bottom:0;border-radius:5px;font-size:11px;display:flex;align-items:center;justify-content:center;color:#0d1117;font-weight:700}
+  .band.bear{background:rgba(248,81,73,.55)} .band.base{background:rgba(210,153,34,.6)} .band.bull{background:rgba(63,185,80,.55)}
+  .now{position:absolute;top:-6px;bottom:-6px;width:2px;background:#fff}
+  .now span{position:absolute;top:-19px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;color:#fff;font-weight:700}
+  .vlabels{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:2px}
+  .vmeta{font-size:12.5px;color:var(--mut);margin-top:9px}
+  /* IC panel */
+  .ic{margin-top:6px}
+  .ic .row{display:grid;grid-template-columns:128px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(48,54,61,.6);font-size:13px}
+  .ic .row:last-child{border-bottom:none}
+  .ic .who{font-weight:700;color:var(--purple)}
+  .ic .who small{display:block;color:var(--dim);font-weight:400;font-size:11px}
+  .yes{color:var(--green);font-weight:700} .no{color:var(--red);font-weight:700} .mid{color:var(--amber);font-weight:700}
+  /* kill scorecard */
+  .kills{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+  .kill{display:flex;gap:10px;align-items:flex-start;font-size:13px;padding:7px 10px;border-radius:6px;background:var(--panel2)}
+  .badge{flex:none;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:4px;margin-top:1px;letter-spacing:.3px}
+  .b-def{background:rgba(63,185,80,.16);color:var(--green)} .b-grn{background:rgba(63,185,80,.16);color:var(--green)}
+  .b-yel{background:rgba(210,153,34,.18);color:var(--amber)} .b-red{background:rgba(248,81,73,.16);color:var(--red)}
+  .b-acc{background:rgba(88,166,255,.16);color:var(--blue)}
+  ol.mon{margin:6px 0 0;padding-left:20px;font-size:13px} ol.mon li{margin:4px 0}
+  .foot{margin-top:42px;color:var(--mut);font-size:12.5px;border-top:1px solid var(--bd);padding-top:16px}
+  .foot b{color:var(--tx)}
+  .disc{margin-top:10px;font-size:12px;color:var(--dim);font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>AI 电力瓶颈 · 3 龙头决策卡</h1>
+  <p class="sub">买方研究 OS · Live 决策卡(现价 BUY / NO-BUY)· 测试批次:能源/电力层 top-3</p>
+  <p class="sub">数据截止 <b>2026-06-19</b> · 主源优先(10-K/10-Q/电话会/FERC/IRS),已标置信度与缺口</p>
+  <div class="chips">
+    <span class="chip">主线:<b>瓶颈如何挣钱</b></span>
+    <span class="chip">共同 kill-switch:<b>四大厂 capex 斜率</b></span>
+    <span class="chip">方式:<b>fresh-initiation,0 持仓</b></span>
+    <span class="chip">仅分析,<b>不代下单</b></span>
+  </div>
+
+  <nav>
+    <a href="#sum">核心结论</a>
+    <a href="#switch">共同开关</a>
+    <a href="#ceg">① CEG · STARTER</a>
+    <a href="#gev">② GEV · WATCH</a>
+    <a href="#vrt">③ VRT · WATCH</a>
+    <a href="#method">方法 / 缺口</a>
+  </nav>
+
+  <!-- ============ SUMMARY MATRIX ============ -->
+  <h2 id="sum">核心结论:好走的钱已被赚,唯一不对称在被错杀的发电侧</h2>
+  <table class="mx">
+    <thead><tr>
+      <th>标的</th><th>子层</th><th>现价</th><th>距高/距低</th><th>裁决</th><th>信息度</th><th>一句话</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="tk">CEG</span><br><span class="rank">#1 / 3</span></td>
+        <td>核电发电<br>(现金流)</td>
+        <td>$274.06</td>
+        <td><span class="neg">−34%</span> / +14%</td>
+        <td><span class="v starter">STARTER</span></td>
+        <td>76/100</td>
+        <td>唯一有安全边际;最怕的 FERC 开关 2025-12 已 5-0 拆除,−34% 是估值正常化而非论点破裂。</td>
+      </tr>
+      <tr>
+        <td><span class="tk">GEV</span><br><span class="rank">#2 / 3</span></td>
+        <td>设备/电网<br>(toll booth)</td>
+        <td>$1,109.73</td>
+        <td><span class="neg">−6%</span> / +132%</td>
+        <td><span class="v watch">WATCH</span></td>
+        <td>78/100</td>
+        <td>最好的生意、错的价格。~46–51× 清洗后 fwd-EBITDA,贴 ATH;sub-~$950 再说。</td>
+      </tr>
+      <tr>
+        <td><span class="tk">VRT</span><br><span class="rank">#3 / 3</span></td>
+        <td>下游配套<br>(高 beta)</td>
+        <td>$333.05</td>
+        <td><span class="neg">−12%</span> / +203%</td>
+        <td><span class="v watch">WATCH</span></td>
+        <td>72/100</td>
+        <td>动能最强但 Q1 起停披露 orders/book-to-bill,最高 beta、无地板、~48× priced for perfection。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="panel key" style="margin-top:18px">
+    <h3>三句话把这批讲完</h3>
+    <ul>
+      <li><b>需求腿都没断。</b>三家共同的总开关——四大厂 2026 capex ≈ <b>$725B、+77% YoY、仍在加速</b>(AMZN $200B / MSFT ~$190B / GOOGL ~$185B / META $115–135B)。"AI 缺电"论没有走弱。</li>
+      <li><b>设备(GEV)和下游(VRT)已被买到 priced-for-perfection。</b>GEV −6% 离 ATH、VRT 一年 +203%,两者容错极薄,把"toll booth 永久化 + 2028 利润目标达成"都计入了价格。这就是你那句"好走的钱已经被赚了"。</li>
+      <li><b>只有发电侧 CEG 给了安全边际。</b>且它<b>最怕的 FERC「behind-the-meter 并网」开关 2025-12 已判 favorable</b>(5-0),Crane 本就是 front-of-the-meter;PTC 在 OBBBA 完整存活。被错杀的发电侧,是这批里唯一的不对称。</li>
+    </ul>
+    <p style="margin:12px 0 0;font-size:13px;color:var(--mut)">
+      对"瓶颈如何挣钱"的回答:<b style="color:var(--tx)">耐久租金是真的,但现在能下注的不是"贵但优秀的卖铲子",而是"被估值正常化错杀、且最大尾部风险已拆"的发电侧。</b>
+    </p>
+  </div>
+
+  <!-- ============ SHARED SWITCH ============ -->
+  <h2 id="switch">共同开关:四大厂 capex 斜率(三家一起盯的唯一指标)</h2>
+  <div class="panel switch">
+    <div class="switchgrid">
+      <div class="cap"><div class="big">~$725B</div><div class="lab">2026E 四大厂 capex</div></div>
+      <div class="cap"><div class="big" style="color:var(--green)">+77%</div><div class="lab">YoY,仍在加速</div></div>
+      <div style="flex:1;min-width:240px;font-size:13.5px;color:var(--mut)">
+        这是 GEV / CEG / VRT 全栈的相关性风险:capex 一旦在 <b style="color:var(--tx)">2027 见顶/消化</b>,三个瓶颈同时泄气。目前斜率向上 → 三家需求侧 kill 都<b style="color:var(--green)">未触发</b>。
+        暴露度排序:<b style="color:var(--tx)">VRT(最高,无地板)&gt; GEV(设备,有 services 年金缓冲)&gt; CEG(有 PPA + PTC 地板)</b>。
+        盯每季四大厂 capex 指引的<b style="color:var(--tx)">斜率</b>,不是绝对值。
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CEG CARD ============ -->
+  <div class="card lead" id="ceg">
+    <div class="chead">
+      <div class="l">
+        <div class="tk">CEG · Constellation Energy</div>
+        <div class="layer">核电/发电 龙头 · 最大美国核电运营商 + Calpine(2026-01 closed)</div>
+      </div>
+      <div class="r">
+        <div class="px">$274.06</div>
+        <div class="pxsub">52wk 241–413 · <span class="neg">−34%</span> off high</div>
+        <div style="margin-top:6px"><span class="v starter">STARTER</span> <span class="rank">· info 76/100 · #1</span></div>
+      </div>
+    </div>
+    <div class="cbody">
+      <div class="sec">
+        <h4>LEAD:稀缺租金 durable,还是已 priced + FERC 人质?</h4>
+        <p class="answer"><b>租金 durable 且真实,且 NOT 主要被 FERC 挟持。</b>CEG 拥有物理稀缺资产——存量无碳基荷电,<b>新建几乎不可能</b>(美国一代人没有按时按预算投产的大反应堆;批建 10–15 年)。两个最吓人的 kill 已实证拆除:FERC 5-0 判 favorable + Crane 是 front-of-meter;§45U PTC 在 OBBBA 完整存活。剩下的是<b>执行风险</b>(Calpine 去杠杆 3.8x→2.0x)+ Crane 上行已锁给 MSFT,所以股价 re-rate 现在取决于拿下<b>下一笔</b> AI PPA。</p>
+      </div>
+      <div class="fa">
+        <div class="for"><div class="t">FOR · 耐久</div>FERC 并网风险已拆(5-0)· §45U ~$25/MWh 地板到 2032 · 需求加速 +77% · ~95% 核电容量因子、近零边际成本</div>
+        <div class="against"><div class="t">AGAINST · 上限</div>溢价部分已在 >35x 高点计入 · Crane 上行已锁 MSFT(自我封顶)· Calpine 杠杆 3.8x + 无碳占比 90%→58% · 并网队列升级要到 ~2030</div>
+      </div>
+      <div class="sec">
+        <h4>估值 · ~24× fwd P/E(对 peers 16–18x 溢价,但从 >35x 压缩)</h4>
+        <div class="track">
+          <div class="band bear" style="left:4%;width:13%">Bear 200–230</div>
+          <div class="band base" style="left:46%;width:16%">Base 300–340</div>
+          <div class="band bull" style="left:87%;width:13%">Bull 400+</div>
+          <div class="now" style="left:35%"><span>现价 $274</span></div>
+        </div>
+        <div class="vlabels"><span>$190</span><span>$430</span></div>
+        <div class="vmeta">不对称 ≈ −20% bear / +20–25% base / +50% bull · Street 目标 $300–390(中位 ~$370)· 三家里风险回报最佳。</div>
+      </div>
+      <div class="sec">
+        <h4>IC 五灵魂</h4>
+        <div class="ic">
+          <div class="row"><div class="who">Buffett<small>值得拥有?</small></div><div><span class="yes">✓ 是</span> — 不可新建的无碳基荷,toll 型长寿资产(BHE 真会买的那类),护城河又宽又真。</div></div>
+          <div class="row"><div class="who">Greenblatt<small>价格合理?</small></div><div><span class="mid">~公允非便宜</span> — 24x fwd/~4% 收益率,PTC 地板是罕见的法定下行兜底;−34% 回撤恢复了相对自身的安全边际。</div></div>
+          <div class="row"><div class="who">Marks<small>已 priced?付了风险?</small></div><div><span class="yes">✓ 更被付钱</span> — 共识计入"AI 溢价正常化",变量观点:最怕的 FERC 已拆 + capex 加速 → 租金比价格暗示的更稳。比 GEV/VRT 更被付风险。</div></div>
+          <div class="row"><div class="who">Munger<small>在骗自己什么?</small></div><div><span class="mid">两个诚实检查</span> — (1) 别把"−34%=便宜"当真,大半是 >35x 泡沫退潮;(2) 真活着的风险是 Calpine 执行,不是护城河;Crane 已封顶,论点押在看不见的下一笔 PPA 价格。</div></div>
+          <div class="row"><div class="who">Lynch<small>现实增长证据?</small></div><div><span class="yes">✓ 有形</span> — Crane 2027 重启在轨、Meta/Clinton、~$5B 资产出售已签、需求可见且复利。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>Kill 计分卡(5 个预登记)</h4>
+        <div class="kills">
+          <div class="kill"><span class="badge b-def">已拆</span><div>(a) FERC 阻断并网 → 2025-12 5-0 favorable;Crane 本就 front-of-meter。</div></div>
+          <div class="kill"><span class="badge b-yel">有地板</span><div>(b) 电价跌向 PTC 地板 → ~$25/MWh 到 2032 兜底;2027 开口核电定价 ~$34/MWh。</div></div>
+          <div class="kill"><span class="badge b-yel">部分触发</span><div>(c) Calpine 摊薄/高杠杆/再碳化 → 无碳 90%→58%、杠杆→3.8x;靠增厚+去杠杆缓解,尚未 de-risk。</div></div>
+          <div class="kill"><span class="badge b-def">未触发</span><div>(d) PTC 被废 → OBBBA 完整存活。</div></div>
+          <div class="kill"><span class="badge b-acc">加速</span><div>(e) 共同开关:四大厂 capex 斜率 → +77%,需求腿在加强。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>下注 & 监控</h4>
+        <p class="answer"><b>现在起 STARTER 仓</b>,在(a)确认新的 hyperscaler PPA 或(b)回到 $230–250 时加到满仓。质量-公允价 + 最大尾部已剪,按 starter 而非梭哈来 size。</p>
+        <ol class="mon">
+          <li><b>新 hyperscaler PPA 公布并定价</b> → 主升级催化(UPGRADE)。</li>
+          <li>Calpine 去杠杆/资产出售落后于计划 → 执行 kill(TRIM)。</li>
+          <li>PJM 合规中 FERC 并网定义被判不利 → 重开 kill(a)。</li>
+          <li>四大厂 2027 capex 指引减速 → 共同开关(三家同步 DOWNGRADE)。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GEV CARD ============ -->
+  <div class="card" id="gev">
+    <div class="chead">
+      <div class="l">
+        <div class="tk">GEV · GE Vernova</div>
+        <div class="layer">电网/设备/燃机 龙头 · 2024-04 从 GE 分拆(非国企,无主权兜底)</div>
+      </div>
+      <div class="r">
+        <div class="px">$1,109.73</div>
+        <div class="pxsub">52wk 479–1,182 · <span class="neg">−6%</span> off ATH</div>
+        <div style="margin-top:6px"><span class="v watch">WATCH</span> <span class="rank">· info 78/100 · #2</span></div>
+      </div>
+    </div>
+    <div class="cbody">
+      <div class="sec">
+        <h4>LEAD:耐久 toll booth,还是周期订单潮?</h4>
+        <p class="answer"><b>GEV 确实拥有正在生效的电气化物理瓶颈、并在像 owner 一样定价——但"耐久租金"只在 services 年金被证实;设备定价溢价是被市场当作永久来资本化的周期高点。</b>燃机槽位<b>卖到 2029 满</b>、2026 订单<b>+10–20% 提价</b>、客户<b>预付定金</b>($5.6B 合同负债流入)占坑——教科书级瓶颈-owner 行为;$87B services RPO(占 backlog 54%)是 ~7,000 台装机上的黏性年金。但订单潮是单一垂直拉动,2 年+ 交期意味着今天的订单要靠需求热到 2028–30;Wind 亏损在<b>扩大</b>。</p>
+      </div>
+      <div class="fa">
+        <div class="for"><div class="t">FOR · 耐久</div>三寡头 ~⅔ 份额、新进入几乎不可能 · 槽位售罄至 2029、客户预付占坑 · +10–20% 提价(定价权实锤)· $87B services 年金黏性</div>
+        <div class="against"><div class="t">AGAINST · 周期</div>订单是单一垂直需求拉动 · 投资者在为 2028–30 才落地的现金流付今天的价 · Wind 结构性拖累(Q1 −$382M vs −$146M)· 估值已 front-run 基本面</div>
+      </div>
+      <div class="sec">
+        <h4>估值 · ⚠️ screener 失真(一次性 $2.9B 税务 + $4.3B Prolec/Proficy)</h4>
+        <div class="track">
+          <div class="band bear" style="left:2%;width:12%">Bear 600–700</div>
+          <div class="band base" style="left:54%;width:15%">Base ~flat</div>
+          <div class="band bull" style="left:94%;width:6%">Bull 1400+</div>
+          <div class="now" style="left:61%"><span>现价 $1,110</span></div>
+        </div>
+        <div class="vlabels"><span>$580</span><span>$1,450</span></div>
+        <div class="vmeta">清洗后 <b>EV/fwd-EBITDA ~46–51×</b>(对 Siemens Energy ~39x 溢价)· Bear −40% / Base 2–3 年走平 / Bull +26%。贴 ATH,安全边际薄、capex 一消化就吃满下行。</div>
+      </div>
+      <div class="sec">
+        <h4>IC 五灵魂</h4>
+        <div class="ic">
+          <div class="row"><div class="who">Buffett<small>值得拥有?</small></div><div><span class="yes">✓ 生意是</span> — 寡头 + services 年金 + 已证明的定价权,工业里最好的护城河之一。但"好生意要好价格"——价格不对。</div></div>
+          <div class="row"><div class="who">Greenblatt<small>价格合理?</small></div><div><span class="no">✗ 否</span> — ~46–51x 清洗 fwd-EBITDA、对 Siemens 溢价、无安全边际。好公司 ≠ 任意价格的好投资。</div></div>
+          <div class="row"><div class="who">Marks<small>已 priced?付了风险?</small></div><div><span class="no">✗ 没被付</span> — 市场已计入"toll booth 永久 + 2028 目标达成",没为周期/Wind/2027 消化风险付你钱。"everyone knows it" → 已在价里。</div></div>
+          <div class="row"><div class="who">Munger<small>在骗自己什么?</small></div><div><span class="mid">把设备定价峰当永久租金</span> — 它是周期高点。Wind 是真实且扩大的拖累;$10B capex 扩产可能压 ROIC。别把生意质量等同于此价位的入场智慧。</div></div>
+          <div class="row"><div class="who">Lynch<small>现实增长证据?</small></div><div><span class="mid">强但已付费</span> — 槽位售罄、提价、预付定金都有形,但增长已经被价格吃掉。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>Kill 计分卡</h4>
+        <div class="kills">
+          <div class="kill"><span class="badge b-grn">未触发</span><div>(a) 燃机槽位定价回落/取消 → 反向:+10–20% 提价、客户预付;盯 reservation→firm 转化。</div></div>
+          <div class="kill"><span class="badge b-yel">轻度触发</span><div>(b) Wind 亏损扩大 → Q1 −$382M vs −$146M(关税驱动);若 FY 超 ~$400M 指引则升级。</div></div>
+          <div class="kill"><span class="badge b-yel">待观察</span><div>(c) 扩产 capex 压 ROIC → 暂不可见;盯 24 GW/yr 产能 2027–28 落地。</div></div>
+          <div class="kill"><span class="badge b-acc">加速</span><div>(d) 共同开关:四大厂 capex → +77% 支撑;2027 消化是首要论点-killer。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>下注 & 监控</h4>
+        <p class="answer"><b>WATCH,$1,110 不建仓。</b>STARTER 触发:回到 <b>~$950</b>(≈25x 正常化),或 2029–30 槽位 reservation 转 firm orders(证明耐久而非订单峰)。值得溢价的是 services 年金,别为周期设备峰付永久租金的倍数。</p>
+        <ol class="mon">
+          <li><b>回撤至 ~$950</b> → STARTER 触发。</li>
+          <li>2029–30 槽位 reservation→firm 转化 → 耐久确认(UPGRADE)。</li>
+          <li>Wind FY 亏损 &gt; ~$400M 指引/继续扩大 → 升级 kill(b)。</li>
+          <li>四大厂 2027 capex 指引减速 → 首要论点-killer(DOWNGRADE)。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VRT CARD ============ -->
+  <div class="card" id="vrt">
+    <div class="chead">
+      <div class="l">
+        <div class="tk">VRT · Vertiv Holdings</div>
+        <div class="layer">数据中心供电+液冷 龙头 · NVIDIA GB200 NVL72 参考设计共建者</div>
+      </div>
+      <div class="r">
+        <div class="px">$333.05</div>
+        <div class="pxsub">52wk 110–380 · <span class="pos">+203%</span> off low</div>
+        <div style="margin-top:6px"><span class="v watch">WATCH</span> <span class="rank">· info 72/100 · #3</span></div>
+      </div>
+    </div>
+    <div class="cbody">
+      <div class="sec">
+        <h4>LEAD:抢份额的耐久 toll booth,还是高 beta capex 周期?</h4>
+        <p class="answer"><b>两者都真,谁主导完全取决于 hyperscaler capex 斜率。VRT 拥有"集成"瓶颈,但供货进入"组件"瓶颈——一个真实却随周期裸奔(无缓冲)的护城河。</b>机架密度上升是机械性的(GB200 NVL72 ~132kW;>50kW 风冷失效)→ 液冷从可选变<b>强制</b>、VRT 单机架美元含量<b>step up</b>;它<b>共著 NVIDIA 参考设计</b>(最接近标准)、向 <b>800V DC</b> 延伸;液冷份额 #1(~11.3%)。但<b>无 PTC 地板、无 take-or-pay</b>,$15B backlog 12–18 月转化且可取消;~75% 系四大厂可选 capex 下游(篮子里最高 beta)。</p>
+      </div>
+      <div class="fa">
+        <div class="for"><div class="t">FOR · 抢份额含量</div>液冷强制化、单机架含量 step up · 共著 NVIDIA 参考设计 + 800V DC 前瞻设计胜 · #1 份额 · $15B backlog 可见度到 2027</div>
+        <div class="against"><div class="t">AGAINST · 高 beta 无地板</div>无地板/无 take-or-pay,backlog 可取消 · ~75% 系四大厂可选 capex 下游 · EMEA Q1 organic −29%(非免疫)· 组件层(cold plate/CDU)在商品化</div>
+      </div>
+      <div class="sec">
+        <h4>估值 · ~48–49× fwd P/E(priced for perfection)</h4>
+        <div class="track">
+          <div class="band bear" style="left:3%;width:18%">Bear 170–230</div>
+          <div class="band base" style="left:53%;width:12%">Base 340–380</div>
+          <div class="band bull" style="left:79%;width:15%">Bull 430–480</div>
+          <div class="now" style="left:51%"><span>现价 $333</span></div>
+        </div>
+        <div class="vlabels"><span>$160</span><span>$500</span></div>
+        <div class="vmeta">EV/EBITDA ~54x · 牛市已在价里 · Street 中位 ~$377(仅 +13%)· 无地板 → bear 有真实下行(一年前低点 $110)。</div>
+      </div>
+      <div class="sec">
+        <h4>IC 五灵魂</h4>
+        <div class="ic">
+          <div class="row"><div class="who">Buffett<small>值得拥有?</small></div><div><span class="mid">好生意但更脆</span> — 真实集成护城河,但无年金、无地板、最高 beta;更像高质量周期供应商而非堡垒。</div></div>
+          <div class="row"><div class="who">Greenblatt<small>价格合理?</small></div><div><span class="no">✗ 否</span> — ~48x fwd、无安全边际,+203% off low 后仅 +13% 到 Street 目标。</div></div>
+          <div class="row"><div class="who">Marks<small>已 priced?付了风险?</small></div><div><span class="no">✗ 没被付</span> — 牛市已在价里,没为 capex 周期风险付你钱;且市场还没充分计入<b>透明度恶化</b>(backlog 变黑)。</div></div>
+          <div class="row"><div class="who">Munger<small>在骗自己什么?</small></div><div><span class="no">最强的需求计——季度 book-to-bill——在 +252% 爆量后于 Q1'26 被撤下。</span>这是不能挥手带过的黄旗。反向:最高 beta + 无地板 + 失去需求信号 = bear($170–230)真实存在。别让"利润超预期"盖过"看不见订单了"。</div></div>
+          <div class="row"><div class="who">Lynch<small>现实增长证据?</small></div><div><span class="mid">真且超预期</span> — 利润、$15B backlog、NVIDIA 设计胜——但最干净的前瞻信号恰恰是被移除的那个。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>Kill 计分卡</h4>
+        <div class="kills">
+          <div class="kill"><span class="badge b-yel">无法验证·黄</span><div>(a) book-to-bill/orders &lt;1.0 超 1 季 → Q1'26 数字<b>被撤</b>;爆量 Q4 后的"backlog 沉默"本身是软负面。最该盯的一项。</div></div>
+          <div class="kill"><span class="badge b-grn">绿·观察</span><div>(b) 液冷商品化/DTC-ODM 绕过 → VRT 守在系统/设计层、仍在抢份额;组件层可竞争。</div></div>
+          <div class="kill"><span class="badge b-grn">绿</span><div>(c) 利润目标落空 → 反向超额(FY26 22.8–23.8% vs 2030 目标 27%)。</div></div>
+          <div class="kill"><span class="badge b-acc">绿·当下</span><div>(d) 共同开关:四大厂 capex → +62–77% 支撑,但 VRT <b>暴露最大、无地板</b>,2027 air-pocket 它最先最重。</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <h4>下注 & 监控</h4>
+        <p class="answer"><b>WATCH,$333 不建仓。</b>框架按信息度 72 封顶 STARTER,但<b>被撤的 orders/book-to-bill</b> + 满估值把可执行 lean 拉到 WATCH。重新 re-rate 到 STARTER 需:(a) 干净重新披露 B2B ≥1.0,或(b) 回撤恢复安全边际。三家里 2027 capex air-pocket 暴露最大的一个。</p>
+        <ol class="mon">
+          <li><b>Q2'26 是否重新披露 orders/book-to-bill?</b> ≥1.0 且透明 → STARTER;继续沉默 → 观望。</li>
+          <li>四大厂 2027 capex 指引减速 → 它<b>最先最重</b>(DOWNGRADE)。</li>
+          <li>EMEA/区域 organic 持续转负 → 需求广度裂缝。</li>
+          <li>回撤至 ~$230–250 → 重新承保 STARTER。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ METHOD ============ -->
+  <h2 id="method">方法 / 信息度 / 缺口</h2>
+  <div class="panel">
+    <p style="margin:0 0 10px;font-size:13.5px">
+      走的是买方研究 OS 的 live 决策卡:证据层(主源:10-K/10-Q/电话会/FERC 令/IRS 法规)→ bottleneck/估值/inversion 模块 → IC 五灵魂 → 决策。
+      <b>verdict 上限 = 信息完整度</b>(&lt;40 INFO-GAP / 40–60 WATCH / 60–80 STARTER / &gt;80 CORE)。三家落在 72–78 → 上限 STARTER;CEG 凭"最大尾部已拆 + 安全边际"取 STARTER,GEV/VRT 凭价格/透明度降到 WATCH。
+    </p>
+    <p style="margin:0 0 6px;font-size:13px;color:var(--mut)"><b style="color:var(--tx)">封顶各家裁决的关键缺口:</b></p>
+    <ul style="margin:0;padding-left:18px;font-size:13px;color:var(--mut)">
+      <li><b style="color:var(--tx)">CEG</b> — Microsoft PPA 定价未披露(无法精算 Crane 经济性);post-Calpine 净债/EBITDA 待 Q1 10-Q;无确认的<b>新</b> PPA(最大 re-rate 催化)。</li>
+      <li><b style="color:var(--tx)">GEV</b> — reservation 费/取消条款未披露;清洗 advance-payment 后的正常化 FCF 桥未建。</li>
+      <li><b style="color:var(--tx)">VRT</b> — Q1'26 orders/book-to-bill/backlog 被撤(唯一绑定缺口);补上即可向 CORE-eligible 重估。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <p><b>落盘清单</b>(全路径在 <code>D:\work\investment\financial-analysis-lab\companies\</code>):
+    每家 <code>{ceg,gev,vrt}\step0_plan.md</code> · <code>facts.md</code> · <code>memo-v1.md</code>;本页 <code>ai_electricity_bottleneck_decision_cards.html</code>。</p>
+    <p class="disc">仅研究分析,非投资建议;不代为下单/交易。数据截止 2026-06-19,含我知识库(至 2026-01)之外的 agent 实时抓取,已按主源+置信度标注;时效性数字(估值/最新签单/监管进展)以原始 filing 为准。</p>
+  </div>
+
+</div>
+</body>
+</html>

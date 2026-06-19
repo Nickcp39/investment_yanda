@@ -1,0 +1,7 @@
+scenario,eps_basis_usd,forward_pe_x,implied_price_usd,vs_current_333,annualized_note,key_drivers
+Bear,6.50,28,182,-45%,"de-rate with no floor","2027 hyperscaler capex digestion + book-to-bill confirmed <1.0; de-rate to 25-30x on flat EPS (~$6-7); no PTC/take-or-pay floor; recall $110 52-wk low one year ago"
+Base,6.35,46,292,-12%,"flat-to-modest","in-line FY26 execution ($6.30-6.40 guide), multiple holds ~45-48x; orders/B2B re-disclosed ~1.0+ and stable; range $340-380 if FY27 EPS grows into the held multiple"
+Bull,7.20,50,360,+8%,"+8% on near-term EPS; $430-480 on FY27E","FY26 beaten, 2030 27%-margin path validated, backlog re-accelerates, ~50x FY27E EPS; full bull $430-480 capitalizes FY27 earnings"
+current,6.35,52.4,333,0%,"priced for perfection","at $333: mkt cap ~$128B, EV ~$128B (net cash); fwd P/E ~48-49x on FY26E $6.35 (here shown on as-reported basis ~52x); EV/EBITDA ~54x; P/FCF ~56x; PEG ~1.5; -12% off $380 high, +203% off $110 low"
+street,n/a,n/a,377,+13%,"consensus mean","Strong Buy ~27 analysts, mean ~$377-378 (~+13%), high $500 -- much of the bull case is consensus, not edge"
+notes,,,,,,"Engine = EPS x forward P/E (VRT is FCF-positive; multiple is the swing variable). implied_price = eps_basis * forward_pe. Bear/base use near-term EPS; bull range $430-480 capitalizes FY27E. Multiples per S6 (needs_audit). EPS guide per S1 (C014); 2030 targets per S4 (C015). BINDING GAP: book-to-bill/orders withheld Q1'26 (C012) -- gates which branch is live; until Q2'26 re-discloses, bear cannot be ruled out nor bull confirmed."

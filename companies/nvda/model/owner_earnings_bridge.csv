@@ -1,0 +1,10 @@
+line,value_usd_m,as_of,source,note
+GAAP_net_income_Q1FY27,58321,2026-04-26,S001,"includes non-operating marketable-equity-security gains"
+less_equity_security_and_nonop_gains_est,-12000,2026-04-26,E1_estimate,"approx; GAAP net income > operating income by ~4.8B + tax/other; equity position grew 12.9B->30.2B. Estimate to strip non-operating. MARK ESTIMATE"
+operating_net_income_proxy_nonGAAP,45600,2026-04-26,S001,"non-GAAP diluted EPS 1.87 x 24,391 diluted shares ~= 45.6B"
+capex_Q1,1757,2026-04-26,S002,asset-light
+maintenance_capex_est,-1000,2026-04-26,E1_estimate,"most capex is growth/office; maintenance small. ESTIMATE"
+owner_earnings_quarterly_proxy,45600,2026-04-26,derived,"~= non-GAAP net income; FCF 48.55B corroborates (FCF slightly higher due to SBC add-back/WC)"
+owner_earnings_annualized_run_rate,182000,2026-04-26,derived,"45.6B x 4; conservative vs FCF run-rate ~194B; use 180-185B band"
+FY26_FCF,96600,2026-01-25,S004,B1 approx
+note,,, ,"owner earnings ~= FCF ~= non-GAAP net income because capex is tiny and R&D is expensed. Strip equity-security gains from GAAP. Key uncertainty = SUSTAINABILITY of the run-rate, not the bridge."

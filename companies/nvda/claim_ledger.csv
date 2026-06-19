@@ -1,0 +1,44 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,reliability_note
+S001,Q1 FY27 total revenue (quarter ended 2026-04-26) record,81615,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,"up 20% Q/Q, up 85% Y/Y"
+S001,Q1 FY27 Data Center revenue record,75246,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,"up 92% Y/Y (PR says 75.2B)"
+S002,Q1 FY27 DC Compute revenue,60400,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"record, +77% Y/Y +18% Q/Q (prior sub-market view)"
+S002,Q1 FY27 DC Networking revenue,14800,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"record, +199% Y/Y +35% Q/Q"
+S002,Q1 FY27 Compute & Networking segment,74550,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"+88% Y/Y"
+S002,Q1 FY27 Graphics segment,7065,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"+58% Y/Y"
+S001,Q1 FY27 GAAP gross margin,74.9,percent,2026-04-26,2026-06-19,A1,EVIDENCE,non-GAAP 75.0%
+S001,Q1 FY27 GAAP operating income,53536,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,"+147% Y/Y +21% Q/Q"
+S001,Q1 FY27 GAAP net income,58321,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,"+211% Y/Y; INCLUDES marketable-equity-security gains (non-operating); not all operating"
+S001,Q1 FY27 GAAP diluted EPS,2.39,USD,2026-04-26,2026-06-19,A1,EVIDENCE,non-GAAP diluted EPS 1.87
+S001,Q1 FY27 diluted weighted shares,24391,millions,2026-04-26,2026-06-19,A1,EVIDENCE,basic 24286
+S002,Q1 FY27 operating cash flow,50344,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"up from 27.4B Y/Y, 36.2B Q/Q"
+S002,Q1 FY27 capex (PP&E + intangibles purchases),1757,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,asset-light vs OCF
+S002,Q1 FY27 free cash flow,48554,USD_millions,2026-04-26,2026-06-19,A2,EVIDENCE,"FCF/OCF ~96%"
+S001,Q1 FY27 cash + cash equivalents,13237,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,balance sheet
+S001,Q1 FY27 marketable debt securities,37098,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,
+S001,Q1 FY27 marketable equity securities,30237,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,"up from 12.9B; source of GAAP net-income gains"
+S001,Q1 FY27 inventories,25797,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,up from 21.4B
+S001,Q1 FY27 total debt (ST+LT),8470,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,ST 1000 + LT 7470
+S001,Q1 FY27 shareholders equity,195474,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,
+S001,Q1 FY27 total assets,259474,USD_millions,2026-04-26,2026-06-19,A1,EVIDENCE,
+S001,Q2 FY27 revenue guidance,91000,USD_millions,2026-07,2026-06-19,A1,EVIDENCE,"+/-2%; EXCLUDES any China DC compute revenue"
+S001,Q2 FY27 GAAP gross margin guide,74.9,percent,2026-07,2026-06-19,A1,EVIDENCE,non-GAAP 75.0% +/-50bps
+S002,Q1 FY27 Hopper shipments to China,0,USD,2026-04-26,2026-06-19,A2,EVIDENCE,"vs 4.6B in Q1 FY26; China DC compute zeroed in guide"
+S001,New share repurchase authorization (approved 2026-05-18),80000,USD_millions,2026-05-18,2026-06-19,A1,EVIDENCE,additional
+S001,Quarterly dividend raised to,0.25,USD_per_share,2026-05-18,2026-06-19,A1,EVIDENCE,from 0.01
+S004,FY26 total revenue (year ended 2026-01-25),215938,USD_millions,2026-01-25,2026-06-19,A1,EVIDENCE,"+65% Y/Y"
+S004,FY26 GAAP net income,120067,USD_millions,2026-01-25,2026-06-19,A1,EVIDENCE,
+S004,FY26 GAAP operating income,130387,USD_millions,2026-01-25,2026-06-19,A1,EVIDENCE,
+S004,FY26 GAAP gross margin,71.1,percent,2026-01-25,2026-06-19,A1,EVIDENCE,non-GAAP 71.3%
+S004,FY26 GAAP diluted EPS,4.90,USD,2026-01-25,2026-06-19,A1,EVIDENCE,non-GAAP 4.77
+S004,FY26 operating cash flow,102700,USD_millions,2026-01-25,2026-06-19,B1,EVIDENCE,approx; verify in 10-K
+S004,FY26 free cash flow,96600,USD_millions,2026-01-25,2026-06-19,B1,EVIDENCE,approx; verify in 10-K
+S003,FY26 capital expenditures,6100,USD_millions,2026-01-25,2026-06-19,A1,EVIDENCE,"vs 3.4B FY25"
+S003,FY26 capital returned to shareholders,41100,USD_millions,2026-01-25,2026-06-19,A1,EVIDENCE,"buyback + 974M dividends; 58.5B remaining auth"
+S006,NVDA close 2026-06-18 (last <= as_of),145.48,USD,2026-06-18,2026-06-19,B1,EVIDENCE,Yahoo chart daily series
+S006,NVDA 52-week high,236.54,USD,2026-06-19,2026-06-19,B1,EVIDENCE,
+S006,NVDA 52-week low,142.03,USD,2026-06-19,2026-06-19,B1,EVIDENCE,price near 52wk low
+S007,FY25 revenue (year ended 2025-01-26),130497,USD_millions,2025-01-26,2026-06-19,B2,EVIDENCE,"per stockanalysis labelled FY24; official FY25"
+S007,FY24 revenue (year ended 2024-01-28),60922,USD_millions,2024-01-28,2026-06-19,B2,EVIDENCE,official FY24
+S007,FY23 revenue (year ended 2023-01-29),26974,USD_millions,2023-01-29,2026-06-19,B2,EVIDENCE,official FY23 flat-ish
+S008,FY17-FY21 early revenue series,NA,USD_millions,various,2026-06-19,B2,OPEN_QUESTION,"fiscal-year labels conflict across secondary sources; not used for buy thesis"
+S009,Jensen Huang founder/CEO + board governance,NA,NA,2026-06-19,2026-06-19,OPEN,OPEN_QUESTION,"proxy not re-fetched this run; one-share-one-vote prior; details OPEN"

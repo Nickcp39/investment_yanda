@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSFT 决策简报 v1 · as_of 2026-06-19</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#16331c,#1a1d24);border-color:#2c5a35}
+  .verdict .val{color:var(--grn)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Microsoft (MSFT) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-06-19 · pipeline lean-6module-v1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65%)</b> · 来源 SEC EDGAR XBRL + 官方 IR + Yahoo chart API</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">STARTER</div><div class="sub" style="margin:0">初始 4% · 上限暂封 9%</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">exceptional</div></div>
+    <div class="card"><div class="lbl">Price (06-18 close)</div><div class="val">$379.40</div><div class="sub" style="margin:0">市值 ~$2.82T</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $555</div><div class="val neg">−32%</div><div class="sub" style="margin:0">capex 恐慌已 de-rate</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>微软是 exceptional 的企业 IT 复利机(M365 + Azure + AI),营业利润率 45.6%、净现金 ~$47B、Commercial RPO <b>$627B(+99%)</b>。市场因 FY26 ~$190B capex 指引恐慌,把股价从 $555 打到 $379(−32%),<b>把价格送进有正安全边际的区间</b>(base 公允价 ~$436 &gt; 现价)。</p>
+    <p><b>与 GOOGL(同批,五票 WATCH)镜像对照:</b>同 AI-capex 因子,但 MSFT 在<b>价格/安全边际 + 资产负债表(净现金 vs 净发债)+ 治理(一股一票 vs 创始人控制)</b>三方面都更优 → STARTER 而非 WATCH。<b>唯一封顶 STARTER、堵 CORE 的不是价格,是研究完整度(~65%)</b>。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>财务一手齐全;3 缺口封完整度 ~65%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>Azure +40% 重新加速、RPO $627B 需求确认</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num pos">+2</td><td>多重硬护城河 + 5/5 operator + 一股一票纠错杠杆</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num pos">+1</td><td>45.6% 利润率、净现金;capex 警告(capex/OCF ~57%)</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num warn">−1</td><td>无硬 veto;capex ROI + OpenAI 黑箱 = haircut;bear breakeven</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num pos">+1</td><td>$379 有正 MOS;base IRR +9.5%/bull +15.2%</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">TTM 收益率</div><div class="val">4.44%</div><div class="sub" style="margin:0">GOOGL 1.45%</div></div>
+    <div class="card"><div class="lbl">P/E (TTM)</div><div class="val">22.5×</div></div>
+    <div class="card"><div class="lbl">base 10y IRR</div><div class="val pos">+9.5%</div></div>
+    <div class="card"><div class="lbl">capex/OCF (TTM)</div><div class="val warn">~57%</div><div class="sub" style="margin:0">GOOGL ~78%</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据 (Q3 FY26, 2026-03-31)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>总营收</td><td class="num">$82.9B (+18%)</td><td>官方 IR</td></tr>
+      <tr><td>营业利润 / 净利</td><td class="num">$38.4B / $31.8B</td><td>官方 IR</td></tr>
+      <tr><td>Azure 增速</td><td class="num pos">+40% (+39% cc)</td><td>官方 IR</td></tr>
+      <tr><td>Microsoft Cloud</td><td class="num">$54.5B (+29%)</td><td>官方 IR</td></tr>
+      <tr><td>Commercial RPO</td><td class="num pos">$627B (+99%)</td><td>官方 IR</td></tr>
+      <tr><td>AI 业务 run-rate</td><td class="num pos">&gt;$37B (+123%)</td><td>官方 IR</td></tr>
+      <tr><td>净现金</td><td class="num">~$47B</td><td>XBRL 10-Q</td></tr>
+      <tr><td>FY26 capex 指引</td><td class="num warn">~$190B (含租赁)</td><td>电话会 (OPEN)</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">IRR</th><th class="num">价位</th><th class="num">vs $379</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">8%</td><td class="num">~$436</td><td class="num">+15%</td></tr>
+      <tr><td><b>STARTER(现价区)</b></td><td class="num">~10%</td><td class="num">~$363–379</td><td class="num">0</td></tr>
+      <tr><td>Add / 评 CORE</td><td class="num">12%</td><td class="num">~$303</td><td class="num">−20%</td></tr>
+      <tr><td>deep value</td><td class="num">15%</td><td class="num">~$250</td><td class="num">−34%</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 研究完整度(~65%),非价格。</b> 两缺口封 STARTER、堵 CORE:(O3)OpenAI 关系经济学未一手验证——Azure +40% 里的隐藏依赖;(O2)capex 维护/成长拆分 + ROIC 框架缺失,OE 区间 $73–125B。补 O2/O3 + 完整度上 80% = 上修 CORE 唯一路径。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A capex/OCF &gt;70% 连两年 + 无 ROIC</td><td>~57%</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B Azure ≤+25% 连两季</td><td>+40%</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-C OpenAI 经济学恶化</td><td>信息缺口</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-D AI run-rate 塌</td><td>+123%</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-E 买入价 IRR &lt;8% (&gt;$436)</td><td>~10%</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC（段永平主审）</h2>
+    <p>五票一致 <b class="pos">STARTER</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 主审 <b class="pos">STARTER</b>(建议 3–5%,上限暂封 8–10%)。收敛点:<b>价格关明确通过(与 GOOGL 五票 WATCH 镜像相反),完整度 + OpenAI/capex 缺口封住 CORE</b>。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65%,<b>非 COMPLETE</b>。OPEN 项:OpenAI 经济学(O3,重大)、capex 维护/成长拆分(O2)、分部利润率(O4)、FY26 $190B capex transcript 逐字(O1)、8-K 2026-06 内容(O5)。所有载荷性数字回挂 SEC 一手或官方 IR;社媒仅情绪。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>
