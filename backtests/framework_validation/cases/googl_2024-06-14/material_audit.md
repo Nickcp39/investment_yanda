@@ -105,3 +105,99 @@ Additional traps specifically checked ABSENT (operator-file risk): any **2025 "C
 
 - **No decision / verdict / thesis / valuation judgment / position size is present** in any file. `case_control.md` §3 records the decision question but explicitly defers it; `evidence_spine.md` §4 lists open questions **for the future blind Runner** and answers none; `operator_background.md` closes with the explicit "NO decision … deferred to a future blind Runner" guard. Multiples are presented only as **neutral arithmetic** (~29x trailing) with an explicit note to confirm normalization — not as a buy/sell judgment.
 - **The material pack is CLEAN-WITH-NOTES and is test-ready.** The notes are housekeeping (biography-tier provenance already self-flagged; one near-cutoff source re-verified) and require no fix before a future blind Runner pass. A separate **independent** checker run remains advisable per the LOOKAHEAD_CHECKER's "independence is the whole point" note, but this self-audit surfaces no leak.
+
+---
+
+## Independent Checker Pass (2026-06-17)
+
+> Run by an **independent** agent that did NOT collect this pack (per `LOOKAHEAD_CHECKER.md` — "independence is the whole point"). Scope: MATERIALS AUDIT ONLY — confirm as-of integrity and the absence of any decision/outcome; no buy/sell judgment added. The collector's self-audit (sections 0–6 above) was read but re-derived independently, with fresh web verification of the highest-risk and most-recent rows and the GOOGL/GOOG price disambiguation.
+
+### Verdict: **CLEAN**
+
+- As-of date: **2024-06-14**. All six pack files audited (`case_control.md`, `sources_used.csv`, `raw_extracts.md`, `evidence_spine.md`, `operator_background.md`, `material_audit.md`).
+- **0 load-bearing issues.** No post-cutoff fact, no outcome-aware language, no decision/thesis/size in any file. The self-audit's "with-notes" items (biography-tier childhood specifics relayed via paywalled originals; one near-cutoff source) are genuinely non-load-bearing and already correctly self-flagged inside the pack; they do not warrant a "with-notes" downgrade for an integrity gate, so this independent pass returns **CLEAN**. No fixes required.
+- The GOOGL Class A vs GOOG Class C disambiguation was the single highest-leverage thing to get right (the brief's hint was the Class C number), and the pack got it right — see source-date and price-disambiguation rows below.
+
+### A. Source-date check (web-verified the most-recent / highest-risk rows)
+
+| row | self-reported public_date | independent web check | verdict |
+|---|---|---|---|
+| **S005** StatMuse GOOGL as-of close | 2024-06-14 | **Web-VERIFIED**: StatMuse returns "closing price for Alphabet Inc Class A (GOOGL) on June 14, 2024 was **$175.44**" — exact match; nearby closes (June 17 ≈ $177.24) corroborate the rising path into the June-17 dividend date | ✅ ≤ as-of; price-of-record correct |
+| **S021** Ashkenazi-CFO announcement (CNBC) | 2024-06-05 | **Web-VERIFIED**: CNBC "Alphabet taps Eli Lilly's Anat Ashkenazi as new CFO" dated **2024-06-05**; SEC 8-K (d837191dex991) contemporaneous; start date **2024-07-31** was *pre-announced* (a known forward fact as of the as-of) | ✅ ≤ as-of; forward start-date is as-of-known, not a leak |
+| **S022** Ashkenazi corroboration (The CFO) | 2024-06-07 | **Web-VERIFIED**: the-cfo.io article dated **2024-06-07** | ✅ ≤ as-of |
+| S008 Google AI-Overviews blog | 2024-05-30 | consistent with mid-May 2024 US rollout (after I/O 2024-05-14); within window | ✅ ≤ as-of |
+| S001–S004 (Q1'24 8-K / FY23 10-K / FY23 release / proxy) | 2024-01-30 … 2024-04-26 | primary SEC/IR filings; dates inside window, not re-fetched (low risk) | ✅ ≤ as-of |
+| remaining rows S006–S020, S023–S024 | 2019-12-05 … 2024-06-01 | all self-reported ≤ as-of; no row dated after 2024-06-14 | ✅ ≤ as-of |
+
+All 24 rows have `public_date ≤ 2024-06-14`. **No source dated after the as-of.** The two rows closest to the cutoff (S021 06-05, S022 06-07) and the price-of-record (S005) were independently web-confirmed.
+
+**Price disambiguation (the brief's special-attention item):** independently confirmed that **$175.44 is the GOOGL / Class A** June-14-2024 close (StatMuse). The pack uses Class A as its price-of-record and explicitly treats the orchestrator's "~$176.79" hint as the **Class C (GOOG)** / approximate figure, discarding it for the Class-A close (`case_control.md` §2, `raw_extracts.md` §D, `evidence_spine.md` §6). GOOG (Class C) trades a small premium over GOOGL (Class A), consistent with a ~$176-area Class C vs the $175.44 Class A — i.e. the hint is the *other share class*, correctly identified. This is a **correct disambiguation, not a leak**. (The exact Class-C cent could not be pinned via a free historical source, but it is immaterial: the pack does not rely on it.)
+
+### B. Claim traceability (load-bearing claims → allowed source_id)
+
+| load-bearing claim | source_id | traceable? |
+|---|---|---|
+| Q1'24 revenue $80,539M (+15%) / op-income $25,472M / margin 32% (from 25%) / EPS $1.89 | S001 | ✅ |
+| Segment rev & op-income (Search $46,156M / YouTube $8,090M / Cloud $9,574M, $900M op) | S001 | ✅ |
+| OCF $28,848M / capex $12,012M (~+91% YoY) / FCF $16,836M; cash+sec $108,090M; net cash | S001 | ✅ |
+| First-ever $0.20 dividend + $70B buyback; shares 12,381M (A 5,879M/B 867M/C 5,635M) | S001 | ✅ |
+| FY2023 consolidated + segment; Cloud first full-year op profit $1,716M | S002, S003 | ✅ |
+| Share-class/voting: Page+Brin >51% votes on <12% stock; B=10 / A=1 / C=0 votes | S004, S018 | ✅ |
+| As-of close $175.44 (Class A); ~$2.17T market cap | S005, S001 | ✅ (web-verified) |
+| AI Overviews mid-May 2024 rollout + error backlash + Google acknowledgment | S008, S009, S010 | ✅ |
+| DOJ search-antitrust **PENDING** (closing args May 2-3 2024; no ruling) | S011 | ✅ |
+| Operator formation (Pichai/Porat/Page/Brin) + track-record markers (layoff, comp) | S014–S020 | ✅ |
+| CFO succession Porat→Ashkenazi (announced 06-05, effective 07-31) | S021, S022 | ✅ (web-verified) |
+
+No orphan / un-sourced load-bearing claim found.
+
+### C. Outcome-aware language
+
+| scan target | result |
+|---|---|
+| "later" / "subsequently" / "as we now know" / "went on to" / "turned out" | **none found** |
+| "rallied/collapsed to" / any post-as-of price | **none found** — only the as-of $175.44 and pre-as-of reaction-day context ($2T first crossed 2024-04-26) appear |
+| hindsight on AI-Overviews / DOJ / Cloud outcomes | **none** — tensions in `evidence_spine.md` §3–4 are recorded as **unresolved open questions**, never as known outcomes |
+| forward-but-pre-announced language (CFO start 2024-07-31) | present but **legitimate** — publicly disclosed 2024-06-05, so as-of-known; no "Ashkenazi later did X" language anywhere |
+
+Clean. The pack consistently maintains as-of framing.
+
+### D. Post-cutoff fact intrusion (googl_2024-06-14 forbidden registry — each applied one at a time)
+
+| forbidden item (LOOKAHEAD_CHECKER registry row) | present? |
+|---|---|
+| The +111% run to ~$373 / any GOOGL/GOOG price action after 2024-06-14 | **ABSENT** |
+| DOJ search-monopoly **liability ruling** (Judge Mehta, **2024-08-05** — web-confirmed post-as-of) and any remedies phase | **ABSENT** (recorded as PENDING only; ruling correctly excluded) |
+| Q2'24+ results (reported 2024-07-23), FY2024 10-K, later filings | **ABSENT** |
+| Anat Ashkenazi's **actual CFO performance** (her 2024-07-31 start = pre-announced/known = OK; her *results* = forbidden) | **ABSENT** — only the announcement + forward start date appear; no post-start performance |
+| Any 2025 development (2025 "Code Red", Brin "in the office every day" quote, Brin I/O 2025 on-stage, later Gemini/capex/Cloud-margin figures) | **ABSENT** — explicitly excluded in `case_control.md` §6 and `operator_background.md`; only the **July-2023 WSJ** Brin re-engagement and **Dec-2022 "Code Red"** lead are used |
+
+Every registry item is **absent**. The DOJ ruling date (2024-08-05) was independently web-verified to confirm it is genuinely post-as-of and the pack's "PENDING" treatment is correct.
+
+### E. Evidence misuse
+
+| check | result |
+|---|---|
+| KOL / social / video used as core proof | **none** — no Twitter/YouTube/Reddit source anywhere |
+| News/narrative used as lead vs proof (AI-Overviews errors, $2T reaction, DOJ status, "Code Red", TCI letter) | correctly framed as **dated context / leads**, not company-specific outcome proof (`evidence_spine.md` §2 buckets them as framing/sentiment) |
+| Company optimistic framing stated as fact | **no** — Pichai "Gemini era / leadership in AI" and Porat "durably reengineer cost base / margin expansion" are explicitly tagged **management framing** (`raw_extracts.md` §A) |
+| Peer prints (MSFT S012 / Meta S013) | used as **industry context only**, not as proof Alphabet must win |
+| Biography tier (S014–S018) | kept **below EVIDENCE-tier** (character-pattern / tertiary); childhood specifics flagged as paywall-relayed and not elevated; voting mechanics sourced to the **primary proxy** S004 |
+
+No misuse.
+
+### F. Decision absence (material-pack gate)
+
+| check | result |
+|---|---|
+| Buy/sell verdict present | **NO** |
+| `decision_card` present | **NO** |
+| Thesis / valuation judgment / position size present | **NO** — multiples appear only as **neutral arithmetic** (~29x trailing) with an explicit "confirm normalization" caveat |
+| Sealed outcome / scorer file in folder | **NO** (none exists; correct for a material pack) |
+| Decision question | recorded in `case_control.md` §3 and explicitly **deferred** to the future blind Runner; `evidence_spine.md` §4 and `operator_background.md` answer none |
+
+The decision is correctly deferred. No outcome is anywhere in the folder.
+
+### Fixes required
+
+**None.** The pack is materially clean and test-ready for a future blind Runner. (Optional, non-blocking housekeeping: add the `googl_2024-06-14` row — already present in `LOOKAHEAD_CHECKER.md`'s registry — is satisfied; no pack edit needed.)

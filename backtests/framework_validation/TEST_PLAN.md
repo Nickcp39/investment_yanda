@@ -62,7 +62,7 @@ One row per scored case (schema = `WEIGHTING_HARNESS.md` §7):
 
 | # | case | checker | runner | scorer | result |
 |---|---|---|---|---|---|
-| 1 | googl_2024-06-14 | — | — | — | |
+| 1 | googl_2024-06-14 | CLEAN | STARTER 4% / max 12% / HOLD | PASS · size-dist 1 · sound | ✅ WINNER +116% (back-loaded); old WATCH/0% disease fixed |
 | 2 | intc_2021-04-23 | — | — | — | |
 | 3 | intc_2024-08-02 | — | — | — | |
 | 4 | nvda_2023-05-25 | — | — | — | |

@@ -1,0 +1,93 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2024-06-14",
+  "context_label": "quality_compounder",
+  "as_of_price": 175.44,
+  "as_of_market_cap": 2172100000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Evidence quality is high: all financials, capital return, balance sheet, and the share-class/voting structure trace to primary filings (Q1'24 8-K, FY23 10-K/release, 2024 proxy); as-of price verified (Class A $175.44). The two binding uncertainties are FORWARD, not evidentiary: (a) the monetization impact of generative-AI on the Search profit pool and (b) the forward capex/FCF trajectory (Q1 capex +91% YoY with no allowed guidance). Per harness, these become a SIZE HAIRCUT, not a WATCH cap.",
+      "drivers": ["S001", "S002", "S003", "S004", "S005"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: AI-era reshaping of the commercial-intent gateway (Search) + a cloud/AI-infra buildout. Mechanism: Alphabet owns the highest-intent ad real estate (~90% search share per DOJ) plus YouTube, and is converting frontier-AI research (Gemini, TPUs, DeepMind) into both a defended Search experience and a scaling Cloud P&L. Re-acceleration is real and dated (Search +14%, YouTube +21%, Cloud +28% YoY in Q1'24; corroborated by Meta +27% ad and a strong MSFT Cloud print). The market is over-weighting the visibly-imperfect AI Overviews launch and ChatGPT/Copilot share-of-query fear; it is under-weighting distribution + first-party data + the Cloud profit inflection + the capital-return turn. Net mildly positive: a genuine compounder with a live, unresolved disruption question on the core profit pool.",
+      "drivers": ["S001", "S008", "S009", "S012", "S013", "S011"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Alphabet captures an enormous, high-margin profit pool: Google Services FY23 operating income ~$95.9B (Q1'24 $27.9B), structurally advantaged by Search distribution, YouTube, and Android/Chrome. Cloud crossed into sustained profit (first full-year segment profit FY23 $1.7B; $900M in Q1'24 alone) and is scaling. Durability is high FOR THE FRANCHISE but faces a genuine (not yet resolved) generative-AI threat to the Search query/monetization model, plus the pending DOJ search-monopoly case as a distribution/economics tail. OPERATOR/team life-arc grade = 4/5 (per operator_background.md): ~26-yr non-fractious founder partnership (Page+Brin) + ~20-yr insider CEO (Pichai) + crisis-tested CFO (Porat) handing off via an orderly, pre-announced succession (Ashkenazi, eff. 2024-07-31); deep bench. This raises the operating durability read. BUT the founders control >51% of votes on <12% of economics (Class B = 10 votes; Class C = 0) and are disengaged from operations since 2019 -> a governance/control discount that CAPS the premium (minority holders bear founder-mistake risk with no recourse). Net: strong, durable economics with a real disruption question and a governance cap = +1, not +2.",
+      "drivers": ["S001", "S002", "S004", "S018", "S011"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Accounting CONFIRMS the thesis and shows no trailing-earnings trap. Q1'24: revenue +15% YoY, operating margin 32% (vs 25%), EPS $1.89, OCF $28.8B. FY23: revenue $307.4B (+9%), op margin 27%, net income $73.8B, OCF $101.7B, FCF ~$69.5B. Fortress balance sheet: ~$108B cash+securities vs ~$13.2B LT debt (net cash ~$95B, ~$7.66/sh). Capital-return inflection: first-ever dividend + $70B buyback on top of $61.5B FY23 repurchases. The single watch-item is the capex curve: Q1'24 capex $12.0B, +91% YoY, an AI-infra ramp that could compress the ~$69.5B FCF base if returns lag (no forward guidance allowed). Earnings quality note: Q1 EPS includes a ~$2.2B equity-securities gain; normalized run-rate P/E ~25x (vs ~30x trailing FY23, ~23x raw Q1 annualized). Margins/cash are real; the only forward risk is the capex intensity, which is a size input, not a refutation.",
+      "drivers": ["S001", "S002", "S003"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No hard veto: this is not a structural-decline or false-cheap trap (the profit pool is growing, not eroding; normalized earnings are NOT far below trailing; balance sheet cannot fail). Real, survivable risks that warrant a size haircut: (1) Search disruption -- generative AI (ChatGPT/Copilot + Google's own AI Overviews) erodes query volume/monetization; the mid-May 2024 AI Overviews launch shipped visibly imperfect (execution-risk evidence, not yet monetization-loss proof). (2) Capex-into-unproven-returns -- the +91% YoY ramp could be empire-spend the disengaged founders fund via votes with no minority recourse. (3) DOJ search-antitrust PENDING (closing args May 2024, no ruling) -- a distribution/remedy tail. (4) CFO transition into the capex inflection (Porat->Ashkenazi). (5) Governance entrenchment caps any control premium. None is permanent-impairment at this price; collectively they argue for entering below CORE and adding on confirmation rather than full-sizing up front.",
+      "drivers": ["S008", "S009", "S010", "S011", "S004", "S001", "S021"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $175.44 (~$2.17T) Alphabet trades ~30x trailing FY23 EPS / ~25x normalized Q1 run-rate / ~23x raw Q1 annualized, ~3.2% FY23 FCF yield, with ~$95B net cash. For a re-accelerating, net-cash, ~32%-operating-margin franchise with a scaling Cloud and a fresh capital-return turn, this is a fair-to-mildly-attractive market multiple -- NOT optically cheap, NOT a chase. Asymmetry is favorable at small-to-medium size: survivable downside (fortress balance sheet, buyback support, dividend) against a durable compounding base. Price supports a STARTER now with room to add into weakness; it does not support paying up aggressively above the low-$180s given the live disruption + capex questions.",
+      "drivers": ["S005", "S001", "S006"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 182,
+  "starter_zone": "<= ~$182 (at/under the as-of $175.44 area; up to low-$180s)",
+  "add_zone": "$150-$170 on weakness, OR at any price once a forward confirmation lands (a clean quarter showing Search/ad revenue holding +AI Overviews monetizing, AND capex guided/tracking to a returning ramp rather than open-ended)",
+  "trim_or_no_chase_zone": "no-chase above ~$200 (~28x+ normalized run-rate) absent confirmed AI-Search monetization; revisit/trim only on the four methodology triggers (thesis wrong, absurd price, better idea, thesis disconfirmed)",
+  "binding_constraint": "Forward durability of the Search profit pool under generative-AI disruption, compounded by the capex-into-unproven-returns ramp under a near-unaccountable, disengaged founder-control structure. This is what holds the position below CORE at entry (a SIZE constraint, not a veto): the economics and operators support a high ceiling, but the unresolved disruption + capex question and the governance cap mean conviction must be EARNED via a forward confirmation before sizing to the 15-25% core tier.",
+  "kill_criteria": [
+    "Search/Google advertising revenue growth stalls or turns negative on a clean (non-FX) basis, or clear evidence AI Overviews / AI-mode cannibalizes query monetization (ad RPMs/volume) without offset -> profit-pool erosion, cut back toward tracking.",
+    "Capex keeps ramping with no visible return (Cloud margin stalls/reverses, FCF compresses materially) AND management/founders signal open-ended AI spend -> empire-spend with no minority recourse, do not add / trim.",
+    "DOJ search-antitrust outcome imposes a structural remedy that breaks Search distribution or default-placement economics (a hard reset of the moat) -> re-underwrite, likely trim.",
+    "Cloud growth decelerates sharply AND its operating margin rolls back toward breakeven -> the second growth engine fails to scale.",
+    "Capital-allocation discipline breaks post-CFO-handoff: buyback/dividend cut to fund spend, or a large value-destructive acquisition the control bloc pushes through -> governance-risk realized.",
+    "Operating margin gives back the Q1'24 gains durably (back toward mid-20s%) without an investment rationale that is producing returns -> cost-discipline reversal."
+  ],
+  "runner_dissent": "Mild upward-pressure dissent on size, not direction. The mechanical read parks this at STARTER (4%) because two FORWARD questions (AI-Search monetization, capex returns) are unresolved and the harness has no tuned weights. But for a fortress-balance-sheet, net-cash, re-accelerating compounder at ~23-25x normalized run-rate with a 4/5 long-arc operator team, a case exists for a larger initial position (5-6%, low end of Confirmed) on the view that the AI-disruption fear is partly priced and distribution defends the pool. I hold at STARTER 4% because METHODOLOGY says the 15-25% core tier requires EARNED confirmation and the binding constraint is genuinely unresolved at the as-of date; the discipline is to start real, add on the forward confirmation, and let durability (not just confirmation) set the ceiling. Conversely, the governance cap (disengaged founders, >51% votes / <12% economics, no Class-B sunset) is the reason this should likely never reach the rare ~30% max even if the thesis fully confirms.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2024-04-25", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001652044/000165204424000047/googexhibit991q12024.htm"},
+    {"source_id": "S002", "public_date": "2024-01-31", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"},
+    {"source_id": "S003", "public_date": "2024-01-30", "url_or_path": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/2023q4-alphabet-earnings-release.pdf"},
+    {"source_id": "S004", "public_date": "2024-04-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1652044/000130817924000612/lgoog2024_def14a.htm"},
+    {"source_id": "S005", "public_date": "2024-06-14", "url_or_path": "https://www.statmuse.com/money/ask/googl-stock-closing-price-june-14-2024"},
+    {"source_id": "S006", "public_date": "2024-04-26", "url_or_path": "https://www.fool.com/investing/2024/04/26/why-alphabet-stock-was-soaring-today/"},
+    {"source_id": "S007", "public_date": "2024-04-25", "url_or_path": "https://www.bloomberg.com/news/articles/2024-04-25/alphabet-beats-revenue-estimates-buoyed-by-cloud-pays-dividend"},
+    {"source_id": "S008", "public_date": "2024-05-30", "url_or_path": "https://blog.google/products-and-platforms/products/search/ai-overviews-update-may-2024/"},
+    {"source_id": "S009", "public_date": "2024-05-24", "url_or_path": "https://www.tomsguide.com/ai/google-gemini/google-ai-overview-controversy-why-theres-a-big-backlash"},
+    {"source_id": "S010", "public_date": "2024-05-31", "url_or_path": "https://en.wikipedia.org/wiki/AI_Overviews"},
+    {"source_id": "S011", "public_date": "2024-05-03", "url_or_path": "https://finance.yahoo.com/news/the-fate-of-googles-search-empire-is-now-up-to-a-judge-190530934.html"},
+    {"source_id": "S012", "public_date": "2024-04-25", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017024048268/msft-ex99_1.htm"},
+    {"source_id": "S013", "public_date": "2024-04-24", "url_or_path": "https://searchengineland.com/metas-ad-revenue-jumps-27-in-q1-2024-439977"},
+    {"source_id": "S018", "public_date": "2019-12-05", "url_or_path": "https://fortune.com/2019/12/05/page-and-brin-google-control/"},
+    {"source_id": "S021", "public_date": "2024-06-05", "url_or_path": "https://www.cnbc.com/2024/06/05/alphabet-taps-eli-lillys-anat-ashkenazi-as-new-cfo.html"}
+  ]
+}
