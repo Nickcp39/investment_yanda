@@ -33,6 +33,12 @@ Output: write `lookahead_audit.md` (decision case) or `material_audit.md` (mater
 | dis_2021-11-11 | 2021-11-11 | 2021-11-11 | 2022 stock decline, Chapek ouster / Iger return (Nov 2022), widening DTC losses 2022-23, price hikes / password-sharing crackdown, FY2022+ results |
 | pfe_2022-02-08 | 2022-02-08 | 2022-02-08 | 2022-24 COVID-revenue collapse, Seagen acquisition (2023), later guidance cuts, the fall to ~$25, post-date patent-cliff realizations |
 | pypl_2021-07-29 | 2021-07-29 | 2021-07-29 | Pinterest acquisition rumor (Oct 2021), 2022 guidance cuts / user-growth deceleration, the stock collapse, Alex Chriss CEO (Sep 2023), the 2026 ~$43 price |
+| nvda_2023-05-25 | 2023-05-25 | 2023-05-25 | the 10:1 split (Jun 2024), the run to $1T→$3T, FY2024/FY2025 results, Blackwell, any post-print rally beyond 5/25, the Q1 FY24 10-Q filed 2023-05-26 (one day after → out) |
+| meta_2022-11-10 | 2022-11-10 | 2022-11-10 | the 2023 "Year of Efficiency" (Feb 2023), the recovery to $300→$400+, FY2022 full-year results (reported Feb 2023), 2023+ results, later Reality Labs losses, the AI-capex pivot |
+| amzn_2023-02-03 | 2023-02-03 | 2023-02-03 | the 2023 recovery to $180+, AWS re-acceleration, the March-2023 additional layoffs, Q1'23 results (late Apr 2023), FY2023+ results, the Rivian-mark recovery |
+| intc_2021-04-23 | 2021-04-23 | 2021-04-23 | the entire post-2021 decline, the 2023 dividend cut, Gelsinger departure (Dec 2024), 18A / foundry-customer outcomes, the fall to ~$20s, the Mercury Research Q1'21 share report (~2021-05-09 → out), any post-2021 results |
+| googl_2024-06-14 | 2024-06-14 | 2024-06-14 | the +111% run to ~$373, the DOJ search-monopoly liability ruling (Aug 2024), Q2'24+ results, Anat Ashkenazi's actual CFO performance (her 2024-07-31 start was pre-announced = known; her results = out), any 2025 development |
+| mu_2025-03-21 | 2025-03-21 | 2025-03-21 | the post-as-of HBM-ramp outcome, the run / drawdown after 3/21, Q3 FY2025+ results, any 2025-H2 / 2026 development |
 
 Extend this registry as new cases are added.
 
