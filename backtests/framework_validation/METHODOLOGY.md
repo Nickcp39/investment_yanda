@@ -50,6 +50,12 @@ hold 5–10 years. Durability also includes the **founder / core-team life-arc**
 cohesive, values-consistent long-arc team raises the ceiling; a fragile / one-person / misaligned team
 lowers it. (N/A for BTC — no operator; map to protocol governance instead.)
 
+> **Open refinement — STAGED & INACTIVE (see [`PATCH_LEDGER.md`](PATCH_LEDGER.md) → P1):** how the
+> governance/control discount enters this ceiling is under review. Proposed: a *within-band,
+> operator-grade-conditioned* haircut **counted once**, not a tier demotion stacked across M3 / M5 /
+> ceiling. Motivated by `googl_2024-06-14` (size-distance 1). **This note changes no Runner behavior** until
+> the patch is validated against META + DIS per `PROTOCOL.md §9`.
+
 ## 3. Cash (Decision C: ~5% opportunity reserve — NOT a 25% band)
 
 - **No cash target. Default ≈ fully invested.** (Duan: cash loses to inflation over the long run; his

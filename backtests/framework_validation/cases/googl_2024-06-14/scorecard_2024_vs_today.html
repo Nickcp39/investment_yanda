@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOGL 2024-06-14 — Scorecard · 2024 vs Today · "Braver?"</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2430; --bd:#30363d;
+    --tx:#c9d1d9; --mut:#8b949e; --dim:#6e7681;
+    --green:#3fb950; --greenbg:#15301c; --red:#f85149; --redbg:#3a1417;
+    --amber:#d29922; --amberbg:#3a2c0c; --blue:#58a6ff; --purple:#bc8cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;
+    line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:32px 24px 80px}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.3px}
+  h2{font-size:19px;margin:40px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--bd);letter-spacing:-.2px}
+  .sub{color:var(--mut);font-size:14px;margin:0 0 6px}
+  .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;
+    border:1px solid var(--bd);color:var(--mut);margin-right:6px;vertical-align:middle}
+  .tag.win{color:var(--green);border-color:#1f6f33;background:var(--greenbg)}
+  .tag.pass{color:var(--blue);border-color:#1f4e80;background:#0f2540}
+  a{color:var(--blue);text-decoration:none}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .card{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:18px 20px}
+  .card .lbl{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;font-weight:600}
+  .big{font-size:34px;font-weight:700;letter-spacing:-1px;line-height:1.1}
+  .big.green{color:var(--green)} .big.red{color:var(--red)} .big.amber{color:var(--amber)}
+  .kv{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid #21262d;font-size:13.5px}
+  .kv:first-of-type{border-top:none}
+  .kv .k{color:var(--mut)} .kv .v{font-weight:600;text-align:right}
+  .verdict{background:linear-gradient(135deg,#15301c,#0f2540);border:1px solid #1f6f33;border-radius:12px;
+    padding:22px 24px;margin:18px 0 4px}
+  .verdict .q{color:var(--mut);font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
+  .verdict .a{font-size:22px;font-weight:700;letter-spacing:-.3px;line-height:1.3}
+  .verdict .a .y{color:var(--green)} .verdict .a .n{color:var(--amber)}
+  .verdict .cn{color:var(--mut);font-size:15px;margin-top:6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--bd);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;background:var(--panel2)}
+  td.fear{color:#d99}
+  .dir{font-weight:700;white-space:nowrap}
+  .dir.broke{color:var(--green)} .dir.mild{color:var(--green)} .dir.benign{color:var(--green)}
+  .chartbox{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:18px 18px 8px}
+  .legend{display:flex;gap:18px;font-size:12.5px;color:var(--mut);margin:2px 0 0 8px;flex-wrap:wrap}
+  .legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:6px;border-radius:2px}
+  .note{background:var(--amberbg);border:1px solid #5c4708;border-left:3px solid var(--amber);
+    border-radius:8px;padding:12px 16px;font-size:13.5px;color:#e8d9a8;margin-top:14px}
+  .note b{color:var(--amber)}
+  .ladder{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:8px 18px 18px}
+  .rung{display:flex;align-items:center;gap:14px;padding:9px 0;border-top:1px solid #21262d}
+  .rung:first-child{border-top:none}
+  .rung .bar{height:22px;border-radius:5px;flex:0 0 auto}
+  .rung .rl{font-size:13px;color:var(--mut);flex:0 0 130px}
+  .rung .rn{font-size:13px;font-weight:600;flex:0 0 86px;color:var(--dim)}
+  .rung .rd{font-size:12.5px;color:var(--dim)}
+  .rung.entry{background:#0f2540;margin:0 -18px;padding:9px 18px;border-radius:6px}
+  .rung.cap .rd{color:var(--amber)} .rung.cap .rn{color:var(--amber)}
+  .rung.deserved{background:var(--greenbg);margin:0 -18px;padding:9px 18px;border-radius:6px}
+  .rung.deserved .rn,.rung.deserved .rd{color:var(--green)}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;margin-left:6px}
+  .pill.here{background:var(--blue);color:#04122a} .pill.cap{background:var(--amber);color:#2a1f02}
+  .pill.miss{background:var(--green);color:#04220e}
+  ul.lesson{margin:8px 0 0;padding-left:0;list-style:none}
+  ul.lesson li{padding:8px 0 8px 26px;position:relative;border-top:1px solid #21262d;font-size:14px}
+  ul.lesson li:first-child{border-top:none}
+  ul.lesson li::before{content:"→";position:absolute;left:4px;color:var(--blue);font-weight:700}
+  .foot{color:var(--dim);font-size:12px;margin-top:36px;border-top:1px solid var(--bd);padding-top:14px}
+  .mono{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+  .scoreflex{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+  .schip{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--bd);border-radius:9px;padding:13px 15px}
+  .schip .sl{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+  .schip .sv{font-size:17px;font-weight:700;margin-top:3px}
+  .sv.good{color:var(--green)} .sv.warn{color:var(--amber)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div>
+    <span class="tag">BLIND BACKTEST · CASE 1 / 10</span>
+    <span class="tag win">OUTCOME: WINNER</span>
+    <span class="tag pass">SCORE: PASS · size-dist 1</span>
+  </div>
+  <h1>GOOGL — what the pipeline decided on 2024-06-14 vs. what actually happened</h1>
+  <p class="sub">Alphabet Class A · as-of $175.44 → today (2026-06-16) $373 · pipeline <span class="mono">lean-6module-v1</span>, weights none (baseline) · scored 2026-06-19</p>
+
+  <!-- ============ HERO: DECISION vs OUTCOME ============ -->
+  <div class="grid2" style="margin-top:18px">
+    <div class="card">
+      <div class="lbl">① The locked blind decision &nbsp;(2024-06-14, no future data)</div>
+      <div class="big amber">STARTER · 4%</div>
+      <div style="color:var(--mut);font-size:13px;margin:2px 0 12px">ceiling 12% · existing-holder HOLD · buy-below $182</div>
+      <div class="kv"><span class="k">Module read</span><span class="v mono">M1 0 · M2 +1 · M3 +1 · M4 +1 · M5 −1 · M6 +1</span></div>
+      <div class="kv"><span class="k">Why capped below Core</span><span class="v">Search-AI risk + capex + founder-control discount</span></div>
+      <div class="kv"><span class="k">Hard veto</span><span class="v">none — a SIZE cap, not a kill</span></div>
+    </div>
+    <div class="card" style="border-color:#1f6f33">
+      <div class="lbl">② What actually happened &nbsp;(by 2026-06)</div>
+      <div class="big green">+116%<span style="font-size:18px;color:var(--mut);font-weight:600"> total return</span></div>
+      <div style="color:var(--mut);font-size:13px;margin:2px 0 12px">vs SPY +42% · QQQ +55% — <b style="color:var(--green)">beat SPY by ~74 pts</b></div>
+      <div class="kv"><span class="k">All 4 size-capping fears</span><span class="v" style="color:var(--green)">resolved BULLISH</span></div>
+      <div class="kv"><span class="k">Search profit pool (the binding risk)</span><span class="v">accelerated +14% → +19% YoY</span></div>
+      <div class="kv"><span class="k">DOJ remedy (Sep-2025)</span><span class="v">no breakup; distribution intact</span></div>
+    </div>
+  </div>
+
+  <!-- ============ THE BRAVER VERDICT ============ -->
+  <div class="verdict">
+    <div class="q">买的更多、更勇敢？ &nbsp;/&nbsp; Should it have been braver?</div>
+    <div class="a"><span class="y">YES — at the CEILING.</span> &nbsp; <span class="n">NO — not at the entry.</span></div>
+    <div class="cn">勇敢用错地方会亏：天花板该更高（12% → Core 15-25%），但入场的 4% 起步是对的 —— 第一年股价原地踏步、还跌过 18%。</div>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="card">
+      <div class="lbl" style="color:var(--green)">✓ Braver was OWED at the ceiling</div>
+      <p style="margin:0;font-size:13.5px;color:var(--tx)">The pipeline capped at <b>12% (Confirmed)</b> only because of the <b>founder-governance discount</b> — the one assumption that proved <b style="color:var(--green)">value-irrelevant</b>. <span class="mono">METHODOLOGY §2</span> <i>already lists GOOGL as a Core (15–25%) name.</i> The control structure backed the exact capex that 2.1×'d the stock. That discount demoted a Core name a full tier. <b>That is the real miss.</b></p>
+    </div>
+    <div class="card">
+      <div class="lbl" style="color:var(--amber)">✗ Braver would have BACKFIRED at entry</div>
+      <p style="margin:0;font-size:13.5px;color:var(--tx)">A reckless full-size buy at $175 would have sat <b>flat for 12 months</b> (lagging SPY ~11 pts) and <b style="color:var(--red)">−18% at the April-2025 trough ($144)</b> on a still-unproven thesis. The staged <b>"4% starter + add on $150–170 weakness"</b> was the <i>better</i> path — and that add zone was actually hit. The bravery you want is a higher ceiling, not a bigger trigger.</p>
+    </div>
+  </div>
+
+  <!-- ============ SIZE LADDER ============ -->
+  <h2>Where the position sat vs. where the winner belonged</h2>
+  <div class="ladder">
+    <div class="rung"><span class="rl">Tracking</span><span class="bar" style="width:18px;background:#30363d"></span><span class="rn">0.5–1%</span><span class="rd">a sliver to force attention</span></div>
+    <div class="rung entry"><span class="rl">Starter</span><span class="bar" style="width:60px;background:var(--blue)"></span><span class="rn">3–5%</span><span class="rd">→ pipeline ENTERED here at 4% <span class="pill here">CORRECT</span></span></div>
+    <div class="rung cap"><span class="rl">Confirmed</span><span class="bar" style="width:130px;background:var(--amber)"></span><span class="rn">8–12%</span><span class="rd">→ pipeline CEILING stopped here at 12% <span class="pill cap">GOV-CAP</span></span></div>
+    <div class="rung deserved"><span class="rl">Core conviction</span><span class="bar" style="width:230px;background:var(--green)"></span><span class="rn">15–25%</span><span class="rd">→ where this winner belonged (methodology's own GOOGL tier) <span class="pill miss">+1 TIER OWED</span></span></div>
+    <div class="rung"><span class="rl">Rare max</span><span class="bar" style="width:300px;background:#21262d;border:1px solid #30363d"></span><span class="rn">~30%</span><span class="rd">exceptional only — governance correctly bars this</span></div>
+  </div>
+  <div class="note"><b>The one-tier gap = the score.</b> Size-distance error = <b>1</b>. Not because 4% was timid (it wasn't), but because the ceiling stopped at Confirmed when a franchise compounder whose economics + operators were already Core-grade earned the Core tier. The governance discount should have <b>shaved the Core ceiling (25% → ~15%), not deleted the Core tier (→ 12%)</b>.</div>
+
+  <!-- ============ FEAR vs REALITY ============ -->
+  <h2>What we feared in 2024 vs. what the next two years delivered</h2>
+  <table>
+    <thead><tr><th style="width:24%">As-of fear (drove the haircut/cap)</th><th>What actually happened, 2024-06 → 2026-06</th><th style="width:15%">Direction</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="fear">GenAI erodes the Search profit pool <span style="color:var(--dim)">(the binding constraint)</span></td>
+        <td>Search &amp; other revenue <b>accelerated</b>: +13.8% YoY (Q2'24) → <b>+19% YoY (Q1'26)</b>. AI Overviews ~1.5B MAU monetizing at ~conventional rates; AI Mode 75M+ DAU; Gemini App 750M MAU; <b>Gemini 3 retook frontier leadership</b> (late 2025).</td>
+        <td class="dir broke">▲ BEAR THESIS BROKE</td>
+      </tr>
+      <tr>
+        <td class="fear">+91% capex = empire-spend the founders fund with no recourse</td>
+        <td>Capex $52.5B (FY24) → $91.4B (FY25) → <b>$180–190B guide (FY26)</b> — but <b>Cloud op margin 11.3% → 32.9%</b>, Cloud growth re-accelerated to <b>+63%</b>, backlog <b>&gt;$460B</b>. <span style="color:var(--amber)">Caveat: TTM FCF compressing $73B→$64B.</span></td>
+        <td class="dir broke">▲ VALIDATED</td>
+      </tr>
+      <tr>
+        <td class="fear">DOJ antitrust breaks Search distribution / default-placement</td>
+        <td><b>2025-09-02 remedy: NO Chrome divestiture; default-placement economics survive</b> (incl. the Apple deal); only <i>exclusive</i> contracts barred. Stock re-rated up after the ruling.</td>
+        <td class="dir mild">▲ MILDER THAN FEARED</td>
+      </tr>
+      <tr>
+        <td class="fear">Disengaged founder control destroys minority value</td>
+        <td>Backed the exact capex that re-rated the stock 2.1×; <b>raised the dividend</b>, <b>$45.7B buyback (FY25)</b>; no self-dealing. The control discount cost return, not protected it.</td>
+        <td class="dir benign">▲ BENIGN-to-POSITIVE</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ============ PRICE PATH ============ -->
+  <h2>The win was back-loaded — which is exactly why the staged entry was right</h2>
+  <div class="chartbox">
+    <svg viewBox="0 0 760 270" width="100%" preserveAspectRatio="xMidYMid meet" font-family="inherit">
+      <!-- gridlines -->
+      <line x1="60" y1="72.6" x2="720" y2="72.6" stroke="#21262d" stroke-width="1"/>
+      <line x1="60" y1="143.5" x2="720" y2="143.5" stroke="#21262d" stroke-width="1"/>
+      <line x1="60" y1="214.5" x2="720" y2="214.5" stroke="#30363d" stroke-width="1" stroke-dasharray="2 3"/>
+      <text x="52" y="76" fill="#6e7681" font-size="11" text-anchor="end">+100%</text>
+      <text x="52" y="147" fill="#6e7681" font-size="11" text-anchor="end">+50%</text>
+      <text x="52" y="218" fill="#6e7681" font-size="11" text-anchor="end">0%</text>
+      <!-- x labels -->
+      <text x="60" y="262" fill="#6e7681" font-size="11" text-anchor="middle">Jun'24</text>
+      <text x="335" y="262" fill="#f85149" font-size="11" text-anchor="middle">Apr'25</text>
+      <text x="390" y="262" fill="#6e7681" font-size="11" text-anchor="middle">Jun'25</text>
+      <text x="555" y="262" fill="#6e7681" font-size="11" text-anchor="middle">Dec'25</text>
+      <text x="720" y="262" fill="#6e7681" font-size="11" text-anchor="middle">Jun'26</text>
+
+      <!-- SPY (approx between anchors) -->
+      <path d="M60,214.5 L225,194.6 L390,197.8 L555,171.9 L720,154.8" fill="none" stroke="#8b949e" stroke-width="2" stroke-dasharray="5 4" opacity="0.8"/>
+      <text x="724" y="156" fill="#8b949e" font-size="11">SPY +42%</text>
+
+      <!-- GOOGL -->
+      <path d="M60,214.5 L225,201.5 L335,239.9 L390,213.5 L555,102.8 L692.5,31.4 L720,49.9" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+      <!-- markers -->
+      <circle cx="60" cy="214.5" r="3.5" fill="#3fb950"/>
+      <circle cx="335" cy="239.9" r="4" fill="#f85149"/>
+      <text x="335" y="256" fill="#f85149" font-size="10.5" text-anchor="middle" font-weight="700">−18% · $144</text>
+      <circle cx="390" cy="213.5" r="4" fill="#d29922"/>
+      <text x="398" y="208" fill="#d29922" font-size="10.5">12mo: flat +0.7% (SPY ahead +11.8%)</text>
+      <circle cx="692.5" cy="31.4" r="3" fill="#3fb950" opacity="0.7"/>
+      <text x="688" y="26" fill="#8b949e" font-size="10" text-anchor="end">ATH +129%</text>
+      <circle cx="720" cy="49.9" r="4.5" fill="#3fb950"/>
+      <text x="715" y="46" fill="#3fb950" font-size="12" text-anchor="end" font-weight="700">today +116%</text>
+    </svg>
+    <div class="legend"><span><i style="background:#3fb950"></i>GOOGL total return</span><span><i style="background:#8b949e"></i>SPY (dashed; approx between anchors)</span></div>
+  </div>
+  <div class="note"><b>Year 1 went nowhere.</b> At the 12-month mark GOOGL was <b>+0.7%</b> while SPY was <b>+11.8%</b>, and it had drawn down <b>−17.9%</b> to $144 in the April-2025 tariff selloff. The entire +116% arrived in <b>year 2</b> (Gemini 3 + Cloud re-acceleration + DOJ relief). A "brave" day-one Core buy would have been underwater on an unproven thesis for a year; the staged plan would instead have <b>added at $144</b>, into its own add zone, at a lower average cost.</div>
+
+  <!-- ============ SCORECARD ============ -->
+  <h2>Scorecard <span style="font-size:13px;color:var(--mut);font-weight:400">(PROTOCOL §6 + METHODOLOGY §7)</span></h2>
+  <div class="scoreflex">
+    <div class="schip"><div class="sl">Direction</div><div class="sv good">PASS</div></div>
+    <div class="schip"><div class="sl">Size-distance</div><div class="sv warn">1 — ceiling</div></div>
+    <div class="schip"><div class="sl">Reasoning</div><div class="sv good">sound</div></div>
+    <div class="schip"><div class="sl">Dominant module</div><div class="sv good">M2/M3 ✓ match</div></div>
+    <div class="schip"><div class="sl">Veto</div><div class="sv good">none (correct)</div></div>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="card">
+      <div class="lbl" style="color:var(--green)">Disease cured ✓</div>
+      <p style="margin:0;font-size:13.5px">The old pipeline failed <i>this exact case</i> with a <span class="mono">WATCH / 0%</span> "more-research-more-doubt" downgrade of a winner. The lean redesign converted the two forward unknowns into a <b>size haircut, not a confidence veto</b> (M1=0 → haircut). It gave real ownership on a name that doubled. <b style="color:var(--green)">That was the whole point — and it worked.</b></p>
+    </div>
+    <div class="card">
+      <div class="lbl">Failure tag (soft) · hypothesis only</div>
+      <p style="margin:0 0 8px;font-size:13.5px"><span class="mono" style="color:var(--amber)">too_small_missed_asymmetry</span> — at the ceiling, not the entry.</p>
+      <p style="margin:0;font-size:12.5px;color:var(--mut)">Hypothesis to test before any weight change: a governance discount on a <i>≥4/5-operator</i>, growing-pool, unfailable-balance-sheet compounder should lower the Core ceiling <i>within</i> Core, not demote a tier. <b>Do not tune on one case</b> — check META (3/5) &amp; DIS (2.5/5) first.</p>
+    </div>
+  </div>
+
+  <!-- ============ LESSON ============ -->
+  <h2>The lesson, in one line</h2>
+  <ul class="lesson">
+    <li><b>Be braver at the ceiling, not the trigger.</b> 勇敢要用在天花板，不在扣扳机。</li>
+    <li>For a franchise compounder already Core-grade on economics + operators, a governance/control discount should <b>shave</b> the Core ceiling — not <b>delete</b> the Core tier.</li>
+    <li>Staged entry (small starter + add on weakness/confirmation) beat brave day-one sizing here, because the asymmetry was real but <b>back-loaded</b> and preceded by a −18% drawdown.</li>
+    <li>One unresolved strand to keep watching before closing the capex thesis: <b>FCF compression</b> (TTM $73B → $64B as 2026 capex runs $180–190B).</li>
+  </ul>
+
+  <div class="foot">
+    Companion files (same folder): <span class="mono">decision_card.md</span> (locked blind decision) · <span class="mono">outcome_score.md</span> (full score + §5 addendum) · <span class="mono">material_audit.md</span> (checker: CLEAN).
+    Scoreboard row in <span class="mono">../../results.csv</span>; tracker in <span class="mono">../../TEST_PLAN.md</span>.
+    Prices: StatMuse total-return, cross-checked vs an independent stockanalysis.com pull (−17.9% / $144.11 / 2025-04-08 matched on both). Outcome reconstructed post-as-of; the locked decision used none of it.
+    <br>Next in the sequential run: <b>Case 2 — INTC 2021-04-23</b> (a value trap near a top — the discrimination test against the winners).
+  </div>
+
+</div>
+</body>
+</html>

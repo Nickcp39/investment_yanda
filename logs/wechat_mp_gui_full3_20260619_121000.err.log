@@ -1,0 +1,37 @@
+Known local WeChat article URLs before GUI run: 498
+Target articles in manifest: 299
+- 2026-06-19 04:59:12 | 突发！我们一个重大的转变！
+- 2026-06-18 20:28:45 | SpaceX为何暴跌11%，估值高吗？抛售解禁日解析，短期最大风险是什么？
+- 2026-06-17 21:08:57 | 我清了 SpaceX，美股 彻底晕了！美联储新主席首秀，四大“意外”直接把多头打懵
+- 2026-06-16 15:23:42 | SpaceX IPO 解禁时间表深度解析：真正影响股价因素
+- 2026-06-15 21:16:37 | 美股 SPCX 彻底疯了！不用感谢我 ！
+Scroll batch 1: clicking 4 visible card slots.
+Click 1: slot 1 at (1959, 698)
+  New local URLs after click: 0
+Click 2: slot 2 at (1959, 908)
+  New local URLs after click: 0
+Click 3: slot 3 at (1959, 1128)
+  New local URLs after click: 0
+Click 4: slot 4 at (1959, 1348)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 2: clicking 4 visible card slots.
+Click 5: slot 1 at (1959, 698)
+  New local URLs after click: 1
+  Target: 2023-06-08 20:18:42 | 3美元买特斯拉，10美元买英伟达，过去这10年，我做对了什么？做错了什么？
+    Saved: sources\news\wechat_mp\articles\3美元买特斯拉-10美元买英伟达-过去这10年-我做对了什么-做错了什么-ad8be621bd.md
+GUI run clicked 5 slots and saved 1 new target articles.
+Stopped because an opened article was older than 2025-01-01.
+Target articles in manifest: 300
+- 2026-06-19 04:59:12 | 突发！我们一个重大的转变！
+- 2026-06-18 20:28:45 | SpaceX为何暴跌11%，估值高吗？抛售解禁日解析，短期最大风险是什么？
+- 2026-06-17 21:08:57 | 我清了 SpaceX，美股 彻底晕了！美联储新主席首秀，四大“意外”直接把多头打懵
+- 2026-06-16 15:23:42 | SpaceX IPO 解禁时间表深度解析：真正影响股价因素
+- 2026-06-15 21:16:37 | 美股 SPCX 彻底疯了！不用感谢我 ！
+- 2026-06-13 20:46:00 | 推演SpaceX未来半年走势：$135有人托底，$175.5有人抛售！
+- 2026-06-10 18:05:30 | 史上最全深度分析：SpaceX面临五大风险，马斯克如何应对华尔街的压力？
+- 2026-06-09 21:12:50 | 仅剩最后1天，这辈子再也买不了美股了！
+- 2026-06-08 20:31:34 | 美股爆发性反弹！MRVL被纳入标普500，芯片股带头大反攻！
+- 2026-06-06 18:39:41 | 美股分析 AI从云端杀进PC，美股最大机会出现了！
+- 2026-06-05 18:45:30 | 黑色星期五！美股AI集体崩跌，到底发生了什么？
+- 2026-06-04 21:10:57 | SpaceX上市倒计时7天！你最该看清的三个价值陷阱！

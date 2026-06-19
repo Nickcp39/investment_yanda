@@ -3,6 +3,8 @@
   "company": "Sandisk Corporation",
   "as_of": "2025-06-16",
   "pipeline_version": "lean_six_module_v0",
+  "weights_version": "W_v0",
+  "run_date": "2026-06-17",
   "context_label": "spinoff_forced_seller + cyclical_inflection",
   "as_of_price": 44.21,
   "as_of_market_cap_usd_bn": 6.41,

@@ -1,0 +1,1526 @@
+Known local WeChat article URLs before GUI run: 113
+Target articles in manifest: 31
+- 2026-06-19 04:59:12 | 突发！我们一个重大的转变！
+- 2026-06-18 20:28:45 | SpaceX为何暴跌11%，估值高吗？抛售解禁日解析，短期最大风险是什么？
+- 2026-06-17 21:08:57 | 我清了 SpaceX，美股 彻底晕了！美联储新主席首秀，四大“意外”直接把多头打懵
+- 2026-06-16 15:23:42 | SpaceX IPO 解禁时间表深度解析：真正影响股价因素
+- 2026-06-15 21:16:37 | 美股 SPCX 彻底疯了！不用感谢我 ！
+Scroll batch 1: clicking 4 visible card slots.
+Click 1: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 2: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169721&idx=1&sn=6354a64ff0551e8de4aff96114218cfc#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169721&idx=1&sn=6354a64ff0551e8de4aff96114218cfc#rd
+Click 3: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 4: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 2: clicking 4 visible card slots.
+Click 5: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-06-10 18:05:30 | 史上最全深度分析：SpaceX面临五大风险，马斯克如何应对华尔街的压力？
+    Saved: sources\news\wechat_mp\articles\史上最全深度分析-SpaceX面临五大风险-马斯克如何应对华尔街的压力-f865ab6ca9.md
+Click 6: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-06-09 21:12:50 | 仅剩最后1天，这辈子再也买不了美股了！
+    Saved: sources\news\wechat_mp\articles\仅剩最后1天-这辈子再也买不了美股了-7a27c17be0.md
+Click 7: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-06-08 20:31:34 | 美股爆发性反弹！MRVL被纳入标普500，芯片股带头大反攻！
+    Saved: sources\news\wechat_mp\articles\美股爆发性反弹-MRVL被纳入标普500-芯片股带头大反攻-24f61d5794.md
+Click 8: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-06-06 18:39:41 | 美股分析 AI从云端杀进PC，美股最大机会出现了！
+    Saved: sources\news\wechat_mp\articles\美股分析-AI从云端杀进PC-美股最大机会出现了-f36cad2a2d.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 3: clicking 4 visible card slots.
+Click 9: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 10: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-06-05 18:45:30 | 黑色星期五！美股AI集体崩跌，到底发生了什么？
+    Saved: sources\news\wechat_mp\articles\黑色星期五-美股AI集体崩跌-到底发生了什么-6f975cc341.md
+Click 11: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-06-04 21:10:57 | SpaceX上市倒计时7天！你最该看清的三个价值陷阱！
+    Saved: sources\news\wechat_mp\articles\SpaceX上市倒计时7天-你最该看清的三个价值陷阱-4ed140ef0c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169507&idx=1&sn=0b662552b83b1a1b64277aec6c5185b4#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169507&idx=1&sn=0b662552b83b1a1b64277aec6c5185b4#rd
+Click 12: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 4: clicking 4 visible card slots.
+Click 13: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-06-01 20:55:10 | 黄仁勋重磅演讲，资本市场疯狂投票！AI PC 时代谁最受益？
+    Saved: sources\news\wechat_mp\articles\黄仁勋重磅演讲-资本市场疯狂投票-AI-PC-时代谁最受益-c4cf0f7cfc.md
+Click 14: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 15: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 16: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 5: clicking 4 visible card slots.
+Click 17: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-05-28 21:12:51 | 我是如何“提前预判”特朗普会投资无人机？ ONDS 爆涨背后，SNOW MDB
+    Saved: sources\news\wechat_mp\articles\我是如何-提前预判-特朗普会投资无人机-ONDS-爆涨背后-SNOW-MDB-2929d7f0bd.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169319&idx=1&sn=53b6bb386e426dc120f8d3c150ca6645#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169319&idx=1&sn=53b6bb386e426dc120f8d3c150ca6645#rd
+Click 18: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169289&idx=1&sn=38139148ecdc1573dd41ecc6ac7af54e#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169289&idx=1&sn=38139148ecdc1573dd41ecc6ac7af54e#rd
+Click 19: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-05-26 21:09:42 | 一辈子一遇的 美股超级大牛市！
+    Saved: sources\news\wechat_mp\articles\一辈子一遇的-美股超级大牛市-a405b42fc3.md
+Click 20: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 6: clicking 4 visible card slots.
+Click 21: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-05-21 20:38:00 | 我被StockWe AI模型震撼到了！ARM两天爆涨30%！
+    Saved: sources\news\wechat_mp\articles\我被StockWe-AI模型震撼到了-ARM两天爆涨30-22c2a82932.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169144&idx=1&sn=33e589d8020ad2f92e95ad3f7aab52ac#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169144&idx=1&sn=33e589d8020ad2f92e95ad3f7aab52ac#rd
+Click 22: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-05-20 21:03:19 | 英伟达交出史诗级财报！这5大信号，带你穿越“利好出尽”的迷雾
+    Saved: sources\news\wechat_mp\articles\英伟达交出史诗级财报-这5大信号-带你穿越-利好出尽-的迷雾-18a8121d6d.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169124&idx=1&sn=340a3077edccbf7799e9a8bb4834ebb3#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169124&idx=1&sn=340a3077edccbf7799e9a8bb4834ebb3#rd
+Click 23: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 24: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-05-18 20:43:52 | 美股AI股全线崩跌，到底发生了什么事？该如何保护仓位？
+    Saved: sources\news\wechat_mp\articles\美股AI股全线崩跌-到底发生了什么事-该如何保护仓位-f440d2531b.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 7: clicking 4 visible card slots.
+Click 25: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/D4kiwXEo6QnF9Ym9NlSVJQ | Could not parse title/body from https://mp.weixin.qq.com/s/D4kiwXEo6QnF9Ym9NlSVJQ
+Click 26: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169053&idx=1&sn=03095c1e2d3e0b1268611dac704c9ca3#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917169053&idx=1&sn=03095c1e2d3e0b1268611dac704c9ca3#rd
+Click 27: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-05-15 18:04:41 | 【突发】SpaceX将于6月12日上市，美股代号 SPCX
+    Saved: sources\news\wechat_mp\articles\突发-SpaceX将于6月12日上市-美股代号-SPCX-9900032a32.md
+Click 28: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 8: clicking 4 visible card slots.
+Click 29: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-05-11 21:07:43 | 下一个万亿巨头即将诞生，变成科技八巨头，代号是......
+    Saved: sources\news\wechat_mp\articles\下一个万亿巨头即将诞生-变成科技八巨头-代号是-b2cdd0ac20.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168919&idx=1&sn=1af0db0787d36a18a3f09a7e28a8783f#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168919&idx=1&sn=1af0db0787d36a18a3f09a7e28a8783f#rd
+Click 30: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-05-10 22:46:49 | 只有 1% 的人知道的美股券商神级功能
+    Saved: sources\news\wechat_mp\articles\只有-1-的人知道的美股券商神级功能-9b2f3c6986.md
+Click 31: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-05-10 02:23:49 | 被美股市场错杀SaaS公司，是否因AI智能体迎来大反转？
+    Saved: sources\news\wechat_mp\articles\被美股市场错杀SaaS公司-是否因AI智能体迎来大反转-084c6fb12d.md
+Click 32: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2026-05-08 21:03:15 | 美股 一战成名，时间会证明一切！ INOD一天飙升100%
+    Saved: sources\news\wechat_mp\articles\美股-一战成名-时间会证明一切-INOD一天飙升100-51a767b6a0.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168780&idx=1&sn=7293da3da5fdd2ef8193569a3dd6b78d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168780&idx=1&sn=7293da3da5fdd2ef8193569a3dd6b78d#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 9: clicking 4 visible card slots.
+Click 33: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 34: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-05-07 19:09:57 | 4月全球股票基金净流入创下历史新高 1900亿美元！一只黑马股 HIMX 爆了！
+    Saved: sources\news\wechat_mp\articles\4月全球股票基金净流入创下历史新高-1900亿美元-一只黑马股-HIMX-爆了-3f4d24b1ad.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168762&idx=1&sn=fa8b4e651503e9e362eb378f0e302210#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168762&idx=1&sn=fa8b4e651503e9e362eb378f0e302210#rd
+Click 35: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-05-06 21:16:16 | 不忍直视自己的美股账号 ！
+    Saved: sources\news\wechat_mp\articles\不忍直视自己的美股账号-23bccaafbc.md
+Click 36: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 10: clicking 4 visible card slots.
+Click 37: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-05-01 19:03:29 | 见证历史！纳指突破25000点创历史新高，太多好股了！吃不完！SNDK AAOI PS GOOGL AAPL....
+    Saved: sources\news\wechat_mp\articles\见证历史-纳指突破25000点创历史新高-太多好股了-吃不完-SNDK-AAOI-PS-GOOGL-AAPL-ad6ab73f32.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168636&idx=1&sn=d568eb06d7a985a1197844c2055a8302#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168636&idx=1&sn=d568eb06d7a985a1197844c2055a8302#rd
+Click 38: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-05-01 13:30:31 | 跟着白宫混有肉吃！英特尔暴涨360%后 谁将是下一个“白宫概念股”？
+    Saved: sources\news\wechat_mp\articles\跟着白宫混有肉吃-英特尔暴涨360-后-谁将是下一个-白宫概念股-847b28db46.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168604&idx=1&sn=ced80f3bf3e5d4bbe0382e7ace123be8#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168604&idx=1&sn=ced80f3bf3e5d4bbe0382e7ace123be8#rd
+Click 39: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-04-30 21:11:46 | 美股 再不上车就晚了 ！
+    Saved: sources\news\wechat_mp\articles\美股-再不上车就晚了-ec04c0ea49.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168566&idx=1&sn=be29be0a46853e58d8336bef5ed5850f#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168566&idx=1&sn=be29be0a46853e58d8336bef5ed5850f#rd
+Click 40: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2026-04-29 19:34:42 | 再见！美联储鲍威尔！【盘后暴涨】两只AI公司 FORM TTMI
+    Saved: sources\news\wechat_mp\articles\再见-美联储鲍威尔-盘后暴涨-两只AI公司-FORM-TTMI-d2d5d55d7f.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168549&idx=1&sn=9eeb8b4b7c582b7cd09a640abad9b714#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168549&idx=1&sn=9eeb8b4b7c582b7cd09a640abad9b714#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 11: clicking 4 visible card slots.
+Click 41: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 42: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-04-28 21:13:52 | 市值蒸发千亿！OpenAI暴雷引发美股AI崩塌！
+    Saved: sources\news\wechat_mp\articles\市值蒸发千亿-OpenAI暴雷引发美股AI崩塌-de8ef64f54.md
+Click 43: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/tw1i-QF82TQAKyW31iy2AQ | Could not parse title/body from https://mp.weixin.qq.com/s/tw1i-QF82TQAKyW31iy2AQ
+Click 44: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 12: clicking 4 visible card slots.
+Click 45: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-04-24 21:18:28 | AI不只是英伟达的游戏！一天五只美股狂飙！ RMBS TTMI GLW
+    Saved: sources\news\wechat_mp\articles\AI不只是英伟达的游戏-一天五只美股狂飙-RMBS-TTMI-GLW-f6266da769.md
+Click 46: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-04-23 21:16:27 | AMD、英特尔财报后暴涨，验证了我们的预测！
+    Saved: sources\news\wechat_mp\articles\AMD-英特尔财报后暴涨-验证了我们的预测-f200c37ff3.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168344&idx=1&sn=ca629bf0e0342ac29765fb49b17fb3ac#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168344&idx=1&sn=ca629bf0e0342ac29765fb49b17fb3ac#rd
+Click 47: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-04-22 21:06:44 | AMD 就是下一个 英伟达 ！
+    Saved: sources\news\wechat_mp\articles\AMD-就是下一个-英伟达-0f49db7fe5.md
+Click 48: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/3SaCc0mTSpDADeMlow69dA | Could not parse title/body from https://mp.weixin.qq.com/s/3SaCc0mTSpDADeMlow69dA
+Scrolled down by 5 wheel clicks.
+Scroll batch 13: clicking 4 visible card slots.
+Click 49: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 50: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-04-22 01:43:41 | 突发！马斯克将600亿收购Cursor！补齐IPO最后一块短板！
+    Saved: sources\news\wechat_mp\articles\突发-马斯克将600亿收购Cursor-补齐IPO最后一块短板-72af3b6ed8.md
+Click 51: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-04-21 18:07:03 | 2026年美股最强投资组合！
+    Saved: sources\news\wechat_mp\articles\2026年美股最强投资组合-beb5f0c543.md
+Click 52: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 14: clicking 4 visible card slots.
+Click 53: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-04-17 21:04:42 | 860亿美元买盘！美股下周将继续飙升！
+    Saved: sources\news\wechat_mp\articles\860亿美元买盘-美股下周将继续飙升-bb3e806beb.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168156&idx=1&sn=706f1929bd3b2320de4e165428058541#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168156&idx=1&sn=706f1929bd3b2320de4e165428058541#rd
+Click 54: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-04-16 20:52:04 | 美股创百年历史新高，但最危险的赚钱信号，已经出现了!
+    Saved: sources\news\wechat_mp\articles\美股创百年历史新高-但最危险的赚钱信号-已经出现了-bddecc2917.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168137&idx=1&sn=ea8e462d5d8adb1eb26648bf9270c7b7#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917168137&idx=1&sn=ea8e462d5d8adb1eb26648bf9270c7b7#rd
+Click 55: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-04-15 23:34:02 | 美股最疯狂一幕！卖鞋的改名做AI，股价竟爆涨 800%！
+    Saved: sources\news\wechat_mp\articles\美股最疯狂一幕-卖鞋的改名做AI-股价竟爆涨-800-31ac4dea93.md
+Click 56: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-04-15 13:55:59 | SEC新规！废除“日内交易”限制，美股散户交易门槛大幅降低！
+    Saved: sources\news\wechat_mp\articles\SEC新规-废除-日内交易-限制-美股散户交易门槛大幅降低-5597c5cb4e.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 15: clicking 4 visible card slots.
+Click 57: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 58: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-04-15 01:12:20 | 本周最值得关注的美国股票 NFLX TSM
+    Saved: sources\news\wechat_mp\articles\本周最值得关注的美国股票-NFLX-TSM-c6d004e8b5.md
+Click 59: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 60: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 16: clicking 4 visible card slots.
+Click 61: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-04-10 21:18:59 | 美股下周将会爆涨，你相信"光"吗？
+    Saved: sources\news\wechat_mp\articles\美股下周将会爆涨-你相信-光-吗-955adc8b6a.md
+Click 62: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-04-09 21:08:02 | 中东和谈提振美股！为何散户“逢高减仓”？
+    Saved: sources\news\wechat_mp\articles\中东和谈提振美股-为何散户-逢高减仓-e5c6f48a63.md
+Click 63: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-04-08 21:06:45 | 美股这样涨下去不行吧？！SNDK GLW FLY
+    Saved: sources\news\wechat_mp\articles\美股这样涨下去不行吧-SNDK-GLW-FLY-c26ebc38c2.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167951&idx=1&sn=9641cf654e54c1be4400f733686b704b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167951&idx=1&sn=9641cf654e54c1be4400f733686b704b#rd
+Click 64: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2026-04-07 21:14:46 | 生死一小时！“美伊两周停火”，美股大反转背后的交易逻辑，你需知道！
+    Saved: sources\news\wechat_mp\articles\生死一小时-美伊两周停火-美股大反转背后的交易逻辑-你需知道-ffcc3859a5.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167934&idx=1&sn=0968fb64b7106cc70eaf4d889f100c86#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167934&idx=1&sn=0968fb64b7106cc70eaf4d889f100c86#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 17: clicking 4 visible card slots.
+Click 65: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 66: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-04-06 20:47:13 | 美股四连涨！特朗普放狠话没吓倒市场，FLY期权6倍大爆发！
+    Saved: sources\news\wechat_mp\articles\美股四连涨-特朗普放狠话没吓倒市场-FLY期权6倍大爆发-470e723452.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167892&idx=1&sn=80582a5efa3cf371405a37fe3204dfe1#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167892&idx=1&sn=80582a5efa3cf371405a37fe3204dfe1#rd
+Click 67: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-04-05 21:44:42 | 一个被市场严重低估的职业 “发电工”
+    Saved: sources\news\wechat_mp\articles\一个被市场严重低估的职业-发电工-11b795a210.md
+Click 68: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 18: clicking 4 visible card slots.
+Click 69: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-03-31 21:18:43 | 美股全线暴拉！3月最后一天，华尔街狠狠干了一票大的！
+    Saved: sources\news\wechat_mp\articles\美股全线暴拉-3月最后一天-华尔街狠狠干了一票大的-4ac5fa02bf.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167790&idx=1&sn=5657e091f31905566ecac5bc5f184ad3#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167790&idx=1&sn=5657e091f31905566ecac5bc5f184ad3#rd
+Click 70: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-03-30 21:03:30 | 鲍威尔释放鸽派安抚，美股为何不买账？
+    Saved: sources\news\wechat_mp\articles\鲍威尔释放鸽派安抚-美股为何不买账-33868452fd.md
+Click 71: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-03-30 21:03:30 | 对冲黄金下跌的成本已经达到了十年来的最高水平 ！
+    Saved: sources\news\wechat_mp\articles\对冲黄金下跌的成本已经达到了十年来的最高水平-e5e7d591f1.md
+Click 72: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-03-29 22:39:57 | 周末突发！伊朗局势！美国！
+    Saved: sources\news\wechat_mp\articles\周末突发-伊朗局势-美国-a9f4374b4f.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 19: clicking 4 visible card slots.
+Click 73: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-03-29 15:07:28 | 美股 医药板块，10倍股该如何找？共同特征是什么？ERAS TERN
+    Saved: sources\news\wechat_mp\articles\美股-医药板块-10倍股该如何找-共同特征是什么-ERAS-TERN-1a25e691bc.md
+Click 74: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-03-29 02:06:31 | 散户第一次“背叛”英伟达：AI牛市，可能真的要变天了！
+    Saved: sources\news\wechat_mp\articles\散户第一次-背叛-英伟达-AI牛市-可能真的要变天了-8595823792.md
+Click 75: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-03-27 21:13:58 | 七巨头单周蒸发8500亿！美股大盘的下一个支撑位在哪里？
+    Saved: sources\news\wechat_mp\articles\七巨头单周蒸发8500亿-美股大盘的下一个支撑位在哪里-b1b5cbd40a.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167695&idx=1&sn=75a094a658a9cd4ce330939873ea8e8a#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167695&idx=1&sn=75a094a658a9cd4ce330939873ea8e8a#rd
+Click 76: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 20: clicking 4 visible card slots.
+Click 77: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-03-23 21:07:38 | 这周AI挑出来的5只美股
+    Saved: sources\news\wechat_mp\articles\这周AI挑出来的5只美股-432496c5d7.md
+Click 78: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 79: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-03-22 19:16:53 | 什么是私募信贷？为什么它可能引发比伊朗战争更严重的危机？
+    Saved: sources\news\wechat_mp\articles\什么是私募信贷-为什么它可能引发比伊朗战争更严重的危机-d3da24c6d6.md
+Click 80: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-03-22 19:16:53 | 如果AI让企业护城河变成暂时的，资本市场会发生什么？
+    Saved: sources\news\wechat_mp\articles\如果AI让企业护城河变成暂时的-资本市场会发生什么-046f395e02.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 21: clicking 4 visible card slots.
+Click 81: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-03-19 21:10:59 | 最后2分钟，资金突然出手！美股尾盘急拉，这是什么信号？
+    Saved: sources\news\wechat_mp\articles\最后2分钟-资金突然出手-美股尾盘急拉-这是什么信号-347657be8a.md
+Click 82: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-03-18 21:27:58 | 美联储摊牌了：不救市！美光交出王炸财报，股价为何反而下跌？
+    Saved: sources\news\wechat_mp\articles\美联储摊牌了-不救市-美光交出王炸财报-股价为何反而下跌-393325f942.md
+Click 83: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-03-17 21:14:34 | 周二美股这个信号不简单！我们极度看好美光财报！三大焦点决定股价方向！
+    Saved: sources\news\wechat_mp\articles\周二美股这个信号不简单-我们极度看好美光财报-三大焦点决定股价方向-46e083a5da.md
+Click 84: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 22: clicking 4 visible card slots.
+Click 85: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-03-13 22:42:57 | 一条关键信息，藏在中东局势中的投资机会！DOW
+    Saved: sources\news\wechat_mp\articles\一条关键信息-藏在中东局势中的投资机会-DOW-a4acbade80.md
+Click 86: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 87: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 88: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 23: clicking 4 visible card slots.
+Click 89: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-03-10 20:47:45 | 英伟达GTC前夕，这个板块再次爆发！ GLW MRVL
+    Saved: sources\news\wechat_mp\articles\英伟达GTC前夕-这个板块再次爆发-GLW-MRVL-a7d1e826ee.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167408&idx=1&sn=f40e23439a689cee453ef87094af5a07#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167408&idx=1&sn=f40e23439a689cee453ef87094af5a07#rd
+Click 90: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-03-09 21:10:46 | 特朗普一句话，美股上演V形大反转！
+    Saved: sources\news\wechat_mp\articles\特朗普一句话-美股上演V形大反转-3a641a89db.md
+Click 91: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-03-09 17:51:37 | 突发！特朗普称对伊朗战事“已基本结束”！美股暴涨！
+    Saved: sources\news\wechat_mp\articles\突发-特朗普称对伊朗战事-已基本结束-美股暴涨-94ee036371.md
+Click 92: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 24: clicking 4 visible card slots.
+Click 93: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-03-06 19:59:45 | 突发！美AI 芯片全球出口管制草案曝光！MRVL财报重要信号！
+    Saved: sources\news\wechat_mp\articles\突发-美AI-芯片全球出口管制草案曝光-MRVL财报重要信号-0c13757b5b.md
+Click 94: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-03-05 18:32:09 | 美股 规模三年暴增3倍！英伟达押新赛道！美伊War背后，利好这3家公司，AI + 卫星 + 数据作战体系
+    Saved: sources\news\wechat_mp\articles\美股-规模三年暴增3倍-英伟达押新赛道-美伊War背后-利好这3家公司-AI-卫星-数据作战体系-0d807abb89.md
+Click 95: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-03-05 00:08:19 | 如何投资还没有上市的Anthropic？
+    Saved: sources\news\wechat_mp\articles\如何投资还没有上市的Anthropic-dc35ec7ede.md
+Click 96: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2026-03-04 19:56:51 | 美股为何在全球下跌中独自走强？
+    Saved: sources\news\wechat_mp\articles\美股为何在全球下跌中独自走强-425942b8dc.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167310&idx=1&sn=4dbb519caa09624fff76dde7449d4c97#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917167310&idx=1&sn=4dbb519caa09624fff76dde7449d4c97#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 25: clicking 4 visible card slots.
+Click 97: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 98: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/cNGnMWNPr-_oeY4uO2PhAw | Could not parse title/body from https://mp.weixin.qq.com/s/cNGnMWNPr-_oeY4uO2PhAw
+Click 99: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 100: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 26: clicking 4 visible card slots.
+Click 101: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-02-23 20:08:22 | 一份报告，竟能砸崩美股！这只股却逆势飙升！GLW
+    Saved: sources\news\wechat_mp\articles\一份报告-竟能砸崩美股-这只股却逆势飙升-GLW-1714698e3f.md
+Click 102: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-02-22 21:06:49 | 特朗普反手加到15%！美股下一步如何走？
+    Saved: sources\news\wechat_mp\articles\特朗普反手加到15-美股下一步如何走-f77516d297.md
+Click 103: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-02-21 17:05:48 | 在美国把401K转IRA好处和坏处？
+    Saved: sources\news\wechat_mp\articles\在美国把401K转IRA好处和坏处-aced220154.md
+Click 104: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-02-20 19:06:42 | 特朗普关税“翻车”成利好！三大指数集体收涨
+    Saved: sources\news\wechat_mp\articles\特朗普关税-翻车-成利好-三大指数集体收涨-c8d4136e97.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 27: clicking 4 visible card slots.
+Click 105: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 106: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-02-18 20:11:45 | 是时候捞底被AI重挫的美股软件股！《摩根大通》
+    Saved: sources\news\wechat_mp\articles\是时候捞底被AI重挫的美股软件股-摩根大通-238fe4409a.md
+Click 107: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-02-17 18:31:13 | AI浪潮爆发，存储行业正迎来“一辈子只有一次”超级周期
+    Saved: sources\news\wechat_mp\articles\AI浪潮爆发-存储行业正迎来-一辈子只有一次-超级周期-69a72e3cd5.md
+Click 108: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-02-17 18:31:13 | 摩根士丹利研报： 美光（MU）在持续供应短缺中上调预期
+    Saved: sources\news\wechat_mp\articles\摩根士丹利研报-美光-MU-在持续供应短缺中上调预期-27de06737a.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 28: clicking 4 visible card slots.
+Click 109: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-02-12 19:50:10 | AI横扫一切美国产业，估值暴跌千亿美元！
+    Saved: sources\news\wechat_mp\articles\AI横扫一切美国产业-估值暴跌千亿美元-de311efe02.md
+Click 110: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-02-12 01:37:46 | 美股Unity（U）今天为什么暴跌?
+    Saved: sources\news\wechat_mp\articles\美股Unity-U-今天为什么暴跌-222130078b.md
+Click 111: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-02-12 01:37:46 | 摩根士丹利研报： 美光（MU）在持续供应短缺中上调预期
+    Saved: sources\news\wechat_mp\articles\摩根士丹利研报-美光-MU-在持续供应短缺中上调预期-3cf9ac4c99.md
+Click 112: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 29: clicking 4 visible card slots.
+Click 113: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-02-10 20:04:21 | 美股下一个“AI受害者”已经出现，市场正在提前定价！
+    Saved: sources\news\wechat_mp\articles\美股下一个-AI受害者-已经出现-市场正在提前定价-02b38efe3b.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166767&idx=1&sn=304a9f035db4e31f9a14fe6744ba141b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166767&idx=1&sn=304a9f035db4e31f9a14fe6744ba141b#rd
+Click 114: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 115: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-02-10 01:06:57 | 高盛 软件股遭遇抛售，信用基本面并未“失守”
+    Saved: sources\news\wechat_mp\articles\高盛-软件股遭遇抛售-信用基本面并未-失守-bbe2709b25.md
+Click 116: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 30: clicking 4 visible card slots.
+Click 117: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-02-05 20:56:53 | 谷歌与亚马逊财报后跳水，为何大数据能精准预判？
+    Saved: sources\news\wechat_mp\articles\谷歌与亚马逊财报后跳水-为何大数据能精准预判-4cb4696ad2.md
+Click 118: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 119: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-02-03 21:05:48 | 美股科技软件板块大崩盘！罪魁祸首竟是这家公司？
+    Saved: sources\news\wechat_mp\articles\美股科技软件板块大崩盘-罪魁祸首竟是这家公司-2e2ceb3886.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166620&idx=1&sn=c77cccd397175688085b75c2d3af365d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166620&idx=1&sn=c77cccd397175688085b75c2d3af365d#rd
+Click 120: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-02-03 21:05:48 | 存储之后，下一个千亿级资金涌入的美股板块，即将起飞！
+    Saved: sources\news\wechat_mp\articles\存储之后-下一个千亿级资金涌入的美股板块-即将起飞-65df91222a.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 31: clicking 4 visible card slots.
+Click 121: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-02-01 12:29:50 | 突发！甲骨文被曝或裁员3万人，多家银行停止贷款！
+    Saved: sources\news\wechat_mp\articles\突发-甲骨文被曝或裁员3万人-多家银行停止贷款-44185adc6b.md
+Click 122: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 123: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 124: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-01-30 20:39:02 | AI 冲击这家公司股价暴跌 25%！美股市场真正担忧的是什么？
+    Saved: sources\news\wechat_mp\articles\AI-冲击这家公司股价暴跌-25-美股市场真正担忧的是什么-33e32dc34f.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 32: clicking 4 visible card slots.
+Click 125: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-01-28 18:05:12 | 突发！特斯拉停产 Model S 和 Model X
+    Saved: sources\news\wechat_mp\articles\突发-特斯拉停产-Model-S-和-Model-X-a3c88da643.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166402&idx=1&sn=b5e1cab2aae6923f4dcb49dd6f701f4b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166402&idx=1&sn=b5e1cab2aae6923f4dcb49dd6f701f4b#rd
+Click 126: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-01-27 20:13:39 | 美股潜力黑马单日狂飙 32%！医保板块为何跳水？
+    Saved: sources\news\wechat_mp\articles\美股潜力黑马单日狂飙-32-医保板块为何跳水-810ba7bc8e.md
+Click 127: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-01-26 20:22:01 | 英伟达 20 亿再投“亲儿子”CoreWeave！背后藏着什么野心？
+    Saved: sources\news\wechat_mp\articles\英伟达-20-亿再投-亲儿子-CoreWeave-背后藏着什么野心-6f9fdc41c2.md
+Click 128: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2026-01-24 19:27:43 | 黄仁勋现身上海菜市场，参加英伟达上海年会！现场派红包！
+    Saved: sources\news\wechat_mp\articles\黄仁勋现身上海菜市场-参加英伟达上海年会-现场派红包-e1872bd981.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 33: clicking 4 visible card slots.
+Click 129: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-01-23 17:03:22 | 美股AI重挫软件股，是否迎来捞底机会？MSFT TEAM ADBE DDOG NOW......
+    Saved: sources\news\wechat_mp\articles\美股AI重挫软件股-是否迎来捞底机会-MSFT-TEAM-ADBE-DDOG-NOW-75bedecc4a.md
+Click 130: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-01-22 20:54:24 | 美股收复失地的真相！马斯克最新发言释放什么信号？
+    Saved: sources\news\wechat_mp\articles\美股收复失地的真相-马斯克最新发言释放什么信号-256c03f9c8.md
+Click 131: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2026-01-21 20:07:03 | 特朗普一句话扭转美股颓势，多只个股狂飙！
+    Saved: sources\news\wechat_mp\articles\特朗普一句话扭转美股颓势-多只个股狂飙-ba0267a6c5.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166141&idx=1&sn=d2c06f2252c668b3f991c2e792240fd1#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917166141&idx=1&sn=d2c06f2252c668b3f991c2e792240fd1#rd
+Click 132: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 34: clicking 4 visible card slots.
+Click 133: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-01-17 13:44:24 | 美股 AI选的这家太空公司太强了！
+    Saved: sources\news\wechat_mp\articles\美股-AI选的这家太空公司太强了-6f824c43e4.md
+Click 134: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 135: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 136: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 35: clicking 4 visible card slots.
+Click 137: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 138: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2026-01-11 22:41:52 | 突发！鲍威尔遭刑事调查！美联储独立性受到挑战！
+    Saved: sources\news\wechat_mp\articles\突发-鲍威尔遭刑事调查-美联储独立性受到挑战-e629b16965.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165725&idx=1&sn=dbb2ce848e48171cdb41821564e65218#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165725&idx=1&sn=dbb2ce848e48171cdb41821564e65218#rd
+Click 139: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/cZnEkYxdgtqEoub-5tMlkg | Could not parse title/body from https://mp.weixin.qq.com/s/cZnEkYxdgtqEoub-5tMlkg
+Click 140: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 36: clicking 4 visible card slots.
+Click 141: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2026-01-07 17:08:12 | 突发！特朗普整顿美国房地产，禁止机构买房，高房价将暴跌！
+    Saved: sources\news\wechat_mp\articles\突发-特朗普整顿美国房地产-禁止机构买房-高房价将暴跌-a16e9f7bcc.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165595&idx=1&sn=f16a9a8d605a3bc7396b35de4a7ceeaf#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165595&idx=1&sn=f16a9a8d605a3bc7396b35de4a7ceeaf#rd
+Click 142: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/LVDy16wSv0LcrO2v76VMZA | Could not parse title/body from https://mp.weixin.qq.com/s/LVDy16wSv0LcrO2v76VMZA
+Click 143: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 144: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 37: clicking 4 visible card slots.
+Click 145: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2026-01-05 20:24:07 | 事实证明，真的可以预测美股涨跌！通过量化大数据方法！
+    Saved: sources\news\wechat_mp\articles\事实证明-真的可以预测美股涨跌-通过量化大数据方法-ca585096b1.md
+Click 146: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2026-01-03 20:32:41 | 最后一天！
+    Saved: sources\news\wechat_mp\articles\最后一天-cbcae244cb.md
+Click 147: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2026-01-02 20:27:07 | 美股 2026第一波翻倍行情已经开启！
+    Saved: sources\news\wechat_mp\articles\美股-2026第一波翻倍行情已经开启-ee75a4d421.md
+Click 148: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 38: clicking 4 visible card slots.
+Click 149: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-12-29 00:10:37 | 美股投资者最大误区！没有之一！
+    Saved: sources\news\wechat_mp\articles\美股投资者最大误区-没有之一-f7a5c7016c.md
+Click 150: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-12-27 21:05:39 | AI将迫使美国 “老破旧” 电网全面升级
+    Saved: sources\news\wechat_mp\articles\AI将迫使美国-老破旧-电网全面升级-f418a2cb84.md
+Click 151: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-12-26 19:53:42 | 英伟达 真便宜！
+    Saved: sources\news\wechat_mp\articles\英伟达-真便宜-54ff157f5e.md
+Click 152: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-12-25 17:43:02 | 美股 2026年五大投资主题！千万别错过！
+    Saved: sources\news\wechat_mp\articles\美股-2026年五大投资主题-千万别错过-20db6b501b.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165167&idx=1&sn=a1ee82eff6b3f9034508ff78c1c444f0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165167&idx=1&sn=a1ee82eff6b3f9034508ff78c1c444f0#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 39: clicking 4 visible card slots.
+Click 153: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 154: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-12-24 21:02:22 | 只卖技术不卖身？美股英伟达200亿美元变相收购“AI推理速度之王”Groq！
+    Saved: sources\news\wechat_mp\articles\只卖技术不卖身-美股英伟达200亿美元变相收购-AI推理速度之王-Groq-fa0c103706.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165093&idx=1&sn=5ead82175378fcb5f07503897230346c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917165093&idx=1&sn=5ead82175378fcb5f07503897230346c#rd
+Click 155: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-12-23 20:12:22 | 特朗普放话：谁敢加息，就别想当美联储主席！美股又找到了新的兴奋点！
+    Saved: sources\news\wechat_mp\articles\特朗普放话-谁敢加息-就别想当美联储主席-美股又找到了新的兴奋点-33c2a1f1aa.md
+Click 156: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 40: clicking 4 visible card slots.
+Click 157: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-12-18 20:18:44 | 7.1万亿美元期权合约到期，美股“疯狂一日”即将爆发！
+    Saved: sources\news\wechat_mp\articles\7-1万亿美元期权合约到期-美股-疯狂一日-即将爆发-426198d762.md
+Click 158: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-12-17 17:31:14 | 现在投资AI有多危险？5大量化指标，用专业金融数据给你揭晓答案！
+    Saved: sources\news\wechat_mp\articles\现在投资AI有多危险-5大量化指标-用专业金融数据给你揭晓答案-456345ed72.md
+Click 159: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-12-16 20:02:22 | 美国失业率创四年新高！美联储被逼入墙角？特斯拉股价创历史新高！
+    Saved: sources\news\wechat_mp\articles\美国失业率创四年新高-美联储被逼入墙角-特斯拉股价创历史新高-a9d51c24e3.md
+Click 160: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-12-15 19:26:17 | 华尔街共识：“数据越差，美股越涨”？非农报告将定调“生死线”！
+    Saved: sources\news\wechat_mp\articles\华尔街共识-数据越差-美股越涨-非农报告将定调-生死线-13abf6782c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164809&idx=1&sn=99d29639e7a8742ffcda9608c32dfbf4#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164809&idx=1&sn=99d29639e7a8742ffcda9608c32dfbf4#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 41: clicking 4 visible card slots.
+Click 161: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 162: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-12-14 20:21:34 | 2026年，美股真正的主线浮出水面！
+    Saved: sources\news\wechat_mp\articles\2026年-美股真正的主线浮出水面-424662c532.md
+Click 163: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 164: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 42: clicking 4 visible card slots.
+Click 165: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-12-12 20:10:27 | 美股科技股暴跌！AI概念股集体“跳水”，资金流向防御性股 MOS
+    Saved: sources\news\wechat_mp\articles\美股科技股暴跌-AI概念股集体-跳水-资金流向防御性股-MOS-957b0a3806.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164774&idx=1&sn=d312863d5c1c223a144642c517253091#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164774&idx=1&sn=d312863d5c1c223a144642c517253091#rd
+Click 166: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-12-13 18:00:02 | AI 破解“逆龄密码”？95后华人科学家引爆抗衰突破，美股四大赛道或被重新定价！
+    Saved: sources\news\wechat_mp\articles\AI-破解-逆龄密码-95后华人科学家引爆抗衰突破-美股四大赛道或被重新定价-58a62765aa.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164776&idx=1&sn=89400ce514d569267a7d4b2d03693ada#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164776&idx=1&sn=89400ce514d569267a7d4b2d03693ada#rd
+Click 167: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 168: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 43: clicking 4 visible card slots.
+Click 169: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 170: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 171: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-12-06 22:32:29 | 黄仁勋：贫穷艰难的环境磨练了我的意志！从少管所到万亿美元AI帝国 【上集】
+    Saved: sources\news\wechat_mp\articles\黄仁勋-贫穷艰难的环境磨练了我的意志-从少管所到万亿美元AI帝国-上集-0929a3d84d.md
+Click 172: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-12-06 01:12:10 | 马斯克SpaceX2026年上市，估值飙升至8000亿美元，意味着什么？
+    Saved: sources\news\wechat_mp\articles\马斯克SpaceX2026年上市-估值飙升至8000亿美元-意味着什么-879887359a.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 44: clicking 4 visible card slots.
+Click 173: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-12-04 20:22:45 | 美股警报：高盛预测2026年降息时间表，AI正加剧劳动力市场核心风险
+    Saved: sources\news\wechat_mp\articles\美股警报-高盛预测2026年降息时间表-AI正加剧劳动力市场核心风险-28ed1c5baf.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164589&idx=1&sn=2c908f81502fb8b3d612c427dab8da1a#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164589&idx=1&sn=2c908f81502fb8b3d612c427dab8da1a#rd
+Click 174: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-12-04 20:22:45 | 美股 谷歌结盟30亿美金独角兽，直指“全民编程”万亿市场！
+    Saved: sources\news\wechat_mp\articles\美股-谷歌结盟30亿美金独角兽-直指-全民编程-万亿市场-05d1714c13.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164589&idx=2&sn=5537956c40d1dbee6608ff73ad2b038d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164589&idx=2&sn=5537956c40d1dbee6608ff73ad2b038d#rd
+Click 175: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-12-03 20:00:53 | 美股：坏消息又变好消息？AI真正的信号来了！
+    Saved: sources\news\wechat_mp\articles\美股-坏消息又变好消息-AI真正的信号来了-681649ad27.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164551&idx=1&sn=b997bd0acaa125bb839a2bfec0f30164#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164551&idx=1&sn=b997bd0acaa125bb839a2bfec0f30164#rd
+Click 176: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 45: clicking 4 visible card slots.
+Click 177: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 178: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 179: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-11-26 19:59:07 | 美股反弹节奏加速！甲骨文跌出机会了吗？
+    Saved: sources\news\wechat_mp\articles\美股反弹节奏加速-甲骨文跌出机会了吗-28c99dc650.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164417&idx=1&sn=4c36efd1fabde1edcb0d4f0c32996dd8#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164417&idx=1&sn=4c36efd1fabde1edcb0d4f0c32996dd8#rd
+Click 180: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-11-25 15:00:54 | 注意！华尔街机构提前卖出120亿美元英伟达！
+    Saved: sources\news\wechat_mp\articles\注意-华尔街机构提前卖出120亿美元英伟达-bbd8a58f5d.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 46: clicking 4 visible card slots.
+Click 181: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-11-24 20:19:26 | 周一美股为何大暴涨？真正的反弹来了！这家公司目标价还能再涨51%！
+    Saved: sources\news\wechat_mp\articles\周一美股为何大暴涨-真正的反弹来了-这家公司目标价还能再涨51-dc99d02153.md
+Click 182: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-11-22 17:53:48 | 美国房地产市场停滞对HomeDepot行业造成明显冲击！
+    Saved: sources\news\wechat_mp\articles\美国房地产市场停滞对HomeDepot行业造成明显冲击-054dd7f7c7.md
+Click 183: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-11-21 19:56:46 | 英伟达内部会，黄仁勋坦言：太难了！高盛梳理近期美股大跌四大真相！
+    Saved: sources\news\wechat_mp\articles\英伟达内部会-黄仁勋坦言-太难了-高盛梳理近期美股大跌四大真相-d945e49142.md
+Click 184: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 47: clicking 4 visible card slots.
+Click 185: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-11-18 19:29:35 | 今日AI精选的两只美股 BHVN 和 WULF
+    Saved: sources\news\wechat_mp\articles\今日AI精选的两只美股-BHVN-和-WULF-a7e0d7e4cd.md
+Click 186: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 187: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 188: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 48: clicking 4 visible card slots.
+Click 189: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-11-14 19:57:33 | 美股科技股捞底时机已到？巴菲特13F曝光：首次建仓谷歌，狂抛AAPL！
+    Saved: sources\news\wechat_mp\articles\美股科技股捞底时机已到-巴菲特13F曝光-首次建仓谷歌-狂抛AAPL-fd587c532e.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164099&idx=1&sn=045928ad77e72d0022f68290d7acf6b0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917164099&idx=1&sn=045928ad77e72d0022f68290d7acf6b0#rd
+Click 190: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-11-14 08:24:35 | 突发！美股盘前继续暴跌！12月不降息了？
+    Saved: sources\news\wechat_mp\articles\突发-美股盘前继续暴跌-12月不降息了-9ce473ef9e.md
+Click 191: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-11-13 16:39:31 | 突发！今天美股为何暴跌？11.13.2025
+    Saved: sources\news\wechat_mp\articles\突发-今天美股为何暴跌-11-13-2025-7ccdc8d9f9.md
+Click 192: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 49: clicking 4 visible card slots.
+Click 193: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-11-10 20:09:46 | 美股 英伟达暴涨6%，引领纳指报复性反弹！CIEN LITE CRDO
+    Saved: sources\news\wechat_mp\articles\美股-英伟达暴涨6-引领纳指报复性反弹-CIEN-LITE-CRDO-7986f6a15c.md
+Click 194: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-11-09 14:16:38 | 美国房地产危机升级！巨头遭集体降级！08年金融风暴将再度上演？
+    Saved: sources\news\wechat_mp\articles\美国房地产危机升级-巨头遭集体降级-08年金融风暴将再度上演-b0e9626087.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163953&idx=1&sn=4b2bc949ac98abe55d4c5024d08a8d12#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163953&idx=1&sn=4b2bc949ac98abe55d4c5024d08a8d12#rd
+Click 195: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-11-08 22:23:36 | 黄仁勋直言：“没有台积电，就没有今天的英伟达。”
+    Saved: sources\news\wechat_mp\articles\黄仁勋直言-没有台积电-就没有今天的英伟达-85bb671e76.md
+Click 196: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-11-08 16:32:44 | 【重磅】美联储闭门会议曝光：川普+鲍威尔联手放行DeFi，加密时代全面开启！谁将吃下AI金融红利？
+    Saved: sources\news\wechat_mp\articles\重磅-美联储闭门会议曝光-川普-鲍威尔联手放行DeFi-加密时代全面开启-谁将吃下AI金融红利-28c9a48fa7.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 50: clicking 4 visible card slots.
+Click 197: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 198: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-11-07 19:43:29 | 美股深V反弹，我出手捞底了几只AI公司！
+    Saved: sources\news\wechat_mp\articles\美股深V反弹-我出手捞底了几只AI公司-51da36d094.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163861&idx=1&sn=c1814fcc72c24e8a6c10a9a2a6e9fb1f#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163861&idx=1&sn=c1814fcc72c24e8a6c10a9a2a6e9fb1f#rd
+Click 199: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-11-06 21:59:19 | 英伟达 突发 禁售 ！ 长夜难眠
+    Saved: sources\news\wechat_mp\articles\英伟达-突发-禁售-长夜难眠-5768bd0c97.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163688&idx=1&sn=fc994692caf30ec04a731c1c27b930a0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163688&idx=1&sn=fc994692caf30ec04a731c1c27b930a0#rd
+Click 200: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 51: clicking 4 visible card slots.
+Click 201: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-11-01 18:28:16 | 如何抓住美股“十倍股”！必读！
+    Saved: sources\news\wechat_mp\articles\如何抓住美股-十倍股-必读-d3ee710da5.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163534&idx=1&sn=f9e8d7d00f665864e5a301932d5728e0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163534&idx=1&sn=f9e8d7d00f665864e5a301932d5728e0#rd
+Click 202: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-10-31 22:03:23 | 美股 特斯拉狂飙的信号？马斯克放话：2025年或亮相“史上最疯狂”飞行汽车！
+    Saved: sources\news\wechat_mp\articles\美股-特斯拉狂飙的信号-马斯克放话-2025年或亮相-史上最疯狂-飞行汽车-b6c784dda3.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163509&idx=1&sn=61bbe3d525e469b57a7b82ad0f35695e#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163509&idx=1&sn=61bbe3d525e469b57a7b82ad0f35695e#rd
+Click 203: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-10-31 20:45:28 | 美股 吃着炸鸡谈AI，英伟达在韩国的26万颗芯片大布局！
+    Saved: sources\news\wechat_mp\articles\美股-吃着炸鸡谈AI-英伟达在韩国的26万颗芯片大布局-cf81d2c578.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163492&idx=1&sn=376f10a91f86e4bddbdd3b1b6b65e3c0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163492&idx=1&sn=376f10a91f86e4bddbdd3b1b6b65e3c0#rd
+Click 204: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-10-30 21:08:09 | 美股 亚马逊狂砸1250亿美元 ALL IN AI！奈飞宣布1拆10拆股计划！
+    Saved: sources\news\wechat_mp\articles\美股-亚马逊狂砸1250亿美元-ALL-IN-AI-奈飞宣布1拆10拆股计划-7563be0ae4.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163399&idx=1&sn=e056711d7c20e4e50e3eeaaa0e199a1d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917163399&idx=1&sn=e056711d7c20e4e50e3eeaaa0e199a1d#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 52: clicking 4 visible card slots.
+Click 205: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/oFq7U85w3UKTNOhcGWcCGQ | Could not parse title/body from https://mp.weixin.qq.com/s/oFq7U85w3UKTNOhcGWcCGQ
+Click 206: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 207: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-10-29 21:05:23 | 突发！OpenAI将2026年提交IPO上市申请，估值1万亿美元！
+    Saved: sources\news\wechat_mp\articles\突发-OpenAI将2026年提交IPO上市申请-估值1万亿美元-17b91578a8.md
+Click 208: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 53: clicking 4 visible card slots.
+Click 209: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 210: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 211: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-10-22 20:53:55 | 美股 量子计算和核能股集体暴跌，特朗普又搞事情！
+    Saved: sources\news\wechat_mp\articles\美股-量子计算和核能股集体暴跌-特朗普又搞事情-82f986fe02.md
+Click 212: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-10-21 17:31:11 | 美股 特斯拉Q3财报重磅前瞻！
+    Saved: sources\news\wechat_mp\articles\美股-特斯拉Q3财报重磅前瞻-6af3251a2d.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 54: clicking 4 visible card slots.
+Click 213: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 214: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-10-17 21:05:55 | 特朗普100%关税“不可持续”救美股？但41亿美元聪明钱已在暗池出逃！
+    Saved: sources\news\wechat_mp\articles\特朗普100-关税-不可持续-救美股-但41亿美元聪明钱已在暗池出逃-23f48c06b2.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162780&idx=1&sn=9c6a94d6c76ded2133bfca4d080e1cc1#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162780&idx=1&sn=9c6a94d6c76ded2133bfca4d080e1cc1#rd
+Click 215: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/oB369LhLbKuYzrxTbUwP1w | Could not parse title/body from https://mp.weixin.qq.com/s/oB369LhLbKuYzrxTbUwP1w
+Click 216: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 55: clicking 4 visible card slots.
+Click 217: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-10-13 18:55:12 | 美股疯了！炸裂反弹20%，多只股出现巨大行情！BE RGTI QBTS STI
+    Saved: sources\news\wechat_mp\articles\美股疯了-炸裂反弹20-多只股出现巨大行情-BE-RGTI-QBTS-STI-3f3480334b.md
+Click 218: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-10-12 18:18:53 | 美股 30分钟赚2亿美金！特朗普时代“泛滥”的内墓交易
+    Saved: sources\news\wechat_mp\articles\美股-30分钟赚2亿美金-特朗普时代-泛滥-的内墓交易-a5eb9231b2.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162595&idx=1&sn=db5da2d21f4801b7f2024cba62c65504#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162595&idx=1&sn=db5da2d21f4801b7f2024cba62c65504#rd
+Click 219: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-10-11 19:06:15 | 美国银行最新的研报，直接点名 Palantir 是“下一个大赢家”！
+    Saved: sources\news\wechat_mp\articles\美国银行最新的研报-直接点名-Palantir-是-下一个大赢家-62d16336a7.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162593&idx=1&sn=7ad0e084e972ff3b049fda2df9edee39#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162593&idx=1&sn=7ad0e084e972ff3b049fda2df9edee39#rd
+Click 220: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-10-11 19:06:15 | OpenAI失去最强大脑！清华天才为何选择Meta？
+    Saved: sources\news\wechat_mp\articles\OpenAI失去最强大脑-清华天才为何选择Meta-176cd6da86.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162593&idx=2&sn=f39e464b0e796b82feef0a8696638147#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162593&idx=2&sn=f39e464b0e796b82feef0a8696638147#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 56: clicking 4 visible card slots.
+Click 221: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-10-10 20:33:40 | 美股为何突发“四月暴跌”式重挫？
+    Saved: sources\news\wechat_mp\articles\美股为何突发-四月暴跌-式重挫-db091d989a.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162591&idx=1&sn=18217c935f8bfc8486a09e430c51c905#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162591&idx=1&sn=18217c935f8bfc8486a09e430c51c905#rd
+Click 222: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-10-09 20:33:49 | 微软Azure最大危机曝光！美股AI太火把自家云“榨干”了？
+    Saved: sources\news\wechat_mp\articles\微软Azure最大危机曝光-美股AI太火把自家云-榨干-了-04e7f968af.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162569&idx=1&sn=5025987671ac1367913694de1d5c1654#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162569&idx=1&sn=5025987671ac1367913694de1d5c1654#rd
+Click 223: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-10-09 15:06:47 | 《炒美股的人开始恐惧：不是怕跌，而是怕“踏空”》
+    Saved: sources\news\wechat_mp\articles\炒美股的人开始恐惧-不是怕跌-而是怕-踏空-62cdefdeb9.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162546&idx=1&sn=a67cc84c0bae4f898f8e9eb1d028d19d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162546&idx=1&sn=a67cc84c0bae4f898f8e9eb1d028d19d#rd
+Click 224: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 57: clicking 4 visible card slots.
+Click 225: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-10-04 20:24:17 | 美股 不为人知的，准备爆涨的量子计算股
+    Saved: sources\news\wechat_mp\articles\美股-不为人知的-准备爆涨的量子计算股-0a219c4f1f.md
+Click 226: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-10-03 20:03:22 | 美股已进入“狂热”泡沫区，但为什么没人肯下车？
+    Saved: sources\news\wechat_mp\articles\美股已进入-狂热-泡沫区-但为什么没人肯下车-d7e9ed2282.md
+Click 227: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-10-03 17:11:19 | 美股 别只盯着英伟达了！AI存储硬盘才是最大赢家，四大牛公司名单曝光！WDC ...
+    Saved: sources\news\wechat_mp\articles\美股-别只盯着英伟达了-AI存储硬盘才是最大赢家-四大牛公司名单曝光-WDC-3cb10a24cd.md
+Click 228: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-10-02 20:54:02 | 美股 6700点大博弈？微软194亿大单喂饱NBIS！
+    Saved: sources\news\wechat_mp\articles\美股-6700点大博弈-微软194亿大单喂饱NBIS-e62a64bc58.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 58: clicking 4 visible card slots.
+Click 229: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 230: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-10-01 21:42:35 | 美股 医药股成救市”英雄“，100%降息预期引爆四季度行情！
+    Saved: sources\news\wechat_mp\articles\美股-医药股成救市-英雄-100-降息预期引爆四季度行情-2bda63cfdf.md
+Click 231: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-10-01 15:12:31 | 美股AFRM UPST PGY SOFI 近日为什么大跌？
+    Saved: sources\news\wechat_mp\articles\美股AFRM-UPST-PGY-SOFI-近日为什么大跌-71d80b2826.md
+Click 232: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 59: clicking 4 visible card slots.
+Click 233: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-09-26 20:49:43 | 逢低买盘救场美股反弹！特斯拉目标价上调至600美元，还要涨36%？
+    Saved: sources\news\wechat_mp\articles\逢低买盘救场美股反弹-特斯拉目标价上调至600美元-还要涨36-588fbb4bb9.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162145&idx=1&sn=76d1d2c4feaedca815d2bb4a43b0602c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162145&idx=1&sn=76d1d2c4feaedca815d2bb4a43b0602c#rd
+Click 234: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-09-26 13:50:26 | 90后清华量化天才，从华尔街2000万美元薪资到SEC全球通缉！
+    Saved: sources\news\wechat_mp\articles\90后清华量化天才-从华尔街2000万美元薪资到SEC全球通缉-aa16f9c3e6.md
+Click 235: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-09-25 20:19:19 | 美股下跌的背后真相竟然是？....CoreWeave靠OpenAI一人吃饱？
+    Saved: sources\news\wechat_mp\articles\美股下跌的背后真相竟然是-CoreWeave靠OpenAI一人吃饱-bbfd273302.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162125&idx=1&sn=3d0b8a2df9ddeb9a6ea98430ce2e0a80#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162125&idx=1&sn=3d0b8a2df9ddeb9a6ea98430ce2e0a80#rd
+Click 236: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-09-24 20:43:25 | 美股 下一个AI巨头崛起 ！ 你需要知道 这…..
+    Saved: sources\news\wechat_mp\articles\美股-下一个AI巨头崛起-你需要知道-这-8881f33ef4.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 60: clicking 4 visible card slots.
+Click 237: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 238: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-09-23 20:57:00 | 美股 鲍威尔一句话“吓坏”华尔街！美光财报释放重磅信号！
+    Saved: sources\news\wechat_mp\articles\美股-鲍威尔一句话-吓坏-华尔街-美光财报释放重磅信号-2c6e57f8f5.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162080&idx=1&sn=6d7b63f56f12a210f66176f7653fd2f7#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162080&idx=1&sn=6d7b63f56f12a210f66176f7653fd2f7#rd
+Click 239: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-09-22 21:07:30 | AI打破美股9月下跌魔咒！华尔街大吼“All in AI” ，美股新估值点7000！
+    Saved: sources\news\wechat_mp\articles\AI打破美股9月下跌魔咒-华尔街大吼-All-in-AI-美股新估值点7000-6eeb988eff.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162057&idx=1&sn=3c467756905910a05252b0b24c819e74#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917162057&idx=1&sn=3c467756905910a05252b0b24c819e74#rd
+Click 240: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 61: clicking 4 visible card slots.
+Click 241: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-09-19 20:59:31 | 美股大盘涨不停！美国3500亿美元押注，核能与量子概念狂飙！
+    Saved: sources\news\wechat_mp\articles\美股大盘涨不停-美国3500亿美元押注-核能与量子概念狂飙-e628e6f50c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161955&idx=1&sn=b0e24dfcaf1d03274e1ae193bd70a7ca#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161955&idx=1&sn=b0e24dfcaf1d03274e1ae193bd70a7ca#rd
+Click 242: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-09-18 21:08:42 | 据说， 它是美股下一个AppLovin，20X倍的空间！
+    Saved: sources\news\wechat_mp\articles\据说-它是美股下一个AppLovin-20X倍的空间-cd9d7659ce.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161933&idx=1&sn=df750f42a43abe9eae07ef952b1140dc#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161933&idx=1&sn=df750f42a43abe9eae07ef952b1140dc#rd
+Click 243: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s/f_muO_7tUlVwD1fysIAEUg | Could not parse title/body from https://mp.weixin.qq.com/s/f_muO_7tUlVwD1fysIAEUg
+Click 244: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 62: clicking 4 visible card slots.
+Click 245: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-09-18 17:16:07 | 美股 特斯拉放弃造新车？背后惊人布局曝光！
+    Saved: sources\news\wechat_mp\articles\美股-特斯拉放弃造新车-背后惊人布局曝光-7e9bcfe80f.md
+Click 246: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-09-17 20:37:36 | 美国SEC推翻数十年旧规，让美国IPO再次伟大！阿里巴巴股价创4年新高！
+    Saved: sources\news\wechat_mp\articles\美国SEC推翻数十年旧规-让美国IPO再次伟大-阿里巴巴股价创4年新高-a23a5a2d18.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161852&idx=1&sn=d4246a7c88c36304848a725f7a9aad48#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161852&idx=1&sn=d4246a7c88c36304848a725f7a9aad48#rd
+Click 247: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-09-16 21:04:50 | 400亿美金狂潮！美国科技巨头集体“押宝”英国，这张牌到底怎么打？
+    Saved: sources\news\wechat_mp\articles\400亿美金狂潮-美国科技巨头集体-押宝-英国-这张牌到底怎么打-f5c145e846.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161835&idx=1&sn=08b3b43087d00af4dd89c5e5d4b660db#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161835&idx=1&sn=08b3b43087d00af4dd89c5e5d4b660db#rd
+Click 248: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 63: clicking 4 visible card slots.
+Click 249: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-09-11 18:26:31 | 【最后一天】被忽略的美股AI存储巨头SNDK翻倍！
+    Saved: sources\news\wechat_mp\articles\最后一天-被忽略的美股AI存储巨头SNDK翻倍-04aeaf51ca.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161713&idx=1&sn=1bdf213a25fb43d1587bd9dee2b46164#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161713&idx=1&sn=1bdf213a25fb43d1587bd9dee2b46164#rd
+Click 250: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-09-10 20:38:18 | 美股 新AI巨头诞生ORCL市值暴增2700亿美元！Robinhood推出社交发帖功能，颠覆创新！
+    Saved: sources\news\wechat_mp\articles\美股-新AI巨头诞生ORCL市值暴增2700亿美元-Robinhood推出社交发帖功能-颠覆创新-50b9c49c4a.md
+Click 251: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-09-09 18:46:28 | 甲骨文暴涨27%！美股百花齐放，AI概念通通业绩爆表！AI增长前景惊艳！
+    Saved: sources\news\wechat_mp\articles\甲骨文暴涨27-美股百花齐放-AI概念通通业绩爆表-AI增长前景惊艳-5992096201.md
+Click 252: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-09-09 00:59:14 | 单天爆涨5600%！美股不缺妖！OCTO为何发飙？
+    Saved: sources\news\wechat_mp\articles\单天爆涨5600-美股不缺妖-OCTO为何发飙-dd14f71038.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161618&idx=1&sn=94f5ae6e5a8dcb9bdb7613f04e509c42#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161618&idx=1&sn=94f5ae6e5a8dcb9bdb7613f04e509c42#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 64: clicking 4 visible card slots.
+Click 253: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 254: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-09-07 11:42:26 | 美股 咖啡 IPO 新玩家来了！Black Rock 下一个星巴克？
+    Saved: sources\news\wechat_mp\articles\美股-咖啡-IPO-新玩家来了-Black-Rock-下一个星巴克-85ca9bf7db.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161512&idx=1&sn=a566d25496312d2045f4b9c1e48f9c74#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161512&idx=1&sn=a566d25496312d2045f4b9c1e48f9c74#rd
+Click 255: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-09-07 11:42:26 | 美股 万亿贷款市场颠覆者！区块链第一股Figure来了！
+    Saved: sources\news\wechat_mp\articles\美股-万亿贷款市场颠覆者-区块链第一股Figure来了-7fe329d9b9.md
+Click 256: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 65: clicking 4 visible card slots.
+Click 257: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-09-03 01:34:19 | 美股 英伟达“亲儿子”CoreWeave为什么大跌？
+    Saved: sources\news\wechat_mp\articles\美股-英伟达-亲儿子-CoreWeave为什么大跌-758d27c528.md
+Click 258: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-09-02 20:25:44 | 谷歌盘后突发！
+    Saved: sources\news\wechat_mp\articles\谷歌盘后突发-8e14b378b8.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161221&idx=1&sn=1e2cff436fbb0446ccc6d8ae2551b69f#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161221&idx=1&sn=1e2cff436fbb0446ccc6d8ae2551b69f#rd
+Click 259: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-09-01 20:02:03 | 特斯拉突发！
+    Saved: sources\news\wechat_mp\articles\特斯拉突发-503ce8bc5a.md
+Click 260: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-08-31 21:08:42 | 美股一路上涨，很多人会问：既然大家都赚钱了，那输家到底是谁？
+    Saved: sources\news\wechat_mp\articles\美股一路上涨-很多人会问-既然大家都赚钱了-那输家到底是谁-bca28ad402.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161167&idx=1&sn=1c1db2ce4fbc9ad32dd91d6aacff509e#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161167&idx=1&sn=1c1db2ce4fbc9ad32dd91d6aacff509e#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 66: clicking 4 visible card slots.
+Click 261: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 262: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-08-30 19:28:49 | 时间才是人生的最重要的货币，钱不是！
+    Saved: sources\news\wechat_mp\articles\时间才是人生的最重要的货币-钱不是-ee1a89dbe6.md
+Click 263: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-08-29 19:44:15 | 英伟达为何大跌？只因中国这家巨头要打造新AI芯片！
+    Saved: sources\news\wechat_mp\articles\英伟达为何大跌-只因中国这家巨头要打造新AI芯片-08aae0e600.md
+Click 264: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 67: clicking 4 visible card slots.
+Click 265: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-08-26 00:20:24 | 突发！历史首次！特朗普“开除”美联储理事！
+    Saved: sources\news\wechat_mp\articles\突发-历史首次-特朗普-开除-美联储理事-bba89014fa.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161019&idx=1&sn=addf170cf41c794c7d1d46aee84e638c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917161019&idx=1&sn=addf170cf41c794c7d1d46aee84e638c#rd
+Click 266: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 267: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-08-22 21:07:01 | 鲍威尔拉爆美股市场！拼多多【史无前例】上亿订单期权 信号
+    Saved: sources\news\wechat_mp\articles\鲍威尔拉爆美股市场-拼多多-史无前例-上亿订单期权-信号-ed572abe77.md
+Click 268: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-08-21 21:18:33 | 美股 英伟达 盘后突发，股价急跌！
+    Saved: sources\news\wechat_mp\articles\美股-英伟达-盘后突发-股价急跌-12d7d846ea.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160906&idx=1&sn=1d21945b48792455d2a188394659df06#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160906&idx=1&sn=1d21945b48792455d2a188394659df06#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 68: clicking 4 visible card slots.
+Click 269: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 270: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-08-21 17:29:33 | 千万美元看涨期权Call押拼多多下周财报大涨！
+    Saved: sources\news\wechat_mp\articles\千万美元看涨期权Call押拼多多下周财报大涨-fd081b8fa2.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160886&idx=1&sn=209b4316c0e0277c63765aa12a369d77#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160886&idx=1&sn=209b4316c0e0277c63765aa12a369d77#rd
+Click 271: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-08-20 21:21:06 | 美股V型急速反弹，倒车接人，你上车了吗？
+    Saved: sources\news\wechat_mp\articles\美股V型急速反弹-倒车接人-你上车了吗-9bc46044a6.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160881&idx=1&sn=3743b36012e9909aeff37c5bf34ea39a#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160881&idx=1&sn=3743b36012e9909aeff37c5bf34ea39a#rd
+Click 272: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 69: clicking 4 visible card slots.
+Click 273: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-08-18 20:30:26 | 美股 最神秘对冲基金6小时横扫印度股市8000万！105页报告揭秘它操盘具体手法，普通人也能学！
+    Saved: sources\news\wechat_mp\articles\美股-最神秘对冲基金6小时横扫印度股市8000万-105页报告揭秘它操盘具体手法-普通人也能学-ab26a8e14d.md
+Click 274: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-08-18 11:53:44 | 特斯拉 突发！发布新车型！
+    Saved: sources\news\wechat_mp\articles\特斯拉-突发-发布新车型-b18f3ffe18.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160724&idx=1&sn=76c6ae53efbdd469ac10efca8b366a2e#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160724&idx=1&sn=76c6ae53efbdd469ac10efca8b366a2e#rd
+Click 275: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-08-16 19:27:59 | 高盛罗列出了25只股，是散户们成为支撑美股的重要力量！
+    Saved: sources\news\wechat_mp\articles\高盛罗列出了25只股-是散户们成为支撑美股的重要力量-c10dc4dc8d.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160705&idx=1&sn=8eef8b018febd64a3cecdb7148bbaee6#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160705&idx=1&sn=8eef8b018febd64a3cecdb7148bbaee6#rd
+Click 276: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-08-15 18:38:45 | 英伟达 盘后突发！加仓一只票！
+    Saved: sources\news\wechat_mp\articles\英伟达-盘后突发-加仓一只票-a0c1b76289.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 70: clicking 4 visible card slots.
+Click 277: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 278: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-08-14 21:04:16 | 股神巴菲特出手捞底500万股 UNH，你还怕什么崩盘？
+    Saved: sources\news\wechat_mp\articles\股神巴菲特出手捞底500万股-UNH-你还怕什么崩盘-bc3c3024f2.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160676&idx=1&sn=c04dac310460b7ecdf89c73a2805a205#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160676&idx=1&sn=c04dac310460b7ecdf89c73a2805a205#rd
+Click 279: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-08-13 20:38:34 | 英伟达推迟发布Rubin，竟是忌惮AMD？多只美股狂飙! EDIT RKT
+    Saved: sources\news\wechat_mp\articles\英伟达推迟发布Rubin-竟是忌惮AMD-多只美股狂飙-EDIT-RKT-f043c891ee.md
+Click 280: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 71: clicking 4 visible card slots.
+Click 281: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-08-11 20:05:38 | 美股8月重磅IPO！Bullish与MIAX能否成为下一个CRCL？
+    Saved: sources\news\wechat_mp\articles\美股8月重磅IPO-Bullish与MIAX能否成为下一个CRCL-aa7b033b9f.md
+Click 282: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-08-10 22:40:39 | 美国今年毕业生失业率飙至8.1％，AI裁员潮真的来了！
+    Saved: sources\news\wechat_mp\articles\美国今年毕业生失业率飙至8-1-AI裁员潮真的来了-8f8ae843e2.md
+Click 283: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-08-09 17:37:23 | 最全美股K线视频，解读每一个形态背后的含义!
+    Saved: sources\news\wechat_mp\articles\最全美股K线视频-解读每一个形态背后的含义-4cd85c55f4.md
+Click 284: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-08-08 19:55:44 | 高盛警告：美股或大跌20%！华尔街对瑕疵业绩“零容忍”
+    Saved: sources\news\wechat_mp\articles\高盛警告-美股或大跌20-华尔街对瑕疵业绩-零容忍-37b65f7f90.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160470&idx=1&sn=e1d0c654f30e2e805d3eb056868c83b2#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160470&idx=1&sn=e1d0c654f30e2e805d3eb056868c83b2#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 72: clicking 4 visible card slots.
+Click 285: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 286: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-08-07 21:06:58 | 突发！知情人士称马斯克或将解散 Dojo项目，放弃自研芯片
+    Saved: sources\news\wechat_mp\articles\突发-知情人士称马斯克或将解散-Dojo项目-放弃自研芯片-0ba4abb75e.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160455&idx=1&sn=ae23506416cb88c34801cda9fa04f837#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160455&idx=1&sn=ae23506416cb88c34801cda9fa04f837#rd
+Click 287: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-08-07 20:37:24 | 这只AI 基建公司太牛了！太空股Firefly首日涨超57%
+    Saved: sources\news\wechat_mp\articles\这只AI-基建公司太牛了-太空股Firefly首日涨超57-f95e69fd0c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160435&idx=1&sn=86f2904036f4727ab88bfeea0560d77b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160435&idx=1&sn=86f2904036f4727ab88bfeea0560d77b#rd
+Click 288: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 73: clicking 4 visible card slots.
+Click 289: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-08-04 20:59:14 | 为什么软件设计公司FIG爆跌？美股7月创十次新高背后的‘危险信号
+    Saved: sources\news\wechat_mp\articles\为什么软件设计公司FIG爆跌-美股7月创十次新高背后的-危险信号-7374eba51c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160288&idx=1&sn=b61766986bc289900610d72487868dbf#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160288&idx=1&sn=b61766986bc289900610d72487868dbf#rd
+Click 290: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-08-03 19:35:59 | 95后青岛AI博士把公司30亿卖给英伟达 黄仁勋 ！
+    Saved: sources\news\wechat_mp\articles\95后青岛AI博士把公司30亿卖给英伟达-黄仁勋-6844ec7d5e.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160265&idx=1&sn=f15629e1d3fd84bdccc6c9187b9c68f0#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160265&idx=1&sn=f15629e1d3fd84bdccc6c9187b9c68f0#rd
+Click 291: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-08-03 19:35:59 | 为什么顶级交易员都是孤独的？
+    Saved: sources\news\wechat_mp\articles\为什么顶级交易员都是孤独的-470ac737a4.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160265&idx=2&sn=f535e5c1860df98f4e4a0451f9b86e63#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160265&idx=2&sn=f535e5c1860df98f4e4a0451f9b86e63#rd
+Click 292: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-08-03 12:05:07 | 美股最贵AI股Palantir财报前瞻！“天价”估值撑得住吗？
+    Saved: sources\news\wechat_mp\articles\美股最贵AI股Palantir财报前瞻-天价-估值撑得住吗-ba5a574595.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 74: clicking 4 visible card slots.
+Click 293: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-08-01 20:51:12 | 美股“八月魔咒”来了？华尔街陷入恐慌性抛售！
+    Saved: sources\news\wechat_mp\articles\美股-八月魔咒-来了-华尔街陷入恐慌性抛售-327689a16b.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160213&idx=1&sn=d1bfecf0c32ec012c150f1646334ab39#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160213&idx=1&sn=d1bfecf0c32ec012c150f1646334ab39#rd
+Click 294: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-08-01 16:03:57 | 美股 2025最强太空新股上市，是下一个SpaceX，有望超越Figma，RKLB，FireFly！
+    Saved: sources\news\wechat_mp\articles\美股-2025最强太空新股上市-是下一个SpaceX-有望超越Figma-RKLB-FireFly-73bd1e5072.md
+Click 295: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-07-31 20:57:17 | 250%首日大涨！美股设计软件Figma让整个华尔街彻底服了！
+    Saved: sources\news\wechat_mp\articles\250-首日大涨-美股设计软件Figma让整个华尔街彻底服了-041c72f77c.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160170&idx=1&sn=ec4ed6d9633db5bef62e4b01fe1aa15b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160170&idx=1&sn=ec4ed6d9633db5bef62e4b01fe1aa15b#rd
+Click 296: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 75: clicking 4 visible card slots.
+Click 297: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-07-28 01:02:45 | 美股 突发 利好 ！
+    Saved: sources\news\wechat_mp\articles\美股-突发-利好-7cd3c27012.md
+Click 298: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-07-25 21:04:07 | 美股新高背后，你必须看懂的真相！高盛客户正“放手做空”这一类公司
+    Saved: sources\news\wechat_mp\articles\美股新高背后-你必须看懂的真相-高盛客户正-放手做空-这一类公司-025ade1b1d.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160005&idx=1&sn=e8fa88f47c214c765894c3848ee601c5#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917160005&idx=1&sn=e8fa88f47c214c765894c3848ee601c5#rd
+Click 299: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-07-25 17:01:39 | 美股 2025年最强科技股上市，设计软件独角兽Figma深度分析！会是下一个CRCL吗？
+    Saved: sources\news\wechat_mp\articles\美股-2025年最强科技股上市-设计软件独角兽Figma深度分析-会是下一个CRCL吗-c098149ce4.md
+Click 300: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-07-24 21:22:46 | 英特尔盘后跳水！营收超预期，却藏致命隐忧！AMD笑到最后？
+    Saved: sources\news\wechat_mp\articles\英特尔盘后跳水-营收超预期-却藏致命隐忧-AMD笑到最后-57553ac506.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159972&idx=1&sn=fa1daa35d0943b425778ee84fc356146#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159972&idx=1&sn=fa1daa35d0943b425778ee84fc356146#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 76: clicking 4 visible card slots.
+Click 301: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 302: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-07-24 13:46:01 | 爆料！GPT-5 即将8月发布，人类历史上最强AI模型！
+    Saved: sources\news\wechat_mp\articles\爆料-GPT-5-即将8月发布-人类历史上最强AI模型-e8c1e88e0f.md
+Click 303: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-07-23 21:02:59 | 美股又创新高！纳指史上首次站上21000点！马斯克说了什么让特斯拉大跌？
+    Saved: sources\news\wechat_mp\articles\美股又创新高-纳指史上首次站上21000点-马斯克说了什么让特斯拉大跌-1aa54b4c47.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159915&idx=1&sn=c3cc66a503cedc4608f078b1cc50def3#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159915&idx=1&sn=c3cc66a503cedc4608f078b1cc50def3#rd
+Click 304: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 77: clicking 4 visible card slots.
+Click 305: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-07-20 22:21:08 | 美股还能再牛多久？顶流策略师与最新数据深度解读下半年行情
+    Saved: sources\news\wechat_mp\articles\美股还能再牛多久-顶流策略师与最新数据深度解读下半年行情-4e37f9a160.md
+Click 306: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-07-19 13:31:55 | 美股 7月看好一只AI基建股，翻X倍潜力！
+    Saved: sources\news\wechat_mp\articles\美股-7月看好一只AI基建股-翻X倍潜力-83063b9b98.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159708&idx=1&sn=844c9350ce59db115dcd23bd6b86242e#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159708&idx=1&sn=844c9350ce59db115dcd23bd6b86242e#rd
+Click 307: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-07-18 23:11:56 | 亿万富豪亲自下场“手撕”联合健康！股价暴跌背后藏着什么大秘密！
+    Saved: sources\news\wechat_mp\articles\亿万富豪亲自下场-手撕-联合健康-股价暴跌背后藏着什么大秘密-c4d4093c08.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159678&idx=1&sn=7121c50bb586bf23db845e47e5553eb6#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159678&idx=1&sn=7121c50bb586bf23db845e47e5553eb6#rd
+Click 308: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-07-18 21:05:46 | 美股 为什么我开始做医药股呢？附代号 ABCL.....
+    Saved: sources\news\wechat_mp\articles\美股-为什么我开始做医药股呢-附代号-ABCL-aa5745f13e.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159659&idx=1&sn=890ad970e5b6b96b0f76c84962d0e5f3#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159659&idx=1&sn=890ad970e5b6b96b0f76c84962d0e5f3#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 78: clicking 4 visible card slots.
+Click 309: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 310: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-07-17 19:13:14 | 美股 英伟达 10万亿市值潜力！背后逻辑分析！
+    Saved: sources\news\wechat_mp\articles\美股-英伟达-10万亿市值潜力-背后逻辑分析-eb07336395.md
+Click 311: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-07-16 21:03:11 | 老川普玩弄美股市场1个小时！华尔街拉响“鲍威尔警报”！稳定币第一股CRCL大利好来了
+    Saved: sources\news\wechat_mp\articles\老川普玩弄美股市场1个小时-华尔街拉响-鲍威尔警报-稳定币第一股CRCL大利好来了-2536f5ca00.md
+Click 312: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 79: clicking 4 visible card slots.
+Click 313: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-07-14 15:32:36 | 美国6月关税收入创下新高，达到266亿美元，高于5月的222亿美元
+    Saved: sources\news\wechat_mp\articles\美国6月关税收入创下新高-达到266亿美元-高于5月的222亿美元-93a6eec3ab.md
+Click 314: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-07-13 13:50:06 | 未来10年，一个不为人知投资机会？
+    Saved: sources\news\wechat_mp\articles\未来10年-一个不为人知投资机会-284bf2ecf8.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159483&idx=1&sn=572db1a8811525833b3b01ae1f623998#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159483&idx=1&sn=572db1a8811525833b3b01ae1f623998#rd
+Click 315: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-07-13 13:50:06 | AI界最大对赌协议：OpenAI若宣布实现AGI，微软巨额投资恐一夜清零
+    Saved: sources\news\wechat_mp\articles\AI界最大对赌协议-OpenAI若宣布实现AGI-微软巨额投资恐一夜清零-38ed416b24.md
+Click 316: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-07-11 22:22:32 | 独家采访！美股投资网CEO 硅谷AI创业故事！
+    Saved: sources\news\wechat_mp\articles\独家采访-美股投资网CEO-硅谷AI创业故事-b5dc34b2b5.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159293&idx=1&sn=5b0e9ed6be60ebcb1d03877f712ebddd#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159293&idx=1&sn=5b0e9ed6be60ebcb1d03877f712ebddd#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 80: clicking 4 visible card slots.
+Click 317: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-07-10 21:05:46 | 美股太猛了！摩根大通：还有5000亿资金准备入场！
+    Saved: sources\news\wechat_mp\articles\美股太猛了-摩根大通-还有5000亿资金准备入场-85780aab8c.md
+Click 318: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-07-10 13:10:34 | 特斯拉下一个引爆点！Robotaxi加速落地，自研人工智能Grok整合进特斯拉汽车
+    Saved: sources\news\wechat_mp\articles\特斯拉下一个引爆点-Robotaxi加速落地-自研人工智能Grok整合进特斯拉汽车-372d7ad457.md
+Click 319: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-07-09 20:28:34 | 美联储降息，美股到底怎么走？别再猜了，数据揭示惊人真相！
+    Saved: sources\news\wechat_mp\articles\美联储降息-美股到底怎么走-别再猜了-数据揭示惊人真相-23cd0be4b1.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159178&idx=1&sn=2c67fc5a3723f8a67b148e904175354c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159178&idx=1&sn=2c67fc5a3723f8a67b148e904175354c#rd
+Click 320: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 81: clicking 4 visible card slots.
+Click 321: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-07-07 05:33:16 | 特斯拉又崩了！
+    Saved: sources\news\wechat_mp\articles\特斯拉又崩了-2d9469f493.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159054&idx=1&sn=c69a171d30c7ab91be492ede3c4b1673#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917159054&idx=1&sn=c69a171d30c7ab91be492ede3c4b1673#rd
+Click 322: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-07-06 20:31:25 | 美股散户没有退缩，反而再次爆发强大的投资热情！
+    Saved: sources\news\wechat_mp\articles\美股散户没有退缩-反而再次爆发强大的投资热情-897e71a85e.md
+Click 323: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-07-05 12:04:50 | 为何这么多清华精英都去了扎克伯格的Meta搞AI？天价offer吸引力有多大？
+    Saved: sources\news\wechat_mp\articles\为何这么多清华精英都去了扎克伯格的Meta搞AI-天价offer吸引力有多大-d68dc5fe1e.md
+Click 324: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-07-04 21:02:47 | 2025美股IPO大爆发！下半年淘金，这十大“黑马”指明方向！
+    Saved: sources\news\wechat_mp\articles\2025美股IPO大爆发-下半年淘金-这十大-黑马-指明方向-1518ef8e9f.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 82: clicking 4 visible card slots.
+Click 325: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 326: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-07-04 20:43:28 | 投资Tesla 最大的风险是？
+    Saved: sources\news\wechat_mp\articles\投资Tesla-最大的风险是-6fae6e71fc.md
+Click 327: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-07-03 22:34:09 | 80岁老头拼了！特朗普为“大美丽法案”彻夜未眠！背后最大的赢家是？
+    Saved: sources\news\wechat_mp\articles\80岁老头拼了-特朗普为-大美丽法案-彻夜未眠-背后最大的赢家是-8275510dad.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158885&idx=1&sn=46cb09d79688e64ef52e7f1bd23f9000#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158885&idx=1&sn=46cb09d79688e64ef52e7f1bd23f9000#rd
+Click 328: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 83: clicking 4 visible card slots.
+Click 329: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 330: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-06-30 22:12:00 | 马斯克放狠话：如果大而美法案通过，“美国党”明天就成立！
+    Saved: sources\news\wechat_mp\articles\马斯克放狠话-如果大而美法案通过-美国党-明天就成立-6accc56c42.md
+Click 331: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 332: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 84: clicking 4 visible card slots.
+Click 333: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-06-27 19:03:02 | 标普、纳指共创249年历史新高！特朗普再度打压市场！NKE HIMS NVDA.....
+    Saved: sources\news\wechat_mp\articles\标普-纳指共创249年历史新高-特朗普再度打压市场-NKE-HIMS-NVDA-563bb7642f.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158654&idx=1&sn=150c7e0fd9839cf3b08855ad889f74de#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158654&idx=1&sn=150c7e0fd9839cf3b08855ad889f74de#rd
+Click 334: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-06-26 22:51:28 | 美股期权周末是怎么贬值的？
+    Saved: sources\news\wechat_mp\articles\美股期权周末是怎么贬值的-7e05e77324.md
+Click 335: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-26 21:05:12 | 如何在突发新闻中“秒抓飙升股”？特斯拉利空来袭！
+    Saved: sources\news\wechat_mp\articles\如何在突发新闻中-秒抓飙升股-特斯拉利空来袭-0cc4549780.md
+Click 336: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 85: clicking 4 visible card slots.
+Click 337: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-06-23 20:58:36 | 美股太硬气了！完全无视中东战火
+    Saved: sources\news\wechat_mp\articles\美股太硬气了-完全无视中东战火-46a7a258f8.md
+Click 338: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-06-22 13:55:18 | 美股周一会大跌吗？我觉得 未必！
+    Saved: sources\news\wechat_mp\articles\美股周一会大跌吗-我觉得-未必-ae08916d31.md
+Click 339: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-21 22:19:55 | 突发！美国出手了！成功轰炸伊朗三大核设施！
+    Saved: sources\news\wechat_mp\articles\突发-美国出手了-成功轰炸伊朗三大核设施-e7be508653.md
+Click 340: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-06-21 17:44:16 | 当 Netflix 开启直播，媒体生态迎重大结构转折
+    Saved: sources\news\wechat_mp\articles\当-Netflix-开启直播-媒体生态迎重大结构转折-f853870b47.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 86: clicking 4 visible card slots.
+Click 341: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 342: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-06-20 21:05:58 | 1万辆Zoox无人车上路！亚马逊杀入Robotaxi大战，胜算几何？
+    Saved: sources\news\wechat_mp\articles\1万辆Zoox无人车上路-亚马逊杀入Robotaxi大战-胜算几何-2cfc65bf7b.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158434&idx=1&sn=3c99d396bb1817a2373ab39869bb6cec#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158434&idx=1&sn=3c99d396bb1817a2373ab39869bb6cec#rd
+Click 343: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-20 20:20:43 | 10天暴涨800%，稳定币第一股CRCL到顶了吗？！美股主力资金怎么看！
+    Saved: sources\news\wechat_mp\articles\10天暴涨800-稳定币第一股CRCL到顶了吗-美股主力资金怎么看-baa9f333ed.md
+Click 344: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 87: clicking 4 visible card slots.
+Click 345: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 346: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 347: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-17 20:58:24 | 重磅！美国参议院迈出关键一步！COIN欲推“稳定股”
+    Saved: sources\news\wechat_mp\articles\重磅-美国参议院迈出关键一步-COIN欲推-稳定股-b56e076aa2.md
+Click 348: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-06-17 12:51:22 | 低价股也成为美股散户追捧的对象 APPS HUSA INDO
+    Saved: sources\news\wechat_mp\articles\低价股也成为美股散户追捧的对象-APPS-HUSA-INDO-a1fe2bb21b.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 88: clicking 4 visible card slots.
+Click 349: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-06-16 20:19:25 | AMD为何大涨10%？稳定币第一股掌门人发出重磅信号！
+    Saved: sources\news\wechat_mp\articles\AMD为何大涨10-稳定币第一股掌门人发出重磅信号-0804da7aaa.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158211&idx=1&sn=278ca7c39904e834062a7b6aee068827#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158211&idx=1&sn=278ca7c39904e834062a7b6aee068827#rd
+Click 350: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-06-15 14:09:18 | 美股复盘 上周两个牛市冲天的新股 CHYM AIRO
+    Saved: sources\news\wechat_mp\articles\美股复盘-上周两个牛市冲天的新股-CHYM-AIRO-40cb1465f5.md
+Click 351: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-14 22:52:12 | 预警！专业机构投资者在卖美股，散户抢着买！
+    Saved: sources\news\wechat_mp\articles\预警-专业机构投资者在卖美股-散户抢着买-40449fa29a.md
+Click 352: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 89: clicking 4 visible card slots.
+Click 353: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-06-11 15:57:31 | 两只美股，准备入手，潜力巨大！CHYM ......
+    Saved: sources\news\wechat_mp\articles\两只美股-准备入手-潜力巨大-CHYM-6131f1808e.md
+Click 354: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-06-10 20:46:32 | 马斯克与特朗普“复合”了？特斯拉Robotaxi上线倒计时，测试车已现德州街头！
+    Saved: sources\news\wechat_mp\articles\马斯克与特朗普-复合-了-特斯拉Robotaxi上线倒计时-测试车已现德州街头-59069d4eab.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158040&idx=1&sn=f3b9fbcf10ff64ec6a79a1cf9b44e62b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917158040&idx=1&sn=f3b9fbcf10ff64ec6a79a1cf9b44e62b#rd
+Click 355: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-06-09 21:11:06 | 特斯拉股价要到800？对冲基金“集体认输”狂买美股！苹果为什么跳水？
+    Saved: sources\news\wechat_mp\articles\特斯拉股价要到800-对冲基金-集体认输-狂买美股-苹果为什么跳水-82a46928ec.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157980&idx=1&sn=e41ca6497d0fce33fdb96022ba99309d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157980&idx=1&sn=e41ca6497d0fce33fdb96022ba99309d#rd
+Click 356: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 90: clicking 4 visible card slots.
+Click 357: slot 1 at (835, 255)
+  New local URLs after click: 3
+  Target: 2025-06-09 16:55:32 | 特朗普公布新生儿储蓄计划每生一孩存1000美元！
+    Saved: sources\news\wechat_mp\articles\特朗普公布新生儿储蓄计划每生一孩存1000美元-7d78ffe53b.md
+  Target: 2025-06-09 21:11:06 | 00后广州神童成为硅谷AI创业新星！没有任何产品却能估值数亿！
+    Saved: sources\news\wechat_mp\articles\00后广州神童成为硅谷AI创业新星-没有任何产品却能估值数亿-57b14735db.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157980&idx=2&sn=20fd87a6e0164dcaa5c666656e665d1c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157980&idx=2&sn=20fd87a6e0164dcaa5c666656e665d1c#rd
+Click 358: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-06-08 21:05:14 | 堪比好莱坞大片！原来是他和马斯克在白宫打起来了！
+    Saved: sources\news\wechat_mp\articles\堪比好莱坞大片-原来是他和马斯克在白宫打起来了-415224da5d.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157954&idx=1&sn=ff8896c56496ad88d4e947d57e59f23d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157954&idx=1&sn=ff8896c56496ad88d4e947d57e59f23d#rd
+Click 359: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-07 19:08:08 | 美股 历史经验告诉你，现在该不该捞底特斯拉！
+    Saved: sources\news\wechat_mp\articles\美股-历史经验告诉你-现在该不该捞底特斯拉-2774f2ed05.md
+Click 360: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 91: clicking 4 visible card slots.
+Click 361: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-06-04 20:36:04 | 昔日盟友变仇敌？马斯克、特朗普撕破脸
+    Saved: sources\news\wechat_mp\articles\昔日盟友变仇敌-马斯克-特朗普撕破脸-703ec9b807.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157820&idx=1&sn=a087d222f38cf9bd1f34bec524c0d29b#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157820&idx=1&sn=a087d222f38cf9bd1f34bec524c0d29b#rd
+Click 362: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-06-04 18:08:21 | 美股6月必选四只股，全新上市！CRCL LLY.....
+    Saved: sources\news\wechat_mp\articles\美股6月必选四只股-全新上市-CRCL-LLY-46c357ef89.md
+Click 363: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 364: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-06-03 20:40:31 | 英伟达“亲儿子”CRWV涨到停不下来！马斯克痛斥特朗普减税法案
+    Saved: sources\news\wechat_mp\articles\英伟达-亲儿子-CRWV涨到停不下来-马斯克痛斥特朗普减税法案-8bba45e664.md
+  Target: 2025-06-04 06:18:56 | 台积电CEO最新表态，利好信号释放！
+    Saved: sources\news\wechat_mp\articles\台积电CEO最新表态-利好信号释放-2bde3aa15b.md
+GUI run clicked 364 slots and saved 243 new target articles.
+Target articles in manifest: 274
+- 2026-06-19 04:59:12 | 突发！我们一个重大的转变！
+- 2026-06-18 20:28:45 | SpaceX为何暴跌11%，估值高吗？抛售解禁日解析，短期最大风险是什么？
+- 2026-06-17 21:08:57 | 我清了 SpaceX，美股 彻底晕了！美联储新主席首秀，四大“意外”直接把多头打懵
+- 2026-06-16 15:23:42 | SpaceX IPO 解禁时间表深度解析：真正影响股价因素
+- 2026-06-15 21:16:37 | 美股 SPCX 彻底疯了！不用感谢我 ！
+- 2026-06-13 20:46:00 | 推演SpaceX未来半年走势：$135有人托底，$175.5有人抛售！
+- 2026-06-10 18:05:30 | 史上最全深度分析：SpaceX面临五大风险，马斯克如何应对华尔街的压力？
+- 2026-06-09 21:12:50 | 仅剩最后1天，这辈子再也买不了美股了！
+- 2026-06-08 20:31:34 | 美股爆发性反弹！MRVL被纳入标普500，芯片股带头大反攻！
+- 2026-06-06 18:39:41 | 美股分析 AI从云端杀进PC，美股最大机会出现了！
+- 2026-06-05 18:45:30 | 黑色星期五！美股AI集体崩跌，到底发生了什么？
+- 2026-06-04 21:10:57 | SpaceX上市倒计时7天！你最该看清的三个价值陷阱！

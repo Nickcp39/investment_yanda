@@ -224,3 +224,48 @@ miss. Net grade: a strong, well-reasoned PASS with a minor, defensible under-siz
 ```
 lean-6module-v1,none,googl_2024-06-14,quality_compounder,WINNER,4,STARTER,HOLD,STARTER..CORE,1,no,no,M3,M2/M3,sound,too_small_missed_asymmetry,"WINNER +115.9% t.r. vs SPY +42.1%/QQQ +54.8% to 2026-06-16; beat SPY ~74pt. +12mo only +0.7% (lagged SPY ~11pt); worst DD -17.9% @2025-04-08 $144.11. Win back-loaded (+13-24mo). Axis-1 PASS (STARTER avoided old WATCH/0%); reasoning sound; M2/M3 conviction stack drove it; M5 -1 sized down no veto; M1=0 forward-uncertainty=haircut not veto (fixed old disease). size-dist 1: 4% entry/12% ceiling timid-end for a Core-durability name that ~2x, but add-path+12%-ceiling+yr1 lag/DD justify caution. Source: StatMuse total-return."
 ```
+
+---
+
+## 5. Addendum (2026-06-19) — business-reality proof + the "braver?" verdict
+
+### 5a. Did the two forward unknowns (and the governance cap) actually break — and which way?
+
+Every risk that held this name **below Core** resolved in the bull's favor. Dated proof (Alphabet
+releases Q2'24→Q1'26; DOJ remedies opinion 2025-09-02):
+
+| As-of fear (drove the haircut / cap) | What actually happened, 2024-06 → 2026-06 | Direction |
+|---|---|---|
+| GenAI erodes the Search profit pool | Search & other revenue **accelerated**: +13.8% YoY (Q2'24) → **+19% YoY (Q1'26)**; AI Overviews ~1.5B MAU monetizing at ~conventional rates; AI Mode 75M+ DAU; Gemini App 750M MAU; **Gemini 3 retook frontier leadership** (late 2025) | **Bear thesis BROKE** |
+| +91% capex = empire-spend | Capex $52.5B (FY24) → $91.4B (FY25) → **$180–190B guide (FY26)**, but **Cloud op margin 11.3% → 32.9%**, Cloud growth re-accelerated to **+63%**, backlog **>$460B** | **VALIDATED** (caveat: TTM FCF compressing $73B→$64B) |
+| DOJ breaks Search distribution | **2025-09-02 remedy: NO Chrome divestiture; default-placement economics survive**; only *exclusive* contracts barred | **MILDER than feared** |
+| Founder control destroys minority value | Backed the exact capex that re-rated the stock 2.1×; **raised the dividend**, **$45.7B buyback (FY25)**; no self-dealing | **BENIGN-to-positive** |
+
+All four resolved bullish → **+109.8% price / +115.9% total return, beat SPY by ~68–74 pts.**
+
+### 5b. Was 4% / 12% too timid — "should have been braver"?
+
+**Yes — at the CEILING, not at the ENTRY.** These are two different errors, and only one is real:
+
+- **Entry (4% starter): correct — do not change.** The thesis was genuinely unresolved at as-of, and the
+  realized path *vindicated* caution — flat for 12 months (lagging SPY ~11 pts), then **−18% at the April-2025
+  trough ($144.11)** before the re-rate. A reckless full-size Core buy at $175 would have sat underwater on an
+  unproven thesis for a year. The staged "starter + add on $150–170 weakness" was the **better** path, and the
+  add zone was actually hit.
+- **Ceiling (12% Confirmed): one tier too low — the real miss.** `METHODOLOGY.md §2` *already lists GOOGL as a
+  Core (15–25%) name*. The blind Runner docked it a full tier to Confirmed **because of the founder-governance
+  discount** — the single assumption that proved **value-irrelevant**. That discount is exactly where the
+  bravery was owed.
+
+**One-line lesson:** *Be braver at the ceiling, not the trigger.* A governance/control discount on a franchise
+compounder whose economics + operators are already Core-grade should **shave the Core ceiling (25% → ~15%),
+not delete the Core tier (→ 12% Confirmed).**
+
+### 5c. Weighting hypothesis (HYPOTHESIS ONLY — do not tune on one case, per §9)
+
+> For a `quality_compounder` carrying a founder/control-governance discount **and** operator life-arc ≥ 4/5,
+> a growing profit pool, and an unfailable balance sheet: apply the governance discount **within** the Core band
+> (lower the ceiling toward ~15%), **not** as a **tier demotion** to Confirmed. Test against META (control 3/5)
+> and DIS (operator 2.5/5) before any weight change — confirm the discount is **operator-grade-conditioned**,
+> not flat. Separately, keep watching the **FCF-compression** strand (TTM $73B→$64B) before declaring the capex
+> thesis fully closed.

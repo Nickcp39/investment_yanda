@@ -1,6 +1,9 @@
 {
   "ticker": "MU",
   "as_of": "2025-03-21",
+  "pipeline_version": "lean_six_module_v0",
+  "weights_version": "W_v0",
+  "run_date": "2026-06-18",
   "context_label": "cyclical_inflection",
   "as_of_price": 94.72,
   "as_of_market_cap": 105600000000,

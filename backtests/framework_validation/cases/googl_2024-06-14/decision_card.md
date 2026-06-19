@@ -12,6 +12,8 @@
 |---|---|
 | Ticker | GOOGL (Alphabet Class A) |
 | As-of date | 2024-06-14 |
+| Pipeline / weights version | `lean-6module-v1` / `none` (registry: [VERSIONS.md](../../VERSIONS.md)) |
+| Run / lock date | 2026-06-19 |
 | As-of price (Class A, verified) | **$175.44** (S005) |
 | As-of market cap | **~$2.17T** ($175.44 × 12,381M sh, S001/S005) |
 | Context label | **quality_compounder** |

@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TradesMax 2026 必买14只股 · 战绩复盘</title>
+<style>
+:root{--bg:#0f1419;--panel:#1a2029;--panel2:#222b36;--line:#2c3744;--ink:#e6edf3;--muted:#8b98a5;
+--accent:#4ca3ff;--green:#3fb950;--red:#f85149;--gold:#ffb454}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.6;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 20px 80px}
+h1{margin:0 0 4px;font-size:22px}.sub{color:var(--muted);font-size:13px;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card .k{color:var(--muted);font-size:12px}.card .v{font-size:24px;font-weight:700;margin-top:3px}
+.card .v small{font-size:12px;color:var(--muted);font-weight:400}
+.up{color:var(--green)}.dn{color:var(--red)}.gold{color:var(--gold)}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:16px 0}
+h2{margin:0 0 14px;font-size:15px;color:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 9px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--panel)}
+th:hover{color:var(--accent)}td.l,th.l{text-align:left}
+tr:hover td{background:var(--panel2)}
+.tk{font-weight:700}.tk a{color:var(--ink);text-decoration:none}.tk a:hover{color:var(--accent)}
+.ep{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.bar{display:flex;align-items:center;gap:2px}
+.barfill{height:14px;border-radius:3px;min-width:2px}
+.note{color:var(--muted);font-size:11px}
+.pill{display:inline-block;border-radius:4px;padding:1px 7px;font-size:11px;font-weight:600}
+.pill.hit{background:rgba(63,185,80,.15);color:var(--green)}
+.pill.miss{background:rgba(248,81,73,.12);color:var(--red)}
+.legend{color:var(--muted);font-size:12px;margin-top:10px}
+ul.notes{color:#cdd9e5;font-size:13px;margin:6px 0 0;padding-left:18px}
+ul.notes li{margin:4px 0}
+.win{color:var(--green)}.lose{color:var(--red)}
+</style></head><body><div class="wrap">
+<h1>TradesMax「2026 必买股」战绩复盘</h1>
+<div class="sub">美股投资网 / StockWe · 上中下集 14 只 · 发布日收盘→<b id="asof"></b> 收盘 · 数据 Yahoo Finance · 等权、未计股息</div>
+<div class="cards" id="cards"></div>
+<section><h2>个股收益(发布日→今天,按涨幅排序)</h2><div id="chart"></div>
+<div class="legend">绿=涨 红=跌 · 灰条=区间最高(若止盈可达的涨幅)</div></section>
+<section><h2>明细表(点表头排序)</h2>
+<div style="overflow-x:auto"><table id="tbl"><thead><tr>
+<th class="l" data-k="t">代码</th><th class="l" data-k="ep">集</th><th data-k="pub_date">发布日</th>
+<th data-k="pub_close">发布close</th><th data-k="today">今日</th><th data-k="ret">收益%</th>
+<th data-k="maxgain">区间最高%</th><th data-k="ret_entry">按建议入场%</th>
+<th data-k="spy">同期SPY</th><th data-k="target">目标价</th><th class="l">备注</th>
+</tr></thead><tbody></tbody></table></div></section>
+<section><h2>结论</h2><ul class="notes" id="concl"></ul></section>
+</div>
+<script>
+const D={"summary": {"asof": "2026-06-18", "n": 14, "win": 10, "hit": 71.42857142857143, "avg": 60.82560973804235, "med": 46.610392740415605, "spy": 8.6, "qqq": 19.7, "best": {"t": "MU", "co": "美光 存储/HBM", "ep": "中集", "url": "https://www.youtube.com/watch?v=TaX5DM5dQlg", "pub_date": "2026-01-08", "pub_close": 327.0199890136719, "today": 1133.989990234375, "today_date": "2026-06-18", "ret": 246.7647325335106, "hi": 1133.989990234375, "lo": 321.79998779296875, "entry": 327.0199890136719, "entry_given": false, "ret_entry": 246.7647325335106, "maxgain": 246.7647325335106, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 8.3, "qqq": 19.4, "note": "二次推荐(2025已+240%)"}, "worst": {"t": "SMR", "co": "NuScale 小型核电", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 18.899999618530273, "today": 11.739999771118164, "today_date": "2026-06-18", "ret": -37.88359784088131, "hi": 20.639999389648438, "lo": 9.15999984741211, "entry": 18.0, "entry_given": true, "ret_entry": -34.77777904934353, "maxgain": 9.206348181151299, "target": 50, "tgt_hit": false, "tgt_hit_ever": false, "spy": 7.9, "qqq": 19.1, "note": ""}, "over50": 7}, "rows": [{"t": "MU", "co": "美光 存储/HBM", "ep": "中集", "url": "https://www.youtube.com/watch?v=TaX5DM5dQlg", "pub_date": "2026-01-08", "pub_close": 327.0199890136719, "today": 1133.989990234375, "today_date": "2026-06-18", "ret": 246.7647325335106, "hi": 1133.989990234375, "lo": 321.79998779296875, "entry": 327.0199890136719, "entry_given": false, "ret_entry": 246.7647325335106, "maxgain": 246.7647325335106, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 8.3, "qqq": 19.4, "note": "二次推荐(2025已+240%)"}, {"t": "NBIS", "co": "Nebius AI云", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 103.88500213623047, "today": 286.69000244140625, "today_date": "2026-06-18", "ret": 175.9686158214185, "hi": 286.69000244140625, "lo": 73.87000274658203, "entry": 80.0, "entry_given": true, "ret_entry": 258.3625030517578, "maxgain": 175.9686158214185, "target": 200, "tgt_hit": true, "tgt_hit_ever": true, "spy": 7.9, "qqq": 19.1, "note": "二次推荐(2025翻3倍)"}, {"t": "GLW", "co": "康宁 光纤/材料", "ep": "中集", "url": "https://www.youtube.com/watch?v=TaX5DM5dQlg", "pub_date": "2026-01-08", "pub_close": 85.33000183105469, "today": 194.9199981689453, "today_date": "2026-06-18", "ret": 128.43079103041438, "hi": 208.27999877929688, "lo": 85.2300033569336, "entry": 85.33000183105469, "entry_given": false, "ret_entry": 128.43079103041438, "maxgain": 144.08765300588124, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 8.3, "qqq": 19.4, "note": ""}, {"t": "TTMI", "co": "TTM 高端PCB", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 100.9000015258789, "today": 216.44000244140625, "today_date": "2026-06-18", "ret": 114.50941443830757, "hi": 216.44000244140625, "lo": 87.91000366210938, "entry": 66.86, "entry_given": true, "ret_entry": 223.7212121468834, "maxgain": 114.50941443830757, "target": 120, "tgt_hit": true, "tgt_hit_ever": true, "spy": 7.9, "qqq": 19.1, "note": "VIP 12-26 $66.86"}, {"t": "INOD", "co": "Innodata AI数据", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 57.61000061035156, "today": 95.5, "today_date": "2026-06-18", "ret": 65.76982987019832, "hi": 121.5, "lo": 34.45000076293945, "entry": 60.0, "entry_given": true, "ret_entry": 59.166666666666664, "maxgain": 110.90088302857693, "target": 150, "tgt_hit": false, "tgt_hit_ever": false, "spy": 7.9, "qqq": 19.1, "note": "二次推荐(2025+168%)"}, {"t": "SANM", "co": "Sanmina EMS制造", "ep": "上集", "url": "https://www.youtube.com/watch?v=GDzegfS0ZPE", "pub_date": "2025-12-31", "pub_close": 150.07000732421875, "today": 241.49000549316406, "today_date": "2026-06-18", "ret": 60.918233962258014, "hi": 282.7200012207031, "lo": 122.86000061035156, "entry": 150.07000732421875, "entry_given": false, "ret_entry": 60.918233962258014, "maxgain": 88.39207531315748, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 9.5, "qqq": 20.6, "note": ""}, {"t": "RMBS", "co": "Rambus 内存接口", "ep": "上集", "url": "https://www.youtube.com/watch?v=GDzegfS0ZPE", "pub_date": "2025-12-31", "pub_close": 91.88999938964844, "today": 141.1699981689453, "today_date": "2026-06-18", "ret": 53.62933845535355, "hi": 170.66000366210938, "lo": 79.7300033569336, "entry": 91.88999938964844, "entry_given": false, "ret_entry": 53.62933845535355, "maxgain": 85.72206420248874, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 9.5, "qqq": 20.6, "note": ""}, {"t": "RDW", "co": "Redwire 太空基建", "ep": "中集", "url": "https://www.youtube.com/watch?v=TaX5DM5dQlg", "pub_date": "2026-01-08", "pub_close": 10.279999732971191, "today": 14.350000381469727, "today_date": "2026-06-18", "ret": 39.59144702547767, "hi": 25.899999618530273, "lo": 7.710000038146973, "entry": 7.66, "entry_given": true, "ret_entry": 87.33681960143245, "maxgain": 151.94552812546124, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 8.3, "qqq": 19.4, "note": "VIP $7.66 介入"}, {"t": "NVDA", "co": "英伟达 AI GPU", "ep": "上集", "url": "https://www.youtube.com/watch?v=GDzegfS0ZPE", "pub_date": "2025-12-31", "pub_close": 186.5, "today": 210.69000244140625, "today_date": "2026-06-18", "ret": 12.97051069244303, "hi": 235.74000549316406, "lo": 165.1699981689453, "entry": 186.5, "entry_given": false, "ret_entry": 12.97051069244303, "maxgain": 26.40214771751424, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 9.5, "qqq": 20.6, "note": "大盘价值重估 bonus"}, {"t": "AEP", "co": "美国电力 AEP", "ep": "中集", "url": "https://www.youtube.com/watch?v=TaX5DM5dQlg", "pub_date": "2026-01-08", "pub_close": 115.93000030517578, "today": 127.69000244140625, "today_date": "2026-06-18", "ret": 10.14405426142782, "hi": 137.14999389648438, "lo": 115.93000030517578, "entry": 115.93000030517578, "entry_given": false, "ret_entry": 10.14405426142782, "maxgain": 18.30414347921054, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 8.3, "qqq": 19.4, "note": ""}, {"t": "PLAB", "co": "Photronics 掩模版", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 34.220001220703125, "today": 33.630001068115234, "today_date": "2026-06-18", "ret": -1.724138315433315, "hi": 54.959999084472656, "lo": 28.6299991607666, "entry": 30.0, "entry_given": true, "ret_entry": 12.100003560384115, "maxgain": 60.60782327272922, "target": 53, "tgt_hit": false, "tgt_hit_ever": true, "spy": 7.9, "qqq": 19.1, "note": ""}, {"t": "ONDS", "co": "Ondas 国防无人机", "ep": "上集", "url": "https://www.youtube.com/watch?v=GDzegfS0ZPE", "pub_date": "2025-12-31", "pub_close": 9.760000228881836, "today": 9.270000457763672, "today_date": "2026-06-18", "ret": -5.020489340442376, "hi": 14.010000228881836, "lo": 8.149999618530273, "entry": 7.6, "entry_given": true, "ret_entry": 21.97369023373253, "maxgain": 43.54508094603708, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 9.5, "qqq": 20.6, "note": "VIP $7.60 介入"}, {"t": "HROW", "co": "Harrow 眼科药", "ep": "上集", "url": "https://www.youtube.com/watch?v=GDzegfS0ZPE", "pub_date": "2025-12-31", "pub_close": 49.0, "today": 42.869998931884766, "today_date": "2026-06-18", "ret": -12.510206261459661, "hi": 54.79999923706055, "lo": 29.030000686645508, "entry": 49.0, "entry_given": false, "ret_entry": -12.510206261459661, "maxgain": 11.836733136858259, "target": null, "tgt_hit": null, "tgt_hit_ever": null, "spy": 9.5, "qqq": 20.6, "note": ""}, {"t": "SMR", "co": "NuScale 小型核电", "ep": "下集", "url": "https://www.youtube.com/watch?v=JoBRgakmD58", "pub_date": "2026-01-15", "pub_close": 18.899999618530273, "today": 11.739999771118164, "today_date": "2026-06-18", "ret": -37.88359784088131, "hi": 20.639999389648438, "lo": 9.15999984741211, "entry": 18.0, "entry_given": true, "ret_entry": -34.77777904934353, "maxgain": 9.206348181151299, "target": 50, "tgt_hit": false, "tgt_hit_ever": false, "spy": 7.9, "qqq": 19.1, "note": ""}]};const S=D.summary,R=D.rows;
+document.getElementById("asof").textContent=S.asof;
+const f1=x=>(x>=0?"+":"")+x.toFixed(1);
+const cls=x=>x>=0?"up":"dn";
+document.getElementById("cards").innerHTML=[
+ ["命中率",`<span class="${S.hit>=50?'up':'dn'}">${S.win}/${S.n}</span> <small>${S.hit.toFixed(0)}%</small>`],
+ ["等权平均收益",`<span class="${cls(S.avg)}">${f1(S.avg)}%</span>`],
+ ["中位数",`<span class="${cls(S.med)}">${f1(S.med)}%</span>`],
+ ["同期 SPY / QQQ",`<span class="up" style="font-size:18px">+${S.spy}% / +${S.qqq}%</span>`],
+ [">50% 大涨",`<span class="gold">${S.over50}</span> <small>只</small>`],
+].map(c=>`<div class="card"><div class="k">${c[0]}</div><div class="v">${c[1]}</div></div>`).join("");
+// chart
+const mx=Math.max(...R.map(r=>Math.max(Math.abs(r.ret),r.maxgain)));
+document.getElementById("chart").innerHTML=R.map(r=>{
+ const w=Math.abs(r.ret)/mx*100, wm=r.maxgain/mx*100;
+ const col=r.ret>=0?"var(--green)":"var(--red)";
+ return `<div style="display:grid;grid-template-columns:120px 1fr 70px;gap:10px;align-items:center;margin:3px 0">
+  <div class="l" style="text-align:left"><span class="tk">${r.t}</span> <span class="note">${r.ep}</span></div>
+  <div class="bar"><div class="barfill" style="width:${wm}%;background:#33404d" title="区间最高 +${r.maxgain.toFixed(0)}%"></div>
+   <div class="barfill" style="width:${w}%;background:${col};margin-left:-${wm>w?(wm-w):0}%"></div></div>
+  <div style="text-align:right;font-weight:700;color:${col}">${f1(r.ret)}%</div></div>`;
+}).join("");
+// table
+function render(rows){
+ document.querySelector("#tbl tbody").innerHTML=rows.map(r=>`<tr>
+ <td class="l tk"><a href="${r.url}" target="_blank" title="点开视频">${r.t}</a><div class="note">${r.co}</div></td>
+ <td class="l"><span class="ep">${r.ep}</span></td>
+ <td>${r.pub_date.slice(5)}</td><td>$${r.pub_close.toFixed(2)}</td><td>$${r.today.toFixed(2)}</td>
+ <td class="${cls(r.ret)}" style="font-weight:700">${f1(r.ret)}%</td>
+ <td class="gold">+${r.maxgain.toFixed(0)}%</td>
+ <td class="${cls(r.ret_entry)}">${f1(r.ret_entry)}%${r.entry_given?'':'<span class="note">*</span>'}</td>
+ <td class="note">+${r.spy}%</td>
+ <td>${r.target?('$'+r.target+' '+(r.tgt_hit?'<span class="pill hit">达标</span>':(r.tgt_hit_ever?'<span class="pill hit">曾达</span>':'<span class="pill miss">未到</span>'))):'<span class="note">—</span>'}</td>
+ <td class="l note">${r.note}</td></tr>`).join("");
+}
+render(R);
+let asc={};
+document.querySelectorAll("#tbl th[data-k]").forEach(th=>th.onclick=()=>{
+ const k=th.dataset.k;asc[k]=!asc[k];
+ const s=[...R].sort((a,b)=>{let x=a[k],y=b[k];if(typeof x==="string")return asc[k]?x.localeCompare(y):y.localeCompare(x);return asc[k]?x-y:y-x;});
+ render(s);
+});
+document.querySelector('#tbl th[data-k="ret_entry"]').insertAdjacentHTML('beforeend','');
+// conclusions
+const big=R.filter(r=>r.ret>=50).map(r=>r.t+" "+f1(r.ret)+"%").join("、");
+const lose=R.filter(r=>r.ret<0).map(r=>r.t+" "+f1(r.ret)+"%").join("、");
+document.getElementById("concl").innerHTML=[
+ `<b>命中率 ${S.win}/${S.n} (${S.hit.toFixed(0)}%)</b>,等权平均 <span class="win">${f1(S.avg)}%</span>(约 5.4 个月),中位数 ${f1(S.med)}%。`,
+ `<b>大幅跑赢大盘</b>:同窗口 SPY 仅 +${S.spy}%、QQQ +${S.qqq}%;这个篮子等权 ${f1(S.avg)}%,是 QQQ 的约 3 倍。`,
+ `<b>典型幂律分布</b>:收益主要来自 5 只 >50% 的大牛(${big});其余贡献有限——他们的真本事在"挑出大牛股",不是"颗颗都中"。`,
+ `<b>亏损 4 只</b>:${lose}。小盘投机股(SMR/ONDS)和个别二次推荐(无)命中差,大中盘 AI 主题(MU/NBIS/GLW/TTMI)才是 edge 所在。`,
+ `<b>二次推荐分化</b>:MU 去年+240%今年再 <span class="win">+247%</span>、NBIS 去年翻3倍今年再 <span class="win">+176%</span>——但同为二次推荐的票也可能哑火,不能闭眼复制。`,
+ `<span class="note">* 按建议入场%:仅 ONDS/RDW/TTMI/INOD/PLAB/NBIS/SMR 视频给了入场价,其余用发布日 close 代替。未计股息;"区间最高%"为发布日后盘中最高,用于检验"若止盈"的口径。</span>`,
+].map(s=>`<li>${s}</li>`).join("");
+</script></body></html>

@@ -130,12 +130,20 @@ The Synthesis agent aggregates all cases:
 
 ## 4. Runner Output Schema
 
+**Provenance (mandatory).** Every card MUST stamp `pipeline_version` and `weights_version` — the current
+active ids from [`VERSIONS.md`](VERSIONS.md) — plus `run_date` (the lock date, distinct from `as_of`). The
+same two ids are echoed into the `results.csv` row at scoring time and MUST match. **A run whose version is
+not recorded on its card is void / non-comparable.**
+
 Every Runner must produce `decision_card.json`:
 
 ```json
 {
   "ticker": "",
   "as_of": "",
+  "pipeline_version": "",
+  "weights_version": "",
+  "run_date": "",
   "context_label": "",
   "as_of_price": 0,
   "as_of_market_cap": 0,

@@ -190,20 +190,46 @@ def mojibake_score(value: str) -> int:
 
 
 def repair_mojibake(value: str) -> str:
-    """Repair common UTF-8-as-cp1252 mojibake from redirected yt-dlp output."""
+    """Repair common UTF-8-as-latin1/cp1252 mojibake from yt-dlp output."""
     if not value or not any(marker in value for marker in MOJIBAKE_MARKERS):
         return value
 
-    try:
-        candidate = value.encode("cp1252").decode("utf-8")
-    except UnicodeError:
-        return value
+    candidates = []
+    for encoding in ("latin-1", "cp1252"):
+        try:
+            candidates.append(value.encode(encoding).decode("utf-8"))
+        except UnicodeError:
+            continue
 
-    if cjk_count(candidate) > cjk_count(value):
-        return candidate
-    if mojibake_score(candidate) < mojibake_score(value):
-        return candidate
-    return value
+    best = value
+    for candidate in candidates:
+        if cjk_count(candidate) > cjk_count(best):
+            best = candidate
+        elif (
+            cjk_count(candidate) == cjk_count(best)
+            and mojibake_score(candidate) < mojibake_score(best)
+        ):
+            best = candidate
+    return best
+
+
+def best_title(*values: Any) -> str:
+    best = ""
+    for value in values:
+        candidate = repair_mojibake(str(value or "").strip())
+        if not candidate:
+            continue
+        if not best:
+            best = candidate
+            continue
+        if mojibake_score(candidate) < mojibake_score(best):
+            best = candidate
+        elif (
+            mojibake_score(candidate) == mojibake_score(best)
+            and cjk_count(candidate) > cjk_count(best)
+        ):
+            best = candidate
+    return best
 
 
 def slugify(value: str) -> str:
@@ -451,13 +477,13 @@ def duration_to_text(info: dict[str, Any], fallback: str = "") -> str:
 def compact_row(item: VideoItem, info: dict[str, Any] | None) -> dict[str, Any]:
     info = info or {}
     collector = info.get("_collector") or {}
-    title = str(info.get("title") or collector.get("source_title") or item.title)
+    title = best_title(info.get("title"), collector.get("source_title"), item.title)
     url = str(info.get("webpage_url") or info.get("original_url") or item.url)
     return {
         "index": item.index,
         "upload_date": parse_upload_date(info.get("upload_date")),
         "id": str(info.get("id") or item.id),
-        "title": repair_mojibake(title),
+        "title": title,
         "url": url or canonical_url(item.id),
         "duration": duration_to_text(info, item.duration),
         "view_count": info.get("view_count", item.view_count),

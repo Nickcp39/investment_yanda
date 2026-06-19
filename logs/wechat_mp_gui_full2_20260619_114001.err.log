@@ -1,0 +1,182 @@
+Known local WeChat article URLs before GUI run: 465
+Target articles in manifest: 274
+- 2026-06-19 04:59:12 | 突发！我们一个重大的转变！
+- 2026-06-18 20:28:45 | SpaceX为何暴跌11%，估值高吗？抛售解禁日解析，短期最大风险是什么？
+- 2026-06-17 21:08:57 | 我清了 SpaceX，美股 彻底晕了！美联储新主席首秀，四大“意外”直接把多头打懵
+- 2026-06-16 15:23:42 | SpaceX IPO 解禁时间表深度解析：真正影响股价因素
+- 2026-06-15 21:16:37 | 美股 SPCX 彻底疯了！不用感谢我 ！
+Scroll batch 1: clicking 4 visible card slots.
+Click 1: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 2: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 3: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 4: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 2: clicking 4 visible card slots.
+Click 5: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-06-02 20:33:10 | 美股为什么V型反转？
+    Saved: sources\news\wechat_mp\articles\美股为什么V型反转-4692349f4d.md
+Click 6: slot 2 at (835, 465)
+  New local URLs after click: 2
+  Target: 2025-06-02 20:33:10 | 美国股市何时会见顶？平均244%的涨幅，58倍市盈率
+    Saved: sources\news\wechat_mp\articles\美国股市何时会见顶-平均244-的涨幅-58倍市盈率-b8f25afb32.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157748&idx=1&sn=033bd52184e6e5838c2f12da8f91278c#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157748&idx=1&sn=033bd52184e6e5838c2f12da8f91278c#rd
+Click 7: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-06-02 14:10:53 | 高盛：对冲基金正以十年来最快的速度买入美国科技股
+    Saved: sources\news\wechat_mp\articles\高盛-对冲基金正以十年来最快的速度买入美国科技股-c39b51e407.md
+Click 8: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 3: clicking 4 visible card slots.
+Click 9: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 10: slot 2 at (835, 465)
+  New local URLs after click: 3
+  Target: 2025-05-29 20:53:17 | 美股 英伟达后市分析，解读背后关键数据，被大家忽略的长期风险！
+    Saved: sources\news\wechat_mp\articles\美股-英伟达后市分析-解读背后关键数据-被大家忽略的长期风险-af69ab39da.md
+  Target: 2025-05-29 20:50:54 | 特朗普关税“死而复生”！为什么英伟达冲高回落？
+    Saved: sources\news\wechat_mp\articles\特朗普关税-死而复生-为什么英伟达冲高回落-020799e2a4.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157613&idx=1&sn=e5b2dc081f356bf476025cf6d0a6b5f8#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157613&idx=1&sn=e5b2dc081f356bf476025cf6d0a6b5f8#rd
+Click 11: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-05-28 20:20:50 | 又一次精准预测英伟达财报！
+    Saved: sources\news\wechat_mp\articles\又一次精准预测英伟达财报-b8a041b999.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157612&idx=1&sn=c79e34d9c130689de6469358091e809d#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157612&idx=1&sn=c79e34d9c130689de6469358091e809d#rd
+Click 12: slot 4 at (835, 905)
+  New local URLs after click: 2
+  Target: 2025-05-27 22:30:56 | 重磅！佛州宣布黄金白银=货币，美元还稳得住吗？
+    Saved: sources\news\wechat_mp\articles\重磅-佛州宣布黄金白银-货币-美元还稳得住吗-408aacb291.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157571&idx=1&sn=78444b83630a114a5aae0890890c63cb#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157571&idx=1&sn=78444b83630a114a5aae0890890c63cb#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 4: clicking 4 visible card slots.
+Click 13: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157533&idx=1&sn=95ef3978540e8de4d4484a30e33afafc#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157533&idx=1&sn=95ef3978540e8de4d4484a30e33afafc#rd
+Click 14: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-05-27 20:26:46 | “全职打工人”马斯克上线！特斯拉能否借势彻底翻身？
+    Saved: sources\news\wechat_mp\articles\全职打工人-马斯克上线-特斯拉能否借势彻底翻身-29a274e0f6.md
+Click 15: slot 3 at (835, 685)
+  New local URLs after click: 2
+  Target: 2025-05-27 18:08:01 | 英伟达5月财报预测，深度分析报告 NVDA
+    Saved: sources\news\wechat_mp\articles\英伟达5月财报预测-深度分析报告-NVDA-6b25eb046f.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157512&idx=1&sn=46dcab70ab02db2b29587331346ac6fd#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157512&idx=1&sn=46dcab70ab02db2b29587331346ac6fd#rd
+Click 16: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157487&idx=1&sn=e9d26d33b39a96fc9c22787797b362b9#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157487&idx=1&sn=e9d26d33b39a96fc9c22787797b362b9#rd
+Scrolled down by 5 wheel clicks.
+Scroll batch 5: clicking 4 visible card slots.
+Click 17: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 18: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 19: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-05-22 15:38:45 | 突发！哈佛大学！
+    Saved: sources\news\wechat_mp\articles\突发-哈佛大学-2aba78547f.md
+Click 20: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-05-21 20:33:32 | 谷歌All in AI，股价强势反弹背后释放什么信号？
+    Saved: sources\news\wechat_mp\articles\谷歌All-in-AI-股价强势反弹背后释放什么信号-9144ff17b4.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 6: clicking 4 visible card slots.
+Click 21: slot 1 at (835, 255)
+  New local URLs after click: 2
+  Target: 2025-05-20 21:03:49 | 特斯拉自动驾驶汽车终于来了！TSLA估值逻辑或将重塑
+    Saved: sources\news\wechat_mp\articles\特斯拉自动驾驶汽车终于来了-TSLA估值逻辑或将重塑-9981338e3b.md
+  Could not parse new URL: https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157335&idx=1&sn=399bb44b1b503f9fec8b90e8051abd58#rd | Could not parse title/body from https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg%3D%3D&mid=2917157335&idx=1&sn=399bb44b1b503f9fec8b90e8051abd58#rd
+Click 22: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-05-19 18:29:07 | 美国散户创纪录“逢低买入”，扭转穆迪下调美国信用而引发标普500下跌局势
+    Saved: sources\news\wechat_mp\articles\美国散户创纪录-逢低买入-扭转穆迪下调美国信用而引发标普500下跌局势-77bab2b89f.md
+Click 23: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-05-17 23:59:04 | 英伟达！突发！
+    Saved: sources\news\wechat_mp\articles\英伟达-突发-dda8e69024.md
+Click 24: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 7: clicking 4 visible card slots.
+Click 25: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-05-13 20:53:03 | 沙特官宣建超级AI工厂，英伟达AMD强势绑定！
+    Saved: sources\news\wechat_mp\articles\沙特官宣建超级AI工厂-英伟达AMD强势绑定-f4b620ccc9.md
+Click 26: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-05-12 21:15:12 | 美股纳指正式进入“牛市”！但是......
+    Saved: sources\news\wechat_mp\articles\美股纳指正式进入-牛市-但是-7ac5c7991c.md
+Click 27: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-05-11 19:37:53 | 突发！中美关税会谈取得实质性进展！
+    Saved: sources\news\wechat_mp\articles\突发-中美关税会谈取得实质性进展-e2edc5ff9b.md
+Click 28: slot 4 at (835, 905)
+  New local URLs after click: 1
+  Target: 2025-05-11 19:37:53 | 新疆小伙打造美国百亿独角兽公司！把东方美学与西方硅谷工程完美结合！
+    Saved: sources\news\wechat_mp\articles\新疆小伙打造美国百亿独角兽公司-把东方美学与西方硅谷工程完美结合-6558c23669.md
+Scrolled down by 5 wheel clicks.
+Scroll batch 8: clicking 4 visible card slots.
+Click 29: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-05-10 19:14:33 | 英伟达！突发！
+    Saved: sources\news\wechat_mp\articles\英伟达-突发-32ea9187d8.md
+Click 30: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-05-10 16:40:56 | 自动驾驶将在今年大爆发！这四家美股公司必须关注！TSLA LYFT ......
+    Saved: sources\news\wechat_mp\articles\自动驾驶将在今年大爆发-这四家美股公司必须关注-TSLA-LYFT-635d16ca25.md
+Click 31: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-05-09 18:46:10 | 原来是美股散户和公司回购支撑着美股持续大反弹！
+    Saved: sources\news\wechat_mp\articles\原来是美股散户和公司回购支撑着美股持续大反弹-6e08856963.md
+Click 32: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 9: clicking 4 visible card slots.
+Click 33: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-05-05 20:42:52 | 美股市场赚了钱如何抵税？
+    Saved: sources\news\wechat_mp\articles\美股市场赚了钱如何抵税-1800558f16.md
+Click 34: slot 2 at (835, 465)
+  New local URLs after click: 0
+Click 35: slot 3 at (835, 685)
+  New local URLs after click: 0
+Click 36: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 10: clicking 4 visible card slots.
+Click 37: slot 1 at (835, 255)
+  New local URLs after click: 1
+  Target: 2025-05-01 21:15:09 | 苹果和亚马逊盘后为何大跌！财报透漏了什么信号？
+    Saved: sources\news\wechat_mp\articles\苹果和亚马逊盘后为何大跌-财报透漏了什么信号-16d6a10c3f.md
+Click 38: slot 2 at (835, 465)
+  New local URLs after click: 1
+  Target: 2025-04-30 21:02:58 | 美股最后10分钟为何突然暴拉？
+    Saved: sources\news\wechat_mp\articles\美股最后10分钟为何突然暴拉-663d2be35d.md
+Click 39: slot 3 at (835, 685)
+  New local URLs after click: 1
+  Target: 2025-04-29 20:52:49 | 这家美国公司裁员2万！背后是与亚马逊的“分手”？
+    Saved: sources\news\wechat_mp\articles\这家美国公司裁员2万-背后是与亚马逊的-分手-42ed096c74.md
+Click 40: slot 4 at (835, 905)
+  New local URLs after click: 0
+Scrolled down by 5 wheel clicks.
+Scroll batch 11: clicking 4 visible card slots.
+Click 41: slot 1 at (835, 255)
+  New local URLs after click: 0
+Click 42: slot 2 at (835, 465)
+  New local URLs after click: 0
+Traceback (most recent call last):
+  File "D:\work\investment\financial-analysis-lab\scripts\wechat_mp_gui_archiver.py", line 362, in <module>
+    raise SystemExit(main())
+  File "D:\work\investment\financial-analysis-lab\scripts\wechat_mp_gui_archiver.py", line 310, in main
+    rect = activate_profile(window, keep_topmost=not args.no_topmost)
+  File "D:\work\investment\financial-analysis-lab\scripts\wechat_mp_gui_archiver.py", line 148, in activate_profile
+    return window_rect(window)
+  File "D:\work\investment\financial-analysis-lab\scripts\wechat_mp_gui_archiver.py", line 110, in window_rect
+    rect = window.BoundingRectangle
+  File "D:\work\investment\financial-analysis-lab\.venv\lib\site-packages\uiautomation\uiautomation.py", line 6618, in BoundingRectangle
+    rect = self.Element.CurrentBoundingRectangle
+_ctypes.COMError: (-2147220991, 'An event was unable to invoke any of the subscribers', (None, None, None, 0, None))

@@ -3,6 +3,8 @@
   "company": "Nebius Group N.V.",
   "as_of": "2026-01-01",
   "pipeline_version": "lean_six_module_v0",
+  "weights_version": "W_v0",
+  "run_date": "2026-06-18",
   "context_label": "exceptional_bottleneck + spinoff_re_rate_overlay",
   "as_of_price": 83.71,
   "as_of_market_cap_usd_bn": 21.08,

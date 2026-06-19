@@ -159,3 +159,85 @@ Outputs:
 - `sources/channels/zhanguoshidai/polish_qc/polish_summary_*.csv`
 - `sources/channels/zhanguoshidai/polish_qc/polish_changes_*.csv`
 - `sources/channels/zhanguoshidai/polish_qc/polish_low_similarity_*.md`
+
+## TradesMax Public Articles
+
+Collect public article pages from the TradesMax website for research archiving:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install requests beautifulsoup4 lxml
+.\.venv\Scripts\python.exe .\scripts\tradesmax_public_articles.py --limit 10
+```
+
+The script scans the public homepage and public category pages, then writes:
+
+- `sources/news/tradesmax/manifest.csv`
+- `sources/news/tradesmax/manifest.jsonl`
+- `sources/news/tradesmax/articles/*.md`
+
+Useful options:
+
+- `--dry-run` - list discovered links without fetching article bodies.
+- `--limit 5` - smoke test a small number of articles.
+- `--pages 3` - scan more category pages using K2 `?start=` pagination.
+- `--delay 2` - wait between requests.
+- `--index-url URL` - scan a specific public index page; can be repeated.
+
+## WeChat MP Articles
+
+Collect public WeChat official-account articles that are already visible in the
+local WeChat client/browser cache. This avoids asking for WeChat passwords,
+cookies, tokens, or other session secrets; cached URLs are canonicalized before
+being fetched or saved.
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\wechat_mp_local_history.py --limit 20
+```
+
+Default outputs:
+
+- `sources/news/wechat_mp/manifest.csv`
+- `sources/news/wechat_mp/manifest.jsonl`
+- `sources/news/wechat_mp/articles/*.md`
+
+Useful options:
+
+- `--dry-run` - parse and filter cache links without writing files.
+- `--limit 5` - stop after five matching target-account articles.
+- `--candidate-offset 50` - resume from a later discovered candidate when running in batches.
+- `--max-candidates 50` - only test the first 50 discovered WeChat article URLs.
+- `--recent 5` - print the latest matching titles after the run.
+- `--show-candidates` - print sanitized public WeChat article URLs discovered in cache.
+
+For one manually copied WeChat article link, use the clipboard collector:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\wechat_mp_clipboard_collector.py --once "https://mp.weixin.qq.com/s/..."
+```
+
+To drive the visible WeChat official-account profile and archive opened cards
+semi-automatically, keep the target account page open in WeChat, then run:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\wechat_mp_gui_archiver.py `
+  --until-date 2025-01-01 `
+  --max-articles 50 `
+  --max-scrolls 80
+```
+
+Start small before a long run:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\wechat_mp_gui_archiver.py --max-cards 3 --max-articles 3
+```
+
+The GUI archiver clicks visible article cards, waits for WeChat to record the
+opened public article URL in local WebView history, then saves only matching
+`美股投资网` articles. It reuses the same manifest, so it can be stopped and
+re-run without re-saving already collected public URLs.
+
+Coordinate tuning options:
+
+- `--plan-only` - print the click points without clicking.
+- `--card-x-offset 220` - move click points horizontally from the profile window left edge.
+- `--card-y-offsets 285,525,765` - visible card slots from the profile window top edge.

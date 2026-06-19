@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>美股投资网 / TradesMax 为什么"显得这么准" — 拆解</title>
+<style>
+:root{--bg:#0f1419;--panel:#1a2029;--panel2:#222b36;--line:#2c3744;--ink:#e6edf3;--muted:#8b98a5;
+--accent:#4ca3ff;--green:#3fb950;--red:#f85149;--gold:#ffb454;--purple:#bc8cff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.65;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:26px 20px 80px}
+h1{margin:0 0 4px;font-size:23px}.sub{color:var(--muted);font-size:13px;margin-bottom:18px}
+.verdict{background:linear-gradient(135deg,#1d2733,#19222c);border:1px solid var(--line);border-left:4px solid var(--accent);
+border-radius:10px;padding:16px 18px;margin:14px 0 22px;font-size:15px}
+.verdict b{color:var(--accent)}
+.layer{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.layer h2{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.tag{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px}
+.t-real{background:rgba(63,185,80,.16);color:var(--green)}
+.t-beta{background:rgba(76,163,255,.16);color:var(--accent)}
+.t-sel{background:rgba(255,180,84,.16);color:var(--gold)}
+.t-spin{background:rgba(248,81,73,.15);color:var(--red)}
+.layer .lead{color:var(--muted);font-size:13px;margin:0 0 10px}
+ul{margin:8px 0 0;padding-left:20px}li{margin:5px 0}
+.ev{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--gold);white-space:nowrap}
+.q{border-left:3px solid var(--line);padding:4px 0 4px 12px;color:#cdd9e5;font-style:italic;margin:8px 0;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted)}td.n,th.n{text-align:right;white-space:nowrap}
+.green{color:var(--green)}.red{color:var(--red)}.gold{color:var(--gold)}.mut{color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.box{border-radius:10px;padding:14px 16px;border:1px solid var(--line)}
+.box.copy{background:rgba(63,185,80,.07);border-color:rgba(63,185,80,.3)}
+.box.disc{background:rgba(248,81,73,.06);border-color:rgba(248,81,73,.3)}
+.box h3{margin:0 0 8px;font-size:14px}.box.copy h3{color:var(--green)}.box.disc h3{color:var(--red)}
+.tl{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tl span{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:12px}
+.tl b{color:var(--purple)}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.foot{color:var(--muted);font-size:11.5px;margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+</style></head><body><div class="wrap">
+<h1>美股投资网 / TradesMax 为什么"显得这么准"</h1>
+<div class="sub">基于本地两库证据:123 篇视频转录 + 300 篇微信图文(2023-06 → 2026-06,共 423 篇)· 拆成 4 层</div>
+
+<div class="verdict">
+一句话:他们是一家<b>真懂行的"AI 卖铲人"主题研究铺</b>,长在<b>一轮百年一遇的 AI 大牛市</b>里,
+再用一台<b>系统性美化战绩的营销机器</b>包装出来。<br>
+方向是真的(+60% 跑赢 QQQ 3 倍是我们独立复盘出来的),但"颗颗都中 / 100%"是<b>构造</b>出来的。
+值得学的是<b>选股框架</b>,该打折的是<b>自报命中率、紧迫感和小盘投机</b>。
+</div>
+
+<div class="layer">
+<h2><span class="tag t-real">第 1 层 · 真本事</span> 早、且深的"卖铲人"主题识别</h2>
+<p class="lead">这部分是可迁移、值得抄的真 edge——不是猜大盘,是在共识之前找到 AI 的二阶受益供应链。</p>
+<ul>
+<li><b>主题踩点确实早</b>(本地首次提及时间):存储/HBM <span class="ev">MU 2024-03</span>、
+核能供电 <span class="ev">OKLO/SMR 2024-10</span>、AI 云 <span class="ev">NBIS 2024-12</span>、
+AI 医疗 <span class="ev">HIMS 2024-11</span>、光通信 <span class="ev">LITE/COHR 2025-11</span>、
+无人机 <span class="ev">ONDS 2025-06</span>——基本都在板块起飞前。</li>
+<li><b>专挑二阶供应链,不只喊 NVDA</b>:RMBS(内存接口)、PLAB(掩模版)、GLW(光纤)、SANM(代工)、
+TTMI(高端 PCB)——这些"卖铲人"才是他们 2026 篮子里的大涨主力。</li>
+<li><b>研究有真深度</b>:转录里能看到 HBM4 / MRDIMM / ROSA 太阳能阵列 / OVD 光纤工艺 / Book-to-Bill
+这种产业链细节,不是只喊代号。</li>
+<li><b>赢家持续加注(高 conviction)</b>:MU 在 53 篇里反复出现、NBIS 42 篇、OKLO 39 篇、NVDA 101 篇——
+他们是<b>抱住主线复述</b>,不是打一枪换一个。</li>
+</ul>
+</div>
+
+<div class="layer">
+<h2><span class="tag t-beta">第 2 层 · 贝塔</span> 站在一轮史诗级 AI 牛市的风口</h2>
+<p class="lead">很大一部分"准"不是他们的,是这两年的大势。</p>
+<ul>
+<li>2026 头 5 个月,光是 <b>QQQ 就 +19.7%、SPY +8.6%</b>;AI 基建几乎"鸡犬升天"。</li>
+<li>他们最猛的几只(MU +247%、NBIS +176%、GLW +128%)同时也是<b>全市场最强的板块</b>——
+顺风时,一个像样的 AI 篮子很难不涨。</li>
+<li>我们的独立复盘:等权篮子确实<b>跑赢 QQQ 约 3 倍</b>,所以贝塔之上<b>有 alpha</b>,
+但底座是大潮,不能把潮水的功劳全记在选股上。</li>
+</ul>
+</div>
+
+<div class="layer">
+<h2><span class="tag t-sel">第 3 层 · 选择性</span> 撒得足够宽 + 只给赢家立碑</h2>
+<p class="lead">这是"看起来神准"的最大来源:幸存者偏差 + 海量撒网。</p>
+<ul>
+<li><b>撒网极宽</b>:两库合计点过约 <b>1500 个不同代号,其中 943 个只出现过 1 次</b>。
+当你几乎什么都提过,牛市里总有一批爆——事后挑出来就是"战绩"。</li>
+<li><b>只给赢家做复盘视频</b>:2025 系列被他们回顾成"13 只全中";没爆的那些不会单独拍一期。</li>
+<li><b>真实命中率没那么高</b>:我们逐只复盘 2026 系列 14 只 = <b>10 中 4 亏(71%)</b>,
+不是他们口径里的"全中"。</li>
+</ul>
+</div>
+
+<div class="layer">
+<h2><span class="tag t-spin">第 4 层 · 口径与营销</span> 用对自己有利的方式量化战绩</h2>
+<p class="lead">同一批结果,换个算法和叙事,就从"不错"变成"封神"。</p>
+<ul>
+<li><b>"一年内最高涨幅"框架</b>(108 篇用到"区间/最高涨幅"):他们说的"CRDO +218%、CLS +290%、
+MU +212%"是<b>盘中最高点</b>,不是买入持有收益。</li>
+<li class="q">"統計的是一年內的最高漲幅……13 只全部上漲,勝率 100%,其中 8 只翻倍。" —— 2026上集开头自报 2025 战绩</li>
+<li><b>自报组合 +175% vs 大盘 +17%</b>:不可独立验证;而我们能验证的 2026 系列是 +60.8%(等权、买入持有)。</li>
+<li><b>VIP 入场价</b>:常引用一个比公开发布日更低的"内部介入价"(ONDS $7.6、RDW $7.66),拉高账面收益。</li>
+<li><b>"量化大数据 / 期权大单 / 主力资金"铺满 94% 的内容</b>,但真正的"多因子评分模型"只在 23 篇出现——
+话术是<b>权威感外壳</b>,内核是基本面叙事。</li>
+<li><b>64% 的内容在导流 VIP / Top Stock</b>($600 优惠、StockWe.com/vip)——免费内容的 KPI 是"证明很准 + 卖订阅"。</li>
+</ul>
+</div>
+
+<div class="layer">
+<h2>📌 给你的实操:抄什么 / 打折什么</h2>
+<div class="split">
+<div class="box copy"><h3>✅ 值得抄的</h3><ul>
+<li><b>主题 → 卖铲人 → 供应链二阶</b>的选股框架:别只买龙头,顺藤摸到掩模/光纤/PCB/内存接口。</li>
+<li><b>早识别 + 抱住主线</b>:他们 MU/NBIS/核能都是提前一年喊并反复加注。</li>
+<li><b>产业链尽调清单</b>:Book-to-Bill、产能错配、订单积压、政策壁垒——这些他们确实在看。</li>
+</ul></div>
+<div class="box disc"><h3>⛔ 该打折的</h3><ul>
+<li><b>自报命中率/收益</b>:用"最高涨幅 + VIP 入场 + 只立赢家碑",实测命中率约 71% 而非 100%。</li>
+<li><b>紧迫感话术</b>("晚一天多付 30%、立即订阅"):113 篇在制造 FOMO,是转化手段。</li>
+<li><b>小盘投机票</b>(SMR/ONDS/RDW 这类):命中率明显低,波动大,别照单全收。</li>
+<li><b>把贝塔当 alpha</b>:牛市退潮时这套打法的回撤会很难看,需自己做风控。</li>
+</ul></div>
+</div>
+</div>
+
+<div class="layer">
+<h2>附:证据表</h2>
+<table>
+<tr><th>维度</th><th>本地数据</th><th>说明</th></tr>
+<tr><td>撒网宽度</td><td class="n">~1500 代号 / <span class="red">943 只提 1 次</span></td><td class="mut">海量覆盖,幸存者偏差温床</td></tr>
+<tr><td>高 conviction(复述最多)</td><td class="n">NVDA 101 · MU 53 · NBIS 42 · OKLO 39 · HIMS 30</td><td class="mut">主线抱得住</td></tr>
+<tr><td>"量化/大数据"话术</td><td class="n green">398 / 423 篇 (94%)</td><td class="mut">品牌外壳</td></tr>
+<tr><td>真"多因子评分模型"</td><td class="n red">仅 23 篇</td><td class="mut">名实落差</td></tr>
+<tr><td>"区间/最高涨幅"框架</td><td class="n gold">108 篇</td><td class="mut">收益口径偏乐观</td></tr>
+<tr><td>VIP / Top Stock 导流</td><td class="n">271 篇 (64%)</td><td class="mut">订阅转化引擎</td></tr>
+<tr><td>FOMO 紧迫话术</td><td class="n">113 篇</td><td class="mut">"晚一天多付/立即"</td></tr>
+<tr><td>自报 vs 独立复盘</td><td class="n">100% / +175% &nbsp;vs&nbsp; <span class="green">71% / +60.8%</span></td><td class="mut">前者他们口径,后者我们逐只算</td></tr>
+</table>
+<div class="tl">
+<span>主题踩点时间线:</span>
+<span>存储/HBM <b>MU 24-03</b></span><span>核能 <b>OKLO/SMR 24-10</b></span>
+<span>AI医疗 <b>HIMS 24-11</b></span><span>AI云 <b>NBIS 24-12</b></span>
+<span>稳定币 <b>CRCL 25-06</b></span><span>无人机 <b>ONDS 25-06</b></span>
+<span>光通信 <b>LITE/COHR 25-11</b></span>
+</div>
+</div>
+
+<div class="foot">
+数据源:sources/videos/(123 视频转录)+ sources/news/wechat_mp/(300 微信)· 分析脚本 scripts/tradesmax_edge_analysis.py ·
+战绩复盘 track_record_2026.html · 本页为分析观点,非投资建议。
+</div>
+</div></body></html>
