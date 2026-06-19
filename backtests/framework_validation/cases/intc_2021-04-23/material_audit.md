@@ -114,3 +114,90 @@ The INTC 2021-04-23 material pack is CLEAN and is test-ready for a future blind 
   only in timeless formation narrative; "exit" only for pre-as-of CEO departures and a forward kill-criterion.)
 - **Self-audit verdict for operator_background.md: CLEAN** (0 load-bearing issues). Pack remains test-ready;
   an independent checker pass is still recommended per protocol.
+
+---
+
+## Independent Checker Pass (2026-06-17)
+
+Independent agent (NOT the collector; did not assemble this pack). Ran the 6-point `LOOKAHEAD_CHECKER.md`
+over the full pack (`case_control.md`, `sources_used.csv`, `raw_extracts.md`, `evidence_spine.md`,
+`operator_background.md`) + applied the `intc_2021-04-23` forbidden-registry row. Web-verified the
+highest-risk / most-recent source dates rather than trusting the CSV's self-reported dates.
+
+### Verdict: CLEAN
+
+The pack uses only information public on or before 2021-04-23, contains no outcome-aware language, and
+(material-pack requirement) carries no decision / verdict / position size. Test-ready for the blind Runner.
+
+### 1. Source-Date Check — web-verified high-risk rows
+
+| source_id | claimed date | web-verified | in-window (≤2021-04-23)? | note |
+|---|---|---|---|---|
+| S001/S002/S006 | 2021-03-23 | **2021-03-23 confirmed** (Intel newsroom / BusinessWire wire 20210323005981 / SEC 8-K accession 0001193125-21-091374) | yes | IDM 2.0 "Intel Unleashed" webcast; $20B Arizona/Ocotillo. |
+| S003 | 2021-04-22 | **2021-04-22 confirmed** (Intel IR press release detail/1460; CNBC/AlphaStreet same-day) | yes | Q1'21 earnings reported after close 4/22. |
+| S004 | 2021-04-23 | **2021-04-23 confirmed** (EDGAR accession 0000050863-21-000018, 10-Q for qtr ended Mar 27 2021) | yes (= as-of, allowed) | 10-Q filed on the as-of date itself. |
+| S005 | 2021-04-22 | **2021-04-22 confirmed** (Motley Fool transcript URL dated 2021/04/22) | yes | Q1'21 call held 4/22. |
+| S010 | 2021-03-15 | **2021-03-15 confirmed** (AMD digital launch event; ServeTheHome / Tom's Hardware / WCCFTech) | yes | 3rd Gen EPYC "Milan" 7003 launch. |
+| S014 | 2021-01-13 | **2021-01-13 confirmed** (Intel IR detail/1438; BusinessWire 20210113005609); Gelsinger CEO **eff. 2021-02-15 confirmed** | yes | Appointment + effective date both verified. |
+| S007–S009 | 2020-07-23/24 | consistent with the well-documented July-2020 7nm-delay disclosure | yes | Dated background, low risk. |
+
+**Critical excluded-source check (forbidden-registry trap):** the **Mercury Research Q1 2021** x86/server
+CPU-share report was web-verified to publish **~2021-05-09** (Tom's Hardware "CPU Market Q1 2021" article,
+2021-05-09; corroborated by a 2021-05-08 Seeking Alpha instablog). It is **post-as-of (OUT)** and the pack
+correctly EXCLUDES it — `raw_extracts.md` S010/S011 explicitly notes the Mercury figure is not used and
+why. Confirmed ABSENT as a cited/load-bearing figure. ✓
+
+### 2. Claim Traceability
+
+Every load-bearing claim (C001–C018 in `evidence_spine.md`) traces to an in-window `source_id`. Spot-checked:
+Q1 financials → S003/S004; DCG −20% / op-income $1,273M → S003/S004; FY21 $19–20B capex → S003; IDM 2.0 /
+$20B Arizona / IFS-Thakur / 7nm Meteor Lake → S001/S002/S005/S006; AMD Milan + pre-as-of ~7.1% server share
+→ S010/S011; as-of close $59.24 / ~$239B cap → S013/S004; operator formation/career facts → S014–S023. No
+load-bearing claim relies on an unlisted or post-as-of source.
+
+### 3. Outcome-Aware Language
+
+Independent grep over all five files for `later|subsequently|as we (now )?know|went on to|turned out|
+rallied|collapsed|plunged|surged`. Matches found are all **non-leaking**: "later" / "long-term" appear only
+in (a) timeless operator-formation narrative, (b) forward-looking *as-of* framing ("multi-year investment
+phase," "restore process leadership" — attributed as management commentary), and (c) prospective kill-criteria.
+No hindsight phrasing tied to a post-as-of event. No post-2021-04-23 price anywhere; the only price beyond
+4/23 in `raw_extracts.md` is the 2021-04-26 row, explicitly labelled part of the raw download and not used as
+the as-of price.
+
+### 4. Post-Cutoff Fact Intrusion (intc_2021-04-23 forbidden registry — each ABSENT)
+
+| forbidden item | present? |
+|---|---|
+| Entire post-2021 decline / any post-4/23 price or move | absent |
+| 2023 dividend cut | absent |
+| Gelsinger departure (Dec 2024) + successor | absent |
+| 18A / foundry-customer-win outcomes | absent |
+| The fall to ~$20s | absent |
+| Mercury Research Q1'21 share report (~2021-05-09) | absent (excluded + flagged) |
+| Any post-2021 results (Q2'21+) / 2022+ developments / CHIPS equity | absent |
+
+Note: incidental post-as-of facts surfaced in my own web-verification searches (e.g. the Dec-2024 Gelsinger
+retirement; the "stock down 3% after-hours on 4/22" headline). These are NOT in the pack and were NOT used in
+this audit or carried forward — flagged here only for transparency.
+
+### 5. Evidence Misuse
+
+No KOL / social / video sources. AMD peer data (S010/S011) used as dated industry context, not as company-
+specific proof of an outcome — and the post-as-of Mercury figure was deliberately omitted to avoid a date
+leak. Company optimistic framing ("progressing well," ">50 foundry customers," "restore process leadership")
+is recorded as management commentary (S005), explicitly not as verified fact. Operator promotional/origin
+narrative (S022) is weighted below the unchooseable third-party record per the dossier's own reliability axis.
+
+### 6. No Decision / No Outcome (material-pack requirement)
+
+No buy/sell/hold verdict, no context label, no thesis, no valuation conclusion, no position size in any file.
+The decision question is recorded in `case_control.md` and left unanswered; `evidence_spine.md` lists open
+questions and interpretation guardrails; `operator_background.md` gives an operator *grade* (team life-arc
+3/5) but explicitly defers the decision/size. Confirmed.
+
+### Issue count: 0 load-bearing issues.
+
+1 noted exclusion (post-as-of Mercury Research share data) — correctly omitted and flagged by the collector,
+independently re-verified by this checker. Independent verdict concurs with the collector self-audit: **CLEAN**.
+Cleared to proceed to the blind Runner (Step 2 below, same agent, staying blind to outcome).

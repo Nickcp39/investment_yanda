@@ -63,8 +63,8 @@ One row per scored case (schema = `WEIGHTING_HARNESS.md` §7):
 | # | case | checker | runner | scorer | result |
 |---|---|---|---|---|---|
 | 1 | googl_2024-06-14 | CLEAN | STARTER 4% / max 12% / HOLD | PASS · size-dist 1 · sound | ✅ WINNER +116% (back-loaded); old WATCH/0% disease fixed |
-| 2 | intc_2021-04-23 | — | — | — | |
-| 3 | intc_2024-08-02 | — | — | — | |
+| 2 | intc_2021-04-23 | CLEAN | WATCH / 0% / TRIM | PASS · size-dist 0 · sound | ✅ TRAP correctly avoided (M5 led) |
+| 3 | intc_2024-08-02 | CLEAN | WATCH / 0% / TRIM | FAIL · size-dist 3 · shallow | ❌ WINNER +445% MISSED — same trap frame as 2021 |
 | 4 | nvda_2023-05-25 | — | — | — | |
 | 5 | meta_2022-11-10 | — | — | — | |
 | 6 | amzn_2023-02-03 | — | — | — | |

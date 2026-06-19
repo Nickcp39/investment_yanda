@@ -82,3 +82,60 @@ The pack is **CLEAN** and test-ready. Forward guidance is correctly admitted as 
 
 - **Added:** `operator_background.md` (founder/operator dossier — Gelsinger / Zinsner / Yeary / Holthaus + board), with 9 new operator sources **O01–O09** appended to `sources_used.csv`. All O01–O09 are public_date ≤ 2024-08-02 (oldest O09 book 2008; newest dated event used = Jan 2023 chair appointment). Materials only — no decision, no valuation, no size.
 - **Self-audit verdict: CLEAN.** Per-case forbidden registry re-checked and all ABSENT — notably the **Gelsinger Dec-2024 departure** (he appears only as the as-of sitting CEO) and the **Lip-Bu Tan board resignation of Aug 19 2024**, which was specifically caught as POST-as-of and excluded (Tan appears only as a sitting director as-of). No post-crash price, no 18A/foundry outcome, no CHIPS equity stake, no outcome-aware language. Public bios/interview used as character-pattern/governance-context tier only, never as EVIDENCE-tier hard claims.
+
+---
+
+## Independent Checker Pass (2026-06-17)
+
+Second independent pass by a different agent than the collector AND than the §0–§8 checker, run as the gate before the blind decision (LOOKAHEAD_CHECKER.md §"When to run" #2). Covers the full pack INCLUDING the operator block (S001–S012 + O01–O09 + `operator_background.md`). I did not collect this pack and did not consult `companies/intc/` or `CASE_INDEX.md`.
+
+### Verdict: **CLEAN**
+
+No load-bearing post-cutoff fact, no outcome-aware language, no decision/thesis/valuation/sizing present in the material pack. Test-ready for the blind run.
+
+### 1. Source-date check (web-verified the highest-risk / most-recent rows)
+
+| source_id | public_date | <= as_of (2024-08-02)? | web-verified this pass | result |
+|---|---|---|---|---|
+| S001 Q2'24 earnings release (8-K) | 2024-08-01 | yes | yes | CONFIRMED — Aug 1 2024; rev $12.8B, GAAP EPS $(0.38), non-GAAP $0.02, >15% headcount cut, dividend suspension Q4'24, capex cut >20%. SEC EDGAR accession `000005086324000122` matches CSV URL. |
+| S007 as-of price | 2024-08-02 | yes (= as_of) | yes | CONFIRMED — close $21.48, -26% on the day. |
+| S008 CNBC "worst day in 50 years" | 2024-08-02 | yes (= as_of) | yes | CONFIRMED — Aug 2 2024; -26% to $21.48, lowest since 2013, 2nd-worst day ever (behind Jul 1974), mkt cap < $100B. CNBC URL matches CSV. |
+| S004 Intel Foundry framework (8-K) | 2024-04-02 | yes | yes | CONFIRMED — Apr 2 2024; 2023 foundry op loss $7.0B, 2024 trough, break-even ~2027, ~30% op margin by 2030. |
+| S011 AMD Q2'24 peer context | 2024-07-30 | yes | yes | CONFIRMED — Jul 30 2024; AMD record data-center, >$1B MI300X. |
+| S002, S003, S005, S006, S009, S010, S012 | 2024-01-26 … 2024-08-01 | yes | not re-fetched (lower risk; dates internally consistent w/ verified anchors) | no issue |
+| O01–O09 (operator block) | 2008-01-01 … 2024-07-01 | yes | not re-fetched (formation/governance tier; newest dated *event used* = Jan-2023 chair appointment) | no issue |
+
+All 21 rows dated on or before 2024-08-02. **0 source-date issues.** (Web search did surface stray POST-as-of links — a "2025 prediction / after Gelsinger checks out" item, a "soars 52%" item, an AMD-Q1-2026 item — these were NOT opened and are NOT used. Their appearance in result lists is noted only as a discipline check; no post-as-of content entered this audit or the pack.)
+
+### 2. Claim traceability
+
+Spot-checked the load-bearing claims C001–C022 (evidence_spine) + the operator scorecard claims. Every one traces to an allowed `source_id` dated ≤ as-of. Foundry economics → S001/S004/S012; financial reality → S001/S003/S006; price → S007; capital-allocation actions (dividend suspension, headcount, capex) → S001/S002; operator track-record/governance → O01–O09 + S001/S002. No dangling references; no claim resting on an out-of-window source. **PASS.**
+
+### 3. Outcome-aware language
+
+Independent re-scan of all six pack files + `operator_background.md` for hindsight tokens ("later", "subsequently", "went on to", "as we now know", "rallied/collapsed to", "in hindsight", "turned out"): **0 load-bearing matches.** The strings "later"/"subsequently"-style wording appears only inside (a) the forbidden-evidence lists in `case_control.md` (correctly *naming* what is excluded) and (b) explicit management-claim quarantine notes. All 2025/2026/2027 figures are forward guidance/targets *stated on Aug 1 2024* (admissible as as-of-knowable), explicitly tagged as management claims — not realized outcomes. No post-as-of price anywhere. **PASS.**
+
+### 4. Post-cutoff fact intrusion (intc_2024-08-02 forbidden-registry row, each ABSENT)
+
+| forbidden item | status | note |
+|---|---|---|
+| any post-crash price recovery / "later surge" | **ABSENT** | only the as-of close $21.48 + trailing daily closes (S007); recovery named only in the case_control forbidden list |
+| Gelsinger departure (Dec 2024) + new CEO | **ABSENT** | Gelsinger appears ONLY as the as-of sitting CEO (O01, S001/S002); no departure/successor; operator dossier flags key-man risk *structurally* without using the post-as-of event |
+| 18A ramp / foundry customer wins (outcome) | **ABSENT** | only as-of milestones/targets (1.0 PDK Jul 2024; manufacturing-ready end-2024 target; products 2025), all tagged management claims; "is 18A credible?" left as open question |
+| US-government / CHIPS-Act equity stake | **ABSENT** | only pre-2024 CHIPS-Act *advocacy* (O08) is used; no equity stake mentioned |
+| any 2024-H2 / 2025 / 2026 realized development | **ABSENT** | 2025/2026 references are forward guidance/targets stated Aug 1, not realized results |
+| (extra, caught by collector) Lip-Bu Tan board resignation (Aug 19 2024) | **ABSENT** | Tan appears only as a sitting director as-of (O05); resignation correctly excluded |
+
+All registry items absent. **PASS.**
+
+### 5. Evidence misuse
+
+No KOL / social / video sources in the pack. News rows (S008/S009/S010) are labeled "market-reaction / narrative context only (not core proof)"; the -26% magnitude is independently corroborated by S007 price data. Peer row (S011) labeled "context, not core proof of any verdict." Management forward optimism (18A "regain process leadership", Gaudi 3 "2x perf/$ vs H100", 2027 break-even) is consistently quarantined as framing, not verified fact (raw_extracts S002 use-note; evidence_spine §2/§3). Operator bios/interview (O01–O09) held at character-pattern/governance tier, never promoted to EVIDENCE-tier hard claims (operator_background header + scorecard). **PASS.**
+
+### 6. Materials-only (no decision / no outcome)
+
+Independent token scan for decision/valuation content (REJECT/WATCH/STARTER/CORE, buy/sell, target_size, decision_card, "fair value", "we should own"): **0 matches in the material pack.** evidence_spine §2 states "framing only — NOT a decision", §5 "No decision, sizing, or valuation has been recorded"; operator_background carries the same materials-only guard and defers the investment call to the future blind test. The turnaround-vs-structural-decline tension is assembled but deliberately not adjudicated. **PASS.**
+
+### Decision
+
+The pack is **CLEAN** and clears the pre-decision gate. No load-bearing leak, no leadership-change intrusion, no outcome-aware phrasing, no decision present; forward guidance correctly admitted as as-of-knowable. The blind Runner may proceed.

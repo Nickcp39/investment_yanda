@@ -1,0 +1,85 @@
+{
+  "ticker": "INTC",
+  "as_of": "2021-04-23",
+  "context_label": "structural_decline_trap",
+  "as_of_price": 59.24,
+  "as_of_market_cap": 239000000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Strong primary base (Q1'21 10-Q, earnings release, call transcript, verified as-of price, dated 7nm/AMD peer context). Confidence high on reported financials and the IDM 2.0 strategy; medium only on competitive-share magnitude (constrained to pre-as-of data; Mercury Q1'21 report ~2021-05-09 correctly excluded). Gaps are open questions (normalized earnings, cyclical-vs-structural margin), not missing facts -> a haircut input, not a veto.",
+      "drivers": ["S003", "S004", "S005", "S013", "S010", "S007"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Theme: a record PC cycle is masking a data-center profit pool under structural attack while Intel commits ~$20B/yr to an unproven foundry/process turnaround. Market over-weights the optically low multiple and record PC volumes (cycle-flattered); under-weights the depth of DCG erosion and the multi-year capex drag. The dislocation is real but points down on quality. IDM 2.0 is a real but unproven, capital-destructive-near-term mechanism. Context = structural_decline_trap with a turnaround overlay.",
+      "drivers": ["S001", "S003", "S005", "S010", "S007"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Profit pool = data center (high-margin Xeon). It is attacked on two fronts at once: a process-node deficit (7nm delayed to late-2022/2023 while AMD ships 7nm Milan) and share loss (AMD ~4.5%->~7.1% server share and rising). DCG operating income roughly halved YoY ($3,492M -> $1,273M). Moat (process leadership + x86 server lock-in) is visibly eroding. Operator team life-arc grade 3/5: high individual quality and near-ideal CEO-market fit, but a ~10-week CEO, no proven-together team, extreme key-man concentration, first act a huge irreversible ~$20B capex bet. Per METHODOLOGY a 3/5 recency-thin team earns NO durability-ceiling raise; combined with moat erosion the durability ceiling is capped low.",
+      "drivers": ["S003", "S004", "S010", "S011", "S007", "operator_background.md"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "med-high",
+      "finding": "Margins compressing: GAAP gross margin 55.2% (-5.4pts YoY); DCG operating margin ~23% vs prior ~54%. FY21 non-GAAP EPS guide $4.60 looks rich but is flattered by a once-in-a-cycle PC boom (notebook volume +54% record, but notebook ASP -23% = mix-degraded revenue). Capex guided $19-20B vs ~$10.5B FCF guide -> capex now exceeds free cash flow; buybacks cut to fund the build. Normalized owner earnings are therefore likely BELOW trailing (elevated PC cycle + structural capex step-up + shrinking high-margin DCG). Balance sheet is survivable (debt $35.9B vs cash+ST $7.6B + trading assets $14.8B; equity $79.8B) = no bankruptcy risk, which keeps this at -1 not -2.",
+      "drivers": ["S003", "S004", "S005"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "med-high",
+      "finding": "Trap diagnosis confirmed: the low optical P/E (~13x on $4.60) is NOT margin of safety because it sits on peak-cycle, mix-degraded earnings plus structural share/margin erosion plus a multi-year capex wall -- the textbook false_cheap / structural_decline pattern the harness warns about. Several hard-veto conditions are PRESENT (moat erosion, capex absorbing owner earnings, normalized << trailing, structural DCG share loss). But the balance sheet survives easily, downside is survivable at small size, the dividend is currently secure, and there is credible (unproven) turnaround optionality -> this is a STRONG WARNING that pins the verdict at the REJECT/WATCH boundary and caps size near 0, NOT an absolute balance-sheet-death hard veto that forces a forced exit.",
+      "drivers": ["S004", "S003", "S010", "S007", "operator_background.md"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "As-of $59.24 (~$239B), near a ~20-year high. At ~13x peak-ish EPS with deteriorating margins and a capex wall, there is NO margin of safety at this price -- you pay a near-market multiple for a business whose normalized earnings are probably lower than trailing and whose profit pool is shrinking. In a structural_decline_trap, price is mostly irrelevant after the trap diagnosis, but even standalone the price is unattractive. No buy zone at/near $59; only a deep-discount, evidence-gated WATCH trigger far below.",
+      "drivers": ["S013", "S003", "S004"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "TRIM",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 3,
+  "buy_below_price": 40,
+  "starter_zone": "No starter at the as-of setup. A starter (~1-3%) is only justified at a deep discount (roughly =<$40, ~10x or below on more conservative normalized EPS) AND with hard evidence that DCG margin/share erosion is arrested and a 7nm milestone is delivered.",
+  "add_zone": "Add only after the structural question resolves favorably: DCG operating margin stabilizes/re-expands, server-share loss halts, and a concrete process-node (7nm/Meteor Lake) milestone is met -- at a price still below conservative normalized fair value.",
+  "trim_or_no_chase_zone": "No chase at/above the ~$59 as-of level. For an existing holder, trim toward a small/zero position into this structural-decline + capex-wall + near-20-year-high setup.",
+  "binding_constraint": "M5/M3: the data-center profit pool is being structurally eroded (7nm process deficit + AMD server-share gains) while capex balloons to >FCF, so the optically low ~13x multiple is on likely-peak, mix-degraded earnings = no margin of safety; a ~10-week-old, key-man-concentrated turnaround team (life-arc 3/5) cannot yet raise the durability ceiling.",
+  "kill_criteria": [
+    "DCG operating margin and/or server share continue to deteriorate (confirms structural, not cyclical, erosion) -> stay out / cut.",
+    "Capex sustained at/above FCF with no offsetting margin recovery (value-destructive over-build) -> stay out / cut.",
+    "Evidence the ~10-week CEO's IDM 2.0 thesis is failing or the capex/dividend discipline reverses, with no bench backstop -> stay out / cut.",
+    "Dividend coverage deteriorates as capex absorbs owner earnings -> reassess the 'safe yield' leg of any future thesis."
+  ],
+  "runner_dissent": "The mechanical structural_decline_trap -> WATCH/0% result feels correct. One genuine asymmetry the framework under-weights: the balance sheet is comfortably survivable and the operator (Gelsinger) is a near-ideal-fit, high-quality CEO, so the IDM 2.0 turnaround optionality is real, not zero. That is why this is WATCH-with-a-named-trigger rather than a blunt REJECT -- a deep-discount, evidence-confirmed entry could become defensible later. But at the as-of price (near a 20-year high, ~13x peak-ish earnings) with the profit pool actively eroding and capex exceeding FCF, paying up for unproven optionality is not warranted; size stays 0 today.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2021-03-23", "url_or_path": "https://www.intc.com/news-events/press-releases/detail/1451/intel-ceo-pat-gelsinger-announces-idm-2-0-strategy"},
+    {"source_id": "S003", "public_date": "2021-04-22", "url_or_path": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000017/q121_earningsrelease.htm"},
+    {"source_id": "S004", "public_date": "2021-04-23", "url_or_path": "https://www.sec.gov/Archives/edgar/data/50863/000005086321000018/intc-20210327.htm"},
+    {"source_id": "S005", "public_date": "2021-04-22", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2021/04/22/intel-intc-q1-2021-earnings-call-transcript/"},
+    {"source_id": "S007", "public_date": "2020-07-23", "url_or_path": "https://www.engadget.com/intel-7nm-delay-013258837.html"},
+    {"source_id": "S010", "public_date": "2021-03-15", "url_or_path": "https://www.nextplatform.com/2021/03/15/amds-top-brass-take-another-swing-at-intel-with-milan-epycs/"},
+    {"source_id": "S011", "public_date": "2020-03-06", "url_or_path": "https://www.nextplatform.com/2020/03/06/amd-is-determined-to-gets-its-rightful-datacenter-share/"},
+    {"source_id": "S013", "public_date": "2021-04-23", "url_or_path": "../../../../data/asof_2021_04_23_intc_quotes.json"},
+    {"source_id": "operator_background.md", "public_date": "2021-04-23", "url_or_path": "./operator_background.md"}
+  ]
+}
