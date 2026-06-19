@@ -1,6 +1,9 @@
 {
   "ticker": "INTC",
   "as_of": "2024-08-02",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
   "context_label": "structural_decline_trap",
   "as_of_price": 21.48,
   "as_of_market_cap": 91900000000,
