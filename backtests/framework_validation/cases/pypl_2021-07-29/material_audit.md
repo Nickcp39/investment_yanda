@@ -81,3 +81,52 @@ The pack is **CLEAN** and test-ready. The Block-Afterpay timing trap (post-as-of
 
 - **Added:** `operator_background.md` (founder/operator dossier per `companies/_operator_underwriting_template.md`): People Map, Operator Scorecard, formation-first life-arcs for Schulman (CEO) + Rainey (CFO) with required dark-arcs, Donahoe (chair) oversight note, team-level read, fracture inversion, durability grade. 13 distinct dated operator sources (OP001–OP012 + OP004-crucible), all formation/track-record facts dated `<= 2021-07-29` (formation facts timeless but cited).
 - **Self-audit (LOOKAHEAD_CHECKER self-applied): CLEAN.** Source-date check: all operator track-record/governance facts pre-date as-of (Honey deal Nov 2019; Rainey appt 2015-08-04; Donahoe chair since 2015; comp re FY2019/2020 proxies). Outcome-aware-language grep: only hits are the doc's own "last updated" date stamp and an explicit *exclusion* note ("any later CEO-succession event is forbidden and is NOT used here"). Forbidden-registry traps (Pinterest, 2022+ guidance cuts, stock collapse/de-rate/~$43, Alex Chriss CEO, Block-Afterpay, Amazon-Venmo) all ABSENT; "Honey" used only as the *as-of* Nov-2019 deal with no post-as-of impairment/outcome; all "2025" mentions are the Feb-2021 Investor-Day *targets* (S007, tagged aspirations-not-results). Materials-only: **no decision, no thesis, no valuation verdict, no size** — operator grade is an evidence read only. Hint corrections logged in-file: father = chemical engineer (not "teacher") and mother = Rutgers GSAPP associate dean; Schulman comp ~$23.4M (2020), not the hinted $100M. **Verdict: CLEAN.**
+
+---
+
+## Independent Checker Pass (2026-06-19)
+
+Second, independent lookahead pass by a *different* agent (the blind runner-checker), ahead of the blind 6-module run. Files re-audited: `case_control.md`, `sources_used.csv`, `raw_extracts.md`, `evidence_spine.md`, `operator_background.md`. Scope adds `operator_background.md`, which post-dated the original §0–§7 audit.
+
+### Verdict: **CLEAN.** No load-bearing post-as-of fact; no decision/thesis/valuation present. The pack is test-ready for a blind run. (Confirms the prior CLEAN; independently re-web-verified the highest-risk rows.)
+
+### A. 6-Point Checklist
+
+| # | Check | Result |
+|---|---|---|
+| 1 | Source-date ≤ as-of (2021-07-29) | **PASS** — all 9 financial sources + all 13 operator sources dated on/before as-of. Highest-risk rows re-web-verified (table B). |
+| 2 | Claim traceability | **PASS** — every load-bearing claim (C001–C020 + operator scorecard facts) traces to an allowed `source_id` / `OPxxx`. No dangling refs. |
+| 3 | Outcome-aware language | **PASS** — 0 hindsight phrases. Forward items (FY21/Q3'21 guidance, Feb-2021 ID 2025 targets) are *as-of guidance/targets*, explicitly tagged aspirations-not-results. No post-as-of price. Decel is read from as-of data (NNA 11.4M vs 21.3M; Q3 guide ~13–14%), not from a known later de-rate. |
+| 4 | Post-cutoff fact intrusion (forbidden registry, pypl row) | **PASS** — all 7 traps ABSENT (table C). |
+| 5 | Evidence misuse | **PASS** — no KOL/social/video. Peer Square (S008) + BNPL landscape (S009) = "context, not core proof." Mgmt framing ("essential service," ex-eBay ~32%, 2025 super-app) quarantined as framing/aspiration; ex-eBay growth carries *medium* confidence as a mgmt figure. Schulman self-told origin story (union-organizer/MLK/FBI) explicitly discounted vs hard facts in operator_background. |
+| 6 | Materials-only (no decision) | **PASS** — 0 verdict/valuation tokens as actual output. REJECT/WATCH/STARTER/CORE appears only inside the case_control "Decision Question" describing the *future* blind test ("NOT produced this round"); M1 signal explicitly 0; operator grade is an evidence read only. |
+
+### B. High-Risk Date Web-Verification (this pass, 2026-06-19)
+
+| item | claimed | web-verified | source |
+|---|---|---|---|
+| Q2'21 earnings release | 2021-07-28 | **CONFIRMED 2021-07-28** — rev $6.24B, TPV $311B +40%, 403M accounts, 11.4M NNAs, $1.15 adj EPS all match | SEC 8-K `000163391721000146`; PayPal newsroom 2021-07-28; CNBC 2021-07-28 |
+| Q2'21 guidance below consensus / eBay faster | as-of | **CONFIRMED** — Q3 guide $1.07 EPS on $6.15–6.25B rev (below consensus); "eBay moving payments off faster than originally anticipated"; ~$0.27 Q2 eBay EPS headwind | Bloomberg 2021-07-28; Seeking Alpha 2021-07-28 |
+| As-of close $283.17, near ATH | 2021-07-29 close; ATH era ~$306–310 late Jul | **CONFIRMED** — post-earnings slump into 2021-07-29; as-of close $283.17 / gap-down from $301.98 (re-confirmed; web-verified in §1 prior pass). Stock sat just below its all-time high. | CNBC/Bloomberg 2021-07-28; prior §1 price verify |
+| **Block (Square)–Afterpay deal** (the 3-day trap) | forbidden (post-as-of) | **CONFIRMED announced 2021-08-01** — Square 8-K/press "Announces Plans to Acquire Afterpay," ~$29B, implied value on the 2021-07-30 SQ close → **3 days AFTER as-of**. Correctly forbidden; ABSENT from runner files. | Square press 2021-08-01; SEC 8-K `000119312521232215`; squareup.com |
+
+Note — ATH exact-date nuance: one aggregator (Macrotrends) marks the all-time *closing* high on 2021-07-23 (~$305.88–$308.53) vs the pack's 2021-07-26 intraday $310.16 / $306.80 close. Immaterial: both place the as-of window **right at/just below the all-time high**, which is the load-bearing analytical point (M2/M6 "near-ATH"). The pack's as-of close $283.17 is unaffected and independently verified. Not a leak; logged as a sub-$1 cosmetic date nuance only.
+
+### C. Forbidden-Registry Trap Sweep (pypl_2021-07-29 row — each ABSENT)
+
+| forbidden item | status | where (if anywhere) |
+|---|---|---|
+| Pinterest acquisition rumor (Oct 2021) | **ABSENT** | only case_control forbidden list |
+| 2022 guidance cuts / user-growth deceleration / dropped 750M target | **ABSENT** | only as-of FY21/Q3'21 guidance + Feb-2021 750M *target* (S007) |
+| The stock collapse / de-rate | **ABSENT** | only as-of close + as-of-era path; "de-rated" only in forbidden list |
+| Alex Chriss CEO (Sep 2023) | **ABSENT** | Schulman is the as-of CEO; operator_background notes succession is "not visible / forbidden, NOT used" |
+| The 2026 ~$43 price | **ABSENT** | not mentioned anywhere |
+| Block–Afterpay deal (2021-08-01) | **ABSENT** | "Afterpay" only as a generic BNPL competitor (S009, dated 2021-07-28) + the forbidden-list line |
+| Amazon–Venmo checkout (Nov 8 2021) | **ABSENT** | only case_control forbidden list |
+
+### D. operator_background.md spot-check (new since prior pass)
+
+- All track-record/governance facts ≤ as-of: Honey ~$4B/~40x (Nov 2019), Braintree/Venmo (2013), iZettle, Chargehound/Happy Returns (as-of Q2'21 tuck-ins), Rainey appt 2015-08-04, Donahoe chair since 2015, comp re FY2019/2020 proxies. Formation facts timeless but cited.
+- "Honey" used strictly as the *as-of* Nov-2019 deal — **no post-as-of impairment, writedown, or outcome** referenced. All "2025" = Feb-2021 ID targets. No CEO-succession event used. Self-narrative properly weighted below hard facts. **CLEAN.**
+
+**Decision: CLEAN — proceed to blind 6-module run.** No load-bearing post-cutoff fact, no leadership-change leak, no decision/valuation. The only timing trap (Block–Afterpay, +3 days) is correctly excluded.

@@ -1,0 +1,91 @@
+{
+  "ticker": "PFE",
+  "as_of": "2022-02-08",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "false_cheap_value_trap",
+  "as_of_price": 51.70,
+  "as_of_market_cap": 290000000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Core financial facts are high-confidence (primary same-day Feb-8 release + corroborating mirrors and dated reaction coverage; share count from Q3 2021 10-Q). But the load-bearing variable - the multi-year DURABILITY of the ~$54B 2022 COVID revenue, and the implied ex-COVID earnings power - is structurally unresolvable as-of: the company does not cleanly break out COVID profit contribution, and even the as-of sell-side openly debates post-2022 normalization (S007). High confidence on facts, low on the variable that decides the case -> evidence completeness is a haircut, not a positive.",
+      "drivers": ["S001", "S002", "S004", "S005", "S006", "S007", "S011", "S012"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Classic false-cheap peak-earnings setup. The optical ~8x forward 2022 P/E exists only because ~$54B (~54%) of guided 2022 revenue and ~2/3 of the 2022 growth rest on two COVID products (Comirnaty ~$32B + Paxlovid ~$22B) whose run-rate beyond 2022 is openly unsettled in the as-of record itself (S007: SVB Leerink already modeled 'Paxlovid seasonal from 2023'). The market repriced DOWN on the print (stock -4%, guide below ~$108.6B consensus) precisely because it reads the COVID line as peaking, not as a durable base. The cheap multiple is a feature of a one-time windfall, not a mispriced cash compounder. Context label: false_cheap_value_trap.",
+      "drivers": ["S001", "S005", "S006", "S007"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "The ex-COVID franchise is real and diversified (Eliquis $6.0B, Ibrance $5.4B, Prevnar $5.3B, Xeljanz $2.5B, Vyndaqel $2.0B, plus Xtandi/Inlyta/Enbrel-intl) but ORDINARY: only 6% operational growth in 2021, and several of its largest products carry known mid-decade loss-of-exclusivity (Eliquis, Ibrance, Vyndaqel, Xeljanz) as general as-of industry knowledge. The COVID layer on top is the opposite of durable. Operator read (operator_background.md): deep-domain, cohesive, crisis-proven stewards, life-arc grade 3/5, scorecard ~25/40 = NEUTRAL -> durability ceiling HELD, not raised; they are NOT owner-founders and NOT proven offensive capital-allocators, and the combined Chair+CEO (since Jan 2020) past a deferential board warrants a mild governance discount. Net: durable-but-slow base, not a compounder; no durability premium.",
+      "drivers": ["S003", "S004", "O09", "O11"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "CRITICAL normalization. Strip Comirnaty (~$32B) + Paxlovid (~$22B) = ~$54B COVID windfall from the 2022 guide -> ex-COVID 2022 revenue ~$46B. COVID is high-margin and contributes disproportionately to the $6.45 guided adjusted-EPS midpoint, so normalized ex-COVID earnings power is far below the headline. Using the post-Upjohn 'New Pfizer' innovative base (FY2019 adj EPS $2.95 was PRE-Upjohn-spin; the remaining innovative core is smaller-revenue but higher-margin) and ~6% growth, a defensible ex-COVID adjusted EPS is ~$2.50-3.50. At $51.70 that is a REAL ex-COVID forward P/E of ~15-21x - a market-to-slightly-premium multiple, NO margin of safety - against a portfolio facing a known mid-decade patent cliff. The optical ~8x forward / ~11.7x trailing is an artifact of peak windfall earnings; on normalized owner earnings the cheapness disappears.",
+      "drivers": ["S001", "S004", "S012"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Two kill paths confirmed. (1) False-cheap on a one-time event: ~$54B of revenue normalizes away and the ~8x re-rates to a market multiple on ~$46B of ordinary, patent-cliff-exposed base (the M4 result). (2) Capital-allocation-of-windfall risk: an unprecedented COVID cash pile must be deployed by a combined-Chair+CEO (weak board check, O09) with a defensive/restructuring-DNA, career-late CFO and NO in-window windfall-allocation track record; the '>=$25B 2030 BD revenue' is an unexecuted promise -> real risk the windfall funds premium, ego-driven M&A. BUT this is a value trap, not a melting ice cube: balance sheet is not at risk, the ~3.1% dividend ($1.60, 333rd consecutive, just raised) is well-covered even on normalized earnings, and downside to fair value is survivable. Soft veto / strong warning -> caps size and blocks a STARTER; does NOT justify a hard zero or a short.",
+      "drivers": ["S003", "S010", "O09", "O11", "O12"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "$51.70, ~$290B cap. The low trailing/forward optical P/E is explicitly NOT a margin of safety here - this is the textbook false_cheap_value_trap the methodology warns against ('low multiple is not MOS'). On normalized ex-COVID earnings (~$2.50-3.50 EPS, ~15-21x) with a mid-decade patent cliff and live windfall-allocation risk, there is no MOS at $51.70. Two things keep it off an outright REJECT: the COVID cash flow is real-and-banked (genuine optionality if Paxlovid stockpiling/endemicity surprises up) and the covered ~3.1% dividend pays you to wait. Central question 'cheap cash machine or false-cheap peak-earnings trap?' resolves: FALSE-CHEAP. Posture: WATCH with the explicit COVID-normalization + patent-cliff diagnosis; a real entry requires proof of the ex-COVID base and ROIC-disciplined windfall deployment, ideally at a price reflecting normalized (not windfall) earnings.",
+      "drivers": ["S001", "S010", "S012"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "TRIM",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 1,
+  "buy_below_price": 38,
+  "starter_zone": "none at as-of; revisit only on proof of ex-COVID base AND a price near normalized earnings (~$35-40, i.e. ~12-14x on ~$2.50-3.00 ex-COVID EPS) - NOT on the optical ~8x windfall multiple",
+  "add_zone": "not applicable until thesis flips from false-cheap to confirmed durable cash machine (ex-COVID earnings power proven, windfall deployed with ROIC discipline)",
+  "trim_or_no_chase_zone": "at/above ~$51.70 the optical cheapness is a windfall artifact; no chase. Existing holders: TRIM toward a tracking-only weight - you are being paid a peak, COVID-inflated multiple-equivalent and the durable base does not support the price.",
+  "binding_constraint": "Normalized ex-COVID earnings power does not support the price: strip the ~$54B Comirnaty+Paxlovid windfall and the real forward P/E is ~15-21x (market multiple, no MOS) on an ordinary ~6%-growth base facing a known mid-decade patent cliff. The optical ~8x is peak-windfall earnings, not value. (Secondary, reinforcing: windfall-deployment risk under a combined Chair+CEO with no allocation track record.)",
+  "kill_criteria": [
+    "Ex-COVID base proves it can grow through the mid-decade LOE wall (launches + share gains actually deliver the >=6% bridge) -> reconsider as a real, if slow, cash machine",
+    "Windfall is deployed with demonstrable ROIC discipline (not premium transformational M&A) -> governance discount lifts",
+    "Price falls to reflect normalized (not windfall) earnings (~12-14x on ~$2.50-3.00 ex-COVID EPS) -> a real MOS appears and WATCH can become STARTER",
+    "Conversely, confirmation the thesis is right-as-a-trap: COVID revenue normalizes hard with no BD backfill and the base shrinks into LOE -> stay out / exit"
+  ],
+  "runner_dissent": "Two-sided. (1) Mild bull dissent: the ~$54B COVID cash is real and already converting to a fortress balance sheet + a covered, rising ~3.1% dividend; if Paxlovid stockpiling/endemicity holds even partially and the windfall is deployed well, the optical 8x could be a genuine asymmetric entry rather than a trap - which is why the call is WATCH (with a defined cheap-entry trigger) rather than a hard REJECT. (2) Hawkish dissent: the combination of false-cheap-on-a-one-time-event PLUS unproven windfall capital allocation under a weakly-checked combined Chair+CEO is exactly the structural pattern that justifies a harder avoid; an argument exists for EXIT rather than TRIM for existing holders. Net call sits between these: false-cheap diagnosis is the spine, no MOS at $51.70, but survivable/dividend-covered/optionality-bearing -> WATCH, no new money, trim existing toward tracking.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2022-02-08", "url_or_path": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000003/pfe-12312021xex99.htm"},
+    {"source_id": "S002", "public_date": "2022-02-08", "url_or_path": "https://www.biospace.com/pfizer-reports-fourth-quarter-and-full-year-2021-results"},
+    {"source_id": "S003", "public_date": "2022-02-08", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2022/02/08/pfizer-pfe-q4-2021-earnings-call-transcript/"},
+    {"source_id": "S004", "public_date": "2022-02-08", "url_or_path": "https://www.pfizer.com/sites/default/files/investors/financial_reports/annual_reports/2021/performance/"},
+    {"source_id": "S005", "public_date": "2022-02-08", "url_or_path": "https://www.nasdaq.com/articles/pfizer-pfe-q4-earnings-top-2022-sales-view-grim-stock-down"},
+    {"source_id": "S006", "public_date": "2022-02-08", "url_or_path": "https://www.fxempire.com/forecasts/article/pfizer-covid-sales-outlook-disappoints-891676"},
+    {"source_id": "S007", "public_date": "2021-11-23", "url_or_path": "https://www.fiercepharma.com/pharma/pfizer-to-exceed-100b-revenue-2022-thanks-to-covid-19-drug-and-vaccine-analyst"},
+    {"source_id": "S008", "public_date": "2021-12-22", "url_or_path": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-oral-antiviral-treatment-covid-19"},
+    {"source_id": "S009", "public_date": "2021-11-05", "url_or_path": "https://www.pfizer.com/news/press-release/press-release-detail/pfizers-novel-covid-19-oral-antiviral-treatment-candidate"},
+    {"source_id": "S010", "public_date": "2021-12-10", "url_or_path": "https://www.businesswire.com/news/home/20211210005405/en"},
+    {"source_id": "S011", "public_date": "2021-11-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000078003/000007800321000107/pfe-20211003.htm"},
+    {"source_id": "S012", "public_date": "2022-02-08", "url_or_path": "../../../../data/asof_2022-02-08_pfe_quotes.csv"}
+  ]
+}

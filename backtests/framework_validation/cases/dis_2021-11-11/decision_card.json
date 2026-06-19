@@ -1,0 +1,94 @@
+{
+  "ticker": "DIS",
+  "as_of": "2021-11-11",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "structural_decline_trap",
+  "as_of_price": 162.11,
+  "as_of_market_cap": 288556000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Evidence quality is high and primary: the Q4 & FY2021 earnings release (8-K Ex-99.1, 2021-11-10) + the management call transcript + as-of price are all present, corroborated by multiple same-day reputable outlets, with a prior-quarter (Q3 FY2021) baseline to establish the deceleration trajectory. Confidence is high for reported financials/subscribers/price; medium only for the press-reported consensus numbers (~$18.79B / ~$0.51 / ~126M subs -- analyst estimates, not company disclosures). The FY2021 10-K (filed 2021-11-24, AFTER as-of) is correctly EXCLUDED; balance-sheet detail comes from the 2021-11-10 release. No evidentiary gap drives the verdict -- the binding uncertainties are FORWARD (does DTC bend to the FY2024 target; how fast does linear erode; is parks per-cap durable). Per harness, forward uncertainty is a SIZE input, not an automatic WATCH cap.",
+      "drivers": ["S001", "S002", "S007", "S009"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Theme: the forced industry migration from a high-margin linear-TV bundle to lower-margin/loss-making direct-to-consumer streaming, with Disney's premier IP as the asset being re-platformed. Mechanism the BULLS price: the world's strongest entertainment-IP library + Parks pricing power funds a land-grab to 230-260M Disney+ subs and DTC profitability by FY2024, after which the streaming P&L inflects. Mechanism the BEARS price (and the as-of data leans toward): the cash engine (Linear Networks, $8.4B FY OI) is in secular decline (-4% rev, domestic OI -14% this quarter) while its replacement burns cash (Q4 DTC op loss WIDENED to -$630M) on DECELERATING growth (Disney+ +2.1M net adds / +1.8% QoQ vs +12% QoQ the prior quarter) and FALLING unit economics (ARPU -9% to $4.12). The market is over-weighting the +60% YoY Disney+ headline and the reiterated FY2024 target; it is under-weighting the sequential deceleration + ARPU erosion + the linear-decline-subsidizing-DTC structure. Net mildly negative: a genuine brand wrapped around a distribution model in transition where the as-of evidence shows the new model not yet earning its keep. context_label = structural_decline_trap (the 'strong brand masking distribution-model decay' variant), NOT a clean compounder.",
+      "drivers": ["S001", "S004", "S005", "S006", "S007", "S008"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Two profit pools pulling in opposite directions. The DURABLE, high-return pool is Linear Networks ($1.6B Q4 OI / $8.4B FY OI) -- but it is in structural decline (rev -4%, domestic channel OI -14%) and is precisely the cash cow being cannibalized by the cord-cutting the company itself is accelerating via DTC. The GROWTH pool (DTC) is large in revenue ($16.3B FY) but loss-making (-$1.68B FY, Q4 loss widening) with deteriorating ARPU. Parks/Consumer Products is a real, high-quality pool with demonstrated pricing power (Genie+ at $15/day, +30% per-caps) but is COVID-distorted (~$1B safety costs, reduced capacity) so its normalized economics are unclear. The IP/brand MOAT is genuine and rare -- but a moat on the CONTENT does not guarantee the DISTRIBUTION economics transition profitably; the bear case is exactly an owner of a fortress IP library trapped in a margin-destructive shift from a $50+/mo bundle to a $8/mo (Hotstar-diluted to $4) streaming ARPU. OPERATOR/team life-arc grade = 2.5/5 (per operator_background.md): the strategy's architect and dealmaker (Iger) LEAVES by end-2021 at the start of the hardest DTC-execution year; the incoming CEO (Chapek) is an elite ops/monetization operator but 'notably lacked content experience' for an IP-driven company; active creative-vs-business culture friction from the Oct-2020 DMED reorg (content chiefs stripped of P&L; senior content execs exited); a loyalist-heavy inner circle (Daniel) + insider CFO with limited independent-challenge capacity; chairman succession unsettled at as-of. This LOW grade is a durability NEGATIVE that LOWERS the ceiling -- the people line caps upside and widens the execution/governance discount rather than supporting a high-conviction long-hold. Net -1: a real moat on the IP, but a declining distribution pool, an unproven money-losing replacement, and a fragile/mid-fracture operating team at the decisive moment.",
+      "drivers": ["S001", "S002", "O1", "O3", "O4", "O5"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "Accounting does NOT cleanly confirm the bull thesis and flags a trailing-earnings/quality problem. Company-level GAAP profit returned ($0.09 Q4, $1.11 FY GAAP EPS) and the FULL-YEAR DTC loss narrowed YoY (-$1.68B vs -$2.91B), but the most decision-relevant trends are negative AT THE MARGIN: the QUARTERLY DTC operating loss WIDENED both YoY and sequentially (-$630M vs -$374M); Disney+ ARPU FELL 9%; Linear (the earnings base) rev -4% / domestic OI -14%; FY operating cash flow fell 27% to $5.57B and FCF fell 45% to $1.99B on heavier content spend. The reported earnings base is COVID-distorted on BOTH sides (DTC engagement pulled forward; Parks suppressed-then-recovering, carrying ~$1B COVID cost), so neither trailing nor a naive forward number is a clean normalized base. The balance sheet carries ~$54.4B total borrowings, ~$78B goodwill (largely Fox), ~$9.2B Hulu redeemable NCI, against ~$16B cash and ~$93B equity -- survivable (no bankruptcy path; an investment-grade media major) but stretched while it self-funds a multi-$B DTC burn as the linear cash cow erodes. Critically, at $162.11 the stock is ~71x FY2021 ex-items EPS ($2.29) / ~146x GAAP -- so even off the ~$202 high there is NO trailing-earnings margin of safety; the valuation already embeds the streaming-success outcome that the Q4 print just put in doubt. This is the classic structural-decline-trap accounting signature: a high multiple on a distorted earnings base where the growth engine loses money and the profit engine is shrinking.",
+      "drivers": ["S001", "S002", "S009"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Inversion: what makes this a permanent-loss mistake? The trap path is concrete and the as-of data is consistent with it: (1) LINEAR-DECLINE-FUNDS-A-LOSING-DTC -- the high-margin Linear pool ($8.4B FY OI) erodes structurally (-4% rev this quarter) while DTC, the designated replacement, loses money (-$1.68B FY, Q4 widening) with DECELERATING subs and FALLING ARPU; if the FY2024 230-260M / profitability target slips, the company is paying up to convert a profitable business into an unprofitable one. (2) MULTIPLE COMPRESSION ON A DISTORTED BASE -- ~71x ex-items / ~146x GAAP on a COVID-distorted earnings base means the de-rating risk is large even without a fundamental collapse; the price embeds streaming success that just missed. (3) OPERATOR/GOVERNANCE -- the architect leaves at the worst moment, the new CEO lacks the content pedigree the moat depends on, creative talent is being marginalized (IP-pipeline risk), and the inner circle lacks an independent counterweight (operator grade 2.5/5). HOWEVER, this is NOT a hard-veto / zero-size case: there is NO bankruptcy path (IG-rated, ~$16B cash, $8.4B+ of still-profitable linear OI, a genuinely irreplaceable IP library and a high-pricing-power Parks franchise). The harness's hard-veto triggers (moat ERODED to zero, balance-sheet death, downside not survivable) are NOT met -- the moat on the IP is intact even as the distribution economics are threatened. So M5 is a strong WARNING that argues for REJECT-or-tracking-only at this price, not a structural-zero veto: the right posture is to AVOID new money here and demand either a much lower price (real MOS on a normalized base) or hard evidence the DTC economics are bending to target before committing capital.",
+      "drivers": ["S001", "S005", "S007", "O1", "O3", "O4"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $162.11 (~$289B equity value, ~1.78B sh) Disney trades ~71x FY2021 ex-items EPS ($2.29) and ~146x GAAP ($1.11), with FCF of only ~$2.0B (a ~0.7% FCF yield) and ~$54B gross debt. Even ~20% below the ~$202 early-2021 high, this is an EXPENSIVE multiple on a COVID-distorted, transition-year earnings base -- there is no trailing margin of safety, and the price already capitalizes the streaming-success scenario the Q4 print just challenged. For the bull math to work the stock has to be valued on the FY2024 230-260M-sub / DTC-profitability outcome, which is an as-of-unproven management target on a metric that just decelerated sharply. Asymmetry is UNFAVORABLE for new money at this price: limited near-term support from earnings/FCF, a wide de-rating band if the streaming narrative cracks, against a still-real-but-not-cheap franchise. Price does NOT support a starter here; it supports tracking-only/avoid until either a materially lower entry (a price that discounts a normalized, not COVID-peak, base and prices the transition risk) or fundamental confirmation that DTC losses are bending toward the FY2024 target. Existing holders face a thesis under stress but no balance-sheet emergency -> trim/hold on the people-and-margin risk, not a forced exit.",
+      "drivers": ["S001", "S009"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "TRIM",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 2,
+  "buy_below_price": 115,
+  "starter_zone": "No starter at the as-of price. A starter only becomes discussable on a price that discounts a NORMALIZED (non-COVID-peak) earnings base AND prices the transition risk -- roughly the low-$100s / high-double-digits (~<=$115, near/under the 52-week low area), OR at any price once DTC unit economics visibly bend toward the FY2024 target (ARPU stabilizes + losses narrow sequentially with re-accelerating net adds).",
+  "add_zone": "Not applicable for new money at as-of. For a future re-rate of the thesis: add only on CONFIRMED DTC economics inflection (sequential loss narrowing + ARPU stabilization + net-add re-acceleration toward the 230-260M path) combined with a stabilized post-Iger governance/creative structure -- not on price weakness alone (cheaper-but-still-deteriorating is not a buy in a structural-decline setup).",
+  "trim_or_no_chase_zone": "No-chase at/above the as-of $162 area and into the $160s-$200s absent proof the streaming economics are turning; an existing holder should TRIM into strength here rather than add, given the rich multiple on a distorted base + the operator/transition risk.",
+  "binding_constraint": "Whether the secular decline of the high-margin Linear Networks profit pool is outrun by direct-to-consumer reaching the FY2024 230-260M-subscriber / profitability target -- i.e., whether Disney is funding a profitable platform shift or paying a rich price to convert a profitable business into a loss-making one. At the as-of price this is UNRESOLVED and the Q4 print (subscriber deceleration + widening quarterly DTC loss + ARPU -9%) leans the wrong way, while ~71x ex-items / ~146x GAAP leaves no margin of safety. This holds new money at WATCH (not a structural-zero veto, because the IP moat is intact and there is no bankruptcy path) -- the discipline is to require either a normalized-base entry price or a confirmed DTC-economics inflection before committing capital.",
+  "kill_criteria": [
+    "Disney+ net adds stay decelerating / ARPU keeps falling and the FY2024 230-260M / DTC-profitability path is implicitly or explicitly pushed out -> the platform shift is value-destructive, stay out / cut existing exposure.",
+    "Quarterly DTC operating losses keep widening rather than narrowing while content spend rises -> the streaming land-grab is not converting to a profitable annuity.",
+    "Linear Networks decline accelerates (revenue and operating income falling faster than mid-single digits) -> the cash cow that funds the transition erodes faster than DTC can replace it.",
+    "Parks per-cap / Genie+ strength proves to be pulled-forward COVID demand that fades as capacity normalizes -> the one clearly-working profit engine was a reopening pop, not durable pricing power.",
+    "The post-Iger creative/governance structure produces a visible exodus of top franchise talent or a thinning content slate -> the IP engine that justifies the whole DTC bet is impaired (operator-risk realized).",
+    "Multiple compresses toward a normalized media multiple on a de-rate -> confirms there was no trailing margin of safety at the as-of price (a drawdown-to-fair-value risk that was foreseeable)."
+  ],
+  "runner_dissent": "Mild dissent guarding against a FALSE-NEGATIVE on the franchise. The mechanical read lands at WATCH/0% new money because (a) the price is ~71x ex-items / ~146x GAAP with no MOS on a COVID-distorted base, (b) the headline Q4 metric (Disney+ net adds) decelerated sharply with ARPU -9% and the quarterly DTC loss widening, and (c) the operator/team grade is a LOW 2.5/5 at the decisive succession moment -- three modules (M2, M4, M5/M6) all leaning negative with no veto. The honest counter-argument: this is one of the rarest IP/brand assets in the world with real Parks pricing power and a profitable (if shrinking) linear base, so the trap risk is a de-rate/dead-money risk, NOT a permanent-total-loss risk -- and a single soft streaming quarter against a knowable seasonal/markets/content-timing cadence is thin evidence to write off a franchise. That argues for keeping this on a TIGHT watch with explicit re-rate triggers (DTC-economics inflection; stabilized post-Iger creative governance) rather than a hard REJECT. I hold at WATCH (not STARTER) because METHODOLOGY requires EARNED conviction and the structural-decline context says a low multiple-on-normalized-earnings / a confirmed inflection -- not a still-rich price on a distorted base -- is the entry; and because the 2.5/5 operator grade actively LOWERS the durability ceiling at the exact moment the hardest execution begins. New money waits; an existing holder trims the rich, transition-risk exposure rather than adds.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2021-11-10", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1744489/000174448921000214/fy2021_q4xprxex991.htm"},
+    {"source_id": "S002", "public_date": "2021-11-10", "url_or_path": "https://thewaltdisneycompany.com/app/uploads/2021/10/q4-fy21-earnings-transcript.pdf"},
+    {"source_id": "S003", "public_date": "2021-11-10", "url_or_path": "https://www.cnbc.com/2021/11/10/disney-dis-fiscal-q4-2021-earnings.html"},
+    {"source_id": "S004", "public_date": "2021-11-10", "url_or_path": "https://deadline.com/2021/11/disney-stock-q4-earnings-streaming-theme-parks-1234871392/"},
+    {"source_id": "S005", "public_date": "2021-11-10", "url_or_path": "https://www.hollywoodreporter.com/business/business-news/disney-q4-2021-earnings-1235045766/"},
+    {"source_id": "S006", "public_date": "2021-11-10", "url_or_path": "https://deadline.com/2021/11/disney-plus-streaming-million-subscribers-1234871518/"},
+    {"source_id": "S007", "public_date": "2021-08-12", "url_or_path": "https://deadline.com/2021/08/disney-q3-beats-estimates-streaming-116-million-subscribers-1234813827/"},
+    {"source_id": "S008", "public_date": "2021-08-12", "url_or_path": "https://variety.com/2021/digital/news/disney-plus-tops-expectations-reaches-116-million-subscribers-1235040516/"},
+    {"source_id": "S009", "public_date": "2021-11-11", "url_or_path": "backtests/data/asof_2021-11-11_dis_quotes.csv"},
+    {"source_id": "O1", "public_date": "2020-02-25", "url_or_path": "Variety - Meet Bob Chapek, the New CEO of the Walt Disney Company"},
+    {"source_id": "O3", "public_date": "2021-07-13", "url_or_path": "https://www.thewrap.com/disney-kareem-daniel-most-powerful-hollywood/"},
+    {"source_id": "O4", "public_date": "2021-10-06", "url_or_path": "https://www.hollywoodreporter.com/business/business-news/bob-iger-disney-exit-bob-chapek-succession-1235025504/"},
+    {"source_id": "O5", "public_date": "2021-05", "url_or_path": "WDW News Today - Chapek 'Frequent Visitor Program' / Genie+ shareholder-return-over-guest-value"}
+  ]
+}

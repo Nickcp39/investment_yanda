@@ -75,6 +75,6 @@ One row per scored case (schema = `WEIGHTING_HARNESS.md` §7):
 | 5 | meta_2022-11-10 | CLEAN | STARTER 3.5% / max 9% | PASS · size-dist 1 · sound | ✅ WINNER +465%; ceiling capped by founder-control discount (P1) |
 | 6 | amzn_2023-02-03 | CLEAN | STARTER 4% / max 12% | PASS · size-dist 0 · sound | ✅ WINNER +138%; mirror-correct of INTC-2024 |
 | 7 | aapl_2016-05-12 | CLEAN | STARTER 4% / max 11% | PASS · size-dist 1 · sound | ✅ WINNER +1318%; be braver at the ceiling |
-| 8 | pfe_2022-02-08 | — | — | — | |
-| 9 | pypl_2021-07-29 | — | — | — | |
-| 10 | dis_2021-11-11 | — | — | — | |
+| 8 | pfe_2022-02-08 | CLEAN | WATCH / 0% / TRIM | PASS · size-dist 0 · sound | ✅ TRAP −35% (normalized COVID windfall) |
+| 9 | pypl_2021-07-29 | CLEAN | WATCH / 0% / TRIM | PASS · size-dist 0 · sound | ✅ TRAP −85% (relabel: expensive-derating, not false-cheap) |
+| 10 | dis_2021-11-11 | CLEAN | WATCH / 0% / TRIM | PASS · size-dist 0 · sound | ✅ TRAP −36%; P1 low-operator counter-test confirmed |

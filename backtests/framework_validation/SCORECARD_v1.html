@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Framework Validation Scorecard · lean-6module-v1</title>
+<style>
+  :root{--bg:#0f1115;--panel:#171a21;--p2:#1d212b;--ink:#e6e9ef;--mut:#9aa3b2;--line:#2a2f3a;
+    --win:#2fbf71;--trap:#e5534b;--warn:#e3b341;--accent:#5b8cff;--chip:#222734;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 22px 90px}
+  h1{font-size:26px;margin:0 0 4px}
+  h2{font-size:19px;margin:34px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+  .sub{color:var(--mut);font-size:13.5px}
+  code{background:#0c0e12;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12.5px;font-family:Consolas,monospace}
+  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.4px;padding:3px 9px;border-radius:999px;border:1px solid;vertical-align:middle}
+  .b-v{color:var(--accent);border-color:var(--accent);background:rgba(91,140,255,.08)}
+  .b-win{color:var(--win);border-color:var(--win);background:rgba(47,191,113,.08)}
+  .b-trap{color:var(--trap);border-color:var(--trap);background:rgba(229,83,75,.08)}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+  @media(max-width:760px){.cards{grid-template-columns:repeat(2,1fr)}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card .n{font-size:26px;font-weight:800}
+  .card .l{color:var(--mut);font-size:12.5px;margin-top:2px}
+  .pass{color:var(--win);font-weight:700}.fail{color:var(--trap);font-weight:700}
+  table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#10131a;color:#c4ccdb;font-weight:600;font-size:12px}
+  tr:nth-child(even) td{background:rgba(255,255,255,.012)}
+  .matrix{display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;margin:10px 0;max-width:620px}
+  .mx{background:var(--p2);border:1px solid var(--line);border-radius:9px;padding:12px;text-align:center}
+  .mx .big{font-size:22px;font-weight:800}
+  .mx.good{border-color:var(--win)}.mx.bad{border-color:var(--trap)}.mx.head{background:#10131a;color:var(--mut);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:12.5px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+  .find{border-left:3px solid var(--warn);padding-left:13px;margin:14px 0}
+  .find.good{border-left-color:var(--win)}
+  ul{margin:7px 0 7px 2px;padding-left:20px}li{margin:4px 0}
+  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:5px;background:var(--chip);border:1px solid var(--line);color:var(--mut)}
+  .foot{color:var(--mut);font-size:12.5px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>框架验证记分卡 · 10 案例盲测</h1>
+  <p class="sub">pipeline <code>lean-6module-v1</code> · weights <code>none</code> (baseline, 未调权) · 盲测序列协议 (checker→runner→scorer, 角色隔离) · 2026-06-19</p>
+
+  <div class="cards">
+    <div class="card"><div class="n">10</div><div class="l">案例(6 赢家 / 4 陷阱)</div></div>
+    <div class="card"><div class="n"><span class="pass">9</span> / <span class="fail">1</span></div><div class="l">PASS / FAIL</div></div>
+    <div class="card"><div class="n">5 / 6</div><div class="l">赢家召回(只漏 1)</div></div>
+    <div class="card"><div class="n">4 / 4</div><div class="l">陷阱精度(零踩雷)</div></div>
+  </div>
+
+  <h2>混淆矩阵 —— 区分度</h2>
+  <div class="matrix">
+    <div class="mx head"></div><div class="mx head">框架说「买」(STARTER+)</div><div class="mx head">框架说「避」(WATCH/0%)</div>
+    <div class="mx head">真实=赢家</div>
+    <div class="mx good"><div class="big">5</div><div class="sub">GOOGL·NVDA·META·AMZN·AAPL</div></div>
+    <div class="mx bad"><div class="big">1</div><div class="sub">INTC-2024(可预见性失败)</div></div>
+    <div class="mx head">真实=陷阱</div>
+    <div class="mx bad"><div class="big">0</div><div class="sub">零假阳性</div></div>
+    <div class="mx good"><div class="big">4</div><div class="sub">INTC-2021·PFE·PYPL·DIS</div></div>
+  </div>
+  <p class="sub">关键:<b>陷阱一侧 4/4 完美</b>——没有买进任何"账面便宜/落刀"。赢家一侧只漏 INTC-2024,且那是<b>无法预见的催化剂</b>(反事实证明是"预见"失败、非"加权"失败)。原始的 GOOGL <code>WATCH/0%</code> 病被治好。</p>
+
+  <h2>逐案例</h2>
+  <table>
+    <tr><th>#</th><th>案例</th><th>类别</th><th>盲判(仓位)</th><th>真实 (vs SPY)</th><th>评分</th><th>要点</th></tr>
+    <tr><td>1</td><td>GOOGL 2024-06-14</td><td><span class="badge b-win">赢家</span></td><td>STARTER 4% / max 12%</td><td>+116% (SPY+42)</td><td class="pass">PASS · sd1</td><td>顶太低(too_small)</td></tr>
+    <tr><td>4</td><td>NVDA 2023-05-25</td><td><span class="badge b-win">赢家</span></td><td>STARTER 3% / max 12%</td><td>+446% (SPY+88)</td><td class="pass">PASS · sd1</td><td>世纪瓶颈仅 3% 起、12% 封顶</td></tr>
+    <tr><td>5</td><td>META 2022-11-10</td><td><span class="badge b-win">赢家</span></td><td>STARTER 3.5% / max 9%</td><td>+465% (SPY+103)</td><td class="pass">PASS · sd1</td><td>创始人控制折价压顶(P1)</td></tr>
+    <tr><td>6</td><td>AMZN 2023-02-03</td><td><span class="badge b-win">赢家</span></td><td>STARTER 4% / max 12%</td><td>+138% (SPY+90)</td><td class="pass">PASS · sd0</td><td>干净;M4 正常化 = INTC-2024 的镜像正解</td></tr>
+    <tr><td>7</td><td>AAPL 2016-05-12</td><td><span class="badge b-win">赢家</span></td><td>STARTER 4% / max 11%</td><td>+1318% (SPY+326)</td><td class="pass">PASS · sd1</td><td>顶太低;现金机器单独就 ~14x</td></tr>
+    <tr><td>3</td><td>INTC 2024-08-02</td><td><span class="badge b-win">赢家</span></td><td>WATCH 0% / TRIM</td><td>+445% (SPY+44)</td><td class="fail">FAIL · sd3</td><td>漏掉反转——靠 as-of 后外部救援,可预见性失败</td></tr>
+    <tr><td>2</td><td>INTC 2021-04-23</td><td><span class="badge b-trap">陷阱</span></td><td>WATCH 0% / TRIM</td><td>−66% DD(大幅跑输)</td><td class="pass">PASS · sd0</td><td>M5 主导;近顶正确回避</td></tr>
+    <tr><td>8</td><td>PFE 2022-02-08</td><td><span class="badge b-trap">陷阱</span></td><td>WATCH 0% / TRIM</td><td>−35% (SPY+78)</td><td class="pass">PASS · sd0</td><td>M4 正常化 COVID 暴利,识破假 8x</td></tr>
+    <tr><td>9</td><td>PYPL 2021-07-29</td><td><span class="badge b-trap">陷阱</span></td><td>WATCH 0% / TRIM</td><td>−85%</td><td class="pass">PASS · sd0</td><td>主动改标签:贵-derating 非假便宜</td></tr>
+    <tr><td>10</td><td>DIS 2021-11-11</td><td><span class="badge b-trap">陷阱</span></td><td>WATCH 0% / TRIM</td><td>−36% (SPY+72)</td><td class="pass">PASS · sd0</td><td>2.5/5 操作者分正确压顶(P1 反向确认)</td></tr>
+  </table>
+  <p class="sub">sd = size-distance(0=带内,1=差一档,3=反向)。所有 reasoning 均 <b>sound</b>;无误触发否决;无前视泄漏。</p>
+
+  <h2>两个系统性发现(≥3 案例,过防过拟合门槛)</h2>
+
+  <div class="find">
+    <h3 style="margin:0 0 4px">① 天花板低一档 —— "起步对、封顶太怂"</h3>
+    <p><b>4 个赢家</b>(GOOGL · NVDA · META · AAPL)全是 size-dist 1、<code>too_small_missed_asymmetry</code>。STARTER <b>入场</b>对(3–4%),但 durability <b>天花板</b>(9–12%)把本该进 Core(15–25%)的复利股压在了 Confirmed。扣分点是<b>顶,不是触发</b>。</p>
+    <p class="sub">→ 含义补丁(待 PATCH_LEDGER 起草验证):当 操作者分高 + 耐久性高 + 无否决 时,放行到 Core 天花板。<b>"在天花板上更勇,而不是在扳机上"</b>。</p>
+  </div>
+
+  <div class="find">
+    <h3 style="margin:0 0 4px">② 升级缺口 —— 不可预见催化剂的困境反转(唯一 FAIL)</h3>
+    <p><b>INTC-2024</b>:可生存的困境名,结局靠 as-of 之后的外部救援(换帅 + ~$16B 政府/英伟达/软银注资)。框架机械归零(WATCH/0%/TRIM)。<b>反事实证明</b>:把催化剂喂进去,框架不改任何权重就翻成 STARTER —— 是<b>"预见"失败、不是"加权"失败</b>。</p>
+    <p class="sub">→ 含义补丁:可生存 + 催化剂依赖的反转,应<b>标红升级给人 + 做催化剂监控</b>(融资缺口=触发线),而不是机械归零;再加一条小护栏防止 survivable self-funded reset 被自动 TRIM。<b>这正是先前讨论的 assumption_register / 人工升级机制的活证据。</b></p>
+  </div>
+
+  <h2>什么已经成立(别改坏)</h2>
+  <div class="panel">
+    <ul>
+      <li><b>陷阱精度 4/4</b>:M4/M5 陷阱机器正确避开 PFE/PYPL/DIS/INTC-2021。改天花板时<b>绝不能</b>破坏这个——框架谨慎的原因和它避雷的原因是同一个。</li>
+      <li><b>"完整度=haircut 非否决"修复生效</b>:除了那个可预见性 case,赢家无一被 WATCH/0% 封顶。</li>
+      <li><b>操作者分→天花板,双向都对</b>:高分抬顶(GOOGL/META 4–3/5),低分压顶(DIS 2.5/5)——<b>PATCH_LEDGER P1 已被 GOOGL+META+DIS 三案验证</b>。</li>
+      <li><b>原始 GOOGL 病已治</b>:同一锚点,旧框架 WATCH/0% → 新框架 STARTER。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <p>数据 of record:<code>results.csv</code>(11 行 / 17 字段) · 逐案 <code>decision_card.json</code>(已盖版本)+ <code>outcome_score.md</code> · 跟踪 <code>TEST_PLAN.md</code>。</p>
+    <p>纪律:baseline <code>lean-6module-v1</code> 的 10 个 case 是补丁的<b>对照基线,不回溯重跑</b>。补丁(① 天花板、② 升级门、P1 治理折价)在 <code>PATCH_LEDGER.md</code> 起草→验证→激活为 <code>v1.1</code> 后,新案例才盖新版本号。</p>
+  </div>
+
+</div>
+</body>
+</html>
