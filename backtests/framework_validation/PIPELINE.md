@@ -12,12 +12,32 @@
 | 看结局? | N/A(未来未知) | 仅 Scorer 可见(打分用) |
 | 入口 | `USER_MANUAL.md → A` | `USER_MANUAL.md → B` + `TEST_PLAN.md` |
 
+> 要**一次跑一组公司**(watchlist / Mega7 / 主题 top-N)→ 在实盘之上再加一层**批量编排 + 独立活体 checker**,见下「实盘批量编排」。
+
 ## 阶段流程
 ```
 实盘:  01 收证据 → M1 → M2 → M3 → M4 → M5 → M6 → 锁 decision_card
 回测:  00 Freeze(锁 as-of/禁后视) → 01 → M1..M6 → 锁卡 → QA(独立防穿越) → SC(对真实结局评分)
 ```
 关键纪律:**Runner 锁卡前不看结局;回测的 checker/scorer 必须是与采集者不同的 agent**(角色隔离,见 `PROTOCOL.md §3`)。
+
+## 实盘批量编排(多公司,如 Mega7)— 当前做法
+一次跑一组公司时,在单公司流程外加一层**批量编排**,用多-agent workflow 并行,并配一个**独立活体 checker**。三件套固化在批次目录 `companies/_<batch>_<date>/`(直接复制 `companies/_mega7_2026-06-19/` 改用):
+- `PLAN.md` — 范围 / 名单 / as_of / 每家产物 / 三阶段 / 交付物 / 进度表
+- `RUNNER_BRIEF.md` — 每个 Runner 吃的**同一份**指令(保证 N 家走完全相同 pipeline、可横向比)
+- `CHECKER.md` — **活体质量门**(≠ 回测的 lookahead QA):完整度 A-F gate + 来源纪律 + 数字一致性 + 数据新鲜度 + 不造引语 → 输出 CLEAN/FIX + 真实状态标签 + verdict 上限核验
+
+执行(workflow;角色隔离同回测:**Checker ≠ Runner**,独立重算数字 / 抽验来源 / 查伪造引语):
+```
+每家:Runner 建 dossier → 锁 decision_card → 独立 Checker 过 CHECKER.md → checker_report.md   (逐家并行 pipeline)
+末端:Synthesis 读全 N 张卡 → attractiveness 排序 + 单因子集中度检查 → synthesis.md + dashboard.html
+```
+
+**每家产物深度二选一**(都锁同一张 lean-6module `decision_card`):① **lean 6 文件**(canonical、快)= `COMPANY_MATERIAL_TEMPLATE.md` 那套;② **完整 GOOGL 级 dossier**(10 层证据深度,Mega7 用的就是这个)= 镜像 `companies/googl/`(business_model / moat / operator / inversion / valuation / **ic_panel 五灵魂** / audit / monitor …)。
+
+**诚实度(必读)**:一遍并行的现实目标 = `DECISION_DRAFT`(~55–75% 完整度),**不是 COMPLETE**;打磨到 >80% 解封 CORE 是逐名 follow-up。**verdict 上限 = 信息完整度**(<40 INFO-GAP / 40–60 WATCH / 60–80 STARTER / >80 CORE)。关键:对**价格已无安全边际**的名字,价格(M6)**先于**完整度封顶 → 补完整度也不翻盘;完整度只对"价格友好、卡在信息缺口、想从 STARTER 升 CORE"的名字才有杠杆。
+
+**首个全量验证**:`mega7_2026-06-19`(AAPL/MSFT/GOOGL/AMZN/NVDA/META/TSLA)→ 7/7 Checker CLEAN;唯 **NVDA / MSFT = STARTER**,其余 WATCH(**TSLA 存量 TRIM**);组合层旗标"**AI capex + 流动性**"单因子集中(叠加已持 BTC/GOOGL/NBIS,加任一 = 加倍而非分散)。
 
 ## 6 个模块(每个必出一个 signal -2..+2;定义见 `PROTOCOL.md §1` + `COMPANY_MATERIAL_TEMPLATE.md`)
 | 模块 | 角色 | 干什么 | 产出文件 |

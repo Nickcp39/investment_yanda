@@ -9,12 +9,14 @@
 ## 现在的状态(一句话)
 - 当前版本 **`lean-6module-v1`**(见 `VERSIONS.md`;每张决策卡必盖版本号)。
 - 已用 **10 个已知结局的历史案例盲测验证 → 9 PASS / 1 FAIL**(见 `SCORECARD_v1.html`)。
+- **首个实盘批量已跑通**:`mega7_2026-06-19`(Mega7 七家)→ 7/7 Checker CLEAN(DECISION_DRAFT 级);唯 NVDA/MSFT=STARTER,余 WATCH(TSLA 存量 TRIM)。见 `companies/_mega7_2026-06-19/`。
 - 2 个改进待验证(`PATCH_LEDGER.md`,目前 **INACTIVE**,不改现行行为)。
 
 ## 我想…(选一条)
 | 你要做的 | 去读 |
 |---|---|
 | **分析一个新公司、出买入决策** | **`USER_MANUAL.md` → A 节**(含一键 kickoff prompt) |
+| **一次分析一组公司(Mega7 / 主题 top-N)、出组合视图** | `PIPELINE.md → 实盘批量编排`;复制 `companies/_mega7_2026-06-19/` 三件套(PLAN / RUNNER_BRIEF / CHECKER) |
 | 理解整条 pipeline 的流程/模块 | `PIPELINE.md` |
 | 跑 / 扩展盲回测 | `USER_MANUAL.md → B 节` + `TEST_PLAN.md` |
 | 看验证结果 | `SCORECARD_v1.html` · `results.csv` · `cases/CASE_INDEX.md` |
