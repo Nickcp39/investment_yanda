@@ -1,0 +1,13 @@
+scenario,oe_nopat_start_B,cagr_5y,exit_multiple,oe_nopat_y5_B,implied_equity_y5_B,implied_px_y5,5y_irr,note
+# Headline lens = NOPAT-based (GIVES capex credit: assumes growth capex creates value & FCF releases by y5). hurdle 8%.
+Bear,60,0.06,16,80,1280,118,-13.5%,"capex ROIC < WACC / AWS share erosion / depreciation wave"
+Base,67,0.13,20,123,2460,227,-1.5%,"AWS ~15-18% steady, retail margin up, capex earns ~cost of capital"
+Bull,70,0.18,24,160,3840,353,+7.7%,"capex high ROIC, AWS holds +25%+, FCF releases, ads ramp"
+# Cross-check lens = conservative normalized owner earnings (strips growth capex now, $45-65B band). Even harsher.
+Bear_cons,45,0.02,18,50,894,82,-19.6%,conservative OE band
+Base_cons,55,0.10,22,89,1949,179,-6.0%,conservative OE band
+Bull_cons,62,0.16,26,130,3386,311,+5.0%,conservative OE band
+# reference
+as_of_price,,,,,,244.39,,2026-06-18 close (Yahoo S004)
+market_cap_B,,,,,,2657,,10874M diluted x 244.39
+trailing_gaap_pe,,,,,,34.1,,FY25 EPS 7.17 (GAAP incl equity gains -> understates true op multiple)

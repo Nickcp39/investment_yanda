@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mega7 组合看板 — mega7_2026-06-19</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--ink:#e6edf3;--mut:#9aa7b4;--grn:#3fb950;--red:#f85149;--amb:#d29922;--acc:#58a6ff;--brd:#283039}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;line-height:1.5;padding:24px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px} h2{font-size:16px;margin:24px 0 10px;color:var(--acc);border-bottom:1px solid var(--brd);padding-bottom:6px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:6px}
+  .prov{font-size:12px;color:var(--mut);margin-bottom:16px}
+  .prov b{color:var(--ink)}
+  .banner{background:rgba(248,81,73,.10);border:1px solid var(--red);border-radius:10px;padding:14px 16px;margin:14px 0 6px}
+  .banner .bt{font-weight:800;color:var(--red);font-size:14px;letter-spacing:.02em}
+  .banner p{margin:6px 0 0;font-size:13px;color:var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:4px}
+  .card{background:var(--card);border:1px solid var(--brd);border-radius:12px;padding:16px;position:relative}
+  .card.starter{border-left:4px solid var(--grn)}
+  .card.watch{border-left:4px solid var(--amb)}
+  .card.trim{border-left:4px solid var(--red)}
+  .rank{position:absolute;top:14px;right:16px;color:var(--mut);font-size:12px;font-weight:700}
+  .tk{font-size:22px;font-weight:800} .ctx{color:var(--mut);font-size:11.5px;margin-top:2px;text-transform:none}
+  .verdict{font-size:26px;font-weight:800;margin:10px 0 2px}
+  .verdict.g{color:var(--grn)} .verdict.a{color:var(--amb)} .verdict.r{color:var(--red)}
+  .vsub{font-size:12px;color:var(--mut);margin-bottom:10px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .stat{flex:1;min-width:90px} .stat .k{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em}
+  .stat .v{font-size:15px;font-weight:700;margin-top:2px}
+  .pos{color:var(--grn)} .neg{color:var(--red)} .amb{color:var(--amb)} .mut{color:var(--mut)}
+  .bc{font-size:12.5px;color:var(--ink);margin-top:8px;border-top:1px solid var(--brd);padding-top:8px}
+  .bc .k{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:2px}
+  .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700;margin-top:10px}
+  .pill.clean{background:rgba(63,185,80,.15);color:var(--grn)}
+  .badges{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+  .ceil{font-size:11px;color:var(--mut)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--brd)} th{color:var(--mut);font-weight:600}
+  .note{font-size:12px;color:var(--mut);margin-top:14px}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>Mega7 — 组合决策看板</h1>
+  <div class="sub">batch <b>mega7_2026-06-19</b> · as_of <b>2026-06-19</b> · pipeline <b>lean-6module-v1</b> · weights none</div>
+  <div class="prov">回测出处: lean-6module-v1 经 10-case 框架验证 <b>9 PASS / 1 FAIL</b> 后固化 · 7 家 Checker 全 <b>CLEAN</b> · 7 家状态 <b>DECISION_DRAFT (~55–75% 完整度)</b>，非 COMPLETE。排序口径: verdict → base IRR → ceiling。</div>
+
+  <div class="banner">
+    <div class="bt">⚠ 单因子集中度警报 — "AI capex + 流动性"</div>
+    <p>七名几乎全骑同一根 <b>AI capex 周期 + 流动性</b> 因子（NVDA 卖铲子；MSFT/AMZN/GOOGL/META 花 $125–200B/yr 买铲子建数据中心；AAPL 的 AI 入口借 Google 云 / Nvidia GPU；TSLA 估值压在 AI/自动驾驶叙事）。<b>若 AI capex 回撤 / 流动性收紧，这七名大概率一起跌。</b> 叠加用户已持有的 <b>BTC / GOOGL / NBIS</b>（同在这根因子上）后，在 Mega7 里再加任意名字 = 把一个隐藏的单一押注<b>加倍而非分散</b>。即便开仓，应在 NVDA / MSFT 里控量并把 AI-capex 总敞口当一个仓位管；真正的分散来自因子正交的名字（防御性/低相关资产）或留现金，而不是换 Mega7 里哪一家。</p>
+  </div>
+
+  <h2>七名排序卡片</h2>
+  <div class="grid">
+
+    <!-- 1 NVDA -->
+    <div class="card starter">
+      <div class="rank">#1</div>
+      <div class="tk">NVDA</div><div class="ctx">exceptional_bottleneck · 业务 exceptional</div>
+      <div class="verdict g">STARTER</div>
+      <div class="vsub">存量 HOLD · 价格友好（非约束）</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">4% / ~12%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">STARTER</div></div>
+        <div class="stat"><div class="k">base 5y IRR</div><div class="v pos">+13%</div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>run-rate 可持续性 vs pull-forward + custom-silicon 份额（价格 forward ~19x / OE yield 5.1% 有正 MOS，仅周期+完整度封顶）</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~65%</span></div>
+    </div>
+
+    <!-- 2 MSFT -->
+    <div class="card starter">
+      <div class="rank">#2</div>
+      <div class="tk">MSFT</div><div class="ctx">quality_compounder_de-rated_on_capex_shock · 业务 exceptional</div>
+      <div class="verdict g">STARTER</div>
+      <div class="vsub">存量 ADD · 价格有正 MOS（FV~$436 &gt; $379）</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">4% / ~9%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">STARTER</div></div>
+        <div class="stat"><div class="k">base IRR</div><div class="v pos">+9.5% <span class="mut" style="font-size:10px">(10y)</span></div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>完整度（OpenAI 经济学 O3 + capex ROI 拆分 O2）封顶 STARTER、挡 CORE — 非价格</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~65%</span></div>
+    </div>
+
+    <!-- 3 AAPL -->
+    <div class="card watch">
+      <div class="rank">#3</div>
+      <div class="tk">AAPL</div><div class="ctx">exceptional_compounder_overpriced · 业务 exceptional</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 耐久性 HIGH，但价格门 binding</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">0% / 15%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">WATCH</div></div>
+        <div class="stat"><div class="k">base 5y IRR</div><div class="v amb">+2.7%</div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>价格 / 估值（~36x OE，2.7% 起始收益率，base IRR « 8% hurdle）；buy-below ~$231</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~60%</span></div>
+    </div>
+
+    <!-- 4 META -->
+    <div class="card watch">
+      <div class="rank">#4</div>
+      <div class="tk">META</div><div class="ctx">good_business_fairly_to_richly_priced · 业务 good</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 广告引擎满血，owner earnings 被 capex 吃</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">0% / 5%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">STARTER</div></div>
+        <div class="stat"><div class="k">base 5y IRR</div><div class="v amb">+4.0%</div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>价格 + capex ROI 未决（O4）；FCF yield 仅 3.4%，现价无 MOS；buy-below ~$480</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~62%（价格压到 WATCH）</span></div>
+    </div>
+
+    <!-- 5 AMZN -->
+    <div class="card watch">
+      <div class="rank">#5</div>
+      <div class="tk">AMZN</div><div class="ctx">good_business_wrong_price · 业务 good</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 三引擎好生意，桥不闭合</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">0% / 0%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">WATCH</div></div>
+        <div class="stat"><div class="k">base 5y IRR</div><div class="v neg">−1.5%</div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>价格无 MOS + owner-earnings 桥不闭合（$200B capex 拆分 O4，TTM FCF ~$1.2B）；buy-below ~$178</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~62%</span></div>
+    </div>
+
+    <!-- 6 GOOGL -->
+    <div class="card watch">
+      <div class="rank">#6</div>
+      <div class="tk">GOOGL</div><div class="ctx">great_business_no_margin_of_safety · 业务 good</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 最贵；杠杆上行供 capex</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">0% / 0%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">WATCH</div></div>
+        <div class="stat"><div class="k">base IRR</div><div class="v neg">−3.0% <span class="mut" style="font-size:10px">(10y)</span></div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>价格无 MOS（~69x OE，连 bull 10y IRR +5.2% &lt; 8%）；buybacks 暂停=稀释裸露；buy-below ~$113</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~75%（最高）</span></div>
+    </div>
+
+    <!-- 7 TSLA -->
+    <div class="card trim">
+      <div class="rank">#7</div>
+      <div class="tk">TSLA</div><div class="ctx">narrative_premium_cyclical · 业务 uncertain</div>
+      <div class="verdict r">WATCH</div>
+      <div class="vsub">存量 <b style="color:var(--red)">TRIM</b> · 叙事溢价，利润池萎缩</div>
+      <div class="row">
+        <div class="stat"><div class="k">init / max</div><div class="v">0% / 0%</div></div>
+        <div class="stat"><div class="k">ceiling</div><div class="v">WATCH</div></div>
+        <div class="stat"><div class="k">base 5y IRR</div><div class="v neg">−17%</div></div>
+      </div>
+      <div class="bc"><span class="k">binding constraint</span>价格无 MOS（delivered 端，P/E 371x，OE yield 0.35%）+ 汽车利润率 16.8%→4.6% 萎缩 + Musk key-man / ~12% 稀释；buy-below ~$160</div>
+      <div class="badges"><span class="pill clean">CHECKER CLEAN</span><span class="ceil">完整度 ~55%</span></div>
+    </div>
+
+  </div>
+
+  <h2>同因子内分流（framework 非一刀切）</h2>
+  <table>
+    <tr><th>Ticker</th><th>封顶机制</th><th>一句话</th></tr>
+    <tr><td>NVDA</td><td class="pos">周期 + 完整度（价格友好）</td><td>owner earnings 干净、净现金 $72B、forward 19x 有 MOS；约束=run-rate 可持续性，控 size 不否决</td></tr>
+    <tr><td>MSFT</td><td class="amb">完整度（非价格）</td><td>FV&gt;现价正 MOS，但 OpenAI 黑箱 + capex 拆分两缺口封 STARTER、挡 CORE</td></tr>
+    <tr><td>AAPL</td><td class="neg">价格（耐久性没问题）</td><td>annuity 护城河本可支持 Core size，但 ~36x / IRR +2.7% 把 verdict 压到 WATCH</td></tr>
+    <tr><td>META</td><td class="neg">价格 + capex ROI</td><td>广告满血但 FCF 被 capex 吃，IRR +4% &lt; hurdle，O4 未量化</td></tr>
+    <tr><td>AMZN</td><td class="neg">价格 + 桥不闭合</td><td>FCF≈0，起始收益率 ~2%，base IRR 负；owner-earnings 桥不闭合</td></tr>
+    <tr><td>GOOGL</td><td class="neg">价格（最贵）</td><td>~69x OE，连 bull 10y IRR &lt;8%；reported NI 被股权收益灌水，杠杆供 capex</td></tr>
+    <tr><td>TSLA</td><td class="neg">价格 + 萎缩池 + key-man</td><td>$1.41T 由叙事支撑（P/E 371x），汽车利润率萎缩，唯一 TRIM / uncertain</td></tr>
+  </table>
+  <div class="note">同一根 "AI capex + 流动性" 因子，三种封顶机制各演一遍：GOOGL/AMZN/AAPL/TSLA 价格封 · MSFT 完整度封 · META 价格+ROI 双封 · NVDA 价格友好仅被周期+完整度封 —— framework 在因子内做了真实分流，不是 one-size-fits-all。</div>
+
+  <div class="note" style="margin-top:18px">数据全部取自 7 张锁定 decision_card.json（as_of 2026-06-18 收盘价、Yahoo chart API；最新季报为各家当下最新可得）。缺字段显示 —。Checker 全 CLEAN，仅非阻断 nit。状态 DECISION_DRAFT，非 COMPLETE；逐名打磨为 follow-up。</div>
+</div></body>
+</html>

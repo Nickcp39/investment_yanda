@@ -1,0 +1,17 @@
+metric,FY2024,FY2025,Q1_2025,Q1_2026,unit,source,note
+total_net_sales,638000,716900,155700,181500,USD_millions,S001/S002,+12% FY +17% Q1
+north_america_sales,,426300,,104100,USD_millions,S001/S002,+10% FY +12% Q1
+international_sales,,161900,,39800,USD_millions,S001/S002,+13% FY +19% Q1
+aws_sales,,128700,,37600,USD_millions,S001/S002,+20% FY; +28% Q1 (15-qtr high)
+total_operating_income,68600,80000,18400,23900,USD_millions,S001/S002,record 13.1% margin Q1
+north_america_oi,25000,29600,5800,8300,USD_millions,S001/S002,+43% Q1 Y/Y
+international_oi,3800,4700,1000,1400,USD_millions,S001/S002,
+aws_oi,39800,45600,11500,14200,USD_millions,S001/S002,~37.8% Q1 AWS margin
+aws_oi_share_of_total,0.58,0.57,0.625,0.594,ratio,derived,AWS = profit core
+net_income_gaap,59200,77700,17100,30300,USD_millions,S001/S002,"Q1'26 incl 16.8B Anthropic pretax gain"
+diluted_eps_gaap,5.53,7.17,1.59,2.78,USD,S001/S002,inflated by equity gains
+operating_cash_flow_ttm,115900,139500,113900,148500,USD_millions,S001/S002,
+free_cash_flow_ttm,38200,11200,25900,1200,USD_millions,S001/S002,capex collapse of FCF
+capex_purchases_ppe,,131819,,151003,USD_millions,S001/S002,FY25 full-year / Q1'26 TTM
+capex_2026_plan,,,,200000,USD_millions,S006,mgmt guidance B1 paraphrase
+diluted_weighted_shares,,,,10874,millions,S001,Q1 2026

@@ -1,0 +1,88 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "good_business_wrong_price_capex_reinvestment",
+  "as_of_price": 244.39,
+  "as_of_market_cap": 2657000000000,
+  "share_basis_note": "Post-split (20:1, 2022-05) basis. 10,874M diluted weighted shares (Q1 2026) x $244.39 (2026-06-18 close, last <= as_of) = ~$2.66T. Price from Yahoo chart API [S004]; 2026-06-19 not used as freeze edge.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 2026, ended 2026-03-31) and full-year FY25 baseline are fully primary-sourced from SEC 8-K Ex99.1 (PR + financial statements, saved locally): revenue $181.5B (+17%), AWS $37.6B (+28%), total OI $23.9B (record 13.1% margin), net income $30.3B (incl $16.8B Anthropic pretax gain), TTM OCF $148.5B, TTM FCF $1.2B, Q1 capex $44.2B, LT debt $119B, Q2 guide $194-199B. Price locked from a dated daily series. Material completeness high on current facts; gaps (capex maintenance/growth split + ROIC, 10-K line items, proxy, Anthropic accounting, 10-year series) are haircuts/cap items.",
+      "drivers": ["S001", "S002", "S004"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Three-engine compounder: NA+International retail/logistics/ads (margins at cyclical record, NA OI +43% Y/Y), AWS cloud (profit core, ~57-59% of total OI, reaccelerated to +28% / 15-quarter high), and embedded high-margin advertising. The 2023 blind-case thesis (retail-margin trough + AWS durability + cost discipline) has LARGELY PLAYED OUT. The new theme is a ~$200B/yr AI capex bet, predominantly AWS, financed by all of OCF plus added leverage. Business durability high; the capex ROI is the open question.",
+      "drivers": ["S001", "S002", "S006"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "AWS captures the Western #2 cloud profit pool (FY25 OI $45.6B, ~35-38% margin) via scale + switching costs + full-stack (incl. self-designed Trainium reducing NVDA dependence); retail captures scale economies + Prime flywheel. Moat strong and arguably widening (AWS reaccel + own silicon + Anthropic positioning). Operator grade 4/5: Jassy (AWS architect) CEO + Bezos exec chair, one-share-one-vote (clean governance), strong long-term reinvestment record. Durability HIGH for cloud demand; the ~$200B capex ROIC is undimensioned (O4). Not a bottleneck monopoly (cloud oligopoly), so no bottleneck premium in valuation.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Owner earnings bridge DOES NOT CLOSE this pass (opposite of NVDA, same disease as GOOGL but more extreme). Business is highly profitable (OI $80B FY25, OCF $148.5B TTM) but TTM FCF is ~$1.2B because capex ($131.8B FY25 / $151B TTM / ~$200B 2026 plan) exceeds OCF. Normalized owner earnings depends on the maintenance-vs-growth capex split and the incremental ROIC of the AI buildout (O4, no primary). GAAP net income ($30.3B Q1) is inflated by $16.8B non-operating Anthropic gains -> cannot use GAAP EPS for valuation. Balance sheet shifting from fortress to leveraged-investment mode: LT debt +$53B in Q1 to $119B; net cash (financial debt only) still positive ~+$24B. Survivable but elasticity being consumed.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but not structural impairment at as-of: (1) ~$200B/yr AI capex ROIC < cost of capital -> depreciation wave + interest erode owner earnings = value destruction (F1, the ONLY path that could escalate to veto, but needs years of evidence; O4 undimensioned); (2) AWS share eroded by Azure(OpenAI)/GCP + customer self-silicon + portable AI workloads (F2); (3) record 13.1% retail margin reverts (F3); (4) leverage + rate/demand double-hit (F4, but OCF $148.5B services it); (5) GAAP distortion from Anthropic fair-value swings (F5). NONE is permanent profit-pool loss or balance-sheet death now. The binding issue is VALUATION (no MOS) which CAPS the verdict, not a hard veto. Not a value trap; it is a fully-to-over-priced quality asset.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At ~$2.66T, trailing GAAP P/E ~34x (understated by equity gains), P/FCF meaningless (FCF near zero), starting normalized owner-earnings yield only 2.1-2.5%, price ~11% off 52-week high (upper-middle of range, sentiment bullish). Even on the GENEROUS NOPAT lens (gives capex credit, assumes FCF releases): base 5y IRR ~-1.5%, bull +7.7% (<8% hurdle); conservative OE lens worse (base -6%). Asymmetry skews DOWN. Price is the binding constraint (opposite of NVDA, same as GOOGL). buy-below ~$175-180 for base IRR to reach 8%. No position at current price; WATCH with a STARTER upgrade line.",
+      "drivers": ["S004", "S001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 178.0,
+  "starter_zone": "No starter at current price. STARTER becomes available only at/below ~$175 (base 5y IRR back to the 8% hurdle, near the 52-week low) OR if the AI capex begins releasing FCF / its incremental ROIC is demonstrated.",
+  "add_zone": "n/a at WATCH. After an upgrade to STARTER (price <= ~$175 or capex-ROI confirmation), scale on confirmation.",
+  "trim_or_no_chase_zone": "No-chase at and above the current ~$244 (base IRR negative). Watch zone ~$180-195. The price embeds many years of high compounding plus a sustained premium exit multiple at a starting yield of ~2%.",
+  "binding_constraint": "Price has no margin of safety (starting normalized owner-earnings yield 2.1-2.5%, base 5y IRR negative even giving the ~$200B AI capex full credit) PLUS the owner-earnings bridge does not close (capex maintenance/growth split + incremental ROIC undimensioned, O4). Valuation caps the verdict at WATCH; this is GOOGL-structured (price-capped), the OPPOSITE of NVDA (price-friendly, completeness-capped). Business quality is NOT the constraint.",
+  "kill_criteria": [
+    "Capex keeps surging multiple quarters but incremental AWS revenue/profit does not match it (ROIC deteriorating) -> F1 value destruction. [ONLY path that can escalate toward veto]",
+    "AWS growth structurally falls below ~15% with weakening share -> moat/profit-pool erosion (F2).",
+    "Total operating margin reverts sharply from the record 13.1% to <9% -> retail-margin durability disconfirmed (F3).",
+    "Net financial debt deteriorates while OCF growth stalls -> balance-sheet elasticity exhausted (F4).",
+    "Price falls below ~$175 (base 5y IRR back to 8% hurdle) -> UPGRADE: lift the WATCH cap, evaluate STARTER.",
+    "Anthropic fair-value swings reverse and crater GAAP net income -> valuation-optics event (non-operating, monitor) (F5)."
+  ],
+  "runner_dissent": "Recorded per protocol. The mechanical result (WATCH) feels CORRECT, not wrong: this is a textbook good-business-wrong-price, structurally identical to the GOOGL pilot that the same five-soul panel also put at WATCH. Two honest counter-risks are logged. (1) too_small_missed_asymmetry (the SNDK lesson the harness was built to fix): if the ~$200B/yr AI capex turns out to be another AWS-style contrarian winner that releases enormous FCF in 3-5 years, a WATCH at $244 could miss it. This is exactly why the verdict is WATCH and NOT REJECT, with an explicit STARTER upgrade line (price <= ~$175 OR capex ROIC confirmation / FCF release) -- the framework does not over-veto a genuine compounder; it waits for either price or proof. (2) The owner-earnings bridge does not close (O4): normalized OE is a band ($45-67B), not a point, so base IRR could be better OR worse than -1.5%. But BOTH the generous NOPAT lens and the conservative OE lens point to the same conclusion (price is expensive, starting yield ~2%), so WATCH is robust to the uncertainty -- only the precision is limited. Net: the constraint is price + an unclosable capex/owner-earnings bridge, which CAPS the verdict at WATCH (not a veto: business intact, balance sheet survivable). Unlike NVDA, price is NOT friendly here -- starting yield 2.1-2.5% vs NVDA 5.1%, FCF near zero vs NVDA clean FCF=OE. Lower-confidence items left OPEN: $200B capex maintenance/growth split + ROIC (O4, blocking), 10-K line items (O1), proxy (O3), Anthropic accounting (O6), backlog/Trainium primary (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm"},
+    {"source_id": "S002", "public_date": "2026-02-05", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm"},
+    {"source_id": "S003", "public_date": "2026-02-01", "url_or_path": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf"},
+    {"source_id": "S004", "public_date": "2026-06-18", "url_or_path": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN"},
+    {"source_id": "S005", "public_date": "2026-04-29", "url_or_path": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q1-2026-report"},
+    {"source_id": "S006", "public_date": "2026-02-05", "url_or_path": "https://www.cnbc.com/2026/05/04/andy-jassy-amazon-investors-rewarded-ai-spending.html"}
+  ]
+}

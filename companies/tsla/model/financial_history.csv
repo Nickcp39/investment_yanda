@@ -1,0 +1,8 @@
+fiscal_year,year_ended,revenue_usd_m,gross_margin_pct,operating_income_usd_m,operating_margin_pct,net_income_gaap_usd_m,diluted_eps_gaap,fcf_usd_m,capex_usd_m,deliveries_units,tier,note
+FY21,2021-12-31,53823,25.3,6523,12.1,5519,1.63,4983,,936172,B2,"strong growth era"
+FY22,2022-12-31,81462,25.6,13656,16.8,12556,3.62,7561,,1313851,B2,"PEAK operating margin 16.8%"
+FY23,2023-12-31,96773,18.3,8891,9.2,14997,4.30,4357,8899,1808581,B2,"NI incl ~5.9B one-time deferred-tax-asset release (non-operating); revenue peak"
+FY24,2024-12-31,97690,17.9,7076,7.2,7091,2.04,3581,11342,1789226,B2,"margin compressing"
+FY25,2025-12-31,94827,18.0,4355,4.6,3794,1.08,6220,8527,1636129,B2/A2,"revenue -2.9%; deliveries -9%; op margin 4.6%; FCF up only b/c capex cut; energy storage 46.7GWh +2x"
+Q1FY26,2026-03-31,22387,21.1,941,4.2,477,0.13,1444,,358023,B1/B2,"quarter; GM aided by one-time warranty/tariff; produced 408386 > delivered 358023 (inventory 27 days)"
+notes,,,,,,,,,,"operating margin trajectory 16.8->9.2->7.2->4.6 is the core negative fact: auto profitability collapsing. Energy storage 46.7GWh FY25 is the growth leg. Sources B2 (stockanalysis) + A2 (official delivery reports); SEC 10-K/10-Q line items OPEN (403)."

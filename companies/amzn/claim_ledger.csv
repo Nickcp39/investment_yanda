@@ -1,0 +1,48 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,reliability_note
+S001,Q1 2026 total net sales (quarter ended 2026-03-31),181500,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 17% Y/Y vs 155.7B; ~2.9B FX tailwind"
+S001,Q1 2026 North America segment sales,104100,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 12% Y/Y"
+S001,Q1 2026 International segment sales,39800,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 19% Y/Y (+11% ex-FX)"
+S001,Q1 2026 AWS segment sales,37600,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 28% Y/Y; fastest in 15 quarters; ~150B annualized run-rate"
+S001,Q1 2026 total operating income,23900,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 18.4B; record 13.1% operating margin"
+S001,Q1 2026 North America segment operating income,8300,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 5.8B; +43% Y/Y"
+S001,Q1 2026 International segment operating income,1400,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 1.0B"
+S001,Q1 2026 AWS segment operating income,14200,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 11.5B; ~37.8% AWS operating margin"
+S001,Q1 2026 net income,30300,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 17.1B; INCLUDES 16.8B pre-tax non-operating Anthropic gains"
+S001,Q1 2026 diluted EPS,2.78,USD,2026-03-31,2026-06-19,A1,EVIDENCE,"vs 1.59; inflated by Anthropic gain"
+S001,Q1 2026 pre-tax Anthropic non-operating gain in net income,16800,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"non-operating; must strip for owner earnings"
+S001,Q1 2026 diluted weighted shares,10874,millions,2026-03-31,2026-06-19,A1,EVIDENCE,basic 10743
+S001,Operating cash flow TTM (ended 2026-03-31),148500,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 30% Y/Y vs 113.9B"
+S001,Free cash flow TTM (ended 2026-03-31),1200,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"collapsed from 25.9B; capex +59.3B Y/Y for AI"
+S001,Q1 2026 purchases of property and equipment (quarterly capex),44203,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"up 77% Y/Y; TTM capex 151.003B"
+S001,Capex TTM (ended 2026-03-31),151003,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,from cash-flow statement
+S001,Cash and cash equivalents (2026-03-31),101816,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,vs 86.81B at 2025-12-31
+S001,Marketable securities (2026-03-31),41273,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,vs 36.219B at 2025-12-31
+S001,Long-term debt (2026-03-31),119074,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,"jumped from 65.648B at 2025-12-31; +~53B in Q1 to fund AI capex"
+S001,Property and equipment net (2026-03-31),397458,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,vs 357.025B at 2025-12-31
+S001,Total stockholders equity (2026-03-31),441914,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,vs 411.065B
+S001,Total assets (2026-03-31),916630,USD_millions,2026-03-31,2026-06-19,A1,EVIDENCE,vs 818.042B
+S001,Q2 2026 net sales guidance,194000-199000,USD_millions,2026-06,2026-06-19,A1,EVIDENCE,"16-19% Y/Y growth; ~10bps FX headwind"
+S001,Q2 2026 operating income guidance,20000-24000,USD_millions,2026-06,2026-06-19,A1,EVIDENCE,vs 19.2B Q2 2025
+S002,FY2025 total net sales (year ended 2025-12-31),716900,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"up 12% Y/Y vs 638.0B"
+S002,FY2025 North America segment sales,426300,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,up 10% Y/Y
+S002,FY2025 International segment sales,161900,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,up 13% Y/Y (+10% ex-FX)
+S002,FY2025 AWS segment sales,128700,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,up 20% Y/Y
+S002,FY2025 total operating income,80000,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"vs 68.6B; operating margin ~11.2%"
+S002,FY2025 North America segment operating income,29600,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,vs 25.0B
+S002,FY2025 International segment operating income,4700,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,vs 3.8B
+S002,FY2025 AWS segment operating income,45600,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"vs 39.8B; ~35.4% AWS margin"
+S002,FY2025 net income,77700,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"vs 59.2B; EPS 7.17 (incl equity-investment gains)"
+S002,FY2025 diluted EPS,7.17,USD,2025-12-31,2026-06-19,A1,EVIDENCE,vs 5.53
+S002,FY2025 operating cash flow TTM,139500,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,up 20% Y/Y vs 115.9B
+S002,FY2025 free cash flow TTM,11200,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"down from 38.2B; capex +50.7B Y/Y"
+S002,FY2025 purchases of property and equipment (capex),131819,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,full-year cash-flow statement
+S002,Q4 2025 total operating income,25000,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,"vs 21.2B; incl ~1.1B+ special charges (Italy tax/legal)"
+S002,Q4 2025 AWS segment operating income,12500,USD_millions,2025-12-31,2026-06-19,A1,EVIDENCE,vs 10.6B
+S006,Planned 2026 capital expenditure (mgmt guidance, Q4'25 call),200000,USD_millions,2026,2026-06-19,A2,EVIDENCE,"~$200B 2026 capex; predominantly AWS; B1 media transcript paraphrase, verify"
+S006,AWS AI revenue run-rate (Q1 2026, mgmt),15000,USD_millions,2026-03-31,2026-06-19,A2,SENTIMENT,"mgmt commentary >$15B run-rate; lead not proof; transcript not re-fetched"
+S006,AWS backlog (Q1 2026 mgmt),364000,USD_millions,2026-03-31,2026-06-19,A2,SENTIMENT,"$364B backlog incl >$225B Trainium commitments; mgmt; lead/context only"
+S004,AMZN close 2026-06-18 (last <= as_of),244.39,USD,2026-06-18,2026-06-19,B1,EVIDENCE,Yahoo chart daily series
+S004,AMZN 52-week high (trailing to 2026-06-19),274.99,USD,2026-06-19,2026-06-19,B1,EVIDENCE,price ~11% off high
+S004,AMZN 52-week low (trailing to 2026-06-19),198.79,USD,2026-06-19,2026-06-19,B1,EVIDENCE,
+S007,FY16-FY24 revenue/OI/AWS/FCF early series,NA,USD_millions,various,2026-06-19,B2,OPEN_QUESTION,"secondary aggregate; not used for buy thesis; conflicts noted"
+S008,Andy Jassy CEO + Jeff Bezos Exec Chair + board governance,NA,NA,2026-06-19,2026-06-19,OPEN,OPEN_QUESTION,"proxy not re-fetched; one-share-one-vote prior; comp details OPEN"

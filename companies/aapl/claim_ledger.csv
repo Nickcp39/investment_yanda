@@ -1,0 +1,50 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,reliability_note
+S001,Q2 FY26 total net sales,111184,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,+17% YoY (vs 95359); best March quarter ever
+S001,Q2 FY26 iPhone revenue,56994,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,March-qtr record; iPhone 17 cycle (vs 46841 = +21.7%)
+S001,Q2 FY26 Services revenue,30976,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,all-time high (vs 26645 = +16.3%)
+S001,Q2 FY26 Mac revenue,8399,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,vs 7949
+S001,Q2 FY26 iPad revenue,6914,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,vs 6402
+S001,Q2 FY26 Wearables/Home/Acc revenue,7901,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,vs 7522
+S001,Q2 FY26 Greater China revenue,20497,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,vs 16002 = +28% YoY (China re-acceleration)
+S001,Q2 FY26 gross margin,54781,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,GM% = 49.3% (54781/111184)
+S001,Q2 FY26 operating income,35885,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,op margin 32.3%
+S001,Q2 FY26 net income,29578,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,vs 24780 = +19.4%
+S001,Q2 FY26 diluted EPS,2.01,USD,2026-03-28,2026-06-20,A1,EVIDENCE,+22% YoY
+S001,Q2 FY26 diluted shares,14725873,thousand,2026-03-28,2026-06-20,A1,EVIDENCE,~14.726B diluted
+S001,H1 FY26 operating cash flow,82627,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,six months
+S001,H1 FY26 capex (PP&E),4344,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,six months; capex-light
+S001,H1 FY26 buybacks,36989,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,six months repurchases
+S001,New buyback authorization,100000,USD_M,2026-04-30,2026-06-20,A1,EVIDENCE,$100B additional program; div raised to $0.27 (+4%)
+S001,Balance sheet cash+cur mkt sec (Mar28),68507,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,45572 cash + 22935 cur mkt sec
+S001,Balance sheet non-current mkt sec (Mar28),78088,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,total liquid ~146.6B
+S001,Total term debt + CP (Mar28),84711,USD_M,2026-03-28,2026-06-20,A1,EVIDENCE,8310 cur term + 74404 noncur term + 1997 CP; net cash ~61.9B
+S002,FY25 total revenue,416161,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,full-year record
+S002,FY25 net income,112010,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,GAAP
+S002,FY25 gross margin,195201,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,GM% 46.9%
+S002,FY25 diluted EPS,7.46,USD,2025-09-27,2026-06-20,A1,EVIDENCE,
+S002,FY25 diluted shares,15004697,thousand,2025-09-27,2026-06-20,A1,EVIDENCE,
+S002,FY25 operating cash flow,111482,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,
+S002,FY25 capex,12715,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,FCF ~98.8B
+S002,FY25 buybacks,90711,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,
+S002,FY25 dividends paid,15421,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,
+S002,FY25 Services revenue,109158,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,vs FY24 96169 = +13.5%
+S002,FY25 iPhone revenue,209586,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,vs FY24 201183
+S002,FY25 Greater China revenue,64377,USD_M,2025-09-27,2026-06-20,A1,EVIDENCE,vs FY24 66952 = -3.8% (full-year China still soft)
+S002,FY24 total revenue,391035,USD_M,2024-09-28,2026-06-20,A1,EVIDENCE,comparative column
+S002,FY24 net income,93736,USD_M,2024-09-28,2026-06-20,A1,EVIDENCE,GAAP; non-GAAP adj 103982 (Ireland State Aid 10.2B one-time)
+S002,FY24 operating cash flow,118254,USD_M,2024-09-28,2026-06-20,A1,EVIDENCE,capex 9447 -> FCF ~108.8B
+S005,AAPL close (last <= as_of),298.01,USD,2026-06-18,2026-06-20,A2,EVIDENCE,Yahoo chart API
+S005,AAPL 52-week high,317.40,USD,2026-06-18,2026-06-20,A2,EVIDENCE,price near highs (-6% from high)
+S005,AAPL 52-week low,198.96,USD,2026-06-18,2026-06-20,A2,EVIDENCE,
+S005,AAPL market cap,4388,USD_B,2026-06-18,2026-06-20,A2,EVIDENCE,298.01 x 14.726B diluted = ~4.39T
+S006,WWDC 2026 next-gen Apple Intelligence + Siri AI unveiled,NA,NA,2026-06-08,2026-06-20,A1,EVIDENCE,delayed Siri revamp finally previewed
+S006,AFM Cloud Pro runs on Nvidia GPUs in Google cloud (Apple-Google AI collab),NA,NA,2026-06-08,2026-06-20,A1,INTERPRETATION,Apple AI partly leans on Google/Nvidia infra; Siri AI not in China yet (regulatory)
+S007,FY24 free cash flow,108810,USD_M,2024-09-28,2026-06-20,B2,INTERPRETATION,cross-check vs A1 OCF118254-capex9447=108807 (matches A1)
+S007,FY23 revenue,383285,USD_M,2023-09-30,2026-06-20,B2,INTERPRETATION,10yr trend only; downweighted
+S007,FY22 revenue,394328,USD_M,2022-09-24,2026-06-20,B2,INTERPRETATION,10yr trend only; downweighted
+S008,Google antitrust remedy default-deal ban effective 2026-06,NA,NA,2026-06,2026-06-20,B1,OPEN_QUESTION,threatens ~20B/yr Google TAC into Apple Services; magnitude/timing OPEN
+TTM_DERIVED,TTM net income (FY25+H1FY26-H1FY25),122575,USD_M,2026-03-28,2026-06-20,E1,INTERPRETATION,derived; 112010+71675-61110
+TTM_DERIVED,TTM owner earnings anchor (conservative band),120000,USD_M,2026-03-28,2026-06-20,E1,INTERPRETATION,scenario input; between TTM NI 122.6B and TTM FCF ~129B (FCF inflated by H1 WC timing)
+DERIVED,Net cash,61884,USD_M,2026-03-28,2026-06-20,E1,INTERPRETATION,146595 liquid - 84711 debt; ~1.4% of market cap
+DERIVED,Trailing P/E on TTM NI,35.8,x,2026-06-18,2026-06-20,E1,INTERPRETATION,4388/122.6
+DERIVED,Starting owner-earnings yield,2.7,pct,2026-06-18,2026-06-20,E1,INTERPRETATION,120/4388

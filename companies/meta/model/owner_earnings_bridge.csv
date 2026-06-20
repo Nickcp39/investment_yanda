@@ -1,0 +1,13 @@
+line,value_usd_millions,annualized_usd_billions,source,note
+GAAP net income Q1 2026,26773,107.1,S001,includes 8.03B one-time discrete tax benefit -> not usable for valuation
+less one-time discrete tax benefit,-8030,-32.1,S001,non-recurring; partially offsets Q3 2025 OBBBA 15.93B charge
+operating net income ex one-time tax (pretax 21752 x (1-14pct)),18707,74.8,S001 derived,ex-benefit effective tax ~14%
+operating cash flow Q1 2026,32226,128.9,S001,+34% Y/Y
+less capex incl finance leases,-19840,-79.4,S001,PP&E 18997 + finance lease principal
+free cash flow Q1 2026,12390,49.6,S001,FCF; ~3.4% FCF yield on ~1.48T cap
+owner earnings proxy (use FCF as conservative anchor),12390,49.6,derived,FCF chosen as conservative OE anchor due to growth-capex black hole
+gap operating NI minus FCF,6317,25.3,derived,= growth capex eating owner earnings; sustainability OPEN (O4)
+FY2025 net income,60460,60.5,S003,-3% Y/Y (OBBBA charge)
+FY2025 capex,72220,72.2,S003,vs ~39B FY2024
+FY2025 free cash flow,43590,43.6,S003,down Y/Y despite +22% revenue
+FY2026 capex guidance midpoint,135000,135.0,S001,range 125-145B incl finance leases; raised from 115-135B

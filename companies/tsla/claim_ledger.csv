@@ -1,0 +1,46 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,reliability_note
+S005,Q1 2026 total revenue (quarter ended 2026-03-31),22387,USD_millions,2026-03-31,2026-06-19,B1,EVIDENCE,"+15.8% Y/Y; cross-checked S006/S008; vs Street ~22.6B slight miss"
+S005,Q1 2026 automotive revenue,16200,USD_millions,2026-03-31,2026-06-19,B1,EVIDENCE,"+16% Y/Y vs 14.0B; approx per B1"
+S008,Q1 2026 gross profit,4720,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,GAAP GM 21.08%
+S005,Q1 2026 GAAP gross margin,21.1,percent,2026-03-31,2026-06-19,B1,EVIDENCE,"vs 16.3% Q1'25 +477bps; aided by one-time warranty/tariff benefits"
+S008,Q1 2026 operating income,941,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,operating margin 4.20%
+S005,Q1 2026 GAAP net income attributable to common,477,USD_millions,2026-03-31,2026-06-19,B1,EVIDENCE,"+16.6% Y/Y vs 409; cross-checked S006/S008"
+S005,Q1 2026 non-GAAP EPS,0.41,USD,2026-03-31,2026-06-19,B1,EVIDENCE,+52% Y/Y
+S008,Q1 2026 GAAP diluted EPS,0.13,USD,2026-03-31,2026-06-19,B2,EVIDENCE,
+S005,Q1 2026 free cash flow,1444,USD_millions,2026-03-31,2026-06-19,B1,EVIDENCE,"vs 664 Q1'25; cross-checked S008"
+S005,Q1 2026 regulatory credit revenue,380,USD_millions,2026-03-31,2026-06-19,B1,EVIDENCE,"1.9% of auto rev vs 3.7% prior; structural decline"
+S005,Q1 2026 vehicles produced,408386,units,2026-03-31,2026-06-19,B1,EVIDENCE,
+S005,Q1 2026 vehicles delivered,358023,units,2026-03-31,2026-06-19,B1,EVIDENCE,"produced>delivered 50k+; inventory 27 days vs 15 prior = demand softness"
+S008,Q1 2026 cash + short-term investments,44743,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,"cash 16603 + STI 28140; 10-Q line OPEN"
+S008,Q1 2026 total debt,9229,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,net cash ~35.5B
+S008,Q1 2026 total stockholders equity,84802,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,
+S008,Q1 2026 inventory,14434,USD_millions,2026-03-31,2026-06-19,B2,EVIDENCE,up from 12392 FY25
+S008,FY2025 total revenue (year ended 2025-12-31),94827,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,"-2.9% Y/Y vs 97690 FY24"
+S008,FY2025 GAAP gross margin,18.03,percent,2025-12-31,2026-06-19,B2,EVIDENCE,
+S008,FY2025 operating income,4355,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,"operating margin 4.59% vs 7.24% FY24 -> compressing"
+S008,FY2025 GAAP net income,3794,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,"-46% Y/Y vs 7091 FY24"
+S008,FY2025 GAAP diluted EPS,1.08,USD,2025-12-31,2026-06-19,B2,EVIDENCE,vs 2.04 FY24
+S008,FY2025 operating cash flow,14747,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,
+S008,FY2025 capital expenditures,8527,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,vs 11342 FY24 (capex cut lifted FCF)
+S008,FY2025 free cash flow,6220,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,"OCF 14747 - capex 8527"
+S008,FY2025 stock-based compensation,2825,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,
+S008,FY2025 depreciation & amortization,6148,USD_millions,2025-12-31,2026-06-19,B2,EVIDENCE,
+S004,FY2025 vehicle deliveries,1636129,units,2025-12-31,2026-06-19,A2,EVIDENCE,"-9% Y/Y vs ~1.79M FY24; official Tesla report; CORE thesis: auto shrinking"
+S004,FY2025 vehicle production,1654667,units,2025-12-31,2026-06-19,A2,EVIDENCE,
+S004,FY2025 energy storage deployed,46.7,GWh,2025-12-31,2026-06-19,A2,EVIDENCE,more than doubled Y/Y; energy is growth leg
+S004,Q4 2025 vehicle deliveries,418227,units,2025-12-31,2026-06-19,A2,EVIDENCE,
+S008,FY2024 net income GAAP,7091,USD_millions,2024-12-31,2026-06-19,B2,EVIDENCE,
+S008,FY2023 net income GAAP,14997,USD_millions,2023-12-31,2026-06-19,B2,EVIDENCE,"includes ~5.9B one-time deferred tax asset release (non-operating)"
+S008,FY2022 net income GAAP,12556,USD_millions,2022-12-31,2026-06-19,B2,EVIDENCE,peak GAAP NI; op margin 16.8%
+S008,FY2025 diluted shares outstanding,3528,millions,2025-12-31,2026-06-19,B2,EVIDENCE,used for market cap
+S007,TSLA close 2026-06-18 (last <= as_of),400.49,USD,2026-06-18,2026-06-19,B1,EVIDENCE,Yahoo chart; regularMarketTime=2026-06-18
+S007,TSLA 52-week high,498.83,USD,2026-06-19,2026-06-19,B1,EVIDENCE,
+S007,TSLA 52-week low,288.77,USD,2026-06-19,2026-06-19,B1,EVIDENCE,price -19.7% off high / +38.7% above low
+S009,Musk 2025 pay package approved by shareholders,1000000,USD_millions,2025-11-06,2026-06-19,B1,EVIDENCE,"~$1T max value; milestone-vested; 423,743,904 share grant ~12% of adjusted share count"
+S010,Musk 2025 share grant size,423743904,shares,2025-11-06,2026-06-19,B1,EVIDENCE,~12% dilution if fully vested -> massive future dilution overhang
+S010,Musk 2025 realized compensation,0,USD,2025-12-31,2026-06-19,B1,EVIDENCE,"market-cap/operational milestones not met in 2025; $158B = accounting grant value not realized"
+S012,Robotaxi unmonitored service live Austin,1,launched,2026-01-22,2026-06-19,B1,INTERPRETATION,"DELIVERED but small/geo-limited (Austin+Dallas+Houston); unit economics not disclosed = NARRATIVE for scaling"
+S012,FSD (Supervised) subscribers,1300000,subscribers,2026-03-31,2026-06-19,B1,INTERPRETATION,Q1 record net adds; subscription transition
+S012,Optimus production status,0,pre-production,2026-06-19,2026-06-19,B1,SENTIMENT,"not in production; Fremont start targeted Jul/Aug; V3 delayed; output 'impossible to predict' = NARRATIVE not delivered"
+S012,Capex guidance 2025-2026,25000,USD_millions,2026,2026-06-19,C2,OPEN_QUESTION,">$25B AI/Optimus/robotaxi; exact split OPEN"
+S013,Board independence / full comp structure,NA,NA,2026-06-19,2026-06-19,OPEN,OPEN_QUESTION,proxy not directly fetched (403); details OPEN

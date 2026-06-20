@@ -1,0 +1,12 @@
+line,value_usd_m,as_of,source,note
+FY25_GAAP_net_income,3794,2025-12-31,S008,"-46% Y/Y; auto margin collapse"
+FY25_operating_cash_flow,14747,2025-12-31,S008,
+FY25_capex,8527,2025-12-31,S008,"DOWN from 11342 FY24 -> this capex cut is why FCF rose"
+FY25_reported_FCF,6220,2025-12-31,S008,"OCF - capex; FLATTERED by capex trough"
+add_back_consideration_capex_normalization,-3000,2026,E1_estimate,"capex guided back UP to >25B 2025-26 (AI/Optimus). Normalized maintenance+growth capex higher -> normalized FCF lower than 6.2B. ESTIMATE"
+FY25_SBC,2825,2025-12-31,S008,"real shareholder cost; Musk 1T package will massively amplify future SBC/dilution"
+delivered_owner_earnings_run_rate_est,5000,2026-06-19,derived,"DELIVERED owner earnings (auto+energy) ~ GAAP NI level after stripping one-time items and normalizing capex; band 4-6B. EXCLUDES robotaxi/Optimus (NARRATIVE, not delivered)"
+robotaxi_optimus_optionality,0,2026-06-19,E1_NARRATIVE,"NOT counted in delivered owner earnings. Robotaxi live but tiny/no disclosed unit economics; Optimus pre-production. Recorded as upside tail only."
+market_cap,1413000,2026-06-18,derived,"3528M diluted shares x 400.49 = 1,413B"
+starting_OE_yield_pct,0.35,2026-06-19,derived,"5000 / 1,413,000 = 0.35% on delivered OE (or 0.44% on reported FCF 6.2B). Extremely low -> price embeds NARRATIVE not delivered fundamentals"
+note,,,,"owner earnings is THIN and SHRINKING on the delivered business (auto margin 16.8->4.6%). Reported FCF flattered by capex trough + will revert as capex guided up. The entire valuation rests on robotaxi/Optimus/AI optionality that is NOT yet in the numbers. Key uncertainty is NOT the bridge -> it is whether the NARRATIVE ever becomes delivered owner earnings, AND the price has zero margin of safety on what IS delivered."

@@ -1,0 +1,92 @@
+{
+  "ticker": "TSLA",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "narrative_premium_cyclical",
+  "as_of_price": 400.49,
+  "as_of_market_cap": 1413000000000,
+  "share_basis_note": "~3,528M diluted shares (FY25, S008) x $400.49 (2026-06-18 close, last <= as_of, Yahoo chart S007) = ~$1.41T. Market quotes range $1.4-1.5T depending on basic vs diluted share count. Musk 2025 pay package adds 423.7M-share grant (~12% dilution) overhang if milestones vest. Price from Yahoo chart [S007]; regularMarketTime 1781812801 = 2026-06-18.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Anchor quarter (Q1 2026) and full-year (FY2025) load-bearing figures are multi-source cross-checked (CNBC/Electrek B1 + stockanalysis B2 + official Tesla delivery report A2): rev $22.39B/+16%, GAAP NI $477M, FCF $1.44B, FY25 rev $94.8B/-2.9%, deliveries 1,636,129/-9%, energy 46.7GWh, net cash ~$35.5B. BUT SEC 10-Q/10-K line items returned HTTP 403 to WebFetch and were NOT directly fetched -> segment profitability (whether energy/AI actually earn money) is the key OPEN gap (O1). Completeness ~55%, below NVDA. Signal neutral: core verdict-driving facts solid, but a critical evidence layer is missing.",
+      "drivers": ["S004", "S005", "S007", "S008"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Tesla today is a bundle of (1) a SHRINKING, margin-compressing auto maker (deliveries -9%, operating margin collapsed 16.8%->4.6% over three years), (2) a real-growth energy storage leg (46.7GWh, doubled), and (3) a basket of UNDELIVERED AI/autonomy options (robotaxi live but tiny/no disclosed unit economics; Optimus pre-production; FSD 1.3M subs). context_label narrative_premium_cyclical: the $1.41T cap is carried by NARRATIVE, not delivered fundamentals. This is the OPPOSITE of NVDA's exceptional_bottleneck. Mechanism is a story-priced cyclical, not a forced multi-quarter market update.",
+      "drivers": ["S004", "S008", "S012"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "DELIVERED profit pool is THIN and SHRINKING: auto operating margin collapsed to 4.6%, brand/pricing power eroding under China-EV + price war, regulatory-credit subsidy fading (1.9% of auto rev vs 3.7%). Energy is a real growth leg but segment margin is OPEN (O5) - cannot assume it is a true profit leg. Moats (brand, Supercharger, vertical integration) are NARROWING not widening (opposite of NVDA). Operator grade ~2.5/3: Musk strong execution but distracted (xAI/SpaceX/politics), valuation personally tied to Musk (key-man), and $1T pay package = 423.7M-share / ~12% dilution overhang + governance tension (institutional dissent, SEC PX14A6G). Durability = UNCERTAIN.",
+      "drivers": ["S008", "S009", "S010", "S011", "S012"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Owner earnings are thin and flattered. FY25 GAAP NI $3.79B (-46% Y/Y); reported FCF $6.2B rose ONLY because capex was cut $11.3B->$8.5B, and capex is guided back UP to >$25B (2025-26 AI/Optimus) so FCF will revert (C2). Q1 2026 GM 21.1% improvement is partly one-time warranty/tariff benefits, not structural (C1). DELIVERED owner earnings ~$5B (auto+energy, robotaxi/Optimus NOT counted) -> starting OE yield ~0.35% on $1.41T. ONE strong positive: balance sheet is fortress (net cash ~$35.5B) -> the company cannot die. But thin/shrinking owner earnings + 0.35% yield is a warning.",
+      "drivers": ["S005", "S008"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "Permanent-loss path on today's $400 buy = NARRATIVE failing (F1: robotaxi not economic/scaled, Optimus delayed/fails) + extreme-multiple de-rate (F3) reverting valuation toward delivered fundamentals -> base 5y IRR -17%, bear -27%. This is NOT bankruptcy (fortress balance sheet) but permanent loss of the premium paid for a story. Plus F2 (auto profit pool shrinking, structural-gradual) and F4 (Musk key-man + 12% dilution). Per the fixed rule, robotaxi/Optimus uncertainty is a HAIRCUT not a veto, and the business is NOT structurally broken -> NO HARD VETO. BUT the price has ZERO margin of safety on delivered fundamentals (only the pure-narrative moonshot clears 8%) -> -2 is a strong warning that PRICE caps the verdict (GOOGL-style, tighter), not a balance-sheet veto.",
+      "drivers": ["S005", "S007", "S008", "S009"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At ~$1.41T: P/E ~371x, P/FCF ~227x, starting OE yield ~0.35%, base 5y IRR -17%, price only -20% off the 52-week high (upper-middle of range, NOT cheap). Odds are asymmetric to the DOWNSIDE: bear -27% / base -17% / even optimistic bull only +5% (<8% hurdle); only the pure-NARRATIVE moonshot (+21%, no current delivered support) clears the hurdle. Price has NO margin of safety on delivered fundamentals -> this is the binding constraint (opposite of NVDA where price was friendly). New money 0%. Discussion of a starter only if price falls to <~$200 (toward/below 52wk low $288) with delivered fundamentals intact; deep MOS needs <~$130.",
+      "drivers": ["S007", "S008"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "TRIM",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 160.0,
+  "starter_zone": "No starter at current price. Discussion of a starter only if price falls to <~$200 (toward/below the 52wk low $288.77 and continuing) AND delivered fundamentals (auto margin, energy profitability) hold. Even then, full delivered-fundamentals MOS needs <~$130.",
+  "add_zone": "Not applicable (new money 0%). Adds only after (a) price re-rates to a delivered-MOS zone AND (b) a NARRATIVE->DELIVERED conversion (robotaxi positive unit economics + scaling, or Optimus real production revenue).",
+  "trim_or_no_chase_zone": "No-chase at any price above ~$200 on delivered fundamentals. Current $400.49 is a no-chase / trim zone. Existing holders: TRIM/HOLD by cost basis - not a bankruptcy risk, but extreme multiple with no MOS and fragile story premium.",
+  "binding_constraint": "Triple: (1) extreme valuation with NO margin of safety on delivered fundamentals (P/E 371x, starting OE yield 0.35%, base 5y IRR -17%, only the pure-narrative moonshot clears 8%) = PRICE-led verdict cap (GOOGL-style, tighter); (2) core auto profit pool SHRINKING (operating margin 16.8%->4.6%, deliveries -9%); (3) Musk key-man (valuation personified) + $1T pay package ~12% dilution overhang. NOT a veto (business not structurally broken, fortress balance sheet) - a verdict ceiling. Completeness ~55% would cap at WATCH; price caps it independently regardless of completeness.",
+  "kill_criteria": [
+    "K1 [NARRATIVE convert]: robotaxi discloses positive unit economics AND scaled operations, OR Optimus reaches real production with revenue -> upgrade trigger (narrative becomes delivered). Currently: robotaxi tiny, Optimus pre-production.",
+    "K2 [core profit pool]: auto operating margin falls <4% OR deliveries keep declining double-digits -> structural shrinkage confirmed, cap tighter / existing position EXIT candidate.",
+    "K3 [Musk key-man]: Musk departure/incapacitation/major reputational event -> narrative premium collapses (fastest impairment path).",
+    "K4 [dilution]: $1T pay-package milestones vest triggering large share issuance -> per-share value diluted.",
+    "K5 [price un-cap]: price re-rates to a zone with delivered-fundamentals MOS (base IRR turns positive ~< $160-200; deep MOS <~$130) -> only then does WATCH->STARTER enter discussion.",
+    "K6 [completeness]: SEC 10-K/10-Q line items (segment profitability) + proxy + robotaxi unit economics filled -> completeness rises, BUT as long as price has no MOS the verdict stays capped."
+  ],
+  "runner_dissent": "Recorded per protocol. The mechanical result is WATCH/REJECT (new money 0%). Self-check against the SNDK lesson (do NOT over-veto a genuinely transitioning business just because the forward is uncertain): Tesla DID deliver real things - robotaxi is live in Austin/Dallas/Houston, FSD has 1.3M subs, energy storage doubled to 46.7GWh - so a knee-jerk 'it's just a story, veto it' would be the wrong error. The framework does NOT veto the business: M5 finds no hard veto (no structural break, fortress balance sheet net cash $35.5B), and per the fixed rule the robotaxi/Optimus forward uncertainty is treated as a HAIRCUT, not a veto. The cap comes from PRICE, not from disbelief in the business: even after generously crediting delivered progress, the current $400.49 gives base 5y IRR -17% and only the pure-narrative moonshot (no delivered support today) clears the 8% hurdle - i.e. the market has already priced robotaxi-mass-scale + Optimus-millions + FSD-software-economics as near-certain. This is the OPPOSITE risk to SNDK: it is a story-premium price trap (paying 371x for undelivered options), not a cheap real bottleneck being missed. The honest counter-argument is the fat right tail (moonshot +21%) - acknowledged and recorded - but paying -27% downside / -17% base for a +21% tail with no current evidence is asymmetric to the downside. Net: WATCH-0%, monitor for either a NARRATIVE->DELIVERED conversion (robotaxi unit economics) or a price re-rate to a delivered-MOS zone (<~$200). Same framework, same five souls, same chair gave NVDA STARTER (price friendly, clean owner earnings) and TSLA WATCH (price extreme, thin/shrinking owner earnings) - the difference is objective fact (19x vs 371x, clean OE vs collapsing margins), not narrative. Lower-confidence items left OPEN: SEC segment profitability (O1, the key gap), robotaxi/Optimus unit economics (O2), proxy (O3), energy segment margin (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026026673/tsla-20260331.htm (403, line items OPEN)"},
+    {"source_id": "S004", "public_date": "2026-01-02", "url_or_path": "https://x.com/Tesla/status/2007089900613419092 (official FY25 deliveries/production/energy)"},
+    {"source_id": "S005", "public_date": "2026-04-22", "url_or_path": "https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html"},
+    {"source_id": "S006", "public_date": "2026-04-22", "url_or_path": "https://electrek.co/2026/04/22/tesla-tsla-q1-2026-financial-results/"},
+    {"source_id": "S007", "public_date": "2026-06-18", "url_or_path": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA"},
+    {"source_id": "S008", "public_date": "2026-06-19", "url_or_path": "https://stockanalysis.com/stocks/tsla/financials/"},
+    {"source_id": "S009", "public_date": "2025-11-06", "url_or_path": "https://techcrunch.com/2025/11/06/tesla-shareholders-approve-elon-musks-1t-pay-package/"},
+    {"source_id": "S010", "public_date": "2025-11-29", "url_or_path": "https://fortune.com/2025/11/29/elon-musk-pay-package-details-tesla-stock-outlook/"},
+    {"source_id": "S011", "public_date": "2025", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001318605/000121465925014515/o102255px14a6g.htm (403, logged)"},
+    {"source_id": "S012", "public_date": "2026-04", "url_or_path": "Seeking Alpha / Electrek robotaxi-FSD-Optimus operational status"}
+  ]
+}

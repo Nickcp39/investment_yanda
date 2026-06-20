@@ -1,0 +1,88 @@
+{
+  "ticker": "META",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "good_business_fairly_to_richly_priced_capex_anchor_unresolved",
+  "as_of_price": 577.22,
+  "as_of_market_cap": 1480000000000,
+  "share_basis_note": "Class A. Implied diluted shares ~2,564M (Q1 2026 net income $26,773M / diluted EPS $10.44) x $577.22 (2026-06-18 close, last <= as_of) = ~$1.48T. Price from Yahoo chart API [S005]; 2026-06-19 intraday not used as freeze edge. Exact cover share count pending 10-Q line (O3); small differences do not change magnitude.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 2026, ended 2026-03-31) and full-year FY2025 baseline are fully primary-sourced (8-K PR + 10-Q + FY25 8-K + 10-K): revenue $56.3B (+33%), FoA OI $26.9B, RL loss $(4.0)B, op income $22.9B, GAAP NI $26.8B (incl $8.03B one-time tax benefit), OCF $32.2B, capex $19.8B, FCF $12.4B, FY26 capex guide $125-145B. Price locked from a dated daily series. Gaps (capex ROI quantification O4, 10-K line items O1, RL full-year O2, proxy O3) are haircuts/ceiling, not vetoes.",
+      "drivers": ["S001", "S002", "S003", "S004", "S005"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Digital-advertising duopoly (with GOOGL) operating at full health: revenue +33%, ad price/ad +12% Y/Y, impressions +19%, Family DAP 3.56B (+4%). Pricing power intact (price AND volume rising). Mechanism = AI-improved ranking/recommendation -> higher relevance -> higher price. But the franchise sits behind OS-layer attribution (Apple/Google) and regulatory risk it does NOT control. Strong engine, externally constrained.",
+      "drivers": ["S001"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Captures one of the two largest digital-ad profit pools via network effects (3.56B DAP) + first-party data + AI ranking + scale; moat widening on the ad side. But durability is haircut by: (a) OS/privacy + antitrust external dependency (does not control attribution channel), (b) capex ROI unproven (O4), (c) operator grade 3/5 - founder-genius Zuckerberg controls ~61% voting on ~14% economics, all 2026 shareholder proposals rejected, buyback paused to fund capex -> incentive misalignment in a heavy-capital, no-external-brake phase. 2022 case validated founder control as value-POSITIVE (cost discipline); current phase is the opposite posture (single-bet capex). Within-band/operator-conditioned: haircut, not auto tier demotion.",
+      "drivers": ["S001", "S006"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Reported earnings strong but owner earnings eaten by capex. GAAP NI $26.8B/qtr is inflated by a $8.03B one-time discrete tax benefit (strip it -> operating NI ~$18.7B/qtr, ~$75B annualized at ~14% tax). FCF only $12.4B/qtr (~$49.6B annualized) -> the ~$25B/yr gap IS growth capex. Capex tripled+ from FY24 ~$39B to FY26 guide $125-145B. FCF yield only ~3.4%. Buyback paused (Q1 $0 vs $12.75B prior year), levering up (LT debt $58.7B), net cash thinned to ~$22.4B (vs 2022 case $31.9B). Balance sheet survives (strong OCF) but flexibility falling. GOOGL-style capex black hole on a faster-growing ad engine. Use FCF/operating NI, NOT GAAP NI, for valuation.",
+      "drivers": ["S001", "S002", "S003"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but not structural impairment at as-of: (F1) capex black hole - $135B/yr capex keeps rising but OI doesn't compound -> ROIC below cost of capital, MOST LIKELY value-destruction path; (F2) generative AI rewrites the traffic entry (feed bypassed) -> the ONLY path that can escalate to a hard veto (thesis durability breaks), but DAP +4%/price +12% show NO evidence yet; (F3) OS/privacy reset (ATT 2.0); (F4) antitrust forced breakup; (F5) de-rate (base IRR +4% already below hurdle = price IS a risk); (F6) controller capital misallocation (RL ~$19B/yr loss precedent). No balance-sheet death (net cash + strong OCF; bear -42% is de-rate not bankruptcy). NOT a false-cheap trap - it is NOT cheap. The real trap is the INVERSE: being carried by the +33%/+12% full-health narrative while FCF is eaten by capex and base IRR misses the hurdle. Forward uncertainty = haircut + size + price control, NOT a hard veto.",
+      "drivers": ["S001", "S008"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "At ~$1.48T, forward operating P/E ~19.8x, FCF yield ~3.4%, base 5y IRR ONLY +4.0% (BELOW 8% hurdle). Conservative fair value ~$480 -> current $577 is ~21% ABOVE it. Asymmetry near-symmetric-to-down: bull +15% / base +4% / bear -10.5%. Price embeds the optimistic 'capex fully compounds' case (base misses hurdle on conservative-mid anchor) with NO margin of safety for the unresolved O4. Price IS the binding constraint (opposite of NVDA). Wait for a pullback to ~$480 or quantified capex ROI before a starter.",
+      "drivers": ["S005"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 5,
+  "buy_below_price": 480,
+  "starter_zone": "~$480-520 (toward the 52-week low $520.26): a STARTER only becomes justified here, and only with modest MOS if you grant that capex is value-creating earning power (operating-NI anchor). No new money at the current $577.",
+  "add_zone": "Not applicable at WATCH. After a starter is justified (price <= ~$480 OR capex ROI quantified), scale on confirmation that capex compounds into operating income AND ad engine stays full-health.",
+  "trim_or_no_chase_zone": "No-chase above ~$640 (base IRR clearly <8%). Existing holders HOLD (engine intact, balance sheet survives); do not add at current price.",
+  "binding_constraint": "Price + the unresolved owner-earnings anchor (capex ROI, O4). Current price embeds 'capex fully compounds' (base misses the 8% hurdle on a conservative-mid anchor) while capex ROI has no primary quantification -> no margin of safety for the uncertainty. Completeness ~62% caps the ceiling at STARTER; price pushes the actual current-price verdict to WATCH. NOT business quality (the ad engine is full-health).",
+  "kill_criteria": [
+    "Price pullback to ~$480 (base 8% hurdle) -> upgrade to STARTER-eligible. [upgrade trigger]",
+    "Primary disclosure / consecutive quarters showing capex compounds into operating income (ROIC > cost of capital) -> upgrade owner-earnings anchor to operating NI, base IRR ~+10%, STARTER-eligible. [O4, decisive variable]",
+    "Revenue growth falls to single digits AND price/ad turns negative -> ad engine thesis impaired -> REJECT candidate.",
+    "Capex keeps rising but operating income does not (F1 black hole confirmed) -> permanently lower durability; confirm thesis not structurally broken even at lower price.",
+    "Generative AI structurally rewrites the traffic entry (DAP/time-spent sustained decline) OR antitrust forced breakup (F2/F4) -> thesis durability breaks (exit candidate). [ONLY path that can escalate to veto]"
+  ],
+  "runner_dissent": "Recorded per protocol. The growth instinct flags the opposite risk (too_small_missed_asymmetry / the SNDK lesson): META is arguably the strongest ad engine on earth (+33% revenue, +12% ad price, 48% segment margin, 3.56B DAP), and demanding a deep MOS on a genuine compounder can mean missing it - especially if capex IS value-creating (Q1 +12% price is a directional sign it is working), in which case the operating-NI anchor gives base IRR ~+10% with modest MOS at $577. The framework overrides to WATCH (not STARTER, and explicitly NOT REJECT) on three objective facts, not narrative: (1) on a conservative-mid owner-earnings anchor base 5y IRR is only +4% (below the 8% hurdle) and FCF yield is only 3.4% - there is no margin of safety at $577; (2) the anchor choice (FCF $50B vs operating NI $75B) swings base IRR from ~0% to ~+10% and depends entirely on the UNQUANTIFIED capex ROI (O4) - the decisive variable is exactly what is OPEN, so paying full price for the optimistic anchor is paying for an unproven assumption; (3) the controller holds ~61% voting on ~14% economics, paused the buyback to fund capex, and got all 2026 shareholder proposals rejected - a real incentive misalignment in a heavy-capital, no-external-brake phase (haircut per within-band/operator-conditioned lens, NOT auto demotion; 2022 validated this same control as value-positive when posture was cost discipline). business_verdict stays 'good' (engine not broken, balance sheet survives -> not REJECT). Net: WATCH with a clear buy-below ~$480 and an O4-quantification upgrade path; the residual capex-ROI + price uncertainty controls the go/no-go at THIS price, while a hard veto is reserved only for F2/F4 (traffic-entry rewrite / breakup), which show no current evidence. Same panel, same chair, gave NVDA STARTER (price friendly, owner earnings clean) and META WATCH (price rich, owner earnings eaten by capex) - the difference is objective price/owner-earnings quality, not the AI/ad narrative. Lower-confidence items left OPEN: capex ROI quantification (O4, blocking), 10-K line items (O1), RL full-year (O2), proxy exact figures (O3).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm"},
+    {"source_id": "S002", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028526/meta-20260331.htm"},
+    {"source_id": "S003", "public_date": "2026-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm"},
+    {"source_id": "S004", "public_date": "2026-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"},
+    {"source_id": "S005", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/META"},
+    {"source_id": "S006", "public_date": "2026-04", "url_or_path": "SEC EDGAR DEF 14A 2026 (governance facts corroborated multi-source; proxy not transcribed line-by-line -> O3)"},
+    {"source_id": "S008", "public_date": "2026-01", "url_or_path": "https://www.auganix.org/xr-news-meta-reality-labs-2025-financial-report/"}
+  ]
+}

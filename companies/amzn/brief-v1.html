@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMZN 决策简报 — as_of 2026-06-19</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--ink:#e6edf3;--mut:#9aa7b4;--grn:#3fb950;--red:#f85149;--amb:#d29922;--acc:#58a6ff;--brd:#283039}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;line-height:1.5;padding:24px}
+  .wrap{max-width:1040px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px} h2{font-size:16px;margin:22px 0 10px;color:var(--acc);border-bottom:1px solid var(--brd);padding-bottom:6px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:14px}
+  .k{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em} .v{font-size:20px;font-weight:700;margin-top:4px}
+  .verdict{font-size:30px;font-weight:800;color:var(--amb)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px} th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--brd)} th{color:var(--mut);font-weight:600}
+  .pos{color:var(--grn)} .neg{color:var(--red)} .amb{color:var(--amb)} .mut{color:var(--mut)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:700}
+  .pill.g{background:rgba(63,185,80,.15);color:var(--grn)} .pill.r{background:rgba(248,81,73,.15);color:var(--red)} .pill.a{background:rgba(210,153,34,.15);color:var(--amb)}
+  ul{margin:6px 0;padding-left:18px} li{margin:3px 0;font-size:13px}
+  .note{font-size:12px;color:var(--mut);margin-top:8px}
+  .sig{font-weight:700}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>Amazon (AMZN) — 决策简报</h1>
+  <div class="sub">as_of 2026-06-19 · pipeline lean-6module-v1 · weights none · status <b>DECISION_DRAFT</b> · 完整度 ~62% · context: good_business_wrong_price_capex_reinvestment</div>
+
+  <div class="grid">
+    <div class="card"><div class="k">新钱 Verdict</div><div class="verdict">WATCH</div><div class="note">existing position: HOLD</div></div>
+    <div class="card"><div class="k">仓位</div><div class="v">0% → buy-below ~$175–180</div><div class="note">价格无 MOS，先观望</div></div>
+    <div class="card"><div class="k">价格 / 市值</div><div class="v">$244.39 / ~$2.66T</div><div class="note">2026-06-18 收盘，距 52 周高 −11%（区间中上）</div></div>
+    <div class="card"><div class="k">ceiling</div><div class="v">WATCH</div><div class="note">价格封顶（先于完整度）</div></div>
+  </div>
+
+  <h2>核心论点（一句话）</h2>
+  <div class="card">AMZN 是三引擎复利机器（电商物流 + AWS + 广告），AWS 重新加速 <b>+28%（15 季最快）</b>、零售利润率创纪录 <b>13.1%</b>、利润池耐久——生意 good→exceptional。<b>但和 NVDA"价格友好"相反，这次价格不站在买方这边</b>：起始正常化收益率仅 2.1–2.5%、即便给足 ~$200B AI capex 信用的 NOPAT 口径 base 5y IRR ≈ <b>−1.5%</b>（bull 才 +7.7%，&lt;8% 门槛）。叠加 owner earnings 桥因 capex 不闭合（<b>TTM FCF 近零 $1.2B</b>）、GAAP 净利含 $16.8B Anthropic 收益失真、长债季增 $53B 到 $119B。<b>与 GOOGL 同构：好生意 + capex 黑洞 + 价格封顶。</b></div>
+
+  <h2>六模块信号</h2>
+  <table>
+    <tr><th>模块</th><th>角色</th><th>信号</th><th>信心</th><th>一句话</th></tr>
+    <tr><td>M1 证据脊柱</td><td>confidence</td><td class="sig pos">+2</td><td>high</td><td>锚定季度+全年全回挂 A1（SEC 8-K Ex99.1 落盘）</td></tr>
+    <tr><td>M2 主题/机制</td><td>context+conviction</td><td class="sig pos">+2</td><td>high</td><td>AWS 重新加速 +28%、零售利润率创纪录；新主题=$200B AI capex 豪赌</td></tr>
+    <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="sig pos">+1</td><td>med</td><td>AWS 捕获西方第二大云利润池；operator 4/5；非独占瓶颈→不享溢价</td></tr>
+    <tr><td>M4 财务现实</td><td>warning</td><td class="sig neg">−1</td><td>med</td><td>owner earnings 桥不闭合：FCF 近零、capex 吞 OCF；GAAP 含 Anthropic 收益；加杠杆</td></tr>
+    <tr><td>M5 反演/陷阱</td><td>risk</td><td class="sig neg">−1</td><td>med</td><td>capex ROI/份额=size 控制；无结构性破裂/资产负债表能存活 → 非 veto</td></tr>
+    <tr><td>M6 定价/仓位</td><td>price+output</td><td class="sig neg">−1</td><td>high</td><td>起始收益率 2.1–2.5%、base IRR −1.5%、贴 52 周高 → 价格是卡点</td></tr>
+  </table>
+
+  <h2>三情景（5y IRR，hurdle 8%）— NOPAT 口径（给足 capex 信用）</h2>
+  <table>
+    <tr><th>情景</th><th>NOPAT 起点</th><th>CAGR</th><th>退出倍数</th><th>y5 每股</th><th>5y IRR</th></tr>
+    <tr><td>Bear</td><td>$60B</td><td>+6%</td><td>16x</td><td>~$118</td><td class="neg">−13.5%</td></tr>
+    <tr><td>Base</td><td>$67B</td><td>+13%</td><td>20x</td><td>~$227</td><td class="neg">−1.5%</td></tr>
+    <tr><td>Bull</td><td>$70B</td><td>+18%</td><td>24x</td><td>~$353</td><td class="amb">+7.7%</td></tr>
+  </table>
+  <div class="note">即便给足 capex 信用，base IRR 负、bull 仅 +7.7%（&lt;8%）。保守 owner earnings 口径更低（bull +5.0%）。赔率向下不对称。情景为 E1 scenario，非事实。</div>
+
+  <h2>价格带</h2>
+  <div class="grid">
+    <div class="card"><div class="k">现价 = 不追</div><div class="v neg">$244</div><div class="note">base IRR 负</div></div>
+    <div class="card"><div class="k">Watch 观察</div><div class="v amb">$180–195</div><div class="note">仍无足够边际</div></div>
+    <div class="card"><div class="k">Starter 候选</div><div class="v pos">≲ $175</div><div class="note">base IRR 回 8% → 解封顶</div></div>
+    <div class="card"><div class="k">下行参考</div><div class="v amb">~$118 (−52%)</div><div class="note">bear，资产负债表存活</div></div>
+  </div>
+
+  <h2>五灵魂 IC（段永平主审）</h2>
+  <table>
+    <tr><th>灵魂</th><th>票</th><th>一句锚</th></tr>
+    <tr><td>Buffett</td><td><span class="pill a">WATCH</span></td><td>好生意，但 owner earnings 桥不闭合 + 起始收益率 2.5% 太低</td></tr>
+    <tr><td>Munger</td><td><span class="pill a">WATCH</span></td><td>治理清洁，愚蠢风险=capex ROI 未证还付完美价</td></tr>
+    <tr><td>段永平（主审）</td><td><span class="pill a">WATCH</span></td><td>用户价值清楚、管理层靠谱，但价格无边际 + 重投资期不懂 owner earnings</td></tr>
+    <tr><td>Marks</td><td><span class="pill a">WATCH</span></td><td>共识偏多、估值区间中上、赔率向下不对称</td></tr>
+    <tr><td>Klarman</td><td><span class="pill a">WATCH</span></td><td>资产负债表可存活但安全边际为负、加杠杆削弱缓冲</td></tr>
+  </table>
+  <div class="note">五票一致 WATCH（与 GOOGL 同构）。与 NVDA（五票 STARTER）差别全在：AMZN 价格不友好（起始收益率 2.1–2.5% vs 5.1%）+ FCF 近零 vs 干净。</div>
+
+  <h2>Kill / 升档 Criteria</h2>
+  <ul>
+    <li><b>K1</b> capex 大增但 AWS 增量利润不匹配（ROIC 恶化）→ <b>唯一可升 veto</b></li>
+    <li><b>K2</b> AWS 增速 &lt;15% 且份额走弱 → 利润池侵蚀</li>
+    <li><b>K3</b> 总营业利润率从 13.1% 回吐到 &lt;9% → 零售利润率证伪</li>
+    <li><b>K4</b> 净债务恶化 + OCF 停滞 → 资产负债表弹性耗尽</li>
+    <li><b>K5</b> 价格跌破 ~$175（base IRR 回 8%）→ <b>解 WATCH 封顶、升 STARTER</b></li>
+    <li><b>K6</b> Anthropic 公允价值反向波动致 GAAP 净利大跌 → 估值口径事件</li>
+  </ul>
+
+  <h2>OPEN（封顶完整度）</h2>
+  <div class="card note">O1 10-K 逐行 · O2 10 年精确序列 · O3 proxy/operator 细节 · <b>O4 $200B capex 维护/增长拆分 + ROIC（blocking，owner earnings 桥胜负手）</b> · O5 backlog/Trainium 一手 · O6 Anthropic 会计。</div>
+
+  <div class="note" style="margin-top:18px">来源: AMZN Q1 2026 8-K Ex99.1 [S001]、Q4/FY2025 8-K Ex99.1 [S002]、2025 年报 [S003]、Yahoo chart 价格 [S004]、官方 IR [S005]、电话会转述 [S006，待核]。载荷数全 A1。状态 DECISION_DRAFT，非 COMPLETE。</div>
+</div></body>
+</html>

@@ -1,0 +1,7 @@
+scenario,oe_start_B,oe_cagr_pct,buyback_pct_yr,exit_p_oe,y5_oe_per_share,exit_price,div_total_5y,5y_irr_pct,note
+inputs,120,,2.5,,,,,,"price=298.01; diluted shares 14.726B; OE anchor 120B (TTM NI 122.6 / TTM FCF ~129, low end)"
+Bear,120,0,2.5,22,9.25,203,5.5,-7.0,"no OE growth + multiple compression to 22x; survivable not impairment"
+Base,120,6,2.5,27,12.38,334,5.5,2.7,"Services mix + buyback; multiple ~flat; BELOW 8% hurdle"
+Bull,120,11,2.5,32,15.58,499,5.5,11.1,"AI/Services re-accel + multiple holds; only this case clears hurdle"
+buy_below_8pct,120,6,2.5,27,12.38,334,5.5,8.0,"entry ~231 for 8% base IRR (~28x trailing OE)"
+buy_below_10pct,120,6,2.5,27,12.38,334,5.5,10.0,"entry ~211 for 10% base IRR (~26x)"
