@@ -37,7 +37,7 @@
 | `pipeline_version` | `weights_version` | active dates | what it is | cases run under it |
 |---|---|---|---|---|
 | `lean_six_module_v0` | `W_v0` | 2026-06 (pilot) | first-draft lean **pilot**, *self-run* — NOT the blind sequential protocol | `sndk_2025-06-16`, `nbis_2026-01-01`, `mu_2025-03-21` (self-run) |
-| **`lean-6module-v1`** | **`none`** | 2026-06-17 → present | the redesigned **blind 6-module sequential** run (`TEST_PLAN.md`) | **`googl_2024-06-14`** (case 1) |
+| **`lean-6module-v1`** | **`none`** | 2026-06-17 → present | the redesigned **blind 6-module sequential** run (`TEST_PLAN.md`) | **all 13 blind cases** (the 10-case validated set + `mu`/`nbis`/`sndk` re-run from v0 on 2026-06-19) |
 
 > Legacy `v0` cases keep their own id — **do not retro-restamp them to v1.** They ran under a genuinely
 > different pipeline; the id difference is correct, not drift to be "fixed."
@@ -70,3 +70,9 @@ the patch is measured against.
 - **2026-06-19** — back-stamped `intc_2021-04-23` + `intc_2024-08-02` (run before §4 provenance was mandatory)
   with `lean-6module-v1` / `none` / run_date 2026-06-19. **All 13 decision cards now carry version stamps**
   (10 × `lean-6module-v1` blind set, 3 × `lean_six_module_v0` pilot).
+- **2026-06-19** — **re-ran `mu` / `nbis` / `sndk` under `lean-6module-v1`** (the 3 v0 pilots). Each: the v0 work
+  archived to its own `_v0/` subfolder (**NOT** restamped — honoring the "don't retro-restamp" rule above), then a
+  fresh blind run added `operator_background` + an independent checker pass + a v1 `decision_card` + `outcome_score`.
+  **All 13 cases now scored under `lean-6module-v1`** in `results.csv` (the v0 cards remain in `_v0/` as the
+  superseded baseline). ⚠ `mu` / `nbis` / `sndk` outcomes are **PROVISIONAL** (short as-of windows ~15 / ~5.5 / ~12 mo
+  + high recent-date training-leakage risk) — weight them lightly vs the 10-case set.

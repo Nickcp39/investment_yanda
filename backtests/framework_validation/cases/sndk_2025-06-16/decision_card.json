@@ -1,81 +1,81 @@
 {
   "ticker": "SNDK",
-  "company": "Sandisk Corporation",
   "as_of": "2025-06-16",
-  "pipeline_version": "lean_six_module_v0",
-  "weights_version": "W_v0",
-  "run_date": "2026-06-17",
-  "context_label": "spinoff_forced_seller + cyclical_inflection",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
+  "context_label": "spinoff_forced_seller",
   "as_of_price": 44.21,
-  "as_of_market_cap_usd_bn": 6.41,
+  "as_of_market_cap": 6410000000,
   "module_signals": [
     {
       "module": "M1 Evidence Spine",
       "role": "confidence",
       "signal": 0,
-      "confidence": "medium",
-      "finding": "Primary evidence is adequate, but standalone history is short.",
-      "drivers": ["S001", "S004", "S005", "S009", "S010", "S011"]
+      "confidence": "med",
+      "finding": "Evidence quality is GOOD on the backward-looking facts (Q3 FY2025 release + 10-Q + Form 10/A + S-1/A are primary; the WDC secondary price and the as-of $44.21 close are verified). The binding limits are not evidentiary errors but TWO STRUCTURAL gaps that the as-of data cannot close: (a) only ONE standalone reported quarter exists (spun 2025-02-24), so normalized standalone economics must be inferred from a single trough print + a forward guide; and (b) the true mid-cycle margin/opex run-rate is not yet observable. Per WEIGHTING_HARNESS, these become a SIZE HAIRCUT + monitoring + a wider band, NOT a WATCH/0% cap. Confidence med (not high) because the standalone history is short; not low, because we know exactly what would falsify the thesis (Q4/Q1 margin + enterprise-SSD demand).",
+      "drivers": ["S004", "S005", "S010", "S011", "S008", "S009"]
     },
     {
       "module": "M2 Theme / Mechanism Thesis",
       "role": "context",
-      "signal": 2,
-      "confidence": "medium",
-      "finding": "Spin-off dislocation plus NAND supply discipline and AI / enterprise SSD demand create an asymmetric setup.",
-      "drivers": ["S001", "S004", "S006", "S007", "S008", "S011", "S012"]
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Context = spinoff_forced_seller with a cyclical_inflection overlay. Theme: a NAND/Flash franchise was just carved out of Western Digital (Feb 2025) into a sub-scale, money-losing-at-the-trough standalone, while an AI-driven enterprise-SSD up-cycle appears to be forming. MECHANISM of the dislocation: (1) FORCED, NON-STRATEGIC SELLING — WDC retained 19.9% and is dumping it via a secondary ($38.50, 2025-06-06) + debt-for-equity, with Sandisk receiving no proceeds; this technical overhang depresses price independent of fundamentals (the S-1/A itself warns the resale could push the price down). (2) MESSY FIRST-QUARTER OPTICS — a GAAP loss DOMINATED by a $1.83B NON-CASH goodwill impairment makes trailing GAAP look disastrous and masks the real economics. The market is over-weighting the GAAP loss + the spin mess + the forced selling; it is under-weighting (a) the as-of price sitting BELOW book (~0.70x), (b) the Q4 guide that improves revenue to $1.75-1.85B and non-GAAP GM to 25.5-27.0% with price increases already commenced and supply being cut, and (c) independent industry/peer evidence (TrendForce 2025-05-26: enterprise SSD likely to shift to undersupply, +up to 10% QoQ; Micron Q2'25: AI/data-center NAND demand, supply actions improving dynamics). Net mildly positive: a real, dated dislocation with a credible mechanism, but a cyclical-not-compounder asymmetry that argues for a STARTER, not full size.",
+      "drivers": ["S002", "S004", "S006", "S007", "S008", "S011", "S012"]
     },
     {
       "module": "M3 Profit Pool / Durability",
       "role": "conviction",
-      "signal": 1,
-      "confidence": "medium",
-      "finding": "Sandisk can capture cycle upside, but NAND is not a permanent monopoly moat.",
-      "drivers": ["S002", "S004", "S005", "S006", "S010", "S012"]
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Sandisk captures a real but COMMODITY-CYCLICAL profit pool: a top-tier NAND/Flash IP and product franchise (BiCS 8 ramping; enterprise + client + consumer SSD; the original SanDisk flash heritage), with genuine scale and channel. But durability is structurally MEDIUM-LOW, not compounder-grade: NAND is competitive, ASP-volatile, and capital-intensive, and the single biggest economic lever -- wafer cost and fab utilization -- is SHARED with Kioxia via the Flash Ventures JV (Sandisk buys substantially all wafers from the JV and funds ~50% of fixed costs / 49.9-50% of capex; ~$3.359B max loss exposure + ~$1.379B lease guarantees). So management does not fully control its own cost base. OPERATOR/team life-arc grade = 3/5 (per operator_background.md): two individually strong operators -- a deep-tech systems CEO (Goeckeler) who is ALSO the architect of this separation, plus a serial big-tech CFO (Visoso) -- but assembled as a BRAND-NEW standalone team (~4 months, no shared crucible), with memory-cycle fit that is adjacent-not-native, a Chair+CEO governance concentration, and a JV-bounded cost base. The operator read is NEUTRAL: it does not raise the ceiling and, combined with the cyclical nature, reinforces a sub-Core ceiling. Net 0: a real franchise with a defensible position but no compounder moat and a JV-shared cost base -- conviction comes from the cycle + the price, not from durable economics.",
+      "drivers": ["S004", "S005", "S010", "S002", "S016"]
     },
     {
       "module": "M4 Financial Reality",
       "role": "conviction",
       "signal": 1,
-      "confidence": "medium",
-      "finding": "GAAP loss is distorted by impairment; liquidity is survivable; margin confirmation is still required.",
-      "drivers": ["S004", "S005", "S012"]
+      "confidence": "med",
+      "finding": "Accounting CONFIRMS that this is a TROUGH masked by a non-cash charge, not a structural earnings collapse -- which is the decisive read for a spinoff_forced_seller. (1) The headline $13.33/sh GAAP loss is DOMINATED by a $1.83B NON-CASH goodwill impairment; ex-impairment the operating loss is far smaller and non-GAAP EPS is -$0.30 -- a trough loss, not a -$13 disaster. (2) The Q4 guide IMPROVES sequentially: revenue $1.75-1.85B (up from $1.695B) and non-GAAP GM 25.5-27.0% (up from 22.7%), with price increases already commenced and bit-supply being cut to match demand -- consistent with a cycle turning up, not down. (3) Balance sheet SURVIVES the cycle: $1.507B cash vs ~$1.95B total debt = net debt only ~$0.44B; total equity $9.161B. The stock at $44.21 trades ~0.70x BOOK (BVPS ~$63.18) and ~0.95x EV/annualized-Q4-run-rate revenue (~$7.2B) -- i.e. BELOW the stated net-asset value AFTER the write-down already hit equity. NORMALIZED: at a mid-cycle ~33% gross margin the annualized gross profit is ~$2.4B against a ~$6.85B EV; once opex is covered, normalized earnings power is meaningful vs the price. WARNINGS (why +1, not +2): 9-month operating cash flow was ~-$10M and trough FCF is negative; the true normalized opex/margin is unproven on one quarter; the JV obligations are a fixed claim that does not shrink in a downturn. So: trailing GAAP is NOT the real economics (no trailing-earnings trap), the price is below asset value, and the guide points up -- a confirming financial read for a cyclical trough, sized small because the recovery is guided-not-yet-delivered.",
+      "drivers": ["S004", "S005"]
     },
     {
       "module": "M5 Inversion / Trap Test",
       "role": "risk",
       "signal": -1,
-      "confidence": "medium",
-      "finding": "Memory-cycle, Kioxia / Flash Ventures, and false-inflection risks cap size but do not veto.",
-      "drivers": ["S005"]
+      "confidence": "med",
+      "finding": "No HARD veto: this is NOT a structural-decline trap (the profit pool is cyclical, not eroding -- demand signals point up), NOT a false-cheap value trap (normalized earnings are NOT far below trailing once the non-cash impairment is removed; the cheapness is vs BOOK and vs a guided-up run-rate, not vs a fictional trailing number), and the balance sheet CAN survive the cycle (net debt only ~$0.44B). Per WEIGHTING_HARNESS the hard-veto conditions are not met. Real, SURVIVABLE risks that warrant a size haircut and a sub-Core ceiling: (1) CYCLE-IS-RESTOCKING risk -- the apparent inflection could be short-term inventory restocking, not durable demand (Micron itself flagged data-center NAND moderation + underutilization); if margins roll back over, the trough deepens. (2) JV / Kioxia structural risk -- the ~$3.359B max exposure + ~$1.379B guarantees are a FIXED claim that magnifies downside in a prolonged trough, and supply/capex are joint decisions Sandisk cannot unilaterally control. (3) GOVERNANCE -- Chair+CEO duality at a 4-month-old company + a brand-new board + a large NON-STRATEGIC seller (WDC) overhanging the register = weak external check + near-term technical pressure. (4) NO STANDALONE TRACK RECORD -- one loss-making quarter; the architect-CEO has a sunk-cost incentive to defend the spin thesis. (5) Spin-off morale/talent leakage at a sub-scale money-losing entity. None is permanent-impairment-of-the-whole at this price; collectively they say enter SMALL, add only on confirmation, do not full-size up front.",
+      "drivers": ["S005", "S008", "S011", "S012", "S010"]
     },
     {
       "module": "M6 Price / Position / Monitor",
       "role": "price",
       "signal": 2,
-      "confidence": "medium",
-      "finding": "$6.4B equity value is small versus plausible normalized earnings power if the cycle turns.",
-      "drivers": ["S005", "S009"]
+      "confidence": "med",
+      "finding": "At $44.21 (~$6.41B equity / ~$6.85B EV) Sandisk trades at ~0.70x BOOK (BVPS ~$63.18) and ~0.95x EV/annualized-Q4-run-rate revenue, with net debt only ~$0.44B -- i.e. BELOW its stated net-asset value AFTER the $1.83B goodwill impairment already reduced equity, at a cyclical trough with a guided-up next quarter and independent demand signals improving. The price already reflects ~15% of recovery off the $38.50 WDC secondary and ~38% off the late-April $32.11 low, but it is still cheap on ASSETS and on a normalized run-rate. This is a genuinely FAVORABLE-asymmetry price for a STARTER: survivable downside (below-book, modest net debt, no bankruptcy path at this leverage) against a NAND/AI-storage up-cycle option. M6 emits +2 on PRICE attractiveness/asymmetry, but per METHODOLOGY M6 outputs raw attractiveness + asymmetry + stage + risk -- it does NOT set final size; the cyclical nature, the one-quarter evidence base, the JV risk, and the 3/5 operator grade cap the SIZE below Core. Supports a STARTER now at/under the as-of, with room to add into weakness OR on the first margin/demand confirmation; do not chase aggressively above the mid-$50s before confirmation.",
+      "drivers": ["S009", "S005", "S004", "S008", "S011"]
     }
   ],
-  "business_verdict": "messy_but_asymmetric",
+  "business_verdict": "uncertain",
   "new_money_verdict": "STARTER",
-  "existing_position_verdict": "HOLD",
-  "suggested_initial_size_pct": 1.5,
-  "suggested_max_size_pct": 3.0,
-  "buy_below_price": 45.0,
-  "starter_zone": "$35-$45",
-  "add_zone": "$45-$60 after revenue / margin confirmation",
-  "trim_or_no_chase_zone": "Above $90 without proof of durable margin and enterprise demand",
-  "binding_constraint": "Gross margin, enterprise/cloud revenue, and inventory/utilization confirmation",
+  "existing_position_verdict": "ADD",
+  "suggested_initial_size_pct": 3,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 50,
+  "starter_zone": "<= ~$50 (at/around the as-of $44.21; ideally accumulate into the $38-45 forced-seller/secondary zone)",
+  "add_zone": "$32-$42 on renewed forced-seller/cycle weakness (toward the $38.50 secondary / $32.11 April low), OR at any price once a forward confirmation lands (a clean quarter delivering the guided non-GAAP gross-margin recovery to >=26-27% AND enterprise/cloud SSD revenue and pricing actually rising -- demand, not just restocking)",
+  "trim_or_no_chase_zone": "no-chase above ~$55-60 (toward/through book value ~$63) BEFORE the margin + demand confirmation; once it trades at/above book on still-unconfirmed normalized earnings the spinoff_forced_seller asset-discount edge is gone -- revisit/trim only on the four methodology triggers (thesis wrong, absurd price, better idea, thesis disconfirmed)",
+  "binding_constraint": "Whether the NAND up-cycle is DURABLE demand (AI/enterprise-SSD undersupply) rather than short-term restocking, and whether the standalone team can deliver the guided margin recovery -- all judged on only ONE standalone quarter, inside a Kioxia-JV-bounded cost base, under a Chair+CEO/new-board governance with a WDC forced-seller overhang. This is a SIZE constraint, not a veto: the price (below book) and the trough-masked-by-a-non-cash-charge economics support a real STARTER with survivable downside, but conviction must be EARNED via a margin + demand confirmation before sizing up, and the cyclical nature + 3/5 operator grade cap the ceiling BELOW the 15-25% Core tier (cyclical recovery -> Confirmed ~10-12% max).",
   "kill_criteria": [
-    "Q4 FY2025 revenue misses guidance or gross margin fails to reach guidance",
-    "Price increases reverse or inventory/utilization worsens",
-    "Cloud / enterprise demand fails to improve",
-    "Flash Ventures or debt obligations create cash strain",
-    "Stock rerates materially before evidence improves"
+    "Non-GAAP gross margin FAILS to recover toward the guided 25.5-27.0% (or rolls back below the Q3 22.7%) over the next 1-2 quarters -> the cycle was not turning / the trough is deepening -> cut back toward tracking.",
+    "Enterprise/cloud SSD demand proves to be short-term RESTOCKING not durable AI demand (price increases reverse, undersupply does not materialize) -> the core mechanism is invalidated -> cut back toward cash.",
+    "Kioxia / Flash Ventures stress or a terms change crystallizes the ~$3.359B exposure / forces supply or capex against Sandisk's interest -> structural downside realized -> re-underwrite, likely trim/exit.",
+    "Balance sheet deteriorates in a prolonged trough (cash burn accelerates, debt rises to fund JV obligations, equity erodes through book) such that downside stops being survivable at the position size -> exit.",
+    "Governance failure: the new board waves through a value-destructive capital move (dilutive raise into the trough, overpriced M&A to 'grow into' the cycle) the Chair+CEO pushes -> governance risk realized -> trim/exit.",
+    "Key-executive departure early in the standalone life (e.g. the CFO leaves, consistent with his short prior tenures, or the architect-CEO exits) resets the leadership clock -> re-underwrite."
   ],
-  "runner_dissent": "WATCH/0% would over-penalize uncertainty. The correct response is small starter with hard confirmation gates.",
+  "runner_dissent": "Mild dissent on DIRECTION-of-emphasis, not on the STARTER call. The mechanical aggregation lands cleanly at STARTER 3% with a Confirmed-tier (12%) ceiling, and I hold it. The dissent: M6 price attractiveness is genuinely a +2 (below book, modest net debt, guided-up, forced-seller-depressed) and a case exists for a slightly larger initial position (4-5%, top of Starter) on the strength of the below-asset-value entry alone -- the kind of fat-pitch asymmetry the harness §5 was built to size into rather than under-size. I keep the initial at 3% (not 4-5%) for three disciplined reasons: (a) the recovery is GUIDED, not yet DELIVERED -- only one standalone quarter exists; (b) the cost base is JV-bounded and the obligations are a fixed downside claim in a trough; (c) the operator team is a 3/5 brand-new pairing with a governance concentration. So: start real at the low end of Starter, ADD aggressively on the first margin + demand confirmation (this is where most of the position should be earned), and let the cyclical nature cap the ceiling at Confirmed ~10-12% -- do NOT let it reach Core, because durability (not just confirmation) sets the ceiling and a NAND cyclical is not a 5-10 year hold-through-anything compounder. The existing-position verdict is ADD (delta from a sub-Starter holding up to the 3% Starter), NOT HOLD: at below-book with this asymmetry an under-weight holder should be building, not standing still.",
   "sources_used": [
     {"source_id": "S001", "public_date": "2025-02-24", "url_or_path": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-38"},
     {"source_id": "S002", "public_date": "2025-02-24", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/sandisk-celebrates-nasdaq-listing-after-completing-separation"},
@@ -83,9 +83,9 @@
     {"source_id": "S004", "public_date": "2025-05-07", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-07-sandisk-reports-fiscal-third-quarter-2025-financial-results"},
     {"source_id": "S005", "public_date": "2025-05-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000202355425000027/sndk-20250328.htm"},
     {"source_id": "S006", "public_date": "2025-05-26", "url_or_path": "https://www.trendforce.com/presscenter/news/20250526-12591.html"},
-    {"source_id": "S007", "public_date": "2025-06-04", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-06-sandisk-announces-launch-of-secondary-offering-of-common-stock"},
-    {"source_id": "S008", "public_date": "2025-06-06", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-06-sandisk-announces-pricing-of-upsized-secondary-offering-of-common-stock"},
-    {"source_id": "S009", "public_date": "2025-06-16", "url_or_path": "../../../../data/asof_2025_06_16_sndk_quotes.csv"},
+    {"source_id": "S007", "public_date": "2025-06-04", "url_or_path": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-announces-launch-secondary-offering-common-stock-0"},
+    {"source_id": "S008", "public_date": "2025-06-06", "url_or_path": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-announces-pricing-upsized-secondary-offering-common"},
+    {"source_id": "S009", "public_date": "2025-06-16", "url_or_path": "../../data/asof_2025_06_16_sndk_quotes.csv"},
     {"source_id": "S010", "public_date": "2025-01-31", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366d1012ba.htm"},
     {"source_id": "S011", "public_date": "2025-05-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525110314/d934557ds1a.htm"},
     {"source_id": "S012", "public_date": "2025-03-20", "url_or_path": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-results-second-quarter-fiscal-2025"}

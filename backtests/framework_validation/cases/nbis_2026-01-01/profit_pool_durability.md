@@ -1,52 +1,81 @@
-# M3 Profit Pool / Durability - NBIS 2026-01-01
+# M3 Profit Pool / Durability — NBIS 2026-01-01
+
+Role: **conviction**. Who captures the economics, why it persists, who runs it. Only info ≤ 2026-01-01.
 
 ## 0. Module Verdict
 
-- Role: conviction
-- M3 signal: **+1**
-- One line: NBIS sits at the scarce node of the AI value chain and is vertically integrated enough to earn above-reseller economics, but it is a fast-growing share-taker in a contestable market, not a structural monopoly -> supports ownership, does not justify a maximum-conviction CORE on durability alone.
+- **M3 signal: +1** (real, defensible-for-now economics capturing a scarce pool, but durability of the spread and
+  customer concentration cap it below +2; operator quality is the main thing lifting it off neutral).
+- Confidence: **medium**.
 
-## 1. Value Chain Map
+## 1. Value chain — where does the margin sit?
 
 ```
-Power & land  ->  Data-center build  ->  NVIDIA GPUs/systems  ->  Cloud software/orchestration  ->  Committed capacity / GPU-hours  ->  AI labs, hyperscalers, enterprises
-   (scarce)         (slow, capital-      (allocated, scarce)        (NBIS in-house: the              (the sold product)               (the payers)
-                     intensive)                                      differentiation)
+NVIDIA (GPUs) ─► NBIS (build: land+power+DC+network+own software stack) ─► dedicated capacity ─► Microsoft / Meta / AI-native core
+   supplier+SH            the capital-intensive integrator / operator                                 creditworthy demand
 ```
 
-- **Where the economics concentrate (the bottleneck):** the first three links -- *power-secured land, build velocity, and GPU allocation*. These are supply-constrained and time-gated (S020: multi-year transmission/turbine lead times; ~20% of projects at delay risk). Capital is abundant; energized capacity is not.
-- **Where NBIS plays:** the full stack. Unlike a pure GPU reseller, Nebius designs its own cloud software and hardware in-house (S013: MLPerf Inference v5.1 records on GB200/B200; first vendors to reach NVIDIA Exemplar status for training on H200). That lets it capture both the infrastructure rent and a software/orchestration margin layer.
+- The **scarce, rent-earning node** is the middle: **energized, networked, contract-ready capacity**. GPUs are a
+  commodity input (anyone can buy from NVIDIA, subject to allocation); **power + speed-to-build + a credible balance
+  sheet to pre-fund** are the differentiators.
+- NBIS is **vertically integrated** (it built Yandex's cloud/AI software stack; it is not just racking boxes), which
+  is a genuine differentiator vs. a pure colo/leasing play and supports a better-than-commodity margin **if** the
+  build executes.
 
-## 2. Bottleneck Analysis
+## 2. The bottleneck (the M3 core question)
 
-- **Primary bottleneck NBIS controls:** ~2.5GW of *contracted* power by end-2026 (raised from 1GW), with 800MW-1GW expected *connected* (S013). Securing land+power ahead of rivals is the durable scarce asset.
-- **Secondary scarce input:** current-generation NVIDIA systems. NBIS's NVIDIA strategic relationship (S015: NVIDIA as a Dec-2024 investor) and deployments of B200/B300/GB200 (S013) indicate preferential allocation -- a meaningful, if not exclusive, advantage.
-- **What NBIS does NOT control:** the hyperscalers themselves build enormous in-house capacity; rival neoclouds (CoreWeave, Crusoe, Lambda) are racing for the same power and GPUs. The bottleneck rent is shared and time-limited, not captured by one firm.
+- **Binding constraint = contracted→connected→active power.** Mgmt is explicit: *"the only real limitation on our
+  revenue growth in 2025 has been the amount of capacity we have been able to bring online"* (S013). Demand is not
+  the constraint; **delivery of energized capacity is.**
+- This is the **good kind** of bottleneck to sit behind **if you can clear it** — scarcity creates pricing power.
+  It is the **bad kind** if you *can't* clear it (capex sunk, revenue delayed) — which is precisely CoreWeave's
+  flagged data-center-delivery risk (S019) and the IEA's ~20%-of-projects-delayed warning (S020).
+- So M3's verdict hinges on **execution credibility**, which routes to the **operator** (below).
 
-## 3. Moat Assessment
+## 3. Moat / durability — how durable is the spread?
 
-| moat source | present? | strength | evidence |
-|---|---|---|---|
-| Scarce contracted power (secured land+grid) | Yes | Medium-high (time-gated, hard to replicate fast) | S013 (~2.5GW), S020 |
-| NVIDIA supply access | Yes | Medium (strategic, not exclusive) | S015, S013 |
-| Vertical integration (in-house SW+HW) | Yes | Medium (perf/reliability edge; hyperscalers can match) | S013 (MLPerf, Exemplar) |
-| Customer switching costs / committed contracts | Partial | Medium (multi-year deals are sticky; spot core is not) | S007, S008, S012 |
-| Scale economies | Building | Low-medium (sub-scale vs. hyperscalers; ahead of most neoclouds) | S013, S019 |
-| Brand / blue-chip validation | Yes | Medium (Microsoft+Meta as references) | S007, S012 |
-| Network effects | No | n/a | -- |
+Durability factors **FOR**:
+- **Anchor contracts** with Microsoft (~$17.4–19.4B/2031) and Meta (~$3B/5yr) create **multi-year revenue
+  visibility** and **switching friction** (dedicated, integrated capacity is sticky once provisioned).
+- **Counterparty credit quality** is itself an asset: it enables **asset-backed debt at better terms**, lowering the
+  cost-of-capital input to the spread (S007 financing intent).
+- **Builder pedigree** (ex-Yandex cloud/AI infra team) = a real, hard-to-replicate operating capability (operator
+  dossier; O03/O04).
+- **NVIDIA as supplier + shareholder** = preferential standing for GPU allocation (the other scarce input).
+- **Vertical software stack** = stickier than bare metal; supports higher utilization.
 
-- **Net moat read:** a *durable position in a scarce market for the medium term*, anchored by contracted power, NVIDIA access, and a vertical-integration performance edge -- but **not a wide, permanent moat**. The honest framing is "privileged share-taker in a structurally short-supplied market," which is enough for a meaningful position but argues against treating durability as bulletproof.
+Durability factors **AGAINST** (why this is +1, not +2):
+- **Spread is unproven and undisclosed.** Contract-level gross/EBIT margins are not public (open question Q1). Core
+  is ~19% adj-EBITDA margin (S013) — *positive*, but this is a **capital-intensive, depreciation-heavy** business;
+  the return that matters is **cash-on-cash on the build**, which is not disclosed. A bottleneck can be real and the
+  *operator* still earn a thin spread if pricing competes away or financing is dear.
+- **Customer concentration** is the canonical neocloud failure mode (CoreWeave = 62% Microsoft in 2024, S018). NBIS
+  has two named mega-customers; the mix of 2026 ARR dependent on Microsoft+Meta is undisclosed (Q4). Concentration
+  cuts both ways — blue-chip *and* fragile.
+- **Competitive set is deep-pocketed:** the hyperscalers build their own; CoreWeave, Oracle, and others chase the
+  same pool; NVIDIA allocation is contested. The rent may compress as supply catches up post-2026.
+- **Commodity drift risk:** GPU-hours can commoditize; differentiation must keep coming from software + power access
+  + cost of capital, not just "having GPUs."
 
-## 4. Operator / Management Underwriting
+## 4. Operator → durability ceiling (fold-in)
 
-- **Founder-led:** Arkady Volozh (founder/CEO), the original Yandex founder -- a proven operator who built a multi-product technology champion. Dual-class structure (Class A/B; S012) concentrates control with the founder: a double-edged sword (long-term vision vs. minority-holder dependence on alignment).
-- **Track record since relisting:** delivered an ARR ramp from ~$220M to ~$551M in three quarters, turned the core adjusted-EBITDA positive ahead of plan (S005), and landed two blue-chip contracts within ~12 months of relisting. Execution to date is strong.
-- **Capital allocation:** disciplined-but-aggressive. Raised strategic equity at a premium (Dec 2024, $21), then ~$4.2-4.3B in Sept 2025 (converts at a 50% premium + equity at $92.50), and signaled a multi-source financing plan (corporate debt + asset-backed + equity) with stated dilution sensitivity (S013). The use of asset-backed debt against creditworthy contracts (S007) is the right structure if it can be executed.
-- **Portfolio optionality:** retained and is monetizing non-core stakes -- ClickHouse (minority), Toloka (~$6.35B implied May 2025 round), Avride (Uber up to $375M, Oct 2025), TripleTen (~100% YoY growth) -- a source of value and potential funding without diluting the core (S013, S023).
-- **Watch-item:** the entire growth plan is contingent on continued access to capital markets at non-punitive terms; management's credibility on financing is the key operator variable.
+Per the operator dossier (`operator_background.md`), **operator grade = 4/5 (strong-but-capped)**:
+- **Lifts conviction:** an exceptional founder-market fit and a **proven, cohesive, ex-Yandex engineering team that
+  built this category before** materially de-risks the *execution* leg of the bottleneck — this is the single
+  biggest reason M3 is +1 and not 0. It argues NBIS is a **durable franchise candidate**, not a flimsy story stock.
+- **Caps the ceiling (counted once, within-band, per METHODOLOGY):** **dual-class founder voting control on a
+  minority economic stake (Nasdaq "Controlled Company"), key-man concentration on Volozh + a thin technical bench,
+  an unproven capital-allocation seat (CFO < 1 yr), and a residual geopolitical tail.** These do not break the
+  thesis but they **cap the high end of the durability tier** — they are the reason the eventual size ceiling is set
+  below the top compounder band.
 
-## 5. Profit-Pool Durability Verdict
+## 5. Profit-pool verdict
 
-- The profit pool is **real, large, and currently under-supplied** -- AI compute backed by scarce power. NBIS occupies a privileged node and earns above-reseller economics via vertical integration.
-- **Durability is medium, not maximal:** the rent is shared with well-funded rivals and the hyperscalers' own build-outs, and is vulnerable to a future capacity glut. The marquee contracts convert some of this into multi-year stickiness, but concentration is itself a risk (M5).
-- M3 emits **+1**: durability supports a position and a willingness to add on execution, but does not, by itself, justify a maximum CORE weight. The bottleneck (M2) and price/asymmetry (M6) carry the upside case; M3 confirms the rent is capturable without claiming it is permanent.
+- **Is there a real, capturable profit pool?** Yes — energized AI capacity earns scarcity rents, NBIS sits on the
+  rent-earning node, and it has the contracts + team + supplier standing to capture it.
+- **Is the capture durable?** **Partially / unproven.** Multi-year contracts + builder moat + counterparty-enabled
+  financing support durability; undisclosed spread economics + customer concentration + deep competition + the
+  governance/key-man discount cap it.
+- **Net:** **+1.** A good business capturing a scarce pool, run by a rare operator, but with the central economic
+  variable (the spread, and its durability) still unproven — exactly the kind of thing to **own at a tested size
+  with explicit confirmation gates**, not to back at maximum conviction yet.

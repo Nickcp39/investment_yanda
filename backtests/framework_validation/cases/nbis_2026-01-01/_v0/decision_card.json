@@ -1,0 +1,105 @@
+{
+  "ticker": "NBIS",
+  "company": "Nebius Group N.V.",
+  "as_of": "2026-01-01",
+  "pipeline_version": "lean_six_module_v0",
+  "weights_version": "W_v0",
+  "run_date": "2026-06-18",
+  "context_label": "exceptional_bottleneck + spinoff_re_rate_overlay",
+  "as_of_price": 83.71,
+  "as_of_market_cap_usd_bn": 21.08,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Reported facts (ARR ramp, two blue-chip contracts, net-cash 9/30/25) are high-confidence and primary-sourced; forward deal economics, financing path, and capacity-conversion are undisclosed. Haircut size, do not cap at WATCH.",
+      "drivers": ["S012", "S013", "S005", "S008", "S014"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Genuine exceptional_bottleneck: NBIS is a pure-play on scarce, power-secured AI capacity, re-rating from ex-Yandex orphan to AI platform. Market under-prices a contracted demand book (Microsoft + Meta) and a $7-9B 2026 ARR path.",
+      "drivers": ["S007", "S008", "S012", "S013", "S020", "S015"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Privileged, vertically integrated share-taker at the scarce node (contracted power + NVIDIA access + in-house full stack). Durable medium-term, but contested by hyperscalers and rival neoclouds; not a permanent monopoly.",
+      "drivers": ["S013", "S015", "S019", "S020"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Revenue tripled YoY each quarter; ARR ~$220M -> ~$551M in three quarters; core adj EBITDA turned positive (~19%); roughly net-cash at 9/30/25 with low-coupon long-dated converts. Warning: capex is enormous/front-loaded and the build is unfunded -> capital-markets dependent.",
+      "drivers": ["S001", "S003", "S005", "S006", "S012", "S013", "S009"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Real kill paths: dilution death-spiral, AI-capex glut/over-build, customer concentration (Microsoft+Meta), capacity-conversion lag, margin reversal. None confirmed at as-of; net-cash balance sheet, sold-out demand. Caps size; no veto. This is an expensive-growth risk, not a false-cheap or structural-decline trap.",
+      "drivers": ["S012", "S013", "S019", "S022"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "~$21B for a contracted ramp toward a $7-9B ARR exit is asymmetric but priced as growth, not a bargain. As-of $83.71 is below the $92.50 Sept-2025 equity print and far below the $138.75 convertible conversion reference. Starter with structured adds, not back-up-the-truck.",
+      "drivers": ["S014", "S009", "S010", "S013"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 2.0,
+  "suggested_max_size_pct": 4.0,
+  "buy_below_price": 90.0,
+  "starter_zone": "<= ~$90 (at/below the $92.50 Sept-2025 equity print) with thesis intact",
+  "add_zone": "$75-$95 after a clean ARR print on the $7-9B path AND evidence of debt-funded build; up to ~$120 if asset-backed financing closes",
+  "trim_or_no_chase_zone": "Far above ~$140 (toward/above the $138.75 convertible conversion reference) without commensurate ARR/financing proof",
+  "binding_constraint": "Financing the ~2.5GW build without ruinous dilution (asset-backed/corporate debt vs. repeated equity/ATM) while contracted power actually converts to ARR; until asset-backed debt is proven at scale, size is capped.",
+  "kill_criteria": [
+    "Core AI-infrastructure ARR decelerates materially or the $7-9B 2026 exit target is walked back",
+    "Connected/active power lags the guided path (220MW connected by CYE2025; 800MW-1GW by CYE2026)",
+    "A marquee customer (Microsoft or Meta) renegotiates, materially delays, or cancels",
+    "Next major financing is equity-heavy below the $92.50 Sept-2025 print, or asset-backed debt fails to materialize",
+    "Core adjusted-EBITDA margin reverses back toward break-even",
+    "Industry-wide ASP/utilization deterioration signals a capacity glut"
+  ],
+  "runner_dissent": "The mechanical pipeline could err two ways: (a) REJECT/WATCH because NBIS is loss-making, optically expensive, and capital-markets-dependent -- the classic exceptional_bottleneck failure of missing the starter; or (b) CORE because the bottleneck narrative and blue-chip contracts are so compelling. I override toward a disciplined STARTER (2%, max 4% pre-confirmation). The contracted demand book and scarce-bottleneck asymmetry justify owning it now; the unfunded ~2.5GW build and dilution risk forbid a high-conviction core until asset-backed financing is demonstrated. Correct control: own small, add on financing + ARR confirmation -- not wait for perfect evidence, not max-size the story.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2025-02-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925015480/tm257185d1_ex99-1.htm"},
+    {"source_id": "S002", "public_date": "2025-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000155837025005991/nbis-20241231x20f.htm"},
+    {"source_id": "S003", "public_date": "2025-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465925050975/tm2515580d1_ex99-1.htm"},
+    {"source_id": "S004", "public_date": "2025-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465925050975/tm2515580d1_ex99-2.htm"},
+    {"source_id": "S005", "public_date": "2025-08-07", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm"},
+    {"source_id": "S006", "public_date": "2025-08-07", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-2.htm"},
+    {"source_id": "S007", "public_date": "2025-09-08", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_ex99-1.htm"},
+    {"source_id": "S008", "public_date": "2025-09-08", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_6k.htm"},
+    {"source_id": "S009", "public_date": "2025-09-10", "url_or_path": "https://nebius.com/newsroom/nebius-group-announces-pricing-of-upsized-private-offering-of-2-75-billion-of-convertible-senior-notes"},
+    {"source_id": "S010", "public_date": "2025-09-10", "url_or_path": "https://nebius.com/newsroom/nebius-group-announces-pricing-of-1-billion-public-offering-of-class-a-ordinary-shares"},
+    {"source_id": "S011", "public_date": "2025-09-15", "url_or_path": "https://nebius.com/newsroom"},
+    {"source_id": "S012", "public_date": "2025-11-11", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm"},
+    {"source_id": "S013", "public_date": "2025-11-11", "url_or_path": "https://assets.nebius.com/assets/94ab89ea-f954-4516-89f0-1c137e0edd56/Nebius%20Group%20Q3%20Shareholder%20Letter.pdf"},
+    {"source_id": "S014", "public_date": "2025-12-31", "url_or_path": "../../../data/asof_2025_12_31_nbis_quotes.csv"},
+    {"source_id": "S015", "public_date": "2024-12-02", "url_or_path": "https://nebius.com/newsroom/nebius-announces-oversubscribed-strategic-equity-financing-of-usd-700-million-to-accelerate-roll-out-of-full-stack-ai-infrastructure"},
+    {"source_id": "S016", "public_date": "2024-10-17", "url_or_path": "https://nebius.com/newsroom/nebius-group-announces-planned-resumption-of-trading-on-nasdaq-and-provides-investor-update"},
+    {"source_id": "S017", "public_date": "2024-02-05", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001513845/000151384524000002/yndx-20240205xex99d1.htm"},
+    {"source_id": "S018", "public_date": "2025-03-27", "url_or_path": "https://www.prnewswire.com/news-releases/coreweave-announces-pricing-of-initial-public-offering-302413879.html"},
+    {"source_id": "S019", "public_date": "2025-11-10", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962825000059/coreweave3q25earningspress.htm"},
+    {"source_id": "S020", "public_date": "2025-04-10", "url_or_path": "https://www.iea.org/reports/energy-and-ai/executive-summary"},
+    {"source_id": "S021", "public_date": "2025-12-13", "url_or_path": "https://www.nasdaq.com/press-release/annual-changes-nasdaq-100-indexr-2025-12-13"},
+    {"source_id": "S022", "public_date": "2025-12-30", "url_or_path": "https://www.benzinga.com/insights/short-sellers/25/12/49632133/peering-into-nebius-group-nvs-recent-short-interest"},
+    {"source_id": "S023", "public_date": "2025-10-01", "url_or_path": "https://nebius.com/newsroom"}
+  ]
+}

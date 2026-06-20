@@ -16,9 +16,9 @@ Master tracker for the framework-validation as-of backtest cases. Each case live
 
 | case_id | ticker | as-of | anchor | test it exercises | status |
 |---|---|---|---|---|---|
-| sndk_2025-06-16 | SNDK | 2025-06-16 | spin-off + NAND/AI-storage cycle | spin-off / cyclical inflection | **built+scored** |
-| nbis_2026-01-01 | NBIS | 2026-01-01 | post-Q3'25; MSFT/Meta deals; ~2.5GW power | exceptional_bottleneck (winner) | **built** (outcome_score pending) |
-| mu_2025-03-21 | MU | 2025-03-21 | Q2 FY25; memory down-leg + HBM/AI mix | cyclical_inflection (+ HBM bottleneck) | **built** (self-run; audit/score pending) |
+| sndk_2025-06-16 | SNDK | 2025-06-16 | spin-off + NAND/AI-storage cycle | spin-off / cyclical inflection | **built+scored (v1)** (WINNER ~45× prov.; PASS · sd0; v0 archived in `_v0/`) |
+| nbis_2026-01-01 | NBIS | 2026-01-01 | post-Q3'25; MSFT/Meta deals; ~2.5GW power | exceptional_bottleneck (winner) | **built+scored (v1)** (WINNER +217% prov. ~5.5mo; PASS · sd1; v0 archived) |
+| mu_2025-03-21 | MU | 2025-03-21 | Q2 FY25; memory down-leg + HBM/AI mix | cyclical_inflection (+ HBM bottleneck) | **built+scored (v1)** (WINNER +982% prov.; PASS · sd1; v0 archived) |
 | aapl_2016-05-12 | AAPL | 2016-05-12 | Q2 FY16: first revenue decline in 13y; "ex-growth?" fear | quality_compounder mispriced as ex-growth | **materials — test-ready ✓** |
 | intc_2024-08-02 | INTC | 2024-08-02 | Q2'24 crash: miss + ~15% layoffs + dividend suspended, −26% day | real turnaround-bottom vs falling knife | **built+scored** (WINNER +445%; **FAIL** — missed turnaround, size-dist 3) |
 | dis_2021-11-11 | DIS | 2021-11-11 | Q4 FY21: Disney+ sub miss; linear TV decline | structural-decline trap behind a strong brand | **materials — test-ready ✓** |

@@ -1,0 +1,93 @@
+{
+  "ticker": "SNDK",
+  "company": "Sandisk Corporation",
+  "as_of": "2025-06-16",
+  "pipeline_version": "lean_six_module_v0",
+  "weights_version": "W_v0",
+  "run_date": "2026-06-17",
+  "context_label": "spinoff_forced_seller + cyclical_inflection",
+  "as_of_price": 44.21,
+  "as_of_market_cap_usd_bn": 6.41,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "medium",
+      "finding": "Primary evidence is adequate, but standalone history is short.",
+      "drivers": ["S001", "S004", "S005", "S009", "S010", "S011"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "medium",
+      "finding": "Spin-off dislocation plus NAND supply discipline and AI / enterprise SSD demand create an asymmetric setup.",
+      "drivers": ["S001", "S004", "S006", "S007", "S008", "S011", "S012"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "medium",
+      "finding": "Sandisk can capture cycle upside, but NAND is not a permanent monopoly moat.",
+      "drivers": ["S002", "S004", "S005", "S006", "S010", "S012"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "medium",
+      "finding": "GAAP loss is distorted by impairment; liquidity is survivable; margin confirmation is still required.",
+      "drivers": ["S004", "S005", "S012"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "medium",
+      "finding": "Memory-cycle, Kioxia / Flash Ventures, and false-inflection risks cap size but do not veto.",
+      "drivers": ["S005"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 2,
+      "confidence": "medium",
+      "finding": "$6.4B equity value is small versus plausible normalized earnings power if the cycle turns.",
+      "drivers": ["S005", "S009"]
+    }
+  ],
+  "business_verdict": "messy_but_asymmetric",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 1.5,
+  "suggested_max_size_pct": 3.0,
+  "buy_below_price": 45.0,
+  "starter_zone": "$35-$45",
+  "add_zone": "$45-$60 after revenue / margin confirmation",
+  "trim_or_no_chase_zone": "Above $90 without proof of durable margin and enterprise demand",
+  "binding_constraint": "Gross margin, enterprise/cloud revenue, and inventory/utilization confirmation",
+  "kill_criteria": [
+    "Q4 FY2025 revenue misses guidance or gross margin fails to reach guidance",
+    "Price increases reverse or inventory/utilization worsens",
+    "Cloud / enterprise demand fails to improve",
+    "Flash Ventures or debt obligations create cash strain",
+    "Stock rerates materially before evidence improves"
+  ],
+  "runner_dissent": "WATCH/0% would over-penalize uncertainty. The correct response is small starter with hard confirmation gates.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2025-02-24", "url_or_path": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2025-38"},
+    {"source_id": "S002", "public_date": "2025-02-24", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/sandisk-celebrates-nasdaq-listing-after-completing-separation"},
+    {"source_id": "S003", "public_date": "2025-02-24", "url_or_path": "https://www.westerndigital.com/company/newsroom/press-releases/2025/2025-02-24-western-digital-completes-planned-company-separation"},
+    {"source_id": "S004", "public_date": "2025-05-07", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-07-sandisk-reports-fiscal-third-quarter-2025-financial-results"},
+    {"source_id": "S005", "public_date": "2025-05-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000202355425000027/sndk-20250328.htm"},
+    {"source_id": "S006", "public_date": "2025-05-26", "url_or_path": "https://www.trendforce.com/presscenter/news/20250526-12591.html"},
+    {"source_id": "S007", "public_date": "2025-06-04", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-06-sandisk-announces-launch-of-secondary-offering-of-common-stock"},
+    {"source_id": "S008", "public_date": "2025-06-06", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-06-sandisk-announces-pricing-of-upsized-secondary-offering-of-common-stock"},
+    {"source_id": "S009", "public_date": "2025-06-16", "url_or_path": "../../../../data/asof_2025_06_16_sndk_quotes.csv"},
+    {"source_id": "S010", "public_date": "2025-01-31", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366d1012ba.htm"},
+    {"source_id": "S011", "public_date": "2025-05-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525110314/d934557ds1a.htm"},
+    {"source_id": "S012", "public_date": "2025-03-20", "url_or_path": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-results-second-quarter-fiscal-2025"}
+  ]
+}

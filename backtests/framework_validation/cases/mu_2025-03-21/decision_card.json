@@ -1,9 +1,9 @@
 {
   "ticker": "MU",
   "as_of": "2025-03-21",
-  "pipeline_version": "lean_six_module_v0",
-  "weights_version": "W_v0",
-  "run_date": "2026-06-18",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-19",
   "context_label": "cyclical_inflection",
   "as_of_price": 94.72,
   "as_of_market_cap": 105600000000,
@@ -13,7 +13,7 @@
       "role": "confidence",
       "signal": 1,
       "confidence": "high",
-      "finding": "Primary filings give high-confidence facts on Q2 FY25, full-cycle history, mix, and a dated price; normalized-earnings and HBM-margin durability are the medium-confidence gaps -> modest size haircut, not a cap to WATCH.",
+      "finding": "Evidence quality is high: FQ2 FY25 financials, full-cycle history, mix, and balance sheet all trace to primary filings (FQ2 release S1 + 10-Q S4, FQ1 release S2, FY24 10-K S3); as-of price $94.72 verified and now two-source-corroborated (statmuse $94.37, ~8% post-print drop). The binding uncertainties are NOT evidentiary but (a) FORWARD (HBM durability, next-quarter ASP/margin direction) and (b) a disclosed GAP (no independent dated DRAM/HBM price index in-pack; industry-pricing direction rests on Micron's own ASP commentary = a lead, not proof) and (c) MODELED (normalized through-cycle EPS ~$2.7-4.5 is an estimate, not disclosed). Per harness these become a SIZE HAIRCUT, not a WATCH cap. Confidence high on the reported facts; the gaps justify a haircut, not a veto.",
       "drivers": ["S1", "S2", "S3", "S4", "S5"]
     },
     {
@@ -21,7 +21,7 @@
       "role": "context",
       "signal": 1,
       "confidence": "med",
-      "finding": "Memory up-cycle plus structural data-center/HBM mix shift (data center >50% of revenue, HBM >$1B/qtr); market overweighting a one-quarter GM wobble and underweighting the rising earnings floor. Context = cyclical_inflection with an exceptional_bottleneck HBM sleeve.",
+      "finding": "Theme: AI is creating a NEW scarce high-margin memory bottleneck (HBM / leading-node data-center DRAM) on top of a commodity-memory cycle that is itself on a confirmed up-leg, and Micron is 1 of only 3 suppliers. Dated and real: HBM revenue crossed $1B/qtr, data-center DRAM hit a record, DC revenue tripled YoY and surpassed 50% of total (FQ1). The ~8% drop on 2025-03-21 is a sentiment dislocation against a financially improving company - the market over-weights the QoQ revenue dip + guided GM step-down (mix/consumer softness) and under-weights HBM as a scarce, contracted, higher-margin pool re-weighting the mix. Net mildly positive: a genuine cyclical-inflection-with-secular-overlay opportunity, NOT a structural-decline trap (pool growing, balance sheet survives). The one metric that resolves the bull/bear split: HBM + data-center DRAM revenue and gross-margin trajectory.",
       "drivers": ["S1", "S2", "S3", "S5"]
     },
     {
@@ -29,56 +29,63 @@
       "role": "conviction",
       "signal": 1,
       "confidence": "med",
-      "finding": "Durable sleeve = HBM + data-center DRAM (scarce, pricing power, qualified-in) vs commodity DRAM/NAND (no moat, SBU still loss-making in FY24). Rational 3-player DRAM oligopoly + leading-edge node; but HBM premium is a contestable bottleneck rent, not a permanent moat.",
-      "drivers": ["S1", "S3"]
+      "finding": "The pool is BIFURCATED and must be split. Half A (HBM + leading-node data-center DRAM = the AI bottleneck): >$1B/qtr, growing, scarce, capacity-allocated, contracted, technically gated (advanced packaging + leading-edge yield), 3-player oligopoly - genuinely higher-quality than commodity memory and the ONLY thing that can raise Micron's structural ceiling; but durability across a FULL cycle is unproven vs a formidable leader. Half B (commodity DRAM ~70% / NAND ~29%): oligopoly but fundamentally cyclical/spot-exposed (FY22 peak -> FY23 -$5.8B loss -> FY24 recovery), low durability, NOT eroding (cyclical, not structural). Blended = a high-quality unproven-durable AI pool growing on a low-durability commodity base; mix shifting the right way. Operator/team life-arc grade 4/5 (per operator_background.md): founder-grade memory-industry CEO Mehrotra (~8 yrs + ~28-yr SanDisk co-founder track), cohesive imported core (Sadana P&L / Bhatia ops) + deep lifer technologist (DeBoer 29 yrs, owns HBM/DRAM roadmap), clean one-share-one-vote governance, team ALREADY cycle-tested (FY23 trough -> FY25 recovery). KEY INTERACTION: the 4/5 grade RAISES conviction WITHIN the cyclical band but per METHODOLOGY does NOT lift the structural ceiling above the cyclical Confirmed tier (~10-15%) - operator quality does not convert commodity memory into a 5-10yr secular compounder; only durable HBM differentiation could, and that is the open thesis question. Net +1, not +2: real growing higher-quality pool + strong team, but majority-commodity and HBM-durability-unproven.",
+      "drivers": ["S1", "S2", "S3", "O02", "O04", "O05"]
     },
     {
       "module": "M4 Financial Reality",
       "role": "conviction",
-      "signal": 0,
+      "signal": 1,
       "confidence": "med",
-      "finding": "Clearly mid-cycle UP-leg (FY22 +$8.7B peak, FY23 -$5.8B trough, FY24 +$0.8B recovery, FY25 1H ~$6.9B annualized). ~15x run-rate but ~21-35x normalized through-cycle EPS; FCF only $857M vs $3.1B/qtr capex. Balance sheet survives (net debt ~$4.76B, ND/equity ~0.10). Confirms up-cycle + survivability but refutes the 'optically cheap' reflex -> net neutral.",
-      "drivers": ["S1", "S3"]
+      "finding": "Accounting CONFIRMS the up-leg with NO fraudulent trailing-earnings trap, but the CYCLE POSITION is the central caveat. Reported: FQ2 rev $8,053M (+38% YoY, -8% QoQ), GAAP GM 36.8% (from 18.5% YoY), non-GAAP EPS $1.56 (beat), OCF $3.94B, net capex $3.085B, adj FCF $857M (thin), cash+inv $9.60B vs debt $14.36B (net debt ~$4.76B), equity $48.6B - survivable, no bankruptcy risk. FQ3 guided to RECORD revenue $8.80B but a further non-GAAP GM step-down to 36.5%. CYCLE: FY22 $8.7B NI (peak) -> FY23 -$5.8B loss (trough, $1.8B NRV write-down) -> FY24 $0.78B -> FY25 run-rate ~$6.2 non-GAAP EPS = a confirmed MID-CYCLE UP-LEG, not trough, not yet peak. NORMALIZATION (the discipline): the ~15x run-rate multiple is on UP-LEG earnings; on modeled normalized EPS ~$3.5 the stock is ~27x = NOT cheap; P/B 2.17x is mid-cycle. HBM/data-center mix MAY raise the through-cycle margin floor structurally (legit) but the magnitude is unproven across a cycle. Watch-items: capex ~= OCF (FCF turns negative in a down-cycle); inventory $9,007M elevated (early-glut tell if it rises into softening ASPs); QoQ dip + GM step-down = first soft signals. +1 not +2: real cash-backed recovery, but size off NORMALIZED economics, not the flattering run-rate.",
+      "drivers": ["S1", "S2", "S3", "S4"]
     },
     {
       "module": "M5 Inversion / Trap Test",
       "role": "risk",
       "signal": -1,
       "confidence": "med",
-      "finding": "Live risks: cyclical-peak trap (buying above mid-cycle earnings), oversupply/capex black hole, HBM-premium compression from Samsung/SK Hynix. No hard veto: profit pool is growing not eroding and balance sheet survives a normal downcycle -> warning that caps size, not a zero.",
-      "drivers": ["S1", "S3", "S5"]
+      "finding": "NO HARD VETO. The main risk is a PARTIAL false_cheap_value_trap (the up-cycle-EPS trap): at ~15x run-rate the stock looks cheap, but that EPS is an up-leg number (~27x on normalized ~$3.5); the QoQ revenue dip + guided GM step-down + named consumer softness are the early signals that the commodity ASP tailwind is maturing, and IF the cycle rolls while capex stays ~$3B/qtr the result is a glut (ASPs fall, utilization drops, FCF negative). This is real and is why size is CAPPED. BUT it is NOT a full trap: structural_decline_trap is ABSENT (pool growing not eroding, gaining DC mix, moat intact/strengthening on HBM - unlike INTC-DCG); yield_or_balance_sheet_trap is ABSENT (cash $9.60B vs debt $14.36B, equity $48.6B, FY23 -$5.8B loss absorbed without distress, tiny dividend - no bankruptcy path). Hard-veto conditions (moat erosion / normalized FAR below trailing AND structurally impaired / capex destroying owner earnings on a DECLINING pool / permanent impairment) are NOT met - the impairment here is CYCLICAL (recoverable), not STRUCTURAL (permanent). Strongest bear case (credible, caps size, but survivable): you pay a full normalized multiple on up-leg earnings hoping HBM permanently lifts through-cycle margin; if the cycle rolls and HBM normalizes you lose 40-60% to normalized fair value - a drawdown-to-fair-value risk, not a zero. So M5 = size cap, not kill.",
+      "drivers": ["S1", "S2", "S3", "S4"]
     },
     {
       "module": "M6 Price / Position / Monitor",
       "role": "price",
-      "signal": 0,
+      "signal": 1,
       "confidence": "med",
-      "finding": "At $94.72 (post-~8% print de-rate) the entry is fair-not-cheap: ~15x up-leg run-rate, ~21-35x normalized. Acceptable for a small starter; real accumulation reserved $70-85; trim/no-chase >$115-120. Good company, only an acceptable buy-point.",
-      "drivers": ["S1", "S5"]
+      "finding": "At $94.72 (~$105.6B mkt cap, ~$110B EV) MU trades ~15x up-leg run-rate non-GAAP EPS / ~27x modeled normalized EPS (~$3.5) / ~2.17x book, after an ~8% post-print drop. For a CYCLICAL on a confirmed up-leg, the cyclical_inflection rule says price off NORMALIZED mid-cycle economics - on which this is FAIR, not cheap (you are not getting a trough entry near ~1x book). The mild positive is the dislocation (~8% drop on a mix blip, not a thesis break) + favorable asymmetry at small size: survivable downside (fortress-enough balance sheet, no bankruptcy path, recoverable cyclical drawdown) against the HBM/AI-memory optionality, at a book multiple that is mid-range not stretched. This supports a STARTER now with room to add into weakness or on confirmation; it does NOT support paying up aggressively or full-sizing, because the entry is mid-cycle (not trough) and on a full normalized multiple. Not a fat pitch; a sensible asymmetric starter.",
+      "drivers": ["S5", "S1", "S3"]
     }
   ],
   "business_verdict": "good",
   "new_money_verdict": "STARTER",
   "existing_position_verdict": "HOLD",
-  "suggested_initial_size_pct": 1.5,
-  "suggested_max_size_pct": 4.0,
-  "buy_below_price": 95.0,
-  "starter_zone": "$85-$95",
-  "add_zone": "$70-$85",
-  "trim_or_no_chase_zone": ">$115-$120",
-  "binding_constraint": "M5 cyclical-peak risk anchored by M4 normalization: paying ~21-35x normalized through-cycle earnings for a commodity-heavy memory cyclical in its up-leg caps the position to a small starter with adds staged lower; no hard veto because the balance sheet survives the cycle and the data-center/HBM profit pool is growing.",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 95,
+  "starter_zone": "<= ~$95 (at/around the as-of $94.72 post-drop level; the ~8% dislocation gives a sensible starter entry on normalized-fair economics)",
+  "add_zone": "$70-$85 on cyclical/market weakness (closer to ~1.6-1.8x book, a better normalized entry), OR at any price once a forward confirmation lands: HBM + data-center DRAM revenue keeps growing AND blended gross margin holds/re-expands (proving the GM step-down was a mix blip, not a cycle top) AND inventory does not balloon into softening ASPs. Add toward the ~10-15% Confirmed tier on that confirmation - a cyclical caps below Core.",
+  "trim_or_no_chase_zone": "No-chase well above normalized fair value (paying up for up-leg earnings as if permanent - e.g. a multiple that only works on peak EPS). Trim only on the four methodology triggers (thesis wrong / absurd price vs normalized value / clearly better idea / thesis disconfirmed). A QoQ dip or high weight alone is NOT a trim reason.",
+  "binding_constraint": "M4/M5 cycle-position + M3 HBM-durability: you are buying a majority-commodity cyclical on a confirmed MID-CYCLE UP-LEG at a FULL normalized multiple (~27x on ~$3.5 normalized EPS; the ~15x run-rate is on flattered up-leg earnings), on the unproven thesis that HBM/AI-memory permanently raises the through-cycle margin floor. The QoQ revenue dip + guided GM step-down + named consumer softness are early signals the commodity ASP tailwind may be maturing. This is what holds the position at STARTER and caps it at the ~10-15% Confirmed tier (NOT Core): the 4/5 operator team and growing HBM pool lift conviction WITHIN the cyclical band, but conviction/size into the ceiling must be EARNED by HBM differentiation + blended margin durability proving out (and the GM step-down NOT extending into a cycle top). A size + cycle-timing constraint, not a veto.",
   "kill_criteria": [
-    "Two consecutive quarters of declining data-center/HBM revenue AND gross margin (up-cycle rolls over before the structural floor is proven).",
-    "HBM ASP/premium visibly compressing as Samsung/SK Hynix capacity floods the accelerator socket.",
-    "Industry capex signalling 2026 oversupply with Micron inventory building faster than revenue (NRV-write-down regime returning).",
-    "Balance-sheet deterioration: net debt rising materially with durably negative through-cycle FCF."
+    "Cyclical rollover confirmed: data-center/HBM demand softens OR commodity AND HBM ASPs decline together, gross margin steps down FURTHER beyond the FQ3 guide, while capex stays ~$3B/qtr -> glut; cut back toward tracking.",
+    "HBM differentiation fails: HBM share/qualification slips vs the leader, or HBM pricing normalizes fast as all three players flood capacity -> the Half-A premium evaporates and MU re-commoditizes; cut back.",
+    "Capex destroys FCF: sustained ~$3B/qtr capex into a down-cycle with FCF deeply negative and balance-sheet stress -> the multi-year build was mis-timed; reassess.",
+    "Inventory glut signal: inventory keeps rising into softening ASPs (the early glut tell) -> trim / do not add.",
+    "Normalized-earnings thesis breaks: evidence the HBM mix does NOT structurally lift the through-cycle margin floor (blended margin reverts to prior-cycle levels) -> the full normalized multiple paid is unjustified; cut back."
   ],
-  "runner_dissent": "Mild. Harness logic (real bottleneck + survivable balance sheet + growing profit pool, no veto) supports a STARTER and I concur, but the entry is ABOVE mid-cycle earnings on a contestable HBM premium, so I deliberately kept initial size small (1.5%) and placed the true accumulation zone $10-25 lower. A strict cyclical-discipline investor could defend WATCH-until-$85; I chose a small STARTER because the data-center mix shift gives this cycle a credibly higher floor and the downside is survivable at this size. No post-as-of information was used.",
+  "runner_dissent": "Mild dissent on ENTRY TIMING / size, not direction. The mechanical read parks this at STARTER 4% with a 12% Confirmed-tier ceiling, which I endorse as correct for a cyclical entered mid-up-leg at a full normalized multiple. The genuine tension the framework handles well here (vs the old framework that would either chase the ~15x 'cheap' run-rate multiple OR reject a cyclical outright): this is a real asymmetric starter - a strong 4/5 cycle-tested team capturing a growing, scarce HBM pool, with survivable downside - so REJECT would be wrong; but it is NOT trough-cheap and the up-leg + GM-step-down argue against full-sizing, so CORE would also be wrong. One residual caution I want explicit: a better normalized entry sits lower (~$70-85, closer to 1.6-1.8x book); a disciplined cyclical investor could legitimately run this as a 1-2% tracking sliver here and wait for either a cheaper price or a confirmation that the GM step-down was a mix blip, rather than a full 4% starter at a mid-cycle price. I hold the 4% starter because the ~8% dislocation + the HBM optionality + survivable downside make a real (not tracking) initial position defensible, with the explicit discipline to add only on confirmation and to size off NORMALIZED, not run-rate, economics.",
   "sources_used": [
     {"source_id": "S1", "public_date": "2025-03-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000006/a2025q2ex991-pressrelease.htm"},
     {"source_id": "S2", "public_date": "2024-12-18", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000046/a2025q1ex991-pressrelease.htm"},
     {"source_id": "S3", "public_date": "2024-10-04", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/mu-20240829.htm"},
     {"source_id": "S4", "public_date": "2025-03-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000009/mu-20250227.htm"},
-    {"source_id": "S5", "public_date": "2025-03-21", "url_or_path": "https://stockanalysis.com/stocks/mu/history/"}
+    {"source_id": "S5", "public_date": "2025-03-21", "url_or_path": "https://stockanalysis.com/stocks/mu/history/"},
+    {"source_id": "O01", "public_date": "2025-03-21", "url_or_path": "https://en.wikipedia.org/wiki/Sanjay_Mehrotra"},
+    {"source_id": "O02", "public_date": "2019-02-14", "url_or_path": "https://www.computerhistory.org/collections/catalog/102740456"},
+    {"source_id": "O03", "public_date": "2022-04-18", "url_or_path": "https://investors.micron.com/news-releases/news-release-details/micron-appoints-mark-murphy-executive-vice-president-and-chief"},
+    {"source_id": "O04", "public_date": "2025-03-21", "url_or_path": "https://www.micron.com/about/company/leadership"},
+    {"source_id": "O05", "public_date": "2025-03-21", "url_or_path": "https://www.micron.com/about/company/leadership/scott-deboer"},
+    {"source_id": "O06", "public_date": "2016-05-12", "url_or_path": "https://en.wikipedia.org/wiki/Eli_Harari"}
   ]
 }

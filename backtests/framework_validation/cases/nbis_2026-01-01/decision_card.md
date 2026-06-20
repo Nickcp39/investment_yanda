@@ -1,86 +1,94 @@
-# M6 Decision Card - NBIS 2026-01-01
+# M6 Decision Card — NBIS 2026-01-01
 
-## 0. Final Verdict
+Pipeline: **lean-6module-v1** · weights: **none** · run_date: **2026-06-19** · as-of: **2026-01-01** (BLIND).
+Context: **`exceptional_bottleneck`**. As-of price **$83.71** (2025-12-31 close) · as-of market cap **~$21.1B**.
 
-- Business verdict: **good** (real, audited, hyper-scaling AI-infra platform at a scarce node; not yet "exceptional" because durability is medium and the growth is unfunded).
-- New-money verdict: **STARTER**.
-- Existing-position verdict: **HOLD** (ADD only on ARR + financing confirmation; do not chase spikes).
-- Suggested initial size: **2.0%**.
-- Suggested max size: **4.0%** before full confirmation; up to ~5% only if asset-backed financing closes and ARR tracks the $7-9B path.
-- As-of price: **$83.71** (2025-12-31 close).
-- Approximate as-of market cap: **~$21.1B** (251.8M shares x $83.71; ~$18.3B on Class A only).
-- M5 veto flag: **false**.
+> This card is LOCKED for scoring. No outcome scoring here. Only information public ≤ 2026-01-01 was used; the
+> `_v0/` pilot archive was NOT read.
 
-## 1. Module Signal Summary
+## Module signal summary
 
-| module | signal | role | sizing effect |
-|---|---:|---|---|
-| M1 Evidence Spine | 0 | confidence | Reported facts high-confidence; forward economics undisclosed -> haircut size, do not cap at WATCH. |
-| M2 Theme / Mechanism | +2 | context / conviction | Genuine exceptional_bottleneck (power+GPU) with a re-rating overlay; market under-prices the contracted demand book. |
-| M3 Profit Pool / Durability | +1 | conviction | Privileged, vertically integrated share-taker in a scarce market; durable for the medium term, not a permanent monopoly. |
-| M4 Financial Reality | +1 | conviction / warning | ARR ramp and core-margin inflection are real; net-cash today; but capex is huge and financing is unproven. |
-| M5 Inversion / Trap | -1 | risk | Dilution / glut / concentration / conversion risks cap size; no confirmed veto. |
-| M6 Price / Position | +1 | price / output | ~$21B for a contracted ramp toward a $7-9B ARR exit is asymmetric, but priced as growth, not a bargain -> starter, not back-up-the-truck. |
+| Module | Role | Signal | One-line |
+|---|---|---:|---|
+| M1 Evidence Spine | confidence | **0** | Reported facts high-confidence; forward economics low-confidence → haircut size, don't WATCH. |
+| M2 Theme / Mechanism | context | **+2** | Real power/capacity bottleneck; "sold out"; Microsoft+Meta anchors; forcing metric = connected MW + ARR. |
+| M3 Profit Pool / Durability | conviction | **+1** | Sits on the rent-earning node; A-team built this before; capped by undisclosed spread + concentration + governance. |
+| M4 Financial Reality | conviction/warning | **0** | Operating trend confirms (+1); funding model warns (−1) → size cap + financing kill-gate, not veto (net-cash). |
+| M5 Inversion / Trap | risk | **−1** | Reflexive financing dependence + concentration + unproven spread + conversion slip → kill-gates, NO hard veto. |
+| M6 Price / Position | price | **+1** | Below the $92.50 print and $138.75 conv. ref, into a contested tape → structured entry, not a chase. |
 
-Aggregate read: +2 +1 +1 (confidence 0) -1, with a +1 price signal -> a clearly positive, size-with-discipline setup. The dominant module is M2 (bottleneck), gated by M4/M5 (financing/risk).
+**Aggregation (qualitative, per WEIGHTING_HARNESS + METHODOLOGY):** in `exceptional_bottleneck` the positive weight
+sits on M2/M3/M4. Conviction is genuinely positive (M2 +2 dominant, M3 +1, M4 neutral); the M5 −1 risk penalty is
+real but moderate; **no hard-veto trigger fires** (balance sheet survivable/net-cash at 9/30/25; not a structural-
+decline or false-cheap trap). The methodology's named failure for this context — *under-sizing the starter because
+the multiple looks optically expensive* — is the trap to avoid. Result: a **risk-controlled STARTER**, with the
+**durability ceiling capped below Core** because the spread's durability is unproven and the operator grade (4/5) is
+discounted for governance/key-man.
 
-## 2. Scenario Table
+## The card
 
-| scenario | assumptions | value implication | action |
-|---|---|---|---|
-| Downside / wrong | Conversion lags, financing turns dilutive, glut fears hit; ARR stalls well below target | Multiple compresses hard; ~$21B cap halves or worse on a forward miss + dilution | Cut to 0-1%; let kill gates fire |
-| Base | ARR compounds toward the lower half of $7-9B exit; core margin holds high-teens-to-20s%; build funded with a mix incl. asset-backed debt | Re-rates from "neocloud" toward "AI platform"; current cap looks modest vs. forward earnings power | Maintain starter; add to 3-4% on confirmation |
-| Upside | ARR reaches/exceeds the $7-9B path; more hyperscaler contracts; asset-backed debt proves the model fundable at scale | Large normalized-earnings power vs. as-of cap; sustained compounding | Add on milestones; let the winner run within risk budget |
-| Kill case | Marquee customer cancels, or financing only available on distressed terms, or core margin reverses | Permanent impairment risk | Exit / reject |
+- **Business verdict:** **good** (real, audited, fast-inflecting bottleneck business with blue-chip anchors and an
+  A-team; not yet "exceptional" because the build spread and funding-without-dilution are unproven).
+- **New-money verdict:** **STARTER.**
+- **Existing-position verdict:** **HOLD** (if already owned at ≈ starter size: hold the thesis-sized position; add
+  only on confirmation — do not trim on weight alone; cut on a kill-criterion).
+- **Suggested initial size:** **~3%** (low end of Starter — deliberate, given reflexivity + recent as-of + the
+  thesis-deciding facts being the undisclosed ones).
+- **Suggested max size:** **~10%** (Confirmed tier ceiling — **NOT** Core 15–25%; unlocked only as connected-MW/ARR
+  and non-dilutive financing are proven; durability not yet earned).
+- **As-of price:** $83.71.
+- **Buy-below price:** **~$92.50** (at/under the Sept-2025 equity print; the current $83.71 qualifies).
+- **Starter zone:** ≤ ~$92.50.
+- **Add zone:** add on **CONFIRMATION, not lower price alone** — connected MW tracking the 220MW CYE2025 / 800MW–1GW
+  CYE2026 guide **and** realized ARR on the $7–9B path **and** a non-punitive financing (esp. asset-backed debt on
+  attractive terms). Opportunistic price adds only ≤ ~$70 if thesis intact.
+- **Hold zone:** between starter and proof — hold, monitor the forcing metrics, do not add without confirmation.
+- **Trim / no-chase zone:** no-chase well above the ~$138.75 convertible reference absent a proven step-up in
+  economics; trim only on a broken thesis.
+- **Reject / avoid zone:** N/A as a thesis (not a reject) — but **avoid adding** into a heavily-dilutive raise or a
+  delivery slip.
+- **Main reason to own:** a **real, independently-evidenced bottleneck** (energized AI capacity) captured by a
+  **pure-play with two blue-chip anchor contracts, a ~net-cash start, and a rare ex-Yandex builder team** — bought
+  **below its own latest equity-raise price** in a contested, no-index-bid tape (structured asymmetry).
+- **Main reason not to own:** **reflexive financing dependence** — a multi-tens-of-billions build pre-funded with
+  external capital can permanently impair per-share value via dilution if markets tighten or delivery slips, and the
+  **deciding economics (contract margins, conversion, dilution path) are undisclosed**; plus customer concentration
+  and dual-class governance.
+- **Binding constraint:** **financing the ≥2.5GW build cheaply (without crushing per-share value) AND converting
+  contracted power into connected, revenue-producing capacity.** Co-binding unknowns: anchor-contract spread and
+  Microsoft/Meta concentration.
+- **Evidence confidence haircut:** **yes — applied as size** (initial held to the low end of Starter; max capped at
+  Confirmed not Core). Per methodology, the haircut is a smaller size + explicit falsifiers, **not** a downgrade to
+  WATCH/0%.
+- **Downside if wrong:** dilution + delivery slip + thin spread re-rate a richly-priced, contested, thin-float name
+  hard — a large drawdown to a much lower capacity-and-cash-backed value. **Survivable at ~3% starter; that is why
+  the size is small** rather than zero. (Not a bankruptcy case: net-cash, no near maturities, blue-chip receivables.)
+- **Upside if right:** if connected MW + ARR track toward $7–9B CYE2026 and financing proves non-dilutive, the
+  trailing-multiple bears are wrong and the bottleneck rents compound — the asymmetric outcome the starter is built
+  to capture (add into proof toward the ~10% ceiling).
+- **Add trigger:** connected-MW on guide **and** ARR on the $7–9B path **and** a non-punitive financing
+  (asset-backed debt on attractive terms / no surprise dilution).
+- **Trim trigger:** any kill-criterion below; not weight alone.
+- **Exit / kill criteria:**
+  1. Connected power materially lags the 220MW CYE2025 / 800MW–1GW CYE2026 guide.
+  2. Heavily dilutive financing (large equity/ATM well below intrinsic) OR asset-backed debt fails on attractive terms.
+  3. Evidence anchor-contract margins are thin / build earns sub-cost-of-capital (ARR-vanity).
+  4. Customer-concentration shock (Microsoft or Meta pause / renegotiate / in-source).
+  5. Realized ARR badly undershoots the $7–9B CYE2026 trajectory.
+  6. Founder/control risk crystallizes (Volozh exit w/o successor; loss of Korolenko/Shtan; CFO churn < ~18 mo;
+     value-destroying use of dual-class control).
+- **Next monitor event:** the **Q4'25 / FY2025 print + CEO letter** (the first read on **CYE2025 220MW connected /
+  100MW active** delivery, the realized exit ARR, and the next financing step) — the single highest-information
+  upcoming catalyst.
 
-## 3. Price and Position Bands
+## Runner dissent (mandatory)
 
-| band | price / evidence condition | action | max size |
-|---|---|---|---:|
-| Buy-below | <= ~$90 (below the $92.50 Sept-2025 equity print) with thesis intact | STARTER | 2.0% |
-| Add zone | $75-$95 only after a clean ARR print on the $7-9B path AND evidence the build is being debt-funded | ADD | 4.0% |
-| Confirmation add | Up to ~$120 if asset-backed financing closes and ARR + connected-MW both track guidance | ADD cautiously | ~5.0% |
-| Hold zone | ~$95-$140 without enough new confirmation | HOLD | existing only |
-| Trim / no-chase | >> ~$140 (toward/above the convertible conversion reference of $138.75) without commensurate ARR/financing proof | No new money / trim oversized | n.a. |
-| Reject / avoid | Any price if a kill criterion fires (customer loss, distressed financing, margin reversal, ARR stall) | EXIT / REJECT | 0% |
-
-## 4. Main Reason to Own
-
-The market is pricing NBIS as a dilutive, cash-burning neocloud with an ex-Yandex stigma, while the pre-as-of evidence already shows (a) a core AI-infra ARR that compounded ~$220M -> ~$551M in three quarters with the core turning adjusted-EBITDA positive (~19%), (b) two blue-chip committed contracts -- Microsoft (~$17.4-19.4B) and Meta (~$3B) -- that pre-sell 2026, (c) ~2.5GW of contracted power at the scarce bottleneck of the AI build-out, and (d) a roughly net-cash balance sheet at 9/30/25 with low-coupon long-dated converts. That is asymmetric optionality on the single scarcest input in AI.
-
-## 5. Main Reason Not to Own
-
-The growth is enormous but unfunded: ~2.5GW of build implies capex far beyond current cash, so the equity is structurally dependent on continued capital-markets access (debt + asset-backed + an ATM for up to 25M Class A shares). If asset-backed debt does not materialize, dilution compounds; if the industry over-builds, utilization and pricing fall; and 2026 ARR leans on two large customers. It is not cheap on trailing numbers, and a 15%+ short interest signals a contested tape.
-
-## 6. Binding Constraint
-
-**Financing the build without ruinous dilution, while contracted power actually converts to revenue.** The whole asymmetry rests on: (1) the $7-9B 2026 ARR path being met, and (2) the ~2.5GW build being funded primarily with counterparty-backed asset-backed debt rather than repeated dilutive equity. Until asset-backed financing is demonstrated at scale, size is capped.
-
-## 7. Evidence Confidence Haircut
-
-Reported facts are high-confidence (M1). The undisclosed deal economics, the unproven financing path, and the capacity-conversion risk justify holding the initial size to a starter (2.0%) rather than a full position, with adds explicitly gated on the financing and ARR milestones above. Uncertainty here becomes a smaller size + hard gates, not a WATCH/0%.
-
-## 8. Add / Trim / Exit Rules
-
-- **Add** if core AI-infra ARR posts a clean print consistent with the $7-9B 2026 exit path.
-- **Add** if NBIS closes meaningful asset-backed / corporate debt against its contracts (proves the build is fundable without crushing equity).
-- **Add** if connected power tracks the guided path (~220MW by CYE2025; 800MW-1GW by CYE2026).
-- **Do not add** on price spikes without commensurate ARR/financing confirmation; no chase above ~$140.
-- **Trim** if the position exceeds the risk budget before financing is proven, or if valuation runs far ahead of ARR.
-- **Exit / reject** if any kill criterion below fires.
-
-## 9. Monitoring Plan
-
-| metric / event | threshold | module |
-|---|---|---|
-| Core AI-infra ARR | On the trajectory toward $7-9B 2026 exit; no deceleration | M2/M4 |
-| Connected / active power | ~220MW connected by CYE2025; 800MW-1GW by CYE2026 | M3/M5 |
-| Financing mix | Asset-backed/corporate debt closings; ATM usage minimal vs. debt | M4/M5 |
-| Core adjusted-EBITDA margin | Holding high-teens-to-20s% or improving | M4 |
-| Customer status (Microsoft/Meta) | No renegotiation, delay, or cancellation | M5 |
-| Industry ASP / utilization | No evidence of capacity glut | M5 |
-| Valuation vs. ARR | Multiple not running far ahead of realized ARR | M6 |
-
-## 10. Runner Dissent
-
-See `decision_card.json` `runner_dissent`. In brief: the mechanical pipeline could be pulled in two wrong directions -- (a) toward REJECT/WATCH because the stock is loss-making, optically expensive, and capital-markets-dependent (the classic exceptional_bottleneck error of missing the starter), or (b) toward CORE because the bottleneck narrative and contracts are so compelling. I override toward a disciplined **STARTER (2%)**: the asymmetry and the contracted demand book justify owning it now, but the unfunded ~2.5GW build and dilution risk forbid sizing it as a high-conviction core until asset-backed financing is proven. The right control is "own small, add on financing + ARR confirmation," not "wait for perfect evidence" and not "max size on the story."
+Two-sided. (1) The `exceptional_bottleneck` size discipline pushes toward a clear **STARTER** and warns against
+under-sizing on optics; I am comfortable **no hard veto** fires (survivable, net-cash, real blue-chip backlog,
+A-team). (2) But this is the **textbook reflexive-financing setup**, the as-of is **recent**, and the most
+thesis-deciding facts (contract margins, dilution path, capacity conversion) are exactly the **undisclosed** ones —
+so I deliberately set the **initial at the low end of Starter (~3%)** and **cap max at Confirmed (~10%), not Core**,
+until financing-without-dilution and connected-MW/ARR are proven. Portfolio caution (METHODOLOGY §5): **NBIS + BTC +
+GOOGL all ride "AI + liquidity"** — a real hidden single-factor bet that argues for the **smaller end** of the band
+and for funding any starter by rotation, not by concentrating the factor further. Also carrying the Q3-letter
+**$4.3B-vs-$7–9B ARR cover discrepancy** as model risk (resolved only with as-of data, never hindsight).
