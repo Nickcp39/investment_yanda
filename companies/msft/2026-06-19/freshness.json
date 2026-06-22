@@ -1,0 +1,99 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate (INC-001 re-verification). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. RESULT: MSFT card price $379.40 (close 2026-06-18) re-verified CORRECT across Yahoo + stockanalysis + websearch (0.0% delta); NOT a 52wk-low/high hug (price is +6.6% above the 52wk low $356.28). Unlike NVDA (INC-001), no price bug; STARTER verdict stands.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 379.40,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT", "fetched_at": "2026-06-20", "value": 379.40},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/", "fetched_at": "2026-06-20", "value": 379.40},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=MSFT+stock+price+June+18+2026", "fetched_at": "2026-06-20", "value": 379.40}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2818000000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/", "fetched_at": "2026-06-20", "value": 2820000000000},
+        {"source_name": "derived", "url": "7428M shares x 379.40", "fetched_at": "2026-06-20", "value": 2818162000000}
+      ],
+      "cross_check_delta_pct": 0.06,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 555.45,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/", "fetched_at": "2026-06-20", "value": 555.45},
+        {"source_name": "websearch", "url": "https://stockinvest.us/stock/MSFT", "fetched_at": "2026-06-20", "value": 555.45}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "intraday 52wk high (set 2025-07-31). Yahoo adjusted-close series shows ~538.66 because adjclose nets out subsequent dividends; intraday high 555.45 confirmed by 2 sources.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 356.28,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT", "fetched_at": "2026-06-20", "value": 356.00},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/", "fetched_at": "2026-06-20", "value": 356.28}
+      ],
+      "cross_check_delta_pct": 0.08,
+      "note": "52wk low set 2026-03-30. Current price 379.40 is +6.6% above this -> NOT a low-hug (clears the 3% T2 band).",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 7428,
+      "unit": "millions",
+      "as_of": "2026-04-23",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "msft_xbrl_dei_cover", "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/dei/EntityCommonStockSharesOutstanding.json", "fetched_at": "2026-06-20", "value": 7428},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/", "fetched_at": "2026-06-20", "value": 7430}
+      ],
+      "cross_check_delta_pct": 0.03,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY26/CY2026 capex guidance ~$190B (CFO Hood, Q3 FY26 call 2026-04-29): >$40B in the current quarter (record), ~$190B for calendar 2026; includes leased capacity + ~$25B component inflation. Cash PP&E run-rate ~$107B annualized (9mFY26 PP&E $80.1B). Confirmed still current as of 2026-06.",
+      "as_of": "2026-04-29",
+      "sources": [
+        {"source_name": "msft_q3fy26_call", "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/performance", "public_date": "2026-04-29", "fetched_at": "2026-06-20"},
+        {"source_name": "globaldatacenterhub", "url": "https://www.globaldatacenterhub.com/p/microsoft-q3-fy2026-the-190b-capex", "public_date": "2026-04-29", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "OpenAI relationship RESTRUCTURED 2026-04-27 (announced ahead of Q3 FY26): MSFT IP license shifts exclusive -> non-exclusive (extended to 2032); MSFT stops paying revenue-share to OpenAI while OpenAI's revenue-share TO MSFT continues to 2030 with a cap; MSFT remains OpenAI's primary cloud partner (OpenAI ships first on Azure); MSFT retains ~27% diluted stake; AGM-clause obligation removed. Net mildly POSITIVE for MSFT AI product economics / reduced capacity exposure. NOTE: dossier O3 (facts.md) still frames OpenAI economics as an un-extracted 'black box' as of as_of -- the dated 2026-04-27 restructuring should be folded in; it does NOT change the price or the STARTER verdict (O3 was the reason MSFT is capped at STARTER not lifted to CORE; the restructuring narrows but does not fully close the primary-economics gap).",
+      "as_of": "2026-04-27",
+      "sources": [
+        {"source_name": "cnbc", "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "public_date": "2026-04-27", "fetched_at": "2026-06-20"},
+        {"source_name": "redmondmag", "url": "https://redmondmag.com/articles/2026/04/28/microsoft-openai-restructure-partnership.aspx", "public_date": "2026-04-28", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    }
+  ]
+}

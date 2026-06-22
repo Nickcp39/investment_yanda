@@ -1,0 +1,86 @@
+{
+  "ticker": "MU",
+  "as_of": "2025-03-21",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 94.72,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 94.72000122070312,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 94.72
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 94.72
+      },
+      {
+        "source_name": "mktcap_filing_implied",
+        "value": 94.71
+      }
+    ],
+    "max_pairwise_delta_pct": 0.011,
+    "independent_sources": [
+      "mktcap_filing_implied",
+      "stockanalysis",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2025-03-21",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "83.54 <= 94.72 <= 157.54"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+13.4% off low, -39.9% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "1115M x 94.72 = 0.106T vs card 0.106T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 94.72 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2025-03-20 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 11 source dates <= 2025-03-21"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

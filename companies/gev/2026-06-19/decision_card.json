@@ -1,0 +1,93 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-06-19",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-21",
+  "context_label": "oligopoly_services_annuity_at_cycle_peak_multiple",
+  "as_of_price": 1109.73,
+  "as_of_market_cap": 298213000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Evidence base is materially stronger than the light run (5 sources) but not complete-grade due to SEC EDGAR 403 blocks preventing direct 10-K/10-Q text extraction. Load-bearing numbers corroborated across ≥2 sources each: FY2025 rev $38,068M (A1 press release + B1 stockanalysis); FCF $3.7B (A1 press release + B1); tax release ~$2.9B (A1 press release); Q1'26 segment EBITDA (A1 stocktitan + A2 transcript); GT pricing +10-20% (A2 transcript direct quote); 100 GW contracted (A2 transcript). Price $1,109.73 confirmed 2 independent sources (Yahoo + stockanalysis). 13 sources registered (7 A1/A2, 4 B1, 2 B2). Major OPEN items: (O1) exact YE2025 equipment/services RPO split from 10-K, (O5) clean normalized FCF bridge, (O3) reservation cancellation terms. Completeness ~70% — stronger than light run but caps at DECISION_DRAFT. Key improvement over light run: all numbers independently re-derived vs primary sources, not back-filled from conclusion.",
+      "drivers": ["GEV-8K-4Q25-ER", "GEV-8K-1Q26-ER", "GEV-8K-1Q26-TRANSCRIPT", "YAHOO-GEV-PRICE", "GEV-SA-STATS"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "GEV is the world's largest installed-base gas turbine operator with a structural oligopoly (3 OEMs = ~2/3 of global capacity under construction [GEM-GT-MARKETSHARE]) combined with a multi-decade services annuity ($87B+ services RPO, 12-20 year LTSAs, growing to $22B/yr by 2035 [GEV-DEC25-INVESTOR-UPDATE]). The mechanism is straightforward: sell gas turbines to utilities/hyperscalers → lock in 20-year service contracts → earn 25-30% EBITDA on services recurring revenue. Supplemented by Electrification (HVDC, transformers, grid software) with $38.6B equipment backlog growing 75% YoY driven by data center demand. AI/hyperscaler capex ($725B+ in 2026) is an extraordinary demand driver for both segments. Thesis confirmed; not complicated. Signal = +2 for business quality, but price makes theme moot at current entry.",
+      "drivers": ["GEV-8K-1Q26-TRANSCRIPT", "GEV-DEC25-INVESTOR-UPDATE", "GEM-GT-MARKETSHARE", "GEV-8K-4Q25-ER"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Profit pool is EXCEPTIONAL for Power + services: oligopoly pricing power (+10-20%/yr in 2026 with customers prepaying for slots), 12-20 year LTSA lock-in on installed base, near-irreplaceable manufacturing IP. Power segment adj EBITDA ~14.7% margin FY2025, expanding to 17-19% in 2026 and targeting 22% by 2028. Electrification growing fast with data center pull; $38.6B equipment backlog at 75% YoY growth. DRAG: Wind losing $382M in Q1 alone; full-year guide -$400M; path to 6% by 2028 requires tariff relief and offshore contract roll-off. OPERATOR GRADE: 4/5 — Strazik executed complex turnaround (opInc from -$2.9B 2022 to +$1.4B 2025); doubled dividend, raised buyback; consistent guidance credibility; short public track record deducts 1 point. One-share-one-vote governance, no dual-class. Overall moat DEEP AND DURABLE for the core Power + Electrification; Wind has no moat.",
+      "drivers": ["GEV-8K-1Q26-ER", "GEV-DEC25-INVESTOR-UPDATE", "GEM-GT-MARKETSHARE", "GEV-8K-1Q26-TRANSCRIPT"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Financials CONFIRM the business quality once normalized. FY2025 adj EBITDA $3,196M (8.4% margin) vs -$1,084M in 2022 — genuine turnaround. FCF $3.7B FY2025, growing to $6.5-7.5B guide in 2026. Gross margin expanded from 11.7% (2022) to 19.8% (2025) — real pricing/mix improvement, not accounting. Q1 2026 adj EBITDA $896M at 9.6% margin (+390 bps YoY) with Power at 16.3% and Electrification at 17.8%. Balance sheet clean: net cash ~$7.4B post-Prolec. ONE-OFF REGISTRY: FY2025 net income $4.9B includes $2.9B tax release (non-recurring); Q1 2026 net income $4.7B includes $3.99B Prolec remeasurement + $0.33B Proficy sale. Normalized net income FY2025 ~$2.0B; Q1 2026 normalized operating income $179M. Q1 FCF $4.8B includes $5.6B deposits (demand signal not profit). Wind losses are real drag (-$382M Q1 = -$1.5B annual run rate if sustained). Capex $1.3B FY2025 is moderate; plan $10B cumulative 2025-2028 (growth+R&D). Financial quality = GOOD at Power/Electrification, BAD at Wind. Signal = +1 (confirms quality but EBITDA margin still early on path to 2028 targets; Wind drag is significant).",
+      "drivers": ["GEV-8K-4Q25-ER", "GEV-8K-1Q26-ER", "GEV-SA-FINANCIALS", "GEV-SA-STATS"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "No permanent business impairment risk: services annuity ($87B+) provides a durable floor; net cash $7.4B; one-share-one-vote governance. HOWEVER: the investment trap at current price is a MULTIPLE COMPRESSION risk, not a business risk. At 49x 2026E adj EBITDA, the market prices that: (a) 2028 targets ($52B revenue, 20% EBITDA) are near-certain, AND (b) multiples remain elevated (28x 2028 EBITDA still 60% above sector median 17x). KILL PATHS: (F1) Hyperscaler capex decel in 2027 — reservation cancellations + new order slowdown — highest risk, forward-looking; (F2) Wind losses persist or worsen beyond -$400M guide (triggered mild); (F3) Gas turbine pricing cycle peak as capacity expands 2028+; (F4) BWRX-300 nuclear construction delay/overrun (optionality risk only). THE CORE TRAP: At 49x 2026E, even base-case 3-year IRR is ~-4.3% and bull-case only +7.2% — both fail the 8% hurdle at the 3-year horizon. The bear case (-15.4%) is the risk of buying a cyclical peak multiple on an excellent but partially-cyclical business. Signal = -1 for the price trap, not the business.",
+      "drivers": ["GEV-8K-1Q26-ER", "GEV-DEC25-INVESTOR-UPDATE", "GEV-8K-1Q26-TRANSCRIPT"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $1,109.73 (~$298B mkt cap, ~$292B EV): EV/2026E adj EBITDA ~49x; EV/2028E EBITDA (targets) ~28x; EV/TTM FCF ~39x (TTM FCF $7.5B includes $5.6B deposits). 52-wk context: −6.1% off ATH $1,181.95; +132% from 52-wk low $479.04. High-hug JUSTIFIED by fundamental re-rating on Q1 guidance raise. IRR analysis: Bear 3yr -15.4% / Base 3yr -4.3% / Bull 3yr +7.2% — ALL below 8% hurdle at 3 years. Bull barely clears at 5 years. ZERO margin of safety. Buy-below for STARTER: ≤$950; for CORE: ≤$756. Peer: Siemens Energy trades at ~20x NTM EV/EBITDA vs GEV ~49x. The market is paying 2.5x the peer for a 2-year execution bet. Signal = -1: price actively inhibits entry; no STARTER at current levels; WATCH until price provides margin of safety. Consistent with IC Panel 5/5 unanimous WATCH.",
+      "drivers": ["YAHOO-GEV-PRICE", "GEV-SA-STATS", "GEV-8K-1Q26-ER", "GEV-DEC25-INVESTOR-UPDATE"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 7,
+  "buy_below_price": 950,
+  "starter_zone": "≤$950 (8%+ base IRR begins; pays for confirmed annuity, not target execution). CORE zone: ≤$756 (base case clears 8% hurdle with real margin of safety).",
+  "add_zone": "First STARTER at $750–950. Add toward CORE only as: (a) 2026 segment guidance prints confirm Power 17-19% margin trajectory, (b) Wind losses track toward guide ($400M, not worsening), (c) Gas turbine reservation-to-firm conversion data confirms backlog durability. No addition at current price.",
+  "trim_or_no_chase_zone": "Do not chase above $1,150 (ATH zone; negative expected value in all but the most optimistic scenario). Trim on any of: GT pricing rollover >20%, hyperscaler order cancellations, Wind losses >$600M full-year, multiple expansion above $1,300 (entry IRR below -20% in base).",
+  "binding_constraint": "PRICE — not completeness. The business quality is established (exceptional services annuity, oligopoly moat, Electrification data center optionality). The binding constraint is that $1,109.73 prices in the 2028 targets as near-certainty AND sustains premium multiple compression only to 28x. At this price, even the bull case IRR is +7.2% at 3 years — below the 8% hurdle. The research gap (O1, O5) is secondary; the primary issue is that all scenarios fail the return hurdle at current entry. This is the quintessential 'exceptional business at the wrong price' verdict.",
+  "kill_criteria": [
+    "K-A GT pricing reversal: new equipment orders show pricing flat or negative vs prior year for two consecutive quarters → slot scarcity is resolving faster than expected → reduce or exit.",
+    "K-B Slot reservation cancellations: gas turbine backlog drops from 100 GW WITHOUT equivalent firm-order replacement → demand durability impaired → exit.",
+    "K-C Wind losses persist: Wind EBITDA losses exceed -$600M full-year 2026 AND management provides no credible 2027+ recovery path → drag exceeds thesis assumption → re-underwrite.",
+    "K-D Hyperscaler capex decel: confirmed 2027 data center capex down >30% YoY AND Electrification new orders drop >40% → primary demand driver stalls → downgrade to AVOID.",
+    "K-E Multiple expansion above IRR floor: stock price rises above $1,400 (bull case fair value) without proportional EBITDA increase → negative expected value even in bull case → trim/exit any position.",
+    "K-F BWRX-300 major construction failure: Darlington or Clinch River hit >12-month delay or >50% cost overrun → nuclear optionality impaired → reassess long-term moat."
+  ],
+  "runner_dissent": "The 5-soul IC panel is unanimous WATCH (0 for STARTER at $1,109.73), which aligns with the M6 analysis. My dissent flag is in the DIRECTION OF CAUTION: the business quality is so strong that a meaningful price decline could rapidly create an exceptional entry opportunity, and the investor who monitors discipline here will be rewarded. A 14-20% pullback to $900-950 transforms the verdict from WATCH to STARTER immediately, given the services annuity durability. The light run's WATCH verdict was correct at $1,109.73 but for potentially insufficient reasons (it may have been conclusion-first). This primary-sourced run arrives at the same price verdict (WATCH) but through fully independent derivation: the IRR table is the kill argument, not the narrative. The main difference vs the light run: we now confirm the $87B services RPO independently (A2 transcript), confirm the exact +10-20% pricing quote, and have a cleaner understanding that the 3-year base IRR is -4.3% (negative), not just 'unfavorable'. One area of uncertainty: if the $22B cumulative 2025-2028 FCF is achieved and the company deploys $10B buybacks at ~$1,000-1,100/share average, per-share value creation could exceed the simple price-to-price IRR. But this would not change the WATCH verdict at current prices.",
+  "sources_used": [
+    {"source_id": "GEV-8K-4Q25-ER", "public_date": "2026-01-28", "url_or_path": "https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_01282026.pdf"},
+    {"source_id": "GEV-8K-1Q26-ER", "public_date": "2026-04-22", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000063/gevpressrelease1q26.htm"},
+    {"source_id": "GEV-8K-1Q26-TRANSCRIPT", "public_date": "2026-04-22", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2026/04/22/ge-vernova-gev-q1-2026-earnings-transcript/"},
+    {"source_id": "GEV-DEC25-INVESTOR-UPDATE", "public_date": "2025-12-09", "url_or_path": "https://lastbastion.com/2026/01/15/ge-vernova-december-2025-investor-day/"},
+    {"source_id": "GEV-DEC25-PR-DIVIDEND", "public_date": "2025-12-09", "url_or_path": "https://www.gevernova.com/news/press-releases/ge-vernova-raises-multi-year-financial-outlook-doubles-dividend-increases-buyback-authorization"},
+    {"source_id": "GEV-10K-FY25", "public_date": "2026-02-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000015/gev-20251231.htm"},
+    {"source_id": "GEV-SA-FINANCIALS", "public_date": "2026-06-19", "url_or_path": "https://stockanalysis.com/stocks/gev/financials/"},
+    {"source_id": "GEV-SA-STATS", "public_date": "2026-06-19", "url_or_path": "https://stockanalysis.com/stocks/gev/statistics/"},
+    {"source_id": "YAHOO-GEV-PRICE", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/GEV"},
+    {"source_id": "GEV-STOCKTITAN-1Q26", "public_date": "2026-04-22", "url_or_path": "https://www.stocktitan.net/sec-filings/GEV/8-k-ge-vernova-inc-reports-material-event-365b201cba34.html"},
+    {"source_id": "GEM-GT-MARKETSHARE", "public_date": "2025-01-01", "url_or_path": "https://globalenergymonitor.org/research/leading-three-manufacturers-providing-two-thirds-turbines-gas-fired-power-plants-under"},
+    {"source_id": "BWRX-ANS-2025", "public_date": "2025-12-16", "url_or_path": "https://www.ans.org/news/2025-12-16/article-7621/"}
+  ]
+}

@@ -1,7 +1,0 @@
-scenario,start_owner_earnings_usd_B,oe_anchor_interpretation,5y_cagr,exit_multiple,y5_implied_price_per_share,5y_IRR,note
-Bear,55,"capex mostly black hole + ad decel + multiple compression",0.02,14,332,-10.5%,"ATT-style/regulatory hit or AI capex written down; survivable not impairment (net cash + strong OCF)"
-Base,62,"midpoint between FCF (50) and operating NI (75): some capex value-creating most uncertain",0.10,18,701,+4.0%,"BELOW 8% hurdle -> price has NO margin of safety on conservative-mid anchor"
-Base-optimistic,75,"operating NI anchor: treat AI capex as fully value-creating earning power",0.11,19,950,+10.2%,"only ABOVE hurdle if you grant capex is compounding (O4 unresolved)"
-Bull,65,"AI capex compounds + new monetization (Llama/agents/business messaging)",0.16,22,1171,+15.2%,"requires AI capex ROI to show up in revenue/OI"
-ref_fair_value_8pct_base,,"price that yields exactly 8% IRR at Base (62/10%/18x)",,,477,8.0%,"current $577 is ~21% ABOVE this fair value"
-ref_fair_value_8pct_optimistic,,"price that yields 8% IRR at optimistic anchor (75/11%/19x)",,,637,8.0%,"current $577 is ~9% BELOW this fair value -> modest MOS ONLY if capex pays off"

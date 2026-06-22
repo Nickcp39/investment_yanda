@@ -1,0 +1,86 @@
+{
+  "ticker": "DIS",
+  "as_of": "2021-11-11",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 162.11,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 162.11000061035156,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 162.11
+      },
+      {
+        "source_name": "mktcap_shares_implied",
+        "value": 162.11
+      },
+      {
+        "source_name": "contemporaneous_news",
+        "value": 162.11
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "contemporaneous_news",
+      "mktcap_shares_implied",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2021-11-11",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "123.41 <= 162.11 <= 203.02"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+31.4% off low, -20.2% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "1780M x 162.11 = 0.289T vs card 0.289T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 162.11 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2021-11-10 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 9 source dates <= 2021-11-11"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

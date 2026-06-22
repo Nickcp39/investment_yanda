@@ -1,6 +1,0 @@
-scenario,fy2028_revenue_usd_b,terminal_ev_sales,implied_ev_usd_b,assumed_shares_m,implied_price_usd,vs_current_288,annualized_to_end2028,key_drivers
-Bear,8,4.0,32,260,123,-57%,negative,"churn/clawback (MSFT-Meta), commoditization, capex air-pocket forces dilution, FY27 conversion low end, GPU impairment"
-Base,16,5.5,88,258,341,+18%,~7%/yr,"backlog converts on plan, demand breadth improves, capex/rev starts normalizing, 5yr dep holds"
-Bull,21,7.0,147,256,574,+99%,~30%/yr,"flawless execution, 3rd large anchor signs, premium multiple held, FCF inflects sooner"
-current,n/a,n/a,72.5,254,288,0%,n/a,"EV ~$72.5B basic at 2026-06-18 intraday; priced at ~8-10x FY26-exit ARR = near-flawless execution already embedded"
-notes,,,,,,,,"Horizon end-2028. implied_price = implied_ev / assumed_shares (ignores further dilution, which lowers bear/base most). Owner-earnings DCF not usable: FCF negative through >=2028. FY27 consensus revenue itself spans 4-11B (high uncertainty). Multiples per SRC-018; revenue per consensus+mgmt guide SRC-002."

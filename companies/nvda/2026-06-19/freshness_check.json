@@ -1,0 +1,67 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-06-19",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "status": "BLOCK",
+  "exit_code": 1,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 145.48,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 210.69000244140625,
+    "manifest_sources": [],
+    "max_pairwise_delta_pct": 30.951,
+    "independent_sources": [
+      "yahoo"
+    ],
+    "result": "FAIL",
+    "detail": "card_vs_yahoo_refetch delta 31.0% exceeds tolerance 1%",
+    "refetched_date": "2026-06-18"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "142.03 <= 145.48 <= 236.54"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "FAIL",
+      "detail": "price is 2.43% off 52wk low (<= 3% band) and not justified -> likely grabbed an extreme of the series instead of the last close"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "24391M x 145.48 = 3.548T vs card 3.548T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -38.0% vs card-implied -38.5% (gap 0.5pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 145.48 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness",
+      "status": "WARN",
+      "detail": "no freshness.json manifest -cannot verify LIVE-qualitative items"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness -no freshness.json manifest -cannot verify LIVE-qualitative items"
+  ],
+  "failures": [
+    "price:FAIL -card_vs_yahoo_refetch delta 31.0% exceeds tolerance 1%",
+    "T2:low/high hug -price is 2.43% off 52wk low (<= 3% band) and not justified -> likely grabbed an extreme of the series instead of the last close"
+  ]
+}

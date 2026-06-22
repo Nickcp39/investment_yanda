@@ -1,0 +1,11 @@
+FRESHNESS CHECK -DIS as_of 2021-11-11  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=162.11 refetched_yahoo=162.11000061035156 (2021-11-11) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 123.41 <= 162.11 <= 203.02
+  [PASS] T2 low/high hug: +31.4% off low, -20.2% off high
+  [PASS] T3 market-cap identity: 1780M x 162.11 = 0.289T vs card 0.289T (0.00%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 162.11 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2021-11-10 (1d)
+  [PASS] T7 no-lookahead (source<=as_of): all 9 source dates <= 2021-11-11

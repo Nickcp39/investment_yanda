@@ -135,6 +135,15 @@ active ids from [`VERSIONS.md`](VERSIONS.md) — plus `run_date` (the lock date,
 same two ids are echoed into the `results.csv` row at scoring time and MUST match. **A run whose version is
 not recorded on its card is void / non-comparable.**
 
+**Freshness (mandatory, v1.1).** Every live dossier — and every backtest case — MUST carry a `freshness.json`
+manifest (every LIVE datum with ≥2 independent sources) AND a committed `freshness_check.json` produced by
+[`scripts/verify_freshness.py`](../../scripts/verify_freshness.py) with `status=="PASS"`. **A card whose freshness
+check is absent, BLOCK, or UNVERIFIABLE is void / non-comparable — exactly as with a missing version stamp.**
+`as_of_price` is the single source of truth and MUST be byte-identical wherever it appears. LIVE data (price,
+market cap, 52-week band, shares, plus export-control / litigation / guidance) is re-verified mechanically against
+≥2 independent sources at lock time — **not by eye, and not by a date-only "looks current" check** (that is the
+hole INC-001 exploited). LIVE vs FILED decay class is defined in [`sources/source_policy.md`](../../sources/source_policy.md).
+
 Every Runner must produce `decision_card.json`:
 
 ```json

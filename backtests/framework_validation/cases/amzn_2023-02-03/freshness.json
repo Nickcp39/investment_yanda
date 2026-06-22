@@ -1,0 +1,88 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2023-02-03",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price. The 20:1 split (2022-06-06) is BEFORE this as_of, so there is NO post-as_of split: split factor = 1 and Yahoo's split-adjusted raw close already IS the contemporaneous nominal close ($103.39). Independent corroboration that does NOT come from the Yahoo price feed: StatMuse Money historical quote ($103.39 on 2023-02-03), plus the market-cap identity ($103.39 x 10,242M shares from the Q4'22 release balance sheet = ~$1.059T). The Q4-2022/FY2022 print was released 2023-02-02 (S001-S005,S007) and the FY2022 10-K was filed 2023-02-03 (S006) -- both <= as_of. Nothing after as_of is used.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 103.39,
+      "unit": "USD",
+      "as_of": "2023-02-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "NOT a low/high hug and not justified-by-design: at $103.39 the price sits mid-band, +27.0% above the trailing-52wk nominal low ($81.43) and -39.5% below the trailing-52wk nominal high ($170.83). It is nowhere near either extreme, so the T2 hug tripwire is not triggered and no record-close/trough-entry justification is claimed. The entry is the ordinary last close on the print day (the stock fell $112.91 -> $103.39 on the Q4'22 report), not a grabbed series extreme.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-06-21", "value": 103.39, "note": "raw close 103.39 x split factor 1 (20:1 split 2022-06-06 is BEFORE as_of -> no post-as_of adjustment); matches card exactly"},
+        {"source_name": "statmuse", "url": "https://www.statmuse.com/money/ask/amazon-stock-price-february-3-2023", "fetched_at": "2026-06-21", "value": 103.39, "note": "independent of the Yahoo feed: StatMuse Money states the AMZN closing price on 2023-02-03 was $103.39 (the same secondary source the decision_card cites)"},
+        {"source_name": "mktcap_identity_implied", "url": "Q4'22 release balance sheet (S004) 10,242M shares x card mcap $1.059T", "fetched_at": "2026-06-21", "value": 103.40, "note": "$1,059,000M / 10,242M shares = $103.40/sh; independent of the price feed, reconciles to the card price"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1059000000000,
+      "unit": "USD",
+      "as_of": "2023-02-03",
+      "sources": [
+        {"source_name": "card_release_shares", "fetched_at": "2026-06-21", "value": 1059000000000, "note": "10,242M shares (Q4'22 release, S004) x $103.39 = ~$1.059T"},
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 1058919000000, "note": "10,242M x 103.39 = $1,058,919M; rounds to ~$1.059T"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 170.83,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 170.83, "note": "trailing-52wk (~372d to 2023-02-03) intraday high x split factor 1 (Feb-2022 area, pre-down-cycle)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 81.43,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 81.43, "note": "trailing-52wk intraday low x split factor 1 (late-2022/early-Jan-2023 trough)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 10242,
+      "unit": "millions",
+      "as_of": "2022-12-31",
+      "sources": [
+        {"source_name": "q4_2022_release_S004", "public_date": "2023-02-02", "value": 10242, "note": "shares used for the market-cap identity (Q4'22 earnings release balance sheet / share data); public 2023-02-02 <= as_of"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Q1 FY2023 outlook (issued with the 2023-02-02 Q4'22 release): net sales $121-126B (+4% to +8% YoY) and operating income $0 to $4.0B (i.e. could be near breakeven). This is the only forward guidance used; no later quarter's actuals or guidance is referenced.",
+      "as_of": "2023-02-02",
+      "sources": [
+        {"source_name": "q4_2022_release_S001", "public_date": "2023-02-02", "value": 121000, "note": "8-K/earnings press release Q1'23 outlook (low end of the $121-126B sales range)"},
+        {"source_name": "q4_2022_call_S007", "public_date": "2023-02-02", "note": "Q4'22 earnings call: AWS growth 'mid-teens' into early Jan, optimization headwind; cost-to-serve priority"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "as_of_state_qualitative",
+      "is_quantitative": false,
+      "value": "As of 2023-02-03 (the print just released 2023-02-02): FY22 reported a NET LOSS of -$2.722B driven almost entirely by a non-cash -$12.7B Rivian valuation mark, while reported OPERATING income was still +$12.248B. AWS decelerated for a fourth straight quarter (+20% ex-FX Q4, margin 24.3%); ~$2.7B of mostly-NA Q4 charges (severance ~$640M + Fresh/Go impairments ~$720M + self-insurance ~$1.3B); ~18,000 announced role reductions (Jan 2023, S009/S010); FY22 capex ~$64B with FCF -$11.6B; build->optimize capex framing with NO dollar guide. Peer cloud-cycle context (MSFT Azure decel 2023-01-24 S014; Google Cloud miss 2023-02-02 S015). All events <= as_of. EXCLUDED as post-as_of: the additional ~9,000 March-2023 layoffs, any Q1'23+ actuals, the 2023 recovery / AWS re-acceleration / generative-AI narrative, and any later Rivian-mark recovery.",
+      "as_of": "2023-02-03",
+      "sources": [
+        {"source_name": "q4_2022_release_S001_S005", "public_date": "2023-02-02", "note": "Q4'22/FY22 earnings release: net loss, Rivian mark, operating income, AWS segment, charges, capex/FCF, headcount"},
+        {"source_name": "fy2022_10k_S006", "public_date": "2023-02-03", "note": "FY2022 Form 10-K filed on the as-of date (audited statements, segment reporting, risk factors)"},
+        {"source_name": "layoffs_S009_S010", "public_date": "2023-01-04", "note": "~18,000-role reduction announcement, dated early Jan 2023 (well before as_of)"}
+      ],
+      "pass": true
+    }
+  ]
+}

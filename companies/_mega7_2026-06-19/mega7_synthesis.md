@@ -8,6 +8,16 @@
 
 ---
 
+> ## ⚠ 修正横幅 (2026-06-21, INC-001) — 本汇总的 NVDA 结论已作废，排序见下方修正
+>
+> 本汇总 §1 把 **NVDA 列为 #1"价格友好 STARTER"是错的**。NVDA 原卡现价 $145.48 ≈ 其 **52 周最低 $142.03**(抓取取到序列极值而非最新收盘);真实价 **$210.69**。修正后 NVDA base 5y IRR +13% → **+4.8%(< 8% hurdle)**,verdict **STARTER → WATCH**。详见 `backtests/framework_validation/INCIDENTS.md` INC-001、`companies/nvda/2026-06-20/`(修正)、`companies/nvda/2026-06-19/`(错误样本)。
+>
+> **全 7 家已过 `verify_freshness.py` 机械门复查(lean-6module-v1.1)。价格:仅 NVDA 错;AAPL/AMZN/GOOGL/META/MSFT/TSLA 现价全部正确(三源 0.0% 一致)。** 但定性 LIVE 数据查出 3 处陈旧并已改正:GOOGL(DOJ 搜索救济 2025-09 终裁=保留 Chrome、无拆分;adtech 庭审已结)、META(2025-11 Boasberg 判 META 非垄断、不拆 IG/WhatsApp;FTC 上诉中)、MSFT(2026-04-27 OpenAI 关系重组)。
+>
+> **修正后排序(verdict 口径)**:**唯一 STARTER = MSFT**(价格正确、base 10y IRR ~9.5% > hurdle、有正 MOS、卡点是完整度非价格)。其余 **全部 WATCH**(NVDA 由 #1 跌入;AAPL/AMZN/GOOGL/META 价格本就无 MOS;**TSLA 存量 TRIM**)。即"唯二可买 NVDA+MSFT"修正为**仅 MSFT**。
+>
+> 单因子集中度结论不变(七名 + 已持 BTC/GOOGL/NBIS 全压"AI capex + 流动性")。下方 §1 原表保留作历史记录,**NVDA 行以本横幅为准**。
+
 ## 1. 七名排序（attractiveness：verdict → IRR → ceiling）
 
 排序口径：先按新钱 verdict（STARTER 高于 WATCH），verdict 同档再按 base IRR，再看 ceiling/完整度。

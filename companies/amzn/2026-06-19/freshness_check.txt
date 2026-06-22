@@ -1,0 +1,10 @@
+FRESHNESS CHECK -AMZN as_of 2026-06-19  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=244.39 refetched_yahoo=244.38999938964844 (2026-06-18) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 198.79 <= 244.39 <= 274.99
+  [PASS] T2 low/high hug: +22.9% off low, -11.1% off high
+  [PASS] T3 market-cap identity: 10874M x 244.39 = 2.657T vs card 2.657T (0.02%)
+  [PASS] T4 distance-from-high reconciliation: narrative -11.0% vs card-implied -11.1% (gap 0.1pt)
+  [PASS] T5 single value of truth: as_of_price 244.39 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source 2026-04-30 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event

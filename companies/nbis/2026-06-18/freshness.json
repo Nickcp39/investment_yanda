@@ -1,0 +1,103 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-06-18",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (FY2025 20-F / Q1'26 6-K line items) is NOT here -- it rides the dated-source claim_ledger discipline. RESULT context: NBIS card price $286.69 (close 2026-06-18) is the Yahoo adjusted-close last-close <= as_of and is independently confirmed by stockanalysis + websearch (0.0% delta). The price sits at/near the 52-week high (-4.0% off the intraday ATH $298.80; it IS the adjusted-close 52wk high), so low_high_hug_justified=true -- 'priced for perfection' near the recent high is the THESIS, not a bad data grab (this is the new-money WATCH driver). Existing-position verdict HOLD stands.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 286.69,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "hug_reason": "near recent high -- 'priced for perfection' IS the thesis. Price $286.69 is the Yahoo adjusted-close 52wk high and -4.0% off the intraday 52wk high $298.80 (fresh ATH region ahead of Nasdaq-100 inclusion 2026-06-22). The whole NBIS new-money call is WATCH precisely BECAUSE the price is at the top of its range with no margin of safety (EV already capitalizes the YE26 $7-9B exit-ARR as if achieved). This is an intended at-high reading, not a series-extreme mis-grab; the value is cross-confirmed by 3 independent sources at 0.0% delta and matches the independent Yahoo last-close re-fetch.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS", "fetched_at": "2026-06-21", "value": 286.69},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 286.69},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=NBIS+stock+price+June+18+2026", "fetched_at": "2026-06-21", "value": 286.69}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 72790591000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 72800000000},
+        {"source_name": "derived", "url": "253.9M basic shares x 286.69", "fetched_at": "2026-06-21", "value": 72790591000}
+      ],
+      "cross_check_delta_pct": 0.01,
+      "note": "Basic-shares market cap (253.9M x 286.69 = $72.79B). Diluted weighted-avg 308.97M -> ~$88.58B; EV ~$71.9B basic (carrying net cash ~+$0.85B). Card as_of_market_cap uses the basic figure so the T3 identity reconciles exactly.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 298.80,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS (meta.fiftyTwoWeekHigh)", "fetched_at": "2026-06-21", "value": 298.80},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 298.61}
+      ],
+      "cross_check_delta_pct": 0.06,
+      "note": "Intraday 52wk high. Yahoo meta.fiftyTwoWeekHigh = 298.80; the dossier/memo reference the intraday ATH ~$298.61 (stockanalysis). Yahoo adjusted-close series tops at 286.69 (= as_of close) because adjclose nets out nothing here but intraday spikes are higher. Current $286.69 is -4.0% off this intraday high -> a near-high reading (hug justified above).",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 43.89,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS (meta.fiftyTwoWeekLow)", "fetched_at": "2026-06-21", "value": 43.89},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 43.89}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "52wk low set ~2025-07 (Yahoo adjclose low 44.30 on 2025-07-11; intraday low 43.89). Current $286.69 is +553% above this -> emphatically NOT a low-hug; the hug flag (above) is on the HIGH side.",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 253.9,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "nbis_20f_q1_6k", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845 (Q1 2026 6-K / FY2025 20-F basic shares)", "fetched_at": "2026-06-21", "value": 253.9},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 254.0}
+      ],
+      "cross_check_delta_pct": 0.04,
+      "note": "Basic shares 253.9M (Mar 31 2026); diluted weighted-avg 308.97M (C030). +~27% dilution since relisting (199.3M -> 253.9M); convert/warrant overhang on top. Basic used for the market-cap identity.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "AS-OF business state, all anchored <= 2026-06-18 (most-recent authoritative source = Q1'26 6-K shareholder letter, 2026-05-13): (a) CONTRACTS -- Microsoft up to $17.4B, expandable to ~$19.4B, through Oct 2031 (~$6.96B upfront); Meta first agreement ~$2.88B (Dec 2025, take-or-pay) PLUS up to ~$27B (Mar 2026): $12B firm Vera Rubin capacity from early 2027 + $15B optional/resaleable; RPO (audited) $33,585M at Q1'26 (from $21,333M YE2025); deferred revenue $4,778M (from $1,578M YE2025, +$3.2B prepayments in Q1). (b) POWER PIPELINE -- contracted power >3.5 GW at end-Q1'26 (YE2026 guide raised to >4 GW), >75% owned; the ~2.5GW-class build pipeline across 5+ sites (Finland 310MW; Missouri/Independence 1.2GW; NJ/Vineland gas microgrid; Iceland) + Bloom Energy 328MW behind-the-meter fuel cells + NVIDIA >5GW partnership framing; connected-power target 800MW-1GW by YE2026; active (live) power last disclosed ~170MW YE2025 (Q1'26 figure WITHHELD). (c) ARR / CAPEX -- exit ARR $1.9B (Mar'26); management YE2026 exit-ARR target $7-9B; FY2026 capex guided $20-25B on the Q1'26 call ($31-35B floated in some secondary, UNCONFIRMED). These are the LIVE-qualitative facts the valuation leans on; the EV already capitalizes the $7-9B YE26 exit-ARR as if achieved.",
+      "as_of": "2026-05-13",
+      "sources": [
+        {"source_name": "nbis_q1fy26_6k_shl", "url": "https://assets.nebius.com/.../Nebius%20SHL_Q1%202026.pdf", "public_date": "2026-05-13", "fetched_at": "2026-06-21"},
+        {"source_name": "nbis_q1fy26_call", "url": "Q1 2026 earnings call transcript (Motley Fool / Investing.com)", "public_date": "2026-05-13", "fetched_at": "2026-06-21"},
+        {"source_name": "nbis_microsoft_6k", "url": "https://www.sec.gov/Archives/edgar/data/1513845/.../tm2525580d1_ex99-1.htm", "public_date": "2025-09-08", "fetched_at": "2026-06-21"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Russian-legacy / regulatory tail (the only material legal overhang, low-medium severity, mostly reputational now): NBIS is the ex-Yandex N.V. remnant after the Russia-asset divestiture closed 2024-07-15 and Nasdaq trading resumed 2024-10-21. Founder/CEO Arkady Volozh was REMOVED from EU sanctions 2024-03-13 (renounced Russian citizenship Feb 2026, Tel Aviv). RESIDUAL divestiture indemnities / contingent liabilities are NOT confirmed from the primary FY2025 20-F text (open diligence item O-D / C037) -- flagged, not quantified. No active securities litigation identified as of as_of. Separately, the FY2024-2025 ADVERSE ICFR opinion (open material weaknesses in PP&E and TripleTen rev-rec; auditor Reanda -> Deloitte for FY2026) is a FILED accounting fact (rides claim_ledger C012), noted here only because it bears on disclosure quality.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "nbis_fy2025_20f", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845 (FY2025 Form 20-F)", "public_date": "2026-04-30", "fetched_at": "2026-06-21"},
+        {"source_name": "eu_sanctions_delisting_coverage", "url": "EU Official Journal / press coverage (Volozh removed from sanctions 2024-03-13; Russia assets sold 2024-07-15)", "public_date": "2024-07-15", "fetched_at": "2026-06-21"}
+      ],
+      "pass": true
+    }
+  ]
+}

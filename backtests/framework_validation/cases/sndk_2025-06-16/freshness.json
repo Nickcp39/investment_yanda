@@ -1,0 +1,90 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2025-06-16",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (sndk_2025-06-16; lean-6module-v1.1)",
+  "note": "SHORT-HISTORY CASE. SanDisk (SNDK) spun off from Western Digital on 2025-02-24, so the trailing-52wk window holds only ~84 trading days (first bar 2025-02-13, ~4 months since the spinoff), NOT a full year -- the '52wk' high/low below are SINCE-SPINOFF extremes and are flagged as such. No split between as_of and today -> split_factor 1, so the contemporaneous NOMINAL close equals Yahoo raw_close(last <= as_of) = 44.21. Price re-derived two independent ways: (1) Yahoo v8 raw_close x split_factor 1, (2) stockanalysis.com daily history (both 44.21). Local committed quote CSV (S009, backtests/data/asof_2025_06_16_sndk_quotes.csv) carries the 44.21 close. NOTE on the modern Yahoo feed: SNDK reads ~$1,991 on 2026-06-16 in the same CSV -- that is a separate/aberrant modern adjustment and is IRRELEVANT to this frozen as_of; the contemporaneous nominal close on 2025-06-16 is unambiguously $44.21 across all three sources. Price sits +58.5% off the since-spinoff low ($27.89) and -24.2% off the since-spinoff high ($58.36) -> no low/high hug, even on the short window. Entry is into a forced-seller overhang (WDC retained 19.9%, secondary priced $38.50 on 2025-06-06) at ~0.70x book (BVPS ~$63.18) -- a structured asset-discount entry, not a data error.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 44.21,
+      "unit": "USD",
+      "as_of": "2025-06-16",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not near either extreme even on the short since-spinoff window: +58.5% off the low ($27.89) and -24.2% off the high ($58.36). No hug to justify. (If anything the price is mid-band, reflecting ~15% recovery off the $38.50 WDC secondary and ~38% off the late-April $32.11 low.)",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK", "fetched_at": "2026-06-21", "value": 44.21, "note": "raw close 44.21 x split_factor 1 (no split between as_of and today); last trading day <= 2025-06-16"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/sndk/history/", "fetched_at": "2026-06-21", "value": 44.21, "note": "independent daily-history feed; 2025-06-16 close 44.21 (2025-06-13 close 42.50, 2025-06-17 close 44.09)"},
+        {"source_name": "local_quote_csv_S009", "url": "backtests/data/asof_2025_06_16_sndk_quotes.csv", "fetched_at": "2026-06-21", "value": 44.21, "note": "committed as-of quote table (Yahoo v8): 2025-06-16 close 44.209999..."}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 6410000000,
+      "unit": "USD",
+      "as_of": "2025-06-16",
+      "sources": [
+        {"source_name": "card_price_x_shares", "fetched_at": "2026-06-21", "value": 6410000000, "note": "$44.21 x ~145M shares (10-Q S005 / quote S009) = ~$6.41B (card value)"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/sndk/", "fetched_at": "2026-06-21", "value": 6410000000, "note": "price x shares cross-check on the independent feed agrees to ~$6.41B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 58.36,
+      "unit": "USD",
+      "note": "SHORT WINDOW: since-spinoff high only (~84 trading days, first bar 2025-02-13; SNDK spun 2025-02-24). NOT a full trailing 12 months. Split_factor 1 -> raw = nominal.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 58.36, "note": "since-spinoff intraday high x1 (window < 1yr)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 27.89,
+      "unit": "USD",
+      "note": "SHORT WINDOW: since-spinoff low only (~84 trading days). NOT a full trailing 12 months. The late-April trough printed ~$32.11 close / ~$27.89 intraday. Split_factor 1.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 27.89, "note": "since-spinoff intraday low x1 (window < 1yr)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 145,
+      "unit": "millions",
+      "as_of": "2025-06-16",
+      "sources": [
+        {"source_name": "form10q_S005", "public_date": "2025-05-12", "value": 145, "note": "~145M shares outstanding per the Q3 FY25 10-Q (quarter ended 2025-03-28); used for the ~$6.41B card market cap and BVPS ~$63.18"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Q4 FY25 guide IMPROVES sequentially: revenue $1.75-1.85B (up from Q3 $1.695B) and non-GAAP gross margin 25.5-27.0% (up from Q3 22.7%), with price increases already commenced and bit-supply being cut. Q3 headline GAAP loss $13.33/sh was DOMINATED by a $1.83B non-cash goodwill impairment; ex-impairment non-GAAP EPS was -$0.30 (a trough loss, not a structural collapse). BiCS 8 ramping.",
+      "as_of": "2025-05-07",
+      "sources": [
+        {"source_name": "q3fy25_release_S004", "public_date": "2025-05-07", "note": "Q3 FY25 results + Q4 guide: rev $1.75-1.85B, non-GAAP GM 25.5-27.0%, price increases commenced"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "spinoff_and_nand_status",
+      "is_quantitative": false,
+      "value": "As of 2025-06-16: SanDisk was carved out of Western Digital on 2025-02-24 (one standalone quarter reported). WDC retained 19.9% and is a non-strategic forced seller -- a secondary was priced at $38.50 on 2025-06-06 (Sandisk receives no proceeds) plus a debt-for-equity exchange; this overhang depresses the price independent of fundamentals. NAND/enterprise-SSD cycle appears to be inflecting up: TrendForce (2025-05-26) flagged enterprise-SSD shift toward undersupply (+up to 10% QoQ); Micron FQ2'25 cited AI/data-center NAND demand and supply actions. Cost base is bounded by the Kioxia Flash Ventures JV. No post-as_of demand/margin confirmation is used.",
+      "as_of": "2025-06-16",
+      "sources": [
+        {"source_name": "separation_S002_S003", "public_date": "2025-02-24", "note": "WDC/Sandisk separation completed; Nasdaq listing"},
+        {"source_name": "secondary_pricing_S008", "public_date": "2025-06-06", "value": 38.50, "note": "upsized secondary of WDC-owned shares priced $38.50; forced-seller overhang"},
+        {"source_name": "trendforce_S006", "public_date": "2025-05-26", "note": "enterprise SSD toward undersupply; potential NAND price increases"},
+        {"source_name": "micron_peer_S012", "public_date": "2025-03-20", "note": "peer memory-cycle context: AI/data-center NAND demand, supply actions"}
+      ],
+      "pass": true
+    }
+  ]
+}

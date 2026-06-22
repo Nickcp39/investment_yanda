@@ -1,0 +1,91 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-01-01",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (nbis_2026-01-01; lean-6module-v1.1)",
+  "note": "No split between as_of and today -> split_factor 1, so the contemporaneous NOMINAL close equals Yahoo raw_close(last <= as_of). as_of 2026-01-01 is a market holiday, so the last trading day is 2025-12-31 (close 83.71 rounded; raw 83.705). NBIS (Nebius Group) relisted on Nasdaq in Oct-2024 after the Yandex separation, so the trailing-52wk window is effectively a FULL year (254 trading days, first bar 2024-12-26) -- NOT shortened. Price re-derived two independent ways: (1) Yahoo v8 raw_close x split_factor 1, (2) stockanalysis.com daily history (both 83.705). Local committed quote CSV (S014, backtests/data/asof_2025_12_31_nbis_quotes.csv) carries the 83.71 close. Price sits +357% off the 52wk low ($18.31, the early-relisting base) and -40.7% off the 52wk high ($141.10) -> no low/high hug. The entry is deliberately BELOW the Sept-2025 equity print ($92.50) into a contested tape (15.5% short interest, dropped from the Nasdaq-100 rebalance), which is the structured-entry thesis, not a data error.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 83.71,
+      "unit": "USD",
+      "as_of": "2025-12-31",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not near either extreme: +357% off the 52wk low ($18.31) and -40.7% off the 52wk high ($141.10). No hug to justify.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS", "fetched_at": "2026-06-21", "value": 83.71, "note": "raw close 83.705 x split_factor 1 (no split between as_of and today); last trading day <= 2026-01-01 is 2025-12-31; rounds to card 83.71 (delta ~0.006%)"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/history/", "fetched_at": "2026-06-21", "value": 83.705, "note": "independent daily-history feed; 2025-12-31 close 83.705 (prior day 2025-12-30 close 85.17)"},
+        {"source_name": "local_quote_csv_S014", "url": "backtests/data/asof_2025_12_31_nbis_quotes.csv", "fetched_at": "2026-06-21", "value": 83.71, "note": "committed as-of quote table (Yahoo v8): 2025-12-31 close 83.71"}
+      ],
+      "cross_check_delta_pct": 0.006,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 21080000000,
+      "unit": "USD",
+      "as_of": "2025-12-31",
+      "sources": [
+        {"source_name": "card_price_x_shares", "fetched_at": "2026-06-21", "value": 21080000000, "note": "$83.71 x ~252M Class A+B shares = ~$21.1B (card value)"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-06-21", "value": 21080000000, "note": "price x shares cross-check on the independent feed agrees to ~$21.1B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 141.10,
+      "unit": "USD",
+      "note": "Trailing ~372d window before as_of (254 trading days, first bar 2024-12-26). NBIS relisted Oct-2024, so this is effectively a full year -- NOT a shortened window. Split_factor 1 -> raw = nominal.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 141.10, "note": "trailing-52wk intraday high x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 18.31,
+      "unit": "USD",
+      "note": "Trailing ~372d window before as_of (254 trading days). The low is the early post-relisting base (early 2025). Split_factor 1.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 18.31, "note": "trailing-52wk intraday low x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 252,
+      "unit": "millions",
+      "as_of": "2025-12-31",
+      "sources": [
+        {"source_name": "card_mcap_implied", "public_date": "2025-11-11", "value": 252, "note": "~252M shares implied by card mcap $21.08B / $83.71; share count reflects the Sept-2025 $1B equity offering (S010) and is consistent with the Q3'25 reporting (S012/S013)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Connected-power guide: ~220MW by CYE2025 and ~800MW-1GW by CYE2026; ARR target $7-9B for CYE2026 (Q3 letter also cites a $4.3B figure -> carried as model risk). Q3'25 revenue $146.1M (+39% QoQ); group adj-EBITDA loss collapsed to -$5.2M; core adj-EBITDA ~+19%. The forcing metric is connected MW + realized ARR vs the $7-9B target.",
+      "as_of": "2025-11-11",
+      "sources": [
+        {"source_name": "q3_25_release_S012", "public_date": "2025-11-11", "value": 146.1, "note": "Q3'25 6-K results: revenue $146.1M, EBITDA-loss collapse"},
+        {"source_name": "q3_25_shareholder_letter_S013", "public_date": "2025-11-11", "note": "connected-MW guide (220MW CYE2025 / 800MW-1GW CYE2026), ARR $7-9B target"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "ai_cloud_funding_status",
+      "is_quantitative": false,
+      "value": "As of 2025-12-31: NBIS is a pure-play AI-cloud renting energized, contract-ready capacity. Two anchor contracts: Microsoft ~$17.4-19.4B through 2031 and Meta ~$3B/5yr. Funding stack as-of: Sept-2025 $1B public equity offering at $92.50 (S010) + $2.75B 2.75% convertible senior notes (conversion ref ~$138.75, S009); 9M op cash -$432.4M and 9M PP&E -$2,010.0M with explicit equity/ATM dependence and still-unproven asset-backed debt. Net-cash balance sheet at 9/30/25, no near-term maturities. No post-as_of financing or contract events are used.",
+      "as_of": "2025-12-31",
+      "sources": [
+        {"source_name": "anchor_contracts_S007_S008", "public_date": "2025-09-08", "note": "Microsoft and Meta anchor capacity contracts"},
+        {"source_name": "equity_offering_S010", "public_date": "2025-09-10", "value": 92.50, "note": "$1B public offering of Class A shares at $92.50"},
+        {"source_name": "convertible_notes_S009", "public_date": "2025-09-10", "note": "$2.75B 2.75% convertible senior notes; conversion reference ~$138.75"},
+        {"source_name": "short_interest_S022", "public_date": "2025-12-30", "note": "15.5% short interest into a contested tape (context for the structured entry)"}
+      ],
+      "pass": true
+    }
+  ]
+}

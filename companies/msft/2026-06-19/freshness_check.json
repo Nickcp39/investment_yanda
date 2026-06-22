@@ -1,0 +1,86 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-06-19",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 379.4,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 379.3999938964844,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 379.4
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 379.4
+      },
+      {
+        "source_name": "websearch",
+        "value": 379.4
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "websearch",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-18"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "356.28 <= 379.4 <= 555.45"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+6.5% off low, -31.7% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "7428M x 379.4 = 2.818T vs card 2.818T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -32.0% vs card-implied -31.7% (gap 0.3pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 379.40 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-28 is 52d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-29 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [active_litigation] -newest source 2026-04-28 is 52d before as_of (> 45d) -confirm it is still the latest authoritative event",
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-29 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

@@ -1,0 +1,99 @@
+{
+  "ticker": "TSLA",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. RE-VERIFICATION (INC-001 sweep): TSLA price $400.49 (2026-06-18 last close <= as_of) confirmed CORRECT by independent Yahoo re-fetch + stockanalysis ($400.49) + websearch (2026-06-19 close ~$398.50). Unlike NVDA, $400.49 is -19.7% off the 52wk high and +38.7% above the 52wk low (upper-middle of range), NOT near an extreme -> does NOT share the NVDA single-source low-grab bug.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 400.49,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA", "fetched_at": "2026-06-20", "value": 400.49},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-06-20", "value": 400.49},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=TSLA+stock+price+June+19+2026", "fetched_at": "2026-06-20", "value": 398.50}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1413000000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "3528M diluted shares (FY25, S008) x 400.49", "fetched_at": "2026-06-20", "value": 1412928720000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-06-20", "value": 1500000000000}
+      ],
+      "cross_check_delta_pct": 5.81,
+      "note": "Card uses diluted 3,528M shares (S008) for internal consistency with T3 market-cap identity. stockanalysis quotes $1.50T on a larger ~3.76B share count (basic+). Range $1.4-1.5T per C4. Musk 423.7M-share grant would dilute further if vested.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 498.83,
+      "unit": "USD",
+      "as_of": "2026-06-19",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA", "fetched_at": "2026-06-20", "value": 498.83},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-06-20", "value": 498.83}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 288.77,
+      "unit": "USD",
+      "as_of": "2026-06-19",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA", "fetched_at": "2026-06-20", "value": 288.77},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-06-20", "value": 288.77}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 3528,
+      "unit": "millions",
+      "as_of": "2025-12-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_financials", "url": "https://stockanalysis.com/stocks/tsla/financials/", "fetched_at": "2026-06-20", "value": 3528},
+        {"source_name": "stockanalysis_quote", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-06-20", "value": 3760}
+      ],
+      "cross_check_delta_pct": 6.17,
+      "note": "Card uses FY25 diluted weighted shares 3,528M (S008). Quote-page basic+ count ~3.76B. Diluted basis chosen for conservative per-share / market-cap identity. Musk 423.7M-share grant (~12%) is a future dilution overhang if milestones vest.",
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Musk 2025 $1T pay package (approved 2025-11-06, >75% shareholder vote) carries governance/dilution tension: institutional dissent including Norway's sovereign wealth fund on dilution + key-man risk; SEC PX14A6G solicitation filings logged. No new adverse legal event as of 2026-06; the 2018 pay-package Delaware litigation is superseded by the 2025 re-approved grant. Treated as governance overhang, not an active impairment.",
+      "as_of": "2025-11-06",
+      "sources": [
+        {"source_name": "techcrunch", "url": "https://techcrunch.com/2025/11/06/tesla-shareholders-approve-elon-musks-1t-pay-package/", "public_date": "2025-11-06", "fetched_at": "2026-06-20"},
+        {"source_name": "nbcnews", "url": "https://www.nbcnews.com/tech/elon-musk/tesla-elon-musk-shareholder-meeting-1-trillion-dollar-pay-package-rcna242223", "public_date": "2025-11-06", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "No clean numeric FY revenue guide; Q1 2026 (ended 2026-03-31) actuals: revenue $22.39B (+15.8% Y/Y), GAAP NI $477M, FCF $1.44B, produced 408,386 / delivered 358,023 (inventory 27 days vs 15). FY25 deliveries 1,636,129 (-9% Y/Y), energy 46.7GWh (>2x). Robotaxi live Austin/Dallas/Houston (paid miles ~doubled sequentially, unit economics undisclosed); Optimus pre-production (Fremont large-scale line prep starting Q2 2026); FSD moving to subscription-only, 1.3M subs, record Q1 net adds. Capex guided back up to >$25B (AI/Optimus). All consistent with dossier framing as of 2026-06.",
+      "as_of": "2026-04-22",
+      "sources": [
+        {"source_name": "cnbc", "url": "https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html", "public_date": "2026-04-22", "fetched_at": "2026-06-20"},
+        {"source_name": "tesla_ir_q1_2026", "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf", "public_date": "2026-04-22", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    }
+  ]
+}

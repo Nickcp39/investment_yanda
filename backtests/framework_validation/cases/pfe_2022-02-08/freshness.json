@@ -1,0 +1,98 @@
+{
+  "ticker": "PFE",
+  "as_of": "2022-02-08",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price, split_factor 1 (PFE has had no stock split; the only corporate action is the Nov-2020 Upjohn/Viatris spin-off, which is NOT a split and does not change the share-for-share price). Modern feeds dividend-adjust history, so the raw close (which EXCLUDES dividend adjustment) is what recovers the contemporaneous nominal price; raw_close(last <= as_of) x 1 = $51.70, reconciling exactly to the card. Independent corroboration that does NOT come from the price feed: Q3-2021 10-Q share count (5,612,866,598, S011) x card market cap $290B implies $51.67/sh (0.06%), plus dated 2022-02-08 reaction coverage (CNBC/Fortune/Nasdaq: stock down ~5-6% on a 2022 guide of ~$102B vs ~$106B consensus, with ~$54B = $32B Comirnaty + $22B Paxlovid). This follows the NVDA exemplar pattern.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 51.70,
+      "unit": "USD",
+      "as_of": "2022-02-08",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not a hug: $51.70 sits mid-band, +55.0% off the trailing-52wk nominal low ($33.36) and -16.2% off the nominal high ($61.71). This is a normal post-print entry (stock fell ~5-6% on the disappointing 2022 COVID guide), not an extreme-of-series grab, so no justification is required and T2 passes on band distance.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE", "fetched_at": "2026-06-21", "value": 51.70, "note": "raw close 51.70 x split_factor 1 (no PFE split; raw close excludes dividend adjustment) -> nominal $51.70; validator refetched_yahoo 51.70 (delta 0.00%)"},
+        {"source_name": "mktcap_10q_implied", "url": "Q3-2021 10-Q (S011) 5,612,866,598 shares x card mcap $290B", "fetched_at": "2026-06-21", "value": 51.67, "note": "independent of the price feed; $290B / 5.6129B sh = $51.67 (0.06% vs card)"},
+        {"source_name": "contemporaneous_news", "url": "CNBC 2022-02-08 covid-pfizer-pfe-earnings-q4-2021 / Fortune 2022-02-08 covid-pfizer-2022-forecast (S005/S006)", "fetched_at": "2026-06-21", "value": 51.70, "note": "dated as_of reaction: stock down ~5-6%; 2022 guide ~$102B vs ~$106B est; $54B COVID ($32B Comirnaty + $22B Paxlovid) corroborates the as_of level and setup"}
+      ],
+      "cross_check_delta_pct": 0.06,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 290000000000,
+      "unit": "USD",
+      "as_of": "2022-02-08",
+      "sources": [
+        {"source_name": "card_10q_shares", "fetched_at": "2026-06-21", "value": 290000000000, "note": "5,612,866,598 shares (S011) x $51.70 = $290.3B ~ card $290B"},
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 290000000000, "note": "nominal price $51.70 x share count -> ~$290B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 61.71,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 61.71, "note": "trailing-~372d intraday high x split_factor 1 (Dec-2021 ATH region)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 33.36,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 33.36, "note": "trailing-~372d intraday low x split_factor 1 (early-2021 trough)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 5612.866598,
+      "unit": "millions",
+      "as_of": "2021-10-03",
+      "sources": [
+        {"source_name": "q3_2021_10q_S011", "public_date": "2021-11-12", "value": 5612.866598, "note": "5,612,866,598 common shares outstanding as of 2021-10-03 (latest public count before as_of)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "As of 2022-02-08: FY2022 guidance ~$98-102B revenue / adj EPS $6.35-6.55 (midpoint ~$6.45), INCLUDING ~$32B Comirnaty + ~$22B Paxlovid (~$54B, ~54% of revenue) -- the COVID windfall whose post-2022 durability is the binding question. The guide came in BELOW the ~$106-108.6B sell-side consensus, which is why the stock fell. Do NOT use the actual FY2022 print or any post-as_of revision.",
+      "as_of": "2022-02-08",
+      "sources": [
+        {"source_name": "q4fy21_8k_S001", "public_date": "2022-02-08", "value": 102000, "note": "8-K Ex-99.1: 2022 revenue guidance ~$98-102B; Comirnaty ~$32B, Paxlovid ~$22B"},
+        {"source_name": "asof_reaction_S005_S006", "public_date": "2022-02-08", "note": "Zacks/Nasdaq + FXEmpire: guide below ~$108.6B consensus -> grim 2022 sales view, stock down"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "covid_revenue_durability_status",
+      "is_quantitative": false,
+      "value": "As of 2022-02-08: the ~$54B 2022 COVID windfall (Comirnaty + Paxlovid) is the load-bearing variable and its post-2022 run-rate is OPENLY UNSETTLED in the as_of record -- as-of sell-side (SVB Leerink, S007 2021-11-23) already modeled Paxlovid as 'seasonal from 2023' and debated normalization. The company does not cleanly break out COVID profit, so ex-COVID earnings power (~$2.50-3.50 adj EPS) is an as_of estimate, not a disclosed figure. This is the false_cheap_value_trap framing: the optical ~8x forward P/E is a peak-windfall artifact. NOTHING about the actual post-2022 COVID decline is used (that is after as_of).",
+      "as_of": "2021-11-23",
+      "sources": [
+        {"source_name": "fiercepharma_S007", "public_date": "2021-11-23", "note": "pre-as_of sell-side: ~$101B 2022 on COVID; Paxlovid seasonal from 2023 -> durability question is contemporaneous, not hindsight"},
+        {"source_name": "q4fy21_8k_S001", "public_date": "2022-02-08", "note": "2022 guide concentrates ~$54B in two COVID products; ex-COVID base ~$46B grows ~6%"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dividend_status",
+      "is_quantitative": true,
+      "value": "As of 2022-02-08: dividend is INTACT and was just RAISED to $0.40/quarter ($1.60 annualized, ~3.1% yield at $51.70), the 333rd consecutive quarterly dividend, declared 2021-12-10 (S010). Well-covered even on normalized ex-COVID earnings. This is why the case is a value trap (survivable, paid-to-wait), NOT a melting ice cube. No buybacks planned (per call, S003).",
+      "as_of": "2021-12-10",
+      "sources": [
+        {"source_name": "dividend_pr_S010", "public_date": "2021-12-10", "value": 0.40, "note": "Q1-2022 dividend $0.40/qtr ($1.60 ann.), 333rd consecutive, raised; record/payable dates set"},
+        {"source_name": "q4fy21_call_S003", "public_date": "2022-02-08", "note": "management: dividend priority, no buybacks; $25B BD ambition (unexecuted)"}
+      ],
+      "pass": true
+    }
+  ]
+}

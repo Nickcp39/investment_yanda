@@ -1,0 +1,103 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (added during the INC-001 re-verification). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. RESULT FOR GOOGL: the card price $368.03 is CONFIRMED CORRECT (= the 2026-06-18 close on Yahoo + stockanalysis + websearch, delta 0.0%); unlike NVDA INC-001 this dossier did NOT grab a 52wk extreme (price is +127% off the 52wk low 162.00 and only -10% off the 52wk high 408.61). No verdict change. The only corrections this manifest carries are (a) declaring the >=2 price sources the gate requires and (b) refreshing the stale FY2025-10-K-framed LIVE legal items (DOJ search remedy, DOJ adtech, EC fine) to their 2026-06 state.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 368.03,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-06-20", "value": 368.03},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-06-20", "value": 368.03},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=GOOGL+stock+price+June+19+2026", "fetched_at": "2026-06-20", "value": 368.0}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 4459051480000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-06-20", "value": 4490000000000},
+        {"source_name": "derived", "url": "12116M shares x 368.03", "fetched_at": "2026-06-20", "value": 4459051480000}
+      ],
+      "cross_check_delta_pct": 0.69,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 408.61,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-06-20", "value": 408.61},
+        {"source_name": "websearch", "url": "https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history", "fetched_at": "2026-06-20", "value": 408.61}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "All-time-high close $402.38 on 2026-05-13; 52wk intraday high 408.61. Card price 368.03 is -9.9% off this high."
+    },
+    {
+      "field": "52wk_low",
+      "value": 162.00,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-06-20", "value": 162.00},
+        {"source_name": "websearch", "url": "https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history", "fetched_at": "2026-06-20", "value": 162.00}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "Card price 368.03 is +127% off this low -> NOT a low-hug (the NVDA INC-001 failure mode is absent here)."
+    },
+    {
+      "field": "shares_out",
+      "value": 12116,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_10q_q1fy2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm", "fetched_at": "2026-06-20", "value": 12116},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-06-20", "value": 12200}
+      ],
+      "cross_check_delta_pct": 0.69,
+      "pass": true,
+      "note": "12,116M = diluted A+B+C at 3/31/26 (buybacks paused Q1'26 -> count drifting UP from FY25-end 12,088M). stockanalysis ~12,200M is a slightly later/basic count."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "THREE LIVE matters, refreshed to 2026-06 state (the dossier's facts.md sec.9 / M5 framing was the FY2025-10-K snapshot and is now stale on all three): (1) DOJ SEARCH (US v. Google, Judge Mehta, DDC): remedies were FINALIZED 2025-09-02 -- Google KEEPS Chrome and Android (court REJECTED the DOJ's structural divestiture); remedies are behavioral (no exclusive default-distribution contracts for Search/Chrome/Assistant/Gemini + must share search index & user-interaction data with qualified rivals). Google filed Notice of Appeal 2026-01-16; DOJ cross-appealed 2026-02-03 seeking divestiture; Google's opening DC-Circuit brief filed 2026-05-22; oral argument expected late-2026/early-2027, final resolution possibly 2028. NET: the larger search case resolved WITHOUT a breakup -- materially LESS severe than a structural remedy, and the dossier never recorded this outcome. (2) DOJ ADTECH (US v. Google, Judge Brinkema, EDVA): liability found 2025-04 (illegal monopoly in publisher ad server + ad exchange). The REMEDY trial has now CONCLUDED -- closing arguments delivered; DOJ seeks divestiture of AdX (then DFP) + open-sourcing of auction logic, but Judge Brinkema voiced SKEPTICISM toward structural remedies and concern over divestiture timing vs behavioral fixes. Ruling pending (no order yet as of 2026-06). The dossier's 'structural remedy pending' is directionally right but understates that the remedy phase is now post-trial with the judge leaning away from a forced breakup. (3) EC ADTECH FINE: the dossier says 'EUR 3.0B charge appealed Nov 2025'; the FORMAL EC decision landed 2025-09-05 = EUR 2.95B (~USD 3.45B) fine + cease-and-desist on adtech self-preferencing (4th EU penalty); Google is appealing. The ~$3.5B FY2025 P&L charge (claim_ledger GOOG.A1.2025K.026) is the accrual for this and remains a correct FILED number.",
+      "as_of": "2026-06-20",
+      "sources": [
+        {"source_name": "doj_opa", "url": "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google", "public_date": "2025-09-02", "fetched_at": "2026-06-20"},
+        {"source_name": "cnbc", "url": "https://www.cnbc.com/2025/12/05/judge-finalize-remedies-in-google-antitrust-case.html", "public_date": "2025-12-05", "fetched_at": "2026-06-20"},
+        {"source_name": "techtimes", "url": "https://www.techtimes.com/articles/318733/20260620/google-antitrust-appeal-filed-dc-circuit-can-strengthen-data-rules-even-without-chrome-sale.htm", "public_date": "2026-06-20", "fetched_at": "2026-06-20"},
+        {"source_name": "adexchanger", "url": "https://www.adexchanger.com/antitrust/the-doj-and-google-sharpen-their-remedy-proposals-as-the-two-sides-prepare-for-closing-arguments/", "public_date": "2026-05", "fetched_at": "2026-06-20"},
+        {"source_name": "cnbc_ec_fine", "url": "https://www.cnbc.com/2025/09/05/google-slapped-by-eu-with-3point45-billion-antitrust-fine.html", "public_date": "2025-09-05", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "2026 capex guidance $180-190B (midpoint $185B), with 2027 capex to 'significantly increase' vs 2026 (per the June 2026 424B5 financing document, GOOGL-424B5-2026-06.009). No new quantitative guidance has superseded this as of as_of; next major catalyst is Q2 2026 earnings (~late July 2026). This is the FILED forward-capex signal that drives the owner-earnings (maintenance-vs-growth capex split) open question; unchanged this refresh.",
+      "as_of": "2026-06-02",
+      "sources": [
+        {"source_name": "sec_424b5_2026_06", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526257702/d152175d424b5.htm", "public_date": "2026-06-02", "fetched_at": "2026-06-20"},
+        {"source_name": "sec_fwp_2026_06", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526251733/d160205dfwp.htm", "public_date": "2026-06-02", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    }
+  ]
+}

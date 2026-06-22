@@ -1,0 +1,92 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2023-05-25",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 379.8,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 379.7999954223633,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 379.8
+      },
+      {
+        "source_name": "mktcap_8k_implied",
+        "value": 379.76
+      },
+      {
+        "source_name": "contemporaneous_news",
+        "value": 379.8
+      }
+    ],
+    "max_pairwise_delta_pct": 0.011,
+    "independent_sources": [
+      "contemporaneous_news",
+      "mktcap_8k_implied",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2023-05-25",
+    "split_factor": 10.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "108.13 <= 379.8 <= 394.8"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+251.2% off low, -3.8% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "2470M x 379.8 = 0.938T vs card 0.938T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 379.80 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [export_control_status]",
+      "status": "PASS",
+      "detail": "newest source 2023-05-24 (1d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2023-05-24 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 14 source dates <= 2023-05-25"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

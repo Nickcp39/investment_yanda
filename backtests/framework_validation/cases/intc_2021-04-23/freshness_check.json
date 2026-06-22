@@ -1,0 +1,86 @@
+{
+  "ticker": "INTC",
+  "as_of": "2021-04-23",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 59.24,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 59.2400016784668,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 59.24
+      },
+      {
+        "source_name": "stockanalysis.com",
+        "value": 59.24
+      },
+      {
+        "source_name": "mktcap_card_implied",
+        "value": 59.19
+      }
+    ],
+    "max_pairwise_delta_pct": 0.084,
+    "independent_sources": [
+      "mktcap_card_implied",
+      "stockanalysis.com",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2021-04-23",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "43.61 <= 59.24 <= 68.49"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+35.8% off low, -13.5% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "4038M x 59.24 = 0.239T vs card 0.239T (0.09%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 59.24 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2021-04-22 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 13 source dates <= 2021-04-23"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

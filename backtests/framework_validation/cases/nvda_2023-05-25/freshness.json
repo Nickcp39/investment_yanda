@@ -1,0 +1,86 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2023-05-25",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (exemplar; lean-6module-v1.1)",
+  "note": "PRE-SPLIT nominal price. Modern feeds split-adjust the whole history, so the contemporaneous nominal close is recovered as Yahoo raw_close x cumulative split factor (10:1 on 2024-06-07, AFTER as_of -> factor 10). Independent corroboration that does NOT come from the price feed: FY23 10-K share count (2.47B) x card market cap $938B = $379.76/sh, plus dated 2023-05-25 record-close news (S008/S009/S011/S012, ~$1T market value). This is the pattern every pre-split backtest case must follow.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 379.80,
+      "unit": "USD",
+      "as_of": "2023-05-25",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Record-close entry BY DESIGN: NVDA closed +24% at an all-time high on the AI Data Center guide; the case deliberately tests entering at the post-print spike. -3.8% off the 52wk high is expected and intentional, not a low/high-grab error.",
+      "split_factor": 10,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-06-21", "value": 379.80, "note": "raw close 37.98 x 10 (10:1 split 2024-06-07, after as_of)"},
+        {"source_name": "mktcap_8k_implied", "url": "FY23 10-K (S004) 2.47B pre-split shares x card mcap $938B", "fetched_at": "2026-06-21", "value": 379.76, "note": "independent of the price feed"},
+        {"source_name": "contemporaneous_news", "url": "CNBC S008 / CNBC S009 / CNN S011 / WaPo S012, dated 2023-05-25", "fetched_at": "2026-06-21", "value": 379.80, "note": "record close; market value approaching ~$1T corroborates the level"}
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 938000000000,
+      "unit": "USD",
+      "as_of": "2023-05-25",
+      "sources": [
+        {"source_name": "card_8k_shares", "fetched_at": "2026-06-21", "value": 938000000000, "note": "2.47B pre-split shares x $379.80"},
+        {"source_name": "contemporaneous_news", "fetched_at": "2026-06-21", "value": 940000000000, "note": "WaPo/CNBC 2023-05-25: market value approaching ~$1T"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 394.80,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 394.80, "note": "trailing-52wk intraday high x10"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 108.13,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 108.13, "note": "trailing-52wk intraday low x10 (Oct-2022 trough)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2470,
+      "unit": "millions",
+      "as_of": "2023-05-25",
+      "sources": [
+        {"source_name": "fy23_10k_S004", "public_date": "2023-02-24", "value": 2470, "note": "pre-split diluted weighted shares"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "export_control_status",
+      "is_quantitative": false,
+      "value": "As of 2023-05-25: US Oct-2022 rules restrict top-end (A100/H100) to China; NVDA ships China-compliant A800/H800. The EXPANDED Oct-2023 controls (which banned A800/H800) are AFTER as_of and must NOT be used.",
+      "as_of": "2022-10",
+      "sources": [
+        {"source_name": "fy23_10k_S004", "public_date": "2023-02-24", "note": "risk factor: US export controls on advanced GPUs to China"},
+        {"source_name": "cfo_commentary_S002", "public_date": "2023-05-24", "note": "China demand served within the compliant lineup"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Q2 FY24 revenue $11.0B +/-2% (the forced market update vs ~$7.2B consensus)",
+      "as_of": "2023-05-24",
+      "sources": [
+        {"source_name": "q1fy24_8k_S001", "public_date": "2023-05-24", "value": 11000, "note": "8-K press release outlook"}
+      ],
+      "pass": true
+    }
+  ]
+}

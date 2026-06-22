@@ -88,7 +88,7 @@ Product summary (units in thousands, revenue in $M), Q2 FY2016 vs Q2 FY2015 (YoY
 - iPhone: 51,193 units / $32,857 revenue (units -16%, revenue -18%).
 - iPad: 10,251 units / $4,413 revenue (units -19%, revenue -19%).
 - Mac: 4,034 units / $5,107 revenue (units -12%, revenue -9%).
-- Services: $6,056 revenue (+20%).
+- Services: $5,991 revenue (+20%).  [corrected 2026-06-21 timeline audit: original $6,056 was the Q1 FY16 column; Q2 FY16 Services = $5,991M, +19.9% YoY. Thesis unaffected — still ~$6B, >Mac/iPad.]
 - Other Products: $2,189 revenue (+30%).
 - Total: $50,557 (-13% YoY; -33% sequentially vs Q1 FY2016 $75,872).
 

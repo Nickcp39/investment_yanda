@@ -1,0 +1,188 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. high-hug justified flag: price is -6.1% off 52wk-high but this is justified by fundamental re-rating from Q1 2026 guidance raise.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1109.73,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price is -6.1% below 52wk high of $1,181.95. This is NOT a price-grab error: GEV Q1 2026 results (April 22, 2026) showed massive guidance raise (FCF from $5.0-5.5B to $6.5-7.5B; EBITDA margin from 11-13% to 12-14%; revenue raised). Stock legitimately re-rated to near-ATH on fundamental improvement. Confirmed by multiple sources showing same $1,109.73 value.",
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=1y&interval=1d",
+          "fetched_at": "2026-06-21",
+          "value": 1109.73
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-06-21",
+          "value": 1109.73
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 298213000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-06-21",
+          "value": 298210000000
+        },
+        {
+          "source_name": "derived",
+          "url": "268.72M shares x $1109.73",
+          "fetched_at": "2026-06-21",
+          "value": 298213000000
+        }
+      ],
+      "cross_check_delta_pct": 0.001,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 1181.95,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=1y&interval=1d",
+          "fetched_at": "2026-06-21",
+          "value": 1181.95
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-06-21",
+          "value": 1181.95
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 479.04,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=1y&interval=1d",
+          "fetched_at": "2026-06-21",
+          "value": 479.04
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-06-21",
+          "value": 479.04
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 268.72,
+      "unit": "millions",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/statistics/",
+          "fetched_at": "2026-06-21",
+          "value": 268.72
+        },
+        {
+          "source_name": "stockanalysis_main",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-06-21",
+          "value": 268.72
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 raised guidance (post-Q1 2026, announced 2026-04-22): Revenue $44.5-45.5B; Adj EBITDA margin 12%-14%; FCF $6.5-7.5B. Power 16-18% organic growth, 17-19% EBITDA margin. Electrification $14.0-14.5B revenue, 18-20% EBITDA margin. Wind low-double-digit organic decline, ~$400M EBITDA losses. Next earnings: ~July 22, 2026 (Q2 2026).",
+      "as_of": "2026-04-22",
+      "sources": [
+        {
+          "source_name": "sec_8k_q1_2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000063/gevpressrelease1q26.htm",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        },
+        {
+          "source_name": "stocktitan",
+          "url": "https://www.stocktitan.net/sec-filings/GEV/8-k-ge-vernova-inc-reports-material-event-365b201cba34.html",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "backlog_status",
+      "is_quantitative": false,
+      "value": "Gas turbine backlog (firm + slot reservations): 100 GW as of Q1 2026 end (2026-03-31). Slots sold out through 2029. ~10 GW remaining in 2029-2030 combined. CEO targets sold-out-through-2030 by YE2026. Total backlog $163B. Electrification equipment backlog $38.6B (+75% YoY). Services RPO ~$87B+. No material cancellations reported as of as_of date.",
+      "as_of": "2026-04-22",
+      "sources": [
+        {
+          "source_name": "q1_2026_transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/04/22/ge-vernova-gev-q1-2026-earnings-transcript/",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        },
+        {
+          "source_name": "stocktitan_8k",
+          "url": "https://www.stocktitan.net/sec-filings/GEV/8-k-ge-vernova-inc-reports-material-event-365b201cba34.html",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "wind_tariff_status",
+      "is_quantitative": false,
+      "value": "Wind segment under tariff headwind as of Q1 2026. Company-wide tariff exposure $250-350M for 2026. Q1 2026 Wind EBITDA loss -$382M (vs -$146M Q1 2025). Full-year 2026 Wind EBITDA guidance ~-$400M (implying back-half improvement). Offshore Wind legacy contract losses ongoing. No material tariff policy relief announced as of 2026-06-19.",
+      "as_of": "2026-04-22",
+      "sources": [
+        {
+          "source_name": "q1_2026_transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/04/22/ge-vernova-gev-q1-2026-earnings-transcript/",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        },
+        {
+          "source_name": "stocktitan_8k",
+          "url": "https://www.stocktitan.net/sec-filings/GEV/8-k-ge-vernova-inc-reports-material-event-365b201cba34.html",
+          "public_date": "2026-04-22",
+          "fetched_at": "2026-06-21"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "ticker": "DIS",
+  "as_of": "2021-11-11",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price, split_factor 1 (DIS has had no stock split in this window; its dividend was SUSPENDED in May-2020 and not reinstated as-of, so there is no dividend adjustment to undo either -- the raw close already equals the contemporaneous nominal close). raw_close(last <= as_of) x 1 = $162.11, reconciling exactly to the card; validator refetched_yahoo 162.11 (delta 0.00%). Independent corroboration that does NOT come from the price feed: share basis ~1.78B (1.8B issued less ~19M treasury, S001 balance sheet) x card market cap $288.556B implies $162.11/sh (0.00%), plus dated 2021-11-10 reaction coverage (CNBC/Axios/Deadline: stock down ~4-5% after-hours on EPS 37c adj vs 51c est, revenue $18.53B vs $18.79B est, Disney+ +2.1M to 118.1M). Follows the NVDA exemplar pattern.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 162.11,
+      "unit": "USD",
+      "as_of": "2021-11-11",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not a hug: $162.11 sits mid-band, +31.4% off the trailing-52wk nominal low ($123.41) and -20.2% off the nominal high ($203.02, the early-2021 ~$202 high the card cites). This is the first full session after the Q4 FY2021 print (down ~7%), not an extreme-of-series grab, so no justification is required and T2 passes on band distance.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/DIS", "fetched_at": "2026-06-21", "value": 162.11, "note": "raw close 162.11 x split_factor 1 (no DIS split; dividend suspended since 2020 so no dividend adjustment) -> nominal $162.11; validator refetched_yahoo 162.11 (delta 0.00%)"},
+        {"source_name": "mktcap_shares_implied", "url": "Q4-FY2021 8-K balance sheet (S001) ~1.78B shares x card mcap $288.556B", "fetched_at": "2026-06-21", "value": 162.11, "note": "independent of the price feed; $288,556,000,000 / 1,780,000,000 sh = $162.11 (0.00% vs card)"},
+        {"source_name": "contemporaneous_news", "url": "CNBC 2021-11-10 disney-dis-fiscal-q4-2021-earnings / Axios 2021-11-10 disney-stock-earnings-subscriber (S003)", "fetched_at": "2026-06-21", "value": 162.11, "note": "dated reaction: stock down ~4-5% after-hours then ~7% on the 2021-11-11 session; EPS 37c adj vs 51c est, rev $18.53B vs $18.79B est, Disney+ +2.1M to 118.1M -> corroborates the as_of level and the deceleration setup"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 288556000000,
+      "unit": "USD",
+      "as_of": "2021-11-11",
+      "sources": [
+        {"source_name": "card_shares", "fetched_at": "2026-06-21", "value": 288556000000, "note": "~1.78B shares (1.8B issued less ~19M treasury, S001) x $162.11 = $288.556B = card"},
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 288556000000, "note": "nominal price $162.11 x share basis -> $288.6B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 203.02,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 203.02, "note": "trailing-~372d intraday high x split_factor 1 (early-Mar-2021 ATH region; card cites ~$202)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 123.41,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 123.41, "note": "trailing-~372d intraday low x split_factor 1; the card's '~$135 52-week-low area' refers to the closing-low region, consistent with this intraday low"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1780,
+      "unit": "millions",
+      "as_of": "2021-10-02",
+      "sources": [
+        {"source_name": "q4fy21_8k_S001", "public_date": "2021-11-10", "value": 1780, "note": "~1.78B shares (1.8B issued less ~19M treasury) per the 2021-11-10 release balance sheet; basis for the as_of market cap"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "As of 2021-11-11: management REITERATED the FY2024 Disney+ target of 230-260M paid subscribers and DTC profitability by FY2024 (call, S002) -- but the Q4 print just decelerated sharply (Disney+ +2.1M net adds / +1.8% QoQ to 118.1M, vs +12% QoQ the prior quarter; ARPU -9% to $4.12) and the quarterly DTC operating loss WIDENED to -$630M. The FY2024 target is an as_of-unproven management aspiration on a metric that just missed. Do NOT use any subsequent quarter or the eventual target outcome (post as_of).",
+      "as_of": "2021-11-10",
+      "sources": [
+        {"source_name": "q4fy21_call_S002", "public_date": "2021-11-10", "value": 260, "note": "transcript: 230-260M FY2024 sub target reiterated; reacceleration framed as 2H-FY22-weighted"},
+        {"source_name": "q4fy21_8k_S001", "public_date": "2021-11-10", "note": "Q4 actuals: Disney+ 118.1M (+2.1M), ARPU -9% to $4.12, DTC op loss -$630M (widening)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dtc_economics_status",
+      "is_quantitative": false,
+      "value": "As of 2021-11-11: the direct-to-consumer segment is LOSS-MAKING and deteriorating at the margin -- FY2021 DTC operating loss -$1.68B (narrowed YoY from -$2.91B) BUT the Q4 quarterly loss WIDENED both YoY and sequentially (-$630M vs -$374M), Disney+ ARPU FELL 9%, and net adds decelerated to +2.1M. Meanwhile the funding cash cow, Linear Networks ($8.4B FY OI), is in structural decline (rev -4%, domestic channel OI -14%). This linear-decline-funds-a-losing-DTC structure is the structural_decline_trap. NOTHING about whether DTC later hit/missed the FY2024 target is used (post as_of).",
+      "as_of": "2021-11-10",
+      "sources": [
+        {"source_name": "q4fy21_8k_S001", "public_date": "2021-11-10", "note": "DTC FY loss -$1.68B, Q4 loss -$630M widening, ARPU -9%; Linear rev -4%, domestic OI -14%"},
+        {"source_name": "q3fy21_baseline_S007", "public_date": "2021-08-12", "note": "prior-quarter Disney+ 116M / +12% QoQ baseline -> establishes the deceleration trajectory was knowable as-of"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dividend_status",
+      "is_quantitative": false,
+      "value": "As of 2021-11-11: the Disney dividend is SUSPENDED. Disney suspended its semi-annual dividend in May-2020 (last payment $0.88/sh on 2021-01... last actually paid Jan-2020) to preserve ~$1.6B of cash during COVID, and as of Sept-2021 CEO Chapek explicitly said it would NOT be reinstated until the credit rating and cash flows improved. So this case has NO dividend cushion (unlike PFE) -- a money-losing DTC build funded by an eroding linear base with ~$54B gross debt and only ~$2.0B FCF. Reinstatement did not occur until late 2023, which is AFTER as_of and is NOT used.",
+      "as_of": "2021-09-22",
+      "sources": [
+        {"source_name": "dividend_suspension_context", "public_date": "2020-05-06", "note": "Disney suspended the 1H-FY2020 semi-annual dividend (May-2020) to preserve ~$1.6B cash; last paid Jan-2020 ($0.88 semi-annual)"},
+        {"source_name": "chapek_no_reinstatement", "public_date": "2021-09-22", "note": "as-of-state: management not reinstating the dividend until credit/cash flows improve (Motley Fool 2021-09-22) -- dated before as_of"}
+      ],
+      "pass": true
+    }
+  ]
+}

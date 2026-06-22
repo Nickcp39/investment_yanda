@@ -18,7 +18,7 @@ those belong to the future blind test (M2-M6).
 | C002 | Q2 FY2016 net income was $10.516B (EPS $1.90 diluted) vs $13.569B ($2.33) a year ago; gross margin 39.4% vs 40.8%. | S003 | high |
 | C003 | Q2 FY2016 iPhone units were 51,193k, down 16% YoY (revenue $32,857M, -18%) - the first-ever YoY decline in iPhone unit sales. | S004, S006, S010 | high |
 | C004 | iPad (-19% units) and Mac (-12% units) also declined YoY in Q2 FY2016. | S004 | high |
-| C005 | Services revenue was $6,056M, +20% YoY, and Other Products $2,189M, +30% - the only growing product lines. | S004, S006 | high |
+| C005 | Services revenue was $5,991M, +20% YoY, and Other Products $2,189M, +30% - the only growing product lines. | S004, S006 | high |
 | C006 | Greater China revenue fell 26% YoY in Q2 FY2016; management said most weakness was Hong Kong and that mainland China was down 11% reported / 7% constant-currency. | S004, S006 | high (figure) / medium (mgmt color) |
 | C007 | iPhone was ~66% of FY2015 net sales; FY2015 revenue $233.7B (+28%), net income $53.4B, diluted EPS $9.22, gross margin 40.1%. | S001 | high |
 | C008 | At 2016-03-26 Apple held ~$232.9B cash + marketable securities and ~$79.9B total debt (net cash ~$153.1B); equity $130.5B. | S005 | high |

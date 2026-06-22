@@ -1,0 +1,86 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-06-18",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 286.69,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 286.69000244140625,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 286.69
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 286.69
+      },
+      {
+        "source_name": "websearch",
+        "value": 286.69
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "websearch",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-18"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "43.89 <= 286.69 <= 298.8"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+553.2% off low, -4.1% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "254M x 286.69 = 0.073T vs card 0.073T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -4.0% vs card-implied -4.1% (gap 0.1pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 286.69 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-30 is 49d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-05-13 (36d)"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [active_litigation] -newest source 2026-04-30 is 49d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

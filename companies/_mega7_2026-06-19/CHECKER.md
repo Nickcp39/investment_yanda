@@ -64,11 +64,15 @@ Checker **不是** Runner 自己。它收到锁定的 dossier,只判定:gate 是
 
 并核对 **size 与耐久性匹配**:周期/未确认的不得给 Core 级 size;天花板由耐久性(含 operator life-arc 评级)而非单纯"确认"定。
 
-## 4. 活体专属检查(本批新增)
+## 4. 活体专属检查(本批新增) — 数据新鲜度现为**强制机械门**(lean-6module-v1.1)
 
-- [ ] **数据新鲜度**: 用到的最新一季 10-Q / 财报 / 价格在 as_of=2026-06-19 是当下最新可得;无明显过期数字被当"当前"。
-- [ ] **价格源合规**: 股价/市值走 Yahoo chart API(repo 既定来源),非已失效的 Stooq。
-- [ ] **GOOGL 刷新特例**: GOOGL 不要求重建;但 Checker 须确认其 `decision_card` 重打了 2026-06-19 的 run_date 且 3 天内无重大事实变化被忽略。
+> 背景: INC-001(NVDA 用 $145.48≈52周低当现价,真实 $210.69,45% 错价翻了 verdict,Checker 仍盖 CLEAN)。
+> 教训: **人工勾选"无明显过期数字"挡不住一个数值错误**——错价的所有衍生数都内部自洽。因此本项由判断式升级为机械式。
+
+- [ ] **数据新鲜度(MECHANICAL,硬门)**: `python scripts/verify_freshness.py --dossier <dossier>` 已运行,`freshness_check.json` 已提交且 `status=="PASS"`(exit 0)。**无 PASS 产物 = 自动 FIX-NEEDED;Checker 无权以人工判断放行。** 该脚本独立重抓价格、交叉验证 ≥2 独立源、跑结构 tripwire(含"现价≈52周低/高"探测)。
+- [ ] **freshness.json manifest 存在**: 每个 LIVE 字段(price/market_cap/52wk/shares + 出口管制/诉讼/guidance)带 ≥2 独立源。LIVE/FILED 决期分级见 `sources/source_policy.md`。
+- [ ] **价格源合规**: 价格走 Yahoo chart API(repo 既定来源),并由 ≥2 源交叉验证(单源 + 只验日期 = INC-001 的洞,不再接受)。
+- [ ] **GOOGL 刷新特例**: GOOGL 不要求重建;但同样须有 `freshness.json` + 一次 `verify_freshness.py` PASS(它本就手动重抓过 3 个 close,本项把它形式化)。
 
 ## 5. 输出格式(`checker_report.md`)
 
@@ -77,6 +81,7 @@ Checker **不是** Runner 自己。它收到锁定的 dossier,只判定:gate 是
 裁定: CLEAN | FIX-NEEDED
 真实状态标签: <NOT_STARTED..COMPLETE>
 verdict / size / ceiling: <...>  ← 是否被完整度正确封顶: 是/否
+数据新鲜度: PASS(freshness_check.json) | BLOCK  ← 无 PASS = 强制 FIX-NEEDED
 Gate 勾选: A_/B_/C_/D_/E_/F_  (列未过项)
 FIX 清单: 1) ... 2) ...   (每条指到文件)
 伪造引语/失配数字: 无 | 列出

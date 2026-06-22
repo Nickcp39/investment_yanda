@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBIS 决策简报 — as_of 2026-06-18</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#33260f,#1a1d24);border-color:#5a4a2c}
+  .verdict .val{color:var(--ylw)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Nebius Group (NBIS) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-06-18 · pipeline lean-6module-v1.1 · weights none · run_date 2026-06-21 · 状态 <b class="warn">DECISION_DRAFT (~70%)</b> · 来源 SEC 20-F/6-K + 官方 IR + Yahoo chart API · freshness <b class="pos">PASS</b></div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">WATCH</div><div class="sub" style="margin:0">新钱不进 · buy-below &lt;~$150–180</div></div>
+    <div class="card"><div class="lbl">Existing Position</div><div class="val warn">HOLD</div><div class="sub" style="margin:0">存量 +~50% 纪律持有</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">good</div><div class="sub" style="margin:0">真实改善 · 尚非复利机</div></div>
+    <div class="card"><div class="lbl">Price (06-18 close)</div><div class="val">$286.69</div><div class="sub" style="margin:0">市值 ~$72.79B · −4% 距 52wH</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点 — LEAD：电力是瓶颈吗？</h2>
+    <p><b>否，前提两头都错。</b> NBIS <b>不建电厂</b>——它建/拥有数据中心(&gt;75% 自有、3GW/5 站),签合同电力,并用<b>合作方建的表后燃气</b>(NJ ~85% 气)+ Bloom 燃料电池<b>绕开</b>并网排队。电力<b>供给也不是约束</b>:已 &gt;3.5GW 合同(指引 &gt;4GW YE26),需求售罄。<b>真正的 binding constraint 是"建设-通电"链</b>:把合同 GW 变成 connected → <b>active(live, paid)MW</b>,卡在施工速度 + 长周期电气设备(变压器/燃气机组)——管理层原话"capacity is the main bottleneck"。</p>
+    <p><b>与 MSFT(同批,五票 STARTER)镜像对照:</b> MSFT 被<b>完整度</b>封顶但<b>有正安全边际</b>(公允价 &gt; 现价);<b>NBIS 被价格封顶——$286.69 无安全边际</b>:EV 已把 YE26 $7–9B exit-ARR <b>当作已兑现</b>、按成熟倍数定价。这是"好生意、错价格"的 <b>WATCH</b>(新钱),不是"好生意、对价格"的 STARTER。存量仓因生意被一手数据验证得更好 → <b>HOLD</b>(更好的生意、不是更便宜)。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>一手底座强(20-F/6-K/合同);缺口=active MW(withheld)/集中度%/capex → ~70%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>顶级 AI-neocloud;电力非瓶颈、不建电厂;约束=合同GW→live MW</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num">0</td><td>有定价权但护城河相对、ROIC 负、转换成本低、创始人超级投票</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num neg">−1</td><td>capex ~7.7×、FCF −$3.7B;4→5yr 折旧 + 两年 adverse ICFR + ClickHouse 非现金</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−2</td><td>稀释挤压(D)/交付违约触发 MSFT 条款(A/B)/折旧冲击(C)——高severity 簇</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num neg">−2</td><td>priced for perfection;EV ≈ 2.2× 全部 RPO、8–10× YE26 ARR;无 MOS</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">EV / RPO ($33.6B)</div><div class="val warn">~2.2×</div><div class="sub" style="margin:0">EV ≈ 2× 全部合同书</div></div>
+    <div class="card"><div class="lbl">EV / YE26 exit-ARR</div><div class="val warn">~8–10×</div><div class="sub" style="margin:0">$7–9B 当作已兑现</div></div>
+    <div class="card"><div class="lbl">capex / 收入 (FY25)</div><div class="val neg">~7.7×</div><div class="sub" style="margin:0">FCF ≈ −$3.7B</div></div>
+    <div class="card"><div class="lbl">FY25 收入增速</div><div class="val pos">+479%</div><div class="sub" style="margin:0">Q1'26 +684%</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据 (FY2025 20-F / Q1'26 6-K)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>RPO(审计口径)</td><td class="num">$33.6B (Q1'26)</td><td>6-K(非"$46B backlog")</td></tr>
+      <tr><td>Microsoft 合同</td><td class="num">up to $17.4→19.4B 至 Oct'31</td><td>6-K ex-99.1</td></tr>
+      <tr><td>Meta 合同</td><td class="num">~$2.88B + up to ~$27B(2027起)</td><td>PR/6-K</td></tr>
+      <tr><td>合同电力 / 自有</td><td class="num pos">&gt;3.5GW / &gt;75%</td><td>6-K(LEAD)</td></tr>
+      <tr><td>active 电力(live MW)</td><td class="num warn">~170MW YE2025(Q1'26 withheld)</td><td>6-K(转化证明,缺)</td></tr>
+      <tr><td>YE2026 exit-ARR 目标</td><td class="num">$7–9B</td><td>电话会(已被价格当兑现)</td></tr>
+      <tr><td>现金 / 可转债(carry)</td><td class="num">$9.30B / $8.45B</td><td>6-K(carry 净现金 ~+$0.85B)</td></tr>
+      <tr><td>稀释(自重新上市)</td><td class="num warn">+~27%(199.3M→253.9M)</td><td>20-F(+ 可转/认股证 overhang)</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带（EV/forward-sales 三角，horizon end-2028）</h2>
+    <table>
+      <tr><th>档位</th><th class="num">价位</th><th class="num">vs $286.69</th><th>驱动</th></tr>
+      <tr><td><b class="pos">Bull</b></td><td class="num">~$560+</td><td class="num pos">~+95%</td><td>完美执行 + 第3大锚 + 维持溢价 + FCF 提前转正</td></tr>
+      <tr><td>no-chase / 现价</td><td class="num">$286.69</td><td class="num">0</td><td><b>priced for perfection</b> — 新钱不追</td></tr>
+      <tr><td><b class="warn">Base</b></td><td class="num">~$330–400</td><td class="num warn">+15~40%</td><td>backlog 按计划转化、需求拓宽、capex/rev 正常化(~6–14%/yr)</td></tr>
+      <tr><td><b>新钱 buy-below</b></td><td class="num">~$150–180</td><td class="num">−37~−48%</td><td>向 base 入场带 + 缓冲;~12–15%/yr 所需 MOS</td></tr>
+      <tr><td><b class="neg">Bear</b></td><td class="num">~$120–140</td><td class="num neg">−50%+</td><td>churn/clawback、商品化、capex air-pocket 逼迫稀释</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint(新钱)= 价格,非完整度(与 MSFT 镜像相反)。</b> $286.69 无安全边际:EV 已把 YE26 $7–9B exit-ARR 当作已兑现、成熟倍数定价;bear ~−50%+、base ~低双位数,且 base <b>要求</b> backlog 在反演路径(稀释/clawback/折旧)不爆下转化。生意端约束=<b>建设-通电链</b>(合同GW→active MW),证明指标 active MW 被公司停披露(~170MW YE2025)。完整度(~70%)是次级封顶。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A active/connected MW 停滞 vs 800MW–1GW YE26 / 持续不披露</td><td>~170MW YE2025,Q1'26 withheld</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B MSFT/Meta tranche missed/renegotiated 或锚客户砍 capex</td><td>on plan</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-C 融资从 prepayment 转 dilution(+ FCF 仍深负)</td><td>prepayment-led;+27% 稀释 watch</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-D 第二次折旧延寿 / GPU 减值 / rev-per-MW 环比降</td><td>5yr 刚设;Hopper −28% YoY</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-VAL 新钱无 MOS(&gt;~$180–200)</td><td>$286.69 priced for perfection</td><td><span class="pill r">红(新钱)</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC（段永平主审）</h2>
+    <p>五票一致 <b class="warn">新钱 WATCH / 存量 HOLD</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 主审 <b class="warn">WATCH(新钱)/ HOLD(存量)</b>。收敛点:<b>价格关明确不过(与 MSFT 五票 STARTER 镜像相反)——$286.69 无安全边际、为非对称风险什么都没拿到</b>;但生意被一手验证更好 → 存量仓 HOLD、kill on criteria 不 on price。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~70%,<b>非 COMPLETE</b>。OPEN 项:Q1'26 active 电力 MW(公司 withhold,重大 — O-A)、客户集中度精确 %(O-B)、FY2026 capex actual $20–25B vs $31–35B(O-C)、俄罗斯剥离 indemnity/或有负债(O-D)。所有载荷性数字回挂 SEC 20-F/6-K 一手或官方 IR;KOL/媒体仅情绪。价格 $286.69 经 verify_freshness.py 三源核验(PASS)。详见 decision_card.json / ic_panel.md / audit.md / checker_report.md / freshness_check.json。
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "ticker": "INTC",
+  "as_of": "2024-08-02",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 21.48,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 21.479999542236328,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 21.48
+      },
+      {
+        "source_name": "stockanalysis.com",
+        "value": 21.48
+      },
+      {
+        "source_name": "mktcap_card_implied",
+        "value": 21.49
+      }
+    ],
+    "max_pairwise_delta_pct": 0.047,
+    "independent_sources": [
+      "mktcap_card_implied",
+      "stockanalysis.com",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2024-08-02",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "20.42 <= 21.48 <= 51.28"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+5.2% off low, -58.1% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "4276M x 21.48 = 0.092T vs card 0.092T (0.06%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 21.48 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2024-08-01 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 21 source dates <= 2024-08-02"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

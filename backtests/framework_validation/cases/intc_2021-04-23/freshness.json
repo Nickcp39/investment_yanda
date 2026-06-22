@@ -1,0 +1,86 @@
+{
+  "ticker": "INTC",
+  "as_of": "2021-04-23",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price. INTC had NO stock split in this window, so the cumulative split factor for any split AFTER as_of is 1 -> nominal = Yahoo raw_close(last <= as_of) x 1 = $59.24 (the raw close already excludes Yahoo's dividend back-adjustment; the dividend-adjusted close was $53.88, which is NOT the contemporaneous nominal print and is not used). Independent corroboration that does NOT come from the Yahoo price feed: (a) stockanalysis.com daily history reads the same $59.24 close (and $62.57 prior-day, matching the card), and (b) the card market cap $239B / 4,038M shares = $59.19/sh. As of 2021-04-23 Intel's quarterly cash dividend was FULL/intact (~$0.3475/qtr), reaffirmed on the Q1'21 call -- the Feb-2023 65% cut and the Aug-2024 suspension are both FAR in the future and are NOT used.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 59.24,
+      "unit": "USD",
+      "as_of": "2021-04-23",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not near an extreme: $59.24 sits mid-band, +35.8% off the 52wk low ($43.61) and -13.5% below the 52wk high ($68.49). No hug to justify; the price is the genuine last close <= as_of, near a ~20-year high by design of the case (structural_decline_trap entry), but well inside the trailing band.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTC", "fetched_at": "2026-06-21", "value": 59.24, "note": "raw close 59.24 x split factor 1 (no INTC split after as_of); validator backtest-mode refetched_yahoo = 59.24"},
+        {"source_name": "stockanalysis.com", "url": "https://stockanalysis.com/stocks/intc/history/", "fetched_at": "2026-06-21", "value": 59.24, "note": "independent daily-history feed (not Yahoo); same 2021-04-23 close 59.24, prior-day 2021-04-22 close 62.57 matches the card"},
+        {"source_name": "mktcap_card_implied", "url": "decision_card.json as_of_market_cap $239B / 4,038M shares (S004 10-Q share basis)", "fetched_at": "2026-06-21", "value": 59.19, "note": "independent of the price feed; 239.0B / 4038M = 59.19 (0.09% off card)"}
+      ],
+      "cross_check_delta_pct": 0.09,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 239000000000,
+      "unit": "USD",
+      "as_of": "2021-04-23",
+      "sources": [
+        {"source_name": "card_x_shares", "fetched_at": "2026-06-21", "value": 239210000000, "note": "$59.24 x 4,038M shares = $239.2B (rounds to card $239B)"},
+        {"source_name": "stockanalysis_x_shares", "fetched_at": "2026-06-21", "value": 239210000000, "note": "stockanalysis close 59.24 x 4,038M shares -> same ~$239B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 68.49,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 68.49, "note": "trailing ~52wk (372d <= as_of) intraday high x split factor 1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 43.61,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 43.61, "note": "trailing ~52wk (372d <= as_of) intraday low x split factor 1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4038,
+      "unit": "millions",
+      "as_of": "2021-04-23",
+      "sources": [
+        {"source_name": "card_share_basis", "public_date": "2021-04-23", "value": 4038, "note": "share basis behind the card's ~$239B market cap (Q1'21 10-Q, S004)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dividend_status",
+      "is_quantitative": false,
+      "value": "As of 2021-04-23: Intel's quarterly cash dividend was FULL/intact (~$0.3475/share/quarter) and the dividend commitment was reaffirmed on the Q1'21 earnings call. The thesis treats the dividend as currently secure. The Feb-2023 65% dividend CUT and the Aug-2024 dividend SUSPENSION are both AFTER as_of and must NOT be used.",
+      "as_of": "2021-04-22",
+      "sources": [
+        {"source_name": "q1fy21_earnings_release_S003", "public_date": "2021-04-22", "note": "Q1'21 8-K/earnings release: dividends and buybacks (buybacks cut to fund capex; dividend maintained)"},
+        {"source_name": "q1fy21_call_S005", "public_date": "2021-04-22", "note": "Q1'21 earnings call: management reaffirms dividend commitment alongside ~$20B capex"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "FY2021 non-GAAP EPS guide ~$4.60; capex guided ~$19-20B (now exceeding ~$10.5B FCF guide); Q2'21 outlook per the Q1'21 release. Used as the as-of forward frame.",
+      "as_of": "2021-04-22",
+      "sources": [
+        {"source_name": "q1fy21_earnings_release_S003", "public_date": "2021-04-22", "value": 4.60, "note": "FY21 non-GAAP EPS + capex guidance in the Q1'21 8-K/earnings release"}
+      ],
+      "pass": true
+    }
+  ]
+}

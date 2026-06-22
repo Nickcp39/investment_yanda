@@ -25,13 +25,15 @@
 一次跑一组公司时,在单公司流程外加一层**批量编排**,用多-agent workflow 并行,并配一个**独立活体 checker**。三件套固化在批次目录 `companies/_<batch>_<date>/`(直接复制 `companies/_mega7_2026-06-19/` 改用):
 - `PLAN.md` — 范围 / 名单 / as_of / 每家产物 / 三阶段 / 交付物 / 进度表
 - `RUNNER_BRIEF.md` — 每个 Runner 吃的**同一份**指令(保证 N 家走完全相同 pipeline、可横向比)
-- `CHECKER.md` — **活体质量门**(≠ 回测的 lookahead QA):完整度 A-F gate + 来源纪律 + 数字一致性 + 数据新鲜度 + 不造引语 → 输出 CLEAN/FIX + 真实状态标签 + verdict 上限核验
+- `CHECKER.md` — **活体质量门**(≠ 回测的 lookahead QA):完整度 A-F gate + 来源纪律 + 数字一致性 + **机械数据新鲜度门(v1.1)** + 不造引语 → 输出 CLEAN/FIX + 真实状态标签 + verdict 上限核验
 
 执行(workflow;角色隔离同回测:**Checker ≠ Runner**,独立重算数字 / 抽验来源 / 查伪造引语):
 ```
-每家:Runner 建 dossier → 锁 decision_card → 独立 Checker 过 CHECKER.md → checker_report.md   (逐家并行 pipeline)
+每家:Runner 建 dossier + freshness.json → verify_freshness.py(exit 0 + 提交 freshness_check.json) → 锁 decision_card
+      → 独立 Checker 过 CHECKER.md(确认 freshness_check.json==PASS 才判 CLEAN) → checker_report.md   (逐家并行 pipeline)
 末端:Synthesis 读全 N 张卡 → attractiveness 排序 + 单因子集中度检查 → synthesis.md + dashboard.html
 ```
+> **v1.1 硬门**:无 `freshness_check.json`(`status==PASS`)的 dossier 一律 FIX-NEEDED——LIVE 数据(价格/市值/52周/出口管制/guidance)必须 ≥2 独立源机械交叉验证,不接受单源+只验日期(INC-001)。dossier 目录带 as_of:`companies/<ticker>/<as_of>/`。
 
 **每家产物深度二选一**(都锁同一张 lean-6module `decision_card`):① **lean 6 文件**(canonical、快)= `COMPANY_MATERIAL_TEMPLATE.md` 那套;② **完整 GOOGL 级 dossier**(10 层证据深度,Mega7 用的就是这个)= 镜像 `companies/googl/`(business_model / moat / operator / inversion / valuation / **ic_panel 五灵魂** / audit / monitor …)。
 
@@ -60,7 +62,7 @@
 
 ## 输入 → 输出
 - **输入**:一个 ticker(实盘);或 ticker + `as-of` 日(回测)。
-- **输出**:一套材料文件 + `operator_background.md` + 锁定的 `decision_card.json`(盖 `pipeline_version`/`weights_version`/`run_date`)+ 人读的 `decision_card.md`。
+- **输出**:一套材料文件 + `operator_background.md` + 锁定的 `decision_card.json`(盖 `pipeline_version`/`weights_version`/`run_date`)+ 人读的 `decision_card.md` + **`freshness.json`(LIVE 数据 manifest)+ `freshness_check.json`(`verify_freshness.py` 产物,须 PASS)**。落在带 as_of 的目录 `companies/<ticker>/<as_of>/`。
 
 ## 旧 10 层 → 新 6 模块映射(为什么 6 个就够)
 旧 10 层是"**能力清单**"(确保没漏看),新 6 模块是"**会改仓位的执行单元**"。同一套东西、两层视角:

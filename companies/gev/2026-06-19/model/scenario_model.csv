@@ -1,0 +1,6 @@
+scenario,as_of_price,ev_current,net_cash_current,shares_m,ebitda_2026E,ebitda_2028E,ebitda_margin_2028E,exit_multiple_2028,ev_2028,net_cash_2028,equity_value_2028,shares_2028_est,price_2028,irr_3yr_pct,irr_5yr_pct,hurdle_8pct_pass,notes
+Bear,-$1109.73,292200,7400,268.72,4500,6500,12.5%,25,162500,12000,174500,265,658.5,-15.4,-9.5,FAIL,"Hyperscaler 2027 decel; GT pricing moderates; Wind -$600M; targets miss 38%; market de-rates to 25x from 49x"
+Base,1109.73,292200,7400,268.72,5850,8500,16.3%,28,238000,18000,256000,263,973.8,-4.3,3.8,FAIL,"80% of 2028 targets; some tariff headwind; Wind improves but not to 6%; modest buyback; multiple compresses 49->28x"
+Bull,1109.73,292200,7400,268.72,6200,10400,20.0%,32,332800,22000,354800,260,1364.6,7.2,11.3,FAIL-3yr/PASS-5yr,"Full 2028 targets; premium multiple sustained at 32x for execution quality; $22B cumul FCF per guide"
+buy_below_starter,950.0,292200,7400,268.72,5850,8500,16.3%,28,238000,18000,256000,263,973.8,0.8,6.5,FAIL,"At $950 entry, base IRR still <8% at 3yr; need ~$756 for clean 8% hurdle in base"
+buy_below_core,756.0,292200,7400,268.72,5850,8500,16.3%,28,238000,18000,256000,263,973.8,8.1,11.2,PASS,"At $756 base case clears 8% hurdle; bull case 14%; bear case -5%; CORE entry zone"

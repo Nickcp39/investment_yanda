@@ -1,0 +1,86 @@
+{
+  "ticker": "META",
+  "as_of": "2022-11-10",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 111.0,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 111.87000274658203,
+    "manifest_sources": [
+      {
+        "source_name": "statmuse_close",
+        "value": 111.0
+      },
+      {
+        "source_name": "mktcap_10q_implied",
+        "value": 111.0
+      },
+      {
+        "source_name": "stockanalysis_close",
+        "value": 111.87
+      }
+    ],
+    "max_pairwise_delta_pct": 0.778,
+    "independent_sources": [
+      "mktcap_10q_implied",
+      "statmuse_close",
+      "stockanalysis_close",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2022-11-10",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "88.09 <= 111.0 <= 353.83"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+26.0% off low, -68.6% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "2652M x 111.0 = 0.294T vs card 0.294T (0.02%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 111.00 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2022-11-09 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 19 source dates <= 2022-11-10"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

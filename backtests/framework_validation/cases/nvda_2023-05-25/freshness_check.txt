@@ -1,0 +1,12 @@
+FRESHNESS CHECK -NVDA as_of 2023-05-25  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=379.8 refetched_yahoo=379.7999954223633 (2023-05-25) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 108.13 <= 379.8 <= 394.8
+  [PASS] T2 low/high hug: +251.2% off low, -3.8% off high
+  [PASS] T3 market-cap identity: 2470M x 379.8 = 0.938T vs card 0.938T (0.01%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 379.80 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [export_control_status]: newest source 2023-05-24 (1d)
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2023-05-24 (1d)
+  [PASS] T7 no-lookahead (source<=as_of): all 14 source dates <= 2023-05-25

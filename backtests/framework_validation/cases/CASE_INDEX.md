@@ -1,6 +1,6 @@
 # Backtest Case Index
 
-Last updated: 2026-06-18
+Last updated: 2026-06-21
 
 Master tracker for the framework-validation as-of backtest cases. Each case lives in `cases/<ticker>_<as_of>/` and follows `../COMPANY_MATERIAL_TEMPLATE.md` + `../PROTOCOL.md`.
 
@@ -49,3 +49,4 @@ materials (this round)  ->  blind Runner locks decision_card  ->  Lookahead Audi
 - `mu_2025-03-21` was a **single-agent self-run** (collect + decide in one pass), not the blind-collect → separate-Runner → separate-Scorer flow; treat its decision as illustrative and re-run cleanly if used for scoring.
 - **Operator/founder dossiers (2026-06-17):** every materials pack now includes `operator_background.md` (formation-first life-arc + required dark-arc + durability-ceiling grade 1–5), per `../COMPANY_MATERIAL_TEMPLATE.md` + `../../companies/_operator_underwriting_template.md`. Team grades: **NVDA / AMZN / AAPL / GOOGL 4/5 · META / PFE / PYPL / INTC-2024 / INTC-2021 3/5 · DIS 2.5/5**. (Higher = founder/long-arc team that can raise the durability ceiling; lower = fracture / key-man / governance discount.)
 - `companies/googl/` and `companies/nbis/` are **full-information** research folders — NOT backtests; do not feed them to a blind runner.
+- **Data-freshness (2026-06-21, INC-001 retrofit):** all 13 cases now carry a `freshness.json` manifest + a committed `verify_freshness.py --mode backtest` PASS (`freshness_check.json`). as_of prices were verified as the contemporaneous **NOMINAL** price — `Yahoo raw_close × post-as_of split factor` (NVDA ×10, AAPL ×4; all others ×1) — against ≥2 independent sources, and **T7 no-lookahead** confirmed every source `public_date ≤ as_of`. This removed one post-as_of row (S013, 2023-02-09) from `amzn_2023-02-03/sources_used.csv`. No decision-card numbers, verdicts, or outcome scores changed. Re-run any case's gate with `python scripts/verify_freshness.py --dossier cases/<case>`.

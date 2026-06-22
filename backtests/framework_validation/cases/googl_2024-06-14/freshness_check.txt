@@ -1,0 +1,12 @@
+FRESHNESS CHECK -GOOGL as_of 2024-06-14  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=175.44 refetched_yahoo=176.7899932861328 (2024-06-14) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 115.35 <= 175.44 <= 180.41
+  [PASS] T2 low/high hug: +52.1% off low, -2.8% off high
+  [PASS] T3 market-cap identity: 12381M x 175.44 = 2.172T vs card 2.172T (0.00%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 175.44 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [active_litigation]: newest source 2024-05-03 (42d)
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source 2024-04-25 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [PASS] T7 no-lookahead (source<=as_of): all 24 source dates <= 2024-06-14

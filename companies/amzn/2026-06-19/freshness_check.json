@@ -1,0 +1,79 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-06-19",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 244.39,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 244.38999938964844,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 244.39
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 244.39
+      },
+      {
+        "source_name": "websearch",
+        "value": 244.39
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "websearch",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-18"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "198.79 <= 244.39 <= 274.99"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+22.9% off low, -11.1% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "10874M x 244.39 = 2.657T vs card 2.657T (0.02%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -11.0% vs card-implied -11.1% (gap 0.1pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 244.39 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-30 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-30 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

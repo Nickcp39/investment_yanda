@@ -1,0 +1,98 @@
+{
+  "ticker": "PYPL",
+  "as_of": "2021-07-29",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price, split_factor 1 (PYPL has never split and pays no dividend, so the raw close already equals the contemporaneous nominal close). raw_close(last <= as_of) x 1 = $283.17, reconciling exactly to the card; validator refetched_yahoo 283.17 (delta 0.00%). Independent corroboration that does NOT come from the price feed: Q2-2021 10-Q share basis (~1,175M, S002) x card market cap $332.7B implies $283.17/sh (0.00%), plus dated 2021-07-28 reaction coverage (CNBC S004) framing the day-after close of $283.17 as a gap-down from $301.98. Separately, the card's cited as-of-era high ($310.16 intraday ~2021-07-26) matches the trailing-52wk nominal high computed here ($310.16) exactly (recorded in the 52wk_high field). Follows the NVDA exemplar pattern.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 283.17,
+      "unit": "USD",
+      "as_of": "2021-07-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not a hug: $283.17 is -8.7% off the trailing-52wk nominal high ($310.16) and +67.5% off the nominal low ($169.08) -- inside the band, beyond the 3% hug threshold on both sides. This is a post-earnings gap-down (from ~$301.98) the day after the Q2 print, not an all-time-high grab and not a 52wk-low grab, so no justification is required and T2 passes on band distance. The proximity to the high is the POINT of the expensive_quality_compounder_derating_risk case (near-ATH, ~60x fwd), but at -8.7% it is not a mechanical hug.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/PYPL", "fetched_at": "2026-06-21", "value": 283.17, "note": "raw close 283.17 x split_factor 1 (no PYPL split, no dividend -> raw close == nominal); validator refetched_yahoo 283.17 (delta 0.00%)"},
+        {"source_name": "mktcap_10q_implied", "url": "Q2-2021 10-Q (S002) ~1,175M shares x card mcap $332.7B", "fetched_at": "2026-06-21", "value": 283.17, "note": "independent of the price feed; $332,724,750,000 / 1,175,000,000 sh = $283.17 (0.00% vs card)"},
+        {"source_name": "contemporaneous_news", "url": "CNBC 2021-07-28 paypal-pypl-earnings-q2-2021 (S004) + S005 quotes snapshot", "fetched_at": "2026-06-21", "value": 283.17, "note": "dated as_of reaction: the day-after-earnings close was $283.17, a gap-down from $301.98 (prior close) and -8.7% below the card-cited ATH ~$310.16 of 2021-07-26 -- corroborates the as_of level (NOT the high, which lives in the 52wk_high field)"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 332724750000,
+      "unit": "USD",
+      "as_of": "2021-07-29",
+      "sources": [
+        {"source_name": "card_10q_shares", "fetched_at": "2026-06-21", "value": 332724750000, "note": "~1,175M shares (S002/S005) x $283.17 = $332.7B = card"},
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 332724750000, "note": "nominal price $283.17 x share basis -> $332.7B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 310.16,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 310.16, "note": "trailing-~372d intraday high x split_factor 1; matches card-cited ATH ~$310.16 on/around 2021-07-26"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 169.08,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 169.08, "note": "trailing-~372d intraday low x split_factor 1 (autumn-2020 region)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1175,
+      "unit": "millions",
+      "as_of": "2021-06-30",
+      "sources": [
+        {"source_name": "q2_2021_10q_S002", "public_date": "2021-07-28", "value": 1175, "note": "~1,175M shares used for the as_of market cap (10-Q quarter ended 2021-06-30; latest public before as_of)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "As of 2021-07-29: Q3'21 net-revenue guidance ~$6.15-6.25B (+13-14% at spot), a STEP-DOWN from Q2's +19%, and FY21 non-GAAP EPS guide ~$4.70 (the ~60x-forward anchor). NNAs were 11.4M vs 21.3M a year earlier (-47%). This decelerating guide against a near-ATH price is the binding constraint. Do NOT use actual Q3'21 results or any post-as_of guidance.",
+      "as_of": "2021-07-28",
+      "sources": [
+        {"source_name": "q2fy21_8k_S001", "public_date": "2021-07-28", "value": 6200, "note": "8-K Ex-99.1: Q3'21 revenue guide ~$6.15-6.25B (+13-14%); FY21 non-GAAP EPS ~$4.70; NNAs 11.4M"},
+        {"source_name": "cnbc_S004", "public_date": "2021-07-28", "note": "as_of reaction: beat/miss vs Refinitiv, after-hours drop on guidance + eBay drag"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "derating_risk_status",
+      "is_quantitative": false,
+      "value": "As of 2021-07-29: PYPL trades ~60x FY21 non-GAAP EPS (~$4.70) / ~67-80x trailing GAAP at a near-all-time-high (~$306-310 era, ~$310.16 intraday 2021-07-26), while growth is VISIBLY decelerating (NNAs -47% YoY; Q3 rev guide ~13-14% vs Q2 +19%) and trailing EPS is flattered by a ~$0.11 credit-reserve release ($0.20 GAAP portfolio gain), with eBay TPV rolling off (4% from 9%, ~done by Q3'21) and intensifying competition (Square/Cash App Q1'21 GP +79%/+171%, Apple Pay, BNPL). This is the as_of de-rating setup -- a permanent-loss-of-RETURN (overpay) risk, not solvency. NOTHING about the subsequent multiple compression is used (post as_of).",
+      "as_of": "2021-07-28",
+      "sources": [
+        {"source_name": "q2fy21_8k_S001", "public_date": "2021-07-28", "note": "NNAs -47%, Q3 guide +13-14%, ~$0.11 reserve release, eBay roll-off, non-GAAP op margin -171bps -> growth-quality erosion"},
+        {"source_name": "investor_day_targets_S007", "public_date": "2021-02-11", "note": "Feb-2021 2025 aspirations (750M accounts, >$50B rev, ~$2.8T TPV) the ~60x multiple capitalizes"},
+        {"source_name": "bnpl_competition_S009", "public_date": "2021-07-28", "note": "dated competitive landscape (Affirm/Afterpay/Klarna/Apple Pay) pressuring take-rate"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dividend_status",
+      "is_quantitative": false,
+      "value": "As of 2021-07-29: PayPal pays NO dividend (it had never paid one as a standalone public company); capital is returned via buybacks and deployed into acquisitions (Honey ~$4B / ~40x, a flagged capital-allocation concern). So unlike PFE/DIS there is no dividend signal in this case -- the entire return depends on growth and multiple, which sharpens the overpay/de-rating risk.",
+      "as_of": "2021-07-28",
+      "sources": [
+        {"source_name": "q2_2021_10q_S002", "public_date": "2021-07-28", "note": "no declared common dividend; net-cash balance sheet; buyback + M&A capital allocation"}
+      ],
+      "pass": true
+    }
+  ]
+}

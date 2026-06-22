@@ -1,0 +1,85 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2024-06-14",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "No split (factor 1) -> nominal = raw close; modern feeds show the correct contemporaneous Class-A close. DELTA EXPLANATION (~0.77%): the card as_of_price $175.44 is the StatMuse Class-A historical close (S005, two independent StatMuse queries agreed); Yahoo's GOOGL feed and the independent stockanalysis.com feed both report $176.79 for the same Class-A 2024-06-14 close. So the 0.768% gap is a CLOSE-SOURCE difference (StatMuse vs Yahoo/stockanalysis), NOT a share-class swap -- Yahoo GOOG (Class C) closed higher at $178.37, which the card raw_extracts explicitly flags and refuses to use. The card's $175.44 reconciles EXACTLY with the reported market cap (12,381M shares x $175.44 = $2.1721T = card), confirming it is the intended Class-A nominal. Both candidate closes are <1% apart, so the cross-check PASSes. Card NOT changed.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 175.44,
+      "unit": "USD",
+      "as_of": "2024-06-14",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Near-52wk-high entry that is LEGITIMATE, not a series-max grab. $175.44 is -2.75% off the trailing-52wk high ($180.41) -- inside the 3% band -- but this is the genuine verified last close: GOOGL was trading near its highs in mid-June 2024 after the strong Q1'24 beat (+15% revenue, op margin 32%), and the $175.44/$176.79 level is independently triple-confirmed (StatMuse Class-A close, Yahoo/stockanalysis $176.79, and mktcap-implied 12,381M x $175.44 = card $2.1721T). It is the last close <= as_of, not the 52wk-high value accidentally pulled from the series. +52% above the 52wk low ($115.35). Analogous to the NVDA exemplar's justified near-high entry.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "statmuse_classA_close", "url": "https://www.statmuse.com/money/ask/googl-stock-closing-price-june-14-2024", "fetched_at": "2026-06-21", "value": 175.44, "note": "card source S005; two independent StatMuse queries agreed on the Class-A close"},
+        {"source_name": "mktcap_8k_implied", "url": "FY23 10-K / Q1'24 share count 12,381M (Class A+B+C) x card mcap $2.1721T", "fetched_at": "2026-06-21", "value": 175.44, "note": "independent of the price feed: $2.1721T / 12,381M = $175.44"},
+        {"source_name": "stockanalysis_classA_close", "url": "https://stockanalysis.com/stocks/googl/history/ (history API, GOOGL daily)", "fetched_at": "2026-06-21", "value": 176.79, "note": "independent (non-Yahoo) feed; Class-A 2024-06-14 close $176.79, +0.77% vs card -> close-source difference vs StatMuse, within 1% tolerance"}
+      ],
+      "cross_check_delta_pct": 0.768,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2172100000000,
+      "unit": "USD",
+      "as_of": "2024-06-14",
+      "sources": [
+        {"source_name": "card_shares", "fetched_at": "2026-06-21", "value": 2172100000000, "note": "12,381M shares x $175.44 = $2.1721T (matches card exactly)"},
+        {"source_name": "yahoo_raw_x_share", "fetched_at": "2026-06-21", "value": 2188800000000, "note": "12,381M x Yahoo $176.79 = $2.189T (+0.77%, the same close-source delta)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 180.41,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw", "fetched_at": "2026-06-21", "value": 180.41, "note": "trailing-52wk intraday high, no split adjustment"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 115.35,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw", "fetched_at": "2026-06-21", "value": 115.35, "note": "trailing-52wk intraday low, no split adjustment"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 12381,
+      "unit": "millions",
+      "as_of": "2024-04-25",
+      "sources": [
+        {"source_name": "q1fy24_8k_S001", "public_date": "2024-04-25", "value": 12381, "note": "total Class A+B+C shares used for the card market cap"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "As of 2024-06-14: DOJ v. Google (search-monopoly, Judge Amit Mehta) is PENDING -- the bench trial that began Sept 2023 heard closing arguments May 2-3, 2024; NO ruling had been issued by the as-of date. DOJ alleged ~90% general-search share. The eventual Aug-2024 liability ruling and the remedies phase are AFTER as_of and must NOT be used.",
+      "as_of": "2024-05-03",
+      "sources": [
+        {"source_name": "doj_pending_S011", "public_date": "2024-05-03", "note": "closing arguments May 2-3 2024; case pending, no ruling by as_of"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "As of 2024-06-14: Alphabet gives no formal forward revenue guidance. The live as-of-state capital signals are the Q1'24 print (S001, 2024-04-25): first-ever quarterly dividend ($0.20/sh) + a new $70B buyback authorization, and a capex ramp of $12.0B in Q1'24 (+91% YoY) with no forward capex guidance -- the AI-infra spend curve that is the binding watch-item.",
+      "as_of": "2024-04-25",
+      "sources": [
+        {"source_name": "q1fy24_8k_S001", "public_date": "2024-04-25", "value": 12000, "note": "Q1'24 capex $12.0B (+91% YoY); first dividend + $70B buyback announced"}
+      ],
+      "pass": true
+    }
+  ]
+}

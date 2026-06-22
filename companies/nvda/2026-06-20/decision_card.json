@@ -1,0 +1,89 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-06-20",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-20",
+  "context_label": "exceptional_bottleneck_no_margin_of_safety",
+  "as_of_price": 210.69,
+  "as_of_market_cap": 5138940000000,
+  "share_basis_note": "Post-split (10:1, 2024-06) basis. 24,391M diluted shares (Q1 FY27 weighted) x $210.69 (2026-06-18 close, last <= as_of) = ~$5.139T. Price from Yahoo chart API [S006], independently re-fetched and cross-checked vs stockanalysis + websearch (all $210.69) per freshness.json. CORRECTS the 2026-06-19 run, which used $145.48 (~the 52-week low $142.03) as the current price -> see ../2026-06-19/ (preserved error sample) and backtests/framework_validation/INCIDENTS.md INC-001.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 FY27, ended 2026-04-26) and FY26 baseline fully primary-sourced (8-K PR + CFO commentary + 10-K): revenue $81.6B, DC $75.2B (+92% Y/Y), GM 74.9%, FCF $48.6B, Q2 guide $91B. Independently re-verified 2026-06-20 (CNBC/TIKR/S&P match). Price now locked from a dated daily series AND cross-checked against >=2 independent sources (freshness.json) per lean-6module-v1.1. Gaps (custom-silicon quantitative share, 10-K line items, proxy) are haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S004", "S006"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Full-stack accelerated compute (GPU + CUDA + NVLink/InfiniBand/Spectrum-X networking + systems) is the bottleneck the AI industry must route through. Demand is a multi-quarter, primary-sourced forced market update, not a story: DC $75.2B (+92% Y/Y), networking $14.8B (+199%), Q2 guide $91B, customer base broadening to AI clouds/sovereign/enterprise. exceptional_bottleneck. Open: how much is durable vs pull-forward.",
+      "drivers": ["S001", "S002"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Captures the largest single AI-compute profit pool via CUDA lock-in + full-stack systems + networking (+199% Y/Y). Operator grade 4/5: 30y founder Jensen Huang, one-share-one-vote governance, capex-light. $80B new buyback authorization + dividend $0.01->$0.25 (2026-05-18) = real capital return -- but NOTE this is NOT a 'low-price buyback': at $210.69 the stock is only -11% off its ATH and +48% off its low, so repurchases are near highs, not cheap (the prior run mis-stated this off the stale price). Durability HIGH on training, MEDIUM on inference (custom-silicon battleground). Cyclical -> size capped below Confirmed.",
+      "drivers": ["S001", "S003"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Owner earnings unusually clean: capex-light (FY26 capex $6.1B), FCF=OE run-rate ~$182B, no capex black hole (opposite of the hyperscalers). Net cash ~$72B (fortress). GAAP net income inflated by ~$30.2B marketable-equity-security gains -> use operating owner earnings (non-GAAP basis) for valuation. The owner-earnings bridge CLOSES; valuation uncertainty is not in the bridge, it is in run-rate durability AND the entry price.",
+      "drivers": ["S001", "S004"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural breakage at as-of: thesis durability intact (bottleneck real, share not collapsed, +92%/+199%), balance sheet survives the bear (net cash $72B). pull-forward + custom-silicon = SIZE control + kill monitors, not a hard veto (SNDK lesson: do not over-veto a genuine cleanly-financed bottleneck). China REVISED vs the prior run: not a permanent loss -- USG reinstated a limited H200 export license to China (2026-02) and NVDA received orders (Huang, GTC 2026-03), restarting manufacturing; the Q2 guide still conservatively EXCLUDES China DC compute, so China is recoverable optionality the guide does not count, NOT 'permanent loss / expanding controls' as 2026-06-19 framed it.",
+      "drivers": ["S002", "S010", "S011"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $210.69 ($5.139T), forward P/E ~28x, starting OE yield ~3.5%, base 5y IRR +4.8% < 8% hurdle -> PRICE IS THE BINDING CONSTRAINT (no margin of safety), the inverse of the prior run's '145 = friendly' conclusion (which was built on the 52-week LOW mistaken for the current price). Stock is -11% off ATH ($236.54), +48% off its low ($142.03) -- NOT near lows, NOT bearish sentiment. Asymmetry no longer favors a starter here: bull +18.6% / base +4.8% / bear -17.6%. 8%-hurdle-neutral entry ~$181; the exceptional business does not earn new money above it. Mirror of GOOGL/AAPL: great-to-exceptional business, no MOS at the current price.",
+      "drivers": ["S006", "S008"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 181.0,
+  "starter_zone": "No new money at $210.69. A structured STARTER (~3-5%) opens on a pullback into ~$155-181, where base 5y IRR climbs back above the 8% hurdle on an unchanged thesis.",
+  "add_zone": "Scale toward 8-12% only into ~$142-155 (toward the 52-week low, base IRR ~12-14%) AND/OR on confirmation (Q2/Q3 FY27 revenue meeting the $91B guide + DC margin/share holding). Cyclicality caps the ceiling below Core.",
+  "trim_or_no_chase_zone": "Current $210.69 is ALREADY above the ~$181 no-margin-of-safety line -> no chase; hard no-chase toward the $236.54 ATH. Existing holders HOLD an exceptional compounder; do not add new money here, do not trim (business unimpaired, no kill criterion fired).",
+  "binding_constraint": "PRICE. At $210.69 the base 5y IRR (+4.8%) is below the 8% hurdle and the stock is only -11% off its ATH -> no margin of safety. The exceptional bottleneck business is intact and the owner-earnings bridge is clean, but valuation is now the binding go/no-go (mis-read as 'friendly' in the prior run off a stale price). Demand-durability vs pull-forward + DC share vs custom silicon remain SIZE + kill monitors, secondary to price. Completeness ~65% independently caps the ceiling at STARTER.",
+  "kill_criteria": [
+    "Revenue materially misses the $91B Q2 guide, OR DC revenue prints sequential declines, OR gross margin breaks below ~65%.",
+    "Credible evidence of large-scale CSP/custom-silicon design wins structurally eroding DC share (the ONLY escalate-to-veto path).",
+    "Large inventory / purchase-commitment write-down (FY26 had a $4.5B H20 precedent).",
+    "Price stays above ~$181 with no offsetting estimate raise -> remains WATCH / no-chase (already the case at $210.69).",
+    "Huang key-man / succession shock -> lower durability ceiling."
+  ],
+  "runner_dissent": "The bull instinct says: this is an exceptional, cleanly-financed bottleneck (FCF=OE ~$182B, net cash $72B, +92% DC) and the bull 5y IRR is +18.6% -- why not a small starter? The framework overrides to WATCH because, this time, PRICE IS the constraint: base 5y IRR +4.8% sits below the 8% hurdle, the stock is -11% off its ATH (not near lows), and a single $91B guide cannot underwrite paying up for a possibly cycle-peak run-rate. This is the EXACT inverse of the prior 2026-06-19 dissent, which argued 'price is not the constraint, $145 is near the 52-week low' -- that reasoning was fatally built on mistaking the 52-week LOW ($142.03) for the current price. Corrected: at the true $210.69 there is no margin of safety; WATCH until a pullback toward ~$155-181 (STARTER) or ~$142-155 (add). Business quality is not in doubt; the entry price is. Lower-confidence items left OPEN: custom-silicon quantitative share (O4), 10-K line items (O1), proxy (O3), China H200 ramp magnitude (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm"},
+    {"source_id": "S002", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27cfocommentary.htm"},
+    {"source_id": "S003", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"},
+    {"source_id": "S004", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"},
+    {"source_id": "S006", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA"},
+    {"source_id": "S008", "public_date": "2026-06-20", "url_or_path": "https://stockanalysis.com/stocks/nvda/"},
+    {"source_id": "S010", "public_date": "2026-02-15", "url_or_path": "USG reinstates limited H200 export license to China (Reuters/news; retrieved 2026-06-20)"},
+    {"source_id": "S011", "public_date": "2026-03-18", "url_or_path": "NVIDIA GTC 2026 -- Huang: H200 orders received from China, restarting manufacturing (retrieved 2026-06-20)"}
+  ]
+}

@@ -1,0 +1,11 @@
+FRESHNESS CHECK -AMZN as_of 2023-02-03  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=103.39 refetched_yahoo=103.38999938964844 (2023-02-03) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 81.43 <= 103.39 <= 170.83
+  [PASS] T2 low/high hug: +27.0% off low, -39.5% off high
+  [PASS] T3 market-cap identity: 10242M x 103.39 = 1.059T vs card 1.059T (0.01%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 103.39 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2023-02-02 (1d)
+  [PASS] T7 no-lookahead (source<=as_of): all 14 source dates <= 2023-02-03

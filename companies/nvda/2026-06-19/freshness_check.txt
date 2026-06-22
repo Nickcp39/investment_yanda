@@ -1,0 +1,13 @@
+FRESHNESS CHECK -NVDA as_of 2026-06-19  [verify_freshness-v1]
+STATUS: BLOCK  (exit 1)
+price: card=145.48 refetched_yahoo=210.69000244140625 (2026-06-18) -> FAIL :: card_vs_yahoo_refetch delta 31.0% exceeds tolerance 1%
+tripwires:
+  [PASS] T1 52wk band containment: 142.03 <= 145.48 <= 236.54
+  [FAIL] T2 low/high hug: price is 2.43% off 52wk low (<= 3% band) and not justified -> likely grabbed an extreme of the series instead of the last close
+  [PASS] T3 market-cap identity: 24391M x 145.48 = 3.548T vs card 3.548T (0.01%)
+  [PASS] T4 distance-from-high reconciliation: narrative -38.0% vs card-implied -38.5% (gap 0.5pt)
+  [PASS] T5 single value of truth: as_of_price 145.48 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness: no freshness.json manifest -cannot verify LIVE-qualitative items
+FAILURES:
+  - price:FAIL -card_vs_yahoo_refetch delta 31.0% exceeds tolerance 1%
+  - T2:low/high hug -price is 2.43% off 52wk low (<= 3% band) and not justified -> likely grabbed an extreme of the series instead of the last close

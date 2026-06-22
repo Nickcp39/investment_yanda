@@ -1,0 +1,94 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2024-06-14",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 175.44,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 176.7899932861328,
+    "manifest_sources": [
+      {
+        "source_name": "statmuse_classA_close",
+        "value": 175.44
+      },
+      {
+        "source_name": "mktcap_8k_implied",
+        "value": 175.44
+      },
+      {
+        "source_name": "stockanalysis_classA_close",
+        "value": 176.79
+      }
+    ],
+    "max_pairwise_delta_pct": 0.764,
+    "independent_sources": [
+      "mktcap_8k_implied",
+      "statmuse_classa_close",
+      "stockanalysis_classa_close",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2024-06-14",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "115.35 <= 175.44 <= 180.41"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+52.1% off low, -2.8% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "12381M x 175.44 = 2.172T vs card 2.172T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 175.44 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2024-05-03 (42d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2024-04-25 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 24 source dates <= 2024-06-14"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2024-04-25 is 50d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

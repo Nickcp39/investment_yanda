@@ -1,0 +1,87 @@
+{
+  "ticker": "INTC",
+  "as_of": "2024-08-02",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "NOMINAL contemporaneous price. INTC had NO stock split in this window, so the cumulative split factor for any split AFTER as_of is 1 -> nominal = Yahoo raw_close(last <= as_of) x 1 = $21.48. Because the raw close excludes Yahoo's dividend back-adjustment, it reconciles directly to the nominal card price (and the dividend was suspended the prior day, so post-as_of dividend drift is nil anyway). Independent corroboration NOT from the Yahoo feed: (a) stockanalysis.com daily history reads the same $21.48 close (and $29.05 prior-day 2024-08-01), and (b) card market cap $91.9B / 4,276M shares = $21.49/sh. THE 52WK LOW IS THE AS-OF DAY ITSELF: 2024-08-02 was a -26% crash to the lowest level in over a decade (intraday low $20.42), so the entry sits ~+5% off the trailing 52wk low BY DESIGN (deliberate falling-knife test). As of as_of the dividend SUSPENSION (announced with Q2'24 results on 2024-08-01, effective Q4'24) was already public; the announcement date 2024-08-01 is <= as_of 2024-08-02. No post-as_of information (no later price/recovery, no CHIPS stake, no leadership change) is used.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 21.48,
+      "unit": "USD",
+      "as_of": "2024-08-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Crash-day entry BY DESIGN: 2024-08-02 was a -26.1% one-day repricing to the lowest level in over a decade (the as-of day set the trailing low itself, intraday $20.42). The close $21.48 sitting ~+5.2% off the 52wk low ($20.42) and -58% below the 52wk high ($51.28) is the intended falling-knife / structural_decline_trap test, not a low-grab error -- the value is the genuine as-of close, corroborated by stockanalysis.com and the card market-cap identity.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTC", "fetched_at": "2026-06-21", "value": 21.48, "note": "raw close 21.48 x split factor 1 (no INTC split after as_of); validator backtest-mode refetched_yahoo = 21.48"},
+        {"source_name": "stockanalysis.com", "url": "https://stockanalysis.com/stocks/intc/history/", "fetched_at": "2026-06-21", "value": 21.48, "note": "independent daily-history feed (not Yahoo); same 2024-08-02 close 21.48, prior-day 2024-08-01 close 29.05"},
+        {"source_name": "mktcap_card_implied", "url": "decision_card.json as_of_market_cap $91.9B / 4,276M shares", "fetched_at": "2026-06-21", "value": 21.49, "note": "independent of the price feed; 91.9B / 4276M = 21.49 (0.06% off card)"}
+      ],
+      "cross_check_delta_pct": 0.06,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 91900000000,
+      "unit": "USD",
+      "as_of": "2024-08-02",
+      "sources": [
+        {"source_name": "card_x_shares", "fetched_at": "2026-06-21", "value": 91849000000, "note": "$21.48 x 4,276M shares = $91.85B (rounds to card ~$91.9B)"},
+        {"source_name": "stockanalysis_x_shares", "fetched_at": "2026-06-21", "value": 91849000000, "note": "stockanalysis close 21.48 x 4,276M shares -> same ~$91.9B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 51.28,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 51.28, "note": "trailing ~52wk (372d <= as_of) intraday high x split factor 1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 20.42,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 20.42, "note": "trailing ~52wk (372d <= as_of) intraday low x split factor 1; the low was set on the as-of crash day 2024-08-02 itself (close 21.48)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4276,
+      "unit": "millions",
+      "as_of": "2024-08-02",
+      "sources": [
+        {"source_name": "card_share_basis", "public_date": "2024-08-01", "value": 4276, "note": "share basis behind the card's ~$91.9B equity value (Q2'24 10-Q, S006)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "dividend_status",
+      "is_quantitative": false,
+      "value": "As of 2024-08-02: Intel SUSPENDED its quarterly dividend, announced with Q2'24 results on 2024-08-01 (effective Q4 2024) specifically to preserve liquidity for the fab buildout; a final ~$0.125/share payment was set for Sep-1-2024 to holders of record Aug-7. The thesis treats the suspension as an as-of fact (a cash-strain signal). The suspension announcement (2024-08-01) is <= as_of (2024-08-02) -- NO lookahead. (Context: the dividend had already been cut 65% in Feb-2023, also pre-as_of.)",
+      "as_of": "2024-08-01",
+      "sources": [
+        {"source_name": "q2fy24_earnings_release_S001", "public_date": "2024-08-01", "note": "Q2'24 8-K/earnings release announces the dividend suspension + $10B cost plan + headcount/capex cuts"},
+        {"source_name": "fortune_dividend_S009", "public_date": "2024-08-01", "note": "independent dated confirmation (Fortune): Intel suspends dividend, slashes jobs"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Q3'24 outlook: guided to a Q3 GAAP loss of $(0.24)/share (non-GAAP ~breakeven); >15% headcount reduction, >20% gross-capex cut, dividend suspended -- the as-of forward frame. No usable trailing/forward GAAP earnings multiple (GAAP loss-making).",
+      "as_of": "2024-08-01",
+      "sources": [
+        {"source_name": "q2fy24_earnings_release_S001", "public_date": "2024-08-01", "note": "Q3'24 guide + cost/capex/headcount actions in the Q2'24 8-K/earnings release"},
+        {"source_name": "q2fy24_call_S002", "public_date": "2024-08-01", "note": "Q2'24 earnings call: weaker 2H outlook, foundry loss run-rate, dividend/liquidity rationale"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2023-02-03",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 103.39,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 103.38999938964844,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 103.39
+      },
+      {
+        "source_name": "statmuse",
+        "value": 103.39
+      },
+      {
+        "source_name": "mktcap_identity_implied",
+        "value": 103.4
+      }
+    ],
+    "max_pairwise_delta_pct": 0.01,
+    "independent_sources": [
+      "mktcap_identity_implied",
+      "statmuse",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2023-02-03",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "81.43 <= 103.39 <= 170.83"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+27.0% off low, -39.5% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "10242M x 103.39 = 1.059T vs card 1.059T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 103.39 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2023-02-02 (1d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 14 source dates <= 2023-02-03"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

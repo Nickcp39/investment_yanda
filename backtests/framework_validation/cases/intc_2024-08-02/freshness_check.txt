@@ -1,0 +1,11 @@
+FRESHNESS CHECK -INTC as_of 2024-08-02  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=21.48 refetched_yahoo=21.479999542236328 (2024-08-02) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 20.42 <= 21.48 <= 51.28
+  [PASS] T2 low/high hug: +5.2% off low, -58.1% off high
+  [PASS] T3 market-cap identity: 4276M x 21.48 = 0.092T vs card 0.092T (0.06%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 21.48 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2024-08-01 (1d)
+  [PASS] T7 no-lookahead (source<=as_of): all 21 source dates <= 2024-08-02

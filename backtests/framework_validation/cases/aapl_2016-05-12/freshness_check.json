@@ -1,0 +1,92 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2016-05-12",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 90.34,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 90.33999633789062,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 90.34
+      },
+      {
+        "source_name": "mktcap_10q_implied",
+        "value": 90.34
+      },
+      {
+        "source_name": "contemporaneous_market_data",
+        "value": 90.34
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "contemporaneous_market_data",
+      "mktcap_10q_implied",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2016-05-12",
+    "split_factor": 4.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "89.47 <= 90.34 <= 132.97"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+1.0% off low, -32.1% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "5478M x 90.34 = 0.495T vs card 0.495T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 90.34 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2016-04-28 (14d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2016-04-26 (16d)"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 13 source dates <= 2016-05-12"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

@@ -1,0 +1,11 @@
+FRESHNESS CHECK -GOOGL as_of 2026-06-19  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=368.03 refetched_yahoo=368.0299987792969 (2026-06-18) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 162.0 <= 368.03 <= 408.61
+  [PASS] T2 low/high hug: +127.2% off low, -9.9% off high
+  [PASS] T3 market-cap identity: 12116M x 368.03 = 4.459T vs card 4.459T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -9.9% vs card-implied -9.9% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 368.03 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-06-20 (-1d)
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-06-02 (17d)

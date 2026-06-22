@@ -1,0 +1,9 @@
+fiscal_year,year_ended,revenue_usd_m,gross_margin_pct,operating_income_usd_m,net_income_gaap_usd_m,diluted_eps_gaap,fcf_usd_m,capex_usd_m,tier,note
+FY26,2026-01-25,215938,71.1,130387,120067,4.90,96600,6100,A1/B1,"capex A1; OCF/FCF B1 approx"
+FY25,2025-01-26,130497,75.0,81453,72880,2.94,60853,3236,B2,"official FY25; stockanalysis off-by-one labels"
+FY24,2024-01-28,60922,72.7,32972,29760,1.19,27021,1069,B2,
+FY23,2023-01-29,26974,56.9,5577,4368,0.17,3808,1833,B2,"gaming/crypto downcycle; flat revenue"
+FY22,2022-01-30,26914,64.9,10041,9752,0.39,8132,976,B2,"split-adjusted"
+FY21,2021-01-31,16675,62.3,4532,4332,0.17,4694,1128,B2,conflict_across_sources
+FY20,2020-01-26,10918,62.0,2846,2796,0.11,4272,489,B2,conflict_across_sources
+Q1FY27,2026-04-26,81615,74.9,53536,58321,2.39,48554,1757,A1,"quarter; net income incl equity-security gains"

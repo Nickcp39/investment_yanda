@@ -10,7 +10,7 @@
 
 At $111.00 (near a multi-year low), is META a **cost-panic washout + quality/turnaround winner**
 (a profitable, dominant core ad franchise that has just pivoted to cost discipline), or a
-**structurally impaired ad business** (first YoY revenue decline, ATT/signal loss, share competition)
+**structurally impaired ad business** (second consecutive YoY revenue decline, ATT/signal loss, share competition)
 **plus a Reality Labs money pit**?
 
 **Answer: predominantly the former — a cost-panic washout on an intact, cheap, net-cash franchise with a

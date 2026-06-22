@@ -1,0 +1,89 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (INC-001 sweep re-validation). Every LIVE field carries >=2 independent sources fetched at re-verification; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. RESULT: AMZN price $244.39 is CORRECT (Yahoo + stockanalysis + websearch all agree exactly, delta 0%); price sits in the UPPER-MIDDLE of the 52wk band (-11% off high), NOT hugging an extreme -- this dossier did NOT share the NVDA single-source bug. Verdict WATCH stands on its merits (price has no margin of safety).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 244.39,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-06-21", "value": 244.39},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-06-21", "value": 244.39},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=AMZN+stock+price+June+18+2026", "fetched_at": "2026-06-21", "value": 244.39}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2657000000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-06-21", "value": 2630000000000},
+        {"source_name": "derived", "url": "10874M diluted weighted shares x 244.39", "fetched_at": "2026-06-21", "value": 2657467860000}
+      ],
+      "cross_check_delta_pct": 1.04,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 274.99,
+      "unit": "USD",
+      "as_of": "2026-05-06",
+      "is_quantitative": true,
+      "note": "Closing-price basis (Yahoo daily adj-close series, trailing 52wk to 2026-06-18; high on 2026-05-06). stockanalysis reports an intraday-extreme range $196.00-$278.56; the closing-basis band is used consistently across the dossier.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-06-21", "value": 274.99},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-06-21", "value": 278.56}
+      ],
+      "cross_check_delta_pct": 1.28,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 198.79,
+      "unit": "USD",
+      "as_of": "2026-02-13",
+      "is_quantitative": true,
+      "note": "Closing-price basis (Yahoo daily adj-close series, trailing 52wk to 2026-06-18; low on 2026-02-13). stockanalysis intraday-extreme low $196.00.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-06-21", "value": 198.79},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-06-21", "value": 196.00}
+      ],
+      "cross_check_delta_pct": 1.42,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 10874,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "note": "Diluted weighted shares Q1 2026 (10-Q / 8-K Ex99.1). stockanalysis shows ~10,760M current basic shares outstanding; ~1% diff is diluted-weighted vs current-basic basis.",
+      "sources": [
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm", "fetched_at": "2026-06-21", "value": 10874},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-06-21", "value": 10760}
+      ],
+      "cross_check_delta_pct": 1.05,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 2026 net sales guidance $194.0-199.0B (+16-19% Y/Y); operating income guidance $20.0-24.0B (vs $19.2B Q2 2025). 2026 capex plan ~$200B (predominantly AWS); capex-through-2027 raised to ~$344B. Confirmed as the latest authoritative guidance as of 2026-06 (issued with Q1 2026 results 2026-04-29; re-checked via web 2026-06-21 -- unchanged, no superseding guidance).",
+      "as_of": "2026-04-29",
+      "sources": [
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm", "public_date": "2026-04-29", "fetched_at": "2026-06-21"},
+        {"source_name": "constellation_research", "url": "https://www.constellationr.com/insights/news/amazon-sees-200-billion-capex-ahead-aws-sales-surge-24", "public_date": "2026-04-30", "fetched_at": "2026-06-21"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+FRESHNESS CHECK -PFE as_of 2022-02-08  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=51.7 refetched_yahoo=51.70000076293945 (2022-02-08) -> PASS :: 4 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 33.36 <= 51.7 <= 61.71
+  [PASS] T2 low/high hug: +55.0% off low, -16.2% off high
+  [PASS] T3 market-cap identity: 5613M x 51.7 = 0.290T vs card 0.290T (0.06%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 51.70 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2022-02-08 (0d)
+  [PASS] T7 no-lookahead (source<=as_of): all 12 source dates <= 2022-02-08

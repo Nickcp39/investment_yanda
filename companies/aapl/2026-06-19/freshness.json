@@ -1,0 +1,98 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (INC-001 re-verification). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. Price $298.01 (2026-06-18 last close <= as_of) re-verified CORRECT vs Yahoo repo fetcher and stockanalysis.com; this dossier does NOT share the NVDA single-source bug (price is +49.8% off the 52wk low, -6.1% off the 52wk high -- not hugging either extreme).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 298.01,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-06-20", "value": 298.01},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-06-20", "value": 298.01},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=AAPL+stock+price", "fetched_at": "2026-06-20", "value": 298.01}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 4388000000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-06-20", "value": 4380000000000},
+        {"source_name": "derived", "url": "14725.873M shares x 298.01", "fetched_at": "2026-06-20", "value": 4388398000000}
+      ],
+      "cross_check_delta_pct": 0.19,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 317.40,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-06-20", "value": 317.40},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-06-20", "value": 317.40}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 198.96,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-06-20", "value": 198.96},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-06-20", "value": 195.07}
+      ],
+      "cross_check_delta_pct": 1.96,
+      "pass": true,
+      "note": "Yahoo 52wk low 198.96 (card primary); stockanalysis 195.07. ~2% disagreement on the trailing-low print, immaterial to T1/T2 since price 298.01 is +49.8% off either value."
+    },
+    {
+      "field": "shares_out",
+      "value": 14725.873,
+      "unit": "millions",
+      "as_of": "2026-03-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000011/a8-kex991q2202603282026.htm", "fetched_at": "2026-06-20", "value": 14725.873},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-06-20", "value": 14690}
+      ],
+      "cross_check_delta_pct": 0.24,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "No formal next-quarter numeric revenue guidance re-verified here; anchor quarter is reported actuals (Q2 FY26, ended 2026-03-28): revenue $111.2B/+17%, Services $31.0B all-time high, Greater China $20.5B/+28%, GM 49.3%, EPS $2.01/+22%, new $100B buyback authorization, dividend raised to $0.27. Forward stance is qualitative (installed-base annuity + Services mix); no stale numeric guide.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000011/a8-kex991q2202603282026.htm", "public_date": "2026-04-30", "fetched_at": "2026-06-20"},
+        {"source_name": "techcrunch", "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/", "public_date": "2026-06-09", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Google search-remedy antitrust outcome re-verified 2026-06: final remedy order (April 2026) imposes a default-deal ban + choice screens effective June 2026; Apple/Samsung/Mozilla must implement choice screens. Court did NOT bar Google from paying distribution partners (judge: cutting off payments would impose substantial downstream harm) and rejected Chrome/Android divestiture; DOJ + 35 states are appealing for tougher remedies. Net: Google can still pay Apple but contracts shorten to ~1-yr terms -> TAC volatility, not an outright zeroing. Confirms the dossier's O1 framing (~$20B/yr high-margin Services flow at risk, magnitude/timing OPEN) -- a margin haircut, not structural breakage. Not stale.",
+      "as_of": "2026-06",
+      "sources": [
+        {"source_name": "doj_pr", "url": "https://www.justice.gov/opa/pr/department-justice-prevails-landmark-antitrust-case-against-google", "public_date": "2026-06", "fetched_at": "2026-06-20"},
+        {"source_name": "fintool", "url": "https://fintool.com/news/doj-google-antitrust-appeal-chrome-apple", "public_date": "2026-06", "fetched_at": "2026-06-20"}
+      ],
+      "pass": true
+    }
+  ]
+}

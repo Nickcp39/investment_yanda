@@ -1,0 +1,98 @@
+{
+  "ticker": "META",
+  "as_of": "2026-06-19",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. This dossier is a v1.1 re-validation of the v1 run: the price was independently RE-FETCHED and confirmed CORRECT (3 sources agree at 577.22, last close 2026-06-18 <= as_of), so the v1 price stands (contrast NVDA, whose v1 price was the 52wk low). The only stale LIVE-qualitative item corrected was the FTC antitrust framing (see active_litigation).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 577.22,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/META", "fetched_at": "2026-06-21", "value": 577.22},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-06-21", "value": 577.22},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=META+stock+price+June+18+2026", "fetched_at": "2026-06-21", "value": 577.22}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1480000000000,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-06-21", "value": 1470000000000},
+        {"source_name": "derived", "url": "2564M shares x 577.22", "fetched_at": "2026-06-21", "value": 1479952080000}
+      ],
+      "cross_check_delta_pct": 0.68,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 796.25,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-06-21", "value": 796.25},
+        {"source_name": "websearch", "url": "https://www.cnbc.com/quotes/META", "fetched_at": "2026-06-21", "value": 796.25}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 520.26,
+      "unit": "USD",
+      "as_of": "2026-06-18",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-06-21", "value": 520.26},
+        {"source_name": "websearch", "url": "https://www.cnbc.com/quotes/META", "fetched_at": "2026-06-21", "value": 520.26}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2564,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived_ni_eps", "url": "Q1 2026 net income 26773M / diluted EPS 10.44 (S001)", "fetched_at": "2026-06-21", "value": 2564},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-06-21", "value": 2540}
+      ],
+      "cross_check_delta_pct": 0.94,
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "FTC v. Meta (IG/WhatsApp monopolization): on 2026-06 status is a trial-level WIN for Meta now under FTC appeal -- NOT an imminent breakup. 2025-11-18 Judge Boasberg (DDC) ruled Meta does NOT hold a monopoly (faces TikTok/YouTube competition) and will NOT force a spin-off of Instagram/WhatsApp. 2026-01 FTC filed notice of appeal to the DC Circuit; 2026-06-01 24+ state AGs backed the appeal. => antitrust forced-breakup is a LONG-TAIL appellate tail risk that already cleared the trial in Meta's favor, not an open near-term threat. Corrects the 2026-06-19 inversion_map F4 framing 'no recent ruling' (there WAS a recent ruling, and Meta won it). Direction de-risks F4; verdict unaffected (F4 was always a non-veto long-tail, and breakup is now less likely, reinforcing WATCH-not-REJECT).",
+      "as_of": "2026-06-01",
+      "sources": [
+        {"source_name": "npr", "url": "https://www.npr.org/2025/11/18/nx-s1-5495626/meta-ftc-instagram-whatsapp-antitrust-ruling", "public_date": "2025-11-18", "fetched_at": "2026-06-21"},
+        {"source_name": "cnbc", "url": "https://www.cnbc.com/amp/2026/01/20/ftc-appeals-metaruling-antitrust-instagram-whatsapp.html", "public_date": "2026-01-20", "fetched_at": "2026-06-21"},
+        {"source_name": "law360", "url": "States Back FTC's DC Circ. Appeal In Meta Monopoly Case", "public_date": "2026-06-01", "fetched_at": "2026-06-21"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 2026 revenue guidance $58-61B (assumes ~2% FX tailwind). FY2026 capex guidance RAISED to $125-145B incl finance leases (from prior $115-135B), citing higher component pricing + data-center build-out; FY2026 total expense guidance $162-169B (unchanged); expects 2026 operating income above 2025. Confirmed still current as of 2026-06 (set at Q1 2026 print 2026-04-29; no superseding guide since).",
+      "as_of": "2026-04-29",
+      "sources": [
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm", "public_date": "2026-04-29", "fetched_at": "2026-06-21"},
+        {"source_name": "trefis", "url": "https://www.trefis.com/stock/meta/articles/598036/meta-platforms-8-6-raised-2026-capex-guidance-sparks-investor-concern/2026-05-02", "public_date": "2026-05-02", "fetched_at": "2026-06-21"}
+      ],
+      "pass": true
+    }
+  ]
+}

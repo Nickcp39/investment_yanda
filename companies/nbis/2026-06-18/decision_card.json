@@ -1,0 +1,89 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-06-18",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-21",
+  "context_label": "quality_ai_neocloud_priced_for_perfection",
+  "as_of_price": 286.69,
+  "as_of_market_cap": 72790591000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Evidence base is strong and primary on the FILED financials and contracts: FY2025 20-F (CIK 0001513845) + Q1 2026 6-K shareholder letter anchor every load-bearing number to A1/A2 (FY25 rev $529.8M +479%; Q1'26 rev $399.0M +684%; FY25 capex $4,066M ~7.7x rev; FY25 implied FCF ~ -$3.66B; cash $9,298.2M vs convert carrying $8,450.4M; RPO $33,585M Q1'26; contracted power >3.5GW, >75% owned). 51-claim ledger; facts.md only carries verified rows. Price $286.69 (close 2026-06-18) via Yahoo chart API (independently re-verified). BUT material gaps cap completeness at ~70%: (O-A) Q1'26 ACTIVE power (live MW) is withheld by the company since YE2025 (~170MW) -- this is THE conversion-proof metric the whole thesis turns on; (O-B) exact customer-concentration % (top-1/top-5) exists in 20-F XBRL but was not pulled (MSFT+Meta ~90%+ estimated, not disclosed); (O-C) FY2026 capex actual ($20-25B call-guided vs $31-35B floated in secondary) unconfirmed until Q2'26 6-K; (O-D) Russia-divestiture indemnities / contingent liabilities not read from primary 20-F text. These are an evidentiary-completeness cap, NOT the reason for WATCH -- price is (see M6).",
+      "drivers": ["SRC-001", "SRC-002", "SRC-004", "SRC-018"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: NBIS is a top-tier, well-funded AI-neocloud (GPU compute, training + inference) selling via a 3-tier model dominated by two long-dated take-or-pay anchor contracts (Microsoft up to $17.4B->$19.4B through Oct 2031; Meta ~$2.88B + up to ~$27B firm/optional from 2027), plus a fast-growing-but-tiny self-service / Token Factory inference book and a portfolio of non-core stakes (ClickHouse, Avride, Toloka, TripleTen) monetized as funding. Mechanism + the LEAD finding: the binding constraint is NOT power availability (>3.5GW contracted, >75% owned, top-tier; demand sold out) and NBIS does NOT build power plants -- it builds data centers, contracts grid power, and routes around interconnection queues with partner-built behind-the-meter gas (NJ) + Bloom fuel cells. The real gate is the BUILD-AND-ENERGIZE chain: converting contracted GW -> connected -> ACTIVE (live, paid) MW, gated by construction speed and long-lead electrical gear (transformers/gas-gensets), which management calls 'the main bottleneck.' Execution is real and improving (core-segment EBITDA ~45% Q1'26; GM ~69%). Net mildly positive on the business mechanism; the question is price and conversion, not whether the demand/power is there.",
+      "drivers": ["SRC-002", "SRC-001", "SRC-004", "SRC-007"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "NBIS captures a real, fast-growing profit pool with genuine pricing power TODAY (sold out, raised prices, '4+ customers per GPU', ~69% GM, core-segment EBITDA ~45%) -- but durability is NOT yet established. The moats are RELATIVE and cost/speed-based (>75% owned capacity, cheap clean Nordic power + free cooling PUE ~1.1, early GB300/Rubin access + $2B NVIDIA equity, full-stack), not structural: switching costs are LOW (compute is physically movable), network effects none, and ROIC is NEGATIVE today (capex ~7x revenue, owner earnings negative). The profit pool is structurally squeezed between NVIDIA (supplier power; the most durable economics sit upstream) and 2 concentrated buyers (MSFT/Meta ~90%+). OPERATOR/team life-arc = ~4/5: Volozh (built Yandex; returned builder) + a rare ~1,000-strong ex-Yandex engineering corps reassembled after the forced Russia split -- the single biggest qualitative positive. CRITICAL governance flag (mirror-opposite of MSFT): dual-class SUPER-VOTING control (Volozh ~52-55% vote on ~11-13% economic; Nasdaq 'Controlled Company') + share-price-only incentives with NO disclosed ROIC/capex-efficiency hurdle -- in a $20B+/yr-capex story, the one incentive you'd most want aligned is not. Net 0: strong competitive position, but 'bottleneck != moat,' ROIC negative, weak switching cost, founder-controlled -> a high-quality COMPOUNDER is a forecast, not a fact.",
+      "drivers": ["SRC-002", "SRC-001", "SRC-021"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "Accounting CONFIRMS hyper-growth AND hyper-capital-intensity, and flags low earnings QUALITY. Revenue +479% FY25 ($529.8M) with real operating leverage (cost of revenue 49%->26% of rev YoY; group adj. EBITDA -$64.9M FY25 -> +$129.5M Q1'26, first group-positive quarter Q4'25). BUT the defining feature is capex ~7.7x revenue and implied FCF ~ -$3.66B FY25 (OCF +$401.9M is FLATTERED by ~$982.5M customer prepayments); consensus FCF stays deeply negative through >=FY2028. The buildout is funded by ~$12.5B of dilutive financing since relisting (+~27% basic dilution; ~$8.1B converts at 1-3% coupon / 40%+ premium + ATM). THREE verified accounting red flags land the same year: (1) GPU useful-life extended 4->5yrs eff. Jan 1 2026 (cuts FY26 depreciation ~$167.6M) INTO an accelerating GB300->Rubin cadence -- the exact earnings-flattery pattern bears flag; (2) ADVERSE ICFR two years running with open material weaknesses in fixed-assets/PP&E (sits directly under the dep change) and TripleTen rev-rec (Reanda -> Deloitte FY26); (3) FY25 pre-tax net income +$13.8M is ENTIRELY a +$598.9M non-cash ClickHouse mark -- operations still loss-making. Carrying net cash ~+$0.85B but principal-basis net debt ~ -$0.76B. M4 = -1: not yet a clean compounder; profitability quality is currently low and must be re-underwritten each quarter.",
+      "drivers": ["SRC-001", "SRC-002"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "med",
+      "finding": "Real, ranked failure paths -- several with HIGH permanent-impairment potential, so a meaningful size haircut, not a veto at the right price. (D) FINANCING/DILUTION SQUEEZE meets a capex air-pocket: $20-25B/yr capex vs ~ -$3.7B FCF; a demand wobble that stalls prepayment/deferred-revenue growth forces ATM/equity issuance at a low price (arithmetic, not narrative -- the model only works while demand funds it). HIGH. (A/B) DELIVERY SLIP triggers Microsoft's contractual late-delivery liquidated-damages/termination rights -- take-or-pay protects NBIS on UTILIZATION, but NBIS still carries the DELIVERY obligation; active power was only ~170MW YE2025 vs >3.5GW contracted, with transformer/genset shortages. Plus 2-customer concentration (~90%+) is the whole thesis. HIGH. (C) GPU DEPRECIATION SHOCK: B200->GB300->Rubin cadence destroys residual value faster than the (just-extended) 5yr schedule; self-inflicted-risk-visible via the 4->5yr change + Hopper rents -28% YoY. HIGH. (E) hyperscaler in-house silicon (TPU/Trainium) commoditizing Nvidia-rental neoclouds -- structural 2027+. (F) Russian-legacy/regulatory tail -- low-medium, mostly reputational now. Net -2: no permanent-impairment is certain, but the cluster of HIGH-severity paths (dilution + clawback + depreciation) in a negative-FCF, founder-controlled name is heavier than a typical compounder -- the inversion is precisely why new money needs a real margin of safety it does not get at $286.69.",
+      "drivers": ["SRC-001", "SRC-004", "SRC-002"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $286.69 (~$72.79B basic mcap; EV ~$71.9B basic) NBIS is PRICED FOR PERFECTION. Owner-earnings DCF is not usable (FCF negative through >=2028), so valuation hangs on future revenue scale x a terminal multiple. On EV/RPO the EV is ~2.2x the ENTIRE audited contracted book ($33.6B RPO -- note '$46-50B backlog' is deal ceilings, not a company figure). On EV/ARR, $72.5B at 8-10x = $7-9B ARR -- EXACTLY management's YE2026 exit-ARR guide (a ~540% one-year jump), i.e. the stock already capitalizes the YE26 target AS IF achieved, at a MATURE multiple. EV/forward-sales triangulation (horizon end-2028): Bear ~$120-140 (-50%+; churn/commoditization/dilution), Base ~$330-400 (~6-14%/yr; backlog converts on plan), Bull ~$560+ (~+95%; flawless execution + 3rd anchor). The price sits ABOVE the 'priced-for-perfection' line and -4% off the 52-week intraday high $298.80 (ATH region, ahead of Nasdaq-100 inclusion 6/22). For a high-uncertainty, capital-intensive, founder-controlled name requiring ~12-15%/yr, new-money buy-below is ~$150-180 (toward base-case entry with cushion). M6 = -2 (price is the binding constraint for NEW money). NOTE: an EXISTING +~50% position (basis ~$190-195) is reasonable to HOLD with discipline -- kill on criteria, not on the ticker.",
+      "drivers": ["SRC-018", "SRC-002", "SRC-001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 4,
+  "buy_below_price": 165,
+  "starter_zone": "no new-money starter at $286.69. New-money entry opens only <~$150-180 (toward base-case entry with cushion) AND/OR once active-MW conversion + demand breadth are proven and the multiple de-rates. For an EXISTING holder: hold current size; treat as a high-volatility, high-uncertainty position sized accordingly (not a back-up-the-truck name at this price).",
+  "add_zone": "do NOT add at ~$286.69. Add only on a meaningful pullback toward ~$150-180 WITH the thesis intact (active MW scaling, no MSFT/Meta tranche slip, funding still prepayment-led), OR on proven demand breadth (material non-anchor revenue) + a multiple de-rate.",
+  "trim_or_no_chase_zone": "priced for perfection above ~$280; new money no-chase here. Trimming into strength (e.g. the Nasdaq-100 inclusion squeeze 6/22) is reasonable given the unfavorable skew, but TRIM/EXIT on kill-criteria (below), NOT on price alone.",
+  "binding_constraint": "TWO-PART, and for NEW money it is PRICE -- the opposite of MSFT. (1) Business-side binding constraint = the BUILD-AND-ENERGIZE chain: converting contracted GW -> connected -> ACTIVE (live, paid) MW, gated by construction speed + long-lead electrical gear (transformers/gas-gensets) -- NOT power availability (already >3.5GW contracted, >75% owned) and NOT power generation (NBIS does not build power plants). The proof-of-conversion metric (active MW) is the one the company stopped disclosing after YE2025 (~170MW). (2) Valuation-side binding constraint (the reason new money is WATCH, not STARTER) = NO MARGIN OF SAFETY at $286.69: the EV already capitalizes the YE2026 $7-9B exit-ARR target as if achieved at a mature multiple; bear ~ -50%+, base ~low-teens %/yr, and the base case REQUIRES the backlog to convert without the inversion paths (dilution / clawback / depreciation) firing. Research completeness (~70%) is a secondary cap; even fully complete, price alone keeps new money at WATCH until <~$150-180 or proven conversion + de-rate.",
+  "kill_criteria": [
+    "K-A active power / connected MW STALLS vs the 800MW-1GW YE2026 connected target, OR keeps being withheld while ARR growth slows -> the conversion thesis (the bottleneck) is failing. (Active MW last disclosed ~170MW YE2025; Q1'26 withheld -- yellow/info-gap, top monitor priority; watch Q2'26 6-K ~Aug.)",
+    "K-B a MICROSOFT or META tranche is publicly MISSED or RENEGOTIATED, OR an anchor cuts/pauses its capex -> delivery slip triggers LDs/termination (paths A/B); the 2-customer backlog is the whole thesis. (Now: on plan, green.)",
+    "K-C FUNDING FLIPS from customer-prepayment-funded to DILUTION-funded -- deferred-revenue growth stalls AND ATM/equity issuance accelerates while FCF stays deeply negative (path D). (Now: deferred rev $1.58B->$4.78B Q1'26, prepayment-led, green; +~27% dilution to date is the watch-item.)",
+    "K-D a SECOND depreciation-life extension or a GPU IMPAIRMENT appears in a filing, OR realized revenue/MW (price per GPU-hour) declines sequentially (path C). (Now: 5yr life just set; Hopper rents -28% YoY is the canary -- yellow.)",
+    "K-E FY2026 capex CONFIRMED at the $31-35B high end WITHOUT commensurate active-MW/ARR conversion -> capital sink. (Now: call-guided $20-25B vs $31-35B secondary, unconfirmed -- yellow; resolve at Q2'26 6-K.)",
+    "K-F customer concentration CONFIRMED >60% with a take-back clause (resolves the bad case), OR a clean-ICFR opinion fails to arrive under Deloitte FY2026 -> durability/quality not establishable.",
+    "K-VAL (new-money valuation discipline) entry price implies NO margin of safety -- price > ~$180-200 for new capital on the ~12-15%/yr hurdle -> no-chase. (Now $286.69 = priced for perfection, red for new money.)"
+  ],
+  "runner_dissent": "Caution-side dissent that REINFORCES the WATCH/HOLD call, plus an honest upside flag. The mechanical read lands WATCH for new money / HOLD for an existing position, and I am comfortable with both. (1) The single most important reason this is WATCH-not-STARTER is PRICE, not the business: at $286.69 the EV already capitalizes the YE2026 $7-9B exit-ARR target as if achieved at a mature multiple, so a new buyer is paid nothing for the asymmetric risks (concentration ~90%+ 2 customers, +27% dilution with more coming, the 4->5yr depreciation tailwind into a faster GPU cadence, and pure execution/delivery risk). This is mirror-opposite to MSFT (same batch): MSFT was capped at STARTER by COMPLETENESS with a POSITIVE margin of safety; NBIS is capped at WATCH by PRICE (no margin of safety) -- evidence the harness discriminates on price/MOS within the AI-capex factor rather than lumping names together. (2) I flag a genuine upside dissent worth respecting: the business is materially BETTER and more-proven than a single-source view could see -- top-tier contracted power, real pricing power (sold out, raised prices), a rare battle-tested ex-Yandex team (~4/5), disciplined prepayment-first funding, and the LEAD finding that power is NOT the wall. The OLD detector brief said WATCH on one video; primary data UPGRADES the *existing-position* read to HOLD (better business, not cheaper). (3) The hardest open item is ACTIVE MW -- the company withholds the very number that would prove or break the conversion thesis; until Q2'26 discloses it, conviction on the build-and-energize gate is itself partly unaudited, which is a second reason to hold rather than press. Net: HOLD existing with discipline; new money waits for <~$150-180 or proven conversion + de-rate; kill on criteria, not on the price ticker.",
+  "sources_used": [
+    {"source_id": "SRC-001", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845 (FY2025 Form 20-F, nbis-20251231x20f.htm)"},
+    {"source_id": "SRC-002", "public_date": "2026-05-13", "url_or_path": "https://assets.nebius.com/.../Nebius%20SHL_Q1%202026.pdf (Q1 2026 Letter to Shareholders, 6-K)"},
+    {"source_id": "SRC-003", "public_date": "2026-02-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/.../tm266173d1_ex99-2.htm (Q4 2025 / FY2025 shareholder letter, 6-K)"},
+    {"source_id": "SRC-004", "public_date": "2025-09-08", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1513845/.../tm2525580d1_ex99-1.htm (Microsoft deal 6-K, ex-99.1)"},
+    {"source_id": "SRC-007", "public_date": "2026-03-16", "url_or_path": "https://nebius.com/newsroom ; https://nvidianews.nvidia.com (Meta ~$27B + NVIDIA $2B warrant / >5GW)"},
+    {"source_id": "SRC-014", "public_date": "2026-05-13", "url_or_path": "Q1 2026 earnings call transcript (Motley Fool / Investing.com): capex $20-25B, pricing, prepayment funding"},
+    {"source_id": "SRC-018", "public_date": "2026-06-18", "url_or_path": "https://stockanalysis.com/stocks/nbis/ ; Yahoo chart API (price, market cap, 52wk band, multiples)"}
+  ]
+}

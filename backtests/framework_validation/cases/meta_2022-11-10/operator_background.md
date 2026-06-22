@@ -118,7 +118,7 @@ Indicative total (context only, not a verdict): ~25/40 — i.e., a strong founde
 
 *Adult track (compressed, ≤ as-of):* 14 years rising through Meta finance to CFO; the transition is framed by Wehner as a **multi-year, long-planned succession** ("discussing for several years," S015), which signals orderly bench depth rather than a scramble.
 
-*Dark-arc (required):* (1) **Untested at the top:** she takes the CFO seat *as* the company posts its first YoY revenue decline and pivots to cost discipline (S001) — no prior public record of her as the lead capital allocator through a downturn. (2) **Insider-alignment risk:** a 14-year internal promotee under a controlling founder may have **limited independent restraining power** over capex/RL spend — she is structurally unlikely to be the brake on Zuckerberg the way an outside CFO might. (3) Formation gap (above) limits underwriting confidence on her values-origin.
+*Dark-arc (required):* (1) **Untested at the top:** she takes the CFO seat *as* the company posts its second consecutive YoY revenue decline (Q2'22 was the first) and pivots to cost discipline (S001) — no prior public record of her as the lead capital allocator through a downturn. (2) **Insider-alignment risk:** a 14-year internal promotee under a controlling founder may have **limited independent restraining power** over capex/RL spend — she is structurally unlikely to be the brake on Zuckerberg the way an outside CFO might. (3) Formation gap (above) limits underwriting confidence on her values-origin.
 
 *Reliability axis:* tenure and appointment facts are dated and primary-adjacent (S015, S012 board context) → trust; absence of formation data is logged, not guessed.
 

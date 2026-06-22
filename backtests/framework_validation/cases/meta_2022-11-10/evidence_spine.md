@@ -15,7 +15,7 @@
 
 | claim_id | fact | source_id | confidence |
 |---|---|---|---|
-| C001 | Q3 2022 revenue was $27,714M, down 4% year-over-year (first YoY revenue decline for the company on a reported basis). | S001, S002 | high |
+| C001 | Q3 2022 revenue was $27,714M, down 4% year-over-year (its second consecutive YoY revenue decline; Q2'22 was the first at -1%). | S001, S002 | high |
 | C002 | Advertising revenue was $27,237M; ad impressions across the Family of Apps rose 17% YoY while average price per ad fell 18% YoY. | S001 | high |
 | C003 | Family of Apps Q3 income from operations was $9,336M; Reality Labs Q3 revenue was $285M with a $(3,672)M operating loss. | S001, S002 | high |
 | C004 | Total Q3 costs and expenses were $22,050M (+19% YoY); income from operations was $5,664M; operating margin 20% (vs 36% prior year). | S001 | high |

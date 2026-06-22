@@ -1,0 +1,88 @@
+{
+  "ticker": "MU",
+  "as_of": "2025-03-21",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (mu_2025-03-21; lean-6module-v1.1)",
+  "note": "No split between as_of and today -> split_factor 1, so the contemporaneous NOMINAL close equals Yahoo raw_close(last <= as_of). as_of is the first full session (2025-03-21) after the FQ2 FY25 print released after close on 2025-03-20; the ~8% post-print drop is captured. Price re-derived two independent ways: (1) Yahoo v8 raw_close x split_factor 1, (2) stockanalysis.com daily history. Independent-of-price-feed market-cap corroboration: FQ2 FY25 10-Q (S4) ~1,115M basic shares x $94.72 = $105.6B, reconciling the card market cap. 52wk band is a FULL 12-month window (255 trading days); price sits +13.4% off the 52wk low and -39.9% off the 52wk high -> no low/high hug.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 94.72,
+      "unit": "USD",
+      "as_of": "2025-03-21",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_reason": "Not near either extreme: +13.4% off the 52wk low ($83.54) and -39.9% off the 52wk high ($157.54). No hug to justify.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU", "fetched_at": "2026-06-21", "value": 94.72, "note": "raw close 94.72 x split_factor 1 (no split between as_of and today); last trading day <= 2025-03-21"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/mu/history/", "fetched_at": "2026-06-21", "value": 94.72, "note": "independent daily-history feed; 2025-03-21 close 94.72 (prior day 2025-03-20 close 103.00, confirming the ~8% post-print drop)"},
+        {"source_name": "mktcap_filing_implied", "url": "FQ2 FY25 10-Q (S4) ~1,115M basic shares x card mcap $105.6B", "fetched_at": "2026-06-21", "value": 94.71, "note": "independent of the price feed: $105.6B / 1,115M = $94.71"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 105600000000,
+      "unit": "USD",
+      "as_of": "2025-03-21",
+      "sources": [
+        {"source_name": "card_filing_shares", "fetched_at": "2026-06-21", "value": 105600000000, "note": "~1,115M basic shares (FQ2 FY25 10-Q S4) x $94.72 = ~$105.6B (~$106.4B on ~1,123M diluted)"},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/mu/", "fetched_at": "2026-06-21", "value": 105600000000, "note": "price x shares cross-check on the independent feed agrees to ~$105.6B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 157.54,
+      "unit": "USD",
+      "note": "Trailing ~372d window before as_of (full 12 months, 255 trading days). Split_factor 1 -> raw = nominal.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 157.54, "note": "trailing-52wk intraday high (mid-2024 peak) x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 83.54,
+      "unit": "USD",
+      "note": "Trailing ~372d window before as_of (full 12 months). Split_factor 1.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 83.54, "note": "trailing-52wk intraday low x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1115,
+      "unit": "millions",
+      "as_of": "2025-03-21",
+      "sources": [
+        {"source_name": "fq2fy25_10q_S4", "public_date": "2025-03-21", "value": 1115, "note": "~1,115M basic (~1,123M diluted) per FQ2 FY25 10-Q; used for the ~$105.6B card market cap"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "FQ3 FY25 guided to RECORD revenue ~$8.80B with a further non-GAAP gross-margin step-down to ~36.5% (from FQ2 actual ~37.9% non-GAAP / 36.8% GAAP); FQ2 non-GAAP EPS $1.56 beat. HBM revenue >$1B/qtr and data-center DRAM at a record. The guided GM step-down (mix/consumer softness) is the contemporaneous bear tell.",
+      "as_of": "2025-03-20",
+      "sources": [
+        {"source_name": "fq2fy25_release_S1", "public_date": "2025-03-20", "value": 8800, "note": "8-K press release (S1) FQ3 outlook: record revenue ~$8.80B, non-GAAP GM ~36.5%"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "hbm_ramp_status",
+      "is_quantitative": false,
+      "value": "As of FQ2 FY25 (reported 2025-03-20): HBM revenue crossed >$1B/quarter, data-center DRAM hit a record, and data-center revenue tripled YoY surpassing 50% of total (per FQ1). Micron is 1 of 3 HBM suppliers; HBM durability across a full cycle is the open thesis question. No post-as_of HBM milestones are used.",
+      "as_of": "2025-03-20",
+      "sources": [
+        {"source_name": "fq2fy25_release_S1", "public_date": "2025-03-20", "note": "HBM >$1B/qtr, record data-center DRAM"},
+        {"source_name": "fq1fy25_release_S2", "public_date": "2024-12-18", "note": "data-center revenue tripled YoY, >50% of total"}
+      ],
+      "pass": true
+    }
+  ]
+}

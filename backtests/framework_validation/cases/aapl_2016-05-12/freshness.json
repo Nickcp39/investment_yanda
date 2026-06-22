@@ -1,0 +1,86 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2016-05-12",
+  "mode": "backtest",
+  "generated_by": "INC-001 backtest retrofit (lean-6module-v1.1)",
+  "note": "PRE-SPLIT nominal price. Modern feeds split-adjust the whole history (AAPL 4:1 split on 2020-08-31, AFTER as_of -> factor 4), so the contemporaneous nominal close is recovered as Yahoo raw_close x 4. raw close today reads 22.585 x4 = 90.34 nominal, exactly the card. Independent corroboration that does NOT come from the price feed: Q2 FY2016 10-Q (S005, filed 2016-04-27) share count 5,478,446 thousand x card mcap $494.9B = $90.34/sh. Plus dated contemporaneous market data (S008 as-of quotes CSV, S009 money.com 2016-05-12) showing the first sub-$90 close since 2014. This is the pre-split-case pattern (same as the NVDA exemplar).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 90.34,
+      "unit": "USD",
+      "as_of": "2016-05-12",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Multi-year-low entry BY DESIGN: the case deliberately tests buying a durable quality_compounder mispriced as ex-growth after its first revenue decline in 13 years. The as-of close $90.34 sits +0.97% above the trailing-52wk intraday low $89.47 -- which was set ON the as-of day itself (first sub-$90 print since 2014, intraday low documented in the card). Hugging the 52wk low is the intended setup, not a low-grab error.",
+      "split_factor": 4,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-06-21", "value": 90.34, "note": "raw close 22.585 x 4 (4:1 split 2020-08-31, after as_of)"},
+        {"source_name": "mktcap_10q_implied", "url": "Q2 FY2016 10-Q (S005) 5,478,446k shares x card mcap $494.9B", "fetched_at": "2026-06-21", "value": 90.34, "note": "independent of the price feed: $494.9B / 5,478.446M = $90.34"},
+        {"source_name": "contemporaneous_market_data", "url": "asof_2016-05-12 quotes CSV (S008) + money.com (S009), dated 2016-05-12", "fetched_at": "2026-06-21", "value": 90.34, "note": "first sub-$90 close since 2014; intraday low $89.47 corroborates the level"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 494900000000,
+      "unit": "USD",
+      "as_of": "2016-05-12",
+      "sources": [
+        {"source_name": "card_10q_shares", "fetched_at": "2026-06-21", "value": 494900000000, "note": "5,478.446M shares (10-Q S005) x $90.34 = $494.9B"},
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 494900000000, "note": "nominal close x same share count"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 132.97,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 132.97, "note": "trailing-52wk intraday high x4 (2015-05-22)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 89.47,
+      "unit": "USD",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-21", "value": 89.47, "note": "trailing-52wk intraday low x4, set 2016-05-12 (the as-of day); the as-of close $90.34 is +0.97% above it"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 5478,
+      "unit": "millions",
+      "as_of": "2016-03-26",
+      "sources": [
+        {"source_name": "q2fy16_10q_S005", "public_date": "2016-04-27", "value": 5478, "note": "common shares issued and outstanding 5,478,446 thousand at 2016-03-26"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "Q3 FY2016 guidance (issued with the Q2 print): revenue $41-43B, gross margin 37.5-38.0% (down from 39.4% in Q2) -- the margin-compression guide that is part of the bear optic at as_of.",
+      "as_of": "2016-04-26",
+      "sources": [
+        {"source_name": "q2fy16_8k_S003", "public_date": "2016-04-26", "value": 37.75, "note": "earnings release outlook; GM midpoint 37.75%"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "As of 2016-05-12: no single company-defining litigation event drives the thesis. Standard 10-Q risk factors only (S005). The China/Greater-China -26% YoY weakness and Icahn's late-Apr-2016 exit on China-policy risk (S011) are the live qualitative overhang, not a lawsuit.",
+      "as_of": "2016-04-27",
+      "sources": [
+        {"source_name": "q2fy16_10q_S005", "public_date": "2016-04-27", "note": "standard risk factors; no material new litigation flagged"},
+        {"source_name": "icahn_exit_S011", "public_date": "2016-04-28", "note": "China-policy-risk exit, dated before as_of"}
+      ],
+      "pass": true
+    }
+  ]
+}

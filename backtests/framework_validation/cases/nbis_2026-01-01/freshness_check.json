@@ -1,0 +1,88 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-01-01",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "backtest",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_raw_x_split",
+  "price": {
+    "card_value": 83.71,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 83.70500183105469,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_raw_x_split",
+        "value": 83.71
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 83.705
+      },
+      {
+        "source_name": "local_quote_csv_S014",
+        "value": 83.71
+      }
+    ],
+    "max_pairwise_delta_pct": 0.006,
+    "independent_sources": [
+      "local_quote_csv_s014",
+      "stockanalysis",
+      "yahoo",
+      "yahoo_raw_x_split"
+    ],
+    "result": "PASS",
+    "detail": "4 independent sources agree within 1%",
+    "refetched_date": "2025-12-31",
+    "split_factor": 1.0
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "18.31 <= 83.71 <= 141.1"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+357.2% off low, -40.7% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "252M x 83.71 = 0.021T vs card 0.021T (0.07%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 83.71 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2025-11-11 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T7",
+      "name": "no-lookahead (source<=as_of)",
+      "status": "PASS",
+      "detail": "all 23 source dates <= 2026-01-01"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2025-11-11 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}
