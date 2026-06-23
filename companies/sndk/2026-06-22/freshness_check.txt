@@ -1,0 +1,11 @@
+FRESHNESS CHECK -SNDK as_of 2026-06-22  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=2288.92 refetched_yahoo=2303.580078125 (2026-06-22) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 40.1 <= 2288.92 <= 2322.99
+  [PASS] T2 low/high hug: +5608.0% off low, -1.5% off high
+  [PASS] T3 market-cap identity: 148M x 2288.92 = 0.339T vs card 0.339T (0.00%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 2288.92 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-04-30 is 53d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-06-22 (0d)

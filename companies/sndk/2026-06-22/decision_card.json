@@ -1,0 +1,96 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-06-22",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-22",
+  "context_label": "cyclical_inflection",
+  "as_of_price": 2288.92,
+  "as_of_market_cap": 338970000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Evidence is STRONG and current. Primary: Q3 FY2026 10-Q (period ended Apr 3 2026) + Q3 and Q2 FY26 8-K press releases give the full income statement, balance sheet, cash flow, segment detail, and Q4 guidance. LIVE price/mcap/52wk/shares triple-verified (Yahoo $2,288.92 / stockanalysis $2,274.44 / MarketBeat $2,288.92, within 0.63%; shares 148,089,758 from the 10-Q cover matches both vendors exactly). The only gaps are FORWARD and one secondary item: (a) normalized mid-cycle margin is unobservable at a peak; (b) the precise NBM economics ($42B min revenue / >$11B guarantees / >1/3 of FY27 bits) are SECONDARY-sourced [S011/S012] -- primary confirms only the EXISTENCE of 5 NBM agreements + a $511M contract-liability balance [S001/S002]. Confidence HIGH on the facts; the uncertainty is about the future of a cycle, not about what is known.",
+      "drivers": ["S001", "S002", "S005", "S006", "S007"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Context = cyclical_inflection, specifically a NAND/AI-storage SUPERCYCLE at or near its PEAK. The mechanism is real and the company is capturing it massively: a structural NAND shortage ('allocation exhaustion') from AI-datacenter demand consuming ~70% of memory supply has driven NAND contract prices +70-75% QoQ, and SanDisk's Datacenter revenue +645% YoY with GAAP gross margin 22.5%->78.4% in four quarters. The theme/mechanism EXISTS and is delivering (signal +2 on the mechanism's reality). BUT this is the double edge of a cyclical: the same force that is +2 today is the peak signal. Supply is being funded for 2027 (BiCS10 mass production, Kioxia capex +40-66%, possible 3rd Kitakami fab). The market narrative ('structural / durable / this time is different via NBM') is exactly what is said at every NAND peak. Mechanism real and powerful NOW; the question M2 hands to M4/M5/M6 is durability and price.",
+      "drivers": ["S001", "S013", "S009", "S010", "S016"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SanDisk captures a real and currently enormous profit pool (78% GM, $4.1B quarterly operating income), but durability is structurally MEDIUM-LOW -- not compounder grade. (1) NAND is a commodity; the 78% margin is a SHORTAGE RENT, not a moat rent -- the identical franchise earned a 22.5% GM and a GAAP loss one year ago. (2) The cost base is SHARED with Kioxia via Flash Ventures (variable-cost wafer obligation, ~50% of JV capex; JV extended to 2034) -- SanDisk does not fully control its own cost or capacity. (3) The genuine durability-DEEPENING development is the New Business Model: multi-year, prepaid, financially-guaranteed customer commitments covering >1/3 of FY27 bits (secondary: ~$42B / >$11B), evidenced by a $511M contract-liability balance. This moves the moat from 'none' to 'NARROW' and raises the trough -- but it covers a minority of bits, uses fixed+variable pricing (ASP still falls on the variable part in a glut), and is UNTESTED through a downturn. Operator team life-arc 3.5/5 (proven execution but only in a tailwind; Chair+CEO concentration; 2-person key-man) = NEUTRAL on the ceiling. Net 0: captures the economics now; does not durably keep them. Per METHODOLOGY this caps the position BELOW Core regardless of the print.",
+      "drivers": ["S001", "S002", "S008", "S011", "S018"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Two true things at once, netting to 0 for a cyclical. CONFIRMING (the boom is REAL, not an accounting illusion): Q3 FY26 operating cash flow $3,038M (9-mo $4,545M) is real cash; the balance sheet is a FORTRESS -- zero long-term debt (paid off $1,829M), $3,735M cash, total equity $13,777M, retained earnings flipped to +$2,746M; D&A only $38M/qtr; a $6B buyback authorized. This is NOT a trailing-earnings trap in the accounting sense -- the earnings are cash and real, and the 2025 survival/dilution risk is GONE. WARNING (the level is a PEAK, not a run-rate): a 78.4% gross margin on a commodity is unsustainable; the correct normalized lens is mid-cycle margin x cycle-aware multiple, not the optical ~17x forward on peak-annualized EPS. For a cyclical_inflection context M4's duty is to read cycle position correctly: this is the TOP, with the supply response already funded. So M4 neither supports sizing up (peak) nor refutes the business (real, fortress) -> 0, with the explicit flag that ALL forward valuation must use normalized, not peak, earnings.",
+      "drivers": ["S001", "S002", "S003", "S017"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "No HARD veto on the BUSINESS: it is not a structural-decline trap (the franchise is healthy and demand is real) and the balance sheet trivially survives the cycle (net cash $3.7B) -- so per WEIGHTING_HARNESS the cyclical hard-veto (balance sheet cannot survive) does NOT fire. BUT the inversion for NEW MONEY at ~$2,288.92 is severe and is the dominant signal: (1) CYCLE REVERSION -- a commodity at a 78% margin peak with capacity (BiCS10/Kioxia +40-66%/3rd fab) landing in 2027; earnings can fall from a ~$120/yr peak run-rate toward $10-35/yr normalized -> at a cyclical 9-14x the stock is worth ~$108-450 -> -80% to -95%. This is the textbook 'cheap on PEAK earnings' cyclical trap (PFE/INTC pattern). (2) CAPACITY GLUT overshoot (the 2018/2022 replay). (3) NBM DISAPPOINTS -- the durability premium rests on secondary-sourced economics. (4) BUYBACK-AT-PEAK capital destruction. (5) JV obligations ($2,967M max exposure) magnify a prolonged trough. The risk is to the PRICE and to NEW-MONEY timing, not to solvency -- so it is sized via the Portfolio Controller (REJECT/WATCH new money, TRIM existing) rather than a business veto, but it is a strong -2 warning against entry here.",
+      "drivers": ["S009", "S010", "S013", "S011", "S002"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $2,288.92 (~$337B cap, ~76x trailing) the price sits ABOVE EVERY fair-value scenario, including the BULL durable-reset case (~$990). Probability-weighted fair value ~$470 implies the market is paying ~5x central fair value; the price is even ABOVE the average sell-side 12-month target (~$1,751-1,843) and above third-party DCF [S015/S020]. The ONLY way to rationalize the price is to capitalize PEAK (78-81% GM) earnings as permanent (peak-annualized ~$128 EPS x 18x ~= $2,300) -- the cyclical low-multiple-at-the-top trap. MOS for new money is deeply NEGATIVE; the asymmetry is INVERTED (little upside, -80/-95% downside). Per METHODOLOGY M6 outputs attractiveness/asymmetry/stage and does not set a hard size, BUT for a name with no price margin of safety M6 caps BEFORE completeness: attractiveness -2, asymmetry inverted, stage = late/peak. New money: no buy here (buy-below anchored ~$600 AND durability proof). Existing holders: this price triggers METHODOLOGY sell-rule #2 (price absurd vs value) -> TRIM the cyclical gain. Monitor: GM trajectory, NAND ASPs, NBM terms, buyback pace, Q4 FY26 print (~late Jul/Aug 2026).",
+      "drivers": ["S005", "S006", "S015", "S020", "S001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "TRIM",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 10,
+  "buy_below_price": 600,
+  "starter_zone": "NO new money at/near $2,288.92. A future starter would require BOTH (a) a major cyclical reset toward ~$450-700 (the base/bull fair-value boundary) AND (b) primary confirmation that the NBM model holds a normalized gross-margin floor materially above prior cycles. Absent both, this is WATCH-only.",
+  "add_zone": "Not applicable for new money. For an existing trimmed holder, re-add only on the same two conditions as the starter zone (deep cyclical reset + durability proof), capped at the Confirmed ~10% cyclical ceiling -- never to Core.",
+  "trim_or_no_chase_zone": "Current ~$2,288.92 is firmly a TRIM / NO-CHASE zone. Above ~$1,000 (already above the average analyst target and above the bull fair value) the stock is priced for permanent peak earnings; existing holders should be taking the cyclical gain, not adding, and new money should not chase under any framing.",
+  "binding_constraint": "PRICE / cycle-position, not business quality or solvency. The business is genuinely good right now (fortress balance sheet, real $3B/qtr cash, leading NAND position, a real NBM demand floor) and there is NO hard veto -- but at ~$2,288.92 the price is ~5x probability-weighted fair value and above even the bull case, on a commodity-cyclical at a 78% gross-margin PEAK with the 2027 supply response already funded. The binding constraint is therefore valuation against normalized (not peak) earnings: new money has deeply negative MOS and inverted asymmetry (M6 -2 caps before completeness), and durability is cyclical (M3 caps below Core). This is a SIZE/timing constraint expressed as WATCH (new) / TRIM (existing), not a business veto.",
+  "kill_criteria": [
+    "Gross margin rolls over -- Q4 FY26 (~late Jul/Aug 2026) or any FY27 quarter prints below the guided ~79-81% or declines sequentially -> the cycle has peaked -> existing holders trim hard / new money stays away.",
+    "NAND ASPs turn negative QoQ in industry data (TrendForce et al.) -> the core shortage mechanism is breaking -> cycle reversion underway.",
+    "NBM economics are revealed (in primary filings/calls) to be materially weaker than the ~$42B / >$11B / >1/3-of-FY27-bits framing, or are dominated by variable pricing -> the 'durable earnings' premium is unjustified -> re-underwrite down.",
+    "Capacity additions (BiCS10 ramp, Kioxia +40-66% capex, a 3rd Kitakami fab) accelerate visibly ahead of demand -> a 2027-28 glut is forming -> margins will normalize below mid-cycle.",
+    "The $6B buyback is executed aggressively near the all-time-high and the stock subsequently halves -> capital-allocation red flag confirmed -> downgrade operator/governance read.",
+    "Macro/AI-capex pause cuts datacenter NAND demand -> the demand leg of the supercycle weakens faster than supply -> accelerated reversion."
+  ],
+  "runner_dissent": "The mechanical aggregation lands cleanly at WATCH (new) / TRIM (existing) and I hold it, but I register three honest tensions. (1) PRO-cyclicality of my own caution: I am calling 'peak' partly BECAUSE the price and margins are extreme, which is exactly the reasoning that gets value investors out of supercycles two years early. The NBM model is a genuinely novel attempt to break NAND's boom-bust, and IF the AI-storage demand curve is structural (a real possibility, ~25% weight), a holder who trims here will look wrong for a while -- which is why the existing-position call is TRIM (take some cyclical gain), NOT EXIT (keep a residual for the durable-optionality tail). (2) The WATCH-vs-REJECT line: the business is NOT broken (no trap, no veto), so REJECT (a trap verdict) would be wrong; WATCH is correct -- but it must be read as 'watch for a cyclical re-entry ~70% lower', not 'about to buy'. At the current price the practical new-money action is indistinguishable from REJECT. (3) Size ceiling: I cap max at 10% (Confirmed, cyclical) even in the bull case; a NAND maker is never a Core 15-25% hold-forever name no matter how good the NBM story sounds -- durability, not the current print, sets the ceiling (METHODOLOGY). Net: a great business having a spectacular cycle at a price that offers new money no margin of safety and inverted asymmetry.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026028879/sndkq3-26ex991xpressrelease.htm"},
+    {"source_id": "S002", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm"},
+    {"source_id": "S003", "public_date": "2026-01-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026004121/sndkq2fy26ex991-pressrelea.htm"},
+    {"source_id": "S005", "public_date": "2026-06-22", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK"},
+    {"source_id": "S006", "public_date": "2026-06-22", "url_or_path": "https://stockanalysis.com/stocks/sndk/"},
+    {"source_id": "S007", "public_date": "2026-06-22", "url_or_path": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/"},
+    {"source_id": "S008", "public_date": "2026-01-29", "url_or_path": "https://investor.sandisk.com/news-releases/news-release-details/kioxia-and-sandisk-extend-yokkaichi-joint-venture-agreement"},
+    {"source_id": "S009", "public_date": "2026-06-03", "url_or_path": "https://www.trendforce.com/news/2026/06/03/news-kioxia-targets-%C2%A5470b-yearly-capex-in-fy26-28/"},
+    {"source_id": "S010", "public_date": "2026-06-01", "url_or_path": "https://www.trendforce.com/news/2026/06/01/news-japan-u-s-nand-alliance-steps-up-investment/"},
+    {"source_id": "S011", "public_date": "2026-05-15", "url_or_path": "https://www.theglobeandmail.com/investing/markets/stocks/MU/pressreleases/2403448/"},
+    {"source_id": "S013", "public_date": "2026-06-01", "url_or_path": "https://nand-research.com/memory-nand-flash-crisis-may-2026-update/"},
+    {"source_id": "S015", "public_date": "2026-06-21", "url_or_path": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/forecast/"},
+    {"source_id": "S017", "public_date": "2025-05-07", "url_or_path": "https://www.sandisk.com/company/newsroom/press-releases/2025/2025-05-07-sandisk-reports-fiscal-third-quarter-2025-financial-results"},
+    {"source_id": "S018", "public_date": "2025-06-16", "url_or_path": "../../../backtests/framework_validation/cases/sndk_2025-06-16/"},
+    {"source_id": "S020", "public_date": "2026-06-15", "url_or_path": "https://simplywall.st/stocks/us/tech/nasdaq-sndk/sandisk/valuation"}
+  ]
+}

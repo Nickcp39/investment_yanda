@@ -1,0 +1,93 @@
+{
+  "ticker": "CEG",
+  "as_of": "2026-06-22",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-22",
+  "context_label": "exceptional_bottleneck (scarce dispatchable/clean baseload for AI) / regulated-ish merchant-utility hybrid",
+  "as_of_price": 277.64,
+  "as_of_market_cap": 100270000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Live data refreshed to 2026-06-22 with primary sources. Q1 2026 10-Q now confirms net debt ~$21.3B (LT $16,994M + ST $5,102M - cash $800M) and 361.19M shares (cover, Apr 30 2026) -- RESOLVES the seed's disputed C011 leverage estimate. Calpine consideration $21,835M (10-Q). FY26 guide $11-12 affirmed at Q1. Remaining gaps: MSFT/Crane PPA price still officially undisclosed (secondary estimates $100-115/MWh, unconfirmed); year-by-year hedge ratios undisclosed. Freshness gate PASS (3 price sources within 0.21%).",
+      "drivers": ["S2", "S13", "S9"]
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "CEG owns the physical scarce input -- ~32 GW carbon-free nuclear baseload at ~95% capacity factor, near-zero marginal fuel, effectively un-buildable (no new large US reactor on time/budget in a generation; 10-15yr greenfield). The AI-power demand leg is accelerating: hyperscaler 2026 capex ~$725B (+77%). The bottleneck is owned, not merely depended-on -- the key contrast with NBIS.",
+      "drivers": ["C022", "C004", "C025"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability (incl. operator)",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Durable scarcity rent: ~95% CF nuclear at ~$0 fuel sells into PJM at gas-set clearing prices; the new lever is long-dated PTC-floored hyperscaler PPAs (Crane->MSFT 20yr, Meta->Clinton 20yr). No capex treadmill (fleet exists; Crane is a $1.6B DOE-backed restart). Operator (Dominguez) runs ~95% CF, beats adj-EPS repeatedly, clean governance (no super-voting), per-share oriented ($5B buyback + >=10% dividend growth). Durability ceiling: merchant-power cyclicality + Calpine gas dilution (carbon-free 90%->58%) cap this below Core per METHODOLOGY.",
+      "drivers": ["C020", "C021", "C013", "C008"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Positive, growing owner earnings (FY25 adj EPS $9.39, FCF ~$1.3B standalone) -- unlike NBIS's negative OE. Clean accounting; the dilution was a discrete, accretion-justified Calpine equity issuance, not chronic SBC. KEY REFRESH: post-Calpine leverage is LESS alarming than the seed feared -- primary 10-Q net debt ~$21.3B and management pro-forma leverage ~2.25x (forward-EBITDA), with a $3.4B debt-reduction plan to 2027 toward ~2.0x. LS Power $5B/4.4GW divestiture COMPLETED (cash in). Q1'26 +64% revenue is an acquisition artifact, not organic. Caveat: combined-entity FCF and year-by-year hedge ratios still not cleanly reported.",
+      "drivers": ["C002", "C003", "C011r", "C024"]
+    },
+    {
+      "module": "M5 Inversion / Traps",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Of 5 pre-registered kills: (a) FERC blocks co-location DEFUSED (5-0 enabling order; front-of-meter flagship); (b) power->PTC floor LIVE but FLOORED (~$25/MWh to 2032; 2027 open ~$34); (c) Calpine dilutive/over-levered PARTIAL but DE-RISKED vs seed (leverage now ~2.25x pro-forma not 3.8x; LS Power cash in); (d) PTC repealed NOT TRIGGERED (survived OBBBA); (e) shared switch ACCELERATING +77%. The live failure mode is narrowed to the capped flagship (Crane upside sold to MSFT) + still-no-NEW-premium-nuclear-PPA -- the 'quality-at-fair-price trap' where equity is dead money at ~24x absent a new catalyst. SINGLE-FACTOR TIE: CEG rides the SAME AI-power buildout as NBIS/VRT -- stacking them doubles one factor, not diversifies (METHODOLOGY sec5).",
+      "drivers": ["C015", "C019", "C011r", "C013"]
+    },
+    {
+      "module": "M6 Pricing / Sizing / Monitor",
+      "role": "price+output",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At $277.64: mkt cap ~$100B, fwd P/E ~24x, EV/EBITDA ~15x. Premium to merchant peers (VST ~16x, TLN ~17-18x, NRG ~18x), compressed from >35x at the $413 high (-33%). Street targets $296-441, median ~$360 (23 analysts, Buy) -- even the LOW target sits above the current price. Asymmetry: bear ~$210-230 (-20%, floored by PTC), base ~$300-340 (+10-22%), bull ~$400+ (+45%). Margin of safety EXISTS (downside is multiple-compression on an intact, PTC-floored franchise, not earnings collapse) -- so M6 does NOT price-cap below completeness. STARTER now; add toward $230-250 or on a confirmed NEW premium PPA + clean deleverage.",
+      "drivers": ["C027r", "C028r", "C026"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 2.0,
+  "suggested_max_size_pct": 5.0,
+  "buy_below_price": 250.0,
+  "starter_zone": "$250-300 (current $277.64 sits here -- fair-not-cheap, margin of safety vs own froth + vs Street)",
+  "add_zone": "$230-250 (bear-ish ~18-20x multiple, moat intact -> scale up)",
+  "trim_or_no_chase_zone": ">=$370 (Street median; reassess vs froth) / >=$414 (>30x, froth re-emerges -> trim)",
+  "binding_constraint": "Info-completeness ~76/100 caps the verdict at STARTER (one parallel refresh pass = DECISION_DRAFT, not COMPLETE). The economic binding constraint is the capped flagship + absence of a confirmed NEW premium-nuclear hyperscaler PPA: Crane's upside is contracted to Microsoft at an undisclosed (likely fixed) price, so the equity re-rate hinges on the next deal, not on the moat existing. Durability ceiling (merchant cyclicality + Calpine gas dilution) independently caps below CORE.",
+  "kill_criteria": [
+    "Calpine deleverage off-track: pro-forma ~2.25x / target ~2.0x by 2027 stalls, a further DOJ/FERC divestiture slips, or a 10-Q shows leverage rising rather than falling -> TRIM",
+    "Capped flagship + extended PPA drought: no NEW (post-Meta) premium-nuclear hyperscaler PPA signs AND open-year power curves soften toward the ~$25/MWh PTC floor -> equity is dead money at ~24x (gates the UPGRADE; absence is the binding constraint)",
+    "FERC final PJM co-location definition lands hostile in a way that reaches front-of-meter PPAs (low probability after the 5-0 order; CEG flagship insulated) -> re-open kill (a)",
+    "Hyperscaler 2027 capex guide DECELERATES (shared-switch demand leg, common to NBIS/VRT/CEG) -> DOWNGRADE the whole AI-power cohort",
+    "Open-year nuclear volume priced at/near the ~$25/MWh PTC floor for multiple years -> upside compression (downside still floored; not a permanent-impairment kill)"
+  ],
+  "runner_dissent": "Mechanically the live refresh STRENGTHENS the seed thesis -- the scariest balance-sheet fear (post-Calpine leverage 3.8x) is overstated: the primary Q1'26 10-Q shows net debt ~$21.3B and management runs pro-forma leverage at ~2.25x with a completed $5B LS Power sale, so kill (c) is more de-risked than the seed's 'PARTIAL TRIGGER' implied. That argues the mid-20s multiple is better supported than at 2026-06-19. BUT three honest cautions hold the verdict at STARTER, not higher: (1) at ~$278 / ~24x there is real but THIN margin of safety -- the -33% de-rate cut froth (>35x), not absolute value; ~24x still embeds a 6-8 turn premium over 16-18x merchant peers, so a Calpine-gas-driven re-rating toward a merchant multiple is a live downside even with the PTC floor. (2) The single biggest upside swing -- the NEXT PPA price -- remains unseen; Crane's economics are locked to an undisclosed MSFT price (secondary $100-115/MWh estimates are unconfirmed and must NOT enter facts), and the one genuinely-new deal found (CyrusOne 380 MW) is Calpine GAS, not a premium-nuclear re-rate catalyst. (3) This is one parallel pass on a seed -- DECISION_DRAFT, info ~76, NOT a COMPLETE multi-pass; the SEC 10-K/10-Q headline figures and combined-entity FCF still warrant a second primary confirmation before any CORE upgrade. CONCENTRATION FLAG: for a holder already long NBIS + GOOGL + BTC, adding CEG doubles the AI-capex/liquidity factor rather than diversifying -- size accordingly.",
+  "sources_used": [
+    {"source_id": "S2", "public_date": "2026-05-11", "url_or_path": "https://www.stocktitan.net/sec-filings/CEG/8-k-constellation-energy-corp-reports-material-event-111d3b4cfb03.html"},
+    {"source_id": "S13", "public_date": "2026-05-11", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000067/ceg-20260331.htm (Q1 2026 10-Q)"},
+    {"source_id": "S14", "public_date": "2026-05-11", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2026/05/11/constellation-ceg-q1-2026-earnings-transcript/"},
+    {"source_id": "S9", "public_date": "2026-06-22", "url_or_path": "https://stockanalysis.com/stocks/ceg/"},
+    {"source_id": "S15", "public_date": "2026-06-22", "url_or_path": "https://finance.yahoo.com/quote/CEG/ + Yahoo chart API /chart/CEG"},
+    {"source_id": "S5", "public_date": "2025-12-18", "url_or_path": "FERC Docket EL25-49, 193 FERC para 61,217"},
+    {"source_id": "S7", "public_date": "2025-07", "url_or_path": "https://www.irs.gov/credits-deductions/zero-emission-nuclear-power-production-credit ; OBBBA P.L.119-21 sec 70510"},
+    {"source_id": "S6", "public_date": "2026-06-08", "url_or_path": "NRC draft EA/FONSI, Crane restart (Federal Register)"},
+    {"source_id": "S4", "public_date": "2026-01-07", "url_or_path": "https://www.industrialinfo.com/iirenergy/industry-news/article/constellation-energy-completes-calpine-acquisition--351594"},
+    {"source_id": "S11", "public_date": "2026-03-18", "url_or_path": "CEG-LS Power $5B/4.4GW divestiture (completed March 2026)"},
+    {"source_id": "S16", "public_date": "2026-06-18", "url_or_path": "https://stockanalysis.com/stocks/ceg/forecast/ (analyst targets: avg $360, low $296, high $441, 23 analysts)"},
+    {"source_id": "S8", "public_date": "2026-02", "url_or_path": "Hyperscaler 2026 capex compilation (FT/CNBC) ~$725B +77%"},
+    {"source_id": "S12", "public_date": "2024-09", "url_or_path": "https://www.datacenterdynamics.com/en/news/three-mile-island-nuclear-power-plant-to-return-as-microsoft-signs-20-year-835mw-ai-data-center-ppa/"}
+  ]
+}

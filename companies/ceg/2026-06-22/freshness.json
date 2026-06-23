@@ -1,0 +1,159 @@
+{
+  "ticker": "CEG",
+  "as_of": "2026-06-22",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (mempower4 batch). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-Q line items) rides the dated-source claim_ledger discipline. Price basis = Yahoo daily-close <= as_of (2026-06-22 = 277.64); intraday quotes from stockanalysis ($277.75) and Yahoo Finance quote ($277.17) cross-check within tolerance. Refreshed from the 2026-06-19 seed dossier (companies/ceg/), which carried the 2026-06-18 close $274.06.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 277.64,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG", "fetched_at": "2026-06-22", "value": 277.64},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ceg/", "fetched_at": "2026-06-22", "value": 277.75},
+        {"source_name": "yahoo_quote", "url": "https://finance.yahoo.com/quote/CEG/", "fetched_at": "2026-06-22", "value": 277.17}
+      ],
+      "cross_check_delta_pct": 0.21,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 100270000000,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "361.19M shares (10-Q cover, Apr 30 2026) x 277.64", "fetched_at": "2026-06-22", "value": 100270000000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ceg/", "fetched_at": "2026-06-22", "value": 99190000000}
+      ],
+      "cross_check_delta_pct": 1.09,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 412.70,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG", "fetched_at": "2026-06-22", "value": 412.70},
+        {"source_name": "yahoo_quote", "url": "https://finance.yahoo.com/quote/CEG/", "fetched_at": "2026-06-22", "value": 412.70}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 240.51,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG", "fetched_at": "2026-06-22", "value": 240.51},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ceg/", "fetched_at": "2026-06-22", "value": 240.51}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 361.19,
+      "unit": "millions",
+      "as_of": "2026-04-30",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_10q_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000067/ceg-20260331.htm", "public_date": "2026-05-11", "fetched_at": "2026-06-22", "value": 361.19},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ceg/", "fetched_at": "2026-06-22", "value": 357.10}
+      ],
+      "cross_check_delta_pct": 1.14,
+      "pass": true
+    },
+    {
+      "field": "fwd_pe",
+      "value": 23.9,
+      "unit": "x",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ceg/", "fetched_at": "2026-06-22", "value": 23.89},
+        {"source_name": "yahoo_quote", "url": "https://finance.yahoo.com/quote/CEG/", "fetched_at": "2026-06-22", "value": 23.26}
+      ],
+      "cross_check_delta_pct": 2.7,
+      "pass": true,
+      "note": "Forward P/E ~23-24x on FY26 guide midpoint $11.50. Aggregator estimates differ slightly on the EPS denominator; both confirm mid-20s, the seed's ~24x holds."
+    },
+    {
+      "field": "net_debt",
+      "value": 21300000000,
+      "unit": "USD",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_10q_q1_2026", "url": "https://www.stocktitan.net/sec-filings/CEG/10-q-constellation-energy-corp-quarterly-earnings-report-013e301beb0e.html", "public_date": "2026-05-11", "fetched_at": "2026-06-22", "value": 21296000000},
+        {"source_name": "sec_8k_proforma", "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000037/a12312025proformafinanci.htm", "public_date": "2026-01-07", "fetched_at": "2026-06-22", "value": 21600000000}
+      ],
+      "cross_check_delta_pct": 1.4,
+      "pass": true,
+      "note": "Q1 2026 10-Q (Mar 31 2026): LT debt $16,994M + ST borrowings $5,102M - cash $800M = ~$21.3B. RESOLVES the seed's disputed C011 estimate (~$21.6B) with a primary figure. Mgmt pro-forma leverage ~2.25x (forward-EBITDA basis); $3.4B debt-reduction plan through 2027 toward a long-term ~2.0x target."
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 adjusted operating EPS guidance $11.00-$12.00 AFFIRMED at Q1 2026 (2026-05-11). 20%+ base-EPS CAGR targeted through 2029. Q1 2026 adj EPS $2.74 (beat $2.59); revenue $11.12B (first full Calpine-consolidated quarter). Calpine accretion guided ~$2/share FY26.",
+      "as_of": "2026-05-11",
+      "sources": [
+        {"source_name": "stocktitan_8k", "url": "https://www.stocktitan.net/sec-filings/CEG/8-k-constellation-energy-corp-reports-material-event-111d3b4cfb03.html", "public_date": "2026-05-11", "fetched_at": "2026-06-22"},
+        {"source_name": "motley_fool_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/05/11/constellation-ceg-q1-2026-earnings-transcript/", "public_date": "2026-05-11", "fetched_at": "2026-06-22"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "regulatory_ferc_colocation",
+      "is_quantitative": false,
+      "value": "FERC 5-0 order (Docket EL25-49, 193 FERC para 61,217, 2025-12-18) directs PJM to ENABLE co-located load; PJM compliance accepted-in-part / rejected-in-part 2026-04-16, co-location DEFINITION still litigated. Direction favorable; CEG's Crane->Microsoft is front-of-the-meter so the residual definitional risk largely does not touch the flagship. No reversal as of 2026-06-22.",
+      "as_of": "2026-04-16",
+      "sources": [
+        {"source_name": "ferc_order_el25_49", "url": "FERC Docket EL25-49 193 FERC para 61,217", "public_date": "2025-12-18", "fetched_at": "2026-06-22"},
+        {"source_name": "utilitydive_pjm_colocation", "url": "https://www.utilitydive.com/news/pjm-market-monitor-constellations-nuclear-crane-waiver/818216/", "public_date": "2026-05", "fetched_at": "2026-06-22"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "nuclear_ptc_45u",
+      "is_quantitative": false,
+      "value": "Section 45U zero-emission nuclear PTC survived the OBBBA (P.L.119-21) intact: ~$15/MWh max value, ~$25/MWh gross-receipts floor, sunset 2032; only narrow FEOC rules added (irrelevant to US-owned CEG). No repeal or new adverse legislation as of 2026-06-22. Legislated downside floor.",
+      "as_of": "2025-07",
+      "sources": [
+        {"source_name": "irs_45u", "url": "https://www.irs.gov/credits-deductions/zero-emission-nuclear-power-production-credit", "public_date": "2025-07", "fetched_at": "2026-06-22"},
+        {"source_name": "obbba_statute", "url": "OBBBA P.L.119-21 sec 70510 (via Morgan Lewis / Clifford Chance summaries)", "public_date": "2025-07", "fetched_at": "2026-06-22"}
+      ],
+      "pass": true,
+      "note": "T6 will flag this as aged (>45d before as_of) -- it is a statutory backstop, confirmed still in force; no newer authoritative event exists. WARN-level, not a BLOCK."
+    },
+    {
+      "field": "calpine_merger_status",
+      "is_quantitative": false,
+      "value": "Calpine acquisition CLOSED 2026-01-07. Total consideration $21,835M ($17,603M equity / ~50M new shares + $4,342M cash), ~$12.7B assumed Calpine net debt, $11,107M goodwill, +23 GW (gas + Geysers geothermal) + retail book. Deleverage actions executed: $2,290M Constellation debt exchanged for Calpine debt + $2,750M new fixed-rate debt issued to pay down assumed debt (Jan 2026); LS Power $5B/4.4 GW divestiture COMPLETED March 2026; further DOJ/FERC-required divestitures agreed. Carbon-free share diluted ~90% -> ~58%.",
+      "as_of": "2026-05-11",
+      "sources": [
+        {"source_name": "sec_10q_q1_2026", "url": "https://www.stocktitan.net/sec-filings/CEG/10-q-constellation-energy-corp-quarterly-earnings-report-013e301beb0e.html", "public_date": "2026-05-11", "fetched_at": "2026-06-22"},
+        {"source_name": "ceg_calpine_completion_pr", "url": "https://www.industrialinfo.com/iirenergy/industry-news/article/constellation-energy-completes-calpine-acquisition--351594", "public_date": "2026-01-07", "fetched_at": "2026-06-22"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "data_center_ppas",
+      "is_quantitative": false,
+      "value": "Microsoft 20-yr PPA (Crane/ex-TMI Unit 1, ~835 MW, restart on track 2027) -- price officially UNDISCLOSED; secondary press estimates a $100-115/MWh range (not confirmed by CEG). Meta 20-yr PPA for 1,092 MW Clinton clean attributes, commencing June 2027. NEW (post-Meta) deal: CyrusOne 380 MW data center in Texas (Calpine-side gas, announced shortly after Calpine close). Company cites >5,650 MW of long-term clean-energy agreements + ~1 GW of nuclear uprates planned. No NEW premium-nuclear hyperscaler PPA confirmed as of 2026-06-22.",
+      "as_of": "2026-06-22",
+      "sources": [
+        {"source_name": "datacenterdynamics_msft_tmi", "url": "https://www.datacenterdynamics.com/en/news/three-mile-island-nuclear-power-plant-to-return-as-microsoft-signs-20-year-835mw-ai-data-center-ppa/", "public_date": "2024-09", "fetched_at": "2026-06-22"},
+        {"source_name": "useluminix_ceg_overview", "url": "https://www.useluminix.com/reports/company-overviews/constellation-energy-company-overview-nuclear-fleet-ai-power-deals-and-market-position-2026", "public_date": "2026", "fetched_at": "2026-06-22"}
+      ],
+      "pass": true
+    }
+  ]
+}

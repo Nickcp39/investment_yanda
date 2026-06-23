@@ -1,0 +1,60 @@
+claim,source_id,value,unit,as_of,tier,verification,destination
+Current price (last print <= as_of; open session 2026-06-22),S5,1184.88,USD,2026-06-22,B,verified-2-source (yahoo 1184.88 / stockanalysis 1181.82),decision_card/facts/valuation
+Current price cross-check stockanalysis intraday,S4,1181.82,USD,2026-06-22,B,cross-check 0.26pct vs yahoo,freshness
+Market cap,S4,1330000000000,USD,2026-06-22,B,verified (derived 1130M x 1184.88 = 1.339T within 0.67pct),decision_card/facts
+Market cap derived,S5,1338940000000,USD,2026-06-22,B,1130M sh x 1184.88,decision_card
+52-week high,S5,1204.50,USD,2026-06-22,B,verified (stockanalysis 1196.61; ATH set within days of as_of),facts/valuation
+52-week low,S5,103.38,USD,2026-06-22,B,verified identical both sources,facts/valuation
+Trailing P/E,S4,53.35,x,2026-06-22,B,verified,valuation
+Forward P/E,S4,10.96,x,2026-06-22,B,verified (on consensus fwd EPS ~$76-108),valuation
+Price-to-book,S4,17.65,x,2026-06-22,B,verified,valuation
+Enterprise value,S4,1270000000000,USD,2026-06-22,B,verified,valuation
+TTM EPS (diluted),S4,21.18,USD,2026-06-22,B,verified (cnbc 21.26 within rounding),valuation
+TTM revenue,S4,58119,USD millions,2026-06-22,B,verified,valuation
+TTM net income,S4,24101,USD millions,2026-06-22,B,verified,valuation
+Diluted shares (weighted),S1,1142,millions,2026-02-26,A1,derived from GAAP NI 13785 / EPS 12.07,decision_card/freshness
+Total cash & investments,S1,16700,USD millions,2026-02-26,A1,primary (press release; stockanalysis 14.59B current),financials
+Total debt,S4,10800,USD millions,2026-06-22,B,verified (search ~10.14B at Q2; H1 debt prepayments 4.37B),financials
+Q2 FY2026 revenue,S1,23860,USD millions,2026-02-26,A1,primary SEC fetch verbatim,facts/financials
+Q2 FY2026 revenue YoY,S1,196,percent,2026-02-26,A1,vs 8053 prior year (23860/8053-1),facts
+Q2 FY2026 revenue QoQ,S1,75,percent,2026-02-26,A1,vs 13643 prior qtr,facts
+Q2 FY2026 GAAP gross margin,S1,74.4,percent,2026-02-26,A1,primary,facts/financials
+Q2 FY2026 non-GAAP gross margin,S1,74.9,percent,2026-02-26,A1,primary,facts/financials
+Q2 FY2026 GAAP operating margin,S1,67.6,percent,2026-02-26,A1,primary,financials
+Q2 FY2026 GAAP net income,S1,13785,USD millions,2026-02-26,A1,primary,facts/financials
+Q2 FY2026 non-GAAP net income,S1,14021,USD millions,2026-02-26,A1,primary,financials
+Q2 FY2026 GAAP diluted EPS,S1,12.07,USD,2026-02-26,A1,primary,facts/financials
+Q2 FY2026 non-GAAP diluted EPS,S1,12.20,USD,2026-02-26,A1,primary,facts/financials
+Q2 FY2026 operating cash flow,S1,11900,USD millions,2026-02-26,A1,primary,financials
+Q2 FY2026 net capex,S1,5000,USD millions,2026-02-26,A1,primary,financials
+Q2 FY2026 adjusted free cash flow,S1,6900,USD millions,2026-02-26,A1,primary,financials
+Q2 FY2026 DRAM revenue,S12,18800,USD millions,2026-02-26,C,record; 79pct of revenue (+207pct YoY); cross-check vs BU table,facts
+Q2 FY2026 NAND revenue,S12,5000,USD millions,2026-02-26,C,approx,facts
+Q2 FY26 Cloud Memory BU revenue,S1,7749,USD millions,2026-02-26,A1,primary BU table (GM 74pct),facts
+Q2 FY26 Core Data Center BU revenue,S1,5687,USD millions,2026-02-26,A1,primary BU table (GM 74pct),facts
+Q2 FY26 Mobile and Client BU revenue,S1,7711,USD millions,2026-02-26,A1,primary BU table (GM 79pct),facts
+Q2 FY26 Automotive and Embedded BU revenue,S1,2708,USD millions,2026-02-26,A1,primary BU table (GM 68pct),facts
+Q3 FY2026 revenue guidance,S1,33500,USD millions,2026-03-18,A1,guidance +/- 750M (NOT a result),facts/valuation
+Q3 FY2026 gross margin guidance,S1,81,percent,2026-03-18,A1,guidance approx,facts/valuation
+Q3 FY2026 non-GAAP EPS guidance,S1,19.15,USD,2026-03-18,A1,guidance +/- 0.40,facts/valuation
+Q3 FY2026 GAAP EPS guidance,S1,18.90,USD,2026-03-18,A1,guidance +/- 0.40,facts
+Q3 FY2026 actual report date,S6,2026-06-24,date,2026-06-22,B,2 days AFTER as_of -> latest result is Q2,facts
+Quarterly dividend (raised 30pct),S1,0.15,USD per share,2026-03-18,A1,from 0.115; payable 2026-04-15,facts
+H1 FY26 stock buyback,S1,650,USD millions,2026-02-26,A1,modest relative to FCF,facts
+FY2021 revenue,S4,27705,USD millions,2021-08,B,6-yr history,financials
+FY2022 revenue,S4,30758,USD millions,2022-09,B,prior cycle peak,financials
+FY2023 revenue,S4,15540,USD millions,2023-08,B,cycle trough,financials
+FY2024 revenue,S4,25111,USD millions,2024-08,B,recovery,financials
+FY2025 revenue,S4,37378,USD millions,2025-08,B,up-leg,financials
+FY2023 net income,S4,-5835,USD millions,2023-08,B,trough loss,financials
+FY2024 net income,S4,789,USD millions,2024-08,B,thin recovery,financials
+FY2025 net income,S4,8530,USD millions,2025-08,B,up-leg,financials
+FY2022 net income,S4,8683,USD millions,2022-09,B,prior peak,financials
+FY2025 free cash flow,S4,1668,USD millions,2025-08,B,thin (capex heavy),financials
+FY2023 free cash flow,S4,-6117,USD millions,2023-08,B,deeply negative in trough,financials
+HBM market share (Micron),S9,11-20,percent,2026,C,#3 behind SK Hynix ~53-62pct + Samsung ~25-35pct,facts/moat
+HBM 2026 annualized run-rate (Micron),S10,8,USD billions,2026,C,full 2026 HBM sold out under multi-year contracts,facts/moat
+HBM4 stack price (industry est),S10,500,USD per stack,2026,C,vs HBM3E ~300; estimate only,facts
+Avg analyst 12-mo price target,S13,965,USD,2026-06,C,BELOW current $1184.88 (-18pct) -> price ran past consensus,valuation
+Mgmt: 2026 HBM supply sold out under 3-5yr contracts,S3,n/a,n/a,2026-03-18,A1,structural shift from quarterly pricing,facts/moat
+Mgmt: HBM4 volume production for NVIDIA Vera Rubin started FQ1,S3,n/a,n/a,2026-03-18,A1,primary prepared remarks,facts/moat

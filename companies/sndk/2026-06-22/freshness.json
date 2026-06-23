@@ -1,0 +1,191 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-06-22",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. SNDK is mid-parabola (up ~50x off the 52wk low in ~12mo); price is intraday-volatile, so price sources are captured within the same session and the 52wk-HIGH hug is real and justified (low_high_hug_justified=true). FILED data (10-Q line items) rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 2288.92,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Price is legitimately ~2.1% below the 52wk/all-time-high ($2,322.99) after a parabolic 2026 run (+~725% YTD); verified across 3 independent sources to <1%. This is a genuine near-high quote, NOT an accidental grab of a series extreme (the INC-001 failure mode). Last settled close $2,184.75 (2026-06-18) was itself an all-time-high close.",
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-06-22",
+          "value": 2302.17
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-06-22",
+          "value": 2274.44
+        },
+        {
+          "source_name": "marketbeat",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/",
+          "fetched_at": "2026-06-22",
+          "value": 2288.92
+        }
+      ],
+      "cross_check_delta_pct": 0.64,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 338970000000,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-06-22",
+          "value": 336820000000
+        },
+        {
+          "source_name": "marketbeat",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/",
+          "fetched_at": "2026-06-22",
+          "value": 338970000000
+        },
+        {
+          "source_name": "derived",
+          "url": "148.09M shares x 2288.92",
+          "fetched_at": "2026-06-22",
+          "value": 338970000000
+        }
+      ],
+      "cross_check_delta_pct": 0.64,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 2322.99,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-06-22",
+          "value": 2322.99
+        },
+        {
+          "source_name": "marketbeat",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/",
+          "fetched_at": "2026-06-22",
+          "value": 2322.99
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 40.1,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-06-22",
+          "value": 40.1
+        },
+        {
+          "source_name": "marketbeat",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/",
+          "fetched_at": "2026-06-22",
+          "value": 40.1
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-06-22",
+          "value": 40.1
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 148.09,
+      "unit": "millions",
+      "as_of": "2026-04-24",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_10q_cover",
+          "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm",
+          "fetched_at": "2026-06-22",
+          "value": 148.089758
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-06-22",
+          "value": 148.09
+        },
+        {
+          "source_name": "marketbeat",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/SNDK/",
+          "fetched_at": "2026-06-22",
+          "value": 148.09
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q4 FY2026 (quarter ending ~early July 2026, reports ~late July/Aug 2026 AFTER as_of): revenue $7.75B-$8.25B; GAAP gross margin 78.9-80.9% (non-GAAP 79.0-81.0%); non-GAAP diluted EPS $30.00-$33.00; ~158M diluted shares. Guidance issued with Q3 FY26 release 2026-04-30.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "sec_8k_q3fy26_pr",
+          "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026028879/sndkq3-26ex991xpressrelease.htm",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-06-22"
+        },
+        {
+          "source_name": "stockanalysis_estimates",
+          "url": "https://stockanalysis.com/stocks/sndk/forecast/",
+          "public_date": "2026-06-22",
+          "fetched_at": "2026-06-22"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation/regulatory event identified for SNDK as of 2026-06-22 beyond ordinary course. Primary regulatory/structural facts: Flash Ventures (Kioxia JV) extended through 2034 (2026-01-29); $6B buyback authorized 2026-04-30; zero long-term debt. No export-control overhang of the NVDA type applies to NAND/SanDisk at this date.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "sec_10q_q3fy26",
+          "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-06-22"
+        },
+        {
+          "source_name": "sandisk_ir_jv",
+          "url": "https://investor.sandisk.com/news-releases/news-release-details/kioxia-and-sandisk-extend-yokkaichi-joint-venture-agreement",
+          "public_date": "2026-01-29",
+          "fetched_at": "2026-06-22"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

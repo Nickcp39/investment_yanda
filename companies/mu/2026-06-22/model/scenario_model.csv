@@ -1,0 +1,30 @@
+field,value,unit,note
+as_of_price,1184.88,USD,2026-06-22 last print <= as_of (Yahoo); byte-identical to decision_card and freshness gate
+market_cap,1338940000000,USD,1130M shares x 1184.88
+enterprise_value,1270000000000,USD,stockanalysis (net-cash reduces EV below mcap)
+shares_out_millions,1130,millions,stockanalysis; ~1142M diluted-weighted per Q2 NI/EPS
+trailing_pe,53.35,x,on TTM EPS ~21.18
+forward_pe_consensus,10.96,x,stockanalysis on aggressive forward EPS
+ttm_eps,21.18,USD,TTM to FQ2-26
+ttm_revenue_musd,58119,USD millions,TTM
+ttm_net_income_musd,24101,USD millions,TTM
+q3fy26_eps_guide,19.15,USD,non-GAAP guidance +/- 0.40 (single quarter); annualizes ~76
+avg_analyst_target,965,USD,~18pct BELOW current price; bearish tell
+,,,
+SCENARIO,normalized_eps_usd,pe_on_normalized,note
+bear_normalized,11,108,margins revert toward historical mid-cycle; HBM premium partly competes away; ~24-60x range midpoint 11
+base_normalized,22,54,HBM structurally lifts through-cycle GM to ~45-55pct; durable-but-not-permanent premium
+bull_normalized,38,31,AI demand keeps HBM scarce multi-year; GM holds 55pct+ through cycle
+,,,
+VALUATION_BAND,price_usd,basis,note
+fair_value_bear,165,15x bear-normalized 11,cycle rolls / oversupply / HBM4 share loss -> mid-cycle reversion
+fair_value_base,440,20x base-normalized 22,HBM premium durable but cyclical; a fair multiple for a high-quality cyclical
+fair_value_bull,950,25x bull-normalized 38,AI-memory secular re-rating sticks; roughly the avg analyst target
+current_price,1184.88,spot,ABOVE even the bull fair-value and the avg analyst target
+,,,
+MOS_ASSESSMENT,value,unit,note
+mos_vs_base_fair,-63,percent,(440-1184.88)/1184.88; price is ~2.7x base fair value -> NO margin of safety
+mos_vs_bull_fair,-20,percent,(950-1184.88)/1184.88; price exceeds even the bull case
+downside_to_bear_fair,-86,percent,(165-1184.88)/1184.88; drawdown if the cycle rolls to mid-cycle reversion
+buy_below_starter,650,USD,~50-day MA; a STARTER only on a deep pullback toward ~25x base-normalized OR a confirmed durability re-rate
+buy_below_add,440,USD,base fair value; scale only toward normalized-fair on confirmed through-cycle margins

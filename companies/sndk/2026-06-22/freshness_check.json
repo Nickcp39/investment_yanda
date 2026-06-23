@@ -1,0 +1,86 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-06-22",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 2288.92,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 2303.580078125,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 2302.17
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 2274.44
+      },
+      {
+        "source_name": "marketbeat",
+        "value": 2288.92
+      }
+    ],
+    "max_pairwise_delta_pct": 0.637,
+    "independent_sources": [
+      "marketbeat",
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-22"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "40.1 <= 2288.92 <= 2322.99"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+5608.0% off low, -1.5% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "148M x 2288.92 = 0.339T vs card 0.339T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 2288.92 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-30 is 53d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-06-22 (0d)"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [active_litigation] -newest source 2026-04-30 is 53d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

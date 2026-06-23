@@ -1,0 +1,66 @@
+source_id,claim,value,unit,as_of,tier,verification,destination
+S005,current price (intraday 2026-06-22),2288.92,USD,2026-06-22,B,verified_3sources,facts/valuation/M6
+S006,current price (10:01 ET 2026-06-22),2274.44,USD,2026-06-22,B,verified_3sources,facts/valuation
+S007,current price (10:03 ET 2026-06-22),2288.92,USD,2026-06-22,B,verified_3sources,facts/valuation
+S005,last settled close,2184.75,USD,2026-06-18,B,verified,facts/valuation
+S006,market cap,336820000000,USD,2026-06-22,B,verified_2sources,facts/valuation
+S007,market cap,338970000000,USD,2026-06-22,B,verified_2sources,facts/valuation
+S002,shares outstanding (10-Q cover Apr 24),148089758,shares,2026-04-24,A,primary,facts/valuation/M4
+S005,52-week high,2322.99,USD,2026-06-22,B,verified_2sources,facts/M6
+S005,52-week low,40.10,USD,2026-06-22,B,verified_3sources,facts/M6
+S006,trailing P/E,76.57,x,2026-06-22,B,verified,valuation/M6
+S006,forward P/E,13.62,x,2026-06-22,B,secondary,valuation/M6
+S006,TTM revenue,13180,USD_millions,2026-06-22,B,secondary,facts/M4
+S006,TTM diluted EPS,29.71,USD,2026-06-22,B,secondary,facts/M4
+S001,Q3 FY26 revenue,5950,USD_millions,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 revenue QoQ,97,pct,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 revenue YoY,251,pct,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 GAAP gross margin,78.4,pct,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 GAAP operating income,4111,USD_millions,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 GAAP net income,3615,USD_millions,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 GAAP diluted EPS,23.03,USD,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 non-GAAP diluted EPS,23.41,USD,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 Datacenter revenue,1467,USD_millions,2026-04-03,A,primary,facts/M2/M4
+S001,Q3 FY26 Datacenter YoY,645,pct,2026-04-03,A,primary,facts/M2
+S001,Q3 FY26 Datacenter QoQ,233,pct,2026-04-03,A,primary,facts/M2
+S001,Q3 FY26 Edge revenue,3663,USD_millions,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 Consumer revenue,820,USD_millions,2026-04-03,A,primary,facts/M4
+S001,Q3 FY26 Consumer QoQ,-10,pct,2026-04-03,A,primary,facts/M4
+S001,Q4 FY26 revenue guidance low,7750,USD_millions,2026-04-30,A,primary,facts/M4/M6
+S001,Q4 FY26 revenue guidance high,8250,USD_millions,2026-04-30,A,primary,facts/M4/M6
+S001,Q4 FY26 non-GAAP EPS guidance low,30.00,USD,2026-04-30,A,primary,facts/M4/M6
+S001,Q4 FY26 non-GAAP EPS guidance high,33.00,USD,2026-04-30,A,primary,facts/M4/M6
+S001,Q4 FY26 GAAP gross margin guidance low,78.9,pct,2026-04-30,A,primary,facts/M4
+S001,Q4 FY26 GAAP gross margin guidance high,80.9,pct,2026-04-30,A,primary,facts/M4
+S001,Q4 FY26 guided diluted shares,158,millions,2026-04-30,A,primary,facts/M4/valuation
+S001,NBM agreements signed thru Q4 FY26,5,agreements,2026-04-30,A,primary,facts/M2/M3
+S002,cash and cash equivalents,3735,USD_millions,2026-04-03,A,primary,facts/M4
+S002,long-term debt,0,USD_millions,2026-04-03,A,primary,facts/M4
+S002,total shareholders equity,13777,USD_millions,2026-04-03,A,primary,facts/M4
+S002,retained earnings,2746,USD_millions,2026-04-03,A,primary,facts/M4
+S002,goodwill,4994,USD_millions,2026-04-03,A,primary,facts/M4
+S002,contract liabilities current,323,USD_millions,2026-04-03,A,primary,facts/M3
+S002,contract liabilities non-current,188,USD_millions,2026-04-03,A,primary,facts/M3
+S002,inventories,2238,USD_millions,2026-04-03,A,primary,facts/M4
+S002,accounts receivable net,2726,USD_millions,2026-04-03,A,primary,facts/M4
+S002,Q3 FY26 operating cash flow,3038,USD_millions,2026-04-03,A,primary,facts/M4
+S002,9mo FY26 operating cash flow,4545,USD_millions,2026-04-03,A,primary,facts/M4
+S002,Flash Ventures max loss exposure,2967,USD_millions,2026-04-03,A,primary,facts/M3/M5
+S002,share repurchase program authorized,6000,USD_millions,2026-04-30,A,primary,facts/M3/M6
+S003,Q2 FY26 revenue,3025,USD_millions,2026-01-02,A,primary,facts/M4
+S003,Q2 FY26 GAAP gross margin,50.9,pct,2026-01-02,A,primary,facts/M4
+S003,Q2 FY26 GAAP diluted EPS,5.15,USD,2026-01-02,A,primary,facts/M4
+S003,Q1 FY26 revenue,2308,USD_millions,2025-09,A,primary,facts/M4
+S003,Q1 FY26 GAAP gross margin,29.8,pct,2025-09,A,primary,facts/M4
+S017,Q3 FY25 revenue (prior-yr trough),1695,USD_millions,2025-03-28,A,primary,facts/M4
+S017,Q3 FY25 GAAP gross margin (trough),22.5,pct,2025-03-28,A,primary,facts/M4
+S011,NBM minimum contractual revenue commitments,42,USD_billions,2026-04-30,C,secondary_unverified,facts/M3
+S011,NBM financial guarantees,11,USD_billions,2026-04-30,C,secondary_unverified,facts/M3
+S011,NBM coverage of FY27 bit shipments,33,pct,2026-04-30,C,secondary_unverified,facts/M3
+S008,Flash Ventures (Kioxia JV) extension term,2034,year,2026-01-29,A,primary,facts/M3/M5
+S009,Kioxia capex FY26-28 target,470,JPY_billions_per_yr,2026-06-03,B,secondary,facts/M5
+S013,NAND contract price increase Q2 2026 QoQ,70-75,pct,2026-06,C,secondary,facts/M2
+S015,analyst consensus 12mo PT (avg),1751-1843,USD,2026-06-21,C,secondary,valuation/M6
+S015,analyst PT high (Susquehanna),3250,USD,2026-05-29,C,secondary,valuation/M6
+S015,analyst PT low,1000,USD,2026-06,C,secondary,valuation/M6
+S006,YTD price gain 2026,725,pct,2026-06-22,B,secondary,facts

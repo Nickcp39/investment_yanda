@@ -1,0 +1,11 @@
+line,value_musd,basis,note
+Q3_FY26_gaap_net_income,3615,reported,S001/S002
+add_back_DandA,38,reported,low D&A (asset-light; fab capex sits in Flash Ventures JV)
+add_back_SBC,54,reported,non-cash
+add_back_debt_extinguish_loss,46,reported,one-time (paid off LT debt)
+less_maintenance_capex_qtr,-150,estimate,"SanDisk PP&E only ~$649M; most capex is funded via Flash Ventures JV (~50% of JV capex, off this balance sheet) -- TRUE owner capex is understated by JV structure"
+less_share_of_JV_capex_qtr,-400,rough_estimate,"Kioxia JV capex ramping (+40-66%); SanDisk funds ~50%; this is the hidden capital intensity not visible in reported PP&E"
+working_capital_change_qtr,-200,reported_approx,"AR +$1,487M offset by income-tax-payable +$631M, contract-liab +$486M; net WC was a modest drag on the quarter"
+peak_quarterly_owner_earnings_rough,3000,derived,"~$3.0B/qtr at the PEAK after charging a realistic JV-inclusive capital cost; annualizes ~$12B at peak -- but this is PEAK, not normalized"
+normalized_midcycle_annual_OE_low,1500,scenario,"if GM normalizes to ~35-40% on ~$12-16B rev with NBM floor -> ~$1.5B; cyclical, not stable"
+normalized_midcycle_annual_OE_high,4000,scenario,"if NBM + AI-storage hold GM in the 45-55% range structurally -> ~$4B; the bull durability case"

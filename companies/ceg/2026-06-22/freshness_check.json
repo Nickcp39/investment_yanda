@@ -1,0 +1,78 @@
+{
+  "ticker": "CEG",
+  "as_of": "2026-06-22",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 277.64,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 275.4800109863281,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 277.64
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 277.75
+      },
+      {
+        "source_name": "yahoo_quote",
+        "value": 277.17
+      }
+    ],
+    "max_pairwise_delta_pct": 0.784,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo",
+      "yahoo_quote"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-22"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "240.51 <= 277.64 <= 412.7"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+15.4% off low, -32.7% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "361M x 277.64 = 0.100T vs card 0.100T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 277.64 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-05-11 (42d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

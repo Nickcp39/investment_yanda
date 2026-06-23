@@ -1,0 +1,11 @@
+fiscal_year,revenue_musd,gross_margin_pct,operating_margin_pct,net_income_musd,diluted_eps_usd,free_cash_flow_musd,cycle_phase,source
+FY2021,27705,37.6,22.7,5824,5.14,2438,up,S4
+FY2022,30758,45.2,31.5,8683,7.75,3114,prior_peak,S4
+FY2023,15540,-9.1,-37.0,-5835,-5.34,-6117,trough,S4
+FY2024,25111,22.4,5.2,789,0.70,121,recovery,S4
+FY2025,37378,39.8,26.1,8530,7.59,1668,up,S4
+TTM_to_FQ2-26,58119,58.4,48.3,24101,21.18,10281,supercycle_inflection,S4
+Q2FY26_quarter,23860,74.4,67.6,13785,12.07,6900,peak_leg,S1
+Q1FY26_quarter,13643,56.0,45.0,5240,4.60,NA,up,S1
+Q2FY25_quarter,8053,36.8,22.0,1583,1.41,NA,recovery,S1
+Q3FY26_guidance,33500,81.0,NA,NA,18.90,NA,guidance_not_result,S1

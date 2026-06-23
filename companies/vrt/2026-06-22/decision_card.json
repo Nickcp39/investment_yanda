@@ -1,0 +1,92 @@
+{
+  "ticker": "VRT",
+  "as_of": "2026-06-22",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-06-22",
+  "context_label": "exceptional_bottleneck_no_margin_of_safety",
+  "as_of_price": 345.05,
+  "as_of_market_cap": 132500000000,
+  "share_basis_note": "384.11M shares x $345.05 (2026-06-22 close) = ~$132.5B; stockanalysis prints $132.39B (agree within 0.1%). Price = Yahoo daily close 2026-06-22 [S6], independently re-fetched (fetch_yahoo adjclose $345.77, 0.21% off the raw close, inside the 1% gate) and cross-checked vs stockanalysis $344.68 + Yahoo regularMarketPrice $344.87 per freshness.json. REFRESHED from the 2026-06-19 seed, which used $333.05 (the 2026-06-18 close) -> see ../  (seed dossier). EV ~= mkt cap (net cash ~$0.76B).",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Anchor financials fully primary-sourced and re-verified at as_of: FY25 sales $10,229.9M (+26% org)/adj op margin 20.4%/adj FCF $1,887.4M [S3]; LATEST QUARTER Q1'26 sales $2,650M (+23% org)/margin 20.8% (+430bps, beat guide ~180bps)/adj EPS $1.17 (+83%)/adj FCF $653M [S1]; FY26 guide raised (sales $13.5-14.0B, EPS $6.30-6.40) [S1]; 2030 targets 20-22% CAGR/27% margin [S4]. Price/mcap/52wk/shares all carry >=2 independent sources cross-checked in freshness.json. The ONE structural hole is not a gap we failed to pull -- it is management's CHOICE: Q1'26 orders/book-to-bill/backlog WITHHELD and STILL dark at as_of (C012). Last hard print Q4'25 (+252% org orders / B2B ~2.9x / backlog $15.0B). Signal +1 (not +2) because the single cleanest demand gauge is missing on the highest-beta name.",
+      "drivers": ["S1", "S3", "S4", "S6"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "exceptional_bottleneck: rising AI rack density is MECHANICAL, not optional (GB200 NVL72 ~132kW, GB300 ~142kW; above ~50kW air cooling fails) -> liquid becomes mandatory and VRT's $-content per rack steps up. VRT co-authors the NVIDIA GB200 NVL72 7MW power+cooling reference design (the closest thing to a standard), is the only broad-line single-vendor power+thermal integrator, #1 (tied) in liquid cooling ~11.3%, extending to 800V DC (ship 2027) and deeper into heat-rejection via the ThermoKey close (2026-06-12). Backlog $15.0B (+109%) is real visibility. A genuine, share-gaining integration toll booth -- but the toll VOLUME is set by the hyperscaler capex cycle (next driver M3/M5).",
+      "drivers": ["S5", "S2", "S3", "S10"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Captures durable profit at the INTEGRATION/system layer (NVIDIA design authority + speed-to-deploy + breadth + services), ABOVE a commoditizing component layer (cold plates/CDUs, DTC +26% CAGR, sit inside VRT's BoM) and BELOW concentrated hyperscaler buyers. ROIC positive and RISING (adj op margin 20.4% -> 22.8-23.8% guide -> 27% target 2030; FCF-positive ~$1.9B -> $2.2B) -- excess returns EXIST today, unlike NBIS. Operator grade ~4/5: Albertazzi (CEO since 2023) serial guide-beat-raise, disciplined capital allocation (net cash $0.76B, bolt-on thermal M&A -- ThermoKey closed 06-12, modest buybacks, token $0.0625/qtr dividend). Durability caveat: the moat governs SHARE, not CYCLE -- no contracted floor, un-stress-tested operator. Cyclical -> size capped below Confirmed.",
+      "drivers": ["C033", "C002", "C026", "C034"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "The numbers are high-quality and clean: real owner earnings today (~$1.9B adj FCF FY25, Q1'26 FCF +147% outpacing earnings), margins EXPANDING from operating leverage + mix + pricing (not an accounting tailwind), net cash, no SBC/dilution red flag, no capex treadmill (opposite of NBIS). The owner-earnings bridge CLOSES. Signal +1 (not +2) because (i) ~75% of demand is four hyperscalers' DISCRETIONARY capex with NO contracted floor and a cancellable ~12-18mo backlog, and (ii) the one disclosure blemish (withheld orders/B2B) degrades the signal needed to underwrite the downside. Financial quality is not the constraint; cycle exposure + transparency are.",
+      "drivers": ["S1", "S3", "C024"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural breakage at as_of (thesis durability intact: bottleneck real, share not collapsed, margins ahead; balance sheet survives the bear -- net cash, FCF-positive). But TWO compounding risk flags keep this a WARNING not a clean pass: (A) DEMAND-SIGNAL BLACKOUT -- Q1'26 orders/B2B/backlog withheld and STILL dark at as_of (C012), so a path-D inflection would surface late; (D) HYPERSCALER CAPEX-SLOPE ROLL -- VRT is the MOST exposed name, hit first and hardest, no floor (the $110.06 low was ~1yr ago). SINGLE-FACTOR TIE: D is the SAME AI-power-buildout factor that drives NBIS and CEG -- VRT stacked on the user's existing NBIS (and any CEG) is DOUBLING one factor, not diversifying (METHODOLOGY 5). Not a hard veto (cleanly-financed, real bottleneck -- SNDK lesson: don't over-veto); these are SIZE + kill monitors. Resolves materially at Q2'26 (2026-07-29).",
+      "drivers": ["C012", "C023", "C025"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $345.05 ($132.5B), forward P/E ~50.5x (stockanalysis) / ~54x on FY26E $6.35 -> PRICE IS THE BINDING CONSTRAINT (no margin of safety), and the +3.6% move from the seed's $333.05 made the skew WORSE. Stock is -9.2% off its 52wk high ($379.94), +213% off its low ($110.06) -- near the high, not bearish sentiment. Asymmetry is unfavorable for new money: near-term bull +4% ($360) / base -15% ($292) / bear -47% ($182, de-rate to 28x on flat EPS, NO FLOOR); Street mean ~$378 is only +9.5%. EPS x forward-P/E ladder (FCF-positive; the multiple is the swing). Verdict ceiling = completeness (~70% -> STARTER band) but M6 caps FIRST on no-MOS price. Mirror of NVDA/GOOGL: exceptional/good business, no margin of safety at the current price.",
+      "drivers": ["S6", "C029", "C030"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 8,
+  "buy_below_price": 250.0,
+  "starter_zone": "No new money at $345.05. A STARTER (~3-5%) opens on EITHER (a) a pullback into ~$230-250 (restores margin of safety, ~bear + cushion, implies ~36-39x fwd), OR (b) Q2'26 (2026-07-29) cleanly re-disclosing orders/book-to-bill >=1.0 AND price not in the priced-for-perfection zone (<=~$300). Cyclicality + no floor cap the ceiling below Core (~8% max).",
+  "add_zone": "Scale toward the ~8% cap only on BOTH (i) confirmation that the demand gauge is restored AND >=1.0 (closes the binding gap) and (ii) price toward ~$182-230 (bear anchor + cushion, base IRR climbs back). Do NOT add into strength here; the $110 low one year ago proves share leadership gave no floor.",
+  "trim_or_no_chase_zone": "Current $345.05 is ABOVE the ~$340 priced-for-perfection line and only -9.2% off the $379.94 ATH -> hard no-chase. Existing holders (none assumed here): HOLD a good business; do not add new money, do not trim on price alone (business unimpaired, no kill criterion fired). Re-evaluate hard if Q2'26 orders print <1.0 or stay dark.",
+  "binding_constraint": "PRICE (M6 caps first). At $345.05 forward P/E is ~50.5-54x, the stock is only -9.2% off its ATH, near-term bull is +4% while bear is -47% with NO floor, and the Street mean is only +9.5% away -> no margin of safety, and the +3.6% move from the seed worsened the skew. SECONDARY and tightly coupled: the cleanest demand gauge (orders/book-to-bill) is STILL withheld (C012) -> bear cannot be ruled out nor bull confirmed until Q2'26 (2026-07-29). Completeness ~70% would allow STARTER, but M6 (no-MOS price) + the persistent signal blackout pull the actionable lean to WATCH.",
+  "kill_criteria": [
+    "Q2'26 (2026-07-29) continues to withhold orders/book-to-bill/backlog, OR re-discloses book-to-bill <1.0 -> the binding-gap path A / kill (a) escalates (currently YELLOW). This is the single most important watch item.",
+    "Big-4 2027 capex guide decelerates or is cut -> hits VRT FIRST and HARDEST (highest beta, no floor); the dominant path-D risk. Same single factor as NBIS/CEG.",
+    "EMEA / regional organic stays negative and spreads to the Americas core (Q1'26: Americas +44%, EMEA -29%) -> demand-breadth crack.",
+    "Liquid-cooling share slips toward Schneider/ODMs, OR DTC/ODM bypass takes SYSTEM-layer share, OR 800V DC stalls -> moat-narrowing (path B).",
+    "Price stays above ~$340 (priced-for-perfection, ~48x+) with no offsetting estimate raise -> remains WATCH / no-chase (already the case at $345).",
+    "Adj operating margin compresses below the 22.8-23.8% guide -> kill (c) flips from GREEN (margin is currently a support, not a risk)."
+  ],
+  "runner_dissent": "The bull instinct says: this is a genuinely high-quality, cleanly-financed, share-gaining integration toll booth -- FCF-positive ~$1.9B->$2.2B, margins expanding to a 27% target, NVIDIA design authority, #1 (tied) liquid cooling, a closed bolt-on (ThermoKey) and a $15B backlog -- why not a small starter? The framework overrides to WATCH because PRICE is the binding constraint and the refresh made it WORSE: at $345.05 (vs the seed's $333.05) forward P/E is ~50.5-54x, near-term bull is only +4% while bear is -47% with NO floor, and the Street mean is only +9.5% away -- you are paying up for a possibly cycle-peak toll on the highest-beta name in the basket, with the cleanest demand gauge (orders/B2B) STILL switched off (C012). On top, this is the SAME single AI-power-buildout factor as NBIS/CEG -- stacked on the user's existing NBIS it doubles a factor rather than diversifying. Business_verdict is 'good' (not 'exceptional') precisely because the moat protects SHARE but not CYCLE, and the operator is un-stress-tested with a live transparency flag. WATCH until EITHER a pullback to ~$230-250 (price MOS) OR Q2'26 (2026-07-29) cleanly re-discloses orders/B2B >=1.0 at a non-perfection price. Lower-confidence items left OPEN: aggregator-sourced multiples not yet tied to a 10-Q balance sheet (C029/C031, needs_audit), segment split (power/thermal/services), net-cash composition. Completeness ~70% (one parallel pass) = DECISION_DRAFT, not COMPLETE.",
+  "sources_used": [
+    {"source_id": "S1", "public_date": "2026-04-22", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026026379/q12026exhibit991vrt04222026.htm"},
+    {"source_id": "S2", "public_date": "2026-04-22", "url_or_path": "VRT Q1 2026 earnings call transcript (retrieved 2026-06-22)"},
+    {"source_id": "S3", "public_date": "2026-02-11", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001674101/000167410126000006/exhibit991vrt02112026.htm"},
+    {"source_id": "S4", "public_date": "2026-05-19", "url_or_path": "VRT 2026 Investor Conference deck, Greenville (retrieved 2026-06-22)"},
+    {"source_id": "S5", "public_date": "2024-01-01", "url_or_path": "Vertiv x NVIDIA GB200 NVL72 7MW reference design (retrieved 2026-06-22)"},
+    {"source_id": "S6", "public_date": "2026-06-22", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/VRT ; https://stockanalysis.com/stocks/vrt/ ; https://www.wallstreetzen.com/stocks/us/nyse/vrt"},
+    {"source_id": "S7", "public_date": "2026-01-01", "url_or_path": "MarketsandMarkets liquid-cooling share (retrieved 2026-06-22)"},
+    {"source_id": "S9", "public_date": "2026-01-01", "url_or_path": "Big-4 hyperscaler 2026 capex aggregation, press (retrieved 2026-06-22)"},
+    {"source_id": "S10", "public_date": "2026-06-12", "url_or_path": "https://www.prnewswire.com/news-releases/vertiv-completes-acquisition-of-thermokey-expanding-heat-rejection-portfolio-for-ai-data-centers-302798971.html"},
+    {"source_id": "S11", "public_date": "2026-06-03", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026040031/exhibit991vrt-q22026divide.htm"}
+  ]
+}

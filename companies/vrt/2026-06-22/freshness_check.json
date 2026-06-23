@@ -1,0 +1,80 @@
+{
+  "ticker": "VRT",
+  "as_of": "2026-06-22",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 345.05,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 345.1499938964844,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 345.05
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 344.68
+      },
+      {
+        "source_name": "yahoo_regularMarketPrice",
+        "value": 344.87
+      }
+    ],
+    "max_pairwise_delta_pct": 0.107,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo",
+      "yahoo_regularmarketprice"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-06-22"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "110.06 <= 345.05 <= 379.94"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+213.5% off low, -9.2% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "384M x 345.05 = 0.133T vs card 0.133T (0.03%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -9.2% vs card-implied -9.2% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 345.05 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-22 is 61d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-22 is 61d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

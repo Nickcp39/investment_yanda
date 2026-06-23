@@ -1,0 +1,79 @@
+{
+  "ticker": "MU",
+  "as_of": "2026-06-22",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 1184.88,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 1190.85498046875,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 1184.88
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 1181.82
+      }
+    ],
+    "max_pairwise_delta_pct": 0.502,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-06-22"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "103.38 <= 1184.88 <= 1204.5"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+1046.1% off low, -1.6% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "1130M x 1184.88 = 1.339T vs card 1.339T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 1184.88 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2026-06-01 (21d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-06-01 (21d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}
