@@ -1,0 +1,50 @@
+claim,value,unit,as_of,source_id,tier,verification,destination
+as-of price (last settled close),280.36,USD,2026-06-22,YAHOO-HWM-PRICE,primary,verified_2plus_sources,M6
+52-week high,290.63,USD,2026-06-22,YAHOO-HWM-PRICE,primary,verified_2plus_sources,M6
+52-week low,169.45,USD,2026-06-22,YAHOO-HWM-PRICE,primary,verified_2plus_sources,M6
+shares outstanding,400.31,millions,2026-03-24,HWM-10Q-Q1-2026,primary,verified,M4/M6
+diluted weighted shares Q1,403,millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+market cap (derived),112229,USD millions,2026-06-22,HWM-SA-STATS,secondary,derived_price_x_shares,M6
+enterprise value (derived),114296,USD millions,2026-06-22,HWM-SA-STATS,secondary,derived,M6
+trailing P/E,65.0,x,2026-06-22,HWM-SA-STATS,secondary,derived,M6
+forward P/E (FY26E),56.8,x,2026-06-22,HWM-SA-STATS,secondary,derived,M6
+EV/FY26E adj EBITDA,37.4,x,2026-06-22,HWM-SA-STATS,secondary,derived,M6
+TTM EPS,4.31,USD,2026-06-22,HWM-SA-STATS,secondary,verified,M4/M6
+TTM FCF,1656,USD millions,2026-06-22,HWM-SA-FINANCIALS,secondary,verified,M4/M6
+Q1 2026 revenue,2313,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified_2plus_sources,M2/M4
+Q1 2026 revenue growth,19,pct YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M2/M4
+Q1 2026 GAAP EPS,1.44,USD,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 adjusted EPS,1.22,USD,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 adj EBITDA,740,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 adj EBITDA margin,32.0,pct,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 adj EBITDA margin expansion,320,bps YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 free cash flow,359,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 capex,94,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+Q1 2026 buyback,300,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M3/M4
+Q1 2026 buyback avg price,230.43,USD,2026-03-31,HWM-Q1-2026-PR,primary,verified,M5
+Engine Products revenue Q1,1253,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M2/M3
+Engine Products segment EBITDA margin,36.6,pct,2026-03-31,HWM-Q1-2026-PR,primary,verified,M3
+Fastening Systems revenue Q1,471,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M3
+Engineered Structures revenue Q1,294,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M3
+Forged Wheels revenue Q1,295,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M3
+commercial aero growth Q1,20,pct YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M2
+defense aero growth Q1,10,pct YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M2
+gas turbines growth Q1,39,pct YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M2
+commercial transportation volume Q1,-11,pct YoY,2026-03-31,HWM-Q1-2026-PR,primary,verified,M5
+FY2026 revenue guidance midpoint,9650,USD millions,2026-05-07,HWM-Q1-2026-PR,primary,verified_2plus_sources,M2/M4
+FY2026 adj EBITDA guidance midpoint,3060,USD millions,2026-05-07,HWM-Q1-2026-PR,primary,verified,M4/M6
+FY2026 adj EPS guidance midpoint,4.94,USD,2026-05-07,HWM-Q1-2026-PR,primary,verified,M6
+FY2026 FCF guidance midpoint,1750,USD millions,2026-05-07,HWM-Q1-2026-PR,primary,verified,M4/M6
+cash,2435,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+total debt,4500,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4
+net debt,2065,USD millions,2026-03-31,HWM-Q1-2026-PR,primary,verified,M4/M5
+CAM acquisition price,1800,USD millions,2026-04-06,HWM-Q1-2026-PR,primary,verified,M3/M5
+FY2025 revenue,8252,USD millions,2025-12-31,HWM-SA-FINANCIALS,secondary,verified,M4
+FY2025 diluted EPS,3.71,USD,2025-12-31,HWM-SA-FINANCIALS,secondary,verified,M4
+FY2025 FCF,1431,USD millions,2025-12-31,HWM-SA-FINANCIALS,secondary,verified,M4
+FY2021 revenue,4972,USD millions,2021-12-31,HWM-SA-FINANCIALS,secondary,verified,M4
+spares revenue Q1 (UNVERIFIED vs primary),520,USD millions,2026-03-31,HWM-Q1-2026-8K,commentary,OPEN_secondary_only,M2/M3
+spares % of revenue Q1 (UNVERIFIED),23,pct,2026-03-31,HWM-Q1-2026-8K,commentary,OPEN_secondary_only,M2/M3
+Fitch credit rating,A-,rating,2026-02-13,HWM-FITCH-UPGRADE,secondary,verified,M4/M5
+dividend per quarter,0.12,USD,2026-02-25,HWM-CAPALLOC,primary,verified,M3
+buyback authorization remaining,1047,USD millions,2026-05-04,HWM-CAPALLOC,primary,verified,M3

@@ -1,0 +1,99 @@
+{
+  "ticker": "HWM",
+  "as_of": "2024-05-15",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-23",
+  "context_label": "quality_compounder",
+  "as_of_price": 82.75,
+  "as_of_market_cap": 33776000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Unusually strong evidence base: a mature, audited, investment-grade large-cap with decades of public history, a fresh in-window Q1 2024 print, and a RAISED full-year guide. Facts are not in doubt; GAAP adj EPS ($1.83 vs $1.84 FY23) is essentially gap-free (clean QoE). Residual uncertainty is cyclical/forward (how long the aftermarket upturn runs, MAX recovery timing, truck-cycle drag, margin durability) - a valuation/size question for M6, not a facts-reliability haircut. Hence +1.",
+      "drivers": ["S001", "S002", "S003", "S004", "S006"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Real, multi-OEM-corroborated commercial-aero aftermarket/spares upturn on top of a record ~11-12yr OEM backlog: IATA traffic ~100% of 2019, GE spares +25%/Safran civil aftermarket +33%/P&W +23%, the Pratt GTF crisis grounding ~350 A320neo/yr through 2026 (peak Q1'24), Airbus ramping toward 75/mo. HWM sits on the scarce, certified hot-section node and RAISED FY24 guidance on every line even after cutting its 737 MAX assumption to ~20/mo. Forcing metric = commercial-aero organic growth + adj-EBITDA margin vs the raised guide. quality_compounder.",
+      "drivers": ["S003", "S005", "S008", "S009", "S012", "S015"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Wide-moat position on the highest-value engine node: flight-certified single-crystal turbine airfoils/blades and structural castings, sole/dual-sourced via multi-year per-program qualification (GE ~12%, RTX ~9% are partnerships). Moat is WIDENING via a rising recurring high-margin aftermarket mix (Engine Products 27% segment EBITDA margin) plus a titanium/casting/labor system constraint that supports incumbent pricing/share. Run by a disciplined owner-operator (Plant): debt cut to IG at all 3 agencies, buybacks at $66.87 (below the as-of price), +40% dividend. Operator ~4.5/5; capped only by Plant age 72 / succession. Not eroding - the only pause is demand cyclicality (M4/M5), not moat decay.",
+      "drivers": ["S001", "S002", "S003", "S007", "S018"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction_or_warning",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Split. Quality strongly confirms (+1/+2 on its own): rev +14% to a record $1.82B, record 24.0% adj-EBITDA margin, 35% incremental EBITDA margin, adj EPS +36%, first-ever positive Q1 FCF, capex-light (FY23 capex $219M on ~$1.5B EBITDA -> FCF $682M), clean GAAP=adjusted, IG balance sheet (~2.1x net leverage, laddered maturities, no wall). Valuation warns (-1 on its own): ~45x trailing / ~35x forward / ~21x EV/EBITDA at a 52-week high, with the record ~24% margin partly cyclical (GTF spares bulge peaks Q1'24; supply tightness easing) - little margin of safety if growth normalizes. Net 0 -> entry/size discipline, not a veto (no solvency question).",
+      "drivers": ["S001", "S002", "S003", "S006", "S008"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Dominant kill path is VALUATION / late-cycle multiple compression: at ~45x trailing/~35x forward and ~0.1% off the 52-week high, the price already discounts years of strong growth; a growth scare or margin normalization can re-rate the premium toward a normal industrial 18-22x and inflict a 30-40%+ drawdown and years of dead money on a great business (overpayment, not ruin). Secondary: cyclical margin/demand reversal, a deeper Boeing MAX shock (partly pre-absorbed at ~20/mo), the Class 8 truck down-cycle (-26% FTR, ~17% of sales, ~flat Q1'24), titanium/key-man (Plant 72). Explicitly NOT a structural_decline_trap (moat widening) and NOT a false_cheap_value_trap (it is optically EXPENSIVE). Survivable drawdown risks + hard kill-gates -> risk penalty + entry discipline, NO hard veto.",
+      "drivers": ["S006", "S008", "S009", "S014", "S017"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "At $82.75 (~$33.8B cap) HWM is ~0.1% off its 52-week intraday high ($82.84) after a +15.5% earnings pop, at a premium ~35x forward - a stretched entry for a full position. The quality_compounder trap to avoid is REJECTING on multiple optics, so a STARTER is right and a veto does not fire; but the inversion trap to avoid is CHASING the peak multiple at the high, so it is a STARTER not a CORE. Buy-below anchored at ~$72 (between the pre-print base ~$66.8 and the as-of high, near management's own $66.87 buyback). Add on a pullback to <=~$72 OR on durability confirmation (a 2nd quarter of double-digit commercial-aero growth + the ~24% margin holding). Risk-controlled STARTER scaling to an EARNED CORE ceiling.",
+      "drivers": ["S006", "S003", "S005", "S002", "S001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 3.0,
+  "suggested_max_size_pct": 10.0,
+  "buy_below_price": 72.0,
+  "starter_zone": "<= ~$78 (start small / scale in below the 52-week-high print; the current $82.75 is slightly rich for adding - don't chase the exact high)",
+  "add_zone": "add on price <= ~$72 (near management's own $66.87 Q1'24 buyback zone) OR on CONFIRMATION regardless of small price moves: a 2nd quarter of double-digit commercial-aero growth + the ~24% adj-EBITDA margin holding + the H2'24 dividend increase executed. Prefer adding into proof or weakness, not at the high.",
+  "trim_or_no_chase_zone": "no-chase well above ~$90-95 absent a proven step-up in mid-cycle earnings power; trim only on a broken thesis (kill criteria) or an extreme multiple, not on weight alone",
+  "binding_constraint": "Valuation / entry discipline: the thesis is business-good but price-stretched. Not 'is this a great business' (yes - wide moat, widening aftermarket, IG, owner-operator) but 'does ~35x forward at a 52-week high earn an adequate forward return', which hinges on whether the record ~24% adj-EBITDA margin + double-digit growth are DURABLE mid-cycle vs a cyclical/GTF-bulge peak. Co-binding: the Boeing 737 MAX recovery path (conservatively assumed at ~20/mo).",
+  "kill_criteria": [
+    "Commercial-aero organic growth decelerates sharply and/or adj-EBITDA margin rolls over off the record ~24% (the margin was a cyclical peak) - the growth justifying the multiple breaks.",
+    "Boeing 737 MAX deteriorates materially beyond the assumed ~20/mo (further rate cut / prolonged FAA cap / new quality event) such that the raised guide can no longer be held.",
+    "A genuine air-traffic / OEM-backlog reversal (the secular demand leg turns).",
+    "Capital-allocation discipline lapses: a value-destroying acquisition, or buybacks chasing a clear peak price.",
+    "Margin-durability resolves negative (mid-cycle margins prove structurally lower than the current ~24%), making ~35x forward an overpayment that does not earn out.",
+    "Key-man/succession risk crystallizes (Plant, 72, departs without a credible successor and capital-allocation discipline visibly weakens)."
+  ],
+  "runner_dissent": "Two-sided, and genuinely close on SIZE BAND, not direction. (1) The business case is as strong as the framework sees - M2 +2 and M3 +2, a wide-moat certified-incumbent compounder with a WIDENING aftermarket moat, an IG fortress balance sheet, and an owner-operator (Plant) repurchasing at $66.87, BELOW the as-of $82.75 - so the quality_compounder discipline rightly warns against the reflex to avoid this on multiple optics: a STARTER (not WATCH/REJECT) is clearly correct and a hard veto plainly does not fire. (2) BUT the entry is the whole risk: the stock is ~0.1% off its 52-week high after a +15.5% earnings pop, at ~45x trailing / ~35x forward, and the most visible cyclical tailwind (GTF groundings) PEAKS this very quarter (Q1'24) and fades - so part of the record margin is cyclical and paying the peak multiple at the peak price is exactly the inversion M5 names. I therefore deliberately set the initial at a modest ~3% (not a full CORE), anchored buy-below at ~$72 (closer to where the proven allocator was actually buying than to the post-pop high), and made the ~10% CORE ceiling EARNED (via a pullback or durability confirmation), not paid for now. The one thing that would move me to a larger immediate position is a better price; the one thing that would move me to REJECT is evidence the ~24% margin is a pure cyclical peak - neither is true at as-of. Portfolio note (METHODOLOGY 5): HWM is a real-economy aerospace-cycle bet, a DIFFERENT factor from the book's AI/liquidity names, so it adds diversification - a mild point in favor of owning rather than passing.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2024-02-13", "url_or_path": "https://www.sec.gov/Archives/edgar/data/4281/000000428124000007/hwm-20231231.htm"},
+    {"source_id": "S002", "public_date": "2024-02-13", "url_or_path": "https://www.sec.gov/Archives/edgar/data/4281/000115752324000226/a53895480ex99_1.htm"},
+    {"source_id": "S003", "public_date": "2024-05-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/4281/000110465924055980/tm2413242d1_ex99-1.htm"},
+    {"source_id": "S004", "public_date": "2024-05-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/4281/000000428124000014/hwm-20240331.htm"},
+    {"source_id": "S005", "public_date": "2024-05-02", "url_or_path": "https://www.insidermonkey.com/blog/howmet-aerospace-inc-nysehwm-q1-2024-earnings-call-transcript-1296361/"},
+    {"source_id": "S006", "public_date": "2024-05-15", "url_or_path": "../../../data/asof_2024-05-15_hwm_quotes.csv"},
+    {"source_id": "S007", "public_date": "2024-05-15", "url_or_path": "https://www.howmet.com/officers/john-plant/"},
+    {"source_id": "S008", "public_date": "2023-09-11", "url_or_path": "https://www.cnbc.com/2023/09/11/rtx-to-take-3-billion-charge-on-pratt-whitney-engine-problem.html"},
+    {"source_id": "S009", "public_date": "2024-04-23", "url_or_path": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2024-results"},
+    {"source_id": "S010", "public_date": "2024-02-15", "url_or_path": "https://www.safran-group.com/pressroom/safran-publishes-its-full-year-2023-results-2024-02-15"},
+    {"source_id": "S011", "public_date": "2024-04-23", "url_or_path": "https://www.rtx.com/news/news-center/2024/04/23/rtx-reports-q1-2024-results"},
+    {"source_id": "S012", "public_date": "2024-01-31", "url_or_path": "https://www.iata.org/en/pressroom/2024-releases/2024-01-31-02/"},
+    {"source_id": "S013", "public_date": "2024-04-25", "url_or_path": "https://www.airbus.com/en/newsroom/press-releases/2024-04-airbus-reports-first-quarter-q1-2024-results-6r5vg"},
+    {"source_id": "S014", "public_date": "2024-04-24", "url_or_path": "https://boeing.mediaroom.com/2024-04-24-Boeing-Reports-First-Quarter-Results"},
+    {"source_id": "S015", "public_date": "2024-01-15", "url_or_path": "https://flightplan.forecastinternational.com/2024/01/15/airbus-and-boeing-report-december-and-full-year-2023-commercial-aircraft-orders-and-deliveries/"},
+    {"source_id": "S016", "public_date": "2024-01-26", "url_or_path": "https://dsm.forecastinternational.com/2024/01/26/lockheed-martin-details-2024-f-35-delivery-plans/"},
+    {"source_id": "S017", "public_date": "2024-03-15", "url_or_path": "https://www.fleetowner.com/perspectives/ideaxchange/article/21278820/class-8-truck-market-outlook-for-2024"},
+    {"source_id": "S018", "public_date": "2024-03-01", "url_or_path": "https://theaircurrent.com/supply-chain/russian-titanium-sanctions-vsmpo-boeing-airbus/"}
+  ]
+}

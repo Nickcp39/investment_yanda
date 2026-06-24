@@ -41,6 +41,8 @@ Output: write `lookahead_audit.md` (decision case) or `material_audit.md` (mater
 | mu_2025-03-21 | 2025-03-21 | 2025-03-21 | the post-as-of HBM-ramp outcome, the run / drawdown after 3/21, Q3 FY2025+ results, any 2025-H2 / 2026 development |
 | nbis_2026-01-01 | 2026-01-01 | 2026-01-01 | the +217% run to ~$265, the Q4'25 letter (Feb 2026) / ARR $1.25B beat, the $27B Meta deal, Goldman $205, any 2026 capital raise / development |
 | sndk_2025-06-16 | 2025-06-16 | 2025-06-16 | the ~45× melt-up to ~$2000, the AI-NAND shortage outcome, the Q3 FY2026 print, any post-2025-06 result. ⚠ the as-of quote file `data/asof_2025_06_16_sndk_quotes.csv` ALSO holds the 2026 outcome price ($1991.55) — Runner must use only the $44.21 as-of row |
+| hwm_2024-05-15 | 2024-05-15 | 2024-05-15 | the run to ~$280 (mid-2026), any HWM result after Q1'24 (Q2'24+) incl. the FY2024 10-K (filed 2025), any 2024-H2/2025/2026 guidance/buyback/dividend/contract, post-date GTF / Boeing-737-rate / Airbus-rate / Class-8 revisions, later analyst/guru/index action, the live `companies/hwm/` 2026 dossier. ⚠ S006 quote CSV must yield only the $82.75 as-of close (no split since 2016 → nominal=raw). Audited **CLEAN** 2026-06-23 |
+| hwm_2025-05-15 | 2025-05-15 | 2025-05-15 | the run to ~$278–280 (mid-2026), the ~$305 analyst PT, ~52.7x forward P/E, the FY2026 outlook ($9.575–9.725B) / Q1'26 release, Q2'25 and any 2025-H2/FY2025 actuals, later buyback/dividend beyond Q1+Apr'25, post-as-of Boeing/Airbus deliveries (Oct/Dec'25+), the live `companies/hwm/` 2026 dossier. ⚠ S006 quote CSV must yield only the $161.29 as-of close. Audited **CLEAN-WITH-NOTES** 2026-06-23 (in-window "subsequently raised at Q1" wording — trivial) |
 
 Extend this registry as new cases are added.
 

@@ -1,0 +1,89 @@
+{
+  "ticker": "HWM",
+  "as_of": "2024-05-15",
+  "mode": "backtest",
+  "generated_by": "blind runner (hwm_2024-05-15; lean-6module-v1.1)",
+  "note": "as_of 2024-05-15 is a trading day (Wednesday), so the last settled close <= as_of is on the as_of date itself: 82.75. No stock split between as_of and the re-fetch date, so split_factor = 1 and the contemporaneous NOMINAL close equals Yahoo raw_close(last <= as_of) = 82.75. Price re-derived two independent ways: (1) Yahoo v8 query1 raw_close x split_factor 1 = 82.75, (2) Yahoo v8 query2 endpoint = 82.75; the committed local quote CSV (S006, backtests/data/asof_2024-05-15_hwm_quotes.csv) carries the same 82.75 close. IMPORTANT - DELIBERATE NEAR-HIGH ENTRY: the as_of close sits ~0.1% below the 52-week intraday high ($82.84) because HWM popped +15.5% on 2024-05-02 on a RAISED full-year guide and drifted up to the as_of date. This is a genuine near-52-week-high entry, NOT a data error (it is not the wrong extreme of the series - it is literally the last close). The T2 low/high-hug tripwire is therefore JUSTIFIED: the decision explicitly treats the rich, at-the-high entry as the binding constraint (STARTER not CORE; buy-below set ~$72, well under the high). low_high_hug_justified is set true with that reasoning. The entry is +96.2% off the 52-week low ($42.18) and -0.1% off the 52-week high ($82.84).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 82.75,
+      "unit": "USD",
+      "as_of": "2024-05-15",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "Deliberate near-52-week-high entry: $82.75 is the actual last settled close on the as_of trading day (2024-05-15), ~0.1% below the 52wk intraday high ($82.84), after a +15.5% Q1'24 earnings pop on a RAISED guide. This is the correct last close, not a grabbed extreme. The richness IS the thesis's binding constraint - the card treats it as such (STARTER not CORE; buy-below ~$72). Justified.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 82.75, "note": "raw close 82.75 x split_factor 1 (no split between as_of and re-fetch); last trading day <= 2024-05-15 is 2024-05-15 itself"},
+        {"source_name": "yahoo_query2", "url": "https://query2.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 82.75, "note": "independent Yahoo v8 endpoint (query2 host); 2024-05-15 close 82.75 (prior day 2024-05-14 close 80.88, next day 2024-05-16 close 82.53)"},
+        {"source_name": "local_quote_csv_S006", "url": "backtests/data/asof_2024-05-15_hwm_quotes.csv", "fetched_at": "2026-06-23", "value": 82.75, "note": "committed as-of quote table (Yahoo v8): 2024-05-15 close 82.75"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 33776000000,
+      "unit": "USD",
+      "as_of": "2024-05-15",
+      "sources": [
+        {"source_name": "card_price_x_shares", "fetched_at": "2026-06-23", "value": 33776000000, "note": "$82.75 x 408,169,673 common shares (2024-03-31 10-Q) = ~$33.78B (card value)"},
+        {"source_name": "shares_from_10Q_S004", "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428124000014/hwm-20240331.htm", "fetched_at": "2026-06-23", "value": 408169673, "note": "common shares outstanding 408,169,673 as of 2024-03-31; x $82.75 confirms ~$33.8B"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 82.84,
+      "unit": "USD",
+      "note": "Trailing 52-week window before/including as_of (2023-05-15 -> 2024-05-15, 253 trading days). Intraday high $82.84 (close high $82.75). Split_factor 1 -> raw = nominal.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-23", "value": 82.84, "note": "trailing-52wk intraday high x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 42.18,
+      "unit": "USD",
+      "note": "Trailing 52-week window before as_of (253 trading days). Intraday low $42.18 (close low $42.75). Split_factor 1.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-23", "value": 42.18, "note": "trailing-52wk intraday low x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 408.17,
+      "unit": "millions",
+      "as_of": "2024-03-31",
+      "sources": [
+        {"source_name": "q1_2024_10Q_S004", "public_date": "2024-05-02", "value": 408.17, "note": "408,169,673 common shares outstanding as of 2024-03-31 (Q1 2024 10-Q); diluted weighted-avg ~412M (cross-checks $243M net income / $0.59 diluted GAAP EPS)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "FY2024 guidance RAISED on 2024-05-02 (Q1 print): revenue $7.225-7.375B (from ~$7.0-7.2B), adj EPS $2.31-2.39 (from $2.10-2.20), adj EBITDA $1.72-1.78B at 24.0% margin (from ~23%), free cash flow $750-850M (from ~$700M). Raised even after cutting the 737 MAX assumption to ~20/mo (from ~34). Q1'24 revenue $1.82B (+14%, record), adj EBITDA margin 24.0% (record), adj EPS $0.57 (+36%), first positive Q1 FCF. Forcing metric = commercial-aero organic growth + adj-EBITDA margin vs the raised guide.",
+      "as_of": "2024-05-02",
+      "sources": [
+        {"source_name": "q1_2024_release_S003", "public_date": "2024-05-02", "value": 7.30, "note": "Q1'24 8-K Ex-99.1: 'Full Year 2024 Guidance Increased'; revenue midpoint ~$7.30B, adj EPS $2.31-2.39, FCF $750-850M"},
+        {"source_name": "q1_2024_call_S005", "public_date": "2024-05-02", "note": "CEO/CFO call: 737 MAX ~20/mo 'more secure'; net replan +$200M revenue; margin 23%->24%; +40% dividend; IG at all 3 agencies"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation or contingency disclosed as a thesis-deciding item in the FY2023 10-K (S001) or the Q1 2024 release/10-Q (S003/S004) beyond ordinary-course matters and legacy environmental/asbestos-type reserves typical of an industrial of this lineage. Not a binding constraint at as_of; the binding constraint is valuation. No post-as_of legal events used.",
+      "as_of": "2024-05-02",
+      "sources": [
+        {"source_name": "fy2023_10K_S001", "public_date": "2024-02-13", "note": "10-K contingencies/legal proceedings - ordinary course + legacy reserves, nothing thesis-deciding"},
+        {"source_name": "q1_2024_10Q_S004", "public_date": "2024-05-02", "note": "Q1 2024 10-Q - no new material litigation flagged as decision-relevant"}
+      ],
+      "pass": true
+    }
+  ]
+}

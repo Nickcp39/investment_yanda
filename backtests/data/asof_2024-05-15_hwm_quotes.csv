@@ -1,0 +1,11 @@
+ticker,asof_date,market_date,close,adj_close,volume,source_url,notes
+HWM,2024-05-15,2024-05-02,77.10,76.6486,8863900,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Q1 2024 results released before open 2024-05-02; +15.5% on the day on a raised full-year guide (revenue/EBITDA/EPS/FCF all up).
+HWM,2024-05-15,2024-05-03,78.89,78.4281,6147900,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Post-earnings continuation.
+HWM,2024-05-15,2024-05-06,80.18,79.7105,3253200,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Post-earnings drift.
+HWM,2024-05-15,2024-05-07,79.83,79.3626,4329900,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Context.
+HWM,2024-05-15,2024-05-08,81.42,80.9433,4103000,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Context.
+HWM,2024-05-15,2024-05-09,82.03,81.5998,2359600,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Context.
+HWM,2024-05-15,2024-05-10,80.87,80.4459,3147600,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Context.
+HWM,2024-05-15,2024-05-13,80.22,79.7993,2537800,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Context.
+HWM,2024-05-15,2024-05-14,80.88,80.4558,2029900,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,Last close before as-of.
+HWM,2024-05-15,2024-05-15,82.75,82.3160,2695000,https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1d&includeAdjustedClose=true,AS-OF CLOSE. $82.75 (raw close = nominal; no splits since). ~52-week high (52wk intraday high $82.84; low $42.18). Market cap ~$33.8B on ~408.2M shares.

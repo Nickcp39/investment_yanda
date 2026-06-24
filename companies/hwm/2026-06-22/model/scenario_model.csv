@@ -1,0 +1,7 @@
+scenario,as_of_price,fy2030e_adj_eps,exit_pe,fy2030e_price_target,div_yield_pct,implied_5y_irr_pct,rev_cagr_assumption,ebitda_margin_assumption,notes
+as_of,280.36,,,,0.17,,,,"Last settled close 2026-06-22; ~400.3M sh; mcap ~$112.2B; EV ~$114.3B; 65x trailing / 57x fwd P/E; 37x EV/FY26E EBITDA"
+bear,280.36,6.0,22,132,0.17,-13.8,"4%/yr","flat ~32%","Aero build-rate stall / mild recession; OEM destocking; spares soft; multiple de-rates to 22x"
+base,280.36,8.0,32,256,0.17,-1.6,"10%/yr","32% -> 34%","Commercial-aero up-cycle continues; spares annuity compounds; CAM accretive; de-rate to still-premium 32x; buyback continues"
+bull,280.36,9.5,36,342,0.17,4.2,"13%/yr","32% -> 35%","Up-cycle has more innings; record backlogs convert; margin to 35%; market keeps premium 36x quality multiple"
+buy_below_8pct_base,174,8.0,32,256,0.17,8.0,"10%/yr","32% -> 34%","Price that delivers 8% base 5y IRR -- ~38% below as_of, near 52wk low $169.45 = STARTER trigger"
+buy_below_core_10pct,139,8.0,28,224,0.17,10.0,"10%/yr","32% -> 34%","CORE buy-below: 10% IRR on conservative 28x exit"

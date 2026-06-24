@@ -1,0 +1,92 @@
+{
+  "ticker": "HWM",
+  "as_of": "2025-05-15",
+  "mode": "backtest",
+  "generated_by": "blind backtest runner (hwm_2025-05-15; lean-6module-v1.1)",
+  "note": "No split between as_of and today (HWM has had no stock split; Yahoo events.splits empty), so split_factor=1 and the contemporaneous NOMINAL close equals Yahoo raw_close(last <= as_of). as_of 2025-05-15 is a normal trading day (Thursday), so the last trading day IS 2025-05-15 (close 161.29). Price re-derived two independent ways: (1) Yahoo v8 query1 host raw_close x split_factor 1 = 161.2900, (2) Yahoo v8 query2 host (independent endpoint) = 161.2900; the local committed quote CSV (S006) carries the same 161.29 close. IMPORTANT for the no-chase logic: the as_of close sits ESSENTIALLY AT the 52-week high (161.72 intraday) -> -0.27% off high, +110% off the 52-week low (76.83). This is a DELIBERATE, justified low/high observation (the entire M5/M6 thesis is 'do not chase the 52-week high; starter-only + buy-below ~$145'), not a data error from grabbing the series max -> low_high_hug_justified=true with reason. The price reflects a real ~7% post-Q1-earnings pop (4/30 close 138.58 -> 5/1 close 148.03 on the 2025-05-01 print) running to the high by 5/15.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 161.29,
+      "unit": "USD",
+      "as_of": "2025-05-15",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_reason": "JUSTIFIED and load-bearing: the as_of close ($161.29) sits -0.27% off the 52-week intraday high ($161.72) by design -- the case's central M5/M6 finding is that the stock is AT a fresh 52-week high after a ~7% Q1 pop, which is precisely why the verdict is a small STARTER with a buy-below ~$145 and a no-chase band, not a full position. The value is the genuine last settled close (2025-05-15), independently re-fetched from two Yahoo hosts to 161.2900 -- not the series maximum grabbed by error. +110% off the 52wk low confirms it is the high end, as intended.",
+      "split_factor": 1,
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 161.29, "note": "query1 host: raw close 161.2900 x split_factor 1 (no split between as_of and today); last trading day <= 2025-05-15 is 2025-05-15"},
+        {"source_name": "yahoo_query2_host", "url": "https://query2.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 161.29, "note": "independent Yahoo v8 endpoint (query2): 2025-05-15 close 161.2900 (prior day 2025-05-14 close 159.46)"},
+        {"source_name": "local_quote_csv_S006", "url": "backtests/data/asof_2025-05-15_hwm_quotes.csv", "fetched_at": "2026-06-23", "value": 161.29, "note": "committed as-of quote table (Yahoo v8): 2025-05-15 close 161.29"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 65161000000,
+      "unit": "USD",
+      "as_of": "2025-05-15",
+      "sources": [
+        {"source_name": "card_price_x_shares", "fetched_at": "2026-06-23", "value": 65161000000, "note": "$161.29 x ~404M shares outstanding (3/31/25, S005) = ~$65.2B (card value)"},
+        {"source_name": "diluted_cross_check", "fetched_at": "2026-06-23", "value": 65645000000, "note": "$161.29 x ~407M diluted weighted shares = ~$65.6B; basic vs diluted band $65.2-65.6B, card uses basic"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 161.72,
+      "unit": "USD",
+      "as_of": "2025-05-15",
+      "note": "Trailing 52-week window before as_of (251 trading days, first bar 2024-05-15). Split_factor 1 -> raw = nominal. The as_of close ($161.29) sits just under this intraday high.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-23", "value": 161.72, "note": "trailing-52wk intraday high x1 (2025-05-15 session high)"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 76.83,
+      "unit": "USD",
+      "as_of": "2025-05-15",
+      "note": "Trailing 52-week window before as_of (251 trading days). Split_factor 1. The as_of close is +110% off this low.",
+      "sources": [
+        {"source_name": "yahoo_raw_x_split", "fetched_at": "2026-06-23", "value": 76.83, "note": "trailing-52wk intraday low x1"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 404,
+      "unit": "millions",
+      "as_of": "2025-03-31",
+      "sources": [
+        {"source_name": "q1_25_10Q_S005", "public_date": "2025-05-01", "value": 404, "note": "~404M common shares outstanding at 3/31/25 per Q1'25 10-Q; ~407M diluted weighted average for the quarter"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": true,
+      "value": "FY2025 guidance RAISED at the Q1 print (2025-05-01) vs the February initial guide: revenue $7.880-8.180B (baseline ~$8.030B), adj EBITDA $2.225-2.275B (baseline ~$2.250B, raised from Feb $2.130B), adj EPS $3.36-3.44 (baseline ~$3.40, raised from Feb $3.17), free cash flow $1.100-1.200B (baseline ~$1.150B, raised from Feb $1.075B). Raise attributed to commercial-aero spares strength (+40% aero/defense) and rising Boeing 737 build-rate assumptions. The forcing metric is commercial-aero + spares organic growth vs this raised guide.",
+      "as_of": "2025-05-01",
+      "sources": [
+        {"source_name": "q1_25_release_S003", "public_date": "2025-05-01", "value": 2.25, "note": "Q1'25 release: FY25 adj EBITDA baseline ~$2.25B (raised), adj EPS ~$3.40, FCF ~$1.15B"},
+        {"source_name": "q1_25_call_S004", "public_date": "2025-05-01", "note": "call: EBITDA baseline raised $120M to $2.25B on spares + Boeing 737 rate; >100% incremental flow-through"},
+        {"source_name": "fy24_release_S001", "public_date": "2025-02-13", "note": "February initial FY25 guide (adj EBITDA $2.105-2.155B, adj EPS $3.13-3.21, FCF $1.025-1.125B) -- the pre-raise baseline"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation event load-bearing to the thesis as of 2025-05-15. Standard 10-K/10-Q legal-proceedings and environmental/contingency disclosures only (S002); none flagged by management as thesis-relevant on the Q1'25 call. Tariff exposure is the live policy item: gross worst-case ~$80M, net <$15M in 2025 after mitigation (duty drawback / bonded warehouse / FTZ; force-majeure letters issued) per the Q1 call (S004).",
+      "as_of": "2025-05-01",
+      "sources": [
+        {"source_name": "fy24_10K_S002", "public_date": "2025-02-13", "note": "10-K legal proceedings / contingencies -- nothing thesis-material"},
+        {"source_name": "q1_25_call_S004", "public_date": "2025-05-01", "note": "tariff mitigation: net <$15M 2025 impact; force-majeure letters to customers"}
+      ],
+      "pass": true
+    }
+  ]
+}

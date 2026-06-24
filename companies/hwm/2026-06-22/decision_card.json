@@ -1,0 +1,91 @@
+{
+  "ticker": "HWM",
+  "as_of": "2026-06-22",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-23",
+  "context_label": "quality_compounder_at_cycle_peak_multiple",
+  "as_of_price": 280.36,
+  "as_of_market_cap": 112229000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Evidence base is solid for a one-pass live run: Q1 2026 results (2026-05-07) and FY2026 raised guidance are corroborated across the PRNewswire primary release + StockTitan 8-K summary; the 10-year financial trend (revenue $4.97B 2021 -> $8.25B 2025; EPS $0.59 -> $3.71; op margin 15.0% -> 24.8%; FCF $250M -> $1,431M) is sourced to stockanalysis and consistent with filings; price $280.36 (last settled close 2026-06-22) confirmed by Yahoo + stockanalysis + Google Finance; shares ~400.3M from 10-Q cover (400,713,557 @ 2026-03-24) + stockanalysis. OPEN ITEMS that cap completeness: (O1) the headline 'spares ~$520M, +36%, 23% of revenue' figure is from a StockTitan/SimplyWallSt summary, NOT the primary release text (the release confirms spares qualitatively only -- 'engine spares needs continue to increase'); treat the precise spares number as secondary until confirmed against the 10-Q. (O2) no direct SEC 10-Q/10-K full-text extraction this pass (used release + aggregators). (O3) no clean normalized owner-earnings bridge (Q1 GAAP EPS $1.44 includes the $93M Savannah disposal gain). Completeness ~62% -> caps verdict at DECISION_DRAFT / STARTER-ceiling on completeness, though M6 PRICE caps below that.",
+      "drivers": ["HWM-Q1-2026-PR", "HWM-Q1-2026-8K", "HWM-SA-FINANCIALS", "YAHOO-HWM-PRICE", "HWM-SA-STATS"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "HWM is a top-tier pure-play in the structurally scarce, high-spec parts of the aero supply chain: jet-engine turbine airfoils/blades (Engine Products, the crown jewel), aerospace fasteners, engineered structures (Ti), and forged aluminum truck wheels. THE MECHANISM: a multi-year commercial-aerospace UP-CYCLE (Boeing/Airbus narrow- and wide-body build-rate recovery off record backlogs) + an aging global fleet driving high-margin engine SPARES (recurring, aftermarket) + a defense and gas-turbine (data-center power) tailwind. Q1 2026 evidences all three: commercial aero +20%, defense aero +10%, gas turbines +39% YoY; total revenue +19%. Engine Products is the bottleneck node -- certified, sole/dual-sourced superalloy airfoils where qualification takes years and switching is near-impossible, which is why segment EBITDA margin is 36.6% (+400bps YoY). Spares are the annuity layer (management: 'engine spares needs continue to increase'). This is a genuine quality_compounder on a real cyclical tailwind; signal +2 for business and theme. PORTFOLIO NOTE: HWM is NOT an AI-capex/liquidity factor name -- it diversifies the user's BTC/GOOGL/NBIS single-factor concentration (its only AI linkage is the smaller IGT/data-center-power thread). Theme is strong; price makes entry moot.",
+      "drivers": ["HWM-Q1-2026-PR", "HWM-Q1-2026-8K", "HWM-SA-FINANCIALS"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Profit pool is EXCEPTIONAL and durable for the core. Engine Products (54% of revenue, 36.6% segment EBITDA) sits at a true bottleneck: investment-cast single-crystal superalloy turbine airfoils for GE/Safran/RTX/Rolls engines, multi-year qualification, sole/dual-source positions, and a growing installed base that pulls decades of high-margin spares. Fastening Systems 31.8% EBITDA, Forged Wheels 30.5% -- all >30%, evidence of pricing power and mix. Company adj EBITDA margin 32.0% (+320bps YoY) is structurally higher than peers. OPERATOR: John C. Plant (Exec Chairman & CEO, age ~71) is an elite capital allocator -- ran TRW Automotive (sold to ZF for ~$13.5B, 2015), led the Arconic->Howmet separation, and since 2020 has driven HWM op margin 15%->25%, completed a $2.45B / 34.0M-share multi-year buyback, raised the dividend +20% to $0.12/qtr, and steered the balance sheet to A- (Fitch upgrade 2026-02-13, all 3 agencies >=3 notches into IG). Grade 4/5: superb operator and allocator; deductions for (a) age/key-man and succession opacity -- no obvious named successor, the org chart below him is thin in public disclosure; (b) M&A re-acceleration (CAM $1.8B + Brunner $120M) after years of debt paydown -- watch capital-allocation discipline at premium prices. One-share-one-vote, clean governance. Moat DEEP for Engine Products/Fastening; Forged Wheels is good but cyclically tied to (currently declining, -11% volume) commercial-truck builds.",
+      "drivers": ["HWM-Q1-2026-PR", "HWM-PLANT-BIO", "HWM-CAPALLOC", "HWM-SA-FINANCIALS"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Financials strongly CONFIRM the thesis -- this is a clean, real margin-expansion compounder, not an accounting illusion. 5-yr trend: revenue $4,972M (2021) -> $8,252M (2025) [+13% CAGR]; gross margin 27.7% -> 34.2%; operating margin 15.0% -> 24.8%; diluted EPS $0.59 -> $3.71 [+58% CAGR off a low base]; FCF $250M -> $1,431M. Q1 2026: revenue $2,313M (+19%), adj EBITDA $740M (32.0%, +320bps), GAAP EPS $1.44, adj EPS $1.22, FCF $359M after $94M capex (light, asset-efficient). Balance sheet is a fortress: cash $2,435M, total debt ~$4,500M, net debt ~$2,065M = ~0.7x FY26E EBITDA; A- credit. Capital return real: $300M buyback in Q1 alone (@ $230.43 avg), 20% dividend hike. NORMALIZATION FLAGS (minor): Q1 GAAP EPS $1.44 includes a $93M pre-tax Savannah disposal gain -> adj EPS $1.22 is the cleaner number; CAM ($1.8B, closed 2026-04-06) will add revenue/EBITDA from Q2 but also goodwill and integration. Cash conversion strong (FY26E FCF $1.75B on ~$3.06B EBITDA ~57% conversion). No leverage, dilution, or working-capital red flags. Signal +2: accounting confirms quality unambiguously.",
+      "drivers": ["HWM-Q1-2026-PR", "HWM-Q1-2026-8K", "HWM-SA-FINANCIALS", "HWM-SA-STATS"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "NO permanent-impairment / balance-sheet-death risk: net cash-light (0.7x), A- rated, exceptional moat, recurring spares floor -> hard veto does NOT fire. The trap here is a VALUATION / CYCLE-PEAK trap, not a business trap. At $280.36 the market pays 65x trailing / 57x forward earnings and ~37x EV/EBITDA for a business whose revenue growth, while real, is partly riding a commercial-aero build-rate up-cycle that is closer to its mid/late innings than its start (Boeing/Airbus rates recovering toward records). KILL/DOWNSIDE PATHS: (F1) commercial-aero build-rate stall or recession -> OEM destocking, the dominant cyclical risk; (F2) engine spares softness -- management itself flagged a possible effect 'from the Iranian conflict' (air-traffic/geopolitical shock to aftermarket); (F3) multiple compression -- the single largest driver of downside: a de-rate from 57x toward a still-premium 30x alone is ~-45% even with flat earnings; (F4) Forged Wheels / commercial-transportation drag (volumes -11% in Q1) and tariff/cost exposure; (F5) capital-allocation slip -- M&A at premium prices (CAM $1.8B) destroying value, or buybacks at 65x P/E (HWM bought $300M at $230 in Q1 -- already above most reasonable intrinsic estimates). THE CORE TRAP: a 5-year IRR that is NEGATIVE in the base case (~-1.6%/yr) and barely positive in the bull (~+4.2%/yr) -- you are underwriting flawless execution AND a permanently elevated multiple. Signal -1 (valuation trap), not -2 (no business kill).",
+      "drivers": ["HWM-SA-STATS", "HWM-Q1-2026-PR", "YAHOO-HWM-PRICE", "HWM-SA-FINANCIALS"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $280.36 (~$112.2B mkt cap, ~$114.3B EV): trailing P/E ~65x, forward P/E ~57x (FY26E adj EPS $4.94), EV/FY26E adj EBITDA ~37x, P/TTM FCF ~68x. 52-wk context: -3.5% off ATH $290.63; +65% off 52-wk low $169.45 (this is a near-all-time-high entry after a multi-year run -- not a low/high grab error, just expensive). 5-YEAR IRR (to FY2030, incl ~0.2% div): BEAR (4% rev CAGR, margin flat, de-rate to 22x, EPS ~$6) ~-13.8%/yr; BASE (10% rev CAGR, margin 32->34%, de-rate to 32x, EPS ~$8) ~-1.6%/yr; BULL (13% rev CAGR, margin ->35%, 36x, EPS ~$9.5) ~+4.2%/yr. ALL THREE fail an 8% hurdle; base is NEGATIVE. Buy-below for an 8% base IRR ~$174 (=~38% below today, ~near the 52-wk low); CORE (10% IRR, conservative 28x exit) ~$139. ZERO margin of safety. Signal -2: price actively forbids new money; this is the textbook 'exceptional business, wrong price' verdict (same shape as GEV). New money = WATCH; existing position = HOLD the compounder but do not add and trim/no-chase above ~$300.",
+      "drivers": ["YAHOO-HWM-PRICE", "HWM-SA-STATS", "HWM-Q1-2026-PR", "HWM-SA-FINANCIALS"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 10,
+  "buy_below_price": 174,
+  "starter_zone": "<= $174 (where a constructive 10% base-case rev CAGR begins to clear an 8% 5y IRR; pays for the recurring spares annuity + Engine Products moat, not for permanent peak multiples). This is near the 52-wk low ($169.45) -- it would take a genuine aero-cycle scare to get there.",
+  "add_zone": "First STARTER at <= $174-185. Add toward Confirmed (cap ~10%, cyclical-tilted quality name -> below the 15-25% Core tier) only as: (a) commercial-aero build rates and engine spares keep compounding through a full year, (b) CAM integration delivers without margin dilution, (c) a clean 10-Q confirms the spares mix (~23% of revenue) and net-debt stays <1x. No add at current price.",
+  "trim_or_no_chase_zone": "Do not chase above ~$300 (above the ATH; base-case 5y IRR worsens below -3%/yr). Trim an existing position on any of: confirmed commercial-aero build-rate cuts, spares rollover, or multiple expansion above ~$330 (entry IRR deeply negative in all but the bull case). High weight alone is NOT a trim reason -- only thesis/price triggers.",
+  "binding_constraint": "PRICE -- not completeness, not business quality. HWM is an exceptional, fortress-balance-sheet quality compounder with a real aero up-cycle + spares annuity behind it. The binding constraint is that $280.36 = 65x trailing / 57x forward earnings prices in BOTH flawless multi-year execution AND a permanently elevated multiple, so even the base 5-year IRR is negative (~-1.6%/yr) and the bull case (~+4.2%/yr) fails an 8% hurdle. Completeness (~62%, with the spares figure and a clean owner-earnings bridge as the main gaps) would cap at STARTER, but PRICE caps harder -> WATCH. Quintessential 'wonderful company, unwonderful price'.",
+  "kill_criteria": [
+    "K-A Commercial-aero build-rate stall: Boeing/Airbus narrow-body rate guidance cut, or HWM commercial-aero revenue growth turns negative for 2 consecutive quarters -> the dominant cyclical risk is materializing -> avoid / reduce.",
+    "K-B Engine spares rollover: aftermarket/spares growth decelerates sharply (e.g. air-traffic shock from the flagged Iranian-conflict / geopolitical risk) -> the recurring-annuity floor weakens -> re-underwrite the durability premium.",
+    "K-C Margin reversal: company adj EBITDA margin contracts >200bps YoY off the 32% level (mix shift, cost/tariff, or CAM dilution) -> the margin-expansion thesis breaks -> downgrade.",
+    "K-D Capital-allocation slip: further large M&A at premium multiples, or sustained buybacks executed above ~$280 (>60x earnings) -> value-destructive allocation by management -> dock operator grade, reduce size ceiling.",
+    "K-E Multiple/IRR floor breach: price rises above ~$330 without a commensurate earnings step-up -> negative expected value even in the bull case -> trim/exit any position.",
+    "K-F Balance-sheet deterioration: net debt/EBITDA rises above ~1.5x or credit rating cut below the IG band post-M&A -> the fortress-balance-sheet leg of the thesis weakens."
+  ],
+  "runner_dissent": "I have higher conviction in the BUSINESS than the mechanical -2 on M6 might imply, and I want to flag two asymmetries the pure 5y price-to-price IRR understates. (1) HWM is a better business than GEV at a comparable nosebleed multiple: Engine Products' superalloy-airfoil moat + decades-long engine spares annuity is arguably MORE durable and less cyclical than GEV's gas-turbine cycle, and HWM's balance sheet (0.7x, A-) and operator (Plant) are best-in-class. If the commercial-aero up-cycle has more innings than I model (record backlogs, aging fleet retirements deferred), base EPS could beat $8 and the de-rate could be gentler -- the bull case may be too conservative. (2) Per-share compounding from continued buybacks (even if I dislike them at 65x) plus dividend growth adds a few points the price-to-price IRR table partly misses. NET: the WATCH verdict is correct -- there is genuinely zero margin of safety at $280 and the base IRR is negative -- but this is a name to WANT to own, and a 30-40% pullback (toward $170-200, plausible on any aero-cycle scare) would flip it to STARTER fast. The risk of the WATCH call is missing a quality compounder that simply never gets cheap; the discipline is to wait for price, not to disbelieve the business. One real uncertainty: my exit multiples (22x/32x/36x) are the swing factor -- if the market permanently re-rates aero-bottleneck quality to 40x+, today's price is defensible and WATCH would be wrong.",
+  "sources_used": [
+    {"source_id": "HWM-Q1-2026-PR", "public_date": "2026-05-07", "url_or_path": "https://www.prnewswire.com/news-releases/howmet-aerospace-reports-first-quarter-2026-results-302764843.html"},
+    {"source_id": "HWM-Q1-2026-8K", "public_date": "2026-05-07", "url_or_path": "https://www.stocktitan.net/sec-filings/HWM/8-k-howmet-aerospace-inc-reports-material-event-21557e1d5549.html"},
+    {"source_id": "HWM-Q1-2026-HOWMET", "public_date": "2026-05-07", "url_or_path": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"},
+    {"source_id": "HWM-10Q-Q1-2026", "public_date": "2026-05-07", "url_or_path": "https://www.stocktitan.net/sec-filings/HWM/10-q-howmet-aerospace-inc-quarterly-earnings-report-76452e33be62.html"},
+    {"source_id": "HWM-SA-FINANCIALS", "public_date": "2026-06-23", "url_or_path": "https://stockanalysis.com/stocks/hwm/financials/"},
+    {"source_id": "HWM-SA-STATS", "public_date": "2026-06-23", "url_or_path": "https://stockanalysis.com/stocks/hwm/"},
+    {"source_id": "YAHOO-HWM-PRICE", "public_date": "2026-06-22", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/HWM"},
+    {"source_id": "HWM-PLANT-BIO", "public_date": "2026-01-01", "url_or_path": "https://www.howmet.com/executive-leadership/john-plant/"},
+    {"source_id": "HWM-CAPALLOC", "public_date": "2026-05-07", "url_or_path": "https://www.prnewswire.com/news-releases/howmet-aerospace-board-approves-common-stock-dividend-302751663.html"},
+    {"source_id": "HWM-FITCH-UPGRADE", "public_date": "2026-02-13", "url_or_path": "https://www.howmet.com/"}
+  ]
+}

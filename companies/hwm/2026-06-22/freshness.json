@@ -1,0 +1,101 @@
+{
+  "ticker": "HWM",
+  "as_of": "2026-06-22",
+  "generated_by": "runner",
+  "run_date": "2026-06-23",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Run executed 2026-06-23 (run_date); as_of pins to the LAST FULLY-SETTLED NYSE close = 2026-06-22 = $280.36 (today 2026-06-23 was still an active, unsettled trading session ~$275.1 intraday at run time, so the last settled close is the correct 'latest trading day's close' per the brief). Every LIVE field carries >=2 independent sources fetched at run time; verify_freshness.py re-fetches Yahoo (last close <= as_of => 280.36) independently and cross-checks these declared sources + the decision_card value. FILED data (10-Q/10-K line items, Q1 2026 reported 2026-05-07) is NOT here -- it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 280.36,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last settled close 2026-06-22 = $280.36 (-3.5% off 52wk high $290.63; +65% off 52wk low $169.45). Not hugging either extreme -> no high/low-grab error. Today 2026-06-23 intraday ~$275.1 (-2% on the day) but session not settled at run time; as_of correctly pins to the prior settled close.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 280.36},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/hwm/history/", "fetched_at": "2026-06-23", "value": 280.36},
+        {"source_name": "websearch_google_finance", "url": "https://www.google.com/finance/quote/HWM:NYSE", "fetched_at": "2026-06-23", "value": 280.36}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 112229000000,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "note": "Derived 400.31M shares x $280.36 = $112.23B. stockanalysis reports $110.11B at its $275.20 intraday 06-23 print (lower price); at the 06-22 settled close of $280.36 the cap is ~$112.2B. Delta vs stockanalysis driven by the price-date difference (06-22 settled vs 06-23 intraday), not a share-count discrepancy.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/hwm/", "fetched_at": "2026-06-23", "value": 110110000000},
+        {"source_name": "derived", "url": "400.31M shares x $280.36", "fetched_at": "2026-06-23", "value": 112229000000}
+      ],
+      "cross_check_delta_pct": 1.89,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 290.63,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 290.63},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/hwm/", "fetched_at": "2026-06-23", "value": 290.63}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 169.45,
+      "unit": "USD",
+      "as_of": "2026-06-22",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM", "fetched_at": "2026-06-23", "value": 169.45},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/hwm/", "fetched_at": "2026-06-23", "value": 169.45}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 400.31,
+      "unit": "millions",
+      "as_of": "2026-03-24",
+      "is_quantitative": true,
+      "note": "10-Q cover count 400,713,557 as of 2026-03-24 (~400.71M); stockanalysis current shares 400.11M; Q1 release '401M shares at period end'. Use ~400.31M for the mcap identity (price x shares). Cross-source spread <0.2%.",
+      "sources": [
+        {"source_name": "sec_10q_q1_2026_cover", "url": "https://www.stocktitan.net/sec-filings/HWM/10-q-howmet-aerospace-inc-quarterly-earnings-report-76452e33be62.html", "fetched_at": "2026-06-23", "value": 400.71},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/hwm/", "fetched_at": "2026-06-23", "value": 400.11}
+      ],
+      "cross_check_delta_pct": 0.15,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance RAISED at Q1 2026 print (2026-05-07): Revenue $9,575-9,725M (baseline $9,650M, +$550M vs prior); Adjusted EBITDA $3,025-3,095M (baseline $3,060M, +$300M, +140bps margin); Adjusted EPS $4.88-5.00 (baseline $4.94, +$0.49); Free Cash Flow $1,700-1,800M (baseline $1,750M, +$150M). Q1 2026 actuals beat the high end on revenue, adj EBITDA, margin, and adj EPS. Next earnings ~late-July/early-Aug 2026 (Q2 2026).",
+      "as_of": "2026-05-07",
+      "sources": [
+        {"source_name": "prnewswire_q1_2026_release", "url": "https://www.prnewswire.com/news-releases/howmet-aerospace-reports-first-quarter-2026-results-302764843.html", "public_date": "2026-05-07", "fetched_at": "2026-06-23"},
+        {"source_name": "stocktitan_q1_2026_8k", "url": "https://www.stocktitan.net/sec-filings/HWM/8-k-howmet-aerospace-inc-reports-material-event-21557e1d5549.html", "public_date": "2026-05-07", "fetched_at": "2026-06-23"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation or regulatory action identified as of as_of. Standard legacy environmental/asbestos reserves (Arconic/Alcoa heritage) continue but are immaterial to thesis. Fitch upgraded HWM to A- (2026-02-13) from BBB+; all 3 major agencies rate >=3 notches into investment grade -- a credit-quality signal, not a liability. CEO flagged a possible spares demand effect from 'the Iranian conflict' (2026 geopolitical) as a watch item, not a disclosed loss.",
+      "as_of": "2026-05-07",
+      "sources": [
+        {"source_name": "prnewswire_q1_2026_release", "url": "https://www.prnewswire.com/news-releases/howmet-aerospace-reports-first-quarter-2026-results-302764843.html", "public_date": "2026-05-07", "fetched_at": "2026-06-23"},
+        {"source_name": "websearch_fitch_upgrade", "url": "https://www.howmet.com/", "public_date": "2026-02-13", "fetched_at": "2026-06-23"}
+      ],
+      "pass": true
+    }
+  ]
+}

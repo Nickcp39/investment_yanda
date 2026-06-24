@@ -1,0 +1,90 @@
+{
+  "ticker": "HWM",
+  "as_of": "2025-05-15",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-06-23",
+  "context_label": "quality_compounder",
+  "as_of_price": 161.29,
+  "as_of_market_cap": 65161000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Mature, audited, single-clean-story operator with a JUST-reported quarter (Q1'25, 2025-05-01) and a RAISED same-cycle guide; economics are fully primary-sourced (10-K, 10-Q, release, call). Little is hidden, no accounting fog, no going-concern question -> leans positive (+1), not the typical neutral. The one genuine unknown is cycle position/durability (how many years of build-rate + spares growth remain), which is an M4/M5/M6 sizing-and-price judgment, not an evidence-completeness gap.",
+      "drivers": ["S003", "S004", "S005", "S002", "S006"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Real multi-year, demand-led commercial-aero up-cycle (build rates still BELOW target: 737 MAX < FAA-capped 38/mo; backlogs ~10-11yr) PLUS a high-margin aftermarket spares annuity (~20% of revenue, aero/defense spares +40%), captured by a certification-moated engine-content supplier. HWM RAISED FY25 guide one quarter in (adj EBITDA $2.13B->$2.25B, adj EPS $3.17->$3.40) on spares + Boeing 737 rate, while crossing to record-low 1.4x leverage + a Fitch BBB+ upgrade. Mechanism is real and evidenced; the only contested question is price, not the thesis. quality_compounder with a cyclical_inflection tailwind.",
+      "drivers": ["S003", "S004", "S001", "S007", "S002"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Sits on the two fat-margin nodes of the aero value chain: qualified engine-airfoil content (Engine Products, largest+fastest segment, +13-14%) and the installed-base spares annuity (de-coupled from OEM build lumpiness). Moat = flight-safety certification / requalification switching costs (sole/dual-source positions) + proprietary casting yield (Structures margin +720 bps; >100% incremental EBITDA flow-through) + pricing power (COGS 71.9%->68.9%). Proven allocator John Plant (ex-TRW, Arconic spin-off): delever to 1.4x + IG upgrade + ~$2.0B buyback + doubled dividend. Operator grade ~4.5/5. +2 durability; the only reservation (cyclicality of current earnings power) is an M4/M5/M6 concern, not a moat defect.",
+      "drivers": ["S003", "S001", "S002", "S004", "S008"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction_or_warning",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Dual read. Operating + balance-sheet reality CONFIRMS (+1 on its own): clean QoE (GAAP $0.84 ~ adj $0.86, conservative), adj EBITDA margin 25.8% FY24 -> 28.8% Q1'25, FCF $977M FY24 (~88% conversion) growing to $1.15B guide, net debt/EBITDA record-low 1.4x, IG upgrade -> a genuinely high-quality profile. Cycle/valuation reality WARNS (-1 on its own): earnings reported at an up-cycle high with >100% incremental margins (not a sustainable run-rate), and the price embeds it at ~47x fwd P/E / ~30x EV-EBITDA / ~1.8% FCF yield at a 52-week high. Net 0: financials confirm a great business at a full price -> decision hinges on price discipline (M6) and cycle risk (M5), not on adding conviction at $161.",
+      "drivers": ["S003", "S001", "S002", "S006", "S007"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "Dominant kill path is a MULTIPLE DE-RATE from a 52-week-high ~47x entry, NOT a business break: a good-but-not-great result (in-line guide, spares decelerating, a Boeing wobble) can compress 47x -> 30-35x for a 25-35% drawdown with no fundamental catastrophe. Secondary: cyclical rollover (recession/air-traffic shock reversing >100% incrementals), Boeing single-customer execution risk (offset by spares + Airbus + defense F-35), margin normalization, capital-allocation error. NOT a structural_decline or false_cheap or balance-sheet trap (IG, net-cash-flowing, widening moat); the legitimate inversion is the cyclical 'peak earnings x peak multiple' risk, lowered (not removed) by sub-target build rates. Survivable, value-de-rating risks -> risk penalty + no-chase band + hard kill-gates, NO hard veto.",
+      "drivers": ["S006", "S007", "S004", "S003"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $161.29 the stock is at a fresh 52-week high (-0.27% off the high $161.72, +110% off the low $76.83) after a ~7% Q1-earnings pop, on ~47x fwd P/E / ~30x EV-EBITDA / ~1.8% FCF yield. For a quality_compounder the named trap is avoiding on optics (-> a flat WATCH/0% is wrong), but the mirror trap is chasing a richly-valued cyclical at a sentiment+price high. Resolution: a risk-controlled STARTER with a buy-below ~$145 (~10% under the high), scaling toward a Core ceiling only on a better entry and/or cycle confirmation. The binding constraint is entry price/cycle timing, not the business.",
+      "drivers": ["S006", "S003", "S007", "S004"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 3.0,
+  "suggested_max_size_pct": 9.0,
+  "buy_below_price": 145.0,
+  "starter_zone": "<= ~$161 (current) but small; preferred accumulation <= ~$145. Current $161.29 is ABOVE buy-below -> small starter here, add into the band.",
+  "add_zone": "(a) price <= ~$145 with thesis intact, OR (b) confirmation: spares sustained +30-40% AND adj EBITDA tracking/above the raised $2.225-2.275B FY25 range AND Boeing 737 rate breaking above the FAA cap AND LEAP destocking clearing.",
+  "trim_or_no_chase_zone": "no-chase / no-add for new money well above ~$175-180 absent a guide raise or proven cycle extension; this is a NO-ADD zone, NOT a trim of a quality holding. Trim only on a kill-criterion, not on multiple alone.",
+  "binding_constraint": "Entry price / cycle position. The business is not the question (M2 +2, M3 +2, IG balance sheet); the price already pays for the quality AND a continued up-cycle. The thesis stands or falls on (i) securing a non-chase entry (buy-below ~$145 / starter-only at the high) and (ii) the build-rate + spares cycle proving mid-ramp rather than peak. Co-risk: Boeing OEM execution, partially offset by the spares annuity.",
+  "kill_criteria": [
+    "Commercial-aero / spares organic growth turns negative, or air-traffic / OEM build rates roll over (recession / demand shock).",
+    "Boeing/Airbus STRUCTURAL build-rate cuts (not delays) that lower HWM's OEM volume base.",
+    "The +40% aero/defense spares surge proves a one-off restock and decelerates sharply (a spike, not an annuity).",
+    "Incremental margins turn structurally negative / EBITDA margin compresses materially (cycle-peak confirmation).",
+    "Adj EBITDA tracks BELOW the raised $2.225-2.275B FY25 range (the bull's premise breaks at a ~47x multiple).",
+    "Capital-allocation error: a large overpriced acquisition or leverage re-expansion abandoning the delever-and-return-capital playbook."
+  ],
+  "runner_dissent": "Two-sided, and the tension is unusually sharp. (1) On the business, HWM is among the highest-quality names in the case set (M2 +2 / M3 +2): a certification moat, expanding margins (+500 bps YoY), an IG-upgraded record-low-leverage balance sheet, a proven allocator, and a multi-year demand driver with build rates STILL below target. The quality_compounder discipline rightly warns against the reflexive 'too expensive, pass' error -> hence STARTER, not WATCH/0%. (2) But I deliberately hold the initial to the low end of Starter (~3%) with a buy-below ~10% under the as-of price, because the entry is a FRESH 52-week high (-0.27% off high) at ~47x forward earnings on >100% incremental margins -> both price and sentiment are elevated, and a good-but-not-great print de-rates the stock 25-35% with no business break. The key fact for a BLIND runner: the as-of price has already re-rated hard on the Q1 pop, so the asymmetry the business quality implies is materially narrower at $161 than ~10-15% lower. Conviction in the business is high; conviction in the entry price is low -> small disciplined starter, add into a pullback or confirmation, do NOT chase. Portfolio note (METHODOLOGY 5): HWM is a low-correlation industrial-cyclical that diversifies an AI/liquidity-heavy book -> a mild argument for a starter.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2025-02-13", "url_or_path": "https://www.howmet.com/press-release/2025-02-13/howmet-aerospace-reports-fourth-quarter-and-full-year-2024-results/"},
+    {"source_id": "S002", "public_date": "2025-02-13", "url_or_path": "https://www.sec.gov/Archives/edgar/data/4281/000000428125000011/hwm-20241231.htm"},
+    {"source_id": "S003", "public_date": "2025-05-01", "url_or_path": "https://www.howmet.com/press-release/2025-05-01/howmet-aerospace-reports-first-quarter-2025-results-2/"},
+    {"source_id": "S004", "public_date": "2025-05-01", "url_or_path": "https://www.investing.com/news/transcripts/earnings-call-transcript-howmet-aerospace-q1-2025-earnings-beat-expectations-93CH-4017405"},
+    {"source_id": "S005", "public_date": "2025-05-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000004281/000000428125000019/hwm-20250331.htm"},
+    {"source_id": "S006", "public_date": "2025-05-15", "url_or_path": "../../../data/asof_2025-05-15_hwm_quotes.csv"},
+    {"source_id": "S007", "public_date": "2025-04-10", "url_or_path": "https://flightplan.forecastinternational.com/2025/04/10/airbus-and-boeing-report-march-2025-commercial-aircraft-orders-and-deliveries/"},
+    {"source_id": "S008", "public_date": "2020-04-01", "url_or_path": "https://www.aerospacemanufacturinganddesign.com/article/arconic-splits-businesses-forms-howmet-aerospace/"},
+    {"source_id": "S009", "public_date": "2025-04-10", "url_or_path": "https://www.nasdaq.com/press-release/howmet-aerospace-host-webcast-and-announce-first-quarter-2025-results-2025-04-10"}
+  ]
+}
