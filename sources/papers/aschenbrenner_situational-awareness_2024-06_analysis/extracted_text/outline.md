@@ -1,0 +1,45 @@
+# Situational Awareness PDF Outline
+
+Source PDF: `I:\yc_research\2026 investment yanda\sources\papers\aschenbrenner_situational-awareness_2024-06.pdf`
+
+- p.1: Introduction
+- p.7: I. From GPT-4 to AGI: Counting the OOMs
+  - p.10: The last four years
+  - p.19: Counting the OOMs
+  - p.38: The next four years
+- p.46: II. From AGI to Superintelligence: the Intelligence Explosion
+  - p.49: Automating AI research
+  - p.53: Possible bottlenecks
+  - p.66: The power of superintelligence
+- p.74: III. The Challenges
+- p.75: IIIa. Racing to the Trillion-Dollar Cluster
+  - p.77: Training compute
+  - p.78: Overall compute
+  - p.80: Will it be done? Can it be done?
+  - p.87: The Clusters of Democracy
+- p.89: IIIb. Lock Down the Labs: Security for AGI
+  - p.91: Underrate state actors at your peril
+  - p.93: The threat model
+  - p.97: What ``supersecurity'' will require
+  - p.101: We are not on track
+- p.105: IIIc. Superalignment
+  - p.107: The problem
+  - p.114: The default plan: how we can muddle through
+  - p.122: Superdefense
+  - p.124: Why I'm optimistic, and why I'm scared
+- p.126: IIId. The Free World Must Prevail
+  - p.127: Whoever leads on superintelligence will have a decisive military advantage
+  - p.130: China can be competitive
+  - p.134: The authoritarian peril
+  - p.136: Maintaining a healthy lead will be decisive for safety
+  - p.139: Superintelligence is a matter of national security
+- p.141: IV. The Project
+  - p.143: The path to The Project
+  - p.146: Why The Project is the only way
+  - p.152: The Project is inevitable; whether it's good is not
+  - p.154: The endgame
+- p.156: V. Parting Thoughts
+  - p.157: AGI realism
+  - p.158: What if we're right?
+- p.162: Appendix
+  - p.162: Some additional details on compute back-of-the-envelope calculcations
