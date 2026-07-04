@@ -1,0 +1,96 @@
+{
+  "ticker": "AXON",
+  "as_of": "2026-07-02",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-02",
+  "context_label": "founder_led_quality_growth_compounder_at_premium_multiple_post_meltup",
+  "as_of_price": 597.04,
+  "as_of_market_cap": 49247000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Evidence base is solid for a one-pass LIVE run. LIVE price $597.04 (last close 2026-07-02) confirmed IDENTICALLY across 3 independent sources (Yahoo chart API + stockanalysis + Google Finance). Q1 2026 (reported 2026-05-06): revenue $807M (+34%), S&S $354.5M (+35%, AI +700%), Connected Devices $452.8M (+33%), ARR $1,493M (+35%), NRR 125%, RPO $14.3B (+44%), adj EBITDA $202M (25.0%), GAAP EPS $2.05, non-GAAP EPS $1.61 -- all from the PRNewswire primary release + MarketScreener/Quartr cross-checks. FY2025 (reported 2026-02-24): revenue $2.8B (+33%), adj EBITDA $710.2M (25.5%), non-GAAP EPS $6.85, GAAP op LOSS -$62.1M, SBC $634.2M, product lines TASER $913.9M / S&S $1,202.7M / Personal Sensors $397.0M / Platform $265.9M, and 2028 targets $6.0B rev / 28% EBITDA. OPEN ITEMS capping completeness: (O2) direct SEC 8-K/10-Q full-text NOT extracted (8-K returned 403; used primary release + aggregators); (O1) no clean normalized owner-earnings bridge (GAAP masked by $634M SBC + investment marks); (O3) international 20% share is B2 (Quartr); (O5) the +46% 8-session melt-up into as_of has no disclosed fundamental cause. Completeness ~70% -> caps verdict at STARTER-ceiling on completeness, though M6 PRICE caps below that.",
+      "drivers": ["AXON-Q1-2026-PR", "AXON-Q4-2025-PR", "YAHOO-AXON-PRICE", "AXON-SA-STATS", "GOOGLE-AXON-PRICE"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "The candidate thesis is VALIDATED. AXON is a public-safety near-monopoly: TASER (near-monopoly less-lethal) + body cameras as the hardware wedge, then the Evidence.com / Axon Cloud SaaS + AI (Draft One) + counter-drone (Dedrone) that locks agencies in. THE MECHANISM: land hardware -> lock the agency's system-of-record evidence/records/AI workflow onto Axon Cloud (switching is a multi-year, litigation-risky project) -> expand up the stack (NRR 125% = +25%/yr per customer with zero new logos) -> convert to multi-year OSP/AI-Era subscription bundles ($14.3B RPO = ~5x annual revenue pre-sold). Runway is long and multi-vector: federal, international (~20% of rev, >2x YoY), AI (+700%), counter-drone (+300%), enterprise. Nine consecutive quarters of 30%+ growth; 2028 target $6B revenue. PORTFOLIO NOTE: AXON is NOT an AI-capex/liquidity name -- its demand driver is government/agency budgets, so it DE-CORRELATES from the user's BTC/GOOGL/NBIS single factor (a genuine diversification plus). Theme +2; the operator is a builder; only price makes entry moot.",
+      "drivers": ["AXON-Q1-2026-PR", "AXON-Q4-2025-PR"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Profit pool is EXCELLENT and durable for the core. The bottleneck is the trusted SYSTEM OF RECORD for an agency's court-admissible evidence -- Evidence.com/Axon Cloud -- where Axon holds a near-monopoly for US law enforcement; economics concentrate there (Software & Services ~43% of rev at ~60%+ gross margin, ARR $1.3B, NRR 125%, RPO $14.3B), NOT in the hardware wedge. TASER is a genuine near-monopoly less-lethal franchise (~33% of rev). New high-margin layers (AI +700%, counter-drone +300%) attach onto the same locked-in base without a new sales motion. OPERATOR: Rick Smith, Founder/CEO/Chairman since 1993 -- a RARE true builder for this book: hardship-formed (two childhood friends murdered 1991 -> founded TASER in a Tucson garage 1993 with his brother; family bet everything, near-insolvency, saved by 2001 IPO), Harvard cum laude in 3 yrs + double MBA, repeatedly bet the company on the right pivot (weapons->cameras->cloud->AI), took NO salary under a 10-yr all-milestone option award, and runs clean one-share-one-vote governance (owns ~3.8% direct + performance options). Operator grade 4.5/5. Deductions: (a) AI-ethics dark-arc (2022 Ethics-Board exodus over Taser-drones; ACLU/EFF criticize Draft One as 'designed to defy transparency'); (b) $634M milestone SBC is real dilution / value transfer; (c) combined Chair+CEO key-man. Moat DEEP for the cloud core + TASER; emerging for counter-drone.",
+      "drivers": ["AXON-Q1-2026-PR", "AXON-RICK-SMITH-BIO", "AXON-FOUNDERS-DAY", "AXON-PROXY-2026", "AXON-Q4-2025-PR"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Financials CONFIRM a genuine, fast-growing, wide-moat SaaS-plus-hardware franchise -- but with two honest deductions vs a clean cash compounder (hence +1, not +2). 5-yr trend: revenue $863M (2021) -> $2,780M (2025) [+34%/yr CAGR]; gross margin durable ~60%; ARR $1.3B (+35%). THE CENTRAL QUALITY FACT: GAAP operating margin oscillates around zero (-2.2% in FY2025) NOT because the business is unprofitable but because STOCK-BASED COMPENSATION ($325M in 2024, $634M in 2025 -- from milestone-vesting CEO + employee XSPP awards) overwhelms operating income. Underwrite on adj EBITDA ($710M, 25.5%) / non-GAAP EPS ($6.85), NOT the ~240x trailing GAAP P/E -- BUT do not ignore SBC: it is real dilution (modeled ~1.5%/yr share creep). DEDUCTION 2: FCF is thin and lumpy (TTM $20M; FY25 $155M; FY24 $330M) -- FY25 adj-EBITDA->FCF conversion only ~22%; FY26E guide FCF ~$450M would improve it. Balance sheet is strong: $1.7B cash, net debt only ~$112M -- no balance-sheet risk. Q1 FCF -$55M is seasonal noise. Signal +1: real, high-quality growth; economics confirmed on adjusted figures; docked for SBC-masked GAAP + thin cash conversion relative to the multiple.",
+      "drivers": ["AXON-Q4-2025-PR", "AXON-Q1-2026-PR", "AXON-SA-FINANCIALS", "AXON-SBC-2024"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "NO permanent-impairment / balance-sheet-death risk: system-of-record lock-in (125% NRR, $14.3B RPO), near-monopoly less-lethal, founder-builder, net debt only ~$112M -> hard veto does NOT fire. The trap is a PREMIUM-MULTIPLE + regulatory + melt-up-reversal trap, not a business trap. KILL/DOWNSIDE PATHS: (F1) multiple compression -- ~87x non-GAAP / ~70x EV/adj-EBITDA / 16.5x sales de-rating as growth normalizes is the dominant driver; (F2) MELT-UP REVERSAL -- the stock rose +46% in 8 sessions into 2026-07-02 with no disclosed catalyst, so mean-reversion of the spike alone is ~-25 to -30% toward ~$410-450; (F3) AI-ethics/regulation of the high-margin AI layer (Draft One transparency mandates, ACLU/EFF backlash) capping the +700% attach; (F4) government budget austerity / 'defund' politics / single-buyer concentration; (F5) SBC dilution keeps per-share compounding behind enterprise growth; (F6) growth deceleration sooner than the multiple assumes; (F7) key-man/founder or ethics rupture. THE CORE TRAP: a 5-year base IRR of only ~+1.9%/yr (fails an 8% hurdle) AT A PRICE THAT ALREADY ASSUMES a still-rich 38x terminal multiple -- you are underwriting sustained 30% growth AND a permanent premium multiple, right after a parabolic run. Better asymmetry than HWM (bull is genuinely large, +15%/yr, because 30% compounding is real), but no cushion at $597. Signal -1 (valuation/regulatory trap), not -2 (no business kill).",
+      "drivers": ["YAHOO-AXON-PRICE", "AXON-SA-STATS", "AXON-Q4-2025-PR", "AXON-DRAFTONE-CONTROVERSY"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $597.04 (~$49.2B mkt cap, ~$49.4B EV): trailing GAAP P/E ~240x (SBC-distorted), trailing NON-GAAP P/E ~87x (FY25 EPS $6.85), forward P/E ~71x, EV/FY25 adj EBITDA ~70x, P/S ~16.5x, P/FY26E FCF ~110x. 52-wk context: -31% off high (~$871), +73% off low (~$346) -- mid-band, NOT a low/high-grab, BUT post a +46% 8-session melt-up (from $410.03 on 2026-06-22) with no disclosed catalyst. 5-YEAR IRR (to ~FY2030, non-GAAP EPS x exit P/E, ~1.5%/yr SBC dilution): BEAR (14% CAGR, 18% margin, de-rate 25x, EPS ~$11.1) ~-14.1%/yr; BASE (21% CAGR, 21% margin, de-rate to still-rich 38x, EPS ~$17.3) ~+1.9%/yr; BULL (26% CAGR near the 2028 $6B path, 24% margin, 50x, EPS ~$24.3) ~+15.3%/yr. Base FAILS an 8% hurdle even on a rich terminal multiple. Cross-check: on mgmt 2028 targets ($6B rev, 28% EBITDA => ~$14.7 non-GAAP EPS) the stock is ~41x fwd-2028 P/E / ~29x EV/2028-EBITDA -- rich even on the ambitious plan. Buy-below: STARTER (8% base IRR, 38x exit) ~$450 (~-25%, ~pre-melt-up level); CORE (12% IRR / real MOS) ~$370 (~-38%). MINIMAL-TO-ZERO margin of safety, sharpened by the parabola. Signal -2: price + entry forbid new money. New money = WATCH (STARTER only <= ~$450); existing = HOLD, TRIM into strength above ~$600-700.",
+      "drivers": ["YAHOO-AXON-PRICE", "GOOGLE-AXON-PRICE", "AXON-SA-STATS", "AXON-Q4-2025-PR", "AXON-Q1-2026-PR"]
+    }
+  ],
+  "business_verdict": "excellent",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 450,
+  "starter_zone": "<= ~$450 (roughly the pre-melt-up level; where an 8% base-case 5y IRR clears on a disciplined 38x exit -- pays for the system-of-record SaaS flywheel + near-monopoly less-lethal + a genuine builder-founder, without paying for a permanently peak multiple). ~25% below as_of; achievable on a melt-up reversal / market wobble.",
+  "add_zone": "First STARTER at <= ~$450 (3-5%). Add toward Confirmed (8-12%) only as: (a) ARR growth stays >30% and NRR >120% through more quarters, (b) FCF conversion improves toward the FY26E ~$450M guide, (c) SBC/dilution decelerates as a % of revenue, and (d) the AI layer keeps compounding without a regulatory cap. Max size ~12% -- a founder-led high-quality GROWTH compounder can earn a Confirmed-tier ceiling, but the premium multiple + SBC dilution + single-buyer/regulatory exposure keep it below the 15-25% Core tier until it is both cheaper and cash-proven. No add at current price.",
+  "trim_or_no_chase_zone": "Do not chase above ~$600-700 (base-case 5y IRR turns sub-2%; melt-up reversal risk high). Trim an existing position on any of: ARR/NRR deceleration, an AI-ethics/regulatory rupture with the government buyer, or a further multiple spike above ~$700 without commensurate acceleration. High weight alone is NOT a trim reason -- only thesis/price triggers; but trimming INTO the current spike if held large is prudent.",
+  "binding_constraint": "PRICE (+ the parabolic entry) -- not completeness, not business quality, not the operator. AXON is an excellent, founder-led, wide-moat public-safety platform with a sticky 125%-NRR SaaS flywheel, a long multi-vector runway, and a rare hardship-formed builder-CEO (Rick Smith) -- everything this book wants, and it DE-CORRELATES from the AI-capex factor. The binding constraint is that $597.04 = ~87x non-GAAP / ~70x EV/adj-EBITDA / ~16.5x sales, reached via a +46% 8-session melt-up, so the base 5y IRR is only ~+1.9%/yr (fails an 8% hurdle) even assuming a still-rich 38x terminal multiple. Completeness (~70%; SBC-masked GAAP, no full-text 10-Q, thin-FCF owner-earnings bridge) would cap at STARTER, but PRICE caps harder -> WATCH. Quintessential 'wonderful business + wonderful founder, wonderful-plus price' -- and unlike HWM the growth durability gives a large bull case, so it is a name to WANT on a pullback to ~$450.",
+  "kill_criteria": [
+    "K-A Growth deceleration: ARR growth falls below ~20% YoY or total revenue growth breaks the 30%+ streak toward mid-teens for 2 consecutive quarters -> the compounding that justifies the multiple is fading -> re-underwrite / avoid.",
+    "K-B Net revenue retention erosion: NRR falls below ~115% -> the system-of-record flywheel (the core moat) is weakening -> downgrade the durability premium.",
+    "K-C AI-ethics / regulatory rupture: binding transparency/audit mandates on Draft One, evidentiary exclusion of AI-drafted reports, or a procurement backlash that caps the high-margin AI layer (the +700% growth vector) -> the best growth leg breaks -> reduce.",
+    "K-D SBC / dilution acceleration: stock-based comp rises as a % of revenue and share count creep exceeds ~2.5%/yr without commensurate margin/FCF payoff -> per-share value transfer to employees/CEO outruns enterprise growth -> dock operator grade, cap size.",
+    "K-E FCF conversion failure: full-year FCF materially misses the FY26E ~$450M guide / adj-EBITDA->FCF conversion stays below ~30% -> the 'quality' is not converting to cash to justify the multiple -> downgrade M4.",
+    "K-F Multiple/melt-up breach: price rises above ~$700 without a commensurate acceleration in ARR/growth -> negative expected value in all but the bull case -> trim/avoid; conversely a fall to <= ~$450 while the thesis is intact is the STARTER trigger (upside kill of the WATCH).",
+    "K-G Government/single-buyer shock: a sustained LE budget-austerity / 'defund' cycle or a loss of a major agency/federal relationship -> the single-buyer concentration risk materializes -> re-underwrite."
+  ],
+  "runner_dissent": "I have HIGH conviction in both the BUSINESS and the OPERATOR, and I want to flag that AXON's asymmetry is materially BETTER than the mechanical -2 on M6 conveys -- more so than for HWM. (1) The base case is only barely sub-hurdle (+1.9%/yr) and deliberately assumes a de-rate to 38x AND a below-guide 21% CAGR; if AXON simply executes toward its own 2028 targets (30%+ growth, $6B rev) and the market keeps a premium multiple, the bull case (+15%/yr) is not a stretch -- 9 straight quarters of 30%+ and a 125% NRR make sustained compounding genuinely likely. A pure 5y price-to-price IRR at a conservatively-faded multiple understates a real 30% grower. (2) Rick Smith is exactly the profile this book privileges -- a hardship-formed, mission-obsessed, technically-instinctive builder who nearly went bankrupt on a conviction, aligned himself via a NO-SALARY milestone award, and runs clean one-share-one-vote governance. This is not a courtier or a financial-engineer; the operator RAISES the ceiling. (3) It genuinely diversifies the book's AI-capex/liquidity concentration. NET: WATCH is still correct -- there is no margin of safety at $597 after a 46% 8-session melt-up, and the base IRR fails 8% -- but this is a name to WANT, and a pullback toward ~$450 (roughly where it traded 10 days ago) flips it to STARTER fast. The real risks to the WATCH call cutting the wrong way: (a) a permanent re-rating of best-in-class vertical-SaaS-plus-hardware to 45x+ would make today's price defensible and WATCH slightly late; (b) conversely, the SBC dilution and thin FCF are the honest checks on over-loving it -- underwrite on adjusted numbers but never forget the share count. Swing factors: the terminal multiple and whether the AI layer clears regulation.",
+  "sources_used": [
+    {"source_id": "AXON-Q1-2026-PR", "public_date": "2026-05-06", "url_or_path": "https://www.prnewswire.com/news-releases/axon-reports-q1-2026-revenue-of-807-million-up-34-year-over-year-302764625.html"},
+    {"source_id": "AXON-Q1-2026-8K", "public_date": "2026-05-06", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001069183/000162828026031285/axon-20260506xex991.htm"},
+    {"source_id": "AXON-Q4-2025-PR", "public_date": "2026-02-24", "url_or_path": "https://www.prnewswire.com/news-releases/axon-reports-q4-2025-revenue-of-797-million-up-39-year-over-year-302696190.html"},
+    {"source_id": "AXON-10K-2025", "public_date": "2026-02-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001069183/000162828026011360/axon-20251231.htm"},
+    {"source_id": "AXON-SA-FINANCIALS", "public_date": "2026-07-02", "url_or_path": "https://stockanalysis.com/stocks/axon/financials/"},
+    {"source_id": "AXON-SA-STATS", "public_date": "2026-07-02", "url_or_path": "https://stockanalysis.com/stocks/axon/"},
+    {"source_id": "YAHOO-AXON-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/AXON"},
+    {"source_id": "GOOGLE-AXON-PRICE", "public_date": "2026-07-02", "url_or_path": "https://www.google.com/finance/quote/AXON:NASDAQ"},
+    {"source_id": "AXON-RICK-SMITH-BIO", "public_date": "2026-01-01", "url_or_path": "https://www.axon.com/leadership/rick-smith"},
+    {"source_id": "AXON-FOUNDERS-DAY", "public_date": "2025-09-01", "url_or_path": "https://www.axon.com/blog/founders-day"},
+    {"source_id": "AXON-PROXY-2026", "public_date": "2026-04-16", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001069183/000106918325000055/axon-20250416.htm"},
+    {"source_id": "AXON-DRAFTONE-CONTROVERSY", "public_date": "2025-07-01", "url_or_path": "https://www.eff.org/deeplinks/2025/07/axons-draft-one-designed-defy-transparency"},
+    {"source_id": "AXON-SBC-2024", "public_date": "2025-02-25", "url_or_path": "https://investor.axon.com/2025-02-25-Axon-2024-revenue-grows-33-to-2-1-billion-third-consecutive-year-of-30-annual-growth"},
+    {"source_id": "AXON-2018-CEO-AWARD", "public_date": "2018-12-19", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1069183/000106918318000007/pressrelease-ceoawardplan.htm"}
+  ]
+}

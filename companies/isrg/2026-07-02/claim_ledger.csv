@@ -1,0 +1,69 @@
+claim,value,unit,as_of,source_id,tier,verification,destination
+as-of price (last close),426.01,USD,2026-07-02,YAHOO-ISRG-PRICE,primary,verified_3plus_sources,M6
+52-week high,603.88,USD,2026-07-02,ISRG-SA-STATS,primary,verified_2plus_sources,M6
+52-week low,396.68,USD,2026-07-02,ISRG-SA-STATS,primary,verified_2plus_sources,M6
+shares outstanding,354.4,millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4/M6
+diluted weighted shares Q1,359.8,millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+market cap,150880,USD millions,2026-07-02,ISRG-SA-STATS,secondary,derived_price_x_shares,M6
+enterprise value (derived),142900,USD millions,2026-07-02,ISRG-SA-STATS,secondary,derived_mcap_minus_netcash,M6
+trailing P/E,51.8,x,2026-07-02,ISRG-SA-STATS,secondary,verified,M6
+forward P/E (FY26E),40.0,x,2026-07-02,ISRG-SA-STATS,secondary,verified,M6
+TTM EPS (GAAP diluted),8.25,USD,2026-03-31,ISRG-SA-FINANCIALS,secondary,verified,M4/M6
+TTM revenue,10582,USD millions,2026-03-31,ISRG-SA-FINANCIALS,secondary,verified,M4/M6
+TTM free cash flow,2834,USD millions,2026-03-31,ISRG-SA-FINANCIALS,secondary,verified,M4/M6
+Q1 2026 revenue,2770.8,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified_2plus_sources,M2/M4
+Q1 2026 revenue growth,23,pct YoY,2026-03-31,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M2/M4
+Q1 2026 instruments & accessories revenue,1686.4,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified_2plus_sources,M3
+Q1 2026 systems revenue,650.7,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M3
+Q1 2026 service revenue,433.7,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M3
+Q1 2026 recurring revenue share (I&A+Service strict),76.5,pct,2026-03-31,ISRG-10Q-Q1-2026,primary,derived,M3
+Q1 2026 recurring revenue share (company broad defn),86,pct,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M3
+Q1 2026 non-GAAP operating income,1076.8,USD millions,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M4
+da Vinci installed base (Q1 2026),11395,systems,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M3
+Ion installed base (Q1 2026),1041,systems,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M3
+Q1 2026 GAAP net income,821.5,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+Q1 2026 GAAP diluted EPS,2.28,USD,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+Q1 2026 non-GAAP diluted EPS,2.50,USD,2026-03-31,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M4
+Q1 2026 GAAP gross margin,66.0,pct,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+Q1 2026 non-GAAP gross margin,67.8,pct,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M4
+Q1 2026 GAAP operating margin,30.9,pct,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+Q1 2026 R&D expense,361.9,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4
+Q1 2026 worldwide procedure growth,17,pct YoY,2026-03-31,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M2/M3
+Q1 2026 da Vinci procedure growth,16,pct YoY,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 Ion procedure growth,39,pct YoY,2026-03-31,ISRG-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 da Vinci system placements,431,systems,2026-03-31,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M3
+Q1 2026 da Vinci 5 placements,232,systems,2026-03-31,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M3
+cash and investments,7979.2,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4/M5
+total debt,0,USD millions,2026-03-31,ISRG-10Q-Q1-2026,primary,verified,M4/M5
+FY2026 procedure growth guidance midpoint,14.5,pct,2026-04-21,ISRG-Q1-2026-PR,primary,verified_2plus_sources,M2/M6
+FY2026 non-GAAP gross margin guidance,68.0,pct,2026-04-21,ISRG-Q1-2026-PR,primary,verified,M4/M6
+FY2026 tariff gross-margin impact,100,bps,2026-04-21,ISRG-Q1-2026-PR,primary,verified,M5
+da Vinci installed base (year-end 2025),11106,systems,2025-12-31,ISRG-Q4-2025-PR,primary,verified_2plus_sources,M3
+da Vinci installed base growth,12,pct YoY,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3
+Ion installed base (Q3 2025),954,systems,2025-09-30,ISRG-Q3-2025-PR,primary,verified,M3
+da Vinci systems placed FY2025,1721,systems,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3
+da Vinci 5 placed FY2025,870,systems,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3
+FY2025 revenue,10065,USD millions,2025-12-31,ISRG-SA-FINANCIALS,primary,verified_2plus_sources,M4
+FY2025 revenue growth,21,pct YoY,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M4
+FY2025 instruments & accessories revenue,6020,USD millions,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3/M4
+FY2025 systems revenue,2470,USD millions,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3/M4
+FY2025 service revenue,1570,USD millions,2025-12-31,ISRG-Q4-2025-PR,primary,verified,M3/M4
+FY2025 recurring revenue share (I&A+Service),75.4,pct,2025-12-31,ISRG-Q4-2025-PR,primary,derived,M3
+FY2025 diluted EPS,7.87,USD,2025-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+FY2025 free cash flow,2491,USD millions,2025-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+FY2021 revenue,5710,USD millions,2021-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+FY2021 diluted EPS,4.66,USD,2021-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+FY2025 gross margin,66.0,pct,2025-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+FY2025 operating margin,29.3,pct,2025-12-31,ISRG-SA-FINANCIALS,secondary,verified,M4
+CEO transition effective date,2025-07-01,date,2025-07-01,ISRG-CEO-TRANSITION,primary,verified_2plus_sources,M3
+current CEO,Dave Rosa,person,2025-07-01,ISRG-CEO-TRANSITION,primary,verified,M3
+Executive Chair (former CEO),Gary Guthart,person,2025-07-01,ISRG-GUTHART-BIO,primary,verified,M3
+Medtronic Hugo US urology FDA clearance,2025-12-03,date,2025-12-03,MDT-HUGO-FDA,primary,verified_2plus_sources,M5
+J&J Ottava FDA De Novo submission,2026-01-07,date,2026-01-07,JNJ-OTTAVA-FDA,primary,verified_2plus_sources,M5
+Q2 2026 earnings date,2026-07-16,date,2026-07-02,ISRG-QUIVER-JUL2,secondary,verified,M6
+CFO,Jamie Samath,person,2022-01-01,ISRG-DEF14A-2026,primary,verified,M3
+governance one-share-one-vote,yes,bool,2026-03-13,ISRG-DEF14A-2026,primary,verified,M3
+CEO Dave Rosa tenure at Intuitive,~30,years,2025-07-01,ISRG-CEO-TRANSITION,primary,verified,M3
+analyst consensus target,565,USD,2026-07-02,ISRG-FOOL-DECLINE,commentary,leads_only,M6
+analyst bear target (Deutsche Bank),366,USD,2026-06,ISRG-FOOL-DECLINE,commentary,leads_only,M6
+China share of Chinese public tenders won by domestic robots 2025,52,pct,2025-12-31,ISRG-FUND-AGENT,commentary,single_source_OPEN,M5

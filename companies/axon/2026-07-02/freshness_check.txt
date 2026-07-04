@@ -1,0 +1,11 @@
+FRESHNESS CHECK -AXON as_of 2026-07-02  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=597.04 refetched_yahoo=597.0399780273438 (2026-07-02) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 345.94 <= 597.04 <= 870.97
+  [PASS] T2 low/high hug: +72.6% off low, -31.5% off high
+  [PASS] T3 market-cap identity: 82M x 597.04 = 0.049T vs card 0.049T (0.01%)
+  [PASS] T4 distance-from-high reconciliation: narrative -31.0% vs card-implied -31.5% (gap 0.5pt)
+  [PASS] T5 single value of truth: as_of_price 597.04 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [active_litigation]: newest source 2025-07-01 is 366d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source 2026-05-06 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event

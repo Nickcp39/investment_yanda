@@ -1,0 +1,55 @@
+claim,value,unit,as_of,source_id,tier,verification,destination
+as-of price (last settled close),1769.32,USD,2026-07-02,YAHOO-ASML-PRICE,primary,verified_3plus_sources,M6
+52-week high,1999.96,USD,2026-07-02,YAHOO-ASML-PRICE,primary,verified_2plus_sources,M6
+52-week low,683.48,USD,2026-07-02,YAHOO-ASML-PRICE,primary,verified_2plus_sources,M6
+previous close,1843.04,USD,2026-07-01,ASML-SA-STATS,secondary,verified,M6
+shares outstanding,385.42,millions,2026-07-02,ASML-WSZ-STATS,primary,verified_2plus_sources,M4/M6
+issued shares (AGM record),388.15,millions,2026-03-25,ASML-AGM-2026,primary,verified,M4/M6
+market cap (derived identity),681930,USD millions,2026-07-02,ASML-WSZ-STATS,primary,derived_price_x_shares,M6
+enterprise value (derived),676000,USD millions,2026-07-02,ASML-WSZ-STATS,secondary,derived_net_cash,M6
+EUR/USD,1.1423,USD per EUR,2026-07-02,YAHOO-EURUSD,primary,verified,M6
+trailing P/E,62.4,x,2026-07-02,ASML-SA-STATS,secondary,derived,M6
+forward P/E (2026E),47.2,x,2026-07-02,ASML-SA-STATS,secondary,derived,M6
+2026E EPS consensus,35.95,EUR,2026-07-02,ASML-SA-STATS,secondary,verified,M6
+FY2025 net sales,32667,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified_2plus_sources,M1/M2/M4
+FY2025 net income,9600,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified_primary,M4
+FY2025 gross margin,52.8,pct,2025-12-31,ASML-Q4-2025-PR,primary,verified,M4
+FY2025 EPS basic,24.73,EUR,2025-12-31,ASML-Q4-2025-PR,primary,verified,M4/M6
+FY2025 free cash flow,12253,EUR millions,2025-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+FY2025 operating cash flow,13827,EUR millions,2025-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+FY2025 capex,1574,EUR millions,2025-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+Q4 2025 net sales,9700,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified,M1
+Q4 2025 net bookings,13200,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified,M1/M2
+Q4 2025 EUV bookings,7400,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified,M1/M2
+year-end 2025 backlog,38800,EUR millions,2025-12-31,ASML-Q4-2025-PR,primary,verified_2plus_sources,M1/M2
+Q1 2026 net sales,8800,EUR millions,2026-03-31,ASML-Q1-2026-PR,primary,verified_2plus_sources,M1/M4
+Q1 2026 net system sales,6300,EUR millions,2026-03-31,ASML-Q1-2026-6K,primary,verified,M1/M2
+Q1 2026 EUV system sales,4100,EUR millions,2026-03-31,ASML-Q1-2026-6K,primary,verified,M1/M2
+Q1 2026 installed base mgmt sales,2500,EUR millions,2026-03-31,ASML-Q1-2026-6K,primary,verified,M1/M2
+Q1 2026 gross margin,53.0,pct,2026-03-31,ASML-Q1-2026-PR,primary,verified,M4
+Q1 2026 net income,2800,EUR millions,2026-03-31,ASML-Q1-2026-PR,primary,verified,M4
+Q1 2026 net income margin,31.4,pct,2026-03-31,ASML-Q1-2026-PR,primary,verified,M4
+Q1 2026 EPS basic,7.15,EUR,2026-03-31,ASML-Q1-2026-6K,primary,verified,M4
+Q1 2026 systems sold,79,units,2026-03-31,ASML-Q1-2026-6K,primary,verified,M1
+Q1 2026 China share of system sales,19,pct,2026-03-31,ASML-Q1-2026-IRDECK,primary,verified_2plus_sources,M5
+Q4 2025 China share of system sales,36,pct,2025-12-31,ASML-Q1-2026-IRDECK,primary,verified,M5
+Q1 2026 Korea share of system sales,45,pct,2026-03-31,ASML-Q1-2026-IRDECK,primary,verified,M2
+Q1 2026 buyback,1100,EUR millions,2026-03-31,ASML-Q1-2026-PR,primary,verified,M3/M4
+FY2026 revenue guidance low,36000,EUR millions,2026-04-15,ASML-Q1-2026-PR,primary,verified_2plus_sources,M2/M4/M6
+FY2026 revenue guidance high,40000,EUR millions,2026-04-15,ASML-Q1-2026-PR,primary,verified_2plus_sources,M2/M4/M6
+FY2026 gross margin guidance low,51,pct,2026-04-15,ASML-Q1-2026-PR,primary,verified,M4
+FY2026 gross margin guidance high,53,pct,2026-04-15,ASML-Q1-2026-PR,primary,verified,M4
+FY2025 dividend per share,7.50,EUR,2025-12-31,ASML-Q4-2025-PR,primary,verified,M3
+buyback program authorization,12000,EUR millions,2026-01-28,ASML-Q4-2025-PR,primary,verified,M3
+2030 revenue target low,44000,EUR millions,2030-12-31,ASML-INVDAY-2024,secondary,verified,M2/M6
+2030 revenue target high,60000,EUR millions,2030-12-31,ASML-INVDAY-2024,secondary,verified,M2/M6
+2030 gross margin target low,56,pct,2030-12-31,ASML-INVDAY-2024,secondary,verified,M2/M6
+2030 gross margin target high,60,pct,2030-12-31,ASML-INVDAY-2024,secondary,verified,M2/M6
+FY2024 revenue,28263,EUR millions,2024-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+FY2023 revenue,27559,EUR millions,2023-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+FY2022 revenue,21173,EUR millions,2022-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+FY2021 revenue,18611,EUR millions,2021-12-31,ASML-SA-FINANCIALS,secondary,verified,M4
+MATCH Act DUV-to-China ban scope,20,pct of 2026 rev,2026-04-07,ASML-CHINA-MATCH,secondary,verified,M5
+High-NA tool list price,400,USD millions,2026-05-20,ASML-HIGHNA,secondary,verified,M2/M5
+Intel High-NA EXE:5200B deployed,1,systems,2025-12-31,ASML-HIGHNA,secondary,verified,M2
+FY2025 net income (stockanalysis divergent),10213,EUR millions,2025-12-31,ASML-SA-FINANCIALS,secondary,OPEN_conflicts_primary,M4

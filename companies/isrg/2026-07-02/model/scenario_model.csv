@@ -1,0 +1,9 @@
+scenario,as_of_price,fy2031e_eps,exit_pe,fy2031e_price_target,eps_cagr_assumption,implied_5y_irr_pct,notes
+as_of,426.01,,,,,,"Last close 2026-07-02; ~354.4M sh; mcap ~$150.9B; net cash ~$8.0B; EV ~$142.9B; ~52x trailing / ~40x fwd P/E; FY26E non-GAAP EPS base ~$10.6"
+bear,426.01,16.3,28,489,"9%/yr",2.8,"Procedure growth decel to ~9% as Hugo/Ottava take urology share + China loss + tariff; instrument-life bleeds I&A-per-procedure; de-rate to 28x. Still positive (net cash + annuity floor)."
+base,426.01,19.5,34,664,"13%/yr",9.3,"Procedures ~14% then decel; recurring annuity holds; da Vinci 5 + Ion offset competition; op leverage; 34x premium-quality multiple. Clears an 8% hurdle."
+bull,426.01,22.3,40,891,"16%/yr",15.9,"Instrument-life fear proven overdone (2020 precedent); dV5 full ramp + Ion inflection + new indications; market re-rates back toward 40x."
+worst_case,426.01,16.3,22,359,"9%/yr",-3.4,"Growth stall 9% AND deep de-rate to 22x AND instrument-life bleed — the genuine downside cross; ~-3.4%/yr (still far milder than HWM's -14%)."
+buy_below_8pct_base,452,19.5,34,664,"13%/yr",8.0,"Price that delivers 8% base 5y IRR = ~$452, ABOVE as_of $426.01 -> at $426 the base case ALREADY clears 8% (thin MOS present)."
+buy_below_10pct_base,412,19.5,34,664,"13%/yr",10.0,"10% base IRR at ~$412 (~3% below as_of) — the STARTER add-more line."
+buy_below_core_10pct,364,19.5,30,586,"13%/yr",10.0,"CORE buy-below: 10% IRR on conservative 30x exit = ~$364 (~15% below as_of) — real margin of safety for a larger position."

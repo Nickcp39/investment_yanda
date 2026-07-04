@@ -1,0 +1,87 @@
+{
+  "ticker": "AXON",
+  "as_of": "2026-07-02",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 597.04,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 597.0399780273438,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 597.04
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 597.04
+      },
+      {
+        "source_name": "google_finance",
+        "value": 597.04
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "google_finance",
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-07-02"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "345.94 <= 597.04 <= 870.97"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+72.6% off low, -31.5% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "82M x 597.04 = 0.049T vs card 0.049T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -31.0% vs card-implied -31.5% (gap 0.5pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 597.04 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "WARN",
+      "detail": "newest source 2025-07-01 is 366d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-05-06 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [active_litigation] -newest source 2025-07-01 is 366d before as_of (> 45d) -confirm it is still the latest authoritative event",
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-05-06 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

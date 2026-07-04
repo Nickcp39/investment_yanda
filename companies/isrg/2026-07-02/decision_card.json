@@ -1,0 +1,96 @@
+{
+  "ticker": "ISRG",
+  "as_of": "2026-07-02",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-04",
+  "context_label": "quality_compounder_post_derate_diversifier",
+  "as_of_price": 426.01,
+  "as_of_market_cap": 150880000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Evidence base is strong for a one-pass live run. Q1 2026 results (reported 2026-04-21) and FY2025 full-year figures are primary-sourced (10-Q + earnings release), cross-checked vs stockanalysis: Q1 revenue $2,770.8M (+23%), the razor/blade split I&A $1,686.4M (60.9%) / Systems $650.7M (23.5%) / Service $433.7M (15.7%) [recurring 76.5% strict, ~86% company defn], GAAP EPS $2.28 / non-GAAP $2.50, GM 66.0% GAAP / 67.8% non-GAAP, cash+investments $7,979.2M with ZERO debt, shares 354.4M. 5-yr trend from stockanalysis (rev $5.71B 2021 -> $10.07B 2025, +15% CAGR; EPS $4.66 -> $7.87 split-adjusted; FCF -> $2.49B). Installed base 11,395 da Vinci + 1,041 Ion (Q1'26). Price $426.01 (last close 2026-07-02) TRIPLE-confirmed (Yahoo + stockanalysis + Google Finance, 0% delta). Competitor status FDA/company-primary (Hugo, Ottava). Operator picture proxy/PR-primary (CEO transition to Dave Rosa 2025-07-01). OPEN ITEMS capping completeness: (O1) direct SEC EDGAR full-text 10-Q returned HTTP 403 to the fetcher -> used StockTitan 10-Q mirror + SEC-hosted 8-K text via search (all load-bearing numbers corroborated >=2 sources); (O2) no clean non-GAAP owner-earnings bridge; (O3) the MAGNITUDE of the instrument-life (6->15-use) impact on I&A-per-procedure is a forward unknown (Q2 2026-07-16 is the read); (O4) exact China % of revenue not pinned. Completeness ~72% -> STARTER ceiling on completeness.",
+      "drivers": ["ISRG-Q1-2026-PR", "ISRG-10Q-Q1-2026", "ISRG-Q4-2025-PR", "ISRG-SA-FINANCIALS", "YAHOO-ISRG-PRICE"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "ISRG is a surgical-robotics NEAR-MONOPOLY on a textbook razor-and-blade model. THE MECHANISM: place da Vinci/Ion systems (431 da Vinci in Q1'26, incl. 232 da Vinci 5) -> grow a large sticky installed base (11,395 da Vinci + 1,041 Ion, +12% YoY) -> the base drives procedures (worldwide +17% in Q1'26; da Vinci +16%, Ion +39%) -> each procedure consumes proprietary single/limited-use instruments -> a ~76-86% RECURRING, high-margin instruments/accessories + service annuity that is the bulk of profit and scales with installed-base x utilization, not with the year's system-sales cycle. Deep switching costs (surgeon training over hundreds of cases + hospital OR workflow + sunk capital + 25 years of clinical evidence and broad FDA indications) protect the annuity. FY2026 procedure guidance ~14.5% mid; 66% gross margins; ~$8B net cash, zero debt. PORTFOLIO NOTE: ISRG is medtech/surgical-robotics -- NOT an AI-capex/liquidity factor -- so it genuinely DIVERSIFIES the user's BTC/GOOGL/NBIS single-factor concentration (its only AI-adjacent thread is a speculative OpenAI-robotics fear, not a real linkage). Signal +2: exceptional business + a genuinely differentiating theme.",
+      "drivers": ["ISRG-Q1-2026-PR", "ISRG-Q4-2025-PR", "ISRG-10Q-Q1-2026"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Profit pool is EXCEPTIONAL and durable. The recurring I&A + service stream (76.5% strict / ~86% company) at 66% gross margin is the profit core; Systems (~24%) is the razor placed near-cost / increasingly leased to seed the base. The moat is a quadruple-lock: (1) surgeon switching cost / training lock-in (career-length); (2) installed-base + proprietary-consumable capture (10-15 yr/system); (3) 25 years of clinical evidence + broad FDA clearances; (4) the integrated system+SW+service ecosystem funded by ~13% R&D. da Vinci 5 (870 placed FY2025, 232 Q1'26) and Ion (+39-51% procedures) refresh and extend the base. OPERATOR: engineer-builder insiders -- CEO Dave Rosa (from 2025-07-01, ~30-yr insider who BUILT Ion + da Vinci SP) + Exec Chair Gary Guthart (PhD, from SRI, CEO 2010-25), clean multi-year succession, one-share-one-vote. Grade 4.5/5: this is the hardship-formed technical-builder profile the investor favors -- the OPPOSITE of a courtier/finance operator; docked only for capital-allocation passivity (~$8B idle cash, modest buyback) and the new CEO being 1 year in seat. Moat is DEEP for the recurring core but INFLECTING for the first time in 20 years (see M5): Medtronic Hugo US urology clearance + a self-inflicted instrument-life give-back are novel pressures on placements/mix -- they attack the least-profitable layer first, not the trained-surgeon annuity.",
+      "drivers": ["ISRG-Q1-2026-PR", "ISRG-Q4-2025-PR", "ISRG-CEO-TRANSITION", "ISRG-GUTHART-BIO"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Financials strongly CONFIRM the thesis -- a clean, high-margin, cash-generative compounder, not an accounting illusion. 5-yr trend: revenue $5,710M (2021) -> $10,065M (2025) [+15.2% CAGR]; gross margin structurally ~66-69%; operating margin ~25-32%; net margin ~28-30%; diluted EPS $4.66 -> $7.87 (split-adjusted, +14%/yr); FCF ramped to $2,491M (FY25) / $2,834M TTM. Q1 2026: revenue $2,770.8M (+23%), non-GAAP EPS $2.50 (+38%), non-GAAP operating income $1,076.8M (+40%), non-GAAP GM 67.8%. Balance sheet is a FORTRESS: cash+investments $7,979.2M, ZERO debt, net cash ~$8.0B (~5% of mcap) -- cannot go bankrupt. NORMALIZATION: the FY2022-23 margin/FCF dip is EXPLAINED (post-COVID reset + a deliberate $1.06-1.11B/yr manufacturing/facility capex build that compressed FCF to ~$750M in 2023), and FY2025 shows the payoff (capex normalized to ~$540M, FCF +91%). R&D held ~13-14% of revenue throughout. The ONLY financial critique is capital-allocation passivity (idle ~$8B cash dragging per-share compounding), not accounting quality. Signal +2: accounting confirms quality unambiguously.",
+      "drivers": ["ISRG-SA-FINANCIALS", "ISRG-10Q-Q1-2026", "ISRG-Q1-2026-PR", "ISRG-Q4-2025-PR"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "NO permanent-impairment / balance-sheet-death risk: ~$8.0B net cash, ZERO debt, intact recurring annuity off a growing installed base with surgeon switching costs -> hard veto does NOT fire. This is NOT the HWM/GEV trap either -- ISRG has ALREADY de-rated ~30% (from $603.88 to $426.01, near its 52-wk low), so the base-case 5y IRR is POSITIVE (~+9%/yr) and even the bear is only ~-2 to -3%/yr (annuity + ~13-15% procedure growth + net cash cushion the downside). The REAL, NOVEL risks (ranked): (F1) INSTRUMENT-LIFE CANNIBALIZATION -- ISRG voluntarily extended reuse limits on 5 of 6 force-feedback instruments (6->15 uses) to defend hospital cost-per-procedure, and the market fears this guts I&A-per-procedure (magnitude OPEN until Q2; 2020 Extended-Use precedent suggests ~2% not ~7%); (F2) COMPETITION -- Medtronic Hugo got US urology FDA clearance 2025-12-03 (first scaled US soft-tissue competitor in 20+ years; ~230k procedures/yr), J&J Ottava filed De Novo 2026-01-07 -- they contest new placements/pricing first, not the trained-surgeon annuity, so 2-5 yr to bite; (F3) procedure-growth deceleration toward high-single-digits; (F4) residual multiple compression (40x fwd -> 28-30x); (F5) China structural loss (domestic robots won ~52% of 2025 tenders; DRG unresolved to 2027; small $ today); (F6) capital-allocation passivity; (F7) ~100bps tariff. Signal -1: genuine, novel, but BOUNDED risks (positive base IRR, net-cash floor) -- a manageable risk profile, not a value trap.",
+      "drivers": ["MDT-HUGO-FDA", "JNJ-OTTAVA-FDA", "ISRG-FOOL-DECLINE", "ISRG-Q1-2026-PR", "ISRG-SA-STATS"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $426.01 (~$150.9B mkt cap, ~$142.9B EV): trailing P/E ~51.8x (TTM GAAP EPS $8.25), forward P/E ~40.0x (FY26E non-GAAP EPS ~$10.6), EV/TTM revenue ~13.5x, P/TTM FCF ~53x. 52-wk context: -29.5% off high $603.88; +7.4% off low $396.68 -- a DE-RATED, near-52wk-low entry (NOT a low/high-grab error). NOTE: as_of 2026-07-02 is PRE-Q2-earnings (Q2 reports 2026-07-16); the +5.9% pop on 07-02 was an oversold bounce + pre-earnings positioning (proximate trigger a contrarian Goldman note, PT $558), NOT a hard catalyst. 5-YEAR IRR (to FY2031): BEAR (9% EPS CAGR, exit 28x, EPS ~$16.3) ~+2.8%/yr; BASE (13% CAGR, exit 34x, EPS ~$19.5) ~+9.3%/yr; BULL (16% CAGR, exit 40x, EPS ~$22.3) ~+15.9%/yr; worst-case cross (9% + 22x) ~-3.4%/yr. THE KEY RESULT: the BASE case is POSITIVE and roughly clears an 8% hurdle, and even the bear is only ~-3% -- the first name in this series (vs HWM/GEV) where price does NOT forbid entry. Buy-below for 8% base IRR ~$452 (ABOVE as_of -> thin-but-positive MOS already present at $426.01); add-more (10% IRR) ~$412; CORE (10% IRR, conservative 30x exit) ~$364. Signal +1: a thin-but-positive margin of safety; new money = STARTER (small, size-by-conviction), reserve larger sizing for lower prices / a clean Q2. NOT a fat pitch (still ~40x fwd with open F1/F2), but not a WATCH-only either.",
+      "drivers": ["YAHOO-ISRG-PRICE", "ISRG-SA-STATS", "ISRG-Q1-2026-PR", "ISRG-SA-FINANCIALS"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "ADD",
+  "suggested_initial_size_pct": 3.5,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 452,
+  "starter_zone": "<= ~$452 (where a constructive 13% base-case EPS CAGR to ~$19.5 at a 34x exit clears an 8% 5y IRR). Because this sits ABOVE the as_of $426.01, ISRG at today's price ALREADY offers a thin-but-positive margin of safety on the base case -- a STARTER is warranted now, not a WATCH. Pays for the recurring razor/blade annuity + near-monopoly + net cash, with the instrument-life/Hugo inflection as the open question.",
+  "add_zone": "STARTER ~3.5% now at ~$426. Add toward Confirmed (cap ~8-12%, below the 15-25% Core tier while competition + instrument-life are unresolved) as: (a) Q2 2026 (2026-07-16) confirms procedures hold ~14-15% AND I&A-per-procedure is stable despite the 6->15-use change, (b) da Vinci placements stay strong (no visible Hugo share loss), (c) margins land in the 67.5-68.5% non-GAAP guide. Add-more line <= ~$412 (10% base IRR). CORE-size discipline only near <= ~$364 (conservative-exit MOS).",
+  "trim_or_no_chase_zone": "Do not chase back toward the Jan high above ~$560-600 (base-case 5y IRR compresses below ~5%/yr). Trim/exit on: procedure growth < ~10% AND I&A-per-procedure falling AND placements negative (annuity-erosion confirmed); or a value-destructive large acquisition; or price > ~$600 without an earnings step-up. High weight alone is NOT a trim reason.",
+  "binding_constraint": "COMPLETENESS + one open business inflection -- NOT price. Unlike HWM/GEV, the ~30% de-rate to ~40x forward has produced a POSITIVE base-case 5y IRR (~+9%/yr, clearing an 8% hurdle) with a ~$8B net-cash floor, so price no longer forbids entry. What caps the verdict at STARTER (not CORE) is (a) completeness ~72% (one-pass live run; EDGAR full-text 403'd; no owner-earnings bridge), and (b) a genuine OPEN business inflection -- the magnitude of the instrument-life (6->15-use) hit to the I&A annuity and Medtronic Hugo's fresh US urology entry -- which the Q2 print (2026-07-16) will start to resolve. Size follows earned conviction: a real STARTER now, with the ladder gated on Q2 confirmation and lower prices.",
+  "kill_criteria": [
+    "K-A Procedure-growth deceleration: worldwide procedure growth falls below ~10% for 2 consecutive quarters (vs ~14-17% now) -> the master growth variable is breaking -> re-underwrite / reduce.",
+    "K-B Competitive share loss: Medtronic Hugo (or Ottava) visibly slows da Vinci system-placement growth or takes urology share, or da Vinci placement growth turns negative -> the 20-year competitive moat is cracking at the placement layer -> dock durability, pause adds.",
+    "K-C Annuity erosion: I&A-per-procedure falls materially post the 6->15-use instrument-life change AND non-GAAP gross margin drops below ~66% -> the recurring-annuity value (the profit core) is being cannibalized -> the central bull leg breaks -> downgrade.",
+    "K-D Capital-allocation slip: a value-destructive large acquisition, OR continued hoarding of the ~$8B net cash through the de-rate with no buyback-at-a-discount -> operator passivity destroying per-share compounding -> dock operator grade, cap size lower.",
+    "K-E China / reimbursement shock: accelerating China domestic-robot share loss or an adverse China DRG reimbursement outcome (2027) that spills into procedure growth -> ex-US structural risk materializing -> reduce.",
+    "K-F Multiple/IRR breach: price rises above ~$560-600 (back toward the Jan high) without a commensurate earnings step-up -> base 5y IRR compresses below ~5% -> stop adding / trim.",
+    "K-G Balance-sheet or accounting surprise (low probability): net cash materially deployed into leverage, or a restatement/quality flag -> re-underwrite the fortress-balance-sheet leg."
+  ],
+  "runner_dissent": "My call (STARTER, +1 on M6) is deliberately more constructive than the mechanical caution around a ~40x-forward multiple, and I want to name the two-sided risk in that. THE BULL ASYMMETRY I am leaning into: ISRG is the first name in this HWM/GEV series where the price has already de-rated ~30% into the fear, so the base 5y IRR is POSITIVE (~+9%) and the bear is only ~-3% -- you are NOT paying an all-time-high multiple for flawless execution the way you were with HWM. Layer on (a) a genuine near-monopoly with ~76-86% recurring revenue and surgeon switching costs, (b) ~$8B net cash and zero bankruptcy risk, (c) an engineer-builder CEO who literally built the growth platforms, and (d) real DIVERSIFICATION value for a book that is otherwise 100% an AI/liquidity bet -- and a small starter here is the disciplined 'size follows earned conviction' move, not a WATCH. THE HONEST BEAR I am NOT dismissing: the instrument-life give-back (6->15 uses) is a tell that ISRG feels competitive cost pressure for the first time, and Hugo's US urology clearance is a real, novel crack; if the annuity's per-procedure value bleeds while Hugo takes placements, the base could slip toward the bear and today's ~40x would look expensive. That is exactly why this is a STARTER (~3.5%) and not a Confirmed/Core position, and why the ladder is gated on the Q2 (2026-07-16) instrument-life/annuity read and lower prices (~$412 / ~$364). NET: start small now, let Q2 confirm the annuity, add on confirmation or on price. The risk of the STARTER call is that the instrument-life/competition inflection proves worse than the 2020 precedent; the risk of NOT starting is missing a de-rated near-monopoly diversifier that re-rates on a single clean quarter. One real uncertainty: my exit multiple (34x base) and the FY26E ~$10.6 EPS base are the swing factors -- a permanent re-rate below ~28x would make even the base thin.",
+  "sources_used": [
+    {"source_id": "ISRG-Q1-2026-PR", "public_date": "2026-04-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526726000029/q126ex-991earningsrelease.htm"},
+    {"source_id": "ISRG-10Q-Q1-2026", "public_date": "2026-04-21", "url_or_path": "https://www.stocktitan.net/sec-filings/ISRG/10-q-intuitive-surgical-inc-quarterly-earnings-report-a75820ad0806.html"},
+    {"source_id": "ISRG-Q4-2025-PR", "public_date": "2026-01-13", "url_or_path": "https://isrg.intuitive.com/news-releases/news-release-details/intuitive-announces-preliminary-fourth-quarter-and-full-year-5/"},
+    {"source_id": "ISRG-Q3-2025-PR", "public_date": "2025-10-16", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526725000206/q325ex-991earningsrelease.htm"},
+    {"source_id": "ISRG-SA-FINANCIALS", "public_date": "2026-07-02", "url_or_path": "https://stockanalysis.com/stocks/isrg/financials/"},
+    {"source_id": "ISRG-SA-STATS", "public_date": "2026-07-02", "url_or_path": "https://stockanalysis.com/stocks/isrg/"},
+    {"source_id": "YAHOO-ISRG-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/ISRG"},
+    {"source_id": "GOOGLE-ISRG-PRICE", "public_date": "2026-07-02", "url_or_path": "https://www.google.com/finance/quote/ISRG:NASDAQ"},
+    {"source_id": "ISRG-CEO-TRANSITION", "public_date": "2025-05-15", "url_or_path": "https://investor.intuitivesurgical.com/news-releases/news-release-details/intuitive-announces-ceo-transition-effective-july-1-2025/"},
+    {"source_id": "ISRG-GUTHART-BIO", "public_date": "2026-01-01", "url_or_path": "https://www.intuitive.com/en-us/about-us/company/leadership/gary-guthart"},
+    {"source_id": "MDT-HUGO-FDA", "public_date": "2025-12-03", "url_or_path": "https://news.medtronic.com/2025-12-03-Medtronic-announces-FDA-clearance-of-Hugo-TM-robotic-assisted-surgery-system-for-urologic-surgical-procedures"},
+    {"source_id": "JNJ-OTTAVA-FDA", "public_date": "2026-01-07", "url_or_path": "https://www.jnj.com/media-center/press-releases/johnson-johnson-submits-ottava-robotic-surgical-system-to-the-u-s-food-and-drug-administration"},
+    {"source_id": "ISRG-FOOL-DECLINE", "public_date": "2026-07-03", "url_or_path": "https://www.fool.com/investing/2026/07/03/intuitive-surgical-is-down-28-and-wall-street-is/"},
+    {"source_id": "ISRG-QUIVER-JUL2", "public_date": "2026-07-02", "url_or_path": "https://www.quiverquant.com/news/Intuitive+Surgical+Gains+as+Investors+Appear+to+Position+for+Mid-July+Earnings"}
+  ]
+}

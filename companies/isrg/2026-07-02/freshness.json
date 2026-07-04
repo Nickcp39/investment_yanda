@@ -1,0 +1,103 @@
+{
+  "ticker": "ISRG",
+  "as_of": "2026-07-02",
+  "generated_by": "runner",
+  "run_date": "2026-07-04",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of pins to the LAST close = 2026-07-02 = $426.01 (NASDAQ). This close was up +5.87% on the day (prev close $402.38) -- an oversold bounce off a fresh 52-wk low ($396.68 set ~2026-06-30) + pre-Q2-earnings positioning (Q2 reports 2026-07-16); NO hard company/operational catalyst on the day. Price is triple-sourced (Yahoo chart API + stockanalysis + Google Finance), all $426.01, 0% delta. verify_freshness.py re-fetches Yahoo (last close <= as_of => 426.01) independently and cross-checks these declared sources + the decision_card value. FILED data (10-Q Q1 2026 reported 2026-04-21) is NOT here -- it rides the dated-source claim_ledger discipline. NOTE: ISRG did a 3-for-1 split (Oct 2024); all per-share figures are post-split. The Yahoo adj-close 52wk high reads $592.85 vs stockanalysis/Google intraday high $603.88; ISRG pays no dividend so the gap is close-basis vs intraday-high, not an adjustment error -- 52wk_high below uses $603.88 (2-source), but the price is well inside either band so T1/T2 are unaffected.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 426.01,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last close 2026-07-02 = $426.01 (-29.5% off 52wk high $603.88; +7.4% off 52wk low $396.68). Near the low, not hugging it (>3% off) and not near the high -> no high/low-grab error. +5.87% on the day (prev close $402.38); day range ~$406.47-$426.02 (closed at day high).",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ISRG", "fetched_at": "2026-07-04", "value": 426.01},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/isrg/", "fetched_at": "2026-07-04", "value": 426.01},
+        {"source_name": "websearch_google_finance", "url": "https://www.google.com/finance/quote/ISRG:NASDAQ", "fetched_at": "2026-07-04", "value": 426.01}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 150880000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "stockanalysis reports $150.88B at the $426.01 close. Cross-check: 354.4M shares x $426.01 = $150.98B (0.07% delta vs stockanalysis's 354.16M share basis). Consistent.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/isrg/", "fetched_at": "2026-07-04", "value": 150880000000},
+        {"source_name": "derived", "url": "354.4M shares x $426.01", "fetched_at": "2026-07-04", "value": 150980000000}
+      ],
+      "cross_check_delta_pct": 0.07,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 603.88,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "stockanalysis + Google Finance agree $603.88 (intraday high, ~Jan 2026). Yahoo adj-close series reads $592.85 (close basis). ISRG pays no dividend -> the gap is intraday-high vs close, not an adjustment error. Price $426.01 is well inside either band.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/isrg/", "fetched_at": "2026-07-04", "value": 603.88},
+        {"source_name": "websearch_google_finance", "url": "https://www.google.com/finance/quote/ISRG:NASDAQ", "fetched_at": "2026-07-04", "value": 603.88}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 396.68,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "stockanalysis + Google Finance agree $396.68 (set ~2026-06-30, two days before as_of). Yahoo adj-close series reads $397.68 (close basis) -- within $1.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/isrg/", "fetched_at": "2026-07-04", "value": 396.68},
+        {"source_name": "websearch_google_finance", "url": "https://www.google.com/finance/quote/ISRG:NASDAQ", "fetched_at": "2026-07-04", "value": 396.68}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 354.4,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "note": "10-Q cover count 354.4M (as of ~2026-04-15 filing / 2026-03-31 period); stockanalysis current shares 354.16M; diluted weighted-avg 359.8M (Q1). Use ~354.4M for the mcap identity. Cross-source spread <0.1%.",
+      "sources": [
+        {"source_name": "sec_10q_q1_2026_cover", "url": "https://www.stocktitan.net/sec-filings/ISRG/10-q-intuitive-surgical-inc-quarterly-earnings-report-a75820ad0806.html", "fetched_at": "2026-07-04", "value": 354.4},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/isrg/", "fetched_at": "2026-07-04", "value": 354.16}
+      ],
+      "cross_check_delta_pct": 0.07,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance given at Q1 2026 print (2026-04-21): da Vinci procedure growth 13.5%-15.5% (midpoint ~14.5%; raised from 13-15% in Jan 2026); non-GAAP gross margin 67.5%-68.5% of revenue, including ~100bps estimated tariff impact + higher input costs; non-GAAP opex growth 11%-14%; non-GAAP tax rate 22%-23%. Q1 2026 actuals: revenue $2,770.8M (+23%), procedures +17%, non-GAAP EPS $2.50 (+38%). Next earnings Q2 2026 on 2026-07-16.",
+      "as_of": "2026-04-21",
+      "sources": [
+        {"source_name": "isrg_q1_2026_release", "url": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526726000029/q126ex-991earningsrelease.htm", "public_date": "2026-04-21", "fetched_at": "2026-07-04"},
+        {"source_name": "isrg_q1_2026_10q", "url": "https://www.stocktitan.net/sec-filings/ISRG/10-q-intuitive-surgical-inc-quarterly-earnings-report-a75820ad0806.html", "public_date": "2026-04-21", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation identified as of as_of. Standard product-liability and IP matters ordinary for a medical-device leader; not thesis-material. Watch items (not disclosed losses): (a) voluntary Class I/II recalls on certain da Vinci instruments (operational noise, 2026); (b) the competitive/regulatory landscape -- Medtronic Hugo US urology FDA clearance (2025-12-03) and J&J Ottava De Novo submission (2026-01-07) are competitive events, not litigation. No debt, so no covenant/credit litigation risk.",
+      "as_of": "2026-04-21",
+      "sources": [
+        {"source_name": "isrg_q1_2026_release", "url": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526726000029/q126ex-991earningsrelease.htm", "public_date": "2026-04-21", "fetched_at": "2026-07-04"},
+        {"source_name": "medtronic_hugo_fda", "url": "https://news.medtronic.com/2025-12-03-Medtronic-announces-FDA-clearance-of-Hugo-TM-robotic-assisted-surgery-system-for-urologic-surgical-procedures", "public_date": "2025-12-03", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    }
+  ]
+}

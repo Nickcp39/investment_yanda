@@ -1,0 +1,92 @@
+{
+  "ticker": "ASML",
+  "as_of": "2026-07-02",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 1769.32,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 1769.3199462890625,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 1769.32
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 1769.32
+      },
+      {
+        "source_name": "wallstreetzen",
+        "value": 1769.32
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "wallstreetzen",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-07-02"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "683.48 <= 1769.32 <= 1999.96"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+158.9% off low, -11.5% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "385M x 1769.32 = 0.682T vs card 0.682T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -11.5% vs card-implied -11.5% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 1769.32 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [export_control_status]",
+      "status": "PASS",
+      "detail": "newest source 2026-06-22 (10d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2026-06-22 (10d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-15 is 78d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-15 is 78d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

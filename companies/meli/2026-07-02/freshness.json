@@ -1,0 +1,101 @@
+{
+  "ticker": "MELI",
+  "as_of": "2026-07-02",
+  "generated_by": "runner",
+  "run_date": "2026-07-04",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of pins to the last fully-settled NASDAQ close = 2026-07-02 = $1,763.36. Today 2026-07-04 is a US market holiday-adjacent weekend (July 4th); 2026-07-02 is the latest settled close. Every LIVE field carries >=2 independent sources fetched at run time; verify_freshness.py re-fetches Yahoo (last close <= as_of => 1763.36) independently and cross-checks these declared sources + the decision_card value. FILED data (10-Q/10-K line items; Q1 2026 reported 2026-05-07 / 10-Q filed 2026-05-08) is NOT here -- it rides the dated-source claim_ledger discipline. Note: this is a beaten-DOWN growth name (-31% off 52wk high, +18% off 52wk low), the inverse of HWM's near-ATH setup; T2 low/high-hug should PASS since price sits mid-band.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1763.36,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last settled close 2026-07-02 = $1,763.36 (-30.8% off 52wk high $2,548.50; +18.0% off 52wk low $1,495.00). Sits in the lower-middle of the band -> no high/low-grab error. Yahoo OHLC series confirms 07-02 close $1,763.36 and 07-01 close $1,742.19 (consistent up-day sequence), so the value is a genuine settled close, not a series extreme. The stale Yahoo meta 'previousClose' field reads $2,472 (intraday-meta artifact) and is NOT used; the daily OHLC series is authoritative.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI", "fetched_at": "2026-07-04", "value": 1763.36},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meli/", "fetched_at": "2026-07-04", "value": 1763.36},
+        {"source_name": "websearch_consensus", "url": "https://www.google.com/finance/quote/MELI:NASDAQ", "fetched_at": "2026-07-04", "value": 1763.36}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 89400000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "stockanalysis reports $89.40B at the $1,763.36 close. Derived 50.70M shares x $1,763.36 = $89.40B -- matches to the dollar (identity check clean).",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meli/", "fetched_at": "2026-07-04", "value": 89400000000},
+        {"source_name": "derived", "url": "50.70M shares x $1,763.36", "fetched_at": "2026-07-04", "value": 89412000000}
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 2548.50,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI", "fetched_at": "2026-07-04", "value": 2548.50},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meli/", "fetched_at": "2026-07-04", "value": 2548.50}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 1495.00,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MELI", "fetched_at": "2026-07-04", "value": 1495.00},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meli/", "fetched_at": "2026-07-04", "value": 1495.00}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 50.70,
+      "unit": "millions",
+      "as_of": "2026-05-07",
+      "is_quantitative": true,
+      "note": "10-Q cover count 50,697,182 as of 2026-05-07 (~50.70M); Q1 diluted weighted 50,697,298; stockanalysis ~50.70M. Very low share count (high price-per-share). Cross-source spread <0.1%.",
+      "sources": [
+        {"source_name": "sec_10q_q1_2026_cover", "url": "https://www.stocktitan.net/sec-filings/MELI/10-q-mercadolibre-inc-quarterly-earnings-report-45532b4fae60.html", "fetched_at": "2026-07-04", "value": 50.70},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meli/", "fetched_at": "2026-07-04", "value": 50.70}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "MercadoLibre provides NO forward numeric guidance (long-standing practice). CFO Martin de los Santos on the Q1 2026 call: 'we avoid talking about margins on a quarterly forward-looking basis.' Qualitative Q1'26 outlook: continue to prioritize long-term growth investment over short-term margin ('the right response is not to harvest -- it is to invest'); margin compression expected to persist near-term; credit-card portfolio growing >100% YoY; Brazil free-shipping threshold lowered (R$19) with select take-rate cuts effective Q2 2026 (not in Q1 numbers); logistics cost/shipment -17% YoY. No explicit revenue/EPS/EBITDA targets.",
+      "as_of": "2026-05-07",
+      "sources": [
+        {"source_name": "sec_8k_q1_2026_letter", "url": "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000014/meli-20260507xex991.htm", "public_date": "2026-05-07", "fetched_at": "2026-07-04"},
+        {"source_name": "motley_fool_q1_2026_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/05/07/mercadolibre-meli-q1-2026-earnings-transcript/", "public_date": "2026-05-07", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation or regulatory action identified as of as_of that is thesis-load-bearing. Standard LatAm tax disputes (esp. Brazil ICMS/PIS-COFINS and Argentine tax matters) are recurring for MELI and disclosed as contingencies, but are ordinary-course and not a new event. Key LIVE risk items are macro/regulatory, not litigation: (a) Brazil/PIX and consumer-credit regulation; (b) Argentine FX/capital-controls and IAS 29 hyperinflation accounting; (c) potential LatAm digital-tax/cross-border-import rule changes (Brazil 'taxa das blusinhas' import taxation of low-value cross-border parcels, aimed at Shein/Temu, indirectly relevant). None constitute a disclosed material loss as of as_of.",
+      "as_of": "2026-05-08",
+      "sources": [
+        {"source_name": "sec_10q_q1_2026", "url": "https://www.stocktitan.net/sec-filings/MELI/10-q-mercadolibre-inc-quarterly-earnings-report-45532b4fae60.html", "public_date": "2026-05-08", "fetched_at": "2026-07-04"},
+        {"source_name": "sec_8k_q1_2026_letter", "url": "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000014/meli-20260507xex991.htm", "public_date": "2026-05-07", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    }
+  ]
+}

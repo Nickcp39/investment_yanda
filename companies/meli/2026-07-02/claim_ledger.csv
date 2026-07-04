@@ -1,0 +1,73 @@
+claim,value,unit,as_of,source_id,tier,verification,destination
+as-of price (last settled close),1763.36,USD,2026-07-02,YAHOO-MELI-PRICE,primary,verified_2plus_sources,M6
+52-week high,2548.50,USD,2026-07-02,YAHOO-MELI-PRICE,primary,verified_2plus_sources,M6
+52-week low,1495.00,USD,2026-07-02,YAHOO-MELI-PRICE,primary,verified_2plus_sources,M6
+shares outstanding,50.70,millions,2026-05-07,MELI-10Q-Q1-2026,primary,verified,M4/M6
+diluted weighted shares Q1,50.70,millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+market cap (derived),89400,USD millions,2026-07-02,MELI-SA-STATS,secondary,derived_price_x_shares,M6
+trailing P/E,46.56,x,2026-07-02,MELI-SA-STATS,secondary,verified,M6
+forward P/E,43.26,x,2026-07-02,MELI-SA-STATS,secondary,verified,M6
+TTM diluted EPS,37.89,USD,2026-03-31,MELI-SA-FINANCIALS,secondary,verified,M4/M6
+TTM revenue,31803,USD millions,2026-03-31,MELI-SA-FINANCIALS,secondary,verified,M4/M6
+Q1 2026 net revenue,8845,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified_2plus_sources,M2/M4
+Q1 2026 revenue growth YoY,49,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified_2plus_sources,M2/M4
+Q1 2026 revenue growth FX-neutral,46,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M4
+Q1 2026 income from operations,611,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2026 operating margin,6.9,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2025 operating margin,12.9,pct,2025-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2026 net income,417,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2026 diluted EPS,8.23,USD,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2026 GMV,18951,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M3
+Q1 2026 GMV growth YoY,42,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2
+Q1 2026 TPV,87186,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M3
+Q1 2026 TPV growth YoY,50,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2
+Q1 2026 acquiring TPV,55993,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2
+Q1 2026 unique active buyers,84,millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M3
+Q1 2026 fintech monthly active users,83,millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M3
+Q1 2026 items sold,722,millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2
+Q1 2026 net revenue Brazil,4774,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M5
+Q1 2026 net revenue Mexico,1976,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M5
+Q1 2026 net revenue Argentina,1698,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M5
+Q1 2026 net revenue Other,397,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2/M5
+Q1 2026 direct contribution Brazil,389,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M3/M5
+Q1 2026 direct contribution Mexico,344,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M3/M5
+Q1 2026 direct contribution Argentina,607,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M3/M5
+Q1 2026 credit portfolio gross,14600,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified_2plus_sources,M3/M4/M5
+Q1 2026 credit portfolio growth YoY,87,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified_2plus_sources,M4/M5
+Q1 2026 loans receivable net,10735,USD millions,2026-03-31,MELI-10Q-Q1-2026,primary,verified,M4
+Q1 2026 allowance for doubtful accounts,3865,USD millions,2026-03-31,MELI-10Q-Q1-2026,primary,verified,M4/M5
+Q1 2026 provision for doubtful accounts,1244,USD millions,2026-03-31,MELI-10Q-Q1-2026,primary,verified,M4/M5
+Q1 2025 provision for doubtful accounts,603,USD millions,2025-03-31,MELI-10Q-Q1-2026,primary,verified,M4/M5
+Q1 2026 NPL 15-90 day portfolio,8.0,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4/M5
+Q1 2026 NIMAL,17.8,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4/M5
+Q1 2025 NIMAL,22.7,pct,2025-03-31,MELI-Q1-2026-REL,primary,verified,M4/M5
+Q1 2026 fintech AUM,19900,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M3
+Q1 2026 fintech AUM growth YoY,77,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M3
+Q1 2026 capex,271,USD millions,2026-03-31,MELI-Q1-2026-REL,primary,verified,M4
+Q1 2026 adjusted FCF,-56,USD millions,2026-03-31,MELI-FCF-DEF,secondary,verified,M4
+FY2025 net revenue,28893,USD millions,2025-12-31,MELI-SA-FINANCIALS,secondary,verified_2plus_sources,M4
+FY2025 revenue growth YoY,39,pct,2025-12-31,MELI-Q4-2025-REL,secondary,verified,M4
+FY2025 commerce revenue,16300,USD millions,2025-12-31,MELI-Q4-2025-REL,secondary,verified,M4
+FY2025 fintech revenue,12600,USD millions,2025-12-31,MELI-Q4-2025-REL,secondary,verified,M4
+FY2025 operating income,3201,USD millions,2025-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2025 operating margin,11.1,pct,2025-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2025 net income,1997,USD millions,2025-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2025 diluted EPS,39.40,USD,2025-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2025 adjusted FCF,1480,USD millions,2025-12-31,MELI-Q4-2025-REL,secondary,verified,M4
+FY2025 capex,1330,USD millions,2025-12-31,MELI-Q4-2025-REL,secondary,verified,M4
+FY2024 revenue,20777,USD millions,2024-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2024 operating margin,12.7,pct,2024-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2024 diluted EPS,37.69,USD,2024-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2023 revenue,15107,USD millions,2023-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2023 operating margin,14.6,pct,2023-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2023 diluted EPS,19.46,USD,2023-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2022 revenue,10780,USD millions,2022-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2021 revenue,7069,USD millions,2021-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+FY2021 operating margin,6.2,pct,2021-12-31,MELI-SA-FINANCIALS,secondary,verified,M4
+Galperin role change to Exec Chairman,2026-01-01,date,2026-01-01,MELI-LEADERSHIP,primary,verified_2plus_sources,operator
+new CEO Ariel Szarfsztejn,2026-01-01,date,2026-01-01,MELI-LEADERSHIP,primary,verified_2plus_sources,operator
+Galperin Trust ownership,7.00,pct,2026-04-14,MELI-DEF14A-2026,primary,secondary_read_of_primary,operator
+governance one-share-one-vote,1,vote per share,2026-04-14,MELI-DEF14A-2026,primary,verified,operator
+commerce take rate Q1,21.3,pct,2026-03-31,MELI-Q1-2026-SLIDES,secondary,OPEN_secondary_only,M3
+Brazil GMV growth FX-neutral Q1,38,pct,2026-03-31,MELI-Q1-2026-REL,primary,verified,M2
+Brazil loan duration extension,8,months,2026-03-31,MELI-Q1-2026-REL,primary,verified,M5

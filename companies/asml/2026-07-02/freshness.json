@@ -1,0 +1,112 @@
+{
+  "ticker": "ASML",
+  "as_of": "2026-07-02",
+  "generated_by": "runner",
+  "run_date": "2026-07-04",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of pins to the LAST FULLY-SETTLED NASDAQ close = 2026-07-02 = $1769.32 (down -4.0% on the day). ASML reports in EUR; the as-of price is the NASDAQ USD line (the security verify_freshness.py re-fetches via ticker ASML). Every LIVE quantitative field carries >=2 independent sources; the gate re-fetches Yahoo (last close <= as_of => 1769.32) and cross-checks these declared sources + the decision_card value. shares/market_cap use the IDENTITY-CONSISTENT pair (385.42M x $1769.32 = $681.93B), NOT the stockanalysis $719.43B which uses a higher (~406M) share basis (flagged O3). FILED data (FY2025 reported 2026-01-28, Q1 2026 reported 2026-04-15) rides the dated-source claim_ledger discipline. LIVE-qualitative China export-control status uses the freshest sources (BIS/EUV-in-China June 2026; MATCH Act April 2026).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1769.32,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last settled NASDAQ close 2026-07-02 = $1769.32 (-11.5% off 52wk high $1,999.96; +159% off 52wk low $683.48). Not hugging either extreme -> no high/low-grab error. Down -4.0%/-$73.72 on the day (prev close $1,843.04).",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML", "fetched_at": "2026-07-04", "value": 1769.32},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/asml/", "fetched_at": "2026-07-04", "value": 1769.32},
+        {"source_name": "wallstreetzen", "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/asml", "fetched_at": "2026-07-04", "value": 1769.32}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 681930000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "Identity-consistent: 385.42M shares x $1769.32 = $681.9B, matching WallStreetZen's reported $681.93B (dated 2026-07-02). stockanalysis prints $719.43B on a higher (~406M) share basis -> NOT used (flagged O3); the delta is a share-count basis difference, not a price discrepancy.",
+      "sources": [
+        {"source_name": "wallstreetzen", "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/asml", "fetched_at": "2026-07-04", "value": 681930000000},
+        {"source_name": "derived", "url": "385.42M shares x $1769.32", "fetched_at": "2026-07-04", "value": 681924000000}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 1999.96,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML", "fetched_at": "2026-07-04", "value": 1999.96},
+        {"source_name": "wallstreetzen", "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/asml", "fetched_at": "2026-07-04", "value": 1999.96}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 683.48,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML", "fetched_at": "2026-07-04", "value": 683.48},
+        {"source_name": "wallstreetzen", "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/asml", "fetched_at": "2026-07-04", "value": 683.48}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 385.42,
+      "unit": "millions",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "WallStreetZen 385,417,665; AGM 2026 filing 388,147,674 issued - 3,224,029 treasury = 384,923,645 outstanding (record date 2026-03-25); stockanalysis 385.4M. Use ~385.42M for the mcap identity. Cross-source spread <0.2% (ex-treasury vs issued).",
+      "sources": [
+        {"source_name": "wallstreetzen", "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/asml", "fetched_at": "2026-07-04", "value": 385.42},
+        {"source_name": "asml_agm_2026_filing", "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026026703/asmldiscloses2026agmresults.htm", "fetched_at": "2026-07-04", "value": 384.92}
+      ],
+      "cross_check_delta_pct": 0.13,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance RAISED at Q1 2026 print (2026-04-15): total net sales EUR36-40B (baseline ~EUR38B, up from EUR34-39B guided at Q4'25 2026-01-28); gross margin 51-53%; annualized effective tax rate ~17%. Q1 2026 actuals (net sales EUR8.8B, GM 53.0%, net income EUR2.8B, EPS EUR7.15) beat/at the high end; FY2025 was EUR32.7B sales / EUR9.6B net income / 52.8% GM / EUR24.73 EPS. Long-term Investor Day 2024 model: 2030 sales EUR44-60B, GM 56-60%. Next earnings 2026-07-15 (Q2 2026).",
+      "as_of": "2026-04-15",
+      "sources": [
+        {"source_name": "asml_q1_2026_release", "url": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results", "public_date": "2026-04-15", "fetched_at": "2026-07-04"},
+        {"source_name": "asml_q1_2026_6k", "url": "https://www.stocktitan.net/sec-filings/ASML/6-k-asml-holding-nv-current-report-foreign-issuer-728274d6f07a.html", "public_date": "2026-04-15", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "export_control_status",
+      "is_quantitative": false,
+      "value": "MATERIAL, LIVE, EVOLVING. (1) MATCH Act introduced April 2026 by bipartisan US lawmakers -> would ban ALL ASML DUV shipments to China (the permitted sales ~= 20% of 2026 revenue) and require the Netherlands to align export controls within 150 days or face unilateral US action -- status: pending legislation. (2) June 2026: US Commerce Secretary Lutnick alleged a possible unauthorized EUV transfer to a Chinese customer; ASML formally denies ('No indication of any ASML EUV System in China'; all 314 EUV machines accounted for). US cited EUV component/transport-equipment shipments -> BIS enforcement risk on COMPONENTS (does not require a full system; parallels the Applied Materials Feb 2026 settlement for components/units routed via Korea). (3) ASML has NEVER shipped EUV to China; NL has restricted DUV immersion tools since Jan 2023. China fell 33% (FY25) -> 19% (Q1'26) of system sales, with gross margin HELD (low-margin DUV replaced by high-margin AI EUV). This is the TOP kill-criterion (K-A).",
+      "as_of": "2026-06-22",
+      "sources": [
+        {"source_name": "techtimes_bis_euv_china", "url": "https://www.techtimes.com/articles/318852/20260622/asml-euv-components-china-us-cites-shipment-evidence-bis-enforcement-looms.htm", "public_date": "2026-06-22", "fetched_at": "2026-07-04"},
+        {"source_name": "cnbc_match_act_duv", "url": "https://www.cnbc.com/2026/04/07/asml-shares-today-us-chip-export-curbs-china.html", "public_date": "2026-04-07", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material ordinary-course litigation identified as thesis-relevant as of as_of. The one LIVE regulatory matter is the June 2026 US/BIS EUV-component-in-China allegation (see export_control_status), which ASML formally denies and which is an enforcement RISK, not a disclosed loss. No dual-class / governance litigation (one-share-one-vote; Stichting is a standard Dutch takeover defense).",
+      "as_of": "2026-06-22",
+      "sources": [
+        {"source_name": "techtimes_bis_euv_china", "url": "https://www.techtimes.com/articles/318852/20260622/asml-euv-components-china-us-cites-shipment-evidence-bis-enforcement-looms.htm", "public_date": "2026-06-22", "fetched_at": "2026-07-04"},
+        {"source_name": "asml_governance_2025", "url": "https://ourbrand.asml.com/m/24fb6cd4a43aa039/original/asml-2025-annual-report-corporate-governance-section.pdf", "public_date": "2026-02-01", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    }
+  ]
+}

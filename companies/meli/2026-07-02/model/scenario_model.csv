@@ -1,0 +1,9 @@
+scenario,as_of_price,fy2030e_rev_b,fy2030e_net_margin_pct,fy2030e_eps,exit_pe,fy2030e_price_target,div_yield_pct,implied_5y_irr_pct,rev_cagr_assumption,notes
+as_of,1763.36,,,,,,0,,,"Last settled close 2026-07-02; ~50.70M sh; mcap ~$89.4B; 46.6x trailing / 43.3x fwd P/E; 2.8x P/S; -30.8% off 52wk high $2548.50"
+severe_bear,1763.36,66.1,5.0,50,18,904,0,-12.5,"12%/yr","LatAm credit-cycle blowup (net margin to 5%) + growth collapse + deep de-rate; the real tail risk"
+bear,1763.36,66.1,7.0,91,20,1825,0,0.7,"18%/yr","Growth halves, margin stuck at 6.9% trough (no recovery), de-rate to 20x; still ~breakeven because growth compounds absolute earnings"
+base_conservative,1763.36,77.9,9.0,139,27,3743,0,16.2,"22%/yr","Growth decelerates to 22%, margin partially recovers to 9%, 27x exit"
+base,1763.36,88.2,10.0,174,30,5217,0,24.2,"25%/yr","Margin recovers to 10% (IFRS-9 front-load unwinds, ads scale), growth 25%, 30x exit -- clears 15%+ hurdle AT today's price"
+bull,1763.36,107.3,12.0,254,35,8887,0,38.2,"30%/yr","Margin recovers toward 12%, growth holds 30%, market keeps a 35x quality-compounder multiple"
+buy_below_add_1600,1600,88.2,10.0,174,30,5217,0,26.7,"25%/yr","ADD level ~$1600 (near recent trough): base IRR ~27%; severe-bear margin of safety widens"
+buy_below_fatpitch_1350,1350,88.2,10.0,174,30,5217,0,31.1,"25%/yr","Fat-pitch <= ~$1,350-1,400 on a macro/credit scare with thesis intact; base ~31%+, severe-bear ~breakeven"

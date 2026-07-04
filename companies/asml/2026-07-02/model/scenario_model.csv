@@ -1,0 +1,7 @@
+scenario,as_of_price_usd,horizon_yrs,rev2030_eurb,net_margin_pct,shares_2030_m,eurusd,eps2030_usd,exit_pe,price_target_usd,div_yield_pct,implied_irr_pct,notes
+as_of,1769.32,,,,,1.1423,,,,0.48,,"Last settled NASDAQ close 2026-07-02; ~385.4M sh; mcap ~$681.9B; EV ~$676B; ~62x trailing / ~43-47x fwd P/E; ~48x EV/FY25 FCF (~68-75x on normalized FCF)"
+bear,1769.32,4.5,40,28,365,1.1423,35.1,24,841,0.48,-14.8,"AI-capex digestion / semi down-cycle; rev below Investor-Day low; China DUV lost; de-rate to 24x on normalized cyclical earnings"
+base,1769.32,4.5,50,30,360,1.1423,47.6,28,1333,0.48,-5.7,"Mid Investor-Day 2030 model (EUR50B); AI EUV replaces China DUV; margin ~30%; de-rate to still-premium 28x monopoly multiple; buyback shrinks share count"
+bull,1769.32,4.5,60,32,355,1.1423,61.8,32,1977,0.48,2.9,"Top Investor-Day 2030 model (EUR60B); High-NA ramps, DRAM/HBM EUV pull; margin to 32%; market keeps a 32x monopoly premium"
+buy_below_8pct_base,960,4.5,50,30,360,1.1423,47.6,28,1333,0.48,8.0,"Price for 8% base 5y IRR -- ~46% below as_of = STARTER trigger (still ~44x fwd, i.e. only 'fair' for a monopoly, not cheap)"
+buy_below_core_10pct,821,4.5,50,30,360,1.1423,47.6,26,1237,0.48,10.0,"CORE buy-below: 10% IRR on a conservative 26x exit -- ~54% below as_of"

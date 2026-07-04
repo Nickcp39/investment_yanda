@@ -1,0 +1,77 @@
+claim,value,unit,as_of,source_id,tier,verification,destination
+as-of price (last close),597.04,USD,2026-07-02,YAHOO-AXON-PRICE,primary,verified_3plus_sources,M6
+previous close,593.96,USD,2026-07-01,AXON-SA-STATS,secondary,verified,M6
+52-week high (Yahoo adj close),870.97,USD,2025-08-07,YAHOO-AXON-PRICE,primary,verified,M6
+52-week high (stockanalysis intraday),885.92,USD,2026-07-02,AXON-SA-STATS,secondary,verified,M6
+52-week low (Yahoo adj close),345.94,USD,2026-04-10,YAHOO-AXON-PRICE,primary,verified,M6
+52-week low (stockanalysis intraday),339.01,USD,2026-07-02,AXON-SA-STATS,secondary,verified,M6
+diluted shares (Q1 2026),82.478,millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4/M6
+shares outstanding (current),80.60,millions,2026-07-02,AXON-SA-STATS,secondary,verified,M6
+market cap (derived diluted x price),49247,USD millions,2026-07-02,YAHOO-AXON-PRICE,secondary,derived_price_x_shares,M6
+market cap (stockanalysis basic),48120,USD millions,2026-07-02,AXON-SA-STATS,secondary,verified,M6
+net debt,112,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4/M6
+enterprise value (derived),49359,USD millions,2026-07-02,YAHOO-AXON-PRICE,secondary,derived,M6
+trailing GAAP P/E,239.8,x,2026-07-02,AXON-SA-STATS,secondary,derived,M6
+trailing non-GAAP P/E (FY25 EPS 6.85),87.2,x,2026-07-02,AXON-Q4-2025-PR,secondary,derived,M6
+forward P/E,71.5,x,2026-07-02,AXON-SA-STATS,secondary,verified,M6
+EV/FY25 adj EBITDA,69.5,x,2026-07-02,AXON-Q4-2025-PR,secondary,derived,M6
+price/sales (TTM),16.5,x,2026-07-02,AXON-SA-STATS,secondary,derived,M6
+TTM revenue,2983,USD millions,2026-03-31,AXON-SA-FINANCIALS,secondary,verified,M4/M6
+TTM GAAP diluted EPS,2.49,USD,2026-03-31,AXON-SA-STATS,secondary,verified,M4/M6
+Q1 2026 revenue,807,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified_2plus_sources,M2/M4
+Q1 2026 revenue growth,34,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M4
+Q1 2026 Software & Services revenue,354.5,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 Software & Services growth,35,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 Connected Devices revenue,452.8,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 Connected Devices growth,33,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 AI product revenue growth,700,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2
+Q1 2026 Dedrone (counter-drone) revenue growth,300,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2
+Q1 2026 ARR,1493,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 ARR growth,35,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M2/M3
+Q1 2026 net revenue retention,125,pct,2026-03-31,AXON-Q1-2026-PR,primary,verified,M3
+Q1 2026 future contracted bookings (RPO),14300,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M3
+Q1 2026 future bookings growth,44,pct YoY,2026-03-31,AXON-Q1-2026-PR,primary,verified,M3
+Q1 2026 adj EBITDA,202,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 adj EBITDA margin,25.0,pct,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 GAAP net income,169.3,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 GAAP diluted EPS,2.05,USD,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 non-GAAP net income,132.9,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 non-GAAP diluted EPS,1.61,USD,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 GAAP gross margin,59.1,pct,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 adj gross margin,61.6,pct,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 operating cash flow,-32,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 free cash flow,-55,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+Q1 2026 international revenue share,20,pct of total,2026-03-31,AXON-Q1-2026-QUARTR,secondary,verified,M2
+Q1 2026 cash and short-term investments,731,USD millions,2026-03-31,AXON-Q1-2026-PR,primary,verified,M4
+FY2026 revenue growth guidance,30-32,pct YoY,2026-05-06,AXON-Q1-2026-PR,primary,verified,M2/M6
+FY2026 adj EBITDA margin guidance,25.5,pct,2026-05-06,AXON-Q1-2026-PR,primary,verified,M4/M6
+FY2026 free cash flow guidance,450,USD millions,2026-05-06,AXON-Q1-2026-PR,primary,verified,M4/M6
+FY2026 operating cash flow guidance,600,USD millions,2026-05-06,AXON-Q1-2026-PR,primary,verified,M4
+FY2025 revenue,2800,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified_2plus_sources,M4
+FY2025 revenue growth,33,pct YoY,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 adj EBITDA,710.2,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 adj EBITDA margin,25.5,pct,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 non-GAAP net income,564.0,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 non-GAAP diluted EPS,6.85,USD,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4/M6
+FY2025 GAAP net income,124.7,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 GAAP operating loss,-62.1,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4
+FY2025 stock-based compensation,634.2,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M4/M5
+FY2025 free cash flow,155,USD millions,2025-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2025 ARR,1300,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M3
+FY2025 TASER revenue,913.9,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M2/M3
+FY2025 Software & Services revenue,1202.7,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M2/M3
+FY2025 Platform Solutions revenue,265.9,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M2/M3
+FY2025 Personal Sensors revenue,397.0,USD millions,2025-12-31,AXON-Q4-2025-PR,primary,verified,M2/M3
+2028 target revenue,6000,USD millions,2028-12-31,AXON-Q4-2025-PR,primary,verified_guidance,M6
+2028 target adj EBITDA margin,28,pct,2028-12-31,AXON-Q4-2025-PR,primary,verified_guidance,M6
+FY2024 revenue,2083,USD millions,2024-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2024 net income,377.0,USD millions,2024-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2024 GAAP operating income,58.5,USD millions,2024-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2024 stock-based compensation,325,USD millions,2024-12-31,AXON-SBC-2024,secondary,verified,M4
+FY2023 revenue,1561,USD millions,2023-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2022 revenue,1187,USD millions,2022-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+FY2021 revenue,863,USD millions,2021-12-31,AXON-SA-FINANCIALS,secondary,verified,M4
+Rick Smith direct ownership,3.8,pct,2026-04-16,AXON-PROXY-2026,secondary,verified,M3
+share structure,one-share-one-vote,structure,2026-04-16,AXON-PROXY-2026,secondary,verified_no_dual_class,M3
+company founded,1993,year,1993-09-01,AXON-FOUNDERS-DAY,secondary,verified,M3
+AI Ethics Board resignation (Taser drone),2022,year,2022-06-01,AXON-DRAFTONE-CONTROVERSY,commentary,verified_event,M5

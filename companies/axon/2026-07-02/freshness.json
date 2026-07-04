@@ -1,0 +1,103 @@
+{
+  "ticker": "AXON",
+  "as_of": "2026-07-02",
+  "generated_by": "runner",
+  "run_date": "2026-07-02",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of pins to the last available close = 2026-07-02 = $597.04, confirmed identically across Yahoo chart API + stockanalysis + Google Finance (3 independent sources). IMPORTANT LIVE CONTEXT: AXON melted up ~46% in the 8 sessions to 2026-07-02 (from $410.03 on 2026-06-22); $597.04 is a genuine recent close but sits at the top of a violent short-term run (fresh ~4-month high), which is the central M6 framing. verify_freshness.py re-fetches Yahoo (last close <= as_of => 597.04) independently and cross-checks these declared sources + the decision_card value. FILED data (FY2025 10-K reported 2026-02-24; Q1 2026 reported 2026-05-06) rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 597.04,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last close 2026-07-02 = $597.04. -31% off 52wk high (~$871 Yahoo / $885.92 SA); +73% off 52wk low (~$346 Yahoo / $339.01 SA). Mid-band -> no high/low-grab error. Prev close $593.96. Post +46%/8-session melt-up.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AXON", "fetched_at": "2026-07-02", "value": 597.04},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/axon/", "fetched_at": "2026-07-02", "value": 597.04},
+        {"source_name": "google_finance", "url": "https://www.google.com/finance/quote/AXON:NASDAQ", "fetched_at": "2026-07-02", "value": 597.04}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 49247000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "Derived 82.478M diluted shares x $597.04 = $49.25B. stockanalysis reports $48.12B on ~80.60M basic shares. Delta is a basic-vs-diluted share-count difference, not a data discrepancy.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/axon/", "fetched_at": "2026-07-02", "value": 48120000000},
+        {"source_name": "derived", "url": "82.478M diluted shares x $597.04", "fetched_at": "2026-07-02", "value": 49247000000}
+      ],
+      "cross_check_delta_pct": 2.34,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 870.97,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "Yahoo adjusted-close 52wk high $870.97 (2025-08-07); stockanalysis intraday 52wk high $885.92. Use the Yahoo close for the mechanical band; current $597.04 is well below either.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AXON", "fetched_at": "2026-07-02", "value": 870.97},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/axon/", "fetched_at": "2026-07-02", "value": 885.92}
+      ],
+      "cross_check_delta_pct": 1.72,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 345.94,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "note": "Yahoo adjusted-close 52wk low $345.94 (2026-04-10); stockanalysis intraday 52wk low $339.01. Current $597.04 is +73% above -> no low-grab.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AXON", "fetched_at": "2026-07-02", "value": 345.94},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/axon/", "fetched_at": "2026-07-02", "value": 339.01}
+      ],
+      "cross_check_delta_pct": 2.04,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 82.478,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "note": "Diluted weighted shares 82.478M from Q1 2026 release; stockanalysis basic shares ~80.60M. Use diluted 82.478M for the mcap identity (conservative for per-share math). Spread ~2.3% is basic-vs-diluted.",
+      "sources": [
+        {"source_name": "axon_q1_2026_release", "url": "https://www.prnewswire.com/news-releases/axon-reports-q1-2026-revenue-of-807-million-up-34-year-over-year-302764625.html", "fetched_at": "2026-07-02", "value": 82.478},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/axon/", "fetched_at": "2026-07-02", "value": 80.60}
+      ],
+      "cross_check_delta_pct": 2.33,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance RAISED at Q1 2026 print (2026-05-06): Revenue growth 30-32% YoY (up from 27-30% set at Q4-2025); Adjusted EBITDA margin ~25.5%; operating cash flow >$600M; free cash flow ~$450M. Ninth consecutive quarter of 30%+ revenue growth. Company also carries multi-year 2028 targets of $6.0B revenue and 28% adj EBITDA margin (set 2026-02-24). Next earnings ~early-Aug 2026 (Q2 2026).",
+      "as_of": "2026-05-06",
+      "sources": [
+        {"source_name": "axon_q1_2026_release", "url": "https://www.prnewswire.com/news-releases/axon-reports-q1-2026-revenue-of-807-million-up-34-year-over-year-302764625.html", "public_date": "2026-05-06", "fetched_at": "2026-07-02"},
+        {"source_name": "axon_q4_2025_release", "url": "https://www.prnewswire.com/news-releases/axon-reports-q4-2025-revenue-of-797-million-up-39-year-over-year-302696190.html", "public_date": "2026-02-24", "fetched_at": "2026-07-02"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material adverse litigation judgment identified as of as_of. The live qualitative risk is REPUTATIONAL/REGULATORY, not a disclosed loss: (1) 2022 -- most of Axon's AI Ethics Board resigned over the plan to mount TASERs on drones; (2) 2024-2025 -- ACLU and EFF publicly criticized Draft One (AI police-report generator) as 'designed to defy transparency/audits' (no saved draft, unclear AI-vs-officer authorship). These bear on the government/single-buyer relationship and AI-ethics exposure (M5), not a quantified liability. Standard product-liability exposure exists for a less-lethal weapons maker (TASER-related litigation is a recurring but managed cost). Historical Ethics-Board note re-verified as still the latest material governance-ethics event.",
+      "as_of": "2025-07-01",
+      "sources": [
+        {"source_name": "eff_draft_one", "url": "https://www.eff.org/deeplinks/2025/07/axons-draft-one-designed-defy-transparency", "public_date": "2025-07-01", "fetched_at": "2026-07-02"},
+        {"source_name": "govtech_aclu", "url": "https://www.govtech.com/biz/aclu-slams-ai-police-reports-and-axon-in-particular", "public_date": "2025-01-01", "fetched_at": "2026-07-02"}
+      ],
+      "pass": true
+    }
+  ]
+}
