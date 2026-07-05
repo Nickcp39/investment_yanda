@@ -1,0 +1,80 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,83.19,USD,2026-07-02,STOCKANALYSIS-MDT,B1,Confirmed 2nd source WEBSEARCH-MDT-PRICE same value same date; +5.04% that day
+C2,Last close price (cross-check),83.19,USD,2026-07-02,WEBSEARCH-MDT-PRICE,B1,Confirms STOCKANALYSIS-MDT
+C3,52-week high,106.33,USD,2026-07-04,STOCKANALYSIS-MDT,B1,Cross-checked WEBSEARCH-MDT-PRICE
+C4,52-week low,73.31,USD,2026-07-04,STOCKANALYSIS-MDT,B1,Cross-checked WEBSEARCH-MDT-PRICE
+C5,Shares outstanding,1280,millions,2026-07-04,STOCKANALYSIS-MDT,B1,~1.28B
+C6,Market cap,106.49,USD billions,2026-07-04,STOCKANALYSIS-MDT,B1,1.28B x 83.19 = 106.5B derived-consistent
+C7,Beta,0.58,ratio,2026-07-04,STOCKANALYSIS-MDT,B1,Low-beta defensive profile
+C8,Trailing P/E,22.30,ratio,2026-07-04,STOCKANALYSIS-MDT,B1,
+C9,Forward P/E,13.99,ratio,2026-07-04,STOCKANALYSIS-MDT,B1,
+C10,Dividend per share quarterly (Q1 FY27 declared),0.72,USD,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,Annualized 2.88
+C11,Dividend yield,3.41,pct,2026-07-04,STOCKANALYSIS-MDT,B1,vs price 83.19
+C12,Consecutive years of dividend increases,49,years,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,Dividend King status
+C13,Analyst rating consensus,Buy (30 analysts),rating,2026-07-04,STOCKANALYSIS-MDT,B1,
+C14,Analyst average price target,97.77,USD,2026-07-04,STOCKANALYSIS-MDT,B1,+17.5% vs 83.19
+C15,CIK,1613103,identifier,2026-07-05,SEC-EDGAR-SUBMISSIONS,A1,Fetch succeeded HTTP 200
+C16,FY2026 10-K filing date,2026-06-18,date,2026-06-18,SEC-EDGAR-SUBMISSIONS,A1,Accession 0001628280-26-044354 period ended 2026-04-24
+C17,FY2026 fiscal year end date,2026-04-24,date,2026-04-24,SEC-EDGAR-SUBMISSIONS,A1,Last Friday of April fiscal calendar
+C18,Most recent 10-Q period,2026-01-23,date,2026-02-24,SEC-EDGAR-SUBMISSIONS,A1,Q3 FY2026 filed 2026-02-24 accession 0001628280-26-011107
+C19,FY2026 total revenue,36364,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+8.4% reported +5.8% organic - highest annual rev growth in 10 years
+C20,FY2026 revenue growth reported,8.4,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C21,FY2026 revenue growth organic,5.8,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C22,FY2026 Cardiovascular segment revenue,13976,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+9.3% organic - largest and fastest-growing segment
+C23,FY2026 Neuroscience segment revenue,10287,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+3.1% organic
+C24,FY2026 Medical Surgical segment revenue,8815,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+2.9% organic - includes Hugo
+C25,FY2026 Diabetes segment revenue,3112,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+7.9% organic - smallest segment being spun off
+C26,FY2026 gross margin GAAP,65.0,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C27,FY2026 operating margin GAAP,17.8,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Flat YoY
+C28,FY2026 operating margin non-GAAP,24.4,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Down ~130bps YoY
+C29,FY2026 net income,4801,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C30,FY2026 GAAP diluted EPS,3.73,USD,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+3.3% YoY
+C31,FY2026 non-GAAP diluted EPS,5.53,USD,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+0.7% YoY
+C32,FY2026 operating cash flow,7330,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+4.1% YoY
+C33,FY2026 free cash flow,5426,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+4.6% YoY FCF margin ~14.9%
+C34,FY2026 shareholder returns total,4200,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Dividends 3639M + buybacks 1035M
+C35,FY2026 tariff impact on non-GAAP op margin,50,bps,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Full year drag
+C36,Q4 FY2026 total revenue,9807,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+9.9% reported +6.6% organic
+C37,Q4 FY2026 Cardiovascular segment revenue,3797,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+10.1% organic
+C38,Q4 FY2026 Neuroscience segment revenue,2751,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+3.0% organic
+C39,Q4 FY2026 Medical Surgical segment revenue,2388,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+5.1% organic
+C40,Q4 FY2026 Diabetes segment revenue,837,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+8.1% organic
+C41,Q4 FY2026 gross margin GAAP,65.4,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C42,Q4 FY2026 operating margin GAAP,19.1,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+300bps YoY
+C43,Q4 FY2026 operating margin non-GAAP,25.5,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Down ~230bps YoY
+C44,Q4 FY2026 net income,1243,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C45,Q4 FY2026 GAAP diluted EPS,0.96,USD,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+17.1% YoY
+C46,Q4 FY2026 non-GAAP diluted EPS,1.55,USD,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,-4.3% YoY but matched 22-analyst consensus per ALPHASTREET-Q4FY26
+C47,Q4 FY2026 Cardiac Ablation Solutions revenue growth global,78,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Standout product line driven by PFA
+C48,Q4 FY2026 Cardiac Ablation Solutions revenue growth US,124,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C49,Q4 FY2026 tariff impact on non-GAAP op margin,80,bps,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Larger than full-year average - intensified into year-end
+C50,FY2027 organic revenue growth guidance low,6.75,pct,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,
+C51,FY2027 organic revenue growth guidance high,7.25,pct,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,
+C52,FY2027 non-GAAP EPS guidance low,5.90,USD,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,+6.7% YoY at low end
+C53,FY2027 non-GAAP EPS guidance high,6.00,USD,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,+8.5% YoY at high end
+C54,Total debt,28.6,USD billions,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,LT debt component 26179M
+C55,Total shareholders equity,48.1,USD billions,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,
+C56,Debt-to-equity ratio,59.3,pct,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,
+C57,Cash and short-term investments,8.1,USD billions,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,1273M cash + 6848M current investments; MDT newsroom cites 9.2B cash and investments at FY26 close - minor variance both sources
+C58,Total assets,91.0,USD billions,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,
+C59,Total liabilities,42.8,USD billions,2026-07-05,STOCKANALYSIS-MDT-BALANCESHEET,B1,
+C60,Net debt derived,20.5,USD billions,2026-07-05,derived,B1,28.6B debt minus 8.1B cash/investments; upper estimate
+C61,S&P credit rating local currency LT,A stable,rating,2024-08-23,CBONDS-SP-MDT,B2,Not re-affirmed within this dossier window - flagged OPEN
+C62,Hugo RAS FDA clearance date,2025-12-03,date,2025-12-03,MEDTECHDIVE-HUGO-CLEARANCE,A2,First US clearance - urologic procedures prostatectomy nephrectomy cystectomy
+C63,Expand URO IDE study patient count,137,patients,2025,MDT-EXPANDURO-PR,A1,Met both primary safety and effectiveness endpoints
+C64,Hugo US trial peer-reviewed publication,BJU International 2026,citation,2026,BJUI-HUGO-STUDY,A2,Independent academic peer review - strongest corroboration tier available
+C65,Affera Sphere-9 FDA approval date,2024-10-24,date,2024-10-24,MDT-AFFERA-PR,A1,Second FDA-approved PFA modality - confirmed independently by FDA-SPHERE9
+C66,Medtronic PFA spend share,48,pct,2026,QSIGHT-PFA2026,B1,vs Boston Scientific 41% declining - early 2026 basis
+C67,Boston Scientific PFA spend share,41,pct,2026,QSIGHT-PFA2026,B1,Declining
+C68,Sphere-9 share of MDT own PFA spend,46,pct,2026,QSIGHT-PFA2026,B1,
+C69,Total PFA catheter units 2025,250000,units,2025,QSIGHT-PFA2026,B1,+20% YoY market-wide
+C70,CMS ASC cardiac ablation coverage effective date,2026-01-01,date,2026-01-01,CARDIOVASCULARBUSINESS-CMS-ASC,B2,Expands reimbursement access to outpatient settings
+C71,China revenue pct of total (FY2024 basis),7,pct,2024,MEDTECHDESIGN-CHINAEXPOSURE,B1,NOT re-confirmed for FY2026 - flagged priority gap O2
+C72,MDT tariff exposure to Chinese imports specifically,<1,pct of revenue,2025-2026,MEDTECHDESIGN-CHINAEXPOSURE,B1,Diversified manufacturing away from China more than device peers
+C73,Tariff exclusions petitioned/received,23,count,2025-2026,AINVEST-TARIFF-MDT,B2,Require periodic renewal
+C74,FY2026 tariff impact dollar estimate,185,USD millions,2025-2026,AINVEST-TARIFF-MDT,B2,Reduced from prior 200-350M range
+C75,Diabetes spinoff timeline,~18 months from announcement,timeframe,2026,YAHOO-MDT-SPINOFF,B1,Corroborated by MEDTECHDIVE-SPINOFF independently
+C76,Diabetes spinoff structure preferred path,IPO then full split,structure,2026,YAHOO-MDT-SPINOFF,B1,
+C77,Incoming Diabetes standalone CEO,Que Dallara,name,2026,YAHOO-MDT-SPINOFF,B1,Current MDT Diabetes president
+C78,FY2025 Diabetes segment revenue,2760,USD millions,2025-04-25,YAHOO-MDT-SPINOFF,B1,+10.7% reported +11.5% organic - last full year before spinoff announcement
+C79,MiniMed IPO proceeds sought (disambiguation pending),784,USD millions,2026,MDDIONLINE-MINIMED-IPO,B2,Implied valuation ~7.86B - not confirmed same transaction as C75-C77 - flagged OPEN O5

@@ -1,0 +1,58 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_adj_ebit_margin,est_da_pct_of_rev,exit_ev_ebitda_multiple,rev_terminal_usd_m,ebitda_terminal_usd_m,net_debt_terminal_usd_m,ev_terminal_usd_m,equity_terminal_usd_m,shares_terminal_m,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.035,0.145,0.05,9.0,22256,4340,17000,39060,22060,1475,14.95,-30.8,FAIL
+bear,5,0.035,0.150,0.05,9.5,23842,4768,16500,45299,28799,1475,19.52,-15.4,FAIL
+base,3,0.065,0.165,0.05,12.0,24248,5213,15500,62561,47061,1460,32.23,-10.6,FAIL
+base,5,0.070,0.175,0.05,12.5,28155,6335,13500,79185,65685,1445,45.45,0.1,FAIL
+bull,3,0.095,0.185,0.05,16.0,26356,6194,13000,99098,86098,1445,59.57,9.7,PASS
+bull,5,0.100,0.195,0.05,17.0,32329,7921,10000,134652,124652,1416,88.06,14.3,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2025 actuals: revenue $20.074B; GAAP operating margin 18.00%; adjusted EPS $3.06.
+#   D&A not separately, cleanly disclosed in sources reviewed this run (OPEN item, financial_quality.md) --
+#   estimated at 5% of revenue (a general device/IP-heavy medtech approximation, NOT BSX-confirmed) for all scenarios.
+# - Current setup: price $45.14; shares 1,490M; market cap $67.26B; net debt (Q1 2026 basis, PRE-Penumbra-close)
+#   ~$9.54B ($10.988B debt - $1.453B cash); EV ~$76.79B. Current implied EV/EBITDA (FY25 est. adj EBITDA ~$4.82B
+#   using a 19% adj-EBIT-margin proxy + 5% D&A): ~15.9x.
+# - CRITICAL CALIBRATION POINT: at the 52-week high ($108.14, 2025-09-08), BSX's implied EV/EBITDA was
+#   approximately 35x (using the same FY2025 EBITDA base and an approximate pre-Penumbra-financing net-debt level) --
+#   i.e., BSX has already de-rated from a growth-stock-premium multiple (~35x) to a still-respectable but far more
+#   moderate ~16x. This is a genuinely MASSIVE multiple compression (>50% cut) that explains most of the ~58% price
+#   decline even though revenue/EBITDA have continued growing throughout the period -- this is fundamentally a
+#   MULTIPLE-DERATING story layered on top of a real (but more modest) growth-deceleration story, not a story of
+#   collapsing absolute earnings.
+# - Net debt terminal figures explicitly INCLUDE the effect of the pending Penumbra acquisition (~$11B cash
+#   consideration, funded via cash + new debt, expected to close H2 2026) -- this is why net debt terminal in ALL
+#   three scenarios ($13-17B) is HIGHER than the current $9.54B base, reflecting the debt step-up upon close,
+#   partially offset over the 3-5yr horizon by FCF-funded deleveraging (faster in bull, slower in bear).
+# - Share count terminal reflects modest buyback-driven share-count reduction (via the ongoing $5B authorization,
+#   of which $2B was executed as an ASR in May 2026) -- more aggressive in bull (management has more FCF firepower
+#   and confidence to keep buying back), minimal in bear (FCF diverted to debt paydown/integration costs instead).
+# - BEAR: EP US PFA share continues eroding past the current ~41% toward a stable minority position (Medtrono-led
+#   category), Watchman standalone procedures keep declining without a concomitant-driven offset sufficient to
+#   fully compensate, Urology stays near-zero growth, Penumbra integration proves harder/costlier than guided,
+#   a FOURTH guidance cut occurs, securities litigation advances unfavorably -- multiple de-rates further toward
+#   9.0-9.5x (a "growth story broken" multiple, below even a typical mature/low-growth medtech peer average).
+# - BASE: FY2026 guidance holds at the May-27-cut level (~6.5-8% organic) WITHOUT a fourth cut, EP share loss
+#   decelerates and BSX stabilizes as a durable #2 player (~35-40% share) behind Medtronic, Watchman concomitant
+#   growth offsets standalone weakness, Urology stabilizes (does not reaccelerate), Penumbra integrates roughly as
+#   guided (dilutive yr1, breakeven yr2, modestly accretive by yr3+), securities litigation resolves without a
+#   material adverse outcome -- multiple normalizes to 12.0-12.5x, a level between the current crashed multiple and
+#   BSX's historical growth-premium multiple, reflecting a "de-rated but stable, still-above-average-growth medtech"
+#   re-rating.
+# - BULL: OPAL HDx/FARAVIEW ecosystem-lock-in penetration scales well past current ~33% and correlates with BSX's
+#   PFA share stabilizing/modestly recovering (validating the software-ecosystem moat thesis), Watchman standalone
+#   reaccelerates, Urology finds a new growth driver, Penumbra becomes accretive ahead of schedule, litigation
+#   resolves favorably -- multiple re-rates back toward 16-17x, a MODERATE recovery toward (not all the way back to)
+#   the historical ~35x growth-stock-premium level, reflecting restored (not perfect) confidence in the growth
+#   narrative.
+# - Dividend: BSX pays NO dividend (confirmed, facts.md E4) -- IRR is entirely price-appreciation-driven, no yield
+#   contribution to add, unlike a typical dividend-paying large-cap.
+# - 8% hurdle: bear and base scenarios FAIL the hurdle at BOTH 3yr and 5yr horizons (base 5yr is approximately FLAT
+#   at +0.1%, essentially no margin of safety); bull PASSES at both horizons. This is the SAME overall shape as the
+#   GEHC exemplar (only bull clears the hurdle) but for a DIFFERENT underlying reason -- GEHC's base case failure
+#   reflects a genuinely moderate-growth, margin-compressing business trading at a peer premium; BSX's base case
+#   failure reflects a genuinely HIGH-growth business that has ALREADY de-rated ~55% in multiple terms (35x->16x)
+#   and where the base case requires the multiple to hold roughly at the current already-crashed level (not
+#   recover further) for a ~0% 5yr IRR -- i.e., BSX's downside case is "the multiple stays crashed," not "the
+#   business itself deteriorates further," which is a meaningfully different (arguably more favorable) risk
+#   profile than GEHC's base case.

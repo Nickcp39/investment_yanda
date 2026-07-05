@@ -1,0 +1,11 @@
+FRESHNESS CHECK -BSX as_of 2026-07-05  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=45.14 refetched_yahoo=45.13999938964844 (2026-07-02) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 42.68 <= 45.14 <= 108.14
+  [PASS] T2 low/high hug: +5.8% off low, -58.3% off high
+  [PASS] T3 market-cap identity: 1490M x 45.14 = 0.067T vs card 0.067T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -58.3% vs card-implied -58.3% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 45.14 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-04-30 is 66d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-05-27 (39d)

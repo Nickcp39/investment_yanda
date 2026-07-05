@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSX 决策简报 v1 · as_of 2026-07-05</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#16331c,#1a1d24);border-color:#2c5a3a}
+  .verdict .val{color:var(--grn)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Boston Scientific (BSX) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-05 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65-70%)</b> · 来源 SEC EDGAR(403,submissions JSON 成功)+ 官方 IR + StockAnalysis + Yahoo chart API + 行业竞争数据</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">STARTER (小仓)</div><div class="sub" style="margin:0">初始 2% · 上限 8%</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">强增长,护城河真实承压测试</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$45.14</div><div class="sub" style="margin:0">市值 ~$67.26B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $108.14</div><div class="val neg">−58.3%</div><div class="sub" style="margin:0">主要是估值倍数压缩,非盈利崩溃</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>BSX 是心血管(Cardiovascular,66% 营收,+20.8%有机)+ MedSurg(34%,+6.7%有机)两大分部的高增长器械特许经营模式,2021-2025 营收几乎翻倍($11.9B→$20.1B),营业利润率提升~800基点——财务趋势明显强于 GEHC 范例。但旗舰产品 Farapulse 脉冲场消融(PFA)遭遇了近年大盘医械里罕见的、证据链最清晰的"先发优势快速瓦解"案例:<b>美国 PFA 市场份额从 2023 年的 100% 垄断,在约 2.5 年内跌到 2026 年初的 ~41%,美敦力(Medtronic)反超至 ~48%</b>。</p>
+    <p><b>本案与 GEHC 范例的关键差异:</b>股价下跌 ~58% 背后,本 dossier 独立测算显示<b>主要是估值倍数压缩</b>(EV/EBITDA 从52周高点隐含的~35倍压缩到当前~16倍,压缩逾50%),而非绝对盈利崩溃——EP 业务本身绝对收入仍 +22% 有机增长。<b>binding constraint 是复合型但偏有利</b>:业务质量本身强劲(不像 GEHC 那样本身有疑问),价格已经真实反映了大部分坏消息,但 EP 份额走势、Watchman 单独手术走弱原因、在审证券集体诉讼、未完成的 $14.5B Penumbra 并购这四项未解变量,使 IC 五灵魂小组以 3:2 分裂通过<b>小仓位 STARTER</b>,而非一致 WATCH 或更大仓位。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>SEC 403 但 submissions JSON API 成功;24源77条claim;完整度 ~65-70%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>器械特许经营模式连贯且有证据支撑;5年营收翻倍利润率+800bp</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num neg">−1</td><td>Farapulse 美国份额 100%→41%,美敦力反超48%——真实、快速的护城河压力测试</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num pos">+1</td><td>5年财务趋势强劲;杠杆适中(1.87x);Q1 GAAP/调整后EPS 差异未解释</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−1</td><td>两条致命路径已部分兑现(EP份额、Watchman单独手术);在审证券诉讼;未完成大并购</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num pos">+1</td><td>EV/EBITDA ~35x→~16x——主要是估值修正,非盈利故事破裂</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">Trailing P/E</div><div class="val">18.89×</div><div class="sub" style="margin:0">Fwd 13.15×(可能滞后于5月27日二次下调)</div></div>
+    <div class="card"><div class="lbl">EV/EBITDA (52周高→现在)</div><div class="val pos">~35x → ~16x</div><div class="sub" style="margin:0">压缩逾50%</div></div>
+    <div class="card"><div class="lbl">base 5y IRR</div><div class="val warn">+0.1%</div><div class="sub" style="margin:0">bull +14.3% / bear −15.4%</div></div>
+    <div class="card"><div class="lbl">美国 PFA 份额</div><div class="val neg">41%</div><div class="sub" style="margin:0">2023年100%→美敦力反超48%</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据(Q1 2026, 2026-03-31 + FY2025 + 三次指引下调时间线)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num">$20,074M (+19.9% / 有机+15.8%)</td><td>官方 IR</td></tr>
+      <tr><td>FY2025 营业利润率</td><td class="num pos">18.00% (5年+800bp)</td><td>StockAnalysis</td></tr>
+      <tr><td>Q1 2026 总营收</td><td class="num">$5,203M (+11.6% / 有机+9.4%)</td><td>官方 IR</td></tr>
+      <tr><td>Q1 2026 EP(电生理)有机增长</td><td class="num pos">+22% (美国+18%/国际+30%)</td><td>二手盈利报道 — 待10-Q原文确认</td></tr>
+      <tr><td>Q1 2026 Watchman</td><td class="num warn">$506M (+19.2%),但单独手术2月起下滑</td><td>二手盈利报道</td></tr>
+      <tr><td>指引下调 1(2/4发布,原始指引)</td><td class="num">营收+10.5~11.5% / EPS $3.43-3.49</td><td>官方 8-K</td></tr>
+      <tr><td>指引下调 2(4/22)</td><td class="num warn">营收+7.0~8.5% / EPS $3.34-3.41</td><td>官方 8-K</td></tr>
+      <tr><td>指引下调 3(5/27, Bernstein会议)</td><td class="num neg">有机+6.5~8.0%(Q2仅5-7%)</td><td>二手会议纪要,多源印证</td></tr>
+      <tr><td>在审证券集体诉讼</td><td class="num neg">Mahoney等5名高管被列被告</td><td>Levi&Korsinsky等多家律所</td></tr>
+      <tr><td>Penumbra 并购(待完成)</td><td class="num warn">$14.5B EV,~$11B现金(债务+现金融资)</td><td>官方 8-K</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>三情景 IRR</h2>
+    <table>
+      <tr><th>情景</th><th class="num">3年IRR</th><th class="num">5年IRR</th><th>vs 8% 门槛</th></tr>
+      <tr><td>Bear(EP份额持续流失+Watchman/Urology不企稳+Penumbra拖累+第四次下调)</td><td class="num neg">−30.8%</td><td class="num neg">−15.4%</td><td>FAIL</td></tr>
+      <tr><td><b>Base(指引在5/27水平企稳+EP稳居老二+Penumbra按计划整合)</b></td><td class="num warn">−10.6%</td><td class="num warn">+0.1%</td><td>FAIL</td></tr>
+      <tr><td>Bull(OPAL HDx生态护城河成立+EP份额企稳+Penumbra提前增厚+重估)</td><td class="num pos">+9.7%</td><td class="num pos">+14.3%</td><td>PASS</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">价位</th><th class="num">vs $45.14</th><th>备注</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">~$52-58</td><td class="num">+15%~+28%</td><td>无基本面确认前不追高</td></tr>
+      <tr><td><b>STARTER(现价/52周低位区)</b></td><td class="num">$42–45</td><td class="num">−7%~0%</td><td>base case 已接近打平,估值折扣真实存在</td></tr>
+      <tr><td>Add / 评 CORE</td><td class="num">$36–39</td><td class="num">−14%~−20%</td><td>需第四次下调或诉讼不利等触发</td></tr>
+      <tr><td>深度价值</td><td class="num">~$30</td><td class="num">−34%</td><td>接近bear情景3年终值,需严重恶化</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 复合型但偏有利。</b>业务本身强劲(不像GEHC那样质量存疑),价格已大幅反映坏消息(35x→16x),但四项未解变量(EP份额走势、Watchman单独手术原因、在审诉讼、未完成Penumbra并购)导致仓位小而非无。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A EP份额跌破~35%无企稳信号(至Q4 2026)</td><td>41%</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B 第四次指引下调(同因)</td><td>已下调3次</td><td><span class="pill y">黄 — 密切关注7/29</span></td></tr>
+      <tr><td>K-C Watchman单独手术连2季负增长无解释</td><td>2月起下滑</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-D 诉讼揭示真实隐瞒(非仅指控)</td><td>诉讼在审</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-E Penumbra完成后杠杆&gt;~3.0x无去杠杆计划</td><td>1.87x(交割前)</td><td><span class="pill g">绿 — 待H2交割后重估</span></td></tr>
+      <tr><td>K-F 价格&gt;$55-58无基本面确认</td><td>$45.14</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC(段永平主审,3:2 真实分歧)</h2>
+    <p>五票初始 2 STARTER / 3 WATCH,一轮 critique 后收敛为 <b class="pos">3 STARTER(小仓)</b> / 2 WATCH(Munger、Klarman 维持 WATCH)。Buffett 借"运通色拉油丑闻"类比转向 STARTER——生意本质没坏(EP绝对营收仍+22%),价格给了真折扣;段永平、Marks 认为估值关已通过,情绪面已过度反应。Munger、Klarman 坚持 WATCH——认为 EP走势、Watchman原因、诉讼、Penumbra整合四个独立未解变量叠加,下行边界尚未充分界定。<b>小仓位(2%)正是调和分歧的机制</b>:足够大以在牛市情景兑现时有意义,足够小以尊重 WATCH 阵营的合理担忧。</p>
+  </div>
+
+  <div class="sec">
+    <h2>职业视角:Farapulse 先发优势瓦解案例(AI/医械竞争视角)</h2>
+    <p>本 dossier 最具决策价值的单一数字:BSX 的 Farapulse PFA <b>美国市场份额从 2023 年 100% 垄断,在约 2.5 年内跌至 2026 年初 ~41%</b>,美敦力(Medtronic,2024年1月才上市 PulseSelect)已反超至 <b>~48%</b>,强生 Varipulse ~11%、雅培 Volt(刚上市)~1%。BSX 拥有真实技术差异化(非热消融、约20项专利)、最大累计临床证据基础(50万+患者)、更优的4年期长期疗效数据,<b>即便如此仍未能守住份额</b>——这清楚证明:<b>先发优势+真实技术优势,若没有结构性(而非单纯时间窗口)壁垒,在资金雄厚的追赶者认真进入后会快速瓦解</b>。BSX 目前最好的反制手段(OPAL HDx 建图系统+FARAVIEW 软件生态,仅兼容自家硬件)是真实但仅约1/3 Farapulse 客户采用,尚未证明能在规模化后守住份额。这对判断任何中国 vs 西方 AI 影像/AI诊断先发优势论题都直接适用:关键问题从来不是"谁先到",而是"具体是什么阻止了资金雄厚的快速追随者在2-3年内复制"。另需注意:与 GEHC(中国收入单独披露,可直接对比联影医疗)不同,BSX <b>不单独披露中国收入</b>(并入"新兴市场"大类),本 dossier 的中国专项发现远薄于 GEHC 范例。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65-70%,<b>非 COMPLETE</b>。OPEN 项:Watchman 单独/伴随手术数字拆分未获取、3月30日价格缺口原因未完全确认、Q1 2026 GAAP/调整后EPS差异未解释来源(O5)、中国专项收入从未单独披露(O3)、未获取电话会逐字稿(O8)。所有载荷性数字回挂官方 IR 或 SEC submissions JSON API 确认的申报日历,交叉验证 ≥2 独立源;价格 $45.14 双源确认精确匹配。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

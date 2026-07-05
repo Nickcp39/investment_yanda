@@ -1,0 +1,97 @@
+{
+  "ticker": "TMO",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "diversified_life_science_tools_compounder_biosecure_tailwind_vs_unresolved_china_instrument_competition",
+  "as_of_price": 523.44,
+  "as_of_market_cap": 194520000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (both the FY2025 10-K .htm document and the browse-edgar company search) returned HTTP 403 on first attempt; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to stocktitan.net structured filing mirrors + stockanalysis.com aggregated financials + official Thermo Fisher IR press releases + multi-source earnings-call-transcript corroboration (Motley Fool, Investing.com, GenomeWeb, FierceBiotech, cross-checked across >=4 independent outlets). Price $523.44 confirmed via 2 independent sources (independent Yahoo re-fetch via the repo's own market_data_download.fetch_yahoo + stockanalysis.com), both dated to the 2026-07-02 close -- EXACT match to the frozen as_of_price input. ~81 claims registered in claim_ledger.csv; 23 sources in source_register.md. Completeness ~65% -- key gaps: China-specific revenue % and growth rate cannot be precisely quantified (worse disclosure granularity than the GEHC exemplar, O2), FY2025 free cash flow decline (-13.5% YoY) root cause unconfirmed (O3), AI-attributable revenue/attach-rate completely unquantified (O7), no earnings-call transcript directly read this run (O9). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["TMO-10K-FY25", "TMO-STOCKTITAN-10K", "TMO-IR-Q4PR", "TMO-Q1-26-EARNINGS-MULTI", "YAHOO-TMO-PRICE", "TMO-SA-STATS"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "TMO operates a genuinely diversified three-layer life-science-tools model: capital equipment (Analytical Instruments -- mass spec/chromatography/EM), consumables/reagents/bioproduction (Life Sciences Solutions, fastest-growing at +7.7% FY2025), and CRO/CDMO services annuity (Laboratory Products and Biopharma Services / PPD + Clario, 53.8% of revenue, +4% organic Q1 2026). This is a more diversified structure than GEHC's two-layer (installed-base + consumables) model. The BIOSECURE Act (signed Dec 2025) creates a genuine, quantified, guidance-embedded structural tailwind for TMO's largest segment -- the $8.875B Clario acquisition's ~$900M FY2026 revenue contribution is already reflected in raised guidance, not a speculative narrative. TMO's AI strategy (Orbitrap AI-software bundle, NVIDIA partnership, MSAID/Proteinaceous acquisitions) is instrument-embedded and demonstrably shipping (ASMS 2026 product launches), directly parallel to GEHC's imaging-AI bet but applied to the life-science-instrumentation layer. Signal = +1 (mildly positive): the mechanism is coherent, more diversified than the GEHC comparable, and includes one genuinely evidenced positive catalyst (BIOSECURE/Clario) that GEHC's dossier did not have an equivalent for.",
+      "drivers": ["TMO-STOCKTITAN-10K", "TMO-IR-Q4PR", "APPLIEDCLINICALTRIALS-CLARIO", "BIOPHARMABOARDROOM-CASPER-JPM", "BUSINESSWIRE-NVIDIA-TMO"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Moat is GOOD, broader than GEHC's across three distinct recurring-revenue engines (instruments, consumables, CRO/CDMO services). The Orbitrap mass-spectrometry franchise is genuinely proprietary and time-tested; bioproduction consumables are a real, broad-based recurring-revenue engine; the CRO/CDMO layer benefits from a real POLICY TAILWIND (BIOSECURE) rather than a policy headwind, the mirror image of GEHC's China-VBP finding. However, Analytical Instruments -- the segment where AI differentiation is concentrated -- is the ONLY segment in outright organic decline (-2% Q1 2026), and this dossier could NOT determine whether Chinese domestic instrument competitors are gaining share (the direct parallel to GEHC's United-Imaging finding) due to a disclosure/search gap, not a confirmed absence of the risk. AI-attributable revenue remains completely unquantified, exactly parallel to GEHC's O7 gap. Operator grade 4/5 (longer-tenured, more transparent, more disciplined than GEHC's Arduini at 3/5). Signal = 0: moat is real and more diversified than GEHC's, but the one segment most analogous to GEHC's China battleground (Analytical Instruments) carries an unresolved competitive-exposure question of its own.",
+      "drivers": ["TMO-IR-Q4PR", "TMO-Q1-26-EARNINGS-MULTI", "SELECTSCIENCE-ASMS2026", "BULLFINCHER-TMO-GEOREVENUE"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Adjusted operating margin has been STABLE-TO-SLIGHTLY-IMPROVING across the periods reviewed: 22.6% (FY2024) -> 22.7% (FY2025), a materially more favorable trajectory than GEHC's three-consecutive-period compression (16.3%->15.3%->13.5%). Revenue shows a credible normalization-then-reacceleration pattern post-COVID (-4.58% FY2023 -> +0.05% FY2024 -> +4% FY2025 -> +6% Q1 2026 reported), with FY2026 guidance RAISED (not cut) at the Q1 2026 report. However, FY2025 free cash flow declined -13.5% YoY ($7.324B -> $6.337B) despite revenue/earnings growth, cause unconfirmed this run, and leverage rose materially post-Clario (company-disclosed 3.5x net debt/adjusted EBITDA). Signal = +1: financial trajectory is more favorable than the GEHC comparable (stable margin, raised guidance) but the FCF decline and leverage increase are real, unresolved flags that prevent a stronger signal.",
+      "drivers": ["TMO-IR-Q4PR", "TMO-SA-FINANCIALS", "TMO-SA-BALANCESHEET", "TMO-Q1-26-EARNINGS-MULTI"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "No single kill path rises to high-confidence imminent thesis-killer. The most serious, LEAST-RESOLVED risk (directly parallel to GEHC's China finding) is whether Analytical Instruments' academic/government softness (spanning both the US and China) reflects a temporary funding cycle -- as management describes it -- or the early signs of Chinese-competitor structural substitution; this dossier's sources could not resolve this either way, unlike GEHC's dossier which eventually closed the equivalent China-revenue gap via an independent aggregator. The BIOSECURE/Clario tailwind is real and guidance-embedded but carries genuine political-durability risk (a new law, signed Dec 2025, not yet multi-year-proven). The FCF decline + rising leverage combination is a real, monitorable risk, though mitigated by Casper's long, disciplined capital-allocation track record and a pending divestiture ($1.1B Astorg) providing a concrete deleveraging offset. Signal = 0: real, multi-pronged but not acutely alarming risk registry, with one major evidence gap (China-instrument-competition) that could resolve either constructively or unfavorably on the next refresh.",
+      "drivers": ["TMO-Q1-26-EARNINGS-MULTI", "VISIONLIFESCIENCES-BIOSECURE", "BULLFINCHER-TMO-GEOREVENUE"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "At $523.44 (~$194.52B market cap, ~$234.4B EV using Q1 2026 net debt ~$39.9B): EV/FY2025-adj-EBITDA (est.) ~19.0x -- this closely cross-validates the independently-sourced screener range (17.97x-19.32x), and sits essentially IN LINE with the closest disclosed peer (Danaher, ~18.8x) and modestly BELOW TMO's own 5-year historical average (~20.2x). This is a materially more favorable peer-relative valuation finding than GEHC's 19% premium to Siemens Healthineers. Price sits -18.7% off the 52-week high ($643.99) and +29.7% above the 52-week low ($403.36) -- squarely in the middle of its range, NOT a low-hug or high-hug tripwire situation, independently verified (2 sources, exact match to frozen input). 3-scenario IRR: bear -20.8%(3yr)/-13.6%(5yr); base +0.3%(3yr)/+4.6%(5yr); bull +12.8%(3yr)/+14.1%(5yr). Only the bull case clears the 8% hurdle at either horizon, though the base case comes meaningfully closer to the hurdle than the GEHC comparable's near-flat/negative base case. Signal = 0: price is roughly fair-to-modestly-attractive relative to peer and own history, but does not yet offer a base-case margin of safety, meaning the investment decision still hinges on unproven bull-case catalysts or a further price decline toward the ~$440-450 STARTER zone.",
+      "drivers": ["YAHOO-TMO-PRICE", "TMO-SA-STATS", "AAII-DANAHER-VALUATION", "GURUFOCUS-TMO-EVEBITDA"]
+    }
+  ],
+  "business_verdict": "good_to_very_good_more_diversified_than_gehc_comparable",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 6,
+  "buy_below_price": 450,
+  "starter_zone": "$440-450 (base case 5yr IRR crosses the 8% hurdle with a real, if modest, cushion at this level; well above the 52wk low of $403.36, i.e., does not require an extreme drawdown to reach)",
+  "add_zone": "First STARTER at $440-450. Add toward CORE only as: (a) direct evidence (earnings-call transcript + targeted search for named Chinese analytical-instrument competitors) confirms Analytical Instruments softness is cyclical/funding-driven, not competitive-share-loss-driven, (b) BIOSECURE/Clario ~$900M FY2026 revenue contribution is confirmed tracking on schedule for 1-2 more quarters, (c) FY2025 FCF decline is explained and FY2026 FCF recovers toward the FY2024 level (~$7.3B), (d) leverage (3.5x net debt/adjusted EBITDA) shows a credible deleveraging trajectory. No addition at current price without at least one of these confirmations.",
+  "trim_or_no_chase_zone": "Do not chase above ~$570-580 without a corresponding fundamentals upgrade -- pure multiple expansion toward/above the 52wk high would push the base case further underwater relative to the hurdle. Reassess toward AVOID on any of: a named Chinese analytical-instrument competitor confirmed gaining material disclosed share, BIOSECURE Act enforcement weakening materially, FY2026 FCF failing to recover, or net-debt/adjusted-EBITDA deteriorating materially past the current 3.5x without a credible deleveraging plan.",
+  "binding_constraint": "COMPOUND, BUT MEANINGFULLY LESS SEVERE THAN THE GEHC COMPARABLE -- price does not yet offer a base-case margin of safety (5yr IRR +4.6%, below the 8% hurdle), AND one major evidence gap (whether Analytical Instruments' softness reflects a cyclical funding downturn or the early signs of Chinese-competitor structural substitution, directly parallel to GEHC's China-revenue question) remains unresolved. However, TMO's business quality reads more favorably than GEHC's on nearly every dimension examined: a longer-tenured, more transparent, more disciplined operator (Casper, 4/5 vs Arduini's 3/5); a stable-to-improving margin trajectory (22.6%->22.7%) vs GEHC's three-period compression; a valuation roughly IN LINE with its closest peer (Danaher ~18.8x vs TMO's ~19.0x) rather than at a 19% premium; and a genuine, guidance-embedded POLICY TAILWIND (BIOSECURE/Clario) in its largest segment rather than a policy headwind. This is not a 'great business, wrong price' (GEV) or 'great business, right price, just finish the research' (MSFT) case, nor is it as unresolved as GEHC's 'business quality itself is ambiguous, price is roughly fair, open questions remain genuinely unresolved' case -- it is closer to a 'good-to-very-good business, fair-and-peer-in-line price, ONE major open question' case, which produces WATCH but through a narrower, more nearly-resolved gap than the GEHC comparable.",
+  "kill_criteria": [
+    "K-A Analytical Instruments structural: organic growth remains negative for 2 more consecutive quarters AND a named Chinese competitor is confirmed gaining disclosed share -> downgrade toward AVOID; re-underwrite as GEHC-style structural erosion.",
+    "K-B BIOSECURE reversal: BIOSECURE Act enforcement weakens materially (legal challenge, political rollback, non-enforcement pattern) OR the Clario ~$900M FY2026 revenue contribution is confirmed shortfalling -> re-underwrite the CRO/CDMO growth assumption downward across all scenarios.",
+    "K-C FCF deterioration continues: FY2026 FCF fails to recover toward the FY2024 level (~$7.3B) or continues declining -> the FY2025 FCF decline is confirmed as a trend, not a one-off; treat as a structural quality concern.",
+    "K-D Leverage deterioration: net debt/adjusted EBITDA rises materially above the current 3.5x (company-disclosed) without a credible deleveraging plan (including pending Astorg divestiture proceeds) -> credit-quality concern, downgrade.",
+    "K-E Valuation discipline: price rises above ~$570-580 without a corresponding fundamentals upgrade (pure multiple expansion) -> no-chase, reaffirm WATCH or downgrade attractiveness further."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous WATCH with zero change after critique, and I do not see a strong basis to dissent toward either STARTER or AVOID. What I would flag most prominently: TMO reads as a meaningfully STRONGER business than the GEHC exemplar on almost every dimension this pipeline examines -- operator quality, margin stability, peer-relative valuation, and a genuinely evidenced positive policy catalyst (BIOSECURE/Clario) rather than a policy headwind -- yet it lands on the same WATCH label because the SAME category of open question (precise China/domestic-competitor exposure in the one segment most analogous to GEHC's imaging battleground) remains unresolved here, and the base case still falls modestly short of the 8% hurdle. The single most decision-useful action for the next refresh is narrow and specific: search directly for named Chinese mass-spectrometry/chromatography/analytical-instrument competitors and any disclosed share data, the same way the Bullfincher geographic-revenue aggregator resolved GEHC's equivalent China question mid-dossier. If that search comes back showing no meaningful Chinese competitive threat in high-end analytical instruments (plausible, given TMO's proprietary Orbitrap franchise operates at a higher technology tier than commodity CT/MRI hardware), this dossier's verdict would likely move toward STARTER on the next refresh even without a lower price. If it comes back showing a GEHC-style substitution pattern, the verdict should move toward a more cautious WATCH or even AVOID. I would also note that the FY2025 FCF decline (-13.5% YoY) deserves more attention than a single open item suggests -- if it does NOT recover in FY2026, that alone would be sufficient to keep this at WATCH regardless of how the China question resolves.",
+  "sources_used": [
+    {"source_id": "TMO-10K-FY25", "public_date": "2026-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000097745/000009774526000018/tmo-20251231.htm"},
+    {"source_id": "TMO-STOCKTITAN-10K", "public_date": "2026-02", "url_or_path": "https://www.stocktitan.net/sec-filings/TMO/10-k-thermo-fisher-scientific-inc-files-annual-report-277640f5ca53.html"},
+    {"source_id": "TMO-IR-Q4PR", "public_date": "2026-01", "url_or_path": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"},
+    {"source_id": "TMO-Q1-26-EARNINGS-MULTI", "public_date": "2026-04-23", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2026/04/23/thermo-fisher-tmo-q1-2026-earnings-transcript/"},
+    {"source_id": "TMO-SA-FINANCIALS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/tmo/financials/"},
+    {"source_id": "TMO-SA-BALANCESHEET", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/tmo/financials/balance-sheet/"},
+    {"source_id": "TMO-SA-STATS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/tmo/"},
+    {"source_id": "YAHOO-TMO-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/TMO"},
+    {"source_id": "APPLIEDCLINICALTRIALS-CLARIO", "public_date": "2026-03", "url_or_path": "https://www.appliedclinicaltrialsonline.com/view/thermo-fisher-acquisition-clario-clinical-trial-data"},
+    {"source_id": "CLINICALLAB-ASTORG-DIVESTITURE", "public_date": "2026", "url_or_path": "https://www.clinicallab.com/thermo-fisher-to-divest-microbiology-business-to-astorg-for-1-1-billion-28636"},
+    {"source_id": "BULLFINCHER-TMO-GEOREVENUE", "public_date": "2026", "url_or_path": "https://bullfincher.io/companies/thermo-fisher-scientific/revenue-by-geography"},
+    {"source_id": "VISIONLIFESCIENCES-BIOSECURE", "public_date": "2026", "url_or_path": "https://visionlifesciences.com/insights/biosecure-act-pharma-impact-2026"},
+    {"source_id": "BIOPHARMABOARDROOM-CASPER-JPM", "public_date": "2026-01", "url_or_path": "https://www.biopharmaboardroom.com/company-results/63/4633/marc-n-casper-signals-strong-start-to-2026-as-thermo-fisher-scientific-advances-growth-strategy-and-innovation-pipeline.html"},
+    {"source_id": "BUSINESSWIRE-NVIDIA-TMO", "public_date": "2026-01-12", "url_or_path": "https://www.businesswire.com/news/home/20260112999582/en/Thermo-Fisher-Scientific-Announces-Strategic-Collaboration-With-NVIDIA-Leveraging-AI-to-Advance-Scientific-Instrumentation-and-Accelerate-Laboratory-Performance"},
+    {"source_id": "SELECTSCIENCE-ASMS2026", "public_date": "2026-05", "url_or_path": "https://www.selectscience.net/article/thermo-fisher-scientific-unveils-next-generation-innovations-at-asms-2026-to-accelerate-the-path"},
+    {"source_id": "GURUFOCUS-TMO-EVEBITDA", "public_date": "2026-07", "url_or_path": "https://www.gurufocus.com/term/enterprise-value-to-ebitda/TMO"},
+    {"source_id": "AAII-DANAHER-VALUATION", "public_date": "2026-06-03", "url_or_path": "https://www.aaii.com/investingideas/article/492038-is-danaher-corporation-dhr-overvalued"}
+  ]
+}

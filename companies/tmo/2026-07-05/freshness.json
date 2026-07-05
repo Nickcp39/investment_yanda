@@ -1,0 +1,214 @@
+{
+  "ticker": "TMO",
+  "as_of": "2026-07-05",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. Price sits -18.7% off 52wk high / +29.7% above 52wk low -- squarely in the middle of the range, well outside the 3% low/high-hug band on both ends, so this is NOT a hug situation (T2 should pass cleanly on distance alone).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 523.44,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TMO",
+          "fetched_at": "2026-07-05",
+          "value": 523.44
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/tmo/",
+          "fetched_at": "2026-07-05",
+          "value": 523.44
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 194520000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/tmo/",
+          "fetched_at": "2026-07-05",
+          "value": 194520000000
+        },
+        {
+          "source_name": "derived",
+          "url": "371.62M shares x $523.44",
+          "fetched_at": "2026-07-05",
+          "value": 194521000000
+        }
+      ],
+      "cross_check_delta_pct": 0.001,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 643.99,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/tmo/",
+          "fetched_at": "2026-07-05",
+          "value": 643.99
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TMO",
+          "fetched_at": "2026-07-05",
+          "value": 638.18
+        }
+      ],
+      "cross_check_delta_pct": 0.9,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 403.36,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/tmo/",
+          "fetched_at": "2026-07-05",
+          "value": 403.36
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TMO",
+          "fetched_at": "2026-07-05",
+          "value": 403.47
+        }
+      ],
+      "cross_check_delta_pct": 0.03,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 371.62,
+      "unit": "millions",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/tmo/",
+          "fetched_at": "2026-07-05",
+          "value": 371.62
+        },
+        {
+          "source_name": "stocktitan_10k_mirror",
+          "url": "https://www.stocktitan.net/sec-filings/TMO/10-k-thermo-fisher-scientific-inc-files-annual-report-277640f5ca53.html",
+          "fetched_at": "2026-07-05",
+          "value": 371.484244
+        }
+      ],
+      "cross_check_delta_pct": 0.035,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance (raised at Q1 2026 report, ~2026-04-23): revenue $47.3B-$48.1B (up from $46.3B-$47.2B), representing +6% to +8% reported growth (+3-4% organic); adjusted EPS $24.64-$25.12 (up from $24.22-$24.80). Clario acquisition adds ~$900M revenue and $0.32 adjusted EPS (net of financing costs) to the guide. CONFIRMED still the latest authoritative guidance as of as_of 2026-07-05: Q2 2026 earnings (the next scheduled guidance-update event) is confirmed via a 2026-07-01 BusinessWire notice to occur 2026-07-23 -- i.e., AFTER this dossier's as_of date, so no newer guidance revision exists to find. Also confirmed: Q2 2026 quarterly dividend of $0.47/share declared, payable 2026-07-15 (record date 2026-06-15) -- consistent with the 10% dividend increase disclosed in Q1 2026 results (facts.md E32), no independent guidance-relevant signal beyond confirming continued capital-return cadence.",
+      "as_of": "2026-04-23",
+      "sources": [
+        {
+          "source_name": "motleyfool_q1_transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/04/23/thermo-fisher-tmo-q1-2026-earnings-transcript/",
+          "public_date": "2026-04-23",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "genomeweb_guidance_corroboration",
+          "url": "https://www.genomeweb.com/business-news/thermo-fisher-scientific-expects-6-percent-revenue-growth-2026",
+          "public_date": "2026-04",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "businesswire_q2_earnings_date_confirmation",
+          "url": "https://www.businesswire.com/news/home/20260701995913/en/Thermo-Fisher-Scientific-to-Hold-Earnings-Conference-Call-on-Thursday-July-23-2026",
+          "public_date": "2026-07-01",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_exposure",
+      "is_quantitative": false,
+      "value": "TMO does NOT disclose China as a standalone geographic segment (unlike GEHC) -- only 'Asia-Pacific' (~$8.10B FY2025 / ~$7.96B or 18.55% of total FY2024). Management commentary describes full-year 2025 China organic revenue as declining 'mid-single digits', a deceleration from FY2024's 'low-single-digit' Asia-Pacific growth. Q1 2026: Analytical Instruments organic revenue -2%, explicitly attributed to academic/government demand softness in BOTH the US and China. No source found this run quantifies a precise China-only revenue percentage or identifies a specific Chinese competitor gaining disclosed share in analytical instruments -- this is the single largest disclosure/evidence gap in this dossier relative to the GEHC exemplar (which had an explicit, quantified China revenue line) and is flagged as the top research priority for the next refresh.",
+      "as_of": "2025-12-31",
+      "sources": [
+        {
+          "source_name": "bullfincher_geo_revenue",
+          "url": "https://bullfincher.io/companies/thermo-fisher-scientific/revenue-by-geography",
+          "public_date": "2026",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "genomeweb_china_commentary",
+          "url": "https://www.genomeweb.com/business-news/thermo-fisher-scientific-reports-flat-q3-revenues-voices-optimism-2025-china-business",
+          "public_date": "2025-2026",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "biosecure_tariff_exposure",
+      "is_quantitative": false,
+      "value": "BIOSECURE Act signed into law December 2025 -- restricts US-government-linked biopharma customers from contracting with designated Chinese CRO/CDMO 'companies of concern' (WuXi AppTec, WuXi Biologics named in general industry coverage, not a TMO-specific primary disclosure). TMO's PPD clinical-research/CDMO business (within Laboratory Products and Biopharma Services, 53.8% of FY2025 revenue) is positioned as a primary beneficiary; the $8.875B Clario acquisition (closed 2026-03-24) directly expands this capability, with its ~$900M FY2026 revenue contribution already embedded in raised guidance. Separately, tariff cost impact is estimated (via search-derived commentary, NOT independently confirmed against a primary TMO disclosure this run) at ~$375M -- exact period basis ambiguous, flagged OPEN.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "appliedclinicaltrials_clario",
+          "url": "https://www.appliedclinicaltrialsonline.com/view/thermo-fisher-acquisition-clario-clinical-trial-data",
+          "public_date": "2026-03",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "biopharmaboardroom_casper_jpm",
+          "url": "https://www.biopharmaboardroom.com/company-results/63/4633/marc-n-casper-signals-strong-start-to-2026-as-thermo-fisher-scientific-advances-growth-strategy-and-innovation-pipeline.html",
+          "public_date": "2026-01",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "ai_product_traction",
+      "is_quantitative": false,
+      "value": "Real, active AI-enabled product pipeline as of ASMS 2026 (annual mass spectrometry conference, ~2026-05/06): Orbitrap Tribrid Apex and Orbitrap Excedion mass spectrometers paired with AI-enabled software (Proteoform Studio, Proteome Discoverer 3.4, BioPharma Finder 5.5); recent MSAID and Proteinaceous acquisitions feed AI capability into the platform; NVIDIA strategic collaboration announced 2026-01-12 for AI-based lab automation at scale. HOWEVER: zero sources found this run quantify AI-attributable revenue, ASP premium, or attach rate anywhere in the business -- exactly parallel to the GEHC exemplar's equivalent gap (O7).",
+      "as_of": "2026-05-28",
+      "sources": [
+        {
+          "source_name": "businesswire_asms2026",
+          "url": "https://www.businesswire.com/news/home/20260528035260/en/Thermo-Fisher-Scientific-Unveils-Next-generation-Innovations-at-ASMS-2026-to-Accelerate-the-Path-from-Drug-Discovery-to-New-Therapies",
+          "public_date": "2026-05-28",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "businesswire_nvidia_collaboration",
+          "url": "https://www.businesswire.com/news/home/20260112999582/en/Thermo-Fisher-Scientific-Announces-Strategic-Collaboration-With-NVIDIA-Leveraging-AI-to-Advance-Scientific-Instrumentation-and-Accelerate-Laboratory-Performance",
+          "public_date": "2026-01-12",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

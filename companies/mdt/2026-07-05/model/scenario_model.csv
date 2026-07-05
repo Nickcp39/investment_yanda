@@ -1,0 +1,40 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_ebitda_margin,exit_ev_ebitda_multiple,rev_terminal_usd_b,ebitda_terminal_usd_b,net_debt_terminal_usd_b,ev_terminal_usd_b,equity_terminal_usd_b,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.020,0.205,9.0,38.59,7.91,21.50,71.20,49.70,38.83,-19.0,FAIL
+bear,5,0.020,0.200,8.7,40.15,8.03,23.00,69.86,46.86,36.61,-11.7,FAIL
+base,3,0.065,0.248,11.0,43.93,10.89,16.50,119.83,103.33,80.73,2.4,FAIL
+base,5,0.058,0.252,11.3,48.21,12.15,11.00,137.27,126.27,98.65,6.9,FAIL
+bull,3,0.085,0.270,13.0,46.45,12.54,13.50,163.03,149.53,116.82,15.4,PASS
+bull,5,0.078,0.283,13.8,52.94,14.98,5.00,206.74,201.74,157.61,17.0,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2026 actuals (fiscal year ended 2026-04-24): revenue $36.364B, non-GAAP operating margin 24.4%, est. non-GAAP EBITDA ~$11.60B
+#   (non-GAAP operating income $8.873B + estimated D&A ~7.5% of revenue ~$2.727B; D&A not separately disclosed in sources reviewed this run -- estimate reflects
+#    MDT's substantial history of M&A-driven intangible amortization (Covidien 2015, Mazor Robotics 2018, and others) -- a higher D&A load than a typical
+#    non-acquisitive industrial, consistent with large-cap medtech peer norms -- OPEN item, not a confirmed figure)
+# - Current price $83.19; shares 1.28B; market cap $106.48B; net debt (most current balance-sheet basis) ~$20.0B; EV ~$126.48B
+# - Current implied EV/EBITDA (FY26 est. basis): ~10.9x -- cross-checked against P/E: FY26 non-GAAP EPS $5.53 => trailing P/E-on-non-GAAP ~15.0x;
+#   FY27 guide midpoint EPS $5.95 => forward P/E ~14.0x (matches stockanalysis.com's reported forward P/E of 13.99x almost exactly -- strong internal
+#   consistency check that both the EBITDA-multiple approach and the market's own P/E-based pricing agree MDT trades at a REASONABLE, not expensive,
+#   large-cap medtech multiple -- a materially different starting point than the GEHC exemplar, which traded at a ~19% premium to its closest peer)
+# - BEAR: FY2026's organic-growth inflection (5.8%) fades back toward the pre-turnaround sluggish ~2%/yr trend as the PFA-driven tailwind normalizes and
+#   Hugo fails to gain meaningful US commercial traction; China VBP re-accelerates (unresolved per facts.md O2, could go either way); MiniMed litigation
+#   produces incremental cash costs; margin compresses further (GAAP/non-GAAP bifurcation proves to reflect a genuine structural cost problem, not a one-off);
+#   multiple de-rates below the current level (8.7-9.0x) reflecting lower growth-quality perception and litigation-overhang discount
+# - BASE: FY2027 guidance (6.75-7.25% organic) is roughly achieved in year 1, then decelerates toward a more sustainable mid-single-digit organic rate as the
+#   PFA share-gain tailwind matures (MDT holds, does not necessarily keep GAINING share); Hugo becomes a modest, non-transformative contributor (some revenue,
+#   not yet a da Vinci-scale franchise); China stays roughly stable (neither the bull "largely behind us" story nor a bear re-acceleration); GAAP/non-GAAP
+#   margin bifurcation resolves to a modest net improvement as spinoff-prep costs (if that is indeed the driver) roll off; multiple holds near the current
+#   implied level (11.0-11.3x); steady deleveraging from strong FCF generation (FCF/NI >1x per financial_quality.md)
+# - BULL: Hugo's US ramp becomes a genuine, quantifiable commercial success (the single largest unresolved question in this dossier, facts.md O3) alongside
+#   continued/extended PFA share leadership and category growth; China stabilizes and modestly improves per management's "largely behind us" framing;
+#   Diabetes spinoff completes cleanly with no material adverse read-through from MiniMed litigation; margin bifurcation resolves favorably (GAAP-quality
+#   margin expansion becomes the norm); multiple re-rates toward 13.0-13.8x reflecting proven multi-platform growth (PFA + Hugo + stable mature base)
+#   analogous to how a successful second-mover franchise might be valued alongside Intuitive Surgical's own premium multiple (not independently
+#   benchmarked against ISRG's actual multiple this run -- see valuation.md)
+# - Dividend yield contribution: ~3.4%/yr added to price CAGR for total IRR (current stated yield 3.41% per stockanalysis.com, backed by 49 consecutive
+#   years of increases and a demonstrated FCF/NI >1x -- a materially more reliable and better-evidenced income component than the GEHC exemplar's
+#   internally-suspect dividend figure)
+# - 8% hurdle: bear FAILS badly at both horizons; base FAILS at 3yr (2.4%) and FAILS but closes in on the hurdle at 5yr (6.9%, within ~1.1pts); bull PASSES
+#   at both horizons (15.4% / 17.0%). This is directionally the SAME shape as the GEV/GEHC exemplars (only bull clears the hurdle at either horizon) but
+#   MDT's base case is meaningfully CLOSER to clearing the hurdle than GEHC's (which was roughly flat/slightly negative at 5yr) -- consistent with MDT's
+#   stronger current fundamental trend (accelerating vs GEHC's decelerating) and better cash-conversion quality (FCF/NI >1x vs <1x).

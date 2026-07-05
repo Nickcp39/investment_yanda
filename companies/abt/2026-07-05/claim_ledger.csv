@@ -1,0 +1,74 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,95.40,USD,2026-07-02,YAHOO-ABT-PRICE,B1,Confirmed 2nd source ABT-SA-STATS same value same date; matches frozen as_of_price input exactly
+C2,Last close price (cross-check),95.40,USD,2026-07-02,ABT-SA-STATS,B1,Confirms YAHOO-ABT-PRICE
+C3,52-week high,134.65,USD,2026-07-02,YAHOO-ABT-PRICE,B1,stockanalysis shows 137.49 - close-vs-intraday basis difference
+C4,52-week low,82.56,USD,2026-07-02,YAHOO-ABT-PRICE,B1,stockanalysis shows 81.97 - within 2%
+C5,Shares outstanding,1741.8,millions,2026-07-01,MACROTRENDS-ABT-SHARES,B1,Cross-checked ABT-SA-STATS derived mcap
+C6,Market cap,166.17,USD billions,2026-07-02,ABT-SA-STATS,B1,1741.8M x 95.40 = 166.17B derived-exact-match
+C7,FY2025 total net sales,44328,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,Official Abbott IR press release
+C8,FY2025 revenue growth reported,5.7,pct,2025-12-31,ABT-Q4FY25-PR,A1,
+C9,FY2025 revenue growth organic,5.5,pct,2025-12-31,ABT-Q4FY25-PR,A1,+6.7% organic ex-COVID-testing
+C10,FY2025 gross profit (official PR basis),23327,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,52.6% gross margin - see O2 discrepancy vs SA
+C11,FY2025 gross margin (official PR basis),52.6,pct,2025-12-31,ABT-Q4FY25-PR,A1,SA shows 56.42% - reconciliation OPEN
+C12,FY2025 GAAP diluted EPS,3.72,USD,2025-12-31,ABT-Q4FY25-PR,A1,
+C13,FY2025 adjusted diluted EPS,5.15,USD,2025-12-31,ABT-Q4FY25-PR,A1,+10% YoY
+C14,FY2025 net income GAAP,6524,USD millions,2025-12-31,ABT-SA-FINANCIALS,B1,Down from FY24 13402M which had one-off tax benefit
+C15,FY2025 Medical Devices segment sales,21387,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,+12.6% reported / +11.9% organic - largest segment ~48%
+C16,FY2025 Diagnostics segment sales,8937,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,-4.3% reported / -4.5% organic - COVID runoff + China VBP
+C17,FY2025 Nutrition segment sales,8451,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,+0.4% reported / +1.2% organic - weakest segment
+C18,FY2025 Established Pharma segment sales,5536,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,+6.6% reported / +7.4% organic
+C19,Q4 2025 total sales,11459,USD millions,2025-12-31,ABT-Q4FY25-PR,A1,+4.4% reported / +3.0% organic
+C20,Q4 2025 GAAP diluted EPS,1.01,USD,2025-12-31,ABT-Q4FY25-PR,A1,
+C21,Q4 2025 adjusted diluted EPS,1.50,USD,2025-12-31,ABT-Q4FY25-PR,A1,+12% YoY
+C22,Q4 2025 CGM (FreeStyle Libre) sales,2.0,USD billions,2025-12-31,ABT-Q4FY25-PR,A1,+12.2% organic
+C23,Q1 2026 total sales,11164,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,+7.8% reported / +3.7% comparable
+C24,Q1 2026 Medical Devices segment sales,5539,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,+13.2% reported / +8.5% comparable
+C25,Q1 2026 Diagnostics segment sales,2180,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,+6.1% reported / +1.8% comparable
+C26,Q1 2026 Established Pharma segment sales,1426,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,+13.2% reported / +9.0% comparable
+C27,Q1 2026 Nutrition segment sales,2017,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,-6.0% reported / -7.7% comparable
+C28,Q1 2026 net income GAAP,1077,USD millions,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,Down 18.7% YoY
+C29,Q1 2026 GAAP diluted EPS,0.61,USD,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,Down from 0.76 prior year
+C30,Q1 2026 adjusted diluted EPS,1.15,USD,2026-03-31,ABT-8K-1Q26-STOCKTITAN,A2,+5.5-6% YoY
+C31,Exact Sciences acquisition price,20.6,USD billions,2026-03-23,MEDTECHDIVE-EXACTSCIENCES,B1,Close date confirmed - also cited as ~21B in other sources
+C32,Exact Sciences debt issuance,20.0,USD billions,2026-03-31,ABT-10Q-1Q26-SEARCH,B1,Proceeds from issuance of long-term debt 19860M per 10-Q language
+C33,Exact Sciences assumed debt,2.8,USD billions,2026-03-31,ABT-10Q-1Q26-SEARCH,B1,1.4B repaid March 2026
+C34,Exact Sciences 2026 incremental sales estimate,3.0,USD billions,2026-12-31,ABT-Q1-2026-EARNINGS-SEARCH,B2,Company guidance estimate
+C35,Exact Sciences EPS dilution 2026,0.20,USD,2026-12-31,ABT-Q1-2026-EARNINGS-SEARCH,A2,Per FY2026 guidance language
+C36,FY2026 guidance comparable sales growth low,6.5,pct,2026-12-31,ABT-8K-1Q26-STOCKTITAN,A2,Includes Exact Sciences
+C37,FY2026 guidance comparable sales growth high,7.5,pct,2026-12-31,ABT-8K-1Q26-STOCKTITAN,A2,
+C38,FY2026 guidance adjusted EPS low,5.38,USD,2026-12-31,ABT-8K-1Q26-STOCKTITAN,A2,Revised down from Q4 guide of 5.55 given financing costs
+C39,FY2026 guidance adjusted EPS high,5.58,USD,2026-12-31,ABT-8K-1Q26-STOCKTITAN,A2,
+C40,Total debt FY2024,14125,USD millions,2024-12-31,ABT-SA-BALANCESHEET,B1,
+C41,Total debt FY2025,12929,USD millions,2025-12-31,ABT-SA-BALANCESHEET,B1,
+C42,Total debt Q1 2026 (post Exact Sciences),34047,USD millions,2026-03-31,ABT-SA-BALANCESHEET,B1,~6x net debt increase in one quarter
+C43,Cash and equivalents FY2025,8522,USD millions,2025-12-31,ABT-SA-BALANCESHEET,B1,
+C44,Cash and equivalents Q1 2026,6803,USD millions,2026-03-31,ABT-SA-BALANCESHEET,B1,
+C45,Total assets Q1 2026,110429,USD millions,2026-03-31,ABT-SA-BALANCESHEET,B1,Up from 86713M FY2025 - Exact Sciences consolidation
+C46,Total equity Q1 2026,52701,USD millions,2026-03-31,ABT-SA-BALANCESHEET,B1,Roughly flat vs FY2025 52771M - debt-funded not equity-funded M&A
+C47,Goodwill+intangibles Q1 2026,53096,USD millions,2026-03-31,ABT-SA-BALANCESHEET,B1,Nearly doubled from FY2025 29561M
+C48,Net debt derived FY2025,4407,USD millions,2025-12-31,derived,B1,12929-8522
+C49,Net debt derived Q1 2026,27244,USD millions,2026-03-31,derived,B1,34047-6803
+C50,Debt/Equity FY2025,0.19,ratio,2025-12-31,ABT-SA-RATIOS,B1,Pre-dates Exact Sciences debt issuance
+C51,ROE FY2025,12.96,pct,2025-12-31,ABT-SA-RATIOS,B1,vs 30.91% FY24 inflated by tax benefit
+C52,ROIC FY2025,11.20,pct,2025-12-31,ABT-SA-RATIOS,B1,vs 26.01% FY24
+C53,Dividend annualized,2.52,USD,2026-07-02,ABT-SA-STATS,B1,Quarterly 0.63 raised Jan 2026 from 0.59
+C54,Dividend yield,2.64,pct,2026-07-02,ABT-SA-STATS,B1,
+C55,Consecutive years dividend growth,54,years,2026-01-01,DIVIDEND-HISTORY-YAHOO,B1,Dividend King status
+C56,Trailing P/E,26.72,ratio,2026-07-02,ABT-SA-STATS,B1,
+C57,Forward P/E,17.04,ratio,2026-07-02,ABT-SA-STATS,B1,
+C58,Beta,0.61,ratio,2026-07-02,ABT-SA-STATS,B1,
+C59,Analyst rating,28 Buy,rating,2026-07-02,ABT-SA-STATS,B1,Avg target 116.72 +22.4pct upside
+C60,Next earnings date,2026-07-16,date,2026-07-16,ABT-SA-STATS,B1,Q2 2026 report - 11 days after as_of
+C61,CEO tenure start,2018-10-01,date,2018-10-01,ROBERTFORD-BIO-SEARCH,B2,Robert B. Ford - Chairman since Dec 2021
+C62,CEO FY2024 total compensation,22.7,USD millions,2024-12-31,ROBERTFORD-COMP-SEARCH,C1,>93% performance-based per company disclosure
+C63,China revenue FY2025,1.91,USD billions,2025-12-31,CHINA-REVENUE-SEARCH,B2,Down -9.75% YoY from 2.11B FY24 - see O4 reconciliation gap
+C64,China revenue decline YoY,-9.75,pct,2025-12-31,CHINA-REVENUE-SEARCH,B2,Driven by COVID-test runoff + VBP per official PR language
+C65,CGM installed base,8,millions of users,2026-01-01,KAVOUT-CGM-SEARCH,B2,60+ countries
+C66,Global CGM market share Abbott,52.83,pct,2025-12-31,MORDOR-CGM-MARKET-SEARCH,B2,vs Dexcom 33.89% Medtronic 10.10%
+C67,US CGM market share Abbott,48.5,pct,2025-12-31,CGM-US-SHARE-SEARCH,B2,vs Dexcom 44.7% - closer race domestically
+C68,Libre 3 vs Dexcom G7 MARD accuracy,9.2 vs 8.2,pct,2026-01-01,MARD-COMPARISON-SEARCH,C2,Lower=better; Dexcom has measurable edge on this metric
+C69,NEC jury verdict amount,70,USD millions,2026-04-13,INSURANCEJOURNAL-NEC-VERDICT,B1,53M compensatory + 17M punitive - Chicago trial
+C70,NEC industry aggregate exposure estimate,4,USD billions,2026-01-01,INSURANCEJOURNAL-NEC-VERDICT,B2,Bloomberg Intelligence estimate - industry-wide not Abbott-specific
+C71,FY2024 free cash flow,6.35,USD billions,2024-12-31,DIVIDEND-KING-YAHOO-SEARCH,B2,FCF payout ratio 60.4% vs 3.84B dividends paid
+C72,Annual capex (stated pattern),2.2,USD billions,2026-01-01,DIVIDEND-KING-YAHOO-SEARCH,B2,Disciplined/stated recurring level
+C73,Debt paydown planned 2026,3.0,USD billions,2026-12-31,DIVIDEND-KING-YAHOO-SEARCH,B2,Management stated intent

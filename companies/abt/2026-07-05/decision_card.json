@@ -1,0 +1,95 @@
+{
+  "ticker": "ABT",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "diversified_four_pillar_healthcare_with_strong_cgm_annuity_facing_a_large_unproven_debt_funded_bet_and_a_real_legal_tail_risk",
+  "as_of_price": 95.40,
+  "as_of_market_cap": 166170000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (FY2025 10-K and Q1 2026 10-Q) returned HTTP 403 on first attempt; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to the official Abbott IR press release (A1, fetched successfully) + stocktitan.net structured 8-K mirror + stockanalysis.com aggregated financials + web search corroboration. Every load-bearing FY2025/Q1 2026 figure (revenue, segment detail, margin, EPS, debt, Exact Sciences deal terms) cross-checked across >=2 independent sources. Price $95.40 confirmed via 2 independent sources (repo's own independent Yahoo re-fetch + stockanalysis.com), both dated to the same 2026-07-02 close -- exact match to the frozen as_of_price input. ~73 claims registered in claim_ledger.csv; 23 sources in source_register.md. Completeness ~65% -- key gaps: gross margin discrepancy between official PR (52.6%) and a secondary aggregator (56.42%) unreconciled (O2), post-Exact-Sciences leverage ratio not directly disclosed (O3), China % of total revenue not cleanly reconciled due to a possible double-counting artifact in one source (O4), FY2025/Q1 2026 free cash flow unconfirmed (O5), Abbott-specific NEC litigation exposure unquantified (O6). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["SEC-10K-FY25", "ABT-Q4FY25-PR", "ABT-8K-1Q26-STOCKTITAN", "YAHOO-ABT-PRICE", "ABT-SA-STATS", "MEDTECHDIVE-EXACTSCIENCES"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Abbott operates a genuinely diversified four-pillar model: Medical Devices (48% of FY2025 revenue, +11.9% organic, anchored by the FreeStyle Libre CGM consumables annuity -- sensors replaced ~every 14 days, ~8M-user installed base, ~52.83% global CGM revenue share), Diagnostics (20%, Core Lab installed-base razor/blade currently masked by COVID-test runoff + China VBP but already inflecting positive in Q1 2026, +1.8% comparable), Nutrition (19%, the weak segment, -9.1% organic Q4 2025, carrying NEC litigation tail-risk), and Established Pharmaceuticals (13%, steady EM-diversified branded generics, +7.4% organic). The Exact Sciences acquisition ($20.6-21B, closed 2026-03-23) is a large, coherent strategic bet to leverage Abbott's 160-country distribution network to accelerate global adoption of Cologuard/Cancerguard cancer-screening franchises. Mechanism is coherent and CEO Robert Ford has directly relevant prior integration experience (led the St. Jude Medical deal). Signal = +1 (mildly positive): the core mechanism (CGM consumables annuity + diversified segment structure + a strategically coherent, if large and unproven, growth bet) is genuinely stronger and clearer than the GEHC exemplar's more singular imaging-AI narrative.",
+      "drivers": ["ABT-Q4FY25-PR", "MEDDEVICEGUIDE-EXACTSCIENCES", "KAVOUT-CGM-SEARCH", "ROBERTFORD-BIO-SEARCH"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Moat is GOOD-TO-VERY-GOOD, clearer than the GEHC exemplar's 'good, not exceptional' read. FreeStyle Libre is a genuine, deep consumables annuity (prescription/insurance-reauthorization switching costs, ~8M-user installed base) though not uncontested -- Dexcom holds a near-even US market share (44.7% vs Abbott's 48.5%) and a measurable technical accuracy edge (MARD 8.2% vs Libre 3's 9.2%). Core Lab diagnostics shows its underlying installed-base moat IS holding (+3.6% organic Q4 2025) even as the broader Diagnostics segment was masked by COVID-runoff + China VBP -- a genuinely more favorable read than GEHC's fully-organic PCS decline, since part of ABT's Diagnostics weakness is a known, lapping comp effect. Cancer Diagnostics (Exact Sciences) brings a genuine, already-proven-at-Exact-Sciences-scale moat (Cologuard guideline inclusion) but the Abbott-distribution-leverage thesis is completely unproven (deal closed only ~3.5 months before as_of). Nutrition has no articulated moat and carries a real, already-quantified legal tail-risk (NEC litigation, $70M jury verdict April 2026). Signal = +1: moat is real and, in its strongest segment (CGM), deeper than any single GEHC moat source, though the portfolio average is pulled down by Nutrition's weakness and legal risk.",
+      "drivers": ["KAVOUT-CGM-SEARCH", "MORDOR-CGM-MARKET-SEARCH", "MARD-COMPARISON-SEARCH", "INSURANCEJOURNAL-NEC-VERDICT", "ABT-Q4FY25-PR"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Revenue growth is healthy and broad-based (FY2025 +5.5% organic, Q1 2026 +3.7% comparable, accelerating on a reported basis to +7.8% including Exact Sciences). Adjusted EPS grew throughout (+10% FY2025, +5.5-6% Q1 2026) even as GAAP EPS fell sharply in Q1 2026 (-18.7% net income) -- this divergence is substantially and identifiably attributable to ONE event (Exact Sciences financing costs), not broad-based operating deterioration, a meaningfully different (less alarming) pattern than GEHC's three-consecutive-period organic margin compression. However, net debt roughly 6x'd in a single quarter (~$4.4B FY2025 -> ~$27.2B Q1 2026), entirely M&A-driven -- a much larger relative leverage event than GEHC's Intelerad-driven increase. Management has stated a credible $3B/2026 debt-paydown plan and preserved the 54-year dividend-increase streak even through this deal, both genuinely constructive signals. FY2025/Q1 2026 free cash flow not independently confirmed this run (O5) -- a real gap given the scale of the debt event. Signal = 0: financial trend is healthier at the operating level than GEHC's, but the balance-sheet/leverage risk introduced by Exact Sciences is larger in relative magnitude and still unproven.",
+      "drivers": ["ABT-8K-1Q26-STOCKTITAN", "ABT-SA-BALANCESHEET", "ABT-SA-FINANCIALS", "DIVIDEND-HISTORY-YAHOO"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "No single kill path rises to high-confidence imminent thesis-killer. Highest financial-magnitude risk: Exact Sciences' distribution-leverage thesis fails to materialize over a multi-year horizon (unproven, deal closed only ~3.5 months before as_of). Most legally concrete: NEC infant-formula litigation ($70M jury verdict already realized, industry-wide ~$4B aggregate estimate not Abbott-specific, CEO publicly choosing to fight rather than settle) -- bounded to a sub-segment of Nutrition (~19% of revenue) rather than company-wide. Most immediately testable and already partially favorable: China Diagnostics decline (-9.75% YoY) already shows a Q1 2026 comparable-growth inflection to +1.8%, suggesting the COVID-test-runoff comp effect may be genuinely fading -- a more favorable early signal than GEHC had at an equivalent evidence stage. CGM competitive erosion (Dexcom) is real but slow-moving. Signal = 0: real, multi-pronged risk (concentrated in one large M&A bet + one legal tail-risk) but with a diversified, genuinely healthy core business as an offsetting cushion -- less severe than GEHC's compounding-without-offset risk registry.",
+      "drivers": ["MEDTECHDIVE-EXACTSCIENCES", "INSURANCEJOURNAL-NEC-VERDICT", "CHINA-REVENUE-SEARCH", "ABT-8K-1Q26-STOCKTITAN"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "At $95.40 (~$166.17B mkt cap, ~$193.41B EV using Q1 2026 net debt ~$27.24B): EV/FY2025-est-adj-EBITDA ~19.2x -- a much richer starting multiple than GEHC's ~9.7x, reflecting Abbott's higher-quality, higher-growth portfolio mix. Price sits -29.2% off 52wk high ($134.65), +15.6% above 52wk low ($82.56) -- a genuine, large drawdown, independently verified as PARTIALLY justified by real, disclosed Exact-Sciences-financing-driven GAAP EPS dilution and PARTIALLY market digestion of a large leveraging acquisition, not broad-based fundamental decay (core Medical Devices +8.5% comparable Q1 2026; Diagnostics inflecting positive). 3-scenario IRR: bear -12.7%(3yr)/-4.2%(5yr); base +2.4%(3yr)/+8.5%(5yr, MARGINALLY clears the 8% hurdle); bull +12.9%(3yr)/+16.3%(5yr). This is a MORE FAVORABLE shape than GEHC's (whose base case failed at BOTH horizons) -- the base case here clears the hurdle, if only barely, at 5 years. Signal = 0: price offers a thin, not absent, margin of safety -- meaningfully better than GEHC's zero-cushion setup, but not yet a clear bargain given the still-full ~19x starting multiple.",
+      "drivers": ["YAHOO-ABT-PRICE", "ABT-SA-STATS", "MACROTRENDS-ABT-SHARES"]
+    }
+  ],
+  "business_verdict": "good_to_very_good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 6,
+  "buy_below_price": 86,
+  "starter_zone": "$82-86 (at/near 52wk low $82.56) -- base case 5yr IRR cushion widens meaningfully at this level (from the current thin +8.5% toward a more comfortable +13-15% range), without requiring the Exact Sciences bull-case catalysts to already be proven.",
+  "add_zone": "First STARTER at $82-86. Add toward CORE only as: (a) Q2/Q3 2026 results (starting 2026-07-16) confirm the Diagnostics/China comparable-growth inflection (Q1 2026's +1.8%) is durable across 2+ more quarters, not a one-quarter comp-effect blip, (b) any early, credible evidence of Exact Sciences ex-US Cologuard/Cancerguard revenue traction emerges, (c) the stated ~$3B 2026 debt-paydown plan executes on schedule, (d) NEC litigation shows a credible path to resolution (legislative shield progress or a defense verdict/appeals win) rather than escalating. No addition at current price without at least one of these confirmations.",
+  "trim_or_no_chase_zone": "Do not chase above ~$105-108 without a corresponding fundamentals upgrade -- the already-thin base-case cushion would turn negative above this level given the full ~19x starting multiple. Reassess toward AVOID on any of: Exact Sciences showing zero ex-US traction evidence within 4-6 quarters of close, a second large adverse NEC jury verdict or a failed Congressional-shield effort combined with a rising case count, the China/Diagnostics inflection reversing back to negative in Q2/Q3 2026, or net debt failing to decline per the stated paydown plan.",
+  "binding_constraint": "THIN MARGIN OF SAFETY -- business quality is genuinely clear and strong (the FreeStyle Libre CGM consumables annuity is the single deepest moat asset identified across this S&P 500 medical batch so far, and Diagnostics is already showing a real, partially-realized positive inflection), but the price does not yet offer enough cushion to compensate for the large, unproven, debt-funded Exact Sciences bet (net debt roughly 6x'd in one quarter to fund a deal that is only ~3.5 months old) plus a real, already-quantified legal tail-risk (NEC litigation, $70M jury verdict April 2026, management choosing to fight rather than settle). The base-case 5-year IRR marginally clears the 8% hurdle (+8.5%) and fails at 3 years (+2.4%) -- a thin, not absent, margin of safety. This is meaningfully different from GEHC's 'ambiguous business quality, no cushion at all' WATCH: here the business quality itself is less in doubt, and the verdict rests specifically on valuation being still-full (starting EV/EBITDA ~19.2x vs GEHC's ~9.7x) relative to genuine, but not yet resolved, execution risk in one large recent decision.",
+  "kill_criteria": [
+    "K-A Exact Sciences underdelivers: no evidence of ex-US Cologuard/Cancerguard revenue acceleration within 4-6 quarters of close (roughly mid-to-late 2027) -> re-underwrite the deal as primarily a US-business consolidation, downgrade attractiveness.",
+    "K-B NEC litigation escalates: a second large adverse jury verdict (comparable or larger than the $70M April 2026 verdict) OR a failed Congressional-shield effort combined with a rising case count -> re-underwrite Nutrition segment risk materially higher; consider AVOID if Abbott-specific aggregate exposure estimates begin exceeding a low-single-digit-billion-dollar range.",
+    "K-C China proves structural, not transient: Diagnostics comparable growth reverses back to negative in Q2/Q3 2026 (the Q1 2026 +1.8% inflection proves to be a one-quarter blip) -> treat China VBP pressure as more structural/GEHC-like than currently assumed.",
+    "K-D Leverage deterioration: net debt fails to decline per the stated ~$3B/yr 2026 paydown plan, OR the post-deal D/E ratio is confirmed materially above the ~0.65x estimate -> credit-quality concern, downgrade.",
+    "K-E Valuation discipline: price rises above ~$105-108 without a corresponding fundamentals upgrade -> no-chase, the already-thin base-case cushion would turn negative."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous WATCH with zero change after critique, and I do not see a strong basis to dissent toward either STARTER or AVOID -- but I want to flag explicitly that this is a MEANINGFULLY SHALLOWER WATCH than the GEHC precedent in this same batch, and the panel itself said so repeatedly during the critique round. The single most decision-useful number in this dossier is the base-case 5-year IRR of +8.5% -- it clears the 8% hurdle, but by a margin so thin (0.5 percentage points) that this is genuinely a coin-flip-distance verdict, not a comfortable WATCH. Unlike GEHC (where the base case was essentially flat / failed outright, meaning a fairly large price decline or a large body of new evidence was needed to flip the verdict), ABT could plausibly flip to STARTER from EITHER a modest price pullback (~10-15%, toward the 52wk low) OR a single quarter of confirming evidence on the Exact Sciences integration or the China/Diagnostics inflection -- both of which could plausibly happen within the next 1-2 quarters, starting with the imminent Q2 2026 earnings report on 2026-07-16 (11 days after this as_of date). For Nick's career-relevant lens: the FreeStyle Libre franchise is, in my assessment, the single strongest CGM-consumables moat asset reviewed in this entire S&P 500 medical batch to date -- deeper than GEHC's OEM-agnostic PDx model because it carries genuine prescription/brand lock-in within its own installed base, even though it is narrower in addressable scope and genuinely contested by Dexcom (a real competitor, not a token one, with a measurable technical accuracy edge). I would also flag the NEC litigation as worth tracking closely and somewhat separately from the pure investment thesis: CEO Ford's public choice to fight rather than settle is a genuinely high-conviction, high-stakes bet on the underlying science, and the outcome (whether via courts, legislation, or a negotiated resolution) will likely be instructive for how the entire infant-nutrition/med-device industry handles similar mass-tort-style litigation going forward.",
+  "sources_used": [
+    {"source_id": "SEC-10K-FY25", "public_date": "2026-02-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000001800/000162828026010185/abt-20251231.htm"},
+    {"source_id": "SEC-10Q-1Q26", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000001800/000162828026028357/abt-20260331.htm"},
+    {"source_id": "ABT-Q4FY25-PR", "public_date": "2026-01-22", "url_or_path": "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook"},
+    {"source_id": "ABT-8K-1Q26-STOCKTITAN", "public_date": "2026-04-29", "url_or_path": "https://www.stocktitan.net/sec-filings/ABT/8-k-abbott-laboratories-reports-material-event-b7437723524d.html"},
+    {"source_id": "MEDTECHDIVE-EXACTSCIENCES", "public_date": "2026", "url_or_path": "https://www.medtechdive.com/news/abbott-acquire-exact-sciences/806020/"},
+    {"source_id": "ABT-SA-STATS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/abt/"},
+    {"source_id": "ABT-SA-FINANCIALS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/abt/financials/"},
+    {"source_id": "ABT-SA-BALANCESHEET", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/abt/financials/balance-sheet/"},
+    {"source_id": "YAHOO-ABT-PRICE", "public_date": "2026-07-02", "url_or_path": "repo fetch_yahoo independent re-pull, scripts/market_data_download.py"},
+    {"source_id": "MACROTRENDS-ABT-SHARES", "public_date": "2026", "url_or_path": "https://www.macrotrends.net/stocks/charts/ABT/abbott-laboratories/shares-outstanding"},
+    {"source_id": "KAVOUT-CGM-SEARCH", "public_date": "2026", "url_or_path": "https://www.kavout.com/market-lens/abbott-s-dual-analyte-bet-positions-it-to-outpace-dexcom-in-the-expanding-cgm-market"},
+    {"source_id": "MORDOR-CGM-MARKET-SEARCH", "public_date": "2026", "url_or_path": "https://www.mordorintelligence.com/industry-reports/continuous-glucose-monitoring-market"},
+    {"source_id": "INSURANCEJOURNAL-NEC-VERDICT", "public_date": "2026-04-13", "url_or_path": "https://www.insurancejournal.com/news/national/2026/04/13/865692.htm"},
+    {"source_id": "CLAIMSJOURNAL-CONGRESS-SHIELD", "public_date": "2025-12-11", "url_or_path": "https://www.insurancejournal.com/news/national/2025/12/11/850750.htm"},
+    {"source_id": "DIVIDEND-HISTORY-YAHOO", "public_date": "2026", "url_or_path": "https://finance.yahoo.com/news/dividend-king-abbott-shows-why-165556718.html"}
+  ]
+}

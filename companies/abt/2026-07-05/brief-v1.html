@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABT 决策简报 v1 · as_of 2026-07-05</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#3a2f12,#1a1d24);border-color:#5a4a1f}
+  .verdict .val{color:var(--ylw)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Abbott Laboratories (ABT) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-05 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65%)</b> · 来源 官方 IR press release + SEC 结构化镜像 + stockanalysis.com + Yahoo chart API</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">WATCH</div><div class="sub" style="margin:0">初始 0% · 触发价 $82–86 转 STARTER</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">good-to-very-good</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$95.40</div><div class="sub" style="margin:0">市值 ~$166.17B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $134.65</div><div class="val neg">−29.2%</div><div class="sub" style="margin:0">部分为 Exact Sciences 并购摊薄</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>雅培是四支柱多元化医疗集团(Medical Devices 48% / Diagnostics 20% / Nutrition 19% / Established Pharma 13%),核心资产 <b>FreeStyle Libre CGM</b> 是本批(S&amp;P500 医疗)迄今发现<b>最深的耗材年金型护城河</b>(~8百万用户、60+国家、全球份额 ~52.83%)。2026-03-23 完成 <b>$20.6–21B 全债务收购 Exact Sciences</b>(Cologuard/Cancerguard),单季度净负债暴增约 6 倍(~$4.4B → ~$27.2B),FY26 指引已含 $0.20 EPS 稀释。同时背负真实、已量化的法律尾部风险(NEC 早产儿配方奶诉讼,2026-04 陪审团判赔 $70M,CEO 选择硬扛而非和解)。</p>
+    <p><b>与同批 GEHC(五票 WATCH)对照:</b>ABT 的业务质量判断更清晰、更让人放心(CGM 护城河更深、Diagnostics 已现正向拐点 Q1'26 comparable +1.8%),base case 5年 IRR <b>+8.5% 刚好过 8% 门槛</b>(GEHC base 几乎为零/未过),<b>但估值起点更贵(~19.2x EV/EBITDA vs GEHC ~9.7x)</b>,安全边际薄但非零 → 同样 WATCH,但明显更接近 STARTER 门槛,面板五人一致认为这是"更浅的 WATCH"。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>SEC 403 回退官方 PR+结构化镜像;23 源;完整度 ~65%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>四支柱模型 + CGM 年金机制清晰、比 GEHC 更明确</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num pos">+1</td><td>Libre 护城河本批最深;Core Lab 已现拐点;Nutrition 无护城河+法律风险</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num">0</td><td>营收/调整后EPS 全程健康增长;净负债单季 6x(Exact Sciences)</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num">0</td><td>Exact Sciences 兑现是多年期不确定,非近期触发;NEC 有边界</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num">0</td><td>base 5yr IRR +8.5% 薄安全边际;起点估值~19.2x偏贵</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">股息收益率</div><div class="val">2.64%</div><div class="sub" style="margin:0">54年连续增长 Dividend King</div></div>
+    <div class="card"><div class="lbl">P/E (trailing/forward)</div><div class="val">26.7× / 17.0×</div></div>
+    <div class="card"><div class="lbl">base 5yr IRR</div><div class="val warn">+8.5%</div><div class="sub" style="margin:0">3yr 仅 +2.4%(未过门槛)</div></div>
+    <div class="card"><div class="lbl">净负债(Q1'26 post-deal)</div><div class="val warn">~$27.2B</div><div class="sub" style="margin:0">FY25 仅 ~$4.4B</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据 (FY2025 + Q1 2026, 2026-03-31)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num">$44.33B (+5.7% / organic +5.5%)</td><td>官方 IR PR</td></tr>
+      <tr><td>FY2025 Medical Devices(占48%)</td><td class="num pos">$21.39B (+11.9% organic)</td><td>官方 IR PR</td></tr>
+      <tr><td>FY2025 Diagnostics(占20%)</td><td class="num neg">$8.94B (−4.5% organic)</td><td>官方 IR PR</td></tr>
+      <tr><td>Q1 2026 Diagnostics comparable</td><td class="num pos">+1.8%(拐点,较 FY25 好转)</td><td>8-K 结构化镜像</td></tr>
+      <tr><td>FY2025 调整后 EPS</td><td class="num pos">$5.15 (+10% YoY)</td><td>官方 IR PR</td></tr>
+      <tr><td>Q1 2026 GAAP 净利</td><td class="num neg">$1.077B (−18.7% YoY)</td><td>8-K 结构化镜像</td></tr>
+      <tr><td>Exact Sciences 收购价</td><td class="num warn">$20.6–21B(全债务)</td><td>MedTech Dive / 8-K</td></tr>
+      <tr><td>China 营收 FY2025</td><td class="num neg">$1.91B (−9.75% YoY)</td><td>搜索交叉核实(见 O4)</td></tr>
+      <tr><td>FreeStyle Libre 全球份额</td><td class="num pos">~52.83%(vs Dexcom 33.89%)</td><td>Mordor Intelligence</td></tr>
+      <tr><td>NEC 诉讼陪审团判赔</td><td class="num neg">$70M(2026-04-13)</td><td>Insurance Journal</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">IRR</th><th class="num">价位</th><th class="num">vs $95.40</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">~0%(基准案例转负)</td><td class="num">~$105–108</td><td class="num">+10–13%</td></tr>
+      <tr><td><b>STARTER 触发区</b></td><td class="num">~13–15%(base, 5yr)</td><td class="num">~$82–86</td><td class="num">−10–14%</td></tr>
+      <tr><td>CORE 区(两档均有安全边际)</td><td class="num">10%+</td><td class="num">~$70–75</td><td class="num">−22–27%</td></tr>
+      <tr><td>深度价值</td><td class="num">15%+</td><td class="num">~$60</td><td class="num">−37%</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 安全边际薄(非业务质量存疑,与 GEHC 案例根本不同)。</b> 业务本身(CGM 年金 + Diagnostics 拐点 + 管理层资本配置纪律)判断清晰,问题在于价格尚未给出足够缓冲来对冲 Exact Sciences(未证实、单季净负债 6x)+ NEC 诉讼(已实现 $70M 判决)这两项真实但有边界的风险。base 5yr IRR 仅以 0.5 个百分点之差过门槛。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A Exact Sciences 4–6季度内零海外放量证据</td><td>刚close ~3.5月,尚无证据</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B NEC 二次大额败诉 或 国会立法护盾失败</td><td>$70M 判决(单次)</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-C Diagnostics/China 拐点 Q2/Q3'26 回落转负</td><td>Q1'26 +1.8%(拐点初现)</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-D 净负债未按 ~$3B/2026 计划下降</td><td>计划中,未验证执行</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-E 买入价超 $105–108 无基本面支撑</td><td>$95.40</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC（段永平主审）</h2>
+    <p>五票一致 <b class="warn">WATCH</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 主审 <b class="warn">WATCH</b>(建议 0%,触发价 $82–86 或确认性证据后可转 STARTER)。收敛点:<b>业务质量本身比 GEHC 案例更清晰、更让人放心,verdict 落在"价格仍偏贵 + 一个大而未证实的赌注(Exact Sciences)+ 一个真实法律尾部风险(NEC)",而非"业务本身存疑"</b>。五人一致强调这是比 GEHC 更浅、更容易在 1–2 个季度内(尤其 2026-07-16 Q2 财报后)被打破的 WATCH。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65%,<b>非 COMPLETE</b>。OPEN 项:毛利率口径分歧(O2,官方 PR 52.6% vs 二手聚合器 56.42%)、并购后杠杆比率未直接披露(O3)、China 占总营收精确百分比未完全对账(O4)、FY2025/Q1 2026 自由现金流未独立确认(O5)、雅培自身 NEC 诉讼具体敞口未量化(O6)。所有载荷性数字回挂官方 IR 或 SEC 结构化镜像并交叉验证 ≥2 源;社媒/行业评论仅作情绪/方向参考。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

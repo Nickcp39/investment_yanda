@@ -21,11 +21,11 @@
 
 | 批 | ticker | 公司 | 板块 | status | 核过价 | verdict |
 |---|---|---|---|---|---|---|
-| 1 | MDT | Medtronic 美敦力 | 器械(综合) | PENDING | | |
-| 1 | ABT | Abbott 雅培 | 器械/诊断 | PENDING | | |
-| 1 | SYK | Stryker 史赛克 | 器械(骨科/手术) | PENDING | | |
-| 1 | BSX | Boston Scientific 波科 | 器械(心血管) | PENDING | | |
-| 1 | TMO | Thermo Fisher 赛默飞 | 生科工具 | PENDING | | |
+| 1 | MDT | Medtronic 美敦力 | 器械(综合) | DONE | 83.19 | STARTER |
+| 1 | ABT | Abbott 雅培 | 器械/诊断 | DONE | 95.40 | WATCH |
+| 1 | SYK | Stryker 史赛克 | 器械(骨科/手术) | DONE | 326.54 | STARTER |
+| 1 | BSX | Boston Scientific 波科 | 器械(心血管) | DONE | 45.14 | STARTER(2%) |
+| 1 | TMO | Thermo Fisher 赛默飞 | 生科工具 | DONE | 523.44 | WATCH |
 | 2 | EW | Edwards 爱德华 | 器械(结构性心脏) | PENDING | | |
 | 2 | RMD | ResMed 瑞思迈 | 器械(呼吸/睡眠) | PENDING | | |
 | 2 | IDXX | Idexx | 宠物诊断 | PENDING | | |
@@ -54,3 +54,5 @@
 
 ## 变更日志
 - 2026-07-05 建队列(26 家),batch 1 (MDT/ABT/SYK/BSX/TMO) 启动。
+- 2026-07-05 ABT 完成:WATCH(五票一致,浅于 GEHC 案例),freshness PASS(price $95.40,T1-T5 绿,T6 软 WARN=guidance 67天>45天阈值,因 Q2'26 财报 07-16 尚未发生,预期内非阻塞)。核心发现:FreeStyle Libre 为本批目前最深耗材年金护城河;2026-03-23 完成 $20.6-21B 全债务收购 Exact Sciences(净负债单季 6x);NEC 婴儿配方奶诉讼活跃($70M 陪审团判决 2026-04-13);China Diagnostics −9.75% YoY 但 Q1'26 已现正向拐点(+1.8% comparable)。base 5yr IRR +8.5% 薄安全边际过门槛(GEHC base 未过)。buy_below $82-86 STARTER。
+- 2026-07-05 **batch-1 完成**:MDT/SYK/BSX=STARTER,ABT/TMO=WATCH,全部 freshness PASS。batch-2 (EW/RMD/IDXX/DXCM/ALGN) 启动。

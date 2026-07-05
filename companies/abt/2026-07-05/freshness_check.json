@@ -1,0 +1,76 @@
+{
+  "ticker": "ABT",
+  "as_of": "2026-07-05",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 95.4,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 95.4000015258789,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo_repo_fetch",
+        "value": 95.4
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 95.4
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo",
+      "yahoo_repo_fetch"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-07-02"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "82.56 <= 95.4 <= 134.65"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+15.6% off low, -29.1% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "1742M x 95.4 = 0.166T vs card 0.166T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -29.2% vs card-implied -29.1% (gap 0.1pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 95.40 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-29 is 67d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-29 is 67d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

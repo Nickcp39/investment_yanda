@@ -1,0 +1,211 @@
+{
+  "ticker": "ABT",
+  "as_of": "2026-07-05",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. Price sits -29.2% off 52wk high / +15.6% above 52wk low -- neither extreme is within the 3% hug band, so this is not a hug situation, but the substantial distance-off-high is addressed explicitly below given the magnitude is larger than the GEHC exemplar's.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 95.40,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price is -29.2% below 52wk high of $134.65 and +15.6% above 52wk low of $82.56 -- outside the 3% hug band on both ends, so this is not a low/high-hug edge case. The substantial distance from the 52wk high is PARTIALLY justified by a real, disclosed event: Q1 2026 GAAP net income fell 18.7% YoY, substantially attributable to financing costs from the $20.6-21B Exact Sciences acquisition (closed 2026-03-23, funded almost entirely with new debt) -- a real, quantified, already-guided EPS dilution ($0.20 for FY2026), not a data artifact or a broad-based operating collapse. Adjusted EPS continued growing throughout (+10% FY2025, +5.5-6% Q1 2026), and the core Medical Devices segment grew +8.5% comparable in Q1 2026. Confirmed by 2 independent sources (repo's own independent Yahoo re-fetch + stockanalysis.com) showing the identical $95.40 value for the same 2026-07-02 close, exact match to the frozen as_of_price input.",
+      "sources": [
+        {
+          "source_name": "yahoo_repo_fetch",
+          "url": "scripts/market_data_download.py fetch_yahoo('ABT', '2025-06-25', '2026-07-07') -- independent re-pull, not a re-derivation of any dossier value",
+          "fetched_at": "2026-07-05",
+          "value": 95.40
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/abt/",
+          "fetched_at": "2026-07-05",
+          "value": 95.40
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 166170000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/abt/",
+          "fetched_at": "2026-07-05",
+          "value": 166170000000
+        },
+        {
+          "source_name": "derived",
+          "url": "1741.8M shares x $95.40",
+          "fetched_at": "2026-07-05",
+          "value": 166167720000
+        }
+      ],
+      "cross_check_delta_pct": 0.002,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 134.65,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_repo_fetch",
+          "url": "scripts/market_data_download.py fetch_yahoo('ABT', '2025-06-25', '2026-07-07')",
+          "fetched_at": "2026-07-05",
+          "value": 134.65
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/abt/",
+          "fetched_at": "2026-07-05",
+          "value": 137.49
+        }
+      ],
+      "cross_check_delta_pct": 2.06,
+      "pass": true,
+      "note": "2.06% delta likely reflects close-basis (Yahoo) vs intraday-high basis (stockanalysis) methodology difference -- both sources agree directionally and are within a normal cross-source tolerance for a 52wk-high figure; using Yahoo close-basis series as primary per repo convention."
+    },
+    {
+      "field": "52wk_low",
+      "value": 82.56,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_repo_fetch",
+          "url": "scripts/market_data_download.py fetch_yahoo('ABT', '2025-06-25', '2026-07-07')",
+          "fetched_at": "2026-07-05",
+          "value": 82.56
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/abt/",
+          "fetched_at": "2026-07-05",
+          "value": 81.97
+        }
+      ],
+      "cross_check_delta_pct": 0.72,
+      "pass": true,
+      "note": "0.72% delta, same close-basis vs intraday-basis methodology difference as 52wk_high -- within normal cross-source tolerance."
+    },
+    {
+      "field": "shares_out",
+      "value": 1741.8,
+      "unit": "millions",
+      "as_of": "2026-07-01",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "macrotrends",
+          "url": "https://www.macrotrends.net/stocks/charts/ABT/abbott-laboratories/shares-outstanding",
+          "fetched_at": "2026-07-05",
+          "value": 1741.8
+        },
+        {
+          "source_name": "stockanalysis_derived_mcap",
+          "url": "166.17B / 95.40 = 1741.7M (consistent within rounding)",
+          "fetched_at": "2026-07-05",
+          "value": 1741.7
+        }
+      ],
+      "cross_check_delta_pct": 0.006,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance (as of Q1 2026 report, ~2026-04-29): comparable sales growth 6.5%-7.5% (includes Exact Sciences contribution); adjusted diluted EPS $5.38-$5.58 (revised down from the Q4-2025-report-time guide of $5.55-$5.80, reflecting $0.20 EPS dilution from Exact Sciences financing costs). Next earnings (Q2 2026) confirmed for 2026-07-16 -- 11 days after this dossier's as_of date, an imminent near-term catalyst.",
+      "as_of": "2026-04-29",
+      "sources": [
+        {
+          "source_name": "stocktitan_8k_summary",
+          "url": "https://www.stocktitan.net/sec-filings/ABT/8-k-abbott-laboratories-reports-material-event-b7437723524d.html",
+          "public_date": "2026-04-29",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "abbott_official_q4fy25_pr_prior_guide",
+          "url": "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook",
+          "public_date": "2026-01-22",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_vbp_exposure",
+      "is_quantitative": false,
+      "value": "China revenue: FY2025 ~$1.91B, down ~-9.75% YoY from FY2024's ~$2.11B -- explicitly attributed by the company (via official Q4 2025 press release commentary) to a combination of COVID-19 testing revenue runoff AND challenging China market conditions including volume-based procurement (VBP) programs, concentrated in the Diagnostics segment. NOTE: the precise % of total ABT revenue China represents was not cleanly reconciled this run -- one secondary source showed two different 'China' figures (4.35% and 4.44%) in the same extract, suggesting a possible double-counting or definitional artifact (flagged facts.md O4). Directionally and in magnitude, this is a smaller decline than the GEHC exemplar's China finding (-15% YoY), and Q1 2026 already shows a partial positive inflection (Diagnostics comparable growth turned positive, +1.8%, vs FY2025's -4.5% organic) -- a more favorable early signal than GEHC had at an equivalent point in its evidence timeline, though not yet confirmed as durable across multiple quarters.",
+      "as_of": "2025-12-31",
+      "sources": [
+        {
+          "source_name": "china_revenue_search_synthesis",
+          "url": "aggregated web search synthesis cross-referencing FY2024 comparison figure and official PR driver language",
+          "public_date": "2026",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "abbott_official_q4fy25_pr",
+          "url": "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook",
+          "public_date": "2026-01-22",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "nec_litigation_status",
+      "is_quantitative": false,
+      "value": "Ongoing, live litigation as of as_of date: hundreds of lawsuits allege Abbott's cow's-milk-based preterm-infant formula products can cause necrotizing enterocolitis (NEC). A Chicago jury awarded $70M (($53M compensatory + $17M punitive) to four families on 2026-04-13 -- the most recent major verdict identified this run. CEO Robert Ford has publicly stated Abbott will not settle, stands behind the product's science (citing an NIH Working Group finding that absence of human milk, not formula exposure, is associated with NEC), and has floated potentially pulling the product from the market entirely rather than accept litigation-driven precedent. Abbott (with industry peers) is actively lobbying the US Congress for a legal shield against preemie-formula litigation (as of Dec 2025 reporting). Bloomberg Intelligence estimates aggregate industry-wide (not Abbott-specific) exposure could reach ~$4B. Abbott's own specific case count, reserved liability, or total expected exposure was NOT found/quantified in any source this run -- material OPEN item (facts.md O6).",
+      "as_of": "2026-04-13",
+      "sources": [
+        {
+          "source_name": "insurance_journal_verdict",
+          "url": "https://www.insurancejournal.com/news/national/2026/04/13/865692.htm",
+          "public_date": "2026-04-13",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "claims_journal_congress_shield",
+          "url": "https://www.insurancejournal.com/news/national/2025/12/11/850750.htm",
+          "public_date": "2025-12-11",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "exact_sciences_acquisition_status",
+      "is_quantitative": false,
+      "value": "Completed 2026-03-23. Abbott acquired Exact Sciences for ~$20.6-21B, funded via $20.0B new debt issuance plus cash on hand; also assumed ~$2.8B of Exact Sciences' existing debt (of which $1.4B repaid March 2026). Acquired brands: Cologuard, Oncotype DX, Oncodetect, Cancerguard. Expected ~$3B incremental 2026 sales; FY2026 guidance reflects $0.20 EPS dilution. As of this as_of date (~3.5 months post-close), no source found demonstrates realized ex-US revenue acceleration -- the core distribution-leverage strategic thesis remains entirely unproven. This is a LIVE-decay-class field because the deal's financial/strategic status is actively evolving and material to near-term guidance and leverage assessment.",
+      "as_of": "2026-04-29",
+      "sources": [
+        {
+          "source_name": "medtechdive_close_coverage",
+          "url": "https://www.medtechdive.com/news/abbott-acquire-exact-sciences/806020/",
+          "public_date": "2026",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stocktitan_8k_1q26_integration_commentary",
+          "url": "https://www.stocktitan.net/sec-filings/ABT/8-k-abbott-laboratories-reports-material-event-b7437723524d.html",
+          "public_date": "2026-04-29",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

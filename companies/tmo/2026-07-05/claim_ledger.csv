@@ -1,0 +1,82 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,523.44,USD,2026-07-02,YAHOO-TMO-PRICE,B1,Independently re-fetched via market_data_download.fetch_yahoo - confirmed 2nd source TMO-SA-STATS same value same date
+C2,Last close price (cross-check),523.44,USD,2026-07-02,TMO-SA-STATS,B1,Confirms YAHOO-TMO-PRICE
+C3,52-week high,643.99,USD,2026-07-02,TMO-SA-STATS,B1,Yahoo re-fetch 1yr window shows 638.18 - minor source variance ~0.9%
+C4,52-week high (independent re-fetch),638.18,USD,2026-07-02,YAHOO-TMO-PRICE,B1,Independent re-fetch via fetch_yahoo 1yr window
+C5,52-week low,403.36,USD,2026-07-02,TMO-SA-STATS,B1,Yahoo re-fetch shows 403.47 - closely consistent
+C6,52-week low (independent re-fetch),403.47,USD,2026-07-02,YAHOO-TMO-PRICE,B1,Independent re-fetch via fetch_yahoo 1yr window
+C7,Shares outstanding,371.62,millions,2026-07-05,TMO-SA-STATS,B1,10-K mirror shows 371484244 - consistent
+C8,Market cap,194.52,USD billions,2026-07-05,TMO-SA-STATS,B1,
+C9,Beta,0.87,ratio,2026-07-05,TMO-SA-STATS,B1,
+C10,FY2025 total revenue,44556,USD millions,2025-12-31,TMO-SA-FINANCIALS,B1,Cross-checked TMO-IR-Q4PR +4pct reported +2pct organic
+C11,FY2025 gross profit,18238,USD millions,2025-12-31,TMO-SA-FINANCIALS,B1,
+C12,FY2025 gross margin,40.93,pct,2025-12-31,TMO-SA-FINANCIALS,B1,
+C13,FY2025 GAAP operating income,7746,USD millions,2025-12-31,TMO-SA-FINANCIALS,B1,
+C14,FY2025 GAAP operating margin,17.38,pct,2025-12-31,TMO-SA-FINANCIALS,B1,
+C15,FY2025 adjusted operating income,10110,USD millions,2025-12-31,TMO-IR-Q4PR,A1,
+C16,FY2025 adjusted operating margin,22.7,pct,2025-12-31,TMO-IR-Q4PR,A1,vs 22.6pct FY2024 +10bps
+C17,FY2025 net income,6761,USD millions,2025-12-31,TMO-SA-FINANCIALS,B1,
+C18,FY2025 diluted EPS GAAP,17.74,USD,2025-12-31,TMO-SA-FINANCIALS,B1,+7pct YoY
+C19,FY2025 adjusted EPS,22.87,USD,2025-12-31,TMO-IR-Q4PR,A1,+5pct YoY
+C20,FY2024 total revenue,42879,USD millions,2024-12-31,TMO-SA-FINANCIALS,B1,+0.05pct YoY essentially flat
+C21,FY2024 net income,6380,USD millions,2024-12-31,TMO-SA-FINANCIALS,B1,
+C22,FY2024 adjusted EPS,21.86,USD,2024-12-31,search cross-check,B2,
+C23,FY2023 total revenue,42857,USD millions,2023-12-31,TMO-SA-FINANCIALS,B1,-4.58pct YoY post-COVID normalization
+C24,FY2023 net income,6014,USD millions,2023-12-31,TMO-SA-FINANCIALS,B1,
+C25,FY2023 diluted EPS,15.45,USD,2023-12-31,TMO-SA-FINANCIALS,B1,
+C26,FY2025 Life Sciences Solutions segment revenue,10374,USD millions,2025-12-31,TMO-IR-Q4PR,A1,+7.7pct growth 23.3pct of total - fastest growing
+C27,FY2025 Analytical Instruments segment revenue,7554,USD millions,2025-12-31,TMO-IR-Q4PR,A1,+1.2pct growth 17.0pct of total - slowest growing
+C28,FY2025 Specialty Diagnostics segment revenue,4676,USD millions,2025-12-31,TMO-IR-Q4PR,A1,+3.6pct growth 10.5pct of total
+C29,FY2025 Laboratory Products and Biopharma Services segment revenue,23984,USD millions,2025-12-31,TMO-IR-Q4PR,A1,+3.6pct growth 53.8pct of total - largest segment
+C30,Q4 2025 total revenue,12210,USD millions,2025-12-31,TMO-IR-Q4PR,A1,+7pct reported +3pct organic
+C31,Q4 2025 adjusted EPS,6.57,USD,2025-12-31,TMO-IR-Q4PR,A1,+8pct YoY
+C32,Q4 2025 diluted EPS GAAP,5.21,USD,2025-12-31,TMO-IR-Q4PR,A1,+9pct YoY
+C33,FY2025 free cash flow,6337,USD millions,2025-12-31,TMO-IR-Q4PR,A1,DOWN from 7324 FY2024 -13.5pct
+C34,FY2024 free cash flow,7324,USD millions,2024-12-31,TMO-IR-Q4PR,A1,
+C35,FY2025 total capital deployed,16500,USD millions,2025-12-31,TMO-IR-Q4PR,A1,~13B M&A + 3.6B shareholder returns
+C36,FY2025 total debt,39385,USD millions,2025-12-31,TMO-SA-BALANCESHEET,B1,
+C37,FY2025 cash and equivalents,9852,USD millions,2025-12-31,TMO-SA-BALANCESHEET,B1,
+C38,FY2025 total assets,110343,USD millions,2025-12-31,TMO-SA-BALANCESHEET,B1,
+C39,FY2025 total shareholders equity,53537,USD millions,2025-12-31,TMO-SA-BALANCESHEET,B1,
+C40,FY2025 goodwill,49362,USD millions,2025-12-31,TMO-SA-BALANCESHEET,B1,plus 15838 other intangibles per stockanalysis; 10-K mirror shows 14600 definite-lived intangibles - minor variance
+C41,Employee count,125000,headcount approx,2025-12-31,TMO-STOCKTITAN-10K,A2,
+C42,Q1 2026 total revenue,11010,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,+6pct reported beat street estimate 10.85B
+C43,Q1 2026 adjusted EPS,5.44,USD,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,+6pct YoY beat guidance
+C44,Q1 2026 Laboratory Products and Biopharma Services organic growth,4,pct,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,reported +7pct - led by clinical research PPD
+C45,Q1 2026 Specialty Diagnostics adjusted operating margin,27.4,pct,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,+90bps YoY
+C46,Q1 2026 Analytical Instruments organic growth,-2,pct,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,DECLINE - academic and government softness US and China
+C47,Q1 2026 cash and equivalents,3300,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,down sharply from 9852 YE2025 - Clario acquisition
+C48,Q1 2026 total debt,43200,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,up from 39385 YE2025
+C49,Q1 2026 leverage ratio gross debt to adjusted EBITDA,3.8,ratio,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,
+C50,Q1 2026 leverage ratio net debt to adjusted EBITDA,3.5,ratio,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,company-disclosed figure
+C51,Q1 2026 operating cash flow,1200,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,
+C52,Q1 2026 free cash flow,830,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,after 370M net capex
+C53,Q1 2026 share buybacks,3000,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,plus 10pct dividend increase
+C54,Q1 2026 total capital return to shareholders,3200,USD millions,2026-03-28,TMO-Q1-26-EARNINGS-MULTI,A2,including dividends
+C55,FY2026 guidance revenue low,47300,USD millions,2026-04-30,TMO-Q1-26-EARNINGS-MULTI,A2,raised from 46300 - represents +6 to +8pct reported growth
+C56,FY2026 guidance revenue high,48100,USD millions,2026-04-30,TMO-Q1-26-EARNINGS-MULTI,A2,raised from 47200
+C57,FY2026 guidance adjusted EPS low,24.64,USD,2026-04-30,TMO-Q1-26-EARNINGS-MULTI,A2,raised from 24.22
+C58,FY2026 guidance adjusted EPS high,25.12,USD,2026-04-30,TMO-Q1-26-EARNINGS-MULTI,A2,raised from 24.80
+C59,Clario acquisition revenue contribution to FY2026 guidance,900,USD millions approx,2026-04-30,TMO-Q1-26-EARNINGS-MULTI,A2,plus 0.32 adjusted EPS net of financing costs
+C60,Clario acquisition purchase price,8875,USD millions,2026-03-24,APPLIEDCLINICALTRIALS-CLARIO,B1,cash acquisition - endpoint data solutions for clinical trials
+C61,Clario deferred payment,125,USD millions,2027-01-01,APPLIEDCLINICALTRIALS-CLARIO,B1,payable Jan 2027
+C62,Clario earnout potential max,400,USD millions,2026-2027,APPLIEDCLINICALTRIALS-CLARIO,B1,performance-based 2026-2027
+C63,Microbiology business divestiture price,1100,USD millions,2026,CLINICALLAB-ASTORG-DIVESTITURE,B1,to Astorg - expected close H2 2026
+C64,Asia-Pacific revenue FY2025,8.10,USD billions,2025-12-31,BULLFINCHER-TMO-GEOREVENUE,B2,China not broken out separately - folded into APAC
+C65,Asia-Pacific revenue FY2024,7.96,USD billions,2024-12-31,BULLFINCHER-TMO-GEOREVENUE,B2,18.55pct of total revenue
+C66,China organic growth FY2025,-mid-single-digit,pct qualitative,2025-12-31,search cross-check GenomeWeb,B2,management commentary not exact figure
+C67,Tariff impact estimate,375,USD millions approx,2026,search cross-check,B2,NOT independently confirmed against primary TMO disclosure - OPEN O5
+C68,CEO Marc Casper tenure start,2009-10-01,date,2009-10-01,search cross-check,B2,~16.5 years tenure as of 2026
+C69,CEO total compensation reported,79.92,USD millions,2025,FINTOOL-CASPER-COMP,B2,NOT verified against actual proxy - OPEN O6
+C70,TTM revenue,45.20,USD billions,2026-07-05,TMO-SA-STATS,B1,+5.4pct
+C71,TTM net income,6.85,USD billions,2026-07-05,TMO-SA-STATS,B1,+5.1pct
+C72,TTM EPS,18.19,USD,2026-07-05,TMO-SA-STATS,B1,+6.7pct
+C73,Trailing PE ratio,28.77,ratio,2026-07-05,TMO-SA-STATS,B1,
+C74,Forward PE ratio,20.63,ratio,2026-07-05,TMO-SA-STATS,B1,
+C75,Dividend annual per share,1.88,USD,2026-07-05,TMO-SA-STATS,B1,yield ~0.36pct
+C76,Analyst average price target,596.26,USD,2026-07-05,TMO-SA-STATS,B1,+13.9pct from 523.44 - 25 analysts Buy consensus
+C77,Analyst high price target,750,USD,2026-07-05,TIKR-TMO-TARGETS,B2,+43.3pct from 523.44
+C78,Current EV/EBITDA,18.23,ratio,2026-07-05,GURUFOCUS-TMO-EVEBITDA,B2,range 17.97-19.32 across sources - below 5yr avg ~20.2x
+C79,TMO 5-year average EV/EBITDA,20.2,ratio,2021-2026,YCHARTS-TMO,B2,
+C80,Danaher EV/EBITDA peer,18.8,ratio,2026-06-03,AAII-DANAHER-VALUATION,B1,closest peer comp
+C81,Danaher price to sales,5.12,ratio,2026-06-03,AAII-DANAHER-VALUATION,B1,vs industry median 3.65

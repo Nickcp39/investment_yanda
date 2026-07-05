@@ -1,0 +1,73 @@
+{
+  "ticker": "TMO",
+  "as_of": "2026-07-05",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 523.44,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 523.4400024414062,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 523.44
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 523.44
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-07-02"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "403.36 <= 523.44 <= 643.99"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+29.8% off low, -18.7% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "372M x 523.44 = 0.195T vs card 0.195T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -18.7% vs card-implied -18.7% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 523.44 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-07-01 (4d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

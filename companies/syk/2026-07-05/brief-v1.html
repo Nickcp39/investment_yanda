@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYK 决策简报 v1 · as_of 2026-07-05</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#132a1a,#1a1d24);border-color:#2c5a3c}
+  .verdict .val{color:var(--grn)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Stryker (SYK) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-05 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65-70%)</b> · 来源 SEC EDGAR(403,已 fallback)+ 官方 IR + StockAnalysis + Yahoo chart API</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">STARTER</div><div class="sub" style="margin:0">初始 3% · 确认后加至 6-7%</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">good-to-very-good</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$326.54</div><div class="sub" style="margin:0">市值 ~$125.18B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $404.87</div><div class="val warn">−19.4%</div><div class="sub" style="margin:0">高点在网络安全事件<b>之前</b>,现处修复中段</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>Stryker 是 Mako 骨科手术机器人装机基础(3,000+台,累计100万+膝关节+200万+全类型机器人手术)+ MedSurg & Neurotechnology 多元化组合(增速更快,+10.7%有机)的双引擎医械模式。Mako 的"耗材拉动"逻辑(装机后持续拉动 Stryker 自家植入物销售)是合理的分析师推测,但<b>本轮尚未在公司披露中量化确认</b>。2026年3月遭遇网络安全事件(~3周停摆,约$3.75亿延迟/损失销售),但这是<b>单一、有明确起止时间、已被量化的一次性事件</b>——管理层在事件后一个季度就<b>维持(未下调)</b>全年指引(有机增速8.0-9.5%,调整后EPS $14.90-15.10)。</p>
+    <p><b>本案与 GEV/GEHC 范例的关键差异:</b>base case 在<b>当前价格</b>就已通过8%门槛且有真实缓冲(3年+11.1%/5年+12.5%)——不需要牛市情景(耗材拉动兑现、软组织机器人扩张成功、中国份额守住)成立才能赚钱。<b>binding constraint 是完整度,不是价格或生意质量</b>:两大未解问题——(1)中国骨科机器人domestic竞争(天智航、微创等)是否会重演"联影 vs GEHC"的侵蚀剧本,目前<b>尚未被量化确认或证伪</b>;(2)"耗材拉动"经济学尚未被公司披露证实。两项都是<b>待观察</b>,不是已确认的负面。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>SEC 403 已 fallback 官方IR+二手源交叉验证;完整度 ~65-70%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>Mako装机模式合理且部分已证实(装机量/手术量是真实数字);耗材拉动未确认</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num pos">+1</td><td>护城河真实且已量化(~85%+估计份额);中国竞争与拉动经济学均<b>待观察</b>而非已恶化</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num pos">+1</td><td>FY2025全面强劲;Q1'26 miss 完全归因于单一已确认网络安全事件,非多期趋势</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num">0</td><td>无已确认致命路径;网络安全恢复+中国机器人竞争是两个待验证监控点</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num pos">+1</td><td>base case 在现价已有真实缓冲;相对 MDT/ZBH 溢价有增速差支撑</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">Trailing P/E</div><div class="val warn">37.79×</div><div class="sub" style="margin:0">Fwd 20.86×(更可信)</div></div>
+    <div class="card"><div class="lbl">EV/EBITDA (est.)</div><div class="val">~17.7×</div><div class="sub" style="margin:0">MDT 13.67× / ZBH 10.98× / ISRG 45.96×</div></div>
+    <div class="card"><div class="lbl">base 5y IRR</div><div class="val pos">+12.5%</div><div class="sub" style="margin:0">bull +21.1% / bear −5.0%</div></div>
+    <div class="card"><div class="lbl">网络安全影响</div><div class="val warn">~$375M</div><div class="sub" style="margin:0">Q1延迟销售,指引已维持</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据(Q1 2026, 2026-03-31 + FY2025)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num">$25,116M (+11.2% / 有机+10.3%)</td><td>官方 IR + 10-K</td></tr>
+      <tr><td>FY2025 调整后经营利润率</td><td class="num pos">26.3%</td><td>官方 IR</td></tr>
+      <tr><td>FY2025 调整后EPS</td><td class="num pos">$13.63 (+11.8%)</td><td>官方 IR</td></tr>
+      <tr><td>Q1 2026 总营收</td><td class="num">$6,020M (+2.6% / 有机+1.0%)</td><td>StockTitan (SEC镜像)</td></tr>
+      <tr><td>Q1 2026 调整后EPS</td><td class="num neg">$2.60 (−8.5%,未达共识$2.98)</td><td>StockTitan — 归因于网络安全事件</td></tr>
+      <tr><td>网络安全事件(2026-03-11起)</td><td class="num warn">~3周停摆,~$3.75亿延迟销售</td><td>官方 Q1 PR — 4月初已基本恢复</td></tr>
+      <tr><td>FY2026 指引(Q1后)</td><td class="num pos">有机8.0-9.5% / EPS $14.90-15.10 — <b>维持未下调</b></td><td>官方 Q1 PR</td></tr>
+      <tr><td>净债务 (Q1 2026)</td><td class="num">~$11.85B (D/E 0.64×)</td><td>derived — 杠杆温和</td></tr>
+      <tr><td>Mako 累计装机</td><td class="num pos">3,000+ 台</td><td>官方 Q4 PR — 2026Q1为史上最佳Q1装机季</td></tr>
+      <tr><td>Mako 累计手术量</td><td class="num pos">膝关节100万+ / 全类型200万+</td><td>官方 Q4 PR</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>三情景 IRR</h2>
+    <table>
+      <tr><th>情景</th><th class="num">3年IRR</th><th class="num">5年IRR</th><th>vs 8% 门槛</th></tr>
+      <tr><td>Bear(网络安全未恢复+中国机器人侵蚀+关税结构性)</td><td class="num neg">−14.0%</td><td class="num neg">−5.0%</td><td>FAIL</td></tr>
+      <tr><td><b>Base(指引兑现+网络安全事件已恢复+无新增干扰)</b></td><td class="num pos">+11.1%</td><td class="num pos">+12.5%</td><td><b>PASS</b></td></tr>
+      <tr><td>Bull(耗材拉动兑现+平台扩张成功+中国份额守住)</td><td class="num pos">+21.6%</td><td class="num pos">+21.1%</td><td>PASS</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">价位</th><th class="num">vs $326.54</th><th>备注</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">~$401</td><td class="num">+22.8%</td><td>接近52周高点,base case在此价位不再有缓冲</td></tr>
+      <tr><td><b>STARTER(现价已达标)</b></td><td class="num">$326.54(现价)</td><td class="num">0%</td><td>base case 5年IRR已有真实缓冲(+12.5%)</td></tr>
+      <tr><td>Add / 评 CORE</td><td class="num">$292–306</td><td class="num">−6%~−11%</td><td>更充分的安全边际,机会性加仓区</td></tr>
+      <tr><td>深度价值(bear breakeven)</td><td class="num">~$206</td><td class="num">−36.9%</td><td>需多重严重恶化同时发生才会到达</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 完整度(非价格,非生意质量)。</b>两大待解缺口:(O3)中国骨科机器人domestic竞争(天智航/微创等)对 Mako 的实际冲击未量化;(O4)Mako "耗材拉动"经济学(植入物销售是否被机器人装机拉动)零公司披露证据——这两项都是"待观察",不是"已确认恶化"。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A Q2/Q3'26 有机增速未回升至指引区间</td><td>Q1 有机+1.0%(事件影响)</td><td><span class="pill y">黄 — 待Q2验证</span></td></tr>
+      <tr><td>K-B 中国机器人份额确认侵蚀(类比GEHC −15%)</td><td>仅VBP增速端−1.4%~−1.5%</td><td><span class="pill y">黄 — 待观察</span></td></tr>
+      <tr><td>K-C 骨科分部reported/organic增速分歧未解</td><td>+4.3% vs +9.5%有机</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-D 软组织机器人溢价并购</td><td>仅处于评估阶段(~50家标的)</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-E 价格&gt;$401无基本面支撑</td><td>$326.54</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC(段永平主审)</h2>
+    <p>五票一致 <b class="pos">STARTER</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 一轮 critique 后零变动。收敛点:<b>base case 在现价已通过8%门槛且有真实缓冲,财务质量是"单一已确认一次性事件",不是多期恶化趋势,CEO 13.5年任期+60多起并购+93%绩效薪酬比 GEHC 案例证据更扎实</b>——与 GEHC(生意质量本身模糊+无安全边际→WATCH)形成清晰对比,框架在两案中给出了不同但都合理的结论。</p>
+  </div>
+
+  <div class="sec">
+    <h2>职业视角:Mako 机器人 + 中国 VBP / Domestic 机器人竞争</h2>
+    <p>Stryker 的 Mako SmartRobotics 是本覆盖体系中骨科领域最接近"装机基础机器人护城河"的案例——<b>累计装机3,000+台,膝关节手术100万+,全类型机器人手术200万+</b>,估计约<b>85%+</b>的骨科机器人市场份额(分析师估计,非公司披露)。平台持续扩张:Mako Hip Revision(2025年3月FDA批准,市场首个机器人辅助髋关节翻修功能)、Mako Spine、Mako Shoulder(目标2026年上市)。<b>中国domestic骨科机器人竞争者是真实且已命名的</b>:天智航(Tirobot,2023年NMPA膝关节适应症批准)、微创医疗机器人(OrthoBot/鸿鹄)、威高、爱康医疗、春立医疗——这与已经在 GEHC 案例中<b>被证实成功</b>的"联影 vs GEHC"打法结构相同(VBP集采+NMPA本土认证+价格竞争)。<b>但与 GEHC 案例不同,Stryker 的披露更薄</b>:仅有VBP增速端影响(−1.4%~−1.5%),没有中国区收入具体金额或占比,也没有机器人层面的具体竞争影响数据——<b>这是本 dossier 最重要的待解研究问题</b>:Stryker 的中国机器人份额是守住了,还是正在重演 GEHC 的轨迹(只是滞后)?本轮证据无法回答。另外,管理层已提及正在评估软组织机器人领域(~50家初创公司)——这将是进入 Intuitive Surgical(达芬奇,~9,000台装机)和美敦力 Hugo 的领地,是一把双刃剑:既是战略延展的信号,也可能意味着承认单纯骨科机器人主导地位不足以支撑长期增长。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65-70%,<b>非 COMPLETE</b>。OPEN 项:清洁 adj EBITDA/D&A 未直接披露、骨科分部 reported vs organic 增速分歧未解(O2)、中国区收入/机器人竞争数据偏薄(O3)、Mako 耗材拉动经济学完全未量化(O4)、未获取 Q1 2026 电话会逐字稿(O8)。所有载荷性数字回挂官方 IR 或 SEC 一手镜像,交叉验证 ≥2 独立源;价格 $326.54 双源确认精确匹配。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

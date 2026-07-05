@@ -1,0 +1,230 @@
+{
+  "ticker": "SYK",
+  "as_of": "2026-07-05",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. Price sits -19.4% off 52wk high / +16.2% above 52wk low -- neither extreme is within the 3% low/high-hug band, so this is NOT a hug situation (T2 should pass on distance alone); low_high_hug_justified is still declared true with a substantive justification for completeness/audit-trail purposes, since the price's position mid-range reflects a genuine recovery arc (52wk high predates the March 2026 cyber incident; 52wk low was set during the cyber-incident trough) rather than a stale-data artifact.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 326.54,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price is -19.4% below 52wk high of $404.87 (set 2025-07-23, BEFORE the March 2026 cyber incident) and +16.2% above 52wk low of $281.00 (set 2026-05-11, DURING the cyber-incident trough) -- comfortably outside the 3% hug band on both ends, so this is not a low/high-hug edge case. The mid-range position reflects a genuine recovery arc: FY2026 guidance was MAINTAINED (not cut) at the Q1 2026 report despite a real ~$375M cyber-incident-driven deferred-sales impact and an adjusted EPS miss, and operations were substantially restored by early April 2026. The current price sits well below the pre-incident high, consistent with a partial (not complete) market re-rating as the disruption resolves. Confirmed by 2 independent sources showing the identical $326.54 value for the same 2026-07-02 close.",
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SYK?range=1y&interval=1d",
+          "fetched_at": "2026-07-05",
+          "value": 326.54
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/syk/",
+          "fetched_at": "2026-07-05",
+          "value": 326.54
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 125180000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/syk/",
+          "fetched_at": "2026-07-05",
+          "value": 125180000000
+        },
+        {
+          "source_name": "derived",
+          "url": "383.36M shares x $326.54",
+          "fetched_at": "2026-07-05",
+          "value": 125182374400
+        }
+      ],
+      "cross_check_delta_pct": 0.002,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 404.87,
+      "unit": "USD",
+      "as_of": "2025-07-23",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SYK?range=1y&interval=1d",
+          "fetched_at": "2026-07-05",
+          "value": 404.87
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/syk/",
+          "fetched_at": "2026-07-05",
+          "value": 404.87
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 281.00,
+      "unit": "USD",
+      "as_of": "2026-05-11",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SYK?range=1y&interval=1d",
+          "fetched_at": "2026-07-05",
+          "value": 281.00
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/syk/",
+          "fetched_at": "2026-07-05",
+          "value": 281.00
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 383.36,
+      "unit": "millions",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/syk/",
+          "fetched_at": "2026-07-05",
+          "value": 383.36
+        },
+        {
+          "source_name": "stockanalysis_derived_mcap",
+          "url": "125.18B / 326.54 = 383.36M (consistent within rounding)",
+          "fetched_at": "2026-07-05",
+          "value": 383.36
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance (post-Q1 2026, reported 2026-04-30, MAINTAINED not cut despite the cyber incident): organic net sales growth 8.0%-9.5%; adjusted diluted EPS $14.90-$15.10. Tariff impact guided at ~$400M FY2026 total (incremental ~$200M vs the 2025 base), weighted mostly to H1 2026. Next earnings (Q2 2026) expected late July 2026 based on typical cadence -- exact date not confirmed this run.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "stryker_ir_q1_2026_press_release",
+          "url": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-first-quarter-2026-results.html",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stocktitan_8k_10q_summary",
+          "url": "https://www.stocktitan.net/sec-filings/SYK/8-k-stryker-corp-reports-material-event",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "cyber_incident_status",
+      "is_quantitative": false,
+      "value": "Cyber/IT security incident occurred March 11, 2026, causing an estimated ~3-week operational shutdown with ~$375M of deferred/lost Q1 2026 sales. Operations were substantially restored by early April 2026. Management characterized the impact as a timing/one-time disruption and MAINTAINED (did not cut) full-year 2026 guidance at the subsequent earnings report (2026-04-30). As of as_of (2026-07-05), the degree to which the deferred Q1 revenue is recaptured in H2 2026 has NOT yet been confirmed -- Q2 2026 results (expected ~late July 2026) are the key next data point. This is the single most important LIVE-qualitative monitorable in this dossier.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "stryker_ir_q1_2026_press_release",
+          "url": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-first-quarter-2026-results.html",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stocktitan_cyber_incident_coverage",
+          "url": "https://www.stocktitan.net/news/SYK/",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_vbp_exposure",
+      "is_quantitative": false,
+      "value": "China VBP (volume-based procurement) growth-rate impact: -1.4% in 2024, -1.5% guided for 2025 (company-disclosed, growth-rate level, NOT a revenue-dollar or country-% figure). No China-specific revenue percentage or dollar amount found in sources reviewed this run -- only an Asia-Pacific regional estimate (~$2.02B, ~8.9% of FY2024 revenue) that conflates China with the broader region. China domestic orthopedic-robotics competitors are named and real: Tinavi (Tirobot, NMPA-cleared for knee application in 2023), MicroPort MedBot (OrthoBot/Honghu), plus implant makers Weigao, AK Medical, Chunli -- but no source this run quantifies their competitive impact on Stryker's Mako franchise specifically. This is a materially thinner disclosure than the comparable GEHC dossier's confirmed China revenue decline (-15% YoY, 9.85% of total) and is flagged as the single most important open research question in this dossier.",
+      "as_of": "2025-12-31",
+      "sources": [
+        {
+          "source_name": "stryker_10k_fy2025_via_stocktitan",
+          "url": "https://www.stocktitan.net/sec-filings/SYK/10-k-stryker-corp-files-annual-report",
+          "public_date": "2026-01-29",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stryker_q4_2025_press_release",
+          "url": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-fourth-quarter-and-full-year-2025-results.html",
+          "public_date": "2026-01-29",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "mako_robotics_traction",
+      "is_quantitative": false,
+      "value": "Real, substantially quantified Mako SmartRobotics traction as of Q1 2026: 3,000+ cumulative installed systems (milestone reached Q4 2025), 1M+ cumulative robotic knee procedures, 2M+ total robotic procedures across all indications, best-ever Q1 for Mako installs in Q1 2026 (achieved even amid the cyber-incident disruption). US utilization ~2/3 knees / ~1/3 hips; international ~50% knees / ~20% hips. Platform pipeline: Mako 4 (unveiled AAOS 2025), Mako Hip Revision (FDA-cleared March 2025 -- first robotic hip-revision feature in the market), Mako Spine, Mako Shoulder (targeted 2026 launch), Mako RPS (handheld). Estimated ~85%+ orthopedic-robotics market share and ~$1.0B FY2024 direct Mako revenue are BOTH analyst estimates, NOT company-disclosed segment figures. Implant 'pull-through' (Mako driving recurring Stryker implant sales, e.g. Triathlon knee) is a plausible, well-reasoned analyst thesis but is NOT quantified in any source reviewed this run -- the single largest unresolved moat-quantification gap in this dossier.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "stryker_q4_2025_press_release",
+          "url": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-fourth-quarter-and-full-year-2025-results.html",
+          "public_date": "2026-01-29",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stocktitan_mako_coverage",
+          "url": "https://www.stocktitan.net/news/SYK/",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "tariff_exposure",
+      "is_quantitative": false,
+      "value": "FY2026 tariff cost impact guided at ~$400M total (incremental ~$200M vs the 2025 tariff base), weighted mostly to H1 2026 -- implying a fading, not accelerating, headwind consistent with management's maintained full-year guidance.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "stryker_ir_q1_2026_press_release",
+          "url": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-first-quarter-2026-results.html",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        },
+        {
+          "source_name": "stocktitan_8k_10q_summary",
+          "url": "https://www.stocktitan.net/sec-filings/SYK/8-k-stryker-corp-reports-material-event",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

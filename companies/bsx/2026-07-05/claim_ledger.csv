@@ -1,0 +1,78 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,45.14,USD,2026-07-02,YAHOO-BSX-PRICE,B1,Independently re-fetched via market_data_download.py; exact match to frozen as_of_price
+C2,Last close price (cross-check),45.14,USD,2026-07-02,BSX-SA-STATS,B1,Confirms YAHOO-BSX-PRICE exactly
+C3,52-week high,108.14,USD,2025-09-08,YAHOO-BSX-PRICE,B1,Derived from full 1yr daily series
+C4,52-week low (Yahoo daily close basis),42.68,USD,2026-06-30,YAHOO-BSX-PRICE,B1,stockanalysis.com shows 42.25 intraday -minor basis difference flagged
+C5,52-week low (stockanalysis basis),42.25,USD,2026-07,BSX-SA-STATS,B1,Likely intraday low vs Yahoo daily-close low -reconciliation note in freshness.json
+C6,Shares outstanding,1490,millions,2026-07,BSX-SA-STATS,B1,~1.49B
+C7,Market cap,67.09,USD billions,2026-07-02,BSX-SA-STATS,B1,1.49B x 45.14 = 67.26B derived -consistent within rounding
+C8,Trailing P/E,18.89,ratio,2026-07,BSX-SA-STATS,B1,
+C9,Forward P/E,13.15,ratio,2026-07,BSX-SA-STATS,B1,
+C10,Beta,0.58,ratio,2026-07,BSX-SA-STATS,B1,
+C11,Analyst consensus rating,Buy,rating,2026-07,BSX-SA-STATS,B1,30 analysts
+C12,Average analyst price target,75.00,USD,2026-07,BSX-SA-STATS,B1,+66% vs current price -pre-dates full June downgrade wave per facts.md S1
+C13,Next earnings date,2026-07-29,date,2026-07,BSX-SA-STATS,B1,Q2 2026 results
+C14,FY2025 net sales,20074,USD millions,2025-12-31,BSX-Q4FY25-PR,A1,+19.9% reported/+19.2% operational/+15.8% organic
+C15,FY2025 net sales (cross-check),20.074,USD billions,2025-12-31,BSX-SA-FINANCIALS,B1,Confirms BSX-Q4FY25-PR
+C16,FY2025 GAAP diluted EPS,1.94,USD,2025-12-31,BSX-Q4FY25-PR,A1,
+C17,FY2025 adjusted EPS,3.06,USD,2025-12-31,BSX-Q4FY25-PR,A1,
+C18,FY2025 gross margin,69.01,pct,2025-12-31,BSX-SA-FINANCIALS,B1,
+C19,FY2025 operating margin,18.00,pct,2025-12-31,BSX-SA-FINANCIALS,B1,
+C20,FY2025 operating income,3613,USD millions,2025-12-31,BSX-SA-FINANCIALS,B1,
+C21,FY2025 net income,2892,USD millions,2025-12-31,BSX-SA-FINANCIALS,B1,
+C22,Q4 2025 net sales,5286,USD millions,2025-12-31,BSX-Q4FY25-PR,A1,+15.9% reported/+12.7% organic vs guide 11-13%
+C23,Q4 2025 GAAP EPS,0.45,USD,2025-12-31,BSX-Q4FY25-PR,A1,Missed guide 0.48-0.52
+C24,Q4 2025 adjusted EPS,0.80,USD,2025-12-31,BSX-Q4FY25-PR,A1,Beat guide 0.77-0.79
+C25,FY2025 MedSurg segment net sales,6824,USD millions,2025-12-31,BSX-Q4FY25-PR,A1,+6.7% organic
+C26,FY2025 Cardiovascular segment net sales,13250,USD millions,2025-12-31,BSX-Q4FY25-PR,A1,+20.8% organic
+C27,Initial FY2026 guidance -net sales growth (reported),10.5-11.5,pct,2026-02-04,BSX-Q4FY25-PR,A1,Cut twice subsequently -see C33/C40
+C28,Initial FY2026 guidance -adjusted EPS,3.43-3.49,USD,2026-02-04,BSX-Q4FY25-PR,A1,Cut twice subsequently
+C29,Feb 4 2026 stock price move,-17.6,pct,2026-02-04,MOTLEYFOOL-FEB4,B1,Same-day reaction to Q4/FY25 earnings + light initial guide
+C30,Q1 2026 net sales,5203,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+11.6% reported/+9.4% organic
+C31,Q1 2026 GAAP net income,1341,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,vs 674M PY -large jump unexplained this run see O5
+C32,Q1 2026 GAAP diluted EPS,0.90,USD,2026-03-31,BSX-Q1-2026-PR,A1,
+C33,Q1 2026 adjusted EPS,0.80,USD,2026-03-31,BSX-Q1-2026-PR,A1,vs 0.75 PY
+C34,Q1 2026 gross margin,69.5,pct,2026-03-31,BSX-Q1-2026-PR,A1,
+C35,Q1 2026 MedSurg segment net sales,1701,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+5.7% organic
+C36,Q1 2026 Endoscopy net sales,736,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+6.8% organic
+C37,Q1 2026 Urology net sales,646,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+0.5% organic -guidance-cut driver
+C38,Q1 2026 Neuromodulation net sales,318,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+15.4% organic
+C39,Q1 2026 Cardiovascular segment net sales,3503,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+11.2% organic
+C40,Q1 2026 US net sales,3284,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+10.9%
+C41,Q1 2026 EMEA net sales,932,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+1.2% operational
+C42,Q1 2026 APAC net sales,803,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+12.0% operational -China not broken out see O3
+C43,Q1 2026 LACA net sales,185,USD millions,2026-03-31,BSX-Q1-2026-PR,A1,+12.0% operational
+C44,Revised FY2026 guidance (Apr 22) -net sales growth reported,7.0-8.5,pct,2026-04-22,BSX-Q1-2026-PR,A1,First cut from initial 10.5-11.5
+C45,Revised FY2026 guidance (Apr 22) -adjusted EPS,3.34-3.41,USD,2026-04-22,BSX-Q1-2026-PR,A1,First cut from initial 3.43-3.49
+C46,Q1 2026 Watchman net sales,506,USD millions,2026-03-31,MASSDEVICE-APR22,B1,+19.2% YoY -not yet confirmed primary 10-Q table see O2
+C47,Q1 2026 Electrophysiology organic growth,22,pct,2026-03-31,MASSDEVICE-APR22,B1,+18% US +30% international -not yet confirmed primary see O2
+C48,Apr 22 2026 stock price move,9,pct,2026-04-22,MASSDEVICE-APR22,B1,Rallied on relief Q1 beat despite guidance cut
+C49,BSX US PFA market share,41,pct,2026-Q1(approx),QSIGHT-GUIDEPOINT-PFA2026,B2,Down from ~100% in 2023 -single ultimate source see O10
+C50,Medtronic US PFA market share,48,pct,2026-Q1(approx),QSIGHT-GUIDEPOINT-PFA2026,B2,Now leading BSX -single ultimate source
+C51,J&J Biosense Webster US PFA market share,11,pct,2026-Q1(approx),QSIGHT-GUIDEPOINT-PFA2026,B2,Varipulse launched Dec 2024
+C52,Abbott US PFA market share,1,pct,2026-Q1(approx),QSIGHT-GUIDEPOINT-PFA2026,B2,Volt launched Jan 2026 first months
+C53,Q1 2026 total long-term debt,10988,USD millions,2026-03-31,BSX-STOCKTITAN-10Q,A2,leverage ratio 1.87x vs 4.25x covenant
+C54,Q1 2026 cash on hand,1453,USD millions,2026-03-31,BSX-STOCKTITAN-10Q,A2,
+C55,Q1 2026 operating cash flow,348,USD millions,2026-03-31,BSX-STOCKTITAN-10Q,A2,
+C56,Q1 2026 free cash flow (approx),170,USD millions,2026-03-31,BSX-STOCKTITAN-10Q,A2,OCF 348 less net capex ~177-178
+C57,Revised FY2026 guidance (May 27) -organic growth,6.5-8.0,pct,2026-05-27,TRADINGPEDIA-MAY27,B2,Second cut -verbal at Bernstein conference not 8-K
+C58,May 27 2026 stock price move,-10.3 to -12.5,pct,2026-05-27,TRADINGPEDIA-MAY27,B2,New 52wk low intraday 50.75
+C59,Penumbra acquisition enterprise value,14.5,USD billions,2026-01-15,BSX-PENUMBRA-8K,A1,374 dollars per share -73pct cash 27pct stock
+C60,Penumbra cash consideration,11,USD billions,2026-01-15,BSX-PENUMBRA-8K,A1,funded via cash on hand plus new debt
+C61,Penumbra EPS dilution year 1,-0.06 to -0.08,USD,2026-01-15,BSX-PENUMBRA-8K,A1,neutral-to-accretive year 2 accretive thereafter
+C62,CEO Mike Mahoney tenure start,2011-10,date,2026-07,SIMPLYWALLST-MGMT,B2,~14.7 years as of as_of
+C63,CEO Mike Mahoney 2025 total compensation,23.5,USD millions,2025-12-31,MEDICALDESIGN-CEOPAY,B1,+10pct YoY from 21.4M 2024 -not primary DEF14A verified see O9
+C64,CEO Mahoney share ownership,1625414,shares,2026-07,GURUFOCUS-MAHONEY,B2,worth approx 73M at time of source
+C65,Securities class action class period start,2025-07-23,date,2026,ZLK-CLASSACTION,B1,Names Mahoney Monson Stein Fitzgerald Spadea-Anello
+C66,Securities class action class period end,2026-02-03,date,2026,ZLK-CLASSACTION,B1,Day before Feb 4 gap-down
+C67,Securities class action lead plaintiff deadline,2026-05-04,date,2026,ZLK-CLASSACTION,B1,Status as of as_of ACTIVE unresolved
+C68,BSX total assets (most recent qtr found),42707,USD millions,2025-09-30,STOCKANALYSIS-BALANCESHEET-SEARCH,B1,Q3 2025 basis -not Q1 2026
+C69,BSX goodwill (Q3 2025),18214,USD millions,2025-09-30,STOCKANALYSIS-BALANCESHEET-SEARCH,B1,
+C70,BSX other intangibles net (Q3 2025),7162,USD millions,2025-09-30,STOCKANALYSIS-BALANCESHEET-SEARCH,B1,goodwill+intangibles approx 59pct of total assets
+C71,S&P credit rating,A-,rating,2024-2025 (historical),SP-MOODYS-CREDITRATING,B1,upgraded from BBB+ -dated pre-2026 crisis cycle see O-item
+C72,Moody's credit rating,Baa2,rating,2024-2025 (historical),SP-MOODYS-CREDITRATING,B1,both investment grade
+C73,FY2025 Watchman growth,29,pct,2025-12-31,BSX-Q4FY25-PR,A1,Q4 and full year both +29pct
+C74,Farapulse cumulative patients treated,500000,patients,2026 (approx),QSIGHT-GUIDEPOINT-PFA2026,B2,plus corroborating BSX company commentary
+C75,Global EP market size 2025,13,USD billions,2025,BSX-INVESTOR-DAY-2025,A2,forecast to reach 20B by 2028
+C76,FARAPULSE accounts using integrated OPAL HDx mapping,33,pct (1 in 3),2026 (approx),PRNEWSWIRE-OPAL-LAUNCH,A1,ecosystem lock-in adoption metric
+C77,$2B accelerated share repurchase agreement,2,USD billions,2026-05-18,BSX-STOCKTITAN-10Q,A2,part of 5B total authorization -opportunistic buyback amid crash

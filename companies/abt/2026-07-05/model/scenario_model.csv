@@ -1,0 +1,54 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_adj_ebitda_margin,exit_ev_ebitda_multiple,rev_terminal_usd_b,ebitda_terminal_usd_b,net_debt_terminal_usd_b,ev_terminal_usd_b,equity_terminal_usd_b,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.020,0.195,14.5,47.04,9.17,30.0,133.01,103.01,59.14,-12.7,FAIL
+bear,5,0.020,0.200,15.0,48.94,9.79,26.0,146.83,120.83,69.37,-4.2,FAIL
+base,3,0.065,0.210,17.0,53.55,11.24,23.0,191.16,168.16,96.54,2.4,FAIL
+base,5,0.065,0.225,17.8,60.73,13.66,16.0,243.24,227.24,130.46,8.5,PASS
+bull,3,0.090,0.225,19.0,57.41,12.92,19.0,245.41,226.41,129.99,12.9,PASS
+bull,5,0.090,0.245,20.0,68.20,16.71,10.0,334.20,324.20,186.13,16.3,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2025 actuals + Q1 2026 balance sheet: revenue $44.328B (FY2025), est adj EBITDA ~$10.05B
+#   (operating income ~$8.05B at ~18.17% op margin [stockanalysis basis] + est D&A ~4.5% of revenue ~$1.99B; D&A not
+#   separately disclosed in official-PR sources reviewed this run -- OPEN item, same limitation pattern as GEHC's O2)
+# - Current price $95.40; shares 1,741.8M; market cap $166.17B; net debt (Q1 2026 basis, post-Exact-Sciences, most
+#   current) ~$27.24B; EV ~$193.41B
+# - Current implied EV/EBITDA (FY25-actuals basis): ~19.2x -- this is the starting multiple all scenarios exit FROM.
+#   NOTE: this is a much richer starting multiple than the GEHC exemplar's ~9.7x, reflecting Abbott's higher-quality,
+#   higher-growth Medical Devices/CGM-weighted portfolio mix and premium med-tech/diversified-healthcare positioning
+#   -- but it also means less multiple-expansion room and more reliance on genuine EBITDA growth to drive returns.
+# - Terminal-year revenue baseline already reflects Exact Sciences' ~$3B 2026 contribution embedded in the FY2026
+#   guided comparable growth rate (6.5-7.5%) that anchors the BASE case CAGR assumption.
+# - BEAR: Exact Sciences distribution-leverage thesis fails to materialize (no meaningful ex-US Cologuard/Cancerguard
+#   acceleration); NEC litigation escalates into a multi-hundred-million-to-billion-dollar liability requiring large
+#   reserves/settlements; China Diagnostics decline proves structural (VBP-driven) rather than COVID-transient and
+#   continues at a similar or worse pace; Nutrition keeps deteriorating; CGM share erosion to Dexcom accelerates;
+#   net debt stays elevated (management's stated $3B/yr paydown plan under-delivers); multiple de-rates toward
+#   14.5-15x reflecting a "richly-priced diversified healthcare company whose big bet didn't pay off" re-rating.
+# - BASE: FY2026 guidance is roughly achieved (6.5% CAGR proxy for the 6.5-7.5% guided range); Exact Sciences
+#   contributes as guided but distribution-leverage upside is not yet fully proven within the window; NEC litigation
+#   settles or is contained at a manageable (not escalating) level; China Diagnostics stabilizes near flat-to-modest
+#   decline as COVID-test comp fully laps; Nutrition stabilizes (does not recover, does not worsen further); stated
+#   debt paydown executes close to plan (net debt glides from $27.2B toward $16-17B by Yr5); adj EBITDA margin
+#   expands modestly (21.0% Yr3 -> 22.5% Yr5) as Exact Sciences integration synergies and Medical Devices mix-shift
+#   continue; multiple holds roughly near-current-to-modestly-compressed (17.0-17.8x) reflecting a "growth thesis
+#   intact but appropriately not re-rated further until proof points land" read.
+# - BULL: Exact Sciences distribution-leverage thesis proves out (genuine ex-US Cologuard/Cancerguard acceleration,
+#   Cancerguard MCED platform scales); NEC litigation resolves favorably (legislative shield, or a durable string of
+#   defense verdicts/appeals wins) removing the tail-risk overhang; China Diagnostics fully stabilizes/re-accelerates
+#   as Core Lab's underlying installed-base strength (already +3.6% organic in Q4 2025) comes through cleanly; CGM
+#   franchise successfully defends share against Dexcom via next-gen Libre iteration; Medical Devices keeps
+#   compounding double-digit; aggressive deleveraging (net debt to ~$10B by Yr5) plus margin expansion (22.5% Yr3 ->
+#   24.5% Yr5) support a re-rate toward 19-20x reflecting proven, multi-franchise execution.
+# - Dividend yield contribution: ~2.0%/yr added to price-CAGR-implied IRR for total return (current stated yield
+#   2.64% at the frozen price; used a slightly more conservative 2.0% assumption to be consistent-but-conservative
+#   given the stated ~$3B/yr 2026 debt-paydown priority could, in a stress scenario, compete with dividend-growth
+#   pace even though the 54-year Dividend King streak has so far been explicitly preserved through this deal).
+# - 8% hurdle: bear FAILS at both 3yr and 5yr; base FAILS at 3yr (+2.4%) but PASSES (marginally) at 5yr (+8.5%);
+#   bull PASSES at both horizons. This is a MORE FAVORABLE shape than the GEHC exemplar (where base FAILED at BOTH
+#   horizons, essentially flat at 5yr) -- ABT's stronger underlying organic growth profile (Medical Devices +11.9%
+#   organic FY2025) and the already-partially-realized Diagnostics inflection (Q1 2026 comparable growth turning
+#   positive) support a base case that, while still requiring several things to go right (Exact Sciences integration,
+#   NEC containment, China stabilization), clears the hurdle at the 5-year horizon with a modest (not zero) cushion.
+#   However, the starting multiple (~19.2x EV/EBITDA) is much richer than GEHC's (~9.7x), meaning ABT offers LESS
+#   downside protection if the bear case materializes (-12.7%/-4.2% IRR) than a name trading at a genuinely low
+#   multiple would.

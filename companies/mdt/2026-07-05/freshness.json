@@ -1,0 +1,121 @@
+{
+  "ticker": "MDT",
+  "as_of": "2026-07-05",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. IMPORTANT INCIDENT NOTE (self-caught, INC-001-style near-miss): one intermediate web-search summarization during this run returned a conflicting price ($102.90 / mkt cap $101.38B, apparently a search-engine artifact possibly confusing MDT with another ticker or a stale cached snippet -- it also referenced an unrelated 'cyberattack' claim not corroborated anywhere else). This was NOT accepted -- a direct WebFetch re-pull of stockanalysis.com's MDT page returned an exact, timestamped confirmation ($83.19 at Jul 2, 2026, 4:00 PM EDT, mkt cap $106.49B, 52wk range $73.31-$106.33) matching every other independent source gathered this run. The conflicting figure was investigated and rejected, not silently discarded -- documented here per the verify-data-before-trusting discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 83.19,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": 83.19},
+        {"source_name": "websearch_crosscheck", "url": "https://finance.yahoo.com/quote/MDT/", "fetched_at": "2026-07-05", "value": 83.19}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 106480000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": 106490000000},
+        {"source_name": "derived", "url": "1.28B shares x $83.19", "fetched_at": "2026-07-05", "value": 106480000000}
+      ],
+      "cross_check_delta_pct": 0.009,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 106.33,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": 106.33},
+        {"source_name": "websearch_crosscheck", "url": "https://finance.yahoo.com/quote/MDT/", "fetched_at": "2026-07-05", "value": 106.33}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 73.31,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": 73.31},
+        {"source_name": "websearch_crosscheck", "url": "https://finance.yahoo.com/quote/MDT/", "fetched_at": "2026-07-05", "value": 73.31}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1280,
+      "unit": "millions",
+      "as_of": "2026-07-04",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": 1280},
+        {"source_name": "derived_from_marketcap", "url": "market cap $106.49B / price $83.19", "fetched_at": "2026-07-05", "value": 1280.1}
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true
+    },
+    {
+      "field": "dividend",
+      "is_quantitative": true,
+      "value": 0.72,
+      "unit": "USD quarterly (annualized 2.88)",
+      "as_of": "2026-06-03",
+      "sources": [
+        {"source_name": "mdt_newsroom_q4fy26", "url": "https://news.medtronic.com/2026-06-03-Medtronic-reports-fourth-quarter-and-full-year-fiscal-2026-results-delivers-highest-annual-revenue-growth-in-10-years", "public_date": "2026-06-03", "fetched_at": "2026-07-05", "value": 0.72},
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-07-05", "value": "yield 3.41% implies ~$2.84-2.88 annualized -- consistent"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2027 organic revenue growth guidance +6.75% to +7.25%; non-GAAP diluted EPS guidance $5.90-$6.00 (+6.7% to +8.5% YoY), issued with the Q4/full-year FY2026 earnings release.",
+      "as_of": "2026-06-03",
+      "sources": [
+        {"source_name": "mdt_newsroom_q4fy26", "url": "https://news.medtronic.com/2026-06-03-Medtronic-reports-fourth-quarter-and-full-year-fiscal-2026-results-delivers-highest-annual-revenue-growth-in-10-years", "public_date": "2026-06-03", "fetched_at": "2026-07-05"},
+        {"source_name": "alphastreet_q4fy26", "url": "https://news.alphastreet.com/medtronic-releases-q4-2026-financial-results/", "public_date": "2026-06", "fetched_at": "2026-07-05"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_vbp_status",
+      "is_quantitative": false,
+      "value": "China ~7% of total revenue (FY2024-vintage figure, NOT independently re-confirmed for FY2026 -- flagged as a material OPEN item, facts.md O2). Direct tariff exposure to Chinese imports specifically <1% of revenue. CEO characterization (unquoted/undated): China VBP pricing-pressure impact is 'largely behind us,' with China sales 'growing at the corporate average' as procedure-volume gains offset residual pricing pressure. This is directionally OPPOSITE of a comparable prior GEHC-exemplar finding (confirmed -15% YoY China revenue decline), but rests on meaningfully weaker sourcing -- no hard, current-year percentage or dated management quote was found and independently verified this run.",
+      "as_of": "2025-2026 (imprecise -- see note)",
+      "sources": [
+        {"source_name": "medtechdesign_chinaexposure", "url": "https://www.medicaldesignandoutsourcing.com/china-exposure-medtronic-intuitive-henry-schein-align-envista-dentsply-sirona/", "public_date": "2025-2026", "fetched_at": "2026-07-05"},
+        {"source_name": "mddionline_vbp_behindus", "url": "https://www.mddionline.com/business/medtronic-ceo-china-vbp-impact-is-largely-behind-us-", "public_date": "2025-2026", "fetched_at": "2026-07-05"}
+      ],
+      "pass": true,
+      "confidence_note": "LOWER confidence than a typical LIVE-qualitative field in this framework -- explicitly flagged in facts.md O2 as the top-priority gap to close on next refresh, rather than treated as a fully resolved data point."
+    },
+    {
+      "field": "hugo_status",
+      "is_quantitative": false,
+      "value": "Hugo RAS system received first US FDA clearance December 3, 2025 for urologic procedures (prostatectomy, nephrectomy, cystectomy), based on the 137-patient Expand URO IDE study (both primary safety/effectiveness endpoints met), subsequently peer-reviewed in BJU International (2026). General surgery and gynecology indications in pipeline (Embrace Gynecology enrollment complete). Zero commercial revenue/scale disclosure found anywhere as of as_of date.",
+      "as_of": "2025-12-03",
+      "sources": [
+        {"source_name": "medtechdive_hugo_clearance", "url": "https://www.medtechdive.com/news/Medronic-Hugo-surgical-robot-FDA-clearance/807049/", "public_date": "2025-12", "fetched_at": "2026-07-05"},
+        {"source_name": "bjui_hugo_study", "url": "https://bjui-journals.onlinelibrary.wiley.com/doi/10.1111/bju.70314", "public_date": "2026", "fetched_at": "2026-07-05"}
+      ],
+      "pass": true
+    }
+  ]
+}

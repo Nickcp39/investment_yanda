@@ -1,0 +1,93 @@
+{
+  "ticker": "SYK",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "orthopedic_robotics_installed_base_moat_absorbing_confirmed_cyber_disruption_facing_unresolved_china_robotics_question",
+  "as_of_price": 326.54,
+  "as_of_market_cap": 125180000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch returned HTTP 403 on first attempt; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to official Stryker IR press releases (A1/A2) + stocktitan.net structured filing mirrors (A2-proxy) + stockanalysis.com aggregated financials (B1) + web search corroboration. Every load-bearing FY2025/Q1 2026 figure (revenue, margin, EPS, cash flow, debt, Mako installed-base/procedure metrics) cross-checked across >=2 independent sources. Price $326.54 confirmed via 2 independent sources (Yahoo + stockanalysis.com), both dated to the same 2026-07-02 close -- exact match to frozen as_of_price input. 71 claims registered in claim_ledger.csv; 22 sources in source_register.md. Completeness ~65-70% -- key gaps: clean adj EBITDA/D&A not directly disclosed, Orthopaedics segment reported-vs-organic growth divergence unresolved (O2), China-specific revenue/robotics-competitive data thin (O3), implant pull-through economics unquantified (O4), no earnings-call transcript fetched (O8). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["SYK-10K-FY25", "SYK-Q4-PR", "SYK-Q1-PR", "SYK-STOCKTITAN-1Q26", "YAHOO-SYK-PRICE", "SYK-SA-STATS"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med-high",
+      "finding": "Stryker operates a two-segment medtech model: a diversified, faster-growing MedSurg & Neurotechnology franchise (62% of FY2025 revenue, +10.7% organic) and an Orthopaedics segment (38%, +9.5% organic) anchored by the Mako SmartRobotics platform -- the closest orthopedic-specific analog to an installed-base robotic moat in this coverage universe (3,000+ installs, 1M+ knee / 2M+ total robotic procedures, best-ever Q1 2026 installs even amid the cyber disruption). The 'implant pull-through' mechanism (Mako placement driving recurring Stryker implant sales) is a plausible, well-reasoned analyst thesis consistent with the general medtech razor/razorblade model, but is NOT quantified in the 10-K or IR materials reviewed this run -- flagged explicitly as unconfirmed, not assumed. Signal = +1 (mildly positive): the mechanism is coherent AND partially evidenced (unit/procedure metrics are real, IR-disclosed facts, not just narrative), a stronger evidentiary footing than GEHC's AI-monetization thesis at the same stage.",
+      "drivers": ["SYK-10K-FY25", "SYK-Q4-PR", "STOCKTITAN-SYK-MAKO", "STOCKTITAN-SYK-10K"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Moat is GOOD-TO-VERY-GOOD. Mako installed-base + surgeon-training switching cost is real, substantially quantified (3,000+ systems, 1M+/2M+ procedures, clear multi-generation platform roadmap: Hip Revision shipping, Spine/Shoulder/RPS in pipeline), and estimated at ~85%+ orthopedic-robotics category share (analyst estimate, not company-disclosed). MedSurg & Neurotechnology provides genuine diversification, growing faster than Orthopaedics (+10.7% vs +9.5% organic). CEO Kevin Lobo (13.5yr tenure, 60+ acquisitions, 93% at-risk comp) is a materially longer and better-incentive-aligned track record than the GEHC comparison. TWO genuine, unresolved open questions temper the grade: (a) China domestic robotics competitors (Tinavi NMPA-cleared 2023, MicroPort, Weigao, AK Medical, Chunli) are named and real, but NO source this run quantifies their competitive impact on Stryker specifically -- a thinner disclosure than GEHC's confirmed -15% China revenue decline, meaning this risk is UNRESOLVED rather than negatively resolved; (b) implant pull-through economics remain unquantified. Signal = +1: moat is real, well-evidenced in its core dimension, with genuine but currently-undetermined (not confirmed-negative) emerging questions.",
+      "drivers": ["SYK-Q4-PR", "STOCKTITAN-SYK-MAKO", "SYK-PROXY-2026", "STOCKTITAN-SYK-10K"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "FY2025 was a strong year across every headline metric: +10.3% organic growth, 26.3% adj operating margin, +11.8% adj EPS growth, and OCF/NI conversion of ~1.55x (materially stronger than the GEHC comparison's ~0.70x). Q1 2026 showed a real adjusted EPS miss (-8.5% YoY, missed consensus by ~12.8%) and organic growth deceleration (10.3%->1.0%), but this traces almost entirely to a SINGLE, dated, quantified event (the March 11 2026 cyber incident, ~$375M deferred sales, ~3-week shutdown, operations restored by early April) plus a front-loaded, guided-to-fade tariff headwind -- NOT a multi-period structural deterioration pattern (contrast with GEHC's three consecutive quarters of margin compression). FY2026 guidance was MAINTAINED (not cut) immediately after the miss. Balance sheet carries real, M&A-driven leverage (goodwill+intangibles >50% of total assets) but at moderate absolute levels (D/E 0.64x, ~2.1x gross debt/EBITDA) -- more conservative than the GEHC comparison (D/E 0.91x). Signal = +1: financial trend is a single confirmed, well-explained disruption on top of an otherwise strong multi-year base, not a negative multi-period trend.",
+      "drivers": ["SYK-Q4-PR", "SYK-Q1-PR", "SYK-STOCKTITAN-1Q26", "SYK-SA-BALANCESHEET"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "No single kill path reviewed rises to high-confidence imminent thesis-killer. Most immediately testable: whether the ~$375M cyber-incident-deferred Q1 sales is recaptured in H2 2026 as the maintained guidance implies -- resolves within 1-2 quarters (Q2 2026 is the key test). Highest career-relevance, least-resolved: whether China domestic robotics (Tinavi, MicroPort, et al.) replicates the United-Imaging-vs-GEHC erosion playbook against Stryker's Mako franchise -- the mechanism is directly analogous to an already-realized precedent in a comparable peer, but is CURRENTLY UNCONFIRMED in magnitude for Stryker specifically, a genuine evidence gap rather than a negatively-resolved risk. Two lower-priority paths (implant pull-through overstatement, M&A/impairment risk from the >50%-of-assets goodwill+intangibles base) are structurally embedded but not acute. Signal = 0 (neutral): real, monitorable risks exist but none are confirmed as currently materializing, and the balance sheet (moderate leverage, strong OCF/NI conversion) provides a genuine, if not maximal, offsetting cushion.",
+      "drivers": ["SYK-Q1-PR", "STOCKTITAN-SYK-MAKO", "SYK-STOCKTITAN-1Q26"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $326.54 (~$125.18B mkt cap, ~$137.03B EV using Q1 2026 net debt ~$11.85B): EV/FY2025-est-adj-EBITDA ~17.7x; forward P/E 20.86x (vs trailing 37.79x, which is distorted upward by the Q1 2026 cyber-incident EPS miss flowing through the trailing window -- forward P/E is the more decision-relevant lens here). Price sits -19.4% off the 52wk high ($404.87, set 2025-07-23, BEFORE the cyber incident) and +16.2% above the 52wk low ($281.00, set 2026-05-11, DURING the cyber-incident trough) -- a mid-recovery position, comfortably outside either hug band, independently verified as a genuine recovery arc (not a stale price), confirmed 2 sources exact match to frozen input. SYK trades at a real premium to MDT (13.67x fwd P/E) and ZBH (10.98x) -- explained by a genuine organic-growth differential (10.3% FY2025 organic vs peers' more mature profiles) -- and a deep discount to ISRG (45.96x), reflecting ISRG's higher structural growth ceiling. 3-scenario IRR: bear -14.0%(3yr)/-5.0%(5yr); base +11.1%(3yr)/+12.5%(5yr); bull +21.6%(3yr)/+21.1%(5yr). BOTH base AND bull clear the 8% hurdle at both horizons -- only bear fails, and bear requires MULTIPLE simultaneous adverse events to compound. Signal = +1: price already offers real (not razor-thin) margin of safety in the base case, a materially more favorable setup than the GEHC dossier's flat base case or the GEV exemplar's bull-only-clears pattern.",
+      "drivers": ["YAHOO-SYK-PRICE", "SYK-SA-STATS", "SYK-STOCKTITAN-1Q26"]
+    }
+  ],
+  "business_verdict": "good_to_very_good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD_TO_ADD",
+  "suggested_initial_size_pct": 3,
+  "suggested_max_size_pct": 7,
+  "buy_below_price": 366,
+  "starter_zone": "Current price ($326.54) already qualifies as a STARTER entry -- base case clears the 8% hurdle with real cushion (+11.1% 3yr / +12.5% 5yr) at today's price, without requiring bull-case catalysts to already be true.",
+  "add_zone": "Add toward CORE (6-7% total) as: (a) Q2 2026 results confirm the $375M deferred cyber-incident revenue is substantially recaptured, (b) the Orthopaedics segment reported-vs-organic growth divergence resolves benignly, (c) any data point emerges on China robotics competitive dynamics showing Stryker's position holding (not eroding), (d) any company disclosure quantifies implant pull-through economics even directionally. Opportunistic add zone on price weakness: ~$292-306 (CORE-quality entry, ~12-15% base-case IRR cushion) if the decline is not accompanied by a genuine base-case-invalidating event.",
+  "trim_or_no_chase_zone": "Do not chase above ~$401 (near-52wk-high, no-chase ceiling) without a corresponding fundamentals upgrade -- pure multiple expansion from there would push the base case IRR below the 8% hurdle at 5yr. Reassess toward WATCH on any of: Q2/Q3 2026 organic growth failing to re-accelerate toward the 8.0-9.5% guided range with no identifiable recaptured cyber-incident orders, confirmed China robotics share erosion analogous to GEHC's -15% China revenue decline, or an oversized/overpriced strategic acquisition into soft-tissue robotics.",
+  "binding_constraint": "COMPLETENESS, not price or business quality -- the base case already clears the 8% hurdle with real cushion at the current price (+11.1% 3yr / +12.5% 5yr), and business quality is good-to-very-good (a well-quantified installed-base moat, strong FY2025 financials, a 13.5-year CEO track record with 93% at-risk compensation). What caps this dossier below a higher-conviction CORE-sized verdict is NOT a negatively-resolved risk (unlike GEHC's confirmed -15% China revenue decline) but two genuinely UNRESOLVED open questions: (1) whether China domestic orthopedic-robotics competitors (Tinavi, MicroPort, et al.) will replicate the erosion pattern already demonstrated against GEHC's China imaging position -- the mechanism is directly analogous to an already-realized precedent, but Stryker's own disclosure here is thinner (a growth-rate VBP headwind, not a revenue-dollar fact) and the magnitude is unconfirmed; and (2) whether the implant 'pull-through' thesis that would make Mako a true annuity is confirmable in company disclosures, which it currently is not. Neither gap is a reason to avoid -- both are reasons to size at STARTER (not CORE) and prioritize closing them on the next refresh.",
+  "kill_criteria": [
+    "K-A Cyber recapture fails: Q2/Q3 2026 organic growth fails to re-accelerate toward the 8.0-9.5% FY2026 guided range with no identifiable recaptured cyber-incident orders -> downgrade toward WATCH, re-underwrite the 'one-off' characterization.",
+    "K-B China robotics erosion confirmed: any disclosed data point showing Stryker's China orthopedic-robotics or implant share materially declining, analogous to GEHC's confirmed -15% China revenue decline -> re-underwrite the global Mako moat downward.",
+    "K-C Segment divergence resolves unfavorably: the Orthopaedics reported-vs-organic growth gap is explained by a genuine, ongoing negative dynamic (not a benign FX/divestiture technicality) -> re-examine Orthopaedics segment quality.",
+    "K-D Overpriced strategic M&A: Stryker announces a large (>$2B), competitively-motivated acquisition into soft-tissue robotics at a valuation multiple inconsistent with its historical disciplined bolt-on approach -> flag as a capital-allocation red flag, re-underwrite operator grade downward.",
+    "K-E Valuation discipline: price rises above ~$401 without a corresponding fundamentals upgrade (pure multiple expansion) -> no-chase, reassess entry attractiveness."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous STARTER with zero change after critique, and I do not see a strong basis to dissent toward either CORE-immediate or WATCH. What I would flag: this is a genuinely more favorable setup than both the GEV exemplar (only bull clears the hurdle) and the GEHC dossier (base case flat, no margin of safety) -- SYK's base case clears the 8% hurdle with real cushion AT THE CURRENT PRICE, meaning the investment case does not require betting on unproven bull-case catalysts. That said, the two open questions I would most want to see resolved before sizing up to CORE are structurally identical in KIND to GEHC's open questions (an unquantified China-domestic-competitor risk, an unquantified implant/AI-monetization thesis) even though they are RESOLVED DIFFERENTLY in direction so far -- GEHC's China question resolved to a confirmed -15% decline; Stryker's China question remains genuinely open. The single most decision-useful comparison for Nick's career context: Stryker's Mako franchise (~85%+ estimated orthopedic-robotics share, analyst estimate) faces the SAME playbook (VBP + domestic NMPA-cleared alternative + local-for-local preference) that has ALREADY worked once against GEHC's China imaging position via United Imaging -- but as of this dossier, no evidence confirms whether that playbook is currently succeeding, failing, or not yet meaningfully attempted against Stryker specifically. This is exactly the kind of leading indicator worth tracking closely, independent of whether SYK specifically proves to be a good investment. I would also flag the ISRG-adjacency evaluation (~50 soft-tissue-robotics startups under review, per management commentary) as the single most forward-looking strategic signal in the dossier -- it suggests Stryker itself views its orthopedic dominance as a platform to expand from, which cuts both ways: genuine strategic optionality if executed with the same discipline as the 60+ prior acquisitions, or a capital-allocation risk if pursued reactively against ISRG's already-larger soft-tissue moat.",
+  "sources_used": [
+    {"source_id": "SYK-10K-FY25", "public_date": "2026-01-29", "url_or_path": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000310764&type=10-K"},
+    {"source_id": "SYK-Q4-PR", "public_date": "2026-01-29", "url_or_path": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-fourth-quarter-and-full-year-2025-results.html"},
+    {"source_id": "SYK-Q1-PR", "public_date": "2026-04-30", "url_or_path": "https://www.stryker.com/us/en/about/newsroom/2026/stryker-reports-first-quarter-2026-results.html"},
+    {"source_id": "STOCKTITAN-SYK-10K", "public_date": "2026-01-29", "url_or_path": "https://www.stocktitan.net/sec-filings/SYK/10-k-stryker-corp-files-annual-report"},
+    {"source_id": "SYK-STOCKTITAN-1Q26", "public_date": "2026-04-30", "url_or_path": "https://www.stocktitan.net/sec-filings/SYK/8-k-stryker-corp-reports-material-event"},
+    {"source_id": "STOCKTITAN-SYK-CYBER", "public_date": "2026-04-30", "url_or_path": "https://www.stocktitan.net/news/SYK/"},
+    {"source_id": "STOCKTITAN-SYK-MAKO", "public_date": "2026-04-30", "url_or_path": "https://www.stocktitan.net/news/SYK/"},
+    {"source_id": "STOCKTITAN-SYK-MA", "public_date": "2026-05-01", "url_or_path": "https://www.stocktitan.net/news/SYK/"},
+    {"source_id": "SYK-SA-STATS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/syk/"},
+    {"source_id": "SYK-SA-FINANCIALS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/syk/financials/"},
+    {"source_id": "SYK-SA-BALANCESHEET", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/syk/financials/balance-sheet/"},
+    {"source_id": "YAHOO-SYK-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/SYK?range=1y&interval=1d"},
+    {"source_id": "SYK-PROXY-2026", "public_date": "2026", "url_or_path": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000310764&type=DEF+14A"}
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "ticker": "BSX",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "high_growth_medtech_farapulse_moat_stress_test_and_multiple_derating",
+  "as_of_price": 45.14,
+  "as_of_market_cap": 67259000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (both cgi-bin/browse-edgar and direct 10-K/10-Q HTML documents) returned HTTP 403 on first attempt for each; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to SEC's own data.sec.gov submissions JSON API (which DID succeed and gave the authoritative filing calendar/accession numbers), plus stocktitan.net structured filing mirrors, official company press releases (news.bostonscientific.com/prnewswire.com), stockanalysis.com aggregated financials, and search-corroborated trade press. Every load-bearing FY2025/Q1 2026 figure cross-checked across >=2 independent sources. Price $45.14 confirmed via 2 independent sources (Yahoo + stockanalysis.com), exact match to the frozen as_of_price input. 77 claims registered in claim_ledger.csv; 24 sources in source_register.md. Completeness ~65-70% -- key gaps: Watchman standalone-vs-concomitant numeric split (O7), root cause of the Mar 30 2026 price gap (unresolved), Q1 2026 GAAP-vs-adjusted-EPS divergence source (O5), China-specific revenue never separately disclosed by BSX (O3, bundled into 'Emerging Markets'), no earnings-call transcripts fetched (O8). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["BSX-Q4FY25-PR", "BSX-Q1-2026-PR", "BSX-SUBMISSIONS-JSON", "YAHOO-BSX-PRICE", "BSX-SA-STATS", "BSX-STOCKTITAN-10Q"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "BSX operates a procedural-device-franchise model across two reportable segments: Cardiovascular (66% of FY2025 revenue, +20.8% organic -- Electrophysiology/Farapulse, WATCHMAN LAAC, Cardiac Rhythm Management, Interventional Cardiology/Peripheral) and MedSurg (34%, +6.7% organic -- Endoscopy, Urology, Neuromodulation). The core mechanism (capital equipment + per-procedure disposables + physician training/certification + an emerging OPAL HDx software ecosystem lock-in) is coherent and, unlike GEHC's installed-base-imaging model, is fundamentally a HIGH-GROWTH procedural-volume story tied to aging-population/rising-AFib-incidence tailwinds rather than a replacement-cycle annuity. Revenue nearly doubled 2021-2025 ($11.9B->$20.1B) with operating margin expanding ~800bps -- a genuinely strong multi-year compounding record. Signal = +1 (mildly positive): the mechanism is not just coherent but evidenced by a real, sustained financial track record, a meaningfully stronger starting point than the GEHC exemplar.",
+      "drivers": ["BSX-Q4FY25-PR", "BSX-SA-FINANCIALS", "BSX-INVESTOR-DAY-2025", "PRNEWSWIRE-OPAL-LAUNCH"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "BSX's flagship Electrophysiology/Farapulse franchise underwent a real, fast, unusually cleanly-documented moat stress test: US PFA market share fell from ~100% (2023 launch monopoly) to ~41% by early 2026, with Medtronic NOW LEADING at ~48% (J&J ~11%, Abbott ~1% just entered). This directly disproves the market's prior (2023-2025) assumption that first-mover technological leadership alone constituted a durable moat -- the ~20 patents assigned from the Farapulse acquisition protect BSX's specific implementation, not the PFA modality itself, and well-capitalized fast-followers entered within a ~2-year window. The genuine counter-moat candidate (OPAL HDx mapping + FARAVIEW software, exclusive hardware+software bundle) is real but only ~33% penetrated within BSX's own Farapulse installed base -- not yet proven at scale. Watchman shows a bifurcating pattern (concomitant procedures strong, standalone declining since Feb 2026, root cause unresolved). CRITICAL MITIGANT: EP absolute revenue is STILL growing +22% organic (Q1 2026) -- this is a shrinking SHARE of a still-fast-growing pie, not a shrinking absolute business. Signal = -1: moat was materially weaker than priced, now partially but not fully proven-stable at the new lower share level.",
+      "drivers": ["QSIGHT-GUIDEPOINT-PFA2026", "BSX-Q1-2026-PR", "BSX-INVESTOR-DAY-2025", "PRNEWSWIRE-OPAL-LAUNCH"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "5-year financial trend is genuinely STRONG, a materially better starting point than the GEHC exemplar: revenue grew from $11.9B (FY2021) to $20.1B (FY2025), a ~14% CAGR, with operating margin expanding from 10.1% to 18.0% (nearly +800bps) -- sustained operating leverage, not a one-off. Balance sheet leverage is currently MODERATE (1.87x gross leverage vs 4.25x covenant, ample headroom) though set to step up materially once the pending $14.5B Penumbra acquisition closes (H2 2026, ~$11B cash consideration debt+cash-funded) -- not yet reflected in current figures. One significant, UNIDENTIFIED one-off flagged: Q1 2026 GAAP net income more than doubled YoY ($674M->$1.341B) while adjusted EPS grew only modestly ($0.75->$0.80), an unexplained divergence (O5) -- valuation work in this dossier uses the adjusted-EPS basis specifically to avoid building on this unconfirmed item. Signal = +1: financial trend is strong and multi-year, with credible (investment-grade, moderate-leverage) balance sheet quality, docked only for the one unresolved accounting item and the looming Penumbra leverage step-up.",
+      "drivers": ["BSX-SA-FINANCIALS", "BSX-STOCKTITAN-10Q", "BSX-Q1-2026-PR", "SP-MOODYS-CREDITRATING"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Two kill paths have ALREADY partially materialized with unusually clean evidence (EP share loss; Watchman standalone deceleration since Feb 2026) rather than being purely speculative future risks -- a meaningfully different risk profile than GEHC's 'real but slow-moving' China kill path. An ACTIVE securities fraud class action names CEO Mahoney and 4 other executives personally, alleging concealment of EP competitive deterioration during the 2025-07-23 to 2026-02-03 class period -- unresolved, must be re-verified every refresh (LIVE-qualitative). The pending $14.5B Penumbra acquisition (BSX's largest ever, committed 3 weeks before the Feb 4 stock decline began) adds integration and leverage-step-up risk, though proactive financing arrangement and a diversifying (non-EP/Watchman) strategic rationale are mitigants. No single kill path is confirmed as an imminent, unavoidable thesis-killer, but the COMPOUNDING of multiple, simultaneously-unresolved risks (EP trajectory, Watchman cause, litigation, Penumbra integration) is real and was the primary driver of 2/5 IC panel members maintaining WATCH post-critique. Signal = -1: real, partially-realized risks requiring close, near-term (Q2 2026 earnings, 2026-07-29) monitoring.",
+      "drivers": ["ZLK-CLASSACTION", "BSX-PENUMBRA-8K", "QSIGHT-GUIDEPOINT-PFA2026", "BSX-Q1-2026-PR"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $45.14 (~$67.26B mkt cap, ~$76.79B EV using Q1 2026 pre-Penumbra-close net debt ~$9.54B): the single most important valuation finding this run is that BSX's EV/EBITDA multiple has compressed from an approximate 35x at the 52-week high ($108.14, 2025-09-08) to an approximate 16x currently -- a >50% multiple cut, using a constant FY2025 EBITDA base. This means the ~58% price decline is substantially a MULTIPLE-CORRECTION story (the market repricing an unsustainably-rich growth premium) layered on a more modest genuine growth-deceleration, rather than a story of collapsing absolute earnings. Price sits -58.3% off 52wk high, +5.8% above 52wk low -- a LOW-HUG pattern independently verified as JUSTIFIED by three specific, dated, well-corroborated corporate disclosure events (2026-02-04, ~2026-03-30, 2026-05-27), not a stale price or data error. 3-scenario IRR: bear -30.8%(3yr)/-15.4%(5yr); base -10.6%(3yr)/+0.1%(5yr, essentially flat); bull +9.7%(3yr)/+14.3%(5yr). Only the bull case clears the 8% hurdle at either horizon -- SAME shape as the GEHC exemplar, but the base case reflects 'the already-crashed multiple holding flat,' not 'the business deteriorating further,' a modestly more favorable downside asymmetry. Signal = +1: price already reflects a large, real repricing of business-quality risk; the remaining question is whether it has reflected ENOUGH, not whether a re-rating DOWN is still pending.",
+      "drivers": ["YAHOO-BSX-PRICE", "BSX-SA-STATS", "BSX-Q4FY25-PR", "model/scenario_model.csv"]
+    }
+  ],
+  "business_verdict": "strong_growth_franchise_with_a_real_partially_realized_moat_stress_test",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 2,
+  "suggested_max_size_pct": 8,
+  "buy_below_price": 52,
+  "starter_zone": "$42-45 (current/52wk-low zone) -- base case is close to flat at 5yr, reflecting the ALREADY-substantial multiple de-rating (~35x->~16x EV/EBITDA); a small, explicitly-sized starter position is appropriate given real, unresolved risks remain (EP share trajectory, Watchman standalone cause, active litigation, un-closed Penumbra deal).",
+  "add_zone": "First STARTER at $42-45 (~2% initial size). Add toward CORE (up to ~8%) only as: (a) Q2 2026 earnings (2026-07-29) confirm NO fourth guidance cut, (b) OPAL HDx penetration data shows continued scaling correlated with EP share stabilization, (c) Watchman standalone root cause is clarified as transient (not structural), (d) securities litigation resolves without a material adverse finding, (e) Penumbra integration proceeds on-plan post-close (H2 2026). No addition above current levels without at least 2 of these confirmations.",
+  "trim_or_no_chase_zone": "Do not chase above ~$55-58 without a corresponding fundamentals confirmation -- pure multiple re-expansion before the open questions resolve would mean paying up before the uncertainty is actually reduced. Reassess toward AVOID on any of: a fourth guidance cut, EP share continuing to erode past ~35% with no stabilization signal, an adverse litigation discovery revealing genuine concealment, or Penumbra integration/leverage deteriorating materially post-close.",
+  "binding_constraint": "COMPOUND, BUT FAVORABLE-SKEWED -- unlike GEHC (where neither price nor business quality favored the investor), BSX presents a genuinely strong, high-growth business (revenue nearly doubled 2021-2025, margin +800bps) whose flagship EP/Farapulse franchise underwent a real, fast, well-documented competitive stress test (US PFA share ~100%->~41% since 2023) that the price has ALREADY substantially repriced (EV/EBITDA ~35x->~16x, a >50% multiple cut). The base-case 5yr IRR is approximately flat, similar in shape to the GEHC exemplar, but the underlying reason is different and more favorable: BSX's base case requires the ALREADY-CRASHED multiple to merely HOLD (not fall further), not for the business to actively deteriorate more from here, whereas GEHC's base case required accepting a genuinely uncertain business quality at a peer-premium price with no multiple cushion at all. Three genuinely unresolved risks remain (EP share trajectory, Watchman standalone cause, active securities litigation) compounded by an un-closed, debt-funded $14.5B acquisition -- these prevented a unanimous or larger-sized STARTER verdict (2/5 IC panel members maintained WATCH), appropriately resulting in a SMALL initial position size (2%) rather than either a full CORE allocation or complete avoidance.",
+  "kill_criteria": [
+    "K-A EP share continues eroding: US PFA share falls below ~35% with no stabilization signal by Q4 2026 -> re-underwrite the EP franchise's long-term competitive position downward, consider trimming.",
+    "K-B Fourth guidance cut: any further FY2026 (or initial FY2027) guidance reduction citing the same EP/Watchman/Urology factors -> the 'three cuts and done' thesis is falsified, discount management guidance heavily, move toward AVOID.",
+    "K-C Watchman standalone structural: standalone Watchman procedures remain negative for 2+ more consecutive quarters without a credible, specific management explanation -> treat as a second structural franchise problem.",
+    "K-D Litigation adverse outcome: any court ruling, settlement admission, or discovery revelation indicating genuine (not just alleged) concealment -> immediate downgrade to AVOID regardless of price.",
+    "K-E Penumbra integration/leverage deterioration: post-close (H2 2026) leverage rising meaningfully past ~3.0x without a clear deleveraging path, or integration costs materially exceeding the guided -$0.06 to -$0.08 EPS dilution -> credit-quality concern, reassess sizing.",
+    "K-F Valuation discipline: price rises above ~$55-58 without a corresponding fundamentals confirmation (pure multiple re-expansion before open questions resolve) -> no-chase, reaffirm current sizing or downgrade attractiveness."
+  ],
+  "runner_dissent": "The 5-soul panel split 3-2 toward STARTER (small) after one round of critique, a genuine, disclosed disagreement rather than manufactured consensus -- Munger and Klarman both maintained WATCH on the grounds that multiple, simultaneously-unresolved risks (EP trajectory, Watchman cause, litigation, Penumbra integration) compound into a harder-to-bound downside than any single-variable uncertainty, even while acknowledging the multiple-compression argument as valid. I find this dissent well-reasoned and do not think it should be overridden -- it is precisely WHY the suggested initial size is small (2%, not a larger starter or a CORE allocation). The most decision-useful single fact in this entire dossier, for Nick's career context (medical imaging + deep learning + evaluating first-mover AI/medtech theses), is the PFA share data: BSX went from a 100% monopoly (2023) to trailing Medtronic (41% vs 48%) in about 2.5 years, DESPITE having genuine technological differentiation (non-thermal PFA, ~20 patents), the largest cumulative clinical evidence base (500,000+ patients), and demonstrably superior long-term (4-year) outcomes data. This is a clean, quantified demonstration that first-mover advantage + genuine technical merit is NOT sufficient to sustain durable category leadership absent a structural (not just timing-based) barrier -- directly transferable to how Nick should evaluate any China-vs-West AI-imaging or AI-diagnostics first-mover thesis: the relevant question is never 'who got there first' but 'what SPECIFICALLY prevents a well-resourced fast-follower from replicating this within 2-3 years.' BSX's own best answer to that question right now (OPAL HDx/FARAVIEW software ecosystem lock-in) is real but only ~33% proven-at-scale -- worth tracking closely, as its trajectory is the single most informative leading indicator for whether BSX's EP franchise stabilizes or continues eroding toward Medtronic-style dominance. I would also flag that this dossier's China-specific findings are much thinner than the GEHC exemplar's (BSX does not separately disclose China revenue, bundling it into 'Emerging Markets') -- if Nick's primary interest is a clean China-vs-domestic-OEM comparison, GEHC's dossier is the more directly relevant precedent; if his primary interest is 'how fast can a well-resourced competitor erode a first-mover's category lead in a hot medtech niche,' BSX's EP story is the more decisive, more cleanly-quantified case study available in this batch so far.",
+  "sources_used": [
+    {"source_id": "BSX-Q4FY25-PR", "public_date": "2026-02-04", "url_or_path": "https://news.bostonscientific.com/2026-02-04-Boston-Scientific-announces-results-for-fourth-quarter-and-full-year-2025"},
+    {"source_id": "BSX-Q1-2026-PR", "public_date": "2026-04-22", "url_or_path": "https://news.bostonscientific.com/2026-04-22-Boston-Scientific-announces-results-for-first-quarter-2026"},
+    {"source_id": "BSX-SUBMISSIONS-JSON", "public_date": "2026-07-05", "url_or_path": "https://data.sec.gov/submissions/CIK0000885725.json"},
+    {"source_id": "BSX-STOCKTITAN-10Q", "public_date": "2026-05-01", "url_or_path": "https://www.stocktitan.net/sec-filings/BSX/10-q-boston-scientific-corp-quarterly-earnings-report-79c002b079b5.html"},
+    {"source_id": "BSX-SA-STATS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/bsx/"},
+    {"source_id": "BSX-SA-FINANCIALS", "public_date": "2026-07-05", "url_or_path": "https://stockanalysis.com/stocks/bsx/financials/"},
+    {"source_id": "YAHOO-BSX-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/BSX"},
+    {"source_id": "QSIGHT-GUIDEPOINT-PFA2026", "public_date": "2026", "url_or_path": "https://qsight.guidepoint.com/blog/inside-the-pulsed-field-ablation-market-2026/"},
+    {"source_id": "BSX-INVESTOR-DAY-2025", "public_date": "2025-09-30", "url_or_path": "https://investors.bostonscientific.com/~/media/Files/B/Boston-Scientific-IR-V3/2025-bsx-investor-day-slides.pdf"},
+    {"source_id": "ZLK-CLASSACTION", "public_date": "2026", "url_or_path": "https://zlk.com/cases/boston-scientific-corporation-class-action-lawsuit-bsx"},
+    {"source_id": "MASSDEVICE-APR22", "public_date": "2026-04-22", "url_or_path": "https://www.massdevice.com/boston-scientific-cuts-2026-guidance-q1-beats/"},
+    {"source_id": "TRADINGPEDIA-MAY27", "public_date": "2026-05-27", "url_or_path": "https://www.tradingpedia.com/2026/05/27/boston-scientific-slumps-as-growth-outlook-cut/"},
+    {"source_id": "BSX-PENUMBRA-8K", "public_date": "2026-01-15", "url_or_path": "https://news.bostonscientific.com/2026-01-15-Boston-Scientific-announces-agreement-to-acquire-Penumbra,-Inc"},
+    {"source_id": "MOTLEYFOOL-FEB4", "public_date": "2026-02-04", "url_or_path": "https://www.fool.com/investing/2026/02/04/why-boston-scientific-stock-plummeted-today/"},
+    {"source_id": "PRNEWSWIRE-OPAL-LAUNCH", "public_date": "2024-10-18", "url_or_path": "https://www.prnewswire.com/news-releases/boston-scientific-launches-next-generation-of-cardiac-mapping-for-the-farapulse-pulsed-field-ablation-system-302280503.html"}
+  ]
+}
