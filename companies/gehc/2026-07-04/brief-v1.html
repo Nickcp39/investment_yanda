@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEHC 决策简报 v1 · as_of 2026-07-04</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#332616,#1a1d24);border-color:#5a4a2c}
+  .verdict .val{color:var(--ylw)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GE HealthCare (GEHC) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-04 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65%)</b> · 来源 SEC EDGAR(403,已 fallback)+ 官方 IR + StockAnalysis + Yahoo chart API</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">WATCH</div><div class="sub" style="margin:0">初始 0% · 触发价再评</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val warn">good, not exceptional</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$65.57</div><div class="sub" style="margin:0">市值 ~$29.83B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $89.77</div><div class="val neg">−27.0%</div><div class="sub" style="margin:0">低位有真实基本面支撑(非错价)</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>GEHC 是装机基础 + 服务年金 + PDx 造影剂耗材(OEM 无关、真正可复用于任何厂商设备)的经典医械模式,PDx 是组合里增长最快、质量最高的板块(+9.7%~+22.3%)。管理层正押注 AI/软件差异化战略(Intelerad $2.3B 收购、MIM Software、Photonova Spectra2 光子计数CT、Imaging+AVS 合并为 $14.6B 的 "Advanced Imaging Solutions" 新分部),逻辑合理但<b>本轮零变现证据</b>。</p>
+    <p><b>本案与 GEV/MSFT 范例的关键差异:</b>价格现处 52 周低位区间,但这是<b>真实基本面恶化驱动的合理低位</b>(指引下调、订单增速从 +10.3% 骤降至 +1.1%、中国收入 −15%),不是错价机会——相对最接近的可比公司 Siemens Healthineers(~7.9x EV/EBITDA),GEHC 实际<b>溢价约19%</b>,并非便宜。base case 5年 IRR 接近打平,<b>无安全边际</b>。<b>binding constraint 是复合型的</b>:既非"好生意错价格"(GEV),也非"好生意好价格只差研究"(MSFT)——生意质量本身有疑问(PCS 原因不明、AI 变现未证实),价格也不便宜。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>SEC 403 已 fallback 二手源交叉验证;完整度 ~65%;中国收入占比本轮首次量化</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num">0</td><td>装机+服务+耗材模式合理;AI/软件战略逻辑通但零财务证据</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num neg">−1</td><td>护城河真实但承压;中国收入 −15% 是对华竞争最直接的量化证据</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num neg">−1</td><td>调整后EBIT利润率连续3期压缩(16.3%→15.3%→13.5%);杠杆上升</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−1</td><td>无单一致命路径,但多重未解压力点叠加,无净现金护城河对冲</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num">0</td><td>低位合理但非便宜;相对 Siemens Healthineers 溢价~19%;base IRR ~持平</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">Trailing P/E</div><div class="val">15.72×</div><div class="sub" style="margin:0">Fwd 13.15×</div></div>
+    <div class="card"><div class="lbl">EV/EBITDA (est.)</div><div class="val warn">~9.3–9.7×</div><div class="sub" style="margin:0">Siemens Healthineers ~7.9×</div></div>
+    <div class="card"><div class="lbl">base 5y IRR</div><div class="val warn">−0.1%</div><div class="sub" style="margin:0">bull +12.7% / bear −15.5%</div></div>
+    <div class="card"><div class="lbl">中国收入 YoY</div><div class="val neg">−15%</div><div class="sub" style="margin:0">占比 9.85%(去年10.85%)</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据(Q1 2026, 2026-03-31 + FY2025)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num">$20,625M (+4.8% / 有机+3.5%)</td><td>官方 IR + StockAnalysis</td></tr>
+      <tr><td>FY2025 调整后EBIT利润率</td><td class="num warn">15.3% (−100bps)</td><td>官方 IR</td></tr>
+      <tr><td>Q1 2026 总营收</td><td class="num">$5,100M (+7.4% / 有机+2.9%)</td><td>StockTitan (SEC镜像)</td></tr>
+      <tr><td>Q1 2026 调整后EBIT利润率</td><td class="num neg">13.5% (−150bps YoY)</td><td>StockTitan</td></tr>
+      <tr><td>Q1 2026 PCS 分部有机增长</td><td class="num neg">−8.1%</td><td>StockTitan — 原因未确认(OPEN)</td></tr>
+      <tr><td>Q1 2026 订单有机增长</td><td class="num neg">+1.1% (去年+10.3%)</td><td>StockTitan</td></tr>
+      <tr><td>FY2026 指引(Q1后下调)</td><td class="num warn">EPS $4.80–5.00 / FCF ~$1.6B</td><td>官方 8-K</td></tr>
+      <tr><td>净债务 (Q1 2026)</td><td class="num warn">~$7.9B (环比+40%)</td><td>derived — Intelerad 收购驱动</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>三情景 IRR</h2>
+    <table>
+      <tr><th>情景</th><th class="num">3年IRR</th><th class="num">5年IRR</th><th>vs 8% 门槛</th></tr>
+      <tr><td>Bear(中国外溢+PCS结构性+利润率不复原)</td><td class="num neg">−29.5%</td><td class="num neg">−15.5%</td><td>FAIL</td></tr>
+      <tr><td><b>Base(指引兑现+PCS企稳+中国不恶化)</b></td><td class="num warn">−7.2%</td><td class="num warn">−0.1%</td><td>FAIL</td></tr>
+      <tr><td>Bull(AI变现兑现+PCS反转+重估)</td><td class="num pos">+12.0%</td><td class="num pos">+12.7%</td><td>PASS</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">价位</th><th class="num">vs $65.57</th><th>备注</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">~$72</td><td class="num">+10%</td><td>base已打平,不追高</td></tr>
+      <tr><td><b>STARTER(52周低位区)</b></td><td class="num">$55–58</td><td class="num">−13%~−16%</td><td>base case 开始有缓冲</td></tr>
+      <tr><td>Add / 评 CORE</td><td class="num">$48–50</td><td class="num">−24%~−27%</td><td>base case 真正安全边际</td></tr>
+      <tr><td>deep value</td><td class="num">~$40</td><td class="num">−39%</td><td>需更严重恶化才会到达</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 复合型(业务质量存疑 + 价格不便宜),非单一因素。</b>两大未解缺口:(O4)PCS −8.1% 有机下滑原因未确认;(O7)AI 相关收入/加价率零证据——"AI是护城河"目前是管理层叙事,非已证实事实。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A PCS 连2季 &lt;−5% 无解释</td><td>−8.1% (1季)</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B 中国降幅超−20%/年 或外溢</td><td>−15%</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-C 利润率Q2/Q3不环比改善</td><td>13.5% (Q1)</td><td><span class="pill y">黄 — 待验证</span></td></tr>
+      <tr><td>K-D 净债务/EBITDA &gt;2.5x</td><td>待clean EBITDA确认</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-E 价格&gt;$72无基本面支撑</td><td>$65.57</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC(段永平主审)</h2>
+    <p>五票一致 <b class="warn">WATCH</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 一轮 critique 后零变动。收敛点:<b>价格关未通过(相对 Siemens Healthineers 溢价而非折价),业务质量本身有未解疑问(PCS原因、AI变现),两头都不占</b> —— 与 MSFT(价格关过、只差完整度)和 GEV(生意关过、价格关不过)均不同,是"生意质量本身模糊 + 价格不便宜 + 关键问题未解"的第三种 WATCH。</p>
+  </div>
+
+  <div class="sec">
+    <h2>职业视角:GEHC vs 联影医疗(United Imaging)</h2>
+    <p>本 dossier 最具决策价值的单一数字:GEHC <b>中国收入 FY2025 同比 −15%</b>(占比从10.85%降至9.85%),同期联影医疗 2018-2024 年收入 CAGR <b>31%</b>,2025年8月在二级以上医院份额已达 <b>~18.2%</b>(国产高端品牌第一)。GPS(GE+Philips+Siemens)整体仍在高端 MR/CT/DSA 保持份额领先(2024年 68%/62%/92%),但趋势线与 GEHC 自身财务数据方向一致——<b>在唯一可直接对比的市场,GEHC 目前处于守势</b>。GEHC 的 AI 影像战略(光子计数CT、MIM肿瘤AI、Intelerad云端影像)战略逻辑成立但<b>零变现证据</b>,这是判断"AI是否是真护城河还是即将成为行业标配"的关键待解问题。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65%,<b>非 COMPLETE</b>。OPEN 项:清洁 adj EBITDA/D&A 未直接披露(O2)、PCS −8.1% 根因未确认(O4)、AI相关收入/加价率完全未量化(O7)、未获取 Q1 2026 电话会逐字稿(O8)。所有载荷性数字回挂 SEC 一手镜像或官方 IR,交叉验证 ≥2 独立源;价格 $65.57 双源确认精确匹配。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

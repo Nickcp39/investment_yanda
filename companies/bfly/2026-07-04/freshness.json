@@ -1,0 +1,134 @@
+{
+  "ticker": "BFLY",
+  "as_of": "2026-07-04",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate (INC-001 discipline). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline. RESULT: BFLY card price $7.68 (last close 2026-07-02, the last trading day <= as_of 2026-07-04 -- 07-03 was the observed July 4th holiday, 07-04/05 weekend) re-verified across Yahoo + stockanalysis (0.0% delta). Price is -20.7% off the 52wk high $9.69 (set 2026-06-29, only 3 trading days before as_of) -- this is flagged and justified below as a genuine, dated momentum/re-rating event followed by a partial giveback, NOT a stale/wrong price pull (T2 justification).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 7.68,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price is -20.7% off the 52wk high ($9.69, set 2026-06-29) -- outside the low/high-hug band on the high side, so T2 would not fire regardless. Flagging proactively because the high itself was set only 3 trading days before as_of: verified via 2 independent full-1y-OHLC pulls (Yahoo chart API + stockanalysis.com), both agreeing exactly on $9.69 (2026-06-29) and $1.32 (2025-08-08). This is a genuine, dated, sourced price series -- not a stale or misread extreme.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BFLY?range=1y&interval=1d", "fetched_at": "2026-07-04", "value": 7.68},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/bfly/", "fetched_at": "2026-07-04", "value": 7.68},
+        {"source_name": "websearch", "url": "https://www.google.com/finance/quote/BFLY:NYSE", "fetched_at": "2026-07-04", "value": 7.68}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2009400000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/bfly/", "fetched_at": "2026-07-04", "value": 2010000000},
+        {"source_name": "derived", "url": "261.64M shares x $7.68", "fetched_at": "2026-07-04", "value": 2009459200}
+      ],
+      "cross_check_delta_pct": 0.03,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 9.69,
+      "unit": "USD",
+      "as_of": "2026-06-29",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BFLY?range=1y&interval=1d", "fetched_at": "2026-07-04", "value": 9.69},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/bfly/", "fetched_at": "2026-07-04", "value": 9.69}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Intraday 52wk high, set 2026-06-29 -- only 3 trading days before as_of. Confirmed by 2 independent sources exactly. This is the tail of a rediscovery-driven momentum spike (2026-06-17 close $5.71 -> 2026-06-18 intraday +56% to $8.94 -> continued rise to $9.69 by 06-29) on 7-month-old Midjourney-partnership media attention (deal originally disclosed via 8-K 2025-11-17), then a partial giveback to $7.68 by as_of. See source_register.md volatility flag and facts.md S3 for the full pattern description.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 1.32,
+      "unit": "USD",
+      "as_of": "2025-08-08",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/BFLY?range=1y&interval=1d", "fetched_at": "2026-07-04", "value": 1.32},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/bfly/", "fetched_at": "2026-07-04", "value": 1.32}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "52wk low set 2025-08-08. Current price $7.68 is +482% above this level -> not a low-hug (clears the 3% T2 band by a wide margin in the other direction).",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 261.64,
+      "unit": "millions",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/bfly/", "fetched_at": "2026-07-04", "value": 261.64},
+        {"source_name": "bfly_10q_cover", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000016/bfly-20260331.htm", "fetched_at": "2026-07-04", "value": 261.27}
+      ],
+      "cross_check_delta_pct": 0.14,
+      "note": "10-Q cover count (234,842,768 Class A + 26,426,937 Class B = 261,269,705) is as of 2026-04-20 cover date; stockanalysis 261.64M reflects ~2.5 months of further stock-comp-vesting dilution to 2026-07-02, consistent with the observed dilution pace (E31). Combined Class A + Class B total used throughout (dual-class structure, E9).",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 revenue guidance $117M-$121M (~20-24% growth) and FY2026 Adjusted EBITDA guidance of a LOSS of $21M-$25M, both REAFFIRMED (not revised) when Q1 2026 results were reported 2026-04-30. Q2 2026 guidance (given same date): revenue $27M-$31M, Adjusted EBITDA loss $6M-$8M. No subsequent guidance update identified between 2026-04-30 and this as_of date (2026-07-04); Q2 2026 results are not yet due (next earnings estimated ~2026-07-30/31, after this as_of, per third-party earnings calendars -- not yet company-confirmed, O6).",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "bfly_8k_q1_2026_er", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000014/bfly-20260430xexx991.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"},
+        {"source_name": "bfly_10q_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000016/bfly-20260331.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Three SPAC-era matters remain open/live as of as_of, all confirmed unchanged by the Q1 2026 10-Q's explicit statement that 'there have been no material changes to the risk factors described in the 2025 Annual Report on Form 10-K' (E32): (1) Rose v. Butterfly Network, Inc. et al. -- putative securities class action (D.N.J., filed 2022-02-16), no probable/estimable loss booked, company states it intends to vigorously defend; no motion-to-dismiss ruling or other status update identified as of as_of (O7, flagged as a genuine unresolved item, not confirmed-dismissed or confirmed-escalated). (2) Koenig v. Fruchterman and Bhavsar v. Fruchterman -- stockholder derivative actions (D.Del.), same underlying facts as Rose. (3) Sezonov v. Longview Investors LLC et al. (Delaware Court of Chancery, filed 2023-12-13) -- BFLY has indemnification obligations to certain defendants; Q4 2025 accrued $3.0M, Q1 2026 increased by $3.3M, partially offset by a $6.0M insurance-recovery asset recognized the same quarter; case remains in discovery, no class certification as of the Q1 2026 10-Q (most recent filed update). No new litigation, settlement, or adverse ruling identified between the 10-Q filing (2026-04-30) and this as_of date via a live news/search check.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "bfly_10q_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000016/bfly-20260331.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"},
+        {"source_name": "websearch_litigation_check", "url": "https://www.google.com/search?q=Butterfly+Network+BFLY+Rose+securities+class+action+2026", "public_date": "2026-07-04", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "midjourney_deal_status",
+      "is_quantitative": false,
+      "value": "Midjourney Co-Development and Licensing Agreement (dated 2025-11-17) remains ACTIVE and IN FORCE as of as_of -- no termination, amendment, or renegotiation identified. Contributed $6.8M of Q4 2025 revenue; the exact same deal (not a new agreement) is what drove the June 2026 media-attention-driven price spike (a 7-month-old catalyst rediscovered, not fresh news). Butterfly Embedded overall had 9 signed partner companies as of April 2026 (Q1 2026 earnings release), separate from the 30-partner Butterfly Garden software-marketplace program. No update to partner count identified between 2026-04-30 and as_of via live search.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "bfly_8k_midjourney", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417625000015/bfly-20251117.htm", "public_date": "2025-11-17", "fetched_at": "2026-07-04"},
+        {"source_name": "bfly_8k_q1_2026_er", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000014/bfly-20260430xexx991.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "fda_clearance_status",
+      "is_quantitative": false,
+      "value": "Gestational Age AI ('Blind Sweep') tool received FDA clearance on 2026-03-30 (date pinned via independent BusinessWire coverage; the Q1 2026 earnings release had originally described this generically as 'Q1 2026'). This is described in evidence as a first-of-kind clearance: the first FDA-cleared blind-sweep ultrasound AI tool, trained on >21 million images, rollout began Q1 2026 including pilots in Malawi/Uganda. No subsequent FDA adverse action (warning letter, recall) specific to Butterfly Network identified in 2025-2026 searches as of as_of; treated as an absence-of-evidence finding (the FDA warning-letter database was not directly queried), not a confirmed-clean-record certification.",
+      "as_of": "2026-03-30",
+      "sources": [
+        {"source_name": "bfly_8k_q1_2026_er", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000014/bfly-20260430xexx991.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"},
+        {"source_name": "businesswire_fda_clearance", "url": "https://www.businesswire.com/news/home/20260330456365/en", "public_date": "2026-03-30", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "cash_runway_status",
+      "is_quantitative": false,
+      "value": "Cash and cash equivalents $137.95M as of 2026-03-31 (Q1 2026 10-Q), no debt. Management liquidity statement (10-K, repeated near-verbatim in the 10-Q) states existing cash and operating cash flows are expected to be sufficient for at least the next 12 months, with no going-concern qualification from the auditor identified. Runner-derived (not company-guided precisely) implied runway at the guided FY2026 Adjusted EBITDA loss ($21-25M, used as a burn proxy) exceeds 5 years even assuming zero further revenue growth and zero additional financing -- directionally robust given the business is not capital-intensive (FY2025 investing outflow only ~$3.35M) and working capital has recently been a net cash source, not a use (deferred revenue growth, E38). No new financing event (equity offering, debt issuance) identified between the Q1 2026 10-Q (2026-04-30) and this as_of date via live search; the Rothberg 10b5-1 personal-sale plan (window opens 2026-07-14) is a founder liquidity event, not a corporate financing event, and does not affect this runway assessment.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "bfly_10q_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000016/bfly-20260331.htm", "public_date": "2026-04-30", "fetched_at": "2026-07-04"},
+        {"source_name": "bfly_10k_fy2025", "url": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000009/bfly-20251231.htm", "public_date": "2026-02-27", "fetched_at": "2026-07-04"}
+      ],
+      "pass": true
+    }
+  ]
+}

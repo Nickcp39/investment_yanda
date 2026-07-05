@@ -1,0 +1,95 @@
+{
+  "ticker": "GEHC",
+  "as_of": "2026-07-04",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-04",
+  "context_label": "installed_base_consumables_annuity_facing_china_erosion_and_unproven_ai_narrative",
+  "as_of_price": 65.57,
+  "as_of_market_cap": 29830000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (both CIK browse-edgar lookup and the FY2025 10-K HTML document) returned HTTP 403 on first attempt for each; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to stocktitan.net structured filing mirrors + stockanalysis.com aggregated financials + official GE HealthCare IR press releases + web search corroboration. Every load-bearing FY2025/Q1 2026 figure (revenue, margin, EPS, FCF, debt, China geographic revenue) cross-checked across >=2 independent sources. Price $65.57 confirmed via 2 independent sources (Yahoo + stockanalysis.com), both dated to the same 2026-07-02 close -- exact match to frozen as_of_price input. ~73 claims registered in claim_ledger.csv; 20 sources in source_register.md. Completeness ~65% -- key gaps: clean adj EBITDA/D&A not directly disclosed (O2), Patient Care Solutions -8.1% organic decline root cause unconfirmed (O4), AI-attributable revenue/attach-rate completely unquantified anywhere (O7), no earnings-call transcript fetched (O8). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["GEHC-10K-FY25", "GEHC-STOCKTITAN-10K", "GEHC-STOCKTITAN-1Q26", "YAHOO-GEHC-PRICE", "GEHC-SA-STATS", "BULLFINCHER-GEOREVENUE"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "GEHC operates a classic three-layer med-tech model: capital equipment (Imaging/AVS), service annuity on the installed base, and OEM-agnostic recurring consumables (Pharmaceutical Diagnostics contrast/radiopharma, which monetizes imaging volume on ANY vendor's equipment). PDx is the fastest-growing, highest-quality segment (+9.7% to +22.3% organic). Management is executing a coherent AI/software differentiation strategy (Intelerad $2.3B acquisition, MIM Software, Photonova Spectra2 photon-counting CT, segment reorg into a combined $14.6B 'Advanced Imaging Solutions' unit) intended to move competition from spec/price (where China domestic OEMs compete hardest) to integrated workflow/outcomes. The mechanism is coherent and the strategic logic is sound, but unproven: zero sources found this run quantify AI-attributable revenue or ASP premium. Signal = 0 (neutral): the thesis is plausible but not yet evidenced financially.",
+      "drivers": ["GEHC-STOCKTITAN-10K", "DIGITALHEALTHNEWS-LEADERSHIP", "MEDICALECONOMICS-INTELERAD", "GEHEALTHCARE-PCCT-ARTICLE"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Moat is GOOD, not exceptional. Installed-base service annuity is real but unquantified (no service-revenue-mix or renewal-rate disclosure found -- material gap vs GEV exemplar rigor). PDx consumables moat is genuine and OEM-agnostic -- the strongest, most durable profit pool in the portfolio. AI/software layer has real product breadth but zero monetization evidence -- cannot yet be underwritten as a proven moat. Patient Care Solutions has NO articulated competitive advantage and is deteriorating fastest (-8.1% organic Q1 2026) with unconfirmed root cause. CRITICAL finding: China revenue (the direct GEHC-vs-United-Imaging battleground) is confirmed DOWN -15% YoY, now <10% of total revenue (was 10.85%, now 9.85%) -- the clearest evidence available that the moat is currently NOT holding against domestic Chinese OEM competition in the one market where a clean comparison exists. Operator grade 3/5 (credible experienced CEO, but guidance cut after one quarter and two weakest segments lack articulated fixes). Signal = -1: moat is real but under visible pressure with an unproven counter-strategy.",
+      "drivers": ["BULLFINCHER-GEOREVENUE", "FUTUBULL-UIH-REPORT", "GEHC-STOCKTITAN-1Q26", "GEHC-STOCKTITAN-10K"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "Adj EBIT margin compressed for 3 consecutive periods: 16.3% (FY24) -> 15.3% (FY25) -> 13.5% (Q1 2026). FY2026 guidance already cut once (adj EBIT margin, adj EPS, FCF all reduced) after just one quarter. FCF conversion is mediocre (FCF/NI ~0.70x FY2025; Q1 2026 FCF collapsed to $112M from $290M OCF -- seasonality unconfirmed, O5). Leverage rising: net debt roughly +40% in a single quarter (Q1 2026, largely Intelerad-acquisition-driven), while cash fell from $4.51B to $2.29B. Debt/equity 0.91 is not alarming in absolute terms but the DIRECTION (rising debt + falling margin + falling cash, simultaneously) is a genuine yellow flag. One-offs this run are mostly cost-side (tariffs, resolved PDx supplier disruption) rather than earnings-inflating, a modest positive distinguishing this from GEV's one-off-inflated-earnings pattern. Signal = -1: financial trend is negative across 3 consecutive periods, not a single-quarter miss.",
+      "drivers": ["GEHC-STOCKTITAN-1Q26", "GEHC-SA-FINANCIALS", "GEHC-SA-BALANCESHEET", "GLOBEANDMAIL-CREDITFACILITY"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No single kill path rises to high-confidence imminent thesis-killer. Highest career-relevance risk: China local-for-local substitution (already realized, -15% YoY, quantified) spreading as a template to other price-sensitive markets over a multi-year horizon -- real but slow-moving. Most immediately testable: whether tariff/margin compression is transient (per guidance) or structural -- resolves within 1-2 quarters (Q2 2026 is the key test). Least resolved: PCS root cause and leverage trajectory, both flagged as top-priority research gaps rather than papered over. No permanent-impairment mechanism is confirmed today, but multiple simultaneous, unresolved pressure points (China, PCS, margin, leverage) compound into a genuine risk registry without an offsetting balance-sheet fortress (unlike GEV's net-cash position). Signal = -1: real, multi-pronged risk without a clear offsetting safety margin.",
+      "drivers": ["BULLFINCHER-GEOREVENUE", "GEHC-STOCKTITAN-1Q26", "RADIOLOGYBUSINESS-TARIFF"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "At $65.57 (~$29.83B mkt cap, ~$37.73B EV using Q1 2026 net debt ~$7.9B): EV/FY2025-est-adj-EBITDA ~9.7x; EV/FY2026E-adj-EBITDA ~9.3x; trailing P/E 15.72x, forward P/E ~13.15x. Price sits at -27.0% off 52wk high ($89.77), +11.6% above 52wk low ($58.75) -- a LOW-hug pattern (inverse of GEV/MSFT high-hug tripwire), independently verified as JUSTIFIED by real fundamental deterioration (guidance cut, orders decel +10.3%->+1.1% organic, China -15%), not a stale/erroneous price (confirmed 2 sources, exact match to frozen input). GEHC trades at a ~19% PREMIUM to Siemens Healthineers (~7.9x EV/EBITDA) -- NOT statistically cheap vs the closest disclosed peer, though the comp is imperfect (Siemens Healthineers is larger/more diversified). Trailing P/E is internally consistent (TTM EPS $4.17 x 15.72x = $65.55 ~= actual price, confirming screener data coherence). 3-scenario IRR: bear -29.5%(3yr)/-15.5%(5yr); base -7.2%(3yr)/-0.1%(5yr, essentially flat); bull +12.0%(3yr)/+12.7%(5yr). ONLY the bull case clears the 8% hurdle at either horizon. Base case offers NO margin of safety. Signal = 0: price is roughly fair for the base case (neither a bargain nor obviously expensive), meaning the investment decision hinges entirely on unproven bull-case catalysts, not on price alone.",
+      "drivers": ["YAHOO-GEHC-PRICE", "GEHC-SA-STATS", "MULTIPLES-VC-SIEMENS-HEALTHINEERS", "GEHC-STOCKTITAN-1Q26"]
+    }
+  ],
+  "business_verdict": "good_not_exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 5,
+  "buy_below_price": 58,
+  "starter_zone": "$55-58 (at/near 52wk low $58.75) -- base case begins to clear the 8% hurdle with a real (if modest) cushion at this level, without requiring the bull-case catalysts to already be proven.",
+  "add_zone": "First STARTER at $55-58. Add toward CORE only as: (a) Q2/Q3 2026 results confirm tariff-driven margin compression is fading per guidance (adj EBIT margin improving sequentially from Q1's 13.5%), (b) Patient Care Solutions root cause is clarified and stabilizes (not necessarily recovers), (c) China revenue decline decelerates (even a slower -15% would help) rather than accelerating, (d) any credible AI-revenue-attribution disclosure emerges. No addition at current price without at least one of these confirmations.",
+  "trim_or_no_chase_zone": "Do not chase above ~$72 (near-current level) without a corresponding fundamentals upgrade -- pure multiple expansion from here would push the base case further underwater. Reassess toward AVOID on any of: China decline accelerating past -20%/yr, PCS organic growth staying negative >2 more quarters without explanation, adj EBIT margin failing to improve sequentially in Q2/Q3 2026, or net-debt/EBITDA deteriorating past ~2.5x.",
+  "binding_constraint": "COMPOUND -- neither price nor business quality decisively favors the investor, and completeness has real gaps. Price is NOT a bargain (19% EV/EBITDA premium to Siemens Healthineers; base-case 5yr IRR ~flat, no margin of safety) even though the stock sits near its 52-week low, because the decline correctly tracks genuine fundamental deterioration rather than overreaction. Business quality is GOOD but not exceptional -- the installed-base and PDx-consumables moats are real, but China revenue is confirmed shrinking (-15% YoY) in the one market where a direct comparison vs domestic Chinese OEMs (United Imaging) is possible, Patient Care Solutions is declining with no explained cause, and the AI/software differentiation strategy management is betting on remains completely unproven financially (zero revenue attribution found in any source). This is not a 'great business, wrong price' (GEV) or 'great business, right price, just finish the research' (MSFT) case -- it is a 'business quality itself is ambiguous, price is roughly fair not cheap, and open questions remain genuinely unresolved' case, which correctly produces WATCH through a different mechanism than either exemplar.",
+  "kill_criteria": [
+    "K-A PCS structural: organic growth remains worse than -5% for 2 more consecutive quarters WITHOUT a credible management explanation/turnaround plan -> downgrade toward AVOID.",
+    "K-B China spreads: China revenue decline accelerates past -20%/yr OR similar VBP-style share loss confirmed emerging in a second major ex-US market -> re-underwrite China/EM growth assumption downward across all scenarios.",
+    "K-C Margin never recovers: adj EBIT margin fails to improve sequentially in Q2/Q3 2026 (stays at or below Q1 2026's 13.5%) despite guided tariff-fade narrative -> 'transient shock' thesis falsified, treat as structural.",
+    "K-D Leverage deterioration: net debt/EBITDA (once a clean EBITDA figure is confirmed) rises past ~2.5x without a clear deleveraging plan -> credit-quality concern, downgrade.",
+    "K-E Valuation discipline: price rises above ~$72 without a corresponding fundamentals upgrade (pure multiple expansion) -> no-chase, reaffirm WATCH or downgrade attractiveness further."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous WATCH with zero change after critique, and I do not see a strong basis to dissent toward either STARTER or AVOID. What I would flag: this is a genuinely different WATCH than the GEV exemplar (exceptional business priced for perfection) -- here the business quality itself carries real, currently-unresolved question marks (PCS cause, AI monetization, China trajectory), so the 'wait for a better price' framing is only half the story; 'wait for better evidence' is equally important and could resolve as soon as Q2 2026 earnings (roughly 4-6 weeks from the pipeline as_of date, based on typical GEHC quarterly cadence). The most decision-useful single number in this entire dossier for Nick's career context is the confirmed China revenue print: -15% YoY, now under 10% of total revenue -- this is real, quantified evidence that the AI-enabled premium-imaging incumbent is currently LOSING share to a domestic Chinese fast-follower (United Imaging) in the one market where that comparison is directly observable, even as GPS collectively retains high-end share leadership overall. This is exactly the kind of leading indicator worth tracking closely for the broader China-medtech-AI thesis, independent of whether GEHC specifically is ultimately a good investment. I would also flag that the AI-monetization gap (O7) is, in my view, the single most valuable thing to resolve on the next refresh -- if GEHC can show even directional evidence that AI-enabled products command a price/attach premium, that would meaningfully strengthen the bull case; if it cannot, that would be a meaningful data point suggesting AI is becoming table-stakes rather than a genuine moat in imaging, which has direct relevance to how Nick should think about United Imaging's own AI investments.",
+  "sources_used": [
+    {"source_id": "GEHC-10K-FY25", "public_date": "2026-02-04", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001932393/000193239326000007/gehc-20251231.htm"},
+    {"source_id": "GEHC-STOCKTITAN-10K", "public_date": "2026-02-04", "url_or_path": "https://www.stocktitan.net/sec-filings/GEHC/10-k-ge-health-care-technologies-inc-files-annual-report-464307f3952c.html"},
+    {"source_id": "GEHC-STOCKTITAN-1Q26", "public_date": "2026-04-30", "url_or_path": "https://www.stocktitan.net/sec-filings/GEHC/8-k-ge-health-care-technologies-inc-reports-material-event-269af84f98b0.html"},
+    {"source_id": "GEHC-Q4-PR", "public_date": "2026-02-04", "url_or_path": "https://investor.gehealthcare.com/news-releases/news-release-details/ge-healthcare-reports-fourth-quarter-and-full-year-2025"},
+    {"source_id": "GEHC-SA-FINANCIALS", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/gehc/financials/"},
+    {"source_id": "GEHC-SA-BALANCESHEET", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/gehc/financials/balance-sheet/"},
+    {"source_id": "GEHC-SA-STATS", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/gehc/"},
+    {"source_id": "YAHOO-GEHC-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/GEHC?range=1y&interval=1d"},
+    {"source_id": "BULLFINCHER-GEOREVENUE", "public_date": "2026", "url_or_path": "https://bullfincher.io/companies/ge-healthcare-technologies/revenue-by-geography"},
+    {"source_id": "FUTUBULL-UIH-REPORT", "public_date": "2025", "url_or_path": "https://news.futunn.com/en/post/61862061/united-imaging-healthcare-688271-half-year-report-review-rapid-growth"},
+    {"source_id": "MULTIPLES-VC-SIEMENS-HEALTHINEERS", "public_date": "2026-06-04", "url_or_path": "https://multiples.vc/public-comps/siemens-healthineers-valuation-multiples"},
+    {"source_id": "GLOBEANDMAIL-CREDITFACILITY", "public_date": "2026", "url_or_path": "https://www.theglobeandmail.com/investing/markets/stocks/GEHC/pressreleases/492545/ge-healthcare-establishes-new-364-day-revolving-credit-facility/"},
+    {"source_id": "RADIOLOGYBUSINESS-TARIFF", "public_date": "2026", "url_or_path": "https://radiologybusiness.com/topics/healthcare-management/healthcare-economics/ge-healthcare-expects-500m-revenue-reduction-tariffs"},
+    {"source_id": "DIGITALHEALTHNEWS-LEADERSHIP", "public_date": "2026", "url_or_path": "https://www.digitalhealthnews.com/ge-healthcare-revamps-leadership-launches-ai-driven-imaging-unit-to-accelerate-global-growth"},
+    {"source_id": "MEDICALECONOMICS-INTELERAD", "public_date": "2026", "url_or_path": "https://www.medicaleconomics.com/view/ge-healthcare-to-acquire-intelerad-in-2-3b-deal-expanding-cloud-and-ai-imaging-portfolio"}
+  ]
+}

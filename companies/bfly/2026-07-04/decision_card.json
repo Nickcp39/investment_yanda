@@ -1,0 +1,92 @@
+{
+  "ticker": "BFLY",
+  "as_of": "2026-07-04",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-04",
+  "context_label": "improving_small_cap_medtech_richly_repriced_on_rediscovered_catalyst",
+  "as_of_price": 7.68,
+  "as_of_market_cap": 2009400000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Strong evidentiary base for a $2B-cap name: 8 primary SEC filings (10-K FY2025, 10-Q Q1 2026, 6 material 8-Ks including the exact Midjourney deal terms) plus 2 independent live price/market-data pulls (Yahoo + stockanalysis, 0.0% delta) plus one successful background competitive-landscape research pass (after a first attempt looped on process commentary and was terminated/replaced). ~80 claims in the ledger, nearly all load-bearing numbers tagged A1. Remaining gaps are non-blocking for a WATCH-tier verdict at this size: full DEF 14A executive-comp/beneficial-ownership detail (O3), FY2022-and-earlier point-in-time share counts (O4), Clarius's underlying probe architecture (bottleneck_map.md OPEN item), and the identity of the ~11%-revenue single customer (O1).",
+      "drivers": ["BFLY-10K-FY2025", "BFLY-10Q-Q1-2026", "BFLY-8K-FY2025-ER", "BFLY-8K-Q1-2026-ER", "BFLY-8K-MIDJOURNEY", "YAHOO-BFLY-PRICE", "STOCKANALYSIS-BFLY"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: Butterfly is a fabless semiconductor company (Ultrasound-on-Chip, fabbed at TSMC) with a medical-device go-to-market layer on top, now explicitly repositioning as a platform company via Butterfly Embedded (licensing the chip IP to non-medical third parties, e.g. Midjourney: $15M upfront + $10M/yr over 5yr + up to $9M milestones + rev-share, reconciling exactly to the company's own '$74M' headline). Mechanism: real, demonstrated operating leverage (adjusted gross margin 59.6%->64.9%->68.9% over 5 quarters, driven substantially by near-100%-margin Embedded-licensing mix) plus reaffirmed FY2026 growth guidance (+20-24%). The market reacted to this 7-month-old Midjourney catalyst only in June 2026 (+56% single-day move on 2026-06-18, rising to a 52wk high $9.69 by 06-29), a rediscovery/momentum pattern rather than fresh information, which has since partially reversed (-20.7% to as_of $7.68). Net mildly positive on the underlying mechanism, but the re-rating has run well ahead of, not behind, the evidence.",
+      "drivers": ["BFLY-8K-MIDJOURNEY", "BFLY-8K-FY2025-ER", "BFLY-8K-Q1-2026-ER", "YAHOO-BFLY-PRICE"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Butterfly's profit pool is real but shallow and narrowing, not durable: the company does NOT own a manufacturing chokepoint (fabless, non-exclusive TSMC Foundry Service Agreement -- any well-capitalized rival could commission a similar chip design at the same or another foundry); the moat rests on a ~665-patent estate (expiring 2030-2046, designable-around in principle) plus accumulated clinical/software data plus brand -- a 3-5 year technical lead, not a 10-year structural barrier (moat_map.md grade 2.5-3/5). Comparative evidence points to active erosion already underway: a smaller, private competitor (Clarius) reached full-year profitability BEFORE Butterfly did; Exo Imaging has more FDA-cleared AI indications (14 vs. BFLY's more limited disclosed set); GE (Vscan Air) and Philips (Lumify) already sell competing handhelds and are not ceding the category. Operator grade 3/5 (operator_underwriting.md): a credible technical founder (Rothberg, real prior exits at 454/Ion Torrent) paired with a capable professional CEO (DeVivo, real $1.1B prior exit at InTouch->Teladoc) -- but capped by an extreme, long-duration governance concentration (Rothberg ~71% voting power, no sunset until 2028-02-12) with a disclosed portfolio-wide litigation pattern (a second Rothberg company, Quantum-Si, already faced its own SPAC-merger fiduciary-duty litigation). Net -1: genuine technology and operator quality, but moat depth and governance structure both fall short of what would support a higher conviction score.",
+      "drivers": ["BFLY-10K-FY2025", "BFLY-COMPETITIVE-AGENT", "BFLY-8K-BOARD-NEUBAUER"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Accounting shows genuine, improving, but not-yet-proven economics. FY2025 revenue $97.61M (+19.0%); adjusted gross margin (ex one-time $17.4M E&O charge) 64.9% FY2025 -> 68.9% Q1 2026 (no adjustment needed that quarter) -- a real, monotonic ~900bp improvement over 5 quarters, substantially Embedded-licensing-mix-driven. Net loss margin improved every year (-202.9%->-88.3%->-79.0%). FY2025 GAAP net loss -$77.1M dramatically overstates cash deterioration: net cash used in operations was only -$12.7M (ex a $81M Jan-2025 capital raise), and Q4 2025 delivered the company's first-ever positive operating-cash-flow quarter (+$6.3M). Balance sheet is clean (no debt, $137.95M cash at Q1 2026, >5yr estimated runway at guided FY2026 Adj EBITDA burn of $21-25M). BUT the company is still guiding to a FY2026 Adjusted EBITDA LOSS ($21-25M) -- five years post-SPAC-merger -- and dilution has been real (weighted shares +16.7% in FY2025 alone from the Jan-2025 raise, though the pace has since decelerated to ~2.6% in ~4 months). Net +1: real financial-quality improvement, but not yet a self-funding, profitable business.",
+      "drivers": ["BFLY-8K-FY2025-ER", "BFLY-8K-Q1-2026-ER", "BFLY-10K-FY2025"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No hard veto (no going-concern flag, no debt, no imminent forced-dilution signal at guided burn rates), but multiple survivable risks warrant a size haircut. Real, live exposures: ~11% single-customer revenue concentration (unnamed, O1); an unresolved, unreserved securities class action (Rose v. Butterfly, SPAC-era, no probable-loss estimate booked); a founder 10b5-1 sale plan beginning 10 days after this as_of date (small relative to holdings, standard mechanism, but a concrete near-term event); competitive share-loss risk already partially evidenced (Clarius profitability-first, Exo's broader AI-indication portfolio); and the valuation-momentum risk that has ALREADY partially materialized (-20.7% pullback from the 52wk high within 3 trading days of that high being set). The governance-concentration risk (Rothberg ~71% voting power, no sunset until 2028) is not hypothetical -- it is a standing structural fact today, with a disclosed same-founder litigation precedent (Quantum-Si) reinforcing rather than merely theorizing the pattern. Net -1: consistent with, and the primary basis for, an inversion-driven cap at WATCH-to-small-STARTER at most, independent of the valuation finding in M6.",
+      "drivers": ["BFLY-10K-FY2025", "BFLY-10Q-Q1-2026", "BFLY-COMPETITIVE-AGENT"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $7.68 (~$2.01B market cap, ~$1.87B EV after netting $137.95M cash), BFLY trades at 19.17x FY2025 actual revenue / 15.73x FY2026E guidance-midpoint revenue -- rich multiples for a company still guiding to an Adjusted EBITDA LOSS. Price sits -20.7% off a 52wk high set only 3 trading days before as_of (a partially-corrected momentum spike, not a fear-driven de-rating) and above the average sell-side price target (~$7.06). Using an EV/Revenue 5-year exit-multiple method (the correct framework given no near-term earnings base exists): BEAR (8%/yr growth, 2.0x exit) = -29.5% IRR; BASE (16%/yr, 3.5x exit) = -15.3% IRR; BULL (25%/yr, 5.0x exit) = -2.0% IRR -- all three land BELOW an 8% hurdle. Only a stacked, non-base 'aggressive bull' sensitivity (30%/yr growth AND further multiple expansion to 7.5x) clears the hurdle, at +10.5%. Implied base-case buy-below fair price is ~$2.25-2.30, a ~70% gap below the current price. This is the mirror opposite of this pipeline's MSFT case (a fear-driven de-rating created a genuine positive margin of safety) -- BFLY has been bid UP on a rediscovered catalyst and even after a partial giveback carries no price-side margin of safety under ordinary bull assumptions. M6 = -1 (price does not support a new opening at this level).",
+      "drivers": ["YAHOO-BFLY-PRICE", "STOCKANALYSIS-BFLY", "BFLY-8K-Q1-2026-ER"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 2,
+  "buy_below_price": 2.28,
+  "starter_zone": "not currently reached; a genuine base-case margin-of-safety entry sits near $2.25-2.30 (implied by 16%/yr 5y growth + 3.5x EV/Revenue exit clearing an 8% hurdle); an improved (not yet fully safe) risk/reward zone exists around $4.00-4.50",
+  "add_zone": "not applicable at initial size 0%; would only become relevant after a STARTER position is established on a future pullback or on hard evidence of moat durability (Clarius architecture resolution, Embedded-partner conversion beyond Midjourney) and 2-3 more quarters of demonstrated (not just narrowing) profitability progress",
+  "trim_or_no_chase_zone": "no-chase at and above the current $7.68 -- even the ordinary bull case (25%/yr growth, 5.0x EV/Revenue exit) falls short of an 8% hurdle from here; existing holders are not urged to panic-sell given genuinely improving fundamentals (gross-margin trend, narrowing losses, first positive operating-cash-flow quarter), but new capital should not chase this price",
+  "binding_constraint": "A compound constraint, not a single gap: (1) VALUATION -- no margin of safety at $7.68; base-case EV/Revenue exit-multiple IRR is -15.3% over 5 years and even the bull case (5.0x exit) is -2.0%, versus an 8% hurdle; only a stacked aggressive-bull scenario (30%/yr growth AND multiple expansion to 7.5x) clears it. (2) MOAT DURABILITY -- the semiconductor/chip advantage is a 3-5 year technical lead resting on patents and accumulated data, not a 10-year structural barrier (Butterfly is fabless, non-exclusive TSMC dependency, no manufacturing chokepoint), with comparative evidence of active erosion (a smaller private competitor, Clarius, reached profitability first). (3) GOVERNANCE -- Rothberg's ~71% voting control has no sunset until 2028-02-12, and a second company from his portfolio (Quantum-Si) already faced its own SPAC-merger fiduciary-duty litigation, a disclosed pattern rather than a one-off. Any ONE of these three might be survivable at the right price or with time; together, at this price, they cap the verdict at WATCH.",
+  "kill_criteria": [
+    "K-A valuation discipline (already binding today): price remains materially above the base-case buy-below (~$2.28) without new evidence of above-guide growth or moat resolution -> no-chase stays in force. (Now $7.68, ~237% above base fair value -- RED, the binding constraint as of this as_of date.)",
+    "K-B gross-margin reversal: adjusted gross margin falls back below ~60% for 2 consecutive quarters without a one-time explanation -> the 'genuine operating leverage' thesis is disproven. (Now 68.9% Q1'26, GREEN.)",
+    "K-C Embedded conversion failure: zero net-new signed Embedded partners over the next 2-3 quarters, or the Midjourney relationship is terminated/materially renegotiated downward -> the platform-optionality re-rating driver is invalidated. (Now 9 signed partners as of April 2026, conversion pace unresolved -- YELLOW.)",
+    "K-D governance escalation: Rothberg's 10b5-1 plan (window starts 2026-07-14) is followed by a significantly larger follow-on sale program, Class B conversion activity, or any move suggesting declining founder confidence -> re-underwrite founder alignment. (Now a small, standard, pre-scheduled plan -- YELLOW, monitor.)",
+    "K-E cash/burn discipline breaks: FY2026 actual Adjusted EBITDA loss materially exceeds the guided $21-25M range for 2 consecutive quarters AND the runway estimate compresses below ~2 years -> re-underwrite the entire case. (Now >5yr estimated runway at guided burn, GREEN.)"
+  ],
+  "runner_dissent": "Direction-agreement, not dissent: the mechanical read lands WATCH / 0% initial (ceiling 2%), and I am comfortable with this -- five independent IC souls converged on WATCH without any chair override needed, and the valuation arithmetic is unusually clean (base case -15.3%, bull -2.0%, both below hurdle). I flag two things for the record. First, an upward-pressure case genuinely exists and should not be dismissed: the gross-margin trend is real (68.9% Q1'26 needed zero non-GAAP adjustment), the company just delivered its first positive operating-cash-flow quarter, Q1 2026 revenue beat sell-side consensus, and Butterfly Embedded is a legitimate second value-capture mechanism (not vaporware) -- if 2-3 more quarters extend this trend AND several of the '30-40 more [Embedded partners] in discussion' (E73) convert, the moat/growth picture could look meaningfully better within 12-18 months, which argues for active monitoring rather than dismissal. Second, I want to be explicit that WATCH here is driven by a genuinely different failure mode than this pipeline's other recent cases: GOOGL failed on price alone (strong business, no margin of safety); MSFT passed on price (fear-driven de-rating created a positive margin) but was capped by research completeness; BFLY fails on price AND has a genuinely less-resolved business-quality question (moat durability, small-cap governance) than either mega-cap comparable -- this is a case where all three of price/moat/governance point the same direction, which is why the panel converged so cleanly, but it also means there is no single fix (e.g., 'just wait for a lower price') that alone would flip this to STARTER -- moat and governance uncertainty would persist even at a much lower price, though a much lower price would at least remove the valuation leg of the compound constraint.",
+  "sources_used": [
+    {"source_id": "BFLY-10K-FY2025", "public_date": "2026-02-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000009/bfly-20251231.htm"},
+    {"source_id": "BFLY-10Q-Q1-2026", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000016/bfly-20260331.htm"},
+    {"source_id": "BFLY-8K-FY2025-ER", "public_date": "2026-02-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000007/bfly-20260226xexx991.htm"},
+    {"source_id": "BFLY-8K-Q1-2026-ER", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000014/bfly-20260430xexx991.htm"},
+    {"source_id": "BFLY-8K-MIDJOURNEY", "public_date": "2025-11-17", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417625000015/bfly-20251117.htm"},
+    {"source_id": "BFLY-8K-BOARD-NEUBAUER", "public_date": "2026-05-08", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000019/bfly-20260508xexx991.htm"},
+    {"source_id": "BFLY-8K-ANNUAL-MEETING", "public_date": "2026-06-22", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000021/bfly-20260618.htm"},
+    {"source_id": "BFLY-8K-WARRANT-DELIST", "public_date": "2026-01-14", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000180417626000005/bfly-20260113.htm"},
+    {"source_id": "YAHOO-BFLY-PRICE", "public_date": "2026-07-04", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/BFLY?range=1y&interval=1d"},
+    {"source_id": "STOCKANALYSIS-BFLY", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/bfly/"},
+    {"source_id": "BFLY-PROXY-2026", "public_date": "2026-04-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1804176/000114036126017118/0001140361-26-017118-index.htm"},
+    {"source_id": "BFLY-COMPETITIVE-AGENT", "public_date": "2026-07-04", "url_or_path": "agent synthesis of gminsights.com, suresultmed.com, prnewswire.com, medtechdive.com, gurufocus.com, en.wikipedia.org, fiercebiotech.com, businesswire.com, simplywall.st"}
+  ]
+}

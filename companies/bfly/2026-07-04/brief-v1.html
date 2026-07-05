@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BFLY 决策简报 v1 · as_of 2026-07-04</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#3a2f12,#1a1d24);border-color:#5a4a2c}
+  .verdict .val{color:var(--ylw)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Butterfly Network (BFLY) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-04 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT</b> · 来源 SEC EDGAR (10-K/10-Q/8-K x6) + Yahoo/stockanalysis 价格独立交叉验证</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">WATCH</div><div class="sub" style="margin:0">初始 0% · 上限 2%</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val warn">uncertain</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$7.68</div><div class="sub" style="margin:0">市值 ~$2.01B · EV ~$1.87B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $9.69</div><div class="val neg">−20.7%</div><div class="sub" style="margin:0">动量回补,非恐慌性 de-rate</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>Butterfly 是一家真实在改善的小盘半导体+医疗器械公司:Ultrasound-on-Chip 芯片平台真实存在,调整后毛利率 5 个季度从 59.6% 升至 <b>68.9%</b>(无需一次性调整),Q4 2025 首次实现正经营现金流,Butterfly Embedded(Midjourney 授权,$74M 头条数字与合同条款精确吻合)是真实、已验证的第二增长曲线。<b>但价格已经把大部分好消息提前计入</b>:$7.68 对应 FY25 实际营收 <b>19.2×</b> / FY26E 指引中值 <b>15.7×</b> EV/Revenue,公司仍指引 FY26 Adjusted EBITDA <b>亏损 $21-25M</b>。</p>
+    <p><b>与本批 MSFT(五票 STARTER,价格因恐慌性抛售产生正安全边际)镜像相反:</b>BFLY 的股价是在 Midjourney 消息被"重新发现"后被<b>炒高</b>(2026-06-17 收盘 $5.71 → 06-18 单日 +56% → 06-29 触及 $9.69),as_of 时仅部分回吐。三情景 IRR(EV/Revenue 退出乘数法)——bear −29.5%、base −15.3%、<b>连 bull(5.0× 退出乘数)也只有 −2.0%</b>,均低于 8% 门槛;唯有堆叠"激进牛市"(30% 增长 + 7.5× 退出乘数)才能勉强达标(+10.5%)。**Base-case 隐含公允价约 $2.28,较现价低约 70%。**</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num pos">+1</td><td>8 份一手 SEC 文件 + 2 个独立价格来源;~80 条 claim 近全部挂 A1</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>Fabless 芯片平台 + Embedded 授权转型真实;但重估跑在 7 个月旧消息之前</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num neg">−1</td><td>Fabless 无护城河瓶颈;3-5 年技术领先非 10 年壁垒;Clarius 先盈利;创始人 71% 投票权无 2028 前日落</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num pos">+1</td><td>毛利率 59.6%→68.9%(真实);仍指引 FY26 EBITDA 亏损;资产负债表干净无债务</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−1</td><td>无硬 veto;11% 客户集中、未决 SPAC 时代诉讼、创始人售股计划、竞争份额流失风险均真实</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num neg">−1</td><td>19.2×/15.7× 营收倍数;base −15.3%、bull −2.0%,均未过 8% 门槛</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">EV/Rev FY25 实际</div><div class="val warn">19.2×</div></div>
+    <div class="card"><div class="lbl">EV/Rev FY26E 指引中值</div><div class="val warn">15.7×</div></div>
+    <div class="card"><div class="lbl">Base 5y IRR</div><div class="val neg">−15.3%</div></div>
+    <div class="card"><div class="lbl">Bull(5.0×)5y IRR</div><div class="val neg">−2.0%</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据 (FY2025 / Q1 2026)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num">$97.61M (+19.0%)</td><td>10-K/8-K</td></tr>
+      <tr><td>FY2025 调整后毛利率</td><td class="num pos">64.9% (Q1'26: 68.9%)</td><td>8-K</td></tr>
+      <tr><td>FY2025 净亏损 / Adj EBITDA</td><td class="num warn">-$77.1M / -$26.5M</td><td>8-K</td></tr>
+      <tr><td>Q4 2025 经营现金流</td><td class="num pos">+$6.3M(公司史上首次转正)</td><td>8-K</td></tr>
+      <tr><td>FY2026 营收 / EBITDA 指引</td><td class="num">$117-121M / 亏损 $21-25M</td><td>8-K(重申)</td></tr>
+      <tr><td>现金(Q1 2026 末)</td><td class="num">$137.95M,零负债</td><td>10-Q</td></tr>
+      <tr><td>Rothberg 投票权</td><td class="num warn">~71%(2028-02-12 前无日落)</td><td>10-K</td></tr>
+      <tr><td>Midjourney 授权协议</td><td class="num">$15M + $10M/yr×5 + 至多$9M 里程碑</td><td>8-K(条款精确对账 "$74M")</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带(EV/Revenue 5 年退出乘数法,见 model/scenario_model.csv)</h2>
+    <table>
+      <tr><th>档位</th><th class="num">5y IRR</th><th class="num">价位</th><th class="num">vs $7.68</th></tr>
+      <tr><td>No-chase(现价)</td><td class="num">—</td><td class="num">$7.68 及以上</td><td class="num">0</td></tr>
+      <tr><td>风险回报改善区</td><td class="num">中间情景</td><td class="num">~$4.00-4.50</td><td class="num">−47%~−42%</td></tr>
+      <tr><td><b>Base-case 安全边际</b></td><td class="num pos">8%</td><td class="num pos">~$2.25-2.30</td><td class="num neg">−70%</td></tr>
+      <tr><td>深度价值</td><td class="num">&gt;12%</td><td class="num">&lt;~$1.75</td><td class="num">−77%</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint(复合约束,非单一缺口)+ Kill Criteria</h2>
+    <p><b>binding constraint = 估值无安全边际 + 护城河耐久性未证实 + 治理集中度,三者叠加。</b> (1) 估值:base −15.3%、bull −2.0%,均未过 8% 门槛,唯激进牛市情景达标;(2) 护城河:fabless、非独家 TSMC 依赖,3-5 年技术领先非 10 年壁垒,Clarius(更小的私营对手)先于 BFLY 盈利;(3) 治理:Rothberg ~71% 投票权、2028-02-12 前无日落,且同一创始人旗下第二家公司(Quantum-Si)已发生同类 SPAC 诉讼。三者叠加将 verdict 封在 WATCH。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A 估值纪律(现价远高于 base 公允价)</td><td>+237% vs $2.28</td><td><span class="pill r">红</span></td></tr>
+      <tr><td>K-B 毛利率跌破 ~60% 连两季</td><td>68.9%</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-C Embedded 零新签约连 2-3 季</td><td>9 个已签,转化率未知</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-D Rothberg 售股计划显著扩大</td><td>小额、标准 10b5-1</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-E FY26 EBITDA 亏损大幅超指引 + 现金跑道压缩</td><td>&gt;5 年跑道</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC（段永平主审）</h2>
+    <p>五票一致 <b class="warn">WATCH</b>(Buffett / Munger / 段永平 / Marks / Klarman),critique 一轮后<b>零变动</b> → 主审 <b class="warn">WATCH</b>(不建仓,上限监控仓 2%)。收敛点:<b>估值、护城河耐久性、治理集中度三个独立视角均不通过</b>——与本批 GOOGL(仅估值卡关)、MSFT(仅完整度卡关,估值本身通过)均不同,BFLY 是三者同时不利的形态。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>,财务证据完整度强(~80%+ 一手 SEC 文件),但竞争护城河耐久性判断存在真实 OPEN 项(Clarius 底层芯片架构是否同构、Embedded 伙伴转化率、~11% 客户集中身份)。<b>非 COMPLETE</b>。所有载荷性数字回挂 SEC 一手文件或独立价格交叉验证;社媒/情绪仅作背景参考,不支撑论点。详见 decision_card.json / ic_panel.md / audit.md / valuation.md。
+  </div>
+</div>
+</body>
+</html>

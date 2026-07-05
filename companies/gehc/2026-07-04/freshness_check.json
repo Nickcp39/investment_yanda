@@ -1,0 +1,75 @@
+{
+  "ticker": "GEHC",
+  "as_of": "2026-07-04",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 65.57,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 65.56500244140625,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 65.57
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 65.57
+      }
+    ],
+    "max_pairwise_delta_pct": 0.008,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-07-02"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "58.75 <= 65.57 <= 89.77"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+11.6% off low, -27.0% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "455M x 65.57 = 0.030T vs card 0.030T (0.01%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -27.0% vs card-implied -27.0% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 65.57 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-04-30 is 65d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-04-30 is 65d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

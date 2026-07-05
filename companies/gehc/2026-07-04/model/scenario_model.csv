@@ -1,0 +1,18 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_adj_ebitda_margin,exit_ev_ebitda_multiple,rev_terminal_usd_b,ebitda_terminal_usd_b,net_debt_terminal_usd_b,ev_terminal_usd_b,equity_terminal_usd_b,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.015,0.117,7.6,21.57,2.52,8.80,19.16,10.36,22.81,-29.5,FAIL
+bear,5,0.015,0.125,8.0,22.22,2.78,9.50,22.22,12.72,27.96,-15.5,FAIL
+base,3,0.035,0.152,9.1,22.87,3.48,8.00,31.67,23.67,51.95,-7.2,FAIL
+base,5,0.035,0.160,9.5,24.50,3.92,8.00,37.23,29.23,64.27,-0.1,FAIL
+bull,3,0.060,0.177,11.1,24.56,4.35,6.80,48.29,41.49,91.15,12.0,PASS
+bull,5,0.060,0.185,11.5,27.60,5.11,5.50,58.72,53.22,117.00,12.7,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2025 actuals: revenue $20.625B, adj EBIT margin 15.3%, est adj EBITDA ~$3.88B (adj EBIT + est D&A ~3.5% of revenue; D&A not separately disclosed in sources reviewed this run -- OPEN item)
+# - Current price $65.57; shares 454.89M; market cap $29.83B; net debt (Q1 2026 basis, most current) ~$7.90B; EV ~$37.73B
+# - Current implied EV/EBITDA (FY25 est basis): ~9.7x -- this is the starting multiple all scenarios exit FROM
+# - Peer anchor: Siemens Healthineers trades ~7.9x EV/EBITDA (2026-06-04) -- GEHC currently trades at a ~19% PREMIUM to this peer, not a discount (see valuation.md for caveats on comp cleanliness -- Siemens Healthineers includes Varian oncology + lab diagnostics, not a pure imaging comp)
+# - BEAR: China revenue erosion (-15% YoY trend) spreads to other price-sensitive markets; PCS -8.1% organic trend persists/worsens; tariffs prove structural not transient; margin keeps compressing past FY2026 guide; multiple de-rates below peer (7.6-8.0x) reflecting lower growth/quality market perception
+# - BASE: FY2026 guidance is achieved (tariff impact fades as guided, 3-4% organic growth); PCS stabilizes (does not recover, does not worsen further); China revenue stays roughly flat-to-modestly-down but does not spread/accelerate; adj EBIT margin partially recovers toward 16% (between current 13.5% Q1 print and prior-year 16.3%); multiple holds near current level (9.1-9.5x)
+# - BULL: AI/software strategy (Intelerad, MIM, Photonova Spectra2, "Advanced Imaging Solutions" reorg) proves monetizable via ASP premium/attach rate (currently unproven -- facts.md O7); PCS turnaround materializes; China stabilizes; PDx keeps compounding at 9-20%+ organic; margin expands past FY24 peak (16.3%) toward high-170s%; multiple re-rates toward 11-11.5x reflecting proven AI differentiation and re-accelerating growth
+# - Dividend yield contribution: ~0.2-0.4%/yr added to price CAGR for total IRR (current stated yield ~0.21% per screener, itself flagged as a data-quality OPEN item O6 -- treated as immaterial to the scenario conclusions either way)
+# - 8% hurdle: bear and base scenarios FAIL the hurdle at BOTH 3yr and 5yr horizons; bull PASSES at both horizons. This is the mirror image of the GEV exemplar (where bear/base/bull all failed at 3yr and only bull passed at 5yr) -- GEHC's base case is closer to a "roughly fairly priced, no margin of safety, asymmetry skews modestly negative" read than GEV's "expensive, asymmetry skews very negative" read.

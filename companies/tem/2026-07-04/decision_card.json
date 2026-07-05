@@ -1,0 +1,88 @@
+{
+  "ticker": "TEM",
+  "as_of": "2026-07-04",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-04",
+  "context_label": "ai_precision_medicine_partial_moat_positive_mos_at_price_governance_capped",
+  "as_of_price": 60.27,
+  "as_of_market_cap": 10812684000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Evidence base is strong on SEC-primary financials: FY2025 10-K (CIK 0001717115) + Q1 2026 10-Q + Q4/FY2025 8-K earnings release fetched directly (curl fallback after WebFetch 403'd on SEC EDGAR, per robustness protocol -- no retry-loop, 2 extra tool calls only). Every load-bearing number cross-checked: FY2025 revenue $1,271.8M (Diagnostics $955.4M + Data/Apps $316.4M), net loss $(245.0)M, adj EBITDA $(7.4)M; Q1 2026 revenue $348.1M, net loss $(125.9)M, OCF burn $(73.3)M improving from $(105.6)M; balance sheet, debt schedule, related-party notes all extracted from primary text with line-number audit trail (raw/extracts.md). CRITICAL catch: identified a material LIVE post-Q1 event (May 12, 2026: $460M convertible notes, conversion price $69.26, primary SEC 8-K located) that materially changes the near-term dilution overhang -- folded into facts.md/valuation before finalizing. Price ($60.27, frozen per brief) cross-checked against independent websearch ($60.04, 0.4% delta). Completeness capped at ~65% by three real gaps: (O1) pharma-deal exact contract values (AstraZeneca ~$200M cross-checked 2 trade sources; GSK/Merck/Gilead single/thin-sourced), (O2) Diagnostics segment margin/payer-mix detail not separately broken out, (O3) Pathos/SB Tempus related-party pricing terms not detailed beyond headline dollar figures.",
+      "drivers": ["TEM-10K-FY25", "TEM-10Q-Q1-2026", "TEM-8K-4Q25-ER", "TEM-8K-MAY2026-CONVERT", "YAHOO-TEM-PRICE"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme: Tempus is an AI-enabled precision-medicine platform monetizing a clinical-genomic(-imaging) data asset through two product lines -- Diagnostics (75% of FY2025 revenue, CLIA lab testing, +83% YoY) and Data and Applications (25%, pharma data licensing + nascent AI algorithms, +31% YoY). The mechanism (more tests -> more data -> better models/licensing product -> more adoption) is coherent and not fabricated, but `bottleneck_map.md` finds it rests on a NARROWER edge than initially framed: the core Diagnostics business has essentially no switching-cost lock-in (unlike GEV's LTSAs or MSFT's enterprise stack), and the company's OWN 10-K admits its reimbursement rate lags Foundation Medicine/Guardant Health -- the two most direct comps. The AI-native revenue (Algorithms, $20.2M, 1.6% of total) is explicitly called 'limited' by the company. Real validation exists (AstraZeneca/Pathos ~$200M co-investment, GSK ~$70M, Net Revenue Retention 126%, Total Remaining Contract Value >$1.1B) but is concentrated in the smaller segment and partly trade-press-sourced. Net mildly positive: a genuine, differentiated data strategy with real early commercial pull, NOT yet an established moat.",
+      "drivers": ["TEM-10K-FY25", "TEM-8K-4Q25-ER", "TEM-TRADEPRESS-ASTRAZENECA"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Profit pool is BIFURCATED: the Data/Applications segment shows real pricing power (pharma paying $70-200M for data access) and NRR 126%, but is 25% of revenue and increasingly related-party-exposed (SB Tempus + Pathos grew from $0.6M to $21.8M/quarter in one year -- ~25% of the segment). The Diagnostics core (75% of revenue) is a volume-growth story with a COMPANY-ADMITTED reimbursement disadvantage vs FMI/Guardant -- no moat premium, structurally worse unit economics than the two most direct comps until the reimbursement gap closes. OPERATOR GRADE: 2/5 -- founder Eric Lefkofsky is a genuinely capable company-builder (revenue 2.4x in 2 years) but his public-company track record is 1-win/1-loss/1-muted (Echo win, Groupon severe value-destruction, InnerWorkings muted), he holds 30-votes/share super-voting stock (~60% combined voting power on a minority economic stake -- more extreme than typical dual-class structures), and the Pathos related-party relationship sits directly at the intersection of his economic interests on both sides. This is a MEANINGFULLY WEAKER governance/moat combination than either exemplar (GEV 4/5 clean one-share-one-vote; MSFT 5/5 clean one-share-one-vote). Net 0: real commercial traction offset by an unproven core moat and a below-average governance grade.",
+      "drivers": ["TEM-10K-FY25", "TEM-10Q-Q1-2026", "TEM-SEARCH-LEFKOFSKY"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "Financials show a GENUINELY IMPROVING but NOT YET SELF-FUNDING business. Adj EBITDA margin improved from -29.0% (FY23) to -0.6% (FY25), guided to +~4.1% (FY26, $65M/$1.59B) -- the first full-year-positive guide in company history. Q1 2026 OCF burn improved ~31% YoY ($(73.3)M vs $(105.6)M) despite 36% revenue growth -- the single most encouraging data point, suggesting real operating leverage. BUT: FY2025's entire net cash increase ($264M) was 100% financing-driven (convertible notes + term loan + ATM), not operational; accumulated deficit is $2.52B and growing; dilution is real and multi-vector (+11% shares in 5 quarters). CRITICAL LIVE finding: a SECOND convertible-notes tranche ($460M, priced May 12 2026, conversion price $69.26) closed ~7 weeks before as_of -- only ~15% above the current price, a materially CLOSER dilution overhang than the original 2030 Notes ($84.19 strike). Cash runway is genuinely adequate (~2+ years at current burn, extended by the May refinancing's net cash inflow) -- this is NOT an imminent-insolvency story, but dilution is the structural financing mechanism, not a hypothetical risk.",
+      "drivers": ["TEM-10K-FY25", "TEM-10Q-Q1-2026", "TEM-8K-MAY2026-CONVERT"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "UNLIKE GEV/MSFT, permanent capital impairment IS a plausible (not merely theoretical) outcome here -- there is no dividend, no buyback, no established moat cushion. Five kill paths identified: (F1) reimbursement gap vs FMI/Guardant persists/widens -- ACTIVE, UNRESOLVED, company-admitted, the single most probable risk; (F2) AI/data moat proves narrower/more contestable than priced -- NOT triggered but the central long-run watch item; (F3) dilution compounds faster than value creation -- ONGOING, quantifiable, now sharpened by the closer $69.26 conversion strike; (F4) related-party/governance scrutiny event -- NOT triggered, structural flag only, given Lefkofsky's super-voting control + Pathos relationship; (F5) capital-markets access closes -- NOT triggered, recent oversubscribed zero-coupon refinancing suggests currently strong access. The bear-case scenario (F1+F2 triggering together) produces a real, quantified -5.7% 5yr IRR (a genuine loss, not just underperformance) -- a materially different risk character than GEV's 'exceptional business, wrong price' framing.",
+      "drivers": ["TEM-10K-FY25", "TEM-10Q-Q1-2026", "TEM-8K-MAY2026-CONVERT"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "At $60.27 (~$10.81B mkt cap, ~$11.48B EV): EV/FY2026E revenue ~7.2x, EV/TTM revenue ~8.4x -- not an obviously extreme multiple vs comparable growth-stage genomic-testing/health-data peers (Guardant Health comp). 52-wk context: -42% off high $104.32, +44% above low $41.73 -- a genuinely mixed, non-extreme price position (NOT a low/high-hug). Five-year revenue-multiple scenario model (model/scenario_model.csv): Bear 5yr IRR -5.7% (FAIL, price $45.02), Base 5yr IRR +15.5% (PASS, price $123.63), Bull 5yr IRR +35.7% (PASS strongly, price $277.61). Buy-below for STARTER (base case @ 8% hurdle): $84.14 -- current price is 28% BELOW this, a genuine quantified margin of safety, structurally DIFFERENT from GEV (zero MOS, all scenarios failed) and closer in spirit to MSFT's positive-MOS finding, EXCEPT that TEM's bear case represents REAL capital loss (not just underperformance) and the business/governance completeness is materially weaker. Price SUPPORTS a small STARTER; binding constraint is business-quality/governance completeness, not price.",
+      "drivers": ["YAHOO-TEM-PRICE", "TEM-10Q-Q1-2026"]
+    }
+  ],
+  "business_verdict": "improving_not_yet_exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 1.5,
+  "suggested_max_size_pct": 4,
+  "buy_below_price": 84.14,
+  "starter_zone": "current area ~$45-65 (at/below the as-of $60.27; positive base-case margin of safety to ~$84.14); size SMALL (1-2%) given compound-risk nature of the bet and below-average governance grade",
+  "add_zone": "add toward the 4% ceiling only as: (a) reimbursement/MAC approval progress is confirmed (closing the FMI/Guardant gap), (b) exact SEC-primary pharma-deal contract terms are disclosed/confirmed (closing O1), (c) dilution rate demonstrably slows (<6%/yr) confirming the adj-EBITDA-positive trajectory reduces capital-markets dependence, (d) related-party revenue growth (Pathos/SB Tempus) is shown to be arm's-length priced via expanded disclosure. Do NOT add on price alone without at least one of these confirmations.",
+  "trim_or_no_chase_zone": "no-chase above ~$84 (base case fails 8% hurdle above this); trim/exit on any of: reimbursement negotiations stall or a competitor wins a comparable multimodal-data pharma deal (undermining differentiation), a THIRD dilutive capital raise within 2-3 quarters signaling the adj-EBITDA guide isn't reducing cash need, any governance/related-party scrutiny event, or NRR falling meaningfully below 126%",
+  "binding_constraint": "Business-quality and governance COMPLETENESS, not price. Price offers a genuine, quantified margin of safety (base case clears the 8% hurdle with a 28% cushion below the $84.14 buy-below) -- structurally different from GEV (zero MOS) and closer to MSFT's positive-MOS finding. BUT unlike either exemplar, TEM's underlying moat is NOT yet established (company itself admits a reimbursement disadvantage on 75% of revenue; the AI-native revenue is 1.6% of the total and called 'limited' by management), the operator grade is BELOW AVERAGE (2/5: capable builder, but 30-votes/share super-voting control on a minority economic stake, a Groupon precedent of a moat claim that did not hold up, and a fast-growing related-party revenue stream the founder touches on both sides), and the bear-case scenario represents REAL capital loss (-5.7% 5yr IRR), not merely underperformance. The verdict is therefore a SMALL STARTER, not a CORE-track STARTER: the price-based case is real and earned, but sized down materially to reflect that this is a compound bet on three unresolved legs (reimbursement fix, moat validation, dilution deceleration) inside a governance structure that offers Class A shareholders little structural recourse if the founder's judgment proves as flawed here as it did at Groupon.",
+  "kill_criteria": [
+    "K-A reimbursement stall: no confirmed MAC/Palmetto approval or commercial in-network rate improvement within 12 months AND Diagnostics gross margin fails to expand -> the core 75%-of-revenue business remains a structural price-taker vs FMI/Guardant -> do not add, consider trim.",
+    "K-B moat contestability: a competitor (FMI/Roche, Guardant, or a hyperscaler health-data entrant) announces a comparable multimodal (imaging+clinical+genomic) data product or wins a comparable large-pharma co-investment deal -> the data-differentiation thesis is undermined -> re-underwrite the Data/Applications segment's premium multiple.",
+    "K-C dilution acceleration: share count growth exceeds ~10%/yr for two consecutive years AND adj EBITDA margin fails to expand toward guide -> dilution is outpacing value creation -> trim/exit.",
+    "K-D related-party/governance event: any regulatory inquiry, activist campaign, or disclosed impropriety concerning the SB Tempus/Pathos related-party relationships or the Class B super-voting structure -> immediate re-underwrite, likely exit given the thin profitability cushion.",
+    "K-E NRR/deal-signing deceleration: Net Revenue Retention falls meaningfully below 126% OR new large-pharma data-agreement signings stall for 2+ consecutive quarters -> the Data/Applications growth engine (the bull-case linchpin) is faltering -> downgrade.",
+    "K-F valuation discipline: price rises above ~$84 (base-case buy-below) without a corresponding confirmation of at least one of the three compound-bet legs -> no-chase, the price-based margin of safety has been consumed."
+  ],
+  "runner_dissent": "Genuine two-sided dissent, reflecting the IC panel's actual split (2 lean-STARTER-small, 3 WATCH) rather than a manufactured consensus. The mechanical read lands STARTER at a small 1.5% initial size, and I am comfortable with this DIRECTION because the price-based margin of safety is real and quantified (base case clears the 8% hurdle with a 28% cushion, not a razor-thin or engineered pass) -- this is meaningfully different from a name where the verdict is being talked into STARTER territory by an exciting narrative alone. HOWEVER, I want to flag clearly: this is NOT a high-conviction call, and the size (1.5% initial, 4% ceiling -- both well below GEV's or MSFT's suggested sizes) is calibrated DOWN specifically because (a) TEM's core moat is unproven and partially admitted-weak by the company itself, (b) the bear case represents REAL capital loss (-5.7%), not just opportunity cost, unlike either exemplar, and (c) the governance structure (30-votes/share, Groupon precedent, growing related-party revenue) is a genuine, non-fabricated risk factor that a rigorous underwriter should not wave away because the AI-healthcare narrative is compelling. If I am wrong in either direction: the upside case is that the reimbursement gap closes AND the data moat proves durable AND dilution decelerates -- in which case this small STARTER should be added to aggressively (bull case +35.7% 5yr IRR is genuinely attractive). The downside case is that the 'AI company' framing turns out to be a narrative built mostly on the 25%-of-revenue Data segment while the 75% Diagnostics core remains a structurally disadvantaged lab business -- in which case this should be trimmed toward zero, not held through a slow bleed. I am willing to be wrong in either direction; what I am NOT willing to do is upsize this to CORE-track sizing before at least one of the three compound-bet legs shows confirmed, primary-sourced progress. Career note for the user: the clinical-genomic-data network effect is PLAUSIBLE and technically differentiated (multimodal integration is genuinely harder than pure-genomic sequencing), but it is NOT YET a proven moat at Tempus's current scale relative to Foundation Medicine/Guardant -- the company's own 10-K reimbursement-gap admission is the single most important primary-sourced data point cutting against the more excited version of this thesis.",
+  "sources_used": [
+    {"source_id": "TEM-10K-FY25", "public_date": "2026-02-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526066961/tem-20251231.htm"},
+    {"source_id": "TEM-8K-4Q25-ER", "public_date": "2026-02-24", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526066931/tem-ex99_1.htm"},
+    {"source_id": "TEM-10Q-Q1-2026", "public_date": "2026-05-05", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526206356/tem-20260331.htm"},
+    {"source_id": "TEM-8K-MAY2026-CONVERT", "public_date": "2026-05-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526220115/d117982d8k.htm"},
+    {"source_id": "TEM-TRADEPRESS-ASTRAZENECA", "public_date": "2025-01-01", "url_or_path": "https://www.fiercebiotech.com/biotech/tempus-ai-line-200m-astrazeneca-pathos-deal-develop-cancer-model"},
+    {"source_id": "TEM-SEARCH-LEFKOFSKY", "public_date": "2025-03-18", "url_or_path": "https://techcrunch.com/2024/05/30/billionaire-groupon-founder-lefkofsky-is-back-with-another-ipo-ai-healthtech-tempus/"},
+    {"source_id": "YAHOO-TEM-PRICE", "public_date": "2026-07-02", "url_or_path": "https://finance.yahoo.com/quote/TEM/"}
+  ]
+}

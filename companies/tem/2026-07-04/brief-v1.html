@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEM 决策简报 — as_of 2026-07-04</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#16331c,#1a1d24);border-color:#2c5a35}
+  .verdict .val{color:var(--grn)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Tempus AI (TEM) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-04 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65%)</b> · 来源 SEC EDGAR 10-K/10-Q/8-K (curl fallback, WebFetch 403) + websearch 交叉核对</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">STARTER (小仓)</div><div class="sub" style="margin:0">初始 1.5% · 上限暂封 4%</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val warn">improving, not yet exceptional</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$60.27</div><div class="sub" style="margin:0">市值 ~$10.81B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $104.32</div><div class="val neg">−42%</div><div class="sub" style="margin:0">距 52 周低 +44%，非极端位</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>Tempus 是 AI 精准医疗平台：Diagnostics（基因检测，占 FY25 营收 75%，$955.4M，+111.5%）+ Data and Applications（药企数据授权 + 早期 AI 算法，占 25%，$316.4M，+30.9%）。营收增速真实、一手可验证，Q1 2026 经营性现金流亏损同比改善 31%（$(73.3)M vs $(105.6)M），FY26 指引首次全年 Adj EBITDA 转正（~$65M）。<b>但公司自己在 10-K 中承认：核心 Diagnostics 业务的报销费率落后于 Foundation Medicine 和 Guardant Health</b>——这是护城河尚未证实的直接证据，而非分析师臆测。</p>
+    <p><b>与 GEV（同批模板，五票一致 WATCH，零安全边际）镜像对照：</b>TEM 在<b>价格端</b>反而更优——base case 5 年 IRR +15.5%，现价 $60.27 比 buy-below $84.14 低 28%，是真实、量化的安全边际。<b>但binding constraint 不是价格，是业务质量/治理完整度</b>：护城河未证实（AI 原生收入仅占 1.6%，公司自称"有限"）、创始人 Lefkofsky 持有 30 票/股超级投票权（~60% 综合投票权，经济持股仅为少数）、且有 Groupon 失败先例（同样声称网络效应但未兑现）、关联方收入（Pathos/SB Tempus）快速增长。IC 五灵魂投票真实分裂（2 票倾向小额 STARTER，3 票 WATCH），非人为制造的一致结论。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>一手财务扎实；~65% 完整度；抓到 5 月新一轮可转债这一 LIVE 事件</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+1</td><td>数据飞轮机制连贯，但公司自认报销费率落后 FMI/Guardant</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num">0</td><td>Data 段有真实定价权(25%)，Diagnostics 无护城河溢价(75%)；operator 2/5</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num">0</td><td>OCF 燃烧率真实改善，但非自我造血；5 月再融资使稀释临界点更近($69.26)</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−1</td><td>与范例不同，永久性资本损失是真实可能（bear case −5.7%），非仅跑输</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num pos">+1</td><td>现价低于 buy-below 28%，真实安全边际，非极端估值</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">EV/2026E 营收</div><div class="val">7.2×</div><div class="sub" style="margin:0">EV/TTM 营收 8.4×</div></div>
+    <div class="card"><div class="lbl">FY26 Adj EBITDA 指引</div><div class="val">~$65M</div><div class="sub" style="margin:0">首次全年转正，~4.1% margin</div></div>
+    <div class="card"><div class="lbl">base 5y IRR</div><div class="val pos">+15.5%</div></div>
+    <div class="card"><div class="lbl">bear 5y IRR</div><div class="val neg">−5.7%</div><div class="sub" style="margin:0">真实亏损情形，非仅跑输</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据 (Q1 2026, 2026-03-31 + 2026-05-12 LIVE 事件)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>Q1 2026 总营收</td><td class="num">$348.1M (+36.1%)</td><td>10-Q 一手</td></tr>
+      <tr><td>Diagnostics / Data and Applications</td><td class="num">$261.1M / $87.0M</td><td>10-Q 一手</td></tr>
+      <tr><td>净亏损</td><td class="num neg">$(125.9)M</td><td>10-Q 一手（含一次性税收 base effect）</td></tr>
+      <tr><td>经营性现金流</td><td class="num pos">$(73.3)M（同比改善 31%）</td><td>10-Q 一手</td></tr>
+      <tr><td>现金 + 有价证券</td><td class="num">$643.8M</td><td>10-Q + 交叉核对</td></tr>
+      <tr><td>累计亏损</td><td class="num warn">$(2.52)B</td><td>10-Q 一手</td></tr>
+      <tr><td>5 月新可转债 (2032)</td><td class="num warn">$460M，转股价 $69.26</td><td>8-K 一手（LIVE，as_of 前 7 周）</td></tr>
+      <tr><td>关联方收入 (Q1'26 vs Q1'25)</td><td class="num warn">$21.8M vs $0.6M</td><td>10-Q 一手（SB Tempus + Pathos）</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">5y IRR</th><th class="num">价位</th><th class="num">vs $60.27</th></tr>
+      <tr><td>no-chase 上沿 (base 8% hurdle)</td><td class="num">8%</td><td class="num">~$84.14</td><td class="num">+40%</td></tr>
+      <tr><td><b>STARTER（现价区，小仓）</b></td><td class="num pos">~15.5% (base)</td><td class="num">$45–65</td><td class="num">0</td></tr>
+      <tr><td>深度价值 / bear-tolerable</td><td class="num">~breakeven (bear)</td><td class="num">~$45</td><td class="num">−25%</td></tr>
+      <tr><td>bull case 上限</td><td class="num pos">+35.7%</td><td class="num">~$277.61 (5y exit)</td><td class="num">—</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 业务质量/治理完整度，非价格。</b>价格端已提供真实、量化的安全边际（base case 现价低于 buy-below 28%）。但护城河未证实（Diagnostics 报销费率公司自认落后 FMI/Guardant；AI 原生收入仅 1.6%）、operator grade 仅 2/5（30 票/股超级投票权 + Groupon 先例 + 关联方收入快速增长）、bear case 是真实资本损失（−5.7%，非仅跑输）——三者合力将仓位封在小额 STARTER，而非 CORE 赛道。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A 报销费率追赶停滞 + 无 margin 扩张</td><td>协商中，未解决</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-B 竞品复制多模态数据整合</td><td>未触发</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-C 稀释速度 &gt;10%/年连两年</td><td>~9-11%（趋缓中）</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-D 关联方/治理审查事件</td><td>未触发，结构性关注</td><td><span class="pill y">黄</span></td></tr>
+      <tr><td>K-E NRR 跌破 126% 或药企签约停滞</td><td>126%，健康</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-F 买入价 &gt;$84 无进展确认</td><td>$60.27，未触发</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC（真实分裂，非一致结论）</h2>
+    <p>五票分裂：<b class="pos">段永平</b>（WATCH-偏-STARTER 小仓）、<b class="neg">Buffett</b>（WATCH，护城河 75% 营收未过关 + 治理担忧）、<b class="neg">Munger</b>（WATCH，三重复合赌注 + Groupon 先例警示）、<b class="pos">Marks</b>（STARTER 小仓，市场分歧本身是有趣的风险调整设置）、<b class="neg">Klarman</b>（WATCH/小额 STARTER 至多，bear case 真实故希望更大折价）。<b>2 票倾向小额 STARTER，3 票 WATCH</b> → 主审综合裁定 <b>STARTER（小仓 1.5%，上限暂封 4%）</b>：价格端过关，但业务质量与治理不支持放大仓位。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明：本简报为 <b>DECISION_DRAFT</b>（证据支撑的决策草案），完整度 ~65%，<b>非 COMPLETE</b>。OPEN 项：药企数据协议确切合同条款(O1，GSK/Merck/Gilead 单一来源)、Diagnostics 分部毛利率/payer-mix 明细(O2)、Pathos/SB Tempus 关联方定价条款(O3)。所有载荷性数字回挂 SEC 一手（10-K/10-Q/8-K，含 curl fallback 说明）；贸易媒体的药企交易金额已标注为 trade-press-sourced，非 SEC 一手。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

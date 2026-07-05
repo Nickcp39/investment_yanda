@@ -1,0 +1,10 @@
+FRESHNESS CHECK -GEHC as_of 2026-07-04  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=65.57 refetched_yahoo=65.56500244140625 (2026-07-02) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 58.75 <= 65.57 <= 89.77
+  [PASS] T2 low/high hug: +11.6% off low, -27.0% off high
+  [PASS] T3 market-cap identity: 455M x 65.57 = 0.030T vs card 0.030T (0.01%)
+  [PASS] T4 distance-from-high reconciliation: narrative -27.0% vs card-implied -27.0% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 65.57 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source 2026-04-30 is 65d before as_of (> 45d) -confirm it is still the latest authoritative event

@@ -1,0 +1,74 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,65.57,USD,2026-07-02,YAHOO-GEHC-PRICE,B1,Confirmed 2nd source GEHC-SA-STATS same value same date
+C2,Last close price (cross-check),65.57,USD,2026-07-02,GEHC-SA-STATS,B1,Confirms YAHOO-GEHC-PRICE
+C3,52-week high,89.77,USD,2026-07-02,YAHOO-GEHC-PRICE,B1,Cross-checked GEHC-SA-STATS
+C4,52-week low,58.75,USD,2026-07-02,YAHOO-GEHC-PRICE,B1,Cross-checked GEHC-SA-STATS
+C5,Shares outstanding,454.89,millions,2026-07-04,GEHC-SA-STATS,B1,
+C6,Market cap,29.82,USD billions,2026-07-04,GEHC-SA-STATS,B1,454.89M x 65.57 = 29.82B derived-consistent
+C7,FY2025 total revenue,20625,USD millions,2025-12-31,GEHC-SA-FINANCIALS,B1,Cross-checked GEHC-Q4-PR ($20.6B rounded)
+C8,FY2025 revenue growth reported,4.8,pct,2025-12-31,GEHC-Q4-PR,A1,
+C9,FY2025 revenue growth organic,3.5,pct,2025-12-31,GEHC-Q4-PR,A1,
+C10,FY2025 gross profit,8248,USD millions,2025-12-31,GEHC-SA-FINANCIALS,B1,
+C11,FY2025 gross margin,39.99,pct,2025-12-31,GEHC-SA-FINANCIALS,B1,Down from 41.71% FY24
+C12,FY2025 operating income,2763,USD millions,2025-12-31,GEHC-SA-FINANCIALS,B1,
+C13,FY2025 operating margin,13.40,pct,2025-12-31,GEHC-SA-FINANCIALS,B1,
+C14,FY2025 adjusted EBIT margin,15.3,pct,2025-12-31,GEHC-Q4-PR,A1,Down from 16.3% FY24 -100bps tariff-driven
+C15,FY2025 net income,2154,USD millions,2025-12-31,GEHC-SA-FINANCIALS,B1,
+C16,FY2025 diluted EPS GAAP,4.55,USD,2025-12-31,GEHC-SA-FINANCIALS,B1,
+C17,FY2025 adjusted EPS,4.59,USD,2025-12-31,GEHC-Q4-PR,A1,+2.2% YoY
+C18,FY2024 total revenue,19672,USD millions,2024-12-31,GEHC-SA-FINANCIALS,B1,
+C19,FY2024 net income,2050,USD millions,2024-12-31,GEHC-SA-FINANCIALS,B1,
+C20,FY2023 total revenue,19552,USD millions,2023-12-31,GEHC-SA-FINANCIALS,B1,
+C21,FY2023 net income,1614,USD millions,2023-12-31,GEHC-SA-FINANCIALS,B1,
+C22,FY2025 free cash flow,1505,USD millions,2025-12-31,GEHC-SA-FINANCIALS,B1,7.3% FCF margin
+C23,FY2025 total debt,10003,USD millions,2025-12-31,GEHC-SA-BALANCESHEET,B1,Up from 8951 FY24
+C24,FY2025 cash and equivalents,4512,USD millions,2025-12-31,GEHC-SA-BALANCESHEET,B1,Up from 2889 FY24
+C25,FY2025 total assets,36906,USD millions,2025-12-31,GEHC-SA-BALANCESHEET,B1,
+C26,FY2025 total shareholders equity,10390,USD millions,2025-12-31,GEHC-SA-BALANCESHEET,B1,
+C27,FY2025 goodwill plus intangibles,14619,USD millions,2025-12-31,GEHC-SA-BALANCESHEET,B1,13489 goodwill + 1130 intangibles
+C28,FY2025 debt to equity ratio,0.91,ratio,2025-12-31,search cross-check,B2,
+C29,Q4 2025 total revenue,5700,USD millions,2025-12-31,GEHC-Q4-PR,A1,+7.1% reported +4.8% organic
+C30,Q4 2025 Imaging segment revenue,2550,USD millions,2025-12-31,GEHC-Q4-PR,A1,+6.6%
+C31,Q4 2025 AVS segment revenue,1520,USD millions,2025-12-31,GEHC-Q4-PR,A1,+5.9%
+C32,Q4 2025 PDx segment revenue,790,USD millions,2025-12-31,GEHC-Q4-PR,A1,+22.3%
+C33,FY2025 PDx segment revenue,2900,USD millions,2025-12-31,search cross-check,B2,+15.6% vs FY24 2.5B
+C34,FY2025 total orders growth organic,5.2,pct,2025-12-31,GEHC-Q4-PR,A1,book-to-bill 1.07x
+C35,Q1 2026 total revenue,5100,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,+7.4% reported +2.9% organic
+C36,Q1 2026 Imaging segment revenue,2299,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,+3.8% organic
+C37,Q1 2026 AVS segment revenue,1341,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,+4.4% organic
+C38,Q1 2026 PCS segment revenue,704,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,-8.1% organic DECLINE
+C39,Q1 2026 PDx segment revenue,770,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,+9.7% organic
+C40,Q1 2026 net income,389,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,Down from 564M prior year; cross-checked 247WALLST
+C41,Q1 2026 adjusted EBIT margin,13.5,pct,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,Down from 15.0% Q1'25
+C42,Q1 2026 diluted EPS,0.85,USD,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,vs 1.23 prior year
+C43,Q1 2026 adjusted EPS,0.99,USD,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,vs 1.01 prior year missed consensus 1.05
+C44,Q1 2026 operating cash flow,290,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,
+C45,Q1 2026 free cash flow,112,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,Sharply below run-rate - seasonality OPEN O5
+C46,Q1 2026 orders growth organic,1.1,pct,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,Down sharply from +10.3% prior year
+C47,Q1 2026 backlog,21800,USD millions,2026-03-31,GEHC-STOCKTITAN-1Q26,A2,book-to-bill 1.07x
+C48,Q1 2026 total borrowings carrying value,10130,USD millions,2026-03-31,GLOBEANDMAIL-CREDITFACILITY,B1,includes 9500 senior notes + 650 DDTL
+C49,Q1 2026 total principal debt,10172,USD millions,2026-03-31,search cross-check,B2,vs 10024 YE2025
+C50,Q1 2026 cash and restricted cash,2290,USD millions,2026-03-31,search cross-check,B2,Down from 4520 YE25 - Intelerad acquisition
+C51,FY2026 guidance organic revenue growth,3.0-4.0,pct range,2026-04-30,GEHC-STOCKTITAN-1Q26,A2,Reaffirmed
+C52,FY2026 guidance adjusted EBIT margin,15.4-15.7,pct range,2026-04-30,GEHC-STOCKTITAN-1Q26,A2,Cut from 15.8-16.1
+C53,FY2026 guidance adjusted EPS,4.80-5.00,USD range,2026-04-30,GEHC-STOCKTITAN-1Q26,A2,Cut from 4.95-5.15
+C54,FY2026 guidance free cash flow,1600,USD millions approx,2026-04-30,GEHC-STOCKTITAN-1Q26,A2,Cut from approx 1700
+C55,Tariff revenue reduction estimate,500,USD millions approx,2025-2026,RADIOLOGYBUSINESS-TARIFF,B2,2026 impact expected lower than 2025 concentrated Q1
+C56,Employee count,54000,headcount approx,2025-12-31,GEHC-STOCKTITAN-10K,A2,includes ~11100 engineers/scientists
+C57,TTM revenue,20.98,USD billions,2026-07-04,GEHC-SA-STATS,B1,+6.0%
+C58,TTM net income,1.91,USD billions,2026-07-04,GEHC-SA-STATS,B1,-12.6%
+C59,Trailing PE ratio,15.72,ratio,2026-07-04,GEHC-SA-STATS,B1,
+C60,Forward PE ratio,13.15,ratio,2026-07-04,GEHC-SA-STATS,B1,
+C61,Analyst average price target,79.22,USD,2026-07-04,GEHC-SA-STATS,B1,18 analysts Buy rating +20.8% from 65.57
+C62,United Imaging market share hospitals level2plus,18.2,pct,2025-08-31,FUTUBULL-UIH-REPORT,B2,Rank 3 overall rank 1 domestic high-end brand - NOT GEHC source
+C63,GPS collective high-end MR share,68,pct,2024-12-31,FUTUBULL-UIH-REPORT,B2,GE+Philips+Siemens combined - NOT GEHC source
+C64,United Imaging revenue CAGR 2018-2024,31,pct,2024-12-31,FUTUBULL-UIH-REPORT,B2,RMB 2.035B to RMB 10.3B - NOT GEHC source
+C65,Intelerad acquisition price,2.3,USD billions,2026,MEDICALECONOMICS-INTELERAD,B2,Cash deal - cloud/AI enterprise imaging
+C66,GEHC spin-off date,2023-01-03,date,2023-01-03,search cross-check,B2,From General Electric
+C67,FY2025 China revenue,2.03,USD billions,2025-12-31,BULLFINCHER-GEOREVENUE,B1,9.85% of total revenue -15% YoY decline - RESOLVES O3
+C68,FY2024 China revenue,2.14,USD billions,2024-12-31,BULLFINCHER-GEOREVENUE,B1,10.85% of total revenue
+C69,FY2025 US revenue,9.17,USD billions,2025-12-31,BULLFINCHER-GEOREVENUE,B1,44.5% of total +6.39% YoY
+C70,FY2025 Other Countries revenue,9.43,USD billions,2025-12-31,BULLFINCHER-GEOREVENUE,B1,45.7% of total
+C71,Siemens Healthineers EV/EBITDA,7.9,ratio,2026-06-04,MULTIPLES-VC-SIEMENS-HEALTHINEERS,B1,Peer multiple anchor for valuation.md
+C72,Siemens Healthineers EV/Revenue,1.6,ratio,2026-06-04,MULTIPLES-VC-SIEMENS-HEALTHINEERS,B1,
+C73,Siemens Healthineers market cap,45,USD billions,2026-06-04,MULTIPLES-VC-SIEMENS-HEALTHINEERS,B1,EV approx 42B

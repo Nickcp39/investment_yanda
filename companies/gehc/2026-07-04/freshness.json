@@ -1,0 +1,188 @@
+{
+  "ticker": "GEHC",
+  "as_of": "2026-07-04",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. Price sits -27.0% off 52wk high / +11.6% above 52wk low -- neither extreme is within the 3% low/high-hug band, so this is NOT a hug situation (T2 should pass on distance alone); low_high_hug_justified is still declared true with a substantive justification for completeness/audit-trail purposes, since qualitatively the price IS in the lower part of its range and that positioning is fundamentals-justified (guidance cut, order deceleration, China revenue decline), not a stale-data artifact.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 65.57,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price is -27.0% below 52wk high of $89.77 and +11.6% above 52wk low of $58.75 -- comfortably outside the 3% hug band on both ends, so this is not a low/high-hug edge case. To the extent the price sits in the lower third of its range, this is NOT a stale-data or price-grab error: GEHC's Q1 2026 results (reported ~2026-04-30) showed a real guidance cut (adj EBIT margin, adj EPS, and FCF guidance all reduced), orders decelerated sharply (+10.3% to +1.1% organic), and confirmed China revenue decline (-15% YoY). The lower-range price legitimately reflects this fundamental deterioration. Confirmed by 2 independent sources showing the identical $65.57 value for the same 2026-07-02 close.",
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEHC?range=1y&interval=1d",
+          "fetched_at": "2026-07-04",
+          "value": 65.57
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gehc/",
+          "fetched_at": "2026-07-04",
+          "value": 65.57
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 29830000000,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gehc/",
+          "fetched_at": "2026-07-04",
+          "value": 29820000000
+        },
+        {
+          "source_name": "derived",
+          "url": "454.89M shares x $65.57",
+          "fetched_at": "2026-07-04",
+          "value": 29830000000
+        }
+      ],
+      "cross_check_delta_pct": 0.034,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 89.77,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEHC?range=1y&interval=1d",
+          "fetched_at": "2026-07-04",
+          "value": 89.77
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gehc/",
+          "fetched_at": "2026-07-04",
+          "value": 89.77
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 58.75,
+      "unit": "USD",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEHC?range=1y&interval=1d",
+          "fetched_at": "2026-07-04",
+          "value": 58.75
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gehc/",
+          "fetched_at": "2026-07-04",
+          "value": 58.75
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 454.89,
+      "unit": "millions",
+      "as_of": "2026-07-02",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gehc/",
+          "fetched_at": "2026-07-04",
+          "value": 454.89
+        },
+        {
+          "source_name": "stockanalysis_derived_mcap",
+          "url": "29.82B / 65.57 = 454.87M (consistent within rounding)",
+          "fetched_at": "2026-07-04",
+          "value": 454.87
+        }
+      ],
+      "cross_check_delta_pct": 0.004,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance (post-Q1 2026, reported ~2026-04-30): organic revenue growth 3.0%-4.0% (reaffirmed); adjusted EBIT margin 15.4%-15.7% (cut from 15.8%-16.1%); adjusted EPS $4.80-$5.00 (cut from $4.95-$5.15); free cash flow ~$1.6B (cut from ~$1.7B). Tariff impact expected lower in 2026 than 2025, with the largest 2026 impact concentrated in Q1. Next earnings (Q2 2026) expected late July/early August 2026 based on typical cadence -- exact date not confirmed this run.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "stocktitan_8k_10q_summary",
+          "url": "https://www.stocktitan.net/sec-filings/GEHC/8-k-ge-health-care-technologies-inc-reports-material-event-269af84f98b0.html",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-04"
+        },
+        {
+          "source_name": "tradingview_zacks_corroboration",
+          "url": "https://www.tradingview.com/news/zacks:f703a4576094b:0-gehc-q1-earnings-miss-estimates-revenues-beat-net-margin-declines/",
+          "public_date": "2026-04-30",
+          "fetched_at": "2026-07-04"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_vbp_exposure",
+      "is_quantitative": false,
+      "value": "China revenue: FY2025 $2.03B (9.85% of total, down from FY2024 $2.14B / 10.85%) -- a -15% YoY decline, the only major geography shrinking (US +6.39% to 44.5% share; Other Countries steady at 45.7%). Company's 10-K risk factors identify 'developments in the market in China' -- specifically increased local competition and prevalence of volume-based procurement (VBP) -- as an ongoing risk. Management's qualitative Q1-era commentary describes 'improving win rates, a more robust imaging funnel and some tender wins' but this improvement had not yet appeared in the FY2025 full-year revenue print. Independent industry data shows United Imaging (domestic competitor) reached ~18.2% share in hospitals level-2-and-above by August 2025 (#1 domestic high-end brand), with a 31% revenue CAGR 2018-2024, while GPS (GE+Philips+Siemens combined) still holds high-end-modality share leadership (68%/62%/92% in MR/CT/DSA as of 2024).",
+      "as_of": "2025-12-31",
+      "sources": [
+        {
+          "source_name": "bullfincher_geo_revenue",
+          "url": "https://bullfincher.io/companies/ge-healthcare-technologies/revenue-by-geography",
+          "public_date": "2026",
+          "fetched_at": "2026-07-04"
+        },
+        {
+          "source_name": "gehc_10k_risk_factors_via_stocktitan",
+          "url": "https://www.stocktitan.net/sec-filings/GEHC/10-k-ge-health-care-technologies-inc-files-annual-report-464307f3952c.html",
+          "public_date": "2026-02-04",
+          "fetched_at": "2026-07-04"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "ai_product_traction",
+      "is_quantitative": false,
+      "value": "Real, active AI-enabled product pipeline as of Q1 2026: Photonova Spectra2 (AI-powered photon-counting CT on proprietary Deep Silicon detector), MIM Software oncology AI tools (LesionID Pro automated lesion segmentation, MIMNeuro PET quantification), Intelerad $2.3B cash acquisition (cloud/AI enterprise imaging, closing/closed in the Q1 2026 window per the cash-flow impact), 'View' next-gen diagnostic viewer (FDA 510(k) cleared Q1 2026), Clarify DL deep-learning reconstruction (pending clearance). Segment reorg combining Imaging+AVS into a new $14.6B 'Advanced Imaging Solutions' unit (Phil Rackliffe named segment President/CEO) is structurally consistent with an AI/software-first integration strategy. HOWEVER: zero sources found this run quantify AI-attributable revenue, ASP premium, or attach rate anywhere in the business -- the strategic narrative is well-evidenced as ACTIVITY but not yet as MONETIZATION.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {
+          "source_name": "gehealthcare_pcct_product_page",
+          "url": "https://www.gehealthcare.com/insights/article/exploring-the-full-potential-of-photoncounting-ct-technology",
+          "public_date": "2026",
+          "fetched_at": "2026-07-04"
+        },
+        {
+          "source_name": "digitalhealthnews_segment_reorg",
+          "url": "https://www.digitalhealthnews.com/ge-healthcare-revamps-leadership-launches-ai-driven-imaging-unit-to-accelerate-global-growth",
+          "public_date": "2026",
+          "fetched_at": "2026-07-04"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}
