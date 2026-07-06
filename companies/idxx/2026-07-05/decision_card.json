@@ -1,0 +1,94 @@
+{
+  "ticker": "IDXX",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "wide_moat_consumables_annuity_compounder_priced_for_continued_excellence",
+  "as_of_price": 557.80,
+  "as_of_market_cap": 44000000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (CIK browse-edgar search, full browser UA) returned HTTP 403 'Undeclared Automated Tool' on both attempts; per robustness rule (max 2 attempts/URL, no retry-loop), pivoted immediately to official IDEXX IR press releases (businesswire.com/ir.idexx.com mirrors -- genuine A1 primary sources, just not the raw 10-K HTML) + stocktitan.net structured filing mirrors + stockanalysis.com aggregated financials + web search corroboration. Every load-bearing FY2025/Q1 2026 figure (revenue, margin, EPS, FCF, guidance, CEO transition) cross-checked across >=2 independent sources or sourced directly from an official IR press release. Price $557.80 confirmed via 2 independent sources (repo Yahoo fetcher + stockanalysis.com), both dated to the same 2026-07-02 close -- exact match to frozen as_of_price input. ~75 claims registered in claim_ledger.csv; 27 sources in source_register.md. Completeness ~65% -- key gaps: exact geographic revenue % single-sourced (O2), inVue-Dx-specific ASP/attach-rate not separately quantified from total instrument revenue (O5), no earnings-call transcript fetched (O7), inVue Dx vs Zoetis OptiCell comparative accuracy completely unbenchmarked by any third party. Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["IDXX-10K-FY25", "IDXX-Q4-PR", "IDXX-Q1-PR", "YAHOO-IDXX-PRICE", "IDXX-SA-STATS", "IDXX-CEO-SUCCESSION-PR"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "IDXX operates the cleanest razor/blade model reviewed in this batch: analyzer instruments (the 'razor', ~5% of revenue) drive a multi-decade recurring consumables + reference-lab annuity (CAG Diagnostics recurring revenue = $3,407.2M of $4,303.7M total FY2025 revenue, ~79%). The AI-enabled inVue Dx analyzer (AI models trained by IDEXX board-certified pathologists, slide-free cytology in ~10 min) shows a genuine, quantified adoption flywheel (>1,900 units placed in Q4 2025 alone, record pace; instrument revenue +51.8% reported FY2025) -- a materially stronger evidence position than the GEHC exemplar's zero-monetization AI gap, though inVue-Dx-specific ASP/consumable-pull-through is still not separately disclosed. New CEO Michael Erickson's immediate pre-promotion role ran the exact AI-diagnostics/Point-of-Care business line, signaling explicit strategic continuity toward AI-enabled point-of-care diagnostics. Mechanism is coherent, well-evidenced, and CURRENTLY ACCELERATING (not just plausible) -- a clear positive signal, distinct from GEHC's 'plausible but unproven' AI narrative.",
+      "drivers": ["IDXX-Q4-PR", "IDXX-INVUE-PRODUCTPAGE", "PRNEWSWIRE-INVUE-LAUNCH", "IDXX-CEO-SUCCESSION-PR"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Moat is EXCEPTIONAL -- one of the widest, best-quantified razor/blade moats reviewed in this project. ROIC 46.8%, ROE 69.3% (high-quality profile, partially buyback-inflated on the ROE side but ROIC nets this out and remains exceptional). VetLab consumables (+14.8% reported, fastest-growing recurring line) and reference lab services (+6.6%) both accelerating; only Rapid Assays (the lowest-tech, most commoditized recurring line, ~10% of recurring revenue) is shrinking (-3.0%), plausibly ecosystem-internal substitution rather than competitive loss. Two genuine, evidenced-but-not-yet-realized structural risks identified: (1) Mars Petcare/Antech-Heska's 2023 vertical integration creates a captive ~2,500-hospital distribution network (Banfield/VCA/BluePearl) that structurally caps addressable market regardless of product merit; (2) Zoetis's Vetscan OptiCell (AI-powered hematology, launched 2024-09) confirms AI-in-point-of-care is now a contested category, not an IDXX-exclusive edge -- durability of any IDXX data/model-quality advantage is completely unbenchmarked by any third party. Neither risk shows up in IDXX's own numbers yet (accelerating growth, record placements, market share ~50% holding). Operator grade 4/5 (outgoing CEO's evidenced 7-year track record: accelerating growth through a genuinely adverse 16-quarter vet-visit-decline macro, successful inVue Dx launch, guidance RAISED not cut, orderly 16-month-lead-time internal succession explicitly signaling AI-diagnostics continuity). Signal = +2: business quality is the strongest reviewed in this medical batch to date.",
+      "drivers": ["IDXX-Q4-PR", "IDXX-Q1-PR", "MARS-HESKA-PR", "PORTERSFIVEFORCE-IDXX", "IDXX-SA-RATIOS"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Financial quality is EXCEPTIONAL and the mirror image of the GEHC exemplar. Operating margin expanded for 2 consecutive periods (28.95% FY24 -> 31.60% FY25 -> 31.8% Q1'26) after a brief FY2024 dip that resolved sharply positive -- opposite trend direction from GEHC's 3-period compression. FY2026 guidance RAISED twice in six months (Jan 2026 initial guide -> May 2026 raised guide on both revenue and EPS) -- opposite credibility signal from GEHC's guidance cut. FCF conversion ~99% of net income FY2025 (vs GEHC's ~70%), funded by minimal capex (~2.9% of revenue). Balance sheet is clean: net debt only ~$769M vs >$1B annual FCF, debt/EBITDA 0.69x, goodwill+intangibles only ~16% of assets (vs GEHC's ~40%) -- growth is organic, not large-debt-funded-M&A-driven. A one-off litigation judgment ($80M paid 2026-04-17) is cleanly disclosed with explicit EPS-impact quantification both years; comparable (ex-item) EPS growth remains very strong (+14% FY25, +15% Q1'26) even after stripping it out -- a genuine one-off, not an earnings-quality concern. Signal = +2: financial trend is positive and accelerating across the most recent periods, a genuinely different starting point than GEHC.",
+      "drivers": ["IDXX-Q4-PR", "IDXX-Q1-PR", "IDXX-SA-BALANCESHEET", "IDXX-SA-RATIOS"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No business-quality kill path shows current-period evidence of unfolding (contrast sharply with GEHC's already-realized China revenue decline). The three business-mechanism kill paths identified (diagnostic-intensity growth stall, Zoetis AI-competition erosion, Mars captive-network expansion) are real, monitorable, structurally plausible risks but ALL remain theoretical as of this dossier's evidence -- IDXX's own numbers show acceleration on every relevant metric. The PRIMARY, currently-live risk is valuation de-rating: at ~30x EV/EBITDA (1.5-3x the closest peer Zoetis), even a return to 'merely very good' (vs currently 'exceptional') execution fails to clear an 8% hurdle in this dossier's own base-case model. The stock is already -27.6% off its 52-week high despite NO evidence of business deterioration in the facts gathered -- consistent with a broader growth-stock/high-multiple-compounder de-rating pattern (not IDXX-specific) that could continue or reverse independent of IDXX's own execution. Signal = -1: real risk, but the risk is priced-in-arithmetic, not business-quality decay -- a fundamentally different (and less severe) risk character than GEHC's compound business-and-price uncertainty.",
+      "drivers": ["IDXX-SA-STATS", "PORTERSFIVEFORCE-IDXX", "MARS-HESKA-PR"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $557.80 (~$44.00B mkt cap, ~$44.77B EV using FY2025 net debt ~$769M): trailing P/E 41.03x, forward P/E 37.01x, EV/EBITDA ~29.1-30.1x (this model's derived 30.06x closely matches the independently-sourced screener 29.05x -- strong internal consistency). Price sits -27.6% off 52wk high ($769.98), +10.0% above 52wk low ($506.91) -- a low-third-of-range position, comfortably outside the 3% hug band on both ends, independently verified NOT to reflect business deterioration (unlike GEHC's justified-low-hug) but rather a valuation de-rating despite accelerating fundamentals. IDXX trades at a 1.5-3x EV/EBITDA PREMIUM to the closest animal-health peer Zoetis (~9.7-15x EV/EBITDA) -- though Zoetis is reportedly facing its own 2026 guidance slowdown, making the comp directionally supportive of IDXX's premium (quality/growth differential) without validating the full MAGNITUDE of the gap. 3-scenario IRR: bear -11.9%(3yr)/-4.9%(5yr); base +2.8%(3yr)/+5.6%(5yr, both FAIL the 8% hurdle); bull +16.5%(3yr)/+15.2%(5yr, PASS). Only the bull case clears the hurdle at either horizon -- base case is POSITIVE but insufficient, a materially better base-case shape than GEHC's near-zero/negative base case, but still a FAIL against the strict 8% bar. Signal = -1: price is the sole binding constraint on an otherwise-exceptional business -- the GEV-exemplar pattern.",
+      "drivers": ["YAHOO-IDXX-PRICE", "IDXX-SA-STATS", "IDXX-SA-RATIOS"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 6,
+  "buy_below_price": 510,
+  "starter_zone": "$480-510 (near/at 52wk low $506.91) -- base case begins to clear or meaningfully approach the 8% hurdle at this level without requiring the bull-case AI-flywheel-durability or Mars-network-stability assumptions to already be proven.",
+  "add_zone": "First STARTER at $480-510. Add toward CORE only as: (a) two consecutive quarters confirm the diagnostic-intensity + instrument-attach growth algorithm continues working (CAG Diagnostics recurring organic growth holding above ~8%), (b) incoming CEO Erickson's first 2-3 quarters show guidance held or raised (not cut), (c) any independent (trade-press, academic, or IDXX-disclosed) benchmark emerges comparing inVue Dx accuracy/economics favorably vs Zoetis OptiCell, (d) no further Mars/Antech veterinary-hospital or diagnostics M&A that visibly expands the captive-distribution ceiling.",
+  "trim_or_no_chase_zone": "Do not chase above ~$650 without a corresponding fundamentals upgrade (pure multiple re-expansion from here would push even the bull case's margin of safety thin). Reassess toward AVOID on any of: CAG Diagnostics recurring organic growth falling below 6-7% for 2+ consecutive quarters while vet-visit decline continues/worsens, a guidance cut within Erickson's first year, or confirmed evidence of Zoetis/Mars share gains showing up in IDXX's own instrument-placement or recurring-revenue growth rates.",
+  "binding_constraint": "PRICE, not business quality -- structurally the GEV-exemplar pattern, the inverse of the GEHC exemplar. Every business-quality module (moat, financials, operator) supports the strongest verdict reviewed in this S&P 500 medical batch to date: accelerating growth, expanding margins, guidance RAISED twice in six months, ~99% FCF conversion, a clean low-goodwill balance sheet, a genuinely evidenced (if not fully proven) AI-diagnostics adoption flywheel, and a well-executed, continuity-signaling CEO succession. But the market has already recognized essentially all of this: IDXX trades at ~30x EV/EBITDA, a 1.5-3x premium to the closest peer, and this dossier's own base-case model (which assumes near-continuation of management's own strong guidance) does not clear an 8% hurdle at either 3 or 5 years. This is not 'a business with unresolved quality questions at a fair price' (GEHC) -- it is 'a genuinely wonderful business priced for continued excellence, leaving little room for anything less than continued excellence to still work out for a new buyer today.'",
+  "kill_criteria": [
+    "K-A Diagnostic-intensity stall: CAG Diagnostics recurring organic growth falls below ~6-7% for 2 consecutive quarters while vet-visit decline continues or worsens -> re-underwrite the core growth algorithm downward.",
+    "K-B AI-competition erosion: inVue Dx placement growth decelerates while Zoetis diagnostics segment growth (OptiCell-driven) accelerates -> treat AI category as commoditizing faster than expected.",
+    "K-C Mars network expansion: further Mars/Antech-Heska veterinary-hospital or diagnostics M&A visibly expanding the captive-distribution addressable-market cap -> lower long-run TAM assumption.",
+    "K-D Guidance reversal under new CEO: any guidance cut or strategic reversal within Erickson's first 2-3 quarters (effective 2026-05-12) -> re-assess transition execution risk upward.",
+    "K-E Valuation discipline (primary): do not chase above ~$650 without a fundamentals upgrade; reassess toward STARTER as price approaches $480-510, provided K-A through K-D have not triggered."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous WATCH with zero change after critique, and I agree with the mechanism (price is the sole binding constraint on an otherwise-exceptional business) but want to flag explicitly: this dossier found MEANINGFULLY STRONGER business-quality evidence than either the GEHC or (from memory of the batch structure) most names reviewed in this medical batch to date -- accelerating (not decelerating) growth through a genuinely adverse macro, guidance RAISED (not cut), and a CEO succession that reads as a positive, deliberate signal rather than a risk event. If I had to name the single most decision-useful, under-appreciated fact in this dossier, it is this: the stock is DOWN 27.6% from its 52-week high DESPITE the business getting objectively BETTER over that period (both FY2025 and Q1 2026 show acceleration, and guidance was raised, not cut, during this same drawdown window). That divergence (price falling while fundamentals improve) is a genuine, if generic, signal that this may be caught in a broader high-multiple-compounder de-rating cycle rather than anything IDXX-specific -- which argues for treating a further price decline (toward the $480-510 STARTER zone) as a genuine opportunity to revisit, not a reason for concern, PROVIDED the fundamental acceleration continues. The single most valuable open research item for next refresh is an independent, third-party comparison of inVue Dx vs Zoetis's Vetscan OptiCell (accuracy, cost, adoption pace) -- resolving whether IDXX's AI-diagnostics edge is durable or converging toward parity would meaningfully sharpen both the bull and bear cases, and is directly in Nick's domain expertise (medical imaging + DL) to evaluate if primary technical materials become available.",
+  "sources_used": [
+    {"source_id": "IDXX-10K-FY25", "public_date": "2026-02-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000874716/000087471626000038/idxx-20251231.htm"},
+    {"source_id": "IDXX-Q4-PR", "public_date": "2026-01-29", "url_or_path": "https://ir.idexx.com/news-events/press-releases/detail/405/idexx-laboratories-announces-fourth-quarter-and-full-year-2025-results"},
+    {"source_id": "IDXX-Q1-PR", "public_date": "2026-05-04", "url_or_path": "https://www.businesswire.com/news/home/20260504966946/en/IDEXX-Laboratories-Announces-First-Quarter-Results"},
+    {"source_id": "IDXX-CEO-SUCCESSION-PR", "public_date": "2026-01-13", "url_or_path": "https://ir.idexx.com/news-events/press-releases/detail/402/idexx-announces-ceo-succession"},
+    {"source_id": "IDXX-SA-STATS", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/idxx/"},
+    {"source_id": "IDXX-SA-FINANCIALS", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/idxx/financials/"},
+    {"source_id": "IDXX-SA-BALANCESHEET", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/idxx/financials/balance-sheet/"},
+    {"source_id": "IDXX-SA-RATIOS", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/idxx/financials/ratios/"},
+    {"source_id": "YAHOO-IDXX-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/IDXX (repo fetch_yahoo)"},
+    {"source_id": "IDXX-INVUE-PRODUCTPAGE", "public_date": "2026", "url_or_path": "https://www.idexx.com/en/veterinary/analyzers/invue-dx-analyzer/"},
+    {"source_id": "MARS-HESKA-PR", "public_date": "2023-06-13", "url_or_path": "https://www.mars.com/news-and-stories/press-releases-statements/mars-completes-acquisition-heska"},
+    {"source_id": "PORTERSFIVEFORCE-IDXX", "public_date": "2026", "url_or_path": "https://portersfiveforce.com/blogs/competitors/idexx"},
+    {"source_id": "FORTUNE-VETVISITS", "public_date": "2026-03-22", "url_or_path": "https://fortune.com/2026/03/22/veterinary-care-prices-pet-costs-visits-surgeries-dogs-cats/"},
+    {"source_id": "FINIMIZE-IDXX-VETVISITS", "public_date": "2026", "url_or_path": "https://finimize.com/content/idexx-thinks-pet-testing-demand-can-carry-2026"}
+  ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDXX 决策简报 v1 · as_of 2026-07-05</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--ink:#e6e8eb;--mut:#9aa0a8;--grn:#39d353;--ylw:#e3b341;--red:#f85149;--acc:#4493f8;--bd:#2a2f38}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .card .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:22px;font-weight:700;margin-top:4px}
+  .verdict{background:linear-gradient(135deg,#332616,#1a1d24);border-color:#5a4a2c}
+  .verdict .val{color:var(--ylw)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+  .sec{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .sec h2{font-size:16px;margin:0 0 10px;color:var(--acc)}
+  .pos{color:var(--grn)}.neg{color:var(--red)}.warn{color:var(--ylw)}
+  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .g{background:#16331c;color:var(--grn)}.y{background:#3a2f12;color:var(--ylw)}.r{background:#3a1717;color:var(--red)}
+  .mono{font-family:ui-monospace,Menlo,monospace}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;border-top:1px solid var(--bd);padding-top:12px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>IDEXX Laboratories (IDXX) — 决策简报 v1</h1>
+  <div class="sub">as_of 2026-07-05 · pipeline lean-6module-v1.1 · weights none · 状态 <b class="warn">DECISION_DRAFT (~65%)</b> · 来源 SEC EDGAR(403,已 fallback)+ 官方 IR + StockAnalysis + Yahoo chart API</div>
+
+  <div class="grid">
+    <div class="card verdict"><div class="lbl">New-money Verdict</div><div class="val">WATCH</div><div class="sub" style="margin:0">初始 0% · $480-510 再评</div></div>
+    <div class="card"><div class="lbl">Business</div><div class="val pos">exceptional</div></div>
+    <div class="card"><div class="lbl">Price (07-02 close)</div><div class="val">$557.80</div><div class="sub" style="margin:0">市值 ~$44.00B</div></div>
+    <div class="card"><div class="lbl">距 52 周高 $769.98</div><div class="val neg">−27.6%</div><div class="sub" style="margin:0">低位<b>非</b>基本面恶化——是估值回落</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>核心论点</h2>
+    <p>IDXX 是本项目医疗批次里目前生意质量证据最强的一家——经典剃刀+刀片模式(分析仪装机 + 耗材/参考实验室年金,CAG Diagnostics 经常性收入占总收入 <b>~79%</b>),FY2025 营收加速至 +10%,Q1 2026 进一步加速至 +14.3%,营业利润率扩张至 31.6%(Q1'26 31.8%),<b>六个月内两次上调全年指引</b>(与 GEHC 案例下调指引方向完全相反)。AI 诊断仪 inVue Dx(IDEXX 认证病理学家训练的AI模型,10分钟无载玻片细胞学分析)Q4单季装机 <b>超1900台</b>,创纪录,新任CEO Erickson 此前正是掌管这条 AI/POC 诊断业务线——战略延续信号明确。</p>
+    <p><b>本案与 GEHC/GEV 范例的关键差异:</b>价格现处 52 周低位区间(−27.6%),但这次<b>不是基本面恶化驱动的合理低位</b>——恰恰相反,过去两个季度基本面在<b>加速改善</b>(指引上调、利润率扩张),股价下跌更像是高估值成长股板块整体回撤,而非 IDXX 特定问题。真正的约束是<b>价格本身</b>:相对最接近同业 Zoetis 溢价 1.5-3倍(EV/EBITDA),base case 5年 IRR 仅 +5.6%、3年仅 +2.8%,均未过 8% 门槛——只有 bull case 能过。<b>binding constraint 是 GEV 式的"好生意、贵价格"</b>,而非 GEHC 式的"生意本身有疑问"。</p>
+  </div>
+
+  <div class="sec">
+    <h2>六模块信号</h2>
+    <table>
+      <tr><th>模块</th><th>角色</th><th class="num">信号</th><th>一句话</th></tr>
+      <tr><td>M1 证据脊柱</td><td>confidence</td><td class="num">0</td><td>SEC 403 已 fallback 官方IR+二手源交叉验证;完整度 ~65%</td></tr>
+      <tr><td>M2 主题/机制</td><td>context</td><td class="num pos">+2</td><td>剃刀+刀片模式清晰;inVue Dx AI 飞轮有真实装机数据支撑(优于 GEHC 案例)</td></tr>
+      <tr><td>M3 利润池/耐久</td><td>conviction</td><td class="num pos">+2</td><td>护城河极深(ROIC 46.8%);Mars/Zoetis 竞争风险真实但尚未体现在数字里</td></tr>
+      <tr><td>M4 财务现实</td><td>conviction</td><td class="num pos">+2</td><td>利润率连续2期扩张;指引两次上调;FCF转化率~99%;资产负债表干净</td></tr>
+      <tr><td>M5 反演/陷阱</td><td>risk</td><td class="num neg">−1</td><td>无已实现的生意质量致命路径;主要风险是估值回撤,非基本面衰退</td></tr>
+      <tr><td>M6 定价/仓位</td><td>price</td><td class="num neg">−1</td><td>相对 Zoetis 溢价1.5-3倍;base IRR 未过8%门槛;仅 bull 通过</td></tr>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">Trailing P/E</div><div class="val warn">41.03×</div><div class="sub" style="margin:0">Fwd 37.01×</div></div>
+    <div class="card"><div class="lbl">EV/EBITDA (est.)</div><div class="val warn">~29-30×</div><div class="sub" style="margin:0">Zoetis ~9.7-15×</div></div>
+    <div class="card"><div class="lbl">base 5y IRR</div><div class="val warn">+5.6%</div><div class="sub" style="margin:0">bull +15.2% / bear −4.9%</div></div>
+    <div class="card"><div class="lbl">ROIC / FCF转化率</div><div class="val pos">46.8% / ~99%</div><div class="sub" style="margin:0">本批次最高质量之一</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>关键一手数据(Q1 2026, 2026-03-31 + FY2025)</h2>
+    <table>
+      <tr><th>项</th><th class="num">值</th><th>来源</th></tr>
+      <tr><td>FY2025 总营收</td><td class="num pos">$4,303.7M (+10% 报告/有机)</td><td>官方 IR</td></tr>
+      <tr><td>FY2025 CAG Diagnostics 经常性收入</td><td class="num pos">$3,407.2M (~79%总收入)</td><td>官方 IR — 核心剃刀刀片年金</td></tr>
+      <tr><td>Q4 2025 inVue Dx 装机量</td><td class="num pos">超1,900台(单季创纪录)</td><td>官方 IR</td></tr>
+      <tr><td>FY2025 营业利润率</td><td class="num pos">31.6% (+270bps)</td><td>官方 IR</td></tr>
+      <tr><td>Q1 2026 总营收</td><td class="num pos">$1,140.8M (+14.3%/+11.2%有机)</td><td>官方 IR</td></tr>
+      <tr><td>FY2026 指引(Q1后<b>上调</b>)</td><td class="num pos">EPS $14.45–14.90 / 营收 $4,675-4,760M</td><td>官方 8-K — 与 GEHC 下调相反</td></tr>
+      <tr><td>FY2025 FCF/净利润转化率</td><td class="num pos">~99%</td><td>官方 IR</td></tr>
+      <tr><td>净债务</td><td class="num pos">~$769M(&lt;1x FCF)</td><td>derived — 资产负债表干净</td></tr>
+      <tr><td>CEO 交接</td><td class="num">Erickson接任(2026-05-12生效)</td><td>官方公告 — 15年内部老将,原掌AI诊断线</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>三情景 IRR</h2>
+    <table>
+      <tr><th>情景</th><th class="num">3年IRR</th><th class="num">5年IRR</th><th>vs 8% 门槛</th></tr>
+      <tr><td>Bear(诊断强度停滞+AI竞争侵蚀+多重压缩)</td><td class="num neg">−11.9%</td><td class="num neg">−4.9%</td><td>FAIL</td></tr>
+      <tr><td><b>Base(指引兑现+增长常态化~9-10%+温和多重压缩)</b></td><td class="num warn">+2.8%</td><td class="num warn">+5.6%</td><td>FAIL</td></tr>
+      <tr><td>Bull(AI飞轮护城河被证实持久+增长维持+估值持稳)</td><td class="num pos">+16.5%</td><td class="num pos">+15.2%</td><td>PASS</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>价格带</h2>
+    <table>
+      <tr><th>档位</th><th class="num">价位</th><th class="num">vs $557.80</th><th>备注</th></tr>
+      <tr><td>no-chase 上沿</td><td class="num">~$650</td><td class="num">+16.5%</td><td>需基本面进一步升级才追</td></tr>
+      <tr><td><b>STARTER(52周低位区)</b></td><td class="num">$480–510</td><td class="num">−14%~−9%</td><td>base case 开始过门槛</td></tr>
+      <tr><td>Add / 评 CORE</td><td class="num">$420–450</td><td class="num">−25%~−19%</td><td>base case 真正安全边际</td></tr>
+      <tr><td>deep value(bear情景)</td><td class="num">~$380</td><td class="num">−32%</td><td>需 bear 情景实际展开才会到达</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>binding constraint + Kill Criteria</h2>
+    <p><b>binding constraint = 纯价格型(GEV式),非复合型(与GEHC不同)。</b>生意质量已过关(加速增长、利润率扩张、指引上调、干净资产负债表),唯一未过的是估值——相对 Zoetis 溢价1.5-3倍,base case 未过8%门槛。</p>
+    <table>
+      <tr><th>Kill</th><th>当前</th><th>状态</th></tr>
+      <tr><td>K-A 诊断强度增长停滞(连2季&lt;7%)</td><td>+11.0%(Q1'26,健康)</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-B Zoetis AI(OptiCell)侵蚀装机增速</td><td>+51.8%(FY25,加速)</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-C Mars/Antech 网络进一步扩张</td><td>无新增(本轮未发现)</td><td><span class="pill g">绿</span></td></tr>
+      <tr><td>K-D 新CEO首年指引下调</td><td>Erickson 2026-05-12生效,尚早</td><td><span class="pill y">黄 — 待观察</span></td></tr>
+      <tr><td>K-E 价格&gt;$650无基本面支撑</td><td>$557.80</td><td><span class="pill g">绿</span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>五灵魂 IC(段永平主审)</h2>
+    <p>五票一致 <b class="warn">WATCH</b>(Buffett / Munger / 段永平 / Marks / Klarman)→ 一轮 critique 后零变动,但收敛出清晰、狭窄的触发条件。收敛点:<b>生意关、管理层关都已通过,唯一未通过的是"贵不贵"这一关</b>——与 GEV 案例结构一致(好生意、贵价格),与 GEHC 案例(两关都有疑问)本质不同。Klarman 票面最偏建设性,明确给出 $500-510 的重新评估触发位。</p>
+  </div>
+
+  <div class="sec">
+    <h2>职业视角:剃刀刀片模式 + AI 诊断(inVue Dx vs Zoetis OptiCell)</h2>
+    <p>IDXX 是本项目审阅过的最干净的剃刀刀片模式之一——总收入 ~79% 来自装机基础上的经常性耗材/参考实验室年金。AI 层(inVue Dx:"IDEXX 认证病理学家训练的AI模型",10分钟无载玻片细胞学分析)<b>直接嵌入设备本身</b>,而非像 GEHC(Intelerad/MIM)那样是叠加在既有影像硬件上的企业软件收购。与 GEHC 案例(AI 变现证据为零)不同,IDXX 展示了真实、量化的采用飞轮:Q4单季装机超1,900台创纪录,设备收入 FY2025 +51.8%。新任CEO Erickson 提拔前正是掌管这条AI/POC诊断业务线——战略重心信号明确。</p>
+    <p><b>本 dossier 最具决策价值、待解的职业相关问题</b>:Zoetis 的 Vetscan OptiCell(AI驱动血液学分析仪,2024年9月推出)证实"分析仪内置AI"已是竞争性赛道,非 IDXX 独占优势——且本轮未找到任何第三方对 inVue Dx 与 OptiCell 准确率/经济性的独立对比。这正是 Nick 的专业(医学影像+深度学习)最适合评估的问题——若未来能获取一手技术材料(FDA申报、同行评审验证研究、或投资者日技术深度解析),应作为下一轮 refresh 的首要研究项。</p>
+  </div>
+
+  <div class="foot">
+    诚实声明:本简报为 <b>DECISION_DRAFT</b>(证据支撑的决策草案),完整度 ~65%,<b>非 COMPLETE</b>。OPEN 项:精确地理收入占比单源未交叉验证(O2)、inVue Dx 专属ASP/耗材拉动率未单独披露(O5)、未获取财报电话会逐字稿(O7)、inVue Dx 与 Zoetis OptiCell 无任何第三方对比基准。所有载荷性数字回挂官方 IR 一手来源或交叉验证 ≥2 独立源;价格 $557.80 双源确认精确匹配。详见 decision_card.json / ic_panel.md / audit.md。
+  </div>
+</div>
+</body>
+</html>

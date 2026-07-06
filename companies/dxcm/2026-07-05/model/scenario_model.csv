@@ -1,0 +1,72 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_adj_ebitda_margin,exit_ev_ebitda_multiple,rev_terminal_usd_m,ebitda_terminal_usd_m,net_cash_terminal_usd_m,ev_terminal_usd_m,equity_terminal_usd_m,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.040,0.260,13.0,5244.1,1363.5,1200,17725.1,18925.1,49.05,-11.7,FAIL
+bear,5,0.030,0.270,12.0,5404.5,1459.2,1800,17510.7,19310.7,50.04,-6.8,FAIL
+base,3,0.110,0.280,18.0,6375.9,1785.3,1500,32134.5,33634.5,87.17,7.0,FAIL
+base,5,0.100,0.310,16.0,7508.2,2327.5,2500,37240.7,39740.7,102.99,7.6,FAIL (marginal, ~0.4pt short)
+bull,3,0.130,0.310,20.0,6726.8,2085.3,1800,41706.1,43506.1,112.75,16.5,PASS
+bull,5,0.120,0.350,19.0,8216.0,2875.6,3200,54636.6,57836.6,149.89,16.0,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2025 actuals: revenue $4,662.0M; est adj EBITDA ~$1,191.5M (operating income $911.8M
+#   [SEC-10K-FY25, directly disclosed] + est D&A ~6% of revenue ~$279.7M; D&A not separately line-itemized in the
+#   income-statement sections reviewed this run -- OPEN item, D&A estimate is a general medtech-manufacturing
+#   approximation given DexCom's capex-heavy sensor-fab base (property/equipment net $1,559.9M, a large balance
+#   relative to revenue), NOT a DexCom-confirmed figure)
+# - Current price $71.25; shares 385.87M; market cap $27,493.2M; net CASH (not net debt) position ~$757.8M
+#   (cash $917.7M + short-term securities $1,081.0M - convertible notes $1,240.9M); EV ~$26,735.4M
+# - Current implied EV/EBITDA (FY25-actuals basis): ~22.4x -- this is a RICHER starting multiple than either ABT
+#   (~19.2x) or GEHC (~9.7x) in this same batch, reflecting the market's premium for DexCom's post-2024-crisis
+#   operating-margin-expansion trajectory and the credibility the May 2026 Investor Day added to the 2030 long-range
+#   plan. This means DXCM scenarios have LESS multiple-expansion room than either peer -- the bull case here
+#   deliberately does NOT expand the multiple past current levels (holds at 19-20x), consistent with the batch's
+#   discipline of not assuming re-rating beyond an already-elevated starting point.
+# - FY2026 company guidance (revenue $5.16-5.25B, +11-13%; non-GAAP op margin 23-23.5%; adj EBITDA margin 31-31.5%)
+#   anchors the BASE case's near-term growth/margin assumptions; the 2030 Investor Day long-range targets (>10%
+#   organic growth, 67-69% gross margin, 36-37% adj EBITDA margin, covered lives 23M->52M) anchor the BULL case's
+#   longer-horizon assumptions, used only partially (not the full 2030 endpoint) since this model's longest horizon
+#   (5yr, ~2031) roughly coincides with but does not exceed the 2030 target date -- bull-5yr's 35% EBITDA margin
+#   sits meaningfully below the 36-37% 2030 target, reflecting a "tracking toward but not yet fully arrived at"
+#   read, consistent with the batch's general discipline against assuming full bull-case target achievement.
+# - BEAR: The GLP-1 substitution risk DexCom itself concedes in its own 10-K (facts.md E62) materializes at the
+#   Stelo/non-insulin-T2D margin, slowing net-new-patient growth; Abbott's larger global distribution scale (facts.md
+#   E64) squeezes DexCom's International expansion; a THIRD distribution/channel-control incident (following the
+#   2024 crisis and 2026 stolen-sensor incident, see bottleneck_map.md) further erodes prescriber/DME confidence;
+#   revenue growth decelerates sharply (4.0% Yr1-3, 3.0% Yr3-5, well below even the low end of FY2026 guidance);
+#   margin expansion stalls well short of the Investor Day trajectory (26-27% EBITDA margin vs the 31-31.5% FY2026
+#   guide, let alone the 36-37% 2030 target); multiple de-rates sharply (22.4x -> 12-13x) reflecting "growth-stock
+#   thesis broken" repricing, a materially larger de-rate in percentage terms than either ABT's bear case (19.2x ->
+#   14.5-15x) or GEHC's, reflecting DXCM's single-category concentration risk (no diversification cushion) and its
+#   currently richer starting multiple giving it further to fall.
+# - BASE: FY2026 guidance is roughly achieved in Yr1 (embedded in the 3yr/5yr CAGR paths), then organic growth
+#   moderates toward a "tracking toward, not yet at, the 2030 >10% long-range target" pace (11.0% Yr1-3, 10.0%
+#   Yr3-5) as the initial G7-15-Day/international-expansion tailwinds normalize into a steadier-state growth rate;
+#   EBITDA margin expands meaningfully (28% Yr3, 31% Yr5) tracking toward but not reaching the 2030 36-37% target;
+#   multiple compresses from today's rich 22.4x toward a more sustainable premium-growth-medtech level (18x Yr3,
+#   16x Yr5) as the "special situation" premium (post-crisis-recovery + fresh-Investor-Day enthusiasm) normalizes
+#   even as the underlying business continues performing well -- this is the single largest swing factor in the
+#   whole model: DXCM's CURRENT price already embeds a meaningful expectation of sustained execution, so the base
+#   case requires genuine multiple normalization (not multiple failure) to still produce a positive but sub-hurdle
+#   return.
+# - BULL: The 2030 Investor Day targets track AHEAD of schedule (G8 launches on/ahead of the ~18-month timeline,
+#   Stelo scales meaningfully beyond its currently-unquantified base, international covered-lives expansion
+#   accelerates); GLP-1 proves genuinely complementary (CONNECT-trial-style clinical validation continues
+#   accumulating, Signos-style AI-ecosystem partnerships multiply); no further distribution/channel-control
+#   incidents; revenue CAGR of 13.0% (Yr1-3) moderating to 12.0% (Yr3-5) tracks near the upper end of what the
+#   Investor Day implied; EBITDA margin approaches but does not fully reach the 2030 endpoint (31% Yr3, 35% Yr5 vs
+#   the 36-37% 2030 target); multiple HOLDS near current levels (20x Yr3, 19x Yr5) rather than expanding further,
+#   consistent with the batch's discipline against assuming re-rating beyond an already-rich starting multiple even
+#   in the bull case.
+# - Net cash (not net debt) terminal values grow modestly across all scenarios given DexCom's FY2025 net-cash
+#   starting position (~$758M) and continued FCF generation, partially offset by the new $1B buyback (facts.md E48)
+#   consuming some of that cash in all scenarios -- bear case shows the SLOWEST net-cash growth (weaker FCF
+#   generation under a stalled-growth scenario, still fully funding the buyback), bull case shows the fastest
+#   (strong FCF generation from margin-expansion + growth, funding both the buyback and continued net-cash buildup).
+# - 8% hurdle: bear FAILS at both 3yr and 5yr (-11.7%/-6.8%) -- a materially worse bear case than either ABT's
+#   (-12.7%/-4.2%, similar 3yr but less severe 5yr) or GEHC's, reflecting DXCM's single-category concentration risk;
+#   base case FAILS at both horizons but MARGINALLY (+7.0%/+7.6%, both within ~1-1.3 percentage points of the
+#   hurdle) -- this is a "close, not comfortable, and not yet clearing" result, a genuinely different (slightly
+#   worse) shape than ABT's base case (which cleared the hurdle at 5yr, if only barely, at +8.5%); bull case PASSES
+#   comfortably at both horizons (+16.5%/+16.0%). The base case's near-miss is driven almost entirely by the
+#   multiple-compression assumption (22.4x -> 16-18x) -- if the current rich multiple simply HOLDS rather than
+#   compresses even partially, the base case would clear the hurdle comfortably; this is the single most important,
+#   sensitivity-worth-flagging assumption in this entire model.

@@ -1,0 +1,57 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,71.25,USD,2026-07-02,DXCM-SA-STATS,B1,Matches frozen as_of_price input exactly; +3.47% on the day
+C2,After-hours price,71.50,USD,2026-07-02,DXCM-SA-STATS,B1,+0.35% after-hours same day
+C3,52-week high,89.98,USD,2026-07-02,DXCM-SA-STATS,B1,Price -20.8% off high
+C4,52-week low,54.11,USD,2026-07-02,DXCM-SA-STATS,B1,Price +31.7% above low - mid-upper range not a hug edge case
+C5,Shares outstanding,385.87,Million,2026-07-02,DXCM-SA-STATS,B1,Cross-checked vs SEC 10-Q Q1 2026 balance sheet 385.9M at 2026-03-31
+C6,Shares outstanding (SEC cross-check),385.9,Million,2026-03-31,SEC-10Q-1Q26,A1,Directly read from balance sheet - confirms DXCM-SA-STATS
+C7,Market cap (derived),27.49,Billion USD,2026-07-02,DXCM-SA-STATS,B1,385.87M x 71.25 = 27.49B - exact match
+C8,Trailing P/E,30.47,x,2026-07-02,DXCM-SA-STATS,B1,
+C9,Forward P/E,26.63,x,2026-07-02,DXCM-SA-STATS,B1,
+C10,Beta,1.45,ratio,2026-07-02,DXCM-SA-STATS,B1,Materially above-market volatility - consistent with 2024 -40% single-day crash history
+C11,Dividend,0,USD,2026-07-02,DXCM-SA-STATS,B1,No dividend ever paid; credit agreement restricts
+C12,Analyst consensus rating,Strong Buy,rating,2026-07-02,DXCM-SA-STATS,B1,28 analysts
+C13,Average price target,85.24,USD,2026-07-02,DXCM-SA-STATS,B1,+19.6% from 71.25
+C14,Next earnings date,2026-07-29,date,2026-07-02,DXCM-SA-STATS,B1,24 days after as_of
+C15,Employees,11100,count,2026-07-02,DXCM-SA-STATS,B1,
+C16,FY2025 total revenue,4662.0,Million USD,2025-12-31,SEC-10K-FY25,A1,Directly read from filing; +16% YoY
+C17,FY2024 total revenue (comparative),4033.0,Million USD,2024-12-31,SEC-10K-FY25,A1,Comparative column in FY2025 10-K
+C18,FY2025 gross profit,2801.9,Million USD,2025-12-31,SEC-10K-FY25,A1,60.1% gross margin vs 60.5% FY2024
+C19,FY2025 operating income,911.8,Million USD,2025-12-31,SEC-10K-FY25,A1,19.6% operating margin +52% YoY
+C20,FY2025 net income,836.3,Million USD,2025-12-31,SEC-10K-FY25,A1,+45% YoY diluted EPS 2.09
+C21,FY2025 operating cash flow,1440,Million USD,2025-12-31,SEC-10K-FY25,A1,+46% YoY
+C22,FY2025 diluted EPS,2.09,USD,2025-12-31,SEC-10K-FY25,A1,+47% YoY
+C23,FY2025 R&D expense,599.1,Million USD,2025-12-31,SEC-10K-FY25,A1,12.9% of revenue +8% YoY
+C24,FY2025 SG&A expense,1291.0,Million USD,2025-12-31,SEC-10K-FY25,A1,27.7% of revenue flat YoY
+C25,FY2025 net new customers ex-Stelo,650000,count (midpoint),2025-12-31,SEC-10K-FY25,A1,600000-700000 range disclosed
+C26,Q1 2026 revenue,1191.9,Million USD,2026-03-31,SEC-10Q-1Q26,A1,+15% reported / +12% organic YoY
+C27,Q1 2025 revenue (comparative),1036.0,Million USD,2025-03-31,SEC-10Q-1Q26,A1,Comparative column
+C28,Q1 2026 gross profit GAAP,750.3,Million USD,2026-03-31,SEC-10Q-1Q26,A1,63.0% GAAP gross margin vs 56.9% Q1 2025
+C29,Q1 2026 operating income GAAP,255.3,Million USD,2026-03-31,SEC-10Q-1Q26,A1,21.4% operating margin vs 12.9% Q1 2025 - +850bp
+C30,Q1 2026 net income,199.5,Million USD,2026-03-31,SEC-10Q-1Q26,A1,+89% YoY diluted EPS 0.51
+C31,Total assets FY2025,6339.9,Million USD,2025-12-31,SEC-10K-FY25,A1,Directly read from balance sheet
+C32,Total liabilities FY2025,3593.9,Million USD,2025-12-31,SEC-10K-FY25,A1,
+C33,Total stockholders equity FY2025,2746.0,Million USD,2025-12-31,SEC-10K-FY25,A1,
+C34,Cash and equivalents FY2025,917.7,Million USD,2025-12-31,SEC-10K-FY25,A1,
+C35,Short-term marketable securities FY2025,1081.0,Million USD,2025-12-31,SEC-10K-FY25,A1,
+C36,Long-term convertible notes FY2025,1240.9,Million USD,2025-12-31,SEC-10K-FY25,A1,0.375% due May 2028 - only outstanding debt
+C37,Net cash position (derived),760,Million USD,2025-12-31,SEC-10K-FY25,A1,Cash+ST securities 2000.7M minus debt 1240.9M - net cash not net debt
+C38,FY2026 revenue guidance low,5160,Million USD,2026-04-30,DXCM-Q1-EARNINGS-SEARCH,B1,+11-13% YoY range; raised opex margin guide
+C39,FY2026 revenue guidance high,5250,Million USD,2026-04-30,DXCM-Q1-EARNINGS-SEARCH,B1,
+C40,FY2026 non-GAAP operating margin guidance low,23,Percent,2026-04-30,DXCM-Q1-EARNINGS-SEARCH,B1,Raised from 22-23% prior
+C41,2030 long-range organic revenue growth target,10,Percent (>),2026-05-15,DXCM-INVESTORDAY-SEARCH,B2,Investor Day secondary recap not primary deck
+C42,2030 long-range non-GAAP gross margin target,68,Percent (midpoint 67-69),2026-05-15,DXCM-INVESTORDAY-SEARCH,B2,vs 60.1% FY2025 actual
+C43,2030 covered lives target,52,Million,2026-05-15,DXCM-INVESTORDAY-SEARCH,B2,vs ~23M currently
+C44,Share buyback authorization,1000,Million USD,2026-05-15,TIPRANKS-DXCM-BUYBACK-SEARCH,B2,Announced with Investor Day
+C45,2024 guidance cut - new FY2024 sales range low,4000,Million USD,2024-07-25,CNBC-DXCM-2024CRASH,B1,Cut from 4200-4350M prior guide
+C46,2024 single-day stock decline,-40,Percent,2024-07-25,CNBC-DXCM-2024CRASH,B1,Worst single day on record; ~107 to ~64
+C47,2024 market cap wiped out,17,Billion USD (approx),2024-07-25,CNBC-DXCM-2024CRASH,B1,
+C48,Global CGM market share DXCM 2025,33.89,Percent,2025,MORDOR-CGM-MARKET (cross-batch),B2,Cross-referenced from companies/abt/2026-07-05/facts.md E51; Abbott 52.83% Medtronic 10.10%
+C49,US CGM market share DXCM 2025,44.7,Percent,2025,CGM-US-SHARE (cross-batch),B2,Cross-referenced from ABT dossier E51; Abbott 48.5% - near-even domestic split
+C50,Dexcom G7 MARD accuracy metric,8.2,Percent,2025,MARD-COMPARISON-SEARCH (cross-batch),C2,Cross-referenced from ABT dossier E53; lower=more accurate; Libre 3 is 9.2%
+C51,CEO transition effective date,2026-01-01,date,2026-01-01,MEDTECHDIVE-CEO-TRANSITION,B1,Kevin Sayer resignation effective; Jake Leach permanent CEO
+C52,CEO interim start (Sayer medical leave),2025-09-01,date (approx month),2025-09-01,MEDTECHDIVE-CEO-TRANSITION,B1,Leach assumed interim principal executive officer duties
+C53,New board director appointed,2026-02-26,date,2026-02-26,SEC-8K-20260226,A1,Rick Osterloh IV - directly fetched 8-K
+C54,Stolen G7 sensor incident disclosure date,2026-05-26,date,2026-05-26,FDA-DXCM-THEFT-SAFETY,B1,Two lots identified 1725204004 and 1725069002
+C55,Stelo pediatric FDA clearance,2026-06,date (approx month),2026-06-13,REUTERS-STELO-PEDIATRIC,B1,~3 weeks before as_of per news cadence
+C56,Q2 2026 earnings date,2026-07-29,date,2026-07-02,DXCM-SA-STATS,B1,24 days after as_of - imminent

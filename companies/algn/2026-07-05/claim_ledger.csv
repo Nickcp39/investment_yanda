@@ -1,0 +1,61 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,184.52,USD,2026-07-02,YAHOO-ALGN-OWNFETCH,B1,Repo fetch_yahoo independent pull; exact match to frozen as_of_price input
+C2,Last close price (cross-check),184.52,USD,2026-07-02,ALGN-SA-STATS,B1,Confirms YAHOO-ALGN-OWNFETCH via search cross-check
+C3,Price 2 days prior,168.66,USD,2026-06-30,YAHOO-ALGN-OWNFETCH,B1,Start of the sharp 2-day run-up
+C4,Price 1 day prior,181.49,USD,2026-07-01,YAHOO-ALGN-OWNFETCH,B1,+7.6% single-day move; explained by EU-probe-manageable reaction (C55)
+C5,52-week high (own fetch),207.19,USD,2026-07-02,YAHOO-ALGN-OWNFETCH,B1,Trailing ~13mo window basis
+C6,52-week high (search cross-check),208.31,USD,2026-07-01,ALGN-SA-STATS,B1,~0.5% variance vs C5 -- window-date artifact not data error
+C7,52-week low (own fetch),124.88,USD,2026-07-02,YAHOO-ALGN-OWNFETCH,B1,Trailing ~13mo window basis
+C8,52-week low (search cross-check),122.00,USD,2026-07-01,ALGN-SA-STATS,B1,~2.3% variance vs C7 -- window-date artifact
+C9,Shares outstanding,71.62,millions,2026-07-01,ALGN-SA-STATS,B1,Cross-checked against 71.28M alternate figure same page family
+C10,Market cap (derived),13.22,USD billions,2026-07-02,DERIVED,B1,71.62M x 184.52 = 13.22B derived-consistent
+C11,Beta,1.67,ratio,2026-07-01,ALGN-SA-STATS,B1,
+C12,FY2025 total net revenue,4.0,USD billions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,+0.9% YoY; cross-checked ALGN-STOCKTITAN-SEARCH
+C13,FY2025 Clear Aligner revenue,3.2,USD billions,2025-12-31,ALGN-STOCKTITAN-SEARCH,B1,+0.5% YoY
+C14,FY2025 Systems and Services revenue,789.6,USD millions,2025-12-31,ALGN-STOCKTITAN-SEARCH,B1,+2.7% YoY; ~19-20% of total revenue
+C15,FY2025 net income GAAP,410.4,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,-2.6% YoY
+C16,FY2025 diluted EPS GAAP,5.65,USD,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,+0.5% YoY
+C17,FY2025 non-GAAP net income,763.0,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,
+C18,FY2025 non-GAAP diluted EPS,10.51,USD,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,
+C19,FY2025 GAAP operating margin,13.0-14.0,pct,2025-12-31,AINVEST-RESTRUCTURING-2025,B2,Per mgmt restructuring-plan guidance framing
+C20,FY2025 non-GAAP operating margin,22.5,pct (slightly above),2025-12-31,AINVEST-RESTRUCTURING-2025,B2,
+C21,FY2025 share repurchases total,465.9,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,2.9M shares at $162.09 avg
+C22,Q4 2025 total revenue,1047.6,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,+5.2% sequential / +5.3% YoY
+C23,Q4 2025 gross margin GAAP,65.3,pct,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,
+C24,Q4 2025 gross margin non-GAAP,72.0,pct,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,
+C25,Q4 2025 net income GAAP,135.8,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,$1.89 diluted EPS
+C26,Q4 2025 Clear Aligner case volume,676.9,thousands,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,+4.5% sequential / +7.7% YoY
+C27,Q4 2025 Systems and Services revenue,209.4,USD millions,2025-12-31,ALGN-TRADINGVIEW-Q4FY25,B1,+10.3% sequential / +4.2% YoY
+C28,Q1 2026 total net revenue,1040.1,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,+6.2% YoY; cross-checked WEBSEARCH-Q1-2026-CROSSCHECK
+C29,Q1 2026 Clear Aligner revenue,856.0,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,+7.4% YoY
+C30,Q1 2026 Systems and Services revenue,184.1,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,+0.9% YoY -- notably slower than Clear Aligner
+C31,Q1 2026 gross margin,70.8,pct,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,Despite $30.6M legal settlement expense
+C32,Q1 2026 operating margin GAAP,13.6,pct,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,
+C33,Q1 2026 net income,112.8,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,vs $93.2M Q1 2025
+C34,Q1 2026 diluted EPS GAAP,1.57,USD,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,vs $1.27 Q1 2025
+C35,Q1 2026 non-GAAP diluted EPS,2.58,USD,2026-03-31,WEBSEARCH-Q1-2026-CROSSCHECK,B1,Beat consensus $2.30
+C36,Q1 2026 Clear Aligner case volume,685.7,thousands,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,+6.7% YoY
+C37,Q1 2026 cash and equivalents,1.059,USD billions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,No outstanding credit-facility borrowings -- net cash position
+C38,Q1 2026 operating cash flow,151.0,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,
+C39,Q1 2026 share repurchases,31.2,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,$800M remaining under April 2025 authorization
+C40,Q1 2026 US revenue,404.5,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,Geographic segment
+C41,Q1 2026 Switzerland revenue,245.1,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,EMEA regional hub booking center
+C42,Q1 2026 Other International revenue,390.5,USD millions,2026-03-31,ALGN-10Q-Q1-2026-PROXY,A2,Bundles China + rest of EMEA/LatAm/APAC -- no China-specific breakout found
+C43,FY2026 revenue growth guidance,3-4,pct,2026-04-29,WEBSEARCH-FY26-GUIDANCE,B1,Reaffirmed (not raised) at Q1 2026 report
+C44,FY2026 Clear Aligner volume growth guidance,mid-single-digits,pct,2026-04-29,ALGN-SA-Q1-EXTRACT,B2,
+C45,FY2026 ASP guidance,1-2 pct decline,pct,2026-04-29,WEBSEARCH-Q1-2026-CROSSCHECK,B2,Due to mix shift toward lower-stage products
+C46,FY2026 GAAP operating margin guidance,slightly below 18.0,pct,2026-04-29,WEBSEARCH-FY26-GUIDANCE,B1,~+400bps improvement vs FY2025
+C47,FY2026 non-GAAP operating margin guidance,23.7,pct,2026-04-29,WEBSEARCH-FY26-GUIDANCE,B1,~+100bps YoY improvement
+C48,2025 restructuring charges,150-170,USD millions,2025-07-31,AINVEST-RESTRUCTURING-2025,B2,~$40M cash / remainder non-cash
+C49,CEO tenure start,2015-06,date,2026-07-05,CEOTODAY-HOGAN-PROFILE,B2,Joseph M. Hogan -- ~11 years tenure as of as_of
+C50,Prior GE Healthcare revenue growth under Hogan,7 to 16,USD billions,2008-12-31,CEOTODAY-HOGAN-PROFILE,B2,8 years as GE Healthcare CEO -- more than doubled revenue
+C51,Employees,20290,count,2026-07-01,ALGN-SA-STATS,B1,
+C52,Straumann/ClearCorrect trial date,2026-02-16,date,2026-02-16,SEARCH-STRAUMANN-LITIGATION-10K,B2,Outcome not found in sources reviewed this run -- OPEN
+C53,Angelalign litigation filing date (3 jurisdictions),2025-08-15,date,2025-08-15,SEARCH-ALGN-ANGELALIGN-LITIGATION,B2,US (E.D. Texas) + EU Unified Patent Court + China (Zhengzhou) same-day filings
+C54,EU antitrust investigation opened,2026-06-30,date,2026-06-30,MASSDEVICE-EU-ANTITRUST,B2,First formal EU antitrust case in medical devices sector
+C55,ALGN stock reaction to EU probe characterization,7.6,pct (1-day gain),2026-07-01,QUIVERQUANT-ALGN-JUMP,B2,Market treating EU action as manageable/procedural per Align's own characterization
+C56,Cumulative Invisalign patients treated,22,millions,2026-06-30,PYMNTS-EU-ANTITRUST,B2,Company-cited figure in EU antitrust coverage
+C57,Sell-side price target,209.07,USD,2026-07-01,ALGN-SA-STATS,B1,+13.3% implied upside from confirmed $184.52 close
+C58,Trailing P/E,31.0,ratio,2026-07-02,DERIVED,B1,184.52 / 5.95 TTM EPS
+C59,Founded year,1997,year,2026-07-05,ALGN-SA-STATS,B1,
+C60,iTero installed base (historical, stale),68000,units,2021-12-31,WEBSEARCH-ITERO-HISTORICAL,C1,4+ years stale -- no current figure found this run -- material OPEN gap

@@ -1,0 +1,52 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,209.63,USD,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,Confirmed 2nd source WEBSEARCH-YAHOO-RMD-PRICE same value same date; exact match to frozen as_of_price input
+C2,Last close price (cross-check),209.63,USD,2026-07-02,WEBSEARCH-YAHOO-RMD-PRICE,B1,Confirms STOCKANALYSIS-RMD-STATS
+C3,52-week high,293.81,USD,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,Price is -28.7% off high
+C4,52-week low,180.27,USD,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,Price is +16.3% above low; see O3 reconciliation note re: alternate 198.60 figure from a different date
+C5,Shares outstanding,144.24,millions,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,
+C6,Market cap,30.24,USD billions,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,144.24M x 209.63 = 30.24B derived-consistent
+C7,FY2025 total revenue,5146.3,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,Cross-checked SEC-10K-FY25-SEARCH ($5,146.3M exact match); +10% YoY
+C8,FY2025 gross profit,3055,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,59.36% gross margin cross-checked SEC-10K-FY25-SEARCH (59.4%)
+C9,FY2025 gross margin,59.36,pct,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,Up from 56.67% FY24 55.78% FY23 - 3yr expansion trend
+C10,FY2025 operating income,1685,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,32.75% operating margin up from 28.17% FY24
+C11,FY2025 net income,1400.72,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,Cross-checked SEC-10K-FY25-SEARCH ($1,400.72M;+37.2% YoY exact match)
+C12,FY2025 diluted EPS,9.51,USD,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,vs 6.92 FY24 6.09 FY23
+C13,FY2025 R&D expense,331.28,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,~6.4% of revenue
+C14,FY2025 free cash flow,1662,USD millions,2025-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,FCF now exceeds net income - high quality signal; up from 1302 FY24 574 FY23
+C15,FY2024 total revenue,4685,USD millions,2024-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,
+C16,FY2024 net income,1020.95,USD millions,2024-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,Cross-checked SEC-10K-FY25-SEARCH
+C17,FY2023 total revenue,4223,USD millions,2023-06-30,STOCKANALYSIS-RMD-FINANCIALS,B1,
+C18,FY2025 total debt,851.81,USD millions,2025-06-30,STOCKANALYSIS-RMD-BALANCESHEET,B1,Down from 873.94 FY24 1580 FY23 - active deleveraging
+C19,FY2025 cash and equivalents,1209,USD millions,2025-06-30,STOCKANALYSIS-RMD-BALANCESHEET,B1,Up from 238.36 FY24 - large cash build
+C20,FY2025 net cash position,357,USD millions,2025-06-30,derived,B1,1209-851.81=357.19 net cash - genuine net-cash balance sheet
+C21,FY2025 total shareholders equity,5968,USD millions,2025-06-30,STOCKANALYSIS-RMD-BALANCESHEET,B1,
+C22,FY2025 debt to equity ratio,0.143,ratio,2025-06-30,derived,B1,851.81/5968
+C23,Q3 FY2026 total revenue,1431.4,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+11% reported/+8% cc; missed consensus ~1.4%; cross-checked GLOBENEWSWIRE-Q3FY26
+C24,Q3 FY2026 Sleep and Breathing Health revenue,1260.5,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+11% YoY - devices 735.7M(+9%) masks/access 524.8M(+15%)
+C25,Q3 FY2026 Residential Care Software revenue,170.9,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+6% YoY
+C26,Q3 FY2026 US/Canada/LatAm revenue,818.7,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+9% YoY
+C27,Q3 FY2026 Europe/Asia/Other revenue,441.8,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+16% reported/+7% cc YoY
+C28,Q3 FY2026 GAAP gross margin,62.2,pct,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,+290bps YoY from 59.3%
+C29,Q3 FY2026 net income GAAP,398.7,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,417.2M non-GAAP
+C30,Q3 FY2026 diluted EPS GAAP,2.74,USD,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,vs 2.48 prior year; non-GAAP 2.86 (+21% YoY) beat consensus 2.81
+C31,Q3 FY2026 operating cash flow,554.1,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,
+C32,Q3 FY2026 cash position,1660,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,up from 1209 FY2025 YE
+C33,9M FY2026 revenue,4190,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,
+C34,9M FY2026 net income,1140,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,
+C35,Q3 FY2026 share repurchases,175,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,500M for 9M FY26
+C36,Q3 FY2026 dividends paid,87.2,USD millions,2026-03-31,STOCKTITAN-RMD-Q3FY26,A2,new quarterly dividend $0.60/share declared
+C37,FY2026 guidance gross margin range,62-63,pct,2026-04-30,STOCKTITAN-RMD-Q3FY26,A2,reaffirmed at Q3 report
+C38,Noctrix Health acquisition price,340,USD millions,2026-04-30,MASSDEVICE-NOCTRIX,B1,cross-checked MEDTECHDIVE-NOCTRIX; ~$24M revenue run-rate target; RLS market ~17M addressable patients
+C39,CFO transition effective date,2026-05-04,date,2026-04-30,BIGGO-RMD-Q3FY26,B1,Aaron Bloomer (ex-Exact Sciences) succeeds Brett Sandercock (26yr tenure)
+C40,Smart Comfort FDA clearance date,2025-12-08,date,2025-12-08,RESMED-NEWSROOM-SMARTCOMFORT,A1,first FDA-cleared AI-enabled medical device for personalized CPAP comfort settings; trained on 100M+ nights of data
+C41,AirView patient scale,34,millions,2026-01,RESMED-JPM-PRESENTATION-2026,A2,company JPM Healthcare Conference presentation; 31.5M+ cloud-connectable devices; 24B+ nights cumulative data
+C42,GLP-1 study 1 - 2yr resupply rate uplift,5.1,pct,2026-04-30,BIGGO-RMD-Q3FY26,A2,PAP+GLP-1 vs PAP-only; 1.7M de-identified patient records; 3yr uplift +6.2%
+C43,GLP-1 study 2 - PAP initiation uplift,11,pct,2026-04-30,HEALTHLEADERSMEDIA-FARRELL-GLP1,B1,2.1M de-identified patient cohort; PAP+GLP-1 scripts vs PAP-only more likely to start PAP
+C44,Patients using both GLP-1 and CPAP concurrently,2.1,millions,2026-04-30,HEALTHLEADERSMEDIA-FARRELL-GLP1,B1,company-disclosed figure
+C45,ResMed global CPAP market share,48,pct,2025-2026,AINVEST-PHILIPS-ARTICLE,B2,post-Philips-recall; Philips fallen to ~10% - industry commentary not RMD-filed
+C46,Tariff exemption basis,Nairobi Protocol,qualitative,2026,USCPAP-TARIFF-BLOG,B2,devices mfg in Sydney Australia and Singapore confirmed exempt by US Customs and Border Protection
+C47,Patent portfolio size,8200,patents granted,2026,LEXOLOGY-CPAP-STORY,B2,alternate figures 9711 and 10000+ filed apps cited by other sources - directionally consistent range
+C48,Trailing P/E ratio,20.21,ratio,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,
+C49,Dividend yield,1.14,pct,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,$2.40/share annualized; cross-checked C36 (0.60x4=2.40)
+C50,Analyst consensus price target,260.60,USD,2026-07,STOCKANALYSIS-RMD-STATS,B1,19 analysts Buy consensus;+24.3% upside; alternate breakdown 9 Buy/1 Outperform/8 Hold/1 Sell per TIKR-BLOG
+C51,Beta,0.78,ratio,2026-07-02,STOCKANALYSIS-RMD-STATS,B1,

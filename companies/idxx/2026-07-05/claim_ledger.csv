@@ -1,0 +1,76 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,557.80,USD,2026-07-02,YAHOO-IDXX-PRICE,B1,Repo fetch_yahoo independent pull; confirmed 2nd source IDXX-SA-STATS same value same date
+C2,Last close price (cross-check),557.80,USD,2026-07-02,IDXX-SA-STATS,B1,Confirms YAHOO-IDXX-PRICE
+C3,52-week high,769.98,USD,2026-07-02,IDXX-SA-STATS,B1,
+C4,52-week low,506.91,USD,2026-07-02,IDXX-SA-STATS,B1,
+C5,Shares outstanding,78.88,millions,2026-07-04,IDXX-SA-STATS,B1,
+C6,Market cap,44.00,USD billions,2026-07-04,IDXX-SA-STATS,B1,78.88M x 557.80 = 44.00B derived-consistent
+C7,Beta,1.55,ratio,2026-07-04,IDXX-SA-STATS,B1,
+C8,Analyst price target average,709.14,USD,2026-07-04,IDXX-SA-STATS,B1,15 analysts Buy consensus
+C9,FY2025 total revenue,4303.7,USD millions,2025-12-31,IDXX-Q4-PR,A1,+10% reported and organic
+C10,FY2025 CAG revenue,3953.3,USD millions,2025-12-31,IDXX-Q4-PR,A1,+10.6% reported / +9.8% organic
+C11,FY2025 Water revenue,201.1,USD millions,2025-12-31,IDXX-Q4-PR,A1,+8.7% reported / +8.0% organic
+C12,FY2025 LPD revenue,131.8,USD millions,2025-12-31,IDXX-Q4-PR,A1,+8.0% reported / +6.1% organic
+C13,FY2025 CAG Diagnostics recurring revenue,3407.2,USD millions,2025-12-31,IDXX-Q4-PR,A1,+8.9% reported / +8.1% organic -- the core razor/blade annuity
+C14,FY2025 VetLab consumables revenue,1496.8,USD millions,2025-12-31,IDXX-Q4-PR,A1,+14.8% reported / +13.7% organic
+C15,FY2025 Reference lab services revenue,1424.1,USD millions,2025-12-31,IDXX-Q4-PR,A1,+6.6% reported / +5.9% organic
+C16,FY2025 Rapid assays revenue,349.0,USD millions,2025-12-31,IDXX-Q4-PR,A1,-3.0% reported / -3.3% organic -- only shrinking recurring line
+C17,FY2025 CAG capital/instruments revenue,200.2,USD millions,2025-12-31,IDXX-Q4-PR,A1,+51.8% reported / +49.3% organic -- inVue Dx driven
+C18,FY2025 Vet software/imaging/services revenue,345.9,USD millions,2025-12-31,IDXX-Q4-PR,A1,+10.6% reported / +10.2% organic
+C19,Q4 2025 inVue Dx units placed,1900,units,2025-12-31,IDXX-Q4-PR,A1,record quarterly placement -- >1900 in single quarter
+C20,FY2025 gross margin,61.8,pct,2025-12-31,IDXX-Q4-PR,A1,vs 61.0% FY2024
+C21,FY2025 operating margin,31.6,pct,2025-12-31,IDXX-Q4-PR,A1,+270bps reported / +90bps comparable vs FY2024 29.0%
+C22,FY2025 diluted EPS,13.08,USD,2025-12-31,IDXX-Q4-PR,A1,+23% reported / +14% comparable (litigation accrual release inflates reported)
+C23,FY2025 net income,1059,USD millions,2025-12-31,IDXX-SA-FINANCIALS,B1,
+C24,Premium instrument installed base growth,12,pct YoY,2025-12-31,IDXX-Q4-PR,A1,
+C25,FY2025 operating cash flow,1181.8,USD millions,2025-12-31,IDXX-Q4-PR,A1,
+C26,FY2025 free cash flow,1057.1,USD millions,2025-12-31,IDXX-Q4-PR,A1,~99% FCF/NI conversion
+C27,FY2025 capex,124.7,USD millions,2025-12-31,IDXX-Q4-PR,A1,
+C28,FY2025 share repurchases,1227.6,USD millions,2025-12-31,IDXX-Q4-PR,A1,2.427M shares at avg $505.74/share
+C29,FY2026 original guidance revenue low,4632,USD millions,2026-01-29,IDXX-Q4-PR,A1,+7.6% reported low end
+C30,FY2026 original guidance revenue high,4720,USD millions,2026-01-29,IDXX-Q4-PR,A1,+9.6% reported high end
+C31,FY2026 original guidance EPS low,14.29,USD,2026-01-29,IDXX-Q4-PR,A1,
+C32,FY2026 original guidance EPS high,14.80,USD,2026-01-29,IDXX-Q4-PR,A1,
+C33,FY2026 RAISED guidance revenue low,4675,USD millions,2026-05-04,IDXX-Q1-PR,A1,raised from 4632 after Q1 2026 beat
+C34,FY2026 RAISED guidance revenue high,4760,USD millions,2026-05-04,IDXX-Q1-PR,A1,raised from 4720
+C35,FY2026 RAISED guidance EPS low,14.45,USD,2026-05-04,IDXX-Q1-PR,A1,raised from 14.29
+C36,FY2026 RAISED guidance EPS high,14.90,USD,2026-05-04,IDXX-Q1-PR,A1,raised from 14.80
+C37,Q1 2026 total revenue,1140.8,USD millions,2026-03-31,IDXX-Q1-PR,A1,+14.3% reported / +11.2% organic
+C38,Q1 2026 CAG revenue,1054.1,USD millions,2026-03-31,IDXX-Q1-PR,A1,+14.6% reported / +11.6% organic
+C39,Q1 2026 CAG Diagnostics recurring revenue,920.3,USD millions,2026-03-31,IDXX-Q1-PR,A1,+14.1% reported / +11.0% organic
+C40,Q1 2026 gross margin,63.4,pct,2026-03-31,IDXX-Q1-PR,A1,+90bps YoY
+C41,Q1 2026 operating margin,31.8,pct,2026-03-31,IDXX-Q1-PR,A1,+10bps reported / +100bps comparable
+C42,Q1 2026 diluted EPS,3.47,USD,2026-03-31,IDXX-Q1-PR,A1,+17% reported / +15% comparable
+C43,Q1 2026 net income,278.4,USD millions,2026-03-31,IDXX-Q1-PR,A1,up from 242.7M prior year
+C44,Q1 2026 free cash flow,234.3,USD millions,2026-03-31,IDXX-Q1-PR,A1,
+C45,FY2025 total debt,949,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,vs 965M FY2024
+C46,FY2025 cash and equivalents,180.1,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,vs 288.3M FY2024 -- decline from buybacks
+C47,FY2025 total assets,3351,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,
+C48,FY2025 total shareholders equity,1605,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,
+C49,FY2025 goodwill,414,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,
+C50,FY2025 other intangibles,109.84,USD millions,2025-12-31,IDXX-SA-BALANCESHEET,B1,
+C51,Net debt (derived),769,USD millions,2025-12-31,derived,B1,949-180.1=768.9 -- modest vs >1B FCF/yr
+C52,ROE current,69.29,pct,2026-07-04,IDXX-SA-RATIOS,B1,66.2% FY2025 basis
+C53,ROIC current,46.77,pct,2026-07-04,IDXX-SA-RATIOS,B1,
+C54,ROA current,33.38,pct,2026-07-04,IDXX-SA-RATIOS,B1,
+C55,Debt-to-equity,0.60,ratio,2026-07-04,IDXX-SA-RATIOS,B1,
+C56,Debt-to-EBITDA,0.69,ratio,2026-07-04,IDXX-SA-RATIOS,B1,very low leverage
+C57,Trailing P/E,41.03,ratio,2026-07-04,IDXX-SA-STATS,B1,
+C58,Forward P/E,37.01,ratio,2026-07-04,IDXX-SA-RATIOS,B1,
+C59,EV/EBITDA,29.05,ratio,2026-07-04,IDXX-SA-RATIOS,B1,
+C60,P/FCF,40.61,ratio,2026-07-04,IDXX-SA-RATIOS,B1,
+C61,Price-to-sales,9.90,ratio,2026-07-04,IDXX-SA-RATIOS,B1,
+C62,CEO transition effective date,2026-05-12,date,2026-01-13,IDXX-CEO-SUCCESSION-PR,A1,Michael Erickson succeeds Jay Mazelsky; Mazelsky to Executive Chair
+C63,Mazelsky retirement intent date,2027-05,date,2026-01-13,IDXX-CEO-SUCCESSION-PR,A1,intends to retire following May 2027 annual shareholder meeting
+C64,Litigation judgment paid,80,USD millions,2026-04-17,IDXX-Q1-PR,A1,concluded royalty underpayment breach-of-contract matter
+C65,Litigation EPS impact 2024,-0.56,USD per share,2024-12-31,IDXX-Q1-PR,A1,discrete accrual expense
+C66,Litigation EPS impact Q1 2025,0.08,USD per share,2025-03-31,IDXX-Q1-PR,A1,partial accrual release ~9M against 89.0M prior accrual
+C67,US revenue share,65.3,pct,2026,GENERAL-SECONDARY-GEO,B2,single-sourced this run -- see facts.md O2
+C68,China revenue share,1.2,pct,2026,GENERAL-SECONDARY-GEO,B2,single-sourced this run -- categorically smaller than GEHC's ~10%
+C69,US veterinary visit decline 2025,-3.1,pct YoY,2025-12-31,FORTUNE-VETVISITS,B2,16th consecutive quarterly decline
+C70,Management 2026 clinical visit guide,-2,pct approx,2026,FINIMIZE-IDXX-VETVISITS,B2,attributed to outgoing CEO Mazelsky public commentary
+C71,Heska acquisition price,1.3,USD billions approx,2023-06-13,AIV-VET-MARS-HESKA,B1,Mars Petcare acquired Heska; integrated with Antech
+C72,Mars Petcare affiliated vet clinics,2500,count,2023,MARS-HESKA-PR,A2,Banfield/BluePearl/VCA network -- captive distribution competitor
+C73,IDEXX global diagnostics market share,~50,pct approx,2026,MARKETSANDMARKETS-VETDX,B2,"clear market leader, accounting for almost half the market share" -- industry aggregator estimate
+C74,Zoetis Vetscan OptiCell launch,2024-09,date,2024-09,PORTERSFIVEFORCE-IDXX,B2,AI-powered hematology analyzer -- direct inVue Dx competitor
+C75,Installed base diagnostic instruments,~75000,units approx,2026,SIFTERFUND-SECONDARY,B2,secondary-sourced, not IDXX-filed -- see facts.md O4

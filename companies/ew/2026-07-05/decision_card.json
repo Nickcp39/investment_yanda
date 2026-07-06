@@ -1,0 +1,95 @@
+{
+  "ticker": "EW",
+  "as_of": "2026-07-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-05",
+  "context_label": "clinical_evidence_moat_structural_heart_leader_priced_at_52wk_high_china_late_entrant",
+  "as_of_price": 94.37,
+  "as_of_market_cap": 54340000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "SEC EDGAR direct fetch (4 distinct URLs: browse-edgar CIK lookup, FY2025 10-K htm, Q4 2025 8-K exhibit, Q1 2026 8-K exhibit) returned HTTP 403 on first attempt for each; per robustness rule (max 2 attempts/URL, no retry-loop across many URLs), pivoted immediately to stocktitan.net structured filing mirrors + stockanalysis.com aggregated financials + official Edwards IR/newsroom pages (some of which DID fetch successfully) + web search corroboration. Every load-bearing FY2025/Q1 2026 figure (revenue, segment mix, margin, EPS, litigation/impairment charges, cash, guidance) cross-checked across >=2 independent sources. Price $94.37 confirmed via independent script re-fetch (scripts/market_data_download.py, NOT WebFetch) plus stockanalysis.com -- exact match to frozen as_of_price input, 0.0% delta. 68 claims registered in claim_ledger.csv; 22 sources in source_register.md. Completeness ~65% -- key gaps: China-specific EW revenue never disclosed anywhere found this run (O1), specific FY2025 Q4 litigation case(s) not identified by name (O2), clean FCF/D&A not directly disclosed (O4/O5). Caps at DECISION_DRAFT, consistent with target.",
+      "drivers": ["STOCKTITAN-10K-FY25", "STOCKTITAN-FY25-Q4PR", "STOCKTITAN-Q1-2026", "YAHOO-EW-PRICE", "STOCKANALYSIS-EW"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Edwards operates a device-sale (not consumables-annuity) model across 3 confirmed segments: TAVR (74% of FY2025 sales, +9.3%), TMTT (9%, +56.4% -- fastest growing), Surgical Structural Heart (17%, +4.9%). Critical Care is confirmed NOT a current reporting segment (3-segment structure verified via current 10-K). The core mechanism is a multi-decade clinical-trial-evidence pipeline (PARTNER program) that shapes clinical guidelines and payer reimbursement decisions in Edwards' favor -- a genuinely hard-to-fast-follow moat distinct from installed-base or consumables models. TMTT is actively re-running this same playbook in a new indication (SAPIEN M3 -- first FDA-approved transseptal TMVR device, Dec 2025) from a first-mover position. Signal = +1 (positive): the mechanism is not just coherent but is showing accelerating, not decelerating, financial results (Q1 2026 revenue +16.7% YoY vs FY2025's own +11.5%), with two consecutive quarterly guidance raises.",
+      "drivers": ["STOCKTITAN-10K-FY25", "STOCKTITAN-FY25-Q4PR", "SAPIEN-M3-EDWARDS-PR", "MEDTECHDIVE-SAPIEN-M3"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med-high",
+      "finding": "Moat is DEEP and among the most durable reviewed in the S&P500-medical batch: a multi-decade (PARTNER 2/3 long-term data), guideline-and-reimbursement-gated clinical evidence pipeline that a fast-follower cannot compress in time. Global TAVR share ~60%. Balance sheet is a genuine net-cash fortress (~$3.4B net cash, minimal ~$600M debt) -- materially stronger than GEHC's rising-net-debt profile in the same batch. CRITICAL career-relevant finding: China is the one confirmed structural weakness -- Edwards entered China LATE (2020) vs domestic players (Venus Medtech, JC Medical, CardioFlow Medtech) who had approvals 1-3 years earlier (2017-2019); Chinese domestic players now hold ~80% of China's TAVR market vs Edwards' ~60% GLOBAL share, an almost exact inversion. Unlike GEHC's ALREADY-eroding China revenue (-15% YoY confirmed), Edwards' China problem is a persistent LOW starting share rather than a confirmed decline from an established position -- China TAVR market itself is small but forecast to grow 55.5%/yr, so this is an ongoing unresolved battle, not a settled loss. Operator grade 4/5 (CEO personally built the TMTT franchise before ascending; 2 consecutive guidance raises since taking over; but the recent JenaValve FTC-blocked acquisition is a real, if contained, M&A-judgment miss). Signal = +1: moat is genuinely deep and largely holding/strengthening globally, with one clearly quantified and monitored exception.",
+      "drivers": ["VCBEAT-CHINA-COMPARISON", "STOCKTITAN-FY25-Q4PR", "FTC-GOV-CASE", "THEORG-ZOVIGHIAN"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Revenue growth is ACCELERATING across 3 consecutive periods: FY2024 +8.6% -> FY2025 +11.5% -> Q1 2026 +16.7% -- the opposite trend pattern from GEHC's decelerating growth in the same batch. FY2025 GAAP operating margin fell sharply (25.3%->20.8%) but this is ENTIRELY explained by one-off litigation ($325.4M, an 8x spike vs FY2024's $40.4M, specific cause NOT identified this run -- O2) plus impairment ($146.9M, mostly the JenaValve write-off, cleanly one-off) charges; ADJUSTED operating margin held roughly flat (27.8%->27.1%) and FY2026 is guided to margin EXPANSION (high end of 28-29%). Balance sheet is a genuine net-cash fortress. The primary financial-quality uncertainty is the unexplained magnitude of the FY2025 litigation spike, not the overall trajectory, which reads as strong and improving. Signal = +1: financial trend is positive and accelerating across 3 consecutive periods, with a well-flagged but contained one-off-charge question mark.",
+      "drivers": ["STOCKTITAN-FY25-Q4PR", "STOCKTITAN-Q1-2026", "STOCKTITAN-FY24-Q4PR"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No single kill path rises to high-confidence imminent thesis-killer, but five distinct, genuinely testable risks are registered: (1) TAVR core growth deceleration as the guideline-driven patient-pool expansion matures -- the highest-frequency, most watchable quarterly metric; (2) TMTT ramp undershooting guidance as Abbott (MitraClip/TriClip) holds share -- the least-tested part of the thesis given TMTT's short commercial history; (3) China VBP-style policy spreading to TAVR/TMTT specifically -- not yet confirmed as having happened, but a real forward risk given VBP's track record in other device categories; (4) litigation-expense escalation if the unexplained FY2025 8x spike proves partially recurring rather than one-off; (5) valuation compression risk purely from the high-hug entry point (mechanical, not business-driven). None of these represents an active, already-realized thesis-breaker (unlike GEHC's already-confirmed China revenue decline) -- these are forward-looking, monitorable risks. Signal = -1: real, multi-pronged risk register without a confirmed active trigger, appropriately cautious given genuine unknowns (O1, O2).",
+      "drivers": ["VCBEAT-CHINA-COMPARISON", "PRNEWSWIRE-CHINA-TAVR-FORECAST", "STOCKTITAN-FY25-Q4PR"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $94.37 (~$54.34B mkt cap, ~$50.98B EV using Q1 2026 net cash ~$3.36B): EV/FY2025-est-adj-EBITDA ~27.4x; EV/FY2026E-adj-EBITDA ~23.9x; trailing P/E 51.14x (GAAP-depressed by one-offs, not a useful anchor), forward P/E 30.80x (cleaner basis). Price sits AT or within ~0.1-0.3% of its own 52-week high ($94.37-$94.47) -- a HIGH-HUG situation, independently re-verified as JUSTIFIED by genuine fundamental acceleration (2 consecutive guidance raises, Q1 2026 revenue growth accelerating to +16.7%), not a stale/erroneous price (confirmed via independent script re-fetch, exact match to frozen input, 0.0% delta). Average analyst price target ~$97.31 implies only +3.1% upside -- the thinnest implied upside of any name reviewed in this batch, consistent with a price that has already captured most of the good news. 3-scenario IRR: bear -8.7%(3yr)/-3.1%(5yr); base +7.2%(3yr)/+7.4%(5yr, a THIN near-miss of the 8% hurdle); bull +17.7%(3yr)/+15.3%(5yr). Base case FAILS the hurdle by less than 1 percentage point at both horizons -- a materially closer call than GEHC's flat/negative base case, reflecting a genuinely stronger business priced with almost no cushion. Signal = -1: price is the clear, isolated binding constraint on an otherwise excellent business -- a classic 'great business, priced for perfection' setup.",
+      "drivers": ["YAHOO-EW-PRICE", "STOCKANALYSIS-EW"]
+    }
+  ],
+  "business_verdict": "exceptional_moat_priced_at_perfection",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 6,
+  "buy_below_price": 92,
+  "starter_zone": "$77-84 (approaching/at the 52-week low $72.30-72.65) -- base case begins to clear the 8% hurdle with a real (10-12%) cushion at this level, restoring genuine margin of safety on an otherwise excellent business.",
+  "add_zone": "First STARTER at $77-84. Add toward CORE only as: (a) CMS TAVR National Coverage Determination reconsideration confirms an expanded covered population, (b) TMTT continues to execute at or above the raised 35-45% FY2026 guidance for 2+ more quarters, (c) the FY2025 litigation-expense spike (O2) is clearly explained and confirmed as genuinely one-off (not partially recurring), (d) any confirmed improvement in Edwards' China competitive position (even directional, given China revenue is not separately disclosed). No addition at current price without at least one of these confirmations or a materially lower entry.",
+  "trim_or_no_chase_zone": "Do not chase above ~$100 (modestly above current level) without a corresponding fundamentals upgrade -- pure multiple expansion from an already-rich 27x EV/EBITDA would push the base case further into hurdle-failing territory. Reassess toward AVOID on any of: confirmed China VBP-style policy applied specifically to TAVR/TMTT, TAVR constant-currency growth below +5% for 2 consecutive quarters without explanation, TMTT growth falling below 20% for 2+ consecutive quarters, or litigation expense exceeding $100M in any future quarter without a named specific one-time cause.",
+  "binding_constraint": "PRICE -- this is the GEV-exemplar pattern (exceptional business, price is the clear and isolated problem), the mirror opposite of GEHC's compound-constraint pattern in the same batch. Business quality reads as genuinely strong across nearly every dimension examined: revenue growth is ACCELERATING (not decelerating) across 3 consecutive periods, adjusted operating margin is expanding toward guidance, the balance sheet is a true net-cash fortress (~$3.4B net cash vs GEHC's rising ~$7.9B net debt), and the core TAVR moat mechanism -- a multi-decade, PARTNER-trial-driven clinical-evidence pipeline gating guidelines and reimbursement -- is among the hardest-to-replicate competitive advantages reviewed in this batch. The clearly-identified weakness (China, where Edwards arrived late and holds only an implied ~20% share against domestic players holding ~80%) is real and career-relevant but is NOT yet a confirmed active drag on consolidated results (China revenue is not even separately disclosed, implying it is small) -- it is a forward-looking, monitorable risk, not an already-realized one like GEHC's confirmed -15% YoY China decline. The verdict is capped at WATCH purely because the stock trades AT its own 52-week high with only ~3% average analyst upside, and the base-case 5-year IRR (+7.4%) falls just short (by under 1 point) of the 8% hurdle even under a conservative, modest-multiple-compression assumption -- there is essentially no price-side margin of safety today, regardless of how much the business itself is admired.",
+  "kill_criteria": [
+    "K-A TAVR core deceleration: constant-currency growth falls below +5% for 2 consecutive quarters without a clear guideline/reimbursement explanation -> the 'expanding patient pool' growth thesis is called into question.",
+    "K-B TMTT ramp fails: growth falls materially below the guided 35-45% FY2026 range (e.g., under 20%) for 2+ consecutive quarters -> the 'second growth engine' thesis weakens and the premium multiple becomes harder to justify.",
+    "K-C China VBP-style policy hits TAVR/TMTT: any confirmed national tender/pricing policy specifically targeting TAVR/TMTT devices in China emerges -> re-underwrite China from 'structurally weak but small' to 'an active, quantified drag,' parallel to GEHC's confirmed China situation.",
+    "K-D Litigation proves recurring: any future quarter shows litigation expense >$100M without a named, specific, one-time case identified -> treat as a structural cost of operating in this patent-contested category, haircut adjusted EPS estimates.",
+    "K-E Valuation discipline: price rises above ~$100 without a corresponding fundamentals upgrade (pure multiple expansion) -> no-chase, reaffirm WATCH or downgrade attractiveness further."
+  ],
+  "runner_dissent": "The 5-soul panel is unanimous WATCH with zero change after critique, and I do not see a strong basis to dissent toward either STARTER or AVOID. What I would flag: this is, on the evidence gathered this run, the highest business-quality name reviewed in the S&P500-medical batch so far -- materially better than GEHC on growth direction, margin direction, balance sheet strength, and moat depth/type -- yet it lands at the identical WATCH label, through an almost entirely different mechanism (price discipline vs. compound business-quality ambiguity). This is exactly the kind of case where a less-disciplined process would be tempted to upgrade to STARTER purely on business-quality enthusiasm, and the panel's refusal to do so (holding the same 8% hurdle bar regardless of how admirable the business is) is, in my view, the correct and most valuable behavior this framework can demonstrate. The single most decision-useful number in this dossier is the ~$91.87 hurdle-clearing price (vs current $94.37) -- the gap is remarkably THIN, meaning EW does not need to fall far, or wait long, before this could flip to STARTER-eligible on price alone, unlike GEHC where even the 52-week low barely clears the hurdle. The most career-relevant finding is the China entry-timing story (E43-E48): Edwards, despite being the deepest-moat, most evidence-rich global leader in this specific device category, still lost the FIRST LAP of the China regulatory-approval race to domestic players by 1-3 years, and that timing gap alone -- not product quality, not price alone -- appears to explain most of the ~80%-domestic vs ~20%-Edwards China share split. This is a genuinely important, generalizable lesson for Nick's broader China-med-device thesis: in a chokepoint-gated business (regulatory approval timing), being the deepest-pocketed, most scientifically rigorous global incumbent is NOT sufficient protection against a domestic fast-follower that simply gets to the chokepoint first -- evidence quality can be caught up to over time (as Venus Medtech's own 10-year data claim shows), but lost TIMING at a regulatory chokepoint is much harder to recover. I would prioritize, on the next refresh, actually finding Edwards' own China revenue figure (currently completely absent from every source found this run, O1) as the single highest-value fact to close.",
+  "sources_used": [
+    {"source_id": "STOCKTITAN-10K-FY25", "public_date": "2026-02", "url_or_path": "https://www.stocktitan.net/sec-filings/EW/10-k-edwards-lifesciences-corp-files-annual-report-417ae73fa984.html"},
+    {"source_id": "STOCKTITAN-FY25-Q4PR", "public_date": "2026-02-10", "url_or_path": "https://www.stocktitan.net/sec-filings/EW/8-k-edwards-lifesciences-corp-reports-material-event-1c4c95bb2bcf.html"},
+    {"source_id": "STOCKTITAN-Q1-2026", "public_date": "2026-04-23", "url_or_path": "https://www.stocktitan.net/sec-filings/EW/10-q-edwards-lifesciences-corp-quarterly-earnings-report-ec15edaa0f84.html"},
+    {"source_id": "STOCKTITAN-FY24-Q4PR", "public_date": "2025-02", "url_or_path": "https://ir.edwards.com/news/news-details/2025/Edwards-Lifesciences-Reports-Fourth-Quarter-Results/default.aspx"},
+    {"source_id": "STOCKANALYSIS-EW", "public_date": "2026-07-04", "url_or_path": "https://stockanalysis.com/stocks/ew/"},
+    {"source_id": "YAHOO-EW-PRICE", "public_date": "2026-07-02", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/EW (independent fetch via scripts/market_data_download.py)"},
+    {"source_id": "VCBEAT-CHINA-COMPARISON", "public_date": "2025", "url_or_path": "https://www.vcbeathealth.com/article/2193"},
+    {"source_id": "FIERCEBIOTECH-JENAVALVE", "public_date": "2026-01", "url_or_path": "https://www.fiercebiotech.com/medtech/ftc-wins-case-blocking-edwards-945m-jenavalve-takeover"},
+    {"source_id": "FTC-GOV-CASE", "public_date": "2026", "url_or_path": "https://www.ftc.gov/legal-library/browse/cases-proceedings/edwards-lifesciences-corp-jenavalve-technology-inc-matter"},
+    {"source_id": "USNEWS-FTC-RULING", "public_date": "2026-01-09", "url_or_path": "https://money.usnews.com/investing/news/articles/2026-01-09/ftc-wins-ruling-blocking-edwards-lifesciences-acquisition-of-jenavalve"},
+    {"source_id": "JUSTIA-MERIL-CASE", "public_date": "2024-03-25", "url_or_path": "https://law.justia.com/cases/federal/appellate-courts/cafc/22-1877/22-1877-2024-03-25.html"},
+    {"source_id": "SAPIEN-M3-EDWARDS-PR", "public_date": "2025-12-23", "url_or_path": "https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra"},
+    {"source_id": "THEORG-ZOVIGHIAN", "public_date": "current", "url_or_path": "https://theorg.com/org/edwards-lifesciences/org-chart/bernard-j-zovighian"},
+    {"source_id": "TRADINGVIEW-Q1-2026", "public_date": "2026-04-23", "url_or_path": "https://www.tradingview.com/news/tradingview:df4f1a55fa720:0-edwards-lifesciences-reports-q1-revenue-1-65b-raises-2026-sales-and-adjusted-eps-guidance/"},
+    {"source_id": "PRNEWSWIRE-CHINA-TAVR-FORECAST", "public_date": "2022", "url_or_path": "https://www.prnewswire.com/news-releases/china-tavr--tmv-market-growth-forecast-report-2022-tavr-market-forecast-to-show-cagr-of-55-5-during-2002-2026--with-tmv-market-forecast-for-cagr-of-147-301577154.html"}
+  ]
+}

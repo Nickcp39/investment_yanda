@@ -1,0 +1,69 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,94.37,USD,2026-07-02,YAHOO-EW-PRICE,B1,Confirmed via independent script re-fetch (scripts/market_data_download.py) - exact match to frozen as_of_price input
+C2,Last close price (cross-check),94.37,USD,2026-07-02,STOCKANALYSIS-EW,B1,Confirms YAHOO-EW-PRICE
+C3,52-week high,94.37,USD,2026-07-02,YAHOO-EW-PRICE,B1,Price IS the 52wk high on Yahoo daily-close series - HIGH-HUG situation
+C4,52-week high (cross-check),94.47,USD,2026-07-02,STOCKANALYSIS-EW,B1,0.1% variance vs Yahoo - intraday-high vs daily-close convention difference
+C5,52-week low,72.65,USD,2025-10-16,YAHOO-EW-PRICE,B1,
+C6,52-week low (cross-check),72.30,USD,2025,STOCKANALYSIS-EW,B1,
+C7,Shares outstanding (current),575.80,millions,2026-07-04,STOCKANALYSIS-EW,B1,
+C8,Shares outstanding (10-K date),580.8,millions,2026-01-31,STOCKTITAN-10K-FY25,A2,Variance vs C7 consistent with ASR buyback activity
+C9,Market cap,54.34,USD billions,2026-07-04,STOCKANALYSIS-EW,B1,575.80M x 94.37 = 54.34B derived-consistent
+C10,Total long-term debt,598.5,USD millions,2026-03-31,STOCKTITAN-Q1-2026,A2,Very low leverage
+C11,Cash and equivalents,2445.5,USD millions,2026-03-31,STOCKTITAN-Q1-2026,A2,
+C12,Cash and equivalents (FY25),3000,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C13,Total investments (short+LT),1511.6,USD millions,2026-03-31,STOCKTITAN-Q1-2026,A2,Net cash position not net debt
+C14,FY2025 total revenue,6070,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,+11.5% GAAP / +10.7% cc
+C15,FY2025 TAVR segment revenue,4490,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,74% of total sales; +9.3% GAAP
+C16,FY2025 TMTT segment revenue,550.6,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,9% of total sales; +56.4% GAAP fastest growing
+C17,FY2025 Surgical Structural Heart revenue,1030,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,17% of total sales; +4.9% GAAP
+C18,FY2025 gross margin GAAP,78.0,pct,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C19,FY2025 operating margin GAAP,20.8,pct,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,vs 27.1% adjusted - 630bps gap from one-offs
+C20,FY2025 operating margin adjusted,27.1,pct,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C21,FY2025 GAAP net income,1060,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,continuing operations
+C22,FY2025 adjusted net income,1500,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C23,FY2025 diluted EPS GAAP,1.81,USD,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C24,FY2025 diluted EPS adjusted,2.56,USD,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C25,FY2025 litigation expense total,325.4,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,vs only 40.4M FY2024 - 8x increase
+C26,FY2025 Q4 litigation expense,208.6,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,IP litigation settlements legal costs - specific case not identified
+C27,FY2025 impairment loss total,146.9,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,
+C28,FY2025 Q4 impairment - JenaValve,99.8,USD millions,2025-12-31,STOCKTITAN-FY25-Q4PR,A2,tied to FTC-blocked acquisition
+C29,FY2024 total revenue,5439.5,USD millions,2024-12-31,STOCKTITAN-FY24-Q4PR,A2,+8.6% GAAP
+C30,FY2024 TMTT segment revenue,352.1,USD millions,2024-12-31,STOCKTITAN-FY24-Q4PR,A2,+78.2% GAAP
+C31,FY2024 GAAP net income,1400.9,USD millions,2024-12-31,STOCKTITAN-FY24-Q4PR,A2,
+C32,FY2024 litigation expense total,40.4,USD millions,2024-12-31,STOCKTITAN-FY24-Q4PR,A2,baseline for comparing FY25 spike
+C33,Q1 2026 total revenue,1648.6,USD millions,2026-03-31,STOCKTITAN-Q1-2026,A2,+16.7% YoY vs 1412.7M Q1 2025
+C34,Q1 2026 TAVR revenue,1197.3,USD millions,2026-03-31,SEARCH-Q1-2026-SUMMARY,B1,+14.4% YoY / +11.0% cc
+C35,Q1 2026 TMTT revenue,175.1,USD millions,2026-03-31,SEARCH-Q1-2026-SUMMARY,B1,
+C36,Q1 2026 net income,380.7,USD millions,2026-03-31,SEARCH-Q1-2026-SUMMARY,B1,
+C37,Q1 2026 diluted EPS continuing ops,0.66,USD,2026-03-31,SEARCH-Q1-2026-SUMMARY,B1,vs 0.62 Q1 2025
+C38,Q1 2026 adjusted EPS,0.78,USD,2026-03-31,TRADINGVIEW-Q1-2026,B1,vs consensus 0.73 beat
+C39,Q1 2026 operating income,477.6,USD millions,2026-03-31,STOCKTITAN-Q1-2026,A2,
+C40,Q1 2026 adjusted gross margin,78.2,pct,2026-03-31,STOCKTITAN-Q1-2026,A2,
+C41,FY2026 guidance sales growth (raised),9-11,pct range,2026-04-23,SEARCH-TRADINGVIEW-Q1-2026,B1,raised from 8-10% - second raise in 2 quarters
+C42,FY2026 guidance adjusted EPS (raised),2.95-3.05,USD range,2026-04-23,SEARCH-TRADINGVIEW-Q1-2026,B1,raised from 2.90-3.05
+C43,FY2026 TMTT revenue outlook,740-780,USD millions range,2026-02-10,STOCKTITAN-FY25-Q4PR,A2,35-45% growth guide
+C44,ASR agreement size,500,USD millions,2026-02,STOCKTITAN-Q1-2026,A2,accelerated share repurchase Feb 2026
+C45,Autus Valve Technologies acquisition price,128.9,USD millions,2026,STOCKTITAN-Q1-2026,A2,pediatric pulmonary valve pipeline
+C46,JenaValve acquisition price (blocked),945,USD millions,2025,FIERCEBIOTECH-JENAVALVE,B1,some sources cite ~1.2B total consideration
+C47,FTC preliminary injunction date,2026-01-09,date,2026-01-09,USNEWS-FTC-RULING,B1,blocked JenaValve deal after 6-day trial
+C48,R&D as pct of 2025 sales,18,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,+2% YoY spending increase
+C49,Employee count,16000,count,2025-12-31,STOCKTITAN-10K-FY25,A2,approximate
+C50,TAVR pct of 2025 sales,74,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,
+C51,TMTT pct of 2025 sales,9,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,
+C52,Surgical pct of 2025 sales,17,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,
+C53,US pct of sales,58,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,geographic split
+C54,International pct of sales,42,pct,2025-12-31,STOCKTITAN-10K-FY25,A2,geographic split - China not broken out separately
+C55,Global TAVR market share (Edwards),60,pct,2025,VCBEAT-CHINA-COMPARISON,B2,industry estimate not company-disclosed
+C56,China TAVR market share (domestic cos combined),80,pct,2025,VCBEAT-CHINA-COMPARISON,B2,industry estimate
+C57,Edwards China market entry year,2020,year,2020,VCBEAT-CHINA-COMPARISON,B2,vs domestic competitors 2017-2019 approvals
+C58,Venus Medtech China TAVR share,80+,pct,2018-2025,SEARCH-VENUS-PEIJIA,B2,historically cited above 80% since launch
+C59,Edwards H1 2025 revenue,2940,USD millions,2025-06-30,VCBEAT-CHINA-COMPARISON,B1,cross-checks against Edwards own disclosure
+C60,Balance Medical (largest China domestic) H1 2025 revenue,35,USD millions,2025-06-30,VCBEAT-CHINA-COMPARISON,B2,248M RMB - 83x smaller than Edwards
+C61,Chinese TAVR pricing discount vs Edwards,40,pct,2025,VCBEAT-CHINA-COMPARISON,B2,industry estimate
+C62,China TAVR market size forecast 2026,1669.14,USD millions,2026,PRNEWSWIRE-CHINA-TAVR-FORECAST,B2,55.5% CAGR 2022-2026
+C63,SAPIEN M3 FDA approval date,2025-12-23,date,2025-12-23,EDWARDS-SAPIEN-M3-PR,A1,first transseptal TMVR system approved
+C64,Trailing P/E,51.14,ratio,2026-07-04,STOCKANALYSIS-EW,B1,depressed by FY25 GAAP one-offs
+C65,Forward P/E,30.80,ratio,2026-07-04,STOCKANALYSIS-EW,B1,cleaner basis using guided EPS
+C66,Beta,0.85,ratio,2026-07-04,STOCKANALYSIS-EW,B1,
+C67,Analyst price target average,97.31,USD,2026-07-04,STOCKANALYSIS-EW,B1,only +3.1% upside from 94.37 - thin
+C68,CEO tenure start,2023-05,date,2023-05,THEORG-ZOVIGHIAN,B1,Bernard Zovighian; joined Edwards 2015; built TMTT franchise 2018-2023

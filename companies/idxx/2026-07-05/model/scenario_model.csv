@@ -1,0 +1,60 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_op_margin,exit_ev_ebitda_multiple,rev_terminal_usd_b,ebitda_terminal_usd_b,net_debt_terminal_usd_b,ev_terminal_usd_b,equity_terminal_usd_b,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.060,0.300,18.0,5.13,1.69,0.32,30.45,30.13,381.98,-11.9,FAIL
+bear,5,0.060,0.300,18.0,5.76,1.90,0.02,34.21,34.19,433.49,-4.9,FAIL
+base,3,0.095,0.325,24.0,5.65,2.01,0.32,48.15,47.83,606.32,2.8,FAIL
+base,5,0.095,0.325,24.0,6.78,2.41,0.02,57.73,57.71,731.60,5.6,FAIL
+bull,3,0.130,0.345,30.0,6.21,2.33,0.32,69.87,69.55,881.67,16.5,PASS
+bull,5,0.130,0.345,30.0,7.93,2.97,0.02,89.21,89.19,1130.73,15.2,PASS
+
+# Methodology notes:
+# - Base year (Yr0) = FY2025 actuals: revenue $4.304B, op margin 31.6%, est adj EBITDA ~$1.489B (op income + est
+#   D&A ~3.0% of revenue; D&A not separately disclosed in sources reviewed this run -- OPEN item, same gap as
+#   the GEHC exemplar's O2, though IDXX's much lower capex intensity (E27: capex only $124.7M, ~2.9% of revenue)
+#   suggests D&A is likely on the LOWER end of typical med-tech, consistent with the 3.0% estimate used here vs
+#   GEHC's 3.5% estimate)
+# - Current price $557.80; shares 78.88M; market cap $44.00B; net debt (FY2025 basis) ~$769M; EV ~$44.77B
+# - Current implied EV/EBITDA (FY25 est basis, this model): ~30.1x -- closely matches the independently-sourced
+#   screener figure of 29.05x (E53), a strong internal-consistency cross-check -- this is the starting multiple
+#   all scenarios exit FROM
+# - Peer anchor: Zoetis (ZTS, the most direct animal-health/diagnostics-adjacent public comp) trades at a WIDE
+#   range depending on source (~9.7x-15x EV/EBITDA per various aggregators as of mid-2026, ~18.6x-21x P/E) --
+#   IDXX trades at roughly 1.5-3x Zoetis's EV/EBITDA multiple. Zoetis itself is reported facing "slower 2026
+#   guidance and weakness in the companion animal market" -- i.e., the broader animal-health group is NOT
+#   uniformly re-rating higher, which makes IDXX's premium multiple a company-specific quality/growth premium,
+#   not an industry-wide re-rating (see valuation.md for full peer discussion and comp-cleanliness caveats)
+# - BEAR: vet-visit decline accelerates past the current ~2-3%/yr trend AND diagnostic-intensity growth
+#   plateaus simultaneously (inversion_map.md Kill Path 1); Zoetis OptiCell (or another AI entrant) erodes
+#   IDXX's instrument-placement growth rate (Kill Path 2); revenue growth decelerates to mid-single-digit
+#   (6% CAGR, roughly FY2022-level growth); op margin compresses modestly toward 30% (still historically
+#   healthy, but below FY2025's 31.6%); multiple de-rates sharply toward 18x EV/EBITDA, reflecting a market
+#   reassessment of IDXX from "best-in-class accelerating compounder" to "solid but decelerating med-tech" --
+#   still a meaningfully HIGHER multiple than Zoetis's current low-teens/high-single-digit range, since IDXX's
+#   recurring-revenue mix (~79% of total) and ROIC (46.8%) would remain structurally superior even in this
+#   scenario
+# - BASE: FY2026 guidance is achieved and growth normalizes toward a still-strong ~9-10% CAGR over the horizon
+#   (between the current mid-teens acceleration and a more sustainable long-run rate); diagnostic-intensity +
+#   instrument-attach growth algorithm continues working, offsetting continued modest vet-visit softness;
+#   margin expands modestly toward 32.5% (upper end of FY2026 guidance range); Mars/Antech-Heska captive
+#   network and Zoetis AI competition remain real but non-dominant pressures (per inversion_map.md, neither
+#   currently shows up in IDXX's numbers); multiple compresses moderately from the current ~30x toward 24x
+#   EV/EBITDA -- a partial, not full, re-rating toward "priced for strong-but-not-perfect execution" rather
+#   than the current "priced for continued acceleration" level
+# - BULL: inVue Dx / AI-diagnostics flywheel continues at or above the current record pace, proving a durable
+#   data/model-quality edge over Zoetis's OptiCell (resolving bottleneck_map.md's #1 open question favorably);
+#   Mars/Antech-Heska captive network does NOT meaningfully expand further; diagnostic-intensity tailwind
+#   (aging pet population) proves durable for the full horizon; revenue CAGR sustains near the current
+#   mid-teens pace (13% used here, below the current +14.3% Q1 2026 print to avoid extrapolating the single
+#   fastest quarter indefinitely); margin expands to 34.5%+; multiple holds near or modestly above the current
+#   ~30x (30x used), reflecting continued conviction in the compounder narrative
+# - No dividend contribution (IDXX pays no ordinary dividend, facts.md E7) -- IRR is pure price return, unlike
+#   the GEHC methodology which added a small (~0.2-0.4%/yr) dividend yield component
+# - 8% hurdle: bear FAILS at both horizons; BASE case only marginally clears the hurdle at 5yr (+5.6%, still
+#   technically a FAIL against the strict 8% bar) and is modestly negative at 3yr (+2.8%, also FAIL); bull
+#   PASSES at both horizons (+16.5% 3yr, +15.2% 5yr). This is a similar overall shape to the GEHC exemplar
+#   (only bull clears the hurdle) but for a STRUCTURALLY DIFFERENT reason: GEHC's base case failed because
+#   the BUSINESS itself carried real unresolved quality questions (PCS, China, unproven AI) even at a fair-ish
+#   price; IDXX's base case fails primarily because the PRICE already assumes a continuation of exceptional
+#   (not just good) execution, and even "merely very good" (9-10% CAGR, healthy-but-moderating margin
+#   expansion, stable-not-expanding multiple) execution does not clear an 8% hurdle from a ~30x EV/EBITDA
+#   starting point. This is the GEV-exemplar pattern (great business, price is the binding constraint), not
+#   the GEHC pattern (business quality itself is the binding constraint).
