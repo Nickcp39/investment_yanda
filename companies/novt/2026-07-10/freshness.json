@@ -1,0 +1,86 @@
+{
+  "ticker": "NOVT",
+  "as_of": "2026-07-10",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Price cross-checked to the cent across Yahoo chart API + stockanalysis; verify_freshness.py independently re-fetches Yahoo and compares. FILED data (FY2025 10-K/PR line items) rides the dated claim_ledger discipline, not here.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 156.65,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOVT", "fetched_at": "2026-07-10", "value": 156.65},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/novt/", "fetched_at": "2026-07-10", "value": 156.65},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=NOVT+stock+price", "fetched_at": "2026-07-10", "value": 156.65}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 5915000000,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/novt/", "fetched_at": "2026-07-10", "value": 5910000000},
+        {"source_name": "derived", "url": "37.76M shares x 156.65", "fetched_at": "2026-07-10", "value": 5915104000}
+      ],
+      "cross_check_delta_pct": 0.09,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 171.85,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/novt/", "fetched_at": "2026-07-10", "value": 171.85},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOVT", "fetched_at": "2026-07-10", "value": 171.85}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 98.27,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/novt/", "fetched_at": "2026-07-10", "value": 98.27},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOVT", "fetched_at": "2026-07-10", "value": 98.27}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 37.76,
+      "unit": "millions",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/novt/", "fetched_at": "2026-07-10", "value": 37.76},
+        {"source_name": "novt_q4fy25_diluted", "url": "https://investors.novanta.com/news/news-details/2026/Novanta-Announces-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025/default.aspx", "value": 38.7}
+      ],
+      "cross_check_delta_pct": 2.4,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 guidance (updated at Q1 2026 call, 2026-05-14): revenue $1.040-1.055B; adj EBITDA $245-250M; adj diluted EPS $3.50-3.65; OCF $145-185M. Q4'25 PR had revenue $1.030-1.050B.",
+      "as_of": "2026-05-14",
+      "sources": [
+        {"source_name": "novt_q1fy26_call", "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-novanta-q1-2026-sees-revenue-beat-stock-surges-93CH-4681024", "public_date": "2026-05-14", "fetched_at": "2026-07-10"},
+        {"source_name": "novt_q4fy25_pr", "url": "https://investors.novanta.com/news/news-details/2026/Novanta-Announces-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025/default.aspx", "public_date": "2026-02-25", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    }
+  ]
+}

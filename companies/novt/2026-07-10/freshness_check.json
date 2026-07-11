@@ -1,0 +1,80 @@
+{
+  "ticker": "NOVT",
+  "as_of": "2026-07-10",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 156.65,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 156.64999389648438,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 156.65
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 156.65
+      },
+      {
+        "source_name": "websearch",
+        "value": 156.65
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "websearch",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "3 independent sources agree within 1%",
+    "refetched_date": "2026-07-10"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "98.27 <= 156.65 <= 171.85"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+59.4% off low, -8.8% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "38M x 156.65 = 0.006T vs card 0.006T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -8.8% vs card-implied -8.8% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 156.65 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-05-14 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-05-14 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

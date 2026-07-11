@@ -42,6 +42,6 @@
 | NVDA | ✅ | ⬜ | RUNNER done (DECISION_DRAFT) | WATCH (0%) / HOLD | <1% (undisclosed; Automotive incl. robotics ~1.09% FY26) | partial/N/A · early · barrier high · caution NONE (robotics seg) | 刷新完成 @ $210.96；freshness PASS；买 NVDA=AI 算力非机器人 alpha |
 | TER | ⬜ | ⬜ | — | — | — | — | |
 | ON | ⬜ | ⬜ | — | — | — | — | |
-| NOVT | ⬜ | ⬜ | — | — | — | — | |
+| NOVT | ✅ | ⬜ | RUNNER done (DECISION_DRAFT ~60%) | WATCH (0%) / HOLD | ~15–25% est. (undisclosed; humanoid <1–2% prototype) | partial · humanoid=early-anticipation / 工业=mid-recovery · barrier med-high(在位)/low(humanoid) · caution EARLY-ANTICIPATION | @ $156.65 无 MOS(base 5y IRR +1.2%<<8%)；好零件商非 chokepoint；freshness PASS；buy_below ~$115 |
 
 > 预期(基于讨论):大概率**全 WATCH**——若真如此,这批的价值是**用一手数据证实"机器人现在没有可买的真瓶颈"**这个判断,并给每家写死"什么信号出现才从 WATCH 转 STARTER"。

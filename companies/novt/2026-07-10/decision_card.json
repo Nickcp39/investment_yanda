@@ -1,0 +1,98 @@
+{
+  "ticker": "NOVT",
+  "as_of": "2026-07-10",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-10",
+  "context_label": "quality_compounder_no_margin_of_safety__robotics_mostly_option",
+  "as_of_price": 156.65,
+  "as_of_market_cap": 5915000000,
+  "share_basis_note": "~37.76M diluted shares (incl. Nov-2025 tangible-equity-unit dilution) x $156.65 (2026-07-10 last close, last <= as_of) = ~$5.915B. Price from Yahoo chart API [S005], cross-checked vs stockanalysis [S006] (both $156.65 to the cent) per freshness.json. 10-K cover shows 35.68M basic (Feb-16-2026); Q4'25 diluted 38.7M; difference = TEU dilution.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Segment revenue, end-market mix, financials, balance sheet, Q1'26 momentum, and price all primary/verified (FY2025 10-K/PR + Q1'26 call + 2-source price). Key gap: company discloses NO discrete robotics revenue line (O1) -> the headline batch metric is an ESTIMATE, not a fact. Operator/proxy OPEN (O3). EDGAR direct 403 -> used faithful relays. Completeness ~60% = haircut, not veto.",
+      "drivers": ["S001", "S002", "S003", "S005", "S006"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Real secular vectors (minimally-invasive/robotic surgery, industrial automation, optional humanoid) but Novanta is a picks-and-shovels precision-component supplier, not a chokepoint. Robotics is ~15-25% of revenue on a components-into-robots basis (ESTIMATE); humanoid/embodied-AI specifically <1-2% and prototype-stage (Holoscan, meaningful 2027 per mgmt). Base = medical 53% + advanced-industrial 47%. Demand real but single-digit (robotics rev +7%, organic +3%); the +50% robotics bookings is a forward signal partly inflated by full-year orders pulled into Q1.",
+      "drivers": ["S002", "S003", "S007"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Genuine designed-in / switching-cost moat: ~44% gross margin, vitality index 27%, safety-certified (only servo drive in NVIDIA Holoscan lab), medical consumables 15% of revenue (recurring). But component-level, not NVDA-class bottleneck; competitors per niche; serial-acquirer model -> GAAP<<adjusted, thin FCF. Operator grade provisional 3.5/5 (net-cash discipline; M&A-dependent). Durable but cyclical -> ceiling capped below Core.",
+      "drivers": ["S003", "S008", "S011"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "High-margin, net-cash (~$121M) fortress balance sheet; survives a downturn (no solvency risk). BUT cash conversion is the soft spot: FY2025 FCF only $54M (yield ~0.9%), GAAP EPS $1.47 vs adj $3.29 (~2.2x gap from acquisition amortization). Owner earnings run below adjusted EPS -> valuing on adjusted flatters. FY2026 OCF guide $145-185M is a large step-up that must be proven (a confirmation item, not yet cash).",
+      "drivers": ["S002"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "No thesis breakage or solvency risk at as-of (net cash, profitable, sticky). The dominant risk is a 'paying-up trap': ~47x adj EPS on a mid-single-digit organic grower -> multiple compression toward $100-120 (near 52wk low $98.27) loses 30-35% with NO thesis break. Secondary: bookings pull-forward reversing, humanoid option never converting, industrial cyclicality. These are SIZE/price controls + kill monitors, not a hard veto.",
+      "drivers": ["S002", "S003"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $156.65 (~$5.915B): ~47.6x trailing adj EPS, ~23x fwd EV/EBITDA, FCF yield <1%, price -8.8% vs 52-week high. 3-scenario 5y IRR: bear -8.5% / base +1.2% / bull +8.4%. Base is FAR below the 8% hurdle and even the bull only just clears it AND requires the 2027 humanoid option to convert. 8%-hurdle-neutral entry ~$108-115 (near the 52wk low). PRICE IS THE BINDING CONSTRAINT: no margin of safety, and the robotics reason to pay up is mostly anticipation.",
+      "drivers": ["S005", "S006"]
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "partial",
+    "stage": "early (humanoid slice, anticipation) / mid-recovery (industrial-automation base)",
+    "supply_barrier": "med-high for Novanta's incumbent designed-in niche; low for the hyped humanoid motion-control land-grab",
+    "read": "Judged on the robotics segment: the humanoid/embodied-AI opportunity is a visible, consensus, capital-attracting theme -> naive-guard says do NOT pay up for it. We do NOT know when/if humanoid revenue inflects (mgmt says 2027). Novanta's durable part is the incumbent precision-motion/end-of-arm niche (real switching cost); the fragile part is the humanoid premium the market may be pricing in.",
+    "caution": "EARLY-ANTICIPATION (ceiling on enthusiasm, not a verdict flip): keep the humanoid option discounted; the industrial base is mid-cycle (not PEAK)."
+  },
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 115.0,
+  "starter_zone": "No new money at $156.65. A 3-5% STARTER opens on EITHER a de-rate into ~$100-120 (base 5y IRR back >= 8% hurdle) OR robotics converting from bookings to sustained double-digit REVENUE with book-to-bill >1.1 for 2+ quarters (pull-forward disproven) + FY26 OCF landing in guide.",
+  "add_zone": "Scale toward 8-12% only into ~$95-105 (toward/through the 52wk low) AND/OR on confirmed durable double-digit organic + a dated, dollar-quantified Holoscan/humanoid ramp. Cyclicality caps the ceiling below Core.",
+  "trim_or_no_chase_zone": "Current $156.65 is already above the ~$115 no-margin-of-safety line -> no chase; hard no-chase toward the $171.85 ATH. (No existing position; if held, HOLD a quality compounder, do not add new money here.)",
+  "binding_constraint": "PRICE (no margin of safety). At $156.65 the base 5y IRR (+1.2%) is far below the 8% hurdle, the stock is -8.8% off its ATH, FCF yield <1%, and the robotics/humanoid upside that justifies the ~47x multiple is still anticipation (2027), not cash. Completeness ~60% (no discrete robotics disclosure O1, operator OPEN O3) independently caps the ceiling at the WATCH/STARTER boundary; price pulls it to WATCH.",
+  "kill_criteria": [
+    "Two-plus quarters of organic revenue flat/negative AND book-to-bill <1.0 (demand narrative false).",
+    "Robotics & Automation revenue decelerates to low-single-digit/negative while bookings normalize (Q1 pull-forward confirmed, not durable demand).",
+    "Gross margin structurally breaks below ~42% (pricing/mix erosion).",
+    "Goodwill impairment or a value-destroying large acquisition (M&A discipline lost).",
+    "Holoscan/humanoid content commoditized or designed-out (option -> zero) -> loses the premium.",
+    "Price stays above ~$115 with no offsetting growth acceleration -> remains WATCH/no-chase (the case today at $156.65)."
+  ],
+  "runner_dissent": "The bull instinct: a net-cash (~$121M), 44%-gross-margin, designed-in specialty-components compounder with surging robotics bookings (+50%), a 15%-of-revenue recurring consumables franchise, AND the only servo drive in NVIDIA's Holoscan safety lab -- why not a small starter on the robotics option? The framework overrides to WATCH because PRICE is the constraint: ~47x adjusted EPS on a mid-single-digit organic grower gives base 5y IRR +1.2% (<<8%), and even the +8.4% bull requires the 2027 humanoid option to actually convert -- i.e. you would be paying up TODAY for anticipation. The robotics business is real but modest (~15-25% of revenue, mostly industrial, single-digit revenue growth) and humanoid/embodied-AI is <1-2% and pre-revenue. On the batch's own test (demand exploded + bottleneck + already cash), NOVT fails the bottleneck leg (good component moat, not a chokepoint) and only half-passes the cash leg. It is a quality WATCH, not the robotics NVDA. Not-fully-resolved OPEN items: discrete robotics revenue $ (O1, company doesn't disclose), operator/proxy (O3), owner-earnings bridge quality (O4), 2027 humanoid magnitude (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-02-26", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1076930/000119312526064230/novt-20251231.htm"},
+    {"source_id": "S002", "public_date": "2026-02-25", "url_or_path": "https://investors.novanta.com/news/news-details/2026/Novanta-Announces-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025/default.aspx"},
+    {"source_id": "S003", "public_date": "2026-05-14", "url_or_path": "https://www.investing.com/news/transcripts/earnings-call-transcript-novanta-q1-2026-sees-revenue-beat-stock-surges-93CH-4681024"},
+    {"source_id": "S004", "public_date": "2026-05-14", "url_or_path": "https://www.indexbox.io/blog/novanta-q1-2026-revenue-beats-wall-street-expectations/"},
+    {"source_id": "S005", "public_date": "2026-07-10", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NOVT"},
+    {"source_id": "S006", "public_date": "2026-07-10", "url_or_path": "https://stockanalysis.com/stocks/novt/"},
+    {"source_id": "S007", "public_date": "2026-02-26", "url_or_path": "https://www.stocktitan.net/sec-filings/NOVT/10-k-novanta-inc-files-annual-report-54b0118f9386.html"},
+    {"source_id": "S008", "public_date": "2021-07-19", "url_or_path": "https://investors.novanta.com/news/news-details/2021/Novanta-Announces-Agreement-to-Acquire-ATI/default.aspx"},
+    {"source_id": "S011", "public_date": "2026-05-15", "url_or_path": "https://briefglance.com/articles/novanta-surges-on-strong-bookings-eyes-growth-in-ai-and-robotics"}
+  ]
+}

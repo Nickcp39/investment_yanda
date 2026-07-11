@@ -1,0 +1,36 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,note
+S005,NOVT last close (<= as_of; 2026-07-10),156.65,USD,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE; Yahoo chart API
+S006,NOVT price cross-check,156.65,USD,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE; stockanalysis matches Yahoo to the cent
+S006,Market cap,5915000000,USD,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE; ~37.76M sh x 156.65
+S006,Diluted shares outstanding,37.76,millions,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE; incl. Nov-2025 tangible equity units dilution
+S006,52-week high,171.85,USD,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE
+S006,52-week low,98.27,USD,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE
+S006,GAAP P/E (trailing),110.88,x,2026-07-10,2026-07-10,B1,EVIDENCE,LIVE; matches GAAP EPS $1.47
+S002,FY2025 total revenue,980.6,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,+3.3% YoY
+S002,FY2025 Automation Enabling Technologies revenue,500.8,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,2024: 490.6; 51% of total
+S002,FY2025 Medical Solutions revenue,479.8,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,2024: 458.6; 49% of total
+S007,FY2025 medical end-market share of revenue,53,percent,2025-12-31,2026-07-10,A1,EVIDENCE,advanced industrial ~47%
+S007,FY2025 AET op profit,114.5,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,GM 47.8%
+S007,FY2025 Medical Solutions op profit,51.2,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,GM 41.6%
+S007,FY2025 robotics & automation products revenue change YoY,30.3,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,increase; drove AET growth
+S007,FY2025 precision manufacturing products revenue change YoY,-20.0,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,decline (photonics/laser into semi/industrial)
+S007,FY2025 advanced surgery products revenue change YoY,33.7,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,increase; drove Medical growth
+S007,FY2025 precision medicine products revenue change YoY,-12.6,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,decline (lower demand)
+S002,FY2025 GAAP net income,53.8,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,GAAP diluted EPS 1.47
+S002,FY2025 adjusted diluted EPS,3.29,USD,2025-12-31,2026-07-10,A1,EVIDENCE,+6.8% YoY
+S002,FY2025 adjusted EBITDA,221.0,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,+5.3%; margin ~22.5%
+S002,FY2025 free cash flow,54.0,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,OCF 64.1; FCF yield ~0.9% on mcap
+S002,Cash & equivalents (Dec 31 2025),380.9,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,boosted by Nov-2025 TEU raise (~$613M net)
+S002,Total debt (Dec 31 2025),250.8,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,gross 259.6; net cash ~121.3
+S002,Net cash position (Dec 31 2025),121.3,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE,net debt negative
+S004,Q1 2026 revenue,257.7,USD_millions,2026-03-31,2026-07-10,B1,EVIDENCE,+10% reported / +3% organic
+S004,Q1 2026 total bookings growth YoY,37,percent,2026-03-31,2026-07-10,B1,EVIDENCE,book-to-bill 1.10 company; AET 1.15
+S003,Q1 2026 Robotics & Automation bookings growth YoY,50,percent,2026-03-31,2026-07-10,B1,EVIDENCE,revenue only +7% (2-qtr lag); some full-year orders pulled into Q1
+S003,Q1 2026 Robotics & Automation revenue growth YoY,7,percent,2026-03-31,2026-07-10,B1,EVIDENCE,high single digit
+S011,Medical consumables franchise share of total revenue,15,percent,2026-03-31,2026-07-10,B2,EVIDENCE,recurring; advanced-surgery driver
+S003,NVIDIA Holoscan AI Systems Inspection Lab - only servo-drive maker selected,,,2026-03,2026-07-10,A2,EVIDENCE,humanoid/warehouse validation; PROTOTYPE phase; meaningful 2027+
+S003,FY2026 revenue guidance,1040-1055,USD_millions,2026-12-31,2026-07-10,B1,EVIDENCE,updated at Q1 2026 call (Q4 PR had 1030-1050)
+S002,FY2026 adjusted diluted EPS guidance,3.50-3.65,USD,2026-12-31,2026-07-10,A1,EVIDENCE,from Q4 2025 PR
+S002,FY2026 operating cash flow guidance,145-185,USD_millions,2026-12-31,2026-07-10,A1,EVIDENCE,big step-up vs FY2025 OCF 64.1
+S008,ATI Industrial Automation acquisition price,172,USD_millions,2021-07-19,2026-07-10,A1,EVIDENCE,>$70M rev; end-of-arm tooling for industrial+surgical robots
+S007,Robotics/embodied-AI share of total revenue,15-25,percent_estimate,2025-12-31,2026-07-10,E1,OPEN,ESTIMATE - company discloses NO discrete robotics line; see thesis_answer.md

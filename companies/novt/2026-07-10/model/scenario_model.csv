@@ -1,0 +1,6 @@
+scenario,as_of_price_usd,base_adj_eps_2025,adj_eps_cagr_5y,y5_adj_eps,exit_pe_adj,y5_price,plus_cum_fcf_ps,total_y5_value,irr_5y_pct,notes
+current,156.65,3.29,,,,,,,,"as_of 2026-07-10; last close; 2 sources agree"
+bear,156.65,3.29,0.04,4.00,24,96,4,100,-8.5,"organic flat + industrial downturn + de-rate toward 52wk low $98.27"
+base,156.65,3.29,0.10,5.30,30,159,7,166,1.2,"~7% rev (5 organic + M&A), adj EPS ~10%/yr; multiple normalizes to 30x"
+bull,156.65,3.29,0.15,6.62,34,225,9,234,8.4,"humanoid/robotics inflects 2027; double-digit rev; premium multiple holds"
+note,,,,,,,,,,"adj EPS OVERSTATES owner earnings (serial acquirer, amort add-backs); FY2025 FCF only $54M / yield ~0.9%. Hurdle = 8%. base 1.2% << 8% => NO margin of safety at 156.65."
