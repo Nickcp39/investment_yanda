@@ -1,0 +1,39 @@
+source_id,claim,value,unit,as_of,tier,verify_status,destination
+S010,as_of price (last close <= as_of),359.60,USD,2026-07-10,B1-LIVE,verified_2src,EVIDENCE
+S008,market cap,56.29,USD_bn,2026-07-10,B1-LIVE,verified,EVIDENCE
+S008,shares outstanding,156.54,millions,2026-07-10,B1-LIVE,verified,EVIDENCE
+S010,52-week high,487.91,USD,2026-07-10,B1-LIVE,verified_2src,EVIDENCE
+S010,52-week low,88.60,USD,2026-07-10,B1-LIVE,verified_2src,EVIDENCE
+S011,July-2026 peak-to-trough drop (06-30 483.84 -> 07-07 343.11),-29,pct,2026-07-07,B2-LIVE,verified,EVIDENCE
+S001,Q1 2026 total revenue,1282.5,USD_m,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 revenue Y/Y growth,87,pct,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 Semiconductor Test revenue,1111,USD_m,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 Product Test revenue,80,USD_m,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 Robotics revenue,91,USD_m,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 GAAP gross margin,60.9,pct,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 GAAP net income,398.9,USD_m,2026-03,A1,verified,EVIDENCE
+S001,Q1 2026 non-GAAP EPS,2.56,USD,2026-03,A1,verified,EVIDENCE
+S002,Q1 2026 AI-related revenue share,~70,pct,2026-03,A2,verified,EVIDENCE
+S002,Robotics Y/Y growth Q1 2026,32,pct,2026-03,A2,verified,EVIDENCE
+S002,AI share within Robotics,15,pct,2026-03,A2,verified,INTERPRETATION
+S001,Q2 2026 revenue guidance,1150-1250,USD_m,2026-06,A1-LIVE,verified,EVIDENCE
+S003,FY2025 total revenue,3190.0,USD_m,2025-12,A1,verified,EVIDENCE
+S003,FY2025 GAAP gross margin,58.2,pct,2025-12,A1,verified,EVIDENCE
+S003,FY2025 GAAP operating income,650.1,USD_m,2025-12,A1,verified,EVIDENCE
+S003,FY2025 GAAP net income,554.0,USD_m,2025-12,A1,verified,EVIDENCE
+S003,FY2025 free cash flow,450,USD_m,2025-12,A1,verified,EVIDENCE
+S003,FY2025 cash returned to shareholders,785,USD_m,2025-12,A1,verified,EVIDENCE
+S003,Buyback authorization raised (target),1000,USD_m,2025-12,A1,verified,EVIDENCE
+S007,FY2025 operating cash flow,674.4,USD_m,2025-12,A1,verified,EVIDENCE
+S007,FY2025 capex,224.0,USD_m,2025-12,A1,verified,EVIDENCE
+S007,Cash + marketable securities (Dec-2025),322.0,USD_m,2025-12,A1,verified,EVIDENCE
+S003,Q4 2025 Robotics revenue,89,USD_m,2025-12,A1,verified,EVIDENCE
+S005,FY2024 Robotics revenue (UR 293 + MiR 72),365,USD_m,2024-12,B1,verified,EVIDENCE
+S005,FY2025 Robotics revenue (derived Q1-Q4 69/75/75/89),~308,USD_m,2025-12,B1,derived,INTERPRETATION
+S005,Q1 2025 Robotics operating loss,-22,USD_m,2025-03,B1,verified,EVIDENCE
+S005,Robotics segment breakeven revenue (cut from 440),365,USD_m,2025-12,B1,verified,EVIDENCE
+S009,FY2021 revenue (cycle peak),3702.9,USD_m,2021-12,A1,verified,EVIDENCE
+S009,FY2023 revenue (cycle trough),2676.3,USD_m,2023-12,A1,verified,EVIDENCE
+S009,FY2024 revenue,2819.9,USD_m,2024-12,A1,verified,EVIDENCE
+S008,trailing P/E,66.8,x,2026-07-10,B1-LIVE,verified,INTERPRETATION
+L1,"TER = only 4-batch name with real deployed robotics revenue",,,2026-07-08,D1,lead_only,SENTIMENT

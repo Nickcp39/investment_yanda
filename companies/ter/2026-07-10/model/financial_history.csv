@@ -1,0 +1,8 @@
+fiscal_year,revenue_usd_m,semi_test_usd_m,product_test_usd_m,robotics_usd_m,gaap_gross_margin_pct,gaap_op_income_usd_m,gaap_op_margin_pct,net_income_usd_m,fcf_usd_m,note
+2021,3702.9,,,~376,,,,,,"cycle PEAK (5G/COVID mobile+auto); robotics ~$376M (UR record ~$326M 2022)"
+2022,3155.0,,,~404,,,,,,"down cycle begins; robotics ~$404M peak"
+2023,2676.3,,,,,,,,,"cycle TROUGH; total -15% Y/Y"
+2024,2819.9,,,365,58.5,593.8,21.1,542.4,,"UR $293M + MiR $72M = $365M robotics; SoC/Memory test +17% ex-DIS on AI"
+2025,3190.0,,110(Q4),~308,58.2,650.1,20.4,554.0,450,"AI test inflection; robotics ~$308M (BELOW ~$365M breakeven -> loss-making); FCF $450M, returned $785M (174% FCF)"
+2026Q1,1282.5,1111,80,91,60.9,473.0,36.9,398.9,,"+87% Y/Y; ~70% AI-tied; robotics +32% Y/Y (4th cons. Q growth) but only ~15% of robotics is AI (~$14M)"
+2026E,~4500-5000,,,~360,~58-60,,,~1300,,"Q1 annualized ~$5.1B but Q2 guides DOWN ($1.15-1.25B); 2H 'limited visibility' -> probable PEAK year"

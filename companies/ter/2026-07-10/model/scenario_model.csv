@@ -1,0 +1,6 @@
+scenario,as_of_price,mcap_usd_b,y5_revenue_usd_b,y5_op_margin_pct,y5_net_income_usd_m,y5_eps_usd,exit_pe,y5_price_usd,total_return_5y_pct,irr_5y_pct,notes
+anchor,359.60,56.29,,,,,,,,,"2026-07-10 close $359.60; 156.54M sh; ~102x FY2025 GAAP NI $554M; ~40-43x exploding 2026E; ~65x+ mid-cycle normalized"
+bull,359.60,56.29,7.5,24,1800,11.50,35,402,11.8,2.3,"AI-test step-up is STRUCTURAL & durable: 2026 ~$5B run-rate becomes a growing floor; ATE duopoly compounds; robotics finally profitable. Even so ~flat-to-modest over 5y from today"
+base,359.60,56.29,4.4,22,900,5.75,28,161,-55.2,-14.8,"2026 is a cyclical PEAK; revenue mean-reverts to a structurally-higher mid-cycle then grows; multiple normalizes -> large downside from today's peak-multiple entry"
+bear,359.60,56.29,3.4,18,560,3.58,22,79,-78.0,-25.6,"AI-test surge was a pull-forward peak + memory/HBM oversupply downturn (the 2026-07 fear realized); robotics option -> ~0; survivable (net cash) but no permanent impairment, just cyclical de-rate"
+hurdle_check,359.60,56.29,,,,,,,,,"8% hurdle needs ~1.47x in 5y. Base y5 target ~$161 -> 8%-hurdle entry ~$110; blended MOS entry ~$180-220 (add zone). $270 = 'start to watch' where fwd multiple ~28-32x, still a bet the AI step-up is structural. $359.60 = no MOS, negative asymmetry"

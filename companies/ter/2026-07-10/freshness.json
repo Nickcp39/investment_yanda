@@ -1,0 +1,95 @@
+{
+  "ticker": "TER",
+  "as_of": "2026-07-10",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q/8-K line items: revenue, segment mix, margins, cash flow) rides the dated-source claim_ledger discipline. CONTEXT: TER had extreme July-2026 volatility ($483.84 on 06-30 -> $343.11 on 07-07, -29% in a week) on a sector memory-oversupply / AI-valuation reset -- not company-specific -- so LIVE price freshness is especially load-bearing this run.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 359.60,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TER", "fetched_at": "2026-07-10", "value": 359.60},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ter/", "fetched_at": "2026-07-10", "value": 359.60}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 56290000000,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ter/", "fetched_at": "2026-07-10", "value": 56290000000},
+        {"source_name": "derived", "url": "156.54M shares x 359.60", "fetched_at": "2026-07-10", "value": 56291784000}
+      ],
+      "cross_check_delta_pct": 0.003,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 487.91,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TER", "fetched_at": "2026-07-10", "value": 487.91},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ter/", "fetched_at": "2026-07-10", "value": 487.91}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 88.60,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TER", "fetched_at": "2026-07-10", "value": 88.60},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ter/", "fetched_at": "2026-07-10", "value": 88.60}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 156.54,
+      "unit": "millions",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ter/", "fetched_at": "2026-07-10", "value": 156.54},
+        {"source_name": "sec_8k_q4fy25", "url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526034348/ter-ex99_1.htm", "fetched_at": "2026-07-10", "value": 157.651}
+      ],
+      "cross_check_delta_pct": 0.71,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 2026 revenue guidance $1,150M-$1,250M (DOWN sequentially from Q1'26 $1,282.5M); GAAP EPS $1.83-$2.12, non-GAAP $1.86-$2.15; gross margin 58-59%. Management flagged 'limited visibility into second-half demand' and 'potential order lumpiness.'",
+      "as_of": "2026-04-28",
+      "sources": [
+        {"source_name": "sec_8k_q1fy26", "url": "https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results", "public_date": "2026-04-28", "fetched_at": "2026-07-10"},
+        {"source_name": "motley_fool_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/04/29/teradyne-ter-q1-2026-earnings-transcript/", "public_date": "2026-04-29", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material new litigation surfaced in the Q1'26 / FY2025 disclosures reviewed. Marked OPEN pending 10-Q/10-K legal-proceedings read (non-blocking).",
+      "as_of": "2026-04-28",
+      "sources": [
+        {"source_name": "sec_8k_q1fy26", "url": "https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results", "public_date": "2026-04-28", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    }
+  ]
+}

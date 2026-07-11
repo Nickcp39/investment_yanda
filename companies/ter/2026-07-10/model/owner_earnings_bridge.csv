@@ -1,0 +1,10 @@
+line,fy2025_usd_m,note
+net_income_gaap,554.0,"FY2025 GAAP net income [S003]"
+depreciation,111.4,"[S007]"
+stock_based_comp,64.0,"add back (non-cash); note dilution offsets some via buyback"
+capex,-224.0,"PP&E purchases FY2025 [S007]"
+owner_earnings_approx,~605,"NI + D&A + SBC - capex (rough); reconciles toward stated FCF once working-capital swings included"
+stated_free_cash_flow,450.0,"company-stated FY2025 FCF (OCF $674.4M - capex $224.0M) [S003]"
+cash_returned_to_holders,785.0,"dividends + buybacks FY2025 = 174% of FCF (drew down cash) [S003]"
+CYCLE_CAVEAT,,"2026 is a PEAK: Q1'26 NI $398.9M alone ~= 72% of all FY2025 NI. Trailing owner earnings UNDERSTATE cyclicality; normalize to mid-cycle (~$0.8-0.9B NI) for valuation, NOT the 2026 run-rate"
+robotics_drag,,"Robotics segment loss-making (Q1'25 op loss $22M; FY2025 revenue ~$308M < ~$365M breakeven) -> owner earnings are the ATE franchise MINUS a robotics cash drag"

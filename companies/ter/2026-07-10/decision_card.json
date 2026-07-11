@@ -1,0 +1,101 @@
+{
+  "ticker": "TER",
+  "as_of": "2026-07-10",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-10",
+  "context_label": "cyclical_ate_duopoly_at_peak_multiple__robotics_option_loss_making",
+  "as_of_price": 359.60,
+  "as_of_market_cap": 56290000000,
+  "share_basis_note": "156.54M shares outstanding x $359.60 (2026-07-10 close, last <= as_of) = ~$56.29B. Price from Yahoo chart API [S010], independently re-fetched and cross-checked vs stockanalysis (both $359.60) per freshness.json. NOTE the extreme recent volatility: $483.84 close (2026-06-30) -> $343.11 (2026-07-07), a ~-29% peak-to-trough in one week on a sector-wide memory-oversupply / AI-valuation reset (NOT company-specific news; analysts held ratings) [S011]. 52wk range $88.60-$487.91 -- the stock is a ~4x-off-low, -26%-off-high AI-test cyclical.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 2026, reported 2026-04-28) and FY2025 fully primary-sourced (8-K PR + call): Q1'26 rev $1,282.5M (+87% Y/Y), Semi Test $1,111M / Product Test $80M / Robotics $91M, GAAP GM 60.9%, NI $398.9M, EPS $2.53; FY2025 rev $3,190.0M, op income $650.1M, NI $554.0M, FCF $450M. Multi-year revenue series (2021 $3.70B -> 2023 $2.68B trough -> 2025 $3.19B) sourced. Price 2-source cross-checked. Gaps (Q1'26 10-Q line items, 10-K segment op-income for 2025/2026, proxy/operator detail) are haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S003", "S010"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "TER is the wrong tool for the batch thesis: the money is Semiconductor Test (ATE) -- 86.6% of Q1'26 revenue -- riding an AI-test supercycle (custom AI-accelerator ASICs, networking, HBM DRAM test); ~70% of company revenue is AI-tied. This is a real, primary-sourced demand surge, BUT it is a CYCLICAL semi-capital-equipment surge, not an embodied-AI/robotics story. The robotics segment (Universal Robots cobots + MiR AMRs) that made this batch look at TER is only ~7% of revenue and is loss-making. Signal +1 (real high-quality franchise) not +2 (cyclical, at peak, thesis-mismatched).",
+      "drivers": ["S001", "S002", "S004"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Two very different franchises. (1) Semi Test = a genuine ATE DUOPOLY (Teradyne + Advantest) with high know-how, long customer-qualification cycles and switching costs -> a real, durable oligopoly bottleneck -- but structurally CYCLICAL (peak-to-trough revenue swings of ~30%). (2) Robotics = LOW/MED barrier: cobots (Fanuc/ABB/Doosan/Techman/JAKA) and AMRs are commoditizing; UR's ease-of-use/UR+ ecosystem is a real but eroding edge, NOT a hard bottleneck; segment is sub-scale and BELOW its own ~$365M breakeven -> loss-making (Q1'25 op loss $22M). Operator: CEO Greg Smith (semi-test lifer), disciplined capital return ($785M returned FY2025 = 174% of FCF, buyback raised to up to $1B) -- provisional grade 3.5/5 pending proxy. Cyclical -> ceiling capped below Confirmed.",
+      "drivers": ["S001", "S003", "S005", "S006"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "High-quality but cyclical financials. FY2025: rev $3,190M, GAAP GM 58.2%, op margin 20.4%, NI $554M, OCF $674.4M, capex $224.0M, FCF $450M. Balance sheet near net-cash (Dec'25 cash $293.8M + mkt sec $28.2M; ~$400M cash+investments at Q1'26; short-term debt $0, small revolver draw ~$165M for April M&A), equity ~$3.14B -- survivable through any semi downturn. BUT owner earnings are cycle-distorted: 2026 is a peak year (Q1 NI $398.9M alone ~= 72% of all of FY2025 NI), so trailing figures over-state normalized power; Q2'26 guide is DOWN sequentially and management flags 'limited visibility into 2H'. Robotics is a cash DRAG, not a contributor.",
+      "drivers": ["S001", "S002", "S003", "S007"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural breakage or balance-sheet risk (net-cash, duopoly intact) -> no hard veto. But two live trap inputs: (1) CAPITAL-CYCLE / cycle-peak: ~70% AI-tied revenue at record margins is the visible, consensus demand -- the exact 'demand>supply is already priced' setup; the 2026-07 sector selloff on HBM/memory oversupply + reports of chipmakers slowing capacity expansion is a supply-side capital-cycle signal that TER's test demand may be at/near a peak. (2) Robotics-as-concept: the embodied-AI 'option' is loss-making and stagnant (FY2024 $365M -> FY2025 ~$308M), so paying up for it as a physical-AI call is a value trap. Neither kills the thesis; both are SIZE + no-chase inputs.",
+      "drivers": ["S002", "S005", "S011"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $359.60 ($56.29B) the stock is ~102x FY2025 GAAP NI ($554M) and ~40-43x even the exploding 2026E earnings, and ~65x+ a mid-cycle-normalized number -- a rich multiple for a CYCLICAL whose current print is a probable peak. Even a structural-AI BULL case (2026 run-rate becomes a durable, growing floor) barely supports today's $56B cap over 5 years; the BASE case (2026 is a cyclical peak, revenue mean-reverts) implies a negative 5y IRR from here. PRICE IS THE BINDING CONSTRAINT and it is the primary -2. No margin of safety; the batch's robotics thesis does not add value here. New money WATCH / no-chase.",
+      "drivers": ["S010", "S008", "S011"]
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "partial",
+    "segment_judged": "robotics (per batch mandate) + note on semi-test",
+    "stage": "robotics: early / trough-exiting (industrial-automation downturn 2023-25, 4 quarters of sequential recovery off a low base); semi-test (dominant): late / possible-peak",
+    "supply_barrier": "robotics: low-med (cobot/AMR commoditizing, many entrants); semi-test: high (ATE duopoly, know-how + qualification switching costs)",
+    "read": "On the ROBOTICS segment the lens says: supply CAN respond (low-med barrier), the segment is recovering from a trough but is below its own breakeven and has no durable bottleneck -> this is an option/concept, not a NVDA-style locked-in bottleneck. We do NOT know whether the robotics recovery is a real demand inflection or just industrial-automation cyclical mean-reversion. On the DOMINANT semi-test segment the lens flags late/peak: visible ~70% AI-tied demand at ATH margins is consensus, and the 2026-07 HBM-oversupply selloff + reports of capacity-expansion slowdowns are classic late-cycle supply signals.",
+    "caution": "PEAK (semi-test, the value driver) -> compress verdict toward WATCH / no-chase. Robotics = TROUGH-WATCHLIST only (monitor for a genuine profitable inflection; do NOT add size for it -- low barrier, loss-making, timing unknowable)."
+  },
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 270.0,
+  "starter_zone": "No new money at $359.60. A structured STARTER (~3-4%) is considerable only on a pullback toward ~$250-280, where the forward multiple on a haircut (mid-cycle, not peak-2026) earnings base compresses to ~28-32x and cyclical downside is cushioned -- AND only if the AI-test demand is still printing (no evidence the surge has rolled over).",
+  "add_zone": "Scale toward Confirmed (~8-10%, cyclical ceiling) only into ~$180-220 (a genuine cycle-fear washout that does NOT break the ATE duopoly thesis) AND/OR on confirmation that the AI-test step-up is structural (multiple quarters of test demand holding + Robotics crossing breakeven into sustained profit).",
+  "trim_or_no_chase_zone": "Current $359.60 is a hard NO-CHASE: ~40-43x peak-2026 earnings, ~102x FY2025, only -26% off a $487.91 ATH after a 4x run off the low. Existing holders HOLD (business unimpaired, no kill fired) but should not add; consider TRIM only if position is oversized or price re-approaches the ATH on unchanged fundamentals.",
+  "binding_constraint": "PRICE + CYCLE POSITION. At $359.60 there is no margin of safety on a probable peak-cycle earnings print, and the capital-cycle lens flags the dominant semi-test demand as late/possible-peak (2026-07 memory-oversupply selloff). The robotics 'embodied-AI option' -- the reason this batch looked at TER -- is loss-making and stagnant, so it does not underwrite the price. Completeness ~58% independently caps the verdict at WATCH.",
+  "kill_criteria": [
+    "Semi Test bookings/revenue roll over sequentially for 2+ quarters (AI-test demand was a pull-forward peak, not a structural step-up) -> thesis = cyclical peak confirmed.",
+    "HBM / memory-test or AI-ASIC-test oversupply materializes (customers slow test-capacity buys) -> the 2026-07 selloff fear becomes real.",
+    "Robotics stays below its ~$365M breakeven / operating losses persist or widen -> the embodied-AI option is impaired, mark it to ~zero.",
+    "Advantest or a new entrant takes structural SoC/memory-test share (duopoly erosion) -> the ONLY escalate-to-veto path on the core franchise.",
+    "Gross margin breaks below the ~55% cyclical floor, or a large inventory write-down -> earnings quality cracking.",
+    "Price stays above ~$270 with no mid-cycle-normalized earnings support -> remains WATCH / no-chase (the case at $359.60)."
+  ],
+  "runner_dissent": "The mechanical modules (M1 +2, M2 +1, M3 +1, M4 +1) look like they could support a STARTER, and the ATE duopoly is genuinely high-quality -- a bull could argue AI test is a structural step-change and TER is a picks-and-shovels winner. I override to WATCH for three reasons the modules under-weight: (1) M6 is a -2, not just -1 -- unlike NVDA (where price was the ONLY issue on an exceptional non-cyclical franchise), here the multiple (~40-43x PEAK-2026, ~102x FY2025) sits on a CYCLICAL earnings peak, so both price AND cycle position are against new money; (2) the batch's actual reason to look at TER -- deployed robotics revenue -- FAILS on the evidence: robotics is ~7% of revenue, loss-making, and below its own breakeven, so there is no 'robotics bottleneck already making money' here; (3) capital-cycle PEAK caution on the semi-test driver + the 2026-07 memory-oversupply selloff argue this is late-cycle, not a buy point. Completeness ~58% caps at WATCH regardless. Direction: right business quality on the ATE half, wrong price and wrong (robotics) thesis -> WATCH with a clear STARTER trigger at ~$250-280 on non-peak earnings. OPEN items left: Q1'26 10-Q balance sheet detail (O1), 2025/2026 segment operating income (O2), proxy/operator life-arc (O3), exact FY2025 robotics revenue (O4, ~$308M derived from disclosed quarters), Advantest share trend (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-28", "url_or_path": "https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results"},
+    {"source_id": "S002", "public_date": "2026-04-29", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2026/04/29/teradyne-ter-q1-2026-earnings-transcript/"},
+    {"source_id": "S003", "public_date": "2026-01-28", "url_or_path": "https://www.sec.gov/Archives/edgar/data/97210/000119312526034348/ter-ex99_1.htm"},
+    {"source_id": "S004", "public_date": "2026-01-28", "url_or_path": "https://futurumgroup.com/insights/teradyne-q4-fy-2025-shifts-the-narrative-to-data-center-and-physical-ai/"},
+    {"source_id": "S005", "public_date": "2025-04-29", "url_or_path": "https://www.therobotreport.com/teradyne-robotics-generates-75m-in-q2/ (robotics segment history + Q1'25 op loss $22M + breakeven cut $440M->$365M)"},
+    {"source_id": "S006", "public_date": "2022-01-27", "url_or_path": "https://www.businesswire.com/news/home/20220127005798/en/Universal-Robots-Reports-Record-Annual-Revenue-of-over-%24300M (UR history)"},
+    {"source_id": "S007", "public_date": "2026-01-28", "url_or_path": "FY2025 8-K cash-flow + balance-sheet tables (OCF $674.4M, capex $224.0M, cash $293.8M) [same filing as S003]"},
+    {"source_id": "S008", "public_date": "2026-07-10", "url_or_path": "https://stockanalysis.com/stocks/ter/ (price $359.60, mcap $56.29B, shares 156.54M, 52wk $88.60-$487.91, P/E 66.78)"},
+    {"source_id": "S009", "public_date": "2024-01-01", "url_or_path": "Multi-year revenue series 2021 $3,702.9M / 2022 $3,155.0M / 2023 $2,676.3M / 2024 $2,819.9M (TER 10-K history via SEC filings)"},
+    {"source_id": "S010", "public_date": "2026-07-10", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/TER (close $359.60, 52wk high $487.91 / low $88.60)"},
+    {"source_id": "S011", "public_date": "2026-07-08", "url_or_path": "https://www.tikr.com/blog/teradyne-stock-fell-14-this-week-in-a-chip-rout-is-the-dip-worth-buying-in-2026 (2026-07 sector memory-oversupply / AI-valuation reset selloff, no company-specific news)"}
+  ]
+}
