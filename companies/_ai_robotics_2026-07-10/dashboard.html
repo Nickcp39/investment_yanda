@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-机器人 4 龙头看板 — ai_robotics_2026-07-10</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--ink:#e6edf3;--mut:#9aa7b4;--grn:#3fb950;--red:#f85149;--amb:#d29922;--acc:#58a6ff;--brd:#283039}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Roboto,"Microsoft YaHei",sans-serif;line-height:1.5;padding:24px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 4px} h2{font-size:16px;margin:26px 0 10px;color:var(--acc);border-bottom:1px solid var(--brd);padding-bottom:6px}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:6px}
+  .prov{font-size:12px;color:var(--mut);margin-bottom:16px}
+  .prov b{color:var(--ink)}
+  .banner{background:rgba(210,153,34,.10);border:1px solid var(--amb);border-radius:10px;padding:14px 16px;margin:14px 0 6px}
+  .banner .bt{font-weight:800;color:var(--amb);font-size:14px;letter-spacing:.02em}
+  .banner p{margin:6px 0 0;font-size:13px;color:var(--ink)}
+  .banner .verd{color:var(--red);font-weight:800}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;margin-top:4px}
+  .card{background:var(--card);border:1px solid var(--brd);border-radius:12px;padding:16px;position:relative}
+  .card.watch{border-left:4px solid var(--amb)}
+  .rank{position:absolute;top:14px;right:16px;color:var(--mut);font-size:12px;font-weight:700}
+  .tk{font-size:22px;font-weight:800} .ctx{color:var(--mut);font-size:11.5px;margin-top:2px}
+  .verdict{font-size:26px;font-weight:800;margin:10px 0 2px}
+  .verdict.a{color:var(--amb)}
+  .vsub{font-size:12px;color:var(--mut);margin-bottom:10px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .stat{flex:1;min-width:96px} .stat .k{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em}
+  .stat .v{font-size:15px;font-weight:700;margin-top:2px}
+  .pos{color:var(--grn)} .neg{color:var(--red)} .amb{color:var(--amb)} .mut{color:var(--mut)}
+  .badges2{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 2px}
+  .badge{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11px;font-weight:700}
+  .badge.anti{background:rgba(210,153,34,.15);color:var(--amb);border:1px solid rgba(210,153,34,.4)}
+  .badge.real{background:rgba(88,166,255,.13);color:var(--acc);border:1px solid rgba(88,166,255,.4)}
+  .badge.peak{background:rgba(248,81,73,.13);color:var(--red);border:1px solid rgba(248,81,73,.4)}
+  .badge.concept{background:rgba(248,81,73,.10);color:var(--red)}
+  .badge.partial{background:rgba(210,153,34,.10);color:var(--amb)}
+  .bc{font-size:12.5px;color:var(--ink);margin-top:8px;border-top:1px solid var(--brd);padding-top:8px}
+  .bc .k{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:2px}
+  .trig{font-size:12px;color:var(--ink);margin-top:8px}
+  .trig .k{color:var(--grn);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:2px}
+  .footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:11px;color:var(--mut)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}
+  .pill.clean{background:rgba(63,185,80,.15);color:var(--grn)}
+  .pill.fix{background:rgba(210,153,34,.15);color:var(--amb)}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--brd);vertical-align:top} th{color:var(--mut);font-weight:600}
+  .note{font-size:12px;color:var(--mut);margin-top:14px}
+  .tblwrap{overflow-x:auto}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>AI-机器人 4 龙头 — 决策看板</h1>
+  <div class="sub">batch <b>ai_robotics_2026-07-10</b> · as_of <b>2026-07-10</b> · pipeline <b>lean-6module-v1.1</b> · weights none</div>
+  <div class="prov">4 家全 <b>DECISION_DRAFT</b>(完整度 ~58-65%,非 COMPLETE)· verdict 全 <b>WATCH(新钱 0%)/ HOLD(存量)</b> · freshness 机械门全 <b>PASS</b>(价格 ≥2 源交叉)· Checker: TER/ON/NOVT <b>CLEAN</b>,NVDA <b>FIX-NEEDED</b>(仅可追溯性缺口,决策可信)· 排序口径: 业务质量 + 真瓶颈耐久性 + 距可买价接近度 · 线索=美股投资网视频(D1/KOL,仅线索)。</div>
+
+  <div class="banner">
+    <div class="bt">⚑ THESIS 裁决 — "机器人链里有没有一个机器人版 NVDA?"</div>
+    <p><span class="verd">没有。这 4 家不存在"需求已暴增 + 卡死瓶颈 + 已经在赚钱"三合一的可买机器人瓶颈 → 全 WATCH。</span>
+    每家都在与门的<b>至少两条</b>上失败:机器人段现金 ~0(NVDA &lt;1% / ON ~0% / NOVT 人形 &lt;2% pre-rev),或有现金但<b>亏损停滞</b>(TER robotics &lt;breakeven、5 年停滞),供给壁垒<b>普遍 low</b>(cobot/功率件/精密件都商品化)。NVDA 三条件确实全过——但那是 <b>AI 数据中心算力(exceptional_bottleneck)</b>,不是机器人;机器人只是它 &lt;1% 收入的近乎免费嵌入期权。
+    <b>结论证实用户读法:机器人现在没有可见-真实-需求的瓶颈;AI 基础设施(算力/网络/内存)才有。</b> 想要"AI 收费站"资产,方向是 AI-infra 且等价格给 MOS——不是这批机器人链名字(四家现价均无 MOS)。</p>
+  </div>
+
+  <h2>四名排序卡片</h2>
+  <div class="grid">
+
+    <!-- 1 NVDA -->
+    <div class="card watch">
+      <div class="rank">#1</div>
+      <div class="tk">NVDA</div><div class="ctx">exceptional_bottleneck_no_MOS · 业务 exceptional</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 价格是唯一约束(base 5y IRR +4.7% &lt; 8% hurdle)</div>
+      <div class="row">
+        <div class="stat"><div class="k">as_of price</div><div class="v">$210.96</div></div>
+        <div class="stat"><div class="k">机器人收入占比</div><div class="v amb">&lt;1%</div></div>
+        <div class="stat"><div class="k">off ATH</div><div class="v neg">-10.8%</div></div>
+      </div>
+      <div class="badges2">
+        <span class="badge anti">机器人段 ANTICIPATION</span>
+        <span class="badge partial">真瓶颈 PARTIAL(平台真·未变现)</span>
+      </div>
+      <div class="bc"><span class="k">capital_cycle · caution</span>partial / early-pre-inflection · barrier high(CUDA/Jetson)· <b>caution NONE</b>(机器人段=未变现期权,非顶)。真瓶颈是 AI 算力,不是机器人。</div>
+      <div class="trig"><span class="k">WATCH → STARTER 触发</span>回落 ~$155-181(base IRR 回 ≥8%);或机器人拆成独立收入线且持续 +xxx% Y/Y。</div>
+      <div class="footer"><span class="pill fix">CHECKER FIX-NEEDED(可追溯性)</span><span>完整度 ~65%</span></div>
+    </div>
+
+    <!-- 2 NOVT -->
+    <div class="card watch">
+      <div class="rank">#2</div>
+      <div class="tk">NOVT</div><div class="ctx">quality_compounder_no_MOS · 业务 good</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 价格约束(base 5y IRR +1.2% &lt;&lt; 8% hurdle)</div>
+      <div class="row">
+        <div class="stat"><div class="k">as_of price</div><div class="v">$156.65</div></div>
+        <div class="stat"><div class="k">机器人收入占比</div><div class="v amb">~15-25% est</div></div>
+        <div class="stat"><div class="k">off ATH</div><div class="v neg">-8.8%</div></div>
+      </div>
+      <div class="badges2">
+        <span class="badge anti">人形段 ANTICIPATION(&lt;2% pre-rev)</span>
+        <span class="badge partial">真瓶颈 PARTIAL(好组件·非收费站)</span>
+      </div>
+      <div class="bc"><span class="k">capital_cycle · caution</span>partial · 人形 early-anticipation / 工业 mid-recovery · barrier med-high(在位件)/low(人形)· <b>caution EARLY-ANTICIPATION</b>(人形期权保持折价)。</div>
+      <div class="trig"><span class="k">WATCH → STARTER 触发</span>de-rate 到 ~$100-120(base IRR 回 ≥8%);或机器人从 bookings 转持续两位数收入 + book-to-bill&gt;1.1 连 2 季(pull-forward 被证伪)。</div>
+      <div class="footer"><span class="pill clean">CHECKER CLEAN</span><span>完整度 ~60%</span></div>
+    </div>
+
+    <!-- 3 TER -->
+    <div class="card watch">
+      <div class="rank">#3</div>
+      <div class="tk">TER</div><div class="ctx">cyclical_ATE_duopoly_at_peak · robotics 亏损期权 · 业务 good</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 价格 <b>+</b> 周期位置双约束(M6=−2,~40-43x '26E / ~102x FY25)</div>
+      <div class="row">
+        <div class="stat"><div class="k">as_of price</div><div class="v">$359.60</div></div>
+        <div class="stat"><div class="k">机器人收入占比</div><div class="v amb">7.1%(亏损)</div></div>
+        <div class="stat"><div class="k">off ATH</div><div class="v neg">-26%(1 周 -29%)</div></div>
+      </div>
+      <div class="badges2">
+        <span class="badge real">机器人 REAL-现金 但亏损/停滞</span>
+        <span class="badge concept">真瓶颈 NO-CONCEPT(机器人段)</span>
+        <span class="badge peak">semi-test PEAK</span>
+      </div>
+      <div class="bc"><span class="k">capital_cycle · caution</span>partial · 机器人 early/trough-exiting · semi-test(主导 86.6%)late/possible-peak · barrier low-med(机器人)/high(ATE)· <b>caution PEAK</b>。真瓶颈=ATE 双寡头,但周期性且不是机器人;机器人段亏损、&lt;$365M breakeven、5 年停滞 → thesis 被一手数据证伪。</div>
+      <div class="trig"><span class="k">WATCH → STARTER 触发</span>回落 ~$250-280(非峰值盈利 ~28-32x 且 AI-test 仍在打印)。</div>
+      <div class="footer"><span class="pill clean">CHECKER CLEAN</span><span>完整度 ~58%</span></div>
+    </div>
+
+    <!-- 4 ON -->
+    <div class="card watch">
+      <div class="rank">#4</div>
+      <div class="tk">ON</div><div class="ctx">cyclical_recovery_priced_in · robotics=期权非现金 · 业务 uncertain</div>
+      <div class="verdict a">WATCH</div>
+      <div class="vsub">存量 HOLD · 价格 <b>+</b> thesis-stage 双约束(bull FV ~$90 &lt; 现价)</div>
+      <div class="row">
+        <div class="stat"><div class="k">as_of price</div><div class="v">$95.96</div></div>
+        <div class="stat"><div class="k">机器人收入占比</div><div class="v neg">~0%</div></div>
+        <div class="stat"><div class="k">off low</div><div class="v pos">+115%(re-rated)</div></div>
+      </div>
+      <div class="badges2">
+        <span class="badge anti">机器人 ANTICIPATION(纯)</span>
+        <span class="badge concept">真瓶颈 NO-CONCEPT(商品件)</span>
+        <span class="badge peak">估值 PEAK-lean</span>
+      </div>
+      <div class="bc"><span class="k">capital_cycle · caution</span>no(机器人段)/partial(核心)· 核心 demand trough→early · valuation late(+115% off low)· barrier low-med · <b>caution PEAK-lean(估值)</b>。核心=车/工业功率+传感周期复苏 + AI-DC 电源($250M→$500M'26E),机器人现金≈0。</div>
+      <div class="trig"><span class="k">WATCH → STARTER 触发</span>回落 ~$65-72(base 中周期 ~16x 有 MOS,核心复苏未变)。</div>
+      <div class="footer"><span class="pill clean">CHECKER CLEAN</span><span>完整度 ~63%</span></div>
+    </div>
+
+  </div>
+
+  <h2>与门:没有一家三条件同时满足</h2>
+  <div class="tblwrap">
+  <table>
+    <tr><th>与门条件</th><th>NVDA(机器人段)</th><th>NOVT</th><th>TER</th><th>ON</th></tr>
+    <tr><td>需求已暴增(dated 现金)</td><td class="neg">✗ &lt;1%,anticipation</td><td class="neg">✗ 机器人有机 +3%,人形 &lt;2% pre-rev</td><td class="amb">△ 有现金但 5 年停滞</td><td class="neg">✗ ~0%,仅 design-win</td></tr>
+    <tr><td>卡死瓶颈(可证伪定价权)</td><td class="neg">✗ 平台真但未变现</td><td class="neg">✗ 好组件商,非 chokepoint</td><td class="neg">✗ 机器人段低壁垒商品化</td><td class="neg">✗ 商品件 4+ 竞争</td></tr>
+    <tr><td>已经在赚钱(机器人段)</td><td class="neg">✗ ~nil</td><td class="amb">△ 混在工业里</td><td class="neg">✗ 亏损(&lt;breakeven)</td><td class="neg">✗ 零</td></tr>
+  </table>
+  </div>
+  <div class="note">NVDA 三条件在 <b>AI 数据中心算力</b>上全过(DC +92% / networking +199% / Q2 guide $91B / FCF≈OE ~$182B / 净现金 $72B)——但那不是机器人。真正的"AI 收费站"在基础设施侧,不在这批机器人链名字。机器人段现金/占比均无独立披露(estimate/derived),operator/proxy 多为 provisional——haircut 而非 veto,已在各卡诚实标注。</div>
+
+</div></body>
+</html>
