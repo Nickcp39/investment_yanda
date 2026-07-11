@@ -1,0 +1,43 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination
+S005,ON last close (Yahoo chart API),95.96,USD,2026-07-10,2026-07-10,B1,EVIDENCE
+S006,ON price cross-check (stockanalysis),95.96,USD,2026-07-10,2026-07-10,B2,EVIDENCE
+S006,Market cap,37342,USD_millions,2026-07-10,2026-07-10,B2,EVIDENCE
+S006,Shares outstanding,389.19,millions,2026-07-10,2026-07-10,B2,EVIDENCE
+S005,52-week high,134.92,USD,2026-07-10,2026-07-10,B1,EVIDENCE
+S005,52-week low,44.56,USD,2026-07-10,2026-07-10,B1,EVIDENCE
+S006,Trailing P/E,67.9,x,2026-07-10,2026-07-10,B2,EVIDENCE
+S002,Q1 2026 total revenue,1513.3,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Q1 2026 revenue YoY growth,5,percent,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,PSG (Power) segment revenue Q1 2026,736.6,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,AMG (Analog/Mixed) segment revenue Q1 2026,540.4,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,ISG (Intelligent Sensing) segment revenue Q1 2026,236.3,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Automotive end-market revenue Q1 2026,797,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Automotive YoY (first growth after 7 down quarters),5,percent,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Non-GAAP gross margin Q1 2026,38.5,percent,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Non-GAAP diluted EPS Q1 2026,0.64,USD,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Operating cash flow Q1 2026,239.1,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Capex Q1 2026,21.9,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Free cash flow Q1 2026,217.2,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S002,Q2 2026 revenue guidance,1535-1635,USD_millions,2026-Q2,2026-07-10,A1,EVIDENCE
+S002,Q2 2026 non-GAAP EPS guidance,0.65-0.77,USD,2026-Q2,2026-07-10,A1,EVIDENCE
+S003,FY2025 total revenue,6000,USD_millions,2025-12-31,2026-07-10,A1,EVIDENCE
+S003,FY2025 non-GAAP gross margin,38.4,percent,2025-12-31,2026-07-10,A1,EVIDENCE
+S003,FY2025 ISG revenue,930,USD_millions,2025-12-31,2026-07-10,B2,EVIDENCE
+S003,Auto+industrial share of revenue (FY2024 basis),80,percent,2024-12-31,2026-07-10,A1,EVIDENCE
+S001,Cash + short-term investments,2404,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S001,Total debt,3007,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S001,Net debt,-603,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S001,Total equity,7321,USD_millions,2026-04-03,2026-07-10,A1,EVIDENCE
+S008,AI data center revenue FY2025 (mgmt, relayed B2),250,USD_millions,2025-12-31,2026-07-10,B2,INTERPRETATION
+S008,AI data center revenue FY2026E (mgmt guide double again),500,USD_millions,2026-12-31,2026-07-10,B2,INTERPRETATION
+S008,AI data center Q1 2026 sequential growth,30,percent_QoQ,2026-04-03,2026-07-10,B2,INTERPRETATION
+S008,Robotics revenue (design-win only; humanoid inductive position sensing),0,USD_est,2026-07-10,2026-07-10,B2,INTERPRETATION
+S008,Long-term gross margin target,50,percent_plus,2026,2026-07-10,B2,INTERPRETATION
+S004,Synaptics acquisition enterprise value,7000,USD_millions,2026-06-25,2026-07-10,A1,EVIDENCE
+S004,Synaptics exchange ratio (ON shares per SYNA share),1.350,ratio,2026-06-25,2026-07-10,A1,EVIDENCE
+S004,Synaptics deal premium (10-day VWAP),19,percent,2026-06-25,2026-07-10,A1,EVIDENCE
+S004,Combined 2026 revenue estimate,7800,USD_millions,2026-06-25,2026-07-10,A1,EVIDENCE
+S004,Expected close,mid-2027,date,2027,2026-07-10,A1,EVIDENCE
+S007,New buyback authorization (3-yr from 2026),6000,USD_millions,2026,2026-07-10,A2,EVIDENCE
+S007,FY2025 FCF returned via buyback,~100,percent,2025-12-31,2026-07-10,A2,EVIDENCE
+S008,CEO Hassane El-Khoury tenure (external hire Dec 2020),5.4,years,2026-07-10,2026-07-10,B2,EVIDENCE

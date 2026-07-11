@@ -1,0 +1,97 @@
+{
+  "ticker": "ON",
+  "as_of": "2026-07-10",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline, not here.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 95.96,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ON", "fetched_at": "2026-07-10", "value": 95.96},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ON/", "fetched_at": "2026-07-10", "value": 95.96}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 37342000000,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ON/", "fetched_at": "2026-07-10", "value": 37350000000},
+        {"source_name": "derived", "url": "389.19M shares x 95.96", "fetched_at": "2026-07-10", "value": 37342470400}
+      ],
+      "cross_check_delta_pct": 0.02,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 134.92,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ON", "fetched_at": "2026-07-10", "value": 134.92},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ON/", "fetched_at": "2026-07-10", "value": 134.92}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 44.56,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ON", "fetched_at": "2026-07-10", "value": 44.56},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ON/", "fetched_at": "2026-07-10", "value": 44.56}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 389.19,
+      "unit": "millions",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/ON/", "fetched_at": "2026-07-10", "value": 389.19},
+        {"source_name": "sec_10q_q1fy26", "url": "https://www.sec.gov/Archives/edgar/data/0001097864/000109786426000014/on-20260403.htm", "fetched_at": "2026-07-10", "value": 405}
+      ],
+      "cross_check_delta_pct": 4.1,
+      "note": "389.19M = current basic/outstanding (reconciles market cap to reported $37.3B). ~405M = balance-sheet/diluted-derived. Delta is share-count-definition timing, not a price error.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 2026 guidance: revenue $1,535M-$1,635M; non-GAAP diluted EPS $0.65-$0.77. Gross margin expected to expand sequentially through 2026 with larger step functions in 2H; long-term target 50%+.",
+      "as_of": "2026-05-04",
+      "sources": [
+        {"source_name": "sec_8k_q1fy26", "url": "https://www.sec.gov/Archives/edgar/data/0001097864/000114036126018868/ef20072220_ex99-1.htm", "public_date": "2026-05-04", "fetched_at": "2026-07-10"},
+        {"source_name": "stocktitan", "url": "https://www.stocktitan.net/news/ON/onsemi-reports-first-quarter-2026-gs4gw3jyioon.html", "public_date": "2026-05-04", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material adverse pending litigation identified at as_of. LIVE corporate action: onsemi-Synaptics all-stock acquisition (~$7B EV, exchange ratio 1.350, announced 2026-06-25) is pending Synaptics shareholder + regulatory approval; expected close mid-2027 (~13% dilution).",
+      "as_of": "2026-06-25",
+      "sources": [
+        {"source_name": "sec_8k_425", "url": "https://www.sec.gov/Archives/edgar/data/0000817720/000114036126026434/ef20076748_ex99-1.htm", "public_date": "2026-06-25", "fetched_at": "2026-07-10"},
+        {"source_name": "stocktitan", "url": "https://www.stocktitan.net/sec-filings/SYNA/8-k-synaptics-inc-reports-material-event-2d0b3ca2b56e.html", "public_date": "2026-06-25", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -41,7 +41,7 @@
 |---|---|---|---|---|---|---|---|
 | NVDA | ✅ | ⬜ | RUNNER done (DECISION_DRAFT) | WATCH (0%) / HOLD | <1% (undisclosed; Automotive incl. robotics ~1.09% FY26) | partial/N/A · early · barrier high · caution NONE (robotics seg) | 刷新完成 @ $210.96；freshness PASS；买 NVDA=AI 算力非机器人 alpha |
 | TER | ⬜ | ⬜ | — | — | — | — | |
-| ON | ⬜ | ⬜ | — | — | — | — | |
+| ON | ✅ | ⬜ | RUNNER done (DECISION_DRAFT ~63%) | WATCH (new) / HOLD | ~0% (design-wins/demos only; no dated robotics revenue) | no(robotics seg)/partial(core) · demand trough→early / valuation late · barrier low-med · caution PEAK-lean(valuation) | @ $95.96 (+115% off low, −28.9% off high) 无 MOS(base FV ~$68, bull ~$90 < 现价)；核心=车/工业功率+传感周期复苏 + AI-DC 电源($500M'26E)；机器人=概念期权；净负债 −$603M；Synaptics $7B 全股收购~13% 稀释；freshness PASS；buy_below ~$72 |
 | NOVT | ✅ | ⬜ | RUNNER done (DECISION_DRAFT ~60%) | WATCH (0%) / HOLD | ~15–25% est. (undisclosed; humanoid <1–2% prototype) | partial · humanoid=early-anticipation / 工业=mid-recovery · barrier med-high(在位)/low(humanoid) · caution EARLY-ANTICIPATION | @ $156.65 无 MOS(base 5y IRR +1.2%<<8%)；好零件商非 chokepoint；freshness PASS；buy_below ~$115 |
 
 > 预期(基于讨论):大概率**全 WATCH**——若真如此,这批的价值是**用一手数据证实"机器人现在没有可买的真瓶颈"**这个判断,并给每家写死"什么信号出现才从 WATCH 转 STARTER"。

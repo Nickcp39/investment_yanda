@@ -1,0 +1,61 @@
+{
+  "ticker": "ON",
+  "as_of": "2026-07-10",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-10",
+  "context_label": "cyclical_recovery_priced_in__robotics_is_an_option_not_cash",
+  "as_of_price": 95.96,
+  "as_of_market_cap": 37342000000,
+  "share_basis_note": "389.19M shares outstanding x $95.96 (2026-07-10 close, Yahoo chart API S005) = ~$37.34B. Price cross-checked penny-identical vs stockanalysis (S006) per freshness.json. 52-week range $44.56-$134.92: stock is +115% off its cycle-trough low and -28.9% off its 52-week high. Diluted share count ~405M (balance-sheet-derived); market-cap identity uses 389.19M and reconciles to the reported ~$37.3B.",
+  "batch_thesis_fields": {
+    "robotics_revenue_pct": "~0% (de minimis; design-wins/demos only, no dated robotics revenue/orders/units). Mix: auto ~53%, industrial+other ~32%, AI-datacenter POWER ~4% (~$500M 2026E, not robots), robotics ~0%.",
+    "robotics_demand_real_vs_anticipation": "ANTICIPATION. Real dated cash exists for autos ($797M +5%), industrial, and AI-DC POWER ($250M'25->$500M'26E); zero dated cash for robotics.",
+    "capital_cycle": {
+      "applicable": "no (robotics segment) / partial (core auto-industrial + SiC + AI-DC power)",
+      "stage": "robotics=n/a; core DEMAND=trough->early recovery; VALUATION=late (stock +115% off low, priced-in)",
+      "supply_barrier": "low-med (SiC oversupply built; Sony pressuring CIS; power tree contested; only mild barrier = SiC IDM + auto qualification)",
+      "read": "No robotics segment for the lens to bite on. Components onsemi would sell INTO robots are commodity (4+ rivals) -> supply responds -> low durability of excess return. On the core, demand is early-cycle but the stock already re-rated, so a new buyer faces late-cycle valuation, not the trough. Robotics timing/magnitude unknown - not yet a business.",
+      "caution": "PEAK-lean on VALUATION (naive-guard: visible recovery after +115% = consensus, not a trough entry) -> compress verdict toward WATCH. Core demand-trough does NOT auto-raise verdict without price MOS (absent)."
+    },
+    "real_bottleneck_vs_concept": "Robotics = CONCEPT/commodity (38.5% GM + 4 rivals + no switching cost falsifies pricing bottleneck; bottleneck node in robots is compute/actuation/software). Core auto/industrial = REAL but MED + cyclical (SiC IDM + auto design-in), not monopoly pricing.",
+    "value_split": "$95.96 buys ~92% cyclical auto/industrial power+sensing recovery (already re-rated, no MOS) + a small real AI-DC POWER ramp + a ~$0-cash robotics/Physical-AI concept option (Synaptics narrative). Price is buying the core recovery, not a robotics bottleneck."
+  },
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 1, "confidence": "med", "finding": "Q1'26 anchor fully primary (rev $1,513.3M +5%, PSG $736.6M/AMG $540.4M/ISG $236.3M, non-GAAP GM 38.5%, EPS $0.64, FCF $217.2M, Q2 guide $1,535-1,635M) + FY25 $6.0B/38.4% + balance sheet net debt -$603M + Synaptics terms. Price LIVE cross-checked penny-identical (Yahoo=stockanalysis $95.96), freshness PASS. Gaps: industrial/other exact split (O1), AI-DC $ + robotics design-win are B2-relayed mgmt (O2).", "drivers": ["S001", "S002", "S003", "S005", "S006"]},
+    {"module": "M2 Theme / Mechanism Thesis", "role": "context + conviction", "signal": 0, "confidence": "high", "finding": "Batch thesis fails for robotics: onsemi is a cyclical auto/industrial power+sensing chipmaker inflecting off a downcycle, NOT a robotics bottleneck. Robotics revenue ~0% (anticipation); the real live mechanism is auto recovery (+5% first up in 8 qtrs) + AI-datacenter POWER ($250M->$500M). Robotics/Physical-AI is a narrative option (Synaptics).", "drivers": ["S002", "S008", "S004"]},
+    {"module": "M3 Profit Pool / Durability", "role": "conviction", "signal": 0, "confidence": "med", "finding": "MED, cyclical moat: auto design-in switching cost + SiC IDM (in-house substrate) are real but contested (Wolfspeed/Infineon/China SiC oversupply; Sony pressuring ~1/3 CIS share). 38.5% GM = no monopoly pricing. No CUDA-style ecosystem lock. Operator El-Khoury 3/5 (professional turnaround, margin discipline, non-founder, large dilutive Synaptics bet). Durability caps size below Core.", "drivers": ["S003", "S009", "S004"]},
+    {"module": "M4 Financial Reality", "role": "conviction", "signal": 1, "confidence": "high", "finding": "Real recovery with clean owner earnings: capex-light (Q1 capex 1.4% of rev), FCF $217M/qtr ~$0.9B run-rate, net debt only -$603M (survives a double-dip), ~100% of FY25 FCF to buyback + new $6B authorization. Tempered by cyclicality, a 50% GM target that is not yet earned, and ~13% all-stock dilution from Synaptics.", "drivers": ["S001", "S002", "S007", "S004"]},
+    {"module": "M5 Inversion / Trap Test", "role": "risk", "signal": -1, "confidence": "med", "finding": "Not a solvency trap (net debt -$603M, no veto). The trap is valuation/timing dressed as a robotics story: a decent recovering cyclical priced as if recovery + robotics option are guaranteed, after a +115% move. Kill = GM stall <40%, SiC/CIS share loss, auto relapse, Synaptics dilution without accretion. Caps verdict at WATCH, does not veto.", "drivers": ["S009", "S004"]},
+    {"module": "M6 Price / Position / Monitor", "role": "price + output", "signal": -1, "confidence": "high", "finding": "At $95.96 ($37.3B) forward non-GAAP P/E ~33x, mid-cycle ~23x; base fair value ~$68 (16x $4.25 mid-cycle EPS). Even the BULL fair value ~$90 is below the current price -> NO MARGIN OF SAFETY. Stock -28.9% off its 52-week high but +115% off its low = re-rated, not a trough entry. Asymmetry negative (bull -6% / base -29% / bear -53%). PRICE + THESIS-STAGE is the binding constraint.", "drivers": ["S005", "S006"]}
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 72.0,
+  "starter_zone": "No new money at $95.96. A structured STARTER (~3-5%) opens on a pullback into ~$65-72 (base mid-cycle ~16x with a margin of safety) on an unchanged, still-recovering core thesis.",
+  "add_zone": "Scale toward 8-12% (cyclical ceiling, below Core) only into ~$50-60 (toward a cycle-low retest) AND/OR on confirmation: 2H'26 gross-margin step toward mid-40s + sustained auto/industrial growth + dated AI-DC-power/robotics cash.",
+  "trim_or_no_chase_zone": "Current $95.96 is above even the bull fair value (~$90) -> no chase; hard no-chase toward the $134.92 52-week high. Existing holders HOLD (business unimpaired, no kill fired); do not add new money here, do not trim.",
+  "binding_constraint": "PRICE + THESIS-STAGE. At $95.96 there is no margin of safety even to the bull case (~$90), and the robotics thesis that would justify a premium is ~$0 of cash (design-wins only). The core cyclical recovery is real but already re-rated +115% off its low. Completeness ~63% caps the ceiling at STARTER; price + robotics-as-option pull the applied verdict to WATCH.",
+  "kill_criteria": [
+    "Non-GAAP gross-margin expansion stalls (<40% through 2H'26) or reverses.",
+    "SiC and/or CMOS-image-sensor share/ASP loss to Sony / Wolfspeed / Infineon / Chinese entrants.",
+    "Automotive/industrial demand relapses (sequential revenue declines resume) -> cyclical double-dip.",
+    "Synaptics deal: ~13% dilution without on-track $200M synergy / EPS accretion, or a value-destructive re-cut / regulatory block.",
+    "Price stays >$90-95 with no estimate upgrade -> remains WATCH / no-chase."
+  ],
+  "runner_dissent": "The value instinct sees a genuine cyclical inflection with clean owner earnings (FCF ~$0.9B, net debt only -$603M), a disciplined turnaround operator, a real AI-datacenter POWER ramp, and buyback support -- and asks whether a small starter is warranted. The framework overrides to WATCH for two independent reasons: (1) PRICE -- at $95.96 there is no margin of safety even to the bull fair value (~$90); the stock has already re-rated +115% off its $44.56 low, so the cheap-cyclical entry is gone and a new buyer's asymmetry is negative. (2) THESIS-STAGE -- this is a batch about ROBOTICS bottlenecks, and onsemi's robotics revenue is ~0%; it is an auto/industrial power+sensing cyclical wearing a Physical-AI label, so it does NOT satisfy 'demand-exploded + supply-choked + already-earning.' This mirrors the PLAN.md prior: likely WATCH, and the value of the run is proving with primary data that the robotics content here is an option worth ~$0 of cash today. OPEN and left honest: exact industrial/other split (O1), A2 anchoring of AI-DC $ + robotics design-win (O2), proxy/share reconcile (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-05", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001097864/000109786426000014/on-20260403.htm"},
+    {"source_id": "S002", "public_date": "2026-05-04", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001097864/000114036126018868/ef20072220_ex99-1.htm"},
+    {"source_id": "S003", "public_date": "2026-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1097864/000114036126012903/ef20069670_ars.pdf"},
+    {"source_id": "S004", "public_date": "2026-06-25", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000817720/000114036126026434/ef20076748_ex99-1.htm"},
+    {"source_id": "S005", "public_date": "2026-07-10", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/ON"},
+    {"source_id": "S006", "public_date": "2026-07-10", "url_or_path": "https://stockanalysis.com/stocks/ON/"},
+    {"source_id": "S007", "public_date": "2026", "url_or_path": "https://investor.onsemi.com/news-releases/news-release-details/onsemi-announces-6-billion-share-repurchase-authorization"},
+    {"source_id": "S008", "public_date": "2026-05-04", "url_or_path": "https://finance.biggo.com/news/US_ON_2026-05-04"},
+    {"source_id": "S009", "public_date": "2026-05-11", "url_or_path": "https://247wallst.com/technology-3/2026/05/11/onsemi-is-facing-a-continued-slowdown-in-sic-and-greater-competition-in-cis-from-sony/"}
+  ]
+}

@@ -1,0 +1,5 @@
+scenario,2026E_rev_bil,2028E_rev_bil,midcycle_nongaap_eps,exit_pe,fair_value,note
+bear,6.1,6.0,3.20,14,44.80,"double-dip / SiC oversupply + Sony CIS share loss; margin stalls ~40%; ~52wk-low retest"
+base,6.4,7.5,4.25,16,68.00,"cyclical recovery holds; GM to mid-40s; AI-DC power ~$500M->$1B; Synaptics closes accretive by ~2028; mid-cycle 16x"
+bull,6.6,8.5,5.30,17,90.10,"full recovery to prior peak EPS + 50% GM target + AI-DC power compounding; 17x"
+as_of_price,,,,,95.96,"2026-07-10 close (Yahoo S005 + stockanalysis S006). Above even the bull fair value -> no margin of safety"

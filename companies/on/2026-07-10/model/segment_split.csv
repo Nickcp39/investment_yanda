@@ -1,0 +1,7 @@
+bucket,q1_2026_usd_m,pct_of_rev,demand_type,capital_cycle_read
+automotive,797,53,real-cash cyclical (inflecting +5% YoY),trough->early recovery
+industrial_and_other,480,32,real-cash cyclical + energy storage +40% 2026E,early recovery
+ai_datacenter_power,~62,~4,real-cash growing (~$250M'25->$500M'26E; POWER not robots),mid (commodity power tree)
+robotics_embodied_ai,~0,~0,ANTICIPATION (design-wins/demos only),n/a (no segment)
+total,1513,~100,,
+note,,,"AI-DC quarterly $ estimated from ~$250M/yr 2025 run-rate; annual figure is the sourced one. Industrial vs other exact split OPEN (O1); auto $797M is exact (S002).",
