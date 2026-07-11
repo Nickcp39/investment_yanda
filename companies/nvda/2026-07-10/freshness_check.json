@@ -1,0 +1,82 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-07-10",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 210.96,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 210.9600067138672,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 210.96
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 210.96
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-07-10"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "161.61 <= 210.96 <= 236.54"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+30.5% off low, -10.8% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "24391M x 210.96 = 5.146T vs card 5.146T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -10.8% vs card-implied -10.8% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 210.96 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [export_control_status]",
+      "status": "WARN",
+      "detail": "newest source 2026-03-18 is 114d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-05-20 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [export_control_status] -newest source 2026-03-18 is 114d before as_of (> 45d) -confirm it is still the latest authoritative event",
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-05-20 is 51d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

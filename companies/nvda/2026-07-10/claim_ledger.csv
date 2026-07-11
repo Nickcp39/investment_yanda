@@ -1,0 +1,10 @@
+source_id,claim,value,unit,as_of,retrieved_at,source_type,destination,reliability_note
+S106,NVDA close 2026-07-10 (last <= as_of),210.96,USD,2026-07-10,2026-07-10,B1,EVIDENCE,"Yahoo chart daily series re-fetch; cross-verified vs stockanalysis (S108) 210.96; REFRESH of 06-20 210.69 (+0.13%, flat)"
+S108,NVDA price cross-check (2nd independent source),210.96,USD,2026-07-10,2026-07-10,B1,EVIDENCE,"stockanalysis.com; market cap ~5.11T; required for >=2-source freshness gate"
+S106,NVDA 52-week high,236.54,USD,2026-07-10,2026-07-10,B1,EVIDENCE,price -10.8% below high (unchanged ATH)
+S106,NVDA 52-week low,161.61,USD,2026-07-10,2026-07-10,B1,EVIDENCE,"price +30.5% ABOVE this low; old 142.03 low rolled OUT of trailing 52wk window (stockanalysis intraday; Yahoo adjclose 163.85)"
+S101,Automotive market-platform revenue FY26 (incl. DRIVE autonomous + robotics),2350,USD_millions,2026-01-25,2026-07-10,B1,EVIDENCE,"+39% Y/Y; ~1.09% of total revenue; Q4 FY26 604M; mostly auto DRIVE design-win, NOT robots; retrieved via search, anchors to FY26 8-K"
+S102,Q1 FY27 Edge Computing market platform (incl. PC/console/workstation/AI-RAN/robotics+automotive),6369,USD_millions,2026-04-26,2026-07-10,A2,EVIDENCE,"CFO commentary market-platform table; robotics is a SUBSET of this bucket, dominated by gaming/PC; +10% Q/Q +29% Y/Y"
+S102,Q1 FY27 Data Center market platform,75246,USD_millions,2026-04-26,2026-07-10,A2,EVIDENCE,"~92% of total; Hyperscale 37869 + AI Clouds/Industrial/Enterprise 37377"
+S103,NVDA robotics products/ecosystem (Jetson Thor/T4000 module $1999@1k, IGX Thor; Isaac/GR00T/Cosmos/Omniverse; customers Boston Dynamics/Caterpillar/Franka/LG/NEURA),NA,NA,2026,2026-07-10,B1,SENTIMENT,"dated PRODUCT/ecosystem events (real), NOT dated robotics REVENUE; humanoid ramp is anticipation not cash"
+S107,Robotics/embodied-AI standalone revenue,NA,NA,2026-07-10,2026-07-10,OPEN,OPEN_QUESTION,"NVDA does NOT break out robotics separately; buried in Automotive (~1%) / Edge Computing; estimate <1% (~0.3-0.5%)"

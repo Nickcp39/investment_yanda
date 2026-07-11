@@ -1,0 +1,96 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-07-10",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate, REFRESH of 2026-06-20. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (Q1 FY27 / FY26 line items) is NOT here -- it rides the dated-source claim_ledger discipline, unchanged from 06-20.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 210.96,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-10", "value": 210.96},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-10", "value": 210.96}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 5145525000000,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-10", "value": 5110000000000},
+        {"source_name": "derived", "url": "24391M shares x 210.96", "fetched_at": "2026-07-10", "value": 5145525000000}
+      ],
+      "cross_check_delta_pct": 0.69,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 236.54,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-10", "value": 236.54},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-10", "value": 236.54}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 161.61,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-10", "value": 161.61},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-10", "value": 163.85}
+      ],
+      "cross_check_delta_pct": 1.39,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 24391,
+      "unit": "millions",
+      "as_of": "2026-04-26",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q1fy27", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm", "fetched_at": "2026-07-10", "value": 24391},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-10", "value": 24220}
+      ],
+      "cross_check_delta_pct": 0.7,
+      "pass": true
+    },
+    {
+      "field": "export_control_status",
+      "is_quantitative": false,
+      "value": "China H200: USG reinstated a limited H200 export license to specific China customers (2026-02); NVDA received H200 orders and is restarting manufacturing (Huang, GTC 2026-03). Q1 FY27 China DC shipments = $0 and Q2 guide still EXCLUDES China DC compute (conservative) -> recoverable optionality the guide does not count, not a permanent loss. No newer authoritative event found this refresh; carried from 06-20 (T6 WARN: >45d old).",
+      "as_of": "2026-03",
+      "sources": [
+        {"source_name": "reuters", "url": "USG reinstates limited H200 license to China", "public_date": "2026-02-15", "fetched_at": "2026-07-10"},
+        {"source_name": "nvidia_gtc", "url": "GTC 2026 Huang remarks: H200 orders from China, restarting manufacturing", "public_date": "2026-03-18", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 FY27 revenue guidance $91.0B +/-2%, EXCLUDES any China DC compute revenue.",
+      "as_of": "2026-05-20",
+      "sources": [
+        {"source_name": "sec_8k_q1fy27", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm", "public_date": "2026-05-20", "fetched_at": "2026-07-10"},
+        {"source_name": "cnbc", "url": "Nvidia Q1 FY2027 earnings recap", "public_date": "2026-05-20", "fetched_at": "2026-07-10"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-07-10",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-10",
+  "context_label": "exceptional_bottleneck_no_margin_of_safety",
+  "as_of_price": 210.96,
+  "as_of_market_cap": 5145525000000,
+  "share_basis_note": "REFRESH of 2026-06-20. 24,391M diluted shares (Q1 FY27 weighted) x $210.96 (2026-07-10 close, last <= as_of) = ~$5.145T. Price from Yahoo chart API re-fetch [S106], cross-checked vs stockanalysis [S108] (both $210.96) per freshness.json. Price essentially flat vs 06-20 ($210.69, +0.13%) -> valuation conclusion UNCHANGED. FILED financials (Q1 FY27 / FY26) carried forward unchanged.",
+  "batch": "ai_robotics_2026-07-10",
+  "robotics_thesis": {
+    "robotics_revenue_pct": "<1% (~0.3-0.5%, UNDISCLOSED). NVDA does not break out robotics separately; it is a subset of the Automotive market platform (FY26 $2.35B = ~1.09% of revenue [S101]), which is itself mostly autonomous-vehicle DRIVE design-wins, not robots. Data Center (AI compute) = ~92% [S102]. Buying NVDA is an AI-datacenter compute bet, NOT robotics alpha.",
+    "demand_real_vs_anticipation": "MOSTLY ANTICIPATION for robotics. Real-now cash in the segment = auto DRIVE ($2.35B FY26, +39% [S101]) -- but that is autos, not robots, and ~1%. Robotics itself = dev-kit/module hardware (Jetson Thor/T4000 $1,999/unit, IGX Thor) + Isaac/GR00T/Cosmos platform + named ecosystem (Boston Dynamics, Caterpillar, Franka, LG, NEURA) [S103] -- dated PRODUCT/ecosystem events, NOT dated robotics revenue. Humanoid ramp is option value, not cash.",
+    "capital_cycle": {
+      "applicable": "partial / largely N/A (robotics segment)",
+      "stage": "early / pre-inflection (turn timing unknown)",
+      "supply_barrier": "high (Jetson compute + CUDA/Isaac/Omniverse software stack) BUT segment earns ~no excess return yet",
+      "read": "Robotics segment is too small and too early to show a supply-responsive excess-return imbalance for capital to compete away -- the capital-cycle mechanism is basically N/A here (no high return to attract supply). The lens's real object for NVDA is the DATA CENTER/GPU segment (partial / late? / CUDA-high vs raw-compute-low), unchanged from 06-20.",
+      "caution": "NONE material for robotics (not late/peak -- it is unmonetized option, not a top). Does not add or subtract size."
+    },
+    "real_bottleneck_vs_concept": "Real moat at the PLATFORM/developer level (Jetson + CUDA + Isaac/GR00T switching cost, falsifiable) -- NOT pure concept. BUT at current revenue scale it is still mostly CONCEPT/OPTION, not a monetized bottleneck. The proven, cash-generating bottleneck is AI-datacenter compute, not robotics.",
+    "option_vs_core_split": "At $210.96 / $5.145T, ~100% of the market cap = the AI-datacenter compute business (~92% rev, ~28x fwd). The robotics/embodied-AI piece is a near-free embedded call: ~nil current cash, not separately valued. You pay NO robotics premium and get NO robotics alpha as a buyer. Conversely, for the batch's 'auto/industrial/robotics core' framing, that is only ~1% of NVDA -> buying NVDA for robotics exposure is 99% buying AI compute (wrong vehicle for pure robotics; see TER/ON/NOVT)."
+  },
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 FY27) + FY26 baseline fully primary-sourced and carried forward unchanged (revenue $81.6B, DC $75.2B +92%, GM 74.9%, FCF $48.6B, Q2 guide $91B). LIVE price re-fetched 2026-07-10 = $210.96 and cross-checked vs 2 independent sources (freshness.json). Added robotics segment sourcing (Automotive FY26 $2.35B [S101], market-platform table [S102], products [S103]). Gaps (custom-silicon quant share, standalone robotics revenue, 10-K, proxy) are haircuts.",
+      "drivers": ["S001", "S002", "S102", "S106", "S108"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Full-stack accelerated compute (GPU + CUDA + NVLink/InfiniBand/Spectrum-X + systems) is the bottleneck the AI industry routes through. Demand is a multi-quarter primary-sourced forced update: DC $75.2B (+92%), networking $14.8B (+199%), Q2 guide $91B. exceptional_bottleneck. Robotics is NOT the mechanism being bought -- it is <1% of revenue and mostly anticipation (robotics_lens.md).",
+      "drivers": ["S001", "S002", "S102"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Captures the largest AI-compute profit pool via CUDA lock-in + full-stack + networking (+199%). Operator grade 4/5 (30y founder Huang, one-share-one-vote, capex-light). $80B buyback + dividend $0.01->$0.25 = real return but executed near-high (-10.8% off ATH), NOT cheap. Durability HIGH on training, MED on inference (custom-silicon battleground). Robotics platform moat is real but unmonetized. Cyclical -> size capped below Confirmed.",
+      "drivers": ["S001", "S003", "S103"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Owner earnings unusually clean: capex-light (FY26 $6.1B), FCF=OE run-rate ~$182B, net cash ~$72B (fortress). GAAP net income inflated ~$30.2B by marketable-equity gains -> use operating owner earnings. Bridge CLOSES; uncertainty is run-rate durability + entry price, not the bridge. Unchanged from 06-20 (FILED).",
+      "drivers": ["S001", "S004"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural breakage: thesis durability intact (bottleneck real, +92%/+199%), balance sheet survives the bear (net cash $72B). pull-forward + custom-silicon = SIZE control + kill monitors, not a hard veto. China = recoverable optionality (H200 license reinstated 2026-02, orders 2026-03), Q2 guide conservatively excludes it. Robotics adds NO downside (unmonetized option). Capital-cycle caution on robotics = NONE (not a top).",
+      "drivers": ["S002", "S010", "S011"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $210.96 ($5.145T), forward P/E ~28x, starting OE yield ~3.5%, base 5y IRR +4.7% < 8% hurdle -> PRICE IS THE BINDING CONSTRAINT (no margin of safety). Stock -10.8% off ATH ($236.54), +30.5% off 52wk low ($161.61) -- upper part of range. Asymmetry does not favor a starter: bull +18.6% / base +4.7% / bear -17.6%. 8%-hurdle-neutral entry ~$181. Robotics option adds ~nil to valuation. Price flat vs 06-20 -> verdict unchanged.",
+      "drivers": ["S106", "S108"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 181.0,
+  "starter_zone": "No new money at $210.96. A structured STARTER (~3-5%) opens on a pullback into ~$155-181, where base 5y IRR climbs back above the 8% hurdle on an unchanged thesis.",
+  "add_zone": "Scale toward 8-12% only into ~$142-155 (base IRR ~12-14%) AND/OR on confirmation (Q2/Q3 FY27 revenue meeting the $91B guide + DC margin/share holding). Cyclicality caps the ceiling below Core.",
+  "trim_or_no_chase_zone": "Current $210.96 is ABOVE the ~$181 no-margin-of-safety line -> no chase; hard no-chase toward the $236.54 ATH. Existing holders HOLD an exceptional compounder; do not add new money here, do not trim (business unimpaired, no kill criterion fired).",
+  "binding_constraint": "PRICE (no MOS). At $210.96 base 5y IRR +4.7% < 8% hurdle and the stock is only -10.8% off its ATH. The exceptional AI-compute bottleneck is intact and the owner-earnings bridge is clean, but valuation is the go/no-go. Robotics does NOT change this: it is <1% of revenue and mostly anticipation, adding no buyable increment at this price. Completeness ~65% independently caps the ceiling at STARTER; price gate binds harder -> WATCH.",
+  "kill_criteria": [
+    "Revenue materially misses the $91B Q2 guide, OR DC revenue prints sequential declines, OR gross margin breaks below ~65%.",
+    "Credible evidence of large-scale CSP/custom-silicon design wins structurally eroding DC share (the ONLY escalate-to-veto path).",
+    "Large inventory / purchase-commitment write-down (FY26 had a $4.5B H20 precedent).",
+    "Price stays above ~$181 with no offsetting estimate raise -> remains WATCH / no-chase (already the case at $210.96).",
+    "Huang key-man / succession shock -> lower durability ceiling."
+  ],
+  "watch_to_starter_trigger": "Price pullback into ~$155-181 (base 5y IRR back >= 8% hurdle) on an UNCHANGED thesis. Robotics-specific trigger to re-rate the option: NVDA breaks out robotics/embodied-AI as a standalone revenue line with sustained +xxx% Y/Y (concept -> monetized bottleneck) -- until then it stays a free call, not a buy reason.",
+  "runner_dissent": "Same as 06-20, reaffirmed. Bull instinct: exceptional cleanly-financed bottleneck (FCF=OE ~$182B, net cash $72B, +92% DC), bull 5y IRR +18.6% -- why not a starter? Framework overrides to WATCH because PRICE is the constraint: base 5y IRR +4.7% < 8% hurdle, stock -10.8% off ATH, and a single $91B guide cannot underwrite paying up for a possibly cycle-peak run-rate. On the batch thesis specifically: the robotics narrative is a genuine platform position but NOT a buyable robotics bottleneck at NVDA -- it is <1% of revenue, mostly anticipation, and contributes ~nil to the price. Buying NVDA here is an AI-compute valuation call with no MOS, plus a free robotics lottery ticket -- not robotics alpha. OPEN: custom-silicon quantitative share (O4, blocking), standalone robotics revenue (O7), humanoid ramp magnitude (O8), 10-K (O1), proxy (O3), China H200 magnitude (O5).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm"},
+    {"source_id": "S002", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27cfocommentary.htm"},
+    {"source_id": "S003", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"},
+    {"source_id": "S004", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"},
+    {"source_id": "S101", "public_date": "2026-02-01", "url_or_path": "NVIDIA Automotive market-platform revenue FY26 $2.35B (+39% Y/Y, Q4 $604M) ~1.09% of revenue; retrieved 2026-07-10, anchors to FY26 8-K q4fy26pr.htm"},
+    {"source_id": "S102", "public_date": "2026-05-20", "url_or_path": "Q1 FY27 CFO commentary market-platform table: DC $75,246M / Edge Computing $6,369M (incl robotics+auto) / Total $81,615M (raw/_q1fy27cfo.html)"},
+    {"source_id": "S103", "public_date": "2026", "url_or_path": "NVIDIA robotics products/ecosystem: Jetson Thor/T4000, IGX Thor, Isaac/GR00T/Cosmos, customers Boston Dynamics/Caterpillar/Franka/LG/NEURA (media/newsroom, B1; product events not revenue)"},
+    {"source_id": "S106", "public_date": "2026-07-10", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA"},
+    {"source_id": "S108", "public_date": "2026-07-10", "url_or_path": "https://stockanalysis.com/stocks/nvda/"},
+    {"source_id": "S010", "public_date": "2026-02-15", "url_or_path": "USG reinstates limited H200 export license to China (Reuters/news; retrieved 2026-07-10)"},
+    {"source_id": "S011", "public_date": "2026-03-18", "url_or_path": "NVIDIA GTC 2026 -- Huang: H200 orders received from China, restarting manufacturing (retrieved 2026-07-10)"}
+  ]
+}
