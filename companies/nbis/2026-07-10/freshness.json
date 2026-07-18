@@ -1,0 +1,102 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-07-10",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, LIGHT REFRESH of 2026-06-18 (not a rebuild). Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (FY2025 20-F / Q1'26 6-K line items -- shares, RPO, deferred rev, capex, cash/debt) is NOT re-fetched here; it rides the dated-source claim_ledger discipline unchanged from 06-18 (NBIS Q2 2026 6-K not yet out at as_of -> no new filed earnings). REFRESH CONTEXT: the price fell from $286.69 (06-18) to $219.65 (07-10 close, last <= as_of), -23.4%, after a Meta 'sell excess compute cloud' report (~2026-07-01, Bloomberg 'people familiar' -- SENTIMENT/lead, not a confirmed fundamental change; the $27B Meta contract is intact). Path: peaked $276.17 (06-30), dropped on 07-01, troughed intraday ~$195.19 (07-07), recovered to $219.65 (07-10). The price is now -26.7% off the 52wk high -> low_high_hug_justified=false (no longer 'priced for perfection at the high'; the WATCH driver is now 'still above the buy-below band', not 'hugging the ATH').",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 219.65,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "hug_reason": "Not hugging either extreme: price $219.65 is -26.7% off the 52wk high $299.86 and +348% above the 52wk low $49.00. Independently confirmed by Yahoo chart last-close re-fetch ($219.65) and websearch historical ($219.65, +1.60% on the day) at 0.0% delta. Unlike the 06-18 run (which was justifiably at the high), this refresh sits mid-range after a -23.4% drawdown.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS", "fetched_at": "2026-07-17", "value": 219.65},
+        {"source_name": "websearch", "url": "https://www.google.com/search?q=NBIS+stock+closing+price+July+10+2026 (historical close, +1.60% on the day)", "fetched_at": "2026-07-17", "value": 219.65}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 55769135000,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "253.9M basic shares x 219.65", "fetched_at": "2026-07-17", "value": 55769135000},
+        {"source_name": "yahoo_shares_x_price", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS (basic shares 253.9M from Q1'26 6-K)", "fetched_at": "2026-07-17", "value": 55769135000}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Basic-shares market cap (253.9M x 219.65 = $55.77B). Diluted weighted-avg 308.97M -> ~$67.87B; EV ~$54.92B basic / ~$67.02B diluted (carrying net cash ~+$0.85B, FILED Q1'26, unchanged). Card as_of_market_cap uses the basic figure so the T3 identity reconciles exactly. NOTE: stockanalysis live mcap ($45.4B) reflects a mid-July current quote (~$177), NOT the 07-10 as_of close -- not used here.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 299.86,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS (meta.fiftyTwoWeekHigh)", "fetched_at": "2026-07-17", "value": 299.86},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/ (52-week range)", "fetched_at": "2026-07-17", "value": 299.86}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Intraday 52wk high $299.86 (Yahoo meta = stockanalysis, agree). Set during the 06-30 run to $276 area / prior June ATH region. Current $219.65 is -26.7% off this -> mid-range, not a near-high reading.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 49.00,
+      "unit": "USD",
+      "as_of": "2026-07-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS (meta.fiftyTwoWeekLow)", "fetched_at": "2026-07-17", "value": 49.00},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/ (52-week range)", "fetched_at": "2026-07-17", "value": 49.00}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "52wk low $49.00 (set ~2025-07; the old $43.89 intraday low rolled out of the trailing window). Current $219.65 is +348% above this -> emphatically NOT a low-hug.",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 253.9,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "nbis_20f_q1_6k", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845 (Q1 2026 6-K / FY2025 20-F basic shares)", "fetched_at": "2026-07-17", "value": 253.9},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nbis/", "fetched_at": "2026-07-17", "value": 256.04}
+      ],
+      "cross_check_delta_pct": 0.84,
+      "note": "Basic shares 253.9M (Mar 31 2026, FILED, carried from 06-18); diluted weighted-avg 308.97M. stockanalysis now shows 256.04M (mild drift, likely small ATM/SBC issuance since Q1'26 -- immaterial to the market-cap identity, which uses the FILED basic figure). +~27% dilution since relisting; convert/warrant overhang on top.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "AS-OF business state at 2026-07-10, most-recent authoritative source still = Q1'26 6-K shareholder letter (2026-05-13); NBIS Q2 2026 6-K NOT yet out (expected ~late July / Aug 2026). CARRIED FORWARD unchanged: Microsoft up to $17.4B->$19.4B through Oct 2031; Meta ~$2.88B (Dec 2025, take-or-pay) PLUS up to ~$27B (Mar 2026: $12B firm Vera Rubin from early 2027 + $15B optional/resaleable) -- the $27B Meta contract is INTACT; RPO (audited) $33,585M at Q1'26; deferred revenue $4,778M; exit ARR $1.9B (Mar'26); YE2026 exit-ARR target $7-9B; FY2026 capex guided $20-25B; active (live) power last disclosed ~170MW YE2025 (Q1'26 & Q2'26 figures still WITHHELD -- the conversion-proof metric). NEW SINCE 06-18 (SENTIMENT/lead, NOT a filed change): (1) ~2026-07-01 a Bloomberg 'people familiar' report that Meta is standing up a cloud business to SELL EXCESS compute -> spotlights the pre-existing customer-concentration / K-B risk (a top-2 anchor could become a competing reseller); treated as an ELEVATED K-B watch, not a fundamental downgrade -- the Meta contract is unbroken. (2) Company build-out reported ON-TRACK/AHEAD: contracted power 3.5GW -> target >4GW; Missouri/PA/Finland sites on schedule -- no delay. PEER READ-THROUGH: Micron Q3 FY2026 (reported ~2026-06-24) showed HBM sold out through 2026 with demand > supply and HBM4 ramping for NVIDIA Vera Rubin -- i.e. the HIGH-barrier upstream (memory) stays tight, which does NOT relieve the LOW-barrier neocloud-RENTAL oversupply signal that NBIS sits in (capital-cycle lens).",
+      "as_of": "2026-05-13",
+      "sources": [
+        {"source_name": "nbis_q1fy26_6k_shl", "url": "https://assets.nebius.com/.../Nebius%20SHL_Q1%202026.pdf", "public_date": "2026-05-13", "fetched_at": "2026-07-17"},
+        {"source_name": "bloomberg_meta_cloud_report", "url": "Bloomberg 'people familiar' -- Meta to sell excess compute via a cloud business (SENTIMENT/lead)", "public_date": "2026-07-01", "fetched_at": "2026-07-17"},
+        {"source_name": "micron_q3fy26_readthrough", "url": "Micron Q3 FY2026 results (HBM sold out 2026, HBM4 for NVIDIA Vera Rubin) -- capital-cycle read-through", "public_date": "2026-06-24", "fetched_at": "2026-07-17"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Unchanged from 06-18: Russian-legacy / regulatory tail (only material legal overhang, low-medium severity, mostly reputational) -- ex-Yandex N.V. remnant after Russia-asset divestiture closed 2024-07-15; Volozh removed from EU sanctions 2024-03-13. Residual divestiture indemnities / contingent liabilities NOT confirmed from primary 20-F text (open item). FY2024-2025 ADVERSE ICFR opinion (open material weaknesses in PP&E and TripleTen rev-rec; auditor Reanda -> Deloitte FY2026) is a FILED fact carried on the ledger. No new active securities litigation identified this refresh.",
+      "as_of": "2026-04-30",
+      "sources": [
+        {"source_name": "nbis_fy2025_20f", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845 (FY2025 Form 20-F)", "public_date": "2026-04-30", "fetched_at": "2026-07-17"},
+        {"source_name": "eu_sanctions_delisting_coverage", "url": "EU Official Journal / press coverage (Volozh removed from sanctions 2024-03-13; Russia assets sold 2024-07-15)", "public_date": "2024-07-15", "fetched_at": "2026-07-17"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+field,value,unit,note
+as_of_price,979.30,USD,2026-07-10 last close <= as_of (Yahoo chart API); cross-checked stockanalysis 979.30 (delta 0.0pct); byte-identical to decision_card / valuation / freshness gate
+prior_as_of_price,1184.88,USD,2026-06-22 prior card (intraday last print); refresh delta -17.3pct
+market_cap,1106609000000,USD,1130M shares x 979.30
+enterprise_value,1035000000000,USD,net-cash (cash+inv far exceeds debt post-Q3 record FCF) reduces EV below mcap; approx
+shares_out_millions,1130,millions,stockanalysis basic; ~1145M diluted-weighted per Q3 GAAP NI/EPS
+trailing_pe,22.2,x,on TTM EPS ~44 (exploded post-Q3; was 53x on TTM 21.18)
+forward_pe_runrate,7.9,x,annualizing Q4 non-GAAP guide 31.00/qtr -> ~124 EPS; the false-cheap-on-peak-earnings trap
+ttm_eps,44,USD,approx TTM to FQ3-26 (drop Q3FY25 ~1.7 add Q3FY26 GAAP 24.67); modeled
+q3fy26_actual_rev_musd,41460,USD millions,Q3 FY26 ACTUAL (reported 2026-06-24); vs 33500 guide = +24pct beat; +74pct QoQ; +346pct YoY
+q3fy26_actual_gm,84.9,percent,Q3 FY26 non-GAAP GM (vs ~81pct guide); record
+q3fy26_actual_eps,25.11,USD,Q3 FY26 non-GAAP EPS (GAAP 24.67); vs 19.15 guide = +31pct beat
+q4fy26_guide_rev_musd,50000,USD millions,Q4 FY26 guide +/- 1000; beat-and-RAISE
+q4fy26_guide_gm,86,percent,Q4 FY26 guided gross margin (UP again)
+q4fy26_guide_eps,31.00,USD,Q4 FY26 non-GAAP EPS guide +/- 1.00 (GAAP 30.73)
+avg_analyst_target,1300,USD,raised sharply post-Q3 (~1270-1317 consensus; high 2000 Cantor; low 385 Citi stale-Jan); price now ~25-33pct BELOW target (was ABOVE) -- momentum/run-rate based
+,,,
+SCENARIO,normalized_eps_usd,pe_on_normalized,note
+bear_normalized,11,15,margins revert toward historical mid-cycle 30-45pct GM; HBM premium partly competed away by oversupply/HBM4 flood
+base_normalized,22,20,HBM structurally lifts through-cycle GM to ~45-55pct; 16 multi-year SCAs add durability evidence (qual bias toward base+); high-quality cyclical not secular compounder
+bull_normalized,38,25,AI demand keeps HBM scarce multi-year; GM holds 55pct+ through cycle; semi-secular re-rate sticks
+,,,
+VALUATION_BAND,price_usd,basis,note
+fair_value_bear,165,15x bear-normalized 11,cycle rolls / oversupply / HBM4 share loss -> mid-cycle reversion
+fair_value_base,440,20x base-normalized 22,HBM premium durable but cyclical; fair multiple for a high-quality cyclical
+fair_value_bull,950,25x bull-normalized 38,AI-memory secular re-rate sticks; roughly the honest bull ceiling (NOT the momentum target)
+current_price,979.30,spot,now ~AT the bull normalized fair value (was ABOVE it at 1184.88); still 2.23x base fair
+,,,
+MOS_ASSESSMENT,value,unit,note
+mos_vs_base_fair,-55,percent,(440-979.30)/979.30; price is ~2.23x base fair value -> still NO margin of safety
+mos_vs_bull_fair,-3,percent,(950-979.30)/979.30; price now roughly AT bull fair (improved from -20pct / +25pct-above at prior)
+downside_to_bear_fair,-83,percent,(165-979.30)/979.30; drawdown if the cycle rolls to mid-cycle reversion
+irr_5y_bear,-30.0,percent/yr,5y price->bear-fair convergence (0 div); brutal
+irr_5y_base,-14.8,percent/yr,5y price->base-fair convergence
+irr_5y_bull,-0.6,percent/yr,5y price->bull-fair convergence ~0pct even in the honest bull case -> the no-MOS verdict quantified
+buy_below_starter,650,USD,STARTER only on a deep pullback toward ~25-30x base-normalized OR a confirmed through-cycle durability re-rate; unchanged
+buy_below_add,440,USD,base fair value; scale only toward normalized-fair on confirmed through-cycle margins

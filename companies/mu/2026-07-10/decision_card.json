@@ -1,0 +1,103 @@
+{
+  "ticker": "MU",
+  "as_of": "2026-07-10",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-10",
+  "refresh_of": "companies/mu/2026-06-22",
+  "refresh_type": "LIGHT REFRESH (re-price + fold in Q3 FY26 actuals); prior analysis carried forward",
+  "context_label": "cyclical_inflection_at_cycle_peak_no_margin_of_safety",
+  "as_of_price": 979.30,
+  "as_of_market_cap": 1106609000000,
+  "share_basis_note": "~1,130M shares x $979.30 = ~$1.107T (stockanalysis mcap ~$1.107T; identity 0.04%). Price = Yahoo last daily close <= as_of [S5], cross-checked vs stockanalysis history $979.30 (delta 0.0%) per freshness.json. as_of 2026-07-10 is a CLOSED session. -17.3% vs the prior card's $1,184.88 (2026-06-22). CRITICAL: Q3 FY2026 earnings are NOW OUT (reported 2026-06-24, after the prior as_of) -> Q3 FY2026 is the latest REPORTED quarter, folded in here (record $41.46B rev / 84.9% non-GAAP GM / $25.11 non-GAAP EPS; Q4 guide $50.0B / ~86% GM / $31.00 EPS).",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Evidence quality high and IMPROVED vs prior: the imminent binding event (Q3 FY2026 print) has RESOLVED and is folded in. Q3 FY2026 (reported 2026-06-24): revenue $41.46B (vs $33.5B guide = +24% beat, +74% QoQ, +346% YoY), non-GAAP GM 84.9% (vs ~81% guide), non-GAAP EPS $25.11 / GAAP EPS $24.67 (vs $19.15 guide), OCF $25.39B, adj FCF $18.3B, capex $7.1B; Q4 FY26 guide $50.0B/~86%GM/$31.00 EPS -- a beat-and-RAISE. Price 2-source-verified to the penny ($979.30 Yahoo daily close = stockanalysis history, delta 0.0%). CAVEAT (honest, light-refresh): the Q3 line items here are sourced from same-day aggregators [S14 stocktitan, S15 cnbc] summarizing the official 8-K/call, NOT yet re-fetched from SEC EDGAR primary -- a follow-up direct-8-K verification is the open evidentiary item (magnitude of the beat is corroborated across 2+ aggregators). Binding uncertainties remain FORWARD (through-cycle durability) and MODELED (normalized EPS), not evidentiary.",
+      "drivers": ["S5", "S14", "S15", "S4"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Theme REINFORCED. The AI memory bottleneck is not just intact -- it accelerated: DRAM revenue hit a record $31.3B (76% of revenue, +343% YoY, +67% QoQ), Micron is shipping HBM4 in HIGH VOLUME (advancing HBM4E toward 2027), and it signed 16 multi-year Strategic Customer Agreements (SCAs) that management frames as materially enhancing the 'durability and predictability' of revenue -- a structural shift further away from quarterly commodity pricing. This is genuine, primary-in-substance demand evidence, not narrative. UNCHANGED caveat: Micron is a SUPPLIER INTO the bottleneck (NVIDIA owns it), still #3 in HBM, customers multi-source, and memory bottlenecks have historically resolved via supply response. NEW cross-current: a memory-sector bear market (late-June/July) driven by SK Hynix's cautious HBM4-shipment commentary is the market pricing an eventual supply/cycle response BEFORE MU's own numbers show it.",
+      "drivers": ["S14", "S15", "S9", "M1"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Bifurcated pool, UNCHANGED structurally but with modest new durability evidence. Half A (HBM + leading-node DC DRAM): Q3 Core Data Center GM 87%, Cloud Memory 83% -- extraordinary, contracted, capacity-allocated, HBM4 shipping in volume, and now backstopped by 16 multi-year SCAs (the clearest evidence yet that HBM's economics may lift the through-cycle floor). Half B (commodity DRAM/NAND, still the majority of bits): fundamentally cyclical. KEY CAVEAT unchanged: Micron is #3 in HBM behind SK Hynix and Samsung; HBM4/HBM4E share is the swing variable. Operator grade 4/5 (vindicated founder-grade team, clean governance) raises conviction WITHIN the cyclical band but per METHODOLOGY does not lift the structural ceiling above it -- record margins do not convert commodity memory into a secular compounder. Net +1: real, growing, higher-quality pool + genuine multi-year contracts, still majority-commodity and #3-in-HBM with through-cycle durability unproven across a full cycle.",
+      "drivers": ["S14", "S9", "O01", "O04", "O05"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Accounting CONFIRMS with NO trailing-earnings fraud; CYCLE POSITION is now even MORE the caveat. Q3 FY26 was a blowout: rev $41.46B, non-GAAP GM 84.9% (GAAP NI $28.24B -- a SINGLE quarter more than 3x the entire FY2022 prior-cycle peak of $8.7B), OCF $25.39B, adj FCF $18.3B on $7.1B capex -- overwhelmingly cash-backed, GAAP/non-GAAP gap tiny. Balance sheet fortress-plus (record FCF drives deeper net-cash; survives any down-cycle -- no solvency path). BUT margins are now at an ALL-TIME RECORD and guided HIGHER still (~86% Q4) -- these are the most extended peak-leg economics in memory history, FAR above any conceivable mid-cycle (30-55% GM), so the reversion risk is LARGER, not smaller. Two structural tells: capex stepped up to $7.1B/qtr (from ~$5B) and is guided higher (the 'build into the peak' watch-item, though demand-backed by SCAs). Value off NORMALIZED (~$11 bear / ~$22 base / ~$38 bull), not the ~$100-124 annualized run-rate. +1 on quality/confirmation, strong cycle-position warning.",
+      "drivers": ["S14", "S15", "S4"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "NO HARD VETO (balance sheet survives -> deeper net-cash; moat intact/widening -> not structural decline). The dominant loss path is now PARTLY PLAYING OUT: the peak-multiple-on-peak-earnings risk the prior card flagged has begun to materialize as a MULTIPLE de-rating -- the stock fell -17% (to $979.30) and >20% off its post-earnings ATH DESPITE a blowout beat-and-raise, on a memory-sector bear market (SK Hynix cautious HBM4 commentary). This VINDICATES valuing off normalized (not run-rate) economics. Remaining loss paths unchanged and RECOVERABLE (not permanent): (1) cycle rollover/oversupply (the classic memory killer -- record 86% margins have the furthest to fall), (2) HBM4 share loss to SK Hynix/Samsung, (3) AI-capex digestion (demand rests on FCF-funded hyperscaler capex). Quasi-permanent risk stays the ENTRY PRICE. Still a strong SIZE/PRICE CAP, not a kill.",
+      "drivers": ["S14", "S9", "S4", "M2"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "At $979.30 (~$1.107T, ~22x trailing on exploded TTM EPS, ~8x run-rate-forward) MU has fallen -17.3% from the prior $1,184.88 and >20% from its post-Q3 ATH ($1,255). The drop IMPROVES the MOS picture but does NOT clear it: on NORMALIZED mid-cycle economics fair value is ~$165 bear / ~$440 base / ~$950 bull -- the price is now ~2.23x base fair value and roughly AT the bull fair value (was ABOVE bull fair at the prior card). 5y price->fair convergence IRRs: ~-30%/yr bear, ~-15%/yr base, ~0%/yr even in the honest bull case -> still no margin of safety for new money. Note the consensus target JUMPED post-Q3 to ~$1,300 (high $2,000), so price is now ~25-33% BELOW target -- but that target annualizes peak run-rate EPS (the false-cheap trap this harness exists to catch), not normalized economics. Binding constraint stands. New money WATCH; STARTER only toward ~$650; ADD only toward ~$440. -2 (strong price warning), less extreme than at the ATH but not cleared.",
+      "drivers": ["S5", "S4", "S16"]
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "yes",
+    "stage": "late/peak",
+    "supply_barrier": "med (HBM adv-packaging / HBM4 tech-gated) to low (commodity DRAM/NAND majority)",
+    "read": "Memory is textbook capital-cycle. Margins are at an ALL-TIME RECORD (Q3 non-GAAP GM 84.9%, Q4 guided ~86%) -- the most extended peak-cycle economics in the industry's history, far above any conceivable mid-cycle. Capex is stepping up ($7.1B/qtr, guided higher) into that peak (the classic top-of-cycle over-build tell), though for now demand-backed by 16 multi-year SCAs. The FIRST external cracks have appeared -- SK Hynix's cautious HBM4-shipment outlook dragged the whole memory complex into a >20% bear market -- i.e. the market is pricing a supply/cycle response BEFORE MU's own numbers roll. We do NOT know whether this is THE top or a mid-cycle scare; the supply RESPONSE (glut) is not yet confirmed in MU's ASPs/margins (still accelerating).",
+    "caution": "PEAK -- one-directional: caps the verdict at WATCH/TRIM and prevents the -17% drop from flipping the call to a buy. Record-and-rising margins + capex-into-the-peak + first sector cracks all reinforce (do not weaken) the peak read; SCAs are a genuine but partial offset to the reversion risk, not a repeal of the cycle."
+  },
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 650,
+  "starter_zone": "No new money at $979.30 (still ~2.23x base-normalized fair value and roughly AT bull fair value). A cyclical STARTER (~3-4%) opens only on a deep pullback toward ~$650 and below (~25-30x base-normalized EPS ~$22), AND with the HBM-durability case intact (the 16 SCAs strengthen that case). Even then sized as a cyclical -> caps below Core.",
+  "add_zone": "Scale toward the cyclical Confirmed tier (~10-12% max) only toward base-normalized fair value ~$440 and below (~20x normalized), AND/OR on a CONFIRMED through-cycle margin-durability signal (multiple quarters + the SCAs proving HBM structurally lifts the GM floor when commodity ASPs soften + HBM4 share held vs SK Hynix/Samsung). Cyclicality caps the ceiling below Core.",
+  "trim_or_no_chase_zone": "At $979.30 the price has already de-rated -17% from the prior ATH and now sits roughly AT the honest bull fair value (~$950), not above it, on a blowout beat-and-raise. Hard no-chase for new money persists (still 2.23x base fair). Existing holders: HOLD an unimpaired, vindicated, ACCELERATING business (no kill criterion has fired -- Q3 was the opposite of a top signal). The prior lean-to-TRIM SOFTENS: a disciplined cyclical trim near record-margin peak is still defensible, but ~17% of that de-rating has already occurred and the fundamentals just accelerated, so the case to trim aggressively here is weaker than at $1,185. Net: HOLD, with an optional light trim into any renewed spike toward the ATH.",
+  "binding_constraint": "PRICE / cycle-position (M6 + M4/M5), UNCHANGED as the binding axis. At $979.30 -- down -17% but still ~2.23x base-normalized fair value and only roughly AT the honest bull fair value -- there is still no margin of safety for new money on the honest (normalized) basis: you would be paying for peak-cycle 85%+ gross margins the market treats as durable, in a fundamentally cyclical business, just as the first sector cracks appear. The exceptional, now-accelerating business and net-cash fortress do not earn new money here. Holds new money at WATCH; caps any future cyclical position below Core. The -17% drop moved price from ABOVE bull fair to AT bull fair -- a real improvement, but insufficient to clear the constraint or flip the verdict.",
+  "kill_criteria": [
+    "Cycle rollover confirmed: DRAM/NAND/HBM ASPs decline together and gross margin steps down materially below the ~86% Q4 guide trajectory in the next guide, while capex stays elevated -> glut forming. STATE: GREEN in MU's own numbers (Q3 84.9% GM, Q4 guided 86%), but the leading market indicator (SK Hynix cautious HBM4 outlook, memory peers -20%+) is flashing.",
+    "HBM4 share/qualification slips vs SK Hynix or Samsung, or HBM pricing normalizes fast as all three flood capacity. STATE: YELLOW -- MU shipping HBM4 in high volume; SK Hynix reportedly SLOWER on HBM4 (relatively favorable to MU), still #3 overall.",
+    "AI-capex digestion: any major hyperscaler prints a quarter of revenue deceleration + holds/cuts capex guide. STATE: YELLOW (no confirmed cut; the memory bear market reflects fear of exactly this).",
+    "Inventory glut tell: inventory rises into softening ASPs. STATE: GREEN (demand sold out, 16 multi-year SCAs; no glut signal).",
+    "Price stays far above normalized fair value (~$440 base) on run-rate earnings the market treats as permanent -> poor new-money risk/reward. STATE: RED for new money but LESS extreme (now ~at bull fair, was above it); clears only toward $440-650.",
+    "Management over-builds at the top: capex guided sharply higher into peak demand without a durability case. STATE: YELLOW-watch -- capex stepped to $7.1B/qtr and guided higher; demand-backed by SCAs for now, but this is the classic top-of-cycle tell to monitor.",
+    "NEXT PRINT: Q4 FY2026 / FY2026 results (~Sept 2026) -- a Q1 FY27 guide-down, gross-margin roll, or cautious cycle commentary would be the first hard top confirmation. (Prior kill-7 'Q3 print top signal' RESOLVED: Q3 was a beat-and-raise, NOT a top signal.)"
+  ],
+  "runner_dissent": "The central tension this refresh surfaces: MU fell -17% (to $979.30, >20% off its post-earnings ATH) ON A BLOWOUT BEAT-AND-RAISE -- revenue $41.46B vs a $33.5B guide, 84.9% margins, guided UP to $50B/86% for Q4. On the FUNDAMENTALS not a single kill criterion fired; the imminent Q3 print that the prior card watched as a potential top signal came in as the opposite. So the drop is a peak-MULTIPLE de-rating / sector-sentiment event (SK Hynix cautious HBM4 outlook dragging the memory complex into a bear market), NOT a thesis break. This partly VINDICATES the prior WATCH: the peak multiple compressed exactly as feared, which is why we value off normalized not run-rate. (1) Does the price drop flip the verdict? NO. At $979.30 the price is still ~2.23x base-normalized fair value and only roughly AT the honest bull fair value (~$950); the honest 5y IRRs are ~0% (bull) to -30% (bear). It is a real improvement (from ABOVE bull fair to AT bull fair) but not a margin of safety -- still WATCH, buy_below ~$650 unchanged. (2) Mechanical-result unease worth flagging: a momentum reader now sees a stock -22% off its high, printing record accelerating results, with a consensus target ~$1,300 (30%+ upside) and slower-shipping competitors -- and calls this a fat pitch. The framework overrides because that entire bull case annualizes PEAK-cycle 85%+ margins the industry has never held through a cycle; the SCAs genuinely lift the floor but do not repeal the cycle, and the capital-cycle lens reads late/peak with capex building into the top and the first cracks already showing. If HBM durability proves structural across the next down-leg, this WATCH will look too cautious and $979 a decent entry -- that is the honest residual risk. (3) Existing-holder lean: I carried HOLD (thesis intact and ACCELERATING) and SOFTENED the prior lean-to-TRIM, because ~17% of the de-rating has already happened and the fundamentals just improved -- a disciplined cyclical trim near record margins is still defensible but far less urgent than at $1,185. OPEN items: direct SEC-8-K verification of the Q3 line items (currently 2-source aggregator), through-cycle margin durability, HBM4 share, true normalized EPS, and whether the memory bear market is the top or a mid-cycle scare.",
+  "sources_used": [
+    {"source_id": "S5", "public_date": "2026-07-10", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/MU"},
+    {"source_id": "S4", "public_date": "2026-07-17", "url_or_path": "https://stockanalysis.com/stocks/mu/"},
+    {"source_id": "S4b", "public_date": "2026-07-17", "url_or_path": "https://stockanalysis.com/stocks/mu/history/"},
+    {"source_id": "S14", "public_date": "2026-06-24", "url_or_path": "https://www.stocktitan.net/news/MU/micron-technology-inc-reports-record-results-for-the-third-quarter-6f50161e5zxh.html"},
+    {"source_id": "S15", "public_date": "2026-06-24", "url_or_path": "https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html"},
+    {"source_id": "S16", "public_date": "2026-07", "url_or_path": "https://www.marketbeat.com/stocks/NASDAQ/MU/forecast/"},
+    {"source_id": "S9", "public_date": "2026-07", "url_or_path": "https://finance.yahoo.com/markets/article/micron-samsung-sk-hynix-just-dragged-memory-stocks-into-a-bear-market-154549356.html"},
+    {"source_id": "S1", "public_date": "2026-03-18", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000004/a2026q2ex991-pressrelease.htm"},
+    {"source_id": "O01", "public_date": "2025", "url_or_path": "https://en.wikipedia.org/wiki/Sanjay_Mehrotra"},
+    {"source_id": "O04", "public_date": "2026-06-22", "url_or_path": "https://www.micron.com/about/company/leadership"},
+    {"source_id": "M2", "public_date": "2026-05-06", "url_or_path": "macro/2026Q1_hyperscaler_capex_check.md"}
+  ]
+}

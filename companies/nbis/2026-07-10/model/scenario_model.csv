@@ -1,0 +1,5 @@
+scenario,as_of_price,fy2028_rev_usd_b,terminal_ev_sales,implied_ev_usd_b,implied_price_usd,total_return_pct,irr_pct_to_end2028,drivers
+as_of,219.65,,,54.92,219.65,0,0,"last close <= 2026-07-10; EV basic $54.92B (mcap $55.77B basic - net cash $0.85B carrying); horizon end-2028 (~2.48yr)"
+Bear,219.65,8,4,32,130,-40.8,-19.2,"churn/clawback (path B), commoditization, capex air-pocket forces dilution; FY27 conversion low end; Meta-as-reseller elevates this leg"
+Base,219.65,16,5.5,88,365,66.2,22.6,"backlog converts on plan; demand breadth improves; capex/rev normalizing; midpoint of $330-400 band"
+Bull,219.65,21,7,150,580,164.0,47.9,"flawless execution, holds premium multiple, 3rd anchor signs, FCF inflects sooner"
