@@ -1,0 +1,13 @@
+period,total_deliveries,nio_brand,onvo_brand,firefly_brand,yoy_growth_pct,notes,source
+2024Q2,57373,,,,,comparison quarter from Q1 release table,SRC-002
+2024Q3,61855,,,,,comparison quarter from Q1 release table,SRC-002
+2024Q4,72689,,,,,comparison quarter from Q1 release table,SRC-002
+2025Q1,42094,,,,,comparison quarter from Q1 release table,SRC-002
+2025Q2,72056,,,,,comparison quarter from Q1 release table,SRC-002
+2025Q3,87071,,,,,comparison quarter from Q1 release table,SRC-002
+2025Q4,124807,,,,,comparison quarter from Q1 release table,SRC-002
+2026Q1,83465,58543,13339,11583,98.3,Q1 official,SRC-002
+2026-04,29356,,,,,April delivery from Q1 release,SRC-002
+2026-06,40597,21908,11743,6946,62.9,June official,SRC-003
+2026Q2,107658,,,,49.4,Q2 official; below 110000-115000 guidance,SRC-003
+

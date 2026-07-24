@@ -1,0 +1,101 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-07-24",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Canonical as_of_price = $317.69 = the 2026-07-23 SETTLED close (the -7.1% earnings-reaction day: $342.09 on 07-22 -> $317.69 on 07-23); as_of is 2026-07-24 and the 07-24 intraday (~$319.7-$319.8) is deliberately NOT used as the freeze edge (same discipline as the 2026-06-19 dossier). verify_freshness.py will independently re-fetch Yahoo's last close <= as_of (currently the 07-24 print ~$319.7) and compare to $317.69: the delta is ~0.6%, within the 1% tolerance. Two independent price sources confirm $317.69 (Yahoo chart 07-23 close + stockanalysis previous-close, delta 0.0%). Price is +69% off the 52wk low ($187.82) and -22.2% off the 52wk high ($408.61) -> NOT a low/high-hug. LIVE-qualitative items (regulatory, capex guidance) refreshed to the Q2-2026-call state.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 317.69,
+      "unit": "USD",
+      "as_of": "2026-07-23",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-24", "value": 317.69},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-24", "value": 317.69}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "317.69 = 2026-07-23 close on Yahoo; stockanalysis reports it as 'previous close' (its live figure was $319.82 on 07-24). Both agree on the 07-23 settled close."
+    },
+    {
+      "field": "market_cap",
+      "value": 3885349000000,
+      "unit": "USD",
+      "as_of": "2026-07-23",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "12230M shares x 317.69", "fetched_at": "2026-07-24", "value": 3885349000000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-24", "value": 3910000000000}
+      ],
+      "cross_check_delta_pct": 0.64,
+      "pass": true,
+      "note": "stockanalysis $3.91T is at its live $319.82; at the canonical $317.69 the derived cap is $3.885T. Excludes new 19M mandatory convertible preferred."
+    },
+    {
+      "field": "52wk_high",
+      "value": 408.61,
+      "unit": "USD",
+      "as_of": "2026-07-23",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-24", "value": 408.61},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-24", "value": 408.61}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "ATH close ~$402 (May 2026); 52wk intraday high 408.61. Card price 317.69 is -22.2% off this high."
+    },
+    {
+      "field": "52wk_low",
+      "value": 187.82,
+      "unit": "USD",
+      "as_of": "2026-07-23",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-24", "value": 187.82},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-24", "value": 187.82}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "Card price 317.69 is +69% off this low -> NOT a low-hug. (The 52wk low rose from the prior $162.00 as the Apr-2025 trough rolled off the trailing window.)"
+    },
+    {
+      "field": "shares_out",
+      "value": 12230,
+      "unit": "millions",
+      "as_of": "2026-06-30",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q2fy2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm", "fetched_at": "2026-07-24", "value": 12230},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-24", "value": 12230}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "12,230M = Class A+B+C issued & outstanding at 6/30/26 (A 5,868 + B 835 + C 5,527); UP from 12,088M at 12/31/25 (buybacks paused)."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Regulatory tail EASED vs the FY2025-10-K framing. (1) DOJ SEARCH (Judge Mehta, DDC): remedies finalized 2025-09 as BEHAVIORAL -- Google KEEPS Chrome & Android (structural divestiture rejected); on cross-appeal, resolution possibly 2028. (2) DOJ ADTECH (Judge Brinkema, EDVA): liability found 2025-04; remedy phase post-trial with the judge voicing SKEPTICISM toward a structural divestiture of AdX; ruling pending. (3) EC ADTECH: EUR 2.95B (~$3.45B) fine (2025-09), on appeal. Net: the structural-remedy tail is less severe than the prior dossier's 'structural remedy pending' framing implied. No new adverse ruling in the Q2 window.",
+      "as_of": "2026-07-24",
+      "sources": [
+        {"source_name": "prior_dossier_freshness", "url": "companies/googl/2026-06-19/freshness.json", "public_date": "2026-06-20", "fetched_at": "2026-07-24"},
+        {"source_name": "sec_8k_q2fy2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm", "public_date": "2026-07-22", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 capex guidance RAISED to $195-205B (from $180-190B) at the Q2 2026 report; 2027 capex to 'increase significantly'; mix ~60% servers / ~40% data centers & networking; most TPU-system sale revenue expected in 2027. Management will use third-party cloud capacity as a Q3 bridge -> 'modest' cloud margin pressure near-term. CFO Ashkenazi: invest 'as long as we see an attractive return' (no quantified ROI hurdle disclosed). Q2 free cash flow -$5.9B; TTM FCF $53.3B.",
+      "as_of": "2026-07-22",
+      "sources": [
+        {"source_name": "investing_com_slides", "url": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148", "public_date": "2026-07-22", "fetched_at": "2026-07-24"},
+        {"source_name": "seekingalpha", "url": "https://seekingalpha.com/news/4617114", "public_date": "2026-07-22", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true
+    }
+  ]
+}

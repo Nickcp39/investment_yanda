@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BTC 投资计划 v2 · 2026-07-17</title>
+<style>
+  :root{
+    --btc:#f7931a; --ink:#1a1d24; --muted:#5b6472; --line:#e3e7ee;
+    --bg:#ffffff; --soft:#f7f9fc; --good:#0f766e; --warn:#b45309; --bad:#b91c1c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:#eef1f6; color:var(--ink);
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Segoe UI",system-ui,sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px; margin:32px auto; background:var(--bg); padding:44px 52px 56px;
+    box-shadow:0 4px 24px rgba(20,30,50,.08); border-radius:10px;}
+  header{border-bottom:3px solid var(--btc); padding-bottom:18px; margin-bottom:8px;}
+  h1{font-size:27px; margin:0 0 6px; letter-spacing:.5px;}
+  .ticker{color:var(--btc); font-weight:800;}
+  .version-badge{display:inline-block; background:var(--btc); color:white; font-size:12px;
+    padding:2px 10px; border-radius:12px; margin-left:8px; font-weight:700; letter-spacing:.5px;}
+  .meta{color:var(--muted); font-size:14px; margin-top:4px;}
+  .meta b{color:var(--ink);}
+  .lead{
+    background:linear-gradient(0deg,#fff8ef,#fffdfa); border-left:4px solid var(--btc);
+    padding:14px 18px; margin:22px 0 8px; border-radius:0 8px 8px 0; font-size:15px;
+  }
+  .lead .k{font-weight:700;}
+  .changelog{
+    background:#fef7ec; border:1px solid #f3c67a; border-radius:8px;
+    padding:14px 18px; margin:18px 0; font-size:14px;
+  }
+  .changelog h3{margin:0 0 8px; font-size:15px; color:var(--btc);}
+  h2{font-size:19px; margin:34px 0 12px; padding-bottom:7px; border-bottom:1px solid var(--line);}
+  h2 .n{display:inline-block; min-width:26px; color:var(--btc); font-weight:800;}
+  p{margin:10px 0;}
+  ul{margin:10px 0; padding-left:22px;}
+  li{margin:6px 0;}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14.5px;}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top;}
+  th{background:var(--soft); font-weight:700; color:#33404f;}
+  td.c,th.c{text-align:center; white-space:nowrap;}
+  td.amt{font-weight:700; color:var(--ink); white-space:nowrap;}
+  .box{display:inline-block; width:16px; height:16px; border:1.6px solid #9aa4b2; border-radius:3px;}
+  .box.done{background:var(--good); border-color:var(--good); position:relative;}
+  .box.done::after{content:"✓"; color:white; font-size:12px; font-weight:700; position:absolute;
+    top:-3px; left:2px;}
+  .callout{background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:12px 16px; margin:16px 0;}
+  .callout.good{background:#f0fdf9; border-color:#a7f3d0;}
+  .callout.warn{background:#fffbeb; border-color:#fde68a;}
+  .tag{font-size:12px; font-weight:700; padding:1px 8px; border-radius:20px; vertical-align:middle;}
+  .tag.good{background:#d1fae5; color:var(--good);} .tag.warn{background:#fef3c7; color:var(--warn);}
+  .tag.bad{background:#fee2e2; color:var(--bad);}
+  .tag.v2{background:var(--btc); color:white;}
+  code{background:#eef1f6; padding:1px 6px; border-radius:4px; font-size:13.5px;}
+  .strike{text-decoration:line-through; color:var(--muted);}
+  .sig{margin-top:10px; color:var(--muted);}
+  .sig .line{display:inline-block; min-width:180px; border-bottom:1px solid #9aa4b2; margin:0 6px;}
+  footer{margin-top:34px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:12.5px;}
+  @media print{ body{background:#fff;} .wrap{box-shadow:none; margin:0; max-width:none;} }
+  @media (max-width:600px){ .wrap{padding:26px 20px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1><span class="ticker">BTC</span> 投资计划<span class="version-badge">v2</span></h1>
+  <div class="meta">
+    立约日期(v1):<b>2026-07-02</b> ｜ 更新日期(v2):<b>2026-07-17</b> ｜ 参考价(v2):<b>~$63,957</b>(距 v1 反弹 +9.6%) ｜ BTC 桶占总盘 <b>55%</b> ｜ 状态:<b>v2 待签字</b>
+  </div>
+</header>
+
+<div class="changelog">
+  <h3>📋 版本记录</h3>
+  <table style="margin:6px 0;">
+    <tr><th style="width:60px">版本</th><th style="width:100px">日期</th><th>关键变更</th><th>触发原因</th></tr>
+    <tr>
+      <td>v1</td>
+      <td>2026-07-02</td>
+      <td>初立约:$13,600 = 总盘 $38,800 的 35%,双周 $1k</td>
+      <td>BTC $58,366、AHR 0.279、深底区</td>
+    </tr>
+    <tr>
+      <td><b>v2</b></td>
+      <td><b>2026-07-17</b></td>
+      <td><b>$22,550 = 总盘 $41,000 的 <span class="tag v2">55%</span>,日 $200/天</b></td>
+      <td>4 桶配置定型(BTC/大盘/散股/现金 = 55/28/11/6);资金池 $38.8k → $41k;实际已在按 $100/天定投,现规范化并上调日额</td>
+    </tr>
+  </table>
+</div>
+
+<div class="lead">
+  <span class="k">总纲:</span>4 桶配置里 BTC 是最大桶(<b>$22,550 = 55%</b>,最高确信、3 年三倍预期);用<b>日 $200 定投</b>从 <b>2026-07-15 打到 2026-11-01</b>(~110 天)分批打完;建完转长期持有,穿越整轮牛市;到 2029 顶部窗口按 <code>trading_plan_2026_2030.md</code> 阶梯卖战术仓、<b>核心仓一股不卖</b>。
+  <div style="margin-top:8px;color:var(--muted);font-size:13.5px;">v2 变更本质:不是"更看好 BTC",而是 4 桶配置定型后 BTC 应有的目标仓位。DCA 哲学不变——用时间代替临场决定。</div>
+</div>
+
+<h2><span class="n">1</span> 本金与定位</h2>
+
+<h3 style="margin:14px 0 6px;font-size:15px;">总盘 4 桶配置(方案 C · 极致集中)</h3>
+<table>
+  <tr><th>桶</th><th class="c" style="width:80px">目标 %</th><th class="c" style="width:100px">目标 $</th><th>状态</th></tr>
+  <tr>
+    <td><b>BTC</b></td>
+    <td class="c"><b>55%</b></td>
+    <td class="c amt"><b>$22,550</b></td>
+    <td><b>本文件覆盖</b></td>
+  </tr>
+  <tr>
+    <td>大盘(SPY + QQQ 共池)</td>
+    <td class="c">28%</td>
+    <td class="c amt">$11,480</td>
+    <td>待另立合同</td>
+  </tr>
+  <tr>
+    <td>散股(GOOGL + MSFT + 未来)</td>
+    <td class="c">11%</td>
+    <td class="c amt">$4,920</td>
+    <td>待另立合同(遵 pipeline verdict)</td>
+  </tr>
+  <tr>
+    <td>现金</td>
+    <td class="c">6%</td>
+    <td class="c amt">$2,050</td>
+    <td>—</td>
+  </tr>
+  <tr style="background:var(--soft);">
+    <td><b>合计</b></td>
+    <td class="c"><b>100%</b></td>
+    <td class="c amt"><b>$41,000</b></td>
+    <td></td>
+  </tr>
+</table>
+
+<h3 style="margin:20px 0 6px;font-size:15px;">BTC 桶细节</h3>
+<table>
+  <tr><th style="width:26%">项</th><th>值</th></tr>
+  <tr><td>BTC 额度</td><td class="amt">$22,550</td></tr>
+  <tr><td>持有定位</td><td><b>大部分归核心仓(永不卖)</b>,留一部分作战术仓供 2029 顶部减</td></tr>
+  <tr><td>卖出规则</td><td>不在本文件;走 <code>trading_plan_2026_2030.md</code> §4.3(2029 顶部窗口阶梯 + 跟踪止盈)</td></tr>
+  <tr><td>前提</td><td>已确认是"多年不用的钱",亏得起</td></tr>
+</table>
+
+<h2><span class="n">2</span> 为什么是现在(v2 更新)</h2>
+
+<div class="callout warn"><b>核心变化 vs v1:</b>BTC 从 v1 立约时 $58,366 反弹到 $63,957(<b>+9.6%</b>),15 天内温和上行,<b>没有深回撤</b>。目标区 $57–65k 仍成立,但已从"深底"移到"区间上沿"。</div>
+
+<h3 style="margin:16px 0 6px;font-size:15px;">依据校对(v1 → v2)</h3>
+<ol>
+  <li><span class="strike">价格已在底部区</span> → <b>价格仍在目标区上沿</b>:$63,957 在 $57–65k 区间顶端,仍算区内但<b>空间收窄</b>;"深底"已过。</li>
+  <li><span class="strike">AHR = 0.279 深底</span> → AHR <b>预估已升到 ~0.32</b>(v1 到 v2 期间价格 +9.6% 会同比抬升 AHR)。已<b>离开深底档 &lt;0.30</b>,但仍未过 0.45 "偏贵"线。<span class="tag warn">⚠ TODO</span> 需拉一手 AHR 数据核实。</li>
+  <li><b>长持在吸筹</b>:v1 观察成立,15 天太短不足以推翻。<span class="tag warn">⚠ TODO</span> 核对最新 Glassnode 长持数据。</li>
+  <li><b>基本面没坏</b>:算力、采用、财库增持——15 天无重大变化。</li>
+  <li><b>时间底大概率在 8–10 月</b>:仍成立(时间维度未变)。</li>
+</ol>
+
+<div class="callout"><b>v2 结论:</b>v1 的 5 条依据里,#1 从"深底"降级到"上沿"、#2 从"完全追平历史底"降级到"仍在合理档但非最深"。<b>但这不推翻 DCA 决策</b>——DCA 的哲学恰恰是"不赌单点最低",7–11 月还有充分时间摊出好均价。</div>
+
+<h2><span class="n">3</span> 建仓执行 —— 日定投(v2)</h2>
+<p><b>方式:每日 $200,不问价,连续从 2026-07-15 打到 2026-11-01(~110 天)。</b></p>
+<p style="color:var(--muted);font-size:13.5px;"><b>变更自 v1 的原因:</b>目标 $13,600 → $22,550;你已自发按 $100/天定投,v2 把日额规范化到 $200 对齐总目标;日颗粒比双周更细,均价摊得更平。</p>
+
+<h3 style="margin:18px 0 6px;font-size:15px;">建仓进度表(月度检查点)</h3>
+<table>
+  <tr>
+    <th class="c" style="width:44px">勾</th>
+    <th>阶段</th>
+    <th class="c" style="width:60px">天数</th>
+    <th class="c" style="width:90px">本阶段 $</th>
+    <th class="c" style="width:90px">累计 $</th>
+    <th class="c" style="width:70px">累计 %</th>
+  </tr>
+  <tr>
+    <td class="c"><span class="box done"></span></td>
+    <td>v1 期间 2026-07-08 → 07-14($100/天,估算)</td>
+    <td class="c">7</td>
+    <td class="c amt">$700</td>
+    <td class="c amt">$700</td>
+    <td class="c">3%</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="box"></span></td>
+    <td>过渡 2026-07-15 → 07-16($100/天最后)</td>
+    <td class="c">2</td>
+    <td class="c amt">$200</td>
+    <td class="c amt">$900</td>
+    <td class="c">4%</td>
+  </tr>
+  <tr style="background:#fff8ef;">
+    <td colspan="6"><b>▼ 2026-07-17 起 $200/天</b></td>
+  </tr>
+  <tr>
+    <td class="c"><span class="box"></span></td>
+    <td>2026-07 剩余(07-17 → 07-31)</td>
+    <td class="c">15</td>
+    <td class="c amt">$3,000</td>
+    <td class="c amt">$3,900</td>
+    <td class="c">17%</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="box"></span></td>
+    <td>2026-08(全月)</td>
+    <td class="c">31</td>
+    <td class="c amt">$6,200</td>
+    <td class="c amt">$10,100</td>
+    <td class="c">45%</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="box"></span></td>
+    <td>2026-09(全月)</td>
+    <td class="c">30</td>
+    <td class="c amt">$6,000</td>
+    <td class="c amt">$16,100</td>
+    <td class="c">71%</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="box"></span></td>
+    <td>2026-10(全月)</td>
+    <td class="c">31</td>
+    <td class="c amt">$6,200</td>
+    <td class="c amt">$22,300</td>
+    <td class="c">99%</td>
+  </tr>
+  <tr style="background:#f0fdf9;">
+    <td class="c"><span class="box"></span></td>
+    <td><b>2026-11-01(收尾 + 补齐)</b></td>
+    <td class="c">1</td>
+    <td class="c amt">$250</td>
+    <td class="c amt"><b>$22,550</b></td>
+    <td class="c"><b>100%</b></td>
+  </tr>
+</table>
+
+<h3 style="margin:20px 0 6px;font-size:15px;">执行细则</h3>
+<ul>
+  <li>每日固定 $200,<b>不看价格,不看新闻</b></li>
+  <li>用<b>日历触发</b>,不用价格触发(见 §7 纪律机制)</li>
+  <li>若某天错过,次日双额补齐($400);连续错过 &gt; 3 天写进违约记录 §8 并重审</li>
+  <li>11-01 前一天如未打满 $22,550,最后一天补齐差额</li>
+</ul>
+
+<div class="callout warn"><b>深坑规则(v2 收紧:不再另设"尾弹"独立桶,直接在日额里加速):</b>
+  <ul style="margin:8px 0;">
+    <li>BTC ≤ $48k:<b>日额加倍到 $400</b>,加速把剩余打进</li>
+    <li>BTC ≤ $40k:今日一次性打 $2,000,视为深坑接盘</li>
+    <li>触发深坑后<b>总额度不变</b>(仍是 $22,550),只是时间轴前移</li>
+  </ul>
+</div>
+
+<h2><span class="n">4</span> 持有规则(建完之后)—— v1 不变</h2>
+<ul>
+  <li><b>建完即转长期核心仓,任何回撤都不动。</b>这笔在底部区买的,就是为了骑完整轮牛市(模型指向 ~2029 顶)。</li>
+  <li><b>不看短期价格做决定。</b>建仓期只跟日定投表;建完只做一件事——拿住。</li>
+  <li><b>牛市途中不追高加仓</b>(那是下一轮底部的事);不因短期暴涨改变总额度。</li>
+</ul>
+
+<h2><span class="n">5</span> 卖出(指针,不在本文件执行)—— v1 不变</h2>
+<ul>
+  <li>本计划<b>只负责买入 + 持有</b>。熊转牛后的减仓全部走 <code>trading_plan_2026_2030.md</code> §4.3。</li>
+  <li><b>核心仓一股不卖</b>;只有战术仓在顶部窗口减。这批新仓大部分记为核心仓。</li>
+</ul>
+
+<h2><span class="n">6</span> 熔断 / 什么情况停手或重估</h2>
+<table>
+  <tr><th>信号</th><th style="width:44%">动作</th></tr>
+  <tr><td>21M 上限被改 / 核心共识破裂 / 密码学被破</td><td><span class="tag bad">停手</span> 立即停手、全面重估</td></tr>
+  <tr><td>长持从吸筹转为<b>持续净派发</b></td><td><span class="tag warn">暂停</span> 停定投,等方向明朗</td></tr>
+  <tr><td>系统性崩盘(稳定币脱锚 / 大所暴雷 / 链上挤兑)</td><td><span class="tag good">加速买</span> 按 §3 深坑规则(不是停手信号)</td></tr>
+  <tr><td>单纯价格跌、宏观 risk-off、ETF 赎回</td><td><span class="tag good">继续买</span> 这不是停手理由,正是日定投要买的东西</td></tr>
+  <tr><td><span class="tag v2">v2 新增</span> BTC 突破 $75k(即使目标区外)</td><td><span class="tag good">不停手</span> 继续 $200/天(纪律 &gt; 择时)</td></tr>
+</table>
+<div class="callout"><b>记住体检结论:</b>让 BTC 归零的路要么是慢的(几十年安全预算题)、要么会提前预警(量子)。没有一条是"下个月惊喜归零",更没有一条是现在正在发生的。</div>
+
+<h2><span class="n">7</span> 纪律机制(全文的心脏)—— v1 不变</h2>
+<ul>
+  <li><b>时间代替决定</b>——到日期就买,永不临场问"该不该"。</li>
+  <li><b>永远分批</b>——横盘/跌/涨每种结局我都"部分对",没有一种能让我恨自己。</li>
+  <li><b>底部恐慌是要管住的对象</b>——"万一这次真完了"在每个底都准时出现,它既是弱手割肉、也是底部信号本身;感受它,但别让它动手。</li>
+  <li><b>偏离要付成本</b>——任何想改计划的念头:强制 72 小时冷静 + 书面写理由(贴到 §8 违约记录)。</li>
+  <li><b>一次买贵不致命,破坏纪律才致命。</b></li>
+</ul>
+
+<h2><span class="n">8</span> 签字与复盘</h2>
+<p class="sig">我,<span class="line"></span>,确认 v2 的买入与持有规则。建仓期只有执行权,没有临时改动权。</p>
+<p class="sig">复盘节奏:每月只问一句——<b>"我有没有按日 $200 执行?"</b> 只评估纪律,不拿事后最低点羞辱自己。</p>
+<table>
+  <tr><th>日期</th><th>想做什么</th><th>理由</th><th class="c">72h 后是否偏离</th><th>复盘</th></tr>
+  <tr><td>&nbsp;</td><td></td><td></td><td class="c"></td><td></td></tr>
+  <tr><td>&nbsp;</td><td></td><td></td><td class="c"></td><td></td></tr>
+</table>
+
+<h2><span class="n">9</span> 下一步(v2 遗留)</h2>
+<ul>
+  <li><b>待另立合同:</b>
+    <ul>
+      <li>大盘桶($11,480,SPY + QQQ)的建仓方式</li>
+      <li>散股桶($4,920,GOOGL + MSFT + 未来)的建仓方式,遵 pipeline verdict</li>
+    </ul>
+  </li>
+  <li><b>待核实(§2 依据 refresh):</b>
+    <ul>
+      <li>最新 AHR999(预估从 0.279 升到 ~0.32,需一手数据)</li>
+      <li>Glassnode 长持 30 天净仓位(v1 观察是否仍成立)</li>
+    </ul>
+  </li>
+  <li><b>v3 触发条件:</b>
+    <ul>
+      <li>BTC 桶建满($22,550)后,合同进入"持有"模式,写 v3 冻结</li>
+      <li>或 4 桶目标 % 有重大调整(&gt; 5pp)</li>
+      <li>或熔断 §6 任一红线触发</li>
+      <li>或总盘 $41k 大幅变动(±$5k 以上)</li>
+    </ul>
+  </li>
+</ul>
+
+<footer>
+  BTC 投资计划 v2 · 更新日期 2026-07-17 · 仅限个人研究与执行纪律用途,非投资顾问建议。<br>
+  配套文件:v1(<code>execution_plans/btc_investment_plan_2026.html</code>,已归档) · <code>trading_plan_2026_2030.md</code>(卖出端) · 底部/AHR 依据见 BTC_analysis_tool 项目 2026-06-07 分析报告。
+</footer>
+
+</div>
+</body>
+</html>

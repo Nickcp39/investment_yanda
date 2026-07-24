@@ -1,0 +1,23 @@
+{
+  "company": "NIO Inc.",
+  "ticker": "NIO",
+  "date": "2026-07-03",
+  "decision": "WATCH",
+  "confidence": "medium-low",
+  "completeness": 0.55,
+  "scores": {
+    "growth": 8,
+    "margin_trend": 7,
+    "financial_quality": 5,
+    "moat": 5,
+    "balance_sheet": 7,
+    "competitive_position": 5,
+    "valuation": 6,
+    "geopolitical_listing_risk": 4
+  },
+  "core_question": "Can NIO turn multi-brand EV scale and battery-swap/service differentiation into durable owner earnings?",
+  "decision_reason": "Operating improvement is real, but Q2/Q3 margin and cash-flow proof are still missing.",
+  "upgrade_trigger": "Vehicle margin remains mid-teens or better while operating cash flow improves after ONVO/FIREFLY mix rises.",
+  "downgrade_trigger": "Vehicle margin cracks, delivery growth is discount-driven, inventory/payables worsen, or geopolitical risk escalates."
+}
+

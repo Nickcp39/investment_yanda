@@ -1,0 +1,13 @@
+claim_id,claim,source_id,status,confidence,notes
+CL-001,"Q1 2026 deliveries were 83,465, up 98.3% YoY and down 33.1% QoQ.",SRC-002,verified,high,"Official Q1 release."
+CL-002,"Q1 2026 vehicle margin was 18.8%, versus 10.2% in Q1 2025 and 18.1% in Q4 2025.",SRC-002,verified,high,"Margin recovery is the key positive evidence."
+CL-003,"Q1 2026 total revenue was RMB25.533B, up 112.2% YoY and down 26.3% QoQ.",SRC-002,verified,high,"Quarter is seasonally / volume weaker than Q4."
+CL-004,"Q1 2026 adjusted net profit was positive at RMB43.5M, while GAAP net loss remained RMB332.1M.",SRC-002,verified,high,"Non-GAAP inflection, not yet clean GAAP profitability."
+CL-005,"Q1 2026 liquidity was RMB48.2B across cash, restricted cash, short-term investment, and long-term time deposits.",SRC-002,verified,high,"Balance sheet runway improved."
+CL-006,"Q2 2026 deliveries were 107,658, up 49.4% YoY.",SRC-003,verified,high,"Official Q2 delivery update."
+CL-007,"June 2026 deliveries were 40,597, split into NIO 21,908, ONVO 11,743, FIREFLY 6,946.",SRC-003,verified,high,"Lower-price brands were about 46% of June deliveries."
+CL-008,"Q2 2026 deliveries missed company guidance of 110,000-115,000 from the Q1 release.",SRC-002|SRC-003,verified,high,"Actual was 107,658, roughly 2.1% below low end."
+CL-009,"NIO's current investable question is profitability quality rather than delivery growth alone.",SRC-002|SRC-003,analytical,medium,"Inference from improving volume and still-negative GAAP result."
+CL-010,"Battery swap is both moat candidate and capital burden.",SRC-001|SRC-003,needs_more_work,medium,"Need station count, utilization, capex, and power-solution margin detail."
+CL-011,"DoD CMC list inclusion is a geopolitical / sentiment risk but NIO says it is not a sanctions list.",SRC-004,verified,high,"Need legal follow-up."
+CL-012,"At a July 2, 2026 snapshot, NIO ADS closed around $4.79 and market cap was about $12.0B.",SRC-007|SRC-009,verified,medium,"Market data snapshot, refresh before trading decision."

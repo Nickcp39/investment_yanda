@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIO 蔚来 决策简报 - 2026-07-03</title>
+<style>
+  :root{
+    --bg:#101419;
+    --panel:#171d24;
+    --panel2:#121821;
+    --ink:#edf2f7;
+    --mut:#9aa8b6;
+    --line:#2a3542;
+    --blue:#6db6ff;
+    --green:#4fd17b;
+    --red:#ff6b6b;
+    --amber:#f2b84b;
+    --violet:#b69cff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Microsoft YaHei",Arial,sans-serif;
+    line-height:1.55;
+    padding:24px;
+  }
+  .wrap{max-width:1120px;margin:0 auto}
+  header{
+    border-bottom:1px solid var(--line);
+    padding-bottom:18px;
+    margin-bottom:18px;
+  }
+  h1{font-size:28px;line-height:1.15;margin:0 0 8px}
+  h2{font-size:18px;margin:26px 0 10px;color:var(--blue)}
+  h3{font-size:15px;margin:16px 0 8px}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .sub{color:var(--mut);font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:14px;
+  }
+  .label{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+  .big{font-size:26px;font-weight:800;margin-top:4px}
+  .watch{color:var(--amber)}
+  .good{color:var(--green)}
+  .bad{color:var(--red)}
+  .mid{color:var(--amber)}
+  .blue{color:var(--blue)}
+  .mut{color:var(--mut)}
+  .note{font-size:12px;color:var(--mut);margin-top:6px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:650;background:var(--panel2)}
+  ul{margin:8px 0 0;padding-left:18px}
+  li{margin:5px 0}
+  .pill{
+    display:inline-block;
+    border-radius:999px;
+    padding:2px 8px;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  .pill.watch{background:rgba(242,184,75,.14);color:var(--amber)}
+  .pill.good{background:rgba(79,209,123,.14);color:var(--green)}
+  .pill.bad{background:rgba(255,107,107,.14);color:var(--red)}
+  .score{display:flex;align-items:center;gap:10px}
+  .bar{height:8px;background:#26313d;border-radius:99px;flex:1;overflow:hidden}
+  .fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--green))}
+  .fill.warn{background:linear-gradient(90deg,var(--amber),var(--red))}
+  .callout{
+    background:linear-gradient(135deg,rgba(109,182,255,.12),rgba(182,156,255,.10));
+    border:1px solid rgba(109,182,255,.32);
+    border-radius:8px;
+    padding:16px;
+    font-size:15px;
+  }
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:760px){body{padding:14px}.two{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>NIO 蔚来 - 决策简报</h1>
+    <div class="sub">as_of 2026-07-03 · pipeline company-research-v1 · status <b>DECISION_DRAFT</b> · 完整度约 55% · 结论用于审查，不是交易指令</div>
+  </header>
+
+  <section class="grid">
+    <div class="panel">
+      <div class="label">当前结论</div>
+      <div class="big watch">WATCH</div>
+      <div class="note">经营改善是真的，但还没证明为稳定高质量盈利。</div>
+    </div>
+    <div class="panel">
+      <div class="label">Q1 车辆毛利率</div>
+      <div class="big good">18.8%</div>
+      <div class="note">2025 Q1 为 10.2%，2025 Q4 为 18.1%。</div>
+    </div>
+    <div class="panel">
+      <div class="label">Q2 交付</div>
+      <div class="big blue">107,658</div>
+      <div class="note">同比 +49.4%，但低于 110k-115k 指引。</div>
+    </div>
+    <div class="panel">
+      <div class="label">市场快照</div>
+      <div class="big">$4.79</div>
+      <div class="note">2026-07-02 ADS close；市值约 $12.0B，交易前需刷新。</div>
+    </div>
+  </section>
+
+  <h2>一句话</h2>
+  <div class="callout">
+    NIO 现在不是单纯“交付量上涨”的故事，而是一个正在验证的 operating inflection：三品牌放量、毛利率修复、adjusted 盈利转正，但还需要 Q2/Q3 证明低价品牌 mix 增加后，车辆毛利率、经营现金流和 GAAP 亏损仍然继续改善。
+  </div>
+
+  <h2>硬事实</h2>
+  <table>
+    <tr><th>项目</th><th>数据</th><th>解读</th></tr>
+    <tr><td>Q1 2026 交付</td><td>83,465 辆，YoY +98.3%，QoQ -33.1%</td><td>同比强，环比显示产品周期/季节性仍明显。</td></tr>
+    <tr><td>Q1 收入</td><td>RMB 255.33 亿，YoY +112.2%，QoQ -26.3%</td><td>收入弹性很大，但不稳定。</td></tr>
+    <tr><td>Q1 车辆毛利率</td><td class="good">18.8%</td><td>这是本次重新研究 NIO 的核心正面信号。</td></tr>
+    <tr><td>Q1 GAAP 净亏损</td><td class="mid">RMB 3.321 亿</td><td>还没完全盈利；adjusted net profit 为 RMB 4,350 万。</td></tr>
+    <tr><td>Q1 流动性</td><td>RMB 482 亿</td><td>短期融资风险下降，但不等于商业模式已经被验证。</td></tr>
+    <tr><td>Q2 2026 交付</td><td>107,658 辆，YoY +49.4%</td><td>增长仍强，但低于公司原先 110k-115k 指引。</td></tr>
+    <tr><td>2026 年 6 月 mix</td><td>NIO 21,908 / ONVO 11,743 / FIREFLY 6,946</td><td>ONVO+FIREFLY 约占 46%，下一步要看 ASP 和毛利率是否被稀释。</td></tr>
+  </table>
+
+  <h2>Scorecard</h2>
+  <table>
+    <tr><th>维度</th><th>分数</th><th>判断</th></tr>
+    <tr><td>增长</td><td><div class="score"><b>8/10</b><div class="bar"><div class="fill" style="width:80%"></div></div></div></td><td>Q2 交付同比 +49.4%，6 月 run-rate 很强。</td></tr>
+    <tr><td>毛利趋势</td><td><div class="score"><b>7/10</b><div class="bar"><div class="fill" style="width:70%"></div></div></div></td><td>Q1 18.8% 很好，但需要 Q2/Q3 验证。</td></tr>
+    <tr><td>财务质量</td><td><div class="score"><b>5/10</b><div class="bar"><div class="fill warn" style="width:50%"></div></div></div></td><td>adjusted 盈利，GAAP 仍亏损。</td></tr>
+    <tr><td>护城河</td><td><div class="score"><b>5/10</b><div class="bar"><div class="fill warn" style="width:50%"></div></div></div></td><td>换电/品牌/服务有差异化，但经济性还没完全证明。</td></tr>
+    <tr><td>资产负债表</td><td><div class="score"><b>7/10</b><div class="bar"><div class="fill" style="width:70%"></div></div></div></td><td>RMB 482 亿流动性给了时间。</td></tr>
+    <tr><td>竞争格局</td><td><div class="score"><b>5/10</b><div class="bar"><div class="fill warn" style="width:50%"></div></div></div></td><td>中国 EV 价格战仍然非常硬。</td></tr>
+    <tr><td>估值</td><td><div class="score"><b>6/10</b><div class="bar"><div class="fill" style="width:60%"></div></div></div></td><td>P/S 看着便宜，但 earnings quality 还没确认。</td></tr>
+  </table>
+
+  <h2>牛熊剧本</h2>
+  <div class="two">
+    <div class="panel">
+      <h3 class="good">Bull Case</h3>
+      <ul>
+        <li>Q2/Q3 车辆毛利率守住 mid-teens 或更高。</li>
+        <li>ONVO/FIREFLY 带来规模，而不是只带来低 ASP。</li>
+        <li>经营现金流明显改善，GAAP 亏损继续收窄。</li>
+        <li>换电/服务业务的经济性开始被看见。</li>
+        <li>估值从亏损 EV startup 重估为盈利中的智能 EV 平台。</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 class="bad">Bear Case</h3>
+      <ul>
+        <li>交付增长靠降价或 mix 下沉换来。</li>
+        <li>ONVO/FIREFLY 放量压低车辆毛利率。</li>
+        <li>换电网络继续消耗资本，利用率不够。</li>
+        <li>中国 EV 价格战压制所有利润池。</li>
+        <li>DoD CMC list 等地缘风险压低机构持仓和估值。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>升级 / 降级触发器</h2>
+  <table>
+    <tr><th>方向</th><th>触发条件</th><th>动作</th></tr>
+    <tr><td><span class="pill good">Upgrade</span></td><td>Q2 或 Q3 车辆毛利率保持 mid-teens 以上，经营现金流改善，且没有明显折扣换量。</td><td>从 WATCH 升到 DEEP_DIVE / starter candidate。</td></tr>
+    <tr><td><span class="pill bad">Downgrade</span></td><td>车辆毛利率快速跌破低 teens，库存/应付恶化，Q3 指引弱，或地缘/上市风险升级。</td><td>从 WATCH 降到 PASS / trading-only。</td></tr>
+  </table>
+
+  <h2>下一步看什么</h2>
+  <ul>
+    <li>Q2 2026 财报：车辆毛利率、总毛利率、经营现金流、库存、应付账款。</li>
+    <li>7-9 月月度交付：尤其是 NIO / ONVO / FIREFLY mix。</li>
+    <li>竞争对手：BYD、Li Auto、XPeng、Tesla China、Xiaomi 的交付和价格。</li>
+    <li>换电网络：站点数量、利用率、capex、power/service margin。</li>
+    <li>DoD CMC list：是否移除、是否有法律/资本市场后果。</li>
+  </ul>
+
+  <h2>来源</h2>
+  <table>
+    <tr><th>来源</th><th>用途</th></tr>
+    <tr><td><a href="https://ir.nio.com/news-releases/news-release-details/nio-inc-reports-unaudited-first-quarter-2026-financial-results/">NIO Q1 2026 financial results</a></td><td>Q1 收入、利润、毛利率、流动性、Q2 指引。</td></tr>
+    <tr><td><a href="https://ir.nio.com/news-releases/news-release-details/nio-inc-provides-june-and-second-quarter-2026-delivery-update">NIO June and Q2 2026 delivery update</a></td><td>6 月和 Q2 交付、品牌 mix。</td></tr>
+    <tr><td><a href="https://ir.nio.com/financials/annual-reports">NIO annual reports</a></td><td>2025 年报入口和长期风险。</td></tr>
+    <tr><td><a href="https://ir.nio.com/news-releases/news-release-details/nio-inc-responds-us-department-defense-chinese-military/">NIO response to U.S. DoD CMC list</a></td><td>地缘/监管 headline risk。</td></tr>
+    <tr><td><a href="https://companiesmarketcap.com/nio/marketcap/">CompaniesMarketCap NIO</a> / <a href="https://www.marketwatch.com/data-news/nio-inc-adr-falls-thursday-underperforms-market-750e497c-8bafdccd782a">MarketWatch snapshot</a></td><td>2026-07-02 价格和市值快照。</td></tr>
+  </table>
+
+  <p class="note">Local package: companies/nio/2026-07-03. This brief is a review artifact and should be refreshed after Q2 2026 financials.</p>
+</div>
+</body>
+</html>
+

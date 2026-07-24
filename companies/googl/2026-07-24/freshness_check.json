@@ -1,0 +1,79 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-07-24",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 317.69,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 319.739990234375,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 317.69
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 317.69
+      }
+    ],
+    "max_pairwise_delta_pct": 0.641,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-07-24"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "187.82 <= 317.69 <= 408.61"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+69.1% off low, -22.3% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "12230M x 317.69 = 3.885T vs card 3.885T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -22.2% vs card-implied -22.3% (gap 0.1pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 317.69 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2026-07-22 (2d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-07-22 (2d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

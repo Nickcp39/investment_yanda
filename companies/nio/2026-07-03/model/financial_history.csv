@@ -1,0 +1,6 @@
+period,deliveries,total_revenue_rmb_m,vehicle_sales_rmb_m,vehicle_margin_pct,gross_profit_rmb_m,gross_margin_pct,operating_income_rmb_m,adjusted_operating_income_rmb_m,net_income_rmb_m,adjusted_net_income_rmb_m,liquidity_rmb_b,source
+2025Q1,42094,12034.7,9939.3,10.2,919.6,7.6,-6418.1,-5947.2,-6750.0,-6279.1,,SRC-002
+2025Q4,124807,34650.2,31606.2,18.1,6074.1,17.5,807.3,1251.3,282.7,726.8,45.9,SRC-002
+2026Q1,83465,25532.7,22783.7,18.8,4859.1,19.0,-308.8,66.8,-332.1,43.5,48.2,SRC-002
+2026Q2_delivery_only,107658,,,,,,,,,,,SRC-003
+

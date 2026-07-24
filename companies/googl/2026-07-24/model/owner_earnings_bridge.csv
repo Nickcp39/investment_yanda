@@ -1,0 +1,25 @@
+period,line,value,unit,scenario,source_id,notes
+# ===== TTM (through Q2'26) owner earnings bridge — OPERATING-INCOME basis (net income is dominated by a $99B non-cash equity gain, so we build off operating income) =====,,,,,,
+TTM_Q2_26,ttm_operating_income,147628,USD_M,both,derived,"FY2025 129039 - H1'25 61877 + H1'26 80466; fully primary-derived; +14% vs FY2025"
+TTM_Q2_26,less_normalized_tax_at_16pct,-23620,USD_M,both,ASSUMPTION,"normalized ~16% effective rate on operating income (Alphabet structural rate; Q2 GAAP rate distorted by tax on the $99B equity gain)"
+TTM_Q2_26,after_tax_operating_income,124008,USD_M,both,derived,"= 147628 x 0.84"
+TTM_Q2_26,add_normalized_net_interest_invest_income,1500,USD_M,both,ASSUMPTION,"interest income ~5.5B/yr less rising interest expense ~4B/yr; small net; excludes ALL equity-security gains"
+TTM_Q2_26,net_income_normalized_operating,125508,USD_M,both,derived,"clean operating-based earnings, TTM"
+TTM_Q2_26,add_DandA,26000,USD_M,both,ASSUMPTION,"TTM depreciation of P&E ~26B (H1'26 actual 13,586 annualizing ~27B and RISING fast) + small intangible amort; grounded in primary H1 actual (prior dossier had to guess ~24B)"
+TTM_Q2_26,less_SBC_real_cost,-30294,USD_M,both,GOOG.A1.2026Q2.026,"TTM SBC = FY25 27,100 - H1'25 11,514 + H1'26 14,708 = 30,294; real economic cost; buybacks paused so dilution is NAKED (share count 12,088 -> 12,230)"
+TTM_Q2_26,working_capital_adjustment,0,USD_M,both,ASSUMPTION,"set to 0; OCF-NI gap dominated by D&A/SBC/deferred-tax/equity-gain, not WC"
+# ---- Scenario A: maintenance capex = D&A (GROWTH read: most of the 132.4B TTM capex is optional growth) ----,,,,,,
+TTM_Q2_26,less_maintenance_capex_LOW,-26000,USD_M,maint_low,ASSUMPTION,"maint = D&A ~26B; implies ~106B of 132.4B TTM capex is growth"
+TTM_Q2_26,owner_earnings_maint_low,95214,USD_M,maint_low,derived,"= 125508 + 26000 - 30294 - 26000; HIGH owner-earnings (growth) read"
+# ---- Scenario B: maintenance capex ~= 50% of capex (DEFENSIVE read: much AI capex is required to hold the moat) ----,,,,,,
+TTM_Q2_26,less_maintenance_capex_HIGH,-66201,USD_M,maint_high,ASSUMPTION,"maint ~50% of TTM capex 132,402"
+TTM_Q2_26,owner_earnings_maint_high,55013,USD_M,maint_high,derived,"= 125508 + 26000 - 30294 - 66201; LOW owner-earnings (defensive) read"
+# memo TTM: owner earnings RANGE ~55B (defensive) to ~95B (growth); midpoint ~75B,,,,,,
+# ===== Cash cross-check (the harsh read) =====,,,,,,
+TTM_Q2_26,ttm_free_cash_flow,53273,USD_M,both,GOOG.A1.2026Q2.025,"OCF 185,675 - capex 132,402; DOWN from 64,429 (Q1'26 TTM) and 73,266 (FY2025)"
+TTM_Q2_26,cash_owner_earnings_fcf_less_sbc,22979,USD_M,both,derived,"TTM FCF 53,273 - TTM SBC 30,294 = ~23B: cash actually available to owners after real dilution cost -- a ~0.6% yield on $3.885T. This is the number the negative-FCF quarter exposes."
+# ===== Reconciliation to reported =====,,,,,,
+TTM_Q2_26,reported_net_income_TTM,244205,USD_M,both,derived,"FY25 132,170 - H1'25 62,736 + H1'26 174,771; INCLUDES ~135.8B H1 debt+equity securities gains -> grossly overstates owner earnings (~2.6-4.4x the OE range)"
+Q2_26,reported_net_income_qtr,112193,USD_M,both,GOOG.A1.2026Q2.007,"of which $77.1B is the after-tax equity-securities gain; diluted EPS 9.11 of which $6.26 is the one-time gain -> clean EPS ~2.85"
+# ===== Forward pressure =====,,,,,,
+FWD,capex_guidance_2026,200000,USD_M,both,GOOG.A1.2026Q2.GUIDE,"FY2026 capex RAISED to 195-205B (midpoint 200B) from 180-190B; 2027 to 'increase significantly' -> near-term owner-earnings/FCF pressure INTENSIFIES; TPU-system sale revenue mostly lands 2027"

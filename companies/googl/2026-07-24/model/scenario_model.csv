@@ -1,0 +1,57 @@
+scenario,driver,value,unit,source_id,notes
+# ===== Anchors (shared) — as_of 2026-07-24 =====,,,,,
+shared,current_price,317.69,USD_per_share,S-YHOO-2026-07-23,"CANONICAL as_of_price = 317.69 (2026-07-23 settled close, last daily close <= as_of 2026-07-24; the -7.1% earnings-reaction day, 342.09 on 07-22 -> 317.69 on 07-23). 07-24 intraday ~319.7-319.8 NOT used as freeze edge (same discipline as prior dossier). Cross-verified: Yahoo chart 07-23=317.69 + stockanalysis previous-close 317.69 (delta 0.0%). 52wk 187.82-408.61; price is -22.2% below the 52-week high and +69% above the 52-week low -> NOT a low/high-hug."
+shared,shares_diluted,12230,shares_M,GOOG.A1.2026Q2.031,"Class A+B+C issued & outstanding at 6/30/26 (A 5,868 + B 835 + C 5,527); UP from 12,088 at 12/31/25 -> dilution (buybacks paused). Excludes 19M new 6.25% mandatory convertible preferred."
+shared,market_cap,3885,USD_B,derived,"= 317.69 x 12,230M = ~$3.885T (stockanalysis ~$3.91T at 319.82); vs $4.46T at prior dossier ($368.03)"
+shared,net_cash_marketable,144,USD_B,GOOG.A1.2026Q2.020/.021,"cash+marketable 242.474 - LT debt 98.165 = 144.3; large but ~$49.6B equity + $20.3B debt just raised and earmarked for capex -> transitional. Terminal model uses conservative 100."
+shared,ttm_fcf,53.273,USD_B,GOOG.A1.2026Q2.025,"TTM FCF at Q2'26 (release table); DOWN from 64.429 (Q1'26 TTM) and 73.266 (FY2025). Q2 quarter FCF = -5.855 (NEGATIVE)."
+# ===== Owner-earnings starting base (year-0 run-rate) — see owner_earnings_bridge.csv =====,,,,,
+# TTM owner-earnings range ~55B (defensive) to ~95B (growth); midpoint ~75B; cash read (TTM FCF - TTM SBC) ~23B,,,,,
+bear,owner_earnings_y0,54,USD_B,owner_earnings_bridge.csv,"DEFENSIVE read: maint capex ~50% of TTM capex 132.4B; FCF went negative -> weight defensive"
+base,owner_earnings_y0,68,USD_B,owner_earnings_bridge.csv,"midpoint tilted to defensive; up modestly from prior 65 on +30% operating income & Cloud proof"
+bull,owner_earnings_y0,90,USD_B,owner_earnings_bridge.csv,"GROWTH read: maint capex ~= D&A; most capex earns returns; Cloud 35.6% margin + $514B backlog support"
+# ===== Scenario assumptions (structure carried from 2026-06-19 for comparability; only OE0/price/netcash updated) =====,,,,,
+bear,revenue_cagr_10y,0.06,ratio,ASSUMPTION,"AI answer interfaces + cloud price war compress; but Q2 shows the opposite so far (Search +17%, Cloud +82%)"
+base,revenue_cagr_10y,0.11,ratio,ASSUMPTION,"search adapts (AI features additive), cloud scales, YouTube steady"
+bull,revenue_cagr_10y,0.15,ratio,ASSUMPTION,"Gemini extends search+apps; cloud becomes a major profit pool (backlog $514B)"
+bear,operating_margin_path,32_to_28,pct,ASSUMPTION,"margin erodes; capex depreciation + regulatory drag"
+base,operating_margin_path,34_to_34,pct,ASSUMPTION,"cloud mix lifts blended margin (now 34% consolidated); search holds"
+bull,operating_margin_path,34_to_38,pct,ASSUMPTION,"operating leverage as capex normalizes post-2027; cloud 35%+ sustained"
+bear,capex_intensity_path,0.24_to_0.18,ratio_of_rev,GOOG.A1.2026Q2.GUIDE,"stays elevated, low incremental return; 2026 guide RAISED to 195-205B, 2027 higher"
+base,capex_intensity_path,0.22_to_0.14,ratio_of_rev,GOOG.A1.2026Q2.GUIDE,"peaks 2026-27 then normalizes toward mid-teens"
+bull,capex_intensity_path,0.20_to_0.12,ratio_of_rev,GOOG.A1.2026Q2.GUIDE,"high-return infra; FCF inflects up post-peak as TPU/cloud revenue lands (mostly 2027)"
+bear,owner_earnings_cagr_y1_5,0.02,ratio,ASSUMPTION,"OE ~flat; capex eats growth (Q2 FCF already negative)"
+bear,owner_earnings_cagr_y6_10,0.02,ratio,ASSUMPTION,
+base,owner_earnings_cagr_y1_5,0.09,ratio,ASSUMPTION,"OE growth lags revenue near-term (capex peak) then catches up"
+base,owner_earnings_cagr_y6_10,0.07,ratio,ASSUMPTION,
+bull,owner_earnings_cagr_y1_5,0.14,ratio,ASSUMPTION,"capex converts to earnings; cloud operating leverage"
+bull,owner_earnings_cagr_y6_10,0.10,ratio,ASSUMPTION,
+bear,terminal_P_to_OE,14,x,ASSUMPTION,"low-growth utility-like multiple"
+base,terminal_P_to_OE,20,x,ASSUMPTION,"quality compounder at maturity"
+bull,terminal_P_to_OE,26,x,ASSUMPTION,"durable high-return franchise premium"
+bear,payout_ratio_y1_5,0.25,ratio,ASSUMPTION,"div+buyback as share of OE; low during capex supercycle (buyback still paused Q2'26)"
+bear,payout_ratio_y6_10,0.45,ratio,ASSUMPTION,
+base,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+base,payout_ratio_y6_10,0.55,ratio,ASSUMPTION,
+bull,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+bull,payout_ratio_y6_10,0.60,ratio,ASSUMPTION,
+# ===== Outputs (computed; interim payouts + terminal = OE_y10*mult + 100 net cash; bisection IRR) =====,,,,,
+bear,owner_earnings_y10,66,USD_B,derived,"54 grown 2%/2%"
+base,owner_earnings_y10,147,USD_B,derived,"68 grown 9%/7%"
+bull,owner_earnings_y10,279,USD_B,derived,"90 grown 14%/10%"
+bear,terminal_equity_value,1022,USD_B,derived,"66x14 + 100"
+base,terminal_equity_value,3035,USD_B,derived,"147x20 + 100"
+bull,terminal_equity_value,7356,USD_B,derived,"279x26 + 100"
+bear,irr_10y_at_current_price,-0.113,ratio,derived,"-11.3% at 317.69 (was -13.1% at 370)"
+base,irr_10y_at_current_price,-0.010,ratio,derived,"-1.0% at 317.69 (was -3.0% at 370) -- STILL negative, STILL <8% hurdle"
+bull,irr_10y_at_current_price,0.082,ratio,derived,"+8.2% at 317.69 (was +5.2% at 370) -- best case now JUST clears 8%, i.e. you pay full price for the bull"
+shared,owner_earnings_yield_at_price_base,0.0175,ratio,derived,"base OE0 68 / mktcap 3885 = 1.75% (was 1.45%); P/OE 57x (was 69x)"
+shared,mktcap_to_fcf_TTM,72.9,x,derived,"3885 / TTM FCF 53.273 = 72.9x -- WORSE than prior 69.6x despite -14% price, because TTM FCF fell -17%"
+shared,implied_OE_cagr_for_10pct_at_20x,0.196,ratio,derived,"current price still needs ~20% OE CAGR for a decade to clear 10% (terminal 20x)"
+# ===== Margin-of-safety buy-below (BASE path, term 20x, payout 30->55%, net cash 100) =====,,,,,
+mos,buy_below_8pct,139,USD_per_share,derived,"min acceptable 8% IRR; -56% vs 317.69 (was 134)"
+mos,buy_below_10pct_starter,117,USD_per_share,derived,"10% IRR starter anchor; -63% vs 317.69 (was 113)"
+mos,buy_below_12pct_core,99,USD_per_share,derived,"12% IRR core / real MoS; -69% vs 317.69 (was 95)"
+mos,avoid_above,322,USD_per_share,derived,"above ~322 even the BULL case IRR <8%; at 317.69 we sit just inside this line"
+mos,base_breakeven_0pct,288,USD_per_share,derived,"price where BASE case 10y IRR = 0%; base is negative for any price > 288"
+mos,downside_anchor_bear_8pct,50,USD_per_share,derived,"price where BEAR path still clears 8% (term 14x) -- true permanent-loss-protection level (was 48)"
