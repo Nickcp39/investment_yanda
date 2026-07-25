@@ -1,0 +1,33 @@
+{
+  "ticker": "300760.SZ",
+  "as_of": "2026-07-24",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 146.38,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "value": 146.38,
+          "public_date": "2026-07-24"
+        },
+        {
+          "source_name": "sohu_securities_star",
+          "value": 146.38,
+          "public_date": "2026-07-24"
+        }
+      ]
+    },
+    {
+      "field": "shares_out",
+      "value": 1212.441394,
+      "sources": [
+        {
+          "source_name": "cninfo_fy2025",
+          "value": 1212.441394,
+          "public_date": "2026-03-31"
+        }
+      ]
+    }
+  ]
+}

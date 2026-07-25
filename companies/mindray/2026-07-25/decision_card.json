@@ -1,0 +1,87 @@
+{
+  "ticker": "300760.SZ",
+  "as_of": "2026-07-24",
+  "pipeline_version": "lean-6module-v1.1",
+  "run_date": "2026-07-25",
+  "context_label": "china_medtech_globalization_domestic_trough",
+  "as_of_price": 146.38,
+  "as_of_market_cap": 177475000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "medium",
+      "finding": "FY2025、2026Q1 和价格已核验；渠道调研和独立市占率核验未完成。"
+    },
+    {
+      "module": "M2 Business Quality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "多产线、全球渠道、注册认证、研发和净现金共同构成高质量平台。"
+    },
+    {
+      "module": "M3 Financial Reality",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "2025利润下降30.28%，2026Q1仍下降11.37%，盈利拐点未确认。"
+    },
+    {
+      "module": "M4 Globalization",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "国际收入占53%且2025增长7.40%，本地化网络具备长期价值。"
+    },
+    {
+      "module": "M5 Inversion",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "medium",
+      "finding": "国内采购与价格压力、商誉、国际贸易壁垒和AI变现均需观察。"
+    },
+    {
+      "module": "M6 Price",
+      "role": "price",
+      "signal": 0,
+      "confidence": "medium",
+      "finding": "FY2025 PE约21.8倍，基准5年IRR约11.5%，价格合理偏低但安全边际有限。"
+    }
+  ],
+  "business_verdict": "excellent_but_cyclical",
+  "new_money_verdict": "STARTER_OR_WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 1,
+  "suggested_max_size_pct": 5,
+  "buy_below_price": 130,
+  "starter_zone": "125-145元；越接近125-130元，基准情景安全边际越明显。",
+  "add_zone": "110-120元且长期论点未恶化，或盈利拐点确认后重新估值。",
+  "trim_or_no_chase_zone": "盈利未改善前不因估值扩张追价；若价格上涨而利润预期继续下修，维持WATCH。",
+  "binding_constraint": "盈利拐点。资产负债表和业务质量足够强，但2025与2026Q1的利润趋势尚未证明反转。",
+  "kill_criteria": [
+    "2026H2国内收入仍无法恢复正增长。",
+    "集团毛利率持续显著下降。",
+    "国际收入增速降至低个位数且本地化成本上升。",
+    "商誉重大减值或并购回报低于资本成本。",
+    "AI投入两年内仍无装机转化、提价或软件收入证据。"
+  ],
+  "sources_used": [
+    {
+      "source_id": "MR-FY25-SUM",
+      "public_date": "2026-03-31",
+      "url_or_path": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059011.PDF"
+    },
+    {
+      "source_id": "MR-1Q26",
+      "public_date": "2026-04-29",
+      "url_or_path": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-29/dae23a9f-ddde-40e5-bbdf-6b1d20b7c694.PDF"
+    },
+    {
+      "source_id": "MR-PRICE-20260724",
+      "public_date": "2026-07-24",
+      "url_or_path": "https://m.sohu.com/a/1054428021_121319643"
+    }
+  ]
+}

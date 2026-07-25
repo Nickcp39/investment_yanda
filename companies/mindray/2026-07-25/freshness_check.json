@@ -1,0 +1,67 @@
+{
+  "ticker": "300760.SZ",
+  "as_of": "2026-07-24",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 146.38,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": null,
+    "refetch_error": "fetch returned nothing",
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 146.38
+      },
+      {
+        "source_name": "sohu_securities_star",
+        "value": 146.38
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "sohu_securities_star",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "SKIP",
+      "detail": "no 52wk high/low found"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "SKIP",
+      "detail": "no 52wk high/low found"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "1212M x 146.38 = 0.177T vs card 0.177T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no 52wk high"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 146.38 present in all price-bearing files"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}
