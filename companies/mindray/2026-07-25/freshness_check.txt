@@ -1,0 +1,9 @@
+FRESHNESS CHECK -300760.SZ as_of 2026-07-24  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=146.38 refetched_yahoo=None (-) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [SKIP] T1 52wk band containment: no 52wk high/low found
+  [SKIP] T2 low/high hug: no 52wk high/low found
+  [PASS] T3 market-cap identity: 1212M x 146.38 = 0.177T vs card 0.177T (0.00%)
+  [SKIP] T4 distance-from-high reconciliation: no 52wk high
+  [PASS] T5 single value of truth: as_of_price 146.38 present in all price-bearing files
