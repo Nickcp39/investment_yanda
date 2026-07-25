@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中日相对时间轴 · 半导体 —— 守擂衰退 vs 攻擂加速</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1d2129; --border: #2a2f3a;
+    --text: #e8eaf0; --muted: #9aa3b2; --accent: #e8b04b;
+    --jp: #6fa8dc; --cn: #e06666;
+    --policy: #8e7cc3; --market: #6aa84f; --mind: #e8b04b; --pressure: #cc4125;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text);
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+    line-height: 1.65; padding: 28px 16px 60px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 6px; }
+  h1 .tag { font-size: 13px; color: var(--bg); background: var(--accent);
+    border-radius: 4px; padding: 2px 8px; vertical-align: middle; margin-left: 8px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; border-left: 4px solid var(--accent); padding-left: 10px; }
+  .verdict { background: linear-gradient(135deg,#2a2118,#171a21); border: 1px solid var(--accent);
+    border-radius: 10px; padding: 18px 20px; margin: 18px 0; }
+  .verdict b { color: var(--accent); }
+  .align { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0; }
+  .align .card { flex: 1; min-width: 220px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px; font-size: 14px; }
+  .align .card b { font-size: 16px; }
+  .jp-b { color: var(--jp); } .cn-b { color: var(--cn); }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 10px 0 14px; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+  .scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 760px; }
+  th { background: var(--panel2); padding: 10px 12px; text-align: left; position: sticky; top: 0; }
+  th.jp { color: var(--jp); } th.cn { color: var(--cn); }
+  td { padding: 9px 12px; border-top: 1px solid var(--border); vertical-align: top; }
+  td.t { white-space: nowrap; font-weight: 700; color: var(--accent); width: 64px; }
+  tr.zero td { background: #241a1a; border-top: 2px solid var(--accent); border-bottom: 2px solid var(--accent); }
+  .ev { display: block; margin: 2px 0; padding-left: 15px; position: relative; }
+  .ev::before { content: ""; position: absolute; left: 0; top: 8px; width: 9px; height: 9px; border-radius: 50%; }
+  .ev.policy::before { background: var(--policy); }
+  .ev.market::before { background: var(--market); }
+  .ev.mind::before { background: var(--mind); }
+  .ev.pressure::before { background: var(--pressure); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+  .box { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; font-size: 14px; }
+  .box h3 { font-size: 15px; margin-bottom: 8px; }
+  .box.jp h3 { color: var(--jp); } .box.cn h3 { color: var(--cn); }
+  ol, ul { padding-left: 20px; } li { margin: 6px 0; font-size: 14px; }
+  .foot { margin-top: 40px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 14px; }
+  .warn { color: var(--pressure); font-weight: 700; }
+  .win { color: var(--market); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>半导体 · 中日相对时间轴<span class="tag">方向：反向</span></h1>
+<div class="sub">以房价见顶为 T=0 对齐 —— 日本 1991 / 中国 2021 · 当前 2026 = 中国 T+5 ≈ 日本 1996 · 更新 2026-07-25</div>
+
+<div class="verdict">
+  <b>一句话裁决：</b>同一条"距房价高点第几年"的轴上，这是两条<b>完全反向</b>的曲线。
+  日本是<b>泡沫前登顶 → 被盟主压制 → 泡沫后守无可守</b>的在位者衰退曲线（份额 50% → 不足 10%）；
+  中国是<b>泡沫前启动 → 被制裁倒逼 → 泡沫后政策与替代双加速</b>的追赶者上升曲线。
+  压制对在位者是封顶令，对追赶者是替代订单发生器 —— 这是全篇最重要的一句话。
+</div>
+
+<div class="align">
+  <div class="card"><b class="jp-b">日本 T=0 → 1991</b><br>地价见顶 · 第二次日美半导体协定同年签订 · 芯片份额已从 50% 峰值回落</div>
+  <div class="card"><b class="cn-b">中国 T=0 → 2021</b><br>房价见顶、恒大爆雷 · 全面出口管制前夜 · 国产替代进入深水区</div>
+</div>
+
+<h2>相对时间轴（政策 / 市场 / 思潮 / 外部压力 四层）</h2>
+<div class="legend">
+  <span><span class="dot" style="background:var(--policy)"></span>政策·产业</span>
+  <span><span class="dot" style="background:var(--market)"></span>市场·份额</span>
+  <span><span class="dot" style="background:var(--mind)"></span>思潮·心态</span>
+  <span><span class="dot" style="background:var(--pressure)"></span>外部压力</span>
+</div>
+<div class="scroll">
+<table>
+<tr><th>相对年</th><th class="jp">日本（T=0 · 1991）</th><th class="cn">中国（T=0 · 2021）</th></tr>
+<tr><td class="t">T-15</td>
+  <td><span class="ev policy">1976 VLSI 联合研发计划：通产省牵头追赶美国</span></td>
+  <td><span class="ev policy">2006 "核高基" 国家科技重大专项</span></td></tr>
+<tr><td class="t">T-12</td>
+  <td><span class="ev mind">1979《Japan as No.1》出版：民族自信登顶期</span></td>
+  <td><span class="ev policy">2009 前后：产业尚在代工与设计低端，思潮层面无感</span></td></tr>
+<tr><td class="t">T-7~-6</td>
+  <td><span class="ev pressure">1985 广场协议：日美摩擦白热化</span>
+      <span class="ev mind">半导体被称为"产业之米"（産業のコメ），国民产业叙事成型</span></td>
+  <td><span class="ev policy">2014 大基金一期（1387亿）</span>
+      <span class="ev policy">2015《中国制造2025》</span></td></tr>
+<tr><td class="t">T-5</td>
+  <td><span class="ev pressure">1986 第一次日美半导体协定：价格底线 + 外国份额 20% 目标 —— 压制在登顶时刻到来</span></td>
+  <td><span class="ev pressure">2016 美国开始系统性否决中资收购芯片资产</span></td></tr>
+<tr><td class="t">T-3</td>
+  <td><span class="ev market">1988 全球份额 ~50%，NEC/东芝/日立霸榜前三</span></td>
+  <td><span class="ev pressure">2018 中兴禁令</span>
+      <span class="ev mind">"缺芯" "卡脖子" 进入全民词汇 —— 替代共识形成的起点</span></td></tr>
+<tr><td class="t">T-2</td>
+  <td><span class="ev market">1989 股市见顶（日经 38,957）</span></td>
+  <td><span class="ev pressure">2019 华为实体清单</span>
+      <span class="ev policy">大基金二期（2042亿）</span></td></tr>
+<tr><td class="t">T-1</td>
+  <td><span class="ev market">1990 地价最后冲顶</span></td>
+  <td><span class="ev pressure">2020 SMIC 实体清单</span>
+      <span class="ev mind">工程师回流潮：海外华人半导体人才加速归国</span></td></tr>
+<tr class="zero"><td class="t">T=0</td>
+  <td><span class="ev pressure">1991 第二次日美半导体协定</span>
+      <span class="ev market">地价见顶，资产负债表衰退开始</span></td>
+  <td><span class="ev market">2021 房价见顶、恒大爆雷</span>
+      <span class="ev market">缺芯潮反而催肥国产设计公司</span></td></tr>
+<tr><td class="t">T+1</td>
+  <td><span class="ev market">1992 三星 DRAM 反超，份额崩塌开始</span></td>
+  <td><span class="ev pressure">2022.10 美国全面出口管制（先进制程+设备+人才）</span>
+      <span class="ev policy">Chips Act 同年：美国自己也开始产业政策化</span></td></tr>
+<tr><td class="t">T+2</td>
+  <td><span class="ev market">1993 美国份额重回世界第一</span>
+      <span class="ev mind">技术人才"周末飞韩国"兼职潮：know-how 外流</span></td>
+  <td><span class="ev market">2023 华为 Mate60 / SMIC 7nm 突围</span>
+      <span class="ev mind">Mate60 成为民族情绪事件 —— 替代从政策叙事变成大众叙事</span>
+      <span class="ev pressure">日本、荷兰加入设备管制</span></td></tr>
+<tr><td class="t">T+3</td>
+  <td><span class="ev market">1994 起日企退守利基，成品芯片节节败退</span></td>
+  <td><span class="ev policy">2024 大基金三期（3440亿，史上最大）</span>
+      <span class="ev pressure">HBM 与更宽口径管制</span></td></tr>
+<tr><td class="t">T+5</td>
+  <td><span class="ev pressure">1996 半导体协定终止 —— 但份额已失守，为时已晚</span></td>
+  <td><span class="ev market">2026（现在）：设备/材料国产化率快速爬坡，成熟制程产能全球化输出</span></td></tr>
+<tr><td class="t">T+8</td>
+  <td><span class="ev market">1999 NEC+日立 合并 DRAM 成立尔必达 —— 防御性整合开始</span></td>
+  <td>→ 待观察（若出现"拼凑式合并救亡"，按日本剧本应回避）</td></tr>
+<tr><td class="t">T+21</td>
+  <td><span class="ev market">2012 尔必达破产，售予美光 —— 存储全线出局</span></td>
+  <td>—</td></tr>
+<tr><td class="t">T+31</td>
+  <td><span class="ev policy">2022 Rapidus 成立 + 补贴台积电熊本设厂 —— 日本开始"再国产替代"</span>
+      <span class="ev mind">半导体复兴成为新国策叙事：轮回</span></td>
+  <td>—</td></tr>
+</table>
+</div>
+
+<h2>为什么反向：结构差异，不是努力差异</h2>
+<div class="grid2">
+  <div class="box jp"><h3>日本 · 守擂者的四重锁</h3>
+    <ol>
+      <li><b>位置：</b>被压制时是在位冠军，压制目标是"封顶"，守无可守。</li>
+      <li><b>主权：</b>安保依附美国，只能签协定认输（自愿限制、价格管制、让出 20% 份额）。</li>
+      <li><b>需求锚：</b>出口导向，美国市场被锁死后无处可去。</li>
+      <li><b>财政：</b>泡沫后忙于救银行，产业政策缺位到 T+31 才反攻。</li>
+    </ol></div>
+  <div class="box cn"><h3>中国 · 攻擂者的四重推力</h3>
+    <ol>
+      <li><b>位置：</b>被压制时是追赶者，卡脖子 = 强制替代采购令。</li>
+      <li><b>主权：</b>不可能签"中美半导体协定"，压力无法泄压，只能转化为替代投资。</li>
+      <li><b>需求锚：</b>全球最大芯片进口国（峰值年 &gt;4000 亿美元），替代需求在国内。</li>
+      <li><b>财政：</b>地产下行没有挤掉科技，科技反而成了唯一的政策宠儿（T+3 砸出史上最大产业基金）。</li>
+    </ol></div>
+</div>
+
+<h2>思潮层：两种民族叙事的镜像</h2>
+<div class="box">
+  <b class="jp-b">日本</b>：从"产业之米"的国民骄傲（T-12 ~ T-3）→ 败退后的"匠人怀旧"与失败主义（T+2 ~ T+20，
+  人才周末外流韩台）→ T+31 借地缘政治东风的复兴叙事（Rapidus）。<b>心态曲线滞后于产业曲线，且一路向下再回头。</b><br><br>
+  <b class="cn-b">中国</b>："卡脖子"在 T-3（2018 中兴）就完成了全民动员，Mate60（T+2）把替代从政策叙事变成大众消费叙事，
+  工程师回流与全民共识同步。<b>心态曲线领先于产业曲线，自下而上与自上而下同频 —— 这是日本从未有过的状态。</b>
+</div>
+
+<h2>日本真正守住的东西（= 中国该抢的高地）</h2>
+<div class="box">
+  日本崩掉的是<b>成品芯片</b>（逻辑/存储），但<span class="win">设备（东京电子、Screen、Advantest）与
+  材料（信越、SUMCO、JSR、TOK）守住寡头地位至今</span> —— 这两层靠工艺 know-how 复利，不受贸易协定管辖。
+  <br><br>含义：中国当前的设备/材料国产化（北方华创、中微、拓荆、沪硅产业等）如果做成，
+  等于拿下日本当年"守得住的那两层"。<b>这一层比先进制程本身更耐久，是政策强度与需求确定性双高的一段。</b>
+</div>
+
+<h2>投资含义</h2>
+<ul>
+  <li><span class="win">做多</span>：设备/材料国产化率爬坡（对标日本"守住的两层"）；被管制清单点名 = 强制订单目录。</li>
+  <li><span class="warn">回避</span>：若出现"尔必达式"落后产能防御性合并 —— 日本剧本里这是价值陷阱信号，不是拐点信号。</li>
+  <li><b>校准</b>：中国用 T+5 走完了日本 T+15~+20 的替代里程碑，但<b>出海</b>（成熟制程产能与设备的全球输出）尚未被证明，是下一个验证点。</li>
+  <li><b>轮回警示</b>：日本 T+31 才开始再国产化，代价是整整一代人 —— 在位者的傲慢与追赶者的饥饿，才是这条时间轴的真正变量。</li>
+</ul>
+
+<div class="foot">
+  系列研究：studies/jp_cn_relative_timeline/ · 姊妹篇：autos_timeline.html（汽车 · 角色互换的镜像）、
+  automation_semis.md、zeitgeist_healthcare.md · 方法论：房价峰值仅作为"经济压力起点"的对齐零点，不比较地产本身。
+</div>
+
+</div>
+</body>
+</html>

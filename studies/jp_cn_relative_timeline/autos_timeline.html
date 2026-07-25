@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中日相对时间轴 · 汽车 —— 同一条出海剧本，角色互换的镜像</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1d2129; --border: #2a2f3a;
+    --text: #e8eaf0; --muted: #9aa3b2; --accent: #6aa84f;
+    --jp: #6fa8dc; --cn: #e06666;
+    --policy: #8e7cc3; --market: #6aa84f; --mind: #e8b04b; --pressure: #cc4125;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text);
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+    line-height: 1.65; padding: 28px 16px 60px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 6px; }
+  h1 .tag { font-size: 13px; color: var(--bg); background: var(--accent);
+    border-radius: 4px; padding: 2px 8px; vertical-align: middle; margin-left: 8px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; border-left: 4px solid var(--accent); padding-left: 10px; }
+  .verdict { background: linear-gradient(135deg,#1a2418,#171a21); border: 1px solid var(--accent);
+    border-radius: 10px; padding: 18px 20px; margin: 18px 0; }
+  .verdict b { color: var(--accent); }
+  .align { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0; }
+  .align .card { flex: 1; min-width: 220px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px; font-size: 14px; }
+  .align .card b { font-size: 16px; }
+  .jp-b { color: var(--jp); } .cn-b { color: var(--cn); }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 10px 0 14px; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+  .scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 760px; }
+  th { background: var(--panel2); padding: 10px 12px; text-align: left; position: sticky; top: 0; }
+  th.jp { color: var(--jp); } th.cn { color: var(--cn); }
+  td { padding: 9px 12px; border-top: 1px solid var(--border); vertical-align: top; }
+  td.t { white-space: nowrap; font-weight: 700; color: var(--mind); width: 64px; }
+  tr.zero td { background: #241a1a; border-top: 2px solid var(--mind); border-bottom: 2px solid var(--mind); }
+  .ev { display: block; margin: 2px 0; padding-left: 15px; position: relative; }
+  .ev::before { content: ""; position: absolute; left: 0; top: 8px; width: 9px; height: 9px; border-radius: 50%; }
+  .ev.policy::before { background: var(--policy); }
+  .ev.market::before { background: var(--market); }
+  .ev.mind::before { background: var(--mind); }
+  .ev.pressure::before { background: var(--pressure); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+  .box { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; font-size: 14px; }
+  .box h3 { font-size: 15px; margin-bottom: 8px; }
+  .box.jp h3 { color: var(--jp); } .box.cn h3 { color: var(--cn); }
+  ol, ul { padding-left: 20px; } li { margin: 6px 0; font-size: 14px; }
+  .foot { margin-top: 40px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 14px; }
+  .warn { color: var(--pressure); font-weight: 700; }
+  .win { color: var(--market); font-weight: 700; }
+  .key { background: #241f14; border: 1px dashed var(--mind); border-radius: 10px; padding: 14px 18px; margin: 14px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>汽车 · 中日相对时间轴<span class="tag">方向：同向 · 时序错位</span></h1>
+<div class="sub">以房价见顶为 T=0 对齐 —— 日本 1991 / 中国 2021 · 当前 2026 = 中国 T+5 ≈ 日本 1996 · 更新 2026-07-25</div>
+
+<div class="verdict">
+  <b>一句话裁决：</b>中日汽车走的是<b>同一条剧本</b>——国内见顶 → 消费降级 → 价格战与出清 →
+  贸易摩擦 → 海外建厂 → 出海利润接棒国内。但有一个关键的<b>时序错位</b>：
+  日本在泡沫<b>前</b>就完成了全球化布局（1981 年对美自愿限制出口 → 8年代赴美建厂），
+  所以 T=0 后国内塌方时海外利润已能接棒；中国是泡沫<b>后</b>才开始大规模出海（T+2 出口登顶、T+3 遭欧盟关税、T+3~+5 建厂潮），
+  <b>海外接棒尚未完成 —— 这是中国汽车相对日本剧本最大的风险缺口，也是未来十年最重要的观察变量。</b>
+</div>
+
+<div class="align">
+  <div class="card"><b class="jp-b">日本 T=0 → 1991</b><br>国内销量 1990 年见顶 778 万辆 · 全球化布局已完成 · 此后国内缩量三十年</div>
+  <div class="card"><b class="cn-b">中国 T=0 → 2021</b><br>国内总量 2017 年已先于地产见顶 · NEV 渗透率起飞点 · 出海刚起步</div>
+</div>
+
+<h2>相对时间轴（政策 / 市场 / 思潮 / 外部压力 四层）</h2>
+<div class="legend">
+  <span><span class="dot" style="background:var(--policy)"></span>政策·产业</span>
+  <span><span class="dot" style="background:var(--market)"></span>市场·份额</span>
+  <span><span class="dot" style="background:var(--mind)"></span>思潮·心态</span>
+  <span><span class="dot" style="background:var(--pressure)"></span>外部压力</span>
+</div>
+<div class="scroll">
+<table>
+<tr><th>相对年</th><th class="jp">日本（T=0 · 1991）</th><th class="cn">中国（T=0 · 2021）</th></tr>
+<tr><td class="t">T-12~-10</td>
+  <td><span class="ev pressure">1981 对美汽车自愿出口限制（VER）—— 贸易摩擦在登顶前到来</span>
+      <span class="ev policy">1982 本田俄亥俄 / 1984 丰田-通用 NUMMI：赴美建厂潮启动</span></td>
+  <td><span class="ev policy">2009 "十城千辆"：NEV 补贴元年</span></td></tr>
+<tr><td class="t">T-6~-5</td>
+  <td><span class="ev market">1980s 后半：日系全球份额 ~30%，美国市占率一路爬升</span>
+      <span class="ev mind">汽车 = 昭和梦想消费品，Soarer/Cima 高级车热潮</span></td>
+  <td><span class="ev policy">2015《中国制造2025》把 NEV 列为主攻方向</span></td></tr>
+<tr><td class="t">T-4</td>
+  <td><span class="ev market">1987-88 泡沫景气推动国内销量冲顶</span></td>
+  <td><span class="ev market">2017 中国汽车总销量见顶（~2888万辆）—— 内需见顶早于房价 4 年</span>
+      <span class="ev policy">双积分政策落地</span></td></tr>
+<tr><td class="t">T-2</td>
+  <td><span class="ev market">1989 雷克萨斯 LS400 上市：日系冲击豪华成功</span></td>
+  <td><span class="ev policy">2019 特斯拉上海工厂投产 —— "引狼入室"式鲶鱼催化</span></td></tr>
+<tr><td class="t">T-1</td>
+  <td><span class="ev market">1990 国内销量 778 万辆历史峰值</span></td>
+  <td><span class="ev market">2020 五菱宏光MINI/Model 3 国产降价：NEV 平价化前夜</span></td></tr>
+<tr class="zero"><td class="t">T=0</td>
+  <td><span class="ev market">1991 地价见顶，国内车市转入长期缩量</span></td>
+  <td><span class="ev market">2021 房价见顶；NEV 渗透率 ~15% 起飞</span>
+      <span class="ev market">缺芯让自主品牌份额逆势抬升</span></td></tr>
+<tr><td class="t">T+1~+2</td>
+  <td><span class="ev market">1992-93 国内销量连年下滑；轻自动车与二手车占比上升 —— 车市消费降级</span></td>
+  <td><span class="ev market">2022 渗透率 ~28%；比亚迪停产纯燃油车</span>
+      <span class="ev market">2023 价格战全面开打；中国超日本成全球第一汽车出口国</span>
+      <span class="ev mind">"性价比"崇拜与国潮：自主品牌份额向 60% 迈进</span></td></tr>
+<tr><td class="t">T+3</td>
+  <td><span class="ev policy">1994 起厂商合并产线、压缩国内产能</span></td>
+  <td><span class="ev pressure">2024 欧盟对华 NEV 关税 + 美国 100% 关税 —— 对应日本 T-10 的 VER，但晚了 13 个相对年</span>
+      <span class="ev market">NEV 渗透率过 50%</span></td></tr>
+<tr><td class="t">T+4~+5</td>
+  <td><span class="ev market">1995-96 出海利润逐步接棒；国内进入"失去的车市"</span></td>
+  <td><span class="ev policy">2025 "反内卷"：价格战整治、账期新规 —— 官方开始主导出清</span>
+      <span class="ev policy">出海建厂潮：匈牙利/泰国/巴西/印尼（= 日本 1980s 赴美建厂的中国版）</span>
+      <span class="ev market">2026（现在）：行业整合开始，尾部品牌退出加速</span></td></tr>
+<tr><td class="t">T+6</td>
+  <td><span class="ev policy">1997 丰田普锐斯上市 —— 衰退最深处投出的技术豪赌，二十年后成为最大护城河</span></td>
+  <td>→ 对应位置：固态电池 / L3+ 智驾 / 具身化 —— 谁在出清期敢下 Prius 式的赌注？</td></tr>
+<tr><td class="t">T+8</td>
+  <td><span class="ev market">1999 日产危机 → 雷诺入主（戈恩）；马自达归福特、三菱爆雷 —— 内需依赖者被外资整合</span></td>
+  <td>→ 日本剧本预告：价格战失血的内需依赖型车企将被并购或退出</td></tr>
+<tr><td class="t">T+10~+17</td>
+  <td><span class="ev market">2001-2008 海外产量超过国内产量；2008 丰田登顶全球第一 —— 出海完成体</span>
+      <span class="ev mind">"若者の車離れ"（年轻人离车）成为社会话题</span></td>
+  <td>→ 中国对应窗口 2031-2038：海外产能与利润能否接棒国内，决定谁是"中国丰田"</td></tr>
+<tr><td class="t">T+30+</td>
+  <td><span class="ev pressure">2021 起：错失纯电转型，在东南亚/欧洲被中国车企蚕食 —— <b>日本从攻擂者变成被攻擂的在位者</b></span></td>
+  <td>—</td></tr>
+</table>
+</div>
+
+<div class="key">
+  <b>全系列最有意思的一处镜像：</b>半导体时间轴里，日本是被美国压制的<b>在位者</b>；
+  汽车时间轴走到今天（日本 T+30+），日本再次成为<b>被攻擂的在位者</b>——只是攻擂者从三星换成了比亚迪，
+  武器从 DRAM 换成了电动化。<b>在位者困境不分国籍：丰田今天对纯电的犹豫，与 NEC 当年对代工模式的犹豫，是同一种傲慢。</b>
+  对中国的警示同样成立：今天的攻擂者，二十年后也会在下一次技术范式切换处成为在位者。
+</div>
+
+<h2>思潮层：车与人心的同一条曲线</h2>
+<div class="grid2">
+  <div class="box jp"><h3>日本 · 从梦想消费品到"离车"</h3>
+    <ul>
+      <li>泡沫期：车是身份与欲望的图腾（高级车热潮、改装文化黄金期）。</li>
+      <li>T+1~+10：消费降级 → 轻自动车、二手车崛起；"过当竞争"话语出现，厂商开始退出与合并。</li>
+      <li>T+10~+20："年轻人离车"成为社会学话题 —— 低欲望在车市的投影。</li>
+      <li>但同期丰田利润创新高：<b>国内心态与企业利润脱钩，因为利润池已在海外。</b></li>
+    </ul></div>
+  <div class="box cn"><h3>中国 · 压缩版同曲线 + 一个新变量</h3>
+    <ul>
+      <li>T=0 前后：消费降级直接利好自主品牌（性价比+国潮），外资豪华与合资燃油最受伤 —— 与日本"轻自动车化"同构。</li>
+      <li>T+2~："内卷"话语 = 日本当年"过当竞争"的中国版，官方 T+4 出手整治，比日本更早介入出清。</li>
+      <li>"年轻人不买车/网约车化"苗头已现 —— 离车曲线大概率同样压缩上演。</li>
+      <li><b>新变量：</b>电动智能化让车重新变成"科技消费品"，部分对冲欲望退潮 —— 日本剧本里没有这一章。</li>
+    </ul></div>
+</div>
+
+<h2>日本剧本对中国车企的三条预告</h2>
+<ol>
+  <li><b>赢家判据只有一条：出海完成度。</b>日本三十年验证：国内缩量杀不死全球化车企（丰田/本田利润新高），
+      杀死的是内需依赖者（日产/马自达/三菱全部沦为被整合方）。中国对应：看比亚迪/奇瑞/吉利的海外产能利润占比，
+      而非国内份额。</li>
+  <li><b>衰退最深处的技术豪赌决定二十年后的护城河。</b>普锐斯投在 T+6（1997，日本最惨的一年）。
+      中国现在正处对应窗口：固态电池、L3+、机器人化 —— 出清期还在加码研发的公司才是"中国丰田"候选。</li>
+  <li><b>供应链隐形冠军比整车更耐久。</b>电装、爱信、普利司通穿越整个失去三十年 ——
+      中国对应：宁德时代、福耀、三花等"跟着所有整车厂出海"的供应链层，胜率高于押注单一整车品牌。</li>
+</ol>
+
+<h2>投资含义</h2>
+<ul>
+  <li><span class="win">做多</span>：出海产能落地最快的整车（对标丰田 1982-1996 路径）+ 全球供应链隐形冠军（对标电装/爱信）。</li>
+  <li><span class="warn">回避</span>：价格战失血、内需依赖、无出海能力的尾部品牌 —— 日产 1999 剧本的候选人；等整合价出现再看。</li>
+  <li><b>对冲视角</b>：日本车企作为"被攻擂在位者"的份额流失（东南亚/欧洲）仍在早段 —— 多中国车链 / 空日系全球份额是同一逻辑的两面。</li>
+  <li><b>时间标尺</b>：日本"海外利润接棒"完成于 T+10~+17；中国对应 2031-2038。在那之前，中国车企估值应按"出海期权"而非"出海完成体"定价。</li>
+</ul>
+
+<div class="foot">
+  系列研究：studies/jp_cn_relative_timeline/ · 姊妹篇：semis_timeline.html（半导体 · 反向曲线）、
+  automation_semis.md、zeitgeist_healthcare.md · 方法论：房价峰值仅作为"经济压力起点"的对齐零点，不比较地产本身。
+</div>
+
+</div>
+</body>
+</html>
