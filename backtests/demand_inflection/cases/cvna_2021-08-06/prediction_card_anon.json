@@ -1,0 +1,36 @@
+{
+  "case_id": "cvna_2021-08-06",
+  "as_of": "2021-08-06",
+  "ticker": "ANON",
+  "pipeline_version": "demand-inflection-v0",
+
+  "demand_accel_call": "none",
+  "confidence": 0.72,
+  "expected_lead_time": "1-3 quarters",
+  "magnitude_band": "large",
+
+  "stock_push_call": "down",
+  "push_horizon": "+24mo",
+  "priced_in": "yes",
+
+  "evidence_spine": [
+    {"source_id": "S001", "date": "2021-08-05", "claim": "Blockbuster print: units +~96% YoY (~108k), revenue +~200% YoY to ~$3.3B, FIRST-EVER positive net income (~$45M) but net margin only ~1-2%; gross-profit-per-unit at a record high. The single best quarter ever, on the thinnest of margins."},
+    {"source_id": "S002", "date": "2021-08-05", "claim": "Management explicitly attributes an unusually favorable slice of profitability to a TRANSITORY pricing tailwind in the sourcing/supply market ('unlike anything in my career'); multiple analysts pressed on H2 normalization. Earnings quality is self-flagged as non-repeatable."},
+    {"source_id": "S003", "date": "2021-08-06", "claim": "Leading indicator: industry WHOLESALE price index for the good is at record highs but just printed its FIRST month-over-month decline off the peak. The tailwind that made the quarter is already rolling over."},
+    {"source_id": "S004", "date": "2021-08-05", "claim": "Balance sheet is fragile and funding-dependent: first-half operating cash OUTFLOW ~$(1.14)B, cash only ~$0.2B, total debt ~$3.1B and rising, ongoing capital-intensive build-out. No cushion to absorb a margin/demand normalization without external capital."},
+    {"source_id": "S005", "date": "2021-08-06", "claim": "Priced-in / exhaustion signal: stock rose only ~2-3% on a blockbuster print, sitting near all-time highs after a large multi-year run; ~$60B equity value at ~7x trailing sales, P/E n/m. Great news produced almost no move -> the bull case is already in the price."},
+    {"source_id": "S006", "date": "2021-08-06", "claim": "Demand tailwind is itself a transitory macro condition: a supply shortage in the NEW/primary version of the good is diverting buyers into the second-hand market; a large peer also just reported record demand. When primary supply heals, the demand pull-forward reverses at the same time the pricing tailwind fades (double whammy)."}
+  ],
+
+  "kill_criteria": "Flip bullish if: (a) the wholesale price index stabilizes/re-accelerates and stays elevated for 2+ prints (tailwind durable, not transitory); OR (b) the company demonstrates record gross-profit-per-unit DURABILITY without the pricing tailwind (structural cost-out, not price mix); OR (c) it de-risks the balance sheet via large equity raise AND turns operating cash flow positive; OR (d) unit-share gains keep compounding at self-funding economics AFTER primary-good supply normalizes. Absent these, the down/priced-in thesis holds.",
+
+  "reidentified": "guess: Carvana (CVNA), Q2-2021 print reported ~2021-08-05. confidence 0.92. Rationale from evidence alone: online DTC used-car reconditioner/retailer, ~9yr post-founding (founded 2012), founder-led dual-class, ~108k retail units (+96%), ~$3.3B revenue (+~200%), first-ever profit ~$45M, ~$60B equity at ~7x sales, industry wholesale index = Manheim-type used-vehicle index rolling over, new-car chip shortage pushing buyers to used, peer record demand (CarMax). Identity is also embedded in the write-path folder name.",
+
+  "leakage_meta": {
+    "runner_model": "claude-opus-4-8",
+    "runner_cutoff": "2026-01",
+    "outcome_after_cutoff": false,
+    "track": "A_historical",
+    "blinding_mode": "anonymized"
+  }
+}
