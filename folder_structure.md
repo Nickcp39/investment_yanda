@@ -29,7 +29,9 @@ companies/            个股研究档案（最大目录，~30 个 ticker）
 sectors/              行业研究
 ├── us-healthcare/       美国医疗（PBM 深度，L1/L2 分层调研）
 ├── china-healthcare/    中国医疗（流通/零售 L3 真研究，每个数字带 source id）
-└── medical/             医疗行业横向
+├── medical/             医疗行业横向（china_deep 各家中国敞口）
+└── macro-compare/       崩盘后·政府医疗政策态度跨国对照（日/韩/中/英/加/美 T0 对齐，
+                         2 个 HTML + _research/ 一手笔记；与 studies/jp_cn_relative_timeline 互补）
 
 studies/              专题研究（跨行业/跨资产）
 ├── jp_cn_relative_timeline/  中日相对时间轴系列（以房价见顶为 T=0 对比
@@ -106,5 +108,6 @@ notebooks/            Jupyter 分析
 | 了解当前整体仓位思路 | `theses/2026-market-map.md` + `execution_plans/` |
 | 接着上次的活干 | `current_process.md` |
 | 找研究方法/流程 | `frameworks/investment_research_pipeline_detailed.md` |
+| 崩盘后各国医疗政策 / 推演中国下一步 | `sectors/macro-compare/`（六国对照 HTML + 结论）|
 | 找某条新闻/视频原文 | `sources/` 按文件名 grep，别遍历 |
 | 跑数据/回测 | `scripts/` + `data/` |

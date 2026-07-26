@@ -21,6 +21,8 @@ push 时刷新一次，避免回头时丢失上下文。
   替代、社会思潮的逐年演变，推演行业终局
 - **个股线（持续）**：dossier 流水线批量跑（S&P500 医疗、AI-robotics、
   mega7 等批次），产出 decision_card 裁决
+- **本轮扩充**：`sectors/macro-compare/` 把"日中医疗终局"扩成**六国对照**
+  （日/韩/中/英/加/美），带源 + HTML，兑现了"下一步 #4 韩国对照线"计划
 
 ---
 
@@ -61,6 +63,21 @@ push 时刷新一次，避免回头时丢失上下文。
 - 新建 `folder_structure.md`（目录地图 + AI 导读 + dossier 约定速查）
 - 刷新本文件（上一版停在 2026-05-22，已过时两个月）
 
+### 4. 崩盘后·政府医疗政策 六国对照（sectors/macro-compare/，本轮新建）
+
+把 `zeitgeist_healthcare.md` 的"日中医疗终局"做成**带源、可视化、扩到 6 国**
+的专项（与 `studies/jp_cn_relative_timeline/` 互补，不重复）：
+
+- `japan_china_healthcare_policy_2026-07-25.html` —— 日↔中双泳道 T0 对齐 +
+  总开支/价格剪刀差指数图 + 中国下一步剧本表
+- `global_housing_crash_healthcare_2026-07-25.html` —— 日/韩/中/英/加/美
+  六国温度时间线，按医疗体系分三簇 + "中国像谁"判定矩阵 + 各国明细
+- `_research/{us,uk,canada,korea}.md` —— 4 个并行 agent 的一手研究笔记（带源 + 待核）
+- 核心结论：崩盘后普遍转控费、但总开支照涨；**形式取决于体系类型**（社保=
+  集采砍价、税收单付=排队、美国=先扩覆盖）；**中国属东亚社保簇 → 日/韩最准**；
+  真正扳机是"支付方财政"（盯医保结余 + 地方债，加拿大证）；长护险=最脆弱环节
+  （英国证）
+
 ---
 
 ## 近期主线回顾 (2026-06 ~ 2026-07，详见 git log)
@@ -87,7 +104,9 @@ push 时刷新一次，避免回头时丢失上下文。
    中日 T=0 时点人口/GDP 精确值）
 3. **"出海"筛选落地到个股** —— 用"海外收入占比及其斜率"筛医疗/汽车链/
    自动化标的，接到 dossier 流水线（迈瑞已做，联影、汇川、比亚迪链候选）
-4. **韩国第三条对照线**（可选）—— 2018 年后地产+老龄化，介于中日之间
+4. ~~**韩国第三条对照线**~~ **✅ 已完成并超额**（本轮）—— `sectors/macro-compare/`
+   已把韩国 + 英/加/美 做成六国对照；剩余可选：把六国结论反哺 `china_deep/` 个股
+   注记 + 与 `studies/jp_cn_relative_timeline/` 交叉引用
 5. **S&P500 医疗批次收尾** —— batch-2 当时 API 中断记录为 PARTIAL，待续
 6. （历史 backlog，5 月遗留，优先级待重估）灵魂 Skill benchmark
    （buffett-perspective / expert-munger 过 rubric 75 分门槛）、段永平
@@ -109,7 +128,8 @@ push 时刷新一次，避免回头时丢失上下文。
 ## 相关文档导航
 
 - [folder_structure.md](folder_structure.md) — 目录地图（先读）
-- [studies/jp_cn_relative_timeline/](studies/jp_cn_relative_timeline/) — 中日相对时间轴系列（本轮主产出）
+- [studies/jp_cn_relative_timeline/](studies/jp_cn_relative_timeline/) — 中日相对时间轴系列（多行业）
+- [sectors/macro-compare/](sectors/macro-compare/) — 崩盘后医疗政策六国对照（日中深度 HTML + 六国 HTML + agent 研究笔记，本轮新建）
 - [companies/mindray/2026-07-25/decision_card.md](companies/mindray/2026-07-25/decision_card.md) — 迈瑞裁决
 - [theses/2026-market-map.md](theses/2026-market-map.md) — 市场地图
 - [execution_plans/btc_investment_plan_2026-07-17_v2.md](execution_plans/btc_investment_plan_2026-07-17_v2.md) — BTC 执行计划 v2
