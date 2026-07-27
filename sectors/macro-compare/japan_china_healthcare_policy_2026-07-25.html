@@ -1,0 +1,375 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>房价崩盘后·政府对医疗行业的态度 — 日本(1990)镜像中国(2021)</title>
+<style>
+:root{
+  --bg:#fcfcfb; --panel:#ffffff; --panel2:#f6f6f4; --ink:#1a1a19; --ink2:#4b4b47; --muted:#8a8a83;
+  --line:#e6e6e1; --line2:#d6d6cf;
+  --jp:#2563eb; --jp-soft:#dbeafe; --cn:#dc2626; --cn-soft:#fee2e2; --opp:#059669; --opp-soft:#d1fae5;
+  --warm:#f59e0b; --warm-strong:#ea580c; --neutral:#cbd5e1; --cool:#0e7490;
+  --chip:#f1f1ee; --shadow:0 1px 2px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1a19; --panel:#242422; --panel2:#2c2c29; --ink:#ececea; --ink2:#c2c2bc; --muted:#8f8f88;
+    --line:#333330; --line2:#3f3f3b;
+    --jp:#3b82f6; --jp-soft:#1e3a5f; --cn:#ef4444; --cn-soft:#4c1d1d; --opp:#10b981; --opp-soft:#0d3b2e;
+    --warm:#f59e0b; --warm-strong:#fb923c; --neutral:#475569; --cool:#22d3ee;
+    --chip:#2f2f2c; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1a1a19; --panel:#242422; --panel2:#2c2c29; --ink:#ececea; --ink2:#c2c2bc; --muted:#8f8f88;
+  --line:#333330; --line2:#3f3f3b;
+  --jp:#3b82f6; --jp-soft:#1e3a5f; --cn:#ef4444; --cn-soft:#4c1d1d; --opp:#10b981; --opp-soft:#0d3b2e;
+  --warm:#f59e0b; --warm-strong:#fb923c; --neutral:#475569; --cool:#22d3ee;
+  --chip:#2f2f2c; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans CJK SC",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:27px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:20px;margin:44px 0 6px;letter-spacing:-.01em}
+h2 .n{color:var(--muted);font-weight:600;margin-right:8px}
+.sub{color:var(--ink2);font-size:15px;margin:0 0 4px}
+.meta{color:var(--muted);font-size:12.5px;margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.lead{color:var(--ink2);max-width:940px}
+a{color:var(--jp);text-decoration:none}a:hover{text-decoration:underline}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.tbtn{background:var(--chip);border:1px solid var(--line2);color:var(--ink2);border-radius:20px;padding:6px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.tbtn:hover{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;box-shadow:var(--shadow)}
+.tile .k{font-size:12px;color:var(--muted);margin-bottom:4px;font-weight:600;letter-spacing:.02em}
+.tile .v{font-size:15px;color:var(--ink)}
+.tile.jp{border-top:3px solid var(--jp)} .tile.cn{border-top:3px solid var(--cn)} .tile.opp{border-top:3px solid var(--opp)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--ink2);margin:14px 0 6px}
+.lg{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:4px;display:inline-block}
+.sw.jp{background:var(--jp)} .sw.cn{background:var(--cn)}
+.dash{width:20px;height:0;border-top:2px dashed var(--cn)}
+.tempbar{width:120px;height:12px;border-radius:6px;background:linear-gradient(to right,var(--warm-strong),var(--warm),var(--neutral),var(--cool));border:1px solid var(--line2)}
+.scrollx{overflow-x:auto;overflow-y:hidden;padding-bottom:10px;-webkit-overflow-scrolling:touch}
+#tl{position:relative;min-width:1120px;height:700px;margin-top:8px}
+.axis{position:absolute;left:0;right:0;height:1px;background:var(--line2)}
+.tick{position:absolute;transform:translateX(-50%);text-align:center;font-size:11px;color:var(--muted)}
+.tick .yr{display:block;font-size:9.5px;color:var(--muted);opacity:.85;margin-top:1px}
+.tick .bar{width:1px;height:7px;background:var(--line2);margin:0 auto 2px}
+.t0{position:absolute;width:2px;background:repeating-linear-gradient(var(--ink2),var(--ink2) 5px,transparent 5px,transparent 10px);opacity:.5}
+.t0lab{position:absolute;transform:translateX(-50%);font-size:11px;font-weight:700;color:var(--ink);background:var(--bg);padding:2px 8px;border:1px solid var(--line2);border-radius:20px;white-space:nowrap;z-index:7}
+.nowline{position:absolute;width:2px;background:repeating-linear-gradient(var(--opp),var(--opp) 5px,transparent 5px,transparent 10px);opacity:.85}
+.nowlab{position:absolute;transform:translateX(-50%);font-size:10.5px;font-weight:700;color:#fff;background:var(--opp);padding:2px 9px;border-radius:20px;white-space:nowrap;z-index:7}
+.lane{position:absolute;left:0;right:0;height:34px;border-radius:8px;border:1px solid var(--line2)}
+.laneName{position:absolute;font-size:12px;font-weight:800;letter-spacing:.02em;padding:2px 9px;border-radius:20px;color:#fff;white-space:nowrap;z-index:6}
+.projzone{position:absolute;height:34px;border-radius:0 8px 8px 0;background:repeating-linear-gradient(45deg,transparent,transparent 6px,color-mix(in srgb,var(--cn) 15%,transparent) 6px,color-mix(in srgb,var(--cn) 15%,transparent) 12px);border:1px dashed var(--cn);border-left:none}
+.pin{position:absolute;width:2px;background:var(--line2);z-index:3}
+.dot{position:absolute;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid var(--bg);z-index:5}
+.card{position:absolute;transform:translateX(-50%);width:132px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:6px 9px;box-shadow:var(--shadow);z-index:4}
+.card .yr{font-size:10px;font-weight:800;letter-spacing:.01em}
+.card .ti{font-size:11.5px;font-weight:700;color:var(--ink);margin:1px 0 2px;line-height:1.25}
+.card .de{font-size:10px;color:var(--ink2);line-height:1.3}
+.card.jp{border-left:3px solid var(--jp)} .card.jp .yr{color:var(--jp)}
+.card.cn{border-left:3px solid var(--cn)} .card.cn .yr{color:var(--cn)}
+.card.proj{border-left:3px dashed var(--cn);background:var(--panel2)}
+.card.proj .yr{color:var(--cn)} .card.proj .ti::after{content:" ◆推演";font-size:8.5px;color:var(--cn);font-weight:800}
+.card.crash{border:1px solid var(--ink);background:var(--chip)} .card.crash .yr{color:var(--ink)}
+.card.star{box-shadow:0 0 0 2px var(--opp),var(--shadow)}
+.card.star .ti::before{content:"★ ";color:var(--opp)}
+.align .bignum{font-size:15px}
+.arrowrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:8px}
+.step{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:13px;flex:1;min-width:150px}
+.step b{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:2px}
+.arrow{color:var(--muted);font-size:20px;font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.chartcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 12px 10px;box-shadow:var(--shadow)}
+.chartcard h3{margin:2px 4px 2px;font-size:14px}
+.chartcard .cap{font-size:11.5px;color:var(--muted);margin:0 4px 8px}
+.chartcard svg{width:100%;height:auto;display:block;overflow:visible}
+.clab{font-size:11px;font-weight:700}
+.axislab{font-size:10px;fill:var(--muted)}
+.gridline{stroke:var(--line);stroke-width:1}
+.zeroline{stroke:var(--line2);stroke-width:1.5}
+.tblwrap{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px;background:var(--panel)}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel2);font-size:11.5px;color:var(--ink2);letter-spacing:.02em}
+tr:last-child td{border-bottom:none}
+td.mv{font-weight:700;color:var(--ink);width:24%}
+.conf{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.c-hi{background:var(--opp-soft);color:var(--opp)} .c-mid{background:#fef3c7;color:#b45309}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .c-mid{background:#3f2d0a;color:#fbbf24}}
+:root[data-theme="dark"] .c-mid{background:#3f2d0a;color:#fbbf24}
+.star-in td.mv::before{content:"★ ";color:var(--opp)}
+.jpan{color:var(--jp);font-weight:600}
+ul.imp{margin:10px 0 0;padding-left:0;list-style:none}
+ul.imp li{position:relative;padding:9px 0 9px 26px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink2)}
+ul.imp li:last-child{border-bottom:none}
+ul.imp li::before{content:"→";position:absolute;left:4px;color:var(--jp);font-weight:700}
+ul.imp li.s::before{content:"★";color:var(--opp)}
+ul.imp li b{color:var(--ink)}
+.callout{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warm);border-radius:10px;padding:12px 15px;margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.callout b{color:var(--ink)}
+.src{font-size:12px;color:var(--ink2);columns:2;column-gap:28px}
+@media(max-width:640px){.src{columns:1}}
+.src p{break-inside:avoid;margin:0 0 7px}
+.src .g{font-weight:800;color:var(--muted);font-size:11px;letter-spacing:.03em}
+.disc{font-size:11.5px;color:var(--muted);margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:20px;background:var(--chip);color:var(--ink2);border:1px solid var(--line2)}
+.tag.fact{color:var(--jp);border-color:var(--jp)} .tag.proj{color:var(--cn);border-color:var(--cn)}
+</style>
+
+<div class="wrap">
+
+<div class="toolbar">
+  <div>
+    <h1>房价崩盘之后,政府对医疗行业的态度会怎么走?</h1>
+    <p class="sub">用<b>日本(泡沫破裂 1990)</b>当镜子,推演<b>中国(地产危机 2021)</b>的下一步 —— X 轴 = 距崩盘的年数(<b>T0 对齐</b>),温度色带 = 政府政策态度(<span style="color:var(--warm-strong)">暖=扩张</span> → <span style="color:var(--cool)">冷=收紧</span>)。</p>
+    <div class="meta"><span>as_of 2026-07-25</span><span>owner: Nick</span><span>类型:宏观政策对照 · 情景推演</span><span>口径:史实带日期与来源;右侧虚线=推演</span></div>
+  </div>
+  <button class="tbtn" id="themeBtn">◐ 明/暗</button>
+</div>
+
+<div class="tiles">
+  <div class="tile"><div class="k">时间错位</div><div class="v">日本 T0 = <b>1990</b>,中国 T0 = <b>2021</b>,相差 <b>约 31 年</b>。同一套剧本、不同起点。</div></div>
+  <div class="tile jp"><div class="k">共同剧本</div><div class="v">崩盘 → 财政恶化 + <b>老龄化</b> → 政府从"扩张福利"转向<b>控费</b>(药价/支付改革);但总医疗开支<b>反而↑</b>(刚需)。</div></div>
+  <div class="tile cn"><div class="k">中国在"快进"</div><div class="v">日本花 ~10 年才上介护保险(2000/T0+10);中国 <b>2018 就设医保局 + 集采</b>(≈T0−3),转冷<b>更早更狠</b>。</div></div>
+  <div class="tile opp"><div class="k">下一步大概率</div><div class="v">强制<b>长护险全国化</b> + DRG/DIP 全覆盖 + 药械持续降价 + 逼出创新药械<b>「出海」</b>。</div></div>
+</div>
+
+<h2><span class="n">01</span>对齐时间线 · 日本 vs 中国</h2>
+<p class="lead">两条泳道共用一根「距崩盘年数」横轴,竖虚线 <b>T0</b> 把日本 1990 与中国 2021 对齐。左侧=崩盘前,两国都是<span style="color:var(--warm-strong)">暖色(扩张)</span>;越往右政策越<span style="color:var(--cool)">冷(收紧)</span>。<b>关键读法:</b>中国实线只到 2025(<span style="color:var(--opp);font-weight:700">绿线=当前 T0+4</span>),再往右是<b>虚线推演</b> —— 直接对照<b>日本在同一年数上真实做过的事</b>(介护保险、DPC、后期高龄…),就是中国下一步的大概率剧本。</p>
+
+<div class="legend">
+  <span class="lg"><span class="sw jp"></span>日本(史实)</span>
+  <span class="lg"><span class="sw cn"></span>中国(史实)</span>
+  <span class="lg"><span class="dash"></span>中国(推演)</span>
+  <span class="lg"><span class="sw" style="background:var(--opp)"></span>中国当前位置</span>
+  <span class="lg">政策态度 <span class="tempbar"></span> 扩张→收紧</span>
+  <span class="lg">★ = 关联出海/影像/AI 职业线</span>
+</div>
+
+<div class="scrollx"><div id="tl"></div></div>
+<p class="meta" style="margin-top:2px">↔ 窄屏可左右滑动。悬停卡片看详情。</p>
+
+<h2><span class="n">02</span>中国现在,在日本的"第几年"?</h2>
+<div class="panel align">
+  <div class="bignum">中国当前(2025,<b>T0+4</b>)在日本时钟上 ≈ <b style="color:var(--jp)">日本 1994</b>。但中国<b>已经</b>做完了日本要到 <b>2003(T0+13)</b> 才做的支付改革(DRG/DIP)、和日本 <b>2000(T0+10)</b> 的长护险试点 —— 换句话说,<b style="color:var(--cn)">中国在政策节奏上比日本当年快了约 6–10 年</b>。</div>
+  <div class="arrowrow">
+    <div class="step"><b>看中国下一步</b>→ 就看日本 <b>T0+10 ~ T0+20</b>(2000–2010)那段真实发生的事</div>
+    <span class="arrow">→</span>
+    <div class="step"><b>日本那段</b>:介护保险落地 · DPC 全面铺开 · 后期高龄制度 · 药价年年降 · <b>药企被迫出海</b></div>
+    <span class="arrow">→</span>
+    <div class="step" style="border-left:3px solid var(--opp)"><b>映射到中国</b>:长护险全国强制 · 按病种付费常态 · 集采扩面 · <b>创新药械出海求生</b></div>
+  </div>
+</div>
+
+<h2><span class="n">03</span>行业增长 vs 价格 —— "剪刀差"两国都一样</h2>
+<p class="lead">把两个不同量纲的东西<b>指数化到 T0=100</b>(同轴,不用双 Y 轴):<b>总医疗开支</b>(实线)因老龄化一路↑,而<b>药械价格</b>(虚线)被政策一路↓。这就是崩盘后医疗行业的本质——<b>需求防御、毛利被压</b>。</p>
+<div class="grid2">
+  <div class="chartcard"><h3 style="color:var(--jp)">日本(T0=1990)</h3><p class="cap">总医疗费(国民医療費)翻倍到 ¥43T(2020);药价双年改定累计下移。虚线=示意。</p><div id="jpChart"></div></div>
+  <div class="chartcard"><h3 style="color:var(--cn)">中国(T0=2021)</h3><p class="cap">卫生总费用 ¥7.68T(2021)→ 预计 ¥8.92T(2025);集采使药械价格中枢骤降。虚线=示意。</p><div id="cnChart"></div></div>
+</div>
+<p class="meta" style="margin-top:8px"><span class="tag fact">史实</span> 总开支两端为真实数据(见来源)。<span class="tag proj">示意</span> 价格指数为<b>方向性合成</b>——幅度取自已公开降价事实(日本双年 −2~5%/年;中国 4+7 均 −52%、冠脉支架 −93%、人工关节 −82%),非某单一连续序列。</p>
+
+<h2><span class="n">04</span>中国下一步 · 大概率剧本(读自日本)</h2>
+<div class="tblwrap"><table>
+  <thead><tr><th>预测动作</th><th>日本对标(时点)</th><th>中国预计时点</th><th>置信度</th><th>投资/职业含义</th></tr></thead>
+  <tbody>
+    <tr class="star-in"><td class="mv">长期护理保险<b>全国强制</b>铺开(事实上的"第六险")</td><td>介护保险<br><span class="jpan">2000 / T0+10</span></td><td><b>2026–2028</b><br>T0+5~7(更早)</td><td><span class="conf c-hi">高</span></td><td>养老 / 居家护理 / <b>医养结合</b>直接受益;护理器械、康复、适老化。</td></tr>
+    <tr><td class="mv">DRG/DIP <b>按病种付费</b>全国全覆盖、常态化</td><td>DPC 导入<br><span class="jpan">2003 / T0+13</span></td><td><b>2025 已收官</b><br>T0+4(已提前)</td><td><span class="conf c-hi">已发生</span></td><td>医院被迫提效 → 利好<b>AI/信息化/效率</b>方案;高值耗材承压。</td></tr>
+    <tr><td class="mv">药械<b>集采持续扩面</b>,价格中枢长期下移</td><td>药价双年改定<br><span class="jpan">1990s→ 常态</span></td><td>常态化,逐年扩</td><td><span class="conf c-hi">高</span></td><td>回避<b>纯价格承受方</b>(低端仿制药/普通耗材);要有壁垒或海外敞口。</td></tr>
+    <tr class="star-in"><td class="mv">创新药械被迫<b>「出海」</b>求生(License-out / NewCo)</td><td>武田/安斯泰来出海<br><span class="jpan">2000s,海外占比&gt;60%</span></td><td><b>2023 起加速</b><br>T0+2→ 主战略</td><td><span class="conf c-hi">中高</span></td><td>★<b>Nick 出海主线</b>:买能在<b>海外中标 / 授权变现</b>的创新者,而非困守国内。</td></tr>
+    <tr class="star-in"><td class="mv"><b>国产替代</b>加速(高端影像/手术机器人)</td><td>日本本土产业依赖<br><span class="jpan">长期</span></td><td>持续,政策强推</td><td><span class="conf c-mid">中高</span></td><td>★份额抢占者(<b>联影/迈瑞</b> vs GE/飞利浦/西门子);但集采压毛利,选有定价权者。</td></tr>
+    <tr><td class="mv">医保基金承压 → <b>延迟退休</b>、自付比例上升、门诊统筹深化</td><td>提高自付+消费税<br><span class="jpan">1997/2003…</span></td><td>延退 2024 已宣<br>逐步落地</td><td><span class="conf c-mid">中高</span></td><td>保险/服务端结构变化;个人自费医疗、商业健康险空间。</td></tr>
+    <tr><td class="mv"><b>银发经济</b>/老龄产业上升为国策</td><td>介护后老龄产业<br><span class="jpan">2000s+</span></td><td>2024 文件起步</td><td><span class="conf c-mid">中</span></td><td>主题性:适老、康养、慢病管理、老年消费医疗。</td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="n">05</span>投资 / 职业含义</h2>
+<p class="lead">"剪刀差"意味着:别买<b>"中国医疗 beta"</b>(总量涨不等于赚钱,毛利被政策压)。要买<b>政策对齐的具体细分</b>——日本三十年证明:<b>出海的活下来了,困守本土的萎缩了</b>。</p>
+<ul class="imp">
+  <li class="s"><b>出海创新者</b> —— 创新药 License-out、器械在 ex-China 中标的公司。日本对标:武田/安斯泰来海外占比 60–90% 才续命。<b>这条=Nick 的核心赛道</b>。</li>
+  <li class="s"><b>国产替代冠军</b>(联影 United Imaging、迈瑞 Mindray)—— 在国产化政策下抢 GE/飞利浦/西门子份额;但盯住集采毛利风险,挑有海外收入/定价权的。</li>
+  <li><b>养老 / 长护 / 医养结合</b> —— 介护保险的中国翻版受益方;护理、康复、适老器械。</li>
+  <li class="s"><b>AI / 效率</b> —— DRG/DIP 逼医院提效,利好影像 AI、信息化。<b>=Nick 的影像+深度学习线</b>。</li>
+  <li><b>对 Nick 跟踪的美股</b>:此框架结构性<b>重定价了中国区风险</b> —— GEHC / SYK / ISRG / MDT 的中国 segment 面对「集采 + 国产替代」是<b>持久逆风、不会反转</b>(<a href="../medical/china_deep/">china_deep 笔记</a>已逐家标过,这份 HTML 给出宏观"为什么")。</li>
+</ul>
+
+<div class="callout"><b>⚠ 类比是镜子,不是预言。</b>中日关键差异会让轨迹偏移:① 中国<b>更集权</b>、政策推行更快更强制;② <b>未富先老</b>、老龄化速度快于日本当年;③ 居民资产里<b>房产占比更高</b>,财富效应冲击更深;④ <b>无移民缓冲</b>、劳动人口下降更陡;⑤ 出海面临<b>更高地缘壁垒</b>(日本 2000s 出海时无此阻力)。所以中国可能在"控费/国产化"上比日本<b>更狠更快</b>,却在"出海"上<b>更难</b>。用它定方向,别用它定点位。</div>
+
+<h2><span class="n">06</span>史料与来源</h2>
+<div class="src panel">
+  <p class="g">日本 · JAPAN</p>
+  <p>泡沫顶/崩盘(Nikkei 38,916 @1989-12-29;地价 1991 见顶):<a href="https://www.progress.org/wiki/japanese-asset-price-bubble/">progress.org</a></p>
+  <p>介护保险 2000 施行(Kaigo Hoken,40+ 强制):<a href="https://japanhpn.org/en/longtermcare/">Japan Health Policy NOW</a> · <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7930803/">NCBI: LTCI</a></p>
+  <p>自付比例(现役 30%/70–74 20%/75+ 10%)、2002 医疗费首降、2003 DPC:<a href="https://pubmed.ncbi.nlm.nih.gov/15160800/">Health Affairs</a> · <a href="https://japanhpn.org/en/finan3/">JHPN Cost Control</a></p>
+  <p>药价双年改定 · 降幅 −2.4%/年(2011–17)→ −4.8%/年(2017–20):<a href="https://www.pmda.go.jp/files/000248690.pdf">PMDA</a></p>
+  <p>国民医療費 ~翻倍至 ¥43T(2020),占 GDP 4.6%→8.0%;长护费 ¥3.6T(2000)→¥10.8T(2020):<a href="https://japanhpn.org/en/section-7-1/">JHPN 开支趋势</a></p>
+  <p>药企出海(武田/安斯泰来/第一三共海外占比 &gt;60%,武田 &gt;90%):<a href="https://link.springer.com/chapter/10.1057/9781137263636_10">Globalization of Japanese Pharma</a> · <a href="https://itif.org/publications/2022/07/25/how-japan-squandered-its-biopharmaceutical-competitiveness-a-cautionary-tale/">ITIF</a></p>
+  <p class="g">中国 · CHINA</p>
+  <p>恒大违约/地产危机 2021;65+ 破 14%(2021 深度老龄):<a href="https://en.wikipedia.org/wiki/Chinese_property_sector_crisis_(2020%E2%80%93present)">Wikipedia</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11681677/">BMC</a></p>
+  <p>国家医保局 2018 成立;"4+7"集采 25 品种均降 <b>52%</b>(最高 −96%):<a href="https://clarivate.com/life-sciences-healthcare/blog/china-47-equals-quality-generic-medicines-affordable-costs/">Clarivate</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10590231/">NCBI</a></p>
+  <p>DRG/DIP 三年行动(2021)→ 2025 全国全覆盖;2025-08 管理办法:<a href="https://cms.law/en/chn/news-information/china-s-nhsa-issued-the-regulations-on-drg-dip-healthcare-security-payment-mechanism">CMS Law</a></p>
+  <p>长期护理保险:2016 首批 15 城 → 2020 扩至 49 城:<a href="https://www.rti.org/publication/understanding-china-long-term-care-insurance-pilots-key-features-challenges-prospects">RTI</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11426933/">JOGH</a></p>
+  <p>卫生总费用 ¥7.68T(2021,6.72% GDP)→ 预计 ¥8.92T(2025):<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11681677/">BMC Health Services Research</a></p>
+  <p>高值耗材集采(冠脉支架 −93%、人工关节 −82%)· 医疗反腐 2023 · 延迟退休 2024:公开政策报道综合。</p>
+</div>
+
+<p class="disc"><b>免责声明:</b>本文为宏观政策历史对照与情景推演,供研究参考,<b>不构成投资建议</b>,不针对任何具体证券给出买卖意见;作者非持牌投资顾问。带日期的政策事件与开支数字标注了来源(<span class="tag fact">史实</span>);第 04 节"预计时点/剧本"及价格示意曲线(<span class="tag proj">推演/示意</span>)是基于日本类比的作者判断,存在中日差异导致的偏离风险,请独立核实。数据截至 2026-07-25。</p>
+
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  function cur(){var t=root.getAttribute('data-theme'); if(t)return t; return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+  btn.onclick=function(){root.setAttribute('data-theme', cur()==='dark'?'light':'dark'); drawCharts();};
+
+  var T_MIN=-8, T_MAX=18, W=1120, PAD_L=72, PAD_R=44, TRACK=W-PAD_L-PAD_R;
+  function X(t){ return PAD_L + (t-T_MIN)/(T_MAX-T_MIN)*TRACK; }
+  var tl=document.getElementById('tl');
+  var LANE_H=34, TIER=76, HALF=70, GAP=12, TOPPAD=20;
+
+  var JP=[
+    {t:-7,y:'1983',ti:'老人保健法',de:'老人自付重启',dir:'up'},
+    {t:-1,y:'1989',ti:'消费税3%+黄金计划',de:'Nikkei顶;福利扩张',dir:'up'},
+    {t:0,y:'1990',ti:'资产泡沫破裂',de:'股市崩盘(地价次年顶)',dir:'up',crash:1},
+    {t:7,y:'1997',ti:'消费税5%+老人加负',de:'财政恶化,自付上调',dir:'up'},
+    {t:10,y:'2000',ti:'介护保险施行',de:'老龄照护·第五险',dir:'up',key:1},
+    {t:12,y:'2002',ti:'医疗费首次下降',de:'控价控量+自付↑',dir:'up'},
+    {t:13,y:'2003',ti:'DPC+现役自付30%',de:'按病种付费导入',dir:'up',key:1},
+    {t:18,y:'2008',ti:'后期高龄医疗制度',de:'75+独立医保',dir:'up'}
+  ];
+  var CN=[
+    {t:-5,y:'2016',ti:'长护险15城试点',de:'老龄前瞻布局',dir:'down'},
+    {t:-3,y:'2018',ti:'医保局+4+7集采',de:'25品均降52%',dir:'down',key:1},
+    {t:-2,y:'2019',ti:'DRG付费试点',de:'集采扩围全国',dir:'down'},
+    {t:-1,y:'2020',ti:'DIP+长护险扩围',de:'支架集采−93%',dir:'down'},
+    {t:0,y:'2021',ti:'地产危机+深度老龄',de:'恒大;65+破14%',dir:'down',crash:1},
+    {t:2,y:'2023',ti:'医疗反腐',de:'全行业合规',dir:'down'},
+    {t:4,y:'2025',ti:'DRG/DIP全国',de:'按病种付费落地',dir:'down',key:1}
+  ];
+  var PROJ=[
+    {t:6,y:'~2026-28',ti:'长护险全国强制',de:'↔日本介护2000',dir:'down',star:1},
+    {t:9,y:'~2027-30',ti:'创新药械出海',de:'↔日本药企出海',dir:'down',star:1},
+    {t:12,y:'~2028-32',ti:'国产替代高端化',de:'影像/手术机器人',dir:'down',star:1},
+    {t:15,y:'~2030+',ti:'医保基金改革',de:'自付↑/延退落地',dir:'down'}
+  ];
+
+  function placeTiers(list){
+    var tiers=[];
+    var order=list.slice().sort(function(a,b){ if(a.crash&&!b.crash)return -1; if(b.crash&&!a.crash)return 1; return a.t-b.t;});
+    order.forEach(function(e){
+      var x=X(e.t), k=0;
+      while(true){
+        if(!tiers[k]) tiers[k]=[];
+        var bad=tiers[k].some(function(cx){ return Math.abs(x-cx)<2*HALF; });
+        if(!bad){ tiers[k].push(x); e.tier=k; break; }
+        k++;
+      }
+    });
+  }
+  placeTiers(JP); placeTiers(CN.concat(PROJ));
+  var maxUp=Math.max.apply(null,JP.map(function(e){return e.tier}));
+  var maxDn=Math.max.apply(null,CN.concat(PROJ).map(function(e){return e.tier}));
+
+  var JP_LANE_Y = TOPPAD + (maxUp+1)*TIER + GAP;
+  var AXIS_Y = JP_LANE_Y + LANE_H + 22;
+  var CN_LANE_Y = AXIS_Y + 42;
+  var TOTAL_H = CN_LANE_Y + LANE_H + GAP + (maxDn+1)*TIER + 16;
+  tl.style.height = TOTAL_H+'px';
+
+  // axis + ticks
+  var axis=document.createElement('div'); axis.className='axis'; axis.style.top=AXIS_Y+'px'; tl.appendChild(axis);
+  for(var t=T_MIN;t<=T_MAX;t+=2){
+    var tk=document.createElement('div'); tk.className='tick'; tk.style.left=X(t)+'px'; tk.style.top=(AXIS_Y+5)+'px';
+    var lbl = t===0 ? 'T0' : (t>0?'T0+'+t:'T0'+t);
+    tk.innerHTML='<div class="bar"></div>'+lbl+'<span class="yr">日'+(1990+t)+'/中'+(2021+t)+'</span>';
+    tl.appendChild(tk);
+  }
+  // T0 dashed line + pill
+  var t0top=JP_LANE_Y-16, t0bot=CN_LANE_Y+LANE_H+6;
+  var t0=document.createElement('div'); t0.className='t0'; t0.style.left=X(0)+'px'; t0.style.top=t0top+'px'; t0.style.height=(t0bot-t0top)+'px'; tl.appendChild(t0);
+  var t0l=document.createElement('div'); t0l.className='t0lab'; t0l.style.left=X(0)+'px'; t0l.style.top=(t0top-14)+'px'; t0l.textContent='T0 房价崩盘'; tl.appendChild(t0l);
+  // China "now" green dashed line spanning both lanes + top label (t=+4)
+  var nl=document.createElement('div'); nl.className='nowline'; nl.style.left=X(4)+'px'; nl.style.top=t0top+'px'; nl.style.height=(t0bot-t0top)+'px'; tl.appendChild(nl);
+  var nlab=document.createElement('div'); nlab.className='nowlab'; nlab.style.left=X(4)+'px'; nlab.style.top=(t0top-14)+'px'; nlab.textContent='中国当前 2025 · T0+4'; tl.appendChild(nlab);
+
+  function pctOf(t){ return ((t-T_MIN)/(T_MAX-T_MIN)*100).toFixed(1)+'%'; }
+  function makeLane(y,grad,name,cls){
+    var lane=document.createElement('div'); lane.className='lane'; lane.style.top=y+'px'; lane.style.background=grad; tl.appendChild(lane);
+    var nm=document.createElement('div'); nm.className='laneName'; nm.style.background=(cls==='jp'?'var(--jp)':'var(--cn)'); nm.style.left='8px'; nm.style.top=(y+7)+'px'; nm.textContent=name; tl.appendChild(nm);
+  }
+  var jpGrad='linear-gradient(90deg,color-mix(in srgb,var(--warm-strong) 40%,transparent) 0%,color-mix(in srgb,var(--warm) 38%,transparent) '+pctOf(0)+',color-mix(in srgb,var(--neutral) 30%,transparent) '+pctOf(6)+',color-mix(in srgb,var(--cool) 40%,transparent) '+pctOf(13)+',color-mix(in srgb,var(--cool) 44%,transparent) 100%)';
+  var cnGrad='linear-gradient(90deg,color-mix(in srgb,var(--warm-strong) 40%,transparent) 0%,color-mix(in srgb,var(--warm) 38%,transparent) '+pctOf(-4)+',color-mix(in srgb,var(--neutral) 30%,transparent) '+pctOf(-2)+',color-mix(in srgb,var(--cool) 42%,transparent) '+pctOf(2)+',color-mix(in srgb,var(--cool) 44%,transparent) 100%)';
+  makeLane(JP_LANE_Y,jpGrad,'日本','jp');
+  makeLane(CN_LANE_Y,cnGrad,'中国','cn');
+
+  // China projection hatched zone (t>=+5)
+  var pz=document.createElement('div'); pz.className='projzone'; pz.style.left=X(5)+'px'; pz.style.width=(X(T_MAX)-X(5))+'px'; pz.style.top=CN_LANE_Y+'px'; tl.appendChild(pz);
+
+  function renderEvent(e,laneY,cls){
+    var x=X(e.t), slot, stemTop, stemH;
+    if(e.dir==='up'){ slot=laneY-GAP-e.tier*TIER; stemTop=slot; stemH=laneY-slot; }
+    else{ slot=laneY+LANE_H+GAP+e.tier*TIER; stemTop=laneY+LANE_H; stemH=slot-stemTop; }
+    var st=document.createElement('div'); st.className='pin'; st.style.left=x+'px'; st.style.top=stemTop+'px'; st.style.height=Math.max(stemH,0)+'px'; tl.appendChild(st);
+    var d=document.createElement('div'); d.className='dot'; d.style.left=x+'px'; d.style.top=(laneY+LANE_H/2)+'px';
+    d.style.background=(cls==='proj')?'var(--panel)':(e.crash?'var(--ink)':(cls==='jp'?'var(--jp)':'var(--cn)'));
+    if(cls==='proj') d.style.borderColor='var(--cn)';
+    tl.appendChild(d);
+    var c=document.createElement('div'); c.className='card '+(e.crash?'crash':cls)+(e.star?' star':'');
+    c.style.left=x+'px';
+    if(e.dir==='up') c.style.bottom=(TOTAL_H-slot)+'px'; else c.style.top=slot+'px';
+    var tlab = e.t===0?'T0':(e.t>0?'T0+'+e.t:'T0'+e.t);
+    c.innerHTML='<div class="yr">'+e.y+' · '+tlab+'</div><div class="ti">'+e.ti+'</div><div class="de">'+e.de+'</div>';
+    c.title=e.y+' '+e.ti+': '+e.de;
+    tl.appendChild(c);
+  }
+  JP.forEach(function(e){renderEvent(e,JP_LANE_Y,'jp');});
+  CN.forEach(function(e){renderEvent(e,CN_LANE_Y,'cn');});
+  PROJ.forEach(function(e){renderEvent(e,CN_LANE_Y,'proj');});
+
+  // ---- indexed line charts ----
+  function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+  function lineChart(mountId,series,xlabels){
+    var mount=document.getElementById(mountId); if(!mount)return; mount.innerHTML='';
+    var w=440,h=228,pl=38,pr=68,pt=14,pb=28;
+    var xmin=0,xmax=xlabels.length-1;
+    var vals=[100]; series.forEach(function(s){s.data.forEach(function(v){vals.push(v)})});
+    var ymin=Math.floor(Math.min.apply(null,vals)/20)*20, ymax=Math.ceil(Math.max.apply(null,vals)/20)*20;
+    function px(i){return pl+(i-xmin)/(xmax-xmin)*(w-pl-pr);}
+    function py(v){return pt+(1-(v-ymin)/(ymax-ymin))*(h-pt-pb);}
+    var svg='<svg viewBox="0 0 '+w+' '+h+'" role="img">';
+    for(var g=ymin; g<=ymax+0.001; g+=(ymax-ymin)/4){
+      svg+='<line class="'+(Math.abs(g-100)<0.1?'zeroline':'gridline')+'" x1="'+pl+'" y1="'+py(g)+'" x2="'+(w-pr)+'" y2="'+py(g)+'"/>';
+      svg+='<text class="axislab" x="'+(pl-6)+'" y="'+(py(g)+3)+'" text-anchor="end">'+Math.round(g)+'</text>';
+    }
+    xlabels.forEach(function(lb,i){ svg+='<text class="axislab" x="'+px(i)+'" y="'+(h-8)+'" text-anchor="middle">'+lb+'</text>'; });
+    svg+='<text class="axislab" x="'+(w-pr+5)+'" y="'+(py(100)-4)+'">T0=100</text>';
+    series.forEach(function(s){
+      var dd=''; s.data.forEach(function(v,i){ dd+=(i?'L':'M')+px(i)+' '+py(v)+' '; });
+      svg+='<path d="'+dd+'" fill="none" stroke="'+s.color+'" stroke-width="2.4" '+(s.dash?'stroke-dasharray="6 5"':'')+' stroke-linejoin="round" stroke-linecap="round"/>';
+      var lx=px(xmax), ly=py(s.data[s.data.length-1]);
+      svg+='<circle cx="'+lx+'" cy="'+ly+'" r="3.4" fill="'+s.color+'"/>';
+      svg+='<text class="clab" x="'+(lx+7)+'" y="'+(ly+(s.labelDy||0)+3)+'" fill="'+s.color+'">'+s.label+'</text>';
+    });
+    svg+='</svg>'; mount.innerHTML=svg;
+  }
+  function drawCharts(){
+    var jp=css('--jp'), cn=css('--cn'), mut=css('--muted');
+    lineChart('jpChart',[
+      {label:'总医疗费',color:jp,data:[100,150,180,215],labelDy:-2},
+      {label:'药价',color:mut,dash:1,data:[100,82,68,55],labelDy:4}
+    ],['1990','2000','2010','2020']);
+    lineChart('cnChart',[
+      {label:'卫生总费',color:cn,data:[100,108,116,140],labelDy:-2},
+      {label:'药械价',color:mut,dash:1,data:[100,70,48,44],labelDy:4}
+    ],['2021','2023','2025','2030e']);
+  }
+  drawCharts();
+})();
+</script>

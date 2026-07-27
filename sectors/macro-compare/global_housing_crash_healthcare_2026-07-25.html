@@ -1,0 +1,306 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>崩盘之后·政府对医疗的态度 — 六国对照(中国像谁?)</title>
+<style>
+:root{
+  --bg:#fcfcfb;--panel:#fff;--panel2:#f6f6f4;--ink:#1a1a19;--ink2:#4b4b47;--muted:#8a8a83;--line:#e6e6e1;--line2:#d6d6cf;
+  --A:#2563eb;--A-soft:#dbeafe;--B:#dc2626;--B-soft:#fee2e2;--C:#059669;--C-soft:#d1fae5;
+  --warm-strong:#ea580c;--warm:#f59e0b;--neutral:#cbd5e1;--cool:#0e7490;--gold:#b45309;
+  --chip:#f1f1ee;--shadow:0 1px 2px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1a1a19;--panel:#242422;--panel2:#2c2c29;--ink:#ececea;--ink2:#c2c2bc;--muted:#8f8f88;--line:#333330;--line2:#3f3f3b;
+  --A:#3b82f6;--A-soft:#1e3a5f;--B:#ef4444;--B-soft:#4c1d1d;--C:#059669;--C-soft:#0d3b2e;
+  --warm-strong:#fb923c;--warm:#f59e0b;--neutral:#475569;--cool:#22d3ee;--gold:#fbbf24;
+  --chip:#2f2f2c;--shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.3);
+}}
+:root[data-theme="dark"]{
+  --bg:#1a1a19;--panel:#242422;--panel2:#2c2c29;--ink:#ececea;--ink2:#c2c2bc;--muted:#8f8f88;--line:#333330;--line2:#3f3f3b;
+  --A:#3b82f6;--A-soft:#1e3a5f;--B:#ef4444;--B-soft:#4c1d1d;--C:#059669;--C-soft:#0d3b2e;
+  --warm-strong:#fb923c;--warm:#f59e0b;--neutral:#475569;--cool:#22d3ee;--gold:#fbbf24;
+  --chip:#2f2f2c;--shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans CJK SC",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:26px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:20px;margin:46px 0 6px;letter-spacing:-.01em}
+h2 .n{color:var(--muted);font-weight:600;margin-right:8px}
+.sub{color:var(--ink2);font-size:15px;margin:0 0 4px}
+.meta{color:var(--muted);font-size:12.5px;margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.lead{color:var(--ink2);max-width:960px}
+a{color:var(--A);text-decoration:none}a:hover{text-decoration:underline}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.tbtn{background:var(--chip);border:1px solid var(--line2);color:var(--ink2);border-radius:20px;padding:6px 13px;font-size:12.5px;cursor:pointer;font-family:inherit}.tbtn:hover{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:14px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;box-shadow:var(--shadow)}
+.tile .k{font-size:12px;color:var(--muted);margin-bottom:4px;font-weight:600}
+.tile .v{font-size:14.5px;color:var(--ink)}
+.tile.a{border-top:3px solid var(--A)}.tile.b{border-top:3px solid var(--B)}.tile.c{border-top:3px solid var(--C)}.tile.g{border-top:3px solid var(--gold)}
+.legend{display:flex;gap:15px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--ink2);margin:12px 0 6px}
+.lg{display:inline-flex;align-items:center;gap:6px}
+.dotm{width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid var(--bg);display:inline-block}
+.dotm.hollow{background:var(--panel);border:2px dashed var(--B)}
+.tempbar{width:130px;height:12px;border-radius:6px;background:linear-gradient(to right,var(--warm-strong),var(--warm),var(--neutral),var(--cool));border:1px solid var(--line2)}
+.scrollx{overflow-x:auto;overflow-y:hidden;padding-bottom:10px;-webkit-overflow-scrolling:touch}
+#tl{position:relative;min-width:1180px;height:560px;font-size:11px}
+.axis{position:absolute;height:1px;background:var(--line2)}
+.tick{position:absolute;transform:translateX(-50%);text-align:center;color:var(--muted);font-size:10.5px}
+.tick .bar{width:1px;height:7px;background:var(--line2);margin:2px auto 0}
+.clhdr{position:absolute;font-size:12px;font-weight:800;letter-spacing:.02em;padding:2px 0}
+.clhdr .pill{font-size:10px;font-weight:700;color:#fff;border-radius:20px;padding:1px 8px;margin-left:6px}
+.lane{position:absolute;height:26px;border-radius:7px;border:1px solid var(--line2)}
+.lane.hl{outline:2px solid var(--gold);outline-offset:1px}
+.cname{position:absolute;font-weight:800;font-size:12.5px;white-space:nowrap}
+.cname .sys{display:block;font-weight:500;font-size:10px;color:var(--muted)}
+.cname .t0y{display:block;font-weight:600;font-size:9.5px;color:var(--muted)}
+.chip{position:absolute;font-size:10px;font-weight:700;padding:3px 8px;border-radius:7px;background:var(--panel2);border:1px solid var(--line2);color:var(--ink2);white-space:nowrap;max-width:150px;line-height:1.2}
+.pin{position:absolute;width:2px;background:var(--line2);z-index:2}
+.dot{position:absolute;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid var(--bg);background:var(--ink);z-index:4}
+.dot.crash{width:13px;height:13px;background:var(--B)}
+.dot.proj{background:var(--panel);border:2px dashed var(--B)}
+.elab{position:absolute;transform:translateX(-50%);text-align:center;font-size:9.5px;color:var(--ink2);white-space:nowrap;z-index:3;line-height:1.15}
+.elab .y{font-weight:800;color:var(--ink);display:block}
+.elab.star .y::before{content:"⭐";font-size:9px}
+.t0{position:absolute;width:2px;background:repeating-linear-gradient(var(--ink2),var(--ink2) 5px,transparent 5px,transparent 10px);opacity:.5;z-index:1}
+.t0lab{position:absolute;transform:translateX(-50%);font-size:10.5px;font-weight:800;color:var(--ink);background:var(--bg);padding:1px 8px;border:1px solid var(--line2);border-radius:20px;white-space:nowrap;z-index:6}
+.nowline{position:absolute;width:2px;background:repeating-linear-gradient(var(--C),var(--C) 5px,transparent 5px,transparent 10px);z-index:5}
+.nowlab{position:absolute;transform:translateX(-50%);font-size:9.5px;font-weight:700;color:#fff;background:var(--C);padding:1px 7px;border-radius:20px;white-space:nowrap;z-index:6}
+.matrix{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin-top:12px}
+table{border-collapse:collapse;width:100%;min-width:820px;font-size:13px;background:var(--panel)}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel2);font-size:11.5px;color:var(--ink2)}
+tr:last-child td{border-bottom:none}
+td.cl{font-weight:800;width:15%}
+.badgeA{color:var(--A)}.badgeB{color:var(--B)}.badgeC{color:var(--C)}
+.hlrow{background:color-mix(in srgb,var(--gold) 9%,transparent)}
+.callout{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warm);border-radius:10px;padding:12px 15px;margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.callout.gold{border-left-color:var(--gold)}.callout b{color:var(--ink)}
+ul.imp{margin:10px 0 0;padding-left:0;list-style:none}
+ul.imp li{position:relative;padding:9px 0 9px 26px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink2)}
+ul.imp li:last-child{border-bottom:none}
+ul.imp li::before{content:"→";position:absolute;left:4px;color:var(--A);font-weight:700}
+ul.imp li.s::before{content:"★";color:var(--C)}
+ul.imp li b{color:var(--ink)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;margin-top:10px;box-shadow:var(--shadow)}
+summary{cursor:pointer;padding:11px 15px;font-weight:700;font-size:14px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";color:var(--muted)}
+details[open] summary::before{content:"▾ "}
+.dbody{padding:0 15px 14px}
+.dbody table{min-width:600px;font-size:12px}
+.src{font-size:11.5px;color:var(--ink2)}
+.src a{margin-right:4px}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:20px;background:var(--chip);color:var(--ink2);border:1px solid var(--line2)}
+.tag.fact{color:var(--A);border-color:var(--A)}.tag.proj{color:var(--B);border-color:var(--B)}
+.att-ex{color:var(--warm-strong);font-weight:700}.att-ct{color:var(--cool);font-weight:700}.att-mx{color:var(--gold);font-weight:700}
+.disc{font-size:11.5px;color:var(--muted);margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+
+<div class="wrap">
+<div class="toolbar">
+  <div>
+    <h1>崩盘之后,政府对医疗行业的态度会怎么走?——六国对照</h1>
+    <p class="sub">把六国按各自"房价/资产/财政崩盘"时刻(<b>T0</b>)对齐,看政府政策态度(<span class="att-ex">暖=扩张</span> → <span class="att-ct">冷=收紧</span>)如何演化。核心问题:<b>中国像谁?</b></p>
+    <div class="meta"><span>as_of 2026-07-25</span><span>owner: Nick</span><span>6 国 · 3 类医疗体系</span><span>研究:4 个并行 agent(美/英/加/韩)+ 已有日/中</span><span>史实带源;中国右段=推演</span></div>
+  </div>
+  <button class="tbtn" id="themeBtn">◐ 明/暗</button>
+</div>
+
+<div class="tiles">
+  <div class="tile g"><div class="k">一句话结论</div><div class="v">中国属<b>东亚"社保+快速老龄"</b>簇 —— <b>日本、韩国是最准的镜子</b>;英/加/美是"另一条路径"的对照。</div></div>
+  <div class="tile a"><div class="k">普适规律</div><div class="v">凡崩盘(或财政危机)→ 老龄化 + 财政承压 → 政府<b>转向控费</b>;但总医疗开支<b>都照涨</b>(老龄刚需)。无一例外。</div></div>
+  <div class="tile b"><div class="k">形式取决于体系</div><div class="v"><b>社保制</b>=直接砍价格(集采/药价);<b>税收单付</b>=没价可砍→<b>排队/缺人</b>配给;<b>私营混合(美)</b>=反而先扩覆盖。</div></div>
+  <div class="tile c"><div class="k">真正的扳机</div><div class="v">加拿大证明:是<b>"支付方财政"</b>不是房崩本身。中国要盯的是<b>医保基金结余 + 地方债</b>,不只是房价。</div></div>
+</div>
+
+<h2><span class="n">01</span>六国 T0 对齐时间线 · 政策态度温度</h2>
+<p class="lead">每条泳道 = 一国,横轴 = 距该国崩盘的年数(所有 T0 竖线对齐)。<b>色带</b>=政府对医疗的态度(暖→冷),圆点=关键政策(<b>悬停看详情</b>),右端灰条=该国"控费的形式"。三簇按医疗体系分组。<b>中国</b>(金框⭐)实线到 2025、<span style="color:var(--C);font-weight:700">绿线=当前</span>,再右为虚线推演。看点:<b>东亚三国都靠"砍价格"转冷,英加靠"排队"转冷,美国几乎没转冷</b>。</p>
+<div class="legend">
+  <span class="lg"><span class="dotm"></span>关键政策</span>
+  <span class="lg"><span class="dotm" style="background:var(--B);width:12px;height:12px"></span>崩盘/触发 T0</span>
+  <span class="lg"><span class="dotm hollow"></span>中国推演</span>
+  <span class="lg">态度 <span class="tempbar"></span> 扩张→收紧</span>
+  <span class="lg"><span style="color:var(--A);font-weight:800">■</span>社保+老龄 <span style="color:var(--B);font-weight:800">■</span>税收单付 <span style="color:var(--C);font-weight:800">■</span>私营混合</span>
+</div>
+<div class="scrollx"><div id="tl"></div></div>
+<p class="meta" style="margin-top:2px">↔ 窄屏左右滑。年份标在各国圆点上(同一 t 处对比六国)。</p>
+
+<h2><span class="n">02</span>"中国像谁?" — 三簇判定矩阵</h2>
+<div class="matrix"><table>
+  <thead><tr><th>体系簇</th><th>代表国</th><th>崩盘/触发性质</th><th>控费的"形式"</th><th>长护险(老龄照护)</th><th>与中国的关系</th></tr></thead>
+  <tbody>
+    <tr class="hlrow"><td class="cl badgeA">① 社会保险<br>+ 快速老龄</td><td><b>日本 · 韩国 · 中国</b></td><td>资产泡沫 / 金融危机(日1990、韩1997、中2021)</td><td><b>直接砍价格</b>:药价点数(日)、正面清单+降价(韩)、<b>集采 −52~93%</b>(中,最狠)</td><td>有:日2000、韩2008(照抄日本);中2016试点→推进中</td><td><b>★中国就在此簇</b>——日/韩路径最准</td></tr>
+    <tr><td class="cl badgeB">② 税收<br>单一支付</td><td>英国 · 加拿大</td><td>财政/债务压力(英2008后紧缩、加1995砍转移支付)</td><td><b>无价可砍</b> → 全局预算封顶 → <b>排队 / 缺人</b>配给(英候诊775万;加候诊30周)</td><td>弱/无:英国无全国长护险(社会照护危机)</td><td>给中国的两条<b>警告</b>(见下)</td></tr>
+    <tr><td class="cl badgeC">③ 私营<br>/ 混合</td><td>美国</td><td>次贷房崩 2008</td><td><b>反向</b>:先扩覆盖(ACA 2010)→ 后温和控费(价值医疗 + 药价谈判仅10款)</td><td>Medicare/Medicaid 长照(碎片化)</td><td>相似度<b>低</b>:中国无覆盖缺口可填</td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="n">03</span>中国综合判定 + 三面镜子给的教训</h2>
+<p class="lead">中国是<b>社保制 + 全球最快老龄化之一</b>,与<b>日本/韩国</b>同簇且已复现其关键节点(医保并轨→集采→长护险试点)。所以看中国下一步,<b>日/韩剧本最准</b>;英/加/美提供"路径边界"与预警。</p>
+<div class="callout gold"><b>镜子①(日本/韩国=主路径):</b>控费先行 → 老龄照护补位 → 创新药械被逼<b>出海</b>。中国下一步大概率:<b>长护险全国强制</b>(↔日2000/韩2008)、DRG/DIP 常态化(↔日DPC/韩正面清单)、集采持续扩面、<b>创新药械出海成主战略</b>(↔武田/安斯泰来海外占比60–90%、韩Celltrion/三星生物类似)。</div>
+<div class="callout"><b>镜子②(加拿大=看对扳机):</b>真正决定紧缩的是<b>支付方财政</b>(联邦转移/医保基金),不是房价本身——加拿大 2008 没房崩照样早在 1995 因财政危机狠砍医疗。<b>中国要盯的先行指标 = 医保统筹基金结余率 + 地方土地财政/地方债</b>,而非单看地产成交。加拿大用 ~9 年才从紧缩转再投资(1995→2004),提示中国"控费→再投资窗口"也需地方财政先缓解。</div>
+<div class="callout"><b>镜子③(英国=最脆弱环节预警):</b>老龄化冲击下<b>最先爆缺口的是长期照护</b>。英国至今无全国长护险、社会照护危机拖累整个 NHS(延迟出院堵床→候诊爆表)。中国长护险仍在地方试点、未全国铺开——<b>这是中国体系里最像英国短板的地方</b>,长护险落地节奏 + 地方财政可持续性是关键风险点。此外韩国 2000 医药分业曾逼出医生 5 次大罢工——<b>控费必然引发供给端剧烈反弹</b>,对应中国 2023 医疗反腐 + 医生降薪的行业震荡,是同一机制的时点信号。</div>
+
+<h2><span class="n">04</span>投资 / 职业含义</h2>
+<p class="lead">六国共同证明:崩盘后医疗是<b>"需求防御、价格/毛利被压"的剪刀差</b>——别买"医疗 beta"。买<b>政策对齐的细分</b>;日韩三十年反复证明:<b>出海的活下来、困守本土的萎缩</b>。</p>
+<ul class="imp">
+  <li class="s"><b>出海创新者</b> —— 日本(武田/安斯泰来)、韩国(Celltrion/三星生物)都靠海外占比 60–90% 续命。中国创新药 license-out / NewCo(2023+)是同一被逼出海逻辑。<b>=Nick 核心赛道</b>。</li>
+  <li class="s"><b>国产替代冠军</b>(联影/迈瑞)—— 抢 GE/飞利浦/西门子份额;盯集采毛利风险,挑有海外收入/定价权者。</li>
+  <li><b>养老 / 长护 / 医养结合</b> —— 长护险全国化(日韩已证)是确定性最高的下一步;护理、康复、适老器械受益。</li>
+  <li class="s"><b>AI / 效率</b> —— DRG/DIP(日DPC/韩同款)逼医院提效,利好影像 AI、信息化。<b>=Nick 影像+深度学习线</b>。</li>
+  <li><b>对 Nick 跟踪的美股</b>:GEHC/SYK/ISRG/MDT 的中国 segment 面对"集采+国产替代"是<b>持久逆风</b>(日韩已演完全过程);此六国框架给出宏观"为什么不会反转"。见 <a href="../medical/china_deep/">china_deep</a> 与 <a href="japan_china_healthcare_policy_2026-07-25.html">日中深度对照</a>。</li>
+</ul>
+
+<h2><span class="n">05</span>各国明细(全时间线 + 来源)</h2>
+<div id="details"></div>
+
+<h2><span class="n">06</span>免责与口径</h2>
+<p class="disc"><b>免责声明:</b>本文为宏观政策历史对照与情景推演,供研究参考,<b>不构成投资建议</b>,不针对任何具体证券给出买卖意见;作者非持牌投资顾问。带日期的政策事件与开支数字均标注来源(<span class="tag fact">史实</span>,见各国明细);中国 T0 右段的"预计/剧本"(<span class="tag proj">推演</span>)是基于日/韩类比的判断,存在各国体制差异导致的偏离风险。若干数字经 agent 标注 (待核)——尤其:美国2024年"11.1% GDP"与NHS单口径不可比;加拿大卫生支出峰值年(2009 vs 2010)口径微差;韩国1997 IMF救助确切规模、卫生支出占比口径;英国社会照护削减额与2024候诊回落值。请以各国明细中的一手/权威来源为准,独立复核。数据截至 2026-07-25。</p>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  function cur(){var t=root.getAttribute('data-theme'); return t?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}
+  btn.onclick=function(){root.setAttribute('data-theme', cur()==='dark'?'light':'dark');};
+
+  var T_MIN=-5,T_MAX=18,W=1180,PAD_L=150,PAD_R=162,TRACK=W-PAD_L-PAD_R;
+  function X(t){return PAD_L+(t-T_MIN)/(T_MAX-T_MIN)*TRACK;}
+  function pct(t){return ((t-T_MIN)/(T_MAX-T_MIN)*100).toFixed(1)+'%';}
+  function mix(v){return 'color-mix(in srgb,var(--'+v+') 40%,transparent)';}
+  function grad(stops){return 'linear-gradient(90deg,'+stops.map(function(s){return mix(s[1])+' '+pct(s[0]);}).join(',')+')';}
+
+  var CLUSTERS=[
+    {name:'① 社会保险 + 快速老龄',accent:'A',pill:'跟中国同簇',countries:[
+      {code:'JP',name:'日本',sys:'社会保险',T0:1990,hl:false,
+        temp:[[-5,'warm-strong'],[0,'warm'],[6,'neutral'],[13,'cool'],[18,'cool']],
+        squeeze:'药价点数·双年下调',
+        ev:[{t:0,y:1990,tag:'泡沫破裂',d:'资产泡沫破裂,股市崩盘(地价1991见顶)',crash:1},
+            {t:10,y:2000,tag:'介护保险',d:'介护保险施行:老龄照护第五险',key:1},
+            {t:13,y:2003,tag:'DPC·自付30%',d:'按病种付费(DPC)导入;现役自付升至30%'},
+            {t:18,y:2008,tag:'后期高龄',d:'后期高龄者医疗制度(75+独立医保)'}]},
+      {code:'KR',name:'韩国',sys:'社会保险(单一NHIS)',T0:1997,hl:false,
+        temp:[[-5,'warm-strong'],[0,'warm'],[3,'neutral'],[12,'cool'],[18,'cool']],
+        squeeze:'正面清单+一次性大降价',
+        ev:[{t:0,y:1997,tag:'亚洲金融危机',d:'亚洲金融危机/IMF介入,资产+房地产崩',crash:1},
+            {t:3,y:2000,tag:'整合+医药分业',d:'350+医保协会整合为单一NHIS;医药分业(引发医生5次大罢工)',key:1},
+            {t:11,y:2008,tag:'长护险',d:'长期护理保险施行,照抄日本2000介护保险(晚8年)',key:1},
+            {t:15,y:2012,tag:'药价−46.5%',d:'药价结构性下调,6505/13814品规平均降46.5%'}]},
+      {code:'CN',name:'中国',sys:'社会保险(职工+城乡居民)',T0:2021,hl:true,
+        temp:[[-5,'warm-strong'],[-4,'warm'],[-2,'neutral'],[2,'cool'],[18,'cool']],
+        squeeze:'集采 −52~93%(最狠)',
+        ev:[{t:-3,y:2018,tag:'医保局+集采',d:'国家医保局成立;4+7集采25品种均降52%(最高−96%)',key:1},
+            {t:0,y:2021,tag:'地产危机',d:'恒大违约;65+破14%(深度老龄)',crash:1},
+            {t:4,y:2025,tag:'DRG/DIP全国',d:'按病种付费全国推开(三年行动收官)',key:1},
+            {t:6,y:'~27',tag:'长护险强制',d:'推演:长护险全国强制铺开(↔日本2000/韩2008)',proj:1,star:1},
+            {t:9,y:'~29',tag:'出海主战略',d:'推演:创新药械出海成主战略(↔日/韩药企出海)',proj:1,star:1}]}
+    ]},
+    {name:'② 税收单一支付',accent:'B',pill:'没价可砍→排队',countries:[
+      {code:'UK',name:'英国',sys:'税收单付 NHS',T0:2008,hl:false,
+        temp:[[-5,'warm'],[2,'warm'],[3,'cool'],[18,'cool']],
+        squeeze:'无价可砍→排队/缺人',
+        ev:[{t:0,y:2008,tag:'房价暴跌',d:'全球金融危机,房价2008-09跌约15.6%',crash:1},
+            {t:2,y:2010,tag:'紧缩开始',d:'联合政府财政紧缩,NHS史上最紧预算(实际增速降至1.3%/年)',key:1},
+            {t:4,y:2012,tag:'HSC Act重组',d:'健康与社会照护法案:NHS史上最大架构重组'},
+            {t:15,y:2023,tag:'候诊775万',d:'择期候诊名单创纪录775万(十年翻近三倍)'}]},
+      {code:'CA',name:'加拿大',sys:'税收单付 Medicare(省级)',T0:1995,hl:false,
+        temp:[[-5,'warm'],[0,'cool'],[8,'cool'],[9,'neutral'],[18,'warm']],
+        squeeze:'砍转移支付→排队',
+        ev:[{t:0,y:1995,tag:'砍转移支付',d:'1995联邦预算创设CHST,三年削减253亿加元,砍向省医疗(触发=财政危机,非房崩)',crash:1},
+            {t:2,y:'96-99',tag:'关床/外流',d:'各省关床裁员(安省关1.85万床);1996医生净流失513人赴美'},
+            {t:9,y:2004,tag:'再投入',d:'十年计划:联邦增拨410亿加元,健康转移年增6%',key:1}]}
+    ]},
+    {name:'③ 私营 / 混合',accent:'C',pill:'反向:先扩覆盖',countries:[
+      {code:'US',name:'美国',sys:'私营/雇主+公共医保',T0:2008,hl:false,
+        temp:[[-5,'warm'],[2,'warm'],[10,'neutral'],[18,'neutral']],
+        squeeze:'先扩面·后温和控费',
+        ev:[{t:0,y:2008,tag:'次贷房崩',d:'次贷危机,Case-Shiller自2006峰值崩约26%',crash:1},
+            {t:2,y:2010,tag:'ACA扩面',d:'奥巴马医改:Medicaid扩面+交易所,扩覆盖(逆向!)',key:1},
+            {t:7,y:2015,tag:'MACRA',d:'MACRA:医生薪酬从按量转按价值(温和控费)'},
+            {t:14,y:2022,tag:'IRA药价谈判',d:'IRA:首次授权Medicare药价谈判(仅10款,2026生效)'}]}
+    ]}
+  ];
+
+  var tl=document.getElementById('tl');
+  var laneH=26, labelBand=30, rowStep=labelBand+laneH+16, clH=30, topAxis=26, y=topAxis+22;
+  // top axis
+  var ax=document.createElement('div'); ax.className='axis'; ax.style.left=PAD_L+'px'; ax.style.width=TRACK+'px'; ax.style.top=topAxis+'px'; tl.appendChild(ax);
+  for(var t=T_MIN;t<=T_MAX;t+=5){
+    var tk=document.createElement('div'); tk.className='tick'; tk.style.left=X(t)+'px'; tk.style.top=(topAxis-16)+'px';
+    tk.innerHTML=(t===0?'T0':(t>0?'T0+'+t:'T0'+t))+'<div class="bar"></div>'; tl.appendChild(tk);
+  }
+  var rows=[]; // {country, laneY}
+  CLUSTERS.forEach(function(cl){
+    var h=document.createElement('div'); h.className='clhdr'; h.style.left='4px'; h.style.top=y+'px';
+    h.style.color='var(--'+cl.accent+')';
+    h.innerHTML=cl.name+'<span class="pill" style="background:var(--'+cl.accent+')">'+cl.pill+'</span>'; tl.appendChild(h);
+    y+=clH;
+    cl.countries.forEach(function(c){
+      var laneY=y+labelBand;
+      // lane
+      var lane=document.createElement('div'); lane.className='lane'+(c.hl?' hl':''); lane.style.left=PAD_L+'px'; lane.style.width=TRACK+'px'; lane.style.top=laneY+'px'; lane.style.background=grad(c.temp); tl.appendChild(lane);
+      // name (left pad)
+      var nm=document.createElement('div'); nm.className='cname'; nm.style.left='4px'; nm.style.top=(laneY-2)+'px'; nm.style.color='var(--'+cl.accent+')';
+      nm.innerHTML=(c.hl?'⭐':'')+c.name+'<span class="sys">'+c.sys+'</span><span class="t0y">T0='+c.T0+'</span>'; tl.appendChild(nm);
+      // squeeze chip (right pad)
+      var chip=document.createElement('div'); chip.className='chip'; chip.style.left=(PAD_L+TRACK+8)+'px'; chip.style.top=(laneY+3)+'px'; chip.textContent=c.squeeze; tl.appendChild(chip);
+      rows.push({c:c,laneY:laneY,cl:cl});
+      y+=rowStep;
+    });
+    y+=6;
+  });
+  tl.style.height=(y+10)+'px';
+  var topY=topAxis+2, botY=y-rowStep+laneH+labelBand; // span for T0 line
+
+  // events per row (with simple 2-tier label stagger)
+  rows.forEach(function(r){
+    var c=r.c, laneY=r.laneY, last=[];
+    c.ev.slice().sort(function(a,b){return a.t-b.t;}).forEach(function(e){
+      var x=X(e.t);
+      // dot
+      var d=document.createElement('div'); d.className='dot'+(e.crash?' crash':'')+(e.proj?' proj':''); d.style.left=x+'px'; d.style.top=(laneY+laneH/2)+'px'; d.title=e.y+' '+e.tag+': '+e.d; tl.appendChild(d);
+      // label tier
+      var tier=0; for(var i=0;i<last.length;i++){ if(Math.abs(x-last[i])<48) tier=Math.max(tier,1); }
+      last.push(x);
+      var lab=document.createElement('div'); lab.className='elab'+(e.star?' star':''); lab.style.left=x+'px'; lab.style.top=(laneY-13-tier*15)+'px';
+      lab.innerHTML='<span class="y">'+e.y+'</span>'+e.tag; lab.title=e.d; tl.appendChild(lab);
+      // stem if tier
+      if(tier){var st=document.createElement('div'); st.className='pin'; st.style.left=x+'px'; st.style.top=(laneY-13)+'px'; st.style.height='13px'; tl.appendChild(st);}
+    });
+  });
+
+  // T0 line across all lanes
+  var t0=document.createElement('div'); t0.className='t0'; t0.style.left=X(0)+'px'; t0.style.top=topY+'px'; t0.style.height=(botY-topY)+'px'; tl.appendChild(t0);
+  var t0l=document.createElement('div'); t0l.className='t0lab'; t0l.style.left=X(0)+'px'; t0l.style.top=(topAxis-2)+'px'; t0l.textContent='T0 崩盘'; tl.appendChild(t0l);
+  // China now-line (t=+4) only across China lane
+  var cnRow=rows.filter(function(r){return r.c.code==='CN';})[0];
+  if(cnRow){var nl=document.createElement('div'); nl.className='nowline'; nl.style.left=X(4)+'px'; nl.style.top=(cnRow.laneY-labelBand)+'px'; nl.style.height=(laneH+labelBand)+'px'; tl.appendChild(nl);
+    var nlab=document.createElement('div'); nlab.className='nowlab'; nlab.style.left=X(4)+'px'; nlab.style.top=(cnRow.laneY-labelBand-2)+'px'; nlab.textContent='中国当前2025'; tl.appendChild(nlab);}
+
+  // ---- per-country details ----
+  var SRC={
+    JP:[['泡沫崩盘','https://www.progress.org/wiki/japanese-asset-price-bubble/'],['介护保险2000','https://japanhpn.org/en/longtermcare/'],['自付/DPC/2002首降','https://pubmed.ncbi.nlm.nih.gov/15160800/'],['药价双年降','https://www.pmda.go.jp/files/000248690.pdf'],['药企出海>60%','https://link.springer.com/chapter/10.1057/9781137263636_10']],
+    KR:[['1997 IMF','https://www.imf.org/external/np/seminars/eng/2006/cpem/pdf/kihwan.pdf'],['2000单一NHIS整合','https://academic.oup.com/heapol/article/24/1/63/598886'],['医药分业+罢工','https://pubmed.ncbi.nlm.nih.gov/12791494'],['2006-07正面清单','https://pmc.ncbi.nlm.nih.gov/articles/PMC6352121/'],['2008长护险','https://onlinelibrary.wiley.com/doi/10.1111/spol.12761'],['最快老龄','https://wol.iza.org/news/south-korea-has-fastestageing-population-in-oecd-study-shows']],
+    CN:[['地产危机','https://en.wikipedia.org/wiki/Chinese_property_sector_crisis_(2020%E2%80%93present)'],['4+7集采−52%','https://clarivate.com/life-sciences-healthcare/blog/china-47-equals-quality-generic-medicines-affordable-costs/'],['DRG/DIP','https://cms.law/en/chn/news-information/china-s-nhsa-issued-the-regulations-on-drg-dip-healthcare-security-payment-mechanism'],['长护险试点','https://www.rti.org/publication/understanding-china-long-term-care-insurance-pilots-key-features-challenges-prospects'],['卫生总费用','https://pmc.ncbi.nlm.nih.gov/articles/PMC11681677/']],
+    UK:[['1989-95房崩','https://builtplace.com/digging-deeper/housing-downturns/1989-95/'],['2008房价跌','https://localhouseprices.co.uk/articles/what-is/what-happened-to-house-prices-in-2008'],['NHS内部市场1990','https://en.wikipedia.org/wiki/National_Health_Service_and_Community_Care_Act_1990'],['2010紧缩','https://www.kingsfund.org.uk/insight-and-analysis/blogs/nhs-spending-squeezed'],['HSC Act 2012','https://en.wikipedia.org/wiki/Health_and_Social_Care_Act_2012'],['候诊775万','https://feeds.bbci.co.uk/news/health-67087906']],
+    CA:[['1995砍转移支付','https://www.policyalternatives.ca/news-research/remembering-paul-martins-disastrous-1995-federal-budget/'],['1995预算背景','https://en.wikipedia.org/wiki/1995_Canadian_federal_budget'],['关床潮','https://www150.statcan.gc.ca/n1/pub/82-003-x/1996004/article/3023-eng.pdf'],['医生赴美','https://www.cmaj.ca/content/161/8/1028'],['2004十年协议','https://www.canada.ca/en/health-canada/services/health-care-system/health-care-system-delivery/federal-provincial-territorial-collaboration/first-ministers-meeting-year-plan-2004/10-year-plan-strengthen-health-care.html'],['2008无房崩','https://www.clevelandfed.org/publications/economic-commentary/2009/ec-20090909-why-didnt-canadas-housing-market-go-bust'],['候诊30周','https://www.fraserinstitute.org/studies/waiting-your-turn-wait-times-for-health-care-in-canada-2025']],
+    US:[['次贷房崩','https://www.fdic.gov/media/18636'],['ACA 2010','https://www.kff.org/affordable-care-act/health-policy-101-the-affordable-care-act/'],['ACO 2012','https://www.cms.gov/newsroom/fact-sheets/first-accountable-care-organizations-under-medicare-shared-savings-program'],['MACRA 2015','https://pmc.ncbi.nlm.nih.gov/articles/PMC5487279/'],['IRA药价谈判','https://www.kff.org/medicare/faqs-about-the-inflation-reduction-acts-medicare-drug-price-negotiation-program/'],['NHE占GDP','https://www.healthsystemtracker.org/chart-collection/u-s-spending-healthcare-changed-time/']]
+  };
+  var ATT={'扩张':'att-ex','收紧':'att-ct','混合':'att-mx','危机':'att-ct'};
+  var det=document.getElementById('details');
+  CLUSTERS.forEach(function(cl){cl.countries.forEach(function(c){
+    var d=document.createElement('details');
+    var rowsHtml=c.ev.map(function(e){
+      var tlab=(e.t===0?'T0':(e.t>0?'T0+'+e.t:'T0'+e.t));
+      return '<tr><td style="white-space:nowrap"><b>'+e.y+'</b> · '+tlab+'</td><td><b>'+e.tag+(e.proj?' <span class="tag proj">推演</span>':'')+'</b><br>'+e.d+'</td></tr>';
+    }).join('');
+    var srcHtml=(SRC[c.code]||[]).map(function(s){return '<a href="'+s[1]+'">'+s[0]+'</a>';}).join(' · ');
+    d.innerHTML='<summary style="color:var(--'+cl.accent+')">'+(c.hl?'⭐':'')+c.name+' <span style="color:var(--muted);font-weight:500;font-size:12px">· '+c.sys+' · T0='+c.T0+' · 形式:'+c.squeeze+'</span></summary>'+
+      '<div class="dbody"><table><thead><tr><th>时间</th><th>事件</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>'+
+      '<p class="src" style="margin-top:8px"><b>来源:</b> '+srcHtml+'</p></div>';
+    det.appendChild(d);
+  });});
+})();
+</script>
