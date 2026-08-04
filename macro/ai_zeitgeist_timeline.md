@@ -89,6 +89,61 @@
 
 ---
 
+## 3.5 资金梯子：走到第几级了（2026-08-03 补，回应"到头了"的质疑）
+
+一个常见且有力的空头论点是：**能出钱的都出完了，所以到顶了**。把资金来源按"离经营现金流的距离"排成梯子，可以检验这个判断：
+
+| 级 | 资金来源 | 现状 | 状态 |
+|---|---|---|---|
+| 1 | 经营现金流 | AMZN TTM FCF $12 亿 (-95%)、META 回购归零 | **已耗尽** |
+| 2 | 资产负债表发债 | 五大云厂 ~$1900 亿 (2022 约 $400-500 亿)；大摩预测 2026 年 hyperscaler 发债 $2500-3000 亿 | **正在大量使用** |
+| 3 | 表外 SPV / 合资 | BIS 点名 hyperscaler 用表外结构 + 私募信贷合作，保险资金被引入 | **正在大量使用** |
+| 4 | 私募信贷 | 2026 年初单月 >$150 亿流入 AI 数据中心/GPU 集群 | **正在大量使用** |
+| 5 | GPU 抵押贷 / 算力合约证券化 | 已完成 >$200 亿 GPU 抵押融资；CoreWeave 单笔 $85 亿投资级评级（NVDA 设备 + 客户合约背书）；摩根大通预测 2026-27 数据中心证券化年发行 $300-400 亿 | **刚开始，跑道还在** |
+| 6 | 算力期货 / 公开衍生品市场 | **正规交易所正在推出受监管的算力期货** | **刚出现** |
+
+**结论：梯子确实快下到底了，但还没到底，而且第 5、6 级的跑道比市场想象的长。**
+
+更重要的是，第 6 级的出现同时是 §3 商品化论点的**直接确认**——一旦算力有期货曲线，它在会计和估值上就正式是商品而不是稀缺资源了。
+
+### 一个尚未被定价的反身性回路（本文最重要的新增发现）
+
+BIS Bulletin 128 指出：**2025 年末，私募信贷直接贷款中约 19% 投向 SaaS 企业。** 而私募信贷同时是第 4 级——AI 数据中心的边际放贷人。
+
+于是出现一个前所未有的回路：
+
+> **AI 摧毁 SaaS（2026Q1 SaaSpocalypse）→ 私募信贷的存量贷款账簿受损 → 而私募信贷正是 AI 基建的边际出资方 → AI 基建的融资能力被自己造成的破坏所削弱。**
+
+这不是循环融资（round-tripping）的老问题，是**新的一层**：AI 的破坏力反噬了自己的资金来源。已经有实证——摩根大通在重估了部分受 AI 冲击的私募信贷借款人的抵押品价值后，**已经削减了部分贷款承诺**。
+
+这条回路不在任何股票分析师的模型里（它跨了股票和信贷两个部门），也不在 §1 那六层质疑的任何一层里。**所以"质疑已经到头、炸不出油水"这个判断是错的——只是下一口井不在股票研究部门的院子里。**
+
+### 由此推出的制度切换（regime change）
+
+当资金来源从"现金流/股权"切到"信贷"，**失败模式随之改变**：
+
+| | 股权/现金流融资的周期 | 信贷融资的周期 |
+|---|---|---|
+| 崩的方式 | 估值压缩，缓慢 de-rate | **违约级联，快且相关性极高** |
+| 最早信号 | 财报、收入增速 | **信用利差、抵押品重估、贷款承诺撤回** |
+| 谁能活 | 大家一起跌，好公司先反弹 | **净现金的活，加杠杆的死——分化极端** |
+| 反弹机会 | 多 | 少（流动性一起消失） |
+
+**这才是"资金梯子下到底"真正买到的东西：不是择时信号，是失败模式的转变。**
+
+对应的动作是三条：
+1. **跟踪指标从财报重新加权到信用**（见 §5 指标表已相应调整）
+2. **净现金资产的相对价值上升**——在信贷型崩盘里这是生死线而不是加分项（repo 内对应：ISRG 约 $80 亿净现金；AAPL/NFLX 对照组）
+3. **区分"contracted 收入"和"spot 收入"**——CEG 那种被长约锁死的（原本被视为天花板）在信贷周期里反而是防御性的；neocloud 那种靠 spot 算力定价的最脆弱
+
+### 反过来说：不能用这个判断去择时
+
+市场见顶不是因为空头论据用完了，是因为**边际资金停止到达**。这是两个不同的日期，而且经常差很远——1998 年底所有做空互联网的论据都已经公开发表了，纳指又涨了 15 个月、翻了一倍多。
+
+"炸不出油水了"描述的是**信息状态**，不是**资金状态**。两者混淆是空头最常见的死法。
+
+---
+
 ## 4. 对 `2026Q1_hyperscaler_capex_check.md` 的修正
 
 原文（2026-05-06）给的切换信号是：
@@ -105,10 +160,18 @@
 
 ## 5. Indicators（实时跟踪）
 
+> 权重说明：资金来源已切到信贷（§3.5），因此**信用类指标优先级高于财报类指标**——
+> 在信贷型周期里，抵押品重估和贷款承诺撤回比收入增速早得多。
+
 | Indicator | Current Reading (2026-08-03) | Direction | Why It Matters |
 |---|---|---|---|
+| **【信用】银行对私募信贷基金的授信** | FSB 口径约 $2200 亿（已提+未提）；商业估算 $2700-5000 亿 | ↑ | 传导到银行体系的管道 |
+| **【信用】私募信贷中 SaaS 敞口** | 约 19%（2025 年末，BIS Bulletin 128） | — | **反身性回路的引信** |
+| **【信用】大行削减 AI 相关承诺** | 摩根大通已因抵押品重估削减部分承诺 | ⚠️ **已触发** | 边际放贷人开始退缩 |
+| **【信用】GPU 抵押融资累计** | >$200 亿；数据中心证券化预测 $300-400 亿/年 | ↑ | 梯子第 5 级使用强度 |
+| **【信用】算力期货市场** | 正规交易所已在推出 | 新出现 | 商品化的制度性确认 |
 | 四大 hyperscaler 2026 capex 合计 | ~$7250 亿（YoY +77%） | ↑ 仍在上修 | 折旧墙的分子 |
-| 五大云厂商债务融资余额 | ~$1900 亿（2022 年约 $400-500 亿） | ↑↑ | 信用线索 |
+| 五大云厂商债务融资余额 | ~$1900 亿（2022 年约 $400-500 亿）；大摩预测 2026 发行 $2500-3000 亿 | ↑↑ | 信用线索 |
 | 季度 AI 收入 vs 季度折旧 | 2025Q4 首次转正 | 边际 | 最基本的偿付线 |
 | 等能力推理成本 | 两年 -95%（$30/Mtok → <$0.5/Mtok） | ↓↓↓ | 商品化速度 |
 | SOX 指数 | 6/22 历史高点约 14,655 后回落，7 月初单日 -7% | ↓ | 稀缺溢价消退 |
@@ -150,6 +213,15 @@
 
 **2024**
 - [AI's $600 Billion Question: The Growing Gap Between Investment and Revenue — Marketing AI Institute](https://www.marketingaiinstitute.com/blog/ai-economic-impact)
+
+**信用与融资结构（§3.5）**
+- [AI disruption in private credit: exposure to software firms — BIS Bulletin 128 (PDF)](https://www.bis.org/publ/bisbull128.pdf) ← **反身性回路的一手来源**
+- [Report on Vulnerabilities in Private Credit — FSB (2026-05-06, PDF)](https://www.fsb.org/uploads/P060526.pdf)
+- [FSB warns on private credit vulnerabilities (2026-05)](https://www.fsb.org/2026/05/fsb-warns-on-private-credit-vulnerabilities/)
+- [AI Hyperscalers' Shadow Borrowing Bolsters Private Credit Risks — Insurance Journal (2026-03-17)](https://www.insurancejournal.com/news/international/2026/03/17/862128.htm)
+- [Private Credit, GPU Loans and Securitisation: How the AI Data Centre Boom Is Being Financed — Kalkine](https://kalkine.com.au/news/general-news/private-credit-gpu-loans-and-securitisation-how-the-ai-data-centre-boom-is-being-financed)
+- [The Future of Compute Credits as an Asset Class — The AI Insider (2026-07-21)](https://theaiinsider.tech/2026/07/21/guest-post-trillium-technologies-weighs-in-on-the-future-of-compute-credits-as-an-asset-class/)
+- [Data Centres & AI Compute Infrastructure Insights 2026 — Clifford Chance](https://www.cliffordchance.com/insights/thought_leadership/trends/2026/data-centres-and-ai-compute-infrastructure-insights-2026.html)
 
 **Repo 内部源**
 - `macro/2026Q1_hyperscaler_capex_check.md`（2026-05-06，一手 IR 数据）
