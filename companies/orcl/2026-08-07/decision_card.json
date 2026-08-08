@@ -1,0 +1,161 @@
+{
+  "ticker": "ORCL",
+  "company": "Oracle Corporation",
+  "exchange": "NYSE",
+  "as_of": "2026-08-06",
+  "run_date": "2026-08-07",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 58,
+  "context_label": "capex_bet_already_repriced",
+  "card_purpose": "Control experiment for the AI-capex question blocking GOOGL(O1/O2), AMZN(O4), META(O4), MSFT(O2). Primary output is the observable-sequence checklist, not the ORCL trade verdict.",
+
+  "as_of_price": 143.47,
+  "as_of_price_basis": "2026-08-06 settled close. 2026-08-07 was still trading at write time (13:45 ET, intraday 144.88, range 142.34-147.16) so it was NOT used.",
+  "as_of_market_cap": 413194000000,
+  "shares_out_millions": 2880,
+  "net_debt": 124295000000,
+  "enterprise_value": 537489000000,
+
+  "verdicts": {
+    "business_verdict": "uncertain",
+    "business_verdict_note": "A good legacy franchise (database/software) fused to an unproven one (renting AI compute). The unproven half now absorbs 100% of marginal capital.",
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "existing_position_note": "user is at 0%",
+    "suggested_initial_size_pct": 0,
+    "suggested_max_size_pct": 0,
+    "conditional_max_size_pct": 2,
+    "conditional_max_size_condition": "price <= ~$101 AND K-A (counterparty credit) turns green. Cap is 2% not 3% because a genuine permanent-capital-loss path exists.",
+    "buy_below": 101,
+    "hurdle_rate_pct": 8,
+    "verdict_ceiling": "WATCH",
+    "verdict_ceiling_rule": "completeness 58% falls in the 40-60% band -> ceiling WATCH (audit.md). Verdict does NOT exceed ceiling.",
+    "binding_constraint": "COUNTERPARTY CONCENTRATION + FUNDING GAP (primary); price/no-MOS (secondary, base IRR +6.2% < 8%). Unlike GOOGL/AMZN, price is NOT the main blocker here."
+  },
+
+  "module_signals": {
+    "M1_evidence_spine":    {"signal":  1, "confidence": "med",      "note": "Q4 FY2026 8-K full P&L captured incl. interest $4,599M and preferred dividends $103M; SEC direct fetch 403, 10-K line items not read -> capped."},
+    "M2_theme_mechanism":   {"signal":  1, "confidence": "med-high", "note": "Demand side is real: RPO $638B +363%, OCI +93%, GPU utilization 97.5%, Multicloud DB +404%. First half of mechanism proven; second half (converting to cash) has zero evidence."},
+    "M3_profit_pool":       {"signal": -1, "confidence": "med",      "note": "Consolidated ROIC 15.11% -> 11.24%, directly contradicting management's 'high 20s' incremental claim. Renting compute is not an exclusive bottleneck: #4 hyperscaler with the weakest balance sheet. Gross margin -4.69pp."},
+    "M4_financial_reality": {"signal": -2, "confidence": "high",     "note": "FCF -$23.7B; capex/OCF 174%; net debt $124.3B (+33.8%); Debt/EBITDA 5.22x; interest = 22.3% of EBIT; buybacks reversed to net issuance; preferred issued; S&P cut to BBB-."},
+    "M5_inversion_trap":    {"signal": -2, "confidence": "med-high", "note": "STRUCTURAL DIFFERENCE vs GOOGL/AMZN: leverage + single counterparty = a real permanent-capital-loss path, not merely a de-rating. Bear IRR -8.9% carrying $124B net debt."},
+    "M6_price_position":    {"signal": -1, "confidence": "high",     "note": "After -55.8%, price is the LEAST bad module: base IRR +6.2% (1.8pp short of hurdle), bull +15.2% genuinely pays. But base still fails."},
+    "vector": "+1/+1/-1/-2/-2/-1",
+    "net": -4,
+    "vs_googl_2026_07_24": "GOOGL was +1/+2/+1/-2/-1/-2. ORCL's M6 is better (price already fell), M3/M5 worse (returns deteriorating + leverage). This is the difference between the late-stage and mid-stage form of the same bet."
+  },
+
+  "scenarios": {
+    "hurdle_pct": 8,
+    "horizon_years": 10,
+    "entry_price": 143.47,
+    "shares_start_millions": 2880,
+    "bear": {"oe0_bn": 11.0, "oe_cagr_pct": 4.0,  "oe_y10_bn": 16.3, "shares_y10_millions": 3500, "oe_per_share_y10": 4.65,  "exit_p_oe": 10, "cumulative_dividends": 10, "terminal_value_per_share": 57,  "irr_pct": -8.9,
+             "basis": "FY2026 pretax $19.55B at normalized 19% tax = $15.8B, less (a) D&A converging toward true fleet replacement (~$18B vs today's $9.3B) and (b) interest run-rate rising $4.6B -> ~$7B."},
+    "base": {"oe0_bn": 16.0, "oe_cagr_pct": 11.8, "oe_y10_bn": 48.8, "shares_y10_millions": 3250, "oe_per_share_y10": 15.02, "exit_p_oe": 16, "cumulative_dividends": 22, "terminal_value_per_share": 262, "irr_pct":  6.2,
+             "basis": "FY2026 GAAP net income to common $16,984M, marked down to a normalized 19% tax rate (actual effective rate only 12.6%), with a modest depreciation-catch-up adjustment."},
+    "bull": {"oe0_bn": 23.0, "oe_cagr_pct": 14.2, "oe_y10_bn": 87.2, "shares_y10_millions": 3150, "oe_per_share_y10": 27.67, "exit_p_oe": 20, "cumulative_dividends": 35, "terminal_value_per_share": 588, "irr_pct": 15.2,
+             "basis": "OCF $32.0B - D&A $9.3B, i.e. the cash framing management implies, treating all $46.3B of incremental capex as pure growth investment."},
+    "anchor_sensitivity": "OE0 spans 2.1x ($11B-$23B) and the spread is driven almost entirely by ONE undisclosed number: the maintenance-vs-growth capex split (O5). If maintenance capex really is D&A ($9.3B), base IRR rises to ~+9% and CLEARS the hurdle. If it is $25B (steady-state six-year fleet replacement), base IRR falls to ~+2%. This is the identical number blocking GOOGL O1 and AMZN O4."
+  },
+
+  "price_ladder": {
+    "no_chase_above": 150,
+    "current": 143.47,
+    "hurdle_8pct_price": 121.50,
+    "buy_below_base_10pct": 101,
+    "base_12pct_price": 84,
+    "bear_8pct_discounted_anchor": 26,
+    "ladder_is_not_auto_executing": "Unlike other cards in this library, $121.50 does not auto-promote to STARTER. >50% of RPO sits with a counterparty whose own FCF is deeply negative; a lower price does not remove that risk, it changes whether the base case exists at all. Close O1 first."
+  },
+
+  "kill_criteria": {
+    "K-A": {"test": "Counterparty credit: OpenAI (or any >$50B counterparty) renegotiates/defers/cancels, or its own funding falters", "state": "YELLOW", "note": "Oracle never names OpenAI in a filing; OpenAI financials not obtained this run. HIGHEST PRIORITY, see O1."},
+    "K-B": {"test": "Funding gap: FY2027 FOCF deficit reaches S&P's -$42B, or financing exceeds the $40B plan", "state": "RED_FIRING", "note": "FY2026 already -$23.7B; guided path leads to -$42B."},
+    "K-C": {"test": "Capital-allocation discipline: capex ROI hurdle / maintenance-growth split still undisclosed; or management keeps using 'add back depreciation / divide by gross investment'", "state": "RED_FIRING", "note": "All three undisclosed and the ROIC definition is non-standard."},
+    "K-D": {"test": "Rating falls below BBB- into speculative grade -> nonlinear funding-cost repricing and forced selling", "state": "ORANGE", "note": "S&P BBB- as of 2026-07-09; Moody's Baa2 outlook negative. One notch away."},
+    "K-E": {"test": "Unit economics: gross margin keeps falling with OCI utilization peaking (<95%), or consolidated ROIC drops another >2pp", "state": "YELLOW", "note": "FY26 GM -4.69pp, ROIC -3.87pp; management already guided another FY2027 step-down."},
+    "K-F": {"test": "Backlog quality: RPO declines in absolute terms, or cancellations/removals disclosed", "state": "GREEN", "note": "Q4 still +$85B sequential, though Q3 decelerated to +$30B."},
+    "K-G": {"test": "No-chase: price back above ~$150 without a fundamental upgrade", "state": "GREEN", "note": "4.6% away."},
+    "K-H": {"test": "UPGRADE trigger: price below ~$101 AND K-A green", "state": "NOT_MET", "note": "Neither condition met."}
+  },
+
+  "feedback_checklist_capex_bet_failure": {
+    "title": "回喂：capex 豪赌失败的可观测序列",
+    "applies_to": ["GOOGL", "AMZN", "META", "MSFT"],
+    "counterintuitive_findings": [
+      "FCF turning negative is NOT the trigger. Oracle's FCF went negative in FY2025, 3.4 months BEFORE the share-price peak, and the market then added another ~+90%. Do not use it to time.",
+      "The real turn is FUNDING MIX, not cash flow. Sequence: self-funded -> debt -> equity/preferred -> downgrade. 'Starts issuing equity' is the single strongest signal (ORCL 2026-02, leading the downgrade by 5 months and the low by 5.5 months).",
+      "'Good news met with a negative reaction' is a same-day regime-change signal. On 2026-06-10 revenue, EPS and RPO all beat and the stock fell 7-10% after hours. The market's objective function switched from growth to funding, observable in one session."
+    ],
+    "checklist": [
+      {"id": "C1",  "metric": "capex / OCF",                          "threshold": ">100%",                                              "orcl": "FY25 101.9% -> FY26 174.1%",                  "class": "background (leads 12+ months, do not time on it)"},
+      {"id": "C2",  "metric": "free cash flow",                       "threshold": "<0",                                                 "orcl": "FY25 -$0.4B -> FY26 -$23.7B",                 "class": "background (leads 12+ months, do not time on it)"},
+      {"id": "C3",  "metric": "funding mix: net new debt",            "threshold": "net issuance >0 while capex still rising",           "orcl": "FY26 issued $46.1B / repaid $6.9B",           "class": "deteriorating"},
+      {"id": "C4",  "metric": "buyback stops / turns to net issuance","threshold": "buyback yield negative, share count rising",         "orcl": "FY26 flipped -$847M to +$1,243M",             "class": "deteriorating"},
+      {"id": "C5",  "metric": "consolidated gross margin",            "threshold": "falls >2pp while revenue is still accelerating",     "orcl": "-4.69pp (cost +36% vs revenue +17%)",         "class": "deteriorating"},
+      {"id": "C6",  "metric": "consolidated ROIC vs management claim","threshold": "management claims high incremental ROIC while consolidated ROIC falls", "orcl": "claims 'high 20s'; actual 15.1% -> 11.2%", "class": "deteriorating / CONTRADICTION TEST"},
+      {"id": "C7",  "metric": "EQUITY issuance begins",               "threshold": "ATM / secondary / preferred / convertible appears",  "orcl": "2026-02: $20B ATM + preferred",               "class": "PROXIMATE - STRONGEST SINGLE SIGNAL"},
+      {"id": "C8",  "metric": "backlog / RPO concentration",          "threshold": "single counterparty >25% AND that counterparty's own FCF is negative", "orcl": "OpenAI >50% (>$319B)",   "class": "proximate"},
+      {"id": "C9",  "metric": "good news, negative reaction",         "threshold": "revenue/EPS/backlog all beat, stock still -5% or worse", "orcl": "2026-06-10: all beat, -7~10% after hours", "class": "PROXIMATE - OBSERVABLE IN ONE DAY"},
+      {"id": "C10", "metric": "credit rating outlook / downgrade",    "threshold": "outlook to negative, or drop toward BBB-/Baa3",      "orcl": "Moody's outlook negative; S&P -> BBB- 2026-07-09", "class": "proximate (11 trading days before the low)"},
+      {"id": "C11", "metric": "D&A / capex",                          "threshold": "<25% sustained",                                     "orcl": "16.7% - depreciation covers 1/6 of current investment", "class": "accounting lead (earnings borrowing from the future)"},
+      {"id": "C12", "metric": "interest / EBIT",                      "threshold": ">15%",                                               "orcl": "22.3%, EBIT coverage 4.48x",                  "class": "leverage"}
+    ],
+    "extrapolation_caveat": {
+      "leverage_branch": ["C3", "C4", "C7", "C12"],
+      "note": "GOOGL/META/MSFT are NOT on the leverage branch today - their capex is self-funded from operating cash flow with no BBB- constraint. AMZN sits in between (levered, but coverage far higher).",
+      "transferable": ["C5", "C6", "C9", "C11"],
+      "transferable_note": "These kill the MULTIPLE and cause de-rating. GOOGL's K-B is already RED FIRING and its M4 has moved -1 -> -2 along exactly this path.",
+      "not_transferable": "The timing after C1/C2 fire, and the DEPTH of the bear case. ORCL's bear is -8.9% carrying $124B of net debt (permanent loss). GOOGL/META/MSFT's bear is multiple reversion, not capital-structure rupture. Same mechanism, different floor.",
+      "single_most_important_watch": "C7. Before it, 'reinvestment' is a story; after it, 'dilution' is a fact. None of the four has crossed C7 yet. Re-read this card the day one of them does."
+    }
+  },
+
+  "derating_vs_impairment": {
+    "question": "Is the -55.8% a de-rating of the multiple or an impairment of the business?",
+    "peak_date": "2025-09-10",
+    "peak_close": 324.63,
+    "peak_pe_on_last_reported_fy_eps": 74.80,
+    "peak_last_reported_fy_eps": 4.34,
+    "now_pe_on_last_reported_fy_eps": 24.61,
+    "now_last_reported_fy_eps": 5.83,
+    "multiple_change_pct": -67.10,
+    "eps_change_pct": 34.33,
+    "reconciliation": "0.3290 x 1.3433 = 0.4420 -> -55.80%, exactly matching the price move.",
+    "answer_layer_1": "On earnings LEVEL, 100% of the decline is multiple de-rating. EPS did not fall - it rose 34%.",
+    "answer_layer_2": "But the de-rating was CAUSED by an impairment of earnings QUALITY: gross margin -4.69pp, ROIC -3.87pp, FCF -$0.4B -> -$23.7B, rating cut to BBB-. The market did not cut 'how much they earn'; it cut 'what those earnings are worth per unit'.",
+    "answer_layer_3": "Leverage amplified the gap: EV fell from ~$1,023.6B to ~$537.5B (-47.5%) while equity fell -55.80%. The 8.3pp difference is net debt ($92.9B -> $124.3B) absorbing enterprise value. Enterprise value fell less than half; shareholders lost more than half.",
+    "unfinished_exam": "The earnings-LEVEL test has not happened yet. OpenAI revenue does not begin until FY2028. Today's 24.6x sits on FY2026 EPS, which contains almost none of the AI contract revenue but already carries all of the interest and depreciation."
+  },
+
+  "open_questions": [
+    {"id": "O1",  "item": "OpenAI revenue run-rate, cash burn, funding status, contract cancellability; Oracle 10-K customer-concentration disclosure text", "class": "blocking", "effect": "Caps verdict at WATCH directly. Determines whether the base case exists."},
+    {"id": "O2",  "item": "Useful life of servers / datacenter equipment and whether it was changed; critiques of AI-builder depreciation assumptions (Burry et al.) unverified", "class": "blocking", "effect": "Determines whether the derived D&A of $9,315M is understated -> rewrites OE0."},
+    {"id": "O3",  "item": "Capitalized interest. With construction-in-progress up $73B in a year, true funding cost may materially exceed the $4,599M on the income statement", "class": "blocking", "effect": "Rewrites interest burden and OE0."},
+    {"id": "O4",  "item": "Primary transcript text for CFO's 'ROIC in the high 20s' (this run relied on secondary reporting); management's ROIC definition verbatim", "class": "monitoring", "effect": "Does not cap; it is the evidence for K-C."},
+    {"id": "O5",  "item": "Maintenance vs growth capex split - THE SAME NUMBER as GOOGL O1 / AMZN O4", "class": "blocking", "effect": "The $11B-$23B OE0 range is almost entirely determined by it."},
+    {"id": "O6",  "item": "Cloud / OCI segment gross margin (The Information reported low OCI margins in 2025; unverified)", "class": "monitoring", "effect": "Determines the C5 / K-E reading."},
+    {"id": "O7",  "item": "Primary verification of insider transactions (Form 4) and management changes (8-K); Larry Ellison's stake and any sales", "class": "non-blocking", "effect": "Weakens operator grading confidence; does not change the verdict."},
+    {"id": "O8",  "item": "Revision history of FY2027/FY2028 sell-side consensus - cannot tell whether estimates were cut, so (e) layer 3 rests only on reported EPS", "class": "monitoring", "effect": "Limits precision of the de-rating decomposition."},
+    {"id": "O9",  "item": "ORCL CDS spreads (peak vs now) and bond spreads", "class": "non-blocking", "effect": "Would reinforce C10; does not change the verdict."},
+    {"id": "O10", "item": "Full consolidated balance sheet line-by-line (8-K reproduction was truncated); EBITDA and D&A are back-solved derivations, not filed figures", "class": "monitoring", "effect": "Confidence in F3.b/F3.c is only medium."}
+  ],
+
+  "sources_used": [
+    {"source_id": "A1p-1", "name": "Oracle Q4/FY2026 8-K Exhibit 99.1 (via StockTitan SEC filing reproduction; sec.gov 403 on direct fetch)", "public_date": "2026-06-10", "tier": "A1-proxy"},
+    {"source_id": "A2-3",  "name": "stockanalysis.com ORCL financial statements FY2022-FY2026", "public_date": "2026-08-07", "tier": "B1"},
+    {"source_id": "A2-4",  "name": "Yahoo Finance chart API ORCL daily closes + 52wk band", "public_date": "2026-08-07", "tier": "B1"},
+    {"source_id": "B1-3",  "name": "Cloud Wars - RPO quarterly trajectory", "public_date": "2026-06", "tier": "B2"},
+    {"source_id": "B1-4",  "name": "MLQ / SeekingAlpha - FY2027 capex and financing from Q4 call", "public_date": "2026-06-10", "tier": "B2"},
+    {"source_id": "B1-5",  "name": "Barchart - call-disclosed operating metrics (GPU utilization, renewals, customer count)", "public_date": "2026-07", "tier": "B2"},
+    {"source_id": "B1-6",  "name": "Motley Fool 2026-07-29 - financing and dilution", "public_date": "2026-07-29", "tier": "B2"},
+    {"source_id": "B1-7",  "name": "Yahoo Finance / Motley Fool - CFO ROIC remark and sell-side consensus", "public_date": "2026-07", "tier": "B2"},
+    {"source_id": "B1-8",  "name": "Cryptobriefing - RPO concentration and post-earnings reaction", "public_date": "2026-06", "tier": "B2"},
+    {"source_id": "C1-2",  "name": "S&P Global - downgrade to BBB-", "public_date": "2026-07-09", "tier": "C1"},
+    {"source_id": "C1-3",  "name": "Moody's - Baa2 affirmed, outlook to negative; counterparty risk note", "public_date": "2026", "tier": "C1"},
+    {"source_id": "C1-4",  "name": "Fitch - BBB/F2 affirmed, stable", "public_date": "2026", "tier": "C1"}
+  ]
+}

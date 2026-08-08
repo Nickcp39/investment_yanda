@@ -1,0 +1,112 @@
+{
+  "ticker": "INTU",
+  "as_of": "2026-08-06",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is the DATA FREEZE date = the last SETTLED close on or before run_date 2026-08-07. The 2026-08-07 session had not settled when this dossier was built, so its intraday print (~$328.2-328.6, +2.0% vs the freeze) was deliberately NOT used as the freeze edge -- the same discipline applied in companies/googl/2026-07-24. FILED data (FY2025 10-K, FY26 Q1-Q3 10-Q/8-K line items) is not in this manifest; it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 321.91,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_note": "INTU is 60.1% below its 2025-07-30 all-time closing high of $807.39, so a hug check deserves explicit attention rather than a silent pass. It is NOT in fact hugging either extreme: $321.91 sits +27.3% above the 52-week intraday low of $252.84 (2026-06-22) and +26.2% above the cycle low CLOSE of $255.07 (2026-06-25), and -57.8% below the 52-week intraday high of $762.48. The value was independently confirmed as a genuine last settled close by two sources (below), not scraped from an extreme of the series -- which is the INC-001 failure mode this tripwire exists to catch.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU", "fetched_at": "2026-08-07", "value": 321.91},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/intu/history/", "fetched_at": "2026-08-07", "value": 321.91}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 88054000000,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "273.537M shares x $321.91", "fetched_at": "2026-08-07", "value": 88054000000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/intu/", "fetched_at": "2026-08-07", "value": 89790000000}
+      ],
+      "cross_check_delta_pct": 1.97,
+      "cross_check_note": "The stockanalysis figure is computed off its live 2026-08-07 intraday quote ($328.24), not off the 2026-08-06 settled close. Adjusting for the price basis, both reduce to the same 273.5M share count -- the delta is entirely the price basis, not a share-count disagreement.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 762.48,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU", "fetched_at": "2026-08-07", "value": 762.48},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/intu/", "fetched_at": "2026-08-07", "value": 786.28}
+      ],
+      "cross_check_delta_pct": 3.12,
+      "cross_check_note": "Window-start difference, not a data conflict. Yahoo's strict 52-week window opens 2025-08-08 (intraday high $762.48 that day); stockanalysis opens a day or two earlier and therefore catches the tail of the late-July 2025 peak. The all-time high is a separate and larger number: $807.39 close / $813.70 intraday on 2025-07-30 ($798.42 dividend-adjusted). Yahoo's stricter value is adopted so the distance-from-high reconciliation is conservative.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 252.84,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU", "fetched_at": "2026-08-07", "value": 252.84},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/intu/", "fetched_at": "2026-08-07", "value": 252.84}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 273.537,
+      "unit": "millions",
+      "as_of": "2026-05-14",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_10q_fy26q3", "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000025/intu-20260430.htm", "public_date": "2026-05-20", "fetched_at": "2026-08-07", "value": 273.537},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/intu/", "fetched_at": "2026-08-07", "value": 273.54}
+      ],
+      "cross_check_delta_pct": 0.001,
+      "cross_check_note": "10-Q cover page states 273,537 thousand shares outstanding as of 2026-05-14. Buybacks have continued since ($1.6B repurchased in Q3 alone, new $8B authorization), so the true 2026-08-06 count is likely modestly LOWER, making the $88.05B market cap a conservative (high) figure.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 (ending 2026-07-31) guidance as last revised on 2026-05-20: revenue $21.341-21.374B (+13-14%); GAAP operating income $5.705-5.725B; non-GAAP operating income $8.784-8.804B; GAAP diluted EPS $15.79-15.84; non-GAAP diluted EPS $23.80-23.85. Segment: Global Business Solutions ~16%; Consumer ~10% (TurboTax ~7%, Credit Karma ~19%, ProTax ~4%). Q4 FY2026: revenue +11-12%, GAAP EPS $0.73-0.79, non-GAAP EPS $3.56-3.62, including $300M of restructuring charges. NET OF ALL REVISIONS THE GUIDE WAS RAISED versus the 2025-08-21 original ($20.997-21.186B revenue, $22.98-23.18 non-GAAP EPS); the only operating line cut was TurboTax, ~8% -> ~7%. FY2026 ACTUALS ARE NOT YET REPORTED -- the Q4/FY2026 8-K is scheduled for 2026-08-25, 18 days after run_date.",
+      "as_of": "2026-05-20",
+      "sources": [
+        {"source_name": "sec_8k_fy26q3_earnings_release", "url": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000024/fy26q3earningspressrelease.htm", "public_date": "2026-05-20", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_fy25q4_earnings_release", "url": "https://investors.intuit.com/news-events/press-releases/detail/1266/intuit-reports-strong-fourth-quarter-and-full-year-fiscal-2025-results-sets-fiscal-2026-guidance-with-double-digit-revenue-growth-and-continued-operating-margin-expansion", "public_date": "2025-08-21", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Securities class action / shareholder investigations filed from 2026-06 onward (first complaint reported 2026-07-21) following the 2026-05-21 -20.02% single-day decline, alleging misstatements about TurboTax pricing and the fiscal 2026 tax season. Specific allegations and exposure NOT verified from primary court or 10-K legal-proceedings sources this run (OPEN O8). Separately, the FY2025 10-K discloses the long-running Free File-related proceedings (consolidated putative class action ordered to arbitration by the Ninth Circuit in Aug 2020; dismissed on a non-class basis in May 2021 for a non-material amount; a Canadian class action filed 2022-08-25 remains). The 2022 $141M multistate AG settlement and the 2024 FTC final order were NOT re-verified for 2026 status this run (OPEN O10).",
+      "as_of": "2026-07-21",
+      "sources": [
+        {"source_name": "sec_10k_fy2025_legal_proceedings", "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm", "public_date": "2025-09-03", "fetched_at": "2026-08-07"},
+        {"source_name": "press_shareholder_investigations", "url": "https://www.prnewswire.com/news-releases/intu-stock-drop-intuit-investigated-for-securities-fraud-after-stock-plummets-20-on-pricing-issues-302787918.html", "public_date": "2026-06-02", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "policy_status",
+      "is_quantitative": false,
+      "value": "IRS Direct File is CANCELLED for the 2026 filing season. IRS product manager Cindy Noe informed state revenue departments by email on 2025-11-03 that 'IRS Direct File will not be available in Filing Season 2026. No launch date has been set for the future.' Treasury cited low participation and high cost ($41M to operate for tax year 2024, at least $138 per return). The 2025 season handled 296,531 returns, roughly 0.19% of ~160M US individual e-filed returns. OBBBA Section 70607 directs Treasury to study public-private partnership replacement models. NET: the policy vector moved in Intuit's FAVOUR across the drawdown window. FY2026 was therefore Intuit's first tax season with no IRS Direct File in market -- this follows directly from the cancellation notice above; the season-level characterisation is the runner's inference from that primary cancellation, not a separately sourced company statement.",
+      "as_of": "2025-11-03",
+      "sources": [
+        {"source_name": "federal_news_network", "url": "https://federalnewsnetwork.com/it-modernization/2025/11/irs-direct-file-will-not-be-available-in-2026-agency-tells-states/", "public_date": "2025-11-05", "fetched_at": "2026-08-07"},
+        {"source_name": "tax_notes", "url": "https://www.taxnotes.com/featured-news/irs-shutters-direct-file-citing-cost-and-low-uptake/2025/11/05/7t7q0", "public_date": "2025-11-05", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_10k_fy2025_risk_factor", "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm", "public_date": "2025-09-03", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    }
+  ]
+}

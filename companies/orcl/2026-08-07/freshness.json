@@ -1,0 +1,91 @@
+{
+  "ticker": "ORCL",
+  "as_of": "2026-08-06",
+  "run_date": "2026-08-07",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is deliberately 2026-08-06, NOT the run_date: at write time (2026-08-07 13:45 America/New_York) the session was still OPEN (Yahoo regularMarketPrice 144.88, day range 142.34-147.16), so 08-07 had no settled close. Per INC-001 discipline the card uses the last SETTLED close. FILED data (FY2026 8-K / five-year statements) is not in this manifest -- it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 143.47,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "hug_note": "price sits +25.30% off the 52wk low and -58.50% off the 52wk high -- well outside the 3% hug band, no justification needed",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL", "fetched_at": "2026-08-07", "value": 143.47},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/orcl/history/", "fetched_at": "2026-08-07", "value": 143.47}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 413194000000,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "2880M shares x 143.47", "fetched_at": "2026-08-07", "value": 413193600000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/orcl/statistics/", "fetched_at": "2026-08-07", "value": 416948000000}
+      ],
+      "cross_check_delta_pct": 0.9,
+      "delta_note": "stockanalysis figure is an INTRADAY 2026-08-07 snapshot (~144.8); the derived value uses the settled 08-06 close. Difference is the price timestamp, not the share count.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 345.72,
+      "unit": "USD",
+      "as_of": "2025-09-10",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL", "fetched_at": "2026-08-07", "value": 345.72},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/orcl/", "fetched_at": "2026-08-07", "value": 345.72}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "345.72 is the INTRADAY high on 2025-09-10. The highest CLOSE was 324.63 on the same day. The card uses 345.72 for the 52wk band and states -58.50%; the 324.63 close basis (55.8% drawdown) is reported separately and labelled.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 114.50,
+      "unit": "USD",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL", "fetched_at": "2026-08-07", "value": 114.50},
+        {"source_name": "yahoo_daily_series", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL (daily closes)", "fetched_at": "2026-08-07", "value": 114.99}
+      ],
+      "cross_check_delta_pct": 0.43,
+      "note": "114.50 = intraday low; 114.99 = lowest CLOSE, both on 2026-07-24. A third source (barchart) showed a stale 128.42 and was rejected.",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2880,
+      "unit": "millions",
+      "as_of": "2026-05-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q4fy26", "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526100148/orcl-ex99_1.htm", "public_date": "2026-06-10", "fetched_at": "2026-08-07", "value": 2878},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/orcl/statistics/", "fetched_at": "2026-08-07", "value": 2880}
+      ],
+      "cross_check_delta_pct": 0.07,
+      "note": "2878 = Q4 FY2026 BASIC weighted-average shares per the 8-K. Diluted WA was 2915 (Q4) / 2914 (FY). Market cap uses 2880.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2027 guidance issued 2026-06-10 with Q4 FY2026 results: total revenue ~$90B (+34% cc); non-GAAP EPS $8.05; Q1 FY2027 revenue +27-29%, cloud +57-64%, non-GAAP EPS $1.72-1.76. Net cash capex outlay guided to ~$70B with ~$40B of debt+equity financing planned; management explicitly flagged a FY2027 gross-margin 'step down'. On 2026-07-09 S&P revised its own FY2027 capex forecast up to $90-95B (from $60B) and its FY2027 free operating cash flow deficit forecast to about -$42B (from -$24B) while downgrading Oracle to BBB-. Q1 FY2027 (quarter ending 2026-08-31) is NOT yet reported; expected ~2026-09-14.",
+      "as_of": "2026-07-09",
+      "sources": [
+        {"source_name": "sec_8k_q4fy26", "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526100148/orcl-ex99_1.htm", "public_date": "2026-06-10", "fetched_at": "2026-08-07"},
+        {"source_name": "sp_global", "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101695609", "public_date": "2026-07-09", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    }
+  ]
+}

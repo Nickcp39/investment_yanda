@@ -1,0 +1,32 @@
+{
+  "fetched_at": "2026-08-07 15:46:30 -0400",
+  "series": [
+    {
+      "file": "data/gold_lbma_pm_daily.csv",
+      "name": "LBMA Gold Price PM (USD/oz)",
+      "url": "https://prices.lbma.org.uk/json/gold_pm.json",
+      "rows": 14656,
+      "first": "1968-04-01",
+      "last": "2026-08-06",
+      "note": "London afternoon benchmark. Pre-1968-04 there is no market price: gold was pegged at USD 35/oz."
+    },
+    {
+      "file": "data/us_m2_monthly.csv",
+      "name": "US M2 money stock, seasonally adjusted (USD bn)",
+      "url": "https://www.federalreserve.gov/datadownload/Output.aspx?rel=H6&series=798e2796917702a5f8423426ba7e6b42&from=&to=&filetype=csv&label=include&layout=seriescolumn",
+      "rows": 810,
+      "first": "1959-01",
+      "last": "2026-06",
+      "note": "Federal Reserve H.6. The M2 definition was revised in Feb 2021 (savings deposits reclassified); levels before/after May 2020 are not a perfectly clean series."
+    },
+    {
+      "file": "data/us_cpi_monthly.csv",
+      "name": "CPI-U, all items, US city average, NSA (1982-84=100)",
+      "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/ (series CUUR0000SA0)",
+      "rows": 701,
+      "first": "1968-01",
+      "last": "2026-06",
+      "note": "BLS public API v1, 10-year chunks, no key."
+    }
+  ]
+}

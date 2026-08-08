@@ -1,0 +1,124 @@
+﻿{
+    "GeneratedAt":  "2026-07-25 10:46:25 -04:00",
+    "Method":  "Year-end to year-end using Yahoo Finance adjusted close; 2026 uses the latest available trading day.",
+    "YahooAdjustedCloseDefinition":  "Adjusted for applicable splits and dividend distributions.",
+    "SourceHelpUrl":  "https://help.yahoo.com/kb/SLN28256.html",
+    "SPY":  {
+                "FirstDate":  "1993-01-29",
+                "LastDate":  "2026-07-24",
+                "ObservationCount":  8428,
+                "SourceUrl":  "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0\u0026period2=1785124800\u0026interval=1d\u0026events=div%2Csplits\u0026includeAdjustedClose=true",
+                "OverallPeriod":  {
+                                      "StartDate":  "1996-07-25",
+                                      "EndDate":  "2026-07-24",
+                                      "StartAdjClose":  37.813796997070313,
+                                      "EndAdjClose":  738.92999267578125,
+                                      "ActualYears":  29.996509168566089,
+                                      "TotalReturn":  18.541279938987113,
+                                      "CAGR":  0.10417211373786572
+                                  },
+                "Rolling30YearStats":  {
+                                           "CompleteWindowCount":  25,
+                                           "AverageTotalReturn":  0.56089492007089969,
+                                           "MedianTotalReturn":  0.64703372422417194,
+                                           "AverageCAGR":  0.0843484707263389,
+                                           "MedianCAGR":  0.1049574186308444,
+                                           "MinimumTotalReturn":  -0.1138092116787075,
+                                           "MaximumTotalReturn":  1.3216063361328763,
+                                           "LatestWindow":  {
+                                                                "Ticker":  "SPY",
+                                                                "StartYear":  2021,
+                                                                "EndYear":  2026,
+                                                                "StartDate":  "2021-12-31",
+                                                                "EndDate":  "2026-07-24",
+                                                                "StartAdjClose":  446.89901733398438,
+                                                                "EndAdjClose":  738.92999267578125,
+                                                                "ActualYears":  4.561353073642854,
+                                                                "TotalReturn":  0.65346076857347657,
+                                                                "CAGR":  0.11655260972743653,
+                                                                "Status":  "Partial through 2026-07-24"
+                                                            }
+                                       },
+                "RollingSince2008Stats":  {
+                                              "CompleteWindowCount":  13,
+                                              "AverageTotalReturn":  0.94328795466578208,
+                                              "MedianTotalReturn":  0.97424948182451954,
+                                              "AverageCAGR":  0.14073074017116374,
+                                              "MedianCAGR":  0.14565786484392063,
+                                              "MinimumTotalReturn":  0.49414978961513989,
+                                              "MaximumTotalReturn":  1.3216063361328763,
+                                              "LatestWindow":  {
+                                                                   "Ticker":  "SPY",
+                                                                   "StartYear":  2021,
+                                                                   "EndYear":  2026,
+                                                                   "StartDate":  "2021-12-31",
+                                                                   "EndDate":  "2026-07-24",
+                                                                   "StartAdjClose":  446.89901733398438,
+                                                                   "EndAdjClose":  738.92999267578125,
+                                                                   "ActualYears":  4.561353073642854,
+                                                                   "TotalReturn":  0.65346076857347657,
+                                                                   "CAGR":  0.11655260972743653,
+                                                                   "Status":  "Partial through 2026-07-24"
+                                                               }
+                                          }
+            },
+    "QQQ":  {
+                "FirstDate":  "1999-03-10",
+                "LastDate":  "2026-07-24",
+                "ObservationCount":  6886,
+                "SourceUrl":  "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0\u0026period2=1785124800\u0026interval=1d\u0026events=div%2Csplits\u0026includeAdjustedClose=true",
+                "OverallPeriod":  {
+                                      "StartDate":  "1999-03-10",
+                                      "EndDate":  "2026-07-24",
+                                      "StartAdjClose":  43.027053833007813,
+                                      "EndAdjClose":  684.22998046875,
+                                      "ActualYears":  27.373594255871097,
+                                      "TotalReturn":  14.902320040882028,
+                                      "CAGR":  0.10634664076637268
+                                  },
+                "Rolling30YearStats":  {
+                                           "CompleteWindowCount":  22,
+                                           "AverageTotalReturn":  0.92451436761425221,
+                                           "MedianTotalReturn":  1.0803091973591705,
+                                           "AverageCAGR":  0.12081677643045023,
+                                           "MedianCAGR":  0.15771453589167739,
+                                           "MinimumTotalReturn":  -0.55876243262975245,
+                                           "MaximumTotalReturn":  2.481658924791609,
+                                           "LatestWindow":  {
+                                                                "Ticker":  "QQQ",
+                                                                "StartYear":  2021,
+                                                                "EndYear":  2026,
+                                                                "StartDate":  "2021-12-31",
+                                                                "EndDate":  "2026-07-24",
+                                                                "StartAdjClose":  387.03091430664063,
+                                                                "EndAdjClose":  684.22998046875,
+                                                                "ActualYears":  4.561353073642854,
+                                                                "TotalReturn":  0.76789490238663882,
+                                                                "CAGR":  0.13305415133236531,
+                                                                "Status":  "Partial through 2026-07-24"
+                                                            }
+                                       },
+                "RollingSince2008Stats":  {
+                                              "CompleteWindowCount":  13,
+                                              "AverageTotalReturn":  1.4527429002285979,
+                                              "MedianTotalReturn":  1.3911345469827943,
+                                              "AverageCAGR":  0.19298066311776421,
+                                              "MedianCAGR":  0.19050058955266636,
+                                              "MinimumTotalReturn":  0.76946799909526953,
+                                              "MaximumTotalReturn":  2.481658924791609,
+                                              "LatestWindow":  {
+                                                                   "Ticker":  "QQQ",
+                                                                   "StartYear":  2021,
+                                                                   "EndYear":  2026,
+                                                                   "StartDate":  "2021-12-31",
+                                                                   "EndDate":  "2026-07-24",
+                                                                   "StartAdjClose":  387.03091430664063,
+                                                                   "EndAdjClose":  684.22998046875,
+                                                                   "ActualYears":  4.561353073642854,
+                                                                   "TotalReturn":  0.76789490238663882,
+                                                                   "CAGR":  0.13305415133236531,
+                                                                   "Status":  "Partial through 2026-07-24"
+                                                               }
+                                          }
+            }
+}

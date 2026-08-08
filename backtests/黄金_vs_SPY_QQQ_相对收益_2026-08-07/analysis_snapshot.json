@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-08-07",
+  "common_start": "1999-03",
+  "latest_complete_1y_buy_month": "2025-07",
+  "latest_complete_3y_buy_month": "2023-07",
+  "observations": {
+    "12": 317,
+    "36": 293
+  },
+  "full_sample_model": {
+    "intercept": -1.0184289159427031,
+    "slope": 0.862545686118789,
+    "sigma": 0.3870769780600417
+  },
+  "primary_model": {
+    "type": "120-month rolling OLS",
+    "window_months": 120,
+    "intercept": -7.105126705798451,
+    "slope": 1.4928283430775628,
+    "sigma": 0.22131883281080858
+  },
+  "current_position": {
+    "m2_month": "2026-06",
+    "month_end_gold": 4026.05,
+    "month_end_z_roll10": 1.8199116266491324,
+    "latest_gold_date": "2026-08-06",
+    "latest_gold_price": 4267.85,
+    "latest_gold_z_with_latest_m2": 2.0834429330402893,
+    "completed_history_at_or_above_latest_z": {
+      "12": {
+        "months": 65,
+        "gold_beats_both": 30
+      },
+      "36": {
+        "months": 48,
+        "gold_beats_both": 32
+      }
+    }
+  },
+  "data_sources": {
+    "gold": "I:\\yc_research\\2026 investment yanda\\backtests\\\u9ec4\u91d1_\u8d27\u5e01\u4f9b\u5e94_\u4f30\u503c_2026-08-07\\data\\gold_lbma_pm_daily.csv",
+    "valuation_panel": "I:\\yc_research\\2026 investment yanda\\backtests\\\u9ec4\u91d1_\u8d27\u5e01\u4f9b\u5e94_\u4f30\u503c_2026-08-07\\monthly_panel.csv",
+    "spy_adjusted": "I:\\yc_research\\2026 investment yanda\\backtests\\SPY_QQQ_5\u5e74\u6eda\u52a8\u56de\u62a5_2026-07-25\\SPY_daily_adjusted.csv",
+    "qqq_adjusted": "I:\\yc_research\\2026 investment yanda\\backtests\\SPY_QQQ_5\u5e74\u6eda\u52a8\u56de\u62a5_2026-07-25\\QQQ_daily_adjusted.csv"
+  }
+}

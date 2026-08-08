@@ -1,0 +1,109 @@
+{
+  "ticker": "MDT",
+  "as_of": "2026-07-24",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-07-24",
+  "context_label": "REFRESH_of_2026-07-05_reprice_plus_developments_sweep_minimed_ipod_spr_closed_hugo_ai_rdn_traction_litigation_bounded_and_isolating",
+  "prior_dossier": "companies/mdt/2026-07-05",
+  "as_of_price": 83.21,
+  "as_of_market_cap": 106509000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med-high",
+      "finding": "REFRESH with materially better sourcing than the prior run. Price re-verified 2 independent ways ($83.21 for the 2026-07-24 close via the repo Yahoo fetcher AND stockanalysis.com historical table -- exact match; 08-05 intraday $85.50 is a later non-stale cross-check). This run additionally accessed: the Q4 FY2026 earnings-CALL transcript (China/Hugo/RDN/PFA now on the record), the MiniMed S-1 (Separation Agreement + uncapped-indemnity structure), the FY2026 10-K litigation count (15 suits/55 individuals as of 2026-06-08), and the FY2026 10-K balance sheet (net debt ~$18.7B). Prior OPEN items resolved or improved: O5 spinoff status RESOLVED (MiniMed IPO'd 2026-03-06 as MMED, $560M, ~90% retained); O4 margin bifurcation LARGELY EXPLAINED (MiniMed Blackstone $157M charge + separation dilution + tariffs); O2 China improved to on-record qualitative. Still open: O1 Hugo revenue (unresolvable until MDT breaks it out), O2 hard current-year China %. Completeness ~78% (was ~65%). SEC 10-K document-body still not read verbatim (EDGAR bot-block; metadata API succeeded). Signal 0 (neutral confidence module), confidence nudged Med->Med-High.",
+      "drivers": ["YAHOO-REFETCH", "STOCKANALYSIS-MDT-HISTORY", "MDT-Q4FY26-TRANSCRIPT", "MINIMED-S1", "MDT-10K-FY2026"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "The 'diversified B2B implant base + multiple growth-platform bets' mechanism is now IN MOTION with more proof points, not just planned. Since the prior dossier MDT has: (a) IPO'd MiniMed and begun deconsolidating the B2C, litigation-heavy Diabetes unit (sharpening B2B focus, as thesized); (b) closed the ~$650M SPR neuromodulation tuck-in (non-opioid peripheral nerve stim -- a 4th growth vector, 3rd acquisition of 2026); (c) unveiled the NVIDIA-powered Touch Surgery Aide AI platform + first FDA-cleared robotic-AI app (IEP); (d) filed 510(k)s to expand Hugo into US general surgery + gynecology; (e) put up +145% PFA growth and a first quantified ~$100M renal-denervation run-rate. Held at +1 (firmer): the mechanism is coherent and has now produced MULTIPLE evidenced proof points (PFA winning, RDN quantified, robotics+AI ecosystem deepening) -- but not +2 because the flagship robotics-scale proof (Hugo revenue) is still absent.",
+      "drivers": ["MDT-Q4FY26-TRANSCRIPT", "MDT-SPR-COMPLETE-PR", "MDT-TOUCHSURGERY-PR", "MEDTECHDIVE-MINIMED-IPO"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med-high",
+      "finding": "Moat STRENGTHENED modestly. Renal denervation went from strategic mention to a QUANTIFIED ~$100M annualized run-rate (weekly procedures doubled post-NCD; strong 3yr BP durability; permanent CPT Cat I codes pending Sept-2026 AMA review). PFA compounded (+145% global Q4) with share leadership intact (48% vs BSX 41%). Hugo's ecosystem deepened materially (Touch Surgery Aide on NVIDIA infrastructure; first FDA-cleared real-time robotic-AI app; 35+ countries, ~1,500 ORs, procedures 2-3x market rate). SPR adds an adjacent neuromod growth vector. HONEST OFFSETS keeping it at +1 not +2: (a) Hugo commercial revenue still zero-disclosed (the central gap, unchanged); (b) PFA competition intensifying (BSX FARAWAVE NAV refresh to ~32% of spend, J&J Varipulse entry); (c) TAVR competitive/pricing pressure in structural heart. Confidence Med->Med-High.",
+      "drivers": ["MDT-Q4FY26-TRANSCRIPT", "QSIGHT-PFA2026", "MDT-TOUCHSURGERY-PR", "MEDTRONIC-RDN-REIMBURSEMENT"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "No new print (Q1 FY2027 is 2026-09-01), so the strong FY2026 headline is unchanged (+5.8% organic, best in a decade; FCF/NI 1.13x). What changed is CLARIFYING and net-favorable: (1) the prior top flag -- the GAAP/non-GAAP margin bifurcation -- is LARGELY EXPLAINED by identifiable, mostly non-recurring MiniMed-separation charges (a $157M Blackstone royalty/minimum charge = ~8c, explicitly non-recurring in FY2027; plus ~4c IPO-timing + 1-2c/month separation dilution) plus tariffs (~$185M); FY2026 non-GAAP EPS $5.53 landed inside the lowered $5.50-5.54 post-IPO guide. (2) Balance sheet is CLEANER than the prior estimate: net debt ~$18.7B (10-K basis, ~$19.4B post-SPR), equity up to $50.1B, D/E improved to ~55.8%. (3) A known transitional MiniMed deconsolidation dilution is now bounded/visible. FY2027 guide ($5.90-6.00 EPS) conservatively INCLUDES full-year Diabetes (~25bps); a non-adverse structural reset comes when the split-off completes (~end CY2026). Held +1, High.",
+      "drivers": ["MDT-NEWSROOM-Q4FY26", "STOCKANALYSIS-MDT-BALANCESHEET", "MEDTECHDIVE-MINIMED-DECON", "MDT-Q4FY26-TRANSCRIPT"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "0 -> +1 (modest upgrade). The two risks the prior inversion map singled out as 'not captured in a pure multiple' both moved FAVORABLY and in an evidenced way: (Kill Path 4 -- MiniMed litigation) is now QUANTIFIED as bounded (FY2026 10-K: 15 lawsuits / 55 individuals as of 2026-06-08 -- an order of magnitude smaller than the FDA MAUDE complaint figures the prior dossier cited) AND structurally ISOLATING (the Separation Agreement allocates diabetes/pump liabilities to MiniMed SpinCo; the spinoff timing that was a worry is now the isolation mechanism; CA bellwethers survived SJ+appeal, no MDL, no global settlement, a separate class action decided for MDT); (Kill Path 3 -- China) is now on-record stabilizing from the actual Q4 earnings call ('growing at corporate average / worst of VBP behind us'). Capped at +1 (not +2) because Kill Path 2 (Hugo US commercial scale, the primary long-duration path) is UNCHANGED/unquantified, and two NEW competitive counter-risks appeared: TAVR structural-heart pressure (drove the July-14 -5% dip + TD Cowen $119->$100 cut) and PFA entrants (J&J Varipulse, BSX FARAWAVE NAV). Residual on litigation: MDT retains ~90% economic exposure until the split-off completes (~end CY2026) and indemnities are uncapped.",
+      "drivers": ["MDT-10K-FY2026", "MINIMED-S1", "MDT-Q4FY26-TRANSCRIPT", "MARKETBEAT-MDT-0714"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Price is FLAT: $83.21 (2026-07-24 close) vs prior $83.19. EV ~$125.9B (net debt refreshed to ~$19.4B post-SPR, cleaner than prior) / est. FY2026 non-GAAP EBITDA ~$11.60B => EV/EBITDA ~10.9x -- UNCHANGED and still a genuine DISCOUNT to ISRG (~42x), SYK (~20x), BSX (~13.5-22x), including the peer (BSX) MDT beats in PFA. Trailing non-GAAP P/E ~15.0x, forward ~14.0x (matches screener 13.99x). Price -21.7% off 52wk high, +13.5% off low -- no hug. The July-14 dip to $79.30 then recovery marks ~$78-80 as a live dip-buy support (ADD ON WEAKNESS trigger fired this month). 3-scenario IRR near-identical to prior (base +2.6%/+7.0%, bear -18.7%/-11.4%, bull +15.5%/+17.1%); only bull clears the 8% hurdle, base 5yr within ~1pt. Sell-side ~$98 consensus but targets mostly TRIMMED this period (Evercore -1, TD Cowen -19), a modest sentiment cooling. Signal +1: genuine peer discount + positive-but-sub-hurdle base case, materially unchanged.",
+      "drivers": ["YAHOO-REFETCH", "STOCKANALYSIS-MDT-HISTORY", "STOCKANALYSIS-MDT-BALANCESHEET", "BENZINGA-MDT-RATINGS"]
+    }
+  ],
+  "business_verdict": "good_and_improving",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "ADD_ON_WEAKNESS_HOLD_OTHERWISE",
+  "suggested_initial_size_pct": 3,
+  "suggested_max_size_pct": 8,
+  "buy_below_price": 97,
+  "net_signal": "+5 / 0",
+  "prior_net_signal": "+4 / 0",
+  "comparison_verdict": "STRENGTHEN. The new developments modestly STRENGTHEN the STARTER thesis on the business/downside-quality axis while the price stays at the same peer discount. The two prior open questions that were pure risk (MiniMed litigation, China) both moved favorably and are now better-evidenced: the litigation is bounded (15 suits/55 people) and structurally isolating into MiniMed SpinCo; China is on-record stabilizing from the earnings call. A third growth platform (renal denervation) now has quantified traction (~$100M annualizing); PFA is compounding (+145%); the Hugo AI ecosystem deepened (NVIDIA Touch Surgery Aide + first FDA-cleared robotic-AI app); the balance sheet is cleaner; and the prior margin-bifurcation flag is largely explained. It stays STARTER (not CORE) because the single gating question -- Hugo's US commercial scale -- is still completely unquantified, and new competitive pressures (TAVR, J&J Varipulse in PFA) emerged. Net signal +4/0 -> +5/0.",
+  "starter_zone": "Current price $83.21 remains within the STARTER entry zone -- base case IRR is positive at both horizons (+2.6% 3yr / +7.0% 5yr), the multiple is a genuine discount to all three named peers, and the downside is now better-protected (litigation bounded + isolating, balance sheet cleaner). No drawdown required for an initial position.",
+  "add_zone": "Add toward CORE as: (a) Q1/Q2 FY2027 confirm the FY2026 organic inflection is durable (first test 2026-09-01); (b) any credible Hugo US revenue/placement disclosure emerges (the #1 upgrade catalyst, still absent); (c) the MiniMed split-off completes and cleanly isolates the pump litigation into SpinCo (~end CY2026); (d) the AMA grants permanent Category I CPT codes for renal denervation (Sept-2026 review). A pullback toward $68-72 (the July-14 dip to ~$79 was a milder live example) offers a CORE-level entry with real margin of safety -- an ADD opportunity, not a thesis-questioning event.",
+  "trim_or_no_chase_zone": "Do not chase above ~$95-97 (near the ~$98 sell-side consensus, which itself softened this period) without a fundamentals upgrade. Reassess toward WATCH on: Q1 FY2027 organic growth materially below the 6.75-7.25% guide for 2+ quarters; a large adverse MiniMed verdict OR evidence the indemnity leaks back to RemainCo; confirmed China VBP re-acceleration; or MDT losing PFA share to J&J/BSX (48% falling materially).",
+  "binding_constraint": "COMPOUND-FAVORABLE (unchanged, on firmer footing) -- both price and business quality lean toward the investor, and the downside is now better-protected than a month ago. Price is a genuine discount (~10.9x EV/EBITDA vs SYK ~20x, BSX ~13.5-22x, ISRG ~42x), unchanged. Business quality is IMPROVING with more proof points: PFA compounding (+145%, 48% share), renal denervation now a quantified ~$100M platform, Hugo's AI ecosystem deepening (NVIDIA Touch Surgery Aide, first FDA-cleared robotic-AI app), a cleaner balance sheet (net debt ~$18.7B, equity $50.1B). The two prior pure-risk overhangs both de-risked: MiniMed litigation is bounded (15 suits) and structurally isolating into SpinCo; China is on-record stabilizing. STILL CAPPED AT STARTER because the one question that would justify CORE -- does Hugo achieve real US commercial scale -- remains completely unquantified, and new competitive pressures (TAVR, J&J Varipulse PFA) are a genuine offset. The base case alone (excluding Hugo) offers a positive, if sub-8%-hurdle, IRR at both horizons.",
+  "kill_criteria": [
+    "K-A Growth reversion: Q1 FY2027 (2026-09-01) and subsequent quarters' organic growth falls materially below the 6.75-7.25% guide for 2+ consecutive quarters without a clear one-off explanation -> the durable-inflection thesis is falsified, downgrade toward WATCH.",
+    "K-B Hugo commercial failure: by ~mid-2027 (18-24 months post-US-clearance), essentially zero quantifiable US Hugo commercial traction despite the AI-ecosystem push and multi-specialty 510(k)s -> removes the primary CORE-upgrade catalyst (does not by itself force a downgrade; Hugo is not a base-case assumption).",
+    "K-C China deterioration: confirmed evidence (10-K geographic footnote or a future call) that China VBP is re-accelerating rather than 'behind us' -> re-underwrite China/EM growth downward.",
+    "K-D Litigation shock / indemnity leak: a large adverse MiniMed verdict/settlement, OR evidence that pre-separation pump liability successfully reaches RemainCo Medtronic despite the Separation Agreement (indemnity fails / deep-pocket theory succeeds) -> reassess the balance-sheet and separation-cleanliness picture.",
+    "K-E PFA share loss: confirmed evidence MDT's ~48% PFA spend share is falling materially to J&J Varipulse and/or BSX FARAWAVE NAV -> the strongest quantified moat data point weakens; re-underwrite Cardiovascular growth.",
+    "K-F TAVR / structural-heart erosion: confirmed sustained share/pricing loss in TAVR that drags Cardiovascular below the PFA-driven trajectory -> reassess the segment that carries the growth story.",
+    "K-G Valuation discipline: price rises above ~$95-97 without a fundamentals upgrade (pure re-rating toward peers ahead of Hugo/RDN proof) -> no-chase, hold current size."
+  ],
+  "runner_dissent": "I upgraded M5 from 0 to +1 this run and want to be explicit about why, and about its limit. The upgrade is EARNED, not generous: the prior inversion map singled out exactly two risks as invisible to a pure multiple -- the MiniMed litigation and China -- and BOTH resolved favorably with better evidence this period. The litigation in particular was reframed from a scary-sounding unquantified overhang (the prior dossier cited 2,175 FDA-reported injuries) into a bounded, 15-lawsuit matter being structurally moved off Medtronic into MiniMed SpinCo -- the single most decision-relevant risk change in the refresh. But I deliberately capped the upgrade at +1, and kept the overall verdict at STARTER, for a disciplined reason: the ONE thing that would actually justify CORE conviction -- proof that Hugo can achieve da-Vinci-challenging US commercial scale -- is no closer than a month ago. Everything new about Hugo this period (NVIDIA Touch Surgery Aide, first FDA-cleared robotic-AI app, marquee US installs, 2-3x-market procedure growth, 510(k) expansion) is genuinely encouraging on the ecosystem/clinical axis and is exactly what you'd want to see BEFORE a commercial ramp -- but MDT still discloses zero Hugo revenue, so it remains a bull-case-only catalyst. I also want the two NEW competitive risks on the record so a future refresh does not treat this as an unambiguous improvement: TAVR pressure (which actually moved the stock -5% on July 14) and the arrival of J&J's Varipulse in PFA both cut against the moat. For Nick's career thread (Hugo vs ISRG vs China domestic robotics -- MicroPort MedBot/Toumai, Surgerii -- still not researched, still flagged), the AI-ecosystem move is the most interesting development: Medtronic is trying to out-flank Intuitive not just on hardware (modular arms) but on an open, NVIDIA-powered surgical-AI compute layer -- a strategy Chinese entrants would find far harder to replicate than the robot itself. If that ecosystem bet works, it is the mechanism that converts Hugo from a me-too robot into a genuine second pillar; if it does not show up in revenue within 12-18 months, K-B fires.",
+  "sources_used": [
+    {"source_id": "YAHOO-REFETCH", "public_date": "2026-07-24", "url_or_path": "scripts/market_data_download.py (independent Yahoo pull)"},
+    {"source_id": "STOCKANALYSIS-MDT-HISTORY", "public_date": "2026-08-05", "url_or_path": "https://stockanalysis.com/stocks/mdt/history/"},
+    {"source_id": "STOCKANALYSIS-MDT", "public_date": "2026-08-05", "url_or_path": "https://stockanalysis.com/stocks/mdt/"},
+    {"source_id": "STOCKANALYSIS-MDT-BALANCESHEET", "public_date": "2026-08-05", "url_or_path": "https://stockanalysis.com/stocks/mdt/financials/balance-sheet/"},
+    {"source_id": "MDT-NEWSROOM-Q4FY26", "public_date": "2026-06-03", "url_or_path": "https://news.medtronic.com/2026-06-03-Medtronic-reports-fourth-quarter-and-full-year-fiscal-2026-results-delivers-highest-annual-revenue-growth-in-10-years"},
+    {"source_id": "MDT-Q4FY26-TRANSCRIPT", "public_date": "2026-06-04", "url_or_path": "https://www.fool.com/earnings/call-transcripts/2026/06/04/medtronic-mdt-q4-2026-earnings-transcript/"},
+    {"source_id": "MDT-SPR-COMPLETE-PR", "public_date": "2026-07-16", "url_or_path": "https://www.prnewswire.com/news-releases/medtronic-completes-acquisition-of-spr-expanding-patient-access-to-minimally-invasive-non-opioid-treatment-of-chronic-and-acute-pain-302827532.html"},
+    {"source_id": "MEDTECHDIVE-MINIMED-IPO", "public_date": "2026-03", "url_or_path": "https://www.medtechdive.com/news/medtronics-minimed-goes-public-for-560m/814100/"},
+    {"source_id": "INVESTING-MINIMED-90PCT", "public_date": "2026-03", "url_or_path": "https://www.investing.com/news/company-news/minimed-closes-560m-ipo-medtronic-retains-90-stake-93CH-4550697"},
+    {"source_id": "MINIMED-S1", "public_date": "2025", "url_or_path": "https://www.sec.gov/Archives/edgar/data/2062583/000162828025058231/minimedgroupincs-1.htm"},
+    {"source_id": "MEDTECHDIVE-MINIMED-DECON", "public_date": "2026-03-25", "url_or_path": "https://www.medtechdive.com/news/medtronic-lowers-earnings-forecast-after-minimed-ipo/815688/"},
+    {"source_id": "MDT-10K-FY2026", "public_date": "2026-06-18", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001613103/000162828026044354/mdt-20260424.htm"},
+    {"source_id": "TORHOERMAN-MINIMED-2026", "public_date": "2026", "url_or_path": "https://www.torhoermanlaw.com/medtronic-minimed-insulin-pump-lawsuit/"},
+    {"source_id": "MDT-TOUCHSURGERY-PR", "public_date": "2026-07-21", "url_or_path": "https://news.medtronic.com/2026-07-21-A-new-era-for-surgery-with-real-time-AI-Medtronic-to-unveil-Touch-Surgery-TM-Aide,-the-next-generation-compute-platform-for-the-operating-room-at-Society-of-Robotic-Surgery-2026"},
+    {"source_id": "MEDTECHDIVE-HUGO-FIRSTCASE", "public_date": "2026", "url_or_path": "https://www.medtechdive.com/news/medtronic-completes-first-hugo-case-in-the-us/812325/"},
+    {"source_id": "MDT-HUGO-510K-PR", "public_date": "2026-06-03", "url_or_path": "https://www.prnewswire.com/news-releases/medtronic-submits-510k-filings-to-expand-hugo-robotic-assisted-surgery-system-into-general-and-gynecologic-specialties-in-the-united-states-302789147.html"},
+    {"source_id": "QSIGHT-PFA2026", "public_date": "2026", "url_or_path": "https://qsight.guidepoint.com/blog/inside-the-pulsed-field-ablation-market-2026/"},
+    {"source_id": "MEDTRONIC-RDN-REIMBURSEMENT", "public_date": "2026", "url_or_path": "https://www.medtronic.com/en-us/healthcare-professionals/reimbursement/cardiovascular/renal-denervation.html"},
+    {"source_id": "MEDTECHDESIGN-CHINAEXPOSURE", "public_date": "2025-2026", "url_or_path": "https://www.medicaldesignandoutsourcing.com/china-exposure-medtronic-intuitive-henry-schein-align-envista-dentsply-sirona/"},
+    {"source_id": "BENZINGA-MDT-RATINGS", "public_date": "2026-07", "url_or_path": "https://www.benzinga.com/quote/MDT/analyst-ratings"},
+    {"source_id": "MARKETBEAT-MDT-0714", "public_date": "2026-07-14", "url_or_path": "https://www.marketbeat.com/instant-alerts/medtronic-nysemdt-stock-price-down-52-heres-why-2026-07-14/"},
+    {"source_id": "MDT-Q1FY27-DATE-PR", "public_date": "2026", "url_or_path": "https://www.stocktitan.net/news/MDT/medtronic-to-announce-financial-results-for-its-first-quarter-of-mqfj05wwp95i.html"},
+    {"source_id": "SEC-EDGAR-SUBMISSIONS", "public_date": "2026-07-24", "url_or_path": "https://data.sec.gov/submissions/CIK0001613103.json"}
+  ]
+}

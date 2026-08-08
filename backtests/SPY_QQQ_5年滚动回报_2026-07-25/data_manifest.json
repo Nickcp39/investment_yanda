@@ -1,0 +1,16 @@
+﻿{
+    "Files":  [
+                  "SPY_daily_adjusted.csv",
+                  "QQQ_daily_adjusted.csv",
+                  "year_end_adjusted_prices.csv",
+                  "rolling_5y_last_30_years.csv",
+                  "rolling_5y_2008_to_2026.csv",
+                  "analysis_snapshot.json"
+              ],
+    "GeneratedAt":  "2026-07-25 10:46:25 -04:00",
+    "Notes":  [
+                  "QQQ began trading in 1999, so a full 30-year QQQ history does not exist.",
+                  "2026 observations are year-to-date through the latest available trading day.",
+                  "All return calculations use adjusted close to incorporate splits and distributions."
+              ]
+}

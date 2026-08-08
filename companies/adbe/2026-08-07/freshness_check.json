@@ -1,0 +1,81 @@
+{
+  "ticker": "ADBE",
+  "as_of": "2026-08-07",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 265.74,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 264.4200134277344,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 265.74
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 265.83
+      }
+    ],
+    "max_pairwise_delta_pct": 0.499,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-08-07"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "190.12 <= 265.74 <= 370.86"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+39.8% off low, -28.3% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "398M x 265.74 = 0.106T vs card 0.106T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -28.4% vs card-implied -28.3% (gap 0.1pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 265.74 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2026-07-17 (21d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-06-11 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-06-11 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

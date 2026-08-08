@@ -1,0 +1,125 @@
+{
+  "ticker": "ADBE",
+  "as_of": "2026-08-07",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (Q2 FY2026 / FY2025 / FY2021 line items) is NOT here -- it rides the dated-source claim_ledger discipline and the verbatim extracts in raw/primary_extracts.md. PRICE-BASIS DISCLOSURE: a parallel fetch during this run treated 2026-08-07 as an unsettled intraday print and held the 2026-08-06 close $260.24 as the last fully settled close (-2.07% vs the value used). This dossier uses $265.74 because Yahoo has produced a 2026-08-07 daily bar and verify_freshness.py re-fetches the last close <= as_of from that same series. Sensitivity is disclosed in valuation.md section 0: base 10y IRR moves +14.15% -> +14.63% at $260.24, and no verdict, size, buy_below or ladder level changes.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 265.74,
+      "unit": "USD",
+      "as_of": "2026-08-07",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "low_high_hug_note": "NOT a hug and no exemption is being claimed. ADBE closed at $265.74, which is +39.8% ABOVE the 52-week low ($190.12) and -28.4% BELOW the 52-week high ($370.86) -- comfortably mid-range on both sides, far outside the 3% band. The stock bottomed at $193.41 on 2026-06-25 and has rallied +37.4% since, including +17.0% over four sessions (2026-07-24 $225.11 -> 2026-07-29 $263.43). The headline '-61.5% drawdown' is measured against the 2021-11-19 all-time high of $688.37, NOT against a 52-week extreme. T1 and T2 are expected to pass on their own merits.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE", "fetched_at": "2026-08-07", "value": 265.74},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/adbe/", "fetched_at": "2026-08-07", "value": 265.83}
+      ],
+      "cross_check_delta_pct": 0.034,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 105631650000,
+      "unit": "USD",
+      "as_of": "2026-08-07",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "397.5M shares x $265.74", "fetched_at": "2026-08-07", "value": 105631650000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/adbe/", "fetched_at": "2026-08-07", "value": 105670000000}
+      ],
+      "cross_check_delta_pct": 0.036,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 370.86,
+      "unit": "USD",
+      "as_of": "2026-08-07",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/adbe/", "fetched_at": "2026-08-07", "value": 370.86},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE (252 daily closes 2025-08-07..2026-08-07)", "fetched_at": "2026-08-07", "value": 367.46}
+      ],
+      "cross_check_delta_pct": 0.92,
+      "basis_note": "stockanalysis 370.86 is an intraday high; the Yahoo figure 367.46 is a CLOSING high dated 2025-09-18. The 0.92% gap is a known basis difference, not a data conflict.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 190.12,
+      "unit": "USD",
+      "as_of": "2026-08-07",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/adbe/", "fetched_at": "2026-08-07", "value": 190.12},
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE (252 daily closes 2025-08-07..2026-08-07)", "fetched_at": "2026-08-07", "value": 193.41}
+      ],
+      "cross_check_delta_pct": 1.73,
+      "basis_note": "stockanalysis 190.12 is an intraday low; the Yahoo figure 193.41 is a CLOSING low dated 2026-06-25. Known basis difference.",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 397.5,
+      "unit": "millions",
+      "as_of": "2026-08-07",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/adbe/", "fetched_at": "2026-08-07", "value": 397.5},
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm", "public_date": "2026-06-11", "fetched_at": "2026-08-07", "value": 402}
+      ],
+      "cross_check_delta_pct": 1.12,
+      "basis_note": "402M is the Q2 FY2026 WEIGHTED AVERAGE DILUTED share count (period average, ended 2026-05-29); 397.5M is the current shares-outstanding count as of as_of, after a further ~8.5M shares were repurchased in Q2 and buybacks continued into Q3. Adobe's own FY2026 guidance assumes ~399M diluted. The declining series is the expected direction. Market cap and all per-share valuation math use 397.5M.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026 targets RAISED at the Q2 FY2026 report (2026-06-11): total revenue $26.50-26.60B (from $25.90-26.10B); non-GAAP EPS $24.35-24.45 (from $23.30-23.50); GAAP EPS $17.90-18.00; Business Professionals & Consumers subscription revenue $7.44-7.48B; Creative & Marketing Professionals subscription revenue $18.21-18.27B; non-GAAP operating margin ~45.0%; diluted share count ~399M. CRITICAL: Total Adobe ending ARR growth was held UNCHANGED at 10.2% YoY even though the revised targets now INCLUDE the acquired Semrush ARR (~$480M, ~1.9pp) -- implying an organic ARR growth guide of ~8.3% (dossier derivation, not a company statement). Q3 FY2026 targets: total revenue $6.67-6.72B; non-GAAP EPS $6.05-6.10. Q3 FY2026 results are NOT yet reported as of as_of (quarter ends ~2026-08-28; historically reported mid-September).",
+      "as_of": "2026-06-11",
+      "sources": [
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm", "public_date": "2026-06-11", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_q4fy25", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm", "public_date": "2025-12-10", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true,
+      "age_note": "Newest source 2026-06-11 is 57 days before as_of, which exceeds the 45-day T6 window and is expected to raise a WARN. This is CORRECT and should not be suppressed: Adobe reports quarterly and Q3 FY2026 has not yet been reported, so 2026-06-11 IS the latest authoritative guidance event. The only company filing between then and as_of is the 2026-07-17 8-K (a CLO retention letter, Item 5.02), which carries no guidance content."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No material adverse litigation event identified as of as_of. Q2 FY2026 GAAP results include a $30M legal accrual (not separately explained in the release) alongside a $70M non-cash goodwill impairment of the Publishing & Advertising reporting unit. The prior large legal/contractual item was the terminated Figma acquisition ($1.0B termination fee paid, recognized in Q1 FY2024). NOTE: this dossier did NOT read the 10-Q contingencies footnote in full this run -- treat this field as LOW CONFIDENCE and see facts.md O6.",
+      "as_of": "2026-06-11",
+      "sources": [
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm", "public_date": "2026-06-11", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_20260717", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000120/adbe-20260714.htm", "public_date": "2026-07-17", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "leadership_status",
+      "is_quantitative": false,
+      "value": "BOTH top finance/operating seats are unfilled as of as_of. (1) CEO: Shantanu Narayen (18 years in the role) announced on 2026-03-12 that he will transition once a successor is appointed, remaining as Chair; Frank Calderoni (Lead Independent Director) chairs the search committee considering internal and external candidates. NO SUCCESSOR NAMED as of 2026-08-07 -- 5 months elapsed. (2) CFO: Dan Durn departed 2026-06-15 (announced the same day as Q2 earnings, effective 4 days later); Steve Day is INTERIM CFO and still interim as of as_of -- 2 months elapsed. (3) On 2026-07-14 the Executive Compensation Committee approved a retention letter for Chief Legal Officer Louise Pentland whose severance protections SUNSET 12 months after a new CEO commences employment -- the board is explicitly locking in key people for a transition period. This drives kill criterion K-D (AMBER / firing-adjacent) and is the direct reason initial size is 3% rather than the 5-6% the IRR alone would support.",
+      "as_of": "2026-07-17",
+      "sources": [
+        {"source_name": "sec_8k_q1fy26_ex992", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex992q126.htm", "public_date": "2026-03-12", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm", "public_date": "2026-06-11", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_20260717", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000120/adbe-20260714.htm", "public_date": "2026-07-17", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "disclosure_basis_change",
+      "is_quantitative": false,
+      "value": "THE STRUCTURAL FINDING OF THIS DOSSIER. Adobe degraded its ARR disclosure twice in two years, timed with visible ARR deceleration. (1) Through Q4 FY2024 Adobe disclosed quarterly NET-NEW Digital Media ARR ($578M in Q4 FY2024, the last such disclosure) plus ending Digital Media ARR plus the Creative / Document Cloud split. (2) In FY2025 net-new ARR and the Creative/Document Cloud split were discontinued; only ending Digital Media ARR and its YoY growth remained (12.6% -> 12.1% -> 11.7% -> 11.5% across the four quarters). (3) From FY2026 Digital Media ARR itself was discontinued, and the FY2025 10-K states that effective Q1 FY2026 the three prior reportable segments (Digital Media, Digital Experience, Publishing and Advertising) are COMBINED INTO A SINGLE reportable segment; only Total Adobe ending ARR and its YoY growth remain. Adobe also revalued ending ARR at FY2025 year-end, raising Total Adobe ARR from $25.20B to $25.66B entering FY2026 (+$460M, attributed primarily to FX). Consequence: from FY2026 an outside investor can no longer verify whether the creative franchise specifically is losing customers. This drives kill criterion K-E (AMBER, already fired twice) and is the reason binding_constraint is COMPLETENESS rather than PRICE.",
+      "as_of": "2026-01-15",
+      "sources": [
+        {"source_name": "sec_8k_q4fy25", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm", "public_date": "2025-12-10", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_10k_fy25", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm", "public_date": "2026-01-15", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_q4fy24", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbeex991q424.htm", "public_date": "2024-12-11", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    }
+  ]
+}

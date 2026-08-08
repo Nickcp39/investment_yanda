@@ -1,0 +1,245 @@
+{
+  "ticker": "NFLX",
+  "company": "Netflix, Inc.",
+  "exchange": "NASDAQ",
+  "as_of": "2026-08-06",
+  "run_date": "2026-08-07",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 62,
+  "context_label": "annuity_intact_cash_conversion_deteriorating_deep_drawdown",
+
+  "price_basis": {
+    "as_of_price": 73.69,
+    "as_of_price_date": "2026-08-06",
+    "settled": true,
+    "split_adjusted": true,
+    "split_note": "ALL prices, EPS and share counts in this dossier are adjusted for the 10-for-1 forward split: board approved/announced 2025-10-30, record date 2025-11-10, distributed after close 2025-11-14, first split-adjusted trading day 2025-11-17. Confirmed from primary 8-K filings. Unadjusted NFLX prices are ~10x these figures - INC-001 class risk.",
+    "cross_check": {"sources": ["yahoo", "stockanalysis"], "delta_pct": 0.0}
+  },
+
+  "as_of_price": 73.69,
+  "as_of_market_cap": 306840000000,
+  "shares_outstanding_m": 4163.94,
+  "shares_outstanding_exact": 4163939676,
+  "shares_source": "10-Q Q2 2026 cover page, 2026-06-30",
+  "net_debt_usd_m": 5244.2,
+  "enterprise_value_usd_m": 312084,
+  "week52_high": 126.71,
+  "week52_low": 65.08,
+  "all_time_high_close": 133.91,
+  "all_time_high_close_date": "2025-06-30",
+  "drawdown_from_ath_pct": -45.0,
+  "off_52wk_high_pct": -41.8,
+
+  "verdicts": {
+    "business_verdict": "good",
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "suggested_initial_size_pct": 0,
+    "suggested_max_size_pct": 6,
+    "verdict_ceiling": "STARTER",
+    "verdict_ceiling_reason": "completeness ~62%",
+    "actual_verdict_driver": "owner-earnings anchor uncertainty + price 0.5pp short of hurdle",
+    "binding_constraint": "OWNER-EARNINGS ANCHOR uncertainty (maintenance-vs-growth content spend split undisclosed); price is only 4.3% away"
+  },
+
+  "hurdle_pct": 8.0,
+
+  "owner_earnings_anchor": {
+    "chosen_id": "A-chosen_midpoint",
+    "chosen_value_usd_m": 10000,
+    "chosen_basis": "Midpoint of A2 (realized TTM FCF ex the one-off $2.8B WBD termination fee = $8,352M) and A4 (FY2026 guided FCF less management's own stated after-tax impact of the fee = $11,000M). Cash-basis, one-offs removed, NO credit given for normalising the 1.1x cash-content-to-amortisation ratio back to 1.0x.",
+    "why_not_gaap": "Netflix capitalises content and amortises it. Cash content spend already sits INSIDE operating cash flow (as 'additions to content assets'), so reported FCF is already net of all content cash. Capitalisation distorts the INCOME STATEMENT, not FCF. In H1 2026 cash content spend rose 32.3% while content amortisation rose only 11.4% - producing a record 33.4% GAAP operating margin in the same quarter FCF fell 32.7% YoY. Therefore the anchor must sit on the cash side.",
+    "why_not_normalised": "Setting the cash-content/amortisation ratio to 1.0x assumes the excess 0.1x is fully discretionary growth spend. Netflix has never disclosed the maintenance-vs-growth split. This is structurally the same gap as GOOGL's undisclosed maintenance-vs-growth capex, where this library declined to give credit; consistency requires the same treatment here.",
+    "caveat": "FCF also lies at the other end of the content cycle: in FY2023 (writers/actors strikes) cash content spend was forced down to 0.884x amortisation and that year's FCF was FLATTERED. FCF is only a clean owner-earnings proxy across a full content cycle."
+  },
+
+  "content_accounting": {
+    "cash_content_spend_usd_m": {"FY2023": 12554.7, "FY2024": 16223.6, "FY2025": 17096.6, "H1_2025": 7385.5, "H1_2026": 9774.4, "TTM_Jun2026": 19485.5},
+    "content_amortisation_usd_m": {"FY2023": 14197.4, "FY2024": 15301.5, "FY2025": 16422.2, "H1_2025": 7655.2, "H1_2026": 8529.2, "TTM_Jun2026": 17296.2},
+    "cash_to_amort_ratio": {"FY2023": 0.884, "FY2024": 1.060, "FY2025": 1.041, "H1_2025": 0.965, "H1_2026": 1.146, "TTM_Jun2026": 1.127, "FY2026_guided": 1.10},
+    "ppe_dna_usd_m": {"FY2025": 333.4, "TTM_Jun2026": 372.4},
+    "ppe_capex_usd_m": {"FY2025": 688.2, "TTM_Jun2026": 818.8},
+    "reported_fcf_usd_m": {"FY2023": 6925.7, "FY2024": 6921.8, "FY2025": 9461.1, "TTM_Jun2026": 11152.0},
+    "fcf_definition_company": "cash provided by (used in) operating activities less purchases of property and equipment",
+    "note": "Reported FCF is NOT flattered or penalised by the accounting - it is clean. The GAAP OPERATING MARGIN is what is flattered, systematically, whenever cash content spend grows faster than the back-book amortises."
+  },
+
+  "one_off_contamination": {
+    "item": "Warner Bros. Discovery merger termination fee",
+    "amount_usd_m": 2800,
+    "period": "Q1 2026",
+    "line_item": "Interest and other income (expense)",
+    "management_after_tax_fcf_impact_usd_m": 1500,
+    "narrative": "Netflix signed a definitive merger agreement 2025-12-04 to acquire WBD's streaming and studios businesses (HBO Max, HBO, film/TV studios) at $72.0B equity / $82.7B total, amended 2026-01-19 to all-cash $27.75/share with a $42.2B bridge facility. On 2026-02-27 WBD terminated to go with Paramount Skydance; PSKY paid Netflix the $2.8B fee. Netflix declined to raise its bid.",
+    "market_verdict": "NFLX rose +13.77% the day the deal died (84.59 -> 96.24), roughly +$40B of market cap against a $2.8B fee - an implied market valuation of about -$37B on the proposed acquisition."
+  },
+
+  "scenarios_10y": [
+    {"name": "bear", "oe0_usd_m": 10000, "oe_cagr": 0.03, "exit_p_oe": 14, "buyback_pct_yr": 0.01, "shares_y10_m": 3765.8, "oe_y10_per_share": 3.5686, "exit_price": 49.96, "irr_10y": -0.0381,
+     "thesis": "Content treadmill confirmed; cash/amort stays 1.15x+; UCAN to mid-single-digit; ads stalls at $3-4B; multiple to 14x."},
+    {"name": "base", "oe0_usd_m": 10000, "oe_cagr": 0.10, "exit_p_oe": 20, "buyback_pct_yr": 0.02, "shares_y10_m": 3402.2, "oe_y10_per_share": 7.6237, "exit_price": 152.48, "irr_10y": 0.0754,
+     "thesis": "Revenue CAGR eases to ~8% (price + ads led, volume roughly flat); operating margin 31.5% -> ~35%; cash/amort eases to ~1.05x; FCF CAGR 10%; exit 20x."},
+    {"name": "bull", "oe0_usd_m": 10000, "oe_cagr": 0.15, "exit_p_oe": 24, "buyback_pct_yr": 0.025, "shares_y10_m": 3232.6, "oe_y10_per_share": 12.5150, "exit_price": 300.36, "irr_10y": 0.1509,
+     "thesis": "Ads $3B -> $12B+ (12-15% of revenue); cash/amort back to 1.0x releasing cash; GenAI materially lowers unit content cost; live/games re-accelerate engagement; exit 24x."}
+  ],
+
+  "anchor_sensitivity_base_irr": {
+    "fixed_params": {"oe_cagr": 0.10, "exit_p_oe": 20, "buyback_pct_yr": 0.02, "shares_y10_m": 3402.2, "price": 73.69},
+    "rows": [
+      {"anchor_id": "A2_ttm_fcf_ex_onetime", "oe0_usd_m": 8352, "exit_price": 127.35, "base_irr_10y": 0.0562, "clears_hurdle": false},
+      {"anchor_id": "A3_fy26e_guide_less_full_fee", "oe0_usd_m": 9700, "exit_price": 147.90, "base_irr_10y": 0.0722, "clears_hurdle": false},
+      {"anchor_id": "A_chosen_midpoint", "oe0_usd_m": 10000, "exit_price": 152.48, "base_irr_10y": 0.0754, "clears_hurdle": false, "chosen": true},
+      {"anchor_id": "A4_fy26e_guide_less_aftertax_fee", "oe0_usd_m": 11000, "exit_price": 167.72, "base_irr_10y": 0.0857, "clears_hurdle": true},
+      {"anchor_id": "A1_naive_ttm_fcf_incl_onetime", "oe0_usd_m": 11152, "exit_price": 170.04, "base_irr_10y": 0.0872, "clears_hurdle": true},
+      {"anchor_id": "A5_steady_state_content_1.0x", "oe0_usd_m": 11500, "exit_price": 175.35, "base_irr_10y": 0.0906, "clears_hurdle": true},
+      {"anchor_id": "A6_gaap_net_income_ex_onetime", "oe0_usd_m": 12500, "exit_price": 190.60, "base_irr_10y": 0.0997, "clears_hurdle": true}
+    ],
+    "range_pp": 4.4,
+    "hurdle_crossover_oe0_usd_m": 10430,
+    "headline": "Whether NFLX clears an 8% hurdle at $73.69 depends ENTIRELY on whether you let (i) a one-off $2.8B break fee and (ii) the non-cash content-capitalisation gap into your owner-earnings number."
+  },
+
+  "price_ladder": {
+    "no_chase_above": 80.00,
+    "current": 73.69,
+    "buy_below_starter_8pct": 70.50,
+    "buy_below_precise": 70.63,
+    "add_10pct": 58.79,
+    "core_12pct": 49.10,
+    "bear_reference_y10": 49.96,
+    "distance_to_trigger_pct": -4.3,
+    "entry_gates": ["K-A not RED (cash/amort ratio easing and FCF YoY positive)", "K-B not RED (UCAN revenue growth >= +8%)", "FY2026 ads revenue ~$3B delivered"]
+  },
+
+  "six_module_signals": {
+    "M1_evidence_spine": {"signal": 2, "confidence": "high", "note": "SEC XBRL/R-file direct extraction; FCF reconciles to company-reported within $1M. But memberships/ARM no longer disclosed by the company."},
+    "M2_theme_mechanism": {"signal": 1, "confidence": "high", "note": "Annuity intact on revenue (+13-14%) and margin (31.5% guide), but growth is entirely price + ads: H1'26 view hours +2%; UCAN +18% -> +10%."},
+    "M3_profit_pool_durability": {"signal": 1, "confidence": "med", "note": "Scale amortising content unit cost is STRUCTURAL; brand/recommendation/first-mover is ERODIBLE; switching cost is one click."},
+    "M4_financial_reality": {"signal": -1, "confidence": "high", "note": "SBC only 0.8% of revenue, balance sheet sound, record buyback; BUT cash/amort 1.13x, Q2 FCF -32.7%, FCF/share flat for a year, headline metrics contaminated by the $2.8B one-off."},
+    "M5_inversion_trap": {"signal": -1, "confidence": "med", "note": "No balance-sheet death, no annuity break. Risks are the content treadmill, attention substitution by UGC, and capital allocation (the WBD episode)."},
+    "M6_price_position": {"signal": -1, "confidence": "med", "note": "Base IRR +7.5% < 8% but short by only 0.5pp; bear only -3.8%/yr, the mildest in this series."},
+    "vector": "+2/+1/+1/-1/-1/-1"
+  },
+
+  "kill_criteria": [
+    {"id": "K-A", "name": "Content treadmill (cash content spend / amortisation)", "state": "RED", "evidence": "TTM 1.127x, H1'26 1.146x; H1 cash spend +32.3% vs amortisation +11.4%; Q2'26 FCF -32.7% YoY; FY26 guide still ~1.1x.", "clears_when": "Q3/Q4 2026 ratio <= 1.05x AND FCF YoY turns positive", "is_the_swing_factor": true},
+    {"id": "K-B", "name": "UCAN annuity deceleration", "state": "AMBER", "evidence": "UCAN revenue growth +18% (Q4'25) -> +10% (Q2'26); partly explained by the price increase landing only part-quarter.", "turns_red_when": "Q3'26 UCAN growth < +8%"},
+    {"id": "K-C", "name": "Engagement stagnation", "state": "AMBER_RED", "evidence": "H1'26 view hours +2% (2025: +1.5%) against revenue +14.7% - growth is monetisation, not usage. View-hours report moves to annual from 2027."},
+    {"id": "K-D", "name": "Capital allocation", "state": "AMBER", "evidence": "Signed an $82.7B deal for WBD's streaming/studios; market added ~$40B of value the day it died against a $2.8B fee. Since then: record $4.7B quarterly buyback, $27.1B authorised.", "turns_red_when": "another large-scale M&A attempt"},
+    {"id": "K-E", "name": "Disclosure narrowing", "state": "AMBER", "evidence": "Quarterly paid memberships and ARM dropped from Q1 2025; view-hours report goes annual from 2027. Two moves, both toward less.", "note": "Not a veto, but caps completeness."},
+    {"id": "K-F", "name": "Valuation", "state": "AMBER", "evidence": "Base 10y IRR +7.5% vs 8% hurdle. Not GOOGL-class RED (that base was -1.0%)."},
+    {"id": "K-G", "name": "Competitive share of TV time", "state": "UNKNOWN", "evidence": "No citable primary Nielsen The Gauge data obtained this run. An UNVERIFIED lead that Netflix has slipped to #4 in US TV time is recorded in raw/ but is NOT used anywhere in this card.", "note": "The single most important missing external evidence for the moat call (O4)."}
+  ],
+
+  "drawdown_decomposition": {
+    "question": "Why did NFLX fall 45%?",
+    "from": {"date": "2025-06-30", "price": 133.91, "shares_m": 4252, "market_cap_usd_b": 569.4, "ttm_fcf_clean_usd_m": 8500.7, "ttm_fcf_per_share": 1.999, "p_fcf": 67.0},
+    "to": {"date": "2026-08-06", "price": 73.69, "shares_m": 4163.94, "market_cap_usd_b": 306.8, "ttm_fcf_clean_usd_m": 8352.0, "ttm_fcf_per_share": 2.006, "p_fcf": 36.7},
+    "owner_earnings_per_share_change_pct": 0.3,
+    "multiple_change_pct": -45.2,
+    "identity_check": "1.003 x 0.548 = 0.5497 -> -45.0%, exactly matching the actual price move",
+    "conclusion": "Approximately 100% of the drawdown is multiple compression; 0% is a decline in owner earnings per share.",
+    "second_order": "The real disappointment is that TTM revenue grew 16.0% and revenue/share ~18% while owner earnings per share grew 0.3%. The market did not de-rate falling earnings; it de-rated the fact that growth stopped converting to cash - repricing a 67x 'high-growth, high-conversion' multiple to a 36.7x 'high-growth, low-conversion' multiple.",
+    "gaap_cross_check": "TTM diluted EPS ex-one-off $2.35 -> $2.65 (+12.8%); P/E 57.0x -> 27.8x (-51.2%); 1.128 x 0.488 = 0.550 -> -45.0%. Both bases agree.",
+    "time_decomposition": {
+      "earnings_reaction_days": [
+        {"quarter": "Q2'25", "reported": "2025-07-17", "reaction_date": "2025-07-18", "move_pct": -5.10},
+        {"quarter": "Q3'25", "reported": "2025-10-21", "reaction_date": "2025-10-22", "move_pct": -10.07},
+        {"quarter": "Q4'25", "reported": "2026-01-20", "reaction_date": "2026-01-21", "move_pct": -2.18},
+        {"quarter": "Q1'26", "reported": "2026-04-16", "reaction_date": "2026-04-17", "move_pct": -9.72},
+        {"quarter": "Q2'26", "reported": "2026-07-16", "reaction_date": "2026-07-17", "move_pct": -7.26}
+      ],
+      "compounded_earnings_day_effect_pct": -30.1,
+      "residual_drift_pct": -21.4,
+      "reading": "About two thirds of the drawdown happened on five earnings-reaction days - a classic 'slightly worse than expected, every single time' de-rating, not a single-event shock."
+    },
+    "wbd_episode": {"from_2025_12_02_to_2026_02_26_pct": -22.6, "termination_day_2026_02_27_pct": 13.77}
+  },
+
+  "annuity_check": {
+    "revenue_growth_ttm_pct": 16.0,
+    "revenue_growth_q2_26_pct": 13.4,
+    "fy2026_guide_revenue_usd_b": [51.0, 51.4],
+    "fy2026_guide_operating_margin_pct": 31.5,
+    "fy2026_guide_fcf_usd_b": 12.5,
+    "fy2026_guide_ads_revenue_usd_b": 3.0,
+    "ads_pct_of_fy26e_revenue": 5.9,
+    "view_hours_h1_2026_bn": 97,
+    "view_hours_growth_h1_2026_pct": 2.0,
+    "view_hours_growth_2025_pct": 1.5,
+    "regional_growth_q2_26_pct": {"UCAN": 10, "EMEA": 14, "LATAM": 21, "APAC": 16},
+    "regional_growth_q4_25_pct": {"UCAN": 18, "EMEA": 18, "LATAM": 15, "APAC": 17},
+    "subscriber_vs_arpu": "CANNOT BE SEPARATED. Netflix stopped reporting quarterly paid memberships and ARM from Q1 2025; the FY2025 10-K contains zero instances of 'average revenue per membership'. The finest split still available is regional revenue. Directionally: revenue +13-14% against view hours +2% implies growth is almost entirely price + advertising, not usage - but the exact volume/price decomposition is UNVERIFIABLE from filings. See O2.",
+    "price_increases_h1_2026": ["United States", "Mexico", "Spain"],
+    "price_absorption": "Management: 'consistent with prior price changes and our expectations'. UCAN Q2 +10% reflects only a partial-quarter impact.",
+    "churn_disclosed": false,
+    "notable": "Netflix began re-testing free trials for non-rejoining new members (ex US/UK) in July 2026 - a signal of acquisition friction."
+  },
+
+  "ai_position": {
+    "verdict": "Net COST TAILWIND today, real but not-yet-quantified ATTENTION THREAT over 5-10 years. Not immaterial in either direction.",
+    "cost_tailwind_evidence": "Company-primary: GenAI workflows used in roughly 300 titles in 2026, largest concentration in post-production; 'higher quality output more quickly and at a lower cost than traditional methods'; some sequences would have been cut entirely without it. Also LLM-based discovery/search and AI tooling across the full advertising lifecycle.",
+    "threat_mechanism": "Netflix competes for attention against zero-marginal-cost UGC (YouTube/TikTok). GenAI collapses the cost of making watchable content, which erodes Netflix's core structural advantage: being the only buyer able to amortise a $19B content bill across a ~1B-person audience. If content becomes cheap for everyone, scale-amortisation stops being a moat.",
+    "falsifiable_predictions": [
+      {"claim": "COST TAILWIND IS REAL: FY2027 or FY2028 cash-content-spend-to-amortisation ratio falls to <= 1.00x WITHOUT view hours turning negative.", "falsified_if": "ratio stays >= 1.10x through FY2028 while view-hour growth stays <= +2%", "why_it_matters": "This is the single test that separates 'GenAI made content cheaper' from 'the treadmill got faster'."},
+      {"claim": "THREAT IS NOT YET BITING: Netflix view hours stay positive through FY2027.", "falsified_if": "any reported period shows view hours DOWN year over year", "why_it_matters": "H1'26 was +2%. Zero or negative is the first hard evidence of attention substitution."},
+      {"claim": "AI IS NOT YET A DEMAND-SIDE DIFFERENTIATOR: no disclosed retention or engagement lift attributable to LLM-based discovery.", "falsified_if": "Netflix quantifies a retention/engagement gain from AI discovery in a shareholder letter"}
+    ],
+    "honest_gap": "Netflix has given zero quantification of GenAI cost savings - only '~300 titles' and qualitative language. Any number attached to this would be invented. See O6."
+  },
+
+  "moat_test": {
+    "structural": [
+      {"source": "Scale amortisation of content cost", "why_structural": "A ~$19B annual content bill spread over a ~1B-person audience gives a per-viewer content cost no sub-scale rival can match. This genuinely blocks the category for anyone who cannot fund $15-20B/yr.", "durability": "high, but only while content must be expensive - this is exactly what GenAI attacks"},
+      {"source": "Global production + localisation footprint", "why_structural": "Original production in 50+ countries with non-English content driving >1/3 of all viewing. Replicating this takes a decade and is not purchasable at speed.", "durability": "high"},
+      {"source": "Direct global billing relationship at scale", "why_structural": "Payment rails, pricing/packaging machinery and ad-tier infrastructure across ~190 countries.", "durability": "medium-high"}
+    ],
+    "first_mover_only": [
+      {"source": "Brand / default habit", "why_not_structural": "Consumer switching cost is ONE CLICK. No contract, no installed hardware, no trained-professional lock-in. This is the sharpest contrast with ISRG (surgeon retraining) and AAPL (ecosystem)."},
+      {"source": "Recommendation data", "why_not_structural": "YouTube and TikTok observe far more consumption events. Netflix's data advantage is real within its catalogue and irrelevant outside it."},
+      {"source": "Content library as an asset", "why_not_structural": "Licensed content ($12.2B of $33.8B content assets) is rentable by any competitor with capital. Owned content decays in attention value."}
+    ],
+    "bsx_lesson_applied": "The library's standing BSX lesson - first-mover advantage without structural lock-in erodes fast - applies directly here. Netflix's genuinely structural leg is scale-amortisation of content cost, NOT brand or data. That leg is intact today (no rival funds $19B/yr at Netflix's per-viewer cost) but it is the exact leg GenAI attacks. The evidence that would settle it is competitive share of TV time, which this run could not source (O4).",
+    "confirming_financial_evidence": "Operating margin 20.6% (FY2023) -> 29.5% (FY2025) -> 31.5% guided (FY2026), with price increases absorbed 'consistent with expectations'. Pricing power is real and being exercised.",
+    "contradicting_financial_evidence": "View hours +2% while revenue +14% - the moat is being monetised harder, not widened. Cash content spend at 1.13x amortisation suggests holding engagement flat is getting MORE expensive, not less."
+  },
+
+  "runner_dissent": "Giving WATCH here carries genuine missed-compounder risk, and the case is stronger than for GOOGL/AAPL/META. Five points for the other side: (1) owner earnings per share are FLAT year over year while the price is down 45% - the textbook shape of 'business fine, security repriced', which is where Duan-style opportunities live; (2) the bear case is only -3.8%/yr, the mildest downside in this whole series (GOOGL -11.3%, META -10.5%, AAPL -7%), against a +15.1% bull - the odds are clearly positively skewed; (3) advertising is a free option: ~$3B in FY26 (5.9% of revenue) and the current price pays nothing for it going to $12B; (4) the trigger is only 4.3% away and three of the last twelve months' earnings days moved the stock more than 7% in a single session, so the wait is cheap but the miss is not; (5) management just refused to raise its bid for WBD and pivoted to a record buyback - a credit, not a debit. The framework still says WATCH on three objective facts, not on narrative: (a) on the chosen anchor the base is +7.5% < 8% - the price is 'not expensive', which is not the same as a margin of safety; (b) the anchor itself is the largest unknown on this card - an $8.35B to $12.5B range spanning 4.4pp with the hurdle sitting in the middle, so paying today's price on an optimistic anchor means paying for a maintenance-vs-growth split the company has never disclosed; this library declined to give GOOGL credit for the identical gap in capex and consistency demands the same answer here, or the framework is bendable on demand; (c) K-A is actively FIRING - cash/amortisation 1.13x, Q2 FCF -32.7%, FCF/share flat for a year - and the base case already assumes cash conversion STOPS deteriorating, an assumption with no supporting data yet. The disagreement is crisp and dated: if Q3'26 shows the ratio easing and FCF turning positive year over year, K-A clears, the anchor can be marked up to A4 ($11.0B), base becomes +8.6%, and this card should flip to STARTER that day - with no lower price required. So the correct action is not 'wait for a distant price' but 'set a $70.50 trigger and watch Q3 2026 cash conversion'. This is the first card in the series where waiting on DATA matters more than waiting on PRICE.",
+
+  "open_items": [
+    {"id": "O1", "item": "Maintenance vs growth split of content spend - which part of the 1.1x is required just to stand still", "why_binding": "Directly sets the owner-earnings anchor and therefore the verdict. Structurally identical to GOOGL's undisclosed maintenance-vs-growth capex.", "is_swing_factor": true},
+    {"id": "O2", "item": "Paid memberships / ARM / churn", "why_binding": "Company stopped quarterly disclosure from Q1 2025; FY2025 10-K has zero instances of 'average revenue per membership'. Volume and price CANNOT be separated by an outsider. Question (b) is answerable only down to regional revenue."},
+    {"id": "O3", "item": "Ad-tier unit economics - MAU, CPM, ad ARPU per member", "why_binding": "Only a single FY26 total (~$3B) is disclosed. The bull case rests on ads scaling to $12B+."},
+    {"id": "O4", "item": "Competitive share of US TV time (Nielsen The Gauge): Netflix vs YouTube, level and trend", "why_binding": "The most important missing external evidence for the moat call. An UNVERIFIED lead that Netflix has slipped to #4 is logged in raw/ and deliberately NOT used in this card."},
+    {"id": "O5", "item": "Sell-side consensus / forward-multiple time series", "why_binding": "The drawdown decomposition is built purely from realised TTM cash flow with no third-party cross-check. More conservative methodologically, but one fewer verification layer."},
+    {"id": "O6", "item": "Quantified GenAI impact on unit content cost", "why_binding": "Company gives only '~300 titles' and qualitative 'lower cost'. Any figure would be fabricated. Caps the (d) answer to falsifiable predictions rather than numbers."},
+    {"id": "O7", "item": "Operator primary verification - co-CEO structure (Sarandos/Peters), Hastings' residual influence, comp and incentive design", "why_binding": "No proxy-level primary check performed this run."}
+  ],
+
+  "next_monitor_event": {
+    "event": "Q3 2026 earnings (expected mid-October 2026)",
+    "watch": [
+      "Cash content spend / amortisation ratio - does it ease toward 1.05x as guided (K-A, the swing factor)",
+      "FCF year-over-year - does it turn positive after Q2's -32.7%",
+      "UCAN revenue growth - full-quarter effect of the price increase; is it back above +10% (K-B)",
+      "FY2026 ads revenue tracking toward ~$3B",
+      "Any change to the FY2026 FCF guide of ~$12.5B"
+    ]
+  },
+
+  "sources_used": [
+    {"source_id": "NFLX-10K-FY25", "public_date": "2026-01-23", "tier": "A1"},
+    {"source_id": "NFLX-10Q-Q1-26", "public_date": "2026-04-17", "tier": "A1"},
+    {"source_id": "NFLX-10Q-Q2-26", "public_date": "2026-07-17", "tier": "A1"},
+    {"source_id": "NFLX-SL-Q2-26", "public_date": "2026-07-16", "tier": "A1"},
+    {"source_id": "NFLX-SL-Q4-25", "public_date": "2026-01-20", "tier": "A1"},
+    {"source_id": "NFLX-SL-Q4-24", "public_date": "2025-01-21", "tier": "A1"},
+    {"source_id": "NFLX-8K-SPLIT-1030", "public_date": "2025-10-30", "tier": "A1"},
+    {"source_id": "NFLX-8K-SPLIT-1114", "public_date": "2025-11-14", "tier": "A1"},
+    {"source_id": "YAHOO-NFLX-PX", "public_date": "2026-08-06", "tier": "B1"},
+    {"source_id": "SA-NFLX-PX", "public_date": "2026-08-06", "tier": "B1"}
+  ]
+}

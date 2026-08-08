@@ -1,0 +1,95 @@
+claim_id,claim,value,unit,period,source_id,tier,verified,notes
+C001,as_of settled close price,321.91,USD,2026-08-06,S-YHOO;S-SA-HIST,B1,VERIFIED,two independent sources delta 0.00%; verify_freshness.py independent refetch PASS
+C002,shares outstanding,273537,thousands,2026-05-14,S-10Q-Q3,A1,VERIFIED,10-Q cover page; stockanalysis 273.54M delta 0.00%
+C003,as_of market cap,88054,USD millions,2026-08-06,S-10Q-Q3;S-YHOO,A1,DERIVED,273.537M x 321.91
+C004,all-time high close,807.39,USD,2025-07-30,S-YHOO,B1,VERIFIED,dividend-adjusted 798.42
+C005,52-week high intraday,762.48,USD,2025-08-08,S-YHOO,B1,VERIFIED,stockanalysis reports 786.28 on a wider window; delta 3.1%
+C006,52-week low intraday,252.84,USD,2026-06-22,S-YHOO;S-SA,B1,VERIFIED,delta 0.00%
+C007,cycle low close,255.07,USD,2026-06-25,S-YHOO,B1,VERIFIED,-68.4% from peak close
+C008,drawdown from peak close,-60.1,pct,2025-07-30 to 2026-08-06,S-YHOO,B1,DERIVED,dividend-adjusted -59.7%
+C009,FY2025 total revenue,18831,USD millions,FY2025,S-10K-FY25;S-IR-FY25Q4,A1,VERIFIED,+16% YoY
+C010,FY2025 GAAP diluted EPS,13.67,USD,FY2025,S-10K-FY25;S-8K-Q3,A1,VERIFIED,+31% YoY
+C011,FY2025 non-GAAP diluted EPS,20.15,USD,FY2025,S-8K-Q3,A1,VERIFIED,quarterly bridge table in Q3 8-K
+C012,FY2025 operating cash flow,6207,USD millions,FY2025,S-10K-FY25,A1,VERIFIED,
+C013,FY2025 capex,84,USD millions,FY2025,S-10K-FY25,A1,VERIFIED,0.45% of revenue
+C014,FY2025 free cash flow,6123,USD millions,FY2025,S-10K-FY25,A1,DERIVED,OCF minus capex
+C015,FY2025 SBC,1968,USD millions,FY2025,S-8K-Q3,A1,VERIFIED,
+C016,9M FY2026 total revenue,17094,USD millions,9M ended 2026-04-30,S-10Q-Q3;S-8K-Q3,A1,VERIFIED,+14.0% YoY
+C017,9M FY2026 GAAP net income,4203,USD millions,9M ended 2026-04-30,S-8K-Q3,A1,VERIFIED,+20.5% YoY
+C018,9M FY2026 operating cash flow,7507,USD millions,9M ended 2026-04-30,S-10Q-Q3;S-8K-Q3,A1,VERIFIED,+28.9% YoY
+C019,9M FY2026 capex,148,USD millions,9M ended 2026-04-30,S-8K-Q3,A1,VERIFIED,
+C020,9M FY2026 SBC,1549,USD millions,9M ended 2026-04-30,S-8K-Q3,A1,VERIFIED,9.1% of revenue
+C021,9M FY2026 buybacks cash,3341,USD millions,9M ended 2026-04-30,S-8K-Q3,A1,VERIFIED,+65% YoY
+C022,TTM revenue,20925,USD millions,TTM to 2026-04-30,S-10K-FY25;S-10Q-Q3,A1,DERIVED,18831-15000+17094; stockanalysis 20.93B cross-check
+C023,TTM GAAP diluted EPS,16.39,USD,TTM to 2026-04-30,S-8K-Q3,A1,DERIVED,13.67-12.33+15.05; stockanalysis 16.35 cross-check
+C024,TTM non-GAAP diluted EPS,22.97,USD,TTM to 2026-04-30,S-8K-Q3,A1,DERIVED,20.15-17.47+20.29
+C025,TTM free cash flow,7755,USD millions,TTM to 2026-04-30,S-10K-FY25;S-10Q-Q3,A1,DERIVED,6123-5727+7359
+C026,TTM GAAP EPS change vs FY2025,19.9,pct,peak to as_of,S-8K-Q3,A1,DERIVED,core decomposition input
+C027,TTM FCF change vs FY2025,26.7,pct,peak to as_of,S-10Q-Q3,A1,DERIVED,core decomposition input
+C028,trailing GAAP P/E at peak,59.1,x,2025-07-30,S-YHOO;S-10K-FY25,A1,DERIVED,807.39/13.67
+C029,trailing GAAP P/E at as_of,19.6,x,2026-08-06,S-YHOO;S-8K-Q3,A1,DERIVED,321.91/16.39; stockanalysis 19.69 cross-check
+C030,trailing P/E compression,-66.8,pct,peak to as_of,S-YHOO,A1,DERIVED,"(1+0.199)*(1-0.668)=-60.2% reconciles to actual -60.1%"
+C031,forward non-GAAP P/E at peak,35.0,x,2025-07-30,S-IR-FY25Q4,A1,DERIVED,807.39/23.08 using then-current FY2026 guide midpoint
+C032,forward non-GAAP P/E at as_of,13.5,x,2026-08-06,S-8K-Q3,A1,DERIVED,321.91/23.825 using revised FY2026 guide midpoint
+C033,P/FCF at peak,36.8,x,2025-07-30,S-YHOO;S-10K-FY25,A1,DERIVED,225.1B/6123M
+C034,P/FCF at as_of,11.4,x,2026-08-06,S-10Q-Q3,A1,DERIVED,88054M/7755M
+C035,FY2026 initial revenue guidance,20997-21186,USD millions,issued 2025-08-21,S-IR-FY25Q4,A1,VERIFIED,+12-13%
+C036,FY2026 revised revenue guidance,21341-21374,USD millions,issued 2026-05-20,S-8K-Q3,A1,VERIFIED,+13-14% RAISED
+C037,FY2026 initial non-GAAP EPS guidance,22.98-23.18,USD,issued 2025-08-21,S-IR-FY25Q4,A1,VERIFIED,
+C038,FY2026 revised non-GAAP EPS guidance,23.80-23.85,USD,issued 2026-05-20,S-8K-Q3,A1,VERIFIED,RAISED +3.4% at midpoint
+C039,FY2026 TurboTax growth guidance initial,8,pct,issued 2025-08-21,S-IR-FY25Q4,A1,VERIFIED,
+C040,FY2026 TurboTax growth guidance revised,7,pct,issued 2026-05-20,S-8K-Q3,A1,VERIFIED,ONLY operating line cut
+C041,FY2026 Credit Karma growth guidance initial,10-13,pct,issued 2025-08-21,S-IR-FY25Q4,A1,VERIFIED,
+C042,FY2026 Credit Karma growth guidance revised,19,pct,issued 2026-05-20,S-8K-Q3,A1,VERIFIED,RAISED; this is what held Consumer up
+C043,TurboTax total federal units FY2022,42.7,millions,FY2022,S-IR-FY25Q4,A1,VERIFIED,
+C044,TurboTax total federal units FY2025,39.2,millions,FY2025,S-IR-FY25Q4,A1,VERIFIED,-2% YoY; four consecutive annual declines
+C045,TurboTax Online units FY2025,34.9,millions,FY2025,S-IR-FY25Q4,A1,VERIFIED,-1% YoY
+C046,TurboTax Online total units FY2026 guide,-2,pct,FY2026E,S-8K-Q3,A1,VERIFIED,
+C047,TurboTax e-file share change FY2026 guide,-1,percentage points,FY2026E,S-8K-Q3,A1,VERIFIED,first time Intuit quantified share loss in a release
+C048,TurboTax ARPU change FY2026 guide,11,pct,FY2026E,S-8K-Q3,A1,VERIFIED,
+C049,TurboTax Live revenue FY2026 guide,2800,USD millions,FY2026E,S-8K-Q3,A1,VERIFIED,+36%; ~53% of TurboTax revenue
+C050,TurboTax pay-nothing customers FY2026 guide,7,millions,FY2026E,S-8K-Q3,A1,VERIFIED,down from 8 million prior year
+C051,Online Ecosystem ARPC growth FY2025,14,pct,FY2025,S-10K-FY25,A1,VERIFIED,FY2024 was +11%
+C052,Online ecosystem paying customer growth FY2025,5,pct,FY2025,S-10K-FY25,A1,VERIFIED,FY2024 was +6%; decelerating
+C053,QuickBooks Online Accounting revenue growth 9M FY2026,24,pct,9M ended 2026-04-30,S-10Q-Q3,A1,VERIFIED,
+C054,Online Ecosystem revenue growth 9M FY2026,20,pct,9M ended 2026-04-30,S-10Q-Q3,A1,VERIFIED,7315 vs 6084
+C055,GBS revenue growth 9M FY2026,17,pct,9M ended 2026-04-30,S-10Q-Q3,A1,VERIFIED,9440 vs 8064
+C056,GBS segment operating margin Q3 FY2026,76.7,pct,Q3 FY2026,S-10Q-Q3,A1,VERIFIED,vs 76.8% PY - essentially flat
+C057,Consumer segment operating margin Q3 FY2026,80.8,pct,Q3 FY2026,S-10Q-Q3,A1,VERIFIED,vs 82.4% PY - down 1.6pt
+C058,Credit Karma revenue growth Q1/Q2/Q3 FY2026,27/23/15,pct,FY2026,S-10Q-Q3;S-8K-Q2;S-8K-Q3,A1,VERIFIED,decelerating
+C059,Credit Karma revenue change FY2023,-9,pct,FY2023,S-10K-FY25,A1,VERIFIED,segment operating income -19%; cycle precedent
+C060,Mailchimp implied revenue change 9M FY2026,-15,USD millions,9M ended 2026-04-30,S-10Q-Q3,A1,DERIVED,"Online Services +516 = money +327 + payroll +204 = +531; residual approx -15"
+C061,Mailchimp implied revenue change Q3 FY2026,-2,USD millions,Q3 FY2026,S-10Q-Q3,A1,DERIVED,"+160 = money +107 + payroll +55 = +162"
+C062,Mailchimp contribution to FY2025 Online Services increase,20,USD millions,FY2025,S-10K-FY25,A1,VERIFIED,out of a total +669; attributed only to higher effective prices
+C063,Mailchimp double-digit growth target deferral,beyond fiscal 2026,text,2026-02-26,S-8K-Q2,A1,VERIFIED,was 'exiting fiscal 2026'
+C064,Mailchimp share of revenue,7,pct,2026,S-GS-DG,B2,ESTIMATE,Goldman estimate; Intuit never discloses Mailchimp revenue
+C065,Mailchimp acquisition price,12,USD billions,2021,S-GS-DG,B2,UNVERIFIED_THIS_RUN,widely reported; not re-verified from the 2021 8-K this run
+C066,workforce reduction,17,pct,announced 2026-05-20,S-8K-Q3,A1,VERIFIED,restructuring charges 300-340 USD millions mostly in Q4 FY2026
+C067,employees at FY2025 year end,18200,count,2025-07-31,S-10K-FY25,A1,VERIFIED,plus ~12300 seasonal Jan-Apr; 17% implies ~3100
+C068,cash and investments,6780,USD millions,2026-04-30,S-10Q-Q3;S-8K-Q3,A1,VERIFIED,seasonal peak; Q2 was ~3.0B
+C069,total debt,6162,USD millions,2026-04-30,S-10Q-Q3,A1,VERIFIED,750 short-term + 5412 long-term; net cash +618
+C070,new notes issued,1750,USD millions,2026-06-11,S-EDGAR-8K,A1,PARTIAL,8-K filing date confirmed on EDGAR; tranche terms not read from the document this run
+C071,long-term deferred tax asset drawdown,1222 to 113,USD millions,2025-07-31 to 2026-04-30,S-10Q-Q3,A1,VERIFIED,"9M deferred income taxes +1150 vs -278 PY = ~1.4B one-time favourable swing inflating FY2026 OCF"
+C072,R&D expense 9M FY2026,2519,USD millions,9M ended 2026-04-30,S-8K-Q3,A1,VERIFIED,+18.4% - faster than revenue +14.0%
+C073,founder and ELT terminated all 10b5-1 plans,true,boolean,2026-03-16,S-8K-0316,A1,VERIFIED,Item 7.01 verbatim in raw/; buybacks accelerated; $3.5B remaining authorization
+C074,new buyback authorization,8000,USD millions,2026-05-20,S-8K-Q3,A1,VERIFIED,
+C075,single largest drawdown day,-20.02,pct,2026-05-21,S-YHOO,B1,VERIFIED,383.93 -> 307.07; reaction to Q3 FY2026 beat-and-raise with TurboTax cut
+C076,second largest drawdown day,-10.89,pct,2026-02-03,S-YHOO,B1,VERIFIED,no company event; pure AI-narrative de-rating
+C077,Goldman downgrade day move,-8.94,pct,2026-06-02,S-YHOO;S-GS-DG,B1,VERIFIED,Neutral to Sell; PT 519 -> 276
+C078,AI unit cost per return vs TurboTax price,0.12 vs 162,USD,2026-06-02,S-GS-DG,B2,ESTIMATE,Goldman analyst estimate; the core bear mechanism
+C079,peer drawdown same window HRB,-16.1,pct,2025-07-30 to 2026-08-06,S-PEERS,B1,DERIVED,pure tax comparable - key counter-evidence to the AI-kills-tax thesis
+C080,peer drawdown same window NDX,25.8,pct,2025-07-30 to 2026-08-06,S-PEERS,B1,DERIVED,INTU underperformed the index by ~86 points
+C081,peer drawdowns ADBE/CRM/NOW/WDAY,-28.5/-29.5/-40.0/-28.4,pct,2025-07-30 to 2026-08-06,S-PEERS,B1,DERIVED,INTU fell roughly twice as far as the software cohort
+C082,IRS Direct File cancelled for 2026 filing season,true,boolean,2025-11-03,S-FNN-DF;S-TAXNOTES-DF,B1,VERIFIED,"IRS product manager email to states: 'will not be available in Filing Season 2026'"
+C083,Direct File returns 2025 season,296531,count,2025 filing season,S-FNN-DF,B1,VERIFIED,~0.19% of ~160M US individual e-filed returns
+C084,Direct File operating cost TY2024,41,USD millions,TY2024,S-TAXNOTES-DF,B1,VERIFIED,at least $138 per return
+C085,FY2026 was Intuit's first tax season with no IRS Direct File,true,boolean,FY2026,S-FNN-DF,B1,INFERENCE,"runner inference from the cancellation; NOT a separately sourced company or IRS statement; documented in raw/policy_IRS_direct_file_status_2026.txt"
+C086,management quote we lost on price,text,quote,2026-05-20,S-FOOL-Q3CALL,B1,PARTIAL,official IR script PDF returned 403 (OPEN O6); quote rests on secondary transcript only
+C087,management quote none of this has anything to do with AI,text,quote,2026-05-20,S-FOOL-Q3CALL,B1,PARTIAL,same caveat as C086
+C088,QBO Advanced and Intuit Enterprise Suite growth Q3 FY2026,38,pct,Q3 FY2026,S-FOOL-Q3CALL,B1,PARTIAL,mid-market; not in the 8-K text
+C089,AI monetization quantified disclosure,none,text,FY2026,S-8K-Q3;S-10Q-Q3;S-FOOL-Q3CALL,A1,VERIFIED_ABSENT,"no AI-attributed revenue, ARPC uplift or pricing figure found anywhere this run - the non-disclosure is itself the finding (O5)"
+C090,FY2026 full-year results reporting date,2026-08-25,date,forward,S-IR-CAL,A1,VERIFIED,18 days after run_date; Investor Day 2026-09-17
+C091,owner earnings anchor OE0,4.8,USD billions,FY2026E,S-8K-Q3;S-10Q-Q3,A1,DERIVED,"range 4.1-5.2B; accounting side ~5.02B, cash side ~4.15B; company non-GAAP 6.65B deliberately rejected"
+C092,base case 10y IRR at as_of price,10.2,pct,2026-08-06,S-8K-Q3,A1,DERIVED,vs 8% hurdle; bear -5.9% bull +19.8%
+C093,buy_below main anchor,328,USD,2026-08-06,S-8K-Q3,A1,DERIVED,base 10% IRR; current price 321.91 already inside
+C094,TurboTax FY2026 revenue guidance dollar range revision,5305-5330 to 5277-5282,USD millions,2026-05-20,S-PRN-CLASS,B2,UNVERIFIED,single secondary source only; not located in the 8-K text (OPEN O7)
