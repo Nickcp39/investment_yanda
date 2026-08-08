@@ -1,6 +1,6 @@
 # 当前进度 (Current Process)
 
-最后更新: 2026-08-07
+最后更新: 2026-08-08
 
 ## 这份文档的用途
 
@@ -26,7 +26,7 @@ push 时刷新一次，避免回头时丢失上下文。
 
 ---
 
-## 最近一轮工作 (2026-08-07)
+## 最近一轮工作 (2026-08-07 ~ 08-08)
 
 ### 黄金估值与相对资产配置：对 M2 的 σ 通道 + SPY/QQQ 回测
 
@@ -64,8 +64,33 @@ push 时刷新一次，避免回头时丢失上下文。
   “跌的是倍数还是生意”拆成**是否有匹配的经营损伤**，并确认“维护 vs 成长支出”
   是六家大科技卡共同的待解瓶颈。
 
+### 税务身份退出计划（2026-08-08 新增，卖出端）
+
+`execution_plans/tax_residency_exit_plan.md` —— **把"什么时候卖"从纯 BTC 周期
+问题，改成"BTC 周期 × 美国税务身份"的双约束问题。**
+
+- **前提**：非移民签证、**无绿卡**（→ §877A 退出税完全不适用）、纽约报税、
+  工资 ~$30k；持仓 **1.164 BTC**，成本 $137,217（均价 $117,884），
+  浮亏 **-$61,638 / -44.92%**
+- **核心结论**：2026/2027 是税务居民 → **一股不卖**；2028 起转 NRA；
+  **2029 卖出**——那年既是模型顶部窗口，又是完整非居民年度，
+  **联邦 + 纽约双零**（依据：§871 NRA 资本利得不征税、§865 动产按卖方居住地定源）
+- **两条铁律**：① 2027 是 dual-status 高危年，即使离境后卖，当年在美满 183 天
+  仍触发 §871(a)(2) 的 30%（$39,553）；② 离境后每年在美 <100 天、卖出年 <183 天
+- **亏损收割判定翻转**：v3 §5 原写"不做"（只算了 $3,000/年上限 + 结转随身份作废
+  ≈ $1,600），**漏算期权价值**。若离境落空、2029 按纽约居民卖，$55,638 结转可省
+  **$11,684**；往返点差 ~$529 恰被 2026 年抵扣的 $525 抵掉 → **净成本≈0，期权白送**，
+  且随 BTC 上涨而过期。**改判为"做一次，全仓卖出并同日回补，净数量不减"**。
+  v3 §5 已同步更正并新增税务收割例外条款
+- **执行细节**：真 BTC 非 ETF → **wash sale 不适用**；全仓卖出可绕开
+  FIFO/指定批次问题（App 显示的浮亏是全仓加总，只有全卖才等于显示值）
+- **最大未决项**：落地国。香港/新加坡/阿联酋 $0 vs 中国名义 20% ≈ **$26,368**
+
 ### 下一步（本轮新增）
 
+0. **执行亏损收割**（`tax_residency_exit_plan.md` §4）：全仓 1.164 BTC 卖出 +
+   同日回补，实现约 $61,638 亏损。做完填 §10 执行记录表。
+   ⚠️ 执行前先量 Robinhood 点差，并把 §4 拿给跨境 CPA 过一遍
 1. 为黄金建立“双规则”回测：`≤−1σ` 的反转入场，与 `≥+1σ + 趋势未失效` 的
    突破入场分开评估；禁止用同一个 σ 阈值解释两种机制。
 2. 将金价货币锚从美国 M2 扩展至全球货币口径，并检查 10/15/20 年滚动窗口的稳健性。
@@ -168,6 +193,9 @@ push 时刷新一次，避免回头时丢失上下文。
   标注待验证），引用前先过一遍数据核验
 - 本地会话与仓库可能不同步：器械时间轴只存在于本地；凡在本地做的
   分析要及时 push，否则云端会话看不到
+- **`trading_plan_2026_2030.md` 至今不存在** —— BTC v1/v2/v3 共 9 处引用指向它，
+  卖出端（核心仓/战术仓划分、2029 顶部阶梯、跟踪止盈）**没有任何成文规则**。
+  这是当前执行体系最大的空洞，且现在还需叠加税务身份约束一起重写
 - 5 月遗留的灵魂训练线已两个月未动，状态表见 git 历史版本
   （`git show aba3817~N:current_process.md` 可查旧快照），重启前先重估
 
@@ -180,6 +208,8 @@ push 时刷新一次，避免回头时丢失上下文。
 - [sectors/macro-compare/](sectors/macro-compare/) — 崩盘后医疗政策六国对照（日中深度 HTML + 六国 HTML + agent 研究笔记，本轮新建）
 - [companies/mindray/2026-07-25/decision_card.md](companies/mindray/2026-07-25/decision_card.md) — 迈瑞裁决
 - [theses/2026-market-map.md](theses/2026-market-map.md) — 市场地图
-- [execution_plans/btc_investment_plan_2026-07-17_v2.md](execution_plans/btc_investment_plan_2026-07-17_v2.md) — BTC 执行计划 v2
+- [execution_plans/btc_investment_plan_2026-08-07_v3.md](execution_plans/btc_investment_plan_2026-08-07_v3.md) — BTC 执行计划 **v3（现行，v1/v2 已归档）**
+- [execution_plans/tax_residency_exit_plan.md](execution_plans/tax_residency_exit_plan.md) — **卖出端税务约束（2029 非居民年卖出 / 亏损收割判定）**
+- [execution_plans/equity_index_plan_2026-08-07.md](execution_plans/equity_index_plan_2026-08-07.md) — QQQ/SPY/BRK.B 定投
 - [frameworks/investment_research_pipeline_detailed.md](frameworks/investment_research_pipeline_detailed.md) — 研究流程
 - [research_queue.md](research_queue.md) — 选题队列

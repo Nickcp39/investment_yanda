@@ -42,6 +42,11 @@ studies/              专题研究（跨行业/跨资产）
 macro/                宏观（hyperscaler capex、存储周期、美日收益率曲线等）
 theses/               市场地图与投资论文（2026-market-map.md 等）
 execution_plans/      仓位与定投执行计划（BTC、QQQ/SPY/BRK、个股；md + html 双格式）
+├── btc_investment_plan_*_v3.md   BTC 现货定投现行版（v1/v2 已归档，只看 v3）
+├── equity_index_plan_*.md        QQQ/SPY/BRK.B 每交易日定投
+├── dca_tracking_2026-2027.md     四标的定投执行追踪
+└── tax_residency_exit_plan.md    ⚠️ 卖出端税务约束：2026/27 不卖、2029 以
+                                  非居民身份卖（联邦+纽约双零）、亏损收割判定
 backtests/            回测与 pipeline 时点测试（asof_<日期>_*）
 ├── SPY_QQQ_5年滚动回报_*/   SPY/QQQ 逐年五年滚动窗口
 ├── 黄金_货币供应_估值_*/     金价对 M2 的 σ 通道 + 无未来函数的前瞻收益回测
@@ -110,6 +115,8 @@ notebooks/            Jupyter 分析
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | 了解当前整体仓位思路 | `theses/2026-market-map.md` + `execution_plans/` |
+| 每天该投多少 / 投到什么时候 | `execution_plans/btc_investment_plan_*_v3.md` + `equity_index_plan_*.md` |
+| **什么时候能卖、卖了要交多少税** | `execution_plans/tax_residency_exit_plan.md` |
 | 接着上次的活干 | `current_process.md` |
 | 找研究方法/流程 | `frameworks/investment_research_pipeline_detailed.md` |
 | 崩盘后各国医疗政策 / 推演中国下一步 | `sectors/macro-compare/`（六国对照 HTML + 结论）|
