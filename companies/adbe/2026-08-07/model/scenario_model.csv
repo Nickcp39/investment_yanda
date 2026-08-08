@@ -1,0 +1,89 @@
+section,item,value,unit,note
+inputs,as_of,2026-08-07,date,
+inputs,as_of_price,265.74,USD,"2026-08-07 close; Yahoo daily 265.74 vs stockanalysis 265.83 (delta 0.03%)"
+inputs,shares_outstanding,397.5,millions,ADBE-SA-STATS
+inputs,market_cap,105.63,USD_billions,derived 397.5M x 265.74
+inputs,cash_plus_sti,5.626,USD_billions,ADBE-8K-Q2FY26 balance sheet
+inputs,total_debt,6.645,USD_billions,current 1.843 + long-term 4.802
+inputs,net_debt,1.019,USD_billions,derived
+inputs,enterprise_value,106.65,USD_billions,derived
+inputs,hurdle,8.0,pct,house standard
+oe_bridge,ttm_operating_cash_flow,10481,USD_millions,"Q3FY25 2198 + Q4FY25 3160 + Q1FY26 2958 + Q2FY26 2165"
+oe_bridge,ttm_capex,201,USD_millions,"72 + 34 + 37 + 58"
+oe_bridge,ttm_free_cash_flow,10280,USD_millions,derived
+oe_bridge,ttm_sbc_estimate,2050,USD_millions,"estimate scaled from FY2025 SBC 1942 and Q2FY26 SBC 534; LABELED ESTIMATE"
+oe_bridge,OE0,8.20,USD_billions,"FCF - SBC; SBC treated as a real cost; non-GAAP EPS deliberately not used"
+oe_bridge,EV_over_OE0,13.0,x,derived
+oe_bridge,ttm_fcf_margin,40.8,pct,10280 / 25198
+oe_bridge,capex_intensity,0.80,pct,201 / 25198
+oe_bridge,ttm_fcf_yield_on_price,9.36,pct,24.86 / 265.74
+decomposition,peak_price,688.37,USD,2021-11-19 close (Yahoo daily verified)
+decomposition,current_price,265.74,USD,2026-08-07 close
+decomposition,price_change,-61.40,pct,derived
+decomposition,peak_gaap_diluted_eps,10.02,USD,FY2021 10-K
+decomposition,ttm_gaap_diluted_eps,17.48,USD,"Q3FY25 4.18 + Q4FY25 4.45 + Q1FY26 4.60 + Q2FY26 4.25"
+decomposition,eps_change,74.5,pct,derived
+decomposition,peak_trailing_pe,68.70,x,688.37 / 10.02
+decomposition,current_trailing_pe,15.20,x,265.74 / 17.48
+decomposition,pe_change,-77.87,pct,derived
+decomposition,identity_check,0.38602,ratio,1.7445 x 0.22128 = 0.38602 -> -61.40 pct (zero residual)
+decomposition,peak_fcf_per_share,14.31,USD,FY2021 FCF 6882 / 481M shares
+decomposition,ttm_fcf_per_share,24.86,USD,"5.01 + 7.50 + 7.11 + 5.24"
+decomposition,fcf_ps_change,73.7,pct,derived
+decomposition,peak_p_fcf,48.10,x,688.37 / 14.31
+decomposition,current_p_fcf,10.69,x,265.74 / 24.86
+decomposition,peak_market_cap,331.1,USD_billions,481M x 688.37
+decomposition,market_cap_change,-68.1,pct,derived
+decomposition,revenue_change,59.6,pct,15785 -> 25198 USD millions
+decomposition,ps_change,-80.0,pct,20.98x -> 4.19x
+decomposition,share_count_change,-16.4,pct,481M -> 402M diluted
+decomposition,ln_total,-0.9520,ln,ln(0.38602)
+decomposition,ln_earnings,0.5566,ln,ln(1.7445)
+decomposition,ln_multiple,-1.5086,ln,ln(0.22128)
+decomposition,multiple_share_of_move,158.5,pct,-1.5086 / -0.9520
+decomposition,earnings_share_of_move,-58.5,pct,0.5566 / -0.9520
+decomposition,counterfactual_if_multiple_held,1201,USD,17.48 x 68.70
+decomposition,counterfactual_if_eps_held,152,USD,10.02 x 15.20
+scenario_bear,oe_cagr,-6.0,pct,revenue growth to zero then negative; non-GAAP op margin ~45pct -> ~33pct
+scenario_bear,exit_multiple,7.0,x,re-rated as a structurally declining software asset
+scenario_bear,oe_year5,6.02,USD_billions,derived
+scenario_bear,oe_year10,4.42,USD_billions,derived
+scenario_bear,irr_5y,-7.79,pct,derived
+scenario_bear,irr_10y,-2.42,pct,derived
+scenario_bear,clears_hurdle,FALSE,bool,
+scenario_base,oe_cagr,6.0,pct,"organic ARR settles 7-8pct; margins hold; buybacks continue. Deliberately below current revenue growth 12.7pct and EPS guide 16-17pct"
+scenario_base,exit_multiple,13.0,x,NO re-rating: exits at today's multiple
+scenario_base,oe_year5,10.97,USD_billions,derived
+scenario_base,oe_year10,14.68,USD_billions,derived
+scenario_base,irr_5y,14.14,pct,derived
+scenario_base,irr_10y,14.15,pct,derived
+scenario_base,clears_hurdle,TRUE,bool,
+scenario_bull,oe_cagr,10.0,pct,Acrobat/Express freemium conversion works; AI-first ARR scales from 0.5B
+scenario_bull,exit_multiple,18.0,x,partial re-rating; still far below the 48x peak P/FCF
+scenario_bull,oe_year5,13.21,USD_billions,derived
+scenario_bull,oe_year10,21.27,USD_billions,derived
+scenario_bull,irr_5y,24.90,pct,derived
+scenario_bull,irr_10y,21.10,pct,derived
+scenario_bull,clears_hurdle,TRUE,bool,
+implied_expectations,oe_cagr_for_8pct_at_exit_10x,1.95,pct,10-year
+implied_expectations,oe_cagr_for_8pct_at_exit_13x,0.29,pct,"10-year; THE headline: market prices owner earnings FLAT for a decade"
+implied_expectations,oe_cagr_for_8pct_at_exit_16x,-1.09,pct,10-year
+price_ladder,no_chase_ceiling,352,USD,base case 10pct 10y IRR
+price_ladder,buy_below_main_anchor,306,USD,base case 12pct 10y IRR - the new-money limit
+price_ladder,current_price_starter,265.74,USD,"STARTER 3pct qualifies; 13.2pct below buy_below"
+price_ladder,add_zone_ceiling,252,USD,base case 15pct 10y IRR -> scale toward 6pct
+price_ladder,max_conviction_low,193.41,USD,2026-06-25 closing low
+price_ladder,max_conviction_high,225.11,USD,2026-07-24 close
+price_ladder,bear_downside_anchor,137,USD,price at which the BEAR case still returns 8pct
+price_ladder,bull_8pct_ceiling,672,USD,reference only
+price_position,distance_from_52wk_high,-28.4,pct,vs 370.86
+price_position,distance_from_52wk_low,39.8,pct,vs 190.12
+price_position,drawdown_from_ath,-61.40,pct,vs 688.37 on 2021-11-19
+price_position,ytd_2026,-24.07,pct,vs 2025-12-31 close 349.99
+price_position,rally_off_2026_low,37.4,pct,from 193.41 on 2026-06-25
+sensitivity,base_irr_10y_at_price_260.24,14.63,pct,"alternative settled-close basis; verdict unchanged"
+sensitivity,base_irr_10y_at_price_306,12.0,pct,buy_below anchor
+sensitivity,base_irr_10y_at_price_352,10.0,pct,no-chase line
+method,irr_definition,whole-company,text,"buy at EV, receive OE annually, sell at exit_multiple x OE_final"
+method,sbc_treatment,expensed,text,SBC deducted from FCF to reach owner earnings
+method,non_gaap_eps,not_used,text,non-GAAP adds back ~1.9B of SBC and is not a cash measure

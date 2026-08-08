@@ -1,0 +1,11 @@
+FRESHNESS CHECK -NFLX as_of 2026-08-06  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=73.69 refetched_yahoo=73.69000244140625 (2026-08-06) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 65.08 <= 73.69 <= 126.71
+  [PASS] T2 low/high hug: +13.2% off low, -41.8% off high
+  [PASS] T3 market-cap identity: 4164M x 73.69 = 0.307T vs card 0.307T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -41.8% vs card-implied -41.8% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 73.69 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-01-23 is 195d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-07-17 (20d)

@@ -1,0 +1,115 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-08-06",
+  "run_date": "2026-08-07",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is set to 2026-08-06, the last SETTLED close, not the 2026-08-07 run date, so the independent re-fetch is deterministic against a closed session. FILED data (FY2025 10-K, Q1/Q2 2026 10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline and was extracted directly from SEC EDGAR XBRL/R-files.",
+
+  "SPLIT_ADJUSTMENT_DECLARATION": {
+    "split_occurred": true,
+    "ratio": "10-for-1 forward split",
+    "announced": "2025-10-30",
+    "record_date": "2025-11-10",
+    "distributed": "2025-11-14 (after close)",
+    "first_split_adjusted_trading_day": "2025-11-17",
+    "primary_confirmation": "SEC 8-K filed 2025-11-04 for the 2025-10-30 board action (accession 0001065280-25-000408) and 8-K filed 2025-11-14 (accession 0001065280-25-000450, Item 5.03 charter amendment)",
+    "basis_used_in_this_dossier": "SPLIT-ADJUSTED throughout - every price, EPS, per-share figure and share count in this dossier is post-split. Unadjusted NFLX quotes are approximately 10x these values.",
+    "why_flagged": "INC-001 class risk. A 10x split is the single easiest way to ship a price error that flips a verdict. Cross-checks: (1) Yahoo daily series is split-adjusted and returns 73.69 for 2026-08-06; (2) stockanalysis returns the same; (3) internal consistency check - the FY2025 10-K restates FY2023 diluted EPS as $1.20 (was $12.03 as originally reported) and FY2025 weighted diluted shares as 4,343.86M (vs 439.26M for FY2024 in the FY2024 10-K), confirming the 10x restatement is reflected in the filings this dossier uses.",
+    "verified": true
+  },
+
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 73.69,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "split_adjusted": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX", "fetched_at": "2026-08-07", "value": 73.69},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nflx/", "fetched_at": "2026-08-07", "value": 73.69}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 306840000000,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "4,163,939,676 shares (10-Q Q2'26 cover) x 73.69", "fetched_at": "2026-08-07", "value": 306840656000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nflx/", "fetched_at": "2026-08-07", "value": 306840000000}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 126.71,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "split_adjusted": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX (meta.fiftyTwoWeekHigh)", "fetched_at": "2026-08-07", "value": 126.71}
+      ],
+      "note": "Intraday 52-week high, set 2025-09-05. Distinct from the all-time-high CLOSE of 133.91 on 2025-06-30, which is outside the 52-week window. The -45.0% drawdown quoted in the card is measured from the 133.91 ATH close; the -41.8% figure is measured from this 52-week high.",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 65.08,
+      "unit": "USD",
+      "as_of": "2026-08-06",
+      "is_quantitative": true,
+      "split_adjusted": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX (meta.fiftyTwoWeekLow)", "fetched_at": "2026-08-07", "value": 65.08}
+      ],
+      "note": "Intraday low set 2026-07-17, the Q2'26 earnings reaction day (-7.26% close-to-close). Current price sits +13.2% above it - no low-hug.",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4163.94,
+      "unit": "millions",
+      "as_of": "2026-06-30",
+      "is_quantitative": true,
+      "split_adjusted": true,
+      "sources": [
+        {"source_name": "sec_10q_q2_2026", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm", "public_date": "2026-07-17", "fetched_at": "2026-08-07", "value": 4163.94},
+        {"source_name": "sec_10q_q2_2026_balance_sheet", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R6.htm", "public_date": "2026-07-17", "fetched_at": "2026-08-07", "value": 4163.94}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Exact: 4,163,939,676 issued and outstanding at 2026-06-30, from the 10-Q cover page AND the balance-sheet common-stock line - two independent locations in the same primary filing. Down from 4,222,162,150 at 2025-12-31 (-1.38% in six months) on buybacks.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2026: revenue $51.0-51.4B (+13-14%; ~+12% F/X neutral); operating margin 31.5% (vs 29.5% in FY2025); implied operating income growth 20%+; free cash flow approximately $12.5B; cash content spend to amortisation ratio ~1.1x; content amortisation +~10% for the year (front-loaded into H1); ads revenue approximately $3B (a rough doubling). Q3'26: revenue $12,860M (+11.7%), operating margin 33.2%, diluted EPS $0.82. NOTE: the ~$12.5B FCF guide INCLUDES the after-tax impact of the $2.8B Warner Bros. Discovery termination fee (management stated the guide was raised from ~$11B primarily for this reason) - it is contaminated for owner-earnings purposes.",
+      "as_of": "2026-07-16",
+      "sources": [
+        {"source_name": "sec_8k_ex991_q2_2026_shareholder_letter", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm", "public_date": "2026-07-16", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_10q_q2_2026", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm", "public_date": "2026-07-17", "fetched_at": "2026-08-07"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Brazilian tax dispute: FY2025 10-K discloses a $619M indemnification-related accrual (FY2024 $400M, FY2023 $300M). Separately, roughly $700M of Brazilian tax deposits shifted payment timing from 2025 into 2026 - this FLATTERED FY2025 free cash flow by about $0.7B and is a FY2026 headwind. No other litigation identified this run that is material to the thesis. The Warner Bros. Discovery merger agreement was terminated by WBD on 2026-02-27 and settled with a $2.8B fee paid to Netflix - closed, not open litigation.",
+      "as_of": "2026-01-23",
+      "sources": [
+        {"source_name": "sec_10k_fy2025", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm", "public_date": "2026-01-23", "fetched_at": "2026-08-07"},
+        {"source_name": "sec_8k_ex991_q4_2025_shareholder_letter", "url": "https://ir.netflix.net/financials/quarterly-earnings/default.aspx", "public_date": "2026-01-20", "fetched_at": "2026-08-07"}
+      ],
+      "note": "T6 will flag this as older than 45 days vs as_of. That is correct and accepted: the source is the annual report, which is the authoritative disclosure for contingencies, and the Q2'26 10-Q surfaced no new material matter. WARN, not FAIL.",
+      "pass": true
+    }
+  ]
+}

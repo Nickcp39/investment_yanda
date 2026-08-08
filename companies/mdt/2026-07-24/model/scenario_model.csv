@@ -1,0 +1,34 @@
+scenario,horizon_yrs,rev_cagr_assumed,exit_ebitda_margin,exit_ev_ebitda_multiple,rev_terminal_usd_b,ebitda_terminal_usd_b,net_debt_terminal_usd_b,ev_terminal_usd_b,equity_terminal_usd_b,price_terminal_usd,irr_pct,vs_8pct_hurdle
+bear,3,0.020,0.205,9.0,38.59,7.91,21.00,71.20,50.20,39.22,-18.7,FAIL
+bear,5,0.020,0.200,8.7,40.15,8.03,22.50,69.86,47.36,37.00,-11.4,FAIL
+base,3,0.065,0.248,11.0,43.93,10.89,16.00,119.83,103.83,81.12,2.6,FAIL
+base,5,0.058,0.252,11.3,48.21,12.15,10.50,137.27,126.77,99.04,7.0,FAIL
+bull,3,0.085,0.270,13.0,46.45,12.54,13.00,163.03,150.03,117.21,15.5,PASS
+bull,5,0.078,0.283,13.8,52.94,14.98,4.50,206.74,202.24,158.00,17.1,PASS
+
+# Methodology notes (REFRESH 2026-07-24; as_of_price $83.21):
+# - Base year (Yr0) = FY2026 actuals (fiscal year ended 2026-04-24): revenue $36.364B, non-GAAP operating margin 24.4%, est. non-GAAP EBITDA ~$11.60B
+#   (non-GAAP operating income $8.873B + estimated D&A ~7.5% of revenue ~$2.727B; D&A still not separately disclosed -- estimate reflects MDT's
+#    substantial M&A-driven intangible amortization (Covidien 2015, Mazor 2018, Affera, and now SPR 2026) -- OPEN item, not a confirmed figure)
+# - Current price $83.21 (2026-07-24 close, essentially flat vs prior dossier's $83.19 on 2026-07-02); shares 1.28B; market cap ~$106.51B
+# - Net debt REFRESHED to ~$19.4B: FY2026 10-K basis $18.74B (debt $27.96B - cash/investments $9.22B), + ~$0.65B for the SPR acquisition cash
+#   (closed 2026-07-16) = ~$19.4B; EV ~$125.9B (slightly lower than prior $126.48B as cash position came in cleaner than the prior estimate)
+# - Current implied EV/EBITDA ~10.85x (~10.9x) -- essentially unchanged; cross-checked vs P/E: FY26 non-GAAP EPS $5.53 => trailing ~15.0x;
+#   FY27 guide midpoint $5.95 => forward ~14.0x (matches screener 13.99x). Still a genuine DISCOUNT to SYK (~20x), BSX (~13.5-22x), ISRG (~42x).
+# - IRRs are near-identical to the prior dossier because price is flat and FY2026 actuals are unchanged; the marginal improvements (cleaner net debt,
+#   lower terminal net debt from strong FCF) nudge base 5yr to +7.0% (was +6.9%) and bear slightly less negative -- immaterial, within rounding.
+# - Dividend yield contribution: ~3.4-3.5%/yr added to price CAGR for total IRR (yield 3.46% at $83.21; 49 consecutive years of increases; FCF/NI 1.13x).
+#   CAVEAT (new this run): once MiniMed fully deconsolidates (~end CY2026), continuing-MDT revenue drops ~$3.1B and the EPS/dividend base RESETS -- MDT
+#   shareholders receive MiniMed shares in the split-off. The dividend-per-share is expected to be maintained/rebased around the RemainCo; modeled as
+#   roughly neutral to total shareholder value (shareholders hold RemainCo + distributed MiniMed stub), but the reported MDT dividend/EPS line recasts.
+# - BEAR: FY2026 inflection fades toward ~2%/yr as PFA tailwind normalizes and Hugo fails to gain US traction; TAVR share loss + PFA competition
+#   (J&J Varipulse, BSX FARAWAVE NAV) compress Cardiovascular; China VBP re-accelerates; MiniMed indemnity leaks back to RemainCo; margin compresses;
+#   multiple de-rates to 8.7-9.0x. Net debt eases only modestly.
+# - BASE: FY2027 guide (6.75-7.25% organic) roughly achieved, then decelerates to sustainable mid-single digits as PFA share-gain tailwind matures
+#   (MDT holds ~48%, does not keep gaining); RDN scales from the ~$100M run-rate; Hugo a modest non-transformative contributor; China stable
+#   ("worst behind us"); MiniMed cleanly separated with liabilities isolated; multiple holds ~11.0-11.3x; steady deleveraging from FCF/NI >1x.
+# - BULL: Hugo US ramp becomes a genuine quantifiable commercial success (resolves O1) alongside the NVIDIA Touch Surgery Aide AI ecosystem lock-in;
+#   RDN gets permanent Cat I CPT codes (Sept-2026 AMA review favorable) and scales into a several-hundred-$M platform; PFA leadership extends;
+#   China modestly improves; MiniMed split-off completes tax-efficiently with litigation fully isolated; margin resolves favorably;
+#   multiple re-rates to 13.0-13.8x (toward, still below, SYK/BSX). Bull PASSES the 8% hurdle at both horizons.
+# - 8% hurdle: bear FAILS badly; base FAILS both horizons but 5yr (+7.0%) closes within ~1pt; bull PASSES (15.5% / 17.1%). Same shape as prior dossier.

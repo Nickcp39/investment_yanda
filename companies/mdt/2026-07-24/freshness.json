@@ -1,0 +1,134 @@
+{
+  "ticker": "MDT",
+  "as_of": "2026-07-24",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (REFRESH of 2026-07-05). Every LIVE field carries independent sourcing fetched/re-verified at as_of; verify_freshness.py cross-checks these against an independent Yahoo re-fetch and the decision_card value. FILED data (10-K/10-Q line items) rides the dated-source claim_ledger discipline. Price was re-verified two independent ways for the 2026-07-24 close ($83.21): the repo Yahoo fetcher (market_data_download) AND stockanalysis.com's historical price table -- exact match. A later 2026-08-05 intraday read ($85.50) confirms the as_of read is not stale (the stock traded $79.30-$85.50 in the interval, dipping on 07-14 and recovering). No conflicting-price artifact encountered this run.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 83.21,
+      "unit": "USD",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "stockanalysis_history", "url": "https://stockanalysis.com/stocks/mdt/history/", "fetched_at": "2026-08-05", "value": 83.21},
+        {"source_name": "yahoo_repo_refetch", "url": "scripts/market_data_download.py", "fetched_at": "2026-07-24", "value": 83.21}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 106509000000,
+      "unit": "USD",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "1.28B shares x $83.21", "fetched_at": "2026-07-24", "value": 106508800000},
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-08-05", "value": 109440000000, "note": "$109.44B at the later 2026-08-05 intraday $85.50 -- consistent given the ~$2.30 higher price"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 106.33,
+      "unit": "USD",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-08-05", "value": 106.33},
+        {"source_name": "stockanalysis_history", "url": "https://stockanalysis.com/stocks/mdt/history/", "fetched_at": "2026-08-05", "value": 106.33}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 73.31,
+      "unit": "USD",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-08-05", "value": 73.31},
+        {"source_name": "marketbeat_0714", "url": "https://www.marketbeat.com/instant-alerts/medtronic-nysemdt-stock-price-down-52-heres-why-2026-07-14/", "fetched_at": "2026-08-05", "value": 73.31}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1280,
+      "unit": "millions",
+      "as_of": "2026-07-24",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-08-05", "value": 1280},
+        {"source_name": "derived_from_marketcap", "url": "$109.44B / $85.50", "fetched_at": "2026-08-05", "value": 1280.0}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "dividend",
+      "is_quantitative": true,
+      "value": 0.72,
+      "unit": "USD quarterly (annualized 2.88)",
+      "as_of": "2026-06-03",
+      "sources": [
+        {"source_name": "mdt_newsroom_q4fy26", "url": "https://news.medtronic.com/2026-06-03-Medtronic-reports-fourth-quarter-and-full-year-fiscal-2026-results-delivers-highest-annual-revenue-growth-in-10-years", "public_date": "2026-06-03", "fetched_at": "2026-07-24", "value": 0.72},
+        {"source_name": "stockanalysis_direct_fetch", "url": "https://stockanalysis.com/stocks/mdt/", "fetched_at": "2026-08-05", "value": "yield ~3.4% implies ~$2.88 annualized -- consistent"}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2027 organic revenue growth guidance +6.75% to +7.25%; non-GAAP diluted EPS $5.90-$6.00 (+6.7% to +8.5% YoY), issued 2026-06-03. CFO confirmed the guide CONSERVATIVELY INCLUDES a full year of the Diabetes business (~25bps) because MiniMed separation timing is not yet known -- earlier separation = potential upside. Unchanged since the prior dossier (no new print until Q1 FY2027 on 2026-09-01).",
+      "as_of": "2026-06-03",
+      "sources": [
+        {"source_name": "mdt_newsroom_q4fy26", "url": "https://news.medtronic.com/2026-06-03-Medtronic-reports-fourth-quarter-and-full-year-fiscal-2026-results-delivers-highest-annual-revenue-growth-in-10-years", "public_date": "2026-06-03", "fetched_at": "2026-07-24"},
+        {"source_name": "mdt_q4fy26_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/06/04/medtronic-mdt-q4-2026-earnings-transcript/", "public_date": "2026-06-04", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true,
+      "recency_note": "Newest source 2026-06-03/04 is ~50d before as_of (guidance is issued annually with FY results; next update is Q1 FY2027 on 2026-09-01). Not stale in substance -- it IS the latest authoritative guidance."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "MiniMed insulin-pump product-liability: per the FY2026 10-K, FIFTEEN (15) lawsuits on behalf of 55 individuals (Series 600 retainer-ring), as of 2026-06-08 -- bounded, an order of magnitude smaller than the FDA MAUDE adverse-event figures (57,000 complaints / 2,175 injuries / 1 death, which are reports, not lawsuits). No federal MDL; no global settlement; California (LA Superior Court) bellwethers survived summary judgment + appeal, moving toward trial; a separate MiniMed class action was decided in Medtronic's favor. CRITICAL: the MiniMed Separation Agreement (S-1) allocates the diabetes/pump liabilities to MiniMed SpinCo (uncapped mutual indemnities) -- structurally ISOLATING the litigation off RemainCo Medtronic, though MDT retains ~90% economic exposure until the full split-off completes (~end CY2026).",
+      "as_of": "2026-06-18",
+      "sources": [
+        {"source_name": "mdt_10k_fy2026", "url": "https://www.sec.gov/Archives/edgar/data/0001613103/000162828026044354/mdt-20260424.htm", "public_date": "2026-06-18", "fetched_at": "2026-07-24"},
+        {"source_name": "torhoerman_minimed_2026", "url": "https://www.torhoermanlaw.com/medtronic-minimed-insulin-pump-lawsuit/", "public_date": "2026", "fetched_at": "2026-07-24"},
+        {"source_name": "minimed_s1", "url": "https://www.sec.gov/Archives/edgar/data/2062583/000162828025058231/minimedgroupincs-1.htm", "public_date": "2025", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "china_vbp_status",
+      "is_quantitative": false,
+      "value": "On the Q4 FY2026 earnings call (2026-06-03/04) CEO Martha: China 'still growing at the corporate average right now' and 'the worst is behind us' on VBP -- procedure-volume gains offsetting price cuts; China remains a growth market and is 'accretive.' This is now ON THE EARNINGS-CALL RECORD (a materially stronger source than the prior dossier's undated commentary). Hard current-year China revenue % / growth rate still not numerically confirmed (the ~7% figure remains FY2024-vintage; the 10-K geographic footnote was not read verbatim) -- flagged OPEN O2. Direct China-import tariff exposure <1% of revenue.",
+      "as_of": "2026-06-04",
+      "sources": [
+        {"source_name": "mdt_q4fy26_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/06/04/medtronic-mdt-q4-2026-earnings-transcript/", "public_date": "2026-06-04", "fetched_at": "2026-07-24"},
+        {"source_name": "medtechdesign_chinaexposure", "url": "https://www.medicaldesignandoutsourcing.com/china-exposure-medtronic-intuitive-henry-schein-align-envista-dentsply-sirona/", "public_date": "2025-2026", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true,
+      "confidence_note": "Improved to on-record qualitative vs prior undated commentary; numeric % still unconfirmed -- remains the top China gap for the next refresh."
+    },
+    {
+      "field": "hugo_status",
+      "is_quantitative": false,
+      "value": "Hugo RAS: US urology clearance (Dec 2025) commercialized -- first US cases at Cleveland Clinic (prostatectomy), Duke, Atrium Wake Forest; worldwide procedures growing 2-3x market rate; 35+ countries, ~1,500 ORs. 2026-06-03: 510(k) filings to expand into US general surgery + gynecology. 2026-07-21: Touch Surgery Aide unveiled -- AI-native surgical compute platform on NVIDIA infrastructure; Instrument Exit Point is MDT's first FDA-cleared real-time robotic-AI app. CRITICAL GAP UNCHANGED: no Hugo-specific revenue / unit-placement / per-procedure economics disclosed anywhere (embedded in Medical Surgical) -- OPEN O1, the single largest gap and the reason the verdict stays STARTER not CORE.",
+      "as_of": "2026-07-21",
+      "sources": [
+        {"source_name": "mdt_touchsurgery_pr", "url": "https://news.medtronic.com/2026-07-21-A-new-era-for-surgery-with-real-time-AI-Medtronic-to-unveil-Touch-Surgery-TM-Aide,-the-next-generation-compute-platform-for-the-operating-room-at-Society-of-Robotic-Surgery-2026", "public_date": "2026-07-21", "fetched_at": "2026-07-24"},
+        {"source_name": "mdt_q4fy26_transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/06/04/medtronic-mdt-q4-2026-earnings-transcript/", "public_date": "2026-06-04", "fetched_at": "2026-07-24"}
+      ],
+      "pass": true
+    }
+  ]
+}

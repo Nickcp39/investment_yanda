@@ -1,0 +1,19 @@
+ticker,as_of,as_of_price,shares_out_m,market_cap_usd_m,net_debt_usd_m,hurdle,scenario,owner_earnings_anchor_id,oe0_usd_m,oe_cagr,buyback_pct_per_yr,shares_y10_m,oe_y10_usd_m,oe_y10_per_share,exit_p_oe,exit_price,irr_10y,note
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,bear,A-chosen,10000,0.03,0.01,3765.8,13439.2,3.5686,14,49.96,-0.0381,content treadmill; UCAN to mid-single-digit; ads stalls at 3-4B; de-rate to 14x
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,20,152.48,0.0754,revenue CAGR ~8pct price+ads led; margin 31.5->35pct; cash/amort ratio eases to 1.05x
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,bull,A-chosen,10000,0.15,0.025,3232.6,40455.6,12.5150,24,300.36,0.1509,ads 3B->12B+; cash/amort back to 1.0x; GenAI cuts unit content cost; live/games lift engagement
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A1_naive_ttm_fcf_incl_onetime,11152,0.10,0.02,3402.2,28927.1,8.5024,20,170.04,0.0872,CONTAMINATED by 2.8B WBD termination fee; this is what free screeners show
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A2_ttm_fcf_ex_onetime,8352,0.10,0.02,3402.2,21663.0,6.3673,20,127.35,0.0562,realized TTM less full 2.8B pretax; most conservative
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A3_fy26e_guide_less_full_fee,9700,0.10,0.02,3402.2,25159.3,7.3950,20,147.90,0.0722,FY26 guide 12.5B less full 2.8B pretax
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A_chosen_midpoint,10000,0.10,0.02,3402.2,25937.4,7.6237,20,152.48,0.0754,CHOSEN: midpoint of A2 realized and A4 forward guide
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A4_fy26e_guide_less_aftertax_fee,11000,0.10,0.02,3402.2,28531.2,8.3860,20,167.72,0.0857,equals the original pre-fee FY26 FCF guide given at Q4 2025
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A5_steady_state_content_1.0x,11500,0.10,0.02,3402.2,29828.0,8.7672,20,175.35,0.0906,assumes the 0.1x excess content spend is fully discretionary growth spend - UNPROVEN
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_anchor_sens,A6_gaap_net_income_ex_onetime,12500,0.10,0.02,3402.2,32421.8,9.5296,20,190.60,0.0997,ignores the cash-content vs amortization gap entirely; most optimistic
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_exit_sens,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,14,106.73,0.0377,exit multiple sensitivity
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_exit_sens,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,16,121.98,0.0517,exit multiple sensitivity
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_exit_sens,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,18,137.23,0.0642,exit multiple sensitivity
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_exit_sens,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,24,182.97,0.0952,exit multiple sensitivity
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,base_exit_sens,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,28,213.46,0.1122,exit multiple sensitivity
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,price_ladder,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,20,152.48,0.0800,buy_below STARTER trigger = 70.63 rounded to 70.50
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,price_ladder,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,20,152.48,0.1000,ADD trigger = 58.79
+NFLX,2026-08-06,73.69,4163.94,306840,5244.2,0.08,price_ladder,A-chosen,10000,0.10,0.02,3402.2,25937.4,7.6237,20,152.48,0.1200,CORE trigger = 49.10

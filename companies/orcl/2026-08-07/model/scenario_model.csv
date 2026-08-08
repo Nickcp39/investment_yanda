@@ -1,0 +1,11 @@
+scenario,entry_price,oe0_usd_bn,oe_cagr_pct,years,oe_y10_usd_bn,shares_start_m,shares_y10_m,oe_per_share_y10_usd,exit_p_oe,exit_price_usd,cumulative_dividends_usd,terminal_value_usd,irr_10y_pct,hurdle_pct,clears_hurdle,oe0_basis
+bear,143.47,11.0,4.0,10,16.3,2880,3500,4.65,10,47,10,57,-8.9,8,NO,"FY2026 pretax 19554 x normalized 19% tax = 15.8B; less D&A converging to true fleet replacement (~18B vs 9.3B today) and interest run-rate rising 4.6B -> ~7B"
+base,143.47,16.0,11.8,10,48.8,2880,3250,15.02,16,240,22,262,6.2,8,NO,"FY2026 GAAP net income to common 16984 marked to a normalized 19% tax rate (actual effective 12.6%) plus modest depreciation catch-up"
+bull,143.47,23.0,14.2,10,87.2,2880,3150,27.67,20,553,35,588,15.2,8,YES,"OCF 32000 minus D&A 9315 = 22.7B: the cash framing management implies, treating all 46.3B of incremental capex as pure growth investment"
+price_for_8pct_base,121.50,16.0,11.8,10,48.8,2880,3250,15.02,16,240,22,262,8.0,8,AT,"base terminal 262 discounted at 8% for 10y"
+price_for_10pct_base,101.13,16.0,11.8,10,48.8,2880,3250,15.02,16,240,22,262,10.0,8,YES,"base terminal 262 discounted at 10% for 10y -- BUY_BELOW ANCHOR"
+price_for_12pct_base,84.46,16.0,11.8,10,48.8,2880,3250,15.02,16,240,22,262,12.0,8,YES,"base terminal 262 discounted at 12% for 10y"
+price_for_8pct_bear,26.18,11.0,4.0,10,16.3,2880,3500,4.65,10,47,10,57,8.0,8,AT,"bear terminal 57 discounted at 8% for 10y -- downside value anchor"
+sens_maint_capex_9_3B,143.47,22.7,11.8,10,69.2,2880,3250,21.29,16,341,22,363,9.7,8,YES,"SENSITIVITY: maintenance capex = current D&A 9.3B (loosest). base would CLEAR the hurdle"
+sens_maint_capex_18B,143.47,16.0,11.8,10,48.8,2880,3250,15.02,16,240,22,262,6.2,8,NO,"SENSITIVITY: maintenance capex 18B (~7yr fleet) -- THE BASE CASE ADOPTED"
+sens_maint_capex_25B,143.47,9.0,11.8,10,27.5,2880,3250,8.45,16,135,22,157,0.9,8,NO,"SENSITIVITY: maintenance capex 25B (~5-6yr steady-state fleet). Single undisclosed number swings base IRR from +9.7% to +0.9%"

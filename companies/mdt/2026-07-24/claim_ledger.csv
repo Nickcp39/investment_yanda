@@ -1,0 +1,68 @@
+claim_id,claim,value,unit,as_of,source_id,tier,note
+C1,Last close price,83.21,USD,2026-07-24,STOCKANALYSIS-MDT-HISTORY,B1,Confirmed by independent YAHOO-REFETCH (repo market_data_download) same value same date; flat vs prior $83.19
+C2,Last close price (independent re-fetch),83.21,USD,2026-07-24,YAHOO-REFETCH,B1,Repo scripts/market_data_download.py Yahoo pull; last close <= as_of
+C3,52-week high,106.33,USD,2026-07-24,STOCKANALYSIS-MDT,B1,Unchanged from prior dossier; no new high set
+C4,52-week low,73.31,USD,2026-07-24,STOCKANALYSIS-MDT,B1,Unchanged; July-14 dip to 79.30 did not breach
+C5,Shares outstanding,1280,millions,2026-07-24,STOCKANALYSIS-MDT,B1,~1.28B
+C6,Market cap,106.51,USD billions,2026-07-24,derived,B1,1.28B x 83.21 = 106.51B
+C7,Beta,0.56,ratio,2026-07-24,STOCKANALYSIS-MDT,B1,Low-beta defensive profile (was 0.58)
+C8,Forward P/E (FY27 guide basis),13.99,ratio,2026-07-24,STOCKANALYSIS-MDT,B1,83.21/5.95 midpoint
+C9,Dividend per share annualized,2.88,USD,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,0.72 quarterly; yield ~3.46% at 83.21; 49th consecutive year of increases
+C10,Analyst consensus rating,Buy,rating,2026-07-24,BENZINGA-MDT-RATINGS,B1,Consensus average target ~98
+C11,Analyst target BTIG,91,USD,2026-07,BENZINGA-MDT-RATINGS,B2,Buy; nudged up from 90
+C12,Analyst target Evercore ISI,105,USD,2026-07,TIPRANKS-EVERCORE,B2,Outperform; trimmed from 106
+C13,Analyst target TD Cowen,100,USD,2026-07,MARKETBEAT-MDT-0714,B2,Buy; CUT from 119 on TAVR pressure
+C14,Intraday cross-check price,85.50,USD,2026-08-05,STOCKANALYSIS-MDT,B1,~12d after as_of; mkt cap 109.44B same 52wk band - confirms not stale
+C15,FY2026 total revenue,36364,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+8.4% reported +5.8% organic - highest in 10 years (unchanged)
+C16,FY2026 revenue growth organic,5.8,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Unchanged
+C17,FY2026 Cardiovascular segment revenue,13976,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+9.3% organic
+C18,FY2026 Neuroscience segment revenue,10287,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+3.1% organic
+C19,FY2026 Medical Surgical segment revenue,8815,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+2.9% organic - includes Hugo
+C20,FY2026 Diabetes segment revenue,3112,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,+7.9% organic - being deconsolidated via MiniMed
+C21,FY2026 operating margin GAAP,17.8,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Flat YoY
+C22,FY2026 operating margin non-GAAP,24.4,pct,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Down ~130bps - now partly explained by MiniMed charges + tariffs
+C23,FY2026 non-GAAP diluted EPS,5.53,USD,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,Landed in the lowered 5.50-5.54 guide range (absorbs MiniMed charges)
+C24,FY2026 free cash flow,5426,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,FCF/NI 1.13x
+C25,FY2026 net income,4801,USD millions,2026-04-24,MDT-NEWSROOM-Q4FY26,A1,
+C26,FY2027 organic revenue growth guidance,6.75-7.25,pct,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,Includes full-year Diabetes (no separation assumed)
+C27,FY2027 non-GAAP EPS guidance,5.90-6.00,USD,2026-06-03,MDT-NEWSROOM-Q4FY26,A1,+6.7% to +8.5% YoY
+C28,Total debt,27.96,USD billions,2026-04-24,STOCKANALYSIS-MDT-BALANCESHEET,B1,LT debt 26.17B; FY2026 10-K basis
+C29,Cash and short-term investments,9.22,USD billions,2026-04-24,STOCKANALYSIS-MDT-BALANCESHEET,B1,Matches MDT own 9.2B FY26-close figure
+C30,Total shareholders equity,50.07,USD billions,2026-04-24,STOCKANALYSIS-MDT-BALANCESHEET,B1,UP from prior 48.1B
+C31,Debt-to-equity ratio,55.8,pct,2026-04-24,STOCKANALYSIS-MDT-BALANCESHEET,B1,Improved from 59.3%
+C32,Net debt (FY2026 10-K basis),18.74,USD billions,2026-04-24,derived,B1,27.96B debt minus 9.22B cash; ~19.4B after SPR cash outflow
+C33,SPR Therapeutics acquisition completion date,2026-07-16,date,2026-07-16,MDT-SPR-COMPLETE-PR,A1,Announced intent 2026-05-20
+C34,SPR Therapeutics acquisition price,650,USD millions,2026-07-16,MDT-SPR-COMPLETE-PR,A1,Upfront cash; adds Sprint temporary PNS to Neuromodulation
+C35,SPR Sprint therapy - peripheral nerve stim,up to 60 days,therapy duration,2017,MASSDEVICE-SPR,B1,Non-opioid minimally invasive; FDA 510(k) cleared 2017
+C36,MiniMed IPO first trading date Nasdaq,2026-03-06,date,2026-03-06,MEDTECHDIVE-MINIMED-IPO,A2,Ticker MMED; priced 2026-03-05
+C37,MiniMed IPO shares and price,28M @ $20,shares/price,2026-03-06,MEDTECHDIVE-MINIMED-IPO,A2,= $560M; greenshoe +4.2M to ~$644M
+C38,Medtronic retained stake in MiniMed post-IPO,90.03,pct,2026-03-06,INVESTING-MINIMED-90PCT,B1,MiniMed opening mkt cap ~5.29B
+C39,MiniMed full-separation timeline,12-15 months,timeframe,2026-03,FINANCIALCONTENT-MINIMED,B1,Targeted ~end CY2026; tax-efficient split-off preferred
+C40,MiniMed deconsolidation FY2026 EPS guidance cut,5.50-5.54,USD,2026-03-25,MEDTECHDIVE-MINIMED-DECON,B1,12c cut; ~4c IPO timing + ~8c Blackstone charge
+C41,MiniMed Blackstone one-time charge,157,USD millions,2026-03-25,MEDTECHDIVE-MINIMED-DECON,B1,Royalty/minimum payments on new insulin pump; NOT recurring in FY2027
+C42,MiniMed monthly dilution to full separation,1-2,cents/month,2026-03-25,MEDTECHDIVE-MINIMED-DECON,B1,CFO Pieton; IPO-to-split window
+C43,FY2027 guide treatment of Diabetes,full year included,basis,2026-06-03,MDT-Q4FY26-TRANSCRIPT,A2,~25bps contribution; earlier separation = upside
+C44,MiniMed Separation Agreement indemnity,uncapped,structure,2026,MINIMED-S1,A1,Diabetes/pump liabilities allocated to MiniMed; indemnities not capped
+C45,MiniMed insulin pump lawsuits filed,15,lawsuits,2026-06-08,MDT-10K-FY2026,A1,On behalf of 55 individuals; Series 600 retainer-ring; per FY2026 10-K
+C46,MiniMed litigation MDL status,no MDL no global settlement,status,2026,TORHOERMAN-MINIMED-2026,B2,CA (LA Superior Court) bellwethers furthest along; survived SJ + appeal
+C47,Hugo Touch Surgery Aide announcement,2026-07-21,date,2026-07-21,MDT-TOUCHSURGERY-PR,A1,AI-native surgical compute platform built on NVIDIA infrastructure
+C48,Hugo first FDA-cleared robotic AI app,Instrument Exit Point,product,2026,MDT-TOUCHSURGERY-PR,A1,Real-time AI application for robotic procedures
+C49,Hugo global footprint,35+ countries,reach,2026,MDT-TOUCHSURGERY-PR,A1,Tens of thousands of procedures on six continents
+C50,Hugo Touch Surgery installations,1400+,installations,2026-04-24,MDT-Q4FY26-TRANSCRIPT,A2,+30%+ sequentially; ~1500 ORs per PR
+C51,Hugo procedure volume growth,2x-3x market rate,growth,2026-04-24,MDT-Q4FY26-TRANSCRIPT,A2,Worldwide; first US cases at Cleveland Clinic Duke Wake Forest
+C52,Hugo US indication-expansion 510k filing,2026-06-03,date,2026-06-03,MDT-HUGO-510K-PR,A1,General surgery + gynecology
+C53,Hugo revenue disclosure,none,disclosure,2026-04-24,MDT-Q4FY26-TRANSCRIPT,A2,STILL embedded in MedSurg; no line-item revenue - GAP persists (O1)
+C54,Renal denervation Symplicity annualized revenue,~100,USD millions,2026-04-24,MDT-Q4FY26-TRANSCRIPT,A2,Weekly procedures doubled post-NCD; first quantified RDN figure
+C55,RDN reimbursement current status,Cat III + C1735 + TPT,coding,2026,MEDTRONIC-RDN-REIMBURSEMENT,B1,0338T/0339T; CMS transitional pass-through up to 3 years
+C56,RDN AMA CPT Category I review,pending Sept 2026,catalyst,2026,AMA-CPT-AGENDA,B2,Permanent Cat I codes proposed - forward catalyst not yet resolved
+C57,RDN clinical BP reduction at 3 years,13.3 / 18.1,mmHg,2026,MDT-Q4FY26-TRANSCRIPT,A2,Ambulatory / in-office; 90% meaningful benefit
+C58,PFA spend share Medtronic vs BSX,48 vs 41,pct,2026,QSIGHT-PFA2026,B1,Early-2026 basis unchanged; BSX declining
+C59,PFA Q4 FY2026 global growth,145,pct,2026-04-24,MDT-Q4FY26-TRANSCRIPT,A2,Sphere-9 broad versatility; Sphere-360 CE marked launching EU
+C60,PFA competition,BSX FARAWAVE NAV + JNJ Varipulse,competitive,2026,QSIGHT-PFA2026,B1,FARAWAVE NAV ~32% of PFA spend (from 9%); Varipulse new entrant
+C61,China revenue growth qualitative,corporate average,growth,2026-06-03,MDT-Q4FY26-TRANSCRIPT,A2,CEO on earnings call: worst of VBP behind us; accretive growth market
+C62,China revenue pct of total (still FY2024 vintage),7,pct,2024,MEDTECHDESIGN-CHINAEXPOSURE,B1,FY2026 hard % NOT confirmed - unchanged gap O2
+C63,Direct tariff exposure to Chinese imports,<1,pct of revenue,2025-2026,MEDTECHDESIGN-CHINAEXPOSURE,B1,Diversified manufacturing
+C64,FY2026 tariff impact dollar estimate,185,USD millions,2025-2026,MDT-Q4FY26-TRANSCRIPT,B1,~50bps FY / ~80bps Q4; FY27 headwinds fully incorporated in guide
+C65,Q1 FY2027 earnings date,2026-09-01,date,2026-09-01,MDT-Q1FY27-DATE-PR,A1,Quarter ended 2026-07-31; NOT reported as of as_of - next major test
+C66,FY2026 10-K filing date,2026-06-18,date,2026-06-18,SEC-EDGAR-SUBMISSIONS,A1,Accession 0001628280-26-044354 period ended 2026-04-24
+C67,S&P credit rating,A stable,rating,2024-08-23,CBONDS-SP-MDT,B2,Not re-affirmed within window - flagged OPEN O8 (unchanged)

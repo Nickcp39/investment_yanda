@@ -1,0 +1,211 @@
+{
+  "ticker": "ADBE",
+  "as_of": "2026-08-07",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-08-07",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 68,
+  "verdict_ceiling_rule": "60-80% -> STARTER (frameworks/investment_research_pipeline_detailed.md Stage I)",
+  "context_label": "multiple_broke_not_the_business_but_the_proof_metric_was_retired",
+  "as_of_price": 265.74,
+  "as_of_market_cap": 105631650000,
+  "share_basis_note": "397.5M shares outstanding (stockanalysis.com, 2026-08-07) x $265.74 (2026-08-07 close, Yahoo daily bar, last <= as_of) = $105.632B. Q2 FY26 weighted diluted share count was 402M; FY2026 guided ~399M. Net debt $1.019B (debt $6,645M - cash $4,919M - STI $707M) -> EV ~$106.65B. PRICE CAVEAT: a parallel fetch treated 2026-08-07 as unsettled intraday and held 2026-08-06 close $260.24 as the last fully settled close (-2.07% delta). Disclosed in facts.md E13; base 10y IRR at $260.24 = +14.63%, no verdict change.",
+
+  "headline_decomposition": {
+    "question": "Of the -61.5% drawdown, how much was multiple compression vs a change in the earnings/FCF base?",
+    "peak_price": 688.37,
+    "peak_date": "2021-11-19",
+    "current_price": 265.74,
+    "price_change_pct": -61.40,
+    "eps_basis": {
+      "peak_trailing_gaap_diluted_eps": 10.02,
+      "peak_fiscal_year": "FY2021",
+      "current_ttm_gaap_diluted_eps": 17.48,
+      "eps_change_pct": 74.5,
+      "peak_trailing_pe": 68.70,
+      "current_trailing_pe": 15.20,
+      "pe_change_pct": -77.87,
+      "identity_check": "1.745 x 0.2213 = 0.3860 -> -61.40% (no residual)"
+    },
+    "fcf_basis": {
+      "peak_fcf_per_share": 14.31,
+      "current_ttm_fcf_per_share": 24.86,
+      "fcf_ps_change_pct": 73.7,
+      "peak_p_fcf": 48.10,
+      "current_p_fcf": 10.69,
+      "p_fcf_change_pct": -77.78
+    },
+    "market_cap_basis": {
+      "peak_market_cap_usd_b": 331.1,
+      "current_market_cap_usd_b": 105.63,
+      "market_cap_change_pct": -68.1,
+      "revenue_peak_usd_m": 15785,
+      "revenue_ttm_usd_m": 25198,
+      "revenue_change_pct": 59.6,
+      "peak_ps": 20.98,
+      "current_ps": 4.19,
+      "ps_change_pct": -80.0,
+      "diluted_shares_peak_m": 481,
+      "diluted_shares_now_m": 402,
+      "share_count_change_pct": -16.4
+    },
+    "log_attribution": {
+      "total_ln": -0.9520,
+      "earnings_ln": 0.5566,
+      "multiple_ln": -1.5086,
+      "multiple_share_of_move_pct": 158.5,
+      "earnings_share_of_move_pct": -58.5,
+      "plain_english": "158% of the drawdown is multiple compression. The earnings base did not deteriorate at all -- it grew ~75% and OFFSET 58% of the decline. Counterfactual: at an unchanged 68.7x the stock would be $1,201; at FY2021 EPS with today's 15.2x it would be $152."
+    },
+    "verdict": "THE MULTIPLE BROKE, NOT THE BUSINESS -- on every disclosed metric available as of 2026-08-07."
+  },
+
+  "net_new_arr_trend": {
+    "question": "Is net-new ARR still growing? (the single most falsifiable AI-erosion indicator)",
+    "disclosed_series_digital_media_net_new_arr_usd_b": {
+      "FY2023": 1.91,
+      "FY2024": 2.00,
+      "FY2025_derived": 1.98
+    },
+    "quarterly_disclosed_net_new_dm_arr_usd_m": {
+      "Q1FY23": 410, "Q2FY23": 470, "Q3FY23": 464, "Q4FY23": 569,
+      "Q1FY24": 432, "Q2FY24": 487, "Q3FY24": 504, "Q4FY24": 578
+    },
+    "last_quarter_net_new_arr_was_disclosed": "Q4 FY2024 ($578M) -- discontinued thereafter",
+    "dm_arr_yoy_growth_fy2025": [12.6, 12.1, 11.7, 11.5],
+    "total_adobe_arr_usd_b": {"FY2025_exit": 25.20, "FY2025_exit_fx_revalued": 25.66, "Q1FY26": 26.06, "Q2FY26": 27.10},
+    "q2fy26_net_new_total_arr_usd_b": 1.04,
+    "q2fy26_inorganic_semrush_usd_b": 0.48,
+    "q2fy26_organic_net_new_usd_b": 0.56,
+    "fy2026_arr_guide_pct": 10.2,
+    "fy2026_implied_organic_arr_growth_pct": 8.3,
+    "implied_organic_guide_down_pp": 1.9,
+    "trend_verdict": "STILL POSITIVE AND DOLLAR-FLAT. Net-new ARR ran $1.91B / $2.00B / ~$1.98B across FY2023-FY2025 -- no shrinkage. The GROWTH RATE is decelerating monotonically and mildly (12.6% -> 11.5% -> guided 10.2% incl. ~1.9pp of acquired Semrush ARR -> ~8.3% organic), roughly -1 to -1.5pp per year. This is a slope, not a cliff. 'AI killed it' is NOT visible in the numbers. The genuinely adverse fact is not the deceleration -- it is that Adobe retired the metric that would prove or disprove it, twice, exactly as the deceleration became visible.",
+    "disclosure_degradation": [
+      "Through Q4 FY2024: quarterly net-new Digital Media ARR + ending DM ARR + Creative ARR + Document Cloud ARR",
+      "FY2025: net-new ARR discontinued; Creative/Document Cloud split discontinued; only ending DM ARR + YoY remained",
+      "FY2026: Digital Media ARR discontinued entirely; three reportable segments (Digital Media / Digital Experience / Publishing and Advertising) COMBINED INTO ONE; only Total Adobe ending ARR + YoY remains"
+    ]
+  },
+
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 1, "confidence": "med-high", "finding": "Financial evidence is excellent and fully primary (SEC 8-K Ex-99.1 for Q2FY26/Q1FY26/Q4FY25/Q4FY24 + FY2025 & FY2021 10-K), with verbatim extracts in raw/. But the competitive side is EMPTY (web search budget exhausted 200/200 this run) and the key operating metric has been retired by the company. Cannot reach +2."},
+    {"module": "M2 Theme / Mechanism", "role": "context + conviction", "signal": 1, "confidence": "med", "finding": "97.0% of Q2 FY26 revenue is subscription; RPO $22.27B; revenue growth ACCELERATED to +12.7% YoY. The revenue machine is healthy and speeding up. But the split between 'professional workflow lock-in' and 'generative-substitutable' revenue is NEVER disclosed, so mechanism durability cannot be evidenced. Also: ARR is an ending-stock metric and revenue is a flow metric, so 'ARR decelerating + revenue accelerating' is consistent with BOTH a benign pricing-cadence story and an adverse churn story -- and this run cannot distinguish them (no NRR, no seat counts, no net-new ARR)."},
+    {"module": "M3 Profit Pool / Durability", "role": "conviction", "signal": 0, "confidence": "low-med", "finding": "An honest zero. Structural (category-blocking): PDF / ISO 32000, Acrobat's position in compliance and e-signature workflow, embedded Adobe Experience Platform enterprise contracts, and file-format gravity (PSD/AI/PRPROJ) in team pipelines. Merely incumbent (BSX-lesson exposed): standalone image and video GENERATION, template/social design (Canva), and collaborative UI design (Figma). Adobe does not disclose the revenue split across that line, so the module cannot resolve in either direction."},
+    {"module": "M4 Financial Reality", "role": "warning", "signal": 2, "confidence": "high", "finding": "The strongest module. TTM FCF $10.28B on $25.20B revenue = 40.8% FCF margin; capex only 0.8% of revenue (no hyperscaler capex problem); FY2025 beat the TOP END of its own revenue, ARR-growth and non-GAAP EPS guidance; FY2026 revenue and non-GAAP EPS targets RAISED mid-year; diluted share count 481M -> 402M (-16.4%) with buybacks fully covering SBC. The one blemish: FY2025 buybacks were 114% of FCF, turning net cash into $1.02B net debt."},
+    {"module": "M5 Inversion / Trap", "role": "risk", "signal": -1, "confidence": "med", "finding": "Three adverse structural facts arriving together: (1) metric degradation in two consecutive years, timed with visible ARR deceleration; (2) leadership vacuum -- CEO transition announced 2026-03-12 with no successor named 5 months later, CFO departed 2026-06-15 with an 'interim' replacement still in place; (3) buybacks exceeding FCF. Not a franchise-death signal, but a genuine monitoring/verifiability trap."},
+    {"module": "M6 Price / Position", "role": "price + output", "signal": 2, "confidence": "high", "finding": "Base 10y IRR +14.15% vs the 8% hurdle, with the bear case losing only -2.42%/yr over 10 years. Reverse-solve: at $265.74 with an unchanged 13x exit, the market is pricing owner earnings to compound at just +0.29%/yr for a decade -- i.e. flat forever -- while the company grows revenue 12.7% and guides non-GAAP EPS +16-17%. Price is NOT the binding constraint here."}
+  ],
+  "signal_vector": "+1 / +1 / 0 / +2 / -1 / +2 (net +5)",
+
+  "owner_earnings_anchor": {
+    "definition": "OE = TTM free cash flow - TTM stock-based compensation (SBC treated as a real cost; non-GAAP EPS deliberately NOT used)",
+    "ttm_ocf_usd_m": 10481,
+    "ttm_capex_usd_m": 201,
+    "ttm_fcf_usd_m": 10280,
+    "ttm_sbc_usd_m_est": 2050,
+    "oe0_usd_b": 8.20,
+    "ev_usd_b": 106.65,
+    "ev_over_oe0": 13.0,
+    "ttm_fcf_yield_on_price_pct": 9.36
+  },
+
+  "scenarios": [
+    {"name": "Bear", "thesis": "Generative substitution genuinely bites: revenue growth goes to zero then negative, non-GAAP operating margin compresses from ~45% toward ~33%, freemium cannibalizes paid seats", "oe0_usd_b": 8.20, "oe_cagr_pct": -6.0, "exit_multiple": 7.0, "oe_year10_usd_b": 4.42, "irr_5y_pct": -7.79, "irr_10y_pct": -2.42, "clears_8pct_hurdle": false},
+    {"name": "Base", "thesis": "Organic ARR growth settles around 7-8%, margins hold, buybacks continue, multiple does NOT re-rate (stays 13x)", "oe0_usd_b": 8.20, "oe_cagr_pct": 6.0, "exit_multiple": 13.0, "oe_year10_usd_b": 14.68, "irr_5y_pct": 14.14, "irr_10y_pct": 14.15, "clears_8pct_hurdle": true},
+    {"name": "Bull", "thesis": "Acrobat/Express freemium conversion works, AI-first ARR scales from $0.5B, multiple partially re-rates toward software norms (still far below the 48x peak)", "oe0_usd_b": 8.20, "oe_cagr_pct": 10.0, "exit_multiple": 18.0, "oe_year10_usd_b": 21.27, "irr_5y_pct": 24.90, "irr_10y_pct": 21.10, "clears_8pct_hurdle": true}
+  ],
+  "hurdle_pct": 8.0,
+
+  "implied_expectations": {
+    "note": "OE CAGR required over 10 years to earn exactly the 8% hurdle at $265.74",
+    "at_exit_10x": 1.95,
+    "at_exit_13x": 0.29,
+    "at_exit_16x": -1.09,
+    "read": "The market is pricing Adobe's owner earnings to be FLAT for a decade."
+  },
+
+  "business_verdict": "good",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD_TO_ADD",
+  "suggested_initial_size_pct": 3,
+  "suggested_max_size_pct": 6,
+  "buy_below_price": 306.0,
+  "buy_below_basis": "base-case 12% 10y IRR anchor. A 12% (not 8%) cushion is demanded because O1 (the falsifiable metric was retired) and O7 (CEO successor unnamed + interim CFO) mean the thesis cannot currently be monitored at normal cost.",
+
+  "price_ladder": {
+    "no_chase_ceiling": 352.0,
+    "no_chase_basis": "base-case 10% 10y IRR",
+    "buy_below_main_anchor": 306.0,
+    "starter_zone": "at or below $306; current $265.74 already qualifies -> initiate 3%",
+    "add_zone": "<= $252 (base-case 15% IRR) OR unchanged price once O1/O7 close (stable new-basis ARR disclosure + permanent CEO and CFO named) -> scale toward 6%",
+    "max_conviction_zone": "$193-225 (the 2026-06-25 closing low $193.41 / the 2026-07-24 close $225.11) if the thesis is intact",
+    "bear_downside_anchor": 137.0,
+    "bear_downside_basis": "price at which the bear case (OE -6%/yr for 10y, exit 7x) still returns 8% -- i.e. what Adobe is worth if AI genuinely wins",
+    "bull_8pct_ceiling": 672.0
+  },
+
+  "price_position": {
+    "distance_from_52wk_high_pct": -28.4,
+    "distance_from_52wk_low_pct": 39.8,
+    "wk52_high": 370.86,
+    "wk52_low": 190.12,
+    "wk52_high_close_basis": 367.46,
+    "wk52_low_close_basis": 193.41,
+    "ytd_2026_pct": -24.07,
+    "drawdown_from_ath_pct": -61.40,
+    "important_caveat": "ADBE is NOT near its 52-week low. It bottomed at $193.41 on 2026-06-25 and has rallied +37.4% since, including +17.0% over four sessions from 2026-07-24 to 2026-07-29. The '-61.5%' framing is measured against the 2021 all-time high; the market has already begun re-rating. Tripwires T1/T2 pass on their own merits, not by exemption."
+  },
+
+  "binding_constraint": "COMPLETENESS / VERIFIABILITY -- explicitly NOT price. The base case clears the 8% hurdle by 6pp and the bear case loses only 2.4%/yr; price offers a genuine margin of safety. What caps this dossier is that Adobe retired the single most falsifiable operating metric (net-new Digital Media ARR, then Digital Media ARR itself, then collapsed three reportable segments into one) exactly as ARR growth decelerated from 12.6% to 11.5%, AND is simultaneously operating without a named CEO successor (5 months) or a permanent CFO (2 months). The thesis is currently correct on the numbers and expensive to keep monitoring.",
+
+  "watch_to_add_trigger": "Any ONE of: (1) two consecutive quarters of Total Adobe organic ARR growth holding at or above ~8% on the new basis; (2) a permanent CEO and CFO named without a strategic pivot; (3) Adobe restoring a net-new or segment-level ARR disclosure; (4) price into $193-252 with the thesis intact. Any of these supports scaling from 3% toward 6%.",
+
+  "kill_criteria": [
+    {"id": "K-A", "condition": "Organic Total Adobe ARR growth below 7% for two consecutive quarters", "state": "AMBER", "detail": "FY2026 guidance implies ~8.3% organic -- only ~1.3pp of buffer. The single most important line to watch."},
+    {"id": "K-B", "condition": "Total revenue constant-currency growth falls below 8%", "state": "GREEN", "detail": "Q2 FY26 +11% cc / +12.7% as reported; accelerating"},
+    {"id": "K-C", "condition": "Non-GAAP operating margin falls below 40%", "state": "GREEN", "detail": "Q2 FY26 44.5%; FY2026 guided ~45.0%"},
+    {"id": "K-D", "condition": "CEO successor still unnamed at FY2026 year-end, OR interim CFO persists beyond two quarters, OR an external hire pivots strategy", "state": "AMBER / FIRING-ADJACENT", "detail": "CEO transition announced 2026-03-12 (5 months, unresolved); CFO interim since 2026-06-15 (2 months). Board signed a CLO retention letter that sunsets 12 months after a new CEO starts."},
+    {"id": "K-E", "condition": "Further disclosure degradation -- Total Adobe ARR also discontinued, basis changed again, or AI-first ARR stops being updated", "state": "AMBER", "detail": "Already degraded TWICE (FY2025 net-new ARR removed; FY2026 DM ARR removed + segments merged). A third instance is an automatic downgrade."},
+    {"id": "K-F", "condition": "Buybacks persistently exceed FCF while net debt rises", "state": "AMBER", "detail": "FY2025 buybacks $11.28B = 114% of FCF; net cash became $1.02B net debt"},
+    {"id": "K-G", "condition": "Price above ~$352 with no fundamental upgrade", "state": "GREEN", "detail": "Current $265.74"},
+    {"id": "K-H", "condition": "ANY quantifiable share/seat-loss evidence at BSX magnitude (PFA 100%->41%)", "state": "GREEN BUT UNOBSERVABLE", "detail": "No such evidence found. The problem is that Adobe's current disclosure basis has made this class of evidence unobservable from outside -- which is the real cost of K-E."}
+  ],
+
+  "runner_dissent": "I am using 'no bad news' as 'good news'. Every optimistic conclusion in this card rests on a negative proposition: AI erosion is not visible in the disclosed data. But Adobe removed net-new ARR in FY2025 and removed Digital Media ARR (plus merged three segments into one) in FY2026 -- timed exactly with ARR growth sliding from 12.6% to 11.5%. Management framed it as a shift to customer-group reporting; the effect is that from FY2026 onward, outsiders can no longer verify whether the creative business itself is losing customers. I cannot prove intent, but I must concede: if I ran a slowly bleeding company, this is precisely what I would do. The BSX lesson is that a first mover can go from 100% to 41% share in 2.5 years -- and BSX's share was OBSERVABLE. Adobe's no longer is. Second, ARR is an ending-stock metric and revenue is a trailing flow metric, so 'ARR decelerating while revenue accelerates' is equally consistent with benign pricing cadence and with churn that has not yet hit the P&L; with no NRR, no seat count and no net-new ARR, this run genuinely cannot tell them apart. Third, Adobe is replacing its CEO and CFO simultaneously, in the middle of the attack. That is why initial size is 3% rather than the 5-6% the IRR alone would justify. Against all that: the current price implies owner earnings compound at +0.29%/yr for a decade while the company just RAISED revenue and non-GAAP EPS guidance, grew revenue 12.7%, converts 40.8% of revenue to FCF on 0.8% capex intensity, and loses only 2.4%/yr in a harsh bear case. That payoff structure is rare. My STARTER is not because it is insufficiently cheap -- it is because I cannot see half of what I am buying, and the invisible half is the crux. Hence binding_constraint = COMPLETENESS, not PRICE.",
+
+  "open_questions": {
+    "blocking": [
+      {"id": "O1", "q": "Net-new ARR retired; Digital Media basis cannot be reconstructed from FY2026 disclosure"},
+      {"id": "O2", "q": "Firefly standalone revenue / direct AI monetization not confirmed from a primary source (secondary reports ~$300M ARR, +50% QoQ, unverified)"},
+      {"id": "O3", "q": "Adobe's AI compute purchase obligations / commitments not extracted from the 10-K -- the largest single unknown in the owner-earnings bridge"},
+      {"id": "O7", "q": "CEO successor unnamed; CFO still interim"},
+      {"id": "O8", "q": "No primary competitor financials (Canva, Figma, OpenAI, Google) -- web search budget exhausted at 200/200 this run; deliverable (c) is qualitative only"}
+    ],
+    "monitoring": [
+      {"id": "O4", "q": "No NRR / churn / paid-seat disclosure (Adobe has never disclosed these)"},
+      {"id": "O5", "q": "Total AI-Influenced ARR is DEFINED in the Q4 FY2025 glossary but no figure is given in the release -- a definition without a number"},
+      {"id": "O6", "q": "Q2 FY26 G&A +44.8% YoY ($377M -> $546M), unexplained"},
+      {"id": "O10", "q": "Q2 FY26 earnings call transcript not obtained from a primary source"}
+    ],
+    "non_blocking": [
+      {"id": "O9", "q": "FY2023/FY2024 Total Adobe ARR history (in the investor datasheet PDF) -- fetch failed; affects charting only"}
+    ]
+  },
+
+  "sources_used": [
+    {"source_id": "ADBE-8K-Q2FY26", "tier": "A1", "public_date": "2026-06-11", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm"},
+    {"source_id": "ADBE-8K-Q1FY26", "tier": "A1", "public_date": "2026-03-12", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm"},
+    {"source_id": "ADBE-8K-Q4FY25", "tier": "A1", "public_date": "2025-12-10", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm"},
+    {"source_id": "ADBE-8K-Q4FY24", "tier": "A1", "public_date": "2024-12-11", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbeex991q424.htm"},
+    {"source_id": "ADBE-10K-FY25", "tier": "A1", "public_date": "2026-01-15", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm"},
+    {"source_id": "ADBE-10Q-Q2FY26", "tier": "A1", "public_date": "2026-06-15", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000112/adbe-20260529.htm"},
+    {"source_id": "ADBE-8K-20260717", "tier": "A1", "public_date": "2026-07-17", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000120/adbe-20260714.htm"},
+    {"source_id": "ADBE-8K-AGM-2026", "tier": "A1", "public_date": "2026-04-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000101/adbe-20260415.htm"},
+    {"source_id": "ADBE-8K-PSP-2026", "tier": "A1", "public_date": "2026-01-27", "url_or_path": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000019/adbe-20260126.htm"},
+    {"source_id": "S-YHOO-ADBE", "tier": "A1(price)", "public_date": "2026-08-07", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE"},
+    {"source_id": "ADBE-SA-STATS", "tier": "B1", "public_date": "2026-08-07", "url_or_path": "https://stockanalysis.com/stocks/adbe/"},
+    {"source_id": "ADBE-SA-FIN", "tier": "B1", "public_date": "2026-08-07", "url_or_path": "https://stockanalysis.com/stocks/adbe/financials/"}
+  ]
+}

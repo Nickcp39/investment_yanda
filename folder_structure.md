@@ -4,7 +4,7 @@
 > 读这一份 + `current_process.md` 就能定位任何工作，**不要全仓扫描**——
 > `sources/`、`notes/`、`logs/` 是海量原始素材，按需检索即可。
 >
-> 最后更新: 2026-07-25 · 结构变动时同步更新本文件
+> 最后更新: 2026-08-07 · 结构变动时同步更新本文件
 
 ## 快速入口（按优先级）
 
@@ -24,7 +24,8 @@ companies/            个股研究档案（最大目录，~30 个 ticker）
 ├── <ticker>/<日期>/     每次研究 = 一个日期快照文件夹（dossier 格式，见下）
 ├── _company_research_template/   dossier 模板
 └── _<批次名>_<日期>/    批量研究的计划与汇总（如 _sp500_medical_2026-07-05、
-                         _ai_robotics_2026-07-10、_mega7_2026-06-19）
+                         _ai_robotics_2026-07-10、_mega7_2026-06-19、
+                         _derated_bigtech_2026-08-07）
 
 sectors/              行业研究
 ├── us-healthcare/       美国医疗（PBM 深度，L1/L2 分层调研）
@@ -40,8 +41,11 @@ studies/              专题研究（跨行业/跨资产）
 
 macro/                宏观（hyperscaler capex、存储周期、美日收益率曲线等）
 theses/               市场地图与投资论文（2026-market-map.md 等）
-execution_plans/      具体标的的投资执行计划（BTC、MSFT，md + html 双格式）
+execution_plans/      仓位与定投执行计划（BTC、QQQ/SPY/BRK、个股；md + html 双格式）
 backtests/            回测与 pipeline 时点测试（asof_<日期>_*）
+├── SPY_QQQ_5年滚动回报_*/   SPY/QQQ 逐年五年滚动窗口
+├── 黄金_货币供应_估值_*/     金价对 M2 的 σ 通道 + 无未来函数的前瞻收益回测
+└── 黄金_vs_SPY_QQQ_相对收益_*/  黄金相对 SPY/QQQ 的 1/3 年回测；主信号为严格 10 年滚动 σ
 career-thesis/        职业方向论文（AI+Healthcare）
 personal/             个人 namespace（职业 thesis、决策日志；规则见其 README）
 ```

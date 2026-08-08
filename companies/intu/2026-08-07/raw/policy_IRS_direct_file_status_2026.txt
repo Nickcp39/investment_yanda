@@ -1,0 +1,101 @@
+EXTRACT: US GOVERNMENT TAX-FILING POLICY — STATUS AS OF 2026-08-07
+Assembled 2026-08-07. Tier: B1 (trade/primary-adjacent press) + A1 (Intuit 10-K risk factor).
+NOTE: irs.gov / treasury.gov primary documents were NOT fetched this run. Everything below that is
+not the Intuit 10-K is B1 press reporting of a primary IRS communication. See OPEN O9/O10/O11.
+
+================================================================================
+1. IRS DIRECT FILE — CANCELLED FOR THE 2026 FILING SEASON
+================================================================================
+Source: Federal News Network, "IRS tells states Direct File 'will not be available' in 2026"
+        https://federalnewsnetwork.com/it-modernization/2025/11/irs-direct-file-will-not-be-available-in-2026-agency-tells-states/
+        Public date: 2025-11-05
+Source: Tax Notes, "IRS Shutters Direct File, Citing Cost and Low Uptake"
+        https://www.taxnotes.com/featured-news/irs-shutters-direct-file-citing-cost-and-low-uptake/2025/11/05/7t7q0
+        Public date: 2025-11-05
+
+QUOTED FROM THE REPORTING (the underlying document is an IRS email to state revenue departments,
+dated 2025-11-03, from IRS product manager Cindy Noe):
+
+    "IRS Direct File will not be available in Filing Season 2026. No launch date has been
+     set for the future."
+
+Treasury's stated rationale, per the same reporting: a combination of "low participation and
+relatively high costs and burdens on the federal government." Treasury put the program's cost at
+$41 million to operate for tax year 2024, i.e. at least $138 per return filed.
+
+TIMELINE
+  2024 filing season  — pilot, 12 states
+  2025 filing season  — expanded to 25 states; 296,531 returns filed
+                        (attributed to the Center for Taxpayer Rights)
+  2025-11-03          — IRS notifies states: not available for Filing Season 2026
+  2026 filing season  — Direct File not in market
+
+SCALE CHECK (runner arithmetic)
+  296,531 returns / ~160,000,000 US individual e-filed returns = 0.19%
+  Even a tenfold survival would be ~2% of the market. Direct File was never large enough to
+  explain a de-rating from 35x to 13.5x forward earnings.
+
+--------------------------------------------------------------------------------
+CAPTURED LEAD — "FY2026 was Intuit's first tax season with no IRS Direct File"
+--------------------------------------------------------------------------------
+STATUS: This is the RUNNER'S INFERENCE from the primary cancellation above, NOT a separately
+sourced statement by Intuit or the IRS. The chain is: Direct File operated in the 2024 and 2025
+filing seasons; it was cancelled for the 2026 filing season; Intuit's FY2026 (2025-08-01 to
+2026-07-31) contains the 2026 filing season. Therefore FY2026 is the first Intuit fiscal year
+since the program launched in which no IRS Direct File competed for returns.
+It is stated as an inference wherever it appears in this dossier and is NOT entered in facts.md
+as a company-disclosed fact.
+
+CONSEQUENCE FOR THE THESIS (the important part): the FY2026 tax season that management called
+"not the overall tax season we expected" happened in a year when the government competitor had
+been REMOVED. That makes the TurboTax unit and share loss HARDER to blame on policy, not easier.
+
+================================================================================
+2. LEGISLATIVE SUCCESSOR
+================================================================================
+Section 70607 of the One Big Beautiful Bill Act directs the Treasury Department to study
+replacement models through public-private partnerships. Directionally this favours the
+commercial preparers (Intuit's historical channel) over a government-built filer.
+Runner note: the section number and its content are as reported by the B1 sources above; the
+statutory text was NOT read this run.
+
+================================================================================
+3. INTUIT'S OWN RISK-FACTOR LANGUAGE (A1 — FY2025 10-K, filed 2025-09-03)
+================================================================================
+URL: https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm
+
+VERBATIM:
+    "Our consumer tax business also faces significant, increasing competition from the public
+     sector, where we face the risk of federal and state taxing authorities implementing
+     revenue-raising strategies that involve developing and providing government tax software or
+     other government return preparation systems at public expense. These or similar programs
+     have been and may continue to be introduced or expanded in the future, which may change the
+     voluntary compliance tax system in ways that could cause us to lose customers and revenue.
+     For example, the IRS made available a free direct filing system and has stated it will
+     explore ways to expand eligibility for the program, including partnering with more states.
+     Additionally, the legacy IRS Free File Program enables the IRS to offer free commercial tax
+     software directly to qualifying taxpayers, and taxpayer adoption of this program could
+     expand with increased awareness of and government support for the program."
+
+NOTE ON DATING: this 10-K was filed 2025-09-03, i.e. two months BEFORE the 2025-11-03
+cancellation. The risk factor is therefore STALE relative to what actually happened. The FY2026
+10-K (expected ~early Sept 2026) should be read for revised language — a material softening
+would be corroborating evidence for the "policy threat eased" reading.
+
+Intuit's Q3 FY2026 press release still lists "potential governmental encroachment in our tax
+business" among its forward-looking risk factors (A1, 2026-05-20), i.e. the company has not
+declared the risk closed.
+
+================================================================================
+4. WHAT WAS NOT VERIFIED THIS RUN (carried to OPEN)
+================================================================================
+O9  — IRS e-file authorization mechanics (Authorized e-File Provider status, EFIN issuance,
+      Modernized e-File transmission requirements, Form 8879 signature rules). This is the
+      LOAD-BEARING support for the claim that a general-purpose AI agent cannot itself transmit
+      a US federal return. In this dossier that claim is REASONING, not citation.
+O10 — FTC / multistate AG "free" advertising matters: the 2022 $141M multistate settlement and
+      the 2024 FTC final order; 2026 status and any appeal not checked.
+O11 — Exact date Intuit exited the IRS Free File Alliance (believed 2021) not verified.
+O12 — Actual measured share for private free/low-price competitors (Cash App Taxes, FreeTaxUSA)
+      and for the AI entrants named by sell-side (Perplexity Tax, Prime Meridian, Chime Tax).
+      Only sell-side narrative was obtained; no primary share data.

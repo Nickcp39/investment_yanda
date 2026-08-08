@@ -1,0 +1,51 @@
+claim_id,claim,value,unit,period,source_id,tier,url,public_date,note
+C001,as_of price (settled close),73.69,USD,2026-08-06,YAHOO-NFLX-PX,B1,https://query1.finance.yahoo.com/v8/finance/chart/NFLX,2026-08-06,split-adjusted; cross-checked vs stockanalysis delta 0.00pct
+C002,shares issued and outstanding,4163.94,millions,2026-06-30,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm,2026-07-17,exact 4163939676; cover page and balance sheet agree
+C003,market cap,306840,USD millions,2026-08-06,DERIVED,B1,4163.94M x 73.69,2026-08-06,derived
+C004,52-week high,126.71,USD,2026-08-06,YAHOO-NFLX-PX,B1,https://query1.finance.yahoo.com/v8/finance/chart/NFLX,2026-08-06,intraday 2025-09-05 split-adjusted
+C005,52-week low,65.08,USD,2026-08-06,YAHOO-NFLX-PX,B1,https://query1.finance.yahoo.com/v8/finance/chart/NFLX,2026-08-06,intraday 2026-07-17 split-adjusted
+C006,all-time-high closing price,133.91,USD,2025-06-30,YAHOO-NFLX-PX,B1,https://query1.finance.yahoo.com/v8/finance/chart/NFLX,2026-08-06,split-adjusted; outside 52-week window
+C007,stock split ratio,10,x,2025-11-17,NFLX-8K-SPLIT-1030,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528025000408/nflx-20251030.htm,2025-10-30,10-for-1 forward; record 2025-11-10; distributed 2025-11-14; first adjusted trading day 2025-11-17
+C010,revenue,45183.0,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm,2026-01-23,plus15.9pct YoY
+C011,operating income,13326.6,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm,2026-01-23,operating margin 29.5pct
+C012,net income,10981.2,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm,2026-01-23,diluted EPS 2.53 split-adjusted
+C013,revenue,12559.9,USD millions,Q2 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R2.htm,2026-07-17,plus13.4pct YoY
+C014,operating income,4192.6,USD millions,Q2 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R2.htm,2026-07-17,operating margin 33.4pct record
+C015,interest and other income,2903.8,USD millions,H1 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R2.htm,2026-07-17,contains the 2.8B WBD termination fee; H1 2025 was 90.5
+C020,additions to content assets,17096.6,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,cash content spend
+C021,amortization of content assets,16422.2,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,non-cash addback
+C022,additions to content assets,9774.4,USD millions,H1 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R5.htm,2026-07-17,plus32.3pct YoY
+C023,amortization of content assets,8529.2,USD millions,H1 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R5.htm,2026-07-17,plus11.4pct YoY
+C024,cash content spend to amortization ratio,1.146,x,H1 2026,DERIVED,A1,9774.4 / 8529.2,2026-07-17,derived from primary
+C025,cash content spend to amortization ratio,1.127,x,TTM Jun 2026,DERIVED,A1,19485.5 / 17296.2,2026-07-17,derived from primary
+C026,additions to content assets,12554.7,USD millions,FY2023,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,strike year; ratio 0.884x
+C027,amortization of content assets,14197.4,USD millions,FY2023,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,exceeded cash spend - FY2023 FCF was FLATTERED
+C030,net cash provided by operating activities,10149.3,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,
+C031,purchases of property and equipment,688.2,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,
+C032,free cash flow,9461.1,USD millions,FY2025,DERIVED,A1,10149.3 minus 688.2,2026-01-23,matches company-reported quarterly sum 9460
+C033,free cash flow,11152.0,USD millions,TTM Jun 2026,DERIVED,A1,company quarterly FCF sum 2660+1872+5094+1525,2026-07-16,CONTAMINATED by the 2.8B one-off
+C034,free cash flow,1525.0,USD millions,Q2 2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,minus32.7pct YoY vs 2267 in Q2 2025
+C035,stock-based compensation,368.4,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,only 0.8pct of revenue
+C036,repurchases of common stock,9127.2,USD millions,FY2025,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/R5.htm,2026-01-23,
+C037,repurchases of common stock,4714.4,USD millions,Q2 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R5.htm,2026-07-17,largest single quarter on record
+C040,content assets net,33837.6,USD millions,2026-06-30,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R6.htm,2026-07-17,licensed 12229.7 plus produced 21607.8
+C041,total debt,14309.3,USD millions,2026-06-30,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R6.htm,2026-07-17,short-term 2483.8 plus long-term 11825.5
+C042,cash and cash equivalents,9099.2,USD millions,2026-06-30,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R6.htm,2026-07-17,
+C043,net debt,5244.2,USD millions,2026-06-30,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,company-computed
+C044,unrecorded streaming content obligations,19600,USD millions,2026-06-30,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R54.htm,2026-07-17,off balance sheet; total content obligations 25106.7
+C050,FY2026 revenue guidance low,51000,USD millions,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,range 51.0 to 51.4B plus13-14pct
+C051,FY2026 operating margin guidance,31.5,pct,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,vs 29.5pct FY2025
+C052,FY2026 free cash flow guidance,12500,USD millions,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,INCLUDES after-tax impact of the 2.8B WBD fee; pre-fee guide was ~11B
+C053,FY2026 cash content to amortization ratio guidance,1.10,x,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,company stated
+C054,FY2026 ads revenue guidance,3000,USD millions,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,rough doubling; ~5.9pct of guided revenue
+C060,view hours,97000,millions of hours,H1 2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,plus2.0pct YoY vs plus1.5pct in FY2025
+C061,UCAN revenue,5432,USD millions,Q2 2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,plus10pct YoY down from plus18pct in Q4 2025
+C062,live programming share of content spend,5,pct,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,just over 5pct of spend for ~1pct of view hours
+C063,GenAI titles,300,count,FY2026,NFLX-SL-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm,2026-07-16,roughly 300 titles used GenAI workflows; no cost quantification given
+C070,WBD termination fee received,2800,USD millions,Q1 2026,NFLX-10Q-Q2-26,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/R14.htm,2026-07-17,recorded in interest and other income; paid by PSKY on behalf of WBD 2026-02-27
+C071,WBD transaction total consideration,82700,USD millions,2025-12-04,NFLX-10K-FY25,A1,https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm,2026-01-23,equity value 72.0B; amended 2026-01-19 to all-cash 27.75 per share
+C072,share price move on WBD termination day,13.77,pct,2026-02-27,YAHOO-NFLX-PX,B1,https://query1.finance.yahoo.com/v8/finance/chart/NFLX,2026-08-06,84.59 to 96.24; ~+40B market cap vs a 2.8B fee
+C080,owner earnings anchor chosen,10000,USD millions,FY2026E,DERIVED,B1,midpoint of A2 8352 and A4 11000,2026-08-07,judgment; see valuation.md section 2.3
+C081,base case 10y IRR,7.54,pct,10y from 2026-08-06,DERIVED,B1,model/scenario_model.csv,2026-08-07,below the 8pct hurdle by 0.5pp
+C082,buy_below STARTER trigger,70.50,USD,2026-08-07,DERIVED,B1,152.48 discounted at 8pct for 10y equals 70.63 rounded down,2026-08-07,minus4.3pct from as_of price
+C083,TTM FCF per share change vs one year ago,0.3,pct,TTM Jun 2026 vs TTM Jun 2025,DERIVED,B1,2.006 vs 1.999,2026-08-07,the drawdown decomposition result - owner earnings per share are flat

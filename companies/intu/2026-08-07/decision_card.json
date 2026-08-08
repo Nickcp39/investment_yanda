@@ -1,0 +1,176 @@
+{
+  "ticker": "INTU",
+  "as_of": "2026-08-06",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-08-07",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 62,
+  "context_label": "multiple_broke_business_mostly_didnt_one_leg_genuinely_cracking",
+  "as_of_price": 321.91,
+  "as_of_market_cap": 88054000000,
+  "share_basis_note": "273,537 thousand shares outstanding as of 2026-05-14 per the FY2026 Q3 10-Q cover page (A1), cross-checked against stockanalysis.com (273.54M, delta 0.00%). x $321.91 = $88.054B. PRICE BASIS: $321.91 is the 2026-08-06 SETTLED close, the last settled close <= run_date. The 2026-08-07 intraday print (~$328.2-328.6, +2.0%) was NOT used as the freeze edge because the session had not settled at run time -- same discipline as the GOOGL 2026-07-24 dossier. Two-source cross-check: Yahoo chart API 2026-08-06 close = 321.91 and stockanalysis.com history 2026-08-06 close = 321.91, delta 0.00%.",
+  "fiscal_year_note": "Intuit's fiscal year ends July 31. FY2026 = 2025-08-01 through 2026-07-31 and is NOT YET REPORTED -- the Q4/FY2026 8-K is scheduled for 2026-08-25, 18 days after run_date. All FY2026 full-year figures in this dossier are GUIDANCE (2026-05-20), not actuals. Do not mix FY with CY.",
+
+  "verdicts": {
+    "business_verdict": "good",
+    "new_money_verdict": "STARTER",
+    "existing_position_verdict": "HOLD_TO_ADD",
+    "suggested_initial_size_pct": 2,
+    "suggested_max_size_pct": 6,
+    "buy_below": 328,
+    "verdict_ceiling": "STARTER",
+    "verdict_ceiling_basis": "completeness 62% falls in the 60-80% band -> ceiling STARTER; card does not exceed ceiling",
+    "binding_constraint": "COMPLETENESS + UNRESOLVED DURABILITY, not price. Base 10y IRR +10.2% clears the 8% hurdle with 2.2pt cushion at the current price. What caps the position is three dated evidence gaps -- FY2026 full-year + TurboTax unit comparison (2026-08-25), FY2026 ARPC / paying-customer growth (FY2026 10-K, ~early Sept), and any quantified AI monetization (Investor Day 2026-09-17) -- all of which resolve within six weeks."
+  },
+
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 1, "confidence": "med-high",
+     "finding": "Primary-source base is strong: FY2025 10-K, FY26 Q3 10-Q, and three 8-Ks (FY25 Q4 / FY26 Q2 / FY26 Q3 earnings releases) all fetched directly from SEC EDGAR with full text, plus the 2026-03-16 Item 7.01 8-K verbatim. Price double-sourced at delta 0.00%. Weakness: policy status, competitive share, and every earnings-call quote rest on B-tier secondary transcripts (O6); FY2026 full-year is structurally absent (O1)."},
+    {"module": "M2 Theme / Mechanism", "role": "context + conviction", "signal": 1, "confidence": "med-high",
+     "finding": "Two distinct mechanisms, not one. QuickBooks/GBS is a genuine annuity locked by plumbing (bank/card feeds and reconciliation history, 50-state payroll tax registration, embedded payments + QuickBooks Capital lending, ~1M accountant channel, audit-grade cost of migrating books) -- 9M FY26 QBO Accounting +24%, Online Ecosystem +20%, mid-market +38%. TurboTax is a different mechanism: a deliberate trade of units for price (federal units down four straight years, FY22 42.7M -> FY25 39.2M -> FY26E -2%; ARPU +11%; TurboTax Live +36% to $2.8B = 53% of TurboTax revenue). The arithmetic still works, but the moat has migrated from DISTRIBUTION to EXPERT NETWORK + BRAND, which is thinner and collides with AI directly."},
+    {"module": "M3 Profit Pool / Durability", "role": "conviction", "signal": 1, "confidence": "med",
+     "finding": "GBS segment operating margin 76.7% (vs 76.8% PY) with no visible crack -- this leg alone supports the current market cap. Offsetting: Consumer segment operating margin fell 82.4% -> 80.8% (-1.6pt); TurboTax e-file share quantified DOWN ~1pt for the first time; Mailchimp (~7% of revenue per Goldman est.) is a failed $12B acquisition now declining YoY with no impairment taken; Credit Karma is a credit-cycle flow business (FY2023 already printed -9% revenue / -19% segment operating income), not a moat."},
+    {"module": "M4 Financial Reality", "role": "conviction", "signal": 1, "confidence": "high",
+     "finding": "The earnings base GREW through the drawdown: TTM revenue +11.1%, TTM GAAP diluted EPS +19.9% ($13.67 -> $16.39), TTM FCF +26.7% ($6,123M -> $7,755M). Capex is 0.45% of revenue. Net cash +$0.6B at 2026-04-30. Deductions: FY2026 OCF is inflated by a ~$1.4B one-time deferred-tax release (LT DTA $1,222M -> $113M; 9M deferred taxes +$1,150M vs -$278M PY) that will not repeat; SBC is $1,549M over 9M (9.6% of revenue) and $3,341M of buybacks was needed just to take diluted shares 283 -> 279; both segment operating margins fell YoY; a 17% workforce reduction (~3,100 of ~18,200) with $300-340M of charges lands in Q4."},
+    {"module": "M5 Inversion / Trap Test", "role": "risk", "signal": -1, "confidence": "med",
+     "finding": "The real risk is narrow and specific: structural TurboTax unit loss plus a pricing ceiling. The bear mechanism is credible on cost structure (Goldman: an AI model can process a standard individual return for ~$0.12 against up to $162 paid to TurboTax) and Intuit's own disclosure already shows leakage (units down four years, share -1pt, pay-nothing customers 8M -> 7M, 'We lost on price'). NOT a franchise-death case though: the policy threat was REFUTED this cycle (IRS Direct File cancelled for the 2026 season), no AI tax product has any demonstrated e-file share, and the QuickBooks leg shows zero deterioration. Trap-shape is 'one cracking leg priced as four dead legs', not a value trap."},
+    {"module": "M6 Price / Position", "role": "price + output", "signal": 1, "confidence": "high",
+     "finding": "100% of the -60.1% drawdown is multiple compression: (1+19.9% EPS) x (1-66.8% P/E) = -60.2%, and (1+26.7% FCF) x (1-69.2% P/FCF) = -61.0%, both reconciling to the actual -60.1%. At $321.91 the base 10y IRR is +10.2% versus an 8% hurdle, with bear -5.9% and bull +19.8%. Implied expectations from the current price require only ~4-9% OE/share CAGR (i.e. ~1-6% at the company level) -- the market is pricing Intuit close to no growth for a decade. Price is NOT the binding constraint here."}
+  ],
+  "signal_vector": [1, 1, 1, 1, -1, 1],
+  "signal_net": 4,
+
+  "drawdown_decomposition": {
+    "window": "2025-07-30 peak close to 2026-08-06 settled close",
+    "price_change_pct": -60.1,
+    "price_change_pct_dividend_adjusted": -59.7,
+    "peak_close": 807.39,
+    "peak_close_dividend_adjusted": 798.42,
+    "cycle_low_close": 255.07,
+    "cycle_low_date": "2026-06-25",
+    "cycle_low_drawdown_from_peak_pct": -68.4,
+    "rebound_from_cycle_low_pct": 26.2,
+    "ttm_revenue_change_pct": 11.1,
+    "ttm_gaap_eps_change_pct": 19.9,
+    "ttm_non_gaap_eps_change_pct": 14.0,
+    "ttm_fcf_change_pct": 26.7,
+    "trailing_pe_gaap_peak": 59.1,
+    "trailing_pe_gaap_now": 19.6,
+    "trailing_pe_change_pct": -66.8,
+    "forward_pe_non_gaap_peak": 35.0,
+    "forward_pe_non_gaap_now": 13.5,
+    "p_fcf_peak": 36.8,
+    "p_fcf_now": 11.4,
+    "p_fcf_change_pct": -69.2,
+    "reconciliation_eps_basis": "(1+0.199)*(1-0.668)=0.398 -> -60.2%",
+    "reconciliation_fcf_basis": "(1+0.267)*(1-0.692)=0.390 -> -61.0%",
+    "conclusion": "100% of the drawdown is multiple compression; the earnings base grew 20-27%.",
+    "was_there_a_guidance_cut": "NO overall cut. FY2026 revenue guidance was RAISED (from $20.997-21.186B / +12-13% on 2025-08-21 to $21.341-21.374B / +13-14% on 2026-05-20) and non-GAAP EPS guidance was RAISED +3.4% (from $22.98-23.18 to $23.80-23.85). The ONLY operating line cut was TurboTax (approximately 8% -> approximately 7%). GAAP operating income guidance fell only because it absorbs the $300M restructuring charge.",
+    "peer_benchmark_same_window": {"INTU": -60.1, "NOW": -40.0, "CRM": -29.5, "ADBE": -28.5, "WDAY": -28.4, "HRB": -16.1, "MSFT": -2.6, "NDX": 25.8,
+      "note": "Computed in-run from the Yahoo chart API. INTU underperformed the Nasdaq-100 by ~86 points. Critically, the pure tax comparable H&R Block fell only 16.1% -- if this were genuinely 'AI kills tax prep', HRB should not be nearly unharmed. The gap argues the market re-rated Intuit's MULTIPLE and its whole-platform AI exposure, not the tax franchise specifically."}
+  },
+
+  "segment_verdicts": [
+    {"segment": "TurboTax", "size": "~25% of revenue and operating income (Goldman est.)", "ai_substitutability": "MEDIUM-HIGH",
+     "where_the_moat_actually_is": "NOT in computing the tax (an LLM can). In: IRS Authorized e-File Provider / EFIN credentialing and the MeF transmission channel; accuracy guarantees and audit-representation liability (who pays when it is wrong); 50 separate state regimes; eight-to-nine-figure annual customer-acquisition spend.",
+     "verdict": "Moat is real but THINNING, and the leak is company-admitted. Federal units down four straight years (FY22 42.7M -> FY25 39.2M, -8.2% cumulative; FY26E -2%); e-file share quantified DOWN ~1pt for the first time; pay-nothing customers 8M -> 7M; CEO: 'We lost on price'. BUT the arithmetic still works: ARPU +11%, TurboTax Live +36% to $2.8B (53% of TurboTax revenue), Live customers +38%, paying units +2%. Intuit is deliberately abandoning the low end and moving upmarket -- accounting-positive, strategically a surrender of DISTRIBUTION. HAIRCUT, NOT VETO.",
+     "kill_criterion": "K-A / K-B"},
+    {"segment": "QuickBooks / Global Business Solutions", "size": "~45% of revenue; 76.7% segment operating margin", "ai_substitutability": "LOW",
+     "where_the_moat_actually_is": "The interface is trivially copyable by AI; the PLUMBING is not. Four layers: (1) direct bank/card data connections plus years of reconciliation history; (2) 50-state payroll tax registration and remittance as registered agent; (3) embedded payments (money-transmitter licensing, payment flow, QuickBooks Capital lending off that flow); (4) ~1 million accountants as a channel -- accountants do not migrate their clients' books. Migration cost is audit-grade: transaction history + reconciliations + payroll history + tax filings.",
+     "verdict": "ZERO deterioration anywhere in the disclosed data. 9M FY2026 QBO Accounting +24%, Online Ecosystem +20%, GBS +17%; FY2025 ARPC +14%, paying customers +5%; mid-market (QBO Advanced + Intuit Enterprise Suite) +38%; online payment volume +30%. Only crack: paying-customer growth 6% -> 5% (growth leaning harder on price) and international only +9-10%. AI is currently Intuit's WEAPON on this leg, not its enemy. This leg alone supports the current market cap.",
+     "kill_criterion": "K-C"},
+    {"segment": "Credit Karma", "size": "~11% of revenue; FY2025 segment operating margin 37%", "ai_substitutability": "LOW",
+     "where_the_moat_actually_is": "Not a software moat at all. It is credit-cycle traffic arbitrage on ~140M member credit profiles plus lender/issuer matching relationships.",
+     "verdict": "NOT an AI story -- a CYCLE story. FY2026 decelerating quarter by quarter: +27% -> +23% -> +15%, with growth almost entirely from personal loans and auto insurance, the two most cyclical verticals. FY2023 already printed -9% revenue and -19% segment operating income when the credit cycle turned. Member count never disclosed. Apply a cyclical discount; do not credit it with a moat premium.",
+     "kill_criterion": "K-E"},
+    {"segment": "Mailchimp", "size": "~7% of revenue, ~$1.5B (Goldman est.; Intuit never discloses it)", "ai_substitutability": "HIGH -- AND ALREADY REALIZED",
+     "where_the_moat_actually_is": "Essentially nowhere. Marketing copy and email sequences are the single best LLM use case, and switching cost is exporting a contact list.",
+     "verdict": "The ONLY leg where the AI thesis is confirmed by data rather than narrative. Evidence chain closes on primary sources: company-stated ex-Mailchimp growth gap (Q3 FY26 GBS +15% reported vs +17% ex-Mailchimp; Online Ecosystem +19% vs +22%); the 10-Q MD&A increment bridge implies Mailchimp ~-$2M in Q3 and ~-$15M over 9M; CFO admits revenue 'was down slightly' and that Intuit is 'rightsizing our investment in Mailchimp'; the return-to-double-digit-growth target slipped from 'exiting fiscal 2026' (Nov 2025) to 'some time beyond fiscal 2026' (Feb 2026 press release, A1). A $12B (2021) acquisition, still carried with NO impairment. This is realized value destruction and a negative capital-allocation data point.",
+     "kill_criterion": "K-D"}
+  ],
+
+  "policy_risk_assessed_independently": {
+    "framing": "Assessed on its own timeline, deliberately NOT folded into the AI narrative.",
+    "status_2026": "IRS Direct File is CANCELLED for the 2026 filing season. IRS product manager Cindy Noe told state revenue departments in a 2025-11-03 email that 'IRS Direct File will not be available in Filing Season 2026. No launch date has been set for the future.' Treasury cited low participation and high cost.",
+    "measured_scale": {"direct_file_returns_2025_season": 296531, "approx_total_us_individual_efiled_returns": 160000000, "share_pct": 0.19,
+      "note": "Even a tenfold survival of Direct File would be ~2% share. It was never the thing that took Intuit to 13.5x forward earnings."},
+    "cost_cited_by_treasury": "$41M to operate for tax year 2024, at least $138 per return",
+    "legislative_successor": "OBBBA Section 70607 directs Treasury to study public-private partnership replacement models -- directionally FAVOURABLE to Intuit, not adverse.",
+    "implications": [
+      "The policy threat EASED across the entire drawdown window rather than worsening. Direct File was killed on 2025-11-03/05 and the stock kept falling that month -- the market was not pricing policy.",
+      "The 2026-05-21 -20.02% day had nothing to do with policy: management attributed the shortfall to price competition among DIY filers earning under $50,000 and said explicitly 'None of this has anything to do with AI.'",
+      "Therefore attributing TurboTax share loss to government encroachment is WRONG. The actual leakage is to private free/low-price competitors plus Intuit's own deliberate abandonment of the low end (pay-nothing 8M -> 7M is strategy, not theft).",
+      "Residual open risk: the Section 70607 public-private replacement is an undetermined variable, and the FTC / multistate 'free' advertising matters were NOT verified this run (O10)."
+    ]
+  },
+
+  "intuit_own_ai": {
+    "monetization_disclosed": false,
+    "finding": "ZERO quantified AI monetization was found this run -- no AI-attributed revenue, no AI-driven ARPC uplift, no AI pricing figure. The non-disclosure is itself the finding.",
+    "directional_only": ["accounting AI agents powering recommendations across 50M+ transactions weekly", "management says it will 'introduce a consumption based model for our AI and human intelligence services' -- NOT YET STARTED"],
+    "spending_is_confirmed": {"rd_9m_fy2026_usd_m": 2519, "rd_growth_pct": 18.4, "revenue_growth_pct": 14.0, "note": "R&D growing faster than revenue; hosting inside 'outside services' up $16M in Q3 and $45M over 9M"},
+    "cost_side_action": "17% full-time workforce reduction (~3,100 of ~18,200), $300-340M charges, framed as 'faster, leaner', fewer management layers, fewer 'coordination-heavy roles' -- i.e. trading AI for COST, not AI for PRICE.",
+    "verdict": "Intuit is currently PAYING for AI, not being paid for it. Primary driver of the M5 -1 and a main reason completeness is capped at 62%. Natural unlock: Investor Day 2026-09-17."
+  },
+
+  "scenarios": {
+    "hurdle_pct": 8, "horizon_years": 10, "oe0_usd_bn": 4.8, "oe0_per_share": 17.55,
+    "oe0_bridge": "FY2026E GAAP net income ~$4.41B + restructuring add-back after tax ~$0.23B + acquired-intangible amortization after tax ~$0.38B = ~$5.02B (accounting side). Cash-side cross-check: FY2026E FCF ~$7.6B less the ~$1.4B one-time deferred-tax release less ~$2.05B SBC = ~$4.15B. Range $4.1-5.2B, midpoint $4.8B adopted. Company non-GAAP net income of $6.65B was DELIBERATELY REJECTED because it adds back all $2.05B of SBC.",
+    "bear": {"oe_cagr": -0.03, "net_share_shrink": 0.015, "exit_p_oe": 10, "exit_price": 151, "cum_dividends": 24, "irr_10y": -0.059},
+    "base": {"oe_cagr": 0.08, "net_share_shrink": 0.025, "exit_p_oe": 16, "exit_price": 781, "cum_dividends": 70, "irr_10y": 0.102},
+    "bull": {"oe_cagr": 0.13, "net_share_shrink": 0.035, "exit_p_oe": 22, "exit_price": 1871, "cum_dividends": 84, "irr_10y": 0.198},
+    "implied_expectations_at_current_price": "At $321.91 with an 8% discount rate, the market requires only ~5.7% OE/share CAGR at a 16x exit (~8.6% at 12x, ~3.6% at 20x). Net of ~2.5%/yr buyback shrink that is ~1-6% company-level OE growth -- close to pricing a decade of no growth.",
+    "sensitivity_breakpoint": "Base survives a 13x exit (+8.0%) and survives the strictest cash-only OE0 of $4.1B (+8.4%). The ONE variable that breaks it is OE CAGR falling to 5% (+7.1%, FAIL) -- i.e. K-A and K-B failing together. That is precisely what the 2026-08-25 unit comparison will answer."
+  },
+
+  "price_ladder": {
+    "no_chase_above": 394, "buy_below_main": 328, "current": 321.91, "add_below": 274,
+    "tested_cycle_low": 255.07, "bear_breakeven": 175,
+    "downside_character": "-46% to the bear breakeven is a survivable non-permanent impairment, not a solvency question: capex 0.45% of revenue, net cash at 2026-04-30, no customer concentration."
+  },
+
+  "kill_criteria": [
+    {"id": "K-A", "name": "TurboTax federal units", "state": "AMBER", "trigger": "2026-08-25 unit comparison at -4% or worse, or e-file share loss greater than 1pt -> downgrade toward WATCH", "current": "FY26E guide -2% units, -1pt share"},
+    {"id": "K-B", "name": "Pricing power breaks", "state": "GREEN", "trigger": "ARPU growth below +5%", "current": "+11%"},
+    {"id": "K-C", "name": "QuickBooks annuity breaks", "state": "GREEN", "trigger": "Online Ecosystem growth below 15%, or ARPC growth below 10%, or paying-customer growth negative", "current": "+20% / +14% / +5%"},
+    {"id": "K-D", "name": "Mailchimp impairment", "state": "ORANGE_NEAR_FIRING", "trigger": "Goodwill/intangible impairment on the $12B acquisition", "current": "revenue already declining YoY; company 'rightsizing'; impairment looks like a matter of timing"},
+    {"id": "K-E", "name": "Credit Karma cycle reversal", "state": "AMBER", "trigger": "revenue -10% YoY (FY2023 already did -9%)", "current": "+15% and decelerating from +27%"},
+    {"id": "K-F", "name": "AI competitor proof", "state": "GREEN", "trigger": "any pure-AI tax product reaching >2% IRS e-file share", "current": "no evidence at all; narrative only"},
+    {"id": "K-G", "name": "Valuation / no-chase", "state": "GREEN", "trigger": "price above ~$394 with no fundamental upgrade", "current": "$321.91"},
+    {"id": "K-H", "name": "Capital allocation", "state": "GREEN", "trigger": "large acquisition instead of buyback while own stock trades at 13.5x forward", "current": "opposite -- buybacks accelerated, $8B new authorization, founder and entire ELT terminated all 10b5-1 sell plans on 2026-03-16"}
+  ],
+
+  "dated_event_timeline": [
+    {"date": "2025-07-30", "move_pct": null, "event": "Peak close $807.39 (dividend-adjusted $798.42)"},
+    {"date": "2025-08-21", "move_pct": -5.0, "event": "FQ4 FY2025 results + initial FY2026 guidance (+12-13% revenue); market judged it slow"},
+    {"date": "2025-11-03", "move_pct": null, "event": "IRS tells states Direct File will not be available in Filing Season 2026 -- FAVOURABLE, no stock reaction"},
+    {"date": "2025-11-20", "move_pct": 4.0, "event": "FQ1 FY2026 beat, full-year guidance reiterated"},
+    {"date": "2026-02-03", "move_pct": -10.9, "event": "NO company event. Pure AI-narrative de-rating; the 2025-11-05 to 2026-02-03 stretch fell ~34%, of which roughly -38% was P/E compression"},
+    {"date": "2026-02-26", "move_pct": 3.5, "event": "FQ2 FY2026 beat, guidance reiterated; Mailchimp double-digit recovery pushed to 'beyond fiscal 2026'"},
+    {"date": "2026-03-16", "move_pct": null, "event": "8-K Item 7.01: founder and entire executive leadership team terminated ALL outstanding Rule 10b5-1 sell plans; buybacks accelerated"},
+    {"date": "2026-05-21", "move_pct": -20.02, "event": "Reaction to FQ3 FY2026: beat-and-RAISE overall, but TurboTax guide 8%->7%, units -2%, e-file share -1pt, 'We lost on price', 17% workforce reduction. THE single largest day of the drawdown"},
+    {"date": "2026-06-02", "move_pct": -8.9, "event": "Goldman Sachs (Gabriela Borges) downgrade Neutral -> SELL, PT $519 -> $276, citing AI tax entrants and a ~$0.12 vs $162 unit-cost gap"},
+    {"date": "2026-06-25", "move_pct": null, "event": "Cycle low close $255.07 (-68.4% from peak)"},
+    {"date": "2026-08-06", "move_pct": null, "event": "as_of settled close $321.91 (+26.2% off the cycle low)"},
+    {"date": "2026-08-25", "move_pct": null, "event": "FORWARD: Q4/FY2026 results -- includes the promised TurboTax federal unit comparison"},
+    {"date": "2026-09-17", "move_pct": null, "event": "FORWARD: Investor Day"}
+  ],
+
+  "open_questions": [
+    {"id": "O1", "class": "blocking", "q": "FY2026 full-year actuals: Q4 TurboTax federal unit comparison, actual e-file share, full-year FCF, FY2027 guidance", "unlock": "2026-08-25"},
+    {"id": "O2", "class": "blocking", "q": "FY2026 Online Ecosystem ARPC and paying-customer growth (10-K-only disclosure)", "unlock": "FY2026 10-K, ~early Sept 2026"},
+    {"id": "O5", "class": "blocking", "q": "Any quantified AI monetization at all -- none found this run", "unlock": "Investor Day 2026-09-17"},
+    {"id": "O6", "class": "blocking", "q": "Q3 FY26 official earnings-call script PDF could not be fetched (IR site returned 403); the load-bearing quotes rest on B1 secondary transcripts", "unlock": "retry IR / SEC"},
+    {"id": "O3", "class": "monitoring", "q": "Mailchimp standalone revenue and customer count never disclosed; figures here are reverse-engineered from the 10-Q MD&A increment bridge"},
+    {"id": "O4", "class": "monitoring", "q": "Whether the $12B Mailchimp acquisition requires goodwill/intangible impairment"},
+    {"id": "O7", "class": "monitoring", "q": "The dollar range of TurboTax FY2026 revenue guidance ($5.305-5.330B -> $5.277-5.282B) was not located in the 8-K text"},
+    {"id": "O8", "class": "monitoring", "q": "The securities class action filed 2026-07-21 -- specific allegations and exposure"},
+    {"id": "O9", "class": "monitoring", "q": "IRS e-file authorization thresholds (Authorized e-File Provider / EFIN / MeF) were NOT verified from irs.gov primary sources this run. This is the load-bearing support for the TurboTax moat argument and is currently reasoning, not citation."},
+    {"id": "O10", "class": "monitoring", "q": "FTC / multistate AG 'free' advertising matters -- 2026 status not verified"},
+    {"id": "O11", "class": "monitoring", "q": "Exact date Intuit exited the IRS Free File Alliance (believed 2021) not verified"},
+    {"id": "O12", "class": "monitoring", "q": "Actual share data for Cash App Taxes / FreeTaxUSA / Perplexity Tax / Prime Meridian / Chime Tax -- only sell-side narrative this run, no primary share figures"}
+  ],
+
+  "runner_dissent": "Attacking the optimistic side first: my base OE CAGR of 8% assumes QuickBooks keeps compounding and Consumer holds on price. Goldman's mechanism is not nonsense -- an AI model can process a standard individual return for roughly $0.12 against up to $162 paid to TurboTax. Historically, when a product's cost structure is compressed by three orders of magnitude and the remaining moat is credentialing plus brand plus ad budget, ten-year survival is not the base rate. Worse, Intuit's own response -- ceding free filers, moving upmarket -- is accounting-positive but strategically a surrender of DISTRIBUTION, and the expert-network wall is thinner than the distribution wall was. And I am grading TurboTax on a haircut rather than a veto largely because the real FY2026 unit data does not exist until 2026-08-25. If that print shows -5% instead of -2%, the base case in this card must be rewritten. Attacking the pessimistic side: the hardest set of facts in this dossier is that in a year Intuit was supposedly being destroyed by AI, it RAISED revenue guidance, RAISED non-GAAP EPS guidance, grew TTM free cash flow 26.7%, and on 2026-03-16 the founder and the entire executive leadership team terminated every outstanding 10b5-1 sell plan while accelerating buybacks against a new $8B authorization. Insiders halting sales and buying harder after a halving is one of the few non-financial signals this framework weights heavily. The cross-sectional read is sharper still: the pure tax comparable H&R Block fell only 16.1% over the identical window while the Nasdaq-100 ROSE 25.8% -- INTU underperformed the index by ~86 points. If this were truly 'AI kills tax preparation', HRB would not be nearly untouched. That spread argues what got repriced was Intuit's MULTIPLE, not Intuit's business. Why this still stops at STARTER 2%: not price (price already clears with cushion) and not the business (GBS alone supports the market cap), but three specific gaps with hard unlock dates -- FY2026 full-year and the unit comparison (2026-08-25), FY2026 ARPC and paying customers (FY2026 10-K, early September), and any quantified AI monetization (Investor Day 2026-09-17). All three land inside six weeks. On a name with -46% of downside room and +20% of bull IRR, buying the right to be in the room with 2% and deciding on 6% after those three datasets is the correct SHAPE under this framework. That is a sequencing judgement, not a courage one."
+}

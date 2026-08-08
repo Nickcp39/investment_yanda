@@ -1,0 +1,119 @@
+claim_id,claim,value,unit,as_of,source_id,tier,verified,note
+C1,Last close price,265.74,USD,2026-08-07,S-YHOO-ADBE,A1,yes,Yahoo daily bar via scripts/market_data_download.py; frozen as_of_price
+C2,Last close price (cross-check),265.83,USD,2026-08-07,ADBE-SA-STATS,B1,yes,delta 0.03pct vs C1
+C3,Alternative settled-close basis (disclosed conflict),260.24,USD,2026-08-06,ADBE-SA-STATS,B1,yes,"parallel fetch treated 08-07 as unsettled; -2.07pct; base 10y IRR +14.63pct at this price; verdict unchanged"
+C4,All-time high close,688.37,USD,2021-11-19,S-YHOO-ADBE,A1,yes,independently re-fetched from Yahoo daily series
+C5,Drawdown from ATH,-61.40,pct,2026-08-07,derived,derived,yes,265.74 / 688.37 - 1
+C6,52-week high (intraday basis),370.86,USD,2026-08-07,ADBE-SA-STATS,B1,yes,Yahoo closing-high basis is 367.46 on 2025-09-18 (0.92pct basis gap)
+C7,52-week low (intraday basis),190.12,USD,2026-08-07,ADBE-SA-STATS,B1,yes,Yahoo closing-low basis is 193.41 on 2026-06-25 (1.73pct basis gap)
+C8,Rally off the 2026 closing low,37.4,pct,2026-08-07,derived,derived,yes,"265.74 vs 193.41 on 2026-06-25 -- ADBE is NOT near its 52wk low"
+C9,YTD 2026,-24.07,pct,2026-08-07,derived,derived,yes,"vs 2025-12-31 close 349.99; brief's reference -20.5pct not reproducible"
+C10,Shares outstanding,397.5,millions,2026-08-07,ADBE-SA-STATS,B1,yes,Q2 FY26 weighted diluted was 402M; FY2026 guided ~399M
+C11,Market cap,105.63,USD billions,2026-08-07,derived,derived,yes,397.5M x 265.74; stockanalysis 105.67B (delta 0.04pct)
+C12,Enterprise value,106.65,USD billions,2026-08-07,derived,derived,yes,market cap + net debt 1.019B
+C13,Q2 FY2026 total revenue,6618,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,+13pct YoY as reported / +11pct constant currency
+C14,Q2 FY2026 subscription revenue,6416,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,97.0pct of total revenue (derived)
+C15,Q2 FY2026 GAAP diluted EPS,4.25,USD,2026-05-29,ADBE-8K-Q2FY26,A1,yes,includes 0.17 non-cash goodwill impairment charge
+C16,Q2 FY2026 non-GAAP diluted EPS,5.96,USD,2026-05-29,ADBE-8K-Q2FY26,A1,yes,
+C17,Q2 FY2026 GAAP operating income,2238,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,33.8pct margin; 35.3pct excluding 70M impairment + 30M legal accrual
+C18,Q2 FY2026 non-GAAP operating margin,44.5,pct,2026-05-29,ADBE-8K-Q2FY26,A1,yes,
+C19,Q2 FY2026 Total Adobe ending ARR,27.10,USD billions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,"including approximately 480M from Semrush (verbatim)"
+C20,Q2 FY2026 AI-first ARR,500,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,"headline: 'AI-first ARR triples year over year and exceeds 500 million'; = 1.8pct of Total ARR (derived)"
+C21,Q2 FY2026 RPO,22270,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,cRPO 67pct
+C22,Q2 FY2026 operating cash flow,2165,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,
+C23,Q2 FY2026 capex,58,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,purchases of property and equipment
+C24,Q2 FY2026 stock-based compensation,534,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,8.1pct of revenue (derived)
+C25,Q2 FY2026 BP&C subscription revenue,1853,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,+16pct YoY; Document Cloud + Acrobat + Adobe Express
+C26,Q2 FY2026 C&MP subscription revenue,4537,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,+13pct YoY; Digital Experience + remaining Creative Cloud
+C27,Q2 FY2026 diluted share count,402,millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,weighted average; 8.5M shares repurchased in the quarter
+C28,Q1 FY2026 total revenue,6398,USD millions,2026-02-27,ADBE-8K-Q1FY26,A1,yes,+12pct YoY
+C29,Q1 FY2026 Total Adobe ending ARR,26.06,USD billions,2026-02-27,ADBE-8K-Q1FY26,A1,yes,
+C30,FY2025 total revenue,23769,USD millions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+11pct YoY
+C31,FY2025 GAAP diluted EPS,16.70,USD,2025-11-28,ADBE-8K-Q4FY25,A1,yes,non-GAAP 20.94
+C32,FY2025 operating cash flow,10031,USD millions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,
+C33,FY2025 capex,179,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,0.75pct of revenue
+C34,FY2025 free cash flow,9852,USD millions,2025-11-28,derived,derived,yes,OCF - capex
+C35,FY2025 Total Adobe ending ARR,25.20,USD billions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+11.5pct YoY
+C36,FY2025 Total Adobe ARR after FX revaluation,25.66,USD billions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,"verbatim: revalued +460M entering FY2026, primarily from foreign exchange rate changes"
+C37,FY2025 Digital Media ending ARR,19.20,USD billions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+11.5pct YoY -- LAST TIME DM ARR WAS DISCLOSED
+C38,FY2025 Digital Media segment revenue,17649,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,74.3pct of total
+C39,FY2025 Digital Experience segment revenue,5864,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,24.7pct of total; +9pct YoY
+C40,FY2025 Digital Experience subscription revenue,5410,USD millions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+11pct YoY
+C41,FY2025 Publishing and Advertising revenue,256,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,shrinking; 70M goodwill impairment taken in Q2 FY26
+C42,FY2025 BP&C subscription revenue,6.50,USD billions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+15pct YoY
+C43,FY2025 C&MP subscription revenue,16.30,USD billions,2025-11-28,ADBE-8K-Q4FY25,A1,yes,+11pct YoY
+C44,Creative Cloud professional revenue ex-Acrobat/Express,10.89,USD billions,2025-11-28,derived,derived,yes,"C&MP 16.30 - DX subscription 5.41; 45.8pct of FY2025 revenue; DERIVED not disclosed"
+C45,FY2025 stock-based compensation,1942,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,
+C46,FY2025 share repurchases,11281,USD millions,2025-11-28,ADBE-10K-FY25,A1,yes,30.8M shares; = 114pct of FY2025 FCF (derived)
+C47,FY2025 weighted diluted shares,427,millions,2025-11-28,ADBE-10K-FY25,A1,yes,
+C48,FY2021 total revenue,15785,USD millions,2021-12-03,ADBE-10K-FY21,A1,yes,peak-multiple fiscal year
+C49,FY2021 GAAP diluted EPS,10.02,USD,2021-12-03,ADBE-10K-FY21,A1,yes,the denominator of the (a) decomposition
+C50,FY2021 operating cash flow,7230,USD millions,2021-12-03,ADBE-10K-FY21,A1,yes,
+C51,FY2021 capex,348,USD millions,2021-12-03,ADBE-10K-FY21,A1,yes,
+C52,FY2021 free cash flow,6882,USD millions,2021-12-03,derived,derived,yes,OCF - capex
+C53,FY2021 weighted diluted shares,481,millions,2021-12-03,ADBE-10K-FY21,A1,yes,
+C54,FY2021 FCF per share,14.31,USD,2021-12-03,derived,derived,yes,6882 / 481
+C55,FY2021 Digital Media ending ARR,12.24,USD billions,2021-12-03,ADBE-8K-Q4FY21,A1,yes,"Creative 10.30B + Document Cloud 1.93B; net new that quarter 571M"
+C56,FY2021 RPO,13990,USD millions,2021-12-03,ADBE-10K-FY21,A1,yes,vs 22270 at Q2 FY26 (+59.2pct)
+C57,TTM revenue,25198,USD millions,2026-05-29,derived,derived,yes,"Q3FY25 5988 + Q4FY25 6194 + Q1FY26 6398 + Q2FY26 6618; stockanalysis ttm 25.20B confirms"
+C58,TTM GAAP diluted EPS,17.48,USD,2026-05-29,derived,derived,yes,"4.18 + 4.45 + 4.60 + 4.25; stockanalysis EPS ttm 17.48 confirms exactly"
+C59,TTM operating cash flow,10481,USD millions,2026-05-29,derived,derived,yes,2198 + 3160 + 2958 + 2165
+C60,TTM capex,201,USD millions,2026-05-29,derived,derived,yes,72 + 34 + 37 + 58
+C61,TTM free cash flow,10280,USD millions,2026-05-29,derived,derived,yes,40.8pct FCF margin
+C62,TTM FCF per share,24.86,USD,2026-05-29,derived,derived,yes,5.01 + 7.50 + 7.11 + 5.24
+C63,TTM SBC (ESTIMATE),2050,USD millions,2026-05-29,derived,estimate,LABELED ESTIMATE,scaled from FY2025 1942 and Q2FY26 534 -- not a disclosed TTM figure
+C64,Owner earnings OE0,8.20,USD billions,2026-05-29,derived,derived,yes,TTM FCF 10280 - TTM SBC ~2050
+C65,EV / OE0,13.0,x,2026-08-07,derived,derived,yes,106.65 / 8.20
+C66,Trailing P/E,15.20,x,2026-08-07,derived,derived,yes,265.74 / 17.48
+C67,Peak trailing P/E,68.70,x,2021-11-19,derived,derived,yes,688.37 / 10.02
+C68,P/E change peak to now,-77.87,pct,2026-08-07,derived,derived,yes,THE HEADLINE MULTIPLE COMPRESSION
+C69,EPS change peak to now,74.5,pct,2026-08-07,derived,derived,yes,10.02 -> 17.48 -- THE EARNINGS BASE GREW
+C70,Decomposition identity check,0.38602,ratio,2026-08-07,derived,derived,yes,1.7445 x 0.22128 = 0.38602 -> -61.40pct with zero residual
+C71,Multiple share of the drawdown (log),158.5,pct,2026-08-07,derived,derived,yes,ln(0.22128) / ln(0.38602)
+C72,Earnings share of the drawdown (log),-58.5,pct,2026-08-07,derived,derived,yes,ln(1.7445) / ln(0.38602) -- earnings OFFSET the decline
+C73,Counterfactual price if multiple held at 68.7x,1201,USD,2026-08-07,derived,derived,yes,17.48 x 68.70
+C74,Counterfactual price if EPS held at FY2021,152,USD,2026-08-07,derived,derived,yes,10.02 x 15.20
+C75,Peak P/FCF,48.10,x,2021-11-19,derived,derived,yes,688.37 / 14.31
+C76,Current P/FCF,10.69,x,2026-08-07,derived,derived,yes,265.74 / 24.86
+C77,FCF per share change peak to now,73.7,pct,2026-08-07,derived,derived,yes,14.31 -> 24.86
+C78,Peak market cap,331.1,USD billions,2021-11-19,derived,derived,yes,481M x 688.37
+C79,Market cap change peak to now,-68.1,pct,2026-08-07,derived,derived,yes,vs price change -61.40pct; the 6.7pp gap is buybacks
+C80,Diluted share count change,-16.4,pct,2026-05-29,derived,derived,yes,481M -> 402M over 4.5 years
+C81,Net new Digital Media ARR FY2023,1.91,USD billions,2023-12-01,ADBE-8K-Q4FY23,A1,yes,sum of four disclosed quarters 410+470+464+569
+C82,Net new Digital Media ARR FY2024,2.00,USD billions,2024-11-29,ADBE-8K-Q4FY24,A1,yes,sum of four disclosed quarters 432+487+504+578
+C83,Net new Digital Media ARR FY2025 (DERIVED),1.98,USD billions,2025-11-28,derived,derived,LABELED DERIVED,19.20 - 17.22 (FX-revalued FY2024 base); metric no longer disclosed
+C84,Last disclosed quarterly net new Digital Media ARR,578,USD millions,2024-11-29,ADBE-8K-Q4FY24,A1,yes,THE LAST TIME THIS METRIC WAS EVER DISCLOSED
+C85,Digital Media ARR YoY growth FY2025 by quarter,12.6/12.1/11.7/11.5,pct,2025-11-28,ADBE-8K-Q1FY25..Q4FY25,A1,yes,monotonic mild deceleration ~-0.3 to -0.4pp per quarter
+C86,Q1 FY2026 net new Total ARR (DERIVED),0.40,USD billions,2026-02-27,derived,derived,LABELED DERIVED,26.06 - 25.66 revalued base
+C87,Q2 FY2026 net new Total ARR (DERIVED),1.04,USD billions,2026-05-29,derived,derived,LABELED DERIVED,27.10 - 26.06
+C88,Q2 FY2026 ORGANIC net new Total ARR (DERIVED),0.56,USD billions,2026-05-29,derived,derived,LABELED DERIVED,1.04 - 0.48 Semrush
+C89,FY2026 Total Adobe ending ARR growth guidance,10.2,pct,2026-06-11,ADBE-8K-Q2FY26,A1,yes,UNCHANGED from the original 2025-12-10 guide even after adding Semrush ARR
+C90,FY2026 implied ORGANIC ARR growth (DERIVED),8.3,pct,2026-06-11,derived,derived,LABELED DERIVED,"(25.66 x 1.102 - 0.48) / 25.66 - 1; implies a ~1.9pp organic guide-down never explained by the company"
+C91,FY2026 total revenue target (raised),26.50-26.60,USD billions,2026-06-11,ADBE-8K-Q2FY26,A1,yes,raised from 25.90-26.10B
+C92,FY2026 non-GAAP EPS target (raised),24.35-24.45,USD,2026-06-11,ADBE-8K-Q2FY26,A1,yes,raised from 23.30-23.50
+C93,FY2025 guidance beat -- revenue,23.77 vs 23.30-23.55,USD billions,2025-11-28,ADBE-8K-Q4FY24 vs Q4FY25,A1,yes,ABOVE the top end of guidance
+C94,FY2025 guidance beat -- DM ARR growth,11.5 vs 11.0,pct,2025-11-28,ADBE-8K-Q4FY24 vs Q4FY25,A1,yes,ABOVE guidance
+C95,FY2025 guidance beat -- non-GAAP EPS,20.94 vs 20.20-20.50,USD,2025-11-28,ADBE-8K-Q4FY24 vs Q4FY25,A1,yes,ABOVE the top end of guidance
+C96,Cash and equivalents plus short-term investments,5626,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,4919 + 707
+C97,Total debt,6645,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,current 1843 + long-term 4802
+C98,Net debt,1019,USD millions,2026-05-29,derived,derived,yes,0.1x TTM FCF -- negligible leverage
+C99,Goodwill,14041,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,46.9pct of total assets
+C100,Total stockholders equity,11518,USD millions,2026-05-29,ADBE-8K-Q2FY26,A1,yes,book value provides NO downside protection; treasury stock 53418M
+C101,Semrush acquisition consideration,1.87,USD billions,2026-04-28,ADBE-10Q-Q2FY26,A1,yes,"cash-flow line 1560M net of cash acquired; goodwill 1251M, intangibles 582M; company calls it 'not material'"
+C102,Buyback authorization remaining,26.78,USD billions,2026-05-29,ADBE-10Q-Q2FY26,A1,yes,2024-03 25B authorization + new 2026-04 25B authorization through 2030-04
+C103,CEO transition announced,2026-03-12,date,2026-03-12,ADBE-8K-Q1FY26,A1,yes,"Narayen (18 years) to step down once a successor is appointed; remains Chair; NO SUCCESSOR NAMED as of as_of (5 months)"
+C104,CFO departure,2026-06-15,date,2026-06-11,ADBE-8K-Q2FY26,A1,yes,"Dan Durn departed; Steve Day INTERIM CFO, still interim as of as_of (2 months)"
+C105,CLO retention letter,2026-07-14,date,2026-07-17,ADBE-8K-20260717,A1,yes,severance protections sunset 12 months after a new CEO commences
+C106,2026 Performance Share Program metrics,50pct rTSR + 50pct Net New Sales,text,2026-01-26,ADBE-8K-PSP-2026,A1,yes,"executives are paid on Net New Sales while the company stopped disclosing net-new ARR to investors"
+C107,Base case 10y IRR at as_of price,14.15,pct,2026-08-07,model/scenario_model.csv,derived,yes,OE CAGR +6pct exit 13x vs 8pct hurdle
+C108,Bear case 10y IRR at as_of price,-2.42,pct,2026-08-07,model/scenario_model.csv,derived,yes,OE CAGR -6pct exit 7x -- downside is a small loss not a wipeout
+C109,Bull case 10y IRR at as_of price,21.10,pct,2026-08-07,model/scenario_model.csv,derived,yes,OE CAGR +10pct exit 18x
+C110,Implied OE CAGR for 8pct IRR at unchanged 13x exit,0.29,pct,2026-08-07,model/scenario_model.csv,derived,yes,"THE HEADLINE: the market prices owner earnings FLAT for a decade while revenue grows 12.7pct"
+C111,buy_below,306,USD,2026-08-07,model/scenario_model.csv,derived,yes,base case 12pct 10y IRR; current price is 13.2pct below it
+C112,no-chase ceiling,352,USD,2026-08-07,model/scenario_model.csv,derived,yes,base case 10pct 10y IRR
+C113,bear downside anchor,137,USD,2026-08-07,model/scenario_model.csv,derived,yes,price at which the bear case still returns 8pct
+C114,Total AI-Influenced ARR,NOT DISCLOSED,USD,2025-11-28,ADBE-8K-Q4FY25,A1,yes,"DEFINED verbatim in the Q4 FY2025 glossary but NO FIGURE given in the release -- a definition without a number (facts.md O5)"
+C115,Firefly standalone revenue,NOT DISCLOSED,USD,2026-05-29,ADBE-8K-Q2FY26,A1,yes,"never disclosed in any primary filing; secondary reports of ~300M ARR NOT confirmed this run (facts.md O2)"
+C116,Net revenue retention / churn / paid seat counts,NOT DISCLOSED,pct,2026-05-29,ADBE-8K-Q2FY26,A1,yes,Adobe has never disclosed these (facts.md O4)
+C117,AI compute purchase obligations,NOT EXTRACTED,USD,2025-11-28,ADBE-10K-FY25,A1,no,"10-K purchase-obligations section not read this run -- largest single unknown in the OE bridge (facts.md O3, BLOCKING)"
+C118,Competitor primary financials,NOT OBTAINED,USD,2026-08-07,none,none,no,"web search budget exhausted 200/200; Canva/Figma/OpenAI/Google revenue and share all missing (facts.md O8, BLOCKING)"
