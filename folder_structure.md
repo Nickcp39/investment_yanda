@@ -40,6 +40,9 @@ studies/              专题研究（跨行业/跨资产）
 └── wealth_rankings/          福布斯富豪榜三快照（2008/2015/2025）利润池迁移
 
 macro/                宏观（hyperscaler capex、存储周期、美日收益率曲线等）
+└── ai_zeitgeist_timeline.md   AI 思潮逐季时间轴（2024Q3-2026Q3）：市场每季在
+                               担心什么 + 资金梯子走到第几级；与
+                               studies/ 的"思潮相对时间轴"同一手法
 theses/               市场地图与投资论文（2026-market-map.md 等）
 execution_plans/      仓位与定投执行计划（BTC、QQQ/SPY/BRK、个股；md + html 双格式）
 ├── btc_investment_plan_*_v3.md   BTC 现货定投现行版（v1/v2 已归档，只看 v3）
