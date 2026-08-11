@@ -4,8 +4,8 @@
 > 并用可证伪的预测卡衡量判断力。**
 >
 > 立约日期：2026-08-08 · 周期：12 个月
-> 配套：`frameworks/single_name_discipline.md`（操作条款）、
-> `execution_plans/position_book.md`（记账格式）
+> 配套：`discipline.md`（操作条款）、
+> `../execution_plans/position_book.md`（记账格式）
 
 ---
 
@@ -68,7 +68,7 @@
 
 ### E1 · 卖 put vs 挂限价单：那笔权利金到底值多少
 
-**目标**：验证 `single_name_discipline.md` §5.3 的论断——两者决策相同，只差权利金。
+**目标**：验证 `discipline.md` §5.3 的论断——两者决策相同，只差权利金。
 
 - 选一只你**真的想在 $X 买**的股票
 - **A 腿**：卖 1 张行权价 $X 的现金担保 put，锁定现金
@@ -133,7 +133,7 @@
 |---|---|
 | **预测命中率** | "我预期会发生什么"那栏，被验证的比例 |
 | **条款遵守率** | 有多少笔是条款触发的，多少笔是"想做" |
-| **归因四象限分布** | thesis 对/错 × 赚/亏（见 `position_book.md` §6）|
+| **归因四象限分布** | thesis 对/错 × 赚/亏（见 `../execution_plans/position_book.md` §6）|
 
 > **右上角「thesis 错但赚钱」的比例，是最重要的一个数。**
 > 它高 = 你的收益主要来自运气，流程还没成型。

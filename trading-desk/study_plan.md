@@ -5,8 +5,8 @@
 > 本文件只负责：**学什么顺序、每一课学完用哪个实验验收。**
 >
 > 立约日期：2026-08-08
-> 配套：`paper_trading_program.md`（实验 E1-E5）、
-> `single_name_discipline.md`（操作条款）、`position_book.md`（记账）
+> 配套：`train_plan.md`（实验 E1-E5）、
+> `discipline.md`（操作条款）、`../execution_plans/position_book.md`（记账）
 
 ---
 
@@ -23,8 +23,8 @@
 | 段 | 内容 | 载体 | 状态 |
 |---|---|---|---|
 | **① 理解** | 概念、定价、结算机制 | **OIC + CBOE 免费课程**（见 §1） | ⬜ **本文件** |
-| **② 学习** | 五个设计实验，模拟盘 $100k | `paper_trading_program.md` | ✅ 已建 |
-| **③ 测试** | 真金 $3,000，条款驱动，记账归因 | `single_name_discipline.md` + `position_book.md` | ✅ 已建 |
+| **② 学习** | 五个设计实验，模拟盘 $100k | `train_plan.md` | ✅ 已建 |
+| **③ 测试** | 真金 $3,000，条款驱动，记账归因 | `discipline.md` + `../execution_plans/position_book.md` | ✅ 已建 |
 
 **你自己想出的顺序是对的。缺的只是第一段。**
 
@@ -147,7 +147,7 @@
 | 4 | 结算与行权 | ⬜ | E5 | ⬜ | ⬜ |
 | 5 | 段永平 / Buffett | ⬜ | — | — | ⬜ |
 
-**五个阶段全过 + 五个实验全跑完 → 才进 `paper_trading_program.md` §6 的结业检查。**
+**五个阶段全过 + 五个实验全跑完 → 才进 `train_plan.md` §6 的结业检查。**
 **结业前，真金 $3,000 只做股票，不碰期权。**
 
 ---

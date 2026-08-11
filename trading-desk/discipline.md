@@ -3,8 +3,8 @@
 > **适用范围：散股桶的个股（NBIS、GOOGL、MSFT…）。**
 >
 > **不适用**：
-> - **BTC** → `execution_plans/btc_investment_plan_2026-08-07_v3.md` + `tax_residency_exit_plan.md`
-> - **大盘指数（QQQ/SPY/BRK.B）** → `execution_plans/equity_index_plan_2026-08-07.md`
+> - **BTC** → `../execution_plans/btc_investment_plan_2026-08-07_v3.md` + `../execution_plans/tax_residency_exit_plan.md`
+> - **大盘指数（QQQ/SPY/BRK.B）** → `../execution_plans/equity_index_plan_2026-08-07.md`
 >
 > 那两层是机械定投，没有自由裁量空间，也就没有本文件要治的病。
 > **本文件只管一件事：单个股票上，buy / sell / call / put 四个动作各自的触发条件。**
@@ -50,7 +50,7 @@
 | **BUY** | 价格 ≤ buy-below 带 **且** verdict ≥ STARTER **且** 完整度未封顶 | `decision_card.md` | ⬜ 未触发（$219.65 > $180） |
 | **SELL-S1** | monitor 变量 **2 项转 🔴** | `monitor.md` | ⬜ 待 Q2'26 6-K |
 | **SELL-S2** | 价格 ≥ Trim / no-chase zone | `decision_card.md` | ❌ **字段缺失**，见 §4.2 |
-| **SELL-S3** | 机会成本（组合层） | `trading_plan_2026_2030.md` | ❌ 文件不存在 |
+| **SELL-S3** | 机会成本（组合层） | `../execution_plans/trading_plan_2026_2030.md` | ❌ 文件不存在 |
 | **PUT（卖现金担保）** | 见 §5 三条铁门槛 **+ 资金规模门槛** | — | ❌ **资金规模不允许**，见 §5.1 |
 | **CALL** | 见 §6 | — | ❌ 全面禁止 |
 
@@ -138,7 +138,7 @@ NBIS 的卖出端就只有 S1 一条腿。**
 | 某个 monitor 变量转 🟡 | ❌ 🟡 是加密关注，不是动作 |
 | 越看越慌 | ❌ 这是 §7 的问题（看太勤），不是卖出问题 |
 
-**一个例外，需额外条件**：「好消息、坏反应」（`_derated_bigtech_2026-08-07/synthesis.md` C9）
+**一个例外，需额外条件**：「好消息、坏反应」（`../companies/_derated_bigtech_2026-08-07/synthesis.md` C9）
 —— 业绩全面超预期但股价大跌，是体制切换的当天可读信号。
 **但它单独不构成卖出理由，必须配合 monitor 变量的实际恶化。**
 
@@ -261,7 +261,7 @@ NBIS 的卖出端就只有 S1 一条腿。**
 
 > **如果这家公司明天退市、我必须持有十年不能交易，我还愿意持有吗？**
 
-这是 `souls_workflow.md` 里段永平（Chair）那条「100% 私有化测试」。
+这是 `../frameworks/souls_workflow.md` 里段永平（Chair）那条「100% 私有化测试」。
 
 - **愿意** → 持有是判断，不是逃避
 - **不愿意** → 你持有的理由是"还能涨"而不是"这生意好"，那么 S2 必须严格执行
@@ -309,7 +309,7 @@ NBIS 的卖出端就只有 S1 一条腿。**
 
 | 缺口 | 影响 | 状态 |
 |---|---|---|
-| **`trading_plan_2026_2030.md` 不存在** | S3（机会成本卖出）无规则；组合层"整体减多少、钱去哪"无人管。BTC v1/v2/v3 共 9 处引用指向空文件 | ⬜ 待写 |
+| **`../execution_plans/trading_plan_2026_2030.md` 不存在** | S3（机会成本卖出）无规则；组合层"整体减多少、钱去哪"无人管。BTC v1/v2/v3 共 9 处引用指向空文件 | ⬜ 待写 |
 | **dossier refresh 会丢 monitor.md** | `nbis/2026-07-10`（11 文件）相对 `2026-06-18`（28 文件）少了 monitor.md / inversion_map.md / postmortem.md。**最新的卡反而没有监控件** | ⬜ 待修流水线 |
 | **多数 decision_card 缺 Trim zone** | 只有 ASML / HWM 等少数有。**建议加入 decision_card 模板的必填字段** | ⬜ 待改模板 |
 

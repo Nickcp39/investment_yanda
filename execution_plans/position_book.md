@@ -6,7 +6,8 @@
 > **0 个**持仓记录。研究产出裁决后就断了 —— 于是"不知道自己为什么买、为什么卖"。
 > **那不是记性问题或纪律问题，是记账问题：从来没写下来过。**
 >
-> 操作规则见 `frameworks/single_name_discipline.md`。本文件只负责**记录**。
+> 操作规则见 `../trading-desk/discipline.md`；限额见 `../trading-desk/risk_limits.md`。
+> 本文件只负责**记录**。
 > 立约日期：2026-08-08
 
 ---
@@ -20,7 +21,7 @@
 
 这一栏是整个文件的全部意义。**它不靠意志力，靠一个必填字段。**
 
-合法的条款只有这些（出自 `single_name_discipline.md`）：
+合法的条款只有这些（出自 `../trading-desk/discipline.md`）：
 
 | 代码 | 含义 |
 |---|---|
@@ -146,6 +147,6 @@
 | 缺口 | 影响 | 状态 |
 |---|---|---|
 | 首次对账未做 | §1 表格是空的，台账还不能用 | ⬜ **第一步** |
-| NBIS 缺 Trim zone | S2 条款对 NBIS 无法触发（卖出只剩 S1 一条腿） | ⬜ 见 `single_name_discipline.md` §4.2 |
+| NBIS 缺 Trim zone | S2 条款对 NBIS 无法触发（卖出只剩 S1 一条腿） | ⬜ 见 `../trading-desk/discipline.md` §4.2 |
 | `trading_plan_2026_2030.md` 不存在 | S3 条款无规则可依 | ⬜ 待写 |
 | postmortem 环节实际未跑 | 7 个文件仅 4 个非空 | ⬜ 从下一次平仓开始强制 |

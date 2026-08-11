@@ -4,7 +4,7 @@
 > 读这一份 + `current_process.md` 就能定位任何工作，**不要全仓扫描**——
 > `sources/`、`notes/`、`logs/` 是海量原始素材，按需检索即可。
 >
-> 最后更新: 2026-08-07 · 结构变动时同步更新本文件
+> 最后更新: 2026-08-08 · 结构变动时同步更新本文件
 
 ## 快速入口（按优先级）
 
@@ -38,6 +38,16 @@ studies/              专题研究（跨行业/跨资产）
 ├── jp_cn_relative_timeline/  中日相对时间轴系列（以房价见顶为 T=0 对比
 │                             产业政策/思潮：自动化、半导体、汽车、医疗）
 └── wealth_rankings/          福布斯富豪榜三快照（2008/2015/2025）利润池迁移
+
+trading-desk/         交易训练台（执行端：什么时候动手、动多大、怎么记账）
+├── README.md            总纲 + 当前 Tier + 现在该做什么
+├── study_plan.md        理解：8 周排期，教材用 OIC/CBOE 免费一手源
+├── train_plan.md        学习：模拟盘 $100k + 五个设计实验 E1-E5
+├── discipline.md        测试：BUY/S1/S2/S3/PUT/CALL 六动作的触发条款
+├── targets.md           四层 KPI（收益率排最后）
+├── risk_limits.md       Tier 分级授权 + 硬风控线（额度是挣来的）
+├── progress.md          ★ 进度看板：想知道"在哪一关"只读这个
+└── journal/ experiments/ reviews/
 
 macro/                宏观（hyperscaler capex、存储周期、美日收益率曲线等）
 └── ai_zeitgeist_timeline.md   AI 思潮逐季时间轴（2024Q3-2026Q3）：市场每季在
@@ -118,6 +128,7 @@ notebooks/            Jupyter 分析
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | 了解当前整体仓位思路 | `theses/2026-market-map.md` + `execution_plans/` |
+| **学期权 / 练交易 / 我现在在哪一关** | `trading-desk/progress.md` |
 | 每天该投多少 / 投到什么时候 | `execution_plans/btc_investment_plan_*_v3.md` + `equity_index_plan_*.md` |
 | **什么时候能卖、卖了要交多少税** | `execution_plans/tax_residency_exit_plan.md` |
 | 接着上次的活干 | `current_process.md` |
