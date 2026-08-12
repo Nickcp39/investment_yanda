@@ -1,0 +1,67 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-08-12",
+  "run_date": "2026-08-12",
+  "pipeline_version": "lean-6module-v1.1",
+  "type": "EVENT_RERUN",
+  "refresh_of": "../2026-07-10/",
+  "trigger": "Q2 2026 6-K release",
+  "price_approx": 218,
+  "price_status": "UNVERIFIED_SECONDARY",
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "new_money_initial_size_pct": 0,
+  "buy_below_low": 150,
+  "buy_below_high": 180,
+  "starter_opens_below": 180,
+  "max_size_pct": 4,
+  "trim_no_chase_zone_suggested": 250,
+  "trim_zone_status": "DERIVED_PENDING_OWNER_SIGNOFF",
+  "trim_zone_derivation_range": [233, 302],
+  "ceiling_reason": ["price_no_MOS", "completeness_declined", "primary_sources_blocked"],
+  "completeness_pct_est": 50,
+  "verdict_ceiling_rule": "40-60pct => WATCH",
+  "modules": {
+    "M1_evidence": -1,
+    "M2_thesis": 1,
+    "M3_profit_pool": 1,
+    "M4_financial_reality": 0,
+    "M5_inversion": -2,
+    "M6_pricing": -1
+  },
+  "module_changes_vs_0710": {
+    "M1": "0 -> -1 (一手源被拦截, 2处冲突未解, active MW 仍 OPEN)",
+    "M3": "0 -> +1 (单MW价 $20M->$40-50M, 商品化被成交价反驳)",
+    "M4": "-1 -> 0 (adj EBITDA +$236.2M / 40.6% margin, 成本占比 29%->22.9%)"
+  },
+  "capital_cycle": {
+    "stage": "mid-late",
+    "caution": "PEAK-lean",
+    "note": "涨价不是周期证伪, 是周期第一步。决定性变量是供给响应时滞(变压器/燃气轮机 lead time)"
+  },
+  "kill_criteria": {
+    "K-A_active_MW": "AMBER_半解 (ARR加速但active MW第三季未披露)",
+    "K-B_anchor_customer": "GREEN_降温",
+    "K-C_financing_dilution": "GREEN_未触发但需重新定义(漏掉债务中间站)",
+    "K-D_rev_per_MW": "GREEN_反证(价格在涨)",
+    "K-E_capex_high_end": "GREEN_证伪(capex $20-25B 落低端)",
+    "K-F_concentration_ICFR": "UNKNOWN_待20-F",
+    "K-VAL_no_MOS": "RED_仍成立且更紧",
+    "K-G_leverage_NEW": "AMBER_新增(非流动负债一季 $4.10B->$8.50B)"
+  },
+  "monitor_red_count": 0,
+  "action_rule": "if 2+ reds -> trim",
+  "discipline_clause_check": {
+    "BUY": "NOT_TRIGGERED",
+    "S1_thesis": "NOT_TRIGGERED",
+    "S2_price": "NOT_TRIGGERED"
+  },
+  "action": "NO_ACTION_HOLD",
+  "blocking_open_items": [
+    "current actual active MW (3rd consecutive quarter)",
+    "deferred revenue figure CONFLICT (~$1.2B gap)",
+    "net debt basis CONFLICT",
+    "all Q2 claims are secondary sources (primary EGRESS_BLOCKED)"
+  ]
+}
