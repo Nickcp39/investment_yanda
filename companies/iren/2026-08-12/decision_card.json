@@ -1,0 +1,74 @@
+{
+  "ticker": "IREN",
+  "as_of": "2026-08-12",
+  "run_date": "2026-08-12",
+  "type": "FULL_RUN_NEW_NAME",
+  "pipeline_version": "lean-6module-v1.1",
+  "price_approx": 34.83,
+  "price_status": "UNVERIFIED_SECONDARY_RANGE_35_40",
+  "market_cap_musd": 14190,
+  "business_verdict": "not-yet-quality",
+  "new_money_verdict": "WATCH_leaning_AVOID",
+  "existing_position_verdict": "N/A_not_held",
+  "initial_size_pct": 0,
+  "buy_below": 21,
+  "max_size_pct": 2,
+  "trim_no_chase_zone": 60,
+  "modules": {
+    "M1": -1,
+    "M2": 1,
+    "M3": -1,
+    "M4": -2,
+    "M5": -2,
+    "M6": -1
+  },
+  "key_findings": {
+    "ai_cloud_share_of_revenue_pct": 23,
+    "ai_cloud_annualized_musd": 134.4,
+    "target_arr_ye2026_musd": 4000,
+    "multiple_required": 29.8,
+    "monthly_compound_required_pct": 46,
+    "funding_gap_musd": 21100,
+    "funding_gap_x_marketcap": 1.5,
+    "known_potential_dilution_pct": 26,
+    "short_interest_pct_float": 25
+  },
+  "financing_model_vs_nbis": {
+    "NBIS": "customer_prepayments_ATM_unused",
+    "IREN": "convertibles_and_equity_26pct_dilution"
+  },
+  "scenarios_2028": {
+    "bear": {
+      "arr_busd": 1.5,
+      "px": 4
+    },
+    "base": {
+      "arr_busd": 6,
+      "px": 29
+    },
+    "bull": {
+      "arr_busd": 12,
+      "px": 87
+    }
+  },
+  "base_case_implied_vs_price_pct": -17,
+  "kill_criteria": [
+    "K1 AI cloud QoQ<50%",
+    "K2 YE26 ARR<$2B",
+    "K3 equity raise<$30",
+    "K4 MSFT/NVDA renegotiation",
+    "K5 BTC<$50k & mining CF negative",
+    "K6 energized MW withheld 2 quarters"
+  ],
+  "discipline_check": {
+    "BUY": "NOT_TRIGGERED"
+  },
+  "action": "NO_POSITION_WATCHLIST",
+  "next_catalyst": "Q4 FY26 earnings 2026-08-27 after close",
+  "blocking_open": [
+    "primary sources EGRESS_BLOCKED",
+    "current energized MW",
+    "BTC fair-value revaluation split in Q1 FY26 net income",
+    "funding gap methodology"
+  ]
+}
