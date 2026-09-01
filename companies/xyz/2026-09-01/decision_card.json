@@ -1,0 +1,49 @@
+{
+  "ticker": "XYZ",
+  "company": "Block, Inc.",
+  "former_ticker": "SQ",
+  "as_of": "2026-09-01",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "batch": "saas_derate_2026-09-01",
+  "status": "DECISION_DRAFT",
+  "clean": false,
+  "clean_blocked_reason": "INC-004: quote sources EGRESS_BLOCKED; verify_freshness.py cannot run; 0 verified claims",
+  "tripwire_T1_current_near_52wk_high": true,
+  "tripwire_T1_justification": "real state, not data error: crash was 5 years ago (-70.9% from 2021 ATH) while at 52wk high",
+  "completeness_pct": 48,
+  "price": {"value": 82.02, "date": "2026-08-31", "status": "unverified_secondary"},
+  "ath": {"value": 281.81, "date": "2021-08-05"}, "drawdown_from_ath": -0.709,
+  "wk52_high": 82.50, "dist_to_52wk_high": -0.006,
+  "market_cap_bn": 49.28, "shares_m": 600.79, "shares_yoy": -0.0354,
+  "business_verdict": "good_but_migrating",
+  "new_money_verdict": "WATCH",
+  "suggested_initial_size_pct": 0, "suggested_max_size_pct": 0,
+  "buy_below": 62, "observe_below": 74,
+  "trim_no_chase_zone": null,
+  "binding_constraint": "completeness_consumer_credit_loss_data_O-X7_not_price",
+  "modules": {"M1": -2, "M2": 1, "M3": 0, "M4": 0, "M5": -1, "M6": -1},
+  "decomposition_vs_2021_ath": {
+    "gp_per_share_x": 2.157, "multiple_x": 0.1349, "product": 0.2910,
+    "actual_price_change": -0.709, "identity_closes": true,
+    "log_attrib_multiple_pct": 162.3, "log_attrib_gp_per_share_pct": -62.3,
+    "damage_class": "damage_unknown_new_fourth_category"
+  },
+  "scenarios": {
+    "bear": {"oe_cagr": 0.06, "exit_x": 12, "irr_10y": -0.008},
+    "base": {"oe_cagr": 0.11, "exit_x": 16, "irr_10y": 0.069},
+    "bull": {"oe_cagr": 0.15, "exit_x": 20, "irr_10y": 0.133}
+  },
+  "owner_earnings_anchors": {
+    "A_adj_operating_income_bn": 3.47, "A_mc_over_oe": 14.2,
+    "B_less_sbc_bn": 2.11, "B_mc_over_oe": 23.3,
+    "C_less_sbc_ex_btc": 2.11, "C_mc_over_oe": 23.0
+  },
+  "btc": {"coins": 9416, "price": 77396, "value_bn": 0.73, "pct_of_mc": 1.5,
+          "conclusion": "immaterial; not a bitcoin proxy"},
+  "kill_criteria": {"K-X1": "unknown_most_important", "K-X2": "in_progress",
+                    "K-X3": "amber", "K-X4": "amber", "K-X5": "amber_binding_not_extreme",
+                    "K-X6": "unknown"},
+  "open_items": ["O-X7","O-X5","O-X3","O-X2","O-X4","O-X6","O-X1"],
+  "next_action": "read 10-Q consumer lending disclosures (O-X7), not more news"
+}

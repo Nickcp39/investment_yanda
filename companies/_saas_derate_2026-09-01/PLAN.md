@@ -152,8 +152,13 @@ www.sec.gov / data.sec.gov / efts.sec.gov / s26.q4cdn.com / IR 站点    000
 
 | Ticker | Runner | Checker | 状态 | verdict | 倍数 vs 生意 | buy_below | 备注 |
 |---|---|---|---|---|---|---|---|
-| SNOW | ⬜ | ⬜ | — | — | — | — | 明日财报，需 pre-registered prediction |
-| XYZ | ⬜ | ⬜ | — | — | — | — | 贴 52 周高，T1 tripwire 预期触发 |
+| SNOW | ✅ | 自检(45%) | DECISION_DRAFT | **WATCH 0%** | **第三类：往返，未被永久重定价** | **~$173**（距 −48%） | 卡点=**价格 + owner-earnings 锚不存在**；三锚 98x/负/310x；附本库第一张 pre-registered prediction |
+| XYZ | ✅ | 自检(48%) | DECISION_DRAFT | **WATCH 0%** | **第四类：损伤未知**（倍数 162.3% / 每股毛利 −62.3%） | **~$62**（观察线 $74，距 −10%） | 卡点=**完整度（坏账 O-X7），非价格**；⚠️ T1 tripwire 触发 |
+
+> **批次结论见 [synthesis.md](synthesis.md)。** 一句话：
+> **跌了 71% 的那家在回购股票，创新高的那家在发股票 ——
+> 「跌得凶不凶」和「股东权益方向」完全不相关，
+> 这是对「跌了 50% 才值得看」这个筛选逻辑最直接的反例。**
 
 ## 6. 批次外遗留（有时效，不在本批范围）
 

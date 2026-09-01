@@ -1,0 +1,41 @@
+claim_id,claim,value,period,source_id,status,note
+I-X001,毛利,3.17B,Q2-2026,X1,unverified_secondary,+25% YoY
+I-X002,调整后经营利润率,27%,Q2-2026,X1,unverified_secondary,公司史上最高
+I-X003,调整后摊薄 EPS,1.02,Q2-2026,X1,unverified_secondary,+64.5%；超预期 0.86 达 18.6%
+I-X004,Cash App 毛利,1.97B,Q2-2026,X1,unverified_secondary,+31%
+I-X005,Square 毛利与 GPV,+13%,Q2-2026,X1,unverified_secondary,两者同步
+I-X006,Cash App 占总毛利,62.1%,Q2-2026,X1,derived,1.97/3.17
+I-X007,Cash App 消费信贷发放量,+59%,Q2-2026,X1,unverified_secondary,
+I-X008,FY2026 毛利指引,12.51B,FY2026,X2,unverified_secondary,+21%
+I-X009,FY2026 调整后经营利润指引,3.47B (28%),FY2026,X2,unverified_secondary,+67%
+I-X010,FY2026 调整后 EPS 指引,4.02,FY2026,X2,unverified_secondary,+70%
+I-X011,在外股数,600.79M,2026,X3,unverified_secondary,
+I-X012,股数同比,-3.54%,2026,X3,unverified_secondary,关键对照项
+I-X013,回购授权,5B,2025-11,X3,unverified_secondary,董事会新增
+I-X014,YTD 回购,11.6M 股 / 701M,2026 YTD,X3,unverified_secondary,
+I-X015,SBC 季度,339M,2026-03季,X3,unverified_secondary,+7.44% YoY
+I-X016,SBC 年化,~1.36B,2026,X3,derived,339M x 4
+I-X017,SBC/FY26毛利,~10.9%,FY2026,X3,derived,1.36/12.51
+I-X018,TTM SBC,3.089B,TTM 2026-03,X3,CONFLICT,与季度值x4=1.36B 相差2.3倍；判季度口径可信
+I-X019,历史最高收盘,281.81,2021-08-05,X4,unverified_secondary,
+I-X020,收盘价,82.02,2026-08-31,X4,unverified_secondary,⚠️ 无法机械验证 INC-004
+I-X021,较 ATH 跌幅,-70.9%,2026-08-31,X4,derived,82.02/281.81
+I-X022,52周高,82.50,2026,X4,unverified_secondary,现价距其 -0.6% ⚠️ T1 tripwire
+I-X023,市值,49.28B,2026-08-31,X4,derived,600.79M x 82.02
+I-X024,财报后股价反应,-5% ~ -6%,2026-08-05/06,X4,unverified_secondary,口径不一 5.26/5/6
+I-X025,年内涨幅(进财报时),~+30%,2026,X4,unverified_secondary,与"Flat in 2026"标题冲突；判后者为旧文
+I-X026,FY2021 全年毛利,4442.47M,FY2021,X5,unverified_secondary,分解基期
+I-X027,2021 摊薄股数,~460M,FY2021,—,derived,假设值；恒等式闭合至 -70.9% vs 实际 -70.9% 作自洽性证据 O-X1
+I-X028,长期 BTC 持仓,9117 BTC,2026-06-30,X6,unverified_secondary,2025年底为 8883
+I-X029,运营 BTC,~299 BTC,2026-06-30,X6,unverified_secondary,
+I-X030,BTC 价格,~77396,2026-08-31,X7,unverified_secondary,多源 77396-78414
+I-X031,BTC 持仓市值,~0.73B,2026-08-31,X7,derived,9416 x 77396
+I-X032,BTC 占市值,1.5%,2026-08-31,—,derived,0.73/49.28 -> 结论不受影响
+I-X033,Cash App 活跃用户增速,低个位数,FY2026e,X2,unverified_secondary,核心看跌理由
+I-X034,借贷增长回归常态,定性,FY2026e,X2,unverified_secondary,
+I-X035,净债务/可转债余额,—,—,—,OPEN,未取到；EV 无法计算 O-X2
+I-X036,分部经营利润,—,—,—,OPEN,只有毛利无分部利润 O-X3
+I-X037,GAAP 净利润与经营利润,—,—,—,OPEN,全部指引均为调整后口径 O-X5
+I-X038,消费信贷坏账率与准备金,—,—,—,OPEN,+59%发放增速下最重要的缺口 O-X7
+I-X039,Proto 收入与利润贡献,—,—,—,OPEN,是否重大未知 O-X6
+I-X040,AI 原生公司收入占比,~0,—,—,derived,消费者/商户支付生意；批次 T1 的阴性对照组
