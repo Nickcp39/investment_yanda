@@ -1,0 +1,150 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-09-05",
+  "generated_by": "runner",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, batch memory_ai_refresh_2026-09-05. as_of is Saturday 2026-09-05; the last trading day is Friday 2026-09-04, so as_of_price is the 2026-09-04 close (last close <= as_of). Every quantitative LIVE field carries >=2 independent sources. FILED data (10-K / 10-Q / 8-K / 6-K line items) is NOT here - it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 226.39,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS",
+          "fetched_at": "2026-09-05",
+          "value": 226.39
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nbis/",
+          "fetched_at": "2026-09-05",
+          "value": 226.39
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 62053499000,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "274.10M x 226.39",
+          "fetched_at": "2026-09-05",
+          "value": 62053499000
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nbis/",
+          "fetched_at": "2026-09-05",
+          "value": 62050000000
+        }
+      ],
+      "cross_check_delta_pct": 0.006,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 299.86,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS",
+          "fetched_at": "2026-09-05",
+          "value": 299.86
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nbis/",
+          "fetched_at": "2026-09-05",
+          "value": 299.86
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 63.26,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nbis/",
+          "fetched_at": "2026-09-05",
+          "value": 63.26
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS",
+          "fetched_at": "2026-09-05",
+          "value": 63.26
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 274.1,
+      "unit": "millions",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nbis/",
+          "fetched_at": "2026-09-05",
+          "value": 274.1
+        },
+        {
+          "source_name": "sec_6k_q2_2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm",
+          "fetched_at": "2026-09-05",
+          "value": 274.1
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "FY2026 guidance (Q2 2026, 2026-08-12): ARR $7-9B exiting 2026; capex $20-25B; connected power 800MW-1GW by YE2026; contracted power target RAISED to 5GW by YE2026 (from >4GW). Stated deal economics $20-25M revenue per MW with prepayments covering 50-60% of associated capex. ACTIVE MW STILL NOT DISCLOSED - the prior card K-A criterion remains unresolved after a full additional quarter.",
+      "is_quantitative": false,
+      "as_of": "2026-08-12",
+      "sources": [
+        {
+          "source_name": "sec_6k_q2_2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm",
+          "public_date": "2026-08-12",
+          "fetched_at": "2026-09-05"
+        },
+        {
+          "source_name": "nebius_ir_q2_2026",
+          "url": "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results",
+          "public_date": "2026-08-12",
+          "fetched_at": "2026-09-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

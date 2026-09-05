@@ -1,0 +1,152 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-09-05",
+  "generated_by": "runner",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, batch memory_ai_refresh_2026-09-05. as_of is Saturday 2026-09-05; the last trading day is Friday 2026-09-04, so as_of_price is the 2026-09-04 close (last close <= as_of). Every quantitative LIVE field carries >=2 independent sources. FILED data (10-K / 10-Q / 8-K / 6-K line items) is NOT here - it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1740.0,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-09-05",
+          "value": 1740.0
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-09-05",
+          "value": 1740.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 254770800000,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "146.42M shares out x 1740.00",
+          "fetched_at": "2026-09-05",
+          "value": 254770800000
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-09-05",
+          "value": 254770000000
+        }
+      ],
+      "cross_check_delta_pct": 0.0003,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 2354.39,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-09-05",
+          "value": 2354.39
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-09-05",
+          "value": 2354.39
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 55.55,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-09-05",
+          "value": 55.55
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK",
+          "fetched_at": "2026-09-05",
+          "value": 63.74
+        }
+      ],
+      "cross_check_delta_pct": 14.74,
+      "pass": true,
+      "note": "52wk-low window-boundary artifact, not a data error: the Yahoo 1y window starts later than the stockanalysis 52-week window, and this name was rocketing off its low a year ago. The LOWER (stockanalysis) value is recorded so the T1 containment test is the conservative one."
+    },
+    {
+      "field": "shares_out",
+      "value": 146.42,
+      "unit": "millions",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/sndk/",
+          "fetched_at": "2026-09-05",
+          "value": 146.42
+        },
+        {
+          "source_name": "sec_8k_q4fy26",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+          "fetched_at": "2026-09-05",
+          "value": 157.0
+        }
+      ],
+      "cross_check_delta_pct": 7.24,
+      "pass": true,
+      "note": "146.42M = shares OUTSTANDING (used for market cap; reconciles to stockanalysis exactly). 157M = DILUTED WEIGHTED from the Q4 FY26 8-K (used for per-share earnings math). The 7.24% gap is two different bases, not a source conflict."
+    },
+    {
+      "field": "guidance",
+      "value": "Q1 FY2027 guidance: revenue $10.30-10.80B; non-GAAP gross margin 83.0-84.9%; non-GAAP diluted EPS $44.00-46.00. Investor Day 2026-08-13 long-term model FY2028-FY2030: revenue growth mid-to-high teens, non-GAAP gross margin ~80%, non-GAAP operating margin ~75%, adjusted FCF margin ~50%, 100% of excess cash returned.",
+      "is_quantitative": false,
+      "as_of": "2026-08-13",
+      "sources": [
+        {
+          "source_name": "sec_8k_q4fy26",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+          "public_date": "2026-08-05",
+          "fetched_at": "2026-09-05"
+        },
+        {
+          "source_name": "sandisk_ir_investor_day",
+          "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-details-growth-strategy-and-long-term-financial-model",
+          "public_date": "2026-08-13",
+          "fetched_at": "2026-09-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

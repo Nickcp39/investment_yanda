@@ -1,0 +1,10 @@
+FRESHNESS CHECK -NVDA as_of 2026-09-05  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=230.36 refetched_yahoo=230.36000061035156 (2026-09-04) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 164.07 <= 230.36 <= 236.54
+  [PASS] T2 low/high hug: +40.4% off low, -2.6% off high
+  [PASS] T3 market-cap identity: 24264M x 230.36 = 5.589T vs card 5.589T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -2.6% vs card-implied -2.6% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 230.36 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-08-26 (10d)

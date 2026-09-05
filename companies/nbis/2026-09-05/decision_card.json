@@ -1,0 +1,180 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-09-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-09-05",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "refresh_of": "companies/nbis/2026-08-12",
+  "refresh_type": "RE-PRICE + SOURCE UPGRADE (no new NBIS filing since the Q2'26 event rerun; this run reaches the primary 6-K that the prior card could not)",
+  "baseline_correction": {
+    "what_happened": "This dossier was first built against companies/nbis/2026-07-10. That was the wrong baseline: companies/nbis/2026-08-12 (a Q2'26 EVENT RERUN) already existed on origin/main, and the local repository was 29 commits behind when the batch was run.",
+    "how_found": "git fetch + `git log HEAD..origin/main` before pushing, which surfaced commit a1cc8e5 'NBIS: Q2'26 财报事件重跑'.",
+    "scope": "NBIS only. Verified that no 2026-08 dossier exists for NVDA / SNDK / MU / GEV, so those four baselines were correct.",
+    "resolution": "Card rebuilt against 2026-08-12. Module signals now start from that card's scoring, not 07-10's.",
+    "logged_as": "INC-002 in backtests/framework_validation/INCIDENTS.md"
+  },
+  "context_label": "hypergrowth_neocloud_repriced_only_proof_metric_still_open_for_a_fourth_quarter",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 70,
+  "as_of_price": 226.39,
+  "as_of_market_cap": 62053499000,
+  "share_basis_note": "274.10M shares x $226.39 close of 2026-09-04 = $62.05B, matching stockanalysis. EV ~$54.83B using $8.0B cash and the $775M asset-backed facility. NOTE the prior card's C109 records non-current liabilities of $8.50B at 2026-06-30 (from $4.10B at YE2025); if that figure is the right basis, EV is materially higher and this EV is understated. Unresolved — see conflicts_carried.",
+  "prior_card": {
+    "as_of": "2026-08-12",
+    "type": "Q2'26 EVENT RERUN",
+    "price_used": "~$215-220 (the card itself flags this as stale)",
+    "actual_close_2026_08_13": 254.4,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below_band": [
+      150.0,
+      180.0
+    ],
+    "no_chase_zone": ">= $250",
+    "max_size_pct": 4
+  },
+  "price_change_vs_prior_actual_close": -11.0,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "UPGRADED from the prior card's -1, and the reason is specific. The 2026-08-12 card carried a source-grade warning: SEC EDGAR, nebius.com and businesswire were ALL blocked by the environment's egress proxy, so every Q2'26 number was tagged unverified_secondary. This run reached the SEC 6-K exhibit directly, and it CORROBORATES the secondary figures the prior card had to rely on (revenue $582.3M, AI cloud $574.9M, ARR $3.0B, adj EBITDA $236.2M, capex ~$5.7B, cash ~$8.0B, the $775M asset-backed facility, contracted power 5GW). That retires the source-grade penalty. It does NOT go above 0: active MW is still not disclosed (prior C114 OPEN, now a fourth consecutive quarter), and conflicts C110/C111 remain unresolved because this run did not reach the line items behind them."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Carried from 2026-08-12. Contracted capacity raised 4 -> 5 GW; four contracts signed in Q2 averaging over $1B TCV each; RPO $33.6B. But connected-power guidance was NOT raised (still 800MW-1GW by YE2026), which is the same reservation the prior card made."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Carried from 2026-08-12, which upgraded this leg 0 -> +1 on the single most important datapoint in that card: contracted revenue per MW moving from >$20M to a $40-50M/MW range on new signings. The commoditisation leg of the bear case was contradicted by transacted price, not by narrative."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction/warning",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Carried from 2026-08-12. Unit economics genuinely improved: adjusted EBITDA +$236.2M (40.6% group margin) against -$21.0M a year ago, cost of revenue down to 22.9% of revenue from 29%. Against that: Q2 operating cash flow of +$2.25B is driven by deferred revenue and working capital rather than operating quality, and with $5.66B of capex the quarter's free cash flow is about -$3.41B. GAAP net loss -$190.4M, EPS -$0.68."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "Carried from 2026-08-12 and NOT relaxed. The commoditisation leg cooled; the LEVERAGE leg got hot. Non-current liabilities doubled in one quarter, $4.10B (YE2025) -> $8.50B (2026-06-30). First senior secured note $775M at SOFR+2.50% due 2030-10-31, collateralised by deployed GPUs and investment-grade customer contract cash flows, plus a $3.75B convertible plan. The prior card added K-G for exactly this and it stands."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Price $226.39. Against the actual 2026-08-13 close of $254.40 this is -11.0%. Still 26-51% ABOVE the $150-180 buy-below band, so nothing has changed for new money. Price is BELOW the >=$250 no-chase zone the prior card introduced, so that field is not currently triggered - though it WAS breached at $254.40 on 2026-08-13."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "yes",
+    "stage": "mid-late",
+    "supply_barrier": "low (neocloud rental)",
+    "read": "Carried verbatim in substance from 2026-08-12, including its clarification that rising price per MW is NOT a falsification of this lens. High returns attracting capital is the FIRST step of the cycle, not its opposite. The variable that actually matters is the supply-response lead time - Volozh's point that transformers and gas generators are severely short. That lead time is the term of the excess return.",
+    "caution": "PEAK-lean - one-way, compresses only."
+  },
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "new_money_verdict_note": "Third consecutive WATCH (07-10 -> 08-12 -> 09-05). NOTE a correction to this dossier's first draft: it claimed to be WITHDRAWING a 'warming toward STARTER' flag. That flag was already dropped by the 2026-08-12 card, not by this one. No credit is claimed for it.",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 4,
+  "buy_below_price": 180.0,
+  "buy_below_band": [
+    150.0,
+    180.0
+  ],
+  "buy_below_note": "Unchanged across three cards. STARTER opens below ~$180 AND requires active MW disclosed.",
+  "no_chase_zone": ">= $250 (carried from 2026-08-12; derived there as base target $330-400 discounted at a 12-15% hurdle over 2.48yr). Price $226.39 has NOT entered it; the 2026-08-13 close of $254.40 DID.",
+  "verdict_ceiling_source": "PRICE (26-51% above band) + completeness ~70% (active MW open a fourth quarter; C110/C111 unresolved)",
+  "binding_constraint": "Two-part and unchanged across three cards. (1) BUSINESS: active MW - the proof metric - is still not disclosed. Contracted capacity (5 GW) and connected guidance (800MW-1GW) are not powered, revenue-producing MW. (2) VALUATION: $226.39 is 26-51% above the $150-180 band.",
+  "conflicts_carried": [
+    {
+      "id": "C110",
+      "status": "UNRESOLVED",
+      "what": "Deferred revenue basis: source A 'increase of $3,200.6M to $4,778.1M' vs source B 'current + non-current from $1.58B to ~$5.98B'. ~$1.2B apart.",
+      "note": "This run did not reach the line item. Still needs the primary financial statements."
+    },
+    {
+      "id": "C111",
+      "status": "UNRESOLVED",
+      "what": "Whether Q2 moved NBIS into a net debt position. Nominal values (cash $9.10B vs non-current liabilities $8.50B) imply net cash of about +$0.6B, contradicting sources claiming net debt.",
+      "note": "Basis question (does it include current liabilities; principal vs carrying value). Directly affects the EV used in this card."
+    },
+    {
+      "id": "C-NEW-ATM",
+      "status": "NEW CONFLICT, UNRESOLVED",
+      "what": "The 2026-08-12 card records the ATM as UNDRAWN ('ATM 未动用(好)'), from secondary sources. This run's read of the SEC 6-K reports ATM proceeds of $2.8B from 12.7M Class A shares at a $223.6 average, with 12.3M shares remaining.",
+      "note": "NOT treated as resolved in this card's favour. Both readings could be partly right if the issuance is dated after the prior card was written, and the $223.6 average is consistent with sales spanning the mid-August spike. Because it is unresolved, it is NOT used to fire K-C. The prior card's reframing of K-C toward the debt/leverage branch is adopted instead. MUST be settled against the primary filing before it influences any sizing decision."
+    }
+  ],
+  "kill_criteria": [
+    "K-A active MW stalls or stays undisclosed while ARR growth slows. HALF-RESOLVED and still open: ARR accelerated $1.92B -> $3.0B, but active MW is undisclosed for a FOURTH consecutive quarter (prior C114 OPEN).",
+    "K-B anchor tranche missed / anchor cuts capex / anchor becomes a competitor. COOLED: $46B contracted base intact plus four new deals over $1B TCV each.",
+    "K-C financing shifts from prepayment to dilution. Prior card correctly noted the original wording MISSES the middle state - debt. Adopting its reframing. See C-NEW-ATM for the unresolved equity-issuance question.",
+    "K-D depreciation-life extension / GPU impairment / revenue per MW declining. COUNTER-EVIDENCED: revenue per MW is RISING ($20M -> $40-50M on new signings).",
+    "K-E FY26 capex confirmed at the $31-35B high end without conversion. FALSIFIED: capex guided $20-25B, at the low end, with ARR and RPO up.",
+    "K-F concentration above 60% with take-back, or FY26 ICFR not clean. UNDETERMINABLE: concentration percentage still undisclosed; Deloitte FY26 opinion awaits the 20-F.",
+    "K-G LEVERAGE BRANCH (added 2026-08-12, carried): non-current liabilities doubled in one quarter, first asset-backed note, $3.75B convertible plan. ACTIVE MONITOR.",
+    "K-VAL entry without margin of safety: $226.39 is still 26-51% above the $150-180 band. STANDING."
+  ],
+  "watch_to_starter_trigger": "Unchanged and now three cards old: (1) price below ~$180, AND (2) active MW actually disclosed and consistent with the connected-power guide. The near-term falsifiable test is unchanged: ARR $3.0B at end-June must reach the $7-9B year-end guide, i.e. 2.3x-3.0x in six months. Q3 2026 is the checkpoint. Note FY26 revenue guidance was only REAFFIRMED at $3.0-3.4B despite the Q2 beat.",
+  "runner_dissent": "Two things on record. FIRST, an error of my own: I built this card against the 07-10 baseline when 08-12 already existed on origin, because the local repo was 29 commits behind and I did not fetch before running the batch. The first draft then claimed to be withdrawing a 'warming' flag that the 08-12 card had already dropped - i.e. I was about to take credit for a judgement someone else had already made. Logged as INC-002. SECOND, the substantive point: the 08-12 card is in several ways BETTER than this one - it has RPO, revenue per MW, cost ratios and the leverage analysis that I did not independently reproduce. The one place this run genuinely adds value is source grade: I reached the primary 6-K that the 08-12 runner could not, and it corroborates the secondary numbers. That is worth exactly one module notch (M1 -1 -> 0) and nothing more. The verdict does not move, and it should not: the proof metric has now been absent for four straight quarters while the stock has compounded, which is the pattern that should make a buyer MORE patient, not less.",
+  "sources_used": [
+    {
+      "source_id": "S001",
+      "public_date": "2026-08-12",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm",
+      "tier": "A1",
+      "what": "PRIMARY, and the upgrade this run contributes: Q2 2026 revenue $582.3M, AI cloud $574.9M, ARR $3.0B, adj EBITDA $236.2M, capex ~$5.7B, cash $8B, $775M ABF at SOFR+2.50%, contracted power raised to 5GW, FY26 ARR guide $7-9B, capex guide $20-25B; ACTIVE MW NOT DISCLOSED. Also reports ATM proceeds $2.8B / 12.7M shares at $223.6 avg - see C-NEW-ATM"
+    },
+    {
+      "source_id": "S002",
+      "public_date": "2026-08-12",
+      "url_or_path": "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results",
+      "tier": "A1",
+      "what": "company Q2 2026 release and shareholder letter"
+    },
+    {
+      "source_id": "S003",
+      "public_date": "2026-08-12",
+      "url_or_path": "companies/nbis/2026-08-12/decision_card.json",
+      "tier": "A1",
+      "what": "CORRECT BASELINE: Q2'26 event rerun. WATCH/HOLD, band $150-180, no-chase >=$250, max 4%, module signals M1 -1 / M2 +1 / M3 +1 / M4 0 / M5 -2 / M6 -1, K-G added"
+    },
+    {
+      "source_id": "S004",
+      "public_date": "2026-08-12",
+      "url_or_path": "companies/nbis/2026-08-12/claim_ledger.csv",
+      "tier": "A1",
+      "what": "C101-C127 incl. RPO $33.6B, rev/MW $20M -> $40-50M, non-current liabilities $4.10B -> $8.50B, OCF +$2.25B / capex $5.66B, cash+restricted $9.10B, PP&E $13.05B, FY26 revenue guide $3.0-3.4B reaffirmed; conflicts C110/C111; C114 active MW OPEN"
+    },
+    {
+      "source_id": "S005",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://stockanalysis.com/stocks/nbis/",
+      "tier": "B1",
+      "what": "price $226.39, cap $62.05B, 274.10M shares, 52wk 63.26-299.86"
+    },
+    {
+      "source_id": "S006",
+      "public_date": "2026-08-13",
+      "url_or_path": "studies/nvda暴涨期小盘热点股_2022至今追踪_2026-08-13/对标读数_nbis_iren_2026-08-13.md",
+      "tier": "B1",
+      "what": "2026-08-13 actual close $254.40 (intraday $208.40-262.34), which breached the >=$250 no-chase zone"
+    }
+  ]
+}

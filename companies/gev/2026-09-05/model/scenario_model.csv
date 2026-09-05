@@ -1,0 +1,4 @@
+scenario,ebitda_2028_usd_b,exit_ev_ebitda,ev_2028_usd_b,free_net_cash_2028_usd_b,equity_2028_usd_b,shares_m,per_share_2028,as_of_price,irr_to_2028,prior_card_net_cash,correction_note
+bear,6.5,25,162.5,5.0,167.5,265.0,632.08,941.95,-0.158,12.0,net cash cut vs prior card: H1-26 OCF driven by contract liabilities +$11.8B (customer down payments) per 2Q26 10-Q -> not shareholder net cash
+base,8.5,28,238.0,9.0,247.0,263.0,939.16,941.95,-0.0013,18.0,net cash cut vs prior card: H1-26 OCF driven by contract liabilities +$11.8B (customer down payments) per 2Q26 10-Q -> not shareholder net cash
+bull,10.4,32,332.8,14.0,346.8,260.0,1333.85,941.95,0.1618,22.0,net cash cut vs prior card: H1-26 OCF driven by contract liabilities +$11.8B (customer down payments) per 2Q26 10-Q -> not shareholder net cash

@@ -85,3 +85,59 @@ python scripts/verify_freshness.py --dossier companies/nvda/2026-06-20   # -> PA
   2023-02-03) — a narrative-only/fenced row the case's own `material_audit.md` had flagged for removal; now removed.
   The two ~0.78% deltas (googl/meta) are StatMuse-vs-Yahoo close-source differences, sub-1%, reconciling to card mcap.
   No decision-card numbers, verdicts, or outcome scores changed.
+
+---
+
+## INC-002 — a batch was run against a 29-commit-stale local repo (2026-09-05)
+
+**Status:** FIXED for the affected dossier; **control fix ACTIVE on commit** (mandatory pre-batch fetch).
+
+### Symptom
+Batch `memory_ai_refresh_2026-09-05` (NVDA / SNDK / MU / NBIS / GEV) was built on a working tree whose
+`main` was **29 commits behind `origin/main`**. The NBIS card was therefore written as a refresh of
+`companies/nbis/2026-07-10`, when **`companies/nbis/2026-08-12` already existed on the remote** — a Q2'26
+EVENT RERUN covering the exact quarter the new card was folding in (remote commit `a1cc8e5`).
+
+### Impact
+Not verdict-flipping (NBIS was WATCH on both baselines), but materially wrong work:
+
+| | against the wrong 07-10 baseline | against the correct 08-12 baseline |
+|---|---|---|
+| module signals | M1 0 / M2 +2 / M3 0 / M4 +1 / M5 −2 / M6 −1 (net **0**) | M1 **0** / M2 +1 / M3 **+1** / M4 **0** / M5 −2 / M6 −1 (net **−1**) |
+| headline claim | "withdrawing the *warming toward STARTER* flag" | **that flag was already dropped at 08-12** — the new card was about to claim credit for another runner's judgement |
+| no-chase zone | absent | **≥ $250** existed and had been **breached at $254.40 on 08-13** |
+| K-C (financing) | "partially fired" on an ATM datapoint | 08-12 had already **reframed** K-C toward the debt branch and added **K-G**; the ATM reading is a **new unresolved CONFLICT**, not a resolution |
+| missing evidence | — | RPO $33.6B; revenue/MW $20M → $40–50M; non-current liabilities $4.10B → $8.50B in one quarter; cost of revenue 29% → 22.9% |
+
+The new run *did* contribute one real thing the 08-12 card could not: the **primary SEC 6-K** (that runner
+recorded EDGAR / nebius.com / businesswire as all blocked by the egress proxy, so every Q2'26 figure was
+`unverified_secondary`). The primary source **corroborates** those figures → M1 −1 → 0. **One notch, not a verdict.**
+
+### Root causes
+1. **No fetch before the batch.** `PLAN.md`/`RUNNER_BRIEF.md` tell the Runner to check `companies/<ticker>/`
+   for prior dossiers, but "prior dossier" was read as *what is on disk*, not *what exists in the repo*.
+   A local-only listing silently hides every dossier committed from another machine or another session.
+2. **Date-keyed folders made the staleness invisible.** `companies/nbis/` looked complete and internally
+   consistent at 06-18 → 07-10; nothing on disk indicated a third card existed.
+3. **The freshness gate does not cover this axis.** `verify_freshness.py` validates LIVE *market* data
+   (INC-001's failure mode). It has no notion of "is my baseline dossier the newest one." Both the wrong-
+   and right-baseline NBIS cards passed the gate cleanly — correctly, because the price was never wrong.
+
+### Fix (control fix, ACTIVE on commit)
+- **Mandatory pre-batch step**, added to the batch `PLAN.md` template: run `git fetch origin` and
+  `git log --oneline HEAD..origin/main` **before** any Runner starts, and diff the ticker paths:
+  `git diff --name-only HEAD origin/main -- companies/<tickers>`. A batch may not start on a branch behind
+  its remote.
+- **Baseline declaration is now explicit.** Every refresh card must carry `refresh_of` naming the dossier it
+  rebased on, and the Checker verifies that path is the **newest** directory under `companies/<ticker>/`.
+- **Scope check on discovery.** When a stale baseline is found, check every other ticker in the batch before
+  assuming the blast radius is one name. Done here: no 2026-08 dossier exists for NVDA / SNDK / MU / GEV,
+  so those four baselines were correct and their cards were not rebuilt.
+
+### Why this is a control fix, not a weighting patch
+A stale input passed a gate. It is logically certain to recur while the batch entry point reads local disk
+instead of the remote — one case is enough, no 8-case validation needed (same standing as INC-001).
+
+### Caught by
+`git fetch` + `git log HEAD..origin/main` run **before pushing**, not by any checker in the pipeline. That
+is the honest account: the pipeline did not catch it, the version-control step did.

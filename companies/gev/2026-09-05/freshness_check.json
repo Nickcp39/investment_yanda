@@ -1,0 +1,73 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-09-05",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 941.95,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 941.9500122070312,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 941.95
+      },
+      {
+        "source_name": "stockanalysis",
+        "value": 941.95
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "stockanalysis",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-09-04"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "530.16 <= 941.95 <= 1195.94"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+77.7% off low, -21.2% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "266M x 941.95 = 0.251T vs card 0.251T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -21.2% vs card-implied -21.2% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 941.95 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-07-22 (45d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

@@ -1,0 +1,145 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-09-05",
+  "generated_by": "runner",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, batch memory_ai_refresh_2026-09-05. as_of is Saturday 2026-09-05; the last trading day is Friday 2026-09-04, so as_of_price is the 2026-09-04 close (last close <= as_of). Every quantitative LIVE field carries >=2 independent sources. FILED data (10-K / 10-Q / 8-K / 6-K line items) is NOT here - it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 230.36,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA",
+          "fetched_at": "2026-09-05",
+          "value": 230.36
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "fetched_at": "2026-09-05",
+          "value": 230.36
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "hug_justification": "T2 fires because 230.36 is 2.61% off the 52-week high of 236.54, inside the 3% band. JUSTIFIED, and the justification is mechanical rather than a judgement call: verify_freshness.py INDEPENDENTLY re-fetched the last close <= as_of from Yahoo and returned 230.36 dated 2026-09-04 - the same value and the same date as the card. The tripwire exists to catch the INC-001 failure mode of grabbing an extreme of the series instead of the last close; that re-fetch rules the failure mode out directly. stockanalysis independently reports 230.36 as well (delta 0.00%). NVDA simply trades near its 52-week high after the 2026-08-26 Q2 FY27 print. Flag set with evidence, not to clear the gate."
+    },
+    {
+      "field": "market_cap",
+      "value": 5589455040000,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "24,264M diluted x 230.36",
+          "fetched_at": "2026-09-05",
+          "value": 5589455040000
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "fetched_at": "2026-09-05",
+          "value": 5560000000000
+        }
+      ],
+      "cross_check_delta_pct": 0.53,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 236.54,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA",
+          "fetched_at": "2026-09-05",
+          "value": 236.54
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "fetched_at": "2026-09-05",
+          "value": 236.54
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 164.07,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "fetched_at": "2026-09-05",
+          "value": 164.07
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA",
+          "fetched_at": "2026-09-05",
+          "value": 164.07
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 24264.0,
+      "unit": "millions",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "sec_8k_q2fy27",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+          "fetched_at": "2026-09-05",
+          "value": 24264.0
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/nvda/",
+          "fetched_at": "2026-09-05",
+          "value": 24150.0
+        }
+      ],
+      "cross_check_delta_pct": 0.47,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "Q3 FY2027 guidance: revenue ~$108.0B +/-2%; GAAP and non-GAAP gross margin 74.0% +/-50bp; non-GAAP opex ~$9.0B. The outlook assumes ZERO Data Center compute revenue from China.",
+      "is_quantitative": false,
+      "as_of": "2026-08-26",
+      "sources": [
+        {
+          "source_name": "sec_8k_q2fy27",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+          "public_date": "2026-08-26",
+          "fetched_at": "2026-09-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}
