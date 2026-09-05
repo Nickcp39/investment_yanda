@@ -116,13 +116,18 @@ stockanalysis.com / stooq.com                       -> 全部 000
 
 ## 4. 进度
 
-| Ticker | Runner | Checker | 状态 | verdict | buy_below | binding_constraint |
-|---|---|---|---|---|---|---|
-| LLY | ⬜ | ⬜ | — | — | — | — |
-| NVO | ⬜ | ⬜ | — | — | — | — |
-| MRK | ⬜ | ⬜ | — | — | — | — |
-| AZN | ⬜ | ⬜ | — | — | — | — |
-| PFE | ⬜ | ⬜ | — | — | — | — |
+| Ticker | Runner | Checker | 状态 | verdict | base IRR | buy_below / 观察线 | 距8% | binding_constraint |
+|---|---|---|---|---|---:|---|---:|---|
+| LLY | ✅ | 自检(42%) | DECISION_DRAFT | **WATCH 0%** | +2.77% | ~$587 / ~$702 | −38% | 价格 + 净价能否守住 |
+| NVO | ✅ | 自检(43%) | DECISION_DRAFT | **WATCH 0%** | +5.50% | ~$31.92 / ~$37.42 | −19% | 份额是否止跌 |
+| MRK | ✅ | 自检(46%) | DECISION_DRAFT | **WATCH 0%** | **−0.71%** | ~$62.20 / ~$72.44 | **−52%** | **价格（本批最大）** |
+| AZN | ✅ | 自检(40%) | DECISION_DRAFT | **WATCH 0%** | **🟢 +8.59%** | ~$71.03 / **~$84.15** | **+5%** | **完整度（币种+到期表）** |
+| PFE | ✅ | 自检(38%) | DECISION_DRAFT | **INFO-GAP 0%** | +7.80% | ~$23.99 / ~$27.66 | **−1%** | **净债务未知** |
+
+> **批次结论见 [synthesis.md](synthesis.md)，五灵魂见 [ic_panel.md](ic_panel.md)。** 一句话：
+> **最热的两家（LLY、MRK）IRR 最差，最无聊的两家（AZN、PFE）最接近门槛 ——
+> 而且我给了 LLY 更高的净利率(32% vs 22%)和更高的退出倍数(18x vs 15x)，它仍然输 5.8pp。
+> 在这一批里，价格差异压倒了质量差异。**
 
 ## 5. 批次外遗留（有时效）
 - 🔴 **SNOW `prediction_2026-09-02.md` 尚未对账**（财报 9/2 已出，今日 9/5，**已违反"当天写完"规则 3 天**）
