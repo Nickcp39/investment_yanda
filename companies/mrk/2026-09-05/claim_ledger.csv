@@ -1,0 +1,33 @@
+claim_id,claim,value,period,source_id,status,note
+M001,营收,16.6B,Q2-2026,M1,unverified_secondary,+5% YoY (除汇 +4%)
+M002,Keytruda 家族含 QLEX,8.4B,Q2-2026,M1,unverified_secondary,
+M003,Keytruda QLEX 皮下,463M,Q2-2026,M1,unverified_secondary,新剂型
+M004,QLEX 占 Keytruda 家族,5.5%,Q2-2026,—,derived,0.463/8.4 -> 本卡核心监控指标
+M005,Keytruda 占季度营收,50.6%,Q2-2026,—,derived,8.4/16.6
+M006,Winrevair,588M,Q2-2026,M1,unverified_secondary,+75% 超预期 565M
+M007,FY26 销售指引,66.3-67.3B,FY2026,M1,unverified_secondary,自 65.8-67.0B 上调收窄
+M008,FY26 调整后 EPS 指引,2.66-2.76,FY2026,M1,unverified_secondary,自 5.04-5.16 腰斩 含 Terns 费用 2.31/股
+M009,Terns 收购一次性费用,2.31/股,FY2026,M1,unverified_secondary,构成未知 O-M6
+M010,Keytruda 2024 全球销售,29.5B,FY2024,M3,unverified_secondary,约占 MRK 全部业务 56%
+M011,Keytruda 美国核心专利到期,2028,2028,M3,unverified_secondary,
+M012,无皮下改造预计侵蚀,~80%,2028+,M3,unverified_secondary,300亿 -> 约 60亿
+M013,公司口径 Keytruda 2028 峰值,35B,2028,M3,unverified_secondary,当前年化 33.6B -> 需再 +4%
+M014,到 2028 约 10 个季度,10,2026Q2-2028Q4,—,derived,用于 QLEX 转化速度测算
+M015,QLEX 需每季提升(目标40%),+3.45pp,2026-2028,—,derived,线性外推
+M016,QLEX 需每季提升(目标60%),+5.45pp,2026-2028,—,derived,线性外推
+M017,现价,150.33,2026-09-04,M2,unverified_secondary,⚠️ 不可机械验证
+M018,52周高,156.92,2026,M2,unverified_secondary,距现价 -4.2%
+M019,52周低,77.58,2026,M2,unverified_secondary,距现价 +93.8% ⚠️ 一年内近乎翻倍
+M020,市值,370.89B,2026-09,M2,CONFLICT,另源 302.5B 未解决 O-M5
+M021,股息,3.40/年 收益率 2.22%,2026,M2,unverified_secondary,下一除息 2026-09-15
+M022,P/S FY26,5.55x,FY2026,—,derived,370.89/66.8
+M023,P/E 含费用口径,55.5x,FY2026,—,derived,150.33/2.71
+M024,P/E 剔除费用口径,29.5x,FY2026,—,derived,150.33/5.10
+M025,P/E 正常化假设口径,18.8x,FY2026,—,derived,150.33/8.00 ⚠️ 8.00 为假设非披露
+M026,mRNA 癌症疫苗三期正面,定性,2026,M2,unverified_secondary,与 Moderna 合作 细节未知 O-M4
+M027,收购 Terns,2026-03-25,2026,M1,unverified_secondary,与库内 KOL 视频笔记所述剧本一致 但视频不作证据
+M028,QLEX 逐季渗透曲线,—,—,—,OPEN,O-M1 最重要 只有一个点
+M029,Keytruda 美国 vs 海外拆分,—,—,—,OPEN,O-M2
+M030,GAAP 净利润与常态净利率,—,—,—,OPEN,O-M3 EPS 三读无法收敛
+M031,mRNA 疫苗适应症/时间/峰值,—,—,—,OPEN,O-M4
+M032,Terns 资产与费用构成,—,—,—,OPEN,O-M6
