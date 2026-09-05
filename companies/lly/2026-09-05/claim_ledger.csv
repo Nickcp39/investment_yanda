@@ -1,0 +1,24 @@
+claim_id,claim,value,period,source_id,status,note
+L001,营收,23.0B,Q2-2026,L1,unverified_secondary,+48% YoY
+L002,Mounjaro 全球收入,9.9B,Q2-2026,L1,unverified_secondary,+91%
+L003,Key Products 收入,15.7B,Q2-2026,L1,unverified_secondary,
+L004,EPS 报告口径,7.94,Q2-2026,L1,unverified_secondary,+26%
+L005,EPS 非GAAP,8.38,Q2-2026,L1,unverified_secondary,+33%
+L006,FY26 营收指引,85.0-87.0B,FY2026,L1,unverified_secondary,上调
+L007,FY26 非GAAP EPS 指引,35.50-36.50,FY2026,L1,unverified_secondary,中值上调2.78 被 IPR&D 3.03/股 more-than-offset -> 净下调
+L008,acquired IPR&D 费用,3.03/股,FY2026,L1,unverified_secondary,对应交易未知 O-L4
+L009,市值,1024B,2026-09,L2,unverified_secondary,⚠️ 不可机械验证
+L010,P/E TTM,38.61,2026-09,L2,CONFLICT,另源 42.92；区间 38.6-42.9
+L011,估算股数,0.90B,2026-09,—,derived,由市值与估算价互推 -> 不构成独立验证 O-L1
+L012,估算股价,~1138,2026-09,—,derived,同上
+L013,P/S FY26,11.91x,FY2026,—,derived,1024/86
+L014,fwd P/E,~31.6x,FY2026,—,derived,1138/36
+L015,GLP-1 份额,~60%,2026,L3,unverified_secondary,NVO ~40%
+L016,tirzepatide 全球最畅销药物,定性,2025,L3,unverified_secondary,
+L017,Foundayo 口服,预计2028前占美国口服减肥药大部分,2028e,L3,unverified_secondary,分析师预期非公司指引
+L018,NVO 2027-01 起美国标价 Wegovy -50% Ozempic -35%,定量,2027-01,L4,unverified_secondary,🔴 跨卡关键事实
+L019,NVO 美国 Wegovy 针剂销售,-22% CER,Q2-2026,L4,unverified_secondary,Q1 约 -12%，在加速
+L020,量价拆分,—,—,—,OPEN,O-L2
+L021,美国净价 vs 标价折扣阶梯,—,—,—,OPEN,O-L3 价格战真正的传导处
+L022,GAAP 经营利润与净利润,—,—,—,OPEN,O-L5
+L023,产能与供应约束,—,—,—,OPEN,O-L6
