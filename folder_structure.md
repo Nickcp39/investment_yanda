@@ -26,7 +26,7 @@ companies/            个股研究档案（最大目录，~30 个 ticker）
 └── _<批次名>_<日期>/    批量研究的计划与汇总（如 _sp500_medical_2026-07-05、
                          _ai_robotics_2026-07-10、_mega7_2026-06-19、
                          _derated_bigtech_2026-08-07、_private_prison_2026-08-13、
-                         _saas_derate_2026-09-01、_oncology_pharma_2026-09-05）
+                         _saas_derate_2026-09-01、_oncology_pharma_2026-09-05、_pharma_cliff_2026-09-05）
 
 sectors/              行业研究
 ├── us-healthcare/       美国医疗（PBM 深度，L1/L2 分层调研）
@@ -128,6 +128,8 @@ notebooks/            Jupyter 分析
 | 想干什么 | 去哪里 |
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
+| **制药五家（LLY/NVO/MRK/AZN/PFE）的结论** | `companies/_pharma_cliff_2026-09-05/synthesis.md` |
+| **已知日期的坏消息怎么定价（配速表法）** | `companies/mrk/2026-09-05/facts.md` §4 |
 | **医药/肿瘤研究哪些跑过、还能跑什么** | `companies/_oncology_pharma_2026-09-05/CANDIDATES.md`（含"框架能不能定价"三层分层） |
 | **软件股为什么跌 / 跌了要不要接** | `companies/_saas_derate_2026-09-01/synthesis.md`（四类风险来源 + 倍数vs生意四格） |
 | **事前预测怎么写、怎么对账** | `companies/snow/2026-09-01/prediction_2026-09-02.md`（本库第一张） |
