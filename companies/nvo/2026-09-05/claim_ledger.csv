@@ -1,0 +1,26 @@
+claim_id,claim,value,period,source_id,status,note
+N001,销售额,DKK 78.49B / ~12.09B USD,Q2-2026,N1,unverified_secondary,+3% 固定汇率
+N002,调整后销售增长,+7% CER,Q2-2026,N1,unverified_secondary,
+N003,调整后经营利润增长,+11% CER,Q2-2026,N1,unverified_secondary,
+N004,美国 Wegovy 针剂销售,-22% CER,Q2-2026,N1,unverified_secondary,Q1 约 -12% -> 加速
+N005,Wegovy 口服片剂,DKK 3.22B,Q2-2026,N1,unverified_secondary,预期 3.27B 小幅不及
+N006,FY26 调整后销售指引,0% ~ -6% CER,FY2026,N1,unverified_secondary,自 2026-02 的 -5%~-13% 上调
+N007,FY26 调整后经营利润指引,0% ~ -6% CER,FY2026,N1,unverified_secondary,
+N008,美国标价下调 Wegovy,-50%,2027-01起,N1,unverified_secondary,🔴 本批最重要单条事实；已交叉写入 LLY 卡
+N009,美国标价下调 Ozempic,-35%,2027-01起,N1,unverified_secondary,同上
+N010,市值,206.77B,2026-09,N2,unverified_secondary,⚠️ 不可机械验证
+N011,P/E TTM,11.45,2026-08,N2,unverified_secondary,称较历史均值低 55%
+N012,较 2024 中峰值跌幅,~-70%,2026-08,N2,unverified_secondary,148 -> 36-37 (2026-04初)
+N013,估算股数,~4.5B,2026-09,—,derived,由市值与估算价互推 不构成独立验证 O-N4
+N014,估算价,~46,2026-09,—,derived,同上
+N015,TTM 营收估,~48.4B,TTM,—,derived,12.09 x 4 季度口径外推 精度有限
+N016,P/S,4.28x,2026-09,—,derived,206.77/48.4
+N017,GLP-1 份额,~40%,2026,N3,unverified_secondary,LLY ~60%
+N018,下滑原因公司自述,处方趋势+竞争加剧+Medicaid覆盖收缩,2026,N1,unverified_secondary,
+N019,Bernstein 警告可能再跌 33%,观点,2026,N4,unverified_secondary,⚠️ 卖方观点 不进结论
+N020,净价 vs 标价折扣阶梯,—,—,—,OPEN,O-N1 与 LLY 的 O-L3 是同一缺口
+N021,分产品分地区明细,—,—,—,OPEN,O-N2
+N022,GAAP 口径,—,—,—,OPEN,O-N3
+N023,股数/回购/股息序列,—,—,—,OPEN,O-N4
+N024,semaglutide 各市场专利到期表,—,—,—,OPEN,O-N5 公司提到部分美国以外市场已到期
+N025,CagriSema 等管线读出时间表,—,—,—,OPEN,O-N6
