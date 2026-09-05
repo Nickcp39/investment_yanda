@@ -1,0 +1,28 @@
+claim_id,claim,value,period,source_id,status,note
+P001,营收,15.0B,Q2-2026,P1,unverified_secondary,+3% YoY
+P002,除 COVID 基础业务经营性增长,+5%,Q2-2026,P1,unverified_secondary,
+P003,FY26 营收指引,60.5-62.5B,FY2026,P1,unverified_secondary,中值上调 5 亿至 61.5B
+P004,成本节约目标,9.7B 净节约,至2029,P1,unverified_secondary,
+P005,Seagen 收购,~43B EV / 229 美元每股现金,2023 交割,P2,unverified_secondary,ADC 平台 doubling oncology pipeline
+P006,Metsera 收购,10B,2025-2026,P2,unverified_secondary,肥胖 管线仍早期
+P007,收购合计,53B,—,—,derived,43+10
+P008,市值,~160B,2026-09-03,P3,unverified_secondary,⚠️ 不可机械验证
+P009,收购金额占市值,33%,2026-09,—,derived,53/160
+P010,P/E Q1 2026,19.85x,Q1-2026,P3,unverified_secondary,
+P011,P/E Q2 2026,31.40x,Q2-2026,P3,unverified_secondary,一季跳升 58% 因盈利下降 明细未取到 O-P4
+P012,季度股息,0.43,Q3-2026,P3,unverified_secondary,2026-09-01 支付
+P013,年化股息,1.72,2026,—,derived,0.43x4
+P014,估算股数,~5.7B,2026-09,—,derived,由市值与估算价互推 不构成独立验证
+P015,估算价,~28.07,2026-09,—,derived,同上
+P016,股息收益率,~6.1%,2026-09,—,derived,1.72/28.07 本库最高
+P017,年股息总额,~9.8B,2026,—,derived,1.72 x 5.7B
+P018,P/S FY26,2.60x,FY2026,—,derived,160/61.5 本批最低
+P019,bear 情景 y10 派息率,106%,y10,—,derived,9.8/9.2 ⚠️ 股息不被覆盖
+P020,base 情景 y10 派息率,59%,y10,—,derived,9.8/16.5
+P021,并购交易需要时间见效,观点,2025-12,P4,unverified_secondary,⚠️ 媒体观点 不入结论
+P022,GAAP 与常态净利率,—,—,—,OPEN,O-P1
+P023,Seagen 资产实际收入贡献,—,—,—,OPEN,O-P2
+P024,并购价值归因,—,—,—,OPEN,O-P3 需分部收入桥 本轮拿不到
+P025,净债务与偿债计划,—,—,—,OPEN,O-P5 对高股息公司必须
+P026,股数/回购/股息覆盖率序列,—,—,—,OPEN,O-P6
+P027,COVID 产品稳态收入,—,—,—,OPEN,O-P7
