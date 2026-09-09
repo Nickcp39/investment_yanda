@@ -1,3 +1,7 @@
+> 🟡 **本卡已由 [`UPDATE_2026-09-09.md`](UPDATE_2026-09-09.md) 更新。**
+> **净债务已取到：$62.61B，3.45x EBITDA，FCF ÷ 股息 = 1.00x → verdict 由 INFO-GAP 升到 WATCH 0%。**
+> **但修正后的 bear（股息砍半）为 −1.46%，原 +2.32% 作废 —— 净债务证实了风险，不是解除了它。**
+
 # PFE Decision Card — as_of 2026-09-05
 
 `lean-6module-v1.1` · 批次 `pharma_cliff_2026-09-05` · **completeness ~38%** · **`DECISION_DRAFT`**

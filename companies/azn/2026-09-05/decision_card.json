@@ -1,21 +1,96 @@
-{"ticker":"AZN","as_of":"2026-09-05","pipeline_version":"lean-6module-v1.1","batch":"pharma_cliff_2026-09-05",
-"status":"DECISION_DRAFT","clean":false,"clean_blocked_reason":"INC-004; 0 verified claims; market cap currency CONFLICT",
-"completeness_pct":40,"listing":"UK primary; US ADR",
-"market_cap_bn":186.2,"market_cap_currency":"UNKNOWN_CONFLICT_A011","market_cap_if_gbp_usd_bn":251,
-"price_est":80.0,"price_status":"derived_from_market_cap",
-"business_verdict":"good","new_money_verdict":"WATCH","suggested_size_pct":0,
-"buy_below":71.03,"observe_below":84.15,"price_already_inside_observe_line":true,
-"trim_no_chase_zone":null,"binding_constraint":"completeness_currency_O-A1_and_expiry_schedule_O-A6_NOT_price",
-"modules":{"M1":-2,"M2":1,"M3":1,"M4":0,"M5":-1,"M6":0},
-"concentration":{"largest_drug":"Tagrisso","largest_pct_of_rev":0.124,"top4_pct":0.367,
-"mrk_largest_pct":0.506,"concentration_ratio_vs_mrk":4.1},
-"scenarios":{"bear":{"rev_cagr":0.03,"margin":0.18,"exit_x":12,"irr_10y":0.0182},
-"base":{"rev_cagr":0.06,"margin":0.22,"exit_x":15,"irr_10y":0.0859},
-"bull":{"rev_cagr":0.09,"margin":0.25,"exit_x":18,"irr_10y":0.1476}},
-"pair_decomposition_vs_mrk":{"irr_gap_pp":9.29,"attributable_to_price_pp":6.8,
-"attributable_to_fundamentals_pp":2.5,
-"counterfactual_azn_at_mrk_ps":0.0178,"counterfactual_mrk_at_azn_ps":0.0642,
-"conclusion":"diversification worth ~2.5pp; the rest is AZN simply being cheaper"},
-"kill_criteria":{"K-A1":"unknown_most_important","K-A2":"in_progress","K-A3":"unknown_can_flip_conclusion",
-"K-A4":"amber","K-A5":"loosest_in_batch","K-A6":"method_risk"},
-"open_items":["O-A1","O-A6","O-A2","O-A3","O-A4","O-A5"]}
+{
+ "ticker": "AZN",
+ "as_of": "2026-09-05",
+ "pipeline_version": "lean-6module-v1.1",
+ "batch": "pharma_cliff_2026-09-05",
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "INC-004; 0 verified claims; market cap currency CONFLICT",
+ "completeness_pct": 47,
+ "listing": "UK primary; US ADR",
+ "market_cap_bn": 252.33,
+ "market_cap_currency": "USD_RESOLVED",
+ "market_cap_if_gbp_usd_bn": 251,
+ "price_est": 162.82,
+ "price_status": "cross_validated_adr",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "suggested_size_pct": 0,
+ "buy_below": 112.43,
+ "observe_below": 132.67,
+ "price_already_inside_observe_line": false,
+ "trim_no_chase_zone": null,
+ "binding_constraint": "price_AND_completeness",
+ "modules": {
+  "M1": -2,
+  "M2": 1,
+  "M3": 1,
+  "M4": 0,
+  "M5": -1,
+  "M6": 0
+ },
+ "concentration": {
+  "largest_drug": "Tagrisso",
+  "largest_pct_of_rev": 0.124,
+  "top4_pct": 0.367,
+  "mrk_largest_pct": 0.506,
+  "concentration_ratio_vs_mrk": 4.1
+ },
+ "scenarios": {
+  "bear": {
+   "irr_10y": -0.0084
+  },
+  "base": {
+   "irr_10y": 0.056
+  },
+  "bull": {
+   "irr_10y": 0.1151
+  }
+ },
+ "pair_decomposition_vs_mrk": {
+  "irr_gap_pp": 9.29,
+  "attributable_to_price_pp": 6.8,
+  "attributable_to_fundamentals_pp": 2.5,
+  "counterfactual_azn_at_mrk_ps": 0.0178,
+  "counterfactual_mrk_at_azn_ps": 0.0642,
+  "conclusion": "diversification worth ~2.5pp; the rest is AZN simply being cheaper"
+ },
+ "kill_criteria": {
+  "K-A1": "unknown_most_important",
+  "K-A2": "in_progress",
+  "K-A3": "unknown_can_flip_conclusion",
+  "K-A4": "amber",
+  "K-A5": "loosest_in_batch",
+  "K-A6": "method_risk"
+ },
+ "open_items": [
+  "O-A1",
+  "O-A6",
+  "O-A2",
+  "O-A3",
+  "O-A4",
+  "O-A5"
+ ],
+ "SUPERSEDED_BY": "CORRECTION_2026-09-09.md",
+ "correction_date": "2026-09-09",
+ "market_cap_prior_wrong_bn": 186.2,
+ "prior_error_note": "186.2 was the AZN:LN London listing reading, misused as USD market cap",
+ "wk52_high": 212.71,
+ "wk52_low": 145.8,
+ "ps": 4.1,
+ "RETRACTED": "AZN is the only name in the batch clearing the 8% hurdle -- FALSE after market cap correction",
+ "china_exposure": {
+  "pct_of_revenue": "13-15%",
+  "status": "under investigation",
+  "investment_through_2030_bn": 15,
+  "note": "K-A7 new; conflicts with the diversification thesis -- geographic single point"
+ },
+ "patent_expiry": {
+  "Farxiga": "2026",
+  "Enhertu": "post-2030",
+  "Tagrisso": "unknown",
+  "Imfinzi": "unknown",
+  "Calquence": "unknown",
+  "industry_note": "several AZN assets poised to lose exclusivity by 2030"
+ }
+}
