@@ -1,0 +1,40 @@
+{
+  "ticker": "SNOW",
+  "as_of": "2026-09-01",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "batch": "saas_derate_2026-09-01",
+  "status": "DECISION_DRAFT",
+  "clean": false,
+  "clean_blocked_reason": "INC-004: all quote sources EGRESS_BLOCKED; verify_freshness.py cannot run; 0 verified claims",
+  "completeness_pct": 45,
+  "price": {"value": 331.43, "date": "2026-08-31", "status": "unverified_secondary",
+            "cross_reads": [322.78, 332.78], "band_pct": 3.2},
+  "market_cap_bn": 114.9,
+  "shares_m": 346.6,
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below": 173,
+  "observe_below": 208,
+  "bear_anchor": 81,
+  "trim_no_chase_zone": null,
+  "binding_constraint": "price + owner_earnings_anchor_undefined",
+  "modules": {"M1": -2, "M2": 2, "M3": 0, "M4": -2, "M5": -1, "M6": -2},
+  "scenarios": {
+    "bear": {"rev_cagr": 0.12, "oe_margin": 0.20, "exit_x": 18, "irr_10y": -0.062},
+    "base": {"rev_cagr": 0.18, "oe_margin": 0.25, "exit_x": 22, "irr_10y": 0.031},
+    "bull": {"rev_cagr": 0.24, "oe_margin": 0.28, "exit_x": 26, "irr_10y": 0.114}
+  },
+  "owner_earnings_anchors_fy26": {
+    "A_company_adj_fcf_bn": 1.17, "A_mc_over_oe": 98,
+    "B_less_full_sbc_bn": -0.43, "B_mc_over_oe": null,
+    "C_less_half_sbc_bn": 0.37, "C_mc_over_oe": 310
+  },
+  "kill_criteria": {"K-A": "unknown", "K-B": "in_progress", "K-C": "firing",
+                    "K-D": "active_binding", "K-E": "amber", "K-F": "permanent_blind_spot"},
+  "open_items": ["O-S1","O-S2","O-S3","O-S4","O-S5","O-S6","O-S7"],
+  "next_event": {"type": "Q2 FY2027 earnings", "date": "2026-09-02",
+                 "pre_registered_prediction": "prediction_2026-09-02.md"}
+}

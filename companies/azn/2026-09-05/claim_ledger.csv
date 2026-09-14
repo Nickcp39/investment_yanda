@@ -1,0 +1,24 @@
+claim_id,claim,value,period,source_id,status,note
+A001,总收入,15.38B,Q2-2026,A1,unverified_secondary,+6% YoY
+A002,Tagrisso,1.9B,Q2-2026,A1,unverified_secondary,+6% 最大单品
+A003,Imfinzi,1.85B,Q2-2026,A1,unverified_secondary,+27%
+A004,Calquence,>1.0B,Q2-2026,A1,unverified_secondary,+16% 首次单季破 10 亿
+A005,Enhertu,888M,Q2-2026,A1,unverified_secondary,+31%
+A006,最大单品占季度收入,12.4%,Q2-2026,—,derived,1.9/15.38 vs MRK 50.6%
+A007,前四大合计占比,36.7%,Q2-2026,—,derived,(1.9+1.85+1.0+0.888)/15.38
+A008,FY26 总收入指引,中到高个位数增长 CER,FY2026,A1,unverified_secondary,
+A009,FY26 core EPS 指引,低双位数增长 CER,FY2026,A1,unverified_secondary,利润增速>收入增速
+A010,2026 为转型年 Farxiga 悬崖,定性,FY2026,A1,unverified_secondary,量级与时间表未知 O-A3
+A011,市值,186.201 billion,2026-09,A2,CONFLICT,⚠️ 币种未标注 GBP vs USD 差 1.35 倍 O-A1
+A012,肿瘤收入 +15% 至 14.1B,定量,口径不明,A1,CONFLICT,与季度总收入 15.38B 不自洽 应为半年或 TTM O-A4
+A013,P/E TTM,24.21,2026-09,A2,unverified_secondary,
+A014,前瞻 P/E,14.42,2026-09-03,A2,unverified_secondary,与 TTM 差近一倍 原因未知 O-A2
+A015,估算股数,~2.33B,2026-09,—,derived,由市值与估算价互推 不构成独立验证
+A016,估算价,~80,2026-09,—,derived,同上
+A017,P/S,3.03x,2026-09,—,derived,186.2/61.5 ⚠️ 若市值为 GBP 则应为 4.09x
+A018,80B 肿瘤目标,标题,2026,A3,unverified_secondary,⚠️ 口径不明 不入结论
+A019,市值币种,—,—,—,OPEN,O-A1 最重要 影响全部倍数
+A020,TTM vs 前瞻 P/E 差异原因,—,—,—,OPEN,O-A2
+A021,Farxiga 悬崖量级与时间表,—,—,—,OPEN,O-A3
+A022,GAAP 口径/股数/股息序列,—,—,—,OPEN,O-A5
+A023,各主力药专利到期时间表,—,—,—,OPEN,O-A6 分散度的真正含义取决于到期日是否也分散

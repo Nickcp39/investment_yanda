@@ -1,0 +1,38 @@
+claim_id,claim,value,period,source_id,status,note
+I-S001,产品收入,4.472B,FY2026,S1,unverified_secondary,+29% YoY
+I-S002,总收入,4.68B,FY2026,S1,unverified_secondary,+29% YoY
+I-S003,净收入留存率 NRR,125%,FY2026,S1,unverified_secondary,
+I-S004,非 GAAP 经营利润,489.7M (10%),FY2026,S1,unverified_secondary,
+I-S005,GAAP 经营利润率,-31%,FY2026,S1,unverified_secondary,与 I-S004 相差 41pp
+I-S006,GAAP 净亏损,-1.329B,FY2026,S1,unverified_secondary,原文 1329035 千
+I-S007,RPO,9.77B,FY2026,S1,unverified_secondary,+42% YoY
+I-S008,SBC 合计,1.5996B,FY2026,S3,derived,四项明细加总 139.2+378.9+935.4+146.1；解决了 1.6B/35% 与 1.4B/36% 的来源冲突
+I-S009,SBC 占总收入,34.2%,FY2026,S3,derived,1.5996/4.68
+I-S010,SBC 中研发部分,935.4M,FY2026,S3,unverified_secondary,占 SBC 的 58.5%
+I-S011,产品收入,1.33B,Q1FY2027,S2,unverified_secondary,+34% YoY 较全年 +29% 加速
+I-S012,总收入,1.39B,Q1FY2027,S2,unverified_secondary,+33%
+I-S013,NRR,126%,Q1FY2027,S2,unverified_secondary,自 125% 回升
+I-S014,RPO,9.21B,Q1FY2027,S2,unverified_secondary,+38%；环比自 9.77B 下降
+I-S015,自由现金流,232.8M,Q1FY2027,S2,unverified_secondary,
+I-S016,调整后自由现金流,265.5M,Q1FY2027,S2,unverified_secondary,占当季收入 19.1% (derived)
+I-S017,TTM 产品收入>1M 的客户数,779,Q1FY2027,S2,unverified_secondary,+29%；FY26 为 733
+I-S018,FY2027 产品收入指引,5.84B,FY2027,S2,unverified_secondary,+31%，自 +27% 上调
+I-S019,产品毛利率(非GAAP),75%,Q1FY2027,S2,unverified_secondary,自 76% 压缩；指引维持 75%
+I-S020,AI 产品毛利率低于核心平台,定性,FY2027,S2,unverified_secondary,公司自述；靠 AWS 带宽降本抵消
+I-S021,收盘价,331.43,2026-08-31,S4,unverified_secondary,⚠️ 无法机械验证 INC-004
+I-S022,收盘价交叉读数,322.78 / 332.78,2026-08-24 / 08-21,S4,unverified_secondary,与 I-S021 同向不同点
+I-S023,在外股数,346.6M,2026-08,S4,unverified_secondary,仅一个时点无序列
+I-S024,市值,114.9B,2026-08-31,S4,derived,346.6M x 331.43
+I-S025,市值交叉读数,111.88B / ~116B,2026-08-24 / 08,S4,unverified_secondary,与 I-S024 相差 <4% 视为一致
+I-S026,P/S TTM,21.3x,2026-08,S4,derived,114.9 / 5.4
+I-S027,YTD 涨幅,+50%,2026 YTD,S4,unverified_secondary,
+I-S028,空头仓位,6.18B / 18.8M 股,2026-08,S4,unverified_secondary,接近历史高位；归因 GAAP 亏损+SBC 稀释
+I-S029,2026 最大回撤,-56% 底约 118.30,2026-04-10,S4,unverified_secondary,与批次扫描的集中底部日一致
+I-S030,52周高/低 284.99 / 118.30,过期读数,2026-04?,S4,CONFLICT,与 8 月 331 冲突；判为 4 月旧值，弃用
+I-S031,股东集体诉讼,指控 consumption 收入增长误导性陈述,2026-04下旬,S4,unverified_secondary,进展未知 O-S6
+I-S032,FY2026 调整后 FCF,~1.17B,FY2026,—,derived,按历史约25%调整后FCF利润率x4.68B 估算；⚠️ 未验证 O-S3
+I-S033,客户集中度 4.2%客户占40-50%收入,定量,—,S7,OPEN,来源为 D 级无法溯源；不进任何结论
+I-S034,是否存在单一 AI 公司大额合同,—,—,—,OPEN,未找到任何披露；不推测 O-S1
+I-S035,AI 原生公司收入占比,—,—,—,OPEN,批次 T1 主命题未答 O-S2
+I-S036,Cortex Code 收入贡献,—,—,—,OPEN,是否单独披露未知 O-S7
+I-S037,SaaSpocalypse 命名日,2026-02-03 Jefferies 交易员 Jeffrey Favuzza,2026-02-03,S4,unverified_secondary,可回填 INTU 卡的同名 OPEN
