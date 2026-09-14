@@ -1,0 +1,142 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-09-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-09-05",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "refresh_of": "companies/gev/2026-06-19",
+  "refresh_type": "REFRESH (re-price + fold in Q2 2026 + CORRECT a valuation-model error in the prior card)",
+  "context_label": "oligopoly_services_annuity_price_trigger_fired_on_a_falsified_anchor",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 70,
+  "as_of_price": 941.95,
+  "as_of_market_cap": 250869543500,
+  "share_basis_note": "266.33M shares x $941.95 close of 2026-09-04 = $250.87B, matching stockanalysis. EV $241.87B.",
+  "prior_card": {
+    "as_of": "2026-06-19",
+    "price": 1109.73,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below_starter": 950.0,
+    "buy_below_core": 756.0,
+    "max_size_pct": 7,
+    "base_3y_irr": -0.043
+  },
+  "price_change_vs_prior_pct": -15.1,
+  "mechanical_trigger": {
+    "fired": true,
+    "detail": "Price $941.95 is 0.85% BELOW the prior card's $950 STARTER line - the only entry trigger to fire anywhere in this batch.",
+    "honoured": false,
+    "why_not": "The $950 anchor was derived on 2026-06-19 data. Q2 2026 falsified a load-bearing input to it (see valuation_correction)."
+  },
+  "valuation_correction": {
+    "error": "The 2026-06-19 model added ~$18B of projected 2028 'net cash' to 2028 enterprise value to reach equity value.",
+    "evidence": "The 2Q26 10-Q states that H1-2026 cash from operating activities rose $9.2B YoY driven primarily by an increase in contract liabilities and current deferred income of $11.8B, from higher down payments on orders and slot reservation agreements at Power and higher down payments at Electrification. The working-capital inflow was driven by contract liabilities and current deferred income of $13.7B.",
+    "why_it_matters": "That cash is customer float against undelivered turbines, not shareholder net cash. Counting it as net cash while also capitalising the future revenue it prepays double-counts the same economics. Independent arithmetic check: FY26 revenue guide $45.5-46.5B at the Q2 adjusted EBITDA margin of 11.3% implies roughly $5.0-6.0B of adjusted EBITDA, against an adjusted FCF guide of $11.5-12.5B - free cash flow running at about 2.2x EBITDA, which is only possible via negative working capital.",
+    "correction_applied": "2028 free net cash cut to bear $5B / base $9B / bull $14B, from the prior $12B / $18B / $22B.",
+    "effect": "Base 2028 equity value per share $974 -> $939; base IRR from the current price ~-0.1%/yr; 8%-hurdle entry ~$786."
+  },
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Q2 2026 press release plus the 10-Q cash-flow discussion are primary-sourced. The press release does not carry segment-level orders/revenue/EBITDA or adjusted EPS, so segment detail is still thin. Completeness ~70%."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "STRONGEST OPERATING QUARTER IN THE BATCH ON ORDERS. Orders $24.2B, +88% organically. Backlog $176B. Gas Power equipment backlog plus slot reservations grew 100 GW -> 116 GW with at least 125 GW targeted by year-end. Data centre orders exceed $5B year to date, more than double the full 2025 total. Production path 20 GW annual gas turbine output in 3Q26, 24 GW in 2028, 30 GW in 2030."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Unchanged. Gas turbine oligopoly plus a services annuity is a genuinely exceptional profit pool with a high supply barrier. This is the one business in this batch whose durability is NOT the open question."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction/warning",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "THE LEG THAT BROKE, AND IT IS AN ACCOUNTING-QUALITY ISSUE RATHER THAN A DEMAND ISSUE. Revenue $11.1B (+22%, +12% organic); adjusted EBITDA $1.2B at an 11.3% margin, up 340bp organically; GAAP net income $0.6B; FCF $5.1B in the quarter and $9.897B for H1. But the 10-Q attributes that cash to a $11.8B build in contract liabilities and current deferred income. Adjusted EPS of $2.47 also missed consensus of roughly $3.04 by about 19%. On the underlying earnings measure, EV of $241.87B against roughly $5.0-6.0B of FY26 adjusted EBITDA is about 44x - the prior card's core objection at 49x has barely improved despite the 15.1% price fall."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "The trap is a cash-flow illusion: a 4.8% headline FCF yield that is customer float, on a stock whose underlying EBITDA multiple is still in the forties. No permanent-impairment or solvency risk - cash $12.72B against debt $3.72B. The prepayment structure reverses if order growth stalls, so it is a working-capital cycle, not a hole."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Price $941.95, -15.1% since the prior card, and mechanically through the old $950 STARTER line. On the CORRECTED model, base 2028 value is about $939/share, giving roughly -0.1%/yr from here over 2.32 years, with bear -15.9%/yr and bull +16.0%/yr. The 8%-hurdle entry is about $786. The correct action is therefore to RETIRE the $950 line rather than to buy against it."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "partial",
+    "stage": "mid",
+    "supply_barrier": "high (gas turbine oligopoly, multi-year slot lead times)",
+    "read": "Genuinely different from the memory names in this batch. Supply here cannot respond quickly - slot reservations are booked years ahead - so the excess return is more defensible. The cyclical risk is in the customer's capex cycle, not in a supply flood.",
+    "caution": "NONE - this lens is not the binding issue for GEV. The binding issue is the valuation anchor."
+  },
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 7,
+  "buy_below_price": 786.0,
+  "buy_below_prior_starter": 950.0,
+  "buy_below_prior_core": 756.0,
+  "buy_below_note": "The $950 STARTER line is RETIRED, not met. Re-derived on the corrected model, the 8%-hurdle entry is about $786 and the price is roughly 20% above it. Note this sits close to the prior card's $756 CORE line, which was itself derived on the 8% hurdle - the two methods agree once the net-cash error is removed. It was the looser $950 STARTER threshold that was wrong.",
+  "verdict_ceiling_source": "PRICE on the corrected model (about 20% above the 8%-hurdle entry)",
+  "binding_constraint": "PRICE - but for a different reason than in June. In June the objection was a 49x multiple. Today the objection is that the headline cash flow which appears to justify the price is customer float, so the underlying multiple is roughly 44x and has barely improved despite a 15.1% price decline.",
+  "kill_criteria": [
+    "K-A gas turbine pricing reverses - negative YoY for two consecutive quarters.",
+    "K-B slot cancellations - backlog falls from the 116 GW / >=125 GW path without firm replacement.",
+    "K-C Wind losses exceed $600M for full-year 2026 with no credible recovery plan.",
+    "K-D hyperscaler 2027 capex down more than 30% together with Electrification orders down more than 40%.",
+    "K-E NEW: contract liabilities stop growing or reverse while reported FCF stays in the guided range - that combination would mean the float is being consumed rather than replenished.",
+    "K-F NEW: adjusted EBITDA margin fails to progress toward the 2028 target path. Q2 at 11.3% against a roughly 20% 2028 requirement is the gap to watch each quarter."
+  ],
+  "watch_to_starter_trigger": "Either (1) price into ~$786 or below on the corrected model, or (2) evidence that re-rates the model upward - specifically, adjusted EBITDA margin converging toward the 2028 target path (from 11.3% today) with adjusted FCF sustained AFTER contract-liability growth normalises. Next scheduled test is Q3 2026 on 2026-10-21.",
+  "runner_dissent": "This is the call in the batch I am least comfortable with, and the discomfort runs in the bullish direction. GEV posted 88% organic order growth, took gas backlog from 100 to 116 GW toward 125 GW, and has the highest business quality here by a wide margin - and I am declining a price trigger that mechanically fired. Two things could make that wrong. First, my 2028 EBITDA of $8.5B is carried from June and may be too low given the backlog growth since. Second, customer prepayments on a multi-year oligopoly backlog are arguably a durable structural float rather than a one-off working-capital swing, and a business that is permanently prepaid by its customers genuinely deserves some credit for it. What I am NOT willing to do is buy against an anchor whose net-cash input the 10-Q has just contradicted. The right sequence is to correct the model first and let price come to the corrected number, not to honour a trigger built on a falsified input. If Q3 shows margin converging on the 2028 path, this becomes the best STARTER candidate in the book and I would want to revisit it immediately.",
+  "sources_used": [
+    {
+      "source_id": "S001",
+      "public_date": "2026-07-22",
+      "url_or_path": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+      "tier": "A1",
+      "what": "Q2 2026: orders $24.2B +88% organic, revenue $11.1B +22%, GAAP NI $0.6B / 5.8% margin, adj EBITDA $1.2B / 11.3% +340bp organic, FCF $5.1B, backlog $176B, cash $13.1B, $3.9B returned YTD, gas backlog 100->116 GW targeting >=125 GW, data centre orders >$5B YTD, FY26 guide raised to revenue $45.5-46.5B and adj FCF $11.5-12.5B"
+    },
+    {
+      "source_id": "S002",
+      "public_date": "2026-07-22",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000148/gev2q2026form10-q.pdf",
+      "tier": "A1",
+      "what": "LOAD-BEARING FOR THE CORRECTION: H1-2026 operating cash flow +$9.2B YoY driven primarily by contract liabilities and current deferred income of +$11.8B from down payments on orders and slot reservation agreements; working-capital inflow driven by contract liabilities and current deferred income of $13.7B; H1 FCF $9.897B vs $1.169B in H1-2025"
+    },
+    {
+      "source_id": "S003",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://stockanalysis.com/stocks/gev/",
+      "tier": "B1",
+      "what": "price $941.95, cap $250.87B, 266.33M shares, EV $241.87B, cash $12.72B, debt $3.72B, trailing P/E 26.96, forward P/E 44.90, TTM EPS $34.94, TTM revenue $41.37B, 52wk 530.16-1195.94, next earnings 2026-10-21"
+    },
+    {
+      "source_id": "S004",
+      "public_date": "2026-06-19",
+      "url_or_path": "companies/gev/2026-06-19/valuation.md",
+      "tier": "A1",
+      "what": "prior model being corrected: base 2028 EBITDA $8.5B at 28x plus $18B net cash = $974/share; STARTER $950, CORE $756"
+    }
+  ]
+}

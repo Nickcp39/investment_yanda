@@ -1,0 +1,4 @@
+scenario,normalized_eps,exit_pe,fair_value,as_of_price,price_over_fair,note
+bear,11.0,15,165.0,1016.59,6.16,carried from 2026-07-10 card; no new MU filing since
+base,22.0,20,440.0,1016.59,2.31,carried from 2026-07-10 card; no new MU filing since
+bull,38.0,25,950.0,1016.59,1.07,carried from 2026-07-10 card; no new MU filing since

@@ -1,0 +1,151 @@
+{
+  "ticker": "MU",
+  "as_of": "2026-09-05",
+  "generated_by": "runner",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, batch memory_ai_refresh_2026-09-05. as_of is Saturday 2026-09-05; the last trading day is Friday 2026-09-04, so as_of_price is the 2026-09-04 close (last close <= as_of). Every quantitative LIVE field carries >=2 independent sources. FILED data (10-K / 10-Q / 8-K / 6-K line items) is NOT here - it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1016.59,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU",
+          "fetched_at": "2026-09-05",
+          "value": 1016.59
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/mu/",
+          "fetched_at": "2026-09-05",
+          "value": 1016.59
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1148746700000,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "1,130M x 1016.59",
+          "fetched_at": "2026-09-05",
+          "value": 1148746700000
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/mu/",
+          "fetched_at": "2026-09-05",
+          "value": 1150000000000
+        }
+      ],
+      "cross_check_delta_pct": 0.11,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 1255.0,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU",
+          "fetched_at": "2026-09-05",
+          "value": 1255.0
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/mu/",
+          "fetched_at": "2026-09-05",
+          "value": 1255.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 118.52,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/mu/",
+          "fetched_at": "2026-09-05",
+          "value": 118.52
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU",
+          "fetched_at": "2026-09-05",
+          "value": 125.66
+        }
+      ],
+      "cross_check_delta_pct": 6.02,
+      "pass": true,
+      "note": "52wk-low window-boundary artifact, not a data error: the Yahoo 1y window starts later than the stockanalysis 52-week window, and this name was rocketing off its low a year ago. The LOWER (stockanalysis) value is recorded so the T1 containment test is the conservative one."
+    },
+    {
+      "field": "shares_out",
+      "value": 1130.0,
+      "unit": "millions",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/mu/",
+          "fetched_at": "2026-09-05",
+          "value": 1130.0
+        },
+        {
+          "source_name": "prior_card_2026-07-10",
+          "url": "companies/mu/2026-07-10/decision_card.json",
+          "fetched_at": "2026-09-05",
+          "value": 1130.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "Q4 FY2026 guidance (issued 2026-06-24 with Q3 FY26): revenue $50.0B +/-1.0B; non-GAAP gross margin ~86%; non-GAAP EPS $31.00. NOT YET SUPERSEDED - Q4 FY26 results are scheduled for 2026-09-30, i.e. AFTER this as_of. This is the oldest live-guidance item in the batch (73 days) and is expected to trip the T6 recency warning. That warning is the correct signal, not a defect: MU is the one name in this batch with no new filing since the prior card.",
+      "is_quantitative": false,
+      "as_of": "2026-06-24",
+      "sources": [
+        {
+          "source_name": "micron_ir_q3fy26",
+          "url": "https://investors.micron.com/news/press-release/2026/",
+          "public_date": "2026-06-24",
+          "fetched_at": "2026-09-05"
+        },
+        {
+          "source_name": "micron_ir_earnings_date",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx",
+          "public_date": "2026-08-26",
+          "fetched_at": "2026-09-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

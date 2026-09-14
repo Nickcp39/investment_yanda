@@ -1,0 +1,128 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-09-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-09-05",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "refresh_of": "companies/nvda/2026-07-10",
+  "refresh_type": "LIGHT REFRESH (re-price + fold in Q2 FY27 actuals)",
+  "context_label": "exceptional_bottleneck_price_at_line_owner_earnings_bridge_unverified",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 65,
+  "as_of_price": 230.36,
+  "as_of_market_cap": 5589455040000,
+  "share_basis_note": "24,264M diluted weighted shares, derived from the Q2 FY27 8-K (GAAP net income $59,688M / GAAP diluted EPS $2.46 = 24,264M) x $230.36 close of 2026-09-04 (last close <= as_of; 2026-09-05 is a Saturday). stockanalysis reports 24.15B shares and $5.56T cap; the 0.53% gap is outstanding-vs-diluted-weighted.",
+  "prior_card": {
+    "as_of": "2026-07-10",
+    "price": 210.96,
+    "new_money_verdict": "WATCH",
+    "buy_below": 181.0,
+    "base_5y_irr": 0.047
+  },
+  "price_change_vs_prior_pct": 9.2,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Q2 FY27 8-K fully primary-sourced and folded in. But the release does NOT break out Gaming, Networking, segment detail, or a cash-flow statement, and the 10-Q is not yet read. The owner-earnings bridge that anchored the prior card cannot be closed from the 8-K alone -> M1 steps DOWN from +2 to +1 (haircut, not veto)."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Mechanism intact and accelerating. Revenue $96.221B (+106% YoY, +18% QoQ); Data Center $89.0B (+117% YoY) = ~92% of revenue; Q3 guided to ~$108.0B. The AI-compute bottleneck thesis is delivering exactly as underwritten."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Full-stack capture unchanged; gross margin 75.0% held. Returned ~$26.0B in Q2 ($19.732B buyback + $6.047B dividends) with ~$99.0B authorization left. Operator grade carried at 4/5. Custom-silicon migration remains the one durability question that could matter."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction/warning",
+      "signal": 0,
+      "confidence": "low",
+      "finding": "THE CHANGED LEG, AND IT CHANGED DOWN. Prior card rested on a clean bridge: capex-light, FCF = owner earnings ~$182B. Q2 FY27 breaks it. GAAP net income $59,688M but operating cash flow only $24,077M (40%) and FCF $21,341M (36%) - inventory stands at $31,575M. Separately, GAAP EPS $2.46 EXCEEDS non-GAAP $2.22, which is backwards and is most plausibly non-cash mark-to-market gains on the $42,783M equity-securities book. Both point the same way: reported GAAP earnings currently overstate cash owner earnings. Neither can be resolved without the 10-Q. M4 drops +2 -> 0 on UNVERIFIED, not on proven deterioration."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural break. China Data Center compute is explicitly excluded from the Q3 outlook, so it stays recoverable optionality the guide does not count. Gross margin guided DOWN 75.0% -> 74.0% - small, but the first guided margin decline in the current run and worth logging. Pull-forward and custom-silicon remain size-control reasons, not vetoes."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Price $230.36 is +9.2% above the prior card. On the REPORTED owner-earnings base (Q2 non-GAAP net income annualized ~$215.5B; Q3 guide implies ~$241B), base 5y IRR = +7.25%, just under the 8% hurdle, and the 8%-neutral entry rises $181 -> ~$222. On the CASH-HAIRCUT base ($150B) the same model gives -1.1% IRR and a ~$148 entry. The honest buy-below is therefore a BAND of $148-222, and $230.36 sits above the top of it either way -> still no margin of safety."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "partial",
+    "stage": "late?",
+    "supply_barrier": "high (CUDA/full-stack) vs low (raw compute)",
+    "read": "Unchanged from prior card. We do not know the turn timing. The applicable segment is raw compute, not the platform layer.",
+    "caution": "NONE material - one-way lens, not invoked to lift or lower this verdict"
+  },
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 222.44,
+  "buy_below_band": [
+    148.3,
+    222.44
+  ],
+  "buy_below_note": "Band, not a point. Top ($222.44) assumes the owner-earnings base is real at ~$225B. Bottom ($148.30) assumes owner earnings should be haircut toward demonstrated cash (~$150B). The 10-Q resolves which. Do NOT act on the top of the band before it does.",
+  "verdict_ceiling_source": "PRICE first (above the band), then M4/M1 completeness (OE bridge unverified)",
+  "binding_constraint": "TWO-PART, and the second part is new. (1) PRICE: $230.36 is above even the optimistic $222 entry. (2) OWNER-EARNINGS QUALITY: the FCF = OE bridge that justified the prior card broke this quarter and cannot be closed from the 8-K.",
+  "kill_criteria": [
+    "K1 Revenue materially misses the ~$108B Q3 guide, or Data Center declines sequentially, or gross margin falls below 65%.",
+    "K2 Large-scale custom-silicon migration structurally erodes Data Center share (the only criterion that can escalate to a veto).",
+    "K3 Large inventory-commitment write-down (the $4.5B H20 charge is the precedent); inventory is now $31,575M and rising.",
+    "K4 Price persistently above the buy-below band without an evidenced upgrade to owner earnings -> stay WATCH. CURRENTLY TRIGGERED.",
+    "K5 NEW THIS REFRESH: the 10-Q shows the OCF/net-income gap is structural rather than a working-capital timing build -> re-underwrite M3/M4, do not simply widen the band.",
+    "K6 Huang key-man."
+  ],
+  "watch_to_starter_trigger": "Sequenced, not price-only. STEP 1: the Q2 FY27 10-Q closes the OE bridge (operating cash flow converges toward non-GAAP net income, and the GAAP-over-non-GAAP inversion is confirmed as investment gains rather than operating). STEP 2: only then does the ~$222 top-of-band become a live entry, and a pullback into it opens a 3-5% STARTER. Skipping step 1 means sizing on an earnings number the cash flow statement does not yet support.",
+  "runner_dissent": "The mechanical output (WATCH) is the same as July, but I want it on record that the REASON inverted and that this is the most interesting name in the batch. In July the stock was expensive against a clean earnings base. Today it is roughly AT a fair price against an earnings base I cannot yet verify. Those are very different situations and the second one resolves on a single dated document. If the 10-Q closes the bridge, NVDA is the first STARTER candidate this book has had in this complex - and note the forward multiple COMPRESSED from ~28x to ~19x while the price rose 9.2%, because earnings outran the price. I am deliberately not pre-crediting that.",
+  "sources_used": [
+    {
+      "source_id": "S001",
+      "public_date": "2026-08-26",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+      "tier": "A1",
+      "what": "Q2 FY2027 results: revenue $96,221M, DC $89.0B, GM 75.0%, GAAP EPS $2.46, non-GAAP EPS $2.22, OCF $24,077M, FCF $21,341M, inventory $31,575M, buyback $19,732M, Q3 guide $108.0B / GM 74.0%"
+    },
+    {
+      "source_id": "S002",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA",
+      "tier": "A2",
+      "what": "2026-09-04 close $230.36; 52wk 164.07-236.54"
+    },
+    {
+      "source_id": "S003",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://stockanalysis.com/stocks/nvda/",
+      "tier": "B1",
+      "what": "cross-check: price $230.36, cap $5.56T, 24.15B shares, 52wk 164.07-236.54, trailing P/E 29.13, forward P/E 19.10, TTM EPS $7.91"
+    },
+    {
+      "source_id": "S004",
+      "public_date": "2026-07-10",
+      "url_or_path": "companies/nvda/2026-07-10/decision_card.json",
+      "tier": "A1",
+      "what": "prior card: $210.96, WATCH, buy_below $181, base 5y IRR +4.7%, OE base $182B"
+    }
+  ]
+}

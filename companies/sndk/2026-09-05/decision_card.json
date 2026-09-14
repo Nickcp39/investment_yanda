@@ -1,0 +1,157 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-09-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-09-05",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "refresh_of": "companies/sndk/2026-06-22",
+  "refresh_type": "REFRESH (re-price + fold in Q4 FY26 actuals + 2026 Investor Day long-term model)",
+  "context_label": "cyclical_inflection_company_claims_cycle_repealed_unproven",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 60,
+  "as_of_price": 1740.0,
+  "as_of_market_cap": 254770800000,
+  "share_basis_note": "146.42M shares outstanding x $1,740.00 close of 2026-09-04 = $254.77B, reconciling to stockanalysis exactly. Per-share earnings math uses the 157M diluted weighted share count from the Q4 FY26 8-K.",
+  "prior_card": {
+    "as_of": "2026-06-22",
+    "price": 2288.92,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "TRIM",
+    "buy_below": 600.0,
+    "prob_weighted_fair": 470.0,
+    "bull_fair": 990.0
+  },
+  "price_change_vs_prior_pct": -24.0,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Q4 FY26 and full-FY26 line items are primary-sourced from the 8-K; the Investor Day long-term model is primary-sourced from the company release. Evidence quality is the best in this batch."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "AI storage demand is real and landing in the P&L. Q4 revenue $8.97B (+51% QoQ) with roughly one-third of the sequential gain from volume and two-thirds from price. Datacenter revenue $2,977M in Q4 (+103% QoQ) and $5,153M for FY26 (+437% YoY)."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "low",
+      "finding": "THE WHOLE CASE SITS HERE AND IT IS UNRESOLVED. NBM agreements now cover 8 customers, ~50% of FY2027 bits and ~2/3 of FY2028 bits - a genuine change in commercial structure, not spin. But the Investor Day claim is ~80% non-GAAP gross margin and ~75% operating margin sustained FY2028-FY2030, from a company that reported 30.08% gross margin and a LOSS in FY2025 and lost money in three of the last four fiscal years. A long-term contract can raise the floor; it has never been shown to repeal the ceiling in this industry. Signal held at 0 - not negative, because the NBM structure is real; not positive, because through-cycle proof can only be produced in a DOWN quarter and no down quarter has occurred."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction/warning",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Reported results are extraordinary and clean on their face: FY26 revenue $20,248M (+175%), GAAP gross margin 71.47%, operating margin 61.58%, diluted EPS $73.76, FY26 FCF $11,494M, cash $4,762M against $201M debt. ONE STRUCTURAL FLAG: FY26 capex was $177M on $20,248M of revenue (0.9%), because wafer capacity sits in the Flash Ventures JV with Kioxia and does not run through this company's capex line. Reported FCF therefore overstates the true capital intensity of the business. Held at +1 rather than +2 for that reason; confirming the JV funding mechanics in the 10-K is the open item."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "The trap is buying a commodity manufacturer at a record margin on the assumption the record is the new normal, while the supply response is already funded. SK Hynix approved $38B of new memory fabs on 2026-08-07 and its own stock fell 5% on the announcement. Samsung and SK Hynix together are committing on the order of 800 trillion won (~$518B) to new Korean fabs. Contract price momentum is decelerating hard: conventional DRAM +90-95% QoQ in 1Q26, +58-63% in 2Q26, forecast +13-18% in 3Q26 and +3-8% in 4Q26; NAND +10-15% in 3Q26. Prices are still rising, but the second derivative has turned while $500B+ of capacity is being built."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "Rebuilt scenarios on the new earnings base give bear $261 / base $853 / bull $2,545 at 12x, probability-weighted (30/45/25) to ~$1,098 fair. Price $1,740.00 is 1.58x that. A 30% margin of safety puts the entry at ~$769. Additional caution on the specific print: 2026-09-04 closed at the session HIGH, +11.9% on the day, on a BofA upgrade, a UBS note and Seagate's FQ4 beat - sell-side and peer-driven, with no new disclosure from SanDisk itself."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "yes",
+    "stage": "late/peak",
+    "supply_barrier": "low-to-med (commodity NAND; NBM contracts raise it only for contracted bits)",
+    "read": "Record margins, record prices, and a fully funded supply response happening at the same time. We do not know the turn timing and do not claim to. What we do know is that the capacity answering these margins has been board-approved and financed.",
+    "caution": "PEAK - one-way. Caps the verdict at WATCH/TRIM. The -25.5% drawdown from the June high does NOT switch it off."
+  },
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "existing_position_change": "TRIM -> HOLD (softened)",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 10,
+  "buy_below_price": 769.0,
+  "buy_below_prior": 600.0,
+  "buy_below_note": "RAISED from $600 to ~$769 because the earnings base genuinely re-based - FY26 EPS $73.76 actual versus what the June card could model. This is an evidence-driven raise, not a chase: $769 is still 56% below the current price. The entry stays conditional on durability proof, which cannot arrive in an up quarter.",
+  "verdict_ceiling_source": "PRICE (1.58x probability-weighted fair) + capital-cycle PEAK caution + M3 unresolved",
+  "binding_constraint": "PRICE against NORMALIZED, not peak, earnings - unchanged in kind from June, but the gap narrowed from ~4.9x fair to ~1.58x fair. The second constraint is that the 80% gross-margin claim is unfalsifiable until a down quarter arrives.",
+  "kill_criteria": [
+    "K1 Gross margin declines sequentially or comes in below the 83.0-84.9% Q1 FY27 guide.",
+    "K2 NAND ASPs turn negative QoQ (TrendForce already has 4Q26 decelerating to +3-8%).",
+    "K3 NBM economics revealed materially weaker than the ~50% of FY27 bits / ~2/3 of FY28 bits framing, or an NBM customer walks.",
+    "K4 Capacity additions outrun demand - watch BiCS10, the third Kitakami fab, and the Korean build-out.",
+    "K5 The $15.5B buyback is executed aggressively into the peak and the stock then halves.",
+    "K6 AI-capex pause cuts datacenter NAND demand.",
+    "K7 NEW: FY2027 tracks the Investor Day model on revenue but NOT on the ~80% gross margin -> the durable-reset tail is falsified and the bull scenario weight goes to zero."
+  ],
+  "watch_to_starter_trigger": "Two conditions, BOTH required, and the order matters. (1) PRICE into ~$769-900. (2) DURABILITY PROOF: at least one quarter in which industry NAND pricing is flat-to-down and SanDisk's gross margin still holds materially above its historical mid-cycle range. Condition 2 is the whole thesis and can only be produced in a down quarter. Price alone does not open a STARTER here.",
+  "runner_dissent": "Two honest scorekeeping notes against my own prior card. FIRST, the June card was right on price (-24%) and WRONG on the business: it listed 'gross margin rolls over' and 'NAND ASPs turn negative' as the things to watch, and both went the other way - Q4 gross margin rose to 84.6% and two-thirds of sequential growth was price. Getting the direction right for the wrong reason is not a win and I am not going to record it as one. SECOND, my bear case here may be too harsh: NBM take-or-pay contracts across two-thirds of FY2028 bits are a real structural change, and a pure 30%-gross-margin commodity reversion may no longer be the right bear. I have kept the 30% weight anyway because the alternative is to credit an unproven claim, and the asymmetry of being wrong in that direction is worse.",
+  "sources_used": [
+    {
+      "source_id": "S001",
+      "public_date": "2026-08-05",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+      "tier": "A1",
+      "what": "Q4 FY26: revenue $8.97B, GM 84.6%, GAAP EPS $43.97, non-GAAP EPS $39.25, OCF $7,126M, FCF $7,083M, capex $43M, cash $4,762M, debt $0 LT, 157M diluted; FY26 revenue $20,248M, GM 71.5%, EPS $73.76, FCF $11,494M; Q1 FY27 guide $10.30-10.80B / 83.0-84.9% / $44-46; buyback +$14B to $15.5B; DC Q4 $2,977M, FY $5,153M"
+    },
+    {
+      "source_id": "S002",
+      "public_date": "2026-08-13",
+      "url_or_path": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-details-growth-strategy-and-long-term-financial-model",
+      "tier": "A1",
+      "what": "Investor Day FY2028-FY2030 model: revenue growth mid-to-high teens, non-GAAP GM ~80%, OM ~75%, adj FCF margin ~50%; NBM with 8 customers = ~50% FY27 bits, ~2/3 FY28 bits"
+    },
+    {
+      "source_id": "S003",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://stockanalysis.com/stocks/sndk/",
+      "tier": "B1",
+      "what": "price $1,740.00, cap $254.77B, 146.42M shares, EV $248.43B, cash $4.76B, debt $201M, trailing P/E 23.59, forward P/E 8.13, TTM EPS $73.76; FY23-FY26 income statement history"
+    },
+    {
+      "source_id": "S004",
+      "public_date": "2026-07-09",
+      "url_or_path": "https://www.trendforce.com/presscenter/news/20260709-13140.html",
+      "tier": "B1",
+      "what": "server DRAM contract prices +13-18% QoQ in 3Q26; long-term agreements capping increases"
+    },
+    {
+      "source_id": "S005",
+      "public_date": "2026-07-03",
+      "url_or_path": "https://www.trendforce.com/presscenter/news/20260703-13134.html",
+      "tier": "B1",
+      "what": "3Q26 memory price gains moderate on high base and weak consumer demand"
+    },
+    {
+      "source_id": "S006",
+      "public_date": "2026-08-07",
+      "url_or_path": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-drops-5-approving-163122357.html",
+      "tier": "B1",
+      "what": "SK Hynix approves $38B in new memory fabs; its stock falls 5% on the announcement"
+    },
+    {
+      "source_id": "S007",
+      "public_date": "2026-09-04",
+      "url_or_path": "https://247wallst.com/investing/2026/09/04/sk-hynix-surges-7-as-memory-bid-widens-beyond-nand-seagate-rallies-5/",
+      "tier": "C1",
+      "what": "SENTIMENT ONLY: 2026-09-04 sector rally on BofA upgrade + UBS note + Seagate FQ4 beat; no SanDisk-specific disclosure"
+    },
+    {
+      "source_id": "S008",
+      "public_date": "2026-06-22",
+      "url_or_path": "companies/sndk/2026-06-22/decision_card.json",
+      "tier": "A1",
+      "what": "prior card: $2,288.92, WATCH/TRIM, buy_below $600, prob-weighted fair ~$470, bull ~$990"
+    }
+  ]
+}

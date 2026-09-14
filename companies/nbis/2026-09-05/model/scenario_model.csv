@@ -1,0 +1,7 @@
+scenario,exit_2026_arr_usd_b,ev_basis,ev_usd_b,ev_over_arr,as_of_price,note
+guide_low,7.0,cash $8.0B + $775M ABF,54.83,7.83,226.39,basis used in this card
+guide_mid,8.0,cash $8.0B + $775M ABF,54.83,6.85,226.39,basis used in this card
+guide_high,9.0,cash $8.0B + $775M ABF,54.83,6.09,226.39,basis used in this card
+current_jun26,3.0,cash $8.0B + $775M ABF,54.83,18.28,226.39,basis used in this card
+guide_mid_altbasis,8.0,cash+restricted $9.10B vs non-current liab $8.50B (prior card C109),61.45,7.68,226.39,C111 UNRESOLVED - shown to make the EV basis question visible
+current_jun26_altbasis,3.0,cash+restricted $9.10B vs non-current liab $8.50B (prior card C109),61.45,20.48,226.39,C111 UNRESOLVED - shown to make the EV basis question visible

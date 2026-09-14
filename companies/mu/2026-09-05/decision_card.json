@@ -1,0 +1,147 @@
+{
+  "ticker": "MU",
+  "as_of": "2026-09-05",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-09-05",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "refresh_of": "companies/mu/2026-07-10",
+  "refresh_type": "RE-PRICE ONLY (no new MU filing since the prior card; Q4 FY26 lands 2026-09-30)",
+  "context_label": "cyclical_inflection_at_cycle_peak_no_margin_of_safety",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 60,
+  "as_of_price": 1016.59,
+  "as_of_market_cap": 1148746700000,
+  "share_basis_note": "1,130M shares x $1,016.59 close of 2026-09-04 = $1.149T; stockanalysis reports $1.15T (0.11% delta).",
+  "prior_card": {
+    "as_of": "2026-07-10",
+    "price": 979.3,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below": 650.0,
+    "base_fair": 440.0,
+    "bull_fair": 950.0
+  },
+  "price_change_vs_prior_pct": 3.8,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "NO NEW COMPANY EVIDENCE. The latest reported quarter is still Q3 FY26 (2026-06-24). Q4 FY26 is confirmed for 2026-09-30, after this as_of. Everything company-specific is carried forward unchanged. This is the only name in the batch where the T6 guidance-recency warning fires, and it fires correctly."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Mechanism carried and corroborated from outside: HBM/DRAM demand is being confirmed by peers (SanDisk Q4 FY26 blowout, Seagate FQ4 revenue $3.63B +48.5% YoY). Read-across is supportive, but it is read-across, not Micron's own numbers."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Unchanged. HBM is the genuine high-barrier segment; the commodity DRAM majority is not. The 16 multi-year Strategic Customer Agreements remain a real but partial offset to cyclicality."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Carried unchanged from Q3 FY26: revenue $41.46B, non-GAAP GM 84.9%, non-GAAP EPS $25.11, OCF $25.39B, adj FCF $18.3B, DRAM $31.3B. Q4 guide $50.0B / ~86% GM / $31.00 EPS. Balance sheet $26.02B cash against $6.38B debt. Nothing here has been disconfirmed - it simply has not been updated."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "WORSENED SINCE JULY, and this is the only leg that moved on evidence. In July the supply response was anticipated; it is now board-approved and financed. SK Hynix approved $38B of new fabs on 2026-08-07; Samsung and SK Hynix are together committing ~800 trillion won (~$518B) to new Korean capacity; Micron's own FY2027 capex is guided above $10B per quarter. Meanwhile conventional DRAM contract-price momentum decelerates from +90-95% QoQ (1Q26) to a forecast +3-8% (4Q26). Capacity being funded into decelerating price momentum is the textbook late-cycle configuration."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "Price $1,016.59, +3.8% since the prior card. Against the carried normalized band the stock moved the WRONG way: 2.31x base fair (was 2.23x) and 1.07x bull fair (was 1.03x) - it is now slightly ABOVE the honest bull case rather than at it. Forward P/E of ~7.07x looks cheap and is the classic memory value trap: this stock prints its lowest multiples on peak EPS. Reference points from Micron's own history: FY2022 peak EPS $7.75 became FY2023 EPS of -$5.34."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "yes",
+    "stage": "late/peak",
+    "supply_barrier": "med (HBM) -> low (commodity majority)",
+    "read": "Upgraded in confidence, not in direction, since July. The supply response is no longer a forecast: it is approved and funded. Turn timing remains unknown and we do not bet on it.",
+    "caution": "PEAK - one-way. Caps at WATCH/TRIM."
+  },
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 12,
+  "buy_below_price": 650.0,
+  "buy_below_note": "UNCHANGED at $650 on purpose. Micron has not reported since the prior card, so there is no company-specific evidence on which to move the line. Re-rating an entry price on sector sentiment and peer read-across is exactly the error this pipeline exists to prevent. 2026-09-30 is the date that earns a change.",
+  "verdict_ceiling_source": "PRICE (2.31x base fair) + capital-cycle PEAK caution",
+  "binding_constraint": "PRICE against normalized cycle earnings. No new information since 2026-07-10.",
+  "kill_criteria": [
+    "K1 Q4 FY26 (2026-09-30) misses the $50.0B / ~86% GM / $31.00 EPS guide, or guides Q1 FY27 down.",
+    "K2 Non-GAAP gross margin declines sequentially - the first true cycle-turn signal.",
+    "K3 DRAM contract pricing goes negative QoQ (TrendForce already has 4Q26 at only +3-8%).",
+    "K4 Korean capacity lands ahead of demand - SK Hynix $38B, Samsung/SK ~$518B programme.",
+    "K5 Strategic Customer Agreements prove renegotiable under price pressure.",
+    "K6 Price stays above the buy-below with no evidenced upgrade to normalized earnings. CURRENTLY TRIGGERED."
+  ],
+  "watch_to_starter_trigger": "Price into ~$650 or below WITH the normalized band intact. Separately, a genuine upward revision to the normalized band would require the SCA/HBM floor to hold through a DOWN pricing quarter - which by definition cannot be observed while prices are still rising.",
+  "runner_dissent": "I want to flag a tension in the carried band rather than quietly fix it. Normalized base EPS of $22/year sits against a current quarterly run-rate of $25-31, i.e. it assumes roughly a 93% decline in earnings power. That was a defensible mid-cycle reversion before HBM and before 16 multi-year SCAs; it may now be too harsh, and if it is, base fair value of $440 is too low and the $650 entry is unreachably strict. But the evidence that would justify raising it can only be generated in a down-pricing quarter, and none has occurred. So: flagged, not changed. If Q4 FY26 on 2026-09-30 comes with a Q1 FY27 guide that holds margin against decelerating contract prices, that is the first real datapoint for re-basing the band upward.",
+  "sources_used": [
+    {
+      "source_id": "S001",
+      "public_date": "2026-06-24",
+      "url_or_path": "companies/mu/2026-07-10/decision_card.json",
+      "tier": "A1",
+      "what": "Q3 FY26 actuals and Q4 FY26 guide carried forward from the prior card"
+    },
+    {
+      "source_id": "S002",
+      "public_date": "2026-08-26",
+      "url_or_path": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx",
+      "tier": "A1",
+      "what": "Q4 FY2026 results confirmed for 2026-09-30 - i.e. after this as_of"
+    },
+    {
+      "source_id": "S003",
+      "public_date": "2026-09-05",
+      "url_or_path": "https://stockanalysis.com/stocks/mu/",
+      "tier": "B1",
+      "what": "price $1,016.59, cap $1.15T, 1.13B shares, EV $1.12T, cash $26.02B, debt $6.38B, trailing P/E 22.94, forward P/E 7.07, TTM EPS $44.31, TTM revenue $90.27B, 52wk 118.52-1255.00; FY21-FY25 income statement history incl. FY2023 EPS -$5.34"
+    },
+    {
+      "source_id": "S004",
+      "public_date": "2026-07-09",
+      "url_or_path": "https://www.trendforce.com/presscenter/news/20260709-13140.html",
+      "tier": "B1",
+      "what": "server DRAM +13-18% QoQ in 3Q26, decelerating from 1Q26/2Q26"
+    },
+    {
+      "source_id": "S005",
+      "public_date": "2026-08-07",
+      "url_or_path": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-drops-5-approving-163122357.html",
+      "tier": "B1",
+      "what": "SK Hynix approves $38B of new memory fabs"
+    },
+    {
+      "source_id": "S006",
+      "public_date": "2026-07-24",
+      "url_or_path": "https://www.techpowerup.com/350478/samsung-and-sk-hynix-to-expand-semiconductor-capacity-with-usd-870-billion-plan",
+      "tier": "B1",
+      "what": "Samsung + SK Hynix Korean capacity expansion programme (~800 trillion won)"
+    },
+    {
+      "source_id": "S007",
+      "public_date": "2026-07-28",
+      "url_or_path": "https://finance.yahoo.com/markets/article/micron-samsung-sk-hynix-just-dragged-memory-stocks-into-a-bear-market-154549356.html",
+      "tier": "C1",
+      "what": "SENTIMENT ONLY: memory complex entered a bear market in July 2026"
+    }
+  ]
+}

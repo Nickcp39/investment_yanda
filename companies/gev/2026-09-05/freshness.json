@@ -1,0 +1,150 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-09-05",
+  "generated_by": "runner",
+  "batch": "memory_ai_refresh_2026-09-05",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, batch memory_ai_refresh_2026-09-05. as_of is Saturday 2026-09-05; the last trading day is Friday 2026-09-04, so as_of_price is the 2026-09-04 close (last close <= as_of). Every quantitative LIVE field carries >=2 independent sources. FILED data (10-K / 10-Q / 8-K / 6-K line items) is NOT here - it rides the dated-source claim_ledger discipline.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 941.95,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV",
+          "fetched_at": "2026-09-05",
+          "value": 941.95
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-09-05",
+          "value": 941.95
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 250869543500,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "266.33M x 941.95",
+          "fetched_at": "2026-09-05",
+          "value": 250869543500
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-09-05",
+          "value": 250870000000
+        }
+      ],
+      "cross_check_delta_pct": 0.0002,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 1195.94,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV",
+          "fetched_at": "2026-09-05",
+          "value": 1195.94
+        },
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-09-05",
+          "value": 1195.94
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 530.16,
+      "unit": "USD",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-09-05",
+          "value": 530.16
+        },
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV",
+          "fetched_at": "2026-09-05",
+          "value": 530.16
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 266.33,
+      "unit": "millions",
+      "as_of": "2026-09-05",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "stockanalysis",
+          "url": "https://stockanalysis.com/stocks/gev/",
+          "fetched_at": "2026-09-05",
+          "value": 266.33
+        },
+        {
+          "source_name": "prior_card_2026-06-19",
+          "url": "companies/gev/2026-06-19/decision_card.json",
+          "fetched_at": "2026-09-05",
+          "value": 268.72
+        }
+      ],
+      "cross_check_delta_pct": 0.89,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "FY2026 guidance RAISED 2026-07-22 with Q2: revenue $45.5-46.5B; adjusted free cash flow $11.5-12.5B. Gas Power equipment backlog plus slot reservation agreements 116 GW, targeting >=125 GW by YE2026. MATERIAL CAVEAT established from the 2Q26 10-Q: H1-2026 cash from operating activities rose $9.2B YoY driven primarily by contract liabilities and current deferred income of +$11.8B (customer down payments on orders and slot reservation agreements at Power, and down payments at Electrification). The raised FCF guide is therefore largely customer float, not earnings power.",
+      "is_quantitative": false,
+      "as_of": "2026-07-22",
+      "sources": [
+        {
+          "source_name": "gev_ir_q2_2026",
+          "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+          "public_date": "2026-07-22",
+          "fetched_at": "2026-09-05"
+        },
+        {
+          "source_name": "sec_10q_2q2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000148/gev2q2026form10-q.pdf",
+          "public_date": "2026-07-22",
+          "fetched_at": "2026-09-05"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

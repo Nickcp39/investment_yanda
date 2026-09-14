@@ -1,0 +1,5 @@
+scenario,weight,fy28_revenue_usd_b,gross_margin,op_margin,tax,net_usd_b,eps,exit_pe,fair_value,as_of_price,upside_pct
+bear,0.3,25.0,0.3,0.15,0.15,3.19,21.77,12,261.23,1740.00,-85.0
+base,0.45,35.0,0.5,0.35,0.15,10.41,71.11,12,853.37,1740.00,-51.0
+bull,0.25,48.7,0.8,0.75,0.15,31.05,212.04,12,2544.43,1740.00,46.2
+prob_weighted,1.0,,,,,,,,1098.49,1740.00,-36.9
