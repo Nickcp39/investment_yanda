@@ -21,7 +21,7 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 pdfmetrics.registerFont(TTFont("CN", r"C:\Windows\Fonts\simhei.ttf"))
 
@@ -145,6 +145,17 @@ def render(md, width):
                 if t:
                     out += [t, Spacer(1, 5)]
             continue
+        m = re.match(r"^!\[[^\]]*\]\(([^)]+)\)", s)
+        if m:
+            src = m.group(1)
+            path = src if os.path.isabs(src) else os.path.join(os.path.dirname(os.path.abspath(SRC_PATH)), src)
+            if os.path.exists(path):
+                from reportlab.lib.utils import ImageReader
+                iw, ih = ImageReader(path).getSize()
+                w = min(width, 170 * mm); h = w * ih / iw
+                out += [Image(path, width=w, height=h), Spacer(1, 6)]
+            i += 1
+            continue
         m = re.match(r"^(#{1,4})\s+(.*)", s)
         if m:
             lvl = min(len(m.group(1)), 3)
@@ -167,8 +178,13 @@ def render(md, width):
     return out
 
 
+SRC_PATH = None
+
+
 def main():
+    global SRC_PATH
     src, dst = sys.argv[1], sys.argv[2]
+    SRC_PATH = src
     foot = sys.argv[3] if len(sys.argv) > 3 else os.path.basename(src)
     md = open(src, encoding="utf-8").read()
     title = next((l.lstrip("# ").strip() for l in md.split("\n") if l.startswith("# ")), foot)
