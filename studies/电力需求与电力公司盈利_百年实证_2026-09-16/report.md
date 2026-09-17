@@ -486,6 +486,40 @@ Energiewende(可再生优先 + 退核)让批发电价崩塌:碳价从 2008 年 �
 
 **"卖那个东西的人"不在表里。** 除非他同时是 ①②③ 之一。
 
+### 19.1 同时代谁赚得最多 —— 逐案例点名(全部有数)
+
+| 时代 | 需求暴涨的东西 | 卖那个东西的人 | **同时代最赚钱的人 / 公司** | 机制 | 量级(一手) |
+|---|---|---|---|---|---|
+| 1840s 铁路狂热 | 铁路运输 | 铁路公司股东 **−64%** | **Thomas Brassey**(承包商) | ③ 建铁路,**不持有铁路** | 1847 年已建成英国 1/3 的铁路,1870 年全球 1/20;雇工 7.5 万;遗产 **£320 万**(约合 2020 年 £6 亿) |
+| 1860–1911 石油 | 原油 | 宾州钻井商成批破产 | **John D. Rockefeller** | ② 炼油 + 管道(瓶颈),**一桶油都不钻** | 1913 年 **$9 亿 = 美国 GDP 的 2.3%**,美国史上相对经济体量最大的个人财富(按 GDP 占比折今约 $6,300 亿) |
+| 1870–1901 钢铁 | 钢 | 钢价 −85%,US Steel 股东九十年慢死 | **Andrew Carnegie** | ① 成本领先 + 纵向整合,**并且在顶部卖给了摩根** | 1901 年 **$4.8 亿**出售,个人分得 **$2.256 亿** |
+| 1880–1932 电力 | 电 | Insull 股东 $16,000 → $25 | **Insull(纸面 $40 亿,归零)→ 真正留下的是 GE / Westinghouse(设备)和摩根(承销费)** | ③ 设备商 + 金融 | GE:1896 年道指创始成分,留在道指 111 年 |
+| 1900–1930 汽车 | 汽车 | 数百家 → 3 家 | **Henry Ford** | ① 成本领先(流水线),幸存整合者 | 1920–25 年世界首富,**~$12 亿** |
+| 1995–2002 光纤 | 带宽 | 95% 暗光纤,Global Crossing 破产 | **Cisco**(同时代)/ **Gary Winnick**(内部人)/ **Google 等使用者**(长期) | ③ 设备商 / 内部人顶部减持 / ④ 使用者 | Cisco 2000-03-27 市值 **$5,554 亿,世界第一**;随后 −80%,**25 年后(2025-12)才收复**。Winnick 破产前减持 **$7.34 亿**(其中 2001-05-23 一天 $1.23 亿,当时他已看到收入下修 $3 亿的预测) |
+| 2003–2008 航运 | 运力 | BDI −94% | **韩国船厂**(同时代)/ 在顶部卖船的船东 | ③ 工具商(短暂)/ 内部人顶部退出 | 韩国船厂订单簿 2008 年峰值 **$1,436 亿**;此后连年亏损 |
+| 2005–2013 光伏 | 组件 | Suntech 破产 | 多晶硅商(2004–08)/ **装光伏的人** | ③ 上游瓶颈(短暂)/ ④ 使用者 | 多晶硅现货 $20 → $400/kg 再崩 |
+| 2023–2026 AI 电力 | 电 | XLU 跑输 12pp/yr | **NVDA**(算力工具)/ **VRT 16x** / **VST 6.4x** | ③ 工具商 / ① 既有稀缺资产 | NVDA ~$5 万亿 —— **正是 Cisco 2000 年坐的那把椅子** |
+
+**从这张表能读出五条:**
+
+1. **九次里,"同时代最赚钱的人"没有一次是"卖那个需求暴涨的东西的普通生产者"。** 两个看似例外(Carnegie、Ford)靠的是同一件事 —— 成本领先到能在价格崩塌时活下来并吃掉对手;**而且 Carnegie 还在顶部把公司卖掉了。**
+2. **最稳定的一类是卖工具 / 服务的人**(Brassey、GE、Cisco、韩国船厂、NVDA / VRT)—— 他们在建设期赚租金,**但回吐也最大**:Cisco −80% 且 25 年才收复,韩国船厂 2008 后连亏,光伏设备商随组件商一起死。**工具商的财富是"建设期的租金",建设期一结束租金归零。**
+3. **最大的绝对财富来自控制瓶颈,不是控制产量。** Rockefeller 是美国史上按 GDP 占比最大的个人财富,他不钻油。
+4. **每一次都有一类人:在顶部把股票卖给公众的内部人**(1840s 的 Hudson、Winnick、2008 的船东)。这一类不体面,但从未缺席。
+5. **长期最大的赢家是使用者**(Google 建在暗光纤上,汽车业建在廉价钢上),**但他们的财富在"同时代"看不见,要等 5–10 年。**
+
+**映射到 AI-电力(2026-09):**
+
+| 历史上的椅子 | 今天坐着谁 | 历史给的提示 |
+|---|---|---|
+| Cisco 2000(设备商,世界市值第一) | **NVDA** | 建设期租金最大;需求兑现晚于产能时回吐也最大(−80%,25 年) |
+| Brassey / 韩国船厂(建设承包) | **GEV / VRT** | 订单簿峰值 = 股价峰值;GEV 那 $180 亿"净现金"是客户预付款,正是船厂 2008 年的形状 |
+| Rockefeller(既有稀缺资产 + 瓶颈) | **VST / CEG / TLN** | 是这批里最像"赢家"的椅子 —— **但 Rockefeller 的利润没有被 20 年固定价 PPA 锁死,他们的被锁了**;且 1911 年被反垄断拆分 |
+| Google 1998(使用者) | **hyperscaler** | 历史上最终最赚的一类 —— 但这次使用者已经是全市场市值最大的公司,"使用者溢价"已在价里 |
+| 铁路公司股东(卖那个东西的人) | **受监管公用事业 / XLU** | 历史上零次赢;2023–26 跑输 12pp/yr 已经在重演 |
+| Hudson / Winnick(内部人) | **待观察** | 看 Form 4:哪家 AI-电力公司的高管开始系统性减持,就是第 4–5 段的信号 |
+
+
 ## 20. 思潮弧线的固定结构
 
 | 段 | 大众叙事 | 股价 | 历史对应 |
@@ -593,7 +627,7 @@ Energiewende(可再生优先 + 退核)让批发电价崩塌:碳价从 2008 年 �
 
 **数据**:Ken French Data Library(CRSP)· EIA Monthly Energy Review 表 7.1 / 7.2A / 7.6 / 9.8 · Yahoo Finance · EPRI *Powering Intelligence 2026* · PJM 容量拍卖结果 · Wood Mackenzie 大负荷队列分析 · EEI / PowerLines capex 计划 · S&P RRA 允许 ROE
 
-**历史考证**:[UPI 1983 WPPSS 违约](https://www.upi.com/Archives/1983/07/25/WPPSS-defaults-on-225-billion-nuclear-plant-bonds/7039427953600/) · [TIME PSNH 破产](https://time.com/archive/6711467/bankruptcy-buried-under-a-nuclear-pile/) · [Energy Intelligence Calpine](https://www.energyintel.com/0000017b-a7aa-de4c-a17b-e7ea42ce0000) · [EBSCO Insull](https://www.ebsco.com/research-starters/history/insull-utilities-trusts-collapse) · [NRC "Too cheap to meter"](https://www.nrc.gov/reading-rm/basic-ref/students/history-101/too-cheap-to-meter) · [Minneapolis Fed 放松管制](https://www.minneapolisfed.org/article/2001/pulling-the-plug-on-electricity-deregulation) · [Costello & Hemphill 死亡螺旋](https://energia.pr.gov/wp-content/uploads/sites/7/2016/07/Attachment-RH-1-Costello-Hemphill-Death-Spiral-2014_Final-Pub.pdf) · [Utility Dive PJM](https://www.utilitydive.com/news/pjm-interconnection-capacity-auction-data-center/808264/) · [Utility Dive 幽灵负荷](https://www.utilitydive.com/news/a-fraction-of-proposed-data-centers-will-get-built-utilities-are-wising-up/748214/) · [EPRI 2026](https://powering-intelligence.epri.com/load-growth.html) · [Clean Energy Wire 德国](https://www.cleanenergywire.org/factsheets/german-utilities-and-energiewende) · [EIA 中国](https://www.eia.gov/todayinenergy/detail.php?id=53959) · [CEPR 铁路狂热](https://cepr.org/voxeu/columns/railway-mania-not-so-great-expectations) · [Odlyzko 铁路狂热](https://www-users.cse.umn.edu/~odlyzko/doc/mania02.pdf) · [PBS Rockefeller](https://www.pbs.org/wgbh/americanexperience/features/rockefellers-john/) · [Construction Physics US Steel](https://www.construction-physics.com/p/no-inventions-no-innovations-a-history) · [Buffett 1990 年信](https://som.yale.edu/sites/default/files/2021-12/Module8-Readng.pdf) · [Fabricated Knowledge 电信泡沫](https://www.fabricatedknowledge.com/p/lessons-from-history-the-rise-and) · [CNN Suntech](https://www.cnn.com/2013/03/20/business/china-suntech-bankrupt/index.html) · [WMU BDI 2008](https://commons.wmu.se/all_dissertations/496/)
+**历史考证**:[UPI 1983 WPPSS 违约](https://www.upi.com/Archives/1983/07/25/WPPSS-defaults-on-225-billion-nuclear-plant-bonds/7039427953600/) · [TIME PSNH 破产](https://time.com/archive/6711467/bankruptcy-buried-under-a-nuclear-pile/) · [Energy Intelligence Calpine](https://www.energyintel.com/0000017b-a7aa-de4c-a17b-e7ea42ce0000) · [EBSCO Insull](https://www.ebsco.com/research-starters/history/insull-utilities-trusts-collapse) · [NRC "Too cheap to meter"](https://www.nrc.gov/reading-rm/basic-ref/students/history-101/too-cheap-to-meter) · [Minneapolis Fed 放松管制](https://www.minneapolisfed.org/article/2001/pulling-the-plug-on-electricity-deregulation) · [Costello & Hemphill 死亡螺旋](https://energia.pr.gov/wp-content/uploads/sites/7/2016/07/Attachment-RH-1-Costello-Hemphill-Death-Spiral-2014_Final-Pub.pdf) · [Utility Dive PJM](https://www.utilitydive.com/news/pjm-interconnection-capacity-auction-data-center/808264/) · [Utility Dive 幽灵负荷](https://www.utilitydive.com/news/a-fraction-of-proposed-data-centers-will-get-built-utilities-are-wising-up/748214/) · [EPRI 2026](https://powering-intelligence.epri.com/load-growth.html) · [Clean Energy Wire 德国](https://www.cleanenergywire.org/factsheets/german-utilities-and-energiewende) · [EIA 中国](https://www.eia.gov/todayinenergy/detail.php?id=53959) · [CEPR 铁路狂热](https://cepr.org/voxeu/columns/railway-mania-not-so-great-expectations) · [Odlyzko 铁路狂热](https://www-users.cse.umn.edu/~odlyzko/doc/mania02.pdf) · [PBS Rockefeller](https://www.pbs.org/wgbh/americanexperience/features/rockefellers-john/) · [Construction Physics US Steel](https://www.construction-physics.com/p/no-inventions-no-innovations-a-history) · [Buffett 1990 年信](https://som.yale.edu/sites/default/files/2021-12/Module8-Readng.pdf) · [Fabricated Knowledge 电信泡沫](https://www.fabricatedknowledge.com/p/lessons-from-history-the-rise-and) · [CNN Suntech](https://www.cnn.com/2013/03/20/business/china-suntech-bankrupt/index.html) · [WMU BDI 2008](https://commons.wmu.se/all_dissertations/496/) · [Britannica Rockefeller 财富](https://www.britannica.com/topic/How-Rich-Was-John-D-Rockefeller) · [ICE Brassey](https://www.ice.org.uk/what-is-civil-engineering/meet-the-engineers/thomas-brassey) · [CNBC Cisco 2025-12 收复 2000 高点](https://www.cnbc.com/2025/12/10/ciscos-stock-closes-at-record-for-first-time-since-dot-com-peak-2000.html) · [Washington Post Winnick](https://www.washingtonpost.com/wp-dyn/articles/A41860-2004Dec6.html) · [Britannica Carnegie Steel](https://www.britannica.com/money/Carnegie-Steel-Company)
 
 **Repo 内衔接**:`macro/ai_zeitgeist_timeline.md`(思潮方法论)· `companies/ceg/2026-06-22/memo-v1.md` · `companies/gev/2026-09-05/decision_card.md` · `companies/_mega7_2026-06-19/mega7_synthesis.md` §6(单因子集中度)
 
