@@ -4,7 +4,7 @@
 > 读这一份 + `current_process.md` 就能定位任何工作，**不要全仓扫描**——
 > `sources/`、`notes/`、`logs/` 是海量原始素材，按需检索即可。
 >
-> 最后更新: 2026-08-08 · 结构变动时同步更新本文件
+> 最后更新: 2026-09-08 · 结构变动时同步更新本文件
 
 ## 快速入口（按优先级）
 
@@ -64,7 +64,8 @@ execution_plans/      仓位与定投执行计划（BTC、QQQ/SPY/BRK、个股�
 backtests/            回测与 pipeline 时点测试（asof_<日期>_*）
 ├── SPY_QQQ_5年滚动回报_*/   SPY/QQQ 逐年五年滚动窗口
 ├── 黄金_货币供应_估值_*/     金价对 M2 的 σ 通道 + 无未来函数的前瞻收益回测
-└── 黄金_vs_SPY_QQQ_相对收益_*/  黄金相对 SPY/QQQ 的 1/3 年回测；主信号为严格 10 年滚动 σ
+└── 黄金_vs_SPY_QQQ_相对收益_*/  黄金相对 SPY/QQQ 的 1/3 年回测（严格 10 年滚动 σ）
+                          ⚠️ 与估值目录结论反号；文末附录已定位为回看窗口所致，两目录须合读
 career-thesis/        职业方向论文（AI+Healthcare）
 personal/             个人 namespace（职业 thesis、决策日志；规则见其 README）
 ```

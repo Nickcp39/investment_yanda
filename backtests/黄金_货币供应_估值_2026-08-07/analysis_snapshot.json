@@ -1,100 +1,100 @@
 {
-  "generated_at": "2026-08-07 15:51:56",
+  "generated_at": "2026-09-08 22:55:25",
   "panel": {
     "start": "1971-09",
-    "end": "2026-06",
-    "months": 658
+    "end": "2026-07",
+    "months": 659
   },
   "latest": {
-    "month": "2026-06",
-    "gold_monthly_avg_usd": 4238.318181818182,
-    "m2_sa_usd_bn": 23155.2,
-    "real_gold_in_latest_dollars": 4238.318181818182,
-    "z_full_money": 1.8053244626878173,
-    "z_rt_money": 1.8053244626878173,
-    "pct_rt_ratio": 0.8951367781155015,
-    "pct_rt_real": 0.9908814589665653,
-    "pct_rt_mcap": 0.9817629179331308
+    "month": "2026-07",
+    "gold_monthly_avg_usd": 4073.9239130434785,
+    "m2_sa_usd_bn": 23218.0,
+    "real_gold_in_latest_dollars": 4073.9239130434785,
+    "z_full_money": 1.685289590435141,
+    "z_rt_money": 1.685289590435141,
+    "pct_rt_ratio": 0.874051593323217,
+    "pct_rt_real": 0.9863429438543247,
+    "pct_rt_mcap": 0.9742033383915023
   },
   "money_model": {
     "form": "ln(gold) = a + b * ln(M2_sa)",
-    "a": -1.032336749258567,
-    "b": 0.8638751559321209,
-    "sigma_log": 0.3890354087241506,
-    "sigma_as_pct": 0.4755567979916844,
+    "a": -1.0461111322400274,
+    "b": 0.8656265291320657,
+    "sigma_log": 0.389608919246796,
+    "sigma_as_pct": 0.4764032880543707,
     "implied_band_at_current_m2": {
-      "-2sigma": 964.4093646869164,
-      "-1sigma": 1423.0407941106218,
-      "0sigma": 2099.7775175694123,
-      "1sigma": 3098.3409903196516,
-      "2sigma": 4571.778110762444
+      "-2sigma": 969.267106823684,
+      "-1sigma": 1431.029143517434,
+      "0sigma": 2112.7761327907697,
+      "1sigma": 3119.30962937509,
+      "2sigma": 4605.3589932690475
     }
   },
   "time_model": {
     "form": "ln(gold) = a + b * t_years",
-    "a": 4.850700947432093,
-    "b": 0.05145144751349093,
-    "trend_cagr": 0.052798069087163446,
-    "sigma_log": 0.4198164165011604
+    "a": 4.848766210977266,
+    "b": 0.0515574604699199,
+    "trend_cagr": 0.05290968523926476,
+    "sigma_log": 0.4202350315794519
   },
   "real_gold_model": {
-    "mean_log": 7.0724375158819495,
-    "sigma_log": 0.5140187574513251
+    "mean_log": 7.0742173782955335,
+    "sigma_log": 0.5158944377247776
   },
   "look_ahead_vs_real_time": [
     {
       "signal": "z_full_money",
       "horizon_years": 3,
-      "full_sample_corr": -0.4805400558174995,
-      "real_time_corr": 0.17015494648423352
+      "full_sample_corr": -0.47907227284978526,
+      "real_time_corr": 0.17286136287840795
     },
     {
       "signal": "z_full_money",
       "horizon_years": 5,
-      "full_sample_corr": -0.5515800087028491,
-      "real_time_corr": 0.11074657639448819
+      "full_sample_corr": -0.5506170887815336,
+      "real_time_corr": 0.11202952299497632
     },
     {
       "signal": "z_full_money",
       "horizon_years": 10,
-      "full_sample_corr": -0.7727227969786415,
-      "real_time_corr": -0.03497583883669889
+      "full_sample_corr": -0.7715057442110262,
+      "real_time_corr": -0.0324414138311865
     },
     {
       "signal": "z_full_real",
       "horizon_years": 3,
-      "full_sample_corr": -0.340842322105344,
-      "real_time_corr": 0.0471484985754252
+      "full_sample_corr": -0.3370805225701784,
+      "real_time_corr": 0.05103976635081046
     },
     {
       "signal": "z_full_real",
       "horizon_years": 5,
-      "full_sample_corr": -0.40565876594473504,
-      "real_time_corr": -0.060721964350141884
+      "full_sample_corr": -0.40192462012400243,
+      "real_time_corr": -0.05706419364819909
     },
     {
       "signal": "z_full_real",
       "horizon_years": 10,
-      "full_sample_corr": -0.6450166573405065,
-      "real_time_corr": -0.3819314726785923
+      "full_sample_corr": -0.641374678604518,
+      "real_time_corr": -0.3776215067588434
     },
     {
       "signal": "z_full_time",
       "horizon_years": 3,
-      "full_sample_corr": -0.5015462108561978,
-      "real_time_corr": 0.2555807423396279
+      "full_sample_corr": -0.500040690835441,
+      "real_time_corr": 0.25776461294380465
     },
     {
       "signal": "z_full_time",
       "horizon_years": 5,
-      "full_sample_corr": -0.6005852042142287,
-      "real_time_corr": 0.1988330950621929
+      "full_sample_corr": -0.5991774419103607,
+      "real_time_corr": 0.20121769557146746
     },
     {
       "signal": "z_full_time",
       "horizon_years": 10,
-      "full_sample_corr": -0.8445475632063485,
-      "real_time_corr": 0.043255896806549066
+      "full_sample_corr": -0.8435617717902851,
+      "real_time_corr": 0.045596360145864746
     }
   ],
   "caveat": "1971-2026 contains roughly two and a half gold cycles. Overlapping monthly windows inflate apparent sample size; treat every bucket statistic as a handful of independent observations."

@@ -1,0 +1,14 @@
+series_id,market,unit,basis,year,value,indexed_to_peak,source_id,note
+cn_sales_area,中国全国,亿平方米,official,2021,17.94,100,S05;S39,商品房销售面积峰值
+cn_sales_area,中国全国,亿平方米,official,2022,13.58,76,S39,-24.3%
+cn_sales_area,中国全国,亿平方米,official,2023,11.17,62,S39,
+cn_sales_area,中国全国,亿平方米,official,2024,9.7,54,S05,新建商品房口径-12.9%
+cn_sales_area,中国全国,亿平方米,est,2025,9.1,51,S37,中指预测-6%推算
+us_existing,美国,百万套/年,official,2005,7.08,100,S39,成屋销量峰值
+us_existing,美国,百万套/年,official,2008,4.11,58,S39,量底(价底2012)
+us_existing,美国,百万套/年,official,2012,4.66,66,S39,价格见底年销量已回升
+hk_txn,香港,万宗/年,est,1997,20.5,100,S39,
+hk_txn,香港,万宗/年,est,2003,7.2,35,S39,量价同年见底
+hk21_txn,香港,万宗/年,est,2021,9.7,100,S39,
+hk21_txn,香港,万宗/年,est,2023,5.8,60,S39,
+hk21_txn,香港,万宗/年,est,2025,6.8,70,S39,回升伴随价格触底

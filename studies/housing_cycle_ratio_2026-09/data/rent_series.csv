@@ -1,0 +1,11 @@
+series_id,market,basis,period,value_pct,source_id,note
+cn_tier1_rent_yoy,中国一线,official,2024全年,-2.82,S09,中指院一线平均
+cn_bj_rent_yoy,北京,official,2024全年,-4.64,S09,个人房源
+cn_sh_rent_yoy,上海,official,2024全年,-7.91,S09,个人房源
+cn_sz_rent_yoy,深圳,official,2024全年,-0.46至-7.46,S09,分区间
+cn_50c_rent_q,50城,official,2025Q1,-0.44,S09,一线基本持平
+cn_tier1_rent_cum,中国一线,est,2021峰→2026,-10,S09;S39,累计估算区间-8至-12
+tokyo_rent_cum,东京,est,1991峰→2002,-15,S39,区间-10至-25;远小于价格
+hk97_rent_cum,香港,est,1997峰→2003,-40,S39,RVD租金指数口径
+us_rent_cum,美国,est,2006峰→2010,-5,S39,CPI租金分项基本未跌
+hk21_rent_cum,香港,est,2021峰→2024,-8,S39,2025起回升

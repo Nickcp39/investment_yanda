@@ -1,0 +1,41 @@
+{
+  "fetched_at": "2026-09-08 22:55:03 -0400",
+  "series": [
+    {
+      "file": "data/SPY_daily_adjusted.csv",
+      "symbol": "SPY",
+      "name": "S&P 500 ETF, adjusted close (dividends reinvested)",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1789095303&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 8459,
+      "first": "1993-01-29",
+      "last": "2026-09-08"
+    },
+    {
+      "file": "data/QQQ_daily_adjusted.csv",
+      "symbol": "QQQ",
+      "name": "Nasdaq-100 ETF, adjusted close (dividends reinvested)",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1789095303&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6917,
+      "first": "1999-03-10",
+      "last": "2026-09-08"
+    },
+    {
+      "file": "data/SP500TR_daily_adjusted.csv",
+      "symbol": "%5ESP500TR",
+      "name": "S&P 500 Total Return index",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESP500TR?period1=0&period2=1789095303&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 9743,
+      "first": "1988-01-04",
+      "last": "2026-09-08"
+    },
+    {
+      "file": "data/GSPC_daily_adjusted.csv",
+      "symbol": "%5EGSPC",
+      "name": "S&P 500 price index - EXCLUDES dividends",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1789095304&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14292,
+      "first": "1970-01-02",
+      "last": "2026-09-08"
+    }
+  ]
+}

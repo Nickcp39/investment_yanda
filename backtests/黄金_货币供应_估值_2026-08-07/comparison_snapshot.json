@@ -1,0 +1,648 @@
+{
+  "generated_at": "2026-09-08 23:08:22",
+  "panel_end": "2026-07",
+  "current": {
+    "month": "2026-07",
+    "gold_month_end": 4026.6,
+    "pct_rt_ratio": 0.874052,
+    "z_full_money": 1.68529
+  },
+  "headline_win_rates": [
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "n_windows": 391,
+      "gold_win_rate": 0.47058823529411764,
+      "mean_excess_cagr": -0.028523241049104853,
+      "median_excess_cagr": -0.01315911434978112
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "n_windows": 367,
+      "gold_win_rate": 0.44141689373297005,
+      "mean_excess_cagr": -0.03308063207091982,
+      "median_excess_cagr": -0.027461127971596055
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "n_windows": 317,
+      "gold_win_rate": 0.4668769716088328,
+      "mean_excess_cagr": -0.01135327413681995,
+      "median_excess_cagr": -0.017510240993088066
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "n_windows": 293,
+      "gold_win_rate": 0.46075085324232085,
+      "mean_excess_cagr": -0.003268841738683182,
+      "median_excess_cagr": -0.02245191517389511
+    },
+    {
+      "benchmark": "SP500TR",
+      "horizon": "1y",
+      "n_windows": 451,
+      "gold_win_rate": 0.42350332594235035,
+      "mean_excess_cagr": -0.050244765716301744,
+      "median_excess_cagr": -0.05412155616861547
+    },
+    {
+      "benchmark": "SP500TR",
+      "horizon": "3y",
+      "n_windows": 427,
+      "gold_win_rate": 0.3747072599531616,
+      "mean_excess_cagr": -0.04921586647511691,
+      "median_excess_cagr": -0.06738672379027122
+    },
+    {
+      "benchmark": "GSPC",
+      "horizon": "1y",
+      "n_windows": 647,
+      "gold_win_rate": 0.4775888717156105,
+      "mean_excess_cagr": 0.01899450745615706,
+      "median_excess_cagr": -0.022988582317025497
+    },
+    {
+      "benchmark": "GSPC",
+      "horizon": "3y",
+      "n_windows": 623,
+      "gold_win_rate": 0.420545746388443,
+      "mean_excess_cagr": -0.0037754975228949405,
+      "median_excess_cagr": -0.042649787089181546
+    }
+  ],
+  "valuation_distribution": [
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "n_won": 184,
+      "n_lost": 207,
+      "won_pct_median": 0.27646000000000004,
+      "lost_pct_median": 0.249541,
+      "won_sigma_median": -0.21295,
+      "lost_sigma_median": -0.162892
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "n_won": 162,
+      "n_lost": 205,
+      "won_pct_median": 0.201325,
+      "lost_pct_median": 0.277477,
+      "won_sigma_median": -0.6952404999999999,
+      "lost_sigma_median": -0.108759
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "n_won": 148,
+      "n_lost": 169,
+      "won_pct_median": 0.2515535,
+      "lost_pct_median": 0.32715,
+      "won_sigma_median": -0.3122065,
+      "lost_sigma_median": 0.029316
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "n_won": 135,
+      "n_lost": 158,
+      "won_pct_median": 0.187661,
+      "lost_pct_median": 0.3479085,
+      "won_sigma_median": -1.169851,
+      "lost_sigma_median": 0.089969
+    },
+    {
+      "benchmark": "SP500TR",
+      "horizon": "1y",
+      "n_won": 191,
+      "n_lost": 260,
+      "won_pct_median": 0.266667,
+      "lost_pct_median": 0.23196499999999998,
+      "won_sigma_median": -0.218066,
+      "lost_sigma_median": -0.14342100000000002
+    },
+    {
+      "benchmark": "SP500TR",
+      "horizon": "3y",
+      "n_won": 160,
+      "n_lost": 267,
+      "won_pct_median": 0.203988,
+      "lost_pct_median": 0.250438,
+      "won_sigma_median": -0.6848164999999999,
+      "lost_sigma_median": -0.076616
+    },
+    {
+      "benchmark": "GSPC",
+      "horizon": "1y",
+      "n_won": 227,
+      "n_lost": 300,
+      "won_pct_median": 0.279518,
+      "lost_pct_median": 0.293518,
+      "won_sigma_median": -0.182243,
+      "lost_sigma_median": -0.023652
+    },
+    {
+      "benchmark": "GSPC",
+      "horizon": "3y",
+      "n_won": 182,
+      "n_lost": 321,
+      "won_pct_median": 0.21039750000000002,
+      "lost_pct_median": 0.317919,
+      "won_sigma_median": -0.4705815,
+      "lost_sigma_median": 0.093959
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.2,
+      "n": 138,
+      "mean_excess": -0.05952312314949336,
+      "win_rate": 0.41304347826086957
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.3,
+      "n": 230,
+      "mean_excess": -0.04794806260155364,
+      "win_rate": 0.43478260869565216
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.4,
+      "n": 293,
+      "mean_excess": -0.03612316513868954,
+      "win_rate": 0.447098976109215
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.5,
+      "n": 312,
+      "mean_excess": -0.0372541620654283,
+      "win_rate": 0.4391025641025641
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.6,
+      "n": 335,
+      "mean_excess": -0.02862354397719196,
+      "win_rate": 0.4537313432835821
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 0.8,
+      "n": 375,
+      "mean_excess": -0.02085818859640704,
+      "win_rate": 0.4826666666666667
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "threshold": 1.01,
+      "n": 391,
+      "mean_excess": -0.028523241049104853,
+      "win_rate": 0.47058823529411764
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.2,
+      "n": 138,
+      "mean_excess": -0.027712634436146,
+      "win_rate": 0.5652173913043478
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.3,
+      "n": 230,
+      "mean_excess": -0.02841838982538941,
+      "win_rate": 0.5043478260869565
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.4,
+      "n": 286,
+      "mean_excess": -0.014189442431271583,
+      "win_rate": 0.48951048951048953
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.5,
+      "n": 304,
+      "mean_excess": -0.013719670060519534,
+      "win_rate": 0.48026315789473684
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.6,
+      "n": 322,
+      "mean_excess": -0.011753486577482224,
+      "win_rate": 0.484472049689441
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 0.8,
+      "n": 351,
+      "mean_excess": -0.02206829649675786,
+      "win_rate": 0.46153846153846156
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "threshold": 1.01,
+      "n": 367,
+      "mean_excess": -0.03308063207091982,
+      "win_rate": 0.44141689373297005
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.2,
+      "n": 80,
+      "mean_excess": 0.10217509013471823,
+      "win_rate": 0.6125
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.3,
+      "n": 156,
+      "mean_excess": 0.04203132543273187,
+      "win_rate": 0.5641025641025641
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.4,
+      "n": 219,
+      "mean_excess": 0.008088440127762171,
+      "win_rate": 0.4931506849315068
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.5,
+      "n": 238,
+      "mean_excess": -0.001814209903003909,
+      "win_rate": 0.47478991596638653
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.6,
+      "n": 261,
+      "mean_excess": 0.000847263596832323,
+      "win_rate": 0.4904214559386973
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 0.8,
+      "n": 301,
+      "mean_excess": -0.0005439833394427086,
+      "win_rate": 0.49169435215946844
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "threshold": 1.01,
+      "n": 317,
+      "mean_excess": -0.01135327413681995,
+      "win_rate": 0.4668769716088328
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.2,
+      "n": 80,
+      "mean_excess": 0.16404986800133417,
+      "win_rate": 0.875
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.3,
+      "n": 156,
+      "mean_excess": 0.07082063542984546,
+      "win_rate": 0.6282051282051282
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.4,
+      "n": 212,
+      "mean_excess": 0.04992092311393518,
+      "win_rate": 0.5660377358490566
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.5,
+      "n": 230,
+      "mean_excess": 0.04166120819120201,
+      "win_rate": 0.5391304347826087
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.6,
+      "n": 248,
+      "mean_excess": 0.035911864418160584,
+      "win_rate": 0.532258064516129
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 0.8,
+      "n": 277,
+      "mean_excess": 0.014239530324950298,
+      "win_rate": 0.48736462093862815
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "threshold": 1.01,
+      "n": 293,
+      "mean_excess": -0.003268841738683182,
+      "win_rate": 0.46075085324232085
+    }
+  ],
+  "same_window_test": [
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "window": "1999-03+",
+      "all_n": 317,
+      "all_excess": 0.02557502484670093,
+      "cheap_n": 80,
+      "cheap_excess": 0.09475551774247351,
+      "cheap_win_rate": 0.625
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "window": "1999-03+",
+      "all_n": 293,
+      "all_excess": 0.020573750292272253,
+      "cheap_n": 80,
+      "cheap_excess": 0.11749150382645963,
+      "cheap_win_rate": 0.9375
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "window": "1999-03+",
+      "all_n": 317,
+      "all_excess": -0.01135327413681995,
+      "cheap_n": 80,
+      "cheap_excess": 0.10217509013471823,
+      "cheap_win_rate": 0.6125
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "window": "1999-03+",
+      "all_n": 293,
+      "all_excess": -0.003268841738683182,
+      "cheap_n": 80,
+      "cheap_excess": 0.16404986800133417,
+      "cheap_win_rate": 0.875
+    }
+  ],
+  "regime_split": [
+    {
+      "from": "1993-01",
+      "to": "1999-02",
+      "n": 74,
+      "all_excess": -0.24552298386031532,
+      "all_win_rate": 0.04054054054054054,
+      "cheap_n": 58,
+      "cheap_excess": -0.22799420445353308
+    },
+    {
+      "from": "1999-03",
+      "to": "2011-12",
+      "n": 154,
+      "all_excess": 0.0976484443965826,
+      "all_win_rate": 0.8116883116883117,
+      "cheap_n": 74,
+      "cheap_excess": 0.1203024581653796
+    },
+    {
+      "from": "2012-01",
+      "to": "2026-07",
+      "n": 139,
+      "all_excess": -0.06481835684487738,
+      "all_win_rate": 0.2446043165467626,
+      "cheap_n": 6,
+      "cheap_excess": 0.08282306697977988
+    }
+  ],
+  "spread_test": [
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "quartile": "Q1",
+      "n": 98,
+      "excess": -0.049316677737154535,
+      "win_rate": 0.45918367346938777
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "quartile": "Q2",
+      "n": 98,
+      "excess": 0.03357397490651089,
+      "win_rate": 0.5408163265306123
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "quartile": "Q3",
+      "n": 97,
+      "excess": 0.003514884611842125,
+      "win_rate": 0.4948453608247423
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "1y",
+      "quartile": "Q4",
+      "n": 98,
+      "excess": -0.10153822632801636,
+      "win_rate": 0.3877551020408163
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "quartile": "Q1",
+      "n": 92,
+      "excess": -0.06474688785815669,
+      "win_rate": 0.3695652173913043
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "quartile": "Q2",
+      "n": 92,
+      "excess": 0.057621252574204786,
+      "win_rate": 0.5652173913043478
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "quartile": "Q3",
+      "n": 91,
+      "excess": -0.05051880361212906,
+      "win_rate": 0.4065934065934066
+    },
+    {
+      "benchmark": "SPY",
+      "horizon": "3y",
+      "quartile": "Q4",
+      "n": 92,
+      "excess": -0.07486763473043755,
+      "win_rate": 0.42391304347826086
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "quartile": "Q1",
+      "n": 80,
+      "excess": -0.10579807544720918,
+      "win_rate": 0.35
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "quartile": "Q2",
+      "n": 79,
+      "excess": -0.03412172017952918,
+      "win_rate": 0.4430379746835443
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "quartile": "Q3",
+      "n": 79,
+      "excess": -0.04068794402368452,
+      "win_rate": 0.379746835443038
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "1y",
+      "quartile": "Q4",
+      "n": 79,
+      "excess": 0.13639014691719867,
+      "win_rate": 0.6962025316455697
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "quartile": "Q1",
+      "n": 74,
+      "excess": -0.13437591860808903,
+      "win_rate": 0.22972972972972974
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "quartile": "Q2",
+      "n": 73,
+      "excess": 0.021267520870762655,
+      "win_rate": 0.5205479452054794
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "quartile": "Q3",
+      "n": 73,
+      "excess": -0.037614180924661816,
+      "win_rate": 0.3013698630136986
+    },
+    {
+      "benchmark": "QQQ",
+      "horizon": "3y",
+      "quartile": "Q4",
+      "n": 73,
+      "excess": 0.13944319906163088,
+      "win_rate": 0.7945205479452054
+    }
+  ],
+  "both_expensive_precedent": [
+    {
+      "threshold": 0.7,
+      "horizon": "1y",
+      "n": 10,
+      "years": [
+        1981,
+        1982,
+        1983,
+        2025,
+        2026
+      ],
+      "excess_vs_gspc": -0.1811359401459068,
+      "gold_win_rate": 0.0,
+      "gold_absolute": -0.10646511822284965
+    },
+    {
+      "threshold": 0.7,
+      "horizon": "3y",
+      "n": 10,
+      "years": [
+        1981,
+        1982,
+        1983,
+        2025,
+        2026
+      ],
+      "excess_vs_gspc": -0.2141646760443831,
+      "gold_win_rate": 0.0,
+      "gold_absolute": -0.07909790642121721
+    },
+    {
+      "threshold": 0.8,
+      "horizon": "1y",
+      "n": 2,
+      "years": [
+        1983,
+        2025,
+        2026
+      ],
+      "excess_vs_gspc": -0.23603016081648126,
+      "gold_win_rate": 0.0,
+      "gold_absolute": -0.14331773634099215
+    },
+    {
+      "threshold": 0.8,
+      "horizon": "3y",
+      "n": 2,
+      "years": [
+        1983,
+        2025,
+        2026
+      ],
+      "excess_vs_gspc": -0.2295981007950697,
+      "gold_win_rate": 0.0,
+      "gold_absolute": -0.08621716861046325
+    }
+  ],
+  "caveats": [
+    "Overlapping monthly windows: a 3-year test on 33 years of SPY data holds roughly 11 independent observations, not 360.",
+    "GSPC excludes dividends and is the only series reaching the 1970s, so every 1970s comparison flatters gold by the S&P dividend yield of that era (~4%/yr).",
+    "Gold pays nothing and SPY/QQQ compound dividends; the excess column already accounts for that everywhere except GSPC."
+  ]
+}
