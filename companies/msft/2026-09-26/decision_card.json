@@ -1,0 +1,66 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-09-26",
+  "pipeline_version": "lean-6module-v1.1",
+  "run_type": "refresh",
+  "supersedes": "companies/msft/2026-06-19/decision_card.json",
+  "as_of_price": 516.17,
+  "price_sources": ["yahoo_chart_api", "stockanalysis.com"],
+  "price_max_pairwise_delta_pct": 0.0,
+  "diluted_shares_b": 7.445,
+  "as_of_market_cap_usd_b": 3843,
+  "latest_reported_period": "FY2026 (ended 2026-06-30), reported 2026-07-29",
+  "financials_ttm": {
+    "revenue_usd_b": 331.8,
+    "operating_income_usd_b": 155.2,
+    "net_income_usd_b": 133.7,
+    "operating_cash_flow_usd_b": 182.9,
+    "cash_capex_usd_b": 115.9,
+    "free_cash_flow_usd_b": 67.0,
+    "capex_to_ocf_pct": 63,
+    "fcf_yield_pct": 1.74,
+    "pe_ttm": 28.7,
+    "p_fcf_ttm": 57.4
+  },
+  "owner_earnings_band_usd_b": {"bear_all_capex_maintenance": 67.0, "base_40pct_growth": 113.4, "bull_55pct_growth": 130.7},
+  "scenarios_10y": [
+    {"case": "bear", "oe0_usd_b": 67.0, "growth_pct": 8, "exit_x": 18, "irr_pct": -3.8},
+    {"case": "base", "oe0_usd_b": 113.4, "growth_pct": 11, "exit_x": 22, "irr_pct": 6.3},
+    {"case": "bull", "oe0_usd_b": 130.7, "growth_pct": 14, "exit_x": 26, "irr_pct": 12.6}
+  ],
+  "hurdle_prices": {"8pct": 441, "10pct": 367, "12pct": 306, "8pct_on_bull_oe": 508, "8pct_on_bear_oe": 260},
+  "module_signals": {"M1": 1, "M2": 1, "M3": 2, "M4": 0, "M5": -1, "M6": -1},
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "suggested_initial_size_pct": 0,
+  "existing_position_verdict": "HOLD",
+  "prior_new_money_verdict": "STARTER",
+  "verdict_flipped": true,
+  "flip_reason": "price only: $379.40 -> $516.17 (+36%) moved the price above the base 8%-hurdle fair value ($441) and even above the bull-OE fair value ($508). No business-side evidence deteriorated; FY2026 was a strong year.",
+  "buy_below_price": 441,
+  "binding_constraint": "price",
+  "completeness_pct": 75,
+  "closed_gaps": ["O3 OpenAI economics: FY2026 10-K discloses ~25% as-converted equity-method interest, $24.1B FY26 revenue from OpenAI (7.3% of total), $6.0B receivable, $13.0B funding commitment ($11.9B funded), revenue share through 2030 subject to an undisclosed cap"],
+  "open_gaps": ["O2 maintenance-vs-growth capex split still unobservable -> OE band stays $67-131B", "FY27 accounting comparability: useful life 15->25 years; finance->operating lease shift removes spend from reported capex; $329.1B leases signed but not commenced"],
+  "new_findings": [
+    "FY2026: revenue $331.8B (+18%), operating income $155.2B (+21%), net income $133.7B (+31%) BUT free cash flow FELL to $67.0B from $71.6B as cash capex rose 80% to $115.9B",
+    "Headline commercial RPO $678B (+84%) is materially OpenAI-driven: management stated RPO +25% and bookings +18% EXCLUDING OpenAI",
+    "GAAP net income includes $6.5B of other-income net gains, primarily the OpenAI Recapitalization dilution gain (+$4,963M after tax, +$0.67 EPS); adjusted EPS $17.28 vs GAAP $17.95",
+    "CY2026 capex expectation restated to ~$175B on the finance->operating lease shift; FY27 capex to grow YoY; management expects to stay FCF positive in FY27"
+  ],
+  "kill_criteria": [
+    "K-A capex/OCF >70% for two consecutive years AND FCF/share declines AND no ROIC disclosure -> yellow now (63%)",
+    "K-B Azure <=+25% for two consecutive quarters on demand -> green now (+43% Q4, ~+45% cc guided)",
+    "K-C OpenAI concentration: revenue share rises further, the $6.0B receivable impairs, or the undisclosed revenue-share cap binds -> yellow (new)",
+    "K-D Copilot seat growth stalls -> green (30M+ paid seats)",
+    "K-E price > $441 (base 8% hurdle) -> TRIGGERED, no-chase",
+    "K-F accounting comparability: reported FCF improves while capex + finance leases + new operating-lease commitments do not fall -> yellow, re-measure OE on the combined basis"
+  ],
+  "sources_used": [
+    {"source_id": "MSFT-10K-2026", "public_date": "2026-07-29", "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm"},
+    {"source_id": "MSFT-Q4-FY26-PR", "public_date": "2026-07-29", "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm"},
+    {"source_id": "MSFT-Q4-FY26-CALL", "public_date": "2026-07-29", "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"},
+    {"source_id": "MSFT-DIV-2026-09", "public_date": "2026-09-15", "url": "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/"},
+    {"source_id": "MSFT-XBRL", "public_date": "2026-09-26", "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"}
+  ]
+}
