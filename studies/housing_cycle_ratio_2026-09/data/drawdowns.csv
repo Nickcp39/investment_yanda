@@ -1,0 +1,16 @@
+metric,market,series_id,peak,trough,drawdown_pct,duration_yr,basis,source_id,note
+price,中国一线,cn_tier1_official,2021,ongoing,-21,5+,official,S01;S19,未确认见底
+price,中国一线,cn_tier1_txn,2021,ongoing,-30,5+,est,S20,成交口径
+price,东京,tokyo_res_land,1991,2004,-55,13,est,S11;S12,住宅地价;全国城市地价-70;二手公寓约-45
+price,香港,hk97,1997,2003,-61,6,official,S14,口径区间-58至-65
+price,美国,us06,2006,2012,-27,6,official,S39,重灾城市拉斯维加斯/凤凰城约-60
+price,香港,hk21,2021,2025,-30,4,official,S16,2026已反弹+5
+rent,中国一线,,2021,ongoing,-10,5+,est,S09,2024年单年-2.82;沪-7.91京-4.64
+rent,东京,,1991,2002,-15,11,est,S39,租金粘性远强于价格
+rent,香港,,1997,2003,-40,6,est,S39,RVD租金指数口径
+rent,美国,,2006,2010,-5,4,est,S39,基本未跌
+rent,香港,,2021,2024,-8,3,est,S39,已反弹
+volume,中国全国,cn_sales_area,2021,2025,-49,4,official,S05;S37,销售面积17.94→约9.1亿平米
+volume,香港,hk_txn,1997,2003,-58,6,est,S39,年成交宗数
+volume,美国,us_existing,2005,2008,-42,3,official,S39,成屋;新房销量-75(2005-2011)
+volume,香港,hk21_txn,2021,2023,-40,2,est,S39,

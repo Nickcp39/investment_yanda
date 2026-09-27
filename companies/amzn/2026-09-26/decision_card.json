@@ -1,0 +1,75 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-09-26",
+  "pipeline_version": "lean-6module-v1.1",
+  "run_type": "refresh",
+  "supersedes": "companies/amzn/2026-06-19/decision_card.json",
+  "as_of_price": 249.67,
+  "price_sources": ["yahoo_chart_api", "stockanalysis.com"],
+  "price_max_pairwise_delta_pct": 0.0,
+  "diluted_shares_b": 10.903,
+  "as_of_market_cap_usd_b": 2722,
+  "latest_reported_period": "Q2 2026 (ended 2026-06-30), reported 2026-07-30",
+  "financials_ttm": {
+    "revenue_usd_b": 775.7,
+    "operating_income_usd_b": 93.7,
+    "operating_margin_pct": 12.1,
+    "reported_net_income_usd_b": 135.3,
+    "reported_net_income_note": "includes ~$81B of non-operating upward revaluations of private equity investments (primarily Anthropic preferred); NOT usable for valuation",
+    "nopat_at_21pct_tax_usd_b": 74.0,
+    "operating_cash_flow_usd_b": 161.4,
+    "capex_net_usd_b": 169.0,
+    "capex_gross_purchases_usd_b": 173.0,
+    "free_cash_flow_usd_b": -7.6,
+    "capex_to_ocf_pct": 105,
+    "p_nopat": 36.8,
+    "cash_and_securities_usd_b": 123.0,
+    "long_term_debt_usd_b": 128.9
+  },
+  "latest_quarter": {
+    "net_sales_usd_m": 200606, "net_sales_yoy_pct": 20,
+    "operating_income_usd_m": 27461, "operating_income_yoy_pct": 43,
+    "net_income_usd_b": 62.6, "anthropic_revaluation_usd_b": 50.5,
+    "aws_net_sales_usd_m": 42232, "aws_yoy_pct": 37, "aws_operating_income_usd_m": 16621, "aws_operating_margin_pct": 39.4,
+    "north_america_operating_margin_pct": 7.9, "international_operating_margin_pct": 4.1,
+    "aws_backlog_usd_b": 496
+  },
+  "guidance_q3_2026": {"net_sales_usd_b": "197.0-202.0", "net_sales_growth_pct": "9-12", "operating_income_usd_b": "22.5-26.5", "full_year_capex": "not disclosed"},
+  "aws_growth_trend_pct": [24, 28, 37],
+  "scenarios_5y_nopat": [
+    {"case": "bear", "nopat0_usd_b": 65, "growth_pct": 6, "exit_x": 16, "price_y5": 128, "irr_pct": -12.6},
+    {"case": "base", "nopat0_usd_b": 74, "growth_pct": 13, "exit_x": 20, "price_y5": 250, "irr_pct": 0.0},
+    {"case": "bull", "nopat0_usd_b": 78, "growth_pct": 18, "exit_x": 24, "price_y5": 393, "irr_pct": 9.5}
+  ],
+  "conservative_owner_earnings_lens": "NOT COMPUTABLE this cycle: capex exceeds 100% of operating cash flow, so there is no positive owner-earnings figure after maintenance capex",
+  "hurdle_prices": {"8pct": 170, "10pct": 155, "12pct": 142},
+  "module_signals": {"M1": 1, "M2": 2, "M3": 1, "M4": -2, "M5": -1, "M6": -2},
+  "business_verdict": "strong_franchise_unmeasurable_owner_earnings",
+  "new_money_verdict": "WATCH",
+  "suggested_initial_size_pct": 0,
+  "prior_new_money_verdict": "WATCH",
+  "verdict_flipped": false,
+  "buy_below_price": 170,
+  "binding_constraint": "price + owner earnings temporarily unmeasurable",
+  "new_findings": [
+    "TTM free cash flow turned NEGATIVE (-$7.6B) on the company's own definition; capex rose $66.1B YoY, attributed by Amazon to AI investment",
+    "Reported TTM net income $135.3B includes roughly $81B of non-cash upward revaluations of private-company equity, chiefly Anthropic preferred stock ($50.5B in Q2 2026 alone plus $16.8B in Q1)",
+    "AWS accelerated for a third straight quarter: 24% -> 28% -> 37%, with a 39.4% operating margin and $496B of unrecognized performance obligations",
+    "Amazon did NOT disclose a full-year 2026 capex figure in the Q2 release, so there is no first-hand basis for when the capex peak arrives"
+  ],
+  "upgrade_conditions": [
+    "Company discloses full-year capex and a 2027 path",
+    "Free cash flow returns to positive",
+    "Net income returns to being driven by operating income rather than investment marks"
+  ],
+  "kill_criteria": [
+    "AWS growth falls back below 20%",
+    "Backlog stops growing while capex keeps accelerating",
+    "Price above $170 -> no new money (currently 47% above)"
+  ],
+  "sources_used": [
+    {"source_id": "AMZN-Q2-2026-PR", "public_date": "2026-07-30", "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm"},
+    {"source_id": "AMZN-Q2-2026-10Q", "public_date": "2026-07-30", "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000026/amzn-20260630.htm"},
+    {"source_id": "AMZN-XBRL", "public_date": "2026-09-26", "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"}
+  ]
+}

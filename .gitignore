@@ -38,3 +38,7 @@ sources/channels/*/caption_scan/
 sources/channels/*/polish_qc/
 sources/channels/*/polished_transcripts/
 sources/channels/*/runs/
+
+# Local vendored deps / temp
+.pdf_deps/
+tmp/

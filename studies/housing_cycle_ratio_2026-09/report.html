@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>房价周期比例对比研究 2026-09</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface-1: #fcfcfb; --page: #f9f9f7;
+  --ink-1: #0b0b0b; --ink-2: #52514e; --ink-3: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
+  --s-cn: #2a78d6; --s-tokyo: #eb6834; --s-hk97: #1baf7a; --s-us06: #eda100; --s-hk21: #e87ba4;
+  --good: #0ca30c; --critical: #d03b3b; --good-text: #006300;
+  --ph-kuangre: #d03b3b; --ph-xinyang: #ec835a; --ph-dongyao: #f0efec;
+  --ph-konghuang: #104281; --ph-mamu: #3987e5; --ph-zhenglun: #9ec5f4;
+  --ph-dongyao-ink: #52514e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page: #0d0d0d;
+    --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-3: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+    --s-cn: #3987e5; --s-tokyo: #d95926; --s-hk97: #199e70; --s-us06: #c98500; --s-hk21: #d55181;
+    --good-text: #0ca30c;
+    --ph-kuangre: #e66767; --ph-xinyang: #d95926; --ph-dongyao: #383835;
+    --ph-konghuang: #1c5cab; --ph-mamu: #3987e5; --ph-zhenglun: #86b6ef;
+    --ph-dongyao-ink: #c3c2b7;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-1: #1a1a19; --page: #0d0d0d;
+  --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-3: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+  --s-cn: #3987e5; --s-tokyo: #d95926; --s-hk97: #199e70; --s-us06: #c98500; --s-hk21: #d55181;
+  --good-text: #0ca30c;
+  --ph-kuangre: #e66767; --ph-xinyang: #d95926; --ph-dongyao: #383835;
+  --ph-konghuang: #1c5cab; --ph-mamu: #3987e5; --ph-zhenglun: #86b6ef;
+  --ph-dongyao-ink: #c3c2b7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--ink-1);
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  font-size: 14px; line-height: 1.65;
+}
+.wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 80px; }
+h1 { font-size: 26px; line-height: 1.3; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 44px 0 6px; }
+h3 { font-size: 15px; margin: 24px 0 6px; }
+.sub { color: var(--ink-2); margin: 0 0 20px; }
+.meta { color: var(--ink-3); font-size: 12px; }
+.card {
+  background: var(--surface-1); border: 1px solid var(--ring); border-radius: 10px;
+  padding: 18px 20px; margin: 14px 0;
+}
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 18px 0; }
+.tile { background: var(--surface-1); border: 1px solid var(--ring); border-radius: 10px; padding: 14px 16px; }
+.tile .v { font-size: 26px; font-weight: 700; line-height: 1.2; }
+.tile .l { color: var(--ink-2); font-size: 12.5px; margin-top: 3px; }
+.tile .d { color: var(--ink-3); font-size: 11.5px; margin-top: 2px; }
+.neg { color: var(--critical); } .pos { color: var(--good-text); }
+figure { margin: 0; }
+figcaption { font-size: 12.5px; color: var(--ink-2); margin-top: 8px; }
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+svg text { font-family: inherit; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--ink-2); margin: 6px 0 10px; }
+.legend .it { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 14px; height: 4px; border-radius: 2px; display: inline-block; }
+.sw.dash { background: repeating-linear-gradient(90deg, currentColor 0 4px, transparent 4px 7px); height: 3px; }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 8px 0; }
+th, td { text-align: right; padding: 5px 10px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--ink-2); font-weight: 600; }
+details { margin: 10px 0 0; }
+summary { cursor: pointer; color: var(--ink-3); font-size: 12.5px; }
+.tip {
+  position: fixed; pointer-events: none; z-index: 10; display: none;
+  background: var(--surface-1); border: 1px solid var(--ring); border-radius: 8px;
+  padding: 8px 12px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.12); line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.tag { display: inline-block; font-size: 11px; border: 1px solid var(--ring); border-radius: 4px; padding: 0 6px; color: var(--ink-3); vertical-align: 1px; }
+ol li, ul li { margin: 4px 0; }
+a { color: var(--s-cn); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.srcs { font-size: 12px; color: var(--ink-2); }
+.srcs li { margin: 3px 0; }
+.callout { border-left: 3px solid var(--s-cn); padding: 2px 0 2px 14px; margin: 14px 0; color: var(--ink-2); }
+@media print { body { background: #fff; } .wrap { max-width: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>中国一线房价：处于历史大周期的哪一段？</h1>
+<p class="sub">京沪深 vs 东京1991 / 香港1997 / 美国2006 / 香港2021 —— 全部按比例（峰值=100）对比：价格、租金、成交量、估值底判据回测</p>
+<p class="meta">数据截至 2026-09 · 编制 2026-09-08 · 口径与来源见文末 · 标注 <span class="tag">官方</span>=官方指数 <span class="tag">估算</span>=多源锚点估算</p>
+
+<div class="tiles">
+  <div class="tile"><div class="v neg">-21% / -30%</div><div class="l">一线二手房累计回撤（2021峰→今）</div><div class="d">官方70城口径 / 成交价估算口径</div></div>
+  <div class="tile"><div class="v neg">37 个月</div><div class="l">全国房价连续下跌时长</div><div class="d">截至2026-07，仍在下跌但降幅收窄</div></div>
+  <div class="tile"><div class="v neg">2.2% vs 3.0%</div><div class="l">一线租金回报率 vs 首套房贷利率</div><div class="d">利差 -0.8pp，历史大底均为正利差</div></div>
+  <div class="tile"><div class="v neg">-49%</div><div class="l">全国商品房销售面积萎缩（2021→2025）</div><div class="d">17.9亿㎡ → 约9.1亿㎡</div></div>
+</div>
+
+<div class="callout"><b>一句话结论：</b>按回撤深度和时长，中国一线大约走到了「香港2001 / 东京1997」的位置——跌幅过半程、悲观成为共识，但决定大底的估值判据（租金回报率 ≥ 资金成本）尚未触发。按当前租金和利率静态测算，触发还需 <b>价格再跌8%~27%</b>（取决于降息路径），详见第4节回测。</div>
+
+<h2>1｜价格：五场周期叠在同一张图上（峰值=100）</h2>
+<div class="card">
+  <div class="legend" id="lg-a"></div>
+  <figure>
+    <svg id="ch-a" viewBox="0 0 920 400" role="img" aria-label="各市场房价指数对齐峰值后的走势对比"></svg>
+    <figcaption>横轴 = 距峰值年数。实线为官方/公开指数锚点，中国另附成交口径估算（虚线）。悬停查看各年数值。锚点间线性插值，非逐月官方序列。</figcaption>
+  </figure>
+  <details><summary>数据表</summary><div id="tb-a"></div></details>
+</div>
+<p>读法：<b>中国一线（官方）目前 t=5 年、-21%</b>。历史三场完整熊市的底分别在：香港 t=6（-61%）、美国 t=6（-27%）、东京 t≈13（住宅地价约-55%，全国城市地价-70%）。香港2021这轮（当代对照组）在 t=4 触底 -30%，2026年已反弹约+5%。中国官方口径的斜率比香港97和美国06都缓——更像东京的「阴跌长熊」形态；但若按成交价口径（-30%），深度已接近香港2021轮的底部水平。</p>
+
+<h2>2｜回撤三联对比：价格 / 租金 / 成交量（全部为比例）</h2>
+<div class="card">
+  <div class="legend" id="lg-b"></div>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 8px;">
+    <figure><svg id="ch-b1" viewBox="0 0 300 240" role="img" aria-label="价格峰谷回撤对比"></svg></figure>
+    <figure><svg id="ch-b2" viewBox="0 0 300 240" role="img" aria-label="租金峰谷回撤对比"></svg></figure>
+    <figure><svg id="ch-b3" viewBox="0 0 300 240" role="img" aria-label="成交量峰谷回撤对比"></svg></figure>
+  </div>
+  <figcaption>峰值→谷底（中国为峰值→迄今，仍未确认见底）。租金与成交量多为估算口径，见数据表标注。</figcaption>
+  <details><summary>数据表</summary><div id="tb-b"></div></details>
+</div>
+<p>三个规律：<b>①租金的跌幅永远远小于价格</b>（东京价格-55%时租金只跌约-15%；香港-61%时租金约-40%已是极端），所以租金回报率会在熊市后段被动抬升——这正是估值底形成的机制。<b>②成交量先于价格见底</b>：美国销量2008年见底、价格2012年才见底；中国全国销售面积2025年降幅已收窄至个位数，可能正在筑量底。<b>③中国目前租金跌幅（约-10%）与价格跌幅的比例关系正常</b>，没有出现租金崩塌，说明一线的居住需求基本盘还在——这是与三四线的本质区别。</p>
+
+<h2>3｜民意与情绪：悲观，但不是投降式出清</h2>
+<div class="card">
+<table>
+<tr><th>情绪指标</th><th>当前状态（2026）</th><th>历史大底的典型状态</th><th>是否到位</th></tr>
+<tr><td>价格信仰</td><td>「房价永涨」信仰已瓦解，冲动购房消失</td><td>同左</td><td class="pos">✔ 到位</td></tr>
+<tr><td>成交行为</td><td>以价换量活跃：沪8月+18%、京+6%、深+8.5%（同比）</td><td>量极度萎缩后回升，降价幅度收窄</td><td class="neg">✘ 半程</td></tr>
+<tr><td>卖方行为</td><td>挂牌量仍创新高（贝壳650万+套、上海17万+套），降价30万求速卖</td><td>挂牌量见顶回落，惜售重现</td><td class="neg">✘ 未到</td></tr>
+<tr><td>政策周期</td><td>还在挤牙膏：北京刚松限购、沪深待跟进、降息预期还有2次</td><td>工具用尽，市场不再等下一张牌</td><td class="neg">✘ 未到</td></tr>
+<tr><td>舆论热度</td><td>全网仍激烈争论「该不该抄底」，讨论度高</td><td>无人谈论房价（彻底冷漠）</td><td class="neg">✘ 未到</td></tr>
+<tr><td>结构分化</td><td>「核心资产 vs 非核心」定价彻底分层，成为共识</td><td>底部前夜的典型特征</td><td class="pos">✔ 到位</td></tr>
+</table>
+</div>
+<p>六项里到位两项。舆论已经「深度悲观」，但离香港2003（10.5万户负资产、无人问津）或东京2002（房地产话题社会性消失）那种<b>彻底冷漠的投降底</b>还有明确距离。市场当前在"等更低价格+等下一个政策"，这是典型的下跌中继心态而非底部心态。</p>
+
+<h3>网民态度12年演变时间轴（2015→2026）</h3>
+<div class="card">
+  <div class="legend" id="lg-s"></div>
+  <figure>
+    <svg id="ch-s" viewBox="0 0 920 210" role="img" aria-label="2015至2026年网民对房价态度演变时间轴"></svg>
+    <figcaption>颜色=情绪温度（红=过热，蓝=冰冷，灰=中性动摇）。悬停每格查看当年标志事件、热词与价格状态。阶段划分为定性归纳，边界年份±1年主观性，佐证来源见 data/sentiment_timeline.csv。</figcaption>
+  </figure>
+  <details><summary>数据表</summary><div id="tb-s"></div></details>
+</div>
+<p>情绪序列的形态学结论：<b>狂热(2015-16) → 信仰(2017-19) → 狂热回光(2020) → 动摇(2021恒大) → 恐慌(2022停贷潮) → 麻木(2024-25) → 争论(2026)</b>。对照历史：香港与美国都是麻木约2年后见底，东京拖了7年；「争论期」（抄底之争公开化、专家分裂）在香港2003下半年和美国2012都出现在底部附近。中国麻木已2年、2026转入争论——<b>情绪维度已具备接近底部的特征，与估值维度（利差-0.8pp未转正）形成张力</b>，两者合并指向"最后一跌或最后一轮降息"区间。</p>
+
+<h2>4｜回测：什么信号在历史上准确标记了大底？</h2>
+<div class="card">
+  <h3 style="margin-top:0">判据：毛租金回报率 ≥ 按揭利率（正利差出现）</h3>
+  <div class="legend"><span class="it"><span style="width:10px;height:10px;border-radius:50%;background:var(--ink-1);display:inline-block"></span> 租金回报率</span><span class="it"><span style="width:10px;height:10px;border-radius:50%;border:2px solid var(--ink-3);display:inline-block"></span> 按揭利率</span><span class="it"><span class="sw" style="background:var(--good)"></span> 正利差</span><span class="it"><span class="sw" style="background:var(--critical)"></span> 负利差</span></div>
+  <figure>
+    <svg id="ch-c" viewBox="0 0 920 260" role="img" aria-label="历史大底时租金回报率与按揭利率对比"></svg>
+    <figcaption>三个历史大底全部满足「租金回报率显著高于按揭利率」（利差+1.6~+3.1pp）；中国一线当前利差为负（-0.8pp），是四组样本中唯一的负值。回报率为毛租金口径估算。</figcaption>
+  </figure>
+  <details><summary>数据表</summary><div id="tb-c"></div></details>
+</div>
+<div class="card">
+  <h3 style="margin-top:0">回测结果：3/3 命中，且该判据从不提前触发</h3>
+  <table>
+    <tr><th>案例</th><th>利差转正时间</th><th>价格见底时间</th><th>误差</th><th>见底后5年回报</th></tr>
+    <tr><td>东京（住宅）</td><td>约2001-02年</td><td>2002年</td><td>±1年</td><td>+20~30%（缓涨）</td></tr>
+    <tr><td>香港</td><td>约2002-03年</td><td>2003年Q3</td><td>±1年</td><td>约+90%</td></tr>
+    <tr><td>美国（全国）</td><td>约2011-12年</td><td>2012年Q1</td><td>±1年</td><td>约+35%</td></tr>
+    <tr><td><b>中国一线</b></td><td><b>尚未触发</b></td><td>—</td><td>—</td><td>—</td></tr>
+  </table>
+  <h3>把判据套到中国一线：触发还差多远？（静态测算）</h3>
+  <table>
+    <tr><th>情景</th><th>房贷利率</th><th>租金假设</th><th>触发所需价格变化</th></tr>
+    <tr><td>A 利率不变</td><td>3.0%</td><td>持平</td><td class="neg">再跌 -27%</td></tr>
+    <tr><td>B 降息40bp（约2次）</td><td>2.6%</td><td>持平</td><td class="neg">再跌 -15%</td></tr>
+    <tr><td>C 降息60bp</td><td>2.4%</td><td>再跌5%</td><td class="neg">再跌 -13%</td></tr>
+    <tr><td>D 大幅降息</td><td>2.2%</td><td>持平</td><td class="pos">当前价即触发</td></tr>
+    <tr><td>E 要求历史级正利差+1pp</td><td>3.0%</td><td>持平</td><td class="neg">再跌 -45%</td></tr>
+  </table>
+  <p style="color:var(--ink-2); font-size:13px">测算式：所需价格 = 当前价 × (当前回报率 × 租金变动) ÷ 目标回报率；当前一线毛回报率取2.2%（区间1.8–2.7%）。注意：利差<b>打平只是估值底的起点</b>，历史大底都出现过正利差（+1.6~+3.1pp）；但中国利率是下行趋势，「利率下来接房价」的日本式路径（分母修复）与「房价跌下去接租金」的香港式路径（分子修复）都可能发生，真实结局大概率是B/C情景的组合。</p>
+</div>
+
+<h2>5｜修复时长：即使见底，回本速度天差地别</h2>
+<div class="card">
+  <figure>
+    <svg id="ch-d" viewBox="0 0 920 220" role="img" aria-label="各市场从峰值跌落后回到前高所需年数"></svg>
+    <figcaption>名义价格回到前一峰值所需年数。东京二手公寓2026年初才短暂超过1990年泡沫价——35年。决定差异的核心变量：城市级供给弹性 + 名义通胀环境。</figcaption>
+  </figure>
+  <details><summary>数据表</summary><div id="tb-d"></div></details>
+</div>
+<p>这是对「抄底」最重要的警示：<b>见底 ≠ 回报</b>。美国10年回本靠的是通胀+供给出清；香港14年回本靠的是内地资金流入；东京35年才回本，因为通缩环境下名义价格没有顺风。中国若走低通胀路径，即使一线见底，名义价格修复也更可能是东京型（漫长）而非香港型（V型）——投资回报将主要来自<b>租金收益+租金增长</b>，而不是资本利得。这就是为什么租售比判据比任何价格预测都重要。</p>
+
+<h2>6｜横向现状：同一时点的全球一线（2026）</h2>
+<div class="card">
+<table>
+  <tr><th>城市</th><th>价格趋势（同比）</th><th>距本轮峰值</th><th>毛租金回报率</th><th>按揭利率</th><th>利差</th></tr>
+  <tr><td>北京</td><td class="neg">-4.5%（收窄中）</td><td class="neg">约-20%/-30%†</td><td>2.0~2.7%</td><td>约3.0%</td><td class="neg">负</td></tr>
+  <tr><td>上海</td><td class="neg">-2.0%（收窄中）</td><td class="neg">约-15%/-25%†</td><td>2.2~2.7%</td><td>约3.0%</td><td class="neg">负</td></tr>
+  <tr><td>深圳</td><td class="neg">-3.6%（收窄中）</td><td class="neg">约-25%/-35%†</td><td>2.0~2.6%</td><td>约3.0%</td><td class="neg">负</td></tr>
+  <tr><td>香港</td><td class="pos">+5%（反弹中）</td><td class="neg">-26%</td><td>约3.5%</td><td>约3.1%</td><td class="pos">转正</td></tr>
+  <tr><td>纽约</td><td class="pos">+4.0%（历史新高）</td><td>0%（在峰值）</td><td>4~5%</td><td>约6.3%</td><td class="neg">负</td></tr>
+  <tr><td>东京</td><td class="pos">+9~13%（历史新高）</td><td>0%（在峰值）</td><td>3~4%</td><td>约0.5~1%</td><td class="pos">正</td></tr>
+</table>
+<p style="color:var(--ink-2); font-size:12.5px">† 官方口径/成交口径估算。有意思的对照：<b>东京是全球唯一「价格新高+正利差」的一线</b>（超低利率所赐）；香港利差刚转正，价格随即止跌反弹——again 验证了第4节的判据；纽约靠供给稀缺硬扛负利差创新高（现金买家占比高）。</p>
+</div>
+
+<h2>7｜结论与监测清单</h2>
+<div class="card">
+<ol>
+  <li><b>周期定位：</b>中国一线处于「深度悲观 + 以价换量」阶段，约相当于香港2001年/东京1997年的位置。<b>「彻底悲观周期」已确认进入，但「彻底出清」未完成。</b></li>
+  <li><b>估值定位：</b>核心判据（租金回报率≥按揭利率）尚未触发，静态缺口 -8%~-27%（取决于降息幅度）。该判据在东京/香港/美国三场大熊市中3/3命中、误差±1年。</li>
+  <li><b>与历史底的差距清单：</b>利差未转正（差0.8pp）｜挂牌量未见顶回落｜租金未企稳｜政策工具未用尽｜舆论未冷漠化。五项监测指标，每月可验证。</li>
+  <li><b>投资含义（框架非建议）：</b>若利差转正后介入，历史样本的5年回报为+20%~+90%，回报形态取决于通胀路径；低通胀情景下回报主要来自租金而非价差，则<b>回报率高的标的（一线核心区高租售比资产）优于回撤深的标的</b>。深圳供给弹性大是长期隐患；上海核心区的供给刚性最接近东京/纽约模型。</li>
+  <li><b>下一步可回测项：</b>①用贝壳成交价月度序列替代官方指数复算回撤（预期官方低估5-10pp）；②逐月跟踪利差收敛速度，滚动更新触发时点预估；③把香港2021-2026这轮作为高频对照组（同为中式资产、先行4年）。</li>
+</ol>
+</div>
+
+<h2>附｜口径、来源与免责</h2>
+<div class="card srcs">
+<p><b>口径说明：</b>①所有对比均为比例（峰值=100或峰谷百分比），不做绝对价格对比。②中国官方=国家统计局70城二手住宅指数（平滑、低估真实跌幅），成交口径=基于贝壳挂牌/成交价差及媒体成交案例的估算区间。③历史序列为公开锚点+线性插值，用于形态对比，不可用于逐月精算。④租金回报率均为毛租金口径（未扣持有成本税费）。</p>
+<p><b>主要来源：</b></p>
+<ul>
+<li>中国价格/成交：<a href="https://tradingeconomics.com/china/housing-index/news/494181">NBS 70城指数（Trading Economics转引）</a> · <a href="https://www.askci.com/news/20260616/101945278157557750027520.shtml">中商情报网·5月同比</a> · <a href="https://www.chinanews.com.cn/cj/2026/09-02/10688407.shtml">中新网·8月京沪深成交</a> · <a href="https://finance.sina.com.cn/roll/2025-12-16/doc-inhaymzi1128022.shtml">新浪财经·贝壳挂牌量</a> · <a href="https://www.stats.gov.cn/sj/zxfb/202501/t20250117_1958328.html">国家统计局·销售面积</a> · <a href="https://asiatimes.com/2026/08/flood-of-discounted-auction-homes-deepens-chinas-property-slump/">Asia Times·法拍房</a></li>
+<li>租金/回报率：<a href="https://www.globalpropertyguide.com/asia/china/rental-yields">Global Property Guide·中国租金回报率</a> · <a href="https://www.yicaiglobal.com/news/rental-yields-in-chinas-big-cities-top-deposit-interest-rates-may-spur-housing-market-economist-says">一财·回报率vs存款利率</a> · <a href="https://news.qq.com/rain/a/20241227A06LZD00">中指院·2024一线租金</a></li>
+<li>利率：<a href="https://www.psbc.com/cn/common/bjfw/dkscbjllcx/">LPR（5Y 3.5%）</a> · 存量公积金2.6%（2026-01起）</li>
+<li>历史案例：<a href="https://www.elibrary.imf.org/view/journals/001/2020/200/article-A001-en.xml">IMF·日本地价</a> · <a href="https://housingjapan.com/resources/a-history-of-tokyo-houses-and-real-estate-prices/">Housing Japan·东京35年回本</a> · <a href="https://www.scmp.com/property/hong-kong-china/article/2094340/hong-kong-home-prices-scale-new-peak-20-years-after-1997">SCMP·香港97-03</a> · <a href="https://knowledge.wharton.upenn.edu/article/attention-speculators-heres-a-lesson-from-hong-kongs-housing-bubble/">Wharton·香港-65%</a> · <a href="https://fred.stlouisfed.org/series/NYXRSA">FRED·Case-Shiller NY</a></li>
+<li>当代对照：<a href="https://www.mingtiandi.com/real-estate/research-policy/hong-kong-home-prices-could-rise-another-5-this-year-sp/">Mingtiandi·香港2021-26</a> · <a href="https://www.japantimes.co.jp/business/2026/07/21/tokyo-area-condos-first-half-prices/">Japan Times·东京新盘破亿</a> · <a href="https://www.scmp.com/business/article/3321434/china-property-shanghai-shenzhen-could-drop-buying-curbs-after-surprise-beijing-move">SCMP·限购松绑</a></li>
+</ul>
+<p><b>免责：</b>本报告为研究框架与数据整理，非投资建议；编制者非持牌顾问。历史规律不保证重演；「估算」标注项存在±5pp量级的口径误差。</p>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+/* ==DATA:BEGIN== 此块由 scripts/build_report.py 从 data/*.csv 生成，勿手改 */
+const MARKETS = {
+  cn:   { name: "中国一线 2021", color: "var(--s-cn)" },
+  tokyo:{ name: "东京 1991",     color: "var(--s-tokyo)" },
+  hk97: { name: "香港 1997",     color: "var(--s-hk97)" },
+  us06: { name: "美国 2006",     color: "var(--s-us06)" },
+  hk21: { name: "香港 2021",     color: "var(--s-hk21)" },
+};
+const SERIES_A = [{"k": "cn", "label": "中国一线·官方", "dash": false, "base": 2021, "vals": [100, 97.5, 94, 86, 81, 79]}, {"k": "cn", "label": "中国一线·成交估算", "dash": true, "base": 2021, "vals": [100, 95, 88, 78, 72, 70]}, {"k": "tokyo", "label": "东京·住宅地价", "dash": false, "base": 1991, "vals": [100, 92, 83, 76, 71, 67, 64, 61, 57, 54, 51, 49, 47, 46, 45]}, {"k": "hk97", "label": "香港 1997", "dash": false, "base": 1997, "vals": [100, 72, 63, 60, 55, 50, 39, 47, 58]}, {"k": "us06", "label": "美国 2006", "dash": false, "base": 2006, "vals": [100, 98, 88, 80, 79, 75, 73, 78, 84]}, {"k": "hk21", "label": "香港 2021", "dash": false, "base": 2021, "vals": [100, 84, 78, 73, 70, 74]}];
+const DRAW = {"price": [{"k": "cn", "v": -21, "note": "官方，迄今（成交口径约-30)"}, {"k": "tokyo", "v": -55, "note": "住宅地价;全国城市地价-70;二手公寓约-45", "est": true}, {"k": "hk97", "v": -61, "note": "口径区间-58至-65"}, {"k": "us06", "v": -27, "note": "重灾城市拉斯维加斯/凤凰城约-60"}, {"k": "hk21", "v": -30, "note": "2026已反弹+5"}], "rent": [{"k": "cn", "v": -10, "note": "2024年单年-2.82;沪-7.91京-4.64", "est": true}, {"k": "tokyo", "v": -15, "note": "租金粘性远强于价格", "est": true}, {"k": "hk97", "v": -40, "note": "RVD租金指数口径", "est": true}, {"k": "us06", "v": -5, "note": "基本未跌", "est": true}, {"k": "hk21", "v": -8, "note": "已反弹", "est": true}], "volume": [{"k": "cn", "v": -49, "note": "销售面积17.94→约9.1亿平米"}, {"k": "hk97", "v": -58, "note": "年成交宗数", "est": true}, {"k": "us06", "v": -42, "note": "成屋;新房销量-75(2005-2011)"}, {"k": "hk21", "v": -40, "note": "", "est": true}]};
+const YIELDS = [{"name": "东京 2002-04 底", "y": 5.5, "m": 2.4, "est": true}, {"name": "香港 2003 底", "y": 5.5, "m": 2.5, "est": true}, {"name": "美国 2012 底", "y": 5.3, "m": 3.7, "est": true}, {"name": "中国一线 2026 现在", "y": 2.2, "m": 3.0, "now": true}];
+const RECOVER = [{"k": "tokyo", "name": "东京（二手公寓）", "v": 35, "note": "1990→2026年初短暂超越"}, {"k": "hk97", "name": "香港 1997", "v": 14, "note": "2011回97价，2017创新高"}, {"k": "us06", "name": "美国 2006", "v": 10, "note": "2016回2006价"}];
+const SENTI = [{"year": "2015", "phase": "狂热", "attitude": "买到就是赚到；深圳领涨点燃全国预期", "events": "330新政降首付；涨价去库存提出；深圳全年暴涨", "words": "买到就是赚到;日光盘", "price": "深圳+48%领涨"}, {"year": "2016", "phase": "狂热", "attitude": "恐慌性抢购；不惜假离婚获取房票", "events": "上海排队离婚潮(8月民政局爆满)；南京合肥杭州抢房；地王频出", "words": "排队离婚;地王;抢房", "price": "一线普涨20-40%"}, {"year": "2017", "phase": "信仰", "attitude": "调控被解读为蓄力上涨；无人相信会跌", "events": "317北京调控+全国限购加码；房住不炒写入十九大报告", "words": "房住不炒;摇号;限售", "price": "涨幅受压但预期未变"}, {"year": "2018", "phase": "信仰", "attitude": "六个钱包凑首付天经地义；摇号=中彩票", "events": "成都7万人摇号抢640套(中签率<1%)；六个钱包论；万科喊活下去遭群嘲", "words": "六个钱包;万人摇号;活下去", "price": "滞涨盘整"}, {"year": "2019", "phase": "信仰", "attitude": "稳=永远不会跌；豪宅打新热", "events": "深圳千人打新豪宅；深圳房价登顶全国；部分二线阴跌无人关注", "words": "打新;千万豪宅秒光", "price": "一线结构性上涨"}, {"year": "2020", "phase": "狂热", "attitude": "最后的疯狂：代持打新、学区房抢筹", "events": "深圳打新代持炒房链条曝光；深圳全年+27%；上海学区房跳涨", "words": "打新;代持;学区房", "price": "深圳+27%冲顶"}, {"year": "2021", "phase": "动摇", "attitude": "上半年抢学区房下半年恐慌观望；信仰首次裂缝", "events": "2月深圳二手指导价腰斩流动性；下半年恒大商票理财暴雷；三道红线发酵", "words": "指导价;三道红线;暴雷", "price": "年中见顶转跌"}, {"year": "2022", "phase": "恐慌", "attitude": "怕烂尾不敢买期房；首付会打水漂", "events": "景德镇打响停贷第一枪；25省300+楼盘集体停贷；保交楼", "words": "烂尾楼;停贷潮;保交楼", "price": "官方-2.5成交-24%"}, {"year": "2023", "phase": "恐慌转麻木", "attitude": "提前还贷比买房划算；政策脉冲失效狼来了", "events": "提前还贷排队2-3个月；认房不认贷20城脉冲两周即回落", "words": "提前还贷;认房不认贷;法拍房", "price": "阴跌加速"}, {"year": "2024", "phase": "麻木", "attitude": "不买房才是赢家成为主流叙事；刺激无感", "events": "517新政+926止跌回稳表态；脉冲后继续跌；33%年轻人认为买房非必需/73%拒绝房贷", "words": "不买房;止跌回稳;以旧换新", "price": "官方年跌8-9%最陡"}, {"year": "2025", "phase": "麻木", "attitude": "躺平租房主义流行；讨论热度明显降温", "events": "贝壳挂牌650万套创新高；一线租金普跌；租售同权讨论", "words": "躺平;长期租房;提前退休", "price": "跌幅趋缓"}, {"year": "2026", "phase": "争论", "attitude": "该不该抄底公开分裂；核心/非核心分层成共识", "events": "以价换量成交回升(沪+18%)；专家顶底之争(连平vs任泽平vs丁祖昱)；京松限购", "words": "抄底;核心资产;以价换量;沪八条", "price": "降幅收窄至-2~-5%,成交回暖"}];
+/* ==DATA:END== */
+
+/* ---------- 工具 ---------- */
+const NS = "http://www.w3.org/2000/svg";
+const tip = document.getElementById("tip");
+function el(t, at, parent) { const e = document.createElementNS(NS, t); for (const k in at) e.setAttribute(k, at[k]); if (parent) parent.appendChild(e); return e; }
+function showTip(html, x, y) { tip.innerHTML = html; tip.style.display = "block"; const w = tip.offsetWidth; tip.style.left = Math.min(x + 14, innerWidth - w - 10) + "px"; tip.style.top = (y + 14) + "px"; }
+function hideTip() { tip.style.display = "none"; }
+function cssColor(k) { return MARKETS[k].color; }
+
+/* ---------- 图A：对齐峰值折线 ---------- */
+(function () {
+  const svg = document.getElementById("ch-a");
+  const W = 920, H = 400, m = { l: 46, r: 130, t: 16, b: 34 };
+  const maxT = 14, yMin = 30, yMax = 105;
+  const X = t => m.l + (W - m.l - m.r) * t / maxT;
+  const Y = v => m.t + (H - m.t - m.b) * (yMax - v) / (yMax - yMin);
+  for (let g = 40; g <= 100; g += 20) {
+    el("line", { x1: m.l, x2: W - m.r, y1: Y(g), y2: Y(g), stroke: "var(--grid)", "stroke-width": 1 }, svg);
+    el("text", { x: m.l - 8, y: Y(g) + 4, "text-anchor": "end", "font-size": 11, fill: "var(--ink-3)" }, svg).textContent = g;
+  }
+  el("line", { x1: m.l, x2: W - m.r, y1: Y(100), y2: Y(100), stroke: "var(--axis)", "stroke-width": 1 }, svg);
+  for (let t = 0; t <= maxT; t += 2) {
+    el("text", { x: X(t), y: H - 10, "text-anchor": "middle", "font-size": 11, fill: "var(--ink-3)" }, svg).textContent = t;
+  }
+  el("text", { x: (m.l + W - m.r) / 2, y: H + 2, "text-anchor": "middle", "font-size": 11, fill: "var(--ink-2)" }, svg).textContent = "距峰值年数";
+  const endYs = [];
+  SERIES_A.forEach(s => {
+    const pts = s.vals.map((v, i) => [X(i), Y(v)]);
+    const d = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+    el("path", { d, fill: "none", stroke: cssColor(s.k), "stroke-width": 2, "stroke-dasharray": s.dash ? "5 4" : "none", "stroke-linecap": "round" }, svg);
+    const last = pts[pts.length - 1];
+    let ly = last[1];
+    while (endYs.some(y => Math.abs(y - ly) < 13)) ly += 13;
+    endYs.push(ly);
+    const minV = Math.min(...s.vals), minI = s.vals.indexOf(minV);
+    const ongoing = minI === s.vals.length - 1;
+    el("text", { x: last[0] + 7, y: ly + 4, "font-size": 11.5, fill: "var(--ink-2)" }, svg).textContent =
+      s.label + (ongoing ? " " + (minV - 100) + "%(迄今)" : "");
+    /* 已完成周期：谷底圆点 + 最大回撤 */
+    if (!ongoing && !s.dash) {
+      el("circle", { cx: X(minI), cy: Y(minV), r: 4, fill: cssColor(s.k), stroke: "var(--surface-1)", "stroke-width": 2 }, svg);
+      el("text", { x: X(minI), y: Y(minV) + 17, "text-anchor": "middle", "font-size": 11, "font-weight": 600, fill: "var(--ink-1)" }, svg).textContent = (minV - 100) + "%";
+    }
+  });
+  const cross = el("line", { y1: m.t, y2: H - m.b, stroke: "var(--axis)", "stroke-width": 1, opacity: 0 }, svg);
+  const hot = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent" }, svg);
+  hot.addEventListener("mousemove", ev => {
+    const r = svg.getBoundingClientRect(), sx = W / r.width;
+    const t = Math.round(((ev.clientX - r.left) * sx - m.l) / (W - m.l - m.r) * maxT);
+    if (t < 0 || t > maxT) return hideTip();
+    cross.setAttribute("x1", X(t)); cross.setAttribute("x2", X(t)); cross.setAttribute("opacity", 0.6);
+    let html = "<b>t = " + t + " 年</b>";
+    SERIES_A.forEach(s => {
+      if (t < s.vals.length) html += "<br><span style='color:" + getComputedStyle(document.documentElement).getPropertyValue(cssColor(s.k).slice(4, -1)) + "'>●</span> " + s.label + "（" + (s.base + t) + "）: " + s.vals[t] + (s.vals[t] < 100 ? "（" + (s.vals[t] - 100) + "%）" : "");
+    });
+    showTip(html, ev.clientX, ev.clientY);
+  });
+  hot.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); hideTip(); });
+  /* 图例 */
+  const lg = document.getElementById("lg-a");
+  SERIES_A.forEach(s => {
+    const it = document.createElement("span"); it.className = "it";
+    const sw = document.createElement("span"); sw.className = "sw" + (s.dash ? " dash" : "");
+    sw.style.background = s.dash ? "" : "var(" + cssColor(s.k).slice(4, -1) + ")";
+    sw.style.color = "var(" + cssColor(s.k).slice(4, -1) + ")";
+    it.appendChild(sw); it.appendChild(document.createTextNode(s.label));
+    lg.appendChild(it);
+  });
+  /* 数据表 */
+  let t = "<table><tr><th>t（年）</th>" + SERIES_A.map(s => "<th>" + s.label + "</th>").join("") + "</tr>";
+  for (let i = 0; i <= maxT; i++) {
+    t += "<tr><td>" + i + "</td>" + SERIES_A.map(s => "<td>" + (i < s.vals.length ? s.vals[i] : "–") + "</td>").join("") + "</tr>";
+  }
+  document.getElementById("tb-a").innerHTML = t + "</table>";
+})();
+
+/* ---------- 图B：三联横向条形 ---------- */
+(function () {
+  const panels = [["ch-b1", "价格 峰→谷", DRAW.price], ["ch-b2", "租金 峰→谷", DRAW.rent], ["ch-b3", "成交量 峰→谷", DRAW.volume]];
+  panels.forEach(([id, title, rows]) => {
+    const svg = document.getElementById(id);
+    const W = 300, H = 240, m = { l: 8, r: 52, t: 26, b: 8 };
+    const maxV = 70, rowH = (H - m.t - m.b) / rows.length;
+    el("text", { x: m.l, y: 16, "font-size": 12.5, "font-weight": 600, fill: "var(--ink-1)" }, svg).textContent = title;
+    rows.forEach((r, i) => {
+      const y = m.t + i * rowH, bh = Math.min(rowH - 8, 20);
+      const w = (W - m.l - m.r - 78) * Math.abs(r.v) / maxV;
+      el("text", { x: m.l, y: y + rowH / 2 + 4, "font-size": 11.5, fill: "var(--ink-2)" }, svg).textContent = MARKETS[r.k].name.replace("中国一线 2021", "中国一线");
+      const bar = el("rect", { x: m.l + 78, y: y + (rowH - bh) / 2, width: Math.max(w, 2), height: bh, rx: 4, fill: cssColor(r.k) }, svg);
+      el("text", { x: m.l + 82 + w, y: y + rowH / 2 + 4, "font-size": 11.5, "font-weight": 600, fill: "var(--ink-1)" }, svg).textContent = r.v + "%" + (r.est ? "*" : "");
+      bar.addEventListener("mousemove", ev => showTip("<b>" + MARKETS[r.k].name + "</b><br>" + title + "：" + r.v + "%<br><span style='color:var(--ink-3)'>" + r.note + (r.est ? "（估算）" : "") + "</span>", ev.clientX, ev.clientY));
+      bar.addEventListener("mouseleave", hideTip);
+    });
+  });
+  let t = "<table><tr><th>市场</th><th>价格</th><th>租金</th><th>成交量</th></tr>";
+  ["cn", "tokyo", "hk97", "us06", "hk21"].forEach(k => {
+    const f = arr => { const r = arr.find(x => x.k === k); return r ? r.v + "%" + (r.est ? "（估）" : "") + "｜" + r.note : "–"; };
+    t += "<tr><td>" + MARKETS[k].name + "</td><td>" + f(DRAW.price) + "</td><td>" + f(DRAW.rent) + "</td><td>" + f(DRAW.volume) + "</td></tr>";
+  });
+  document.getElementById("tb-b").innerHTML = t + "</table><p style='color:var(--ink-3);font-size:11.5px'>* 为估算口径。</p>";
+})();
+
+/* ---------- 图C：租金回报率 vs 按揭利率 哑铃 ---------- */
+(function () {
+  const svg = document.getElementById("ch-c");
+  const W = 920, H = 260, m = { l: 170, r: 120, t: 14, b: 30 };
+  const maxV = 6.5, rowH = (H - m.t - m.b) / YIELDS.length;
+  const X = v => m.l + (W - m.l - m.r) * v / maxV;
+  for (let g = 0; g <= 6; g++) {
+    el("line", { x1: X(g), x2: X(g), y1: m.t, y2: H - m.b, stroke: "var(--grid)", "stroke-width": 1 }, svg);
+    el("text", { x: X(g), y: H - 10, "text-anchor": "middle", "font-size": 11, fill: "var(--ink-3)" }, svg).textContent = g + "%";
+  }
+  YIELDS.forEach((r, i) => {
+    const y = m.t + i * rowH + rowH / 2;
+    const pos = r.y >= r.m;
+    el("text", { x: m.l - 12, y: y + 4, "text-anchor": "end", "font-size": 12.5, "font-weight": r.now ? 700 : 400, fill: "var(--ink-1)" }, svg).textContent = r.name;
+    el("line", { x1: X(Math.min(r.y, r.m)), x2: X(Math.max(r.y, r.m)), y1: y, y2: y, stroke: pos ? "var(--good)" : "var(--critical)", "stroke-width": 3, "stroke-linecap": "round" }, svg);
+    const dot1 = el("circle", { cx: X(r.y), cy: y, r: 6, fill: "var(--ink-1)" }, svg);
+    const dot2 = el("circle", { cx: X(r.m), cy: y, r: 6, fill: "var(--surface-1)", stroke: "var(--ink-3)", "stroke-width": 2 }, svg);
+    const sp = (r.y - r.m).toFixed(1);
+    el("text", { x: X(Math.max(r.y, r.m)) + 14, y: y + 4, "font-size": 12, "font-weight": 600, fill: pos ? "var(--good-text)" : "var(--critical)" }, svg).textContent = (pos ? "▲ +" : "▼ ") + sp + "pp";
+    [dot1, dot2].forEach(d => {
+      d.addEventListener("mousemove", ev => showTip("<b>" + r.name + "</b><br>租金回报率 " + r.y + "%　按揭利率 " + r.m + "%<br>利差 " + sp + "pp" + (r.est ? "（估算）" : ""), ev.clientX, ev.clientY));
+      d.addEventListener("mouseleave", hideTip);
+    });
+  });
+  let t = "<table><tr><th>案例</th><th>租金回报率</th><th>按揭利率</th><th>利差</th></tr>";
+  YIELDS.forEach(r => { t += "<tr><td>" + r.name + "</td><td>" + r.y + "%" + (r.est ? "（估）" : "") + "</td><td>" + r.m + "%</td><td>" + (r.y - r.m).toFixed(1) + "pp</td></tr>"; });
+  document.getElementById("tb-c").innerHTML = t + "</table>";
+})();
+
+/* ---------- 图D：回本年数 ---------- */
+(function () {
+  const svg = document.getElementById("ch-d");
+  const W = 920, H = 220, m = { l: 170, r: 220, t: 14, b: 30 };
+  const maxV = 36, rowH = (H - m.t - m.b) / RECOVER.length;
+  const X = v => m.l + (W - m.l - m.r) * v / maxV;
+  [0, 10, 20, 30].forEach(g => {
+    el("line", { x1: X(g), x2: X(g), y1: m.t, y2: H - m.b, stroke: "var(--grid)", "stroke-width": 1 }, svg);
+    el("text", { x: X(g), y: H - 10, "text-anchor": "middle", "font-size": 11, fill: "var(--ink-3)" }, svg).textContent = g + "年";
+  });
+  RECOVER.forEach((r, i) => {
+    const y = m.t + i * rowH, bh = Math.min(rowH - 10, 22);
+    el("text", { x: m.l - 12, y: y + rowH / 2 + 4, "text-anchor": "end", "font-size": 12.5, fill: "var(--ink-1)" }, svg).textContent = r.name;
+    const bar = el("rect", { x: X(0), y: y + (rowH - bh) / 2, width: X(r.v) - X(0), height: bh, rx: 4, fill: cssColor(r.k) }, svg);
+    el("text", { x: X(r.v) + 10, y: y + rowH / 2 + 4, "font-size": 12, "font-weight": 600, fill: "var(--ink-1)" }, svg).textContent = r.v + "年 · " + r.note;
+    bar.addEventListener("mousemove", ev => showTip("<b>" + r.name + "</b><br>回到前高：" + r.v + "年<br><span style='color:var(--ink-3)'>" + r.note + "</span>", ev.clientX, ev.clientY));
+    bar.addEventListener("mouseleave", hideTip);
+  });
+  let t = "<table><tr><th>市场</th><th>回本年数</th><th>说明</th></tr>";
+  RECOVER.forEach(r => { t += "<tr><td>" + r.name + "</td><td>" + r.v + "</td><td style='text-align:left'>" + r.note + "</td></tr>"; });
+  document.getElementById("tb-d").innerHTML = t + "</table>";
+})();
+
+/* ---------- 情绪时间轴：年份色带 ---------- */
+(function () {
+  if (!SENTI.length) return;
+  const PH = {
+    "狂热":   { c: "var(--ph-kuangre)",  ink: "#ffffff" },
+    "信仰":   { c: "var(--ph-xinyang)",  ink: "#ffffff" },
+    "动摇":   { c: "var(--ph-dongyao)",  ink: "var(--ph-dongyao-ink)" },
+    "恐慌":   { c: "var(--ph-konghuang)", ink: "#ffffff" },
+    "恐慌转麻木": { c: "var(--ph-konghuang)", ink: "#ffffff" },
+    "麻木":   { c: "var(--ph-mamu)",     ink: "#ffffff" },
+    "争论":   { c: "var(--ph-zhenglun)", ink: "#0b0b0b" },
+  };
+  const svg = document.getElementById("ch-s");
+  const W = 920, H = 210, m = { l: 10, r: 10, t: 34, b: 66 };
+  const n = SENTI.length, cw = (W - m.l - m.r) / n, bh = H - m.t - m.b;
+  SENTI.forEach((r, i) => {
+    const x = m.l + i * cw;
+    const ph = PH[r.phase] || PH["动摇"];
+    el("text", { x: x + cw / 2, y: m.t - 12, "text-anchor": "middle", "font-size": 11.5, fill: "var(--ink-3)" }, svg).textContent = r.year;
+    const cell = el("rect", { x: x + 1, y: m.t, width: cw - 2, height: bh, rx: 4, fill: ph.c,
+      stroke: r.phase === "动摇" ? "var(--axis)" : "none", "stroke-width": 1 }, svg);
+    const short = r.phase.length > 2 ? r.phase.slice(0, 2) + "→" : r.phase;
+    el("text", { x: x + cw / 2, y: m.t + bh / 2 + 5, "text-anchor": "middle", "font-size": 13, "font-weight": 600, fill: ph.ink }, svg).textContent = short;
+    /* 底部两行：热词第一个 + 价格状态摘要 */
+    const word = (r.words || "").split(";")[0];
+    el("text", { x: x + cw / 2, y: m.t + bh + 20, "text-anchor": "middle", "font-size": 10.5, fill: "var(--ink-2)" }, svg).textContent = word;
+    const ps = (r.price || "").length > 8 ? (r.price || "").slice(0, 7) + "…" : (r.price || "");
+    el("text", { x: x + cw / 2, y: m.t + bh + 38, "text-anchor": "middle", "font-size": 10, fill: "var(--ink-3)" }, svg).textContent = ps;
+    cell.addEventListener("mousemove", ev => showTip(
+      "<b>" + r.year + " · " + r.phase + "</b><br>" + r.attitude +
+      "<br><span style='color:var(--ink-3)'>事件: " + r.events + "</span>" +
+      "<br><span style='color:var(--ink-3)'>热词: " + r.words + "</span>" +
+      "<br><span style='color:var(--ink-3)'>一线价格: " + r.price + "</span>", ev.clientX, ev.clientY));
+    cell.addEventListener("mouseleave", hideTip);
+  });
+  /* 图例 */
+  const lg = document.getElementById("lg-s");
+  ["狂热", "信仰", "动摇", "恐慌", "麻木", "争论"].forEach(p => {
+    const it = document.createElement("span"); it.className = "it";
+    const sw = document.createElement("span"); sw.className = "sw";
+    sw.style.cssText = "height:10px;width:14px;border-radius:3px;background:" + PH[p].c + (p === "动摇" ? ";border:1px solid var(--axis)" : "");
+    it.appendChild(sw); it.appendChild(document.createTextNode(p));
+    lg.appendChild(it);
+  });
+  /* 数据表 */
+  let t = "<table><tr><th>年份</th><th>阶段</th><th>主导态度</th><th>标志事件</th><th>热词</th><th>一线价格</th></tr>";
+  SENTI.forEach(r => {
+    t += "<tr><td>" + r.year + "</td><td>" + r.phase + "</td><td style='text-align:left'>" + r.attitude +
+      "</td><td style='text-align:left'>" + r.events + "</td><td style='text-align:left'>" + r.words +
+      "</td><td style='text-align:left'>" + r.price + "</td></tr>";
+  });
+  document.getElementById("tb-s").innerHTML = t + "</table>";
+})();
+</script>
+</body>
+</html>

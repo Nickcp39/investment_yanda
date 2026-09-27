@@ -1,0 +1,92 @@
+{
+  "ticker": "META",
+  "as_of": "2026-09-26",
+  "pipeline_version": "lean-6module-v1.1",
+  "run_type": "refresh",
+  "supersedes": "companies/meta/2026-06-19/decision_card.json",
+  "as_of_price": 751.66,
+  "price_sources": ["yahoo_chart_api", "stockanalysis.com"],
+  "price_max_pairwise_delta_pct": 0.0,
+  "diluted_shares_b": 2.566,
+  "as_of_market_cap_usd_b": 1929,
+  "latest_reported_period": "Q2 2026 (ended 2026-06-30), reported 2026-07-29",
+  "financials_ttm": {
+    "revenue_usd_b": 228.2,
+    "operating_income_usd_b": 86.9,
+    "operating_margin_pct": 38.1,
+    "net_income_usd_b": 68.1,
+    "operating_cash_flow_usd_b": 130.3,
+    "capex_usd_b": 89.3,
+    "free_cash_flow_usd_b": 41.0,
+    "capex_to_ocf_pct": 69,
+    "pe_ttm": 28.3,
+    "p_fcf_ttm": 47.0,
+    "fcf_yield_pct": 2.13
+  },
+  "latest_quarter": {
+    "revenue_usd_m": 60801, "revenue_yoy_pct": 28,
+    "operating_income_usd_m": 18775, "operating_income_yoy_pct": -8,
+    "operating_margin_pct": 31, "operating_margin_prior_year_pct": 43,
+    "net_income_usd_m": 15848, "net_income_yoy_pct": -14,
+    "one_offs": {"legal_charges_usd_b": 2.4, "severance_usd_b": 1.2, "ex_one_offs_operating_income_yoy_pct": 9},
+    "family_of_apps_operating_income_usd_m": 23394,
+    "reality_labs_operating_loss_usd_m": -4619
+  },
+  "capital_allocation": {
+    "buybacks_q2_2026_usd_b": 0.0,
+    "buybacks_h1_2026_usd_b": 0.0,
+    "buybacks_h1_2025_usd_b": 23.159,
+    "dividends_q2_2026_usd_b": 1.385,
+    "debt_issued_may_2026_usd_b": 25.0,
+    "debt_terms": "six series, 4.55%-6.45%, maturities 2031-2066",
+    "cash_and_securities_usd_b": 90.26,
+    "long_term_debt_usd_b": 83.66
+  },
+  "guidance": {
+    "capex_2026_usd_b": "130-145 (incl. finance lease principal)",
+    "capex_2027": "explicitly not provided",
+    "total_expenses_2026_usd_b": "165-169",
+    "q3_2026_revenue_usd_b": "61-64"
+  },
+  "off_balance_sheet": {
+    "leases_signed_not_commenced_usd_b": 278.99,
+    "additional_leases_july_2026_usd_b": 68,
+    "total_contractual_commitments_usd_b": 349.31,
+    "due_2026_usd_b": 53.52,
+    "due_2027_usd_b": 81.65
+  },
+  "owner_earnings_anchor_usd_b": {"conservative_fcf": 41.0, "base_midpoint": 64.0, "optimistic_operating_income": 86.9},
+  "scenarios_5y": [
+    {"case": "bear", "oe0_usd_b": 45, "growth_pct": 2, "exit_x": 14, "price_y5": 271, "irr_pct": -18.5},
+    {"case": "base", "oe0_usd_b": 64, "growth_pct": 10, "exit_x": 18, "price_y5": 723, "irr_pct": -0.8},
+    {"case": "bull", "oe0_usd_b": 75, "growth_pct": 16, "exit_x": 22, "price_y5": 1351, "irr_pct": 12.4}
+  ],
+  "hurdle_prices": {"8pct": 492, "10pct": 449, "8pct_on_optimistic_oe": 668},
+  "module_signals": {"M1": 1, "M2": 1, "M3": 1, "M4": -1, "M5": -1, "M6": -2},
+  "business_verdict": "strong_but_capex_constrained",
+  "new_money_verdict": "WATCH",
+  "suggested_initial_size_pct": 0,
+  "prior_new_money_verdict": "WATCH",
+  "verdict_flipped": false,
+  "buy_below_price": 492,
+  "binding_constraint": "price + capex consuming free cash flow",
+  "new_findings": [
+    "Q2 2026 operating income FELL 8% YoY on +28% revenue; margin 31% vs 43%. Even excluding $2.4B legal and $1.2B severance, operating income grew only 9%",
+    "Buybacks were ZERO in Q2 2026 and in H1 2026, versus $23.159B in H1 2025",
+    "Meta issued $25B of senior unsecured notes in May 2026 (4.55%-6.45%, 2031-2066)",
+    "FY2026 capex guidance $130-145B is roughly equal to the entire TTM operating cash flow of $130.3B; CFO explicitly declined to guide 2027 capex",
+    "Contractual commitments total $349.31B, including ~$279B of leases signed but not commenced plus ~$68B more signed in July 2026"
+  ],
+  "kill_criteria": [
+    "2027 capex guidance lands materially above 2026 with no operating-income growth -> thesis break",
+    "Operating income declines YoY for a second consecutive quarter excluding one-offs",
+    "Buybacks remain suspended into 2027 while debt rises further",
+    "Price above $492 -> no new money (currently 53% above)"
+  ],
+  "sources_used": [
+    {"source_id": "META-Q2-2026-PR", "public_date": "2026-07-29", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm"},
+    {"source_id": "META-Q2-2026-10Q", "public_date": "2026-07-29", "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050705/meta-20260630.htm"},
+    {"source_id": "META-Q2-2026-CALL", "public_date": "2026-07-29", "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf"},
+    {"source_id": "META-XBRL", "public_date": "2026-09-26", "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json"}
+  ]
+}
