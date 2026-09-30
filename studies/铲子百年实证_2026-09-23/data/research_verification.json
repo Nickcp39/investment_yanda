@@ -1,0 +1,4630 @@
+{
+  "status": "PASS",
+  "checks": 1155,
+  "pages": 22,
+  "source_annotations": 47,
+  "pdf_sha256": "05880c49de746e0fed0895e0d002eadf24db3ffce5717c2e9f0a79f89514f889",
+  "scope": "Independent arithmetic from archived raw industry files and PDF structure. Not causal validation or complete securities corporate-action audit.",
+  "details": [
+    {
+      "pass": true,
+      "check": "1,201 consecutive monthly returns"
+    },
+    {
+      "pass": true,
+      "check": "No missing months"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Mach"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Mach"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Mach"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Mach201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Mach201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts Mach"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation ElcEq"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR ElcEq"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown ElcEq"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window ElcEq201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess ElcEq201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts ElcEq"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Aero"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Aero"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Aero"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Aero201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Aero201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts Aero"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Ships"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Ships"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Ships"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Ships201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Ships201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts Ships"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Cnstr"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Cnstr"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Cnstr"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Cnstr201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Cnstr201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts Cnstr"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Util"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Util"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Util"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util192607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util192607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util192707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util192707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util192807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util192807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util192907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util192907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util193907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util193907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util194907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util194907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util195907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util195907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util196907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util196907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util197907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util197907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util198907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util198907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util199907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util199907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200607"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200707"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200707"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200807"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200807"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util200907"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util200907"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201007"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201007"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201107"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201107"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201207"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201207"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201307"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201307"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201407"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201407"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201507"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201507"
+    },
+    {
+      "pass": true,
+      "check": "120 month window Util201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling excess Util201607"
+    },
+    {
+      "pass": true,
+      "check": "Rolling counts Util"
+    },
+    {
+      "pass": true,
+      "check": "Raw table reconciliation Market"
+    },
+    {
+      "pass": true,
+      "check": "Product based independent CAGR Market"
+    },
+    {
+      "pass": true,
+      "check": "Independent drawdown Market"
+    },
+    {
+      "pass": true,
+      "check": "Final PDF page count"
+    },
+    {
+      "pass": true,
+      "check": "Clickable source annotations"
+    },
+    {
+      "pass": true,
+      "check": "No blank or almost blank pages"
+    },
+    {
+      "pass": true,
+      "check": "No replacement glyphs in extracted text"
+    },
+    {
+      "pass": true,
+      "check": "No unexpanded report fields"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 1"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 2"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 3"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 4"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 5"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 6"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 7"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 8"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 9"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 10"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 11"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 12"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 13"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 14"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 15"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 16"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 17"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 18"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 19"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 20"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 21"
+    },
+    {
+      "pass": true,
+      "check": "Text bounds allowing CJK hanging punctuation 22"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 10.35"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 10.97"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 11.23"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 12.76"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 9.21"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 8.73"
+    },
+    {
+      "pass": true,
+      "check": "Century figure in report 9.22"
+    }
+  ]
+}

@@ -1,0 +1,2625 @@
+{
+  "cutoff_month": "2026-08",
+  "method": "Yahoo adjusted monthly values; SPY adjusted benchmark; USD; no current month",
+  "original_companies": 33,
+  "original_with_prices": 32,
+  "candidate_companies": 41,
+  "with_prices": 40,
+  "raw_snapshot_sha256": "1d0817af7a09e0e43fa9d5c61a1694b0283e2c44527f1e67620bd9fe6bb9a2e9",
+  "floors": {
+    "GE": "2024-04",
+    "RTX": "2020-04",
+    "HWM": "2020-04",
+    "GEV": "2024-04",
+    "VRT": "2020-03",
+    "BKR": "2017-08",
+    "APTV": "2017-12",
+    "HUBB": "1995-01"
+  },
+  "results": {
+    "GE": {
+      "status": "vendor_descriptive",
+      "name": "GE Aerospace",
+      "currency": "USD",
+      "note": "2024分拆后；不是1970年以来纯航空",
+      "longest": {
+        "start": "2024-04",
+        "end": "2026-08",
+        "months": 28,
+        "observations": 29,
+        "missing_months": 0,
+        "cagr_pct": 37.49333301722522,
+        "spy_cagr_pct": 21.30266386889499,
+        "excess_pp": 16.19066914833023,
+        "relative_wealth_cagr_pct": 13.347331898522242,
+        "wealth_multiple": 2.102118333462002,
+        "monthly_max_drawdown_pct": -16.968577605510138
+      },
+      "local_cagr_same_window_pct": 37.49333301722522,
+      "fixed_years": {
+        "5": null,
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "RTX": {
+      "status": "vendor_descriptive",
+      "name": "RTX Corporation",
+      "currency": "USD",
+      "note": "2020合并/分拆后",
+      "longest": {
+        "start": "2020-04",
+        "end": "2026-08",
+        "months": 76,
+        "observations": 77,
+        "missing_months": 0,
+        "cagr_pct": 23.051903739868294,
+        "spy_cagr_pct": 18.177853918486253,
+        "excess_pp": 4.874049821382043,
+        "relative_wealth_cagr_pct": 4.124334348416858,
+        "wealth_multiple": 3.7201415773951645,
+        "monthly_max_drawdown_pct": -27.349477018228384
+      },
+      "local_cagr_same_window_pct": 23.051903739868294,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 22.23318613625638,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 9.541045168628926,
+          "relative_wealth_cagr_pct": 8.466468989500985,
+          "wealth_multiple": 2.728636355573541,
+          "monthly_max_drawdown_pct": -27.349477018228384
+        },
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "RR.L": {
+      "status": "vendor_descriptive",
+      "name": "Rolls-Royce Holdings plc",
+      "currency": "GBp",
+      "note": "2020配股/认购权现金流未独立重建",
+      "longest": {
+        "start": "2003-12",
+        "end": "2026-08",
+        "months": 272,
+        "observations": 273,
+        "missing_months": 0,
+        "cagr_pct": 13.901436633779962,
+        "spy_cagr_pct": 10.889204338132185,
+        "excess_pp": 3.0122322956477765,
+        "relative_wealth_cagr_pct": 2.716434222453823,
+        "wealth_multiple": 19.112987478539917,
+        "monthly_max_drawdown_pct": -92.03887386317606
+      },
+      "local_cagr_same_window_pct": 15.309338626335034,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 67.3145052098463,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 54.62236424221884,
+          "relative_wealth_cagr_pct": 48.470429058500144,
+          "wealth_multiple": 13.111970612780315,
+          "monthly_max_drawdown_pct": -58.68994574529207
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 19.610062271900187,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 4.337492199747728,
+          "relative_wealth_cagr_pct": 3.7628138220851426,
+          "wealth_multiple": 5.993453840109288,
+          "monthly_max_drawdown_pct": -87.20583183921116
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 10.445502202005441,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -0.8347410716694093,
+          "relative_wealth_cagr_pct": -0.7501251319306568,
+          "wealth_multiple": 7.293914799110964,
+          "monthly_max_drawdown_pct": -92.03887386317606
+        }
+      },
+      "rolling_10y": {
+        "n": 153,
+        "win_fraction": 0.20915032679738563,
+        "min_excess_pp": -29.57450361912174,
+        "median_excess_pp": -6.692697285349736,
+        "max_excess_pp": 13.517269993330538
+      }
+    },
+    "SAF.PA": {
+      "status": "vendor_descriptive",
+      "name": "Safran SA",
+      "currency": "EUR",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2003-12",
+        "end": "2026-08",
+        "months": 272,
+        "observations": 273,
+        "missing_months": 0,
+        "cagr_pct": 15.541836915815388,
+        "spy_cagr_pct": 10.889204338132185,
+        "excess_pp": 4.652632577683202,
+        "relative_wealth_cagr_pct": 4.195748905814156,
+        "wealth_multiple": 26.429568333073437,
+        "monthly_max_drawdown_pct": -62.51992982455028
+      },
+      "local_cagr_same_window_pct": 15.964938320214461,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 26.710508541663103,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 14.01836757403565,
+          "relative_wealth_cagr_pct": 12.439525466165936,
+          "wealth_multiple": 3.2663533894515377,
+          "monthly_max_drawdown_pct": -30.77385866233143
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 19.99235878485026,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 4.719788712697803,
+          "relative_wealth_cagr_pct": 4.094459514300364,
+          "wealth_multiple": 6.187794852791653,
+          "monthly_max_drawdown_pct": -45.96421373160007
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 17.409081883068865,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 6.128838609394016,
+          "relative_wealth_cagr_pct": 5.507571181634807,
+          "wealth_multiple": 24.776151004827256,
+          "monthly_max_drawdown_pct": -62.51992982455028
+        }
+      },
+      "rolling_10y": {
+        "n": 153,
+        "win_fraction": 0.9019607843137255,
+        "min_excess_pp": -2.263170819840288,
+        "median_excess_pp": 5.342209459119007,
+        "max_excess_pp": 17.863035363495182
+      }
+    },
+    "TDG": {
+      "status": "vendor_descriptive",
+      "name": "TransDigm Group Incorporated",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2006-03",
+        "end": "2026-08",
+        "months": 245,
+        "observations": 246,
+        "missing_months": 0,
+        "cagr_pct": 26.6930315258346,
+        "spy_cagr_pct": 11.095602414878325,
+        "excess_pp": 15.597429110956273,
+        "relative_wealth_cagr_pct": 14.0396458292821,
+        "wealth_multiple": 125.27609258325555,
+        "monthly_max_drawdown_pct": -50.225410062977375
+      },
+      "local_cagr_same_window_pct": 26.6930315258346,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 18.33857419189455,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 5.6464332242671,
+          "relative_wealth_cagr_pct": 5.01049423303539,
+          "wealth_multiple": 2.3207676484947153,
+          "monthly_max_drawdown_pct": -22.991475626309686
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 20.721679458631325,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 5.449109386478868,
+          "relative_wealth_cagr_pct": 4.727151813365582,
+          "wealth_multiple": 6.574347962286633,
+          "monthly_max_drawdown_pct": -50.225410062977375
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 28.143931477067085,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 16.863688203392236,
+          "relative_wealth_cagr_pct": 15.154251740732484,
+          "wealth_multiple": 142.54791904554287,
+          "monthly_max_drawdown_pct": -50.225410062977375
+        }
+      },
+      "rolling_10y": {
+        "n": 126,
+        "win_fraction": 1.0,
+        "min_excess_pp": 5.449109386478868,
+        "median_excess_pp": 15.63209628707165,
+        "max_excess_pp": 29.179762622160688
+      }
+    },
+    "HWM": {
+      "status": "vendor_descriptive",
+      "name": "Howmet Aerospace Inc.",
+      "currency": "USD",
+      "note": "2020分拆后",
+      "longest": {
+        "start": "2020-04",
+        "end": "2026-08",
+        "months": 76,
+        "observations": 77,
+        "missing_months": 0,
+        "cagr_pct": 59.222011684432175,
+        "spy_cagr_pct": 18.177853918486253,
+        "excess_pp": 41.04415776594592,
+        "relative_wealth_cagr_pct": 34.730836958891054,
+        "wealth_multiple": 19.026241680652774,
+        "monthly_max_drawdown_pct": -20.61203149661305
+      },
+      "local_cagr_same_window_pct": 59.222011684432175,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 50.910816632453226,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 38.218675664825774,
+          "relative_wealth_cagr_pct": 33.91423335883261,
+          "wealth_multiple": 7.827117368719662,
+          "monthly_max_drawdown_pct": -16.653297113810062
+        },
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "SPR": {
+      "status": "missing",
+      "note": "无价格不代表价值归零；需收购/退市现金流"
+    },
+    "AER": {
+      "status": "vendor_descriptive",
+      "name": "AerCap Holdings N.V.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2006-11",
+        "end": "2026-08",
+        "months": 237,
+        "observations": 238,
+        "missing_months": 0,
+        "cagr_pct": 10.012367271569268,
+        "spy_cagr_pct": 10.995261216237061,
+        "excess_pp": -0.9828939446677953,
+        "relative_wealth_cagr_pct": -0.885527844970746,
+        "wealth_multiple": 6.583696816025844,
+        "monthly_max_drawdown_pct": -90.59374998474046
+      },
+      "local_cagr_same_window_pct": 10.012367271569268,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 22.612024022469157,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 9.919883054841705,
+          "relative_wealth_cagr_pct": 8.802639624790999,
+          "wealth_multiple": 2.7711836506862277,
+          "monthly_max_drawdown_pct": -37.41974012421437
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 14.097505793634513,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -1.1750642785179455,
+          "relative_wealth_cagr_pct": -1.019378918837699,
+          "wealth_multiple": 3.739052017838083,
+          "monthly_max_drawdown_pct": -63.12894211127755
+        },
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 118,
+        "win_fraction": 0.559322033898305,
+        "min_excess_pp": -6.5468032545480614,
+        "median_excess_pp": 0.4473941819645222,
+        "max_excess_pp": 16.386840140498027
+      }
+    },
+    "ETN": {
+      "status": "vendor_descriptive",
+      "name": "Eaton Corporation plc",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 15.528067555955861,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 4.683301621818647,
+        "relative_wealth_cagr_pct": 4.225099473439653,
+        "wealth_multiple": 125.90168699053852,
+        "monthly_max_drawdown_pct": -61.768317603684174
+      },
+      "local_cagr_same_window_pct": 15.528067555955861,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 20.867021650826366,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 8.174880683198914,
+          "relative_wealth_cagr_pct": 7.2541710655291025,
+          "wealth_multiple": 2.579521207568458,
+          "monthly_max_drawdown_pct": -27.327909374038985
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 22.230275495308028,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 6.957705423155569,
+          "relative_wealth_cagr_pct": 6.035872557366018,
+          "wealth_multiple": 7.443683624040901,
+          "monthly_max_drawdown_pct": -27.327909374038985
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 16.189420069482985,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 4.9091767958081345,
+          "relative_wealth_cagr_pct": 4.41154391057077,
+          "wealth_multiple": 20.106277894721977,
+          "monthly_max_drawdown_pct": -61.768317603684174
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.9328621908127208,
+        "min_excess_pp": -2.060256108708036,
+        "median_excess_pp": 4.997020247914796,
+        "max_excess_pp": 17.241252511835427
+      }
+    },
+    "HUBB": {
+      "status": "vendor_descriptive",
+      "name": "Hubbell Incorporated",
+      "currency": "USD",
+      "note": "1994异常月跳变前数据隔离；非已修复",
+      "longest": {
+        "start": "1995-01",
+        "end": "2026-08",
+        "months": 379,
+        "observations": 380,
+        "missing_months": 0,
+        "cagr_pct": 12.630618256383164,
+        "spy_cagr_pct": 11.152023618893757,
+        "excess_pp": 1.4785946374894055,
+        "relative_wealth_cagr_pct": 1.3302453606774067,
+        "wealth_multiple": 42.803910740984776,
+        "monthly_max_drawdown_pct": -52.13192381767249
+      },
+      "local_cagr_same_window_pct": 12.630618256383164,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 18.863584138893973,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 6.171443171266522,
+          "relative_wealth_cagr_pct": 5.476374056145894,
+          "wealth_multiple": 2.3727069798221097,
+          "monthly_max_drawdown_pct": -27.819103600393547
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 17.744534545073588,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 2.4719644729211288,
+          "relative_wealth_cagr_pct": 2.144451599694408,
+          "wealth_multiple": 5.1216225891101335,
+          "monthly_max_drawdown_pct": -27.819103600393547
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 14.712055911747868,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 3.4318126380730174,
+          "relative_wealth_cagr_pct": 3.083937037801987,
+          "wealth_multiple": 15.566152051741746,
+          "monthly_max_drawdown_pct": -52.13192381767249
+        }
+      },
+      "rolling_10y": {
+        "n": 260,
+        "win_fraction": 0.75,
+        "min_excess_pp": -4.250036598012197,
+        "median_excess_pp": 2.888950801922774,
+        "max_excess_pp": 12.39323852115566
+      }
+    },
+    "ENR.DE": {
+      "status": "vendor_descriptive",
+      "name": "Siemens Energy AG",
+      "currency": "EUR",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2020-09",
+        "end": "2026-08",
+        "months": 71,
+        "observations": 72,
+        "missing_months": 0,
+        "cagr_pct": 35.967649331835005,
+        "spy_cagr_pct": 16.569795209602646,
+        "excess_pp": 19.39785412223236,
+        "relative_wealth_cagr_pct": 16.6405491983179,
+        "wealth_multiple": 6.158768836977536,
+        "monthly_max_drawdown_pct": -76.33020726101991
+      },
+      "local_cagr_same_window_pct": 36.269564977331804,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 41.8153198464434,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 29.12317887881595,
+          "relative_wealth_cagr_pct": 25.84313211972964,
+          "wealth_multiple": 5.736087188553139,
+          "monthly_max_drawdown_pct": -69.20136010547921
+        },
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "7011.T": {
+      "status": "vendor_descriptive",
+      "name": "Mitsubishi Heavy Industries, Ltd.",
+      "currency": "JPY",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2000-01",
+        "end": "2026-08",
+        "months": 319,
+        "observations": 320,
+        "missing_months": 0,
+        "cagr_pct": 9.858904617311758,
+        "spy_cagr_pct": 8.511432989876733,
+        "excess_pp": 1.3474716274350262,
+        "relative_wealth_cagr_pct": 1.2417784838955503,
+        "wealth_multiple": 12.176919817210123,
+        "monthly_max_drawdown_pct": -62.58297867864515
+      },
+      "local_cagr_same_window_pct": 11.52965460287463,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 58.626211041358964,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 45.93407007373151,
+          "relative_wealth_cagr_pct": 40.760668560664556,
+          "wealth_multiple": 10.043261109019891,
+          "monthly_max_drawdown_pct": -29.42242651855027
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 21.564084176383513,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 6.291514104231055,
+          "relative_wealth_cagr_pct": 5.457945546189347,
+          "wealth_multiple": 7.047787905016204,
+          "monthly_max_drawdown_pct": -48.76050439192543
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 11.325742566683727,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 0.04549929300887712,
+          "relative_wealth_cagr_pct": 0.040887125755983966,
+          "wealth_multiple": 8.54893496033204,
+          "monthly_max_drawdown_pct": -62.58297867864515
+        }
+      },
+      "rolling_10y": {
+        "n": 200,
+        "win_fraction": 0.365,
+        "min_excess_pp": -19.96562517940128,
+        "median_excess_pp": -4.9468282981470875,
+        "max_excess_pp": 12.488674304544102
+      }
+    },
+    "6501.T": {
+      "status": "vendor_descriptive",
+      "name": "Hitachi, Ltd.",
+      "currency": "JPY",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2000-01",
+        "end": "2026-08",
+        "months": 319,
+        "observations": 320,
+        "missing_months": 0,
+        "cagr_pct": 4.899022967552646,
+        "spy_cagr_pct": 8.511432989876733,
+        "excess_pp": -3.6124100223240863,
+        "relative_wealth_cagr_pct": -3.3290593652570144,
+        "wealth_multiple": 3.5659413661404953,
+        "monthly_max_drawdown_pct": -80.78676499381949
+      },
+      "local_cagr_same_window_pct": 6.494342361270511,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 27.127412909317773,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 14.43527194169032,
+          "relative_wealth_cagr_pct": 12.809475281720895,
+          "wealth_multiple": 3.32044312040596,
+          "monthly_max_drawdown_pct": -27.062743803442622
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 23.873275390654936,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 8.600705318502477,
+          "relative_wealth_cagr_pct": 7.46118986773614,
+          "wealth_multiple": 8.506995660703092,
+          "monthly_max_drawdown_pct": -32.39043422985325
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 10.552773324794495,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -0.7274699488803549,
+          "relative_wealth_cagr_pct": -0.6537278563376825,
+          "wealth_multiple": 7.436915296796994,
+          "monthly_max_drawdown_pct": -66.8323807628375
+        }
+      },
+      "rolling_10y": {
+        "n": 200,
+        "win_fraction": 0.145,
+        "min_excess_pp": -11.921798448639864,
+        "median_excess_pp": -5.336552116626203,
+        "max_excess_pp": 10.108445064986027
+      }
+    },
+    "GEV": {
+      "status": "vendor_descriptive",
+      "name": "GE Vernova Inc.",
+      "currency": "USD",
+      "note": "2024独立上市后",
+      "longest": {
+        "start": "2024-04",
+        "end": "2026-08",
+        "months": 28,
+        "observations": 29,
+        "missing_months": 0,
+        "cagr_pct": 113.51408206481524,
+        "spy_cagr_pct": 21.30266386889499,
+        "excess_pp": 92.21141819592025,
+        "relative_wealth_cagr_pct": 76.01763659171014,
+        "wealth_multiple": 5.87032152252165,
+        "monthly_max_drawdown_pct": -23.52024577396762
+      },
+      "local_cagr_same_window_pct": 113.51408206481524,
+      "fixed_years": {
+        "5": null,
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "VRT": {
+      "status": "vendor_descriptive",
+      "name": "Vertiv Holdings Co",
+      "currency": "USD",
+      "note": "2020经营资产合并后，去除SPAC",
+      "longest": {
+        "start": "2020-03",
+        "end": "2026-08",
+        "months": 77,
+        "observations": 78,
+        "missing_months": 0,
+        "cagr_pct": 69.96361733076617,
+        "spy_cagr_pct": 20.139304995042174,
+        "excess_pp": 49.824312335723995,
+        "relative_wealth_cagr_pct": 41.472116338429046,
+        "wealth_multiple": 30.06889343213168,
+        "monthly_max_drawdown_pct": -70.80877703098628
+      },
+      "local_cagr_same_window_pct": 69.96361733076617,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 55.963486576419854,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 43.2713456087924,
+          "relative_wealth_cagr_pct": 38.3978378946787,
+          "wealth_multiple": 9.22815066656296,
+          "monthly_max_drawdown_pct": -70.80877703098628
+        },
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "SLB": {
+      "status": "vendor_descriptive",
+      "name": "SLB N.V.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 6.6041186180890055,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": -4.240647316048207,
+        "relative_wealth_cagr_pct": -3.825753322956149,
+        "wealth_multiple": 8.51978154154028,
+        "monthly_max_drawdown_pct": -86.16284699048593
+      },
+      "local_cagr_same_window_pct": 6.6041186180890055,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 18.94966443164754,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 6.257523464020087,
+          "relative_wealth_cagr_pct": 5.552759411872077,
+          "wealth_multiple": 2.381310933286498,
+          "monthly_max_drawdown_pct": -41.61064084991042
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 0.08419548672251587,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -15.188374585429942,
+          "relative_wealth_cagr_pct": -13.176052703538321,
+          "wealth_multiple": 1.0084515203600217,
+          "monthly_max_drawdown_pct": -81.66732198482572
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 2.084562255436362,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -9.195681018238488,
+          "relative_wealth_cagr_pct": -8.26353425164903,
+          "wealth_multiple": 1.5107806606167435,
+          "monthly_max_drawdown_pct": -86.16284699048593
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.48056537102473496,
+        "min_excess_pp": -24.959979147718826,
+        "median_excess_pp": -0.9994146626525424,
+        "max_excess_pp": 13.900412021541154
+      }
+    },
+    "HAL": {
+      "status": "vendor_descriptive",
+      "name": "Halliburton Company",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 6.286017364986551,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": -4.558748569150661,
+        "relative_wealth_cagr_pct": -4.11273237011428,
+        "wealth_multiple": 7.708155851693422,
+        "monthly_max_drawdown_pct": -89.14106922758975
+      },
+      "local_cagr_same_window_pct": 6.286017364986551,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 15.144436175695763,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 2.4522952080683114,
+          "relative_wealth_cagr_pct": 2.1761013563250886,
+          "wealth_multiple": 2.0240199442790336,
+          "monthly_max_drawdown_pct": -50.24093101335958
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 0.38406098655061616,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -14.888509085601843,
+          "relative_wealth_cagr_pct": -12.91591666281292,
+          "wealth_multiple": 1.0390767053528647,
+          "monthly_max_drawdown_pct": -86.920859012022
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 2.207023516274953,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -9.073219757399897,
+          "relative_wealth_cagr_pct": -8.153486630224071,
+          "wealth_multiple": 1.5474435603792898,
+          "monthly_max_drawdown_pct": -89.14106922758975
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.4169611307420495,
+        "min_excess_pp": -23.002402387083965,
+        "median_excess_pp": -1.9769753226860143,
+        "max_excess_pp": 16.89265242111042
+      }
+    },
+    "BKR": {
+      "status": "vendor_descriptive",
+      "name": "Baker Hughes Company",
+      "currency": "USD",
+      "note": "2017合并后",
+      "longest": {
+        "start": "2017-08",
+        "end": "2026-08",
+        "months": 108,
+        "observations": 109,
+        "missing_months": 0,
+        "cagr_pct": 10.148089162854346,
+        "spy_cagr_pct": 15.1737962186391,
+        "excess_pp": -5.025707055784756,
+        "relative_wealth_cagr_pct": -4.363585486271759,
+        "wealth_multiple": 2.386671829903162,
+        "monthly_max_drawdown_pct": -69.2829030580598
+      },
+      "local_cagr_same_window_pct": 10.148089162854346,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 25.62692406435381,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 12.934783096726354,
+          "relative_wealth_cagr_pct": 11.477981504000411,
+          "wealth_multiple": 3.1290581327567293,
+          "monthly_max_drawdown_pct": -41.716686730311814
+        },
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "NOV": {
+      "status": "vendor_descriptive",
+      "name": "NOV Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1996-10",
+        "end": "2026-08",
+        "months": 358,
+        "observations": 359,
+        "missing_months": 0,
+        "cagr_pct": 5.736638847569542,
+        "spy_cagr_pct": 10.184204009352872,
+        "excess_pp": -4.447565161783329,
+        "relative_wealth_cagr_pct": -4.036481637064615,
+        "wealth_multiple": 5.2811371363552295,
+        "monthly_max_drawdown_pct": -89.27618466331471
+      },
+      "local_cagr_same_window_pct": 5.736638847569542,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 12.181986408020794,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -0.510154559606657,
+          "relative_wealth_cagr_pct": -0.45269754858345834,
+          "wealth_multiple": 1.776706245565217,
+          "monthly_max_drawdown_pct": -50.89860866155165
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": -3.272531638417986,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -18.545101710570442,
+          "relative_wealth_cagr_pct": -16.088043928371278,
+          "wealth_multiple": 0.7169654234118452,
+          "monthly_max_drawdown_pct": -82.44370121620527
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": -0.3079877383987073,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -11.588231012073557,
+          "relative_wealth_cagr_pct": -10.41355650488136,
+          "wealth_multiple": 0.9401718518207743,
+          "monthly_max_drawdown_pct": -89.27618466331471
+        }
+      },
+      "rolling_10y": {
+        "n": 239,
+        "win_fraction": 0.4393305439330544,
+        "min_excess_pp": -30.521926042954462,
+        "median_excess_pp": -4.457242923761462,
+        "max_excess_pp": 29.660161308804067
+      }
+    },
+    "CSCO": {
+      "status": "vendor_descriptive",
+      "name": "Cisco Systems, Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 15.929024530162517,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 5.084258596025304,
+        "relative_wealth_cagr_pct": 4.586827851705966,
+        "wealth_multiple": 141.39631213061296,
+        "monthly_max_drawdown_pct": -86.44462529862615
+      },
+      "local_cagr_same_window_pct": 15.929024530162517,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 16.57556839129166,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 3.8834274236642097,
+          "relative_wealth_cagr_pct": 3.4460499111289122,
+          "wealth_multiple": 2.152968660883105,
+          "monthly_max_drawdown_pct": -35.496502621314896
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 16.809699239790522,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 1.5371291676380627,
+          "relative_wealth_cagr_pct": 1.333473493890125,
+          "wealth_multiple": 4.729214986582677,
+          "monthly_max_drawdown_pct": -35.496502621314896
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 10.842519910120973,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -0.43772336355387687,
+          "relative_wealth_cagr_pct": -0.39335227051702226,
+          "wealth_multiple": 7.836602362023108,
+          "monthly_max_drawdown_pct": -56.021745507630584
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.3321554770318021,
+        "min_excess_pp": -9.717339320056562,
+        "median_excess_pp": -1.3601521587534915,
+        "max_excess_pp": 22.512782721553748
+      }
+    },
+    "GLW": {
+      "status": "vendor_descriptive",
+      "name": "Corning Incorporated",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 10.484027336614687,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": -0.36073859752252524,
+        "relative_wealth_cagr_pct": -0.32544486379887383,
+        "wealth_multiple": 28.218448898826114,
+        "monthly_max_drawdown_pct": -98.52746327413384
+      },
+      "local_cagr_same_window_pct": 10.484027336614687,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 33.33868499360124,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 20.64654402597379,
+          "relative_wealth_cagr_pct": 18.321192452901247,
+          "wealth_multiple": 4.214837531900182,
+          "monthly_max_drawdown_pct": -45.87558304512497
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 23.759096601528373,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 8.486526529375915,
+          "relative_wealth_cagr_pct": 7.362138732626455,
+          "wealth_multiple": 8.428907833497151,
+          "monthly_max_drawdown_pct": -45.87558304512497
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 12.322039623228353,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 1.0417963495535032,
+          "relative_wealth_cagr_pct": 0.9361916535277404,
+          "wealth_multiple": 10.216440774075615,
+          "monthly_max_drawdown_pct": -66.78442859142618
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.2862190812720848,
+        "min_excess_pp": -15.386304921169813,
+        "median_excess_pp": -2.5312076089239133,
+        "max_excess_pp": 16.645600944981975
+      }
+    },
+    "CIEN": {
+      "status": "vendor_descriptive",
+      "name": "Ciena Corporation",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1997-02",
+        "end": "2026-08",
+        "months": 354,
+        "observations": 355,
+        "missing_months": 0,
+        "cagr_pct": 3.5349367129388964,
+        "spy_cagr_pct": 9.872688209653369,
+        "excess_pp": -6.337751496714472,
+        "relative_wealth_cagr_pct": -5.768268347654426,
+        "wealth_multiple": 2.7865331231517287,
+        "monthly_max_drawdown_pct": -99.37535442988771
+      },
+      "local_cagr_same_window_pct": 3.5349367129388964,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 46.29232314015679,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 33.60018217252934,
+          "relative_wealth_cagr_pct": 29.815905425189747,
+          "wealth_multiple": 6.700507275267896,
+          "monthly_max_drawdown_pct": -47.47304188128159
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 33.399579414653566,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 18.12700934250111,
+          "relative_wealth_cagr_pct": 15.72534500719025,
+          "wealth_multiple": 17.846152642304652,
+          "monthly_max_drawdown_pct": -47.47304188128159
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 14.04174113262171,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 2.7614978589468597,
+          "relative_wealth_cagr_pct": 2.481570652353282,
+          "wealth_multiple": 13.844484378814482,
+          "monthly_max_drawdown_pct": -88.77977472403623
+        }
+      },
+      "rolling_10y": {
+        "n": 235,
+        "win_fraction": 0.19574468085106383,
+        "min_excess_pp": -32.7438374470365,
+        "median_excess_pp": -8.535687367684751,
+        "max_excess_pp": 26.406583656675586
+      }
+    },
+    "CAT": {
+      "status": "vendor_descriptive",
+      "name": "Caterpillar Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 17.798127973953328,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 6.953362039816113,
+        "relative_wealth_cagr_pct": 6.27306303659636,
+        "wealth_multiple": 241.62174922010755,
+        "monthly_max_drawdown_pct": -69.41318896127238
+      },
+      "local_cagr_same_window_pct": 17.798127973953328,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 32.742381637591464,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 20.050240669964015,
+          "relative_wealth_cagr_pct": 17.79204876028022,
+          "wealth_multiple": 4.121430939465276,
+          "monthly_max_drawdown_pct": -25.493604589840203
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 28.334679021375297,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 13.06210894922284,
+          "relative_wealth_cagr_pct": 11.331497980002414,
+          "wealth_multiple": 12.118260588900764,
+          "monthly_max_drawdown_pct": -30.047297862386824
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 16.087474046888662,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 4.807230773213811,
+          "relative_wealth_cagr_pct": 4.319931941010635,
+          "wealth_multiple": 19.756373555910578,
+          "monthly_max_drawdown_pct": -69.41318896127238
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.7809187279151943,
+        "min_excess_pp": -6.375971671214908,
+        "median_excess_pp": 4.4459142164007925,
+        "max_excess_pp": 21.173494775452884
+      }
+    },
+    "6301.T": {
+      "status": "vendor_descriptive",
+      "name": "Komatsu Ltd.",
+      "currency": "JPY",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2000-01",
+        "end": "2026-08",
+        "months": 319,
+        "observations": 320,
+        "missing_months": 0,
+        "cagr_pct": 11.795971175654273,
+        "spy_cagr_pct": 8.511432989876733,
+        "excess_pp": 3.2845381857775413,
+        "relative_wealth_cagr_pct": 3.0269051797371382,
+        "wealth_multiple": 19.378875302081443,
+        "monthly_max_drawdown_pct": -68.2627306836691
+      },
+      "local_cagr_same_window_pct": 13.496180347394727,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 18.476804902824306,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 5.784663935196854,
+          "relative_wealth_cagr_pct": 5.1331564788165585,
+          "wealth_multiple": 2.334353737946278,
+          "monthly_max_drawdown_pct": -27.573931228901895
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 11.508340896972346,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -3.7642291751801116,
+          "relative_wealth_cagr_pct": -3.265502949074506,
+          "wealth_multiple": 2.9721692804171864,
+          "monthly_max_drawdown_pct": -53.62752037744068
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 7.680525653885617,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -3.5997176197892333,
+          "relative_wealth_cagr_pct": -3.2348218460812816,
+          "wealth_multiple": 4.392819299983195,
+          "monthly_max_drawdown_pct": -68.2627306836691
+        }
+      },
+      "rolling_10y": {
+        "n": 200,
+        "win_fraction": 0.34,
+        "min_excess_pp": -14.469482582649263,
+        "median_excess_pp": -4.379543689462507,
+        "max_excess_pp": 23.39670624780119
+      }
+    },
+    "AMAT": {
+      "status": "vendor_descriptive",
+      "name": "Applied Materials, Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 20.41826538823972,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 9.573499454102507,
+        "relative_wealth_cagr_pct": 8.636852965877505,
+        "wealth_multiple": 504.8871213974352,
+        "monthly_max_drawdown_pct": -81.01584501686958
+      },
+      "local_cagr_same_window_pct": 20.41826538823972,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 28.732906661637013,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 16.04076569400956,
+          "relative_wealth_cagr_pct": 14.234147613379289,
+          "wealth_multiple": 3.5354758620981848,
+          "monthly_max_drawdown_pct": -47.57953290514876
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 32.82408093932625,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 17.551510867173793,
+          "relative_wealth_cagr_pct": 15.226094860371209,
+          "wealth_multiple": 17.09102838361506,
+          "monthly_max_drawdown_pct": -47.57953290514876
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 19.802895012618514,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 8.522651738943665,
+          "relative_wealth_cagr_pct": 7.658728529181635,
+          "wealth_multiple": 37.097637770845026,
+          "monthly_max_drawdown_pct": -57.07774585285739
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.6749116607773852,
+        "min_excess_pp": -11.422427546522307,
+        "median_excess_pp": 3.9186448512285477,
+        "max_excess_pp": 26.73863079034713
+      }
+    },
+    "SEDG": {
+      "status": "vendor_descriptive",
+      "name": "SolarEdge Technologies, Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2015-03",
+        "end": "2026-08",
+        "months": 137,
+        "observations": 138,
+        "missing_months": 0,
+        "cagr_pct": 3.421713619071265,
+        "spy_cagr_pct": 14.03371207904842,
+        "excess_pp": -10.611998459977157,
+        "relative_wealth_cagr_pct": -9.306018603183674,
+        "wealth_multiple": 1.4683082678908952,
+        "monthly_max_drawdown_pct": -96.6026158634967
+      },
+      "local_cagr_same_window_pct": 3.421713619071265,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": -35.55970867305245,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -48.2518496406799,
+          "relative_wealth_cagr_pct": -42.81740432506379,
+          "wealth_multiple": 0.11111878286487162,
+          "monthly_max_drawdown_pct": -96.6026158634967
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 6.583415063338016,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -8.689155008814442,
+          "relative_wealth_cagr_pct": -7.537920776274576,
+          "wealth_multiple": 1.891891885834317,
+          "monthly_max_drawdown_pct": -96.6026158634967
+        },
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 18,
+        "win_fraction": 0.0,
+        "min_excess_pp": -19.876101949623482,
+        "median_excess_pp": -10.90874045918313,
+        "max_excess_pp": -2.2224008135332207
+      }
+    },
+    "ENPH": {
+      "status": "vendor_descriptive",
+      "name": "Enphase Energy, Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2012-03",
+        "end": "2026-08",
+        "months": 173,
+        "observations": 174,
+        "missing_months": 0,
+        "cagr_pct": 11.751343403810388,
+        "spy_cagr_pct": 14.42937504773585,
+        "excess_pp": -2.6780316439254603,
+        "relative_wealth_cagr_pct": -2.340335812205796,
+        "wealth_multiple": 4.961852508423257,
+        "monthly_max_drawdown_pct": -94.94008011117988
+      },
+      "local_cagr_same_window_pct": 11.751343403810388,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": -26.83674443871028,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -39.528885406337736,
+          "relative_wealth_cagr_pct": -35.07687853556089,
+          "wealth_multiple": 0.2096356361285062,
+          "monthly_max_drawdown_pct": -91.00096674536817
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 34.93569550968467,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 19.663125437532216,
+          "relative_wealth_cagr_pct": 17.057939651405785,
+          "wealth_multiple": 20.010987428201787,
+          "monthly_max_drawdown_pct": -91.00096674536817
+        },
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 54,
+        "win_fraction": 1.0,
+        "min_excess_pp": 1.298712896816956,
+        "median_excess_pp": 18.542366632568207,
+        "max_excess_pp": 47.48530145869974
+      }
+    },
+    "010140.KS": {
+      "status": "vendor_descriptive",
+      "name": "Samsung Heavy Industries Co., Ltd.",
+      "currency": "KRW",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2003-12",
+        "end": "2026-08",
+        "months": 272,
+        "observations": 273,
+        "missing_months": 0,
+        "cagr_pct": 6.774337253289731,
+        "spy_cagr_pct": 10.889204338132185,
+        "excess_pp": -4.114867084842455,
+        "relative_wealth_cagr_pct": -3.7107914241093054,
+        "wealth_multiple": 4.418240789943736,
+        "monthly_max_drawdown_pct": -92.28170493095705
+      },
+      "local_cagr_same_window_pct": 7.46486782865019,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 24.373454400409678,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 11.681313432782225,
+          "relative_wealth_cagr_pct": 10.365685958648928,
+          "wealth_multiple": 2.9760380794716026,
+          "monthly_max_drawdown_pct": -33.7169659078652
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 9.039665592466871,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -6.232904479685586,
+          "relative_wealth_cagr_pct": -5.407101165337281,
+          "wealth_multiple": 2.375992739237059,
+          "monthly_max_drawdown_pct": -67.69555918747886
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": -0.1431908264187709,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -11.42343410009362,
+          "relative_wealth_cagr_pct": -10.265464707872384,
+          "wealth_multiple": 0.9717480766748241,
+          "monthly_max_drawdown_pct": -92.28170493095705
+        }
+      },
+      "rolling_10y": {
+        "n": 153,
+        "win_fraction": 0.1111111111111111,
+        "min_excess_pp": -30.570815318038036,
+        "median_excess_pp": -20.76716487605834,
+        "max_excess_pp": 15.325385556440185
+      }
+    },
+    "329180.KS": {
+      "status": "vendor_descriptive",
+      "name": "HD Hyundai Heavy Industries Co., Ltd.",
+      "currency": "KRW",
+      "note": "2021上市，短窗口",
+      "longest": {
+        "start": "2021-09",
+        "end": "2026-08",
+        "months": 59,
+        "observations": 60,
+        "missing_months": 0,
+        "cagr_pct": 28.703532294870083,
+        "spy_cagr_pct": 14.022069364476808,
+        "excess_pp": 14.681462930393273,
+        "relative_wealth_cagr_pct": 12.87598358126909,
+        "wealth_multiple": 3.4579586282823285,
+        "monthly_max_drawdown_pct": -31.171010080036552
+      },
+      "local_cagr_same_window_pct": 32.64190665541544,
+      "fixed_years": {
+        "5": null,
+        "10": null,
+        "20": null
+      },
+      "rolling_10y": {
+        "n": 0,
+        "win_fraction": null,
+        "min_excess_pp": null,
+        "median_excess_pp": null,
+        "max_excess_pp": null
+      }
+    },
+    "042660.KS": {
+      "status": "vendor_descriptive",
+      "name": "Hanwha Ocean Co., Ltd.",
+      "currency": "KRW",
+      "note": "重组/停牌/增资历史待核",
+      "longest": {
+        "start": "2003-12",
+        "end": "2026-08",
+        "months": 272,
+        "observations": 273,
+        "missing_months": 0,
+        "cagr_pct": -1.7144882037584908,
+        "spy_cagr_pct": 10.889204338132185,
+        "excess_pp": -12.603692541890677,
+        "relative_wealth_cagr_pct": -11.366023065201636,
+        "wealth_multiple": 0.675712695887733,
+        "monthly_max_drawdown_pct": -98.0929541076705
+      },
+      "local_cagr_same_window_pct": -1.0788565271201422,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 25.02731159278,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 12.335170625152546,
+          "relative_wealth_cagr_pct": 10.945901390493606,
+          "wealth_multiple": 3.055093204364934,
+          "monthly_max_drawdown_pct": -48.18519118549376
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 6.261334847716626,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -9.011235224435833,
+          "relative_wealth_cagr_pct": -7.8173282844265835,
+          "wealth_multiple": 1.8354927433768589,
+          "monthly_max_drawdown_pct": -72.95069090709
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": -6.354285370732393,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -17.634528644407244,
+          "relative_wealth_cagr_pct": -15.846953714001256,
+          "wealth_multiple": 0.269003644398063,
+          "monthly_max_drawdown_pct": -98.0929541076705
+        }
+      },
+      "rolling_10y": {
+        "n": 153,
+        "win_fraction": 0.058823529411764705,
+        "min_excess_pp": -39.44251500771488,
+        "median_excess_pp": -30.169841786950137,
+        "max_excess_pp": 5.629525554204662
+      }
+    },
+    "6902.T": {
+      "status": "vendor_descriptive",
+      "name": "DENSO Corporation",
+      "currency": "JPY",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2000-01",
+        "end": "2026-08",
+        "months": 319,
+        "observations": 320,
+        "missing_months": 0,
+        "cagr_pct": 4.957573184359387,
+        "spy_cagr_pct": 8.511432989876733,
+        "excess_pp": -3.5538598055173454,
+        "relative_wealth_cagr_pct": -3.2751017174834307,
+        "wealth_multiple": 3.6192312253474084,
+        "monthly_max_drawdown_pct": -59.72594534651403
+      },
+      "local_cagr_same_window_pct": 6.553783018176085,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": -4.746734623494985,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -17.43887559112244,
+          "relative_wealth_cagr_pct": -15.47479304358237,
+          "wealth_multiple": 0.7841503908183841,
+          "monthly_max_drawdown_pct": -43.63777738018712
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 4.252341120245351,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -11.020228951907107,
+          "relative_wealth_cagr_pct": -9.560148563538762,
+          "wealth_multiple": 1.5165549955494722,
+          "monthly_max_drawdown_pct": -44.63187909571062
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 3.898661796904146,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -7.381581476770704,
+          "relative_wealth_cagr_pct": -6.633326149923091,
+          "wealth_multiple": 2.1488152553736386,
+          "monthly_max_drawdown_pct": -59.72594534651403
+        }
+      },
+      "rolling_10y": {
+        "n": 200,
+        "win_fraction": 0.325,
+        "min_excess_pp": -11.020228951907107,
+        "median_excess_pp": -4.0361303198496845,
+        "max_excess_pp": 7.471529043645453
+      }
+    },
+    "MGA": {
+      "status": "vendor_descriptive",
+      "name": "Magna International Inc.",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 9.471550997846956,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": -1.3732149362902568,
+        "relative_wealth_cagr_pct": -1.2388631296368136,
+        "wealth_multiple": 20.729679438287185,
+        "monthly_max_drawdown_pct": -72.62220422212292
+      },
+      "local_cagr_same_window_pct": 9.471550997846956,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": -0.3386688250832659,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -13.030809792710718,
+          "relative_wealth_cagr_pct": -11.563193032648144,
+          "wealth_multiple": 0.9831808675347032,
+          "monthly_max_drawdown_pct": -52.82516533962502
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 8.173406848220655,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -7.099163223931804,
+          "relative_wealth_cagr_pct": -6.15858848248828,
+          "wealth_multiple": 2.193840639942331,
+          "monthly_max_drawdown_pct": -61.65355715874759
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 9.303195556268328,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -1.9770477174065215,
+          "relative_wealth_cagr_pct": -1.776638565162303,
+          "wealth_multiple": 5.924574716197415,
+          "monthly_max_drawdown_pct": -72.62220422212292
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.6113074204946997,
+        "min_excess_pp": -14.397754978024558,
+        "median_excess_pp": 0.8370752915872304,
+        "max_excess_pp": 12.01365726480419
+      }
+    },
+    "APTV": {
+      "status": "quarantined",
+      "note": "2026-04分拆Versigent，1股/3股；股东现金流未重建，暂停收益结论"
+    },
+    "ASML": {
+      "status": "vendor_descriptive",
+      "name": "ASML Holding N.V.",
+      "currency": "USD",
+      "note": "美元交易证券；股息税/费用未单列",
+      "longest": {
+        "start": "1995-03",
+        "end": "2026-08",
+        "months": 377,
+        "observations": 378,
+        "missing_months": 0,
+        "cagr_pct": 23.565146103665313,
+        "spy_cagr_pct": 10.975815151846934,
+        "excess_pp": 12.58933095181838,
+        "relative_wealth_cagr_pct": 11.344211290173934,
+        "wealth_multiple": 771.0199086362453,
+        "monthly_max_drawdown_pct": -85.97167456862982
+      },
+      "local_cagr_same_window_pct": 23.565146103665313,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 16.368504372865722,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 3.67636340523827,
+          "relative_wealth_cagr_pct": 3.2623068243013975,
+          "wealth_multiple": 2.1339157207274386,
+          "monthly_max_drawdown_pct": -49.5472554412976
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 33.12132516031192,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 17.848755088159464,
+          "relative_wealth_cagr_pct": 15.483956917927145,
+          "wealth_multiple": 17.477379707082132,
+          "monthly_max_drawdown_pct": -49.5472554412976
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 24.643192205354936,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 13.362948931680085,
+          "relative_wealth_cagr_pct": 12.008375016593176,
+          "wealth_multiple": 81.91647611578554,
+          "monthly_max_drawdown_pct": -56.050524464091154
+        }
+      },
+      "rolling_10y": {
+        "n": 258,
+        "win_fraction": 0.9651162790697675,
+        "min_excess_pp": -3.0107155966010546,
+        "median_excess_pp": 10.673085189975895,
+        "max_excess_pp": 21.013160372648045
+      }
+    },
+    "LRCX": {
+      "status": "vendor_descriptive",
+      "name": "Lam Research Corporation",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 21.04398482561065,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 10.19921889147344,
+        "relative_wealth_cagr_pct": 9.20135362776957,
+        "wealth_multiple": 600.6169945394058,
+        "monthly_max_drawdown_pct": -85.34800951600029
+      },
+      "local_cagr_same_window_pct": 21.04398482561065,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 39.331829967449835,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 26.639688999822386,
+          "relative_wealth_cagr_pct": 23.639349444496794,
+          "wealth_multiple": 5.251117129374661,
+          "monthly_max_drawdown_pct": -48.57309938658169
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 43.486560739026345,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 28.21399066687389,
+          "relative_wealth_cagr_pct": 24.47589278977116,
+          "wealth_multiple": 36.992378849687235,
+          "monthly_max_drawdown_pct": -48.57309938658169
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 24.737519419223286,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 13.457276145548436,
+          "relative_wealth_cagr_pct": 12.093140479979493,
+          "wealth_multiple": 83.16528208105267,
+          "monthly_max_drawdown_pct": -66.18257360196257
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.8374558303886925,
+        "min_excess_pp": -7.619189329643583,
+        "median_excess_pp": 7.241366669598692,
+        "max_excess_pp": 34.95984255930053
+      }
+    },
+    "KLAC": {
+      "status": "vendor_descriptive",
+      "name": "KLA Corporation",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 23.04388985637795,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 12.19912392224074,
+        "relative_wealth_cagr_pct": 11.005593109817479,
+        "wealth_multiple": 1039.9483043434982,
+        "monthly_max_drawdown_pct": -78.32110533522645
+      },
+      "local_cagr_same_window_pct": 23.04388985637795,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 40.20658611014136,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 27.51444514251391,
+          "relative_wealth_cagr_pct": 24.415584712706682,
+          "wealth_multiple": 5.41803834091029,
+          "monthly_max_drawdown_pct": -41.78240273102378
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 40.35801693745762,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 25.085446865305162,
+          "relative_wealth_cagr_pct": 21.7618526676411,
+          "wealth_multiple": 29.673736517411395,
+          "monthly_max_drawdown_pct": -41.78240273102378
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 24.099408663790854,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 12.819165390116005,
+          "relative_wealth_cagr_pct": 11.51971366434692,
+          "wealth_multiple": 75.05752535480407,
+          "monthly_max_drawdown_pct": -69.01085565153127
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.7491166077738516,
+        "min_excess_pp": -8.255805169903063,
+        "median_excess_pp": 4.210743434690012,
+        "max_excess_pp": 32.053009903747885
+      }
+    },
+    "HEI": {
+      "status": "vendor_descriptive",
+      "name": "HEICO Corporation",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 22.979849417400256,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 12.135083483263042,
+        "relative_wealth_cagr_pct": 10.947818222173499,
+        "wealth_multiple": 1021.9686120051962,
+        "monthly_max_drawdown_pct": -71.20082137287224
+      },
+      "local_cagr_same_window_pct": 22.979849417400256,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 21.28692578387261,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 8.59478481624516,
+          "relative_wealth_cagr_pct": 7.626782792878295,
+          "wealth_multiple": 2.624641197583282,
+          "monthly_max_drawdown_pct": -18.430993065789657
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 25.437629989613253,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 10.165059917460795,
+          "relative_wealth_cagr_pct": 8.818281670217122,
+          "wealth_multiple": 9.64447071833983,
+          "monthly_max_drawdown_pct": -48.393720198341974
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 21.894846761910912,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 10.614603488236064,
+          "relative_wealth_cagr_pct": 9.538623547156755,
+          "wealth_multiple": 52.445341132058715,
+          "monthly_max_drawdown_pct": -55.216329362933195
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 1.0,
+        "min_excess_pp": 2.1207617317174243,
+        "median_excess_pp": 12.859910147085563,
+        "max_excess_pp": 22.192585031091117
+      }
+    },
+    "WAB": {
+      "status": "vendor_descriptive",
+      "name": "Westinghouse Air Brake Technologies Corporation",
+      "currency": "USD",
+      "note": "并购改变业务组合；不是19世纪铁路回报",
+      "longest": {
+        "start": "1995-06",
+        "end": "2026-08",
+        "months": 374,
+        "observations": 375,
+        "missing_months": 0,
+        "cagr_pct": 12.959358915492603,
+        "spy_cagr_pct": 10.754946979488667,
+        "excess_pp": 2.204411936003936,
+        "relative_wealth_cagr_pct": 1.9903507663745046,
+        "wealth_multiple": 44.60763073095038,
+        "monthly_max_drawdown_pct": -69.28097263209385
+      },
+      "local_cagr_same_window_pct": 12.959358915492603,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 26.76715959648732,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 14.075018628859869,
+          "relative_wealth_cagr_pct": 12.489796101134631,
+          "wealth_multiple": 3.2736616980679174,
+          "monthly_max_drawdown_pct": -15.12975072546362
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 14.7394946013798,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -0.5330754707726593,
+          "relative_wealth_cagr_pct": -0.46244780561325305,
+          "wealth_multiple": 3.9548437143354924,
+          "monthly_max_drawdown_pct": -55.91474747389724
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 16.68748965666127,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 5.407246382986419,
+          "relative_wealth_cagr_pct": 4.85912523545462,
+          "wealth_multiple": 21.902108997680045,
+          "monthly_max_drawdown_pct": -55.91474747389724
+        }
+      },
+      "rolling_10y": {
+        "n": 255,
+        "win_fraction": 0.6431372549019608,
+        "min_excess_pp": -6.786158780761764,
+        "median_excess_pp": 3.319291123375634,
+        "max_excess_pp": 19.84539201545086
+      }
+    },
+    "FLR": {
+      "status": "vendor_descriptive",
+      "name": "Fluor Corporation",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "2000-12",
+        "end": "2026-08",
+        "months": 308,
+        "observations": 309,
+        "missing_months": 0,
+        "cagr_pct": 5.884732416591532,
+        "spy_cagr_pct": 9.046713213491975,
+        "excess_pp": -3.161980796900443,
+        "relative_wealth_cagr_pct": -2.89965713199436,
+        "wealth_multiple": 4.338994985830181,
+        "monthly_max_drawdown_pct": -91.14630153666165
+      },
+      "local_cagr_same_window_pct": 5.884732416591532,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 26.753580238377506,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 14.061439270750054,
+          "relative_wealth_cagr_pct": 12.47774614095707,
+          "wealth_multiple": 3.271908692724301,
+          "monthly_max_drawdown_pct": -37.84072915425656
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 1.2962284446655925,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": -13.976341627486866,
+          "relative_wealth_cagr_pct": -12.124603120012567,
+          "wealth_multiple": 1.1374511550453683,
+          "monthly_max_drawdown_pct": -87.94188989640055
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 2.1434284031438766,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": -9.136814870530973,
+          "relative_wealth_cagr_pct": -8.210635241028841,
+          "wealth_multiple": 1.528300002000019,
+          "monthly_max_drawdown_pct": -91.14630153666165
+        }
+      },
+      "rolling_10y": {
+        "n": 189,
+        "win_fraction": 0.2804232804232804,
+        "min_excess_pp": -28.186105163186102,
+        "median_excess_pp": -13.152334600808825,
+        "max_excess_pp": 15.845463783356251
+      }
+    },
+    "ROK": {
+      "status": "vendor_descriptive",
+      "name": "Rockwell Automation, Inc.",
+      "currency": "USD",
+      "note": "早期集团沿革不等于当前自动化业务",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 15.12001453424121,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 4.275248600103998,
+        "relative_wealth_cagr_pct": 3.8569693066466515,
+        "wealth_multiple": 111.82862832770385,
+        "monthly_max_drawdown_pct": -70.29641207949551
+      },
+      "local_cagr_same_window_pct": 15.12001453424121,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 7.232628808025643,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": -5.459512159601809,
+          "relative_wealth_cagr_pct": -4.844625466091856,
+          "wealth_multiple": 1.4178646152823537,
+          "monthly_max_drawdown_pct": -42.31795148279659
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 15.962802289736654,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 0.6902322175841968,
+          "relative_wealth_cagr_pct": 0.5987827088024256,
+          "wealth_multiple": 4.397309329134496,
+          "monthly_max_drawdown_pct": -42.31795148279659
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 12.974807413919542,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 1.694564140244692,
+          "relative_wealth_cagr_pct": 1.5227897517056999,
+          "wealth_multiple": 11.47181654954795,
+          "monthly_max_drawdown_pct": -70.18920629022703
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.911660777385159,
+        "min_excess_pp": -2.5513043941570057,
+        "median_excess_pp": 5.535433597843631,
+        "max_excess_pp": 21.611488423414215
+      }
+    },
+    "DE": {
+      "status": "vendor_descriptive",
+      "name": "Deere & Company",
+      "currency": "USD",
+      "note": "供应商复权；未逐笔核验公司行动",
+      "longest": {
+        "start": "1993-02",
+        "end": "2026-08",
+        "months": 402,
+        "observations": 403,
+        "missing_months": 0,
+        "cagr_pct": 16.099750821290403,
+        "spy_cagr_pct": 10.844765934137213,
+        "excess_pp": 5.254984887153191,
+        "relative_wealth_cagr_pct": 4.7408507229611985,
+        "wealth_multiple": 148.5416130861082,
+        "monthly_max_drawdown_pct": -69.91039206288735
+      },
+      "local_cagr_same_window_pct": 16.099750821290403,
+      "fixed_years": {
+        "5": {
+          "start": "2021-08",
+          "end": "2026-08",
+          "months": 60,
+          "observations": 61,
+          "missing_months": 0,
+          "cagr_pct": 13.094225521513359,
+          "spy_cagr_pct": 12.692140967627452,
+          "excess_pp": 0.40208455388590636,
+          "relative_wealth_cagr_pct": 0.35679910811297066,
+          "wealth_multiple": 1.8501296119847894,
+          "monthly_max_drawdown_pct": -27.654025665908264
+        },
+        "10": {
+          "start": "2016-08",
+          "end": "2026-08",
+          "months": 120,
+          "observations": 121,
+          "missing_months": 0,
+          "cagr_pct": 24.658943981577686,
+          "spy_cagr_pct": 15.272570072152458,
+          "excess_pp": 9.386373909425227,
+          "relative_wealth_cagr_pct": 8.142764495968136,
+          "wealth_multiple": 9.062216542994252,
+          "monthly_max_drawdown_pct": -27.654025665908264
+        },
+        "20": {
+          "start": "2006-08",
+          "end": "2026-08",
+          "months": 240,
+          "observations": 241,
+          "missing_months": 0,
+          "cagr_pct": 17.34847218499138,
+          "spy_cagr_pct": 11.28024327367485,
+          "excess_pp": 6.068228911316531,
+          "relative_wealth_cagr_pct": 5.453105360663857,
+          "wealth_multiple": 24.521599427755568,
+          "monthly_max_drawdown_pct": -69.91039206288735
+        }
+      },
+      "rolling_10y": {
+        "n": 283,
+        "win_fraction": 0.9469964664310954,
+        "min_excess_pp": -1.6015210865834684,
+        "median_excess_pp": 4.809456725334371,
+        "max_excess_pp": 18.555522232533672
+      }
+    }
+  },
+  "cisco_start_sensitivity": {
+    "1998-03": {
+      "start": "1998-03",
+      "end": "2026-08",
+      "months": 341,
+      "observations": 342,
+      "missing_months": 0,
+      "cagr_pct": 10.029993403995796,
+      "spy_cagr_pct": 8.930620311092664,
+      "excess_pp": 1.0993730929031331,
+      "relative_wealth_cagr_pct": 1.009241561062857,
+      "wealth_multiple": 15.121912476751579,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "1999-03": {
+      "start": "1999-03",
+      "end": "2026-08",
+      "months": 329,
+      "observations": 330,
+      "missing_months": 0,
+      "cagr_pct": 6.938421783858439,
+      "spy_cagr_pct": 8.605526115674333,
+      "excess_pp": -1.667104331815894,
+      "relative_wealth_cagr_pct": -1.5350087527224665,
+      "wealth_multiple": 6.291451778581518,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "2000-03": {
+      "start": "2000-03",
+      "end": "2026-08",
+      "months": 317,
+      "observations": 318,
+      "missing_months": 0,
+      "cagr_pct": 3.0807102748879878,
+      "spy_cagr_pct": 8.25072803975364,
+      "excess_pp": -5.170017764865653,
+      "relative_wealth_cagr_pct": -4.775965814259486,
+      "wealth_multiple": 2.228963959235702,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "2001-03": {
+      "start": "2001-03",
+      "end": "2026-08",
+      "months": 305,
+      "observations": 306,
+      "missing_months": 0,
+      "cagr_pct": 9.853490281191846,
+      "spy_cagr_pct": 9.632067458593863,
+      "excess_pp": 0.22142282259798307,
+      "relative_wealth_cagr_pct": 0.20196902943712125,
+      "wealth_multiple": 10.898137262703846,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    },
+    "2002-03": {
+      "start": "2002-03",
+      "end": "2026-08",
+      "months": 293,
+      "observations": 294,
+      "missing_months": 0,
+      "cagr_pct": 9.96913710118259,
+      "spy_cagr_pct": 10.072307208179264,
+      "excess_pp": -0.10317010699667506,
+      "relative_wealth_cagr_pct": -0.09372939444390882,
+      "wealth_multiple": 10.178781420817357,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    },
+    "2003-03": {
+      "start": "2003-03",
+      "end": "2026-08",
+      "months": 281,
+      "observations": 282,
+      "missing_months": 0,
+      "cagr_pct": 11.676200797770875,
+      "spy_cagr_pct": 11.87423304359534,
+      "excess_pp": -0.19803224582446433,
+      "relative_wealth_cagr_pct": -0.1770132768170951,
+      "wealth_multiple": 13.276332094743951,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    }
+  },
+  "spy_vs_price_index": {
+    "start": "1993-02",
+    "end": "2026-08",
+    "months": 402,
+    "observations": 403,
+    "missing_months": 0,
+    "cagr_pct": 10.844765934137213,
+    "spy_cagr_pct": 8.88875959756259,
+    "excess_pp": 1.9560063365746228,
+    "relative_wealth_cagr_pct": 1.7963344828279437,
+    "wealth_multiple": 31.474503396134217,
+    "monthly_max_drawdown_pct": -50.784801630135846
+  },
+  "large_monthly_jumps": [
+    {
+      "ticker": "HUBB",
+      "from": "1994-09",
+      "to": "1994-10",
+      "return_pct": 885.9310571765633
+    }
+  ],
+  "original_vs_fresh_usd": [
+    {
+      "ticker": "GE",
+      "max_abs_relative_diff": 6.438585102341854e-05,
+      "month": "1970-01"
+    },
+    {
+      "ticker": "RTX",
+      "max_abs_relative_diff": 4.093099504698383e-05,
+      "month": "1985-09"
+    },
+    {
+      "ticker": "TDG",
+      "max_abs_relative_diff": 5.372153038418759e-06,
+      "month": "2006-05"
+    },
+    {
+      "ticker": "HWM",
+      "max_abs_relative_diff": 3.0345011781118814e-06,
+      "month": "2020-03"
+    },
+    {
+      "ticker": "AER",
+      "max_abs_relative_diff": 1.3134043443718824e-05,
+      "month": "2009-02"
+    },
+    {
+      "ticker": "ETN",
+      "max_abs_relative_diff": 3.4495323198990846e-05,
+      "month": "1985-07"
+    },
+    {
+      "ticker": "HUBB",
+      "max_abs_relative_diff": 0.00022781354476753002,
+      "month": "1987-02"
+    },
+    {
+      "ticker": "GEV",
+      "max_abs_relative_diff": 3.512677926309493e-07,
+      "month": "2024-10"
+    },
+    {
+      "ticker": "VRT",
+      "max_abs_relative_diff": 4.92021908937712e-06,
+      "month": "2019-03"
+    },
+    {
+      "ticker": "SLB",
+      "max_abs_relative_diff": 1.4129922095040826e-05,
+      "month": "1985-08"
+    },
+    {
+      "ticker": "HAL",
+      "max_abs_relative_diff": 2.034202168454957e-05,
+      "month": "1986-09"
+    },
+    {
+      "ticker": "BKR",
+      "max_abs_relative_diff": 1.0419571979225495e-05,
+      "month": "1987-11"
+    },
+    {
+      "ticker": "NOV",
+      "max_abs_relative_diff": 1.2059215696469394e-05,
+      "month": "1999-01"
+    },
+    {
+      "ticker": "CSCO",
+      "max_abs_relative_diff": 0.0007593422322659249,
+      "month": "1990-02"
+    },
+    {
+      "ticker": "GLW",
+      "max_abs_relative_diff": 3.5382205429090874e-05,
+      "month": "2002-08"
+    },
+    {
+      "ticker": "CIEN",
+      "max_abs_relative_diff": 9.981275128634337e-07,
+      "month": "1998-09"
+    },
+    {
+      "ticker": "CAT",
+      "max_abs_relative_diff": 2.868343263795481e-05,
+      "month": "1985-03"
+    },
+    {
+      "ticker": "AMAT",
+      "max_abs_relative_diff": 0.00041547464945956847,
+      "month": "1986-12"
+    },
+    {
+      "ticker": "SEDG",
+      "max_abs_relative_diff": 5.1463032280096854e-08,
+      "month": "2019-07"
+    },
+    {
+      "ticker": "ENPH",
+      "max_abs_relative_diff": 5.362977772982447e-08,
+      "month": "2020-11"
+    },
+    {
+      "ticker": "MGA",
+      "max_abs_relative_diff": 0.0002628206825865398,
+      "month": "1990-11"
+    }
+  ]
+}

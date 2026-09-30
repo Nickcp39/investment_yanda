@@ -1,0 +1,103 @@
+{
+  "ticker": "TSLA",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate, mega7_2026-07-28 refresh. Every LIVE field carries >=2 independent sources. INC-001 SWEEP: TSLA as_of_price $307.44 = 2026-07-28 last close, INDEPENDENTLY re-fetched via repo fetch_yahoo (Yahoo chart API) AND cross-checked stockanalysis ($307.44 exact) AND Yahoo chart meta regularMarketPrice ($307.44). Three sources agree to the cent, delta 0%. This IS near the 52wk low ($297.82, only +3.2% off) BUT that is a VERIFIED real last close after the Q2-2026 earnings miss (7/22) + the 7/28 semiconductor crash, NOT a series-extreme grab -> low_high_hug_justified=true (documented). Yahoo meta 52wk high=498.83 (batch PLAN cited 489.88, a close-based variant; recorded as alt); 52wk low=297.82 matches PLAN exactly. Price fell -23.2% from the 6/19 baseline $400.49.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 307.44,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "307.44 is +3.2% off the 52wk low 297.82 (inside a tight band) but is the VERIFIED 2026-07-28 regular-session close from 3 independent pulls (Yahoo fetch_yahoo, Yahoo chart meta regularMarketPrice, stockanalysis), not a min() of the series. The de-rate is real: Q2-2026 earnings miss (op margin 1.4%, FCF -1.09B, reported 7/22) drove -14.5% on 7/23 (374.01->319.69) and the 7/28 semiconductor crash finished it. This is the genuine last close, so the low-hug is justified, not the INC-001 bug.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA", "fetched_at": "2026-07-28", "value": 307.44},
+        {"source_name": "yahoo_meta", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d", "fetched_at": "2026-07-28", "value": 307.44},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-07-28", "value": 307.44}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1084648000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "3528M diluted shares (FY25 basis, carried) x 307.44", "fetched_at": "2026-07-28", "value": 1084648320000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-07-28", "value": 1210000000000}
+      ],
+      "cross_check_delta_pct": 11.6,
+      "note": "Card uses diluted 3,528M shares (carried from FY25 6/19 model) x 307.44 = $1.085T for internal consistency with the T3 market-cap identity AND the scenario per-share endpoints (which are built on 3,528M). stockanalysis quotes $1.21T on a larger ~3.95B basic share count. Range $1.08-1.21T. Using the higher share count would LOWER per-share value / IRR ~11% -> the valuation ladder is if anything slightly optimistic. Musk 423.7M-share ($1T package) grant is a further dilution overhang if milestones vest. Share-count basis is an OPEN item (O7, new).",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 498.83,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo_meta", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d", "fetched_at": "2026-07-28", "value": 498.83},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-07-28", "value": 498.83}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Yahoo chart meta fiftyTwoWeekHigh = 498.83 (intraday). Batch PLAN.md cited 489.88 (a close-based 52wk high variant); recorded as an alternative. Current price is -38.4% off 498.83 (vs -19.7% at 6/19).",
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 297.82,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo_meta", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d", "fetched_at": "2026-07-28", "value": 297.82},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-07-28", "value": 297.82}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "note": "Matches batch PLAN.md exactly. Current price $307.44 is only +3.2% above this low -> TSLA is essentially at its 52-week low (opposite of the 6/19 upper-middle-of-range position).",
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 3528,
+      "unit": "millions",
+      "as_of": "2025-12-31",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis_financials", "url": "https://stockanalysis.com/stocks/tsla/financials/", "fetched_at": "2026-07-28", "value": 3528},
+        {"source_name": "stockanalysis_quote", "url": "https://stockanalysis.com/stocks/tsla/", "fetched_at": "2026-07-28", "value": 3950}
+      ],
+      "cross_check_delta_pct": 11.96,
+      "note": "Card carries FY25 diluted weighted 3,528M (6/19 basis) for per-share / market-cap identity consistency. stockanalysis quote page now shows ~3.95B (basic+). The gap widened vs 6/19 (~3.76B). Whether the true current count is nearer 3.95B is OPEN (O7); if so, per-share value / IRR are ~11% worse than the ladder shows (conservative-adjustment flag). Musk 423.7M-share grant (~12%) is a future overhang.",
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2-2026 REPORTED 2026-07-22 (quarter ended 2026-06-30). Revenue $28.24B (+26% Y/Y, record; TTM revenue first time >$100B). Deliveries 480,126 (+25% Y/Y, Q2 record) -> VOLUME REACCELERATED vs the -9% FY25 decline. GAAP net income $1.11B (-5% Y/Y, propped by non-operating/interest income). Non-GAAP EPS $0.33 (-18% Y/Y, MISS vs ~$0.53 consensus). Operating income $398M (-57% Y/Y); operating margin 1.4% (from ~4.1% Y/Y and 4.6% FY25). Total gross margin 16.8% (-41bps). FREE CASH FLOW -$1.09B (first cash burn since early 2024); capex $5.8B (+142%, AI/robotics/autonomy). Regulatory credit revenue $146M (-67% from $439M Q2'25; federal EV credits expired + fuel-economy penalties eliminated). Energy storage 13.5 GWh (+40%); Services & Other $4.58B (+50%, record segment profitability). No clean numeric FY guide. Robotaxi still small (Austin/Dallas/Houston); Optimus pre-production; FSD subscription. Net: record top line, collapsed profitability + negative FCF.",
+      "as_of": "2026-07-22",
+      "sources": [
+        {"source_name": "electrek", "url": "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/", "public_date": "2026-07-22", "fetched_at": "2026-07-28"},
+        {"source_name": "cnbc", "url": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html", "public_date": "2026-07-22", "fetched_at": "2026-07-28"},
+        {"source_name": "teslarati", "url": "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results/", "public_date": "2026-07-22", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Musk 2025 $1T pay package (approved 2025-11-06, >75% shareholder vote): 423.7M-share (~12%) restricted-stock grant vesting on market-cap/operating milestones = ongoing governance/dilution overhang (institutional dissent incl. Norway sovereign fund on dilution + key-man). No NEW adverse legal event surfaced between 6/19 and 7/28; the 2018 Delaware pay litigation remains superseded by the 2025 re-approved grant. Treated as governance overhang, not an active impairment. (Newest authoritative source predates the 45d window -> T6 WARN expected, not a block.)",
+      "as_of": "2025-11-06",
+      "sources": [
+        {"source_name": "techcrunch", "url": "https://techcrunch.com/2025/11/06/tesla-shareholders-approve-elon-musks-1t-pay-package/", "public_date": "2025-11-06", "fetched_at": "2026-07-28"},
+        {"source_name": "nbcnews", "url": "https://www.nbcnews.com/tech/elon-musk/tesla-elon-musk-shareholder-meeting-1-trillion-dollar-pay-package-rcna242223", "public_date": "2025-11-06", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

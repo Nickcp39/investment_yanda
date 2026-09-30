@@ -1,0 +1,94 @@
+{
+  "GE_power": {
+    "years": [
+      2001,
+      2002
+    ],
+    "revenue": [
+      20.211,
+      22.926
+    ],
+    "orders": [
+      24.5,
+      14.2
+    ],
+    "profit": [
+      4.86,
+      6.255
+    ],
+    "unit": "USD billion",
+    "source": [
+      "https://www.ge.com/news/press-releases/ge-2002-earnings-grow-7-151-billion-cashflow-ex-progress-grows-10-152-billion",
+      "https://www.sec.gov/Archives/edgar/data/40545/000004054503000016/frm10k.htm"
+    ]
+  },
+  "AMAT_EES": {
+    "years": [
+      2011,
+      2012,
+      2013
+    ],
+    "revenue": [
+      1.99,
+      0.425,
+      0.173
+    ],
+    "profit": [
+      0.453,
+      -0.668,
+      -0.433
+    ],
+    "unit": "USD billion",
+    "source": [
+      "https://ir.appliedmaterials.com/static-files/26df7d1f-2c60-4d72-a1ed-3955c633692a"
+    ]
+  },
+  "ASML": {
+    "years": [
+      2008,
+      2009
+    ],
+    "equipment": [
+      2.517,
+      1.175
+    ],
+    "service": [
+      0.437,
+      0.421
+    ],
+    "unit": "EUR billion",
+    "source": [
+      "https://www.asml.com/en/news/press-releases/2010/asml-announces-2009-fourth-quarter-and-full-year-results"
+    ]
+  },
+  "CAT": {
+    "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "revenue": [
+      65.9,
+      55.7,
+      55.2,
+      47.0,
+      38.5,
+      45.5
+    ],
+    "adjusted_margin": [
+      13.9,
+      11.5,
+      11.1,
+      9.6,
+      7.2,
+      12.5
+    ],
+    "unit": "USD billion / % adjusted",
+    "source": [
+      "https://www.caterpillar.com/content/dam/caterpillarDotCom/releases/2Q18%20Caterpillar%20Inc.%20Results%20Presentation%20Slides.pdf"
+    ]
+  }
+}

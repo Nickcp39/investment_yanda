@@ -1,0 +1,10 @@
+FRESHNESS CHECK -INTU as_of 2026-08-27  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=348.0 refetched_yahoo=348.0 (2026-08-27) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 255.07 <= 348.0 <= 702.09
+  [PASS] T2 low/high hug: +36.4% off low, -50.4% off high
+  [SKIP] T3 market-cap identity: missing market_cap or shares
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 348.00 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-08-25 (2d)

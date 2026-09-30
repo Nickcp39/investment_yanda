@@ -1,0 +1,92 @@
+{
+  "ticker": "TSLA",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "narrative_premium_cyclical",
+  "as_of_price": 307.44,
+  "as_of_market_cap": 1084648000000,
+  "share_basis_note": "~3,528M diluted shares (FY25 basis, carried from 6/19 model) x $307.44 (2026-07-28 close, Yahoo chart API S007b; cross-checked stockanalysis $307.44 + Yahoo meta regularMarketPrice $307.44, three sources agree to the cent) = ~$1.085T. stockanalysis quotes $1.21T on a ~3.95B basic share count -> range $1.08-1.21T; using the higher count lowers per-share/IRR ~11% (ladder slightly optimistic). Share-count basis is OPEN (O7). Musk 2025 $1T pay package adds 423.7M-share (~12%) dilution overhang if milestones vest.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Q2-2026 earnings (reported 2026-07-22) ADD a fresh primary quarter, multi-source cross-checked (Electrek B1 + CNBC B1 + teslarati B2): rev $28.24B/+26%, deliveries 480,126/+25%, GAAP NI $1.11B/-5%, non-GAAP EPS $0.33 (miss), op income $398M/-57%, op margin 1.4%, FCF -$1.09B, capex $5.8B/+142%, reg credits $146M/-67%. Price $307.44 triple-verified (Yahoo fetch + Yahoo meta + stockanalysis, delta 0%). BUT SEC 10-Q line items / segment profitability (O1) still NOT directly fetched, robotaxi/Optimus unit economics still OPEN (O2), share-count basis OPEN (O7). Completeness ~57% (55% at 6/19 + one primary quarter). Signal neutral: verdict-driving facts are solid & fresh, key evidence layers still missing.",
+      "drivers": ["S007b", "S013", "S014", "S015"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Still a bundle of (1) an auto maker whose VOLUME just REACCELERATED (Q2 deliveries +25% record, rev +26% record, TTM first >$100B) but whose MARGIN collapsed (company op margin 4.6% FY25 -> 1.4% Q2), (2) a real-growth energy leg (+40%), (3) undelivered AI/autonomy options (robotaxi small, Optimus pre-production). context_label narrative_premium_cyclical holds: the ~$1.085T cap is still carried by NARRATIVE, not delivered profits. Q2 PARTIALLY REBUTS the 6/19 'shrinking auto maker' (volume is not the problem; margin/pricing-power is) -> honestly recorded, but the delivered mechanism (thin, margin-crushed owner earnings) is unchanged. Opposite of NVDA's exceptional_bottleneck.",
+      "drivers": ["S013", "S014", "S008"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "DELIVERED profit pool got THINNER: Q2 op margin 1.4%, op income -57%, regulatory credits -67% ($146M, subsidy leg breaking as federal EV credits expired), a growing share of GAAP NI is non-operating interest income -> operating owner earnings thinner than headline. Pricing power eroding (grew volume by sacrificing margin). BUT franchise NOT broken: record deliveries, energy +40%, Services record margin, fortress balance sheet. Operator unchanged: Musk ~2.5/5 (strong execution but distracted xAI/SpaceX/politics; key-man valuation personified; $1T pay = 423.7M-share/~12% dilution overhang + governance tension). Durability = UNCERTAIN (delivered moat narrowing, narrative moat unproven). Held at -1 (not -2): volume/energy/services strength + fortress prevent a strong-warning.",
+      "drivers": ["S013", "S008", "S009", "S010", "S011"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "DOWNGRADED -1 -> -2 on Q2-2026 actuals. Owner earnings are thin AND deteriorating on the delivered business: op income $398M (-57%), op margin 1.4% (from 4.6% FY25 / 4.2% Q1'26), regulatory credits -67%, and FREE CASH FLOW turned NEGATIVE -$1.09B (first cash burn since early 2024) as capex surged +142% to $5.8B on AI/robotics. This CONFIRMS the 6/19 C2 prediction (capex reverts up -> FCF falls) -- it not only fell, it went negative. GAAP NI $1.11B (-5%) is propped by non-operating interest income on the ~$35B cash pile, so operating OE is thinner still. DELIVERED OE anchor cut to ~$4.5B. ONE positive remains: fortress balance sheet (net cash ~$35B) -> cannot die. But negative FCF + 1.4% op margin + credit collapse, in an 'AI-capex-audit' regime that punishes exactly this, is a strong warning.",
+      "drivers": ["S013", "S014", "S008"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "Permanent-loss path on today's $307.44 = NARRATIVE failing (F1) + de-rate (F3) reverting toward delivered fundamentals -> base 5y IRR -12%, bear -23%. Part of the 6/19 de-rate risk has PLAYED OUT (-23% price), but F2 (auto op margin collapsed to 1.4%, K2 margin-half TRIGGERED though deliveries reversed up) + F5 (NEW: FCF negative + capex +142% not yet converting) + the regime (rotation OUT of AI-narrative growth INTO value/defensives/Apple; 'AI-capex audit year' makes TSLA the worst sample -- capex up, FCF negative, zero AI unit economics) REPLACE the vacated downside. CXMT/memory N/A (no memory exposure). FOMC Wed = undecided swing factor. NO HARD VETO: franchise not broken (record deliveries, fortress balance sheet), robotaxi/Optimus forward uncertainty = HAIRCUT not veto (fixed rule). But price+margin-collapse+regime cap the verdict (GOOGL-style, now profit-pool-led rather than pure-price-led).",
+      "drivers": ["S007b", "S013", "S008", "regime_2026-07-28"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "UPGRADED -2 -> -1 on the -23.2% de-rate ($400.49 -> $307.44). At ~$1.085T: P/E ~285x (was 371x), P/FCF N/A (FCF negative), starting OE yield ~0.41%, base 5y IRR -12% (was -17%), bull +11% (was +5%, now CLEARS the 8% hurdle), bear -23%, moonshot +27%. Price is -38.4% off the 52wk high and only +3.2% off the 52wk low (essentially AT the low; opposite of 6/19's upper-middle). The de-rate materially improved entry, moving it from 'only the moonshot clears' to 'bull clears, base still negative'. BUT base still has NO delivered MOS and current $307.44 is still ~2x the buy_below $160. New money 0%. Not a 0 signal because base is still negative and Q2 lowered earnings quality; not -2 because the price genuinely improved. Binding constraint has shifted from price to profit-pool collapse.",
+      "drivers": ["S007b", "S013"]
+    }
+  ],
+  "business_verdict": "uncertain",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 3.0,
+  "buy_below_price": 160.0,
+  "starter_zone": "No starter at $307.44 (still ~2x buy_below; base 5y IRR -12%, no delivered MOS). Discussion of a starter only if price falls to <~$200 (toward/below the 52wk low $297.82 and continuing) AND delivered fundamentals stabilize (op margin stops falling, FCF returns positive). Even then, cyclical+narrative+key-man cap the ceiling at low-starter (~3%), not Core.",
+  "add_zone": "Not applicable (new money 0%). Adds only after (a) price re-rates into a delivered-MOS zone (<~$160) AND (b) a NARRATIVE->DELIVERED conversion (robotaxi positive unit economics + scaling, or Optimus real production revenue) OR op margin/FCF durably recover.",
+  "trim_or_no_chase_zone": "No-chase for new money at any price above ~$200 on delivered fundamentals. For EXISTING holders: the -23% de-rate to near the 52wk low has already executed most of the 6/19 TRIM thesis, so the verdict shifts TRIM->HOLD (low conviction) -- do NOT chase it down with fresh trims right after a record-deliveries quarter. BUT anyone sizing on delivered fundamentals or overweight should still lighten: 285x P/E, 1.4% op margin, negative FCF do not justify a large position.",
+  "binding_constraint": "SHIFTED from price (6/19) to PROFIT-POOL COLLAPSE (7/28): Q2 operating margin 1.4% + operating income -57% + regulatory credits -67% + FCF turned NEGATIVE (-$1.09B, capex +142%) -- the sharpest cut now -- in an 'AI-capex-audit' regime that punishes exactly TSLA's capex-up/FCF-negative/no-AI-unit-economics profile. Reinforced by: base 5y IRR still -12% (price improved -23% but no delivered MOS on base; still ~2x buy_below), and Musk key-man + $1T package ~12% dilution overhang. NOT a veto (fortress balance sheet ~$35B net cash, record Q2 deliveries, survivable) -- a verdict ceiling. Completeness ~57% independently caps at WATCH (40-60% band); base-IRR cap and completeness cap agree.",
+  "kill_criteria": [
+    "K1 [NARRATIVE convert]: robotaxi discloses positive unit economics AND scaled ops, OR Optimus reaches real production revenue -> upgrade trigger. Currently: robotaxi small, Optimus pre-production, Q2 gave no unit-economics disclosure.",
+    "K2 [core profit pool]: auto op margin <4% OR deliveries keep declining double-digits. READ: margin-half TRIGGERED (company op margin 1.4% < 4%, structural compression CONFIRMED) but volume-half REVERSED (deliveries +25%) -> tighter cap / existing-position lean-to-trim, but not a volume EXIT.",
+    "K3 [Musk key-man]: Musk departure/incapacitation/major reputational event -> narrative premium collapses (fastest impairment path).",
+    "K4 [dilution]: $1T pay-package milestones vest triggering large share issuance -> per-share value diluted (watch O7 share-count basis).",
+    "K5 [AI-capex audit, NEW]: FCF stays negative >=2-3 quarters while capex does NOT convert into robotaxi/Optimus revenue -> the AI-capex thesis is disconfirmed for TSLA specifically -> tighter cap / existing EXIT candidate.",
+    "K6 [price un-cap]: base 5y IRR turns positive with delivered MOS (~<$160; deep MOS ~$110-130) -> only then does WATCH->STARTER enter discussion. Current $307.44 still ~2x buy_below."
+  ],
+  "runner_dissent": "Mechanical result = new-money WATCH (0%), existing HOLD (TRIM-adjacent). Two honest tensions recorded. (1) NOT over-vetoing a transitioning business (SNDK lesson): Q2 deliveries +25% and revenue +26% are RECORDS -- the 6/19 'shrinking auto maker' leg was partly wrong on VOLUME, and I have credited that (M2/M3 note, M6 upgraded to -1, existing downgraded TRIM->HOLD). The franchise is not broken (record volume, energy +40%, services record margin, fortress balance sheet), and per the fixed rule the robotaxi/Optimus forward uncertainty is a HAIRCUT not a veto -> NO hard veto. (2) But the price cap is real and now PROFIT-POOL-LED: operating margin fell to 1.4%, regulatory credits collapsed -67%, and FCF went NEGATIVE while capex surged +142% -- in the exact 'AI-capex audit' regime that is repricing this profile. Even after the -23% de-rate, base 5y IRR is still -12% (no delivered MOS) and price is ~2x the $160 buy_below; only the bull/moonshot (narrative conversion) clears the hurdle, and Q2 made the bull's 'margin recovers' leg HARDER, not easier. So: cheaper price + lower earnings quality ~ offset -> verdict unchanged at WATCH. The fat right tail (bull now +11%, moonshot +27%) is acknowledged and is why a holder HOLDs rather than dumps into the 52wk low -- but paying 285x with 1.4% margin and negative FCF for an unproven narrative, against a hostile rotation, is not a new-money buy. Same framework/five souls/chair that gave NVDA STARTER gives TSLA WATCH -- the difference is objective (285x vs ~19x, negative FCF vs clean owner earnings). Conservative flag: if true share count is ~3.95B (O7), per-share/IRR are ~11% worse than shown. Lower-confidence items left OPEN: SEC segment profitability (O1), robotaxi/Optimus unit economics (O2), energy segment margin (O5), share-count basis (O7).",
+  "sources_used": [
+    {"source_id": "S007b", "public_date": "2026-07-28", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA (2026-07-28 close $307.44; Yahoo chart API + meta)"},
+    {"source_id": "S008b", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/tsla/ (price $307.44, mcap $1.21T, P/E 284.8, 52wk 297.82-498.83, shares ~3.95B)"},
+    {"source_id": "S013", "public_date": "2026-07-22", "url_or_path": "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/ (Q2-2026: rev $28.24B, op margin 1.4%, FCF -$1.09B, capex $5.8B, reg credits $146M, deliveries 480,126, energy 13.5GWh)"},
+    {"source_id": "S014", "public_date": "2026-07-22", "url_or_path": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html (Q2-2026, 403 to WebFetch; cross-ref via search + Electrek/teslarati)"},
+    {"source_id": "S015", "public_date": "2026-07-22", "url_or_path": "https://www.teslarati.com/tesla-tsla-q2-2026-earnings-results/ (Q2-2026: TTM rev first >$100B, EPS $0.33 miss vs $0.53, op income -57%)"},
+    {"source_id": "S004", "public_date": "2026-01-02", "url_or_path": "https://x.com/Tesla/status/2007089900613419092 (official FY25 deliveries/production/energy)"},
+    {"source_id": "S008", "public_date": "2026-06-19", "url_or_path": "https://stockanalysis.com/stocks/tsla/financials/ (FY25 baseline financials)"},
+    {"source_id": "S009", "public_date": "2025-11-06", "url_or_path": "https://techcrunch.com/2025/11/06/tesla-shareholders-approve-elon-musks-1t-pay-package/"},
+    {"source_id": "S010", "public_date": "2025-11-29", "url_or_path": "https://fortune.com/2025/11/29/elon-musk-pay-package-details-tesla-stock-outlook/"},
+    {"source_id": "S011", "public_date": "2025", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001318605/000121465925014515/o102255px14a6g.htm (403, logged)"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-07-30",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-30",
+  "context_label": "quality_compounder_capex_audit_passed",
+  "as_of_price": 425.01,
+  "as_of_price_note": "after-hours post-Q4-FY26-print (+8%); 7/29 regular close was $390.54 (pre-print, weak in the broad selloff); settles at 7/30 open. Yahoo chart API, 7/29 post-market last tick.",
+  "as_of_market_cap": "~$3.16T (7.43B sh x $425)",
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 1, "confidence": "high", "finding": "Q4 FY26 actuals now in hand (not carried-forward): rev $90.0B +18%, EPS $4.81 +32%, OCF $182.9B +34%, RPO $678B. Confidence up vs the pre-print 7/28 card.", "drivers": ["MSFT 8-K 2026-07-29"]},
+    {"module": "M2 Theme/Mechanism", "role": "context+conviction", "signal": 2, "confidence": "high", "finding": "AI-cloud demand thesis CONFIRMED + accelerating: Azure +43% cc (beat 39-40% guide, up from 40%), CFO guided ~45% Q1 FY27; capacity-constrained; 11k-model platform; Copilot 30M paid seats.", "drivers": ["Fortune 2026-07-29", "MSDynamicsWorld 2026-07-29"]},
+    {"module": "M3 Profit Pool/Durability", "role": "conviction", "signal": 2, "confidence": "high", "finding": "Captures AND keeps the economics: Azure crossed $100B annual (+41%), Microsoft Cloud $59.3B +27%, RPO $678B +84% = multi-year visibility. Operator/moat carried from 6/19 (unchanged).", "drivers": ["MSFT 8-K 2026-07-29"]},
+    {"module": "M4 Financial Reality", "role": "conviction/warning", "signal": 1, "confidence": "med", "finding": "CAPEX-AUDIT PASSED: FY26 FCF +$67B POSITIVE (OCF $182.9B +34% funds record $115.9B cash capex) -- the opposite of GOOGL (FCF negative). CAVEAT: useful-life reclass 15->25y flatters depreciation/EPS; finance-lease-inclusive AI spend (~$175B) is heavier than the $115.9B cash-capex line; +32% EPS partly an accounting lever -> haircut.", "drivers": ["MSFT 8-K 2026-07-29", "Fortune 2026-07-29"]},
+    {"module": "M5 Inversion/Trap", "role": "risk", "signal": -1, "confidence": "med", "finding": "The pre-print swing risk (Azure demand crack) RESOLVED bullish. Remaining: (a) systemic AI-capex-cycle de-rate -- MSFT is still on the same single factor as the 7/28 crash; (b) OpenAI single-counterparty concentration (~$250B commit); (c) capex still surging (Q1 FY27 >$50B). No hard veto.", "drivers": ["7/28 baseline", "MSDynamicsWorld 2026-07-29"]},
+    {"module": "M6 Price/Position", "role": "price", "signal": 0, "confidence": "med", "finding": "At ~$425 (+8% AH) vs a re-rated FV ~$470-490, MOS ~10-13% is roughly PRESERVED -- the print re-rated intrinsic value UP by ~as much as the price pop (Azure accel + RPO doubling + FCF-positive). Price is no longer the binding constraint. Do not chase the AH gap; scale in.", "drivers": ["Yahoo chart 2026-07-29", "owner-earnings re-model pending"]}
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 4,
+  "suggested_max_size_pct": 10,
+  "buy_below_price": 475,
+  "starter_zone": "<= ~$475 (re-rated FV); stage in, do NOT chase the after-hours pop",
+  "add_zone": "pullback toward ~$430 or below on macro/AI-capex selloff",
+  "trim_or_no_chase_zone": "chasing > ~$490 = paying at/above intrinsic value",
+  "binding_constraint": "Research completeness (O2 capex maintenance/growth split + O3 OpenAI economics) still caps at STARTER, not CORE -- BUT the print partially closed both (FCF proves the capex ROI; Copilot 30M + Azure $100B prove monetization), so completeness ~63%->~68%. Price is no longer binding.",
+  "kill_criteria": [
+    "Azure decel back below ~35% cc",
+    "FCF turns negative (capex outruns OCF, GOOGL-style)",
+    "OpenAI relationship/concentration rupture",
+    "broad AI-capex-cycle de-rate WITH MSFT capex guide maintained (the framework's decisive digestion signal)"
+  ],
+  "runner_dissent": "The verdict hinges on the FV re-rate magnitude, which is a judgment here (base ~$470-490); a full owner-earnings re-model would firm the buy-below. Anchor is the after-hours $425 -- it settles at 7/30 open and the macro tape is hostile (7/29 Dow -1,100), so the +8% could fade (which would make it CHEAPER, not more expensive). Accounting useful-life reclass flatters EPS.",
+  "delta_vs_0728": "new_money STARTER HELD (firmer); init 3%->4% (the pre-print binary that trimmed it resolved bullish); existing HOLD (ADD only on pullback -- near FV now, not the back-up-the-truck discount); buy_below $436->~$475 (FV re-rated on Azure accel + RPO + FCF-positive). The +8% pop did NOT kill the STARTER because FV re-rated up ~in step -- 'buy because forward earnings power grew, not because price fell'."
+}

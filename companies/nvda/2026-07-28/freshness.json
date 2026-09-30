@@ -1,0 +1,96 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the freshness gate, REFRESH of 2026-06-20/2026-07-10 at as_of 2026-07-28. Every LIVE field carries >=2 independent sources fetched at as_of; verify_freshness.py cross-checks these vs an independent Yahoo re-fetch and the decision_card value. FILED data (Q1 FY27 / FY26 line items) is NOT here -- it rides the dated-source claim_ledger discipline, unchanged (NVDA has not reported Q2 FY27; that print is 2026-08-26).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 197.01,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-28", "value": 197.01},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-28", "value": 197.01}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 4805691000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-28", "value": 4770000000000},
+        {"source_name": "derived", "url": "24391M shares x 197.01", "fetched_at": "2026-07-28", "value": 4805691000000}
+      ],
+      "cross_check_delta_pct": 0.74,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 236.54,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-28", "value": 236.54},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-28", "value": 236.54}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 164.07,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA", "fetched_at": "2026-07-28", "value": 164.07},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-28", "value": 164.07}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 24391,
+      "unit": "millions",
+      "as_of": "2026-04-26",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q1fy27", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm", "fetched_at": "2026-07-28", "value": 24391},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/nvda/", "fetched_at": "2026-07-28", "value": 24220}
+      ],
+      "cross_check_delta_pct": 0.7,
+      "pass": true
+    },
+    {
+      "field": "export_control_status",
+      "is_quantitative": false,
+      "value": "China H200 UPDATE (vs 06-20): shipments have ACTUALLY STARTED (mid-July 2026) -- a US trade official confirmed 'very few' H200 chips shipped to China [S210]; the Commerce Dept allows H200 to approved Chinese buyers with the US taking a 25% cut of sales; ~10 firms cleared (ZTE Kangxun, Maginfra), ~82k GPUs prepared [S211]. Kessler signaled 'additional regulatory measures will come.' Net: 06-19 'license reinstated' optionality is now converting to revenue but small, 25%-margin-taxed, and politically fragile. Q2 FY27 guide still conservatively EXCLUDES China DC compute.",
+      "as_of": "2026-07-15",
+      "sources": [
+        {"source_name": "cnbc", "url": "US official: 'very few' Nvidia H200 chips shipped to China", "public_date": "2026-07-14", "fetched_at": "2026-07-28"},
+        {"source_name": "tomshardware_benzinga", "url": "Nvidia H200 shipments to China begin with 25% US cut; ~10 buyers cleared", "public_date": "2026-07-15", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 FY27 revenue guidance $91.0B +/-2%, EXCLUDES any China DC compute revenue. Still the standing guide -- NVDA has NOT reported Q2 FY27 actuals (scheduled 2026-08-26, after as_of), so no new guidance this run.",
+      "as_of": "2026-05-20",
+      "sources": [
+        {"source_name": "sec_8k_q1fy27", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm", "public_date": "2026-05-20", "fetched_at": "2026-07-28"},
+        {"source_name": "tipranks", "url": "NVIDIA Q2 FY2027 earnings scheduled 2026-08-26", "public_date": "2026-07-20", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-08-28",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 340.65,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": null,
+    "refetch_error": "HTTP Error 403: Forbidden",
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 340.65
+      },
+      {
+        "source_name": "nasdaq",
+        "value": 340.65
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "nasdaq",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "211.35 <= 340.65 <= 402.62"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+61.2% off low, -15.4% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "12230M x 340.65 = 4.166T vs card 4.166T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "SKIP",
+      "detail": "no distance claim found"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 340.65 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [active_litigation]",
+      "status": "PASS",
+      "detail": "newest source 2026-08-28 (0d)"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-08-28 (0d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

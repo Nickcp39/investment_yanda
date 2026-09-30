@@ -1,0 +1,97 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "exceptional_bottleneck_no_MOS_derated_into_capex_audit",
+  "as_of_price": 197.01,
+  "as_of_market_cap": 4805691000000,
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 65,
+  "reported_q2_fy27": false,
+  "share_basis_note": "Post-split (10:1, 2024-06) basis. 24,391M diluted shares (Q1 FY27 weighted) x $197.01 (2026-07-28, last close <= as_of) = ~$4.806T. Price from Yahoo chart API [S206], cross-checked vs stockanalysis [S208] (both $197.01) per freshness.json; independently consistent with Apple-vs-NVDA press (NVDA ~$4.83T, 2026-07-27 [S213]) and stockanalysis $4.77T. REFRESH of 2026-06-20 ($210.69) / 2026-07-10 ($210.96). Price -6.5% vs 06-20 on the 7/28 semiconductor crash (NVDA led, ~$300B market value wiped intraday).",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Anchor quarter (Q1 FY27, ended 2026-04-26) + FY26 baseline fully primary-sourced and CARRIED FORWARD unchanged (revenue $81.6B, DC $75.2B +92% Y/Y, GM 74.9%, FCF $48.6B, Q2 guide $91B). LIVE price re-fetched 2026-07-28 = $197.01, cross-checked vs 2 independent sources (freshness.json). No Q2 FY27 report exists yet (scheduled 2026-08-26, AFTER as_of) so no new FILED data this run. Gaps (custom-silicon quant share, 10-K line items, proxy) remain haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S206", "S208"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Full-stack accelerated compute (GPU + CUDA + NVLink/InfiniBand/Spectrum-X + systems) is still the bottleneck the AI industry routes through. Quick re-check vs 06-20: NO thesis-breaking event. The 7/28 semiconductor crash is a crowded-trade/valuation correction (trigger = SK Hynix HBM-expansion slowdown + China/CXMT fears + Warsh-hawkish rates), NOT a demand-mechanism break: last primary print is DC +92%, networking +199%, Q2 guide $91B. The 'AI-capex audit year' stress-tests NVDA's CUSTOMERS' capex->FCF conversion, which is a demand overlay on the mechanism, not a break of it.",
+      "drivers": ["S001", "S002", "S212"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Captures the largest AI-compute profit pool via CUDA lock-in + full-stack + networking. Operator grade 4/5 (30y founder Huang, one-share-one-vote, capex-light); $80B buyback + dividend $0.01->$0.25 = real return but executed near-high, not cheap. Durability HIGH on training, MED on inference (custom-silicon battleground). Regime raises the visibility of the inference threat: third-party estimates put custom ASICs at ~27.8% of AI-server units in 2026 and NVDA merchant share drifting 86%->~75%, with Broadcom/Marvell co-design scaling -- but these are COMMENTARY/forward projections [S214], not a primary structural break; NVDA is still ~87% merchant DC share with DC +92%. Moat NOT broken; monitor more active. Cyclical -> size capped below Confirmed.",
+      "drivers": ["S001", "S003", "S214"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Owner earnings unusually clean: capex-light (FY26 $6.1B), FCF=OE run-rate ~$182B, net cash ~$72B (fortress). GAAP net income inflated ~$30.2B by marketable-equity gains -> use operating owner earnings. Bridge CLOSES. KEY M4 STATUS THIS RUN: NVDA has NOT reported Q2 FY27 between 06-19 and 07-28 -- the print is 2026-08-26 [S215], AFTER as_of. So the owner-earnings read is UNCHANGED (carried from 06-20); the market is de-rating NVDA into an UNCONFIRMED quarter. The only new financial-reality input is a 25% USG cut on H200-to-China sales (a modest gross-margin tax on the recovering China optionality) [S211].",
+      "drivers": ["S001", "S004", "S211"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural breakage at as-of: thesis durability intact (bottleneck real, ~87% share, +92%/+199%), balance sheet survives the bear (net cash $72B). BUT the regime makes the risk side heavier than 06-20 and pushes this to the more-negative end of -1: (a) AI-capex audit raises F1 pull-forward/demand-air-pocket odds -- NVDA is the capex RECIPIENT, so a customer capex slowdown hits its top line; (b) custom-silicon (F2, the ONLY escalate-to-veto path) is visibly scaling; (c) FOMC/Warsh-hawkish lifts the discount rate on a long-duration name; (d) SK Hynix HBM-slowdown is a leading signal to watch for AI-hardware cooling. China H200 is now ACTUALLY shipping (mid-Jul) but 'very few', 25%-taxed and politically fragile. None has FIRED a kill criterion -- the swing event is Q2 FY27 (8/26). Still haircut + size control + monitors, NOT a hard veto.",
+      "drivers": ["S212", "S210", "S211", "S214"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $197.01 ($4.806T), forward P/E ~26.3x, starting OE yield ~3.8%, base 5y IRR +6.2% still < 8% hurdle -> PRICE REMAINS THE BINDING CONSTRAINT (no margin of safety), but the gap narrowed from 3.2pp (@210.69) to 1.8pp on the -6.5% move. Stock now -16.7% off ATH ($236.54), +20.1% off 52wk low ($164.07) -- mid-range, no longer upper-range, but not a low. Asymmetry improved slightly (bull +20.2% / base +6.2% / bear -16.5%) yet base still fails the hurdle. 8%-hurdle-neutral entry ~$181 (unchanged); current price is +8.8% above it. A ~8% further pullback into <=$181 flips new-money to STARTER on an unchanged thesis.",
+      "drivers": ["S206", "S208"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 181.0,
+  "starter_zone": "No new money at $197.01 (still +8.8% above the ~$181 no-MOS line). A structured STARTER (~3-5%) opens on a pullback into ~$155-181, where base 5y IRR climbs back above the 8% hurdle on an unchanged thesis. Given the elevated regime risk (capex audit + visible custom-silicon scaling), prefer the lower half of that band / toward the $164 52wk low before acting.",
+  "add_zone": "Scale toward 8-12% only into ~$142-155 (base IRR ~12-14%, would require a new 52-week low below $164) AND/OR on confirmation (Q2/Q3 FY27 revenue meeting the $91B guide + DC margin/share holding vs custom silicon). Cyclicality caps the ceiling below Core.",
+  "trim_or_no_chase_zone": "Current $197.01 is ABOVE the ~$181 line -> no chase; hard no-chase toward the $236.54 ATH. Existing holders HOLD an exceptional compounder; do not add new money here, do not trim -- business unimpaired, no kill criterion fired, the 7/28 drop is a repricing not a fundamental break.",
+  "binding_constraint": "PRICE (no MOS) remains the go/no-go: at $197.01 base 5y IRR +6.2% < 8% hurdle and the stock is still +8.8% above the ~$181 buy-below. But price is no longer the SOLE constraint -- the regime adds a second, tightening one: demand-durability under the AI-capex audit + visibly scaling custom silicon + Warsh-hawkish discount rates. The -6.5% price move is half 'better entry', half 'risk-premium repricing', so the two roughly offset and the verdict is UNCHANGED (WATCH/HOLD). Completeness ~65% independently caps the ceiling at STARTER; the price gate binds harder -> WATCH. Swing event: Q2 FY27 on 2026-08-26 (not yet reported).",
+  "kill_criteria": [
+    "Q2 FY27 (2026-08-26) revenue materially misses the ~$91B guide, OR DC revenue prints sequential declines, OR gross margin breaks below ~65%. [imminent swing event; market is de-rating into an unconfirmed quarter]",
+    "Credible evidence of large-scale CSP/custom-silicon design-out structurally eroding DC share (the ONLY escalate-to-veto path) -- monitor more active as ASICs scale to ~27.8% of AI-server units; watch Q2 DC growth + share commentary for the first real crack.",
+    "Large inventory / purchase-commitment write-down (FY26 had a $4.5B H20 precedent); watch HBM/CoWoS over-commitment given the SK Hynix HBM-slowdown signal.",
+    "Price stays above ~$181 with no offsetting estimate raise -> remains WATCH / no-chase (already the case at $197.01).",
+    "Huang key-man / succession shock -> lower durability ceiling.",
+    "REGIME: AI-capex audit triggers a visible hyperscaler capex cut/rationalization (customers guide slower AI-infra spend) -> NVDA demand air-pocket -> re-rate. Watch this week's Big-4 hyperscaler capex prints/guidance."
+  ],
+  "runner_dissent": "The bull case got marginally better on price: base 5y IRR +4.8%->+6.2%, drawdown -11%->-16.7%, and the 7/28 crash is a crowded-trade correction, not a fundamental break -- the AI-compute bottleneck and CUDA moat are intact (+92% DC, +199% networking, net cash $72B, FCF=OE ~$182B). So why not open a starter into the weakness? I override to WATCH because (a) base IRR is STILL below the 8% hurdle and the price is still +8.8% above the ~$181 buy-below; (b) the price fell for a reason -- the regime (capex audit + visibly scaling custom silicon + Warsh-hawkish discount rates) raises the probability weight on the bear leg, so the cheaper entry is partly compensation for higher risk, not a free discount, and I want MORE margin of safety here, not less; (c) the swing data point -- Q2 FY27 on 2026-08-26 -- hasn't printed, and the market is de-rating into an unconfirmed quarter. Honest posture: closer to a starter than at 06-20, but NOT there yet. A pullback to <=$181 (ideally toward the $164 52wk low) with the thesis intact flips it to STARTER. Existing holders HOLD -- nothing broke. Lower-confidence items left OPEN (cap completeness ~65%): custom-silicon quantitative DC-share erosion (O4, blocking), 10-K line items (O1), proxy/operator detail (O3), China H200 ramp magnitude + 25%-cut margin drag (O5), inventory/CoWoS/HBM commitment risk (O6), and the not-yet-reported Q2 FY27 print (O7, blocking until 08-26).",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm"},
+    {"source_id": "S002", "public_date": "2026-05-20", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27cfocommentary.htm"},
+    {"source_id": "S003", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"},
+    {"source_id": "S004", "public_date": "2026-02-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"},
+    {"source_id": "S206", "public_date": "2026-07-28", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA (re-fetched 2026-07-28, last close <= as_of = $197.01)"},
+    {"source_id": "S208", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/nvda/ (price $197.01, mcap $4.77T, 52wk 164.07-236.54)"},
+    {"source_id": "S210", "public_date": "2026-07-14", "url_or_path": "CNBC: US trade official says 'very few' Nvidia H200 AI chips have been shipped to China (retrieved 2026-07-28)"},
+    {"source_id": "S211", "public_date": "2026-07-15", "url_or_path": "Tom's Hardware / Benzinga: Nvidia H200 shipments to China begin with 25% US cut; ~10 Chinese firms cleared (ZTE Kangxun, Maginfra); 82k GPUs prepared (retrieved 2026-07-28)"},
+    {"source_id": "S212", "public_date": "2026-07-28", "url_or_path": "CNBC/Benzinga: SK Hynix plunges as semiconductor selloff deepens; >$1T wiped, Nvidia leads decline ~$300B on SK Hynix HBM-slowdown + China chip fears (retrieved 2026-07-28)"},
+    {"source_id": "S213", "public_date": "2026-07-28", "url_or_path": "CNBC/Forbes: Apple briefly touches $5T, reclaims most-valuable title from Nvidia (NVDA ~$4.83T on 2026-07-27) (retrieved 2026-07-28)"},
+    {"source_id": "S214", "public_date": "2026-07", "url_or_path": "COMMENTARY tier (B/C): custom-silicon inflection estimates -- ASIC ~27.8% of AI-server units 2026, NVDA merchant share 86%->~75%, Broadcom/Marvell ~95% ASIC co-design; NOT primary, informs monitor not verdict (retrieved 2026-07-28)"},
+    {"source_id": "S215", "public_date": "2026-07", "url_or_path": "TipRanks/Calendarial: NVIDIA Q2 FY2027 earnings scheduled 2026-08-26 (after as_of; NVDA has NOT reported Q2 as of 2026-07-28)"}
+  ]
+}

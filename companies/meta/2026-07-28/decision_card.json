@@ -1,0 +1,105 @@
+{
+  "ticker": "META",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "prior_card": "companies/meta/2026-06-19/decision_card.json",
+  "freshness_revalidation": {
+    "gate": "scripts/verify_freshness.py (lean-6module-v1.1)",
+    "revalidated_at": "2026-07-28",
+    "status": "PASS",
+    "freshness_check": "verify_freshness.py ran exit 0 -> freshness_check.json status=PASS. T1-T5 PASS (price re-fetch 593.41 = card, 0% delta, 2 independent sources; not a 52wk hug: +14.1% off low / -25.5% off high; mcap identity 0.02%; single-value-of-truth OK). T6 guidance PASS (1d); T6 active_litigation WARN (58d, non-blocking, antitrust status re-confirmed unchanged).",
+    "price_status": "as_of_price 593.41 (2026-07-28 close, last <= as_of) INDEPENDENTLY re-fetched via Yahoo chart API and cross-confirmed by stockanalysis.com at 593.41 (0.0% delta). NOT a 52wk-low/high hug (+14.1% off 520.26 low, -25.5% off 796.25 high) -> INC-001 clear. Matches the batch anchor exactly. 52wk high used = 796.25 (live stockanalysis + 6/19-verified); PLAN table listed 790 (0.8% diff, immaterial).",
+    "earnings_status": "Q2-2026 NOT YET REPORTED. Meta reports Q2-2026 after close 2026-07-29 (day AFTER as_of), same day as the FOMC decision + Warsh press conference. => M4 owner-earnings anchor is the Q1-2026 (ended 2026-03-31) figure CARRIED FORWARD from the 6/19 dossier; the decisive capex-ROI signal drops one day after as_of and is UNKNOWN here.",
+    "regime_overlay": "2026-07-28 regime: semiconductor crash (SOX -25%, SK Hynix ~halved, KOSPI 8th circuit-breaker), rotation OUT of AI-hardware/memory INTO value/defensives + Apple ($5T, reclaimed #1). 'AI-capex audit year' -> market is actively pricing exactly META's unresolved O4 (how fast $125-145B capex converts to FCF). CXMT (new DRAM entrant, +466% IPO) is NOT a moat threat to META (it does not sell memory); second-order it could LOWER future capex component costs (mild positive to O4). META caught in the tech de-rate (fell ~13% from a mid-July ~$681 peak) but NO profit-pool hit.",
+    "business_analysis_carry": "M2 theme (ad duopoly full-health) and M3 moat/operator (grade 3/5 founder-controller) carried forward from companies/meta/2026-06-19 with a quick re-check: NO thesis-breaking news since 6/19. Superintelligence Lab spend continues (controller single-bet posture unchanged). Antitrust unchanged in direction (Meta won at trial, FTC appeal pending; 28 states+DC amicus 2026-05-31, still pre-ruling).",
+    "note": "DECISION_DRAFT refresh, not COMPLETE. Completeness ~60% (carried from 6/19 ~62%, nudged down because the imminent Q2-2026 + FOMC are known unknowns dropping the next day and are not incorporated). See freshness.json (LIVE manifest); verify_freshness.py to be run -> freshness_check.json."
+  },
+  "context_label": "good_business_fairly_to_richly_priced_capex_ROI_unresolved_pre_Q2_regime_capex_audit",
+  "as_of_price": 593.41,
+  "as_of_market_cap": 1510000000000,
+  "share_basis_note": "Class A. Implied ~2,545M shares (stockanalysis market cap $1.51T / $593.41); 6/19 NI/EPS-derived diluted count ~2,564M (0.75% higher; buyback paused since Q1 so count ~flat). Price from Yahoo chart API 2026-07-28 close (last <= as_of), cross-verified stockanalysis.com 0.0% delta. Small share differences do not change magnitude.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Owner-earnings anchor (Q1-2026, ended 2026-03-31) + FY2025 baseline remain fully primary-sourced (8-K PR + 10-Q + FY25 8-K + 10-K), carried from the 6/19 dossier: revenue $56.3B (+33%), FoA OI $26.9B, RL loss $(4.0)B, GAAP NI $26.8B (incl $8.03B one-time tax benefit), OCF $32.2B, capex $19.8B, FCF $12.4B, FY26 capex guide $125-145B. Price INDEPENDENTLY re-fetched 593.41 (2 sources, 0% delta). CAVEAT: Q2-2026 is NOT yet reported (drops 7/29) -> a large primary information event is imminent but unincorporated; open gaps (O1 10-K lines, O3 proxy, O4 capex ROI, O2 RL full-year) still haircut/ceiling, not vetoes.",
+      "drivers": ["S001", "S002", "S003", "S004", "S005", "S010"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Digital-advertising duopoly (with GOOGL) still full-health, quick re-check shows NO thesis break: Q2-2026 consensus revenue ~$60.2B (~+27% Y/Y, a decel from Q1 +33% but still strong), Q1 baseline ad price/ad +12% and impressions +19%. Mechanism = AI-improved ranking/recommendation -> higher relevance -> higher price. Franchise still sits behind OS-layer attribution (Apple/Google) + regulatory risk it does not control. Strong engine, externally constrained. Unchanged from 6/19.",
+      "drivers": ["S001", "S012"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Captures one of the two largest digital-ad profit pools via network effects (3.56B DAP) + first-party data + AI ranking + scale; moat widening on the ad side, durable in 6 weeks. Haircut unchanged: (a) OS/privacy + antitrust external dependency; (b) capex ROI unproven (O4); (c) operator grade 3/5 -- Zuckerberg controls ~61% voting on ~14% economics, buyback paused to fund capex, Superintelligence Lab spend continuing (controller single-bet posture unchanged into 7/29). CXMT/memory crash does NOT threaten this moat (META does not sell memory). Within-band/operator-conditioned haircut, not auto tier demotion.",
+      "drivers": ["S001", "S006", "S014"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Owner earnings still eaten by capex; anchor CARRIED from Q1-2026 because Q2-2026 is NOT yet reported (7/29). Operating NI ~$75B annualized (strip the $8.03B one-time tax benefit) vs FCF ~$49.6B annualized -> the ~$25B/yr gap IS growth capex. Capex tripled+ FY24 ~$39B -> FY26 guide $125-145B (raised on higher memory/networking component prices). FCF yield ~3.3% on $1.51T. Buyback paused, levering up, net cash thinned. Consensus adj EPS growth only ~+1% Y/Y despite +27% revenue -> the capex/D&A drag is visible. Balance sheet survives (strong OCF). Use FCF/operating NI, NOT GAAP NI. The Q2 print is where capex-ROI would first show -> it has not happened.",
+      "drivers": ["S001", "S002", "S003", "S012"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but not structural impairment at as-of. The 2026-07-28 regime hits META squarely at its ONE unresolved variable: the 'AI-capex audit year' + rotation OUT of AI-capex means the market is actively pricing exactly O4 (F1 capex black hole) -> near-term risk premium UP, multiple tolerance DOWN, and META sits on the 'rotated-out-of' side (capex spender, not defensive/Apple). Semi crash caught META in the tech de-rate (~-13% from a mid-July peak) but NO profit-pool hit (not a memory/hardware name). CXMT is not a moat threat and is a mild second-order positive (cheaper future components). F2 (traffic-entry rewrite) remains the ONLY path that can escalate to a hard veto -> no current evidence. F4 antitrust unchanged (long-tail appellate, Meta won at trial). Binary Q2 earnings + FOMC + Warsh all on 7/29 (one day after as_of) => initiating new money the day before a double-binary in a capex-audit tape is poor risk/reward. NO balance-sheet death (bear -44% is de-rate not bankruptcy). NOT a false-cheap trap - it is NOT cheap. Forward uncertainty + regime + event timing = haircut + size + price + timing control, NOT a hard veto.",
+      "drivers": ["S001", "S008", "S011", "S013", "S014"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "At $593.41 (~$1.51T), forward operating P/E ~20.2x, FCF yield ~3.3%, base 5y IRR ONLY +3.4% (BELOW the 8% hurdle, and SLIGHTLY WORSE than 6/19's +4.0% because price is +2.8% higher, NOT lower). Conservative fair value ~$477 -> current is ~24% ABOVE it. Asymmetry: bull +14.6% / base +3.4% / bear -11.0%. Unlike most Mega7 (down 16-37% from highs, improving entry), META round-tripped a July rally to ~$681 and sits roughly flat-to-slightly-up vs 6/19 -> price MOS did NOT improve. Price IS the binding constraint. Wait for a pullback to ~$480, OR for the 7/29 Q2 print to quantify capex ROI, before a starter.",
+      "drivers": ["S005", "S010"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 5,
+  "buy_below_price": 480,
+  "starter_zone": "~$480-520 (toward the 52-week low $520.26): a STARTER only becomes justified here, and only with modest MOS if you grant that capex is value-creating earning power (operating-NI anchor). No new money at the current $593.41 -- base IRR +3.4% < 8% and a binary Q2 earnings + FOMC land the next day (7/29).",
+  "add_zone": "Not applicable at WATCH. After a starter is justified (price <= ~$480 OR the 7/29 Q2 print shows capex compounding into operating income), scale on confirmation that capex compounds into operating income AND the ad engine stays full-health.",
+  "trim_or_no_chase_zone": "No-chase above ~$640 (base IRR clearly <8%). Existing holders HOLD (engine intact, balance sheet survives, thesis not broken); do not add at the current price the day before a binary print.",
+  "binding_constraint": "Price + the unresolved owner-earnings anchor (capex ROI, O4), now amplified by regime + event timing. Current price embeds 'capex fully compounds' (base misses the 8% hurdle on a conservative-mid anchor, and price is +2.8% HIGHER than 6/19 so MOS is marginally WORSE) while capex ROI still has no primary quantification -- and the 'AI-capex audit' regime is actively pricing exactly this while the Q2 print that could resolve it drops one day after as_of (7/29). Completeness ~60% caps the ceiling at STARTER; price + event risk push the actual current-price verdict to WATCH. NOT business quality (the ad engine is full-health).",
+  "kill_criteria": [
+    "7/29 Q2-2026 print (decisive, drops one day after as_of): (a) capex guided UP again AND ad price/impression growth decelerates materially -> O4 turning negative, F1 black hole strengthening -> REJECT-candidate / lower durability; (b) operating margin expands despite high capex (first evidence capex compounds) -> upgrade owner-earnings anchor to operating NI, base IRR ~+10% -> STARTER-eligible. [O4, decisive variable]",
+    "Price pullback to ~$480 (base 8% hurdle) -> upgrade to STARTER-eligible. [upgrade trigger]",
+    "Revenue growth falls to single digits AND price/ad turns negative -> ad engine thesis impaired -> REJECT candidate.",
+    "Capex keeps rising but operating income does not (F1 black hole confirmed) -> permanently lower durability; confirm thesis not structurally broken even at a lower price.",
+    "Generative AI structurally rewrites the traffic entry (DAP/time-spent sustained decline) OR antitrust forced breakup on appeal (F2/F4) -> thesis durability breaks (exit candidate). [ONLY path that can escalate to veto]"
+  ],
+  "runner_dissent": "Recorded per protocol. This is essentially a REAFFIRM of the 6/19 WATCH/HOLD, not a fresh conclusion -- and I want the doubt on record in BOTH directions. (1) Growth-instinct dissent (too_small_missed_asymmetry / SNDK lesson): META is arguably the strongest ad engine on earth (Q2 consensus still +27% revenue), the memory crash could actually LOWER its future capex bill (a non-obvious positive to the exact O4 the market is punishing), and buying weakness into a capex-audit panic is how you get compounders cheap -- if the 7/29 print shows margin expansion despite capex, the operating-NI anchor gives base IRR ~+10% and today looks like the entry. (2) BUT the framework holds WATCH on objective facts, not narrative: base 5y IRR is only +3.4% at $593.41 (BELOW the 8% hurdle and slightly WORSE than 6/19 because price is +2.8% HIGHER, not lower -- META did NOT get the 'cheaper entry' most Mega7 got); FCF yield 3.3%; ~24% above conservative fair value; the decisive capex-ROI variable (O4) is still unquantified AND its first real read drops the day AFTER as_of (7/29) alongside an FOMC decision -- so initiating new money now means paying full price the day before a double-binary event in the exact regime that is stress-testing this name's weak point. That is a timing-and-MOS problem, not a quality problem. business_verdict stays 'good' (engine intact, balance sheet survives -> NOT REJECT); existing holders HOLD (nothing broke, not absurdly priced). A hard veto stays reserved for F2/F4 (traffic-entry rewrite / breakup), which show no current evidence. Net: WATCH new money with a clear buy-below ~$480 and TWO upgrade paths (price <=~$480, or a constructive 7/29 print). Honest completeness ~60% -> ceiling STARTER, and price + event-timing pin the actual call at WATCH. OPEN/blocking: O4 capex ROI (Q2 7/29 is the read); OPEN: O1 10-K lines, O2 RL full-year, O3 proxy exacts.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm"},
+    {"source_id": "S002", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028526/meta-20260331.htm"},
+    {"source_id": "S003", "public_date": "2026-01", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm"},
+    {"source_id": "S004", "public_date": "2026-02", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"},
+    {"source_id": "S005", "public_date": "2026-07-28", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/META (2026-07-28 close 593.41, last <= as_of)"},
+    {"source_id": "S006", "public_date": "2026-04", "url_or_path": "SEC EDGAR DEF 14A 2026 (governance facts corroborated multi-source; proxy not transcribed line-by-line -> O3)"},
+    {"source_id": "S008", "public_date": "2026-01", "url_or_path": "https://www.auganix.org/xr-news-meta-reality-labs-2025-financial-report/"},
+    {"source_id": "S010", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/meta/ (price 593.41, mcap 1.51T, 52wk 796.25/520.26; independent price cross-check)"},
+    {"source_id": "S011", "public_date": "2026-07-27", "url_or_path": "https://www.stocktitan.net/news/META/meta-to-announce-second-quarter-2026-sdasry9e3xzw.html (Q2-2026 release 2026-07-29 after close)"},
+    {"source_id": "S012", "public_date": "2026-07-27", "url_or_path": "https://blockonomi.com/meta-meta-q2-2026-earnings-preview-should-you-buy-the-stock-ahead-of-july-29-report/ (Q2 consensus rev ~$60.2B, EPS ~$7.18, capex $125-145B unchanged)"},
+    {"source_id": "S013", "public_date": "2026-05-31", "url_or_path": "https://www.techtimes.com/articles/317454/20260531/meta-antitrust-appeal-29-states-back-ftc-whatsapp-privacy-lawsuit-intensifies-instagram-breakup.htm (28 states+DC amicus backing FTC appeal; still pre-ruling)"},
+    {"source_id": "S014", "public_date": "2026-07-03", "url_or_path": "https://www.fool.com/investing/2026/07/03/meta-135-billion-ai-capex-2026-one-reason/ (FY26 capex ~$135B midpoint; Superintelligence Lab spend context)"}
+  ]
+}

@@ -1,0 +1,337 @@
+[
+  {
+    "ticker": "GE",
+    "status": "cached",
+    "path": "data\\audit_raw\\GE.json",
+    "sha256": "642916f40709bbeb5f8872a19d5592e9a821b89431064859b6a7e54f9652f229",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "RTX",
+    "status": "cached",
+    "path": "data\\audit_raw\\RTX.json",
+    "sha256": "8b9092cbcd8de36f43b70efc58d24863fe4b0f97b23867e34424d594d7d2fa39",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/RTX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "RR.L",
+    "status": "cached",
+    "path": "data\\audit_raw\\RR.L.json",
+    "sha256": "f41e40d5a6c49ba3b6220c187f1f6211c918128382f941652b2c03e9d862d2b3",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/RR.L?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "SAF.PA",
+    "status": "cached",
+    "path": "data\\audit_raw\\SAF.PA.json",
+    "sha256": "05b86776f4320d311fd104e02cd85f2c6d67f10c7164615c529d569afd64be3a",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SAF.PA?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "TDG",
+    "status": "cached",
+    "path": "data\\audit_raw\\TDG.json",
+    "sha256": "379ba851e523d44d7c45ceeda2af33cb4913b49deb809097ef0f87cfb6113ac9",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TDG?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "HWM",
+    "status": "cached",
+    "path": "data\\audit_raw\\HWM.json",
+    "sha256": "a3708add8ed142ef5c12cb205af16191905f34ad0235f1d3872aa925fb303f30",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "SPR",
+    "status": "error",
+    "error": "<urlopen error [Errno 2] No such file or directory>",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPR?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "AER",
+    "status": "cached",
+    "path": "data\\audit_raw\\AER.json",
+    "sha256": "4609f9edaf49e9bf06c2d29c39889246e1364e90d8f232be2feac896973036db",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AER?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "ETN",
+    "status": "cached",
+    "path": "data\\audit_raw\\ETN.json",
+    "sha256": "8ff7a179ff91c5151bc8efe10a1214ba3b7efdc179812b3ad6f94246ec7d03cf",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETN?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "HUBB",
+    "status": "cached",
+    "path": "data\\audit_raw\\HUBB.json",
+    "sha256": "c28d5454cc905b9fbf1f290e2edd788821e22be8f71d074b4cd5dcb06c82ac7d",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HUBB?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "ENR.DE",
+    "status": "cached",
+    "path": "data\\audit_raw\\ENR.DE.json",
+    "sha256": "0b8a198644ef7a0cc4f01c34feb69bb661edcfd6a549bb650634521746a00068",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ENR.DE?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "7011.T",
+    "status": "cached",
+    "path": "data\\audit_raw\\7011.T.json",
+    "sha256": "3abcf89373cac771f8bfc99c843a28665ebeb29d947701eaa506e947b37ed851",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/7011.T?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "6501.T",
+    "status": "cached",
+    "path": "data\\audit_raw\\6501.T.json",
+    "sha256": "8a28bb7d7632fa1163a24abf3a6a29edd43552302dc4728f95db3dd74473476f",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/6501.T?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "GEV",
+    "status": "cached",
+    "path": "data\\audit_raw\\GEV.json",
+    "sha256": "8de48c4865d27d4df3f149ed4fce52b09977091e03454fac2549cb74d30a9ba4",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "VRT",
+    "status": "cached",
+    "path": "data\\audit_raw\\VRT.json",
+    "sha256": "10aa6c6ef46d8746a412544b803bc6eee4e3f189a617c4979d890dccb0e012fd",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "SLB",
+    "status": "cached",
+    "path": "data\\audit_raw\\SLB.json",
+    "sha256": "f0b21363192ab14a1fd127f3c17d674a2ed2b1289ab715ee3a376a22dfce00a3",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SLB?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "HAL",
+    "status": "cached",
+    "path": "data\\audit_raw\\HAL.json",
+    "sha256": "1b979a40db65de0fa940ce7a3c88200df5678dfbb45caff027ba797376607293",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HAL?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "BKR",
+    "status": "cached",
+    "path": "data\\audit_raw\\BKR.json",
+    "sha256": "609d0680c46d855c82fe392fb9bba855abc88ccf0a949c71a63a94a7bb72bab5",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BKR?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "NOV",
+    "status": "cached",
+    "path": "data\\audit_raw\\NOV.json",
+    "sha256": "2e62ef319ba26bb9d0819c186ccd9331b2f18d5e281bb172dc677a93c5844be4",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOV?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "CSCO",
+    "status": "cached",
+    "path": "data\\audit_raw\\CSCO.json",
+    "sha256": "cf2786e21029b69a0f27427dbf663ffa3118f764d152d1d18ae4c51413d20f38",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CSCO?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "GLW",
+    "status": "cached",
+    "path": "data\\audit_raw\\GLW.json",
+    "sha256": "bcf538165c6c30c9e1bfbb5bfbd14e880601948608ac53ae51459bdbe4651786",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLW?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "CIEN",
+    "status": "cached",
+    "path": "data\\audit_raw\\CIEN.json",
+    "sha256": "b9b3c09318d4d38b7668820b71b449590edf12f33c207333ac4439ea03ed3c44",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIEN?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "CAT",
+    "status": "cached",
+    "path": "data\\audit_raw\\CAT.json",
+    "sha256": "557ddfcba7527593904d1e09631f3789cdef6d1ee28990374978c7221f6aaf92",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "6301.T",
+    "status": "cached",
+    "path": "data\\audit_raw\\6301.T.json",
+    "sha256": "2a01629af288457babcaa5b5d15fb9d32f442b5bf244dfcceb67617a5cd8102e",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/6301.T?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "AMAT",
+    "status": "cached",
+    "path": "data\\audit_raw\\AMAT.json",
+    "sha256": "c3d0e8d59e1f5eea576f533ed3ecae82aa0e815e46fd35397e7a25c6c9938f5d",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMAT?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "SEDG",
+    "status": "cached",
+    "path": "data\\audit_raw\\SEDG.json",
+    "sha256": "6c4fbaf2833a55e1facdd3b21deba9e4e07ef21746d93451e6bc0762456798b3",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SEDG?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "ENPH",
+    "status": "cached",
+    "path": "data\\audit_raw\\ENPH.json",
+    "sha256": "70904c2e9db72394e5f3c191d583f5be34a9c987f1caf3b879812dcd78f7283f",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ENPH?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "010140.KS",
+    "status": "cached",
+    "path": "data\\audit_raw\\010140.KS.json",
+    "sha256": "902faa5f812251cc8e59ea0c0a120c824f8700f08ef79657fae68642c623f1b4",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/010140.KS?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "329180.KS",
+    "status": "cached",
+    "path": "data\\audit_raw\\329180.KS.json",
+    "sha256": "7f900e9df7b8603f98204ad2e99b84824a21a00243c936d034cfd2d7fb23074f",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/329180.KS?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "042660.KS",
+    "status": "cached",
+    "path": "data\\audit_raw\\042660.KS.json",
+    "sha256": "1effd6cca6dc8ac5b376502e99571969530e5b3ecc66ec8ec918520521e3a5f9",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/042660.KS?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "6902.T",
+    "status": "cached",
+    "path": "data\\audit_raw\\6902.T.json",
+    "sha256": "92040c04fc83cfaf8dd95de98ad70301c6cd401797979a8ef23ebdb4a3460eeb",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/6902.T?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "MGA",
+    "status": "cached",
+    "path": "data\\audit_raw\\MGA.json",
+    "sha256": "ff7a3c2ad2b69211228c3c41292fdf1ed1684e123cc581c5bd83d6aa96f70751",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MGA?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "APTV",
+    "status": "cached",
+    "path": "data\\audit_raw\\APTV.json",
+    "sha256": "9acf9ba8cd6999683d93d005519386e6de3b8d5728d9e68428bd47b4753fe738",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/APTV?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "SPY",
+    "status": "cached",
+    "path": "data\\audit_raw\\SPY.json",
+    "sha256": "ae4b0ba72aaa061f0d89e07a200a5a3bb1ae221f68b892821e614f1968775e4d",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "^GSPC",
+    "status": "cached",
+    "path": "data\\audit_raw\\_GSPC.json",
+    "sha256": "d29da46e199faf87e19ec4c185b071f9565b122b106c13ef07b56969fe1656bf",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "ASML",
+    "status": "cached",
+    "path": "data\\audit_raw\\ASML.json",
+    "sha256": "0f77a2326bb67a8ea4cfdfc577b668c6c577b0c5b85cbb735f112d9a5714cae6",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "LRCX",
+    "status": "cached",
+    "path": "data\\audit_raw\\LRCX.json",
+    "sha256": "1ce729464cf94d6dad5df29de62caba7fc2ac0b7296f7b9c3c98bc6718dafd0d",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LRCX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "KLAC",
+    "status": "cached",
+    "path": "data\\audit_raw\\KLAC.json",
+    "sha256": "d8378578df9e2f3c412b845bba10d364b3ade7795470b8402afdf02316b73f83",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/KLAC?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "HEI",
+    "status": "cached",
+    "path": "data\\audit_raw\\HEI.json",
+    "sha256": "f16e587153a9fd0015f5db0a629e9cf0472d518f77288e865e1dca8e0b96c802",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HEI?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "WAB",
+    "status": "cached",
+    "path": "data\\audit_raw\\WAB.json",
+    "sha256": "8899c64b8c9c36d823fd7b013b339ade6a7f2bf0460e37f4a0c1d6a198f35aeb",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/WAB?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "FLR",
+    "status": "cached",
+    "path": "data\\audit_raw\\FLR.json",
+    "sha256": "16b78faaf97ec16e11050949280929153340c0744aa0b9ba3c8a3013fb6d2227",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FLR?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "ROK",
+    "status": "cached",
+    "path": "data\\audit_raw\\ROK.json",
+    "sha256": "89c137b3be0773020967b80a4c0261c5d4b30c04b0c6889222bdc69040c91ba7",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ROK?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "DE",
+    "status": "cached",
+    "path": "data\\audit_raw\\DE.json",
+    "sha256": "79726360f9f91694caca5ce9b82677bceaefdddb2a913aedc8cca13eebcf5b9a",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DE?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "GBPUSD=X",
+    "status": "cached",
+    "path": "data\\audit_raw\\GBPUSD_X.json",
+    "sha256": "5ddb081f0f02862cc760891f910bbdbdc50894ce5a86f1daa43c013b1602c4b8",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD%3DX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "EURUSD=X",
+    "status": "cached",
+    "path": "data\\audit_raw\\EURUSD_X.json",
+    "sha256": "0c1d81029f1cb399d5d9c8eaf1f4271a5268d16813348ae99f6af1ae3bfe5259",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "JPY=X",
+    "status": "cached",
+    "path": "data\\audit_raw\\JPY_X.json",
+    "sha256": "434482eeccaa5c2bc61917135d59ef15a3fc14647486f1f68c12ac91170b6814",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPY%3DX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "KRW=X",
+    "status": "cached",
+    "path": "data\\audit_raw\\KRW_X.json",
+    "sha256": "e87fdfe85c75f87bb067aa89ae7586b76abe7c11467da813b7cd1d20eeb5aad5",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/KRW%3DX?interval=1mo&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  },
+  {
+    "ticker": "KRW=X",
+    "status": "cached",
+    "path": "data\\audit_raw\\KRW_daily.json",
+    "sha256": "cd19630d0e38b9992da19bde093ec3eb579398e32546aa9b761345fabfeb3979",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/KRW%3DX?interval=1d&period1=0&period2=1790208000&events=div%2Csplit%2CcapitalGains"
+  }
+]

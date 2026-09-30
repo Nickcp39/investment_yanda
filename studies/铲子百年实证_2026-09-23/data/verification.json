@@ -1,0 +1,1485 @@
+{
+  "status": "PASS",
+  "checks": 367,
+  "errors": [],
+  "scope": "计算与本地工件验收；不验证护城河因果、供应商全部复权、完整历史总回报或投资建议",
+  "known_open_items": [
+    "HUBB早期复权异常",
+    "RR配股现金流",
+    "APTV及其他分拆财富",
+    "SPR历史序列",
+    "韩华重组",
+    "同源价格尚未全面独立核验",
+    "幸存者/时点分类/估值与风险因子控制"
+  ],
+  "details": [
+    {
+      "check": "原数据公司数33，有价格32",
+      "pass": true
+    },
+    {
+      "check": "扩展41候选，40有价格",
+      "pass": true
+    },
+    {
+      "check": "原价格快照未改变",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 GE.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 RTX.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 RR.L.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 SAF.PA.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 TDG.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 HWM.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 AER.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 ETN.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 HUBB.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 ENR.DE.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 7011.T.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 6501.T.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 GEV.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 VRT.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 SLB.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 HAL.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 BKR.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 NOV.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 CSCO.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 GLW.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 CIEN.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 CAT.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 6301.T.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 AMAT.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 SEDG.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 ENPH.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 010140.KS.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 329180.KS.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 042660.KS.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 6902.T.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 MGA.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 APTV.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 SPY.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 _GSPC.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 ASML.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 LRCX.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 KLAC.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 HEI.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 WAB.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 FLR.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 ROK.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 DE.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 GBPUSD_X.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 EURUSD_X.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 JPY_X.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 KRW_X.json",
+      "pass": true
+    },
+    {
+      "check": "原始响应哈希 KRW_daily.json",
+      "pass": true
+    },
+    {
+      "check": "APTV分拆隔离",
+      "pass": true
+    },
+    {
+      "check": "SPR缺失，没有记成零回报",
+      "pass": true
+    },
+    {
+      "check": "HUBB异常早期序列隔离",
+      "pass": true
+    },
+    {
+      "check": "VRT不把SPAC阶段算作经营历史",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 SPY",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 GE",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 RTX",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 RR.L",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 SAF.PA",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 TDG",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 HWM",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 AER",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 ETN",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 HUBB",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 ENR.DE",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 7011.T",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 6501.T",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 GEV",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 VRT",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 SLB",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 HAL",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 BKR",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 NOV",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 CSCO",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 GLW",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 CIEN",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 CAT",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 6301.T",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 AMAT",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 SEDG",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 ENPH",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 010140.KS",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 329180.KS",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 042660.KS",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 6902.T",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 MGA",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 ASML",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 LRCX",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 KLAC",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 HEI",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 WAB",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 FLR",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 ROK",
+      "pass": true
+    },
+    {
+      "check": "完整月和有限正财富 DE",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GE longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RTX longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RTX 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 RTX 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RR.L longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RR.L 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 RR.L 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RR.L 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 RR.L 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 RR.L 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 RR.L 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SAF.PA longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SAF.PA 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SAF.PA 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SAF.PA 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SAF.PA 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SAF.PA 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SAF.PA 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 TDG longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 TDG 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 TDG 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 TDG 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 TDG 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 TDG 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 TDG 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HWM longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HWM 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HWM 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AER longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AER 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 AER 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AER 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 AER 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ETN longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ETN 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ETN 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ETN 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ETN 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ETN 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ETN 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HUBB longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HUBB 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HUBB 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HUBB 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HUBB 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HUBB 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HUBB 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ENR.DE longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ENR.DE 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ENR.DE 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 7011.T longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 7011.T 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 7011.T 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 7011.T 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 7011.T 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 7011.T 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 7011.T 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6501.T longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6501.T 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6501.T 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6501.T 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6501.T 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6501.T 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6501.T 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GEV longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 VRT longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 VRT 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 VRT 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SLB longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SLB 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SLB 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SLB 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SLB 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SLB 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SLB 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HAL longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HAL 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HAL 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HAL 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HAL 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HAL 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HAL 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 BKR longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 BKR 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 BKR 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 NOV longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 NOV 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 NOV 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 NOV 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 NOV 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 NOV 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 NOV 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CSCO longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CSCO 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CSCO 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CSCO 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CSCO 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CSCO 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CSCO 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GLW longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GLW 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 GLW 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GLW 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 GLW 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 GLW 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 GLW 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CIEN longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CIEN 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CIEN 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CIEN 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CIEN 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CIEN 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CIEN 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CAT longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CAT 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CAT 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CAT 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CAT 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 CAT 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 CAT 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6301.T longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6301.T 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6301.T 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6301.T 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6301.T 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6301.T 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6301.T 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AMAT longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AMAT 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 AMAT 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AMAT 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 AMAT 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 AMAT 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 AMAT 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SEDG longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SEDG 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SEDG 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 SEDG 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 SEDG 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ENPH longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ENPH 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ENPH 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ENPH 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ENPH 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 010140.KS longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 010140.KS 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 010140.KS 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 010140.KS 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 010140.KS 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 010140.KS 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 010140.KS 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 329180.KS longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 042660.KS longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 042660.KS 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 042660.KS 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 042660.KS 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 042660.KS 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 042660.KS 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 042660.KS 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6902.T longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6902.T 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6902.T 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6902.T 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6902.T 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 6902.T 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 6902.T 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 MGA longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 MGA 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 MGA 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 MGA 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 MGA 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 MGA 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 MGA 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ASML longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ASML 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ASML 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ASML 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ASML 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ASML 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ASML 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 LRCX longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 LRCX 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 LRCX 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 LRCX 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 LRCX 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 LRCX 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 LRCX 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 KLAC longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 KLAC 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 KLAC 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 KLAC 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 KLAC 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 KLAC 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 KLAC 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HEI longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HEI 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HEI 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HEI 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HEI 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 HEI 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 HEI 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 WAB longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 WAB 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 WAB 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 WAB 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 WAB 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 WAB 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 WAB 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 FLR longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 FLR 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 FLR 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 FLR 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 FLR 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 FLR 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 FLR 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ROK longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ROK 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ROK 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ROK 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ROK 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 ROK 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 ROK 20",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 DE longest",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 DE 5",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 DE 5",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 DE 10",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 DE 10",
+      "pass": true
+    },
+    {
+      "check": "同端点独立复算 DE 20",
+      "pass": true
+    },
+    {
+      "check": "共同窗口完整 DE 20",
+      "pass": true
+    },
+    {
+      "check": "韩元日线无月线数量级异常；范围检查不代替独立核验",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 HUBB",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 TDG",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 ENPH",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 CIEN",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 ASML",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 LRCX",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 KLAC",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 CAT",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 ETN",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 HEI",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 SLB",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 HAL",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 FLR",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 MGA",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 WAB",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 ROK",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 DE",
+      "pass": true
+    },
+    {
+      "check": "正文十年数字对应输出 AMAT",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig4_century_relative.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig5_era_heatmap.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig6_rolling_decade.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig7_case_cycles.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig8_modern_cn.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> returns_appendix.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 report.md -> fig9_cisco_cn.png",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> report.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> ../../output/pdf/铲子百年实证_深研版_2026-09-23.pdf",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> source_index.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> industry_appendix.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> returns_appendix.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> DATA_AUDIT.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 README.md -> claim_ledger.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 section19_replacement.md -> report.md",
+      "pass": true
+    },
+    {
+      "check": "本地链接 section19_replacement.md -> claim_ledger.md",
+      "pass": true
+    },
+    {
+      "check": "原稿归档 report.md",
+      "pass": true
+    },
+    {
+      "check": "原稿归档 fig1_excess_return_by_lock.svg",
+      "pass": true
+    },
+    {
+      "check": "原稿归档 scripts/fetch_data.py",
+      "pass": true
+    },
+    {
+      "check": "原稿归档 scripts/analyze.py",
+      "pass": true
+    },
+    {
+      "check": "原稿归档 scripts/gen_chart.py",
+      "pass": true
+    },
+    {
+      "check": "生成图非空 fig2_common_window.svg",
+      "pass": true
+    },
+    {
+      "check": "生成图非空 fig2_common_window.png",
+      "pass": true
+    },
+    {
+      "check": "生成图非空 fig3_cisco_entry_sensitivity.svg",
+      "pass": true
+    },
+    {
+      "check": "生成图非空 fig3_cisco_entry_sensitivity.png",
+      "pass": true
+    }
+  ]
+}

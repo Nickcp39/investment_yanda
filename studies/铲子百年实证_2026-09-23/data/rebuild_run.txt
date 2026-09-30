@@ -1,0 +1,106 @@
+{
+  "original_companies": 33,
+  "candidate_companies": 41,
+  "with_prices": 40,
+  "benchmark_gap": {
+    "start": "1993-02",
+    "end": "2026-08",
+    "months": 402,
+    "observations": 403,
+    "missing_months": 0,
+    "cagr_pct": 10.844765934137213,
+    "spy_cagr_pct": 8.88875959756259,
+    "excess_pp": 1.9560063365746228,
+    "relative_wealth_cagr_pct": 1.7963344828279437,
+    "wealth_multiple": 31.474503396134217,
+    "monthly_max_drawdown_pct": -50.784801630135846
+  },
+  "cisco": {
+    "1998-03": {
+      "start": "1998-03",
+      "end": "2026-08",
+      "months": 341,
+      "observations": 342,
+      "missing_months": 0,
+      "cagr_pct": 10.029993403995796,
+      "spy_cagr_pct": 8.930620311092664,
+      "excess_pp": 1.0993730929031331,
+      "relative_wealth_cagr_pct": 1.009241561062857,
+      "wealth_multiple": 15.121912476751579,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "1999-03": {
+      "start": "1999-03",
+      "end": "2026-08",
+      "months": 329,
+      "observations": 330,
+      "missing_months": 0,
+      "cagr_pct": 6.938421783858439,
+      "spy_cagr_pct": 8.605526115674333,
+      "excess_pp": -1.667104331815894,
+      "relative_wealth_cagr_pct": -1.5350087527224665,
+      "wealth_multiple": 6.291451778581518,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "2000-03": {
+      "start": "2000-03",
+      "end": "2026-08",
+      "months": 317,
+      "observations": 318,
+      "missing_months": 0,
+      "cagr_pct": 3.0807102748879878,
+      "spy_cagr_pct": 8.25072803975364,
+      "excess_pp": -5.170017764865653,
+      "relative_wealth_cagr_pct": -4.775965814259486,
+      "wealth_multiple": 2.228963959235702,
+      "monthly_max_drawdown_pct": -86.44462529862615
+    },
+    "2001-03": {
+      "start": "2001-03",
+      "end": "2026-08",
+      "months": 305,
+      "observations": 306,
+      "missing_months": 0,
+      "cagr_pct": 9.853490281191846,
+      "spy_cagr_pct": 9.632067458593863,
+      "excess_pp": 0.22142282259798307,
+      "relative_wealth_cagr_pct": 0.20196902943712125,
+      "wealth_multiple": 10.898137262703846,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    },
+    "2002-03": {
+      "start": "2002-03",
+      "end": "2026-08",
+      "months": 293,
+      "observations": 294,
+      "missing_months": 0,
+      "cagr_pct": 9.96913710118259,
+      "spy_cagr_pct": 10.072307208179264,
+      "excess_pp": -0.10317010699667506,
+      "relative_wealth_cagr_pct": -0.09372939444390882,
+      "wealth_multiple": 10.178781420817357,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    },
+    "2003-03": {
+      "start": "2003-03",
+      "end": "2026-08",
+      "months": 281,
+      "observations": 282,
+      "missing_months": 0,
+      "cagr_pct": 11.676200797770875,
+      "spy_cagr_pct": 11.87423304359534,
+      "excess_pp": -0.19803224582446433,
+      "relative_wealth_cagr_pct": -0.1770132768170951,
+      "wealth_multiple": 13.276332094743951,
+      "monthly_max_drawdown_pct": -56.021745507630584
+    }
+  },
+  "jumps": [
+    {
+      "ticker": "HUBB",
+      "from": "1994-09",
+      "to": "1994-10",
+      "return_pct": 885.9310571765633
+    }
+  ]
+}

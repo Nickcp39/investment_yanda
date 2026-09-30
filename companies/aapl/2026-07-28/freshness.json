@@ -1,0 +1,112 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate (mega7_2026-07-28 refresh). Price $340.08 = Yahoo regularMarketPrice = 2026-07-28 close, cross-verified across 3 independent live sources at 0.0% pairwise delta. This is a 52wk-HIGH hug, and it is JUSTIFIED (low_high_hug_justified=true): the price is independently confirmed by regularMarketPrice + stockanalysis.com + $5T-milestone news coverage (AAPL crossed $5T intraday on 2026-07-28, 2nd company ever after NVDA, reclaimed #1 from NVDA), NOT derived from a 52wk extreme. This is the OPPOSITE of INC-001 (which put the 52wk LOW in the current-price slot to fake cheapness, a downward derivation error); here the high is a real, corroborated market fact. FILED data (10-K/10-Q line items) is NOT here -- it rides the dated-source claim_ledger discipline carried from the 6/19 dossier.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 340.08,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "low_high_hug_justification": "Price 340.08 is -0.8% off the 52wk intraday high 342.89 (=52wk CLOSING high) and +68.8% off the 52wk low 201.50. It is the live regularMarketPrice/last close, confirmed by 3 independent sources and the documented $5T milestone event -- not a 52wk-extreme grabbed into the price slot. INC-001 was a LOW-hug from a derivation error; this is a corroborated HIGH.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-07-28", "value": 340.08},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-07-28", "value": 340.08},
+        {"source_name": "websearch", "url": "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html", "fetched_at": "2026-07-28", "value": 340.08}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 5008000000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-07-28", "value": 4990000000000},
+        {"source_name": "derived", "url": "14725.873M diluted (Q2 FY26, last filed) x 340.08", "fetched_at": "2026-07-28", "value": 5007975000000}
+      ],
+      "cross_check_delta_pct": 0.36,
+      "pass": true,
+      "note": "Derived on last-FILED Q2 FY26 diluted shares (14725.873M) x 340.08 = $5.008T; stockanalysis $4.99T reflects a slightly lower post-buyback share count (~14,673M). Both round to ~$5.0T; AAPL crossed $5T intraday 2026-07-28 (mktcap ~$5.036T at the 342.89 intraday high)."
+    },
+    {
+      "field": "52wk_high",
+      "value": 342.89,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-07-28", "value": 342.89},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-07-28", "value": 342.89}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "342.89 = intraday 52wk high (set 2026-07-28, the $5T-touch session, per Yahoo + news). The closing 52wk high = 340.08 = today's close = as_of price."
+    },
+    {
+      "field": "52wk_low",
+      "value": 201.50,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL", "fetched_at": "2026-07-28", "value": 201.50},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-07-28", "value": 201.50}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 14725.873,
+      "unit": "millions",
+      "as_of": "2026-03-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q2fy26", "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000011/a8-kex991q2202603282026.htm", "fetched_at": "2026-07-28", "value": 14725.873},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/aapl/", "fetched_at": "2026-07-28", "value": 14673}
+      ],
+      "cross_check_delta_pct": 0.36,
+      "pass": true,
+      "note": "Last FILED diluted share count = Q2 FY26 (10-Q, ended 2026-03-28). Apple has not yet filed the June quarter (fiscal Q3 FY26 reports 2026-07-30); the $100B buyback has likely trimmed shares to ~14,673M (stockanalysis). Card uses the auditable last-filed 14725.873M for the market-cap identity."
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "No formal next-quarter numeric revenue guidance. Apple reports fiscal Q3 FY26 (calendar Q2, June quarter) on 2026-07-30 -- TWO DAYS AFTER as_of -- so no Apple earnings landed in the 6/19->7/28 window; the anchor quarter remains Q2 FY26 (ended 2026-03-28: revenue $111.2B/+17%, Services $31.0B/+16.3%, Greater China $20.5B/+28%, GM 49.3%, EPS $2.01/+22%). Street consensus for the 7/30 print (rev ~$109-110B, EPS ~$1.89) is an ESTIMATE, not an owner-earnings input. 2026-07-30 is Tim Cook's final earnings call as CEO.",
+      "as_of": "2026-07-28",
+      "sources": [
+        {"source_name": "marketbeat", "url": "https://www.marketbeat.com/earnings/reports/2026-7-30-apple-inc-stock/", "public_date": "2026-07-28", "fetched_at": "2026-07-28"},
+        {"source_name": "fool", "url": "https://www.fool.com/investing/2026/07/28/apple-reports-q3-earnings-on-july-30-heres-what-in/", "public_date": "2026-07-28", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Google search-remedy antitrust (O1) CARRIED from 6/19, not re-searched this run: final remedy order (April 2026) imposed a default-deal ban + choice screens effective June 2026, but the court did NOT bar Google from paying distribution partners and rejected Chrome/Android divestiture; DOJ + states appealing. Net: Google can still pay Apple but on shorter (~1-yr) terms -> TAC volatility / margin haircut on ~$20B/yr high-margin Services flow, magnitude/timing OPEN (O1) -- NOT structural breakage. No new development verified in the 6/19->7/28 window; treat the 2026-06 dating as the latest confirmed event pending re-check.",
+      "as_of": "2026-06",
+      "sources": [
+        {"source_name": "doj_pr", "url": "https://www.justice.gov/opa/pr/department-justice-prevails-landmark-antitrust-case-against-google", "public_date": "2026-06", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true,
+      "note": "Carried from 6/19; not independently re-searched this refresh (focused-refresh scope). T6 may WARN on age (~57d) -- that is the honest state (confirm still latest), non-blocking."
+    },
+    {
+      "field": "ceo_succession",
+      "is_quantitative": false,
+      "value": "RESOLVES 6/19 O3. Announced 2026-04-20 (unanimous board): Tim Cook -> executive chairman; John Ternus (SVP Hardware Engineering, joined Apple 2001, 'product person') -> CEO effective 2026-09-01. Cook continues as CEO through summer (2026-07-30 is his final earnings call) and stays engaged on policy/government relations as executive chairman. Orderly, long-planned insider transition -> reduces the 6/19 key-man/late-tenure haircut; new watch = Ternus's unproven capital-allocation discipline (the buyback-driven per-share engine is central to the return thesis).",
+      "as_of": "2026-04-20",
+      "sources": [
+        {"source_name": "techcrunch", "url": "https://techcrunch.com/2026/04/20/tim-cook-stepping-down-as-apple-ceo-john-ternus-taking-over/", "public_date": "2026-04-20", "fetched_at": "2026-07-28"},
+        {"source_name": "fortune", "url": "https://fortune.com/2026/04/20/apple-ceo-tim-cook-stepping-down-hardware-exec-john-ternus-new-ceo/", "public_date": "2026-04-20", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

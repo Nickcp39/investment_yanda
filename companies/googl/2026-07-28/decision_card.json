@@ -1,0 +1,97 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "great_business_no_margin_of_safety_capex_audit_regime",
+  "as_of_price": 333.71,
+  "as_of_market_cap": 4081300000000,
+  "share_basis_note": "12,230M Class A+B+C shares issued & outstanding at 6/30/26 (from Q2 2026 8-K; UP from 12,116M at 3/31/26 and 12,088M at 12/31/25 as buybacks stay at $0) x $333.71 = ~$4.081T. Price = 2026-07-28 close (Yahoo chart API anchor, task-verified; +2.19% intraday from the 2026-07-27 close $326.56). Two independent price sources: Yahoo chart API $333.71 + stockinvest.us $333.71 (07-28, delta 0.0%); 07-27 close $326.56 corroborated by MacroTrends. Excludes the new ~$18B mandatory convertible preferred issued in Q2. NOTE the recovery: the stock troughed at $317.69 (07-23, the -7.1% earnings-reaction day) and has bounced +5.0% to $333.71 by as_of.",
+  "refresh_note": "REGIME + PRICE re-pricing of companies/googl/2026-06-19 at as_of 2026-07-28. Two things changed since 6/19: (1) Q2 2026 earnings were REPORTED 2026-07-22 (quarter ended 6/30/26) -- a major M4 refresh; (2) the 7/28 semiconductor crash / AI-capex-audit regime overlays M4/M5/M6. An intermediate same-quarter run exists at companies/googl/2026-07-24 (price $317.69, the post-earnings trough); this 7/28 card re-prices that same Q2 data at $333.71 after a +5% bounce and adds the 7/28 regime. Independent WebSearch corroborated every Q2 figure in the 7/24 run. Verdict UNCHANGED: business good / new-money WATCH / 0% / HOLD. The one module move vs 6/19 is M4 Financial Reality -1 -> -2 (the capex-eats-owner-earnings warning MATERIALIZED: Q2 FCF went NEGATIVE -$5.9B, capex guide RAISED to $195-205B, buybacks $0). The +5% price recovery pushed even the bull-case 10y IRR back BELOW the 8% hurdle (was +8.2% at the $317.69 trough, now ~+7.7%), so NO scenario clears the hurdle at $333.71.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "prior_signal": 1,
+      "confidence": "high",
+      "finding": "Fresh primary quarter added: Alphabet Q2 2026 8-K/press release (SEC, 2026-07-22) plus 10-Q -- full income statement, cash-flow statement with actual quarterly depreciation and the FCF reconciliation, segment detail, Cloud RPO $513.9B. Evidence base now BETTER than June (4 comparable quarters, actual D&A, primary FCF bridge) and independently cross-checked via WebSearch (CNBC/Investing.com/TradingKey/SearchEngineJournal all agree on revenue $119.8B, capex $44.9B, FCF -$5.9B, guide $195-205B, EPS $9.11, $99B equity gain). But the decision-critical gap is UNCHANGED: maintenance-vs-growth capex split still undisclosed and no quantified capex ROI hurdle. One-pass earnings/regime refresh -> completeness ~72% -> caps new-money ceiling at STARTER (price binds lower).",
+      "drivers": ["GOOG.A1.2026Q2", "GOOG.A1.2026Q2.RPO", "S-YHOO-2026-07-28", "WEBSEARCH-Q2-CORROBORATION"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "prior_signal": 2,
+      "confidence": "high",
+      "finding": "Demand thesis STRENGTHENED on every axis in Q2 and nothing regime-related breaks it. Google Cloud +82% to $24.8B (accelerating from +63% Q1'26); Cloud RPO/backlog $513.9B (from ~$460B Q1'26, ~$106B Q2'25); Cloud operating margin ~35.5% with op income near-tripling to $8.8B; Search & other +17% to $63.4B (AI features additive to queries, not eroding them); YouTube ads ~$10.8B +13%. Total revenue $119.8B +24%, operating income $40.8B +30%, op margin 34%. The two-sided platform (monetize commercial intent + sell AI compute) is more proven than in June. Already at the +2 ceiling; the open question is whether these dollars survive capex to reach owner earnings (that is M4).",
+      "drivers": ["GOOG.A1.2026Q2", "GOOG.A1.2026Q2.RPO"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "prior_signal": 1,
+      "confidence": "med",
+      "finding": "Two offsetting moves, net held +1. IMPROVED: the central incremental-moat test ('can post-AI-capex capital earn high returns?') got its first real yes -- Cloud held a ~35.5% margin across a second quarter on a $513.9B backlog, and Search durability (+17%) confirms the existing moat is intact under AI pressure; a cheaper-memory regime (SOX -25%, CXMT new DRAM supply) helps GOOGL as a compute BUYER, not a seller. WORSE: capex guidance RAISED to $195-205B (2027 higher) into a NEGATIVE-FCF quarter with still no disclosed ROI hurdle (CFO 'attractive return' is a philosophy, not a number); buybacks $0, ~$18B mandatory convertible preferred + debt issued, and 52.7% founder voting power means no external lever on the capex bet. Operator grade unchanged ~28/40. Existing moat Strong and better-evidenced; incremental moat partly-but-not-fully proven; capital-allocation discipline still absent.",
+      "drivers": ["GOOG.A1.2026Q2.RPO", "GOOG.A1.2026Q2.GUIDE", "GOOG.A1.PROXY2026"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -2,
+      "prior_signal": -1,
+      "confidence": "high",
+      "finding": "WORSENED -1 -> -2: the June warning MATERIALIZED. Q2 free cash flow went NEGATIVE -$5.9B (vs +$10.1B Q1'26, +$5.3B Q2'25); TTM FCF fell to ~$53.3B (-20% YoY); capex a record $44.9B (~115% of quarterly OCF; TTM capex/OCF ~71%, crossing the 70% line); FCF/share ~$4.36 TTM vs $6.06 FY25 (-28%) while share count ROSE (12,088M -> 12,230M) with buybacks at $0 and ~$18B preferred + debt issued. FY2026 capex guide RAISED to $195-205B (from $180-190B). Alphabet ALSO initiated a token dividend ($0.22/quarter) -- a mature-company signal that does not offset negative FCF. Meanwhile GAAP net income printed $112B (+298%) on a ~$99B non-cash unrealized equity-securities gain (~$6.26 of the $9.11 EPS) -> reported income overstates owner earnings ~2.6-4.4x; owner earnings ~$55-95B (defensive-to-growth read). Not fraud and not a survival risk (liquidity huge, dividend + growth capex are by choice); Cloud's ~35.5% margin is a real growth-read offset -- but the specific capex-black-hole mechanism has begun to realize, so the signal must worsen to a strong warning (not a veto).",
+      "drivers": ["GOOG.A1.2026Q2", "GOOG.A1.2026Q2.GUIDE", "GOOG.A1.2026Q2.FCF"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "prior_signal": -1,
+      "confidence": "med",
+      "finding": "Held -1 with the picture clarified by Q2 + the 7/28 regime. The scariest PERMANENT path was F1xF3 confluence (AI erodes search AND capex balloons -> owner earnings permanently diluted). Q2 SPLIT the legs: F3 (capex black hole) MATERIALIZED (FCF negative, guide raised), but F1 (search erosion) was DISCONFIRMED (Search +17%, AI additive) and F2 (regulatory) EASED (DOJ search resolved WITHOUT a breakup, on appeal; DOJ adtech judge skeptical of a structural AdX divestiture, ruling still pending as of as_of; EC fine on appeal). REGIME overlay (7/28 semiconductor crash / AI-capex-audit year / rotation out of AI-hardware / CXMT DRAM entrant / FOMC Wed): the capex audit is precisely GOOGL's binding question, so the market is LESS forgiving of the raised capex (the -7% earnings reaction is that audit in action); but GOOGL is NOT a memory/Korea/merchant-silicon name -- as a compute BUYER a cheaper-hardware regime is mildly favorable, so CXMT/SOX hit it only via multiple/sentiment, not fundamentals. FOMC/higher-for-longer would raise the discount rate on a long-duration ~1.7%-yield asset -> a near-term multiple swing, not a thesis break. Net: a capex/VALUATION trap made more acute by the regime, not a franchise-death spiral -> haircut/size driver (-1), not a veto (-2).",
+      "drivers": ["GOOG.A1.2026Q2.GUIDE", "GOOG.A1.2026Q2", "REGIME-2026-07-28", "GOOG.A1.2026Q2.LEGAL"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "prior_signal": -2,
+      "confidence": "high",
+      "finding": "BINDING CONSTRAINT, held -2. At $333.71 (mkt cap ~$4.081T) the price is -9.3% below the 6/19 $368.03 but owner-earnings quality fell in step (FCF went negative), so NO margin of safety opened. Re-pricing the 6/19->Q2 owner-earnings model to $333.71: three-scenario 10y IRR bear ~-11.7% / base ~-1.5% / bull ~+7.7% -- EVERY scenario is now below the 8% hurdle. The +5% bounce off the $317.69 post-earnings trough pushed even the bull case back under 8% (it was +8.2% at $317.69; the bull-8% crossover is ~$323.6 and current $333.71 is above it). On trailing free cash flow the stock is the MOST expensive of the three reads: mkt-cap/TTM-FCF ~76.6x (vs 72.9x at the 7/24 trough and 69.6x on 6/19) because price rose while FCF stayed depressed. Base owner-earnings yield ~1.67% (P/OE ~60x). Buy-below (base-10% starter anchor) ~$117; observe ~$139 (8% threshold); avoid above ~$323 (even bull <8%). Current $333.71 sits in the avoid zone -> price caps the verdict at WATCH.",
+      "drivers": ["valuation.md", "S-YHOO-2026-07-28", "GOOG.A1.2026Q2.FCF"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 117.0,
+  "starter_zone": "0% at current price. Reopen the IC panel for a STARTER (1-3%) only on a pullback to ~$99-117 (base 10-12% IRR anchor). Deliberately use the base anchor, not the ~$139 8%-threshold, because the maintenance-vs-growth capex split is still unobservable AND capex just went UP into negative FCF -> demand a wider margin.",
+  "add_zone": "~$99 -> Core discussion (12% IRR). Any add is gated on the bull thesis confirming FIRST: capex peaking and FCF/share re-inflecting (not just operating income), Cloud margin holding 30%+ through the near-term third-party-capacity pressure, and a management capex-ROI framework finally appearing. ~$50 = bear-8% deep-value downside anchor.",
+  "trim_or_no_chase_zone": "Avoid above ~$323 (even the bull 10y IRR <8%). Current ~$333.71 sits above that line -> 0%, do not initiate; do-not-chase the +5% post-earnings bounce. Existing holders (user is at 0%): HOLD -- nothing broke (Q2 operationally strong, franchise intact) so no reason to sell, but no margin of safety to add.",
+  "binding_constraint": "PRICE / no margin of safety -- still the active hard cap (K-E). At $333.71 the base-case 10y IRR is ~-1.5% and even the bull case (~+7.7%) no longer clears 8%; the model clears 8% (base) only below ~$139 and reaches a 10% starter anchor only ~$117. The -9.3% drop vs 6/19 did NOT create safety because TTM FCF fell ~20% in step (mkt-cap/FCF got WORSE, ~76.6x), and the +5% bounce off the $317.69 trough re-erased the thin bull cushion that briefly existed. Reinforced by M4: the capex-eats-owner-earnings thesis (K-B) is now realizing (Q2 FCF negative, capex guide raised). PRICE, not information, remains the binding constraint.",
+  "kill_criteria": [
+    "K-A [F1 search monetization]: Search & other <=+8% Y/Y for two consecutive quarters attributed to AI-answer migration. Current Q2'26 +17% (down from +19% Q1'26 but firmly double-digit) -> GREEN, far from trigger.",
+    "K-B [F3 capex black hole]: FCF/share declines AND capex/OCF stays >70% with no incremental-ROIC recovery. NOW FIRING (RED at the mechanism level): Q2'26 FCF -$5.9B; TTM FCF/share ~$4.36 vs $6.06 FY25 (-28%); TTM capex/OCF ~71% (Q2 quarter ~115%); buybacks $0 with share count rising. Escape valve still open: Cloud's ~35.5% margin + $513.9B backlog is the 'incremental-ROIC recovery' evidence. The strict 'two consecutive fiscal YEARS' clock formally closes at FY2026 year-end.",
+    "K-C [F3 capital-allocation discipline]: no capex ROI hurdle / expected ROIC for two reporting cycles, OR a data-center/TPU impairment. Current YELLOW/ORANGE: Q1'26 and Q2'26 both raised/held capex ($195-205B guide) with only a qualitative 'attractive return' philosophy -- two cycles with no hurdle rate; no impairment yet.",
+    "K-D [F2 regulatory tail]: a court orders a STRUCTURAL remedy (divest adtech / ban default search distribution) rather than a fine. Current EASED (GREEN/YELLOW): DOJ search resolved behavioral (no Chrome/Android breakup, on appeal to ~2028); DOJ adtech remedy ruling still PENDING with the judge skeptical of a structural AdX divestiture; EC EUR2.95B fine on appeal. No adverse ruling in the 6/19-7/28 window.",
+    "K-E [F9 valuation discipline]: buy price implies 10y IRR <8% (~price > $139 for base 8%). Current ~$333.71 grossly violates -> WATCH/0% until ~$117 to reopen a STARTER discussion. RED, ACTIVE binding constraint.",
+    "K-REGIME [new, 7/28]: if the AI-capex-audit rotation persists and drags GOOGL toward the ~$250-280 range, re-open the panel EARLY -- it would improve entry IRR without any thesis break (the franchise is intact). Conversely, a data-center/TPU write-down during the semiconductor deflation would escalate K-C to RED."
+  ],
+  "runner_dissent": "Recorded per protocol, and the tension is real. Q2 genuinely improved the BULL case AND (at the trough) made the stock cheaper -- the missed-compounder risk is larger than in June. Cloud is now demonstrably converting capex into high-margin revenue (~35.5% margin, op income ~tripled, $513.9B backlog, +82% growth) -- exactly the 'incremental ROIC holds' disconfirming evidence the June bear thesis needed -- and the two scariest permanent paths (F1 search erosion, F2 structural regulatory remedy) both weakened. The 7/28 rotation OUT of AI-hardware could also be the very catalyst that eventually delivers a buyable price. The framework nonetheless HOLDS WATCH/0% (does NOT override to STARTER, unlike the NVDA case) because PRICE is the constraint and it got WORSE, not better, since the trough: at $333.71 the base-case 10y IRR is still NEGATIVE (~-1.5%) and, after the +5% bounce, even the bull case (~+7.7%) no longer clears 8% -- you would pay full price for the optimistic case with zero cushion. This quarter the capex-eats-FCF thesis did not just persist, it REALIZED (FCF went negative, FCF/share -28% from peak, dilution now naked, preferred + debt issued, capex raised to $205B with still no ROI hurdle), and on trailing FCF the stock is MORE expensive (~76.6x) than in June. A 9% drop that coincides with a 20% FCF decline is not a margin of safety. Wait for price (~$99-117), not for a better story -- the story is already good.",
+  "sources_used": [
+    {"source_id": "GOOG.A1.2026Q2", "public_date": "2026-07-22", "url_or_path": "SEC EDGAR Alphabet Q2 2026 8-K Exhibit 99.1 / press release (CIK 1652044); revenue $119.8B +24%, Search $63.4B +17%, Cloud $24.8B +82%, op income $40.8B +30%, EPS $9.11, net income $112B incl ~$99B unrealized equity gain, capex $44.9B, FCF -$5.9B. Cross-checked via WebSearch (CNBC/Investing.com/TradingKey/SearchEngineJournal, 2026-07-22)."},
+    {"source_id": "GOOG.A1.2026Q2.RPO", "public_date": "2026-07-22", "url_or_path": "Alphabet Q2 2026 10-Q -- Google Cloud RPO/backlog $513.9B (up from ~$460B Q1'26, ~$106B Q2'25); Cloud operating margin ~35.5%."},
+    {"source_id": "GOOG.A1.2026Q2.GUIDE", "public_date": "2026-07-22", "url_or_path": "Q2 2026 earnings call / slides: FY2026 capex guidance RAISED to $195-205B (from $180-190B); 2027 to increase further; CFO 'attractive return' with no quantified ROI hurdle. Corroborated: https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html"},
+    {"source_id": "GOOG.A1.2026Q2.FCF", "public_date": "2026-07-22", "url_or_path": "Q2 2026 free cash flow -$5.9B (SearchEngineJournal -$5.85B); TTM FCF ~$53.3B; buybacks $0; new $0.22/quarter dividend declared (payable 2026-09-14). https://www.searchenginejournal.com/google-q2-earnings-show-5-85-billion-negative-free-cash-flow/583259/"},
+    {"source_id": "S-YHOO-2026-07-28", "public_date": "2026-07-28", "url_or_path": "Yahoo chart API GOOGL as_of 2026-07-28 close $333.71 (task-verified anchor); 2nd source stockinvest.us $333.71 (+2.19% from 07-27 $326.56); 07-27 close corroborated by MacroTrends $326.56."},
+    {"source_id": "REGIME-2026-07-28", "public_date": "2026-07-28", "url_or_path": "Batch regime (companies/_mega7_2026-07-28/PLAN.md): 7/28 semiconductor crash (KOSPI 8th circuit-breaker, SOX -25%, SK Hynix halved), rotation out of AI-hardware/memory into value/defensives + Apple $5T, AI-capex-audit year, CXMT DRAM IPO, FOMC Wed (Warsh)."},
+    {"source_id": "GOOGL-PRIOR-DOSSIER-0619", "public_date": "2026-06-19", "url_or_path": "companies/googl/2026-06-19/ (prior WATCH verdict; module signals +1/+2/+1/-1/-1/-2; buy_below ~$113; base OE ~$65B)."},
+    {"source_id": "GOOGL-INTERMEDIATE-0724", "public_date": "2026-07-24", "url_or_path": "companies/googl/2026-07-24/ (same-quarter run at $317.69 trough; WATCH/HOLD/0%, buy_below $117, M4 -2, base IRR -1.0% / bull +8.2%). This 7/28 card re-prices that model at $333.71 + adds the 7/28 regime."}
+  ]
+}

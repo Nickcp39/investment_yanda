@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美债滚动压力与 YCC 可能性 · 2026-08-11</title>
+<style>
+:root{
+  --bg:#f7f6f3;--card:#fff;--ink:#1b1b1a;--muted:#6b6a66;--line:#e3e1db;
+  --accent:#8b5e34;--accent-soft:#f0e6da;
+  --hot:#c0392b;--hot-soft:#fbeae8;--cold:#2c5f8a;--cold-soft:#e8f0f6;
+  --warn:#a8560f;--warn-soft:#fbf0e3;--ok:#2f6b4f;--ok-soft:#e6f0ea;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16171a;--card:#1e2024;--ink:#e8e6e1;--muted:#9a988f;--line:#2e3136;
+    --accent:#c99a6a;--accent-soft:#2a2420;--hot:#e07a6c;--hot-soft:#2e211f;
+    --cold:#7aa8cc;--cold-soft:#1c2429;--warn:#d99050;--warn-soft:#2c231a;--ok:#7db99a;--ok-soft:#1d2723;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65;
+  font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:40px 24px 80px}
+header{border-bottom:2px solid var(--ink);padding-bottom:18px}
+h1{font-size:29px;margin:0 0 6px;letter-spacing:-.4px}
+.sub{color:var(--muted);font-size:14px}
+h2{font-size:19px;margin:46px 0 14px;padding-left:11px;border-left:4px solid var(--accent)}
+h3{font-size:15px;margin:22px 0 8px;font-weight:600}
+.verdict{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0}
+.verdict p{margin:0 0 10px;font-size:15px}
+.verdict p:last-child{margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:23px;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+.stat span{font-size:12px;color:var(--muted);display:block;margin-top:2px}
+.stat i{font-style:normal;font-size:11px;color:var(--accent)}
+/* 利率爬升条 */
+.bars{margin:16px 0 4px}
+.bar{display:grid;grid-template-columns:78px 1fr 62px;gap:12px;align-items:center;margin:5px 0;font-size:13px}
+.bar .lbl{color:var(--muted);font-variant-numeric:tabular-nums}
+.bar .track{background:var(--line);border-radius:4px;height:20px;position:relative;overflow:hidden}
+.bar .fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--cold),var(--accent))}
+.bar .fill.hi{background:linear-gradient(90deg,var(--accent),var(--hot))}
+.bar .val{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:11.5px;letter-spacing:.5px;text-transform:uppercase}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;white-space:nowrap;margin-right:4px}
+.t-hot{background:var(--hot-soft);color:var(--hot)}
+.t-cold{background:var(--cold-soft);color:var(--cold)}
+.t-warn{background:var(--warn-soft);color:var(--warn)}
+.t-ok{background:var(--ok-soft);color:var(--ok)}
+.t-acc{background:var(--accent-soft);color:var(--accent)}
+ul.plain{padding-left:19px;font-size:14.5px;margin:8px 0}
+ul.plain li{margin:7px 0}
+.note{background:var(--warn-soft);border:1px solid var(--warn);border-radius:10px;padding:15px 19px;font-size:13.5px}
+.note b{color:var(--warn)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.chk{list-style:none;padding:0;margin:10px 0}
+.chk li{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.chk .m{font-size:15px;line-height:1.4}
+.chk b{font-weight:600}
+.chk span{display:block;color:var(--muted);font-size:13px;margin-top:1px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+code{background:var(--accent-soft);padding:1px 5px;border-radius:4px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>美债滚动压力与 YCC 可能性</h1>
+  <div class="sub">数据截至 2026-08-11 · 债务与利率为财政部一手数据 · 政策判断附来源分级</div>
+</header>
+
+<div class="verdict">
+<p><strong>结论一：滚动压力属实，而且刚刚开始加速。</strong>加权平均利率过去 6 个月从 3.320% 升到 <strong>3.447%</strong>，其中 6 月单月 +5.6bp、7 月 +3.8bp，是 2023 年以来最快的两个月。核心机制是<strong>票息落差</strong>——即将到期的中长债平均票息约 2.9%，而新发 10Y 在 4.73%、30Y 已到 5.2%，每滚一批就把成本抬高 <strong>180–230bp</strong>。</p>
+<p><strong>结论二：走向 YCC 的说法，方向搞反了。</strong>沃什治下的美联储正在做的是缩表、可能重启 QT、以及"反向扭转操作"（把持仓从长端调回中性）——这些全都是<strong>推高</strong>长端收益率的动作。YCC 是买长债封顶收益率，与他每一条公开立场都矛盾。目前市面上说的"隐性 YCC"指的是<strong>财政部</strong>通过多发短债来影响曲线，那是发行策略，不是央行 YCC，两者不能混谈。</p>
+<p><strong>结论三：你的"不加息也不降息"前提，基线成立但不是零风险。</strong>6 月 FOMC 维持 3.50–3.75%，但点阵图 <strong>18 人中有 9 人</strong>倾向年内至少加息一次。真正的风险不在政策利率，而在<strong>长端</strong>——那里正在被政策主动推高。</p>
+</div>
+
+<h2>一、债务与成本：一手数据</h2>
+<div class="stats">
+  <div class="stat"><b>$39.89T</b><span>公共债务总额</span><i>2026-08-10</i></div>
+  <div class="stat"><b>3.447%</b><span>加权平均利率</span><i>2026-07-31 · 半年 +12.7bp</i></div>
+  <div class="stat"><b>$31.46T</b><span>可流通债务</span><i>2026-07-31</i></div>
+  <div class="stat"><b>4.73%</b><span>10Y 收益率</span><i>2026-08-11</i></div>
+  <div class="stat"><b>~5.2%</b><span>30Y 收益率</span><i>2007 年以来最高</i></div>
+  <div class="stat"><b>3.50–3.75%</b><span>联邦基金目标区间</span><i>6 月维持</i></div>
+</div>
+
+<h3>加权平均利率的爬升轨迹</h3>
+<p style="font-size:14px;color:var(--muted);margin:0 0 4px">全部付息债务的加权平均票面利率，财政部月度口径。注意 2025 年几乎走平，2026 年 2 月起重新上行、6 月起加速。</p>
+<div class="bars">
+  <div class="bar"><span class="lbl">2022-07</span><span class="track"><span class="fill" style="width:36.4%"></span></span><span class="val">1.884%</span></div>
+  <div class="bar"><span class="lbl">2023-07</span><span class="track"><span class="fill" style="width:54.9%"></span></span><span class="val">2.841%</span></div>
+  <div class="bar"><span class="lbl">2024-07</span><span class="track"><span class="fill" style="width:64.4%"></span></span><span class="val">3.331%</span></div>
+  <div class="bar"><span class="lbl">2025-07</span><span class="track"><span class="fill" style="width:64.8%"></span></span><span class="val">3.352%</span></div>
+  <div class="bar"><span class="lbl">2026-01</span><span class="track"><span class="fill" style="width:64.1%"></span></span><span class="val">3.316%</span></div>
+  <div class="bar"><span class="lbl">2026-04</span><span class="track"><span class="fill" style="width:64.6%"></span></span><span class="val">3.340%</span></div>
+  <div class="bar"><span class="lbl">2026-06</span><span class="track"><span class="fill hi" style="width:65.9%"></span></span><span class="val">3.409%</span></div>
+  <div class="bar"><span class="lbl">2026-07</span><span class="track"><span class="fill hi" style="width:66.6%"></span></span><span class="val">3.447%</span></div>
+</div>
+<p style="font-size:13px;color:var(--muted);margin-top:8px">月度增量：2 月 +0.4bp、3 月 +0.7bp、4 月 +1.3bp、5 月 +1.3bp、<strong>6 月 +5.6bp、7 月 +3.8bp</strong>。拐点在 6 月。</p>
+
+<h3>存量结构：谁在滚</h3>
+<table>
+  <thead><tr><th>类别</th><th class="n">存量</th><th class="n">占可流通</th><th class="n">平均利率</th><th>滚动特征</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Bills</strong> 短期券</td><td class="n">$6.99T</td><td class="n">22.2%</td><td class="n">3.758%</td><td><span class="tag t-hot">全部 ≤1 年滚动</span>4 周券今年平均单次发行约 $940 亿</td></tr>
+    <tr><td><strong>Notes</strong> 中期券</td><td class="n">$16.17T</td><td class="n">51.4%</td><td class="n">3.309%</td><td>存量票息最低，滚动时抬升最猛</td></tr>
+    <tr><td><strong>Bonds</strong> 长期券</td><td class="n">$5.48T</td><td class="n">17.4%</td><td class="n">3.442%</td><td>新发以 5.2% 计息</td></tr>
+    <tr><td><strong>TIPS</strong></td><td class="n">$2.15T</td><td class="n">6.8%</td><td class="n">1.127%</td><td>另有通胀补偿，FY26 前 10 月已 $769 亿</td></tr>
+    <tr><td><strong>FRN</strong> 浮息</td><td class="n">$0.65T</td><td class="n">2.1%</td><td class="n">3.948%</td><td>随短端即时重定价</td></tr>
+    <tr><td colspan="5" style="padding-top:12px"><strong>合计可流通 $31.46T</strong>；不可流通 $8.32T；公共债务总额 <strong>$39.77T</strong>（7/31）</td></tr>
+  </tbody>
+</table>
+
+<div class="card">
+<h3 style="margin-top:0">滚动量级的量纲感</h3>
+<ul class="plain" style="margin:0">
+  <li><strong>Bills 一项就是 $6.99T</strong> 必须在 12 个月内全部再融资，这还没算期间反复滚动的次数。</li>
+  <li>加上 12 个月内到期的 Notes/Bonds（约 $2.5–3T 量级），<strong>年再融资规模在 $10T 上下</strong>——市场上流传的"2026 年 10 万亿到期墙"说法量级对得上。<span class="tag t-warn">此项为估算，非精确对账</span></li>
+  <li>具体到本周：8 月季度再融资发行 <strong>$1250 亿</strong>（3Y $580 亿、10Y $420 亿、30Y $250 亿，8/11–13 拍卖、8/17 结算），用于偿还 8/15 到期的 <strong>$963 亿</strong>私人持有票据，净新增融资 <strong>$287 亿</strong>。</li>
+  <li>财政部同时表示 9 月将<strong>缩减短端 bill 拍卖规模</strong>（对应 9 月中企业缴税季的现金流入），月底前可能发短期现金管理券（CMB）。</li>
+</ul>
+</div>
+
+<h2>二、真实利息支出</h2>
+<div class="note" style="margin-bottom:14px">
+<b>口径警告：</b>gross（付息总额，含政府账户内部持有部分）与 net（净利息，剔除内部）差异巨大，媒体经常混用。下表两个口径都给。
+</div>
+<table>
+  <thead><tr><th>口径</th><th class="n">数值</th><th>来源与说明</th></tr></thead>
+  <tbody>
+    <tr><td><strong>净利息</strong> FY2026 预测</td><td class="n">$1.0T</td><td>CBO；较 FY2025 的 $970B 增 7%</td></tr>
+    <tr><td><strong>净利息</strong> 占 GDP</td><td class="n">3.3%</td><td>CBO；<strong>超过 1991 年的历史高点</strong></td></tr>
+    <tr><td><strong>净利息</strong> FY26 前 10 月</td><td class="n">$963B</td><td>2025-10 → 2026-07；月均 $96.3B，<strong>日均约 $32 亿</strong></td></tr>
+    <tr><td>同比增量</td><td class="n">+$117B (+14%)</td><td>CBO 8 月更新归因：债务规模更大 ＋ <strong>长端利率上升</strong>，短端下行仅部分抵消</td></tr>
+    <tr><td><strong>付息总额</strong>（推算）</td><td class="n">~$1.37T</td><td>本报告核算：$39.77T × 3.447%，gross 口径年化</td></tr>
+    <tr><td>marketable 应计 FY26 前 10 月</td><td class="n">$886B</td><td>财政部 interest_expense 一手：Notes $410B ＋ Bills $209B ＋ Bonds $147B ＋ TIPS 通胀补偿 $77B ＋ TIPS $20B ＋ FRN $22B</td></tr>
+  </tbody>
+</table>
+<p style="font-size:13.5px;color:var(--muted);margin-top:10px">往前看，CBO 的路径是净利息从 2026 年 $1.0T 升至 2036 年 <strong>$2.1T</strong>，十年翻倍——在所有主要预算科目中<strong>增速第一</strong>（+106%）。</p>
+
+<h2>三、YCC：逐条对照，目前不成立</h2>
+<p style="font-size:14.5px;margin:0 0 10px">YCC 的定义是央行承诺把某一期限收益率钉在目标水平，为此无限量买入。下面是它需要的前置条件，以及当前实际状态。</p>
+
+<ul class="chk">
+  <li><span class="m">✗</span><div><b>央行有压低长端的意图</b><span>实际相反。沃什的取向是<strong>缩表</strong>、可能重启 QT，并被讨论中的"<strong>反向扭转操作</strong>"——把美联储持仓从偏长端调回市场中性，效果是陡峭化曲线、抬升期限溢价。这是 YCC 的反面操作。</span></div></li>
+  <li><span class="m">✗</span><div><b>政策利率处于零下限、常规工具用尽</b><span>当前 3.50–3.75%，且点阵图 9/18 倾向加息。距离"工具用尽"极远。</span></div></li>
+  <li><span class="m">✗</span><div><b>官方讨论出现</b><span>未见任何 FOMC 官方 YCC 讨论。沃什设立的五个工作组是沟通、<strong>资产负债表</strong>、数据源、生产率与就业、通胀框架——资产负债表组的方向是缩不是扩，年底前出建议。</span></div></li>
+  <li><span class="m">✗</span><div><b>长端出现无序失灵</b><span>30Y 到 5.2%（2007 年来最高）是<strong>有序重定价</strong>，不是流动性断裂。8 月再融资照常发行、照常结算。</span></div></li>
+  <li><span class="m">△</span><div><b>财政主导（fiscal dominance）压力</b><span>唯一有实质进展的一条。净利息占 GDP 3.3% 破 1991 年纪录、十年翻倍路径明确。但压力存在 ≠ 央行会接管曲线，中间还隔着很多步。</span></div></li>
+</ul>
+
+<div class="card">
+<h3 style="margin-top:0">"隐性 YCC" 是另一回事，别混淆</h3>
+<p style="margin:0;font-size:14.5px">市面上说的"implicit YCC"指的是<strong>财政部</strong>通过调节发行期限结构（多发短债、少发长债）来避免长端供给冲击，从而间接影响曲线形状。这是<strong>发行策略</strong>，工具在财政部手里，不涉及央行购债承诺，也不封顶任何收益率。把它和真 YCC 混为一谈，会得出完全错误的资产配置结论——真 YCC 利好长债，而当前的发行策略叠加 QT 预期是<strong>利空长债</strong>的。</p>
+</div>
+
+<h2>四、真正该盯的风险：日本</h2>
+<div class="card">
+<ul class="plain" style="margin:0">
+  <li>日本是美债<strong>最大海外持有者</strong>，2026 年 5 月数据 <strong>$1.14T</strong>，过去一年维持在 1.1 万亿以上。</li>
+  <li>财长贝森特 7 月底在内阁会议清单上记录了买入 <strong>$50–100 亿日元</strong>的计划，<strong>8 月初执行</strong>。他对 CNBC 的说法是稳定日元"对美国和整个地区都重要"。干预后日元一度到 155，随后回落到约 159。</li>
+  <li><strong>传导链条：</strong>若日元继续走弱、日本转为自行抛售美债救汇率，就会直接推高美债收益率——而这恰好发生在滚动成本已经加速的时点上。美国出手干预日元，某种意义上是在保护自己的债券市场。</li>
+  <li>这条线比 YCC 更值得跟踪，因为它<strong>已经在动</strong>，而 YCC 还停在假设阶段。</li>
+</ul>
+</div>
+
+<h2>五、对你的前提的检验</h2>
+<div class="two">
+<div class="card">
+<h3 style="margin-top:0;color:var(--ok)">✓ 成立的部分</h3>
+<ul class="plain" style="margin:0">
+  <li>6 月 FOMC 维持 3.50–3.75%，基线预期是<strong>年内保持按兵不动</strong>。</li>
+  <li>沃什偏好减少前瞻指引，这本身降低了"政策利率突然大动"的可预期性，但也意味着他不会为了救市而快速降息。</li>
+</ul>
+</div>
+<div class="card">
+<h3 style="margin-top:0;color:var(--hot)">✗ 需要修正的部分</h3>
+<ul class="plain" style="margin:0">
+  <li>"确定不加息"过强。<strong>点阵图 9/18 倾向年内至少加息一次</strong>，市场也在定价加息可能。这是实质性尾部风险，不是噪音。</li>
+  <li>更重要的是：<strong>政策利率不动 ≠ 融资成本不动</strong>。长端在 QT 预期和反向扭转操作下被主动推高，30Y 已到 5.2%。对久期资产和高估值成长股来说，杀伤来自这里而不是联邦基金利率。</li>
+</ul>
+</div>
+</div>
+
+<div class="note" style="margin-top:16px">
+<b>顺带核实：</b>上一份 wechat_mp 分析里标注为"待核实"的两条，本次得到独立确认——<strong>美联储主席确为 Kevin Warsh（沃什）</strong>，且其 6 月首秀确实弱化前瞻指引。该号的宏观框架在这一点上没有误传。但它转述的具体数字（核心 PCE 3.4%、9 月降息概率 40%）本次未逐条验证，仍按二手对待。
+</div>
+
+<h2>六、下一步观察清单</h2>
+<table>
+  <thead><tr><th>指标</th><th>当前</th><th>触发意义</th></tr></thead>
+  <tbody>
+    <tr><td>加权平均利率月度增量</td><td>+3.8bp（7 月）</td><td>连续 3 个月 &gt;5bp＝滚动进入自我强化</td></tr>
+    <tr><td>30Y 收益率</td><td>~5.2%</td><td>站上 5.5% 且拍卖尾部扩大＝长端开始失序</td></tr>
+    <tr><td>10Y 收益率</td><td>4.73%</td><td>站稳 5% 是该号 5 月预警框架的关键阈值</td></tr>
+    <tr><td>日本美债持仓</td><td>$1.14T（5 月）</td><td>月度减持超 $300 亿＝救汇率优先于持仓</td></tr>
+    <tr><td>美联储资产负债表工作组</td><td>年底前出建议</td><td>若明确重启 QT／反向扭转＝长端再承压</td></tr>
+    <tr><td>季度再融资 QRA</td><td>8 月净新增 $287 亿</td><td>长端发行占比若上调＝财政部放弃短端依赖</td></tr>
+  </tbody>
+</table>
+
+<footer>
+<strong>数据来源分级</strong><br>
+一手（本报告直接调用 API）：美国财政部 Fiscal Data — <code>debt_to_penny</code>（债务余额）、<code>avg_interest_rates</code>（加权平均利率时序）、<code>interest_expense</code>（利息支出）、<code>mspd_table_1</code>（债务构成）<br>
+一手（官方文件）：财政部季度再融资声明（2026 年 8 月）<br>
+二手（用于定位事件，数字已尽量与一手交叉）：CBO 8 月预算更新经 PGPF／Fortune 转述；FOMC 6 月决议与点阵图经财经媒体转述；沃什政策取向经 ABN AMRO／CNN／Benzinga 转述；日元干预经 Fortune 报道贝森特 CNBC 表态<br>
+未独立验证：$10T 到期墙的精确对账（本报告为量级估算）；30Y 5.2% 为 7 月底沃什讲话时点报价<br>
+生成于 2026-08-11 · D:\work\investment\financial-analysis-lab\macro\ust_rollover_ycc_2026-08-11.html
+</footer>
+
+</div>
+</body>
+</html>

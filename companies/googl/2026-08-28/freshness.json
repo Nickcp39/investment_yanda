@@ -1,0 +1,107 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-08-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1 freshness gate. Canonical as_of_price = $340.65 = the 2026-08-27 close (Yahoo chart API anchor, task-verified). Two independent price sources agree exactly: Yahoo chart API $340.65 + Nasdaq API $340.65 (delta 0.0%). Price is +61.3% off the 52wk low ($211.35) and -15.4% off the 52wk high ($402.62, close basis) -> NOT a low/high-hug (INC-001 failure mode absent). LIVE-qualitative items (litigation, guidance, funding) refreshed to the 2026-08-28 state.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 340.65,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-08-28", "value": 340.65},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/GOOGL/info?assetclass=stocks", "fetched_at": "2026-08-28", "value": 340.65}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "340.65 = 2026-08-27 close on both Yahoo and Nasdaq API (netChange -1.35, -0.39%)."
+    },
+    {
+      "field": "market_cap",
+      "value": 4166100000000,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "12230M shares x 340.65", "fetched_at": "2026-08-28", "value": 4166100000000}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "12,230M A+B+C shares x $340.65 = ~$4.166T. Excludes ~$18B mandatory convertible preferred."
+    },
+    {
+      "field": "52wk_high",
+      "value": 402.62,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=1y", "fetched_at": "2026-08-28", "value": 402.62}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "Close-basis 52wk high; price -15.4% off this high."
+    },
+    {
+      "field": "52wk_low",
+      "value": 211.35,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=1y", "fetched_at": "2026-08-28", "value": 211.35}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "Price +61.3% off this low -> NOT a low-hug."
+    },
+    {
+      "field": "shares_out",
+      "value": 12230,
+      "unit": "millions",
+      "as_of": "2026-06-30",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q2fy2026", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=8-K", "fetched_at": "2026-08-28", "value": 12230}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "12,230M A+B+C at 6/30/26 (Q2 2026 8-K); latest available share count."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "No adverse ruling found in the 2026-07-28 to 2026-08-28 window. DOJ SEARCH: behavioral remedies (2025-09), on cross-appeal. DOJ ADTECH: remedy ruling still pending -- WebSearch (after 2026-07-28) found no landing news (search log, not an assertion of absence). EC adtech fine on appeal.",
+      "as_of": "2026-08-28",
+      "sources": [
+        {"source_name": "search_log", "url": "WebSearch 'DOJ adtech remedy ruling August 2026' after=2026-07-28", "fetched_at": "2026-08-28"},
+        {"source_name": "prior_dossier_freshness", "url": "companies/googl/2026-07-28/freshness.json", "public_date": "2026-07-28", "fetched_at": "2026-08-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "No new guidance since Q2 print (2026-07-22): FY2026 capex $195-205B, 2027 higher. No new 10-Q/10-K/earnings 8-K filed through 2026-08-27 (EDGAR submissions index). Next quarterly data = Q3 print (~late Oct 2026).",
+      "as_of": "2026-08-28",
+      "sources": [
+        {"source_name": "edgar_submissions", "url": "https://data.sec.gov/submissions/CIK0001652044.json", "fetched_at": "2026-08-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "funding_events",
+      "is_quantitative": false,
+      "value": "2026-08-10: closed $25B senior notes (10 tranches 2028-2066, coupons 4.500%-6.500%; 8-K Item 8.01). June mandatory convertible preferred 6.25% (depositary shares listed 8/10; ~$1.2B/yr dividends per B2 press). Press tally: ~$77B debt issued YTD (C tier).",
+      "as_of": "2026-08-10",
+      "sources": [
+        {"source_name": "sec_8k", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526342390/d171253d8k.htm", "public_date": "2026-08-10", "fetched_at": "2026-08-28"},
+        {"source_name": "fool", "url": "https://www.fool.com/investing/2026/08/27/alphabet-is-paying-a-dividend-while-selling-usd85-billion-of-new-stock/", "public_date": "2026-08-27", "fetched_at": "2026-08-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

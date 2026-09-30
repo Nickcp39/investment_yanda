@@ -1,0 +1,101 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1 freshness gate (mega7_2026-07-28 batch). Canonical as_of_price = $333.71 = the 2026-07-28 close (Yahoo chart API anchor, task-verified; +2.19% intraday from the 2026-07-27 close $326.56). Two independent price sources agree exactly: Yahoo chart API $333.71 + stockinvest.us $333.71 (delta 0.0%); the 07-27 close $326.56 is separately corroborated by MacroTrends. Price is +78% off the 52wk low ($187.82) and -17% off the 52wk high ($402.62 close-basis; $408.61 intraday) -> NOT a low/high-hug, so the NVDA INC-001 failure mode is absent. Context: the stock troughed at $317.69 (07-23, the -7.1% Q2-earnings-reaction day) and has recovered +5.0% to $333.71. LIVE-qualitative items (regulatory, capex guidance) refreshed to the Q2-2026 state. If verify_freshness.py cannot reach Yahoo from this sandbox, this manifest still declares the >=2 required price sources; the mechanical PASS must be produced in a networked environment before a Checker may stamp CLEAN.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 333.71,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-28", "value": 333.71},
+        {"source_name": "stockinvest", "url": "https://stockinvest.us/stock-news/green-day-on-tuesday-for-google-stock-after-gaining-219-2026-07-28", "fetched_at": "2026-07-28", "value": 333.71}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "333.71 = 2026-07-28 close on Yahoo; stockinvest.us reports GOOGL +2.19% on 07-28 to $333.71 (from 07-27 close $326.56). 07-27 close corroborated by MacroTrends ($326.56)."
+    },
+    {
+      "field": "market_cap",
+      "value": 4081300000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "12230M shares x 333.71", "fetched_at": "2026-07-28", "value": 4081300000000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-28", "value": 4080000000000}
+      ],
+      "cross_check_delta_pct": 0.03,
+      "pass": true,
+      "note": "12,230M A+B+C shares x $333.71 = ~$4.081T. stockanalysis ~$4.08T at the same price. Excludes the new ~$18B mandatory convertible preferred issued in Q2 2026."
+    },
+    {
+      "field": "52wk_high",
+      "value": 402.62,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-28", "value": 402.62},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-28", "value": 402.62}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "$402.62 close-basis 52wk high (task-verified anchor); intraday 52wk high ~$408.61. Card price $333.71 is -17% off this high."
+    },
+    {
+      "field": "52wk_low",
+      "value": 187.82,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL", "fetched_at": "2026-07-28", "value": 187.82},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-28", "value": 187.82}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "Card price $333.71 is +78% off this low -> NOT a low-hug (INC-001 failure mode absent)."
+    },
+    {
+      "field": "shares_out",
+      "value": 12230,
+      "unit": "millions",
+      "as_of": "2026-06-30",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "sec_8k_q2fy2026", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1652044&type=8-K", "fetched_at": "2026-07-28", "value": 12230},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/", "fetched_at": "2026-07-28", "value": 12230}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "12,230M = Class A+B+C issued & outstanding at 6/30/26 (per Q2 2026 8-K); UP from 12,116M (3/31/26) and 12,088M (12/31/25) as buybacks stay at $0."
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "Regulatory tail EASED and STABLE through the 6/19-7/28 window. (1) DOJ SEARCH (Judge Mehta, DDC): remedies finalized 2025-09 as BEHAVIORAL -- Google KEEPS Chrome & Android (structural divestiture rejected); on cross-appeal, resolution possibly 2028. (2) DOJ ADTECH (Judge Brinkema, EDVA): liability found 2025-04; remedy phase post-trial with the judge voicing SKEPTICISM toward a structural AdX divestiture; RULING STILL PENDING as of as_of (no order in the 6/19-7/28 window). (3) EC ADTECH: EUR 2.95B (~$3.45B) fine (2025-09), on appeal. Net: the structural-remedy tail is less severe than the FY2025-10-K framing implied; no new adverse ruling this window.",
+      "as_of": "2026-07-28",
+      "sources": [
+        {"source_name": "prior_dossier_freshness", "url": "companies/googl/2026-07-24/freshness.json", "public_date": "2026-07-24", "fetched_at": "2026-07-28"},
+        {"source_name": "adexchanger", "url": "https://www.adexchanger.com/online-advertising/doj-v-google-judge-brinkema-calls-for-less-ad-tech-window-dressing-in-the-adx-and-dfp-divestiture-debate/", "public_date": "2026-06", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2 2026 (reported 2026-07-22): FY2026 capex guidance RAISED to $195-205B (from $180-190B); 2027 capex to increase further. Revenue $119.8B (+24%), Search $63.4B (+17%), Cloud $24.8B (+82%, RPO/backlog $513.9B, op margin ~35.5%), operating income $40.8B (+30%), EPS $9.11, GAAP net income $112B (incl ~$99B non-cash unrealized equity-securities gain). Capex $44.9B; Q2 FREE CASH FLOW NEGATIVE -$5.9B; TTM FCF ~$53.3B (-20% YoY). Buybacks $0; NEW quarterly dividend $0.22/share declared (payable 2026-09-14). CFO framed capex as 'attractive return' with no quantified ROI hurdle.",
+      "as_of": "2026-07-22",
+      "sources": [
+        {"source_name": "cnbc_q2", "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html", "public_date": "2026-07-22", "fetched_at": "2026-07-28"},
+        {"source_name": "searchenginejournal_fcf", "url": "https://www.searchenginejournal.com/google-q2-earnings-show-5-85-billion-negative-free-cash-flow/583259/", "public_date": "2026-07-22", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

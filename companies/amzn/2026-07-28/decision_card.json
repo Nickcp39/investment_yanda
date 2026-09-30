@@ -1,0 +1,95 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "good_business_wrong_price_capex_reinvestment",
+  "as_of_price": 230.86,
+  "as_of_market_cap": 2510000000000,
+  "share_basis_note": "Post-split (20:1, 2022-05) basis. 10,874M diluted weighted shares (Q1 2026, SEC 8-K Ex99.1 [S001]) x $230.86 (2026-07-28 close, Yahoo chart API [S004]) = ~$2.510T. stockanalysis.com [S007] reports $2.48T on ~10,760M current-basic shares (~1.2% basis diff, immaterial to verdict). Price cross-verified across 3 independent sources (Yahoo/statmuse/stockanalysis), all exactly $230.86, delta 0.0% -- NOT a 52wk extreme (INC-001 guard: +17.8% off low $196, -16.0% off high $274.99).",
+  "regime_overlay_note": "as_of sits inside the 2026-07-28 'AI-capex audit year' regime: semis crashed 7/28 (SOX -25% off high, SK Hynix ~halved, KOSPI 8th circuit-breaker), money rotating OUT of AI-hardware/memory/Korea INTO value/consumer/defensives + AAPL ($5T, reclaimed #1). AMZN held up (-5.5% since 6/19 vs semis halving) as a hyperscaler+consumer HYBRID. FOMC Wed 7/29 (Warsh). CRITICAL: AMZN has NOT yet reported Q2-2026 -- report is 2026-07-30 (2 trading days after as_of); consensus rev ~$196.71B (+17.3% Y/Y), EPS $1.82. This card is locked PRE-PRINT.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "Price is impeccably fresh: $230.86 (2026-07-28 close) agrees EXACTLY across 3 independent sources (Yahoo chart API, statmuse/websearch, stockanalysis.com), cross-check delta 0.0%, and sits mid-band (+17.8% off 52wk low, -16.0% off high) -- no INC-001 extreme-grab. Anchor financials remain fully primary (Q1 2026 + FY25 8-K Ex99.1 [S001][S002]). The one genuine evidence gap this pass: Q2-2026 is NOT yet reported (prints 2026-07-30, 2 days post-as_of) -> a full fresh quarter is imminent-but-missing; treated as a monitor/timing item, not a degradation of held evidence. Durable-business modules (M2/M3) re-checked vs 6/19 news -> no thesis-breaking event; Anthropic 5GW/Trainium developments reinforce. Completeness carried ~62% (10-K line items O1, capex maint/growth split + ROIC O4, proxy O3, Anthropic accounting O6 still OPEN).",
+      "drivers": ["S001", "S002", "S004", "S007", "S008"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "CARRIED FORWARD, re-checked, REINFORCED. Three-engine compounder (NA+Intl retail/logistics/ads, AWS cloud profit core, embedded high-margin ads) intact. The 2023 blind-case thesis (retail-margin trough + AWS durability + cost discipline) has played out; the live theme is a ~$200B/yr AI capex bet (predominantly AWS). Since 6/19: Anthropic-Amazon expanded to up to 5 GW of compute (Anthropic committing >$100B to AWS/Trainium over 10 yrs, ~1 GW Trainium2/3 online by year-end); Trainium2 ~30% better price/perf than GPUs and largely sold out, Trainium3 shipping +30-40%. These strengthen the AWS-AI DEMAND signal and the own-silicon differentiation. No thesis break. The capex ROI remains the open question -- now under maximum market scrutiny in the capex-audit regime.",
+      "drivers": ["S001", "S002", "S010"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "CARRIED FORWARD, unchanged. AWS captures the Western #2 cloud profit pool (FY25 OI $45.6B, ~35-38% margin) via scale + switching costs + full-stack (self-designed Trainium reducing NVDA dependence); retail captures scale economies + Prime flywheel. Moat strong and arguably widening (own silicon + Anthropic model-layer positioning). Operator grade 4/5: Jassy (AWS architect) CEO + Bezos exec chair, one-share-one-vote (clean governance). REGIME CHECK: the semiconductor/memory crash and CXMT (new DRAM entrant threatening memory's supply-scarcity premium) do NOT erode AMZN's moat -- AMZN is a memory CONSUMER (cheaper DRAM lowers its input costs) and its own-silicon path insulates it from the GPU/memory turmoil. The ~$200B capex ROIC is still undimensioned (O4). No bottleneck monopoly -> no bottleneck premium.",
+      "drivers": ["S001", "S002", "S010"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "warning",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Owner-earnings bridge STILL does not close, and the resolving datapoint is 2 days away. Business highly profitable (OI $80B FY25, OCF $148.5B TTM) but TTM FCF ~$1.2B because capex ($131.8B FY25 / ~$151B TTM / ~$200B 2026 plan / ~$344B cumulative through 2027) exceeds OCF. Normalized owner earnings depends on the maintenance-vs-growth capex split + incremental ROIC of the AI buildout (O4, no primary). GAAP net income inflated by non-operating Anthropic fair-value gains ($16.8B in Q1) -> cannot use GAAP EPS. Balance sheet in leveraged-investment mode: LT debt $119B (+$53B in Q1), net financial cash still ~+$24B. REGIME OVERLAY: Q2-2026 prints 2026-07-30 (consensus rev ~$196.71B/+17.3%, EPS $1.82) -- in a capex-audit year this print is THE stress test of how fast $200B/yr converts to FCF; the swing variables (capex trajectory, any FCF release, AWS incremental margin) are exactly what the market is now pricing. Card locked PRE-PRINT -> actuals not incorporable; flagged as an imminent binary catalyst.",
+      "drivers": ["S001", "S002", "S009"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "Kill paths real but NOT structural impairment at as-of, now overlaid with the regime. (F1) ~$200B/yr AI capex ROIC < cost of capital -> depreciation wave erodes owner earnings: the capex-audit year RAISES this path's salience (market tolerance for 'FCF comes later' is shrinking, and AMZN has the WEAKEST FCF conversion in Mega7) but does not trigger it -- still needs years of ROIC evidence, and O4 is undimensioned. (F2) AWS share erosion by Azure(OpenAI)/GCP + customer self-silicon. (F3) record 13.1% retail margin reverts. (F4) leverage + rate double-hit -- FOMC Wed 7/29 (Warsh) rate decision is a live risk to the leveraged capex model AND the discount rate on long-duration AWS cash flows. (F5) GAAP Anthropic swings. REGIME-SPECIFIC READ: the semiconductor crash/rotation is MIXED-to-slightly-insulating for AMZN specifically (hyperscaler+consumer hybrid held up -5.5%; own-silicon + memory-buyer position benefits from cheaper DRAM/CXMT), while the sentiment overhang on all AI-capex names is negative. NONE is permanent profit-pool loss or balance-sheet death. Binding issue remains VALUATION (no MOS), which CAPS the verdict; not a hard veto.",
+      "drivers": ["S001", "S002", "S010"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -1,
+      "confidence": "high",
+      "finding": "At $230.86 (-5.5% vs 6/19 $244.39), ~$2.51T mcap: starting normalized owner-earnings yield 2.2% (conservative OE $55B) to 2.7% (generous NOPAT $67B), P/FCF meaningless (FCF near zero), -16.0% off 52wk high. On the GENEROUS NOPAT lens: base 5y IRR -0.4% (was -1.5%), bull +8.9% (now just clears 8% hurdle, was +7.7%), bear -12.6%. Conservative OE lens worse (base ~-4.9%, bull ~+6.1%, both < hurdle). The -5.5% price move improved IRR ~+1.1%/yr but did NOT create a margin of safety: base still ~breakeven, only bull clears the hurdle, starting yield ~2%. Asymmetry still skews down. buy-below ~$178 unchanged (owner-earnings model unchanged; that is the STARTER-trigger / MOS-emergence level near the 52wk low -- strict base=8% entry is deeper ~$154). Price remains the binding constraint (GOOGL-structured). new_money WATCH; existing HOLD.",
+      "drivers": ["S004", "S007", "S001"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 0,
+  "buy_below_price": 178.0,
+  "starter_zone": "No starter at $230.86. STARTER becomes available only at/below ~$175-180 (MOS begins to emerge, base 5y IRR to mid-single-digits, price near/below the 52wk low $196) OR if Q2-2026 (7/30) and subsequent prints show the AI capex releasing FCF / demonstrating incremental ROIC. Full-MOS (strict base 8% IRR) entry is deeper, ~$154.",
+  "add_zone": "n/a at WATCH. After an upgrade to STARTER (price <= ~$178 or capex-ROI/FCF confirmation), scale on confirmation.",
+  "trim_or_no_chase_zone": "No-chase at/above ~$230-244 (base IRR ~0 to negative). Watch zone ~$180-200. The price still embeds many years of high compounding plus a sustained premium exit multiple on a starting yield of ~2%.",
+  "binding_constraint": "Price still has no margin of safety (starting normalized owner-earnings yield 2.2-2.7%, base 5y IRR ~-0.4% even giving the ~$200B AI capex full credit; only the bull case clears the 8% hurdle) AND the owner-earnings bridge does not close (capex maintenance/growth split + incremental ROIC undimensioned, O4) -- with the resolving datapoint (Q2-2026) 2 days out and unincorporable. Valuation caps the verdict at WATCH; GOOGL-structured (price-capped), the OPPOSITE of the price-friendly names. The capex-audit regime sharpens the FCF-conversion question (AMZN's weakest axis) but does not break the thesis. Business quality is NOT the constraint.",
+  "kill_criteria": [
+    "Q2-2026 (7/30) or subsequent prints: capex keeps surging while AWS incremental revenue/profit and any FCF release do NOT match it (ROIC deteriorating) -> F1 value destruction. [ONLY path that can escalate toward veto; now the market's central capex-audit test]",
+    "AWS growth structurally falls below ~15% with weakening share -> moat/profit-pool erosion (F2).",
+    "Total operating margin reverts sharply from the record 13.1% to <9% -> retail-margin durability disconfirmed (F3).",
+    "FOMC/rate shock (hawkish Warsh) or net-financial-debt deterioration while OCF growth stalls -> leveraged capex model + long-duration discount-rate double-hit (F4).",
+    "Broad hyperscaler capex-ROI RE-RATE (regime): market compresses AMZN's multiple on the FCF-conversion axis independent of fundamentals -> could push price toward/through buy-below (an UPGRADE trigger, not a thesis break).",
+    "Price falls to <= ~$178 (MOS emerges, base IRR to mid-single-digits, near 52wk low) -> UPGRADE: lift the WATCH cap, evaluate STARTER.",
+    "Anthropic fair-value swings reverse and crater GAAP net income -> valuation-optics event (non-operating, monitor) (F5)."
+  ],
+  "runner_dissent": "Mechanical result (WATCH / HOLD) is unchanged from 6/19 and still feels CORRECT: textbook good-business-wrong-price, GOOGL-structured, the same five-soul panel put GOOGL at WATCH. The -5.5% price move ($244.39->$230.86) improved base 5y IRR from -1.5% to -0.4% and pushed the bull case over the 8% hurdle (+8.9%), but did NOT create a margin of safety -- base is still ~breakeven and starting yield is still ~2%. Three honest counter-risks logged. (1) TIMING: this card is locked 2 trading days BEFORE the Q2-2026 print (7/30) in a capex-audit regime where capex->FCF conversion is THE swing question -- initiating new money right before that binary, on a name with the weakest FCF conversion in the group, is itself a reason to WAIT; the print could resolve O4 either way. (2) too_small_missed_asymmetry (the SNDK lesson): if the ~$200B/yr AI capex is another AWS-style contrarian winner that releases enormous FCF in 3-5 yrs, WATCH at $231 could miss it -- which is exactly why it is WATCH not REJECT, with an explicit STARTER upgrade line (price <= ~$178 OR capex-ROI/FCF confirmation). The Anthropic 5GW/Trainium expansion is genuine evidence the demand side is real; it does NOT yet answer the ROIC question. (3) O4 bridge open: normalized OE is a band ($45-67B) not a point, so base IRR could be better OR worse -- but BOTH lenses (NOPAT and conservative OE) point to the same conclusion (price expensive, yield ~2%), so WATCH is robust to the uncertainty. Regime nuance worth stating: the semiconductor/memory crash is NOT uniformly bad for AMZN -- as a memory buyer with own silicon it is partly insulated (cheaper DRAM/CXMT helps), and its consumer engine sits partly in the rotation's favored bucket; that is why it held up while semis halved. Net: constraint = price (no MOS) + unclosable capex/owner-earnings bridge + a 2-day-out unincorporable print -> caps verdict at WATCH (not a veto: business intact, balance sheet survivable). Honest correction vs 6/19: the 6/19 card said buy-below ~$175-180 = 'base IRR back to 8%'; precise math shows base=8% needs ~$154 and $175-180 gives base ~+5% -- buy-below is retained at ~$178 as the STARTER-trigger / MOS-emergence level (near 52wk low), not the strict 8% level. Lower-confidence items still OPEN: Q2-2026 actuals (imminent), $200B capex maint/growth split + ROIC (O4, blocking), 10-K line items (O1), proxy (O3), Anthropic accounting (O6).",
+  "completeness_pct": 62,
+  "research_status": "DECISION_DRAFT",
+  "delta_vs_0619": "Price $244.39->$230.86 (-5.5%); mcap ~$2.66T->~$2.51T. Base 5y IRR -1.5%->-0.4%, bull +7.7%->+8.9% (now clears hurdle), bear -13.5%->-12.6%; starting yield 2.1-2.5%->2.2-2.7%. Still no MOS; buy-below $178 unchanged (model unchanged); gap to buy-below narrowed -27%->-23%. Q2-2026 NOT yet reported (prints 7/30, consensus rev $196.71B/EPS $1.82) -> biggest change to the information set, decision made pre-print. Regime overlaid into M4/M5/M6 (capex-audit year sharpens AMZN's FCF-conversion weakness; semis crash mixed-to-insulating for AMZN specifically; FOMC/Warsh rate risk). M2/M3 re-checked: no thesis break, Anthropic 5GW/Trainium reinforce. Verdict UNCHANGED: WATCH / HOLD.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm"},
+    {"source_id": "S002", "public_date": "2026-02-05", "url_or_path": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm"},
+    {"source_id": "S004", "public_date": "2026-07-28", "url_or_path": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN"},
+    {"source_id": "S007", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/amzn/"},
+    {"source_id": "S008", "public_date": "2026-07-28", "url_or_path": "https://www.statmuse.com/money/ask/amazon-stock-price-july-28-2026"},
+    {"source_id": "S009", "public_date": "2026-07-15", "url_or_path": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report"},
+    {"source_id": "S010", "public_date": "2026-04-20", "url_or_path": "https://www.anthropic.com/news/anthropic-amazon-compute"},
+    {"source_id": "S006", "public_date": "2026-05-04", "url_or_path": "https://www.cnbc.com/2026/05/04/andy-jassy-amazon-investors-rewarded-ai-spending.html"}
+  ]
+}

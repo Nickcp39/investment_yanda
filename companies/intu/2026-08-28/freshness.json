@@ -1,0 +1,82 @@
+{
+  "ticker": "INTU",
+  "as_of": "2026-08-27",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module freshness gate. Canonical as_of_price = $348.00 = 2026-08-27 SETTLED close (INC-003 rule). Dual source: Yahoo chart API $348.00 + Nasdaq API previousClose $348.00 (delta 0.0%). 2026-08-28 intraday (~$355.96 at 12:06pm ET) NOT used -- unsettled. Price -50.4% off 52wk close-basis high ($702.09) and +36.4% off low ($255.07) -> neither low- nor high-hug; low-hug proximity noted and justified: the 52wk low $255.07 (2026-06-25) is a tested cycle bottom from the AI-de-rating, and price has recovered +36% off it, so no hug justification needed.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 348.0,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU", "fetched_at": "2026-08-28", "value": 348.0},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/INTU/summary?assetclass=stocks", "fetched_at": "2026-08-28", "value": 348.0}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "note": "348.00 = 2026-08-27 settled close on both sources. 8/28 intraday ~$355.96 excluded (unsettled, INC-003)."
+    },
+    {
+      "field": "market_cap",
+      "value": 97330000000,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/INTU/summary?assetclass=stocks", "fetched_at": "2026-08-28", "value": 97330000000}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "Nasdaq-reported market cap $97.33B. Cross-check ~273.5M shares x $348 ~ $95.2B (share-count timing lag, flagged)."
+    },
+    {
+      "field": "52wk_high",
+      "value": 702.09,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU?range=1y", "fetched_at": "2026-08-28", "value": 702.09}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "Close-basis 52wk high. Price -50.4% off it."
+    },
+    {
+      "field": "52wk_low",
+      "value": 255.07,
+      "unit": "USD",
+      "as_of": "2026-08-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU?range=1y", "fetched_at": "2026-08-28", "value": 255.07}
+      ],
+      "cross_check_delta_pct": null,
+      "pass": true,
+      "note": "52wk low 2026-06-25 (cycle bottom, market-tested). Price +36.4% off it -> NOT a low-hug."
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2027 guidance (8-K 2026-08-25): revenue $23.279-23.512B (+9-10%); GBS +13-14%; TurboTax +2-3%; Credit Karma +11-13%; Mailchimp -1~0%; GAAP op income +26-27%; GAAP EPS $20.12-20.36 (+22-24%); non-GAAP EPS $22.88-23.12. Q1 FY27: revenue +11%.",
+      "as_of": "2026-08-25",
+      "sources": [
+        {"source_name": "sec_8k_fy2026", "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000029/0000896878-26-000029.txt", "public_date": "2026-08-25", "fetched_at": "2026-08-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "fundamentals_fy2026",
+      "is_quantitative": false,
+      "value": "FY2026 (ended 7/31/26): revenue $21.4B +14%; GAAP EPS $16.46 +20%; non-GAAP EPS $24.27 +20%; GBS +16% $12.9B; Online Ecosystem +19% $9.9B (ex-Mailchimp +23%); QBO Accounting +23%; TurboTax +7% $5.3B (Live +37%, 53% of TT); Credit Karma +20% $2.6B; TT federal units 39.0M (-2%); OCF $8,838M; capex $221M; FCF ~$8.6B; buybacks $5.5B (+96%); dividend $1.38/qtr +15%; Mailchimp separate segment from FY2027.",
+      "as_of": "2026-08-25",
+      "sources": [
+        {"source_name": "sec_8k_fy2026", "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000029/0000896878-26-000029.txt", "public_date": "2026-08-25", "fetched_at": "2026-08-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

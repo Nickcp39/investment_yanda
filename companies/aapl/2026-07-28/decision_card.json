@@ -1,0 +1,93 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "exceptional_compounder_overpriced",
+  "as_of_price": 340.08,
+  "as_of_market_cap": 5008000000000,
+  "share_basis_note": "14,725,873K diluted shares (last FILED = Q2 FY26 10-Q, ended 2026-03-28) x $340.08 (2026-07-28 close, Yahoo regularMarketPrice) = ~$5.008T. Apple has NOT yet filed the June quarter (fiscal Q3 FY26 reports 2026-07-30, two days after as_of), so no newer share count exists; ongoing $100B buyback has likely trimmed shares modestly (stockanalysis implies ~14,673M -> ~$4.99T). Both round to ~$5.0T; AAPL crossed $5T intraday on 2026-07-28 (2nd company ever after NVDA, reclaimed #1 from NVDA). Single common share class, one-share-one-vote. Price re-anchored from live quote, NOT from a 52wk extreme (INC-001 guard): 340.08 = regularMarketPrice = close, +68.8% off 52wk low 201.50, -0.8% off 52wk intraday high 342.89.",
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Load-bearing durable facts CARRIED from 6/19 primary sources (unchanged in 6 weeks): anchor quarter Q2 FY26 (ended 2026-03-28) revenue $111.2B/+17%, iPhone $57.0B, Services $31.0B/+16.3%, Greater China $20.5B/+28%, GM 49.3%, EPS $2.01/+22%; FY25 revenue $416.2B, NI $112.0B, OCF $111.5B, FCF ~$98.8B, net cash ~$61.9B, buybacks $90.7B + new $100B authorization. Price re-anchored $340.08 (2026-07-28 close) with THREE independent live sources agreeing at 0.0% delta (Yahoo chart API regularMarketPrice, stockanalysis.com $340.08/mktcap $4.99T/P-E 41.23, and CNBC/Bloomberg/Forbes $5T-milestone coverage) + the batch PLAN.md table. Confidence stepped to MED (from 6/19 high): the anchor quarter is 6 weeks staler and Apple reports the June quarter (fiscal Q3 FY26) in TWO DAYS (2026-07-30, Cook's final call) -- a material unseen print. Gaps (10-K line items, proxy detail, TAC magnitude, early 10yr series) remain haircuts, not vetoes.",
+      "drivers": ["S001", "S002", "S005", "S010", "S011"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context + conviction",
+      "signal": 2,
+      "confidence": "high",
+      "finding": "THESIS INTACT, no break in 6 weeks. Integrated hardware+software personal-computing ecosystem anchored by a 2B+ active installed base, monetized by ~70%-margin Services (annuity: hardware one-time sales convert to recurring high-margin Services). REGIME REINFORCES the 'quality compounder' read: the 7/28 semiconductor crash + rotation OUT of AI-hardware/memory/Korea INTO value/defensives drove a flight-to-quality bid into Apple (crossed $5T, reclaimed #1 from NVDA). News explicitly attributes Apple's outperformance (+~25% YTD vs NVDA +~6%) to 'a deliberate decision to stay largely on the sidelines of the costly AI infrastructure race that has pressured cash flows at many of its Big Tech peers' -- i.e., the capex-light annuity model is being repriced as the defensive winner of the capex-audit regime. Theme is stronger relatively; the question remains PRICE and AI-era entry durability.",
+      "drivers": ["S001", "S002", "S011", "S013"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Moat UNCHANGED and durable: ecosystem switching cost + brand pricing power + custom SoC + App Store two-sided platform; installed-base annuity HIGH (no erosion; Services +16.3% Q2). OPERATOR UPDATE (closes 6/19 O3): CEO succession is now RESOLVED, not open -- Tim Cook becomes executive chairman and John Ternus (SVP Hardware Engineering, 25-yr insider, 'product person') becomes CEO effective 2026-09-01 (announced 2026-04-20, unanimous board, orderly long-planned transition; 2026-07-30 is Cook's final earnings call). This REDUCES the 6/19 key-man/late-tenure haircut (uncertainty over WHETHER Cook leaves is resolved via the good kind of succession) but introduces a smaller NEW watch: Ternus's capital-allocation discipline is unproven, and the disciplined-buyback per-share engine (Cook 5/5) is central to the return thesis. CXMT/memory regime item is NOT a threat to Apple -- Apple is a memory BUYER, so a new DRAM entrant deflating the memory scarcity premium is a mild COGS tailwind, the opposite of the memory names. Net durability HIGH; would support Core-level size IF price allowed. Operator grade holds ~4/5.",
+      "drivers": ["S001", "S002", "S012", "S014"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Owner earnings unusually clean and, in THIS regime, a RELATIVE STRENGTH: capex-light (FY25 capex $12.7B / revenue $416B = 3%), FCF ~= net income (no NVDA-style equity-gain distortion), TTM NI ~$122.6B, TTM FCF ~$129B, owner-earnings anchor ~$120B (conservative). Fortress balance sheet: net cash ~$61.9B. Per-share engine ~2.5-4%/yr share shrink. In the 'AI-capex audit year' Apple is NOT the one being stress-tested on $125-200B/yr capex->FCF conversion (it rents AI compute via Google cloud / Nvidia GPUs rather than building it) -- the 6/19 'AI laggard' negative is, financially, a relative positive here. NO NEW APPLE EARNINGS in the 6/19->7/28 window: the June quarter (fiscal Q3 FY26) reports 2026-07-30 (2 days after as_of); consensus rev ~$109-110B / EPS ~$1.89 are ESTIMATES only, not owner-earnings inputs. M4 quality carried, not freshly re-confirmed -> confidence MED; the 7/30 print is the key near-term catalyst.",
+      "drivers": ["S001", "S002", "S011"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No structural impairment / no balance-sheet death (net cash $61.9B) -> still no hard veto. But the -1 is now dominated by ELEVATED valuation / mean-reversion risk: the +14% run to a rotation-driven 52wk high (41.7x OE, 2.4% yield) is a sentiment/flight-to-safety spike, NOT an earnings-driven re-rating (no new report), so mean-reversion risk is higher than 6/19; FOMC Wednesday with a (hawkish-leaning) Warsh press conference adds multiple-compression risk to a 41.7x long-duration 2.4%-yield asset. Crucially, the regime risks hammering peers mostly DO NOT apply to Apple: AI-capex-audit (capex-light), CXMT/memory deflation (Apple is a buyer -> tailwind). Google TAC search-remedy (O1) unchanged margin haircut; App Store global take-rate (F3) remains the only path that could escalate toward veto (needs multi-year global synchrony; not now). Transition risk: Ternus could alter capital-allocation discipline (watch, not veto). This is the INVERSE of a false-cheap trap -- it is a false-EXPENSIVE setup: overpaying for a genuine compounder at a rotation high. Price, not durability, is the binding constraint.",
+      "drivers": ["S001", "S008", "S011", "S014", "S009"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price + output",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "DELTA vs 6/19: M6 stepped -1 -> -2 as price rose +14.1% to a rotation-driven 52wk high. At $340.08 / ~$5.0T: trailing P/OE ~41.7x (was 36.5x), starting OE yield ~2.40% (was 2.7%), P/FCF ~38.8x, net cash only ~1.24% of market cap. Using the UNCHANGED 6/19 owner-earnings model, base 5y IRR falls to ~0.0% (was +2.7%) -- terminal value (~$339.5 incl. dividends) now roughly EQUALS today's price, so the base case returns ~nothing over 5 years. Asymmetry unfavorable and shifted down ~3 pts: bear -9.3% / base ~0.0% / bull +8.2% (even the bull barely clears the 8% hurdle). Current price is +47% above the $231 8%-IRR buy-below (was +29%). Price is a STRONG warning for NEW money -> caps new-money verdict at WATCH, a firmer no-chase than 6/19. Existing holders: no impairment + buyback accretion argue HOLD; but the trim-to-rotate case (trigger #2 price-toward-absurd + trigger #3 six cheaper Mega7 names) is now materially live (see runner_dissent).",
+      "drivers": ["S005", "S010", "S011"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 15.0,
+  "buy_below_price": 231.0,
+  "starter_zone": "No starter at current price. Starter ~3-5% only on a pullback to <= ~$231 (base 5y IRR ~8%, ~28x trailing OE). At $340.08 the price is +47% above this level.",
+  "add_zone": "Scale toward 8-15% only at <= ~$210 (base 5y IRR ~10%, ~26x). Durability (annuity moat) would support Core-level size, but ONLY if price cooperates; price, not durability, gates this. Current price is +62% above the add zone.",
+  "trim_or_no_chase_zone": "No-chase for new money at/above current ~$340. Existing holders HOLD (do not trim a ten-year exceptional compounder merely for being expensive -- methodology sell-trigger discipline; no impairment; buyback accretion continues). NOTE: the trim-to-rotate case has strengthened materially vs 6/19 (41.7x OE / ~0% base IRR approaches 'price absurd vs value' + the regime handed 6 cheaper quality Mega7 names) -- a light portfolio-level trim to fund cheaper names is defensible for an overweight holder, but that is a Portfolio-Controller decision above this single-name card. Hard trim only on thesis disconfirmation (K1/K3).",
+  "binding_constraint": "Price / valuation starting point -- MORE binding than 6/19. The +14.1% run to a rotation-driven 52wk high ($298.01 -> $340.08, ~$4.39T -> ~$5.0T) pushed trailing P/OE to ~41.7x and starting OE yield to ~2.40%, cutting base 5y IRR from +2.7% to ~0.0% and widening the premium over the $231 buy-below from +29% to +47%. New money has zero-to-negative base expected return and no margin of safety. Completeness (~55%) and durability (HIGH) do NOT cap here; price does (M6 -2 caps the new-money verdict at WATCH, same mechanism as GOOGL, opposite of NVDA). Secondary watch: FOMC/Warsh multiple-compression risk, Google TAC magnitude (O1), Ternus capital-allocation continuity post-2026-09-01 (new), and the imminent 2026-07-30 June-quarter print.",
+  "kill_criteria": [
+    "iPhone revenue declines YoY for 2-3 consecutive quarters AND Services growth falls below high-single-digits -> installed-base annuity bridge breaking; reassess durability (possible existing-position trim). WATCH the 2026-07-30 fiscal Q3 print.",
+    "Google TAC materially cut by the search-remedy default-deal ban AND Services gross margin visibly compresses -> margin erosion confirmed (haircut; deepens WATCH, magnitude OPEN O1).",
+    "App Store take-rate forced structurally lower globally (DMA/antitrust) impairing high-margin Services -> the ONLY path that can escalate toward veto (F3).",
+    "Absolute installed-base decline -> ecosystem moat breakage signal.",
+    "Price stays at/above ~$340 (no MOS) -> new money remains WATCH; only a pullback to <= ~$231 unlocks STARTER (now +47% above buy-below).",
+    "NEW (succession): the Ternus transition (CEO effective 2026-09-01) disrupts capital-allocation discipline -- buyback pace materially cut or a large dilutive/empire-building acquisition -> the per-share compounding engine (core of the return thesis) weakens -> durability-ceiling watch (existing HOLD, monitor).",
+    "NEW (regime): a hawkish FOMC/Warsh path drives multiple compression on this ~41.7x long-duration asset -> valuation mean-reversion (the M6 -2 price risk; a price risk, not a business veto)."
+  ],
+  "runner_dissent": "Carried from 6/19 (the 2016 SEVERE-UNDERSIZE lesson: do not under-ceiling a genuine compounder on a maturity narrative; I keep durability HIGH and let PRICE do the capping) -- PLUS three 7/28-specific points. (1) NEW MONEY got WORSE, not better: unlike the 6 peers that fell 16-37% (improving their entry IRR), AAPL's +14% run to a rotation-driven 52wk high cut base 5y IRR from +2.7% to ~0.0% and widened the premium over buy-below to +47%. A firmer WATCH is the correct, objective response; this is not timidity (2016 was cheap at ~10x + net cash 31% of cap; today is ~41.7x + net cash 1.24%). (2) The EXISTING-POSITION call is the genuine tension this run. For the first time the TRIM case is materially live -- NOT because weight got large (invalid per methodology; Duan let Apple run to ~60%) but because valuation approaches 'absurd vs value' (trigger #2: ~41.7x OE, ~0% base IRR on a low-single-digit grower) AND the regime handed a clean rotation opportunity (trigger #3: 6 other quality Mega7 names now 16-37% cheaper). I keep the single-name verdict at HOLD (exceptional durable compounder, no impairment, ongoing buyback accretion, orderly succession -- methodology says do not sell winners for being expensive), but an honest reader should treat this as HOLD-LEANING-TRIM: a light trim-to-rotate is defensible for an overweight holder and belongs to the Portfolio-Controller/Synthesis layer, not this card. (3) Cook->Ternus succession RESOLVES 6/19 O3 (net risk-reducer: orderly 25-yr insider transition), replacing key-man uncertainty with a smaller unproven-capital-allocator watch -- not thesis-breaking. Concentration note (METHODOLOGY §5): AAPL is the ONE Mega7 whose regime tailwind is flight-FROM-AI-capex, so it DIVERSIFIES a book otherwise long 'AI capex + liquidity' -- a point FOR holding it over the hardware names, but the entry price erases that edge for NEW money. Residual OPEN kept honest: TAC magnitude (O1), AI-entry monetization (O4), 10-K line items (O2), early 10yr series (O5), and the unseen 2026-07-30 print.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-04-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000011/a8-kex991q2202603282026.htm"},
+    {"source_id": "S002", "public_date": "2025-10-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000077/a8-kex991q4202509272025.htm"},
+    {"source_id": "S005", "public_date": "2026-06-18", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL"},
+    {"source_id": "S008", "public_date": "2026-06", "url_or_path": "https://www.justice.gov/opa/pr/department-justice-prevails-landmark-antitrust-case-against-google"},
+    {"source_id": "S009", "public_date": "2016-05-12", "url_or_path": "backtests/framework_validation/cases/aapl_2016-05-12/"},
+    {"source_id": "S010", "public_date": "2026-07-28", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL (regularMarketPrice 340.08, 52wk hi 342.89, lo 201.50; fetched 2026-07-28)"},
+    {"source_id": "S011", "public_date": "2026-07-28", "url_or_path": "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html"},
+    {"source_id": "S012", "public_date": "2026-07-28", "url_or_path": "https://www.fool.com/investing/2026/07/28/apple-reports-q3-earnings-on-july-30-heres-what-in/"},
+    {"source_id": "S013", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/aapl/ (price 340.08, mktcap 4.99T, P/E 41.23, 52wk hi 342.89, lo 201.50; fetched 2026-07-28)"},
+    {"source_id": "S014", "public_date": "2026-04-20", "url_or_path": "https://techcrunch.com/2026/04/20/tim-cook-stepping-down-as-apple-ceo-john-ternus-taking-over/"}
+  ]
+}

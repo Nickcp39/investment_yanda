@@ -1,0 +1,97 @@
+{
+  "ticker": "META",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate, mega7_2026-07-28 refresh. as_of_price INDEPENDENTLY RE-FETCHED via Yahoo chart API = 593.41 (2026-07-28 close, last <= as_of) and cross-confirmed by stockanalysis.com = 593.41 (0.0% delta). This is NOT a 52wk-low/high hug (593.41 is +14.1% off the 520.26 low and -25.5% off the 796.25 high). NOTE vs the batch handoff: the PLAN table listed 52wk high '790'; the live independent source (stockanalysis, fetched 2026-07-28) reports 796.25, matching the 6/19 cross-verified value -> using 796.25 (the 0.8% difference is immaterial to every tripwire/verdict). Q2-2026 has NOT yet been reported (Meta reports 2026-07-29 after close) -> the M4 owner-earnings anchor is the Q1-2026 (ended 2026-03-31) figure carried forward; FILED line items ride the dated-source claim_ledger from the 6/19 dossier.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 593.41,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/META", "fetched_at": "2026-07-28", "value": 593.41},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-07-28", "value": 593.41}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1510000000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-07-28", "value": 1510000000000},
+        {"source_name": "derived", "url": "2545M shares x 593.41", "fetched_at": "2026-07-28", "value": 1510228450000}
+      ],
+      "cross_check_delta_pct": 0.02,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 796.25,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-07-28", "value": 796.25},
+        {"source_name": "websearch_cnbc", "url": "https://www.cnbc.com/quotes/META", "fetched_at": "2026-07-28", "value": 796.25}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true,
+      "batch_handoff_note": "PLAN.md table listed 790; live stockanalysis + 6/19-verified value = 796.25. 0.8% diff, immaterial."
+    },
+    {
+      "field": "52wk_low",
+      "value": 520.26,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/", "fetched_at": "2026-07-28", "value": 520.26},
+        {"source_name": "websearch_cnbc", "url": "https://www.cnbc.com/quotes/META", "fetched_at": "2026-07-28", "value": 520.26}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2545,
+      "unit": "millions",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/ (mcap 1.51T / price 593.41)", "fetched_at": "2026-07-28", "value": 2545},
+        {"source_name": "derived_ni_eps_0619", "url": "Q1 2026 net income 26773M / diluted EPS 10.44 (S001)", "fetched_at": "2026-06-21", "value": 2564}
+      ],
+      "cross_check_delta_pct": 0.75,
+      "pass": true
+    },
+    {
+      "field": "active_litigation",
+      "is_quantitative": false,
+      "value": "FTC v. Meta (IG/WhatsApp monopolization): UNCHANGED in direction since 6/19 -- still a trial-level WIN for Meta now under FTC appeal, NOT an imminent breakup. 2025-11-18 Judge Boasberg (DDC) ruled Meta does NOT hold a monopoly and will NOT force an IG/WhatsApp spin-off. 2026-01-20 FTC filed notice of appeal to the DC Circuit. 2026-05-29..31 twenty-eight states + DC filed a joint amicus backing the FTC (up from the 24+ AGs noted on 6/19); AAI also urged the DC Circuit to vacate the district court's market-definition/monopoly-power findings. => still a LONG-TAIL appellate tail risk that already cleared trial in Meta's favor; more amici piling on but NO new ruling and no breakup order. F4 risk profile unchanged (non-veto long tail).",
+      "as_of": "2026-05-31",
+      "sources": [
+        {"source_name": "techtimes", "url": "https://www.techtimes.com/articles/317454/20260531/meta-antitrust-appeal-29-states-back-ftc-whatsapp-privacy-lawsuit-intensifies-instagram-breakup.htm", "public_date": "2026-05-31", "fetched_at": "2026-07-28"},
+        {"source_name": "ftc_gov", "url": "https://www.ftc.gov/news-events/news/press-releases/2026/01/ftc-appeals-ruling-meta-monopolization-case", "public_date": "2026-01-20", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2-2026 NOT YET REPORTED as of as_of 2026-07-28: Meta reports Q2-2026 after market close on 2026-07-29 (call 4:30pm ET, Zuckerberg + CFO Susan Li). Consensus into the print: revenue ~$60.2B (~+27% Y/Y, decel from Q1 +33%; vs the $58-61B guide), EPS ~$7.18 (adj EPS growth only ~+1% Y/Y). FY2026 capex guidance $125-145B incl finance leases (raised at Q1 print 2026-04-29 from $115-135B, driven by higher memory/networking component prices) -- confirmed UNCHANGED heading into the print; total-expense guide $162-169B; expects 2026 operating income above 2025. Same-day (2026-07-29) FOMC decision + Warsh press conference. => the single decisive variable (capex-ROI / any further capex raise) drops the day AFTER as_of and is UNKNOWN here.",
+      "as_of": "2026-07-27",
+      "sources": [
+        {"source_name": "blockonomi_earnings_preview", "url": "https://blockonomi.com/meta-meta-q2-2026-earnings-preview-should-you-buy-the-stock-ahead-of-july-29-report/", "public_date": "2026-07-27", "fetched_at": "2026-07-28"},
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm", "public_date": "2026-04-29", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

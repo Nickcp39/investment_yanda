@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美股投资网 归档趋势分析 · 2026-05 → 08</title>
+<style>
+:root{
+  --bg:#f7f6f3;--card:#fff;--ink:#1b1b1a;--muted:#6b6a66;--line:#e3e1db;
+  --accent:#8b5e34;--accent-soft:#f0e6da;
+  --hot:#c0392b;--hot-soft:#fbeae8;--cold:#2c5f8a;--cold-soft:#e8f0f6;
+  --warn:#a8560f;--warn-soft:#fbf0e3;--ok:#2f6b4f;--ok-soft:#e6f0ea;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16171a;--card:#1e2024;--ink:#e8e6e1;--muted:#9a988f;--line:#2e3136;
+    --accent:#c99a6a;--accent-soft:#2a2420;
+    --hot:#e07a6c;--hot-soft:#2e211f;--cold:#7aa8cc;--cold-soft:#1c2429;
+    --warn:#d99050;--warn-soft:#2c231a;--ok:#7db99a;--ok-soft:#1d2723;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65;
+  font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 80px}
+header{border-bottom:2px solid var(--ink);padding-bottom:18px}
+h1{font-size:29px;margin:0 0 6px;letter-spacing:-.4px}
+.sub{color:var(--muted);font-size:14px}
+h2{font-size:19px;margin:46px 0 14px;padding-left:11px;border-left:4px solid var(--accent)}
+h3{font-size:15px;margin:24px 0 8px;font-weight:600}
+.lead{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0;font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:16px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:24px;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+.stat span{font-size:12px;color:var(--muted)}
+/* 情绪时间轴 */
+.tl{list-style:none;padding:0;margin:20px 0 0}
+.tl li{display:grid;grid-template-columns:82px 62px 1fr;gap:14px;align-items:start;
+  padding:11px 0;border-bottom:1px solid var(--line)}
+.tl .d{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px}
+.temp{height:20px;border-radius:4px;position:relative;margin-top:3px;font-size:10px;
+  display:flex;align-items:center;justify-content:center;font-weight:600;color:#fff}
+.t5{background:#c0392b}.t4{background:#d9744f}.t3{background:#b3a074}
+.t2{background:#5b87a8}.t1{background:#2c5f8a}
+.tl .c strong{display:block;font-size:14.5px;font-weight:600;margin-bottom:2px}
+.tl .c span{font-size:13px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:11.5px;letter-spacing:.5px;text-transform:uppercase}
+td.m{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;white-space:nowrap;margin-right:4px}
+.t-hot{background:var(--hot-soft);color:var(--hot)}
+.t-cold{background:var(--cold-soft);color:var(--cold)}
+.t-warn{background:var(--warn-soft);color:var(--warn)}
+.t-ok{background:var(--ok-soft);color:var(--ok)}
+.t-acc{background:var(--accent-soft);color:var(--accent)}
+ul.plain{padding-left:19px;font-size:14.5px;margin:8px 0}
+ul.plain li{margin:7px 0}
+.note{background:var(--warn-soft);border:1px solid var(--warn);border-radius:10px;padding:15px 19px;font-size:13.5px}
+.note b{color:var(--warn)}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:10px 0;color:var(--muted);font-size:13.5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.two{grid-template-columns:1fr}.tl li{grid-template-columns:70px 46px 1fr;gap:10px}}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>「美股投资网」归档趋势分析</h1>
+  <div class="sub">样本 309 篇 · 重点区间 2026-05-01 → 2026-08-10 · 生成于 2026-08-11</div>
+</header>
+
+<div class="lead">
+<strong>一句话结论：</strong>过去三个半月这个号完整走了一遍<strong>亢奋 → 预警 → 崩跌 → 恐慌 → 理性收敛</strong>的循环，当前（8 月）停在"换仓而非退潮"的中性偏防御位置。其中<strong>只有 5/16 那次预警是真正提前的</strong>（两天后应验，一个半月后被大级别验证）；其余判断基本是跟随行情的事后解释。最值得当指标用的不是它的观点，而是它的<strong>标题情绪</strong>——极端标题密集出现的位置，与板块拐点高度重合。
+</div>
+
+<div class="stats">
+  <div class="stat"><b>309</b><span>归档总篇数</span></div>
+  <div class="stat"><b>40</b><span>2026-05 至今</span></div>
+  <div class="stat"><b>~2959</b><span>篇均字数</span></div>
+  <div class="stat"><b>1</b><span>信源数（单一）</span></div>
+  <div class="stat"><b>~5</b><span>主线轮换次数</span></div>
+</div>
+
+<h2>一、情绪温度时间轴</h2>
+<p style="font-size:14px;color:var(--muted);margin:0">温度由标题措辞判定（红＝亢奋/恐慌等极端，蓝＝冷静/防御）。注意<strong>极端红色成对出现在拐点两侧</strong>。</p>
+
+<ul class="tl">
+  <li><span class="d">05-01</span><span class="temp t5">亢奋</span><span class="c"><strong>见证历史！纳指突破25000点，太多好股了！吃不完！</strong><span>同日另一篇《跟着白宫混有肉吃》。4/30 还有《再不上车就晚了》。情绪顶。</span></span></li>
+  <li><span class="d">05-16</span><span class="temp t2">预警</span><span class="c"><strong>警惕！美股回调的风险逐渐增大</strong><span>提出"宏观大于AI"框架：10Y 站上 5%、30Y 冲 5.5%、油站稳 100、核心通胀反弹、美联储重提加息。建议转向现金流强的 AI 公司＋电力＋能源＋防御。<span class="tag t-ok">事后看：这是全区间唯一提前且被验证的判断</span></span></span></li>
+  <li><span class="d">05-18</span><span class="temp t4">崩跌</span><span class="c"><strong>美股AI股全线崩跌，该如何保护仓位？</strong><span>距上一篇预警仅 2 天。</span></span></li>
+  <li><span class="d">05-20</span><span class="temp t3">修复</span><span class="c"><strong>英伟达交出史诗级财报！穿越"利好出尽"的迷雾</strong><span>5/19 前瞻 9029 字，是全区间最长文之一。</span></span></li>
+  <li><span class="d">05-26</span><span class="temp t5">亢奋</span><span class="c"><strong>一辈子一遇的 美股超级大牛市！</strong><span class="tag t-warn">正文实为 VIP 会员推销，非行情分析</span><span>与 10 天前的预警直接矛盾。</span></span></li>
+  <li><span class="d">06-04→18</span><span class="temp t5">造势</span><span class="c"><strong>SpaceX 六连发（SPCX 6/12 上市）</strong><span>《三个价值陷阱》《五大风险》《推演半年走势 $135 托底 $175.5 抛售》《彻底疯了！不用感谢我》《IPO解禁时间表》《为何暴跌11%》。<span class="tag t-hot">单一事件占据 6 月近半产量</span></span></span></li>
+  <li><span class="d">06-05</span><span class="temp t4">崩跌</span><span class="c"><strong>黑色星期五！美股AI集体崩跌</strong><span>核心论点：隐含相关性极低＝结构性牛市而非全面牛市，"选股比择时更重要"。</span></span></li>
+  <li><span class="d">06-17</span><span class="temp t2">清仓</span><span class="c"><strong>我清了 SpaceX，美联储新主席首秀四大"意外"</strong><span>SPCX 收跌 4.95% 报 191.82，上市以来首次单日收跌。距 6/12 上市 5 天。</span></span></li>
+  <li><span class="d">06-19</span><span class="temp t3">公告</span><span class="c"><strong>突发！我们一个重大的转变！</strong><span>565 字，宣布深度内容迁往自有网站，公众号减少发布。<span class="tag t-acc">这是归档增速在 7 月骤降的直接原因</span></span></span></li>
+  <li><span class="d">07-01</span><span class="temp t5">恐慌</span><span class="c"><strong>我逃顶了？美股芯片全线暴跌！</strong><span>Meta 转向"财务纪律"，AI 叙事从"能力竞赛"转向"变现之争"。</span></span></li>
+  <li><span class="d">07-02</span><span class="temp t4">利空</span><span class="c"><strong>四大利空突袭美股AI产业，逻辑正在变天！</strong><span>6 月非农仅 5.7 万（预期 11 万+），4/5 月合计下修 7.4 万。资金从 AI 硬件/光通信撤向医疗、必需消费、金融、公用、能源——"指数没崩，拥挤交易先崩"。结论仍是<em>别把调整当拐点</em>。</span></span></li>
+  <li><span class="d">07-13</span><span class="temp t4">恐慌</span><span class="c"><strong>什么！美联储暗示要加息，吓崩了美股！</strong><span>沃勒表态，核心 PCE 同比 3.4%，自 1 月起持续走高。</span></span></li>
+  <li><span class="d">07-28</span><span class="temp t2">收敛</span><span class="c"><strong>半导体暴跌之后，别急着给AI判死刑，散户必读</strong><span class="tag t-ok">全区间质量最高的一篇</span><span>不猜底，改为区分"情绪修复式反弹"与"错杀式下跌"；强调仓位纪律——"能否承受再跌 20%，应在买入之前回答"。</span></span></li>
+  <li><span class="d">08-09</span><span class="temp t1">中性</span><span class="c"><strong>周末必读！高盛内部视角全解读</strong><span>转述高盛周报：资金<strong>能源→金融、半导体→软件</strong>，黄金作为对冲被重新重视。9 月降息概率约 40%。</span></span></li>
+  <li><span class="d">08-10</span><span class="temp t3">分化</span><span class="c"><strong>光通信板块暴跌！路透旧调查为何突然成利空</strong><span>磷化铟（InP）供应链＋高位获利了结。COHR/LITE 静态 PE 已超 100 倍。把判断权交给财报：LITE 8/11 盘后、COHR 8/12、MRVL 月底。</span></span></li>
+</ul>
+
+<h2>二、五个可用的发现</h2>
+
+<div class="card">
+<h3 style="margin-top:0">1 · 极端标题＝拐点标记，比正文观点更有用</h3>
+<p style="margin:0;font-size:14.5px">"吃不完""一辈子一遇""再不上车"密集出现在 <strong>5/01–5/26</strong>；"我逃顶了""吓崩了""判死刑"密集出现在 <strong>7/01–7/28</strong>。两段各自贴着一个局部极值。反过来，<strong>标题一变平（8/09"高盛视角"这种）就说明情绪已经出清</strong>。这个信号不需要读正文，扫标题即可。</p>
+</div>
+
+<div class="two">
+<div class="card">
+<h3 style="margin-top:0">2 · 唯一的前瞻判断在 5/16</h3>
+<p style="margin:0;font-size:14px">五个观察点（10Y→5%、30Y→5.5%、油→100、核心通胀反弹、重提加息）在随后三个月里<strong>兑现了至少三个</strong>：7/13 加息讨论落地、核心 PCE 报 3.4%、AI 板块内部大分化。它当时给的方向（弃纯概念、要现金流＋电力＋能源＋防御）也和 8/09 高盛说的换仓路径基本一致。</p>
+</div>
+<div class="card">
+<h3 style="margin-top:0">3 · 但 10 天后自我否定</h3>
+<p style="margin:0;font-size:14px">5/26《一辈子一遇的超级大牛市》正文<strong>通篇是会员推销</strong>（自述"连续两年发年度必买10只股，5只翻2-3倍"、"CEO 拒绝千万美元融资"、"VIP 通道可能关闭"）。同一个号 10 天内既预警又喊超级牛市，说明<strong>标题和观点服务于转化，不构成连续立场</strong>。不要把它的任何单篇当作持仓依据。</p>
+</div>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">4 · SpaceX 是一次完整的流量周期，值得单独记账</h3>
+<p style="margin:0 0 8px;font-size:14.5px">6/04 到 6/18 十四天内发了 <strong>6 篇</strong> SpaceX（含 9323 字和 7347 字两篇长文），覆盖上市前造势、上市日、解禁表、目标价推演；<strong>6/17 宣布清仓</strong>，此后再无跟进。</p>
+<p style="margin:0;font-size:14px;color:var(--muted)">这个形状——事件前高密度产出、事件后 5 天内离场、再不复盘——是判断该号内容属性的关键证据：它是<strong>事件驱动的注意力生意</strong>，不是持仓跟踪。以后再看到同类密集轰炸（下一个可能是某个 IPO 或财报），可以直接按这个模板预期它的节奏。</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">5 · 7 月起产量骤降是结构性的，不是行情原因</h3>
+<p style="margin:0;font-size:14.5px">6/19 公告把深度内容迁往 StockWe.com / TradesMax.com，公众号只留浅内容。<strong>7 月仅 6 篇、8 月至今 2 篇</strong>（前 12 个月月均 14–29 篇）。这意味着<strong>这个归档作为情绪样本的密度已经下降</strong>，往后单靠它做时间序列会失真——要么接受采样变稀，要么补别的号。</p>
+</div>
+
+<h2>三、主线漂移（按月 ticker 提及）</h2>
+<table>
+  <thead><tr><th class="m">月份</th><th>集中方向</th><th>高频标的</th></tr></thead>
+  <tbody>
+    <tr><td class="m">2026-03</td><td>存储＋云算力＋光模块</td><td>MU · NBIS · MRVL · AVGO · CPO · IREN · GLW · AAOI</td></tr>
+    <tr><td class="m">2026-04</td><td>CPU 转向＋消费电子</td><td>AMD(6) · MRVL(5) · FLY(5) · AMZN(5) · GLW · UNH · COHR · POET</td></tr>
+    <tr><td class="m">2026-05</td><td>AI-PC＋英特尔叙事＋存储</td><td>AMD(8) · MU(6) · INTC(5) · NBIS · NVDA · ARM · SNDK · TTMI</td></tr>
+    <tr><td class="m">2026-06</td><td>SpaceX 事件＋核电＋太空</td><td>MU · AMD · NBIS · MRVL · LEU · OKLO · NNE · PL · LUNR · VSAT</td></tr>
+    <tr><td class="m">2026-07</td><td>存储/NAND 重定价＋设备</td><td>MU · SNDK · KLAC · AMAT · LRCX · ASML · TSM</td></tr>
+    <tr><td class="m">2026-08</td><td>光通信＋避险资产</td><td>LITE · COHR · MRVL · GLD · XLE · SOX · CRO</td></tr>
+  </tbody>
+</table>
+<p style="font-size:13.5px;color:var(--muted);margin-top:10px">全库累计 top：AMD 58 · NVDA 38 · MU 38 · OKLO 35 · LEU 34 · CRCL 34 · NNE 33 · TSLA 30 · NBIS 29。<strong>主线平均一个月换一次</strong>，且换仓通常发生在该方向已经大涨之后——这是追热点的典型节奏，不是提前布局。</p>
+
+<h2>四、该号描述的宏观框架</h2>
+<div class="note">
+<p style="margin:0 0 8px"><b>以下全部是该号的转述，不是已核实事实，用前必须独立验证：</b></p>
+<ul class="plain" style="margin:0">
+  <li><strong>美联储已换主席（沃什）</strong>，2026-06 首秀即废止前瞻指引、缺席点阵图、重构数据权重、审查资产负债表——"把市场赖以生存的可预测性收回"。<span class="tag t-warn">重大宏观前提，须查一手</span></li>
+  <li>核心 PCE 同比 <strong>3.4%</strong>（截至 5 月），自 1 月起持续走高；沃勒公开表达担忧，市场开始定价<strong>加息</strong>而非降息。</li>
+  <li>6 月非农新增 <strong>5.7 万</strong>，远低于预期 11 万+；4/5 月合计下修 7.4 万。</li>
+  <li>9 月降息概率期货定价约 <strong>40%</strong>（8/09 口径）。</li>
+  <li>10Y 逼近 5%、30Y 向 5.3–5.5%；油价 100 一线。</li>
+  <li>Meta 转向"财务纪律"，引发 AI 资本开支拐点之争；叙事从"能力竞赛"转向"变现之争"（ROI）。</li>
+  <li>光通信上游磷化铟（InP）出口许可延迟、晶圆涨价——该号认为"不是小作文"，但影响未确认。</li>
+</ul>
+</div>
+
+<h2>五、怎么用 / 不能怎么用</h2>
+<div class="two">
+<div class="card">
+<h3 style="margin-top:0;color:var(--ok)">✓ 可以这样用</h3>
+<ul class="plain" style="margin:0">
+  <li><strong>散户情绪计时器</strong>：按标题极端度打分，做成周频序列，与 SPY/SOX 对照，标记恐慌与亢奋极值。</li>
+  <li><strong>叙事考古</strong>：某个板块"什么时候开始被讲成故事"——归档能给出准确的首次提及日期（如 TTMI 首见 2026-01-16、GLW 首见 2026-01-27）。</li>
+  <li><strong>反向观察</strong>：它开始密集轰炸某标的时，通常该标的已经涨了一段，接近拥挤。</li>
+  <li><strong>宏观事件的民间口径</strong>：知道散户层面在被灌输什么框架，本身有信息量。</li>
+</ul>
+</div>
+<div class="card">
+<h3 style="margin-top:0;color:var(--hot)">✗ 不能这样用</h3>
+<ul class="plain" style="margin:0">
+  <li><strong>当事实源</strong>：所有数据（非农、PCE、目标价、市占率）都是二次转述，无原始链接。</li>
+  <li><strong>当业绩记录</strong>："5 只翻 2–3 倍""21.4 美元精准买入 INTC"均为事后自述，无时间戳凭证，未见名单原文。</li>
+  <li><strong>当持仓依据</strong>：立场 10 天内可自我否定，且清仓后不复盘。</li>
+  <li><strong>做单一信源的时间序列</strong>：6/19 后产量结构性下降，样本密度已断裂。</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">下一步建议</h3>
+<ul class="plain" style="margin:0">
+  <li>补 <strong>1–2 个风格相反的号</strong>（偏机构/偏空），才能把"情绪"从"这一个号的情绪"里分离出来。现在单一信源做不了交叉验证。</li>
+  <li>把标题情绪打分<strong>脚本化</strong>（关键词表＋人工校准），落成 CSV，才能和你现有的市场数据面板对齐——目前这层分析还是人读出来的，不可复现。</li>
+  <li>验证那条<strong>美联储换主席</strong>的前提。如果属实，你所有框架里"降息路径"相关的假设都要重做；如果是该号误传，那 6–7 月这批文章的宏观论证整体不可用。这是本次分析里最需要优先落实的一条。</li>
+</ul>
+</div>
+
+<footer>
+数据源：sources/news/wechat_mp/manifest.jsonl（309 篇）＋ articles/*.md 全文<br>
+方法：ticker 正则提取＋按月计频；情绪温度由标题措辞人工判定；观点摘取自各篇结论段<br>
+生成于 2026-08-11 · D:\work\investment\financial-analysis-lab\studies\wechat_mp_sentiment_2026-08.html
+</footer>
+
+</div>
+</body>
+</html>

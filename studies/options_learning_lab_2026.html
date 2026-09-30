@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>期权学费账户实验方案 · 懂但不做的学习地图 (2026)</title>
+<style>
+  :root{
+    --bg:#faf9f6; --card:#ffffff; --ink:#1a1a1a; --muted:#6b6b6b;
+    --accent:#0f6b4f; --accent2:#8a5a00; --warn:#a03030; --line:#e5e2da;
+    --code:#f2f0ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#161513; --card:#201f1c; --ink:#e8e6e1; --muted:#9a978f;
+      --accent:#5fbf9a; --accent2:#d9a84e; --warn:#e08585; --line:#37352f; --code:#2a2926; }
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--bg); color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC",-apple-system,"Segoe UI",sans-serif;
+    line-height:1.85; max-width:880px; margin:0 auto; padding:48px 24px 80px;}
+  h1{font-size:1.7em; line-height:1.4; margin-bottom:6px;}
+  .sub{color:var(--muted); margin-bottom:36px; font-size:.95em;}
+  h2{font-size:1.25em; margin:44px 0 14px; padding-bottom:8px; border-bottom:2px solid var(--accent); display:inline-block;}
+  h3{font-size:1.05em; margin:24px 0 8px; color:var(--accent2);}
+  p{margin:10px 0;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; margin:16px 0;}
+  .quote{border-left:3px solid var(--accent); padding:8px 16px; color:var(--muted); font-style:normal; margin:14px 0; background:var(--code); border-radius:0 8px 8px 0;}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:.93em;}
+  th{text-align:left; border-bottom:2px solid var(--line); padding:8px 10px; color:var(--muted); font-weight:600; white-space:nowrap;}
+  td{border-bottom:1px solid var(--line); padding:9px 10px; vertical-align:top;}
+  .tablewrap{overflow-x:auto;}
+  .tag{display:inline-block; font-size:.78em; padding:1px 9px; border-radius:20px; border:1px solid var(--accent); color:var(--accent); margin-right:6px; white-space:nowrap;}
+  .tag.gold{border-color:var(--accent2); color:var(--accent2);}
+  .tag.red{border-color:var(--warn); color:var(--warn);}
+  .rule{background:var(--code); border-radius:8px; padding:14px 18px; margin:10px 0;}
+  .rule b{color:var(--warn);}
+  ul,ol{padding-left:1.4em; margin:8px 0;}
+  li{margin:6px 0;}
+  .foot{margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85em;}
+  .kbd{background:var(--code); border:1px solid var(--line); border-radius:4px; padding:0 6px; font-family:Consolas,monospace; font-size:.9em;}
+</style>
+</head>
+<body>
+
+<h1>期权学费账户实验方案<br>——"懂但不做"的学习地图</h1>
+<div class="sub">as of 2026-07-28 · 定位：教育实验，非投资建议 · 预算：$3,000–5,000（预先记为已花掉的学费）</div>
+
+<h2>0. 为什么这件事值得做</h2>
+<div class="card">
+<p>目标不是赚钱，是把三样东西从"听说过"变成"身体懂"：</p>
+<ol>
+<li><b>期权作为工具的物理性质</b>——theta 每天怎么啃你，IV crush 是什么体感，卖方为什么睡得着觉；</li>
+<li><b>自己的神经系统参数</b>——多大的仓位波动会让你心跳加速？规则能不能拦住上头的你？这是花钱买不到、只能实测的数据；</li>
+<li><b>"懂了所以不做"的资格</b>——芒格标准：能比对手更好地陈述他的打法，才有资格说不。</li>
+</ol>
+<p class="quote">巴菲特不是不懂衍生品——伯克希尔卖过 49 亿美元权利金的超长期指数 put；段永平公开玩卖 put / covered call。两人玩的都是<b>期权卖方（赌场端）</b>：低频、收时间价值、跌了正好买到想买的公司。和"39 倍买方奇迹"是同一个市场里的镜像两端。</p>
+</div>
+
+<h2>1. 表情暴露问题：为什么完全不影响你</h2>
+<div class="card">
+<ul>
+<li><b>市场没有脸。</b>你的对手方是订单簿和做市算法，喜形于色对它不构成信息泄露。扑克训练里"读脸/藏脸"那部分，对投资的可迁移价值是零；可迁移的是<b>期望值计算、下注尺寸、决策质量≠结果质量</b>——全是数学和纪律，匿名可练。</li>
+<li><b>巴菲特打桥牌也是网上打的</b>（马甲 "T-Bone"，每周约 8 小时），他练的是不完全信息下的概率推理，不是扑克脸。你如果想练牌类思维，线上匿名局或和 AI 打完全等效。</li>
+<li><b>喜形于色唯一的真实风险是对自己暴露</b>——赢了兴奋想加仓、亏了上头想翻本。解法不是控制表情，是<b>把决策前移</b>：所有进出场规则在开仓前白纸黑字写死，盘中的你只负责执行，没有决策权。本方案的日志和铁律就是干这个的。</li>
+<li>顺带一句：能实时感知到自己兴奋的人，自我觉察高于压抑型选手。你缺的不是城府,是把觉察接上刹车的那根线——规则就是那根线。</li>
+</ul>
+</div>
+
+<h2>2. 三条铁律（先于一切策略）</h2>
+<div class="rule"><b>铁律一：</b>账户金额一次性存入，<b>12 个月内不加钱、不加单笔尺寸</b>——无论赢亏。赢了想加码是这个实验里最大的风险事件（比亏光大得多）。</div>
+<div class="rule"><b>铁律二：</b>只做 <b>defined-risk</b>（最大亏损开仓时已知）：买方单腿、价差、cash-secured put。<b>禁止</b>：裸卖 call、0DTE、盘中加仓摊平。</div>
+<div class="rule"><b>铁律三：</b>没有交易卡（见 §5）不许开仓。开仓后盘中查看每天限两次，各 5 分钟。心跳加速时的标准动作：关掉软件，等明天——反正最大亏损已经锁定了。</div>
+
+<h2>3. 四阶段课程设计</h2>
+<div class="card">
+<h3>Phase 0 · 纸上期（2–4 周，$0）</h3>
+<ul>
+<li>读 Natenberg 核心章节（见 §4），同时开券商模拟盘（paper trading）；</li>
+<li><b>毕业标准</b>：能看懂一条期权链——说出任一合约的内在价值/时间价值，解释它的 delta 和 IV 意味着什么；理解"买期权是付租金，卖期权是收租金"。</li>
+</ul>
+<h3>Phase 1 · 买方体验期（1–2 个月，预算 ≤ 学费的 30%）</h3>
+<ul>
+<li>用极小仓位（单笔 ≤ $300）买 2–3 次单腿 call/put：一次远月、一次近月、一次<b>故意</b>横跨财报（体验 IV crush）；</li>
+<li>这是学费的主要去处，<b>预期结果是亏掉大部分</b>——目的就是让身体记住 theta 和 IV 的杀伤方式；</li>
+<li><b>毕业标准</b>：日志里能写出"我这次亏的钱里，多少是方向错、多少是 theta 吃的、多少是 IV 塌的"。能拆出这三笔账，胜过读十本书。</li>
+</ul>
+<h3>Phase 2 · 卖方体验期（2–3 个月）</h3>
+<ul>
+<li>在<b>本来就愿意长期持有</b>的低价标的上（几千美元本金决定了只能选股价 $20–50 的标的或迷你合约），卖 1 张 cash-secured put，行权价选你真心愿意接货的价格；</li>
+<li>体验两件事：时间站在你这边是什么感觉；被行权接货时是"计划实现"而不是"事故"——这就是段永平玩法的最小复刻；</li>
+<li><b>毕业标准</b>：完整经历一次到期（无论行权与否），日志能回答"卖方的钱是从哪来的？我承担了什么风险换的？"</li>
+</ul>
+<h3>Phase 3 · 结构体验期（可选，1–2 个月）</h3>
+<ul>
+<li>做 2–3 次垂直价差（vertical spread），体验"用放弃上限换取降低成本"的结构化思维；</li>
+<li><b>毕业标准</b>：能对任何一个期权组合口头说出它的最大亏/最大赚/盈亏平衡点，并说出它在赌什么（方向？波动率？时间？）。</li>
+</ul>
+<p style="margin-top:14px"><b>结课标准（12 个月后）</b>：不看盈亏，看你能不能写出一页纸——《我为什么做/不做期权》，其中每个论断都来自自己的交易日志而不是别人的文章。写得出来，这 $3–5k 就是你这辈子性价比最高的学费之一。</p>
+</div>
+
+<h2>4. 阅读地图（科学层 → 工艺层）</h2>
+<div class="tablewrap">
+<table>
+<tr><th>资源</th><th>层级</th><th>读它的目的</th><th>投入</th><th>怎么读</th></tr>
+<tr><td><b>Natenberg《Option Volatility &amp; Pricing》</b></td><td><span class="tag">科学层</span></td><td>做市商桌上的标准教材；希腊字母和波动率的物理直觉</td><td>4–6 周</td><td>精读 1–7、18–19 章（基础+风险），做市细节章节跳过</td></tr>
+<tr><td><b>Euan Sinclair《Positional Option Trading》</b></td><td><span class="tag gold">工艺层</span></td><td>全网最诚实的一本：散户真实可得的 edge 有哪些、有多小</td><td>2–3 周</td><td>通读；重点是波动率风险溢价（VRP）章节——段永平玩法的学术版</td></tr>
+<tr><td><b>Agustin Lebron《The Laws of Trading》</b></td><td><span class="tag gold">工艺层</span></td><td>Jane Street 前交易员写的 prop firm 训练心法；"不知道自己 edge 的人就是别人的 edge"</td><td>1–2 周</td><td>通读，当思维书看，不涉及具体技术</td></tr>
+<tr><td><b>《Market Wizards》系列（Schwager）</b></td><td><span class="tag gold">工艺层</span></td><td>顶级交易员访谈考古；观察"人形量化"这个物种的共性（几乎全部：仓位纪律+认亏速度）</td><td>随时翻</td><td>床头书，挑人物读</td></tr>
+<tr><td><b>Jane Street「Figgie」纸牌游戏</b></td><td><span class="tag gold">工艺层</span></td><td>JS 内部训练做市直觉的游戏，已公开（figgie.com）；线上匿名，无表情问题</td><td>娱乐</td><td>想玩就玩，不想玩不损失什么</td></tr>
+<tr><td><b>Colin Bennett《Trading Volatility》</b></td><td><span class="tag">科学层</span></td><td>波动率交易免费公开的进阶材料（网上有 PDF）</td><td>可选</td><td>Phase 3 之后有兴趣再说</td></tr>
+</table>
+</div>
+
+<h2>5. 交易卡模板（开仓前必填）</h2>
+<div class="card">
+<ol>
+<li><b>论点</b>：我在赌什么？（方向 / 波动率 / 时间）一句话。</li>
+<li><b>结构</b>：合约、数量、权利金、到期日。</li>
+<li><b>最大亏损</b>：$____（必须 ≤ 单笔上限 $500，即学费的 ~10–15%）。</li>
+<li><b>退出规则</b>：什么情况下提前平仓？到期前多少天无条件处理？<i>（现在写，盘中的你没有修改权。）</i></li>
+<li><b>情绪基线</b>：开仓时心率/情绪打分（1–10）。持仓期间每次查看后补记一次。<b>这一栏是整个实验最有价值的数据。</b></li>
+<li><b>复盘（平仓后 48h 内）</b>：结果拆账（方向/theta/IV 各贡献多少）；决策质量打分（与结果无关）；下次改什么。</li>
+</ol>
+</div>
+
+<h2>6. 尤利西斯合约（防"上赌桌"装置）</h2>
+<div class="card">
+<p>前提认知：<b>"加钱翻本"的冲动出现时，做决定的不是清醒的你。</b>所以本合约不依赖意志力，只依赖趁清醒时设好的物理障碍。冲动的半衰期是几天，障碍只要拖得过它就赢。</p>
+<h3>五道墙（开户当天全部建好）</h3>
+<ol>
+<li><b>物理隔离</b>：账户开在与主账户不同的券商；一次性入金后<b>解绑银行账户</b>。加钱需重新绑卡+验证等待——这几天冷却期是核心保险丝。</li>
+<li><b>现金账户</b>：不申请保证金（margin），券商层面锁死杠杆与透支。</li>
+<li><b>人肉熔断器</b>：指定一个具体的人：＿＿＿＿。约定原话："如果我说要往这个账户加钱，你的任务是拖我 90 天。"向清醒的第三方开口，是冲动最过不去的一关。</li>
+<li><b>绊线清单</b>（任何一条触发 = 全部平仓，停 30 天）：
+<ul>
+<li>单日查看账户超过 2 次；</li>
+<li>非交易时间（洗澡/睡前/吃饭）反复想仓位；</li>
+<li>亏损当天产生入金念头；</li>
+<li>开始对任何人隐瞒这个账户的存在或亏损。</li>
+</ul></li>
+<li><b>阳光机制</b>：每月在 repo 里写一行状态（余额/本月操作数/情绪评分均值）。见光的东西长不成赌瘾。</li>
+</ol>
+<h3>签署</h3>
+<p>我确认：本账户金额 $＿＿＿＿ 在存入当天已在心理账本上记为<b>支出（学费）</b>，其归零不构成任何需要"赢回来"的损失。12 个月内我无权向该账户追加任何资金——无论盈亏、无论多有把握。若我违反本条，即证明我不具备做此实验的资格，账户立即清算关闭，且两年内不得重开。</p>
+<p style="margin-top:14px">签名：＿＿＿＿＿＿　日期：＿＿＿＿＿＿　见证人：＿＿＿＿＿＿</p>
+<p class="quote">诚实的备选项：不做，也是体面的答案。读 Sinclair + 模拟盘 = 七成认知收益、零成瘾风险；真金实弹多出的三成收益恰好就是风险本身。芒格：远离麻烦最好的办法是别靠近它。选"不做"本身就是一次合格的风控决策。</p>
+</div>
+
+<h2>7. 预先写给 12 个月后的自己</h2>
+<div class="card">
+<p>三种结局，全部预案：</p>
+<ul>
+<li><b>亏掉大部分学费</b>（最可能）：正常，这就是学费的用途。收获在日志里，不在余额里。不补钱，写结课报告。</li>
+<li><b>不亏不赚</b>：说明纪律执行得好。写结课报告，决定是否保留一个"段永平式"低频卖方小仓位作为长期习惯。</li>
+<li><b>赚了不少</b>（最危险）：⚠️ 触发最高警报。此时大脑会说"我有天赋，该加钱了"——这正是 39 倍故事的第一章。执行预案：利润取出一半买一件实物纪念品，剩余继续按原尺寸运行。<b>任何加码决定强制冷却 90 天。</b></li>
+</ul>
+</div>
+
+<div class="foot">
+<p>定位：个人学习实验设计，教育用途。不构成投资建议（我也不是持牌顾问）；所有标的选择、开户、下单由本人独立完成。</p>
+<p>关联：QQQ 四年翻倍基准（qqq_4yr_doubling_benchmark）· BTC 周期框架 · 2026-07-28 群友 39 倍案例讨论。</p>
+<p>文件：D:\work\investment\financial-analysis-lab\studies\options_learning_lab_2026.html</p>
+</div>
+
+</body>
+</html>

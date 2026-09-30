@@ -1,0 +1,91 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-07-28",
+  "pipeline_version": "lean-6module-v1",
+  "weights_version": "none",
+  "run_date": "2026-07-28",
+  "context_label": "quality_compounder_de-rated_capex-audit_pre-Q4-binary",
+  "as_of_price": 393.35,
+  "as_of_market_cap": 2921800000000,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Evidence base carried from 6/19: 10-year audited SEC XBRL series (CIK 0000789019) + Q3 FY2026 official IR (rev $82.9B +18%, op income $38.4B +20%, EPS $4.27; Azure +40%; Microsoft Cloud $54.5B; RPO $627B +99%; AI run-rate >$37B +123%) + FY25 10-K. Price $393.35 (close 2026-07-28) INDEPENDENTLY re-verified across Yahoo chart API + stockanalysis.com + websearch (0.0% delta; not a 52wk-low/high hug -- +12.6% off low, -29% off high). NO price bug. Completeness ~63% (carries 6/19's ~65%): O3 (OpenAI economics) NARROWED by the 4/27 restructuring + a newly-surfaced ~$250B OpenAI->Azure spend commitment but not closed on the margin/attribution side; O2 (maintenance-vs-growth capex split / ROIC framework) and O4 (segment margins) still OPEN. TIMING gap: the event that would close O2/O3/O4 -- Q4 FY26 earnings + 10-K -- is NOT yet in hand (drops 2026-07-29 after close). Completeness caps verdict at STARTER.",
+      "drivers": ["MSFT-XBRL-FACTS", "MSFT-Q3-2026-PERF", "YAHOO-MSFT-PRICE-0728", "STOCKANALYSIS-MSFT-0728"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "Theme UNCHANGED and re-checked: Microsoft is the enterprise IT operating system (M365 productivity + Azure hyperscale + a frontier-AI layer via Copilot/OpenAI), monetized subscription + consumption with extreme switching cost. NO thesis-breaking news 6/19->7/28. Positive delta: OpenAI committed ~$250B of incremental Azure spend -- a large demand backstop that strengthens the Azure-durability leg (partially answers 'how much of Azure +40% is OpenAI'), at the cost of single-counterparty concentration. Regime overlay (2026-07-28 semiconductor crash / AI-capex-audit / rotation to value+defensives+Apple $5T): MSFT is a RELATIVE rotation beneficiary (quality/software vs pure AI-hardware) AND the direct target of the capex-audit (it is the capex payer). Net mildly positive: a genuine compounder whose swing question -- does $190B/yr capex convert to FCF -- is exactly what the market is now stress-testing, with the answer 24h away.",
+      "drivers": ["MSFT-Q3-2026-PERF", "OPENAI-AZURE-250B", "REGIME-2026-07-28"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 2,
+      "confidence": "med",
+      "finding": "Durable read CARRIED (6 weeks does not change it; quick re-check found nothing broken). Microsoft captures an enormous, high-margin, durable profit pool with multiple hard moats: switching cost (M365+Azure+Entra; RPO $627B is its financial expression), network effects (Teams/LinkedIn/GitHub), scale economics ($190B-class capex is itself a barrier), brand/compliance. Base (M365, Windows commercial, server) is decade-durable cash even if AI underwhelms; growth pool (Azure+AI) has primary demand confirmation. OPERATOR 5/5: Nadella (12-yr CEO, op margin 28.6%->45.6% on his watch) + Hood (13-yr CFO). CRITICAL governance edge vs GOOGL/META: ONE-SHARE-ONE-VOTE, no founder voting control -> a shareholder correction lever if the capex bet is wrong. Regime note: the memory crash does NOT erode MSFT's pool -- MSFT is a memory BUYER, so cheaper DRAM (CXMT supply / falling prices) is a cost tailwind, not a threat. Net +2.",
+      "drivers": ["MSFT-Q3-2026-PERF", "MSFT-PROXY-2025", "MSFT-10K-2025"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "IMPORTANT: MSFT has NOT reported Q4 FY2026 as of as_of -- the release is 2026-07-29 after close (one day out), same day as FOMC/Warsh. So NO new actuals to fold in; the owner-earnings read is CARRIED from Q3 FY26 + FY25 10-K. Carried facts: 10-yr revenue 91.2B->281.7B, operating margin 28.6%->45.6% (monotonic), net income 20.5B->101.8B; FY25 OCF $136.2B; TTM (3/31/26) net income $125.2B, OCF $170.2B, FCF $72.9B; fortress balance sheet net cash ~$47B, debt declining. Capex curve is the watch-item: FY23 $28.1B -> FY24 $44.5B -> FY25 $64.6B; CY2026 guide ~$190B (incl ~$25B component inflation); capex/OCF TTM ~57%. Q4 GUIDANCE (from Q3 call): rev $86.7-87.8B (+13-15%), Azure +39-40% cc, capex >$40B in-quarter -- strong, but a GUIDE not an actual. The 7/29 print (FY26 capex actual, Q4 Azure, FY27 guide, any maintenance/growth split) is the capex-audit-year test. Regime cost note: falling memory prices would EASE the ~$25B component inflation embedded in the $190B. M4 = +1 (conviction with capex warning; actuals pending 7/29).",
+      "drivers": ["MSFT-XBRL-FACTS", "MSFT-10Q-Q3-2026", "MSFT-Q4-2026-EARNINGS-DATE"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "No hard veto: profit pool growing not eroding, normalized earnings not far below trailing, net-cash balance sheet cannot fail; 6/19->7/28 produced no thesis-break. Survivable risks warranting a size haircut, RAISED by the regime: (F1) AI capex ROI -- now the market's central capex-audit question; O2 still open so owner-earnings base $112B is an assumption; (F3) Azure re-decel -- Q4 GUIDE is +39-40% cc, but the 7/28 semiconductor crash raises the tail that AI DEMAND is cracking (not just memory-equity repricing); RPO $627B backlog buffers this; (F4) OpenAI -- 4/27 restructuring is mildly positive and the $250B Azure commitment is a demand backstop, but it concentrates Azure growth on one counterparty; (F6) FOMC/Warsh 7/29 -- a hawkish surprise compresses the 22x exit multiple. Offsets keeping it a haircut not a veto: net cash + dividend, RPO backlog, one-share-one-vote correction lever, and cheaper-memory-as-cost-tailwind. Bear-case IRR ~breakeven (not a loss). Net -1 (slightly more cautious posture than 6/19 given regime + imminent binary, same signal magnitude).",
+      "drivers": ["MSFT-XBRL-FACTS", "REGIME-2026-07-28", "OPENAI-AZURE-250B"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "At $393.35 (~$2.922T) MSFT trades ~23.3x TTM net income, ~40x TTM FCF, TTM earnings yield 4.28%, FCF yield 2.49% -- and ~29% below the 52wk high $555.45, +12.6% above the 52wk low $349.20. Owner-earnings DCF (base OE0 $112B, g 11%, exit 22x) at $393.35: 10y IRR bear ~-0.3% / base ~9.1% / bull ~14.8%; base 8% fair value ~$436 (still ABOVE current -> positive MOS ~10%, THINNER than 6/19's ~13-15% because price rose +3.7%). Price still SUPPORTS a starter and remains asymmetric-to-the-upside (bear breakeven). BUT two new frictions: (a) MOS thinned; (b) a double binary -- Q4 earnings + FOMC -- lands 24h out, so buying blind carries timing risk. M6 = +1 (price supports opening; take a smaller/staggered initial and do not full-size before the 7/29 capex/Azure print). No-chase above ~$436; add/CORE-review anchor ~$303.",
+      "drivers": ["YAHOO-MSFT-PRICE-0728", "STOCKANALYSIS-MSFT-0728", "MSFT-XBRL-FACTS"]
+    }
+  ],
+  "business_verdict": "exceptional",
+  "new_money_verdict": "STARTER",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 3,
+  "suggested_max_size_pct": 9,
+  "buy_below_price": 436,
+  "starter_zone": "current area ~$363-393 (at/near the as-of $393.35; positive but thinner MOS to ~$436 base fair value). Given the 7/29 binary, prefer a staggered entry: ~1.5% pre-print (optional), complete toward 3% after the Q4 capex/Azure print + FOMC clear, OR simply wait ~24h and act on the reaction.",
+  "add_zone": "~$363 and below toward ~$303 (10%->12% IRR) on weakness, OR at any price once the gaps close (O2 capex maintenance/growth split AND a management capex-ROI framework land -- expected with the 7/29 10-K) AND the print confirms Azure/capex quality; add toward Core only after that confirmation lifts completeness >80%.",
+  "trim_or_no_chase_zone": "no-chase above ~$436 (~26x net income / 8% IRR base). Revisit/trim only on the four methodology triggers (thesis wrong / absurd price / better idea / thesis disconfirmed) -- e.g. Azure decel below +25% on demand for 2 quarters, capex/OCF stays >70% with no ROIC, OpenAI economics deteriorate or the $250B Azure commitment slips.",
+  "binding_constraint": "Research COMPLETENESS (~63%), NOT price -- unchanged from 6/19. O2 (capex maintenance/growth split + management ROIC framework) is still fully open, leaving owner earnings a wide $73-125B range and the base case ($112B) an assumption; O3 (OpenAI economics) is narrowed by the 4/27 restructuring + $250B Azure commitment but not closed on the margin/attribution side; O4 (segment margins) open. Completeness <80% caps new-money at STARTER and bars CORE. OVERLAID timing constraint: the exact catalyst that closes these gaps -- Q4 FY26 earnings + 10-K -- drops 2026-07-29 after close, same day as FOMC/Warsh; buying blind into that double binary is the live execution risk (price itself still carries ~10% MOS to base fair value $436).",
+  "kill_criteria": [
+    "K-A capex black hole: capex/OCF stays >70% for two consecutive years AND FCF per share declines AND no incremental-ROIC evidence AND management still discloses no ROIC hurdle -> spend-without-return, do not add / trim. (Now ~57%, yellow; the 7/29 print is the central capex-audit-year test.)",
+    "K-B Azure demand: Azure growth falls to <=+25% YoY for two consecutive quarters attributed to demand (not FX/capacity) -> growth engine stalls, $190B capex strands. (Q4 GUIDE +39-40% cc, green; watch the 7/29 actual + FY27 guide.)",
+    "K-C OpenAI: any material negative change in the OpenAI relationship/economics, revenue-share deterioration, related impairment, OR a slip/reversal of the ~$250B incremental Azure commitment -> re-underwrite Azure growth quality. (4/27 restructuring mildly positive, green/yellow; single-counterparty concentration is the new watch.)",
+    "K-D AI monetization: AI run-rate growth collapses AND Copilot attach/renewal weakens -> AI-layer value capture fails. (Now $37B run-rate, +123%, green.)",
+    "K-E valuation discipline: entry price implies a 10y IRR < 8% (~ price > $436 on base assumptions) -> no-chase. (Now $393.35 implies ~9.1%, green but thinner than 6/19.)",
+    "K-F regime (new): if the 7/28 semiconductor crash is confirmed by the 7/29 print to be an AI-DEMAND crack (Azure / AI run-rate actual decelerates materially), OR FY26 capex balloons well past ~$190B with still no ROI framework AND Azure decelerates -> the capex-strand thesis is confirming, do not add, re-underwrite. Reverse reminder: falling memory prices are a COST tailwind for MSFT (a buyer), not a threat -- do not misread the memory-maker crash as a MSFT-negative."
+  ],
+  "runner_dissent": "Two-sided dissent, honest. CAUTION side (the stronger flag): there is a real case to WAIT ONE DAY rather than open a starter now. The Q4 FY26 print + 10-K -- the exact event that would close O2/O3/O4 -- lands 2026-07-29 after close, and FOMC/Warsh is the same day; buying blind into a double binary, in a fresh-semiconductor-crash / AI-capex-audit regime, when the base-case IRR (~9.1%) only modestly clears the 8% hurdle and MOS has thinned to ~10%, is arguably imprudent when 24h of patience resolves the core uncertainty. A defensible alternative verdict is WATCH-through-the-print. I did NOT take it because (a) the methodology explicitly rejects treating uncertainty as a veto -- a STARTER is precisely the small-sliver test for 'want in but uncertain', (b) the print could gap UP and remove the entry, so waiting has its own cost, and (c) MSFT remains the relative pick of the Mega7 (the only name with a positive MOS + net cash + one-share-one-vote). I resolve it by KEEPING STARTER for direction but trimming the initial to 3% (from 4% at 6/19) and explicitly recommending a staggered entry around the print. UPSIDE side: net cash, one-share-one-vote, dividend, RPO $627B (+99%), the OpenAI $250B Azure backstop, and cheaper-memory-as-cost-tailwind could justify holding the 4% initial -- but I stay at 3% because two genuine gaps (O2 capex split, O3 OpenAI margin/attribution) remain open and a binary is 24h out. The single biggest unverified dependency is still O2: the entire owner-earnings base ($112B) rests on a ~40%-of-capex-is-growth assumption, and the capex-audit regime raises the cost of being wrong on exactly that. Existing holders: downgraded ADD->HOLD purely because price rose +3.7% out of the back-up-the-truck zone and a binary is imminent -- no sell trigger fired.",
+  "sources_used": [
+    {"source_id": "MSFT-XBRL-FACTS", "public_date": "2026-06-19", "url_or_path": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/"},
+    {"source_id": "MSFT-10K-2025", "public_date": "2025-07-30", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"},
+    {"source_id": "MSFT-10Q-Q3-2026", "public_date": "2026-04-29", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm"},
+    {"source_id": "MSFT-Q3-2026-PERF", "public_date": "2026-04-29", "url_or_path": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/performance"},
+    {"source_id": "MSFT-PROXY-2025", "public_date": "2025-10-21", "url_or_path": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm"},
+    {"source_id": "MSFT-Q4-2026-EARNINGS-DATE", "public_date": "2026-07-08", "url_or_path": "https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/"},
+    {"source_id": "OPENAI-AZURE-250B", "public_date": "2026-07-01", "url_or_path": "https://valueaddvc.com/blog/microsoft-190b-ai-capex-in-2026-azures-37b-run-rate-and-the-250b-openai-deal"},
+    {"source_id": "REGIME-2026-07-28", "public_date": "2026-07-28", "url_or_path": "companies/_mega7_2026-07-28/PLAN.md"},
+    {"source_id": "YAHOO-MSFT-PRICE-0728", "public_date": "2026-07-28", "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=1mo&interval=1d"},
+    {"source_id": "STOCKANALYSIS-MSFT-0728", "public_date": "2026-07-28", "url_or_path": "https://stockanalysis.com/stocks/msft/"}
+  ]
+}

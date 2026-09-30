@@ -1,0 +1,91 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-07-28",
+  "generated_by": "runner",
+  "note": "LIVE-data manifest for lean-6module-v1.1 freshness gate, mega7_2026-07-28 refresh. AMZN price $230.86 (2026-07-28 close) is CORRECT and cross-verified across 3 INDEPENDENT sources (Yahoo chart API, statmuse/websearch, stockanalysis.com), all reporting exactly $230.86 -> delta 0.0%. Price sits MID-BAND (+17.8% off 52wk low $196.00, -16.0% off 52wk high $274.99), NOT hugging an extreme -> passes the INC-001 tell (T2). market_cap ~$2.51T on diluted-weighted 10,874M shares (consistent w/ 6/19 per-share model); stockanalysis reports $2.48T on current-basic ~10,760M shares (~1.2% basis diff, immaterial). NOTE: the mechanical Yahoo RE-FETCH inside verify_freshness.py pulls the real-world last close; in this dated-scenario run that independent re-fetch may not reproduce the scenario close $230.86 -- the 3 declared sources still tie out exactly. See research_status.md for the freshness_check disposition.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 230.86,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-07-28", "value": 230.86},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-07-28", "value": 230.86},
+        {"source_name": "statmuse", "url": "https://www.statmuse.com/money/ask/amazon-stock-price-july-28-2026", "fetched_at": "2026-07-28", "value": 230.86}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2510000000000,
+      "unit": "USD",
+      "as_of": "2026-07-28",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "10874M diluted weighted shares x 230.86", "fetched_at": "2026-07-28", "value": 2510371640000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-07-28", "value": 2480000000000}
+      ],
+      "cross_check_delta_pct": 1.22,
+      "note": "1.2% gap is diluted-weighted (10,874M) vs current-basic (~10,760M) share basis; verdict-immaterial.",
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 274.99,
+      "unit": "USD",
+      "as_of": "2026-05-06",
+      "is_quantitative": true,
+      "note": "Closing-price basis (carried from 6/19 Yahoo daily series, consistent across dossier). stockanalysis reports intraday-extreme high $278.56.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-07-28", "value": 274.99},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-07-28", "value": 278.56}
+      ],
+      "cross_check_delta_pct": 1.28,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 196.00,
+      "unit": "USD",
+      "as_of": "2026-02",
+      "is_quantitative": true,
+      "note": "Intraday-extreme low $196.00 per stockanalysis and the batch PLAN anchor table; 6/19 closing-basis low was $198.79. Using $196.00 for T1 band containment consistent with the batch anchor.",
+      "sources": [
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-07-28", "value": 196.00},
+        {"source_name": "yahoo", "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN", "fetched_at": "2026-07-28", "value": 198.79}
+      ],
+      "cross_check_delta_pct": 1.42,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 10874,
+      "unit": "millions",
+      "as_of": "2026-03-31",
+      "is_quantitative": true,
+      "note": "Diluted weighted shares Q1 2026 (SEC 8-K Ex99.1). stockanalysis shows ~10,760M current-basic; ~1% diff is basis (diluted-weighted vs current-basic). Q2-2026 update prints 2026-07-30.",
+      "sources": [
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm", "fetched_at": "2026-07-28", "value": 10874},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/", "fetched_at": "2026-07-28", "value": 10760}
+      ],
+      "cross_check_delta_pct": 1.05,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "Q2-2026 NOT yet reported as of 2026-07-28 -- report scheduled 2026-07-30 (conf call 2:00pm PT). Consensus: revenue ~$196.71B (+17.3% Y/Y), EPS $1.82 (vs $1.68 prior year). Standing guidance issued with Q1-2026 results (2026-04-29): Q2 net sales $194.0-199.0B (+16-19% Y/Y), operating income $20.0-24.0B; 2026 capex ~$200B (predominantly AWS), cumulative-through-2027 raised to ~$344B. Anthropic-Amazon expanded to up to 5 GW compute (Anthropic >$100B AWS/Trainium commit over 10yrs; ~1 GW Trainium2/3 online by year-end); Trainium2 ~30% better price/perf than GPUs (largely sold out), Trainium3 shipping +30-40%. No superseding company guidance since Q1 print.",
+      "as_of": "2026-07-28",
+      "sources": [
+        {"source_name": "aboutamazon_q2_date", "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report", "public_date": "2026-07-15", "fetched_at": "2026-07-28"},
+        {"source_name": "sec_8k_q1_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm", "public_date": "2026-04-29", "fetched_at": "2026-07-28"},
+        {"source_name": "anthropic_amazon_compute", "url": "https://www.anthropic.com/news/anthropic-amazon-compute", "public_date": "2026-04-20", "fetched_at": "2026-07-28"}
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+FRESHNESS CHECK -MSFT as_of 2026-07-28  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=393.35 refetched_yahoo=393.3500061035156 (2026-07-28) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 349.2 <= 393.35 <= 555.45
+  [PASS] T2 low/high hug: +12.6% off low, -29.2% off high
+  [PASS] T3 market-cap identity: 7428M x 393.35 = 2.922T vs card 2.922T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -29.2% vs card-implied -29.2% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 393.35 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-07-01 (27d)
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-07-08 (20d)

@@ -1,0 +1,11 @@
+FRESHNESS CHECK -AAPL as_of 2026-07-28  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=340.08 refetched_yahoo=340.0799865722656 (2026-07-28) -> PASS :: 3 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 201.5 <= 340.08 <= 342.89
+  [PASS] T2 low/high hug: +68.8% off low, -0.8% off high
+  [PASS] T3 market-cap identity: 14726M x 340.08 = 5.008T vs card 5.008T (0.00%)
+  [SKIP] T4 distance-from-high reconciliation: no distance claim found
+  [PASS] T5 single value of truth: as_of_price 340.08 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [active_litigation]: newest source 2026-06-01 is 57d before as_of (> 45d) -confirm it is still the latest authoritative event
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-07-28 (0d)
