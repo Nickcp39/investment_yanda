@@ -4,7 +4,7 @@
 > 读这一份 + `current_process.md` 就能定位任何工作，**不要全仓扫描**——
 > `sources/`、`notes/`、`logs/` 是海量原始素材，按需检索即可。
 >
-> 最后更新: 2026-09-08 · 结构变动时同步更新本文件
+> 最后更新: 2026-10-02 · 结构变动时同步更新本文件
 
 ## 快速入口（按优先级）
 
@@ -38,7 +38,8 @@ sectors/              行业研究
 studies/              专题研究（跨行业/跨资产）
 ├── jp_cn_relative_timeline/  中日相对时间轴系列（以房价见顶为 T=0 对比
 │                             产业政策/思潮：自动化、半导体、汽车、医疗）
-└── wealth_rankings/          福布斯富豪榜三快照（2008/2015/2025）利润池迁移
+├── wealth_rankings/          福布斯富豪榜三快照（2008/2015/2025）利润池迁移
+└── btc_cycle_2026-10-01/     BTC 周期快照：家长报告 10-01 版 + 下一个顶 / 减半 / 暴涨拟合（原始脚本在子项目 BTC_analysis_tool）
 
 trading-desk/         交易训练台（执行端：什么时候动手、动多大、怎么记账）
 ├── README.md            总纲 + 当前 Tier + 现在该做什么
@@ -129,6 +130,7 @@ notebooks/            Jupyter 分析
 | 想干什么 | 去哪里 |
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
+| **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
 | **制药五家（LLY/NVO/MRK/AZN/PFE）的结论** | `companies/_pharma_cliff_2026-09-05/synthesis.md` |
 | **已知日期的坏消息怎么定价（配速表法）** | `companies/mrk/2026-09-05/facts.md` §4 |
 | **医药/肿瘤研究哪些跑过、还能跑什么** | `companies/_oncology_pharma_2026-09-05/CANDIDATES.md`（含"框架能不能定价"三层分层） |
