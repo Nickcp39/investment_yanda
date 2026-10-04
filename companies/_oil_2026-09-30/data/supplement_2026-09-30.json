@@ -1,0 +1,304 @@
+{
+ "as_of": "2026-09-30",
+ "tickers": {
+  "XOM": {
+   "ciks": [
+    34088,
+    2115436
+   ],
+   "entities": [
+    "Exxon Mobil Corporation",
+    "ExxonMobil Holdings Corp"
+   ],
+   "revenue": {
+    "period_end": "2026-06-30",
+    "ttm": 368757000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "Revenues"
+   },
+   "net_income": {
+    "period_end": "2026-06-30",
+    "ttm": 32757000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetIncomeLoss"
+   },
+   "ocf": {
+    "period_end": "2026-06-30",
+    "ttm": 59727000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "capex": {
+    "period_end": "2026-06-30",
+    "ttm": 29174000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment"
+   },
+   "dividends": {
+    "period_end": "2026-06-30",
+    "ttm": 17241000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsOfDividendsCommonStock"
+   },
+   "buybacks": {
+    "period_end": "2026-06-30",
+    "ttm": 20512000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsForRepurchaseOfCommonStock"
+   },
+   "dd_a": {
+    "period_end": "2026-06-30",
+    "ttm": 29650000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "DepreciationDepletionAndAmortization"
+   },
+   "cover_shares": {
+    "val": 4111911960,
+    "as_of": "2026-06-30",
+    "filed": "2026-08-03"
+   }
+  },
+  "CVX": {
+   "ciks": [
+    93410
+   ],
+   "entities": [
+    "Chevron Corp"
+   ],
+   "revenue": {
+    "period_end": "2026-06-30",
+    "ttm": 215261000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "Revenues"
+   },
+   "net_income": {
+    "period_end": "2026-06-30",
+    "ttm": 20591000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetIncomeLoss"
+   },
+   "ocf": {
+    "period_end": "2026-06-30",
+    "ttm": 45321000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "capex": {
+    "period_end": "2026-06-30",
+    "ttm": 18309000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsToAcquireProductiveAssets"
+   },
+   "dividends": {
+    "period_end": "2026-06-30",
+    "ttm": 13863000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsOfDividendsCommonStock"
+   },
+   "buybacks": {
+    "period_end": "2026-06-30",
+    "ttm": 11139000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsForRepurchaseOfCommonStock"
+   },
+   "dd_a": {
+    "period_end": "2026-06-30",
+    "ttm": 23555000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "DepreciationDepletionAndAmortization"
+   },
+   "cover_shares": {
+    "val": 1975771274,
+    "as_of": "2026-06-30",
+    "filed": "2026-08-06"
+   }
+  },
+  "OXY": {
+   "ciks": [
+    797468
+   ],
+   "entities": [
+    "OCCIDENTAL PETROLEUM CORPORATION"
+   ],
+   "revenue": {
+    "period_end": "2026-06-30",
+    "ttm": 23926000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "Revenues"
+   },
+   "ocf": {
+    "period_end": "2026-06-30",
+    "ttm": 10976000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "capex": {
+    "period_end": "2026-06-30",
+    "ttm": 6183000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment"
+   },
+   "buybacks": {
+    "period_end": "2026-06-30",
+    "ttm": 117000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsForRepurchaseOfCommonStock"
+   },
+   "dd_a": {
+    "period_end": "2026-06-30",
+    "ttm": 7547000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "DepreciationDepletionAndAmortization"
+   },
+   "sbc_fy": {
+    "fy_end": "2025-12-31",
+    "val": 234000000,
+    "concept": "AllocatedShareBasedCompensationExpense (FY, approx)"
+   },
+   "cover_shares": {
+    "val": 999637371,
+    "as_of": "2026-07-31",
+    "filed": "2026-08-05"
+   }
+  },
+  "COP": {
+   "ciks": [
+    1163165
+   ],
+   "entities": [
+    "ConocoPhillips"
+   ],
+   "revenue": {
+    "period_end": "2026-06-30",
+    "ttm": 63345000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "Revenues"
+   },
+   "net_income": {
+    "period_end": "2026-06-30",
+    "ttm": 9282000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetIncomeLoss"
+   },
+   "ocf": {
+    "period_end": "2026-06-30",
+    "ttm": 21925000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "dividends": {
+    "period_end": "2026-06-30",
+    "ttm": 4070000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsOfDividendsCommonStock"
+   },
+   "buybacks": {
+    "period_end": "2026-06-30",
+    "ttm": 5302000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsForRepurchaseOfCommonStock"
+   },
+   "dd_a": {
+    "period_end": "2026-06-30",
+    "ttm": 11805000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "DepreciationDepletionAndAmortization"
+   },
+   "sbc_fy": {
+    "fy_end": "2025-12-31",
+    "val": 336000000,
+    "concept": "AllocatedShareBasedCompensationExpense (FY, approx)"
+   },
+   "cover_shares": {
+    "val": 1201337479,
+    "as_of": "2026-06-30",
+    "filed": "2026-08-06"
+   }
+  },
+  "KMI": {
+   "ciks": [
+    1506307
+   ],
+   "entities": [
+    "KINDER MORGAN, INC."
+   ],
+   "revenue": {
+    "period_end": "2026-06-30",
+    "ttm": 17959000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "Revenues"
+   },
+   "net_income": {
+    "period_end": "2026-06-30",
+    "ttm": 3467000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetIncomeLoss"
+   },
+   "ocf": {
+    "period_end": "2026-06-30",
+    "ttm": 6557000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "capex": {
+    "period_end": "2026-06-30",
+    "ttm": 3399000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment"
+   },
+   "dividends": {
+    "period_end": "2026-06-30",
+    "ttm": 2627000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "PaymentsOfDividendsCommonStock"
+   },
+   "dd_a": {
+    "period_end": "2026-06-30",
+    "ttm": 2480000000,
+    "method": "FY+YTD-priorYTD",
+    "fy_end": "2025-12-31",
+    "concept": "DepreciationDepletionAndAmortization"
+   },
+   "sbc_fy": {
+    "fy_end": "2013-12-31",
+    "val": 2000000,
+    "concept": "AllocatedShareBasedCompensationExpense (FY, approx)"
+   },
+   "cover_shares": {
+    "val": 2226802089,
+    "as_of": "2026-07-23",
+    "filed": "2026-07-24"
+   }
+  }
+ }
+}

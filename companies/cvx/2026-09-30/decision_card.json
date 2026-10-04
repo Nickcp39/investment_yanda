@@ -1,0 +1,127 @@
+{
+ "ticker": "CVX",
+ "as_of": "2026-09-30",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-09-30",
+ "batch": "oil_2026-09-30",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-09-29",
+ "valuation_method": "batch valuation_model.py (same formula as 2026-09-28); OE0 normalized to mid-cycle deck (base WTI $65 / Brent $70, ~2016-2025 average); g gives 50% credit to management FCF plans in base",
+ "oil_price_deck": {
+  "bear": "WTI 55 / Brent 60",
+  "base": "WTI 65 / Brent 70",
+  "bull": "WTI 80 / Brent 85"
+ },
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "HOLD",
+ "suggested_initial_size_pct": 0,
+ "as_of_price": 204.38,
+ "as_of_market_cap": 403814004000,
+ "shares_out_m": 1975.8,
+ "wk52_high": 217.78,
+ "wk52_low": 146.49,
+ "context_label": "cyclical_inflection",
+ "business_verdict": "good",
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 1,
+  "M4": 0,
+  "M5": -1,
+  "M6": -2
+ },
+ "suggested_max_size_pct": 12,
+ "binding_constraint": "PRICE: market price implies long-run Brent ~$83.5; BRK sold 35% in 2026Q1 near $207",
+ "completeness_pct": 57,
+ "share_count_yoy_pct": 14.5,
+ "sensitivity": "~$0.60B after-tax earnings/cash flow per $1 Brent (company IR, secondary retrieval)",
+ "kill_criteria": [
+  "K-C1 normalized adj FCF < $17B at $70 Brent after downstream normalizes -> watch",
+  "K-C2 TCO/Guyana growth below plan -> green",
+  "K-C3 another large stock-funded deal -> watch"
+ ],
+ "next_monitor_event": "Q3 2026 earnings: downstream normalization",
+ "buy_below_price": 142.09,
+ "hurdle_prices": {
+  "8pct": 142.09,
+  "10pct": 123.35,
+  "12pct": 107.7,
+  "8pct_on_bull": 262.25,
+  "8pct_on_bear": 74.72
+ },
+ "zones": {
+  "starter": "<= 142.09 (base >= 8%)",
+  "add": "<= 123.35 (base >= 10%)",
+  "no_chase": "> 142.09",
+  "avoid": "> 262.25"
+ },
+ "implied_oil_price_for_8pct": 83.5,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 12.5,
+   "g": 0.01,
+   "exit": 10,
+   "p": 0.95,
+   "oe_1": 12.625,
+   "oe_10": 13.808,
+   "tv_10_b": 138.1,
+   "irr": -0.0512,
+   "irr_lib": -0.1018
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 18.5,
+   "g": 0.04,
+   "exit": 12,
+   "p": 0.85,
+   "oe_1": 19.24,
+   "oe_10": 27.385,
+   "tv_10_b": 328.6,
+   "irr": 0.032,
+   "irr_lib": -0.0204
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 27.5,
+   "g": 0.06,
+   "exit": 14,
+   "p": 0.8,
+   "oe_1": 29.15,
+   "oe_10": 49.248,
+   "tv_10_b": 689.5,
+   "irr": 0.1138,
+   "irr_lib": 0.055
+  }
+ },
+ "buffett_record": "BRK: 2020Q4 48.5M sh (~$84) -> 2022Q1 159.2M (~$163) -> peak 165.4M -> 2026Q1 84.4M after selling ~35% (~$8B) at ~$207",
+ "factor_check": "oil/energy factor, weakly correlated with the user's AI + liquidity factor (KMI partially AI via data-center gas demand)",
+ "sources_used": [
+  {
+   "source_id": "CVX-10K-2025",
+   "public_date": "2026-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm"
+  },
+  {
+   "source_id": "CVX-10Q-Q2",
+   "public_date": "2026-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000167/cvx-20260630.htm"
+  },
+  {
+   "source_id": "CVX-8K-Q2",
+   "public_date": "2026-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000162/a06302026ex9918-k.htm"
+  }
+ ]
+}

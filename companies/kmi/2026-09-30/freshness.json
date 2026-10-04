@@ -1,0 +1,132 @@
+{
+  "ticker": "KMI",
+  "as_of": "2026-09-30",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "oil_2026-09-30",
+  "note": "as_of 2026-09-30 is a Monday before the open; last close <= as_of is 2026-09-29 (Friday). Shares basis for market cap: 10-Q 封面 2026-07-23. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 30.45,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/KMI",
+          "fetched_at": "2026-09-30",
+          "value": 30.45
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/KMI/historical",
+          "fetched_at": "2026-09-30",
+          "value": 30.45
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 67806060000,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "2226.8M x 30.45",
+          "fetched_at": "2026-09-30",
+          "value": 67806060000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/KMI/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 68835128855.0
+        }
+      ],
+      "cross_check_delta_pct": 1.49,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (Nasdaq uses its own share snapshot); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 34.81,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/KMI",
+          "fetched_at": "2026-09-30",
+          "value": 34.81
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/KMI/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 34.805
+        }
+      ],
+      "cross_check_delta_pct": 0.014,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 25.6,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/KMI",
+          "fetched_at": "2026-09-30",
+          "value": 25.6
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/KMI/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 25.6
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2226.8,
+      "unit": "million shares",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "10-Q 封面 2026-07-23",
+          "fetched_at": "2026-09-30",
+          "value": 2226.8
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000063/kmi2026q28-kex991.htm",
+          "public_date": "2026-07-22",
+          "fetched_at": "2026-09-30"
+        }
+      ]
+    }
+  ]
+}

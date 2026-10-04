@@ -1,0 +1,132 @@
+{
+  "ticker": "OXY",
+  "as_of": "2026-09-30",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "oil_2026-09-30",
+  "note": "as_of 2026-09-30 is a Monday before the open; last close <= as_of is 2026-09-29 (Friday). Shares basis for market cap: 10-Q 封面 2026-07-31. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 54.94,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/OXY",
+          "fetched_at": "2026-09-30",
+          "value": 54.94
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/OXY/historical",
+          "fetched_at": "2026-09-30",
+          "value": 54.94
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 54918024000,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "999.6M x 54.94",
+          "fetched_at": "2026-09-30",
+          "value": 54918024000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/OXY/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 55149993758.0
+        }
+      ],
+      "cross_check_delta_pct": 0.42,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (Nasdaq uses its own share snapshot); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 67.45,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/OXY",
+          "fetched_at": "2026-09-30",
+          "value": 67.45
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/OXY/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 67.45
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 38.8,
+      "unit": "USD",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/OXY",
+          "fetched_at": "2026-09-30",
+          "value": 38.8
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/OXY/summary?assetclass=stocks",
+          "fetched_at": "2026-09-30",
+          "value": 38.8
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 999.6,
+      "unit": "million shares",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "10-Q 封面 2026-07-31",
+          "fetched_at": "2026-09-30",
+          "value": 999.6
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026053377/oxyex9916-30x26earningsrel.htm",
+          "public_date": "2026-08-05",
+          "fetched_at": "2026-09-30"
+        }
+      ]
+    }
+  ]
+}
