@@ -49,6 +49,7 @@ S = dict(
 def inline(t):
     """Markdown inline -> reportlab mini-HTML."""
     t = t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    t = t.replace("−", "-")  # SimHei has no glyph for U+2212 (math minus) -> renders as a box
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"~~(.+?)~~", r"<strike>\1</strike>", t)
     t = re.sub(r"`([^`]+?)`", r"<font face='Courier'>\1</font>", t)

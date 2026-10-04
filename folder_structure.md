@@ -26,7 +26,8 @@ companies/            个股研究档案（最大目录，~30 个 ticker）
 └── _<批次名>_<日期>/    批量研究的计划与汇总（如 _sp500_medical_2026-07-05、
                          _ai_robotics_2026-07-10、_mega7_2026-06-19、
                          _derated_bigtech_2026-08-07、_private_prison_2026-08-13、
-                         _saas_derate_2026-09-01、_oncology_pharma_2026-09-05、_pharma_cliff_2026-09-05）
+                         _saas_derate_2026-09-01、_oncology_pharma_2026-09-05、_pharma_cliff_2026-09-05、
+                         _mega7_refresh_2026-09-26、_pelosi_book_2026-09-28、_oil_2026-09-30）
 
 sectors/              行业研究
 ├── us-healthcare/       美国医疗（PBM 深度，L1/L2 分层调研）
@@ -131,6 +132,8 @@ notebooks/            Jupyter 分析
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
+| **巴菲特怎么投石油 / 石油股什么价格能买** | `studies/巴菲特与石油投资_2026-09-30/report.md`（致股东信 + 13F + 百年冲击表 + 检查清单）；公司卡见 `companies/_oil_2026-09-30/` |
+| **佩洛西持仓 13 家 / 抄政客作业有没有用** | `companies/_pelosi_book_2026-09-28/synthesis.md`（8 张新卡 + 5 张旧卡对照；脚本可重跑） |
 | **制药五家（LLY/NVO/MRK/AZN/PFE）的结论** | `companies/_pharma_cliff_2026-09-05/synthesis.md` |
 | **已知日期的坏消息怎么定价（配速表法）** | `companies/mrk/2026-09-05/facts.md` §4 |
 | **医药/肿瘤研究哪些跑过、还能跑什么** | `companies/_oncology_pharma_2026-09-05/CANDIDATES.md`（含"框架能不能定价"三层分层） |

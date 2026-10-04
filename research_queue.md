@@ -1,11 +1,17 @@
 # Research Queue
 
-最后更新: 2026-09-05（制药批次已跑）
+最后更新: 2026-09-30（石油批次 + 巴菲特石油学习专题）
 
 用途: 小型买方研究部的 idea backlog。任何公司/主题先入队，再决定是否深研。
 
 | ID | Idea | Type | Stage | Priority | Decision question | Next action | Owner | Last update |
 |---|---|---|---|---|---|---|---|---|
+| **2026-09-OIL** | XOM / CVX / OXY / COP / KMI + 学习专题 | Batch + Study | 7 - Monitor | P1 | 像巴菲特一样投资石油：什么价格买、买哪一层、何时卖 | ✅ 5 张卡全部 WATCH（`companies/_oil_2026-09-30/`）；学习报告 `studies/巴菲特与石油投资_2026-09-30/report.md`。**四家生产商现价隐含长期油价 WTI $72 ~ Brent $94（高于十年均价）；KMI 离 8% 线约 4%（$29.19）**。下一步：Q3 财报（10 月中下旬）+ 伯克希尔 Q3 13F（约 11-14）；KMI 到价则派独立 Checker | YC | 2026-09-30 |
+| **2026-09-UBER** | Uber | Company | 6 - Decision（待独立 Checker） | **P0** | AV 去中介化是局部侵蚀还是全局替代？ | ✅ 卡已建 `companies/uber/2026-09-28/`。**base IRR +12.8%，runner 提议 STARTER 3%，以 WATCH 落锁**。buy_below $101.71（现价 $69.62）。CEO/COO 公开市场买入 $15.3M（Form 4）。**下一步：独立 Checker；Q3 读 Mobility GB cc（K-U1）** | YC | 2026-09-28 |
+| **2026-09-AB** | AllianceBernstein Holding | Company | 6 - Decision（待独立 Checker + CPA） | **P0** | 9.7% 分配率是可持续的现金，还是市场在定价分配下滑？ | ✅ 卡已建 `companies/ab/2026-09-28/`。**base +13.1%（非居民税后 +10.4%），runner 提议 STARTER 3%，以 WATCH 落锁**。**13 个佩洛西名字里唯一与 AI 无关**。**阻碍：PTP 载体 —— 非居民 37% 预扣（一手 qualified notice），需 CPA** | YC | 2026-09-28 |
+| **2026-09-VST** | Vistra | Company | 6 - Decision（待独立 Checker） | P1 | 2028 年对冲滚动后电价体制 × 3.2x 杠杆 | ✅ 卡已建 `companies/vst/2026-09-28/`。**base +10.4%，runner 提议 STARTER 3%，以 WATCH 落锁**。增长腿属 AI 因子（黄灯）。**下一步：Q3 的 2027 指引与 2028 对冲价格（O-V1）** | YC | 2026-09-28 |
+| 2026-09-PELOSI | AVGO / BE / INTC / CRWD / PANW | Batch | 7 - Monitor | P2 | 价格关 | ✅ 5 张卡均 WATCH（价格封顶；INTC/CRWD/PANW 连 bull 都不过 8%）。见 `companies/_pelosi_book_2026-09-28/synthesis.md` | YC | 2026-09-28 |
+| 2026-09-TEM | Tempus AI | Company | 7 - Monitor | P1 | 07-04 STARTER 卡已过期 | 当时价 $60.27，现价 $85.01 贴 buy_below $84.14 —— **需刷新** | — | 2026-09-28 |
 | 2026-06-GOOGL | Alphabet / Google | Company | 7 - Monitor | P1 | 十年持有是否成立？AI/监管是否削弱搜索 owner earnings？~~Berkshire/H&H 买入是否改变安全边际判断？~~ | ✅ **Berkshire 分支已结（2026-09-01）：不改变**。理由：①门槛不同（$354B 现金的机会成本是短端利率，非我们的 8-10%）②规模是约束不是判断 ③Q2'26 那笔含 $10B 定向增发、在 Abel 任内、13F 不披露拍板人。卡维持 WATCH 0% / buy_below ~$117。**新增待办：Alphabet 在外股本数需进 monitor**（回购停 + $847.5 亿增发，per-share IRR 的分母在扩，卡上无一栏在盯） | YC | 2026-09-01 |
 | 2026-09-SNOW | Snowflake | Company | 7 - Monitor | P1 | consumption 模型的 owner earnings 到底存不存在？SBC=收入 34% 会不会收敛？ | ✅ 卡已建 `companies/snow/2026-09-01/` WATCH 0% buy_below $173。**下一步：9/2 盘后按 `prediction_2026-09-02.md` 对账（7 条），当天写完** | YC | 2026-09-01 |
 | 2026-09-XYZ | Block (前 SQ) | Company | 4 - Analysis Modules | **P0** | 占毛利 62% 的 Cash App 靠放贷增长（发放 +59%），**坏账质量未知** —— 这笔利润是真的吗？ | ✅ 卡已建 `companies/xyz/2026-09-01/` WATCH 0% buy_below $62。**下一步不是等价格，是读 10-Q 消费信贷披露（O-X7）** —— 唯一能一次性翻转结论的动作。需换环境（SEC.gov 被封） | YC | 2026-09-01 |
