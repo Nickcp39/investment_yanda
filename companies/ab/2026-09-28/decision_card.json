@@ -1,0 +1,152 @@
+{
+ "ticker": "AB",
+ "as_of": "2026-09-28",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-09-28",
+ "batch": "pelosi_book_2026-09-28",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-09-25",
+ "valuation_method": "batch valuation_model.py: 10y cash-flow IRR incl. interim payouts p*OE; library MSFT-formula IRR reported alongside",
+ "idea_source": "user-supplied Pelosi holdings table (lead only; not evidence)",
+ "as_of_price": 35.76,
+ "as_of_market_cap": 3328540800,
+ "shares_out_m_for_market_cap": 93.08,
+ "valuation_shares_m": 93.08,
+ "valuation_market_cap_usd_b": 3.3,
+ "wk52_high": 44.11,
+ "wk52_low": 34.92,
+ "context_label": "yield_or_balance_sheet_trap",
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 0,
+  "M4": 1,
+  "M5": 0,
+  "M6": 2
+ },
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "STARTER",
+ "runner_proposed_size_pct": 3,
+ "existing_position_verdict": "HOLD",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 5,
+ "buy_below_price": 49.72,
+ "hurdle_prices": {
+  "8pct": 49.72,
+  "10pct": 43.49,
+  "12pct": 38.26,
+  "8pct_on_bull": 65.32,
+  "8pct_on_bear": 32.64
+ },
+ "zones": {
+  "starter": "<= 43.49 (base >=10%)",
+  "add": "<= 38.26 (base >=12%) AND distribution TTM >= $3.20",
+  "hold": "43.49 - 49.72",
+  "no_chase": "> 49.72",
+  "avoid": "> 65.32"
+ },
+ "binding_constraint": "(1) independent Checker not yet run; (2) holding wrapper: PTP, 100% ECI -> 37% withholding for foreign holders (user plans NRA status from 2028). NOT price.",
+ "completeness_pct": 62,
+ "scenarios_10y": {
+  "bear": {
+   "oe0": 0.27924,
+   "g": 0.0,
+   "exit": 9,
+   "p": 1.0,
+   "oe_1": 0.279,
+   "oe_10": 0.279,
+   "tv_10_b": 2.5,
+   "irr": 0.0658,
+   "irr_lib": -0.0277,
+   "mode": "oe"
+  },
+  "base": {
+   "oe0": 0.316472,
+   "g": 0.03,
+   "exit": 11,
+   "p": 1.0,
+   "oe_1": 0.326,
+   "oe_10": 0.425,
+   "tv_10_b": 4.7,
+   "irr": 0.1309,
+   "irr_lib": 0.0346,
+   "mode": "oe"
+  },
+  "bull": {
+   "oe0": 0.33043399999999995,
+   "g": 0.05,
+   "exit": 13,
+   "p": 1.0,
+   "oe_1": 0.347,
+   "oe_10": 0.538,
+   "tv_10_b": 7.0,
+   "irr": 0.1719,
+   "irr_lib": 0.0771,
+   "mode": "oe"
+  }
+ },
+ "share_count_yoy_pct": {
+  "units_note": "AB Holding units 110.5M (2024-12) -> 93.1M (2026-06) reflect Equitable restructuring, not buybacks"
+ },
+ "sbc_to_revenue_pct": null,
+ "owner_earnings_ttm_usd_b": {
+  "distributions_per_unit_ttm": 3.47,
+  "distribution_yield_pct": 9.7
+ },
+ "kill_criteria": [
+  "K-AB1 TTM distribution < $2.90 without a >15% market drawdown -> green ($3.47)",
+  "K-AB2 active-equity net outflows > $15B in a quarter -> yellow (~$11B in Q2)",
+  "K-AB3 markdowns / gating in AB private-credit vehicles -> green (none in 10-Q)",
+  "K-AB4 GP retains cash instead of distributing Available Cash Flow -> green",
+  "K-AB5 adjusted operating margin < 30% -> green (33.0%)",
+  "K-AB6 holder tax status: 37% withholding once NRA -> known, priced (base IRR +10.4% after withholding)"
+ ],
+ "next_monitor_event": "Q3 2026 earnings (~late Oct 2026) and monthly AUM release (~10th of each month)",
+ "insider_activity": null,
+ "factor_check": "NOT AI: market beta / rates / active-management flows. The only genuinely off-factor name among Pelosi's 13",
+ "pelosi_position_lead": "AB Holding units purchase, trade 2026-01-16 (close $40.17), $1-5M (secondary); table says 25,000 units",
+ "open_items": [
+  "O-AB1 private credit AUM and fee share (10-Q silent)",
+  "O-AB2 fee-rate trend by channel",
+  "O-AB3 user-specific PTP tax treatment (CPA; K-1, §1446(a)/(f))",
+  "O-AB4 CEO transition 2027-03-31 (Erzan) strategy"
+ ],
+ "sources_used": [
+  {
+   "source_id": "AB-8K-Q2",
+   "public_date": "2026-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109448/000110944826000194/a2q26earningsrelease.htm"
+  },
+  {
+   "source_id": "AB-10Q-Q2",
+   "public_date": "2026-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109448/000110944826000197/ab-20260630.htm"
+  },
+  {
+   "source_id": "AB-8K-AUM-AUG",
+   "public_date": "2026-09-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109448/000110944826000278/ex9901ab2026augustaumrelea.htm"
+  },
+  {
+   "source_id": "AB-8K-CEO",
+   "public_date": "2026-09-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109448/000110944826000281/ex9901ableadershipchanges9.htm"
+  },
+  {
+   "source_id": "ABH-XBRL",
+   "public_date": "2026-09-28",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000825313.json"
+  }
+ ],
+ "base_irr_if_nra_from_2028": 0.1045
+}

@@ -1,0 +1,156 @@
+{
+ "ticker": "UBER",
+ "as_of": "2026-09-28",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-09-28",
+ "batch": "pelosi_book_2026-09-28",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-09-25",
+ "valuation_method": "batch valuation_model.py: 10y cash-flow IRR incl. interim payouts p*OE; library MSFT-formula IRR reported alongside",
+ "idea_source": "user-supplied Pelosi holdings table (lead only; not evidence)",
+ "as_of_price": 69.62,
+ "as_of_market_cap": 142203027200,
+ "shares_out_m_for_market_cap": 2042.56,
+ "valuation_shares_m": 2050.2,
+ "valuation_market_cap_usd_b": 142.7,
+ "wk52_high": 101.295,
+ "wk52_low": 65.41,
+ "context_label": "structural_decline_trap",
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 1,
+  "M4": 2,
+  "M5": -1,
+  "M6": 2
+ },
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "STARTER",
+ "runner_proposed_size_pct": 3,
+ "existing_position_verdict": "HOLD",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 10,
+ "buy_below_price": 101.71,
+ "hurdle_prices": {
+  "8pct": 101.71,
+  "10pct": 86.63,
+  "12pct": 74.16,
+  "8pct_on_bull": 175.51,
+  "8pct_on_bear": 35.9
+ },
+ "zones": {
+  "starter": "<= 86.63 (base >=10%)",
+  "add": "<= 74.16 (base >=12%) AND K-U1 green",
+  "hold": "86.63 - 101.71",
+  "no_chase": "> 101.71",
+  "avoid": "> 175.51"
+ },
+ "binding_constraint": "(1) independent Checker not yet run (process); (2) speed of AV disintermediation (judgement). NOT price.",
+ "completeness_pct": 65,
+ "scenarios_10y": {
+  "bear": {
+   "oe0": 5.7,
+   "g": 0.03,
+   "exit": 12,
+   "p": 0.7,
+   "oe_1": 5.871,
+   "oe_10": 7.66,
+   "tv_10_b": 91.9,
+   "irr": -0.0031,
+   "irr_lib": -0.043,
+   "mode": "oe"
+  },
+  "base": {
+   "oe0": 7.4,
+   "g": 0.1,
+   "exit": 17,
+   "p": 0.7,
+   "oe_1": 8.14,
+   "oe_10": 19.194,
+   "tv_10_b": 326.3,
+   "irr": 0.1283,
+   "irr_lib": 0.0862,
+   "mode": "oe"
+  },
+  "bull": {
+   "oe0": 8.2,
+   "g": 0.14,
+   "exit": 20,
+   "p": 0.7,
+   "oe_1": 9.348,
+   "oe_10": 30.399,
+   "tv_10_b": 608.0,
+   "irr": 0.1992,
+   "irr_lib": 0.1559,
+   "mode": "oe"
+  }
+ },
+ "share_count_yoy_pct": {
+  "basic": -2.61,
+  "diluted": -3.55
+ },
+ "sbc_to_revenue_pct": 3.5,
+ "owner_earnings_ttm_usd_b": {
+  "fcf": 10.12,
+  "fcf_minus_sbc": 8.18,
+  "oe_band": [
+   5.7,
+   8.18
+  ]
+ },
+ "kill_criteria": [
+  "K-U1 Mobility GB cc growth <10% two straight quarters OR >=2 more top-10 US cities go AV-direct -> green",
+  "K-U2 AV spend >$3B/yr with no volume/revenue disclosure -> yellow",
+  "K-U3 buybacks < SBC (share count stops falling) -> green",
+  "K-U4 Mobility segment profit/GB falls two straight quarters -> green (7.28% -> 7.64%)",
+  "K-U5 driver-classification regulation >1pp GB cost -> unquantified"
+ ],
+ "next_monitor_event": "Q3 2026 earnings (~early Nov 2026): Mobility GB cc, segment profit/GB, AV trips, buybacks",
+ "insider_activity": "Form 4: CEO Khosrowshahi P 141,000 @ $70.96 (~$10.0M, filed 2026-09-10); President/COO Macdonald P 70,000 @ $75.65-76.44 (~$5.3M, filed 2026-09-08)",
+ "factor_check": "not AI-capex; negative exposure to AV success; offsets rather than doubles the BTC/GOOGL/NBIS factor (note GOOGL/Waymo is the AV counterparty)",
+ "pelosi_position_lead": "200 calls $50 strike exp 2027-03-19, trade 2026-05-29, disclosed 2026-06-23 (secondary)",
+ "open_items": [
+  "O-U1 AV >$10B plan primary quantification",
+  "O-U2 Waymo contract terms",
+  "O-U3 2026-09-15 notes amount",
+  "O-U4 remaining buyback authorization",
+  "O-U5 EU platform-work directive cost"
+ ],
+ "sources_used": [
+  {
+   "source_id": "UBER-8K-Q2",
+   "public_date": "2026-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000027/uberq226earningspressrelea.htm"
+  },
+  {
+   "source_id": "UBER-10Q-Q2",
+   "public_date": "2026-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm"
+  },
+  {
+   "source_id": "UBER-F4-DK",
+   "public_date": "2026-09-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000118423726000008/primarydocument.xml"
+  },
+  {
+   "source_id": "UBER-F4-AM",
+   "public_date": "2026-09-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000207176126000011/primarydocument.xml"
+  },
+  {
+   "source_id": "UBER-XBRL",
+   "public_date": "2026-09-28",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001543151.json"
+  }
+ ]
+}

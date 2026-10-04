@@ -1,0 +1,145 @@
+{
+ "ticker": "INTC",
+ "as_of": "2026-09-28",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-09-28",
+ "batch": "pelosi_book_2026-09-28",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-09-25",
+ "valuation_method": "batch valuation_model.py: 10y cash-flow IRR incl. interim payouts p*OE; library MSFT-formula IRR reported alongside",
+ "idea_source": "user-supplied Pelosi holdings table (lead only; not evidence)",
+ "as_of_price": 123.0,
+ "as_of_market_cap": 650063610000,
+ "shares_out_m_for_market_cap": 5285.07,
+ "valuation_shares_m": 5285.0,
+ "valuation_market_cap_usd_b": 650.1,
+ "wk52_high": 142.35,
+ "wk52_low": 32.89,
+ "context_label": "turnaround",
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": -1,
+  "M4": -1,
+  "M5": -1,
+  "M6": -2
+ },
+ "business_verdict": "uncertain",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "HOLD",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 5,
+ "buy_below_price": 47.33,
+ "hurdle_prices": {
+  "8pct": 47.33,
+  "10pct": 39.39,
+  "12pct": 32.9,
+  "8pct_on_bull": 115.69,
+  "8pct_on_bear": 12.27
+ },
+ "zones": {
+  "starter": "<= 47.33 (base >=8%)",
+  "add": "<= 39.39 (base >=10%)",
+  "hold": null,
+  "no_chase": "> 47.33",
+  "avoid": "> 115.69 (current price is here: even the bull case < 8%)"
+ },
+ "binding_constraint": "PRICE. Base IRR -1.8%; bull +7.3% -- no scenario clears the hurdle at $123.",
+ "completeness_pct": 55,
+ "scenarios_10y": {
+  "bear": {
+   "oe1": 1.0,
+   "oe10": 10.0,
+   "exit": 14,
+   "p": 0.0,
+   "oe_1": 1.0,
+   "oe_10": 10.0,
+   "tv_10_b": 140.0,
+   "irr": -0.1423,
+   "irr_lib": -0.1423,
+   "mode": "ramp"
+  },
+  "base": {
+   "oe1": 3.0,
+   "oe10": 30.0,
+   "exit": 18,
+   "p": 0.0,
+   "oe_1": 3.0,
+   "oe_10": 30.0,
+   "tv_10_b": 540.0,
+   "irr": -0.0184,
+   "irr_lib": -0.0184,
+   "mode": "ramp"
+  },
+  "bull": {
+   "oe1": 5.0,
+   "oe10": 60.0,
+   "exit": 22,
+   "p": 0.0,
+   "oe_1": 5.0,
+   "oe_10": 60.0,
+   "tv_10_b": 1320.0,
+   "irr": 0.0734,
+   "irr_lib": 0.0734,
+   "mode": "ramp"
+  }
+ },
+ "share_count_yoy_pct": {
+  "basic": 16.82,
+  "post_aug_offering_est": 21.0
+ },
+ "sbc_to_revenue_pct": 4.2,
+ "owner_earnings_ttm_usd_b": {
+  "fcf": 2.83,
+  "fcf_minus_sbc": 0.44,
+  "adjusted_fcf_q2": -8.42
+ },
+ "kill_criteria": [
+  "K-I1 named external 14A customer commitment by 2027-06 -> positive trigger, not yet",
+  "K-I2 another equity raise within 12 months -> watch",
+  "K-I3 non-GAAP gross margin <38% -> green (41.8%)",
+  "K-I4 foundry ownership <51% (USG warrant trigger, 241M shares) -> green"
+ ],
+ "next_monitor_event": "Q3 2026 earnings (~late Oct 2026)",
+ "insider_activity": null,
+ "factor_check": "AI capex + US industrial-policy factor -> doubles",
+ "pelosi_position_lead": "10,000 shares 2026-07-24 @ $92.32 + 200 calls $50 exp 2027-03-19 (trade 2026-05-29) (secondary)",
+ "open_items": [
+  "O-I1 escrowed 143M shares release schedule",
+  "O-I2 2026 gross/net capex guide",
+  "O-I3 14A customer pipeline"
+ ],
+ "sources_used": [
+  {
+   "source_id": "INTC-8K-Q2",
+   "public_date": "2026-07-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000155/q226earningsrelease.htm"
+  },
+  {
+   "source_id": "INTC-424B5",
+   "public_date": "2026-08-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526345221/d98483d424b5.htm"
+  },
+  {
+   "source_id": "INTC-8K-0812",
+   "public_date": "2026-08-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526346806/d117670dex991.htm"
+  },
+  {
+   "source_id": "INTC-XBRL",
+   "public_date": "2026-09-28",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json"
+  }
+ ]
+}

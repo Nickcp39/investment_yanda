@@ -1,0 +1,10 @@
+FRESHNESS CHECK -UBER as_of 2026-09-28  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=69.62 refetched_yahoo=69.62000274658203 (2026-09-25) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 65.41 <= 69.62 <= 101.295
+  [PASS] T2 low/high hug: +6.4% off low, -31.3% off high
+  [PASS] T3 market-cap identity: 2043M x 69.62 = 0.142T vs card 0.142T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -31.3% vs card-implied -31.3% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 69.62 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source 2026-08-05 is 54d before as_of (> 45d) -confirm it is still the latest authoritative event

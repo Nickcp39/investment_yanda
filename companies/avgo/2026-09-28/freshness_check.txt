@@ -1,0 +1,10 @@
+FRESHNESS CHECK -AVGO as_of 2026-09-28  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=352.81 refetched_yahoo=352.80999755859375 (2026-09-25) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 289.96 <= 352.81 <= 495.0
+  [PASS] T2 low/high hug: +21.7% off low, -28.7% off high
+  [PASS] T3 market-cap identity: 4774M x 352.81 = 1.684T vs card 1.684T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -28.7% vs card-implied -28.7% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 352.81 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-09-02 (26d)

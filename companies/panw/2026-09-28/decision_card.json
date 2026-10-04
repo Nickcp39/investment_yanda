@@ -1,0 +1,145 @@
+{
+ "ticker": "PANW",
+ "as_of": "2026-09-28",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-09-28",
+ "batch": "pelosi_book_2026-09-28",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-09-25",
+ "valuation_method": "batch valuation_model.py: 10y cash-flow IRR incl. interim payouts p*OE; library MSFT-formula IRR reported alongside",
+ "idea_source": "user-supplied Pelosi holdings table (lead only; not evidence)",
+ "as_of_price": 374.74,
+ "as_of_market_cap": 306537320000,
+ "shares_out_m_for_market_cap": 818.0,
+ "valuation_shares_m": 845.0,
+ "valuation_market_cap_usd_b": 316.7,
+ "wk52_high": 398.88,
+ "wk52_low": 139.57,
+ "context_label": "quality_compounder",
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 1,
+  "M4": 0,
+  "M5": -1,
+  "M6": -2
+ },
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "HOLD",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 8,
+ "buy_below_price": 150.06,
+ "hurdle_prices": {
+  "8pct": 150.06,
+  "10pct": 124.9,
+  "12pct": 104.31,
+  "8pct_on_bull": 285.52,
+  "8pct_on_bear": 61.4
+ },
+ "zones": {
+  "starter": "<= 150.06 (base >=8%)",
+  "add": "<= 124.90 (base >=10%)",
+  "hold": null,
+  "no_chase": "> 150.06",
+  "avoid": "> 285.52 (current price is here: even the bull case < 8%)"
+ },
+ "binding_constraint": "PRICE. Base IRR -1.4%; bull +5.1%. ~90x FY27 non-GAAP EPS guide.",
+ "completeness_pct": 55,
+ "scenarios_10y": {
+  "bear": {
+   "rev1": 14.15,
+   "g": 0.08,
+   "m1": 0.22,
+   "m10": 0.22,
+   "exit": 18,
+   "p": 0.0,
+   "oe_1": 3.113,
+   "oe_10": 6.223,
+   "tv_10_b": 112.0,
+   "irr": -0.0987,
+   "irr_lib": -0.0987,
+   "mode": "rev"
+  },
+  "base": {
+   "rev1": 14.15,
+   "g": 0.13,
+   "m1": 0.22,
+   "m10": 0.28,
+   "exit": 23,
+   "p": 0.0,
+   "oe_1": 3.113,
+   "oe_10": 11.902,
+   "tv_10_b": 273.7,
+   "irr": -0.0145,
+   "irr_lib": -0.0145,
+   "mode": "rev"
+  },
+  "bull": {
+   "rev1": 14.15,
+   "g": 0.17,
+   "m1": 0.22,
+   "m10": 0.32,
+   "exit": 28,
+   "p": 0.0,
+   "oe_1": 3.113,
+   "oe_10": 18.603,
+   "tv_10_b": 520.9,
+   "irr": 0.051,
+   "irr_lib": 0.051,
+   "mode": "rev"
+  }
+ },
+ "share_count_yoy_pct": {
+  "basic": 20.45,
+  "diluted": 13.3,
+  "period": "Q3 FY26 vs Q3 FY25"
+ },
+ "sbc_to_revenue_pct": 15.5,
+ "owner_earnings_ttm_usd_b": {
+  "fcf": 4.11,
+  "sbc": 1.77,
+  "fcf_minus_sbc": 2.34
+ },
+ "kill_criteria": [
+  "K-P1 organic (ex-CyberArk) NGS ARR growth <20% -> unknown (not split out)",
+  "K-P2 adjusted FCF margin <36% -> green (FY27 guide 38%)",
+  "K-P3 another stock-funded acquisition >5% dilution -> watch"
+ ],
+ "next_monitor_event": "Q1 FY27 earnings (~mid-Nov 2026)",
+ "insider_activity": null,
+ "factor_check": "AI-security narrative factor; correlated with CRWD",
+ "pelosi_position_lead": "shares, 14,000 exercised 2024-12 (table; not verified this run)",
+ "open_items": [
+  "O-P1 organic vs acquired ARR split",
+  "O-P2 CyberArk integration costs"
+ ],
+ "sources_used": [
+  {
+   "source_id": "PANW-8K-Q4",
+   "public_date": "2026-09-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000019/ex991q426earningsrelease.htm"
+  },
+  {
+   "source_id": "PANW-10K-FY26",
+   "public_date": "2026-09-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+  },
+  {
+   "source_id": "PANW-XBRL",
+   "public_date": "2026-09-28",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327567.json"
+  }
+ ]
+}

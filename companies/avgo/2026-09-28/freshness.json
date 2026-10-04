@@ -1,0 +1,132 @@
+{
+  "ticker": "AVGO",
+  "as_of": "2026-09-28",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "pelosi_book_2026-09-28",
+  "note": "as_of 2026-09-28 is a Monday before the open; last close <= as_of is 2026-09-25 (Friday). Shares basis for market cap: 10-Q 封面 2026-08-28（filed 2026-09-10）. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 352.81,
+      "unit": "USD",
+      "as_of": "2026-09-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO",
+          "fetched_at": "2026-09-28",
+          "value": 352.81
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/AVGO/historical",
+          "fetched_at": "2026-09-28",
+          "value": 352.81
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1684184400300,
+      "unit": "USD",
+      "as_of": "2026-09-28",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "4773.63M x 352.81",
+          "fetched_at": "2026-09-28",
+          "value": 1684184400300
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/AVGO/summary?assetclass=stocks",
+          "fetched_at": "2026-09-28",
+          "value": 1662798490875.0
+        }
+      ],
+      "cross_check_delta_pct": 1.29,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (Nasdaq uses its own share snapshot); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 495.0,
+      "unit": "USD",
+      "as_of": "2026-09-28",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO",
+          "fetched_at": "2026-09-28",
+          "value": 495.0
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/AVGO/summary?assetclass=stocks",
+          "fetched_at": "2026-09-28",
+          "value": 495.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 289.96,
+      "unit": "USD",
+      "as_of": "2026-09-28",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO",
+          "fetched_at": "2026-09-28",
+          "value": 289.96
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/AVGO/summary?assetclass=stocks",
+          "fetched_at": "2026-09-28",
+          "value": 289.96
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4773.63,
+      "unit": "million shares",
+      "as_of": "2026-09-28",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "10-Q 封面 2026-08-28（filed 2026-09-10）",
+          "fetched_at": "2026-09-28",
+          "value": 4773.63
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+          "public_date": "2026-09-02",
+          "fetched_at": "2026-09-28"
+        }
+      ]
+    }
+  ]
+}
