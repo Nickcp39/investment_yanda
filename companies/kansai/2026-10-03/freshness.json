@@ -1,0 +1,132 @@
+{
+  "ticker": "9503.T",
+  "as_of": "2026-10-03",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "power_majors_2026-10-03",
+  "note": "as_of 2026-10-03 is a Saturday; last close <= as_of is 2026-10-02. Prices in JPY (market cap in the same quote unit). Shares basis: issued 1,114.93M - treasury 0.75M (Q1 FY3/2027 tanshin). FILED data (tanshin / 6-K / results) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 2632.5,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9503.T",
+          "fetched_at": "2026-10-03",
+          "value": 2632.5
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9503-JP",
+          "fetched_at": "2026-10-03",
+          "value": 2632.5
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2933131500000,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "1114.2M x 2632.5",
+          "fetched_at": "2026-10-03",
+          "value": 2933131500000
+        },
+        {
+          "source_name": "cnbc_sharesout_derived",
+          "url": "https://www.cnbc.com/quotes/9503-JP",
+          "fetched_at": "2026-10-03",
+          "value": 2922075000000
+        }
+      ],
+      "cross_check_delta_pct": 0.38,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (CNBC uses issued / common-only counts); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 3053.0,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9503.T",
+          "fetched_at": "2026-10-03",
+          "value": 3053.0
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9503-JP",
+          "fetched_at": "2026-10-03",
+          "value": 3053.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 2048.0,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9503.T",
+          "fetched_at": "2026-10-03",
+          "value": 2048.0
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9503-JP",
+          "fetched_at": "2026-10-03",
+          "value": 2048.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 1114.2,
+      "unit": "million shares",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "issued 1,114.93M - treasury 0.75M (Q1 FY3/2027 tanshin)",
+          "fetched_at": "2026-10-03",
+          "value": 1114.2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest results / guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "https://www.kepco.co.jp/ir/brief/disclosure/pdf/kaiji20260731_1.pdf",
+          "public_date": "2026-07-31",
+          "fetched_at": "2026-10-03"
+        }
+      ]
+    }
+  ]
+}

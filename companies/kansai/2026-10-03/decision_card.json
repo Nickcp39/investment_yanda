@@ -1,0 +1,121 @@
+{
+ "ticker": "9503.T",
+ "name": "关西电力",
+ "as_of": "2026-10-03",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-03",
+ "batch": "power_majors_2026-10-03",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "cnbc_quote_api"
+ ],
+ "price_date": "2026-10-02 (A-shares 2026-09-30)",
+ "valuation_method": "batch valuation_model.py (same formula as oil / Pelosi batches); OE0 triangulated between net income (or company EPS measures) and OCF - D&A; management growth guidance given 50% credit in base",
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "study": "studies/电力大国百年_英日中_2026-10-03/report.md",
+ "currency": "JPY",
+ "quote_unit": "JPY",
+ "as_of_price": 2632.5,
+ "as_of_market_cap": 2933131500000,
+ "shares_out_m": 1114.2,
+ "wk52_high": 3053.0,
+ "wk52_low": 2048.0,
+ "context_label": "cyclical_inflection",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 1,
+  "M4": 1,
+  "M5": -1,
+  "M6": -1
+ },
+ "suggested_max_size_pct": 5,
+ "binding_constraint": "PRICE: 8% line JPY 2,047.51 sits at the 52-week low; non-diversifiable nuclear-accident tail",
+ "completeness_pct": 55,
+ "share_count_note": "period-end shares ~+25% in FY3/2025 (issuance + treasury sale); flat since",
+ "kill_criteria": [
+  "K-K1 nuclear utilization < 60% -> watch (FY27 guide ~70%)",
+  "K-K2 equity ratio < 25% -> green (35.1%)",
+  "K-K3 new equity issuance -> green (none announced)",
+  "K-K4 any Japanese nuclear accident forcing nationwide shutdown -> green"
+ ],
+ "next_monitor_event": "H1 FY3/2027 tanshin (~late Oct 2026): utilization and full-year guidance",
+ "buy_below_price": 2047.51,
+ "hurdle_prices": {
+  "8pct": 2047.51,
+  "10pct": 1750.9,
+  "12pct": 1505.4,
+  "8pct_on_bull": 3645.96,
+  "8pct_on_bear": 943.35
+ },
+ "zones": {
+  "starter": "<= 2047.51 (base >= 8%)",
+  "add": "<= 1750.9 (base >= 10%)",
+  "no_chase": "> 2047.51",
+  "avoid": "> 3645.96"
+ },
+ "implied_g_for_8pct": 0.0499,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 200,
+   "g": 0.0,
+   "exit": 7,
+   "p": 0.3,
+   "oe_1": 200.0,
+   "oe_10": 200.0,
+   "tv_10_b": 1400.0,
+   "irr": -0.0426,
+   "irr_lib": -0.0713
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 290,
+   "g": 0.02,
+   "exit": 10,
+   "p": 0.3,
+   "oe_1": 295.8,
+   "oe_10": 353.508,
+   "tv_10_b": 3535.1,
+   "irr": 0.0492,
+   "irr_lib": 0.0188
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 360,
+   "g": 0.035,
+   "exit": 13,
+   "p": 0.35,
+   "oe_1": 372.6,
+   "oe_10": 507.816,
+   "tv_10_b": 6601.6,
+   "irr": 0.1213,
+   "irr_lib": 0.0845
+  }
+ },
+ "history_shareholder_record": "TR x2.83 2000-01->2026-10 (+4.0%/yr) vs Nikkei price x3.5; zero dividends 2013-2016",
+ "factor_check": "rates / regulation / local-currency factor; weakly correlated with the user's AI + liquidity factor",
+ "sources_used": [
+  {
+   "source_id": "KEPCO-TANSHIN-FY26",
+   "public_date": "2026-04-30",
+   "url": "https://www.kepco.co.jp/ir/brief/disclosure/pdf/kaiji20260430_1.pdf"
+  },
+  {
+   "source_id": "KEPCO-TANSHIN-Q1FY27",
+   "public_date": "2026-07-31",
+   "url": "https://www.kepco.co.jp/ir/brief/disclosure/pdf/kaiji20260731_1.pdf"
+  }
+ ]
+}

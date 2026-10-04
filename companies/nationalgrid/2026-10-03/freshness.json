@@ -1,0 +1,133 @@
+{
+  "ticker": "NG.L",
+  "as_of": "2026-10-03",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "power_majors_2026-10-03",
+  "note": "as_of 2026-10-03 is a Saturday; last close <= as_of is 2026-10-02. Prices in GBp (market cap in the same quote unit). Shares basis: voting shares 5,026.8M (Total Voting Rights 6-K 2026-07-23). FILED data (tanshin / 6-K / results) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 1146.5,
+      "unit": "GBp",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NG.L",
+          "fetched_at": "2026-10-03",
+          "value": 1146.5
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/NG.-GB",
+          "fetched_at": "2026-10-03",
+          "value": 1146.5
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 5763226200000,
+      "unit": "GBp",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "5026.8M x 1146.5",
+          "fetched_at": "2026-10-03",
+          "value": 5763226200000
+        },
+        {
+          "source_name": "cnbc_sharesout_derived",
+          "url": "https://www.cnbc.com/quotes/NG.-GB",
+          "fetched_at": "2026-10-03",
+          "value": 5766895000000
+        }
+      ],
+      "cross_check_delta_pct": 0.06,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (CNBC uses issued / common-only counts); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 1428.5,
+      "unit": "GBp",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NG.L",
+          "fetched_at": "2026-10-03",
+          "value": 1428.5
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/NG.-GB",
+          "fetched_at": "2026-10-03",
+          "value": 1428.5
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 1058.5,
+      "unit": "GBp",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NG.L",
+          "fetched_at": "2026-10-03",
+          "value": 1058.5
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/NG.-GB",
+          "fetched_at": "2026-10-03",
+          "value": 1047.5
+        }
+      ],
+      "cross_check_delta_pct": 1.05,
+      "pass": true,
+      "delta_note": "window-edge difference: Yahoo and CNBC start their 52-week window on different days; the card uses the Yahoo value; price is far from this bound so T1/T2 unaffected"
+    },
+    {
+      "field": "shares_out",
+      "value": 5026.8,
+      "unit": "million shares",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "voting shares 5,026.8M (Total Voting Rights 6-K 2026-07-23)",
+          "fetched_at": "2026-10-03",
+          "value": 5026.8
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest results / guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1004315/000165495426004849/a2416e.htm",
+          "public_date": "2026-05-14",
+          "fetched_at": "2026-10-03"
+        }
+      ]
+    }
+  ]
+}

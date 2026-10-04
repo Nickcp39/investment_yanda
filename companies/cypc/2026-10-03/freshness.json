@@ -1,0 +1,132 @@
+{
+  "ticker": "600900.SS",
+  "as_of": "2026-10-03",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "power_majors_2026-10-03",
+  "note": "as_of 2026-10-03 is a Saturday; last close <= as_of is 2026-09-30 (Shanghai closed 2026-10-01..07 for National Day). Prices in CNY (market cap in the same quote unit). Shares basis: total shares 24,468,217,716 (2025 annual report). FILED data (tanshin / 6-K / results) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 28.54,
+      "unit": "CNY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600900.SS",
+          "fetched_at": "2026-10-03",
+          "value": 28.54
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/600900-CN",
+          "fetched_at": "2026-10-03",
+          "value": 28.54
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 698322428000,
+      "unit": "CNY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "24468.2M x 28.54",
+          "fetched_at": "2026-10-03",
+          "value": 698322428000
+        },
+        {
+          "source_name": "cnbc_sharesout_derived",
+          "url": "https://www.cnbc.com/quotes/600900-CN",
+          "fetched_at": "2026-10-03",
+          "value": 698373800000
+        }
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (CNBC uses issued / common-only counts); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 29.57,
+      "unit": "CNY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600900.SS",
+          "fetched_at": "2026-10-03",
+          "value": 29.57
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/600900-CN",
+          "fetched_at": "2026-10-03",
+          "value": 29.57
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 25.38,
+      "unit": "CNY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600900.SS",
+          "fetched_at": "2026-10-03",
+          "value": 25.38
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/600900-CN",
+          "fetched_at": "2026-10-03",
+          "value": 25.38
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 24468.2,
+      "unit": "million shares",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "total shares 24,468,217,716 (2025 annual report)",
+          "fetched_at": "2026-10-03",
+          "value": 24468.2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest results / guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "http://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260830/ee373d6d0d9347cdb810847c08bf39f7.PDF",
+          "public_date": "2026-08-30",
+          "fetched_at": "2026-10-03"
+        }
+      ]
+    }
+  ]
+}

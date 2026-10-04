@@ -31,18 +31,18 @@ RED, GRN, YEL = colors.HexColor("#fdeeee"), colors.HexColor("#eaf6f3"), colors.H
 
 ss = getSampleStyleSheet()
 S = dict(
-    h1=ParagraphStyle("h1", fontName="CN", fontSize=17, leading=23, textColor=INK, spaceBefore=2, spaceAfter=6),
-    h2=ParagraphStyle("h2", fontName="CN", fontSize=12.5, leading=17, textColor=INK, spaceBefore=11, spaceAfter=5),
-    h3=ParagraphStyle("h3", fontName="CN", fontSize=10.4, leading=14, textColor=INK, spaceBefore=8, spaceAfter=4),
-    p=ParagraphStyle("p", fontName="CN", fontSize=8.5, leading=13, textColor=INK, spaceAfter=5),
-    li=ParagraphStyle("li", fontName="CN", fontSize=8.5, leading=13, textColor=INK,
+    h1=ParagraphStyle("h1", fontName="CN", wordWrap="CJK", fontSize=17, leading=23, textColor=INK, spaceBefore=2, spaceAfter=6),
+    h2=ParagraphStyle("h2", fontName="CN", wordWrap="CJK", fontSize=12.5, leading=17, textColor=INK, spaceBefore=11, spaceAfter=5),
+    h3=ParagraphStyle("h3", fontName="CN", wordWrap="CJK", fontSize=10.4, leading=14, textColor=INK, spaceBefore=8, spaceAfter=4),
+    p=ParagraphStyle("p", fontName="CN", wordWrap="CJK", fontSize=8.5, leading=13, textColor=INK, spaceAfter=5),
+    li=ParagraphStyle("li", fontName="CN", wordWrap="CJK", fontSize=8.5, leading=13, textColor=INK,
                       leftIndent=9, bulletIndent=2, spaceAfter=2),
-    quote=ParagraphStyle("q", fontName="CN", fontSize=8.3, leading=12.8, textColor=INK, leftIndent=7,
+    quote=ParagraphStyle("q", fontName="CN", wordWrap="CJK", fontSize=8.3, leading=12.8, textColor=INK, leftIndent=7,
                          borderPadding=(5, 5, 5, 7), backColor=SOFT, spaceAfter=6),
     code=ParagraphStyle("code", fontName="Courier", fontSize=7.6, leading=10.4, textColor=INK,
                         leftIndent=7, borderPadding=(5, 5, 5, 6), backColor=SOFT, spaceAfter=6),
-    cell=ParagraphStyle("c", fontName="CN", fontSize=7.4, leading=10.2, textColor=INK),
-    cellr=ParagraphStyle("cr", fontName="CN", fontSize=7.4, leading=10.2, textColor=INK, alignment=2),
+    cell=ParagraphStyle("c", fontName="CN", wordWrap="CJK", fontSize=7.4, leading=10.2, textColor=INK),
+    cellr=ParagraphStyle("cr", fontName="CN", wordWrap="CJK", fontSize=7.4, leading=10.2, textColor=INK, alignment=2),
 )
 
 
@@ -50,9 +50,18 @@ def inline(t):
     """Markdown inline -> reportlab mini-HTML."""
     t = t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     t = t.replace("−", "-")  # SimHei has no glyph for U+2212 (math minus) -> renders as a box
+    t = t.replace("¥", "￥").replace("£", "￡")  # SimHei lacks ¥ / £; fullwidth forms render
+    t = t.translate(str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789"))  # subscript digits (OE₀) are boxes in SimHei
+    for e in ("🔴", "🟢", "🟡", "⚪", "✅", "❌", "⚠️", "⚠", "🥇", "🥈"):  # emoji only drive row_tint; SimHei draws them as boxes
+        t = t.replace(e, "")
+    t = t.replace("¥", "￥").replace("£", "￡")  # ¥ / £ -> fullwidth forms SimHei can draw
+    for e in ("🔴", "🟢", "🟡", "⚪", "✅", "❌", "⚠️", "⚠", "🥇", "🥈"):  # emoji only tint rows (row_tint); glyphs are boxes in SimHei
+        t = t.replace(e, "")
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"~~(.+?)~~", r"<strike>\1</strike>", t)
-    t = re.sub(r"`([^`]+?)`", r"<font face='Courier'>\1</font>", t)
+    # code spans: Courier has no CJK glyphs, so spans containing non-ASCII text keep the CN font
+    t = re.sub(r"`([^`]+?)`", lambda m: (f"<font face='Courier'>{m.group(1)}</font>" if m.group(1).isascii()
+                                         else f"<font color='#5b6472'>{m.group(1)}</font>"), t)
     t = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", t)
     return t
 
@@ -85,7 +94,7 @@ def build_table(block, width):
     for j in range(n):
         vals = [rows[i][j] for i in range(1, len(rows))]
         num = sum(1 for v in vals if re.search(r"[\d,.]{2,}", v) and not re.search(r"[\u4e00-\u9fff]{3,}", v))
-        aligns.append("r" if vals and num >= max(1, len(vals) * 0.6) else "l")
+        aligns.append("r" if j > 0 and vals and num >= max(1, len(vals) * 0.6) else "l")  # first column = labels
     # widths: first column wider, rest even
     first = min(width * 0.34, max(22 * mm, width / n * 1.5))
     rest = (width - first) / (n - 1) if n > 1 else width

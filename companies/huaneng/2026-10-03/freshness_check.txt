@@ -1,0 +1,10 @@
+FRESHNESS CHECK -0902.HK as_of 2026-10-03  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=6.04 refetched_yahoo=6.039999961853027 (2026-10-02) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 5.17 <= 6.04 <= 7.63
+  [PASS] T2 low/high hug: +16.8% off low, -20.8% off high
+  [PASS] T3 market-cap identity: 15698M x 6.04 = 0.095T vs card 0.095T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -20.8% vs card-implied -20.8% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 6.04 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source 2026-08-19 (45d)

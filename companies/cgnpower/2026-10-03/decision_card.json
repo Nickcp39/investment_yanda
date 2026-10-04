@@ -1,0 +1,121 @@
+{
+ "ticker": "1816.HK",
+ "name": "中广核电力（H）",
+ "as_of": "2026-10-03",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-03",
+ "batch": "power_majors_2026-10-03",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "cnbc_quote_api"
+ ],
+ "price_date": "2026-10-02 (A-shares 2026-09-30)",
+ "valuation_method": "batch valuation_model.py (same formula as oil / Pelosi batches); OE0 triangulated between net income (or company EPS measures) and OCF - D&A; management growth guidance given 50% credit in base",
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "study": "studies/电力大国百年_英日中_2026-10-03/report.md",
+ "currency": "CNY",
+ "quote_unit": "HKD",
+ "as_of_price": 3.04,
+ "as_of_market_cap": 153515744000,
+ "shares_out_m": 50498.6,
+ "wk52_high": 3.77,
+ "wk52_low": 2.6,
+ "context_label": "cyclical_inflection",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 0,
+  "M4": 0,
+  "M5": -1,
+  "M6": -1
+ },
+ "suggested_max_size_pct": 4,
+ "binding_constraint": "PRICE + tariff marketization; growth absorbed by capex (CIP +RMB 28.8B in 2025)",
+ "completeness_pct": 54,
+ "share_count_note": "flat; A-share convertible bond in conversion period (~1-2% potential dilution, derived)",
+ "kill_criteria": [
+  "K-C1 NI down > 5% two years running -> watch (2025 -9.9%, H1 2026 +2.7%)",
+  "K-C2 major delay of units under construction -> green",
+  "K-C3 payout < 40% -> green (~45%)",
+  "K-C4 domestic nuclear safety event -> green"
+ ],
+ "next_monitor_event": "Q3 2026 A-share report (~late Oct 2026)",
+ "buy_below_price": 2.41,
+ "hurdle_prices": {
+  "8pct": 2.41,
+  "10pct": 2.07,
+  "12pct": 1.79,
+  "8pct_on_bull": 3.87,
+  "8pct_on_bear": 1.25
+ },
+ "zones": {
+  "starter": "<= 2.41 (base >= 8%)",
+  "add": "<= 2.07 (base >= 10%)",
+  "no_chase": "> 2.41",
+  "avoid": "> 3.87"
+ },
+ "implied_g_for_8pct": 0.0581,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 8.0,
+   "g": 0.0,
+   "exit": 8,
+   "p": 0.45,
+   "oe_1": 8.0,
+   "oe_10": 8.0,
+   "tv_10_b": 64.0,
+   "irr": -0.0314,
+   "irr_lib": -0.0693
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 9.5,
+   "g": 0.03,
+   "exit": 12,
+   "p": 0.45,
+   "oe_1": 9.785,
+   "oe_10": 12.767,
+   "tv_10_b": 153.2,
+   "irr": 0.0513,
+   "irr_lib": 0.0156
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 11.0,
+   "g": 0.05,
+   "exit": 15,
+   "p": 0.45,
+   "oe_1": 11.55,
+   "oe_10": 17.918,
+   "tv_10_b": 268.8,
+   "irr": 0.1104,
+   "irr_lib": 0.0744
+  }
+ },
+ "history_shareholder_record": "H TR x1.38 2014-12->2026-10 (+2.8%/yr) vs Tracker Fund TR +3.5%/yr; A TR x0.98 since 2019-08",
+ "factor_check": "rates / regulation / local-currency factor; weakly correlated with the user's AI + liquidity factor",
+ "sources_used": [
+  {
+   "source_id": "CGN-AR2025-HKEX",
+   "public_date": "2026-03-25",
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501034_c.pdf"
+  },
+  {
+   "source_id": "CGN-IR2026-HKEX",
+   "public_date": "2026-08-25",
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0825/2026082500980_c.pdf"
+  }
+ ]
+}

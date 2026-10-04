@@ -1,0 +1,126 @@
+{
+ "ticker": "9513.T",
+ "name": "电源开发 J-POWER",
+ "as_of": "2026-10-03",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-03",
+ "batch": "power_majors_2026-10-03",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "cnbc_quote_api"
+ ],
+ "price_date": "2026-10-02 (A-shares 2026-09-30)",
+ "valuation_method": "batch valuation_model.py (same formula as oil / Pelosi batches); OE0 triangulated between net income (or company EPS measures) and OCF - D&A; management growth guidance given 50% credit in base",
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "study": "studies/电力大国百年_英日中_2026-10-03/report.md",
+ "currency": "JPY",
+ "quote_unit": "JPY",
+ "as_of_price": 4016.0,
+ "as_of_market_cap": 706816000000,
+ "shares_out_m": 176.0,
+ "wk52_high": 4514.0,
+ "wk52_low": 2706.5,
+ "context_label": "structural_decline_trap",
+ "business_verdict": "uncertain",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "module_signals": {
+  "M1": 1,
+  "M2": -1,
+  "M3": 0,
+  "M4": 1,
+  "M5": -1,
+  "M6": -1
+ },
+ "suggested_max_size_pct": 4,
+ "binding_constraint": "PRICE (+47% in 12 months) + undefined coal exit path",
+ "completeness_pct": 52,
+ "share_count_note": "-3.8% YoY (buyback); total payout policy 30%",
+ "kill_criteria": [
+  "K-J1 large coal impairment / early retirement without replacement returns -> not checked",
+  "K-J2 total payout ratio cut -> green",
+  "K-J3 Ohma nuclear further write-off / cancellation -> watch",
+  "K-J4 ROE back above cost of equity -> not yet (company's own admission)"
+ ],
+ "next_monitor_event": "H1 FY3/2027 tanshin; new medium-term plan (2024-2026 plan expires)",
+ "buy_below_price": 3244.84,
+ "hurdle_prices": {
+  "8pct": 3244.84,
+  "10pct": 2784.61,
+  "12pct": 2403.08,
+  "8pct_on_bull": 6369.84,
+  "8pct_on_bear": 1375.83
+ },
+ "zones": {
+  "starter": "<= 3244.84 (base >= 8%)",
+  "add": "<= 2784.61 (base >= 10%)",
+  "no_chase": "> 3244.84",
+  "avoid": "> 6369.84"
+ },
+ "implied_g_for_8pct": 0.0356,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 55,
+   "g": -0.02,
+   "exit": 6,
+   "p": 0.35,
+   "oe_1": 53.9,
+   "oe_10": 44.939,
+   "tv_10_b": 269.6,
+   "irr": -0.0543,
+   "irr_lib": -0.0919
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 85,
+   "g": 0.01,
+   "exit": 9,
+   "p": 0.3,
+   "oe_1": 85.85,
+   "oe_10": 93.893,
+   "tv_10_b": 845.0,
+   "irr": 0.0533,
+   "irr_lib": 0.018
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 110,
+   "g": 0.03,
+   "exit": 12,
+   "p": 0.35,
+   "oe_1": 113.3,
+   "oe_10": 147.831,
+   "tv_10_b": 1774.0,
+   "irr": 0.1403,
+   "irr_lib": 0.0964
+  }
+ },
+ "history_shareholder_record": "TR x3.90 2004-10->2026-10 (+6.4%/yr) vs Nikkei price x6.3; never suspended dividends; drawdown trough 2020-11",
+ "factor_check": "rates / regulation / local-currency factor; weakly correlated with the user's AI + liquidity factor",
+ "sources_used": [
+  {
+   "source_id": "JPOWER-TANSHIN-FY26",
+   "public_date": "2026-04-30",
+   "url": "https://www.jpower.co.jp/news/pdf/kessan2026-4/all.pdf"
+  },
+  {
+   "source_id": "JPOWER-PRES-FY26",
+   "public_date": "2026-05-12",
+   "url": "https://www.jpower.co.jp/ir/pdf/260512presentation_1.pdf"
+  },
+  {
+   "source_id": "JPOWER-TANSHIN-Q1FY27",
+   "public_date": "2026-07-31",
+   "url": "https://www.jpower.co.jp/news/pdf/kessan2027-1/all.pdf"
+  }
+ ]
+}

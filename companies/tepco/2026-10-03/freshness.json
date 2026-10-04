@@ -1,0 +1,132 @@
+{
+  "ticker": "9501.T",
+  "as_of": "2026-10-03",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "power_majors_2026-10-03",
+  "note": "as_of 2026-10-03 is a Saturday; last close <= as_of is 2026-10-02. Prices in JPY (market cap in the same quote unit). Shares basis: fully diluted: common 1,602.7M (Q1 FY3/2027 tanshin) + 3,333.3M convertible from NDF Class A/B preferred (FY3/2026 tanshin dilution note); CNBC sharesout = common only. FILED data (tanshin / 6-K / results) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 524.0,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9501.T",
+          "fetched_at": "2026-10-03",
+          "value": 524.0
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9501-JP",
+          "fetched_at": "2026-10-03",
+          "value": 524.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2586464000000,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "4936.0M x 524.0",
+          "fetched_at": "2026-10-03",
+          "value": 2586464000000
+        },
+        {
+          "source_name": "cnbc_sharesout_derived",
+          "url": "https://www.cnbc.com/quotes/9501-JP",
+          "fetched_at": "2026-10-03",
+          "value": 843640000000
+        }
+      ],
+      "cross_check_delta_pct": 206.58,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (CNBC uses issued / common-only counts); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 939.4,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9501.T",
+          "fetched_at": "2026-10-03",
+          "value": 939.4
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9501-JP",
+          "fetched_at": "2026-10-03",
+          "value": 939.4
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 442.8,
+      "unit": "JPY",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/9501.T",
+          "fetched_at": "2026-10-03",
+          "value": 442.8
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/9501-JP",
+          "fetched_at": "2026-10-03",
+          "value": 442.8
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4936.0,
+      "unit": "million shares",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "fully diluted: common 1,602.7M (Q1 FY3/2027 tanshin) + 3,333.3M convertible from NDF Class A/B preferred (FY3/2026 tanshin dilution note); CNBC sharesout = common only",
+          "fetched_at": "2026-10-03",
+          "value": 4936.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest results / guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260729/20260724599600.pdf",
+          "public_date": "2026-07-29",
+          "fetched_at": "2026-10-03"
+        }
+      ]
+    }
+  ]
+}

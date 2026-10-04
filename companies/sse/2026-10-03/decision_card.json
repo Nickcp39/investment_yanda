@@ -1,0 +1,121 @@
+{
+ "ticker": "SSE.L",
+ "name": "SSE",
+ "as_of": "2026-10-03",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-03",
+ "batch": "power_majors_2026-10-03",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "cnbc_quote_api"
+ ],
+ "price_date": "2026-10-02 (A-shares 2026-09-30)",
+ "valuation_method": "batch valuation_model.py (same formula as oil / Pelosi batches); OE0 triangulated between net income (or company EPS measures) and OCF - D&A; management growth guidance given 50% credit in base",
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "study": "studies/电力大国百年_英日中_2026-10-03/report.md",
+ "currency": "GBP",
+ "quote_unit": "GBp",
+ "as_of_price": 2447.0,
+ "as_of_market_cap": 2966253400000,
+ "shares_out_m": 1212.2,
+ "wk52_high": 2767.5,
+ "wk52_low": 1686.5,
+ "context_label": "exceptional_bottleneck",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 1,
+  "M4": 0,
+  "M5": -1,
+  "M6": 0
+ },
+ "suggested_max_size_pct": 5,
+ "binding_constraint": "PRICE (+41% in 12 months; 9% above the 8% line); adjusted EPS excludes deferred tax",
+ "completeness_pct": 56,
+ "share_count_note": "+9.6% (Nov 2025 GBP 2bn placing); scrip capped at 25%",
+ "kill_criteria": [
+  "K-S1 2026/27 adjusted EPS < 168p",
+  "K-S2 net debt/EBITDA > 4.5x -> green (3.3x)",
+  "K-S3 third dividend cut or another placing -> green",
+  "K-S4 renewables output -20% YoY two quarters -> green"
+ ],
+ "next_monitor_event": "2026/27 half-year results (~Nov 2026)",
+ "buy_below_price": 2238.78,
+ "hurdle_prices": {
+  "8pct": 2238.78,
+  "10pct": 1908.54,
+  "12pct": 1635.43,
+  "8pct_on_bull": 3714.36,
+  "8pct_on_bear": 1126.28
+ },
+ "zones": {
+  "starter": "<= 2238.78 (base >= 8%)",
+  "add": "<= 1908.54 (base >= 10%)",
+  "no_chase": "> 2238.78",
+  "avoid": "> 3714.36"
+ },
+ "implied_g_for_8pct": 0.0809,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 1.3,
+   "g": 0.03,
+   "exit": 10,
+   "p": 0.55,
+   "oe_1": 1.339,
+   "oe_10": 1.747,
+   "tv_10_b": 17.5,
+   "irr": -0.0155,
+   "irr_lib": -0.0516
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 1.55,
+   "g": 0.07,
+   "exit": 14,
+   "p": 0.5,
+   "oe_1": 1.659,
+   "oe_10": 3.049,
+   "tv_10_b": 42.7,
+   "irr": 0.0691,
+   "irr_lib": 0.0371
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 1.86,
+   "g": 0.1,
+   "exit": 16,
+   "p": 0.45,
+   "oe_1": 2.046,
+   "oe_10": 4.824,
+   "tv_10_b": 77.2,
+   "irr": 0.1314,
+   "irr_lib": 0.1004
+  }
+ },
+ "history_shareholder_record": "TR x52 1991-06->2026-10 (+11.8%/yr); dividend cut twice (FY2019/20 -18%, FY2023/24 -38%)",
+ "factor_check": "rates / regulation / local-currency factor; weakly correlated with the user's AI + liquidity factor",
+ "sources_used": [
+  {
+   "source_id": "SSE-FY26-RESULTS",
+   "public_date": "2026-05-28",
+   "url": "https://www.sse.com/media/jjzbfm1e/fy26-full-year-results-statement-vfinal2.pdf"
+  },
+  {
+   "source_id": "SSE-Q1-TS",
+   "public_date": "2026-07-16",
+   "url": "https://www.sse.com/news-and-views/2026/07/sse-has-published-its-q1-trading-statement/"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+  "ticker": "0902.HK",
+  "as_of": "2026-10-03",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "power_majors_2026-10-03",
+  "note": "as_of 2026-10-03 is a Saturday; last close <= as_of is 2026-10-02. Prices in HKD (market cap in the same quote unit). Shares basis: A+H total shares 15,698,093,359 (2025 annual report); valued at H price. FILED data (tanshin / 6-K / results) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 6.04,
+      "unit": "HKD",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/0902.HK",
+          "fetched_at": "2026-10-03",
+          "value": 6.04
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/902-HK",
+          "fetched_at": "2026-10-03",
+          "value": 6.04
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 94816524000,
+      "unit": "HKD",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "15698.1M x 6.04",
+          "fetched_at": "2026-10-03",
+          "value": 94816524000
+        },
+        {
+          "source_name": "cnbc_sharesout_derived",
+          "url": "https://www.cnbc.com/quotes/902-HK",
+          "fetched_at": "2026-10-03",
+          "value": 94828000000
+        }
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis (CNBC uses issued / common-only counts); price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 7.63,
+      "unit": "HKD",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/0902.HK",
+          "fetched_at": "2026-10-03",
+          "value": 7.63
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/902-HK",
+          "fetched_at": "2026-10-03",
+          "value": 7.63
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 5.17,
+      "unit": "HKD",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_1y_daily",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/0902.HK",
+          "fetched_at": "2026-10-03",
+          "value": 5.17
+        },
+        {
+          "source_name": "cnbc",
+          "url": "https://www.cnbc.com/quotes/902-HK",
+          "fetched_at": "2026-10-03",
+          "value": 5.17
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 15698.1,
+      "unit": "million shares",
+      "as_of": "2026-10-03",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "A+H total shares 15,698,093,359 (2025 annual report); valued at H price",
+          "fetched_at": "2026-10-03",
+          "value": 15698.1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest results / guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "company_filing",
+          "url": "https://stockmc.xueqiu.com/202608/600011_20260819_APXK.pdf",
+          "public_date": "2026-08-19",
+          "fetched_at": "2026-10-03"
+        }
+      ]
+    }
+  ]
+}

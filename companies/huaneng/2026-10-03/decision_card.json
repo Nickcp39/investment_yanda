@@ -1,0 +1,121 @@
+{
+ "ticker": "0902.HK",
+ "name": "华能国际（H）",
+ "as_of": "2026-10-03",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-03",
+ "batch": "power_majors_2026-10-03",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "cnbc_quote_api"
+ ],
+ "price_date": "2026-10-02 (A-shares 2026-09-30)",
+ "valuation_method": "batch valuation_model.py (same formula as oil / Pelosi batches); OE0 triangulated between net income (or company EPS measures) and OCF - D&A; management growth guidance given 50% credit in base",
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "study": "studies/电力大国百年_英日中_2026-10-03/report.md",
+ "currency": "CNY",
+ "quote_unit": "HKD",
+ "as_of_price": 6.04,
+ "as_of_market_cap": 94816524000,
+ "shares_out_m": 15698.1,
+ "wk52_high": 7.63,
+ "wk52_low": 5.17,
+ "context_label": "cyclical_inflection",
+ "business_verdict": "uncertain",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "module_signals": {
+  "M1": 1,
+  "M2": -1,
+  "M3": -1,
+  "M4": -1,
+  "M5": -2,
+  "M6": -1
+ },
+ "suggested_max_size_pct": 3,
+ "binding_constraint": "PRICE on mid-cycle earnings + coal-price cycle; 7.8% trailing yield computed on peak 2025 profit",
+ "completeness_pct": 55,
+ "share_count_note": "flat; RMB 77.5B perpetual bonds rank ahead of common",
+ "kill_criteria": [
+  "K-H1 unit fuel cost +10% -> not checked",
+  "K-H2 full-year common NI < RMB 7B -> watch (H1 5.5B)",
+  "K-H3 payout < 50% -> green (54%)",
+  "K-H4 perpetual bonds rising again -> green"
+ ],
+ "next_monitor_event": "Q3 2026 report (~late Oct 2026)",
+ "buy_below_price": 4.54,
+ "hurdle_prices": {
+  "8pct": 4.54,
+  "10pct": 3.95,
+  "12pct": 3.46,
+  "8pct_on_bull": 8.75,
+  "8pct_on_bear": 2.18
+ },
+ "zones": {
+  "starter": "<= 4.54 (base >= 8%)",
+  "add": "<= 3.95 (base >= 10%)",
+  "no_chase": "> 4.54",
+  "avoid": "> 8.75"
+ },
+ "implied_g_for_8pct": 0.0474,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 5.5,
+   "g": -0.02,
+   "exit": 6,
+   "p": 0.5,
+   "oe_1": 5.39,
+   "oe_10": 4.494,
+   "tv_10_b": 27.0,
+   "irr": -0.0547,
+   "irr_lib": -0.1042
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 8.0,
+   "g": 0.01,
+   "exit": 8,
+   "p": 0.5,
+   "oe_1": 8.08,
+   "oe_10": 8.837,
+   "tv_10_b": 70.7,
+   "irr": 0.0415,
+   "irr_lib": -0.0135
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 11.6,
+   "g": 0.03,
+   "exit": 10,
+   "p": 0.5,
+   "oe_1": 11.948,
+   "oe_10": 15.589,
+   "tv_10_b": 155.9,
+   "irr": 0.1318,
+   "irr_lib": 0.0676
+  }
+ },
+ "history_shareholder_record": "A TR x3.13 2001-12->2026-10 (+4.7%/yr), price -60% vs 2007-09 peak; H -64% 2015-06->2020-12, +176% 2020-12->2026-09",
+ "factor_check": "rates / regulation / local-currency factor; weakly correlated with the user's AI + liquidity factor",
+ "sources_used": [
+  {
+   "source_id": "HNP-AR2025",
+   "public_date": "2026-03-25",
+   "url": "https://cniis.aastocks.com/CNSESH_STOCK/2026/2026-3/2026-03-25/12015930.pdf"
+  },
+  {
+   "source_id": "HNP-IR2026",
+   "public_date": "2026-08-19",
+   "url": "https://stockmc.xueqiu.com/202608/600011_20260819_APXK.pdf"
+  }
+ ]
+}
