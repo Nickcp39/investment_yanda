@@ -46,23 +46,24 @@ S = dict(
 )
 
 
+LINK = r"\[([^\]]+)\]\(((?:[^()\s]|\([^()\s]*\))+)\)"  # URL may hold one level of parens (Wikipedia "X_(Y)")
+
+
 def inline(t):
     """Markdown inline -> reportlab mini-HTML."""
     t = t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     t = t.replace("−", "-")  # SimHei has no glyph for U+2212 (math minus) -> renders as a box
     t = t.replace("¥", "￥").replace("£", "￡")  # SimHei lacks ¥ / £; fullwidth forms render
+    t = t.replace("æ", "ae").replace("Æ", "Ae")  # nor the ae ligature
     t = t.translate(str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789"))  # subscript digits (OE₀) are boxes in SimHei
     for e in ("🔴", "🟢", "🟡", "⚪", "✅", "❌", "⚠️", "⚠", "🥇", "🥈"):  # emoji only drive row_tint; SimHei draws them as boxes
-        t = t.replace(e, "")
-    t = t.replace("¥", "￥").replace("£", "￡")  # ¥ / £ -> fullwidth forms SimHei can draw
-    for e in ("🔴", "🟢", "🟡", "⚪", "✅", "❌", "⚠️", "⚠", "🥇", "🥈"):  # emoji only tint rows (row_tint); glyphs are boxes in SimHei
         t = t.replace(e, "")
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"~~(.+?)~~", r"<strike>\1</strike>", t)
     # code spans: Courier has no CJK glyphs, so spans containing non-ASCII text keep the CN font
     t = re.sub(r"`([^`]+?)`", lambda m: (f"<font face='Courier'>{m.group(1)}</font>" if m.group(1).isascii()
                                          else f"<font color='#5b6472'>{m.group(1)}</font>"), t)
-    t = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", t)
+    t = re.sub(LINK, lambda m: f'<link href="{m.group(2)}" color="#0b5cad">{m.group(1)}</link>', t)
     return t
 
 
@@ -95,10 +96,21 @@ def build_table(block, width):
         vals = [rows[i][j] for i in range(1, len(rows))]
         num = sum(1 for v in vals if re.search(r"[\d,.]{2,}", v) and not re.search(r"[\u4e00-\u9fff]{3,}", v))
         aligns.append("r" if j > 0 and vals and num >= max(1, len(vals) * 0.6) else "l")  # first column = labels
-    # widths: first column wider, rest even
-    first = min(width * 0.34, max(22 * mm, width / n * 1.5))
-    rest = (width - first) / (n - 1) if n > 1 else width
-    widths = [first] + [rest] * (n - 1)
+    # widths by content: a short column gets its natural (unwrapped) width; long-text columns share the rest
+    # in proportion to (average length)^0.75. 7.4pt cell font ~ 1.42 mm per half-width unit, + padding.
+    def dlen(c):
+        c = re.sub(LINK, r"\1", re.sub(r"\*\*|`", "", c))
+        return sum(2 if ord(ch) > 0x2E80 or ch in "–—·→" else 1 for ch in c)
+    lens = [[dlen(rows[i][j]) for i in range(len(rows))] for j in range(n)]
+    nat = [max(l) * 1.42 * mm + 3.5 * mm for l in lens]
+    short = [nat[j] <= width * 0.22 for j in range(n)]
+    fixed = sum(nat[j] for j in range(n) if short[j])
+    if all(short) or fixed > width * 0.7:
+        widths = [width * x / sum(nat) for x in nat]
+    else:
+        avg = [max(lens[j][0], sum(lens[j][1:] or lens[j]) / max(1, len(lens[j]) - 1)) ** 0.75 for j in range(n)]
+        flex = sum(avg[j] for j in range(n) if not short[j])
+        widths = [nat[j] if short[j] else (width - fixed) * avg[j] / flex for j in range(n)]
     data = [[Paragraph(inline(c), S["cellr"] if (i and aligns[j] == "r") else S["cell"])
              for j, c in enumerate(r)] for i, r in enumerate(rows)]
     t = Table(data, colWidths=widths, repeatRows=1, hAlign="LEFT")

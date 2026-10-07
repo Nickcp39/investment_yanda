@@ -1,11 +1,12 @@
 # Research Queue
 
-最后更新: 2026-10-03（电力大国百年：英日中历史研究 + 10 家公司批次）
+最后更新: 2026-10-06（卖铲子的人：历史上的英伟达们的舆论周期）
 
 用途: 小型买方研究部的 idea backlog。任何公司/主题先入队，再决定是否深研。
 
 | ID | Idea | Type | Stage | Priority | Decision question | Next action | Owner | Last update |
 |---|---|---|---|---|---|---|---|---|
+| **2026-10-SHOVEL** | 历史上的"英伟达"们：20 家关键设备商 + 思科 / 英伟达的四阶段舆论 | Study | 7 - Monitor | P1 | 卖铲子的公司从顶点转入衰落前，舆论和经营上出现过哪些信号？今天的英伟达出现了几个？ | ✅ `studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06/report.md`（+ PDF）。英伟达：顶点信号 5/6（④散户未核实），触发信号 A（买家资本开支掉头）未核查、B（买家自研芯片）部分发生、C（公司下调指引）未出现。下一步：每季度跟踪四大云厂商资本开支指引与英伟达指引；如要量化 A，补一份云厂商 capex 时间序列 | YC | 2026-10-06 |
 | **2026-10-POWER** | 东电 / 关西 / Kyuden HD / J-POWER / National Grid / SSE / 长江电力 / 中广核 / 华能 / 华润 + 历史研究 | Batch + Study | 7 - Monitor（NG 待独立 Checker） | P1 | 工业化大国的用电爆发里，电力股东赚到钱了吗？今天有没有能当 AI 因子分散的电力资产？ | ✅ 历史研究 `studies/电力大国百年_英日中_2026-10-03/report.md`（+ PDF）；10 张卡全部 WATCH（`companies/_power_majors_2026-10-03/`）。**NG runner 提议 STARTER 2–3%（base +8.2%，buy_below 1,169.13p）待 Checker**；Kyuden HD / 华润电力在 8% 线上但完整度 < 60%。下一步：用户决定是否派 Checker；各家 10 月末 / 11 月中期业绩 | YC | 2026-10-03 |
 | **2026-09-OIL** | XOM / CVX / OXY / COP / KMI + 学习专题 | Batch + Study | 7 - Monitor | P1 | 像巴菲特一样投资石油：什么价格买、买哪一层、何时卖 | ✅ 5 张卡全部 WATCH（`companies/_oil_2026-09-30/`）；学习报告 `studies/巴菲特与石油投资_2026-09-30/report.md`。**四家生产商现价隐含长期油价 WTI $72 ~ Brent $94（高于十年均价）；KMI 离 8% 线约 4%（$29.19）**。下一步：Q3 财报（10 月中下旬）+ 伯克希尔 Q3 13F（约 11-14）；KMI 到价则派独立 Checker | YC | 2026-09-30 |
 | **2026-09-UBER** | Uber | Company | 6 - Decision（待独立 Checker） | **P0** | AV 去中介化是局部侵蚀还是全局替代？ | ✅ 卡已建 `companies/uber/2026-09-28/`。**base IRR +12.8%，runner 提议 STARTER 3%，以 WATCH 落锁**。buy_below $101.71（现价 $69.62）。CEO/COO 公开市场买入 $15.3M（Form 4）。**下一步：独立 Checker；Q3 读 Mobility GB cc（K-U1）** | YC | 2026-09-28 |
