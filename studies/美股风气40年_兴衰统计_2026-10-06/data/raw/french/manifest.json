@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ff49",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_CSV.zip",
+    "sha256": "b197eab1059757f3cfa2b92fd520197372237104d3d46a3000c8061e5066a302",
+    "downloaded_utc": "2026-09-23T18:12:10.413541+00:00"
+  },
+  {
+    "name": "factors",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
+    "sha256": "b840dba55d319f4818fc7300e65c52eff5f64870c8d495fa58ff5d4cd749f5eb",
+    "downloaded_utc": "2026-09-23T18:12:11.766938+00:00"
+  },
+  {
+    "name": "definitions",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Siccodes49.zip",
+    "sha256": "36761b4009107e11cd15cff0eb75f8837ef49f024524b7378634629bf90905d5",
+    "downloaded_utc": "2026-09-23T18:12:13.124285+00:00"
+  }
+]

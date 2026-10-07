@@ -1,0 +1,1688 @@
+{
+  "era_id": "e4_2012_2019",
+  "era_range": "2012-2019",
+  "macro_context_cn": "零利率+量化宽松的十年：联邦基金利率自 2008-12-16 起维持 0–0.25%，直到 2015-12-17 才首次加息；2012-09-13 美联储推出开放式 QE3（每月 $400 亿 MBS），并预期超低利率至少维持到 2015 年中。2016-12 至 2018-12 共加息 9 次至 2.25–2.50%，2018Q4 纳指从 8133（2018-08-30 盘中）跌至 6190（2018-12-24 盘中，约 -24%），2019 年 8–10 月又降息 3 次。制度上，2012-04-05 签署的 JOBS Act 允许“新兴成长公司”秘密递交 IPO 文件，公司得以在私募市场停留更久；2013-11 Aileen Lee 把估值超 $10 亿的创业公司称为“独角兽”（当时 39 家），2017-05 软银愿景基金以逾 $1000 亿规模入场，把 Uber、WeWork 等私募估值推到极致，2019 年集中上市时由公开市场买单。",
+  "macro_sources": [
+    "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20120913a.htm",
+    "https://www.sec.gov/spotlight/jobs-act.shtml",
+    "https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/",
+    "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund",
+    "https://finance.yahoo.com/quote/^IXIC/history/"
+  ],
+  "themes": [
+    {
+      "id": "social_ipo_2011_2017",
+      "name_cn": "社交网络 / 消费互联网 IPO 潮",
+      "name_en": "Social-media & consumer-internet IPO wave (2011–2017)",
+      "one_line_cn": "赌“几亿用户+社交图谱”能在移动时代变成长期广告/订阅利润，追捧 Facebook 一代的新股。",
+      "hype_start": {
+        "date": "2011-05",
+        "event_cn": "LinkedIn IPO 定价 $45，首日收 $94.25（+109%），开启社交股 IPO 潮",
+        "source": "https://en.wikipedia.org/wiki/LinkedIn"
+      },
+      "peak": {
+        "date": "2014-03",
+        "event_cn": "第二波集体见顶：Twitter 2013-12 盘中 $74.73、Yelp 2014-03-05 盘中 $101.75、Pandora 2014Q1 盘中 $39.43（Facebook 2012-05 IPO 估值 $1040 亿是第一波高潮）",
+        "source": "https://www.sec.gov/Archives/edgar/data/1418091/000095012314003031/twtr-10k_20131231.htm"
+      },
+      "trough": {
+        "date": "2016-02",
+        "event_cn": "2016-02-05 LinkedIn 单日 -43.6% 收 $108.38、Tableau -49%，另有 13 家软件/互联网股跌逾 10%；四个月后微软以 $196 收购 LinkedIn（较峰值 -29%）",
+        "source": "https://au.news.yahoo.com/business-services-firms-shares-bleed-173956381.html"
+      },
+      "proxy_tickers": [
+        "SOCL"
+      ],
+      "proxy_note_cn": "Global X Social Media ETF（Yahoo 首月 2011-12）基本覆盖本期；但含大量中国/海外社交股，非纯美股口径。Facebook 本身（META）是这一主题唯一的大赢家，不宜用作主题代理。",
+      "what_killed_it_cn": "三件事：①移动化——Zynga 依附 Facebook PC 端游戏、Groupon 依赖邮件团购，转移动后流量和变现模式失效；②赢家通吃——社交广告预算集中到 Facebook/Instagram（以及 Google），Twitter、Snap 长期无法 GAAP 盈利；③估值压缩——IPO 定价按用户数和收入增速给，增速一放缓（LinkedIn 2016-02 指引、Yelp）即被腰斩。多数公司最终以低于峰值的价格被并购（LinkedIn、Zynga、Pandora、Twitter）。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "Meta 收入 2012 年 $50.9 亿 → 2025 年 $2009.7 亿；营业利润 2025 年 $832.8 亿——社交广告变现完全兑现，但集中在一家",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json"
+        },
+        {
+          "claim_cn": "Snap 2015–2025 年每一年 GAAP 营业亏损（2025 年仍亏 $5.3 亿）",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564408.json"
+        },
+        {
+          "claim_cn": "Groupon 收入 2014 年峰值 $30.4 亿 → 2025 年 $5.0 亿",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001490281.json"
+        },
+        {
+          "claim_cn": "Yelp 收入 2012 年 $1.38 亿 → 2025 年 $14.65 亿且盈利，股价仍较 2014 峰值 -82%（估值压缩而非业务死亡）",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001345016.json"
+        }
+      ],
+      "time_to_reality": {
+        "years": 4,
+        "from": "2012",
+        "to": "2016",
+        "marker_cn": "Facebook IPO 后移动广告变现被证实：收入 2012 年 $50.9 亿 → 2016 年 $276.4 亿，营业利润 $124.3 亿",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json"
+      },
+      "basket_method": "当年口径：2011–2017 年美股最受关注的社交/消费互联网 IPO（LinkedIn、Groupon、Zynga、Pandora 2011；Facebook、Yelp 2012；Twitter 2013；Snap 2017），即媒体当时并列报道的“社交 IPO 一代”（如 CS Monitor 2012-01《七只新科技股表现》）。来源：https://csmonitor.com/Business/2012/0131/Tech-stocks-How-seven-recent-IPOs-have-fared/Zynga-Inc",
+      "companies": [
+        {
+          "name": "LinkedIn",
+          "ticker_then": "LNKD",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2011-05",
+          "peak_date": "2015-02",
+          "peak_price": 276.18,
+          "price_basis": "nominal (10-K 2015Q1 盘中高点)",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2016-12",
+          "final_value_per_share": 196.0,
+          "fate_detail_cn": "IPO 价 $45；2016-02 指引不及预期单日 -43.6%；2016-12-08 微软以每股 $196 现金完成收购（$262 亿），较峰值 -29%、较 IPO 价 +336%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+            "https://www.sec.gov/Archives/edgar/data/0001271024/000110465916126712/a16-13234_1ex99d1.htm",
+            "https://en.wikipedia.org/wiki/LinkedIn"
+          ],
+          "confidence": "high",
+          "notes": "峰值来自 FY2015 10-K 季度高低价表（2015Q1 高 $276.18）；具体日期在 2015-02-05 财报后，日未核实。"
+        },
+        {
+          "name": "Facebook",
+          "ticker_then": "FB (现 META)",
+          "yahoo_ticker": "META",
+          "role_cn": "龙头",
+          "hype_date": "2012-05",
+          "peak_date": "2012-05",
+          "peak_price": 45.0,
+          "price_basis": "nominal = split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": 104.0,
+          "fate": "survived_new_high",
+          "fate_date": "2013-09",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2012-05-18 以 $38 上市（估值约 $1040 亿），首日盘中 $45、收 $38.23；次日破发，2012-09-04 盘中低至 $17.55（-61%）；2013-09-11 首次突破 $45；2026-10-06 收约 $740。",
+          "sources": [
+            "https://www.nbcnews.com/news/world/stocks-rise-facebook-shares-fall-below-38-issue-price-flna784193",
+            "https://irmagazine.com/reporting/facebook-shares-drop-10-percent",
+            "https://finance.yahoo.com/quote/META/history/"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为 IPO 定价估值（$1040 亿）。同一公司也出现在 FANG 主题中（以 2021 峰值计），汇总计数时注意去重。"
+        },
+        {
+          "name": "Groupon",
+          "ticker_then": "GRPN",
+          "yahoo_ticker": "GRPN",
+          "role_cn": "明星",
+          "hype_date": "2011-11",
+          "peak_date": "2011-11",
+          "peak_price": 31.14,
+          "price_basis": "nominal（2020-06 1:20 反向拆股前；Yahoo 复权≈$622.8）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $20（2011-11-04）；上市两月内最高 $31.14；收入 2014 年见顶后连降；2020-06-10 实施 1:20 反向拆股；2026-10-06 复权收 $18.95，约为 IPO 价（复权 $400）的 4.7%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1490281/000144530512000922/groupon10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1490281/000149028120000084/grpn-20200609.htm",
+            "https://finance.yahoo.com/quote/GRPN/history/"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股：2020-06 1:20。"
+        },
+        {
+          "name": "Zynga",
+          "ticker_then": "ZNGA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2011-12",
+          "peak_date": "2012-03",
+          "peak_price": 15.91,
+          "price_basis": "nominal（10-K 2012Q1 盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2022-05",
+          "final_value_per_share": 9.861,
+          "fate_detail_cn": "IPO 价 $10（2011-12-16，首日即破发收 $9.50）；2012Q1 高 $15.91，2012Q4 跌至 $2.09；2022-05-23 Take-Two 以每股 $3.50 现金 + 0.0406 股 TTWO（合计 $9.861）完成收购，较峰值 -38%、较 IPO 价 -1.4%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1439404/000119312513072858/d489727d10k.htm",
+            "https://money.cnn.com/2011/12/16/technology/zynga_ipo/",
+            "https://www.sec.gov/Archives/edgar/data/946581/000162828023002448/ttwo-20221231.htm"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Pandora Media",
+          "ticker_then": "P",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2011-06",
+          "peak_date": "2014-03",
+          "peak_price": 39.43,
+          "price_basis": "nominal（10-K 2014Q1 盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2019-02",
+          "final_value_per_share": 8.4,
+          "fate_detail_cn": "IPO 价 $16（2011-06-14）；2014Q1 高 $39.43；2019-02-01 被 Sirius XM 以每股换 1.44 股 SIRI 全股票收购。宣布时（2018-09-24）隐含 $10.14/股；按 2019-01-31 SIRI 收盘 $5.83 计约 $8.40，较峰值 -79%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/0001230276/000123027616000057/p-12312015x10k.htm",
+            "https://www.cnbc.com/2018/09/24/siriusxm-to-buy-pandora-in-all-stock-deal-valued-at-3point5-billion.html",
+            "https://www.sec.gov/Archives/edgar/data/0000908937/000090893720000011/siri-20191231x10k.htm"
+          ],
+          "confidence": "high",
+          "notes": "final_value 为自算：1.44 × SIRI 2019-01-31 收盘（Yahoo 复权价 $58.3 ÷ 2024-09 的 1:10 反向拆股 = $5.83）。Yahoo 现用 ticker P 的是另一家公司，勿混用。fool.com 写的 $40.44 与 10-K 不符，采用 10-K。"
+        },
+        {
+          "name": "Yelp",
+          "ticker_then": "YELP",
+          "yahoo_ticker": "YELP",
+          "role_cn": "明星",
+          "hype_date": "2012-03",
+          "peak_date": "2014-03",
+          "peak_price": 101.75,
+          "price_basis": "nominal = split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $15，首日 +64% 收 $24.58；2014-03-05 盘中 $101.75 见顶；此后收入增长十倍且转为盈利，股价却从未回到峰值，2026-10-06 收 $18.24（-82%）。",
+          "sources": [
+            "https://money.cnn.com/2012/03/02/technology/yelp_ipo/",
+            "https://finance.yahoo.com/quote/YELP/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001345016.json"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Twitter",
+          "ticker_then": "TWTR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2013-11",
+          "peak_date": "2013-12",
+          "peak_price": 74.73,
+          "price_basis": "nominal（10-K 盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2022-10",
+          "final_value_per_share": 54.2,
+          "fate_detail_cn": "IPO 价 $26（2013-11-07），首日收约 $44.90；2013-12 盘中 $74.73；2021-02 曾短暂突破旧高；2022-10-27 被马斯克以每股 $54.20 现金私有化（约 $440 亿），较 2013 峰值 -27%、较 IPO 价 +108%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1418091/000095012314003031/twtr-10k_20131231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1418091/000119312522272772/d411753d8k.htm",
+            "https://ampvideo.bnnbloomberg.ca/twitter-climbs-to-new-high-as-advertising-market-recovers-1.1564259"
+          ],
+          "confidence": "high",
+          "notes": "2021-02 新高的确切数值（约 $80）未在一手来源核实；按 2013 峰值比较。"
+        },
+        {
+          "name": "Snap",
+          "ticker_then": "SNAP",
+          "yahoo_ticker": "SNAP",
+          "role_cn": "明星（本轮最后一个大社交 IPO）",
+          "hype_date": "2017-03",
+          "peak_date": "2017-03",
+          "peak_price": 29.44,
+          "price_basis": "nominal = split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $17（2017-03-02），开 $24、收 $24.48，次日盘中 $29.44；2018-12 跌至 $4.82；2020–21 疫情期涨到 $83.34（2021-09）后再崩；2026-10-06 收 $5.73，较 2017 峰值 -81%、低于 IPO 价。",
+          "sources": [
+            "https://fortune.com/2017/03/02/snap-snapchat-ipo-stock-shares-buy-time",
+            "https://finance.yahoo.com/quote/SNAP/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564408.json"
+          ],
+          "confidence": "high",
+          "notes": "按 brief 定义“曾超越峰值”即为 survived_new_high（2020-10 首破），但当前远低于峰值，请主分析师按现价重算。"
+        }
+      ]
+    },
+    {
+      "id": "fang_2013_2022",
+      "name_cn": "FANG / FAANG 科技巨头",
+      "name_en": "FANG / FAANG mega-cap tech",
+      "one_line_cn": "赌少数几家平台型巨头在各自市场“赢家通吃”，并且能以高增长维持高估值。",
+      "hype_start": {
+        "date": "2013-02",
+        "event_cn": "2013-02-05 Jim Cramer 在 CNBC《Mad Money》提出 FANG（Facebook、Amazon、Netflix、Google）",
+        "source": "https://barrypopik.com/blog/fang_facebook_amazon_netflix_google"
+      },
+      "peak": {
+        "date": "2021-11",
+        "event_cn": "FAANG 集体见顶：Meta 2021-09-01 盘中 $384.33、Amazon 2021-07-13、Netflix 2021-11-17 盘中 $700.99（拆股前）、Alphabet 2022-02、Apple 2022-01（中途 2018-08-02 Apple 首次市值 $1 万亿是第一次高潮）",
+        "source": "https://finance.yahoo.com/quote/NFLX/history/"
+      },
+      "trough": {
+        "date": "2022-11",
+        "event_cn": "Meta 2022-11-04 盘中 $88.09（较峰值 -77%）；Netflix 2022-04-20 因 20 万订户流失单日 -35%，2022-05-12 低点较峰值 -77%；Amazon 2022-12 低点 -57%",
+        "source": "https://www.forbes.com.au/news/billionaires/how-meta-stock-emerged-from-77-plunge-and-metaverse-fiasco/"
+      },
+      "proxy_tickers": [
+        "^NYFANG",
+        "FNGS"
+      ],
+      "proxy_note_cn": "NYSE FANG+ 指数 2017-09-26 才推出（Yahoo 回溯数据自 2014-10）；FNGS ETN 自 2019-11。指数为 10 只等权、成分会调整，后期已包含 NVDA/MSFT 等，不等于 2013 年的 FANG 四家。",
+      "what_killed_it_cn": "FANG 作为“风气”并没有死，而是换了名字：2018-07-26 Facebook 单日蒸发 $1190 亿、2018Q4 加息+贸易战带来第一次 FAANG 熊市；2022 年美联储激进加息、疫情红利消退、苹果隐私新政（ATT）打击 Meta 广告、Meta 元宇宙巨额投入、Netflix 首次掉订户，造成第二次 -55%~-77% 的回撤。2023 年 BofA 的 Michael Hartnett 提出“Magnificent Seven”，用 Microsoft、NVIDIA、Tesla 取代 Netflix，AI 接棒成为新的叙事。",
+      "reality_verdict": "真实且巨大",
+      "reality_evidence": [
+        {
+          "claim_cn": "Amazon 收入 2013 年 $744.5 亿 → 2025 年 $7169.2 亿",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"
+        },
+        {
+          "claim_cn": "Alphabet 收入 2013 年 $555.2 亿 → 2025 年 $4028.4 亿；营业利润 $1290.4 亿",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+        },
+        {
+          "claim_cn": "Netflix 收入 2013 年 $43.8 亿 → 2025 年 $451.8 亿",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001065280.json"
+        },
+        {
+          "claim_cn": "Apple 2018-08-02 成为首家市值 $1 万亿的美国公司（收 $207.39）",
+          "date": "2018-08",
+          "source": "https://www.bloomberg.com/news/articles/2018-08-02/apple-share-gains-push-company-to-1-trillion-milestone"
+        }
+      ],
+      "time_to_reality": {
+        "years": 5,
+        "from": "2013",
+        "to": "2018",
+        "marker_cn": "Apple 成为首家 $1 万亿市值公司（巨头已在 2013 年盈利，兑现的是“规模+垄断溢价”）",
+        "source": "https://www.bloomberg.com/news/articles/2018-08-02/apple-share-gains-push-company-to-1-trillion-milestone"
+      },
+      "basket_method": "Cramer 2013-02 的 FANG 四家 + 2017 年加入的 Apple（FAANG）+ 2017-09 NYSE FANG+ 指数初始 10 只中的 Alibaba、Baidu（Twitter 已在社交主题、NVIDIA/Tesla 在自动驾驶主题，不重复列）。来源：https://www.businessinsider.in/theres-a-brand-new-way-to-bet-on-the-markets-hottest-stocks/articleshow/61565236.cms",
+      "companies": [
+        {
+          "name": "Meta Platforms (Facebook)",
+          "ticker_then": "FB",
+          "yahoo_ticker": "META",
+          "role_cn": "龙头",
+          "hype_date": "2013-02",
+          "peak_date": "2021-09",
+          "peak_price": 384.33,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-01",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-07-26 单日 -19%（$1190 亿，当时美股史上最大单日市值损失）；2021-09 峰值后跌至 2022-11-04 盘中 $88.09（-77%），2024-01 收复，2025-08 创 $796.25 新高。",
+          "sources": [
+            "https://www.cnbc.com/amp/2018/07/26/facebook-on-pace-for-biggest-one-day-loss-in-value-for-any-company-sin.html",
+            "https://finance.yahoo.com/quote/META/history/"
+          ],
+          "confidence": "high",
+          "notes": "与社交 IPO 主题中的 Facebook 为同一公司。"
+        },
+        {
+          "name": "Apple",
+          "ticker_then": "AAPL",
+          "yahoo_ticker": "AAPL",
+          "role_cn": "龙头（2017 年加入，FAANG 的 A）",
+          "hype_date": "2017",
+          "peak_date": "2022-01",
+          "peak_price": 182.94,
+          "price_basis": "split_adjusted（2014 7:1、2020 4:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2023-06",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-08-02 首家市值 $1 万亿美国公司；2022 年回撤后 2023-06 创新高；2026-10-06 收约 $333。",
+          "sources": [
+            "https://www.bloomberg.com/news/articles/2018-08-02/apple-share-gains-push-company-to-1-trillion-milestone",
+            "https://finance.yahoo.com/quote/AAPL/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Amazon",
+          "ticker_then": "AMZN",
+          "yahoo_ticker": "AMZN",
+          "role_cn": "龙头",
+          "hype_date": "2013-02",
+          "peak_date": "2021-07",
+          "peak_price": 188.65,
+          "price_basis": "split_adjusted（2022 20:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-04",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018Q4 与 2022 年两次大回撤（2022-12 低点较 2021-07 峰值 -57%）；2024-04 收复；2026-10-06 收约 $255。",
+          "sources": [
+            "https://finance.yahoo.com/quote/AMZN/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Netflix",
+          "ticker_then": "NFLX",
+          "yahoo_ticker": "NFLX",
+          "role_cn": "龙头",
+          "hype_date": "2013-02",
+          "peak_date": "2021-11",
+          "peak_price": 70.1,
+          "price_basis": "split_adjusted（2015 7:1、2025-11-17 10:1；名义价 $700.99）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-08",
+          "final_value_per_share": null,
+          "fate_detail_cn": "前传：2011-07 涨价 60% 并拆分 DVD 业务（Qwikster），流失 80 万美国订户，股价从 2011-07-13 的 $304.79（名义）跌至 2012-08-03 的 $52.81（-83%）。2022-04-20 首次掉订户（-20 万）单日 -35%，2022-05 低点较 2021 峰值 -77%；2024-08 收复，2025-06 创新高（复权 $134.1）；2026-10-06 收约 $68，较 2025 高点约 -50%。",
+          "sources": [
+            "https://www.csmonitor.com/Business/2011/0919/Netflix-NFLX-faces-customer-backlash-weak-economy",
+            "https://www.bnnbloomberg.ca/netflix-shares-plunge-35-after-massive-subscriber-loss-1.1754275",
+            "https://www.nasdaq.com/articles/netflixs-10-1-stock-split-takes-effect-hold-now-or-fold-revised",
+            "https://finance.yahoo.com/quote/NFLX/history/"
+          ],
+          "confidence": "high",
+          "notes": "2025-06 之后约 -50% 的下跌原因本 agent 未核实。注意 2025-11 的 10:1 拆股。"
+        },
+        {
+          "name": "Alphabet (Google)",
+          "ticker_then": "GOOG/GOOGL",
+          "yahoo_ticker": "GOOGL",
+          "role_cn": "龙头",
+          "hype_date": "2013-02",
+          "peak_date": "2022-02",
+          "peak_price": 151.55,
+          "price_basis": "split_adjusted（2014 股票分红、2022 20:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-01",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2022 年大幅回撤后 2024-01 收复；2026-10-06 收约 $348；旗下 Waymo 另见自动驾驶主题。",
+          "sources": [
+            "https://finance.yahoo.com/quote/GOOGL/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Alibaba",
+          "ticker_then": "BABA",
+          "yahoo_ticker": "BABA",
+          "role_cn": "明星（FANG+ 成分）",
+          "hype_date": "2017-09",
+          "peak_date": "2020-10",
+          "peak_price": 319.32,
+          "price_basis": "nominal（ADS，无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2014-09 美股 IPO；2020-10-27 盘中 $319.32 见顶，随后蚂蚁 IPO 被叫停与中国平台监管，2022-10 低至 $63.58（收盘，-80%）；2026-10-06 收约 $108，仍 -66%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BABA/history/",
+            "https://www.businessinsider.in/theres-a-brand-new-way-to-bet-on-the-markets-hottest-stocks/articleshow/61565236.cms"
+          ],
+          "confidence": "medium",
+          "notes": "监管事件为常识性背景，本 agent 未单独取一手来源。"
+        },
+        {
+          "name": "Baidu",
+          "ticker_then": "BIDU",
+          "yahoo_ticker": "BIDU",
+          "role_cn": "明星（FANG+ 成分）",
+          "hype_date": "2017-09",
+          "peak_date": "2018-05",
+          "peak_price": 284.22,
+          "price_basis": "nominal（ADS）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2021-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-05-16 盘中 $284.22，2018 年底跌至 $160；2021-02 短暂冲到 $354.82 后长期下滑，2026-10-06 收约 $87（较 2018 峰值 -69%）。",
+          "sources": [
+            "https://www.fool.com/investing/2019/02/15/is-baidu-a-buy.aspx",
+            "https://finance.yahoo.com/quote/BIDU/history/"
+          ],
+          "confidence": "high",
+          "notes": "按定义“曾超越”即 survived_new_high，但当前远低于峰值，请按现价重算。"
+        }
+      ]
+    },
+    {
+      "id": "saas_cloud_2012_2021",
+      "name_cn": "SaaS / 云订阅",
+      "name_en": "SaaS / cloud subscription",
+      "one_line_cn": "赌企业软件从一次性授权改为按年订阅、云端交付，带来高留存、可预测的经常性收入，值得用“市销率”而非市盈率估值。",
+      "hype_start": {
+        "date": "2012-10",
+        "event_cn": "ServiceNow（2012-06-29，定价 $18 首日 +37%）与 Workday（2012-10-12，定价 $28 首日 +74%）IPO；2013-05 Adobe 停售盒装 Creative Suite、全面转向 Creative Cloud 订阅",
+        "source": "https://www.ere.net/articles/big-day-for-hr-tech-firm-workday-stock-price-jumps-70-after-ipo"
+      },
+      "peak": {
+        "date": "2021-11",
+        "event_cn": "Snowflake 2020-09-16 以 $120 定价、开盘 $245（史上最大软件 IPO）后，云股在 2021-11 集体见顶：WCLD 2021-11-08 盘中 $65.51、Adobe 2021-11-22 $699.54、Salesforce/ServiceNow/Workday 同月见顶",
+        "source": "https://www.cnbc.com/2020/09/16/snowflake-snow-opening-trading-on-the-nyse.html"
+      },
+      "trough": {
+        "date": "2022-10",
+        "event_cn": "加息周期中 WCLD 2022-10-31 收 $23.55（较峰值 -64%），Salesforce 2022-12 收 $132.59（-57%）。第二段：2026-01 Anthropic 推出 Claude Cowork 后的“SaaSpocalypse”，标普软件与服务指数至 2026-02 下跌约 25%，Adobe 2026 年内跌逾四成",
+        "source": "https://www.longangle.com/alts-education/software-ai"
+      },
+      "proxy_tickers": [
+        "IGV",
+        "WCLD"
+      ],
+      "proxy_note_cn": "IGV（2001 年起，泛软件）可覆盖全期且 2025-09 已创新高；WCLD（BVP 新兴云指数 ETF）2019-09 才上市，晚于主题起点，至今仍较 2021 峰值 -35%。两者的差异本身说明：大型平台型软件收复，纯 SaaS 中小盘没有。",
+      "what_killed_it_cn": "第一刀是利率：2022 年加息把长久期、靠远期现金流估值的 SaaS 打掉 60%+；增长放缓（2016-02 Tableau 指引腰斩单日 -49% 是早期预演）。第二刀是 AI：2026 年起市场担心 AI 代理让“按席位收费”模式失效，Adobe 被视为生成式 AI 的输家——收入仍创新高、增速约 12.7%，但远期市盈率压到约 10 倍。",
+      "reality_verdict": "真实且巨大",
+      "reality_evidence": [
+        {
+          "claim_cn": "Salesforce 收入 FY2013 $30.5 亿 → FY2026 $415.3 亿；GAAP 营业利润直到 FY2024 才达 $50.1 亿",
+          "date": "2026-01",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json"
+        },
+        {
+          "claim_cn": "ServiceNow 收入 2012 年 $2.4 亿 → 2025 年 $132.8 亿；2019 年首次 GAAP 营业盈利",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json"
+        },
+        {
+          "claim_cn": "Workday 收入 FY2013 $2.7 亿 → FY2026 $95.5 亿；FY2024 才首次 GAAP 营业盈利",
+          "date": "2026-01",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327811.json"
+        },
+        {
+          "claim_cn": "Adobe 转订阅当年收入从 $44.0 亿（FY2012）降至 $40.6 亿（FY2013），营业利润从 $11.8 亿跌到 $4.2 亿，此后到 FY2025 收入 $237.7 亿、营业利润 $87.1 亿",
+          "date": "2025-11",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json"
+        },
+        {
+          "claim_cn": "2026 年 Adobe 年内跌逾 40%，远期 PE 约 9.9 倍，被视为 AI 输家",
+          "date": "2026-07",
+          "source": "https://www.xtb.com/en/market-analysis/stock-of-the-week-adobe-is-ai-taking-its-future-away"
+        }
+      ],
+      "time_to_reality": {
+        "years": 11,
+        "from": "2013",
+        "to": "2024",
+        "marker_cn": "收入规模早在 2010 年代中期即兑现；以“龙头 GAAP 实质盈利”为兑现标准：Salesforce FY2024 营业利润 $50 亿、Workday FY2024 首次 GAAP 营业盈利",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json"
+      },
+      "basket_method": "当年口径：2012–2015 年的云 IPO 明星（ServiceNow、Workday、Tableau、Zendesk、Box）+ 订阅转型标杆 Adobe + 行业龙头 Salesforce + 终点 Snowflake（2020 史上最大软件 IPO）。依据：Workday/ServiceNow/Box IPO 报道与 2016-02-05 CNBC 云股暴跌报道 https://www.cnbc.com/2016/02/05/cloud-has-gloomy-day-on-linkedin-tableau-results.html",
+      "companies": [
+        {
+          "name": "Salesforce",
+          "ticker_then": "CRM",
+          "yahoo_ticker": "CRM",
+          "role_cn": "龙头",
+          "hype_date": "2012",
+          "peak_date": "2021-11",
+          "peak_price": 311.75,
+          "price_basis": "split_adjusted（2013 4:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-03",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2021-11 峰值后 2022-12 跌至 $132.59；2024-03 收复并于 2024-12 创 $369 新高；2026 年 SaaSpocalypse 中回落，2026-10-06 收约 $228（较 2021 峰值 -27%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CRM/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json",
+            "https://ainsliebullion.com.au/News-Resources/Article/The-SaaSpocalypse-AI-Comes-for-Software-Stocks/ID/9101"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Adobe",
+          "ticker_then": "ADBE",
+          "yahoo_ticker": "ADBE",
+          "role_cn": "明星（订阅转型标杆 → AI 时代输家）",
+          "hype_date": "2013-05",
+          "peak_date": "2021-11",
+          "peak_price": 699.54,
+          "price_basis": "split_adjusted（期内无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2013-05 停售盒装软件、全面转 Creative Cloud 订阅，被奉为 SaaS 转型教科书；2021-11-22 盘中 $699.54 见顶；2026 年被市场定性为生成式 AI 输家（高盛下调至卖出），2026-10-06 收约 $238（-66%），尽管收入仍创新高。",
+          "sources": [
+            "https://www.theregister.co.uk/2013/05/06/adobe_kills_creative_suite_for_cloud/",
+            "https://www.xtb.com/en/market-analysis/stock-of-the-week-adobe-is-ai-taking-its-future-away",
+            "https://finance.yahoo.com/quote/ADBE/history/"
+          ],
+          "confidence": "high",
+          "notes": "用户要求记录：Adobe 现被视为 AI 时代输家。"
+        },
+        {
+          "name": "ServiceNow",
+          "ticker_then": "NOW",
+          "yahoo_ticker": "NOW",
+          "role_cn": "明星",
+          "hype_date": "2012-06",
+          "peak_date": "2021-11",
+          "peak_price": 141.52,
+          "price_basis": "split_adjusted（2025-12-18 5:1；名义 $707.6）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2023-12",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $18（2012-06-29）；2023-12 收复 2021 峰值，2025-01 复权高点 $239.6；2026 年回落，2026-10-06 收约 $138（低于 2021 峰值 2%）。",
+          "sources": [
+            "https://www.bloomberg.com/news/articles/2012-06-29/servicenow-advances-in-debut-after-210-million-ipo",
+            "https://businesswire.com/news/home/20251205952446/en/ServiceNow-Shareholders-Approve-5-for-1-Stock-Split",
+            "https://finance.yahoo.com/quote/NOW/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Workday",
+          "ticker_then": "WDAY",
+          "yahoo_ticker": "WDAY",
+          "role_cn": "明星",
+          "hype_date": "2012-10",
+          "peak_date": "2021-11",
+          "peak_price": 307.81,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $28，首日收 $48.69；2024-02 以 $311.28 略破 2021 峰值；2026 年跌约四成，2026-10-06 收约 $189（-39%）。",
+          "sources": [
+            "https://www.ere.net/articles/big-day-for-hr-tech-firm-workday-stock-price-jumps-70-after-ipo",
+            "https://finance.yahoo.com/quote/WDAY/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Box",
+          "ticker_then": "BOX",
+          "yahoo_ticker": "BOX",
+          "role_cn": "明星（2015 云存储 IPO）",
+          "hype_date": "2015-01",
+          "peak_date": "2018-06",
+          "peak_price": 29.79,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2022-04",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $14（2015-01-23），首日收 $23.23；长期横盘，2022-04 才破 2018 高点，2026-10-06 收约 $35。",
+          "sources": [
+            "https://money.cnn.com/2015/01/23/investing/box-ipo-tech-stocks",
+            "https://finance.yahoo.com/quote/BOX/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Tableau Software",
+          "ticker_then": "DATA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2013-05",
+          "peak_date": "2015-08",
+          "peak_price": 131.34,
+          "price_basis": "nominal（10-K 2015Q3 盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2019-08",
+          "final_value_per_share": 166.34,
+          "fate_detail_cn": "IPO 价 $31（2013-05-17）；2016-02-05 下调指引单日 -49% 至 $41.33；2019-08-01 被 Salesforce 以每股 1.103 股 CRM 全股票收购（$157 亿）。宣布时隐含 $177.88；按交割日 CRM 收盘 $150.81 计约 $166，高于 2015 峰值。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1303652/000130365216000039/a10k2015.htm",
+            "https://investor.salesforce.com/news/news-details/2019/Salesforce-Completes-Exchange-Offer-for-Tableau-Common-Stock/default.aspx",
+            "https://www.techradar.com/news/salesforce-snaps-up-tableau-in-biggest-acquisition-yet"
+          ],
+          "confidence": "high",
+          "notes": "峰值日期：10-K 只给到季度（2015Q3），月份为估计。final_value 为自算（1.103 × CRM 2019-08-01 收盘）。"
+        },
+        {
+          "name": "Zendesk",
+          "ticker_then": "ZEN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2014-05",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2022-11",
+          "final_value_per_share": 77.5,
+          "fate_detail_cn": "2014-05 IPO；2022-11-22 被 Hellman & Friedman 与 Permira 以每股 $77.50 现金私有化（约 $102 亿）。",
+          "sources": [
+            "https://www.zendesk.com/newsroom/press-releases/consortium-led-by-hellman-friedman-and-permira-completes-acquisition-of-zendesk",
+            "https://www.sec.gov/Archives/edgar/data/1463172/000114036122033819/brhc10041988_ex99-1.htm"
+          ],
+          "confidence": "medium",
+          "notes": "峰值价格（2021 年约 $160 区间）未能在一手来源核实，故填 null；Yahoo 已无 ZEN 数据。"
+        },
+        {
+          "name": "Snowflake",
+          "ticker_then": "SNOW",
+          "yahoo_ticker": "SNOW",
+          "role_cn": "明星（主题终点）",
+          "hype_date": "2020-09",
+          "peak_date": "2020-12",
+          "peak_price": 429.0,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2020-09-16 以 $120 定价、开盘 $245，伯克希尔与 Salesforce 各认购 $2.5 亿；2020-12-08 盘中 $429 见顶，2024-09 周收盘 $108.56（-75%）；2026-10-06 收约 $339（-21%）。",
+          "sources": [
+            "https://www.benzinga.com/news/20/09/17531876/snowflake-opens-at-245-after-pricing-ipo-at-120",
+            "https://finance.yahoo.com/quote/SNOW/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "3d_printing_2013_2014",
+      "name_cn": "3D 打印",
+      "name_en": "3D printing bubble",
+      "one_line_cn": "赌 3D 打印会从工业原型走进每个家庭和工厂，引发“第三次工业革命”。",
+      "hype_start": {
+        "date": "2013-02",
+        "event_cn": "ExOne 2013-02-07 以 $18 在纳斯达克上市，首日涨逾 46%；同年 Motley Fool 已在问“3D 打印是不是泡沫”",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001561627/000119312514108228/d634414d10k.htm"
+      },
+      "peak": {
+        "date": "2014-01",
+        "event_cn": "3D Systems 盘中 $97.28（2013-12/2014-01）、Stratasys 2014-01-03 收 $136.46（盘中 $138.10）；ExOne 2013Q3 高 $78.80、Organovo 2013Q4 高 $13.65",
+        "source": "https://www.macrotrends.net/stocks/charts/SSYS/stratasys/stock-price-history"
+      },
+      "trough": {
+        "date": "2016-02",
+        "event_cn": "Stratasys 2014-09 至 2016-02 跌近 90%；3D Systems 2015 年营业亏损 $6.42 亿（商誉减值），2016-04 换 CEO 并退出桌面打印机",
+        "source": "https://www.fool.com/investing/2016/12/29/3d-systems-stock-in-8-charts.aspx"
+      },
+      "proxy_tickers": [
+        "PRNT"
+      ],
+      "proxy_note_cn": "ARK 3D Printing ETF（PRNT）2016-07 才上市，完全错过 2013–14 泡沫，只能用于事后阶段；主题层面回撤建议用 DDD+SSYS 等权自建。",
+      "what_killed_it_cn": "消费级需求证伪：家用 3D 打印机没有普及，桌面机业务被放弃；工业级增长放缓、并购（3D Systems 激进收购、Stratasys 并 MakerBot）带来大额商誉减值；专利到期后低价竞争者涌入。2020–21 年 SPAC（Desktop Metal、Markforged 等）又炒了一轮，属另一时期。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "3D Systems 收入 2014 年 $6.54 亿 → 2025 年 $3.87 亿；2015–2025 年每年 GAAP 营业亏损",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000910638.json"
+        },
+        {
+          "claim_cn": "Stratasys 收入 2014 年 $7.50 亿 → 2025 年 $5.51 亿；2013 年以来几乎每年营业亏损（2015 年 -$13.7 亿）",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001517396.json"
+        }
+      ],
+      "time_to_reality": {
+        "years": null,
+        "from": "2013",
+        "to": null,
+        "marker_cn": "截至 2026-10 未兑现：两大龙头收入仍低于 2014 年；增材制造在牙科、航空零件、原型等利基领域真实存在，但未成为“家家户户”的大市场",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000910638.json"
+      },
+      "basket_method": "当年口径：2013–14 年媒体（Motley Fool、Fabbaloo、engineering.com）反复点名的上市 3D 打印股：两大龙头 3D Systems、Stratasys；2013 年 3D 打印 IPO ExOne、voxeljet；生物 3D 打印概念 Organovo；数字制造 Proto Labs；2014 年 IPO 的软件商 Materialise。来源：https://www.fool.com/investing/general/2013/01/25/are-investors-3-d-printing-a-bubble.aspx ，https://mobile.engineering.com/amp/4877.html",
+      "companies": [
+        {
+          "name": "3D Systems",
+          "ticker_then": "DDD",
+          "yahoo_ticker": "DDD",
+          "role_cn": "龙头",
+          "hype_date": "2013",
+          "peak_date": "2014-01",
+          "peak_price": 97.28,
+          "price_basis": "split_adjusted（2013-02 3:2 拆股后）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2014-01 盘中 $97.28 见顶；收入 2015 年起停滞并持续亏损；2025-03 收 $1.55 低点；2026-10-06 收约 $3.56（-96%）。",
+          "sources": [
+            "https://www.fool.com/investing/2016/12/29/3d-systems-stock-in-8-charts.aspx",
+            "https://finance.yahoo.com/quote/DDD/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0000910638.json"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 月线把 $97.28 记在 2013-12，Fool 写 2014-01；以 Yahoo 日线为准由主分析师确认。"
+        },
+        {
+          "name": "Stratasys",
+          "ticker_then": "SSYS",
+          "yahoo_ticker": "SSYS",
+          "role_cn": "龙头",
+          "hype_date": "2013",
+          "peak_date": "2014-01",
+          "peak_price": 138.1,
+          "price_basis": "nominal = split_adjusted",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2014-01-03 收 $136.46、盘中 $138.10；2016 年初较峰值 -88%；2026-10-06 收约 $8.60（-94%）。",
+          "sources": [
+            "https://www.macrotrends.net/stocks/charts/SSYS/stratasys/stock-price-history",
+            "https://finance.yahoo.com/quote/SSYS/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "ExOne",
+          "ticker_then": "XONE",
+          "yahoo_ticker": null,
+          "role_cn": "明星（2013 IPO）",
+          "hype_date": "2013-02",
+          "peak_date": "2013-09",
+          "peak_price": 78.8,
+          "price_basis": "nominal（10-K 2013Q3 盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2021-11",
+          "final_value_per_share": 24.93,
+          "fate_detail_cn": "IPO 价 $18；2013Q3 高 $78.80；2021-11-12 被 Desktop Metal 以每股 $8.50 现金 + $16.43 DM 股票（合计约 $24.93）收购，较峰值 -68%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/0001561627/000119312514108228/d634414d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1754820/000110465921138222/tm2132753d1_8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值月份：10-K 只给到季度（2013Q3），月份为估计。Yahoo 现在 ticker XONE 是另一产品，勿混用。"
+        },
+        {
+          "name": "voxeljet",
+          "ticker_then": "VJET",
+          "yahoo_ticker": null,
+          "role_cn": "明星（2013 IPO）",
+          "hype_date": "2013-10",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-03",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2013-10-18 以 $13/ADS 上市，首日收 $28.83（+122%）；2014-04 增发价已只剩 $15；2024-03-22 主动从纳斯达克退市、2024-04 注销 SEC 登记；2024-12 同意把整个经营业务以约 €2000 万企业价值出售给 Anzu Partners 关联基金（资产交易），上市公司壳此后按德国 StaRUG 重整。",
+          "sources": [
+            "https://www.renaissancecapital.com/IPO-Center/News/16409/US-IPO-Recap-Voxeljet-and-Veeva-vault-up-the-charts",
+            "https://www.sec.gov/Archives/edgar/data/1582581/000155837024003236/tmb-20240314x6k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1582581/000104746915002816/a2223954z20-f.htm"
+          ],
+          "confidence": "medium",
+          "notes": "峰值价格（坊间称 2014-01 约 $60）未能在一手来源核实，填 null；股东最终回收未知（final_value=null），按“退市+出售全部业务”归为 dead，置信度中等。Yahoo 的 VJET 数据异常（2018 起、含错误值），不可用。"
+        },
+        {
+          "name": "Organovo (现 VivoSim Labs)",
+          "ticker_then": "ONVO",
+          "yahoo_ticker": "VIVS",
+          "role_cn": "沾边蹭概念（生物 3D 打印）",
+          "hype_date": "2013",
+          "peak_date": "2013-11",
+          "peak_price": 13.65,
+          "price_basis": "nominal（10-K FY2014 Q3 盘中高点；Yahoo 复权 $3276）",
+          "peak_mcap_usd_bn": 0.7,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2012-11 至 2013-11 涨约 500%，市值高点约 $7 亿；后两次反向拆股（2020-08 1:20、2025-03 1:12）；2025-03 把 FXR 项目以 $1000 万首付卖给礼来，2025-04 更名 VivoSim Labs；2026-10-06 复权收约 $0.20，较峰值约 -99.99%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1497253/000119312514232145/d690346d10k.htm",
+            "https://www.fool.com/investing/general/2013/12/12/can-anything-explain-organovo-holdings-tremendous.aspx",
+            "https://www.sec.gov/Archives/edgar/data/1497253/000095017025082312/vivs-20250331.htm",
+            "https://finance.yahoo.com/quote/VIVS/history/"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股合计 1:240。peak_mcap $7 亿来自 nanalyze/搜索摘要，置信度中等。"
+        },
+        {
+          "name": "Proto Labs",
+          "ticker_then": "PRLB",
+          "yahoo_ticker": "PRLB",
+          "role_cn": "卖铲子（数字化快速制造，含 3D 打印）",
+          "hype_date": "2013",
+          "peak_date": "2014-07",
+          "peak_price": 94.23,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2017-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2014 年高点后回落，2017-11 收复，2021-01 冲到 $286.57 后再跌至 2023-10 的 $23.61；2026-10-06 收约 $99，略高于 2014 峰值。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PRLB/history/"
+          ],
+          "confidence": "medium",
+          "notes": "其是否被当年媒体列入“3D 打印股”只凭一般印象，未取到具体名单来源，置信度中等。"
+        },
+        {
+          "name": "Materialise",
+          "ticker_then": "MTLS",
+          "yahoo_ticker": "MTLS",
+          "role_cn": "卖铲子（3D 打印软件/服务，2014 IPO）",
+          "hype_date": "2014-06",
+          "peak_date": "2014-07",
+          "peak_price": 15.15,
+          "price_basis": "split_adjusted（ADS，无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2017-07",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2014-06 上市；2021-02 冲到 $87.4 后回落，2026-10-06 收约 $8.6，低于 2014 年高点 43%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MTLS/history/"
+          ],
+          "confidence": "medium",
+          "notes": "按定义曾超越即 survived_new_high，但当前低于 2014 峰值；IPO 细节未取一手来源。"
+        }
+      ]
+    },
+    {
+      "id": "unicorn_ipo_2019",
+      "name_cn": "共享经济 / 2019 独角兽 IPO",
+      "name_en": "Sharing economy & the 2019 unicorn IPO class",
+      "one_line_cn": "赌“先烧钱换规模、上市后再盈利”的平台（打车、共享办公、订阅健身、植物肉）能复制亚马逊的路径。",
+      "hype_start": {
+        "date": "2017-05",
+        "event_cn": "软银愿景基金以逾 $1000 亿成立，重仓 Uber、WeWork、Slack 等，把私募估值推高（WeWork 2019-01 估值 $470 亿）",
+        "source": "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund"
+      },
+      "peak": {
+        "date": "2019-03",
+        "event_cn": "Lyft 2019-03-29 以 $72 上市、开盘 $87.24、盘中 $88.60——这一批独角兽 IPO 的最高点，此后再未回到",
+        "source": "https://www.axios.com/2019/03/29/lyft-shares-open-at-8724-1553874849"
+      },
+      "trough": {
+        "date": "2023-11",
+        "event_cn": "WeWork 2023-11-06 申请第 11 章破产（2019-09-30 已撤回 IPO，估值从 $470 亿砍到约 $100 亿）；Lyft 2023-05 收 $8.11（较峰值 -91%）；Peloton 2024-08 收 $2.99",
+        "source": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm"
+      },
+      "proxy_tickers": [
+        "IPO"
+      ],
+      "proxy_note_cn": "Renaissance IPO ETF（2013-10 起）可覆盖本期，但成分滚动、含所有行业 IPO，只能当背景。",
+      "what_killed_it_cn": "S-1 一公开，亏损就藏不住：WeWork 2018 年收入 $18.2 亿亏 $16 亿、治理问题（创始人自我交易）导致 IPO 流产；Uber 上市首日即破发（$45→$41.57），Lyft 两周内跌破发行价；2020–21 年疫情和零利率让 Peloton、Zoom、Beyond Meat 再冲一次高峰，2022 年加息+需求回落后全部崩回。只有把规模转化为利润的 Uber 走了出来（2023 年首次全年营业盈利）。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "Uber 营业利润 2019 年 -$85.96 亿 → 2023 年首次转正 $11.1 亿 → 2025 年 $55.65 亿；收入 2025 年 $520 亿",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001543151.json"
+        },
+        {
+          "claim_cn": "Lyft 2017–2025 年每一年 GAAP 营业亏损（2025 年 -$1.88 亿）",
+          "date": "2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001759509.json"
+        },
+        {
+          "claim_cn": "Peloton 收入 FY2021 峰值 $40.2 亿 → FY2026 $24.5 亿",
+          "date": "2026-06",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001639825.json"
+        },
+        {
+          "claim_cn": "WeWork 2024-05 破产重整完成，原公众股东零回收",
+          "date": "2024-05",
+          "source": "https://en.wikipedia.org/wiki/WeWork"
+        }
+      ],
+      "time_to_reality": {
+        "years": 4,
+        "from": "2019",
+        "to": "2023",
+        "marker_cn": "Uber IPO 后第 4 年（创立后约第 14 年）首次全年 GAAP 营业盈利 $11.1 亿",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001543151.json"
+      },
+      "basket_method": "当年口径：2019 年媒体并称的“独角兽 IPO 年”主角——Lyft、Pinterest、Zoom（4 月）、Uber、Beyond Meat（5 月）、Slack（6 月直接上市）、Peloton（9 月）、WeWork（9 月撤回）。均为当年最受关注的 VC/软银系 IPO。来源：各公司首份 10-K 与当时报道（见各条 sources）。",
+      "companies": [
+        {
+          "name": "Uber",
+          "ticker_then": "UBER",
+          "yahoo_ticker": "UBER",
+          "role_cn": "龙头",
+          "hype_date": "2019-05",
+          "peak_date": "2019-06",
+          "peak_price": 47.08,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": 82.0,
+          "fate": "survived_new_high",
+          "fate_date": "2020-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2019-05-10 以 $45 上市（估值约 $820 亿，五年来最大 IPO），首日收 $41.57 破发；2020-03 收 $21.33；2023 年首次全年营业盈利；2025-09 创 $101.99 新高；2026-10-06 收约 $69。",
+          "sources": [
+            "https://www.foxbusiness.com/features/uber-begins-trading-nearly-7-below-its-ipo-price",
+            "https://www.sec.gov/Archives/edgar/data/1543151/000154315120000010/fy2019q410kfinancialst.htm",
+            "https://finance.yahoo.com/quote/UBER/history/"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为 IPO 定价估值。"
+        },
+        {
+          "name": "Lyft",
+          "ticker_then": "LYFT",
+          "yahoo_ticker": "LYFT",
+          "role_cn": "明星",
+          "hype_date": "2019-03",
+          "peak_date": "2019-03",
+          "peak_price": 88.6,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $72，开盘 $87.24、首日盘中 $88.60 即为历史最高；2023-05 周收盘 $8.11；2026-10-06 收约 $15.7（-82%）；至 2025 年仍未实现全年 GAAP 营业盈利。",
+          "sources": [
+            "https://www.axios.com/2019/03/29/lyft-shares-open-at-8724-1553874849",
+            "https://www.sec.gov/Archives/edgar/data/1759509/000175950920000009/lyft-20191231.htm",
+            "https://finance.yahoo.com/quote/LYFT/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "WeWork (The We Company)",
+          "ticker_then": "WE（2021-10 经 SPAC 上市）",
+          "yahoo_ticker": null,
+          "role_cn": "明星（IPO 流产）",
+          "hype_date": "2019-01",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": 47.0,
+          "fate": "dead",
+          "fate_date": "2023-11",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2019-01 软银估值 $470 亿；2019-08 递交 S-1 暴露巨亏与治理问题，2019-09-30 撤回 IPO，Neumann 下台；2021-10 借 BowX SPAC 以约 $90 亿估值上市；2023-11-06 申请第 11 章破产，NYSE 停牌摘牌；2024-05 重整完成，原股东零回收。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/WeWork",
+            "https://www.cnbc.com/2019/09/26/weworks-neumann-voted-to-oust-himself-as-ceo-after-failed-ipo.html",
+            "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为 2019-01 私募估值；公开市场（2021-10 后）峰值股价未核实，填 null。"
+        },
+        {
+          "name": "Peloton",
+          "ticker_then": "PTON",
+          "yahoo_ticker": "PTON",
+          "role_cn": "明星",
+          "hype_date": "2019-09",
+          "peak_date": "2021-01",
+          "peak_price": 171.09,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": 50.0,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2019-09-26 以 $29 上市首日破发；疫情居家健身令市值 2021-01 达约 $500 亿（盘中 $171.09）；2021-05 跑步机召回、2022-02 裁员 2800 人、创始人卸任 CEO；2024-08 周收盘 $2.99；2026-10-06 收约 $5.0（-97%）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Peloton_Interactive",
+            "https://www.sec.gov/Archives/edgar/data/1639825/000163982520000122/pton-20200630.htm",
+            "https://finance.yahoo.com/quote/PTON/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Slack Technologies",
+          "ticker_then": "WORK",
+          "yahoo_ticker": null,
+          "role_cn": "明星（直接上市）",
+          "hype_date": "2019-06",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2021-07",
+          "final_value_per_share": 45.58,
+          "fate_detail_cn": "2019-06-20 以 $26 参考价直接上市，首日盘中逾 $41；2021-07-21 被 Salesforce 以每股 $26.79 现金 + 0.0776 股 CRM 收购（企业价值约 $277 亿）；按交割日 CRM 收盘 $242.11 计约 $45.6/股。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Slack_Technologies",
+            "https://investor.salesforce.com/news/news-details/2020/Salesforce-Signs-Definitive-Agreement-to-Acquire-Slack/default.aspx",
+            "https://www.sec.gov/Archives/edgar/data/1764925/000119312521220234/d171429d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "历史最高成交价未在一手来源核实（填 null）；收购价看起来高于其大部分交易区间。final_value 为自算。"
+        },
+        {
+          "name": "Beyond Meat",
+          "ticker_then": "BYND",
+          "yahoo_ticker": "BYND",
+          "role_cn": "明星（植物肉）",
+          "hype_date": "2019-05",
+          "peak_date": "2019-07",
+          "peak_price": 239.71,
+          "price_basis": "nominal 盘中高点（Yahoo 复权 $7191.30，因 2026-08-14 1:30 反向拆股；当日收盘名义 $234.90）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $25（2019-05），首日 +163%，为 2000 年以来大型美国公司最佳首日表现；2019-07-26 盘中约 $239.71、收 $234.90 见顶；收入 2024 年降至 $3.26 亿；2025-10 曾出现迷因式暴涨（单日盘中复权 $230.7 = 名义 $7.69）；2026-08 1:30 反向拆股；2026-10-06 复权收约 $8.0，较峰值 -99.9%。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Beyond_Meat",
+            "https://www.sec.gov/Archives/edgar/data/1655210/000162828020003841/bynd201910k.htm",
+            "https://finance.yahoo.com/quote/BYND/history/"
+          ],
+          "confidence": "high",
+          "notes": "名义峰值 $239.71 = Yahoo 复权 $7191.30 ÷ 30（反拆比率取自 Yahoo 拆股记录，未在 SEC 文件核实）。"
+        },
+        {
+          "name": "Pinterest",
+          "ticker_then": "PINS",
+          "yahoo_ticker": "PINS",
+          "role_cn": "明星",
+          "hype_date": "2019-04",
+          "peak_date": "2019-08",
+          "peak_price": 36.83,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-08",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $19（2019-04）；2019-08 高 $36.83；2021-02 冲到 $89.90 后回落；2026-10-06 收约 $19.6，低于 2019 年高点 47%、约等于 IPO 价。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1506293/000150629320000013/pins-20191231.htm",
+            "https://finance.yahoo.com/quote/PINS/history/"
+          ],
+          "confidence": "high",
+          "notes": "按定义曾超越即 survived_new_high，但当前远低于峰值。"
+        },
+        {
+          "name": "Zoom Video",
+          "ticker_then": "ZM",
+          "yahoo_ticker": "ZM",
+          "role_cn": "明星（疫情股）",
+          "hype_date": "2019-04",
+          "peak_date": "2020-10",
+          "peak_price": 588.84,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "IPO 价 $36（2019-04）；疫情远程办公使其 2020-10-19 盘中达 $588.84；2024-08 周收盘 $56.38；2026-10-06 收约 $94（-84%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1585521/000158552120000095/zm-20200131.htm",
+            "https://finance.yahoo.com/quote/ZM/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "crypto_blockchain_v1_2017",
+      "name_cn": "区块链 / 加密货币 1.0（改名潮）",
+      "name_en": "Crypto / blockchain v1 (2017–18 name-change mania)",
+      "one_line_cn": "赌比特币和“区块链”会颠覆一切——任何公司改名带上 Blockchain 就能重新估值。",
+      "hype_start": {
+        "date": "2017-10",
+        "event_cn": "2017-10-04 生物检测公司 Bioptix 宣布改名 Riot Blockchain；同月 Overstock 公布 tZERO ICO 细节，11 月专利公司 Marathon Patent 宣布收购挖矿业务",
+        "source": "https://www.sec.gov/Archives/edgar/data/1167419/000107997317000569/ex99x1.htm"
+      },
+      "peak": {
+        "date": "2017-12",
+        "event_cn": "比特币 2017-12-17 达 $19,783.06（全年 +1824%），CBOE/CME 比特币期货同月上市；2017-12-21 冰茶公司 Long Island Iced Tea 改名 Long Blockchain，股价盘中最高 +380%",
+        "source": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+      },
+      "trough": {
+        "date": "2018-12",
+        "event_cn": "比特币 2018-12 初跌至约 $3,300（较峰值约 -83%）；Long Blockchain 已于 2018-04 收到纳斯达克退市通知",
+        "source": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+      },
+      "proxy_tickers": [
+        "BTC-USD",
+        "BLOK"
+      ],
+      "proxy_note_cn": "BTC-USD 可覆盖全期；BLOK（Amplify 区块链 ETF）2018-01 才上市，恰在顶部之后。",
+      "what_killed_it_cn": "币价崩盘（2018 年 -80% 以上）+ 监管：SEC 2017-07 DAO 报告认定部分代币属证券，随后对 ICO 欺诈密集执法；多数“改名股”并无实际区块链业务（Long Blockchain 放弃购买矿机后被摘牌，2021 年被注销登记、内幕交易被起诉）。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "2024-01 SEC 批准现货比特币 ETP 上市交易；2024-12-05 比特币首次达 $100,000",
+          "date": "2024-12",
+          "source": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+        },
+        {
+          "claim_cn": "比特币 2025-10 盘中约 $126,198 创历史新高（Yahoo BTC-USD），2026-10-06 约 $86,300",
+          "date": "2025-10",
+          "source": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "claim_cn": "“企业区块链”与改名股基本未兑现：Long Blockchain 2021-02 被 SEC 注销证券登记",
+          "date": "2021-02",
+          "source": "https://en.wikipedia.org/wiki/Long_Blockchain_Corp."
+        }
+      ],
+      "time_to_reality": {
+        "years": 7,
+        "from": "2017",
+        "to": "2024",
+        "marker_cn": "比特币作为资产进入主流：SEC 批准现货 ETP（2024-01），同年突破 $10 万；而“区块链改变一切”的企业应用叙事至今未兑现",
+        "source": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+      },
+      "basket_method": "当年口径：2017-10 至 2018-01 因“改名/转型区块链”而暴涨、被媒体反复点名的美股：Long Island Iced Tea→Long Blockchain、Bioptix→Riot Blockchain、Marathon Patent（转挖矿）、Overstock（tZERO ICO）、Kodak（KodakCoin）。来源：各公司 8-K 与 Wikipedia 条目（见各条 sources）。",
+      "companies": [
+        {
+          "name": "Long Blockchain (原 Long Island Iced Tea)",
+          "ticker_then": "LTEA→LBCC",
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2017-12",
+          "peak_date": "2017-12",
+          "peak_price": 9.49,
+          "price_basis": "nominal（10-K 2017Q4 高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2021-02",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2017-12-21 改名当日盘中最高 +380%；放弃购买矿机后 2018-04 收到纳斯达克退市通知（2018-06 摘牌）；2021-02-22 SEC 注销其证券登记；2021-07 三人因改名前内幕交易被起诉。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1629261/000149315218005102/form10-k.htm",
+            "https://en.wikipedia.org/wiki/Long_Blockchain_Corp."
+          ],
+          "confidence": "high",
+          "notes": "final_value=0 指注册已被撤销、无法在公开市场交易，非破产清算数据。"
+        },
+        {
+          "name": "Riot Blockchain (现 Riot Platforms)",
+          "ticker_then": "RIOT",
+          "yahoo_ticker": "RIOT",
+          "role_cn": "沾边蹭概念 → 后成真正矿企",
+          "hype_date": "2017-10",
+          "peak_date": "2017-12",
+          "peak_price": 46.2,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2021-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "原名 Bioptix（兽医诊断），2017-10 改名后 2017-12-19 盘中 $46.20；2020-03 收 $0.83；之后真正转型为大型比特币矿企，2021-02 冲到 $79.50；2026-10-06 收约 $19.3（较 2017 峰值 -58%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1167419/000107997317000569/ex99x1.htm",
+            "https://finance.yahoo.com/quote/RIOT/history/"
+          ],
+          "confidence": "high",
+          "notes": "2021 年新高来自比特币第二轮牛市而非 2017 年的商业模式；当前低于 2017 峰值。"
+        },
+        {
+          "name": "Marathon Patent Group (现 MARA Holdings)",
+          "ticker_then": "MARA",
+          "yahoo_ticker": "MARA",
+          "role_cn": "沾边蹭概念（专利流氓转挖矿）",
+          "hype_date": "2017-11",
+          "peak_date": "2017-11",
+          "peak_price": 40.12,
+          "price_basis": "split_adjusted（含 2017-10、2019-04 两次 1:4 反向拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2021-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2017-11-02 宣布收购挖矿公司 Global Bit Ventures；复权高点 $40.12 后 2020-03 收 $0.45；2021-02 随币价收复；2026-10-06 收约 $11.2（-72%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1507605/000149315217012312/ex99-1.htm",
+            "https://finance.yahoo.com/quote/MARA/history/"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股：2017-10-30 1:4、2019-04-08 1:4（Yahoo 拆股记录）。"
+        },
+        {
+          "name": "Overstock.com (现 Neighborhood Intelligence)",
+          "ticker_then": "OSTK",
+          "yahoo_ticker": "NXH",
+          "role_cn": "沾边蹭概念（tZERO 证券代币）",
+          "hype_date": "2017-10",
+          "peak_date": "2018-01",
+          "peak_price": 89.8,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-08",
+          "final_value_per_share": null,
+          "fate_detail_cn": "CEO Patrick Byrne 力推 tZERO ICO，股价 2018-01-08 盘中 $89.80；2019-08 Byrne 因丑闻辞职；2020-08 疫情电商+迷因行情冲到 $128.5；2023-11 改名 Beyond Inc.（BYON），2026-04 再改名 Neighborhood Intelligence（Yahoo: NXH）；2026-10-06 收约 $1.9（-98%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1130713/000113071317000045/pressreleasetzeroico.htm",
+            "https://en.wikipedia.org/wiki/Beyond,_Inc.",
+            "https://finance.yahoo.com/quote/NXH/history/"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 已把 OSTK/BYON 历史并入 NXH。"
+        },
+        {
+          "name": "Eastman Kodak",
+          "ticker_then": "KODK",
+          "yahoo_ticker": "KODK",
+          "role_cn": "沾边蹭概念（KodakCoin）",
+          "hype_date": "2018-01",
+          "peak_date": "2018-01",
+          "peak_price": 13.28,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-07",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-01 宣布 KodakCoin，股价当月盘中最高 $13.28；KodakCoin 最终失败；2020-07 因政府贷款消息再度暴涨；2026-10-06 收约 $10.1（-24%）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kodak",
+            "https://finance.yahoo.com/quote/KODK/history/"
+          ],
+          "confidence": "medium",
+          "notes": "2018-01 宣布日期与股价反应的一手来源未取到（Wikipedia 只称其为失败的加密产品）。"
+        }
+      ]
+    },
+    {
+      "id": "cannabis_2018",
+      "name_cn": "大麻股（加拿大合法化）",
+      "name_en": "Cannabis stocks (Canada legalization wave)",
+      "one_line_cn": "赌加拿大全面合法化、美国随后跟进，大麻会成为烟酒级别的大消费品类。",
+      "hype_start": {
+        "date": "2018-05",
+        "event_cn": "Canopy Growth 2018-05-24 成为首家在 NYSE 上市的大麻生产商（此前 Cronos 2018-02 登陆纳斯达克）；2018-06-21 加拿大《大麻法》获御准",
+        "source": "https://en.wikipedia.org/wiki/Canopy_Growth"
+      },
+      "peak": {
+        "date": "2018-09",
+        "event_cn": "Tilray 2018-09-19 盘中 $300（IPO 价 $17，两个月 17 倍）；Canopy、Aurora 2018-10-16（合法化前一天）见顶，2018-10-17 加拿大正式合法化即“利好出尽”",
+        "source": "https://finance.yahoo.com/quote/TLRY/history/"
+      },
+      "trough": {
+        "date": "2025-06",
+        "event_cn": "主题 ETF MJ 2025-06 月收盘创低（复权 $17.96，较 2018-09 峰值约 -97%）；Canopy 2026-10 仍在创新低（复权 $0.88）",
+        "source": "https://finance.yahoo.com/quote/MJ/history/"
+      },
+      "proxy_tickers": [
+        "MJ"
+      ],
+      "proxy_note_cn": "ETFMG Alternative Harvest ETF（MJ），Yahoo 数据自 2016-01（由他类 ETF 改型，改型日期未核实）；2025-02 1:12 反向拆股，须用复权价。",
+      "what_killed_it_cn": "供给泛滥+需求低于预期：各家巨额扩产、高价并购（价格下跌与非法市场份额的量化数据本 agent 未取到）；大量股权融资稀释，巨头入股（Constellation 之于 Canopy、Altria 之于 Cronos）也未能扭转亏损；美国联邦层面始终未合法化，跨境扩张落空。Aurora 2020 财年亏损逾 C$33 亿，多家公司连续反向拆股。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "加拿大 2018-10-17 正式合法化娱乐用大麻（2018-06-21 御准）",
+          "date": "2018-10",
+          "source": "https://en.wikipedia.org/wiki/Cannabis_Act_(Canada)"
+        },
+        {
+          "claim_cn": "德勤估计至 2022 年加拿大大麻产业累计贡献 GDP C$435 亿、9.8 万就业、税收逾 C$150 亿——需求真实",
+          "date": "2022",
+          "source": "https://en.wikipedia.org/wiki/Cannabis_Act_(Canada)"
+        },
+        {
+          "claim_cn": "Aurora 2020 财年亏损逾 C$33 亿；Canopy FY2024 收入 C$2.97 亿、净亏 C$6.57 亿",
+          "date": "2024",
+          "source": "https://en.wikipedia.org/wiki/Aurora_Cannabis"
+        }
+      ],
+      "time_to_reality": {
+        "years": 0,
+        "from": "2018",
+        "to": "2018",
+        "marker_cn": "需求端（加拿大合法化）当年即兑现，但供给过剩使行业从未形成可持续利润；美国联邦合法化截至 2026-10 未发生（本 agent 未核实 2025–26 年重新分级的最新进展）",
+        "source": "https://en.wikipedia.org/wiki/Cannabis_Act_(Canada)"
+      },
+      "basket_method": "当年口径：2018 年在美上市并成为散户焦点的加拿大持牌生产商——Tilray（2018-07 IPO）、Canopy Growth（2018-05 NYSE）、Aurora（2018-10 NYSE）、Cronos（2018-02 Nasdaq，2018-12 Altria 入股）、Aphria（2018-11 NYSE）——亦即 MJ ETF 当年的核心持仓。来源：各公司 Wikipedia 条目与 Cronos 6-K。",
+      "companies": [
+        {
+          "name": "Tilray",
+          "ticker_then": "TLRY",
+          "yahoo_ticker": "TLRY",
+          "role_cn": "明星",
+          "hype_date": "2018-07",
+          "peak_date": "2018-09",
+          "peak_price": 300.0,
+          "price_basis": "nominal（Yahoo 复权 $3000，因 2025-12 1:10 反向拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-07 以 $17 上市，2018-09-19 盘中 $300（收 $214.06）；2021-04-30 与 Aphria 合并（Aphria 反向收购，保留 Tilray 名）；2025-12 1:10 反向拆股；2026-10-06 复权收约 $3.7，较峰值 -99.9%。现业务含精酿啤酒。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tilray",
+            "https://www.sec.gov/Archives/edgar/data/1731348/000114036121017878/brhc10024840_8k.htm",
+            "https://finance.yahoo.com/quote/TLRY/history/"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股：2025-12-02 1:10（Yahoo 记录）。"
+        },
+        {
+          "name": "Canopy Growth",
+          "ticker_then": "CGC",
+          "yahoo_ticker": "CGC",
+          "role_cn": "龙头",
+          "hype_date": "2018-05",
+          "peak_date": "2018-10",
+          "peak_price": 59.25,
+          "price_basis": "nominal（Yahoo 复权 $592.5，因 2023-12 1:10 反向拆股）",
+          "peak_mcap_usd_bn": 12.0,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-05-24 NYSE 上市；2018-08 Constellation Brands 追加 C$50 亿入股至 38%，市值约 $120 亿；2018-10-16 盘中复权 $592.5 见顶；2019-04 一度为全球市值最大大麻公司；2023-12 1:10 反向拆股；2026-10-06 复权收约 $0.88（-99.85%）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Canopy_Growth",
+            "https://finance.yahoo.com/quote/CGC/history/"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap $120 亿为 2018-08 Constellation 交易后估值（Wikipedia）。"
+        },
+        {
+          "name": "Aurora Cannabis",
+          "ticker_then": "ACB",
+          "yahoo_ticker": "ACB",
+          "role_cn": "明星",
+          "hype_date": "2018-10",
+          "peak_date": "2018-10",
+          "peak_price": 12.53,
+          "price_basis": "nominal（Yahoo 复权 $1503，因 2020-05 1:12、2024-02 1:10 反向拆股）",
+          "peak_mcap_usd_bn": 10.71,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-09-18 市值高点 $107.1 亿；2018-10-23 登陆 NYSE；2020 财年亏损逾 C$33 亿、CEO 辞职；两次反向拆股合计 1:120；2026-10-06 复权收约 $4.4（-99.7%）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Aurora_Cannabis",
+            "https://finance.yahoo.com/quote/ACB/history/"
+          ],
+          "confidence": "high",
+          "notes": "名义峰值 $12.53 = Yahoo 复权 $1503 ÷ 120（自算）。"
+        },
+        {
+          "name": "Cronos Group",
+          "ticker_then": "CRON",
+          "yahoo_ticker": "CRON",
+          "role_cn": "明星（Altria 入股）",
+          "hype_date": "2018-02",
+          "peak_date": "2019-02",
+          "peak_price": 25.1,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-02 登陆纳斯达克；2018-12-07 Altria 宣布以约 C$24 亿入股 45%（另附认股权证可至 55%）；2019-02-04 盘中 $25.10 见顶；2026-10-06 收约 $3.2（-87%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1656472/000127956918002427/ex991.htm",
+            "https://finance.yahoo.com/quote/CRON/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Aphria",
+          "ticker_then": "APHA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2018-11",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2021-04",
+          "final_value_per_share": 15.37,
+          "fate_detail_cn": "2021-04-30 与 Tilray 完成安排合并，每股 Aphria 换 0.8381 股 Tilray；按当日 TLRY 收盘 $18.34（名义）计约 $15.37/股。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1731348/000156459021006942/tlry-10k_20201231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1731348/000114036121017878/brhc10024840_8k.htm"
+          ],
+          "confidence": "medium",
+          "notes": "Aphria 峰值股价未核实（填 null）；名义上是被收购方，实为反向收购，管理层接管合并后公司。final_value 为自算。"
+        }
+      ]
+    },
+    {
+      "id": "autonomous_driving_v1_2015_2018",
+      "name_cn": "自动驾驶 1.0",
+      "name_en": "Autonomous driving v1 (2015–2018)",
+      "one_line_cn": "赌 L4/L5 无人驾驶和 Robotaxi 会在 2018–2021 年大规模商用，掌握感知芯片/算法的公司将吃掉汽车业利润。",
+      "hype_start": {
+        "date": "2015-01",
+        "event_cn": "NVIDIA 在 CES 2015 发布 Drive PX 自动驾驶计算平台；2015-10 Tesla 推送 Autopilot v7.0；2016-03 GM 收购 Cruise；2016-12 Google 项目拆分为 Waymo",
+        "source": "https://en.wikipedia.org/wiki/Nvidia_Drive"
+      },
+      "peak": {
+        "date": "2017-03",
+        "event_cn": "Intel 2017-03-13 宣布以每股 $63.54 现金（约 $153 亿）收购 Mobileye，为当时以色列科技史上最大收购；2018-05 软银愿景基金再向 Cruise 投 $22.5 亿",
+        "source": "https://www.sec.gov/Archives/edgar/data/50863/000119312517112019/d352811dsctot.htm"
+      },
+      "trough": {
+        "date": "2022-10",
+        "event_cn": "2018-03-18 Uber 测试车在坦佩撞死行人后时间表全面推迟；2020-12 Uber 卖掉 ATG；2022-10 Ford/VW 关闭 Argo AI（Ford 计提 $27 亿）；尾声 2024-12 GM 停止资助 Cruise Robotaxi",
+        "source": "https://en.wikipedia.org/wiki/Argo_AI"
+      },
+      "proxy_tickers": [
+        "DRIV"
+      ],
+      "proxy_note_cn": "Global X Autonomous & EV ETF（DRIV）2018-04 才上市且混入电动车，主题纯度低；本主题主要价值在私有/子公司的结局，股价代理意义有限。2020–21 年激光雷达/自动驾驶 SPAC 由另一 agent 覆盖。",
+      "what_killed_it_cn": "技术难度被系统性低估：长尾场景、安全验证与监管远比 2016 年预期难；2018-03 Uber 致死事故与 2023-10 Cruise 拖行行人事故（加州吊销牌照）打击信任；资本消耗巨大（Argo 估值曾达 $124 亿，Cruise $300 亿）而收入近零，车企在 2022 年加息后先后止损。最终只有坚持十余年的 Waymo 实现规模商用。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "Waymo 截至 2026-06 在 10 个美国都会区运营约 3,871 辆无人出租车、每周 50 万次付费乘车；2026-02 融资 $160 亿、估值 $1260 亿",
+          "date": "2026-06",
+          "source": "https://en.wikipedia.org/wiki/Waymo"
+        },
+        {
+          "claim_cn": "Musk 预言 2017 年底实现完全自动驾驶、2020 年 100 万辆 Robotaxi 均未兑现；Tesla Robotaxi 2025-06-22 才在奥斯汀小范围、带安全员试运营",
+          "date": "2025-06",
+          "source": "https://en.wikipedia.org/wiki/Tesla_Autopilot"
+        },
+        {
+          "claim_cn": "Argo AI 2022-10 关闭，Ford 计提 $27 亿；GM 2024-12 停止资助 Cruise",
+          "date": "2024-12",
+          "source": "https://en.wikipedia.org/wiki/Cruise_(autonomous_vehicle)"
+        }
+      ],
+      "time_to_reality": {
+        "years": 11,
+        "from": "2015",
+        "to": "2026",
+        "marker_cn": "Waymo 多城市规模化商用（每周 50 万次付费乘车）；若从 Google 2009 年立项算则约 17 年",
+        "source": "https://en.wikipedia.org/wiki/Waymo"
+      },
+      "basket_method": "当年口径：2015–2018 年自动驾驶叙事中被反复点名的“感知芯片/平台”上市股（Mobileye、NVIDIA、Tesla、Delphi→Aptiv）与传统车企/平台的自动驾驶子公司（GM Cruise、Ford Argo AI、Uber ATG、Alphabet Waymo）。子公司按其自身结局记 fate，ticker_then 填母公司。来源：Mobileye 20-F、Nvidia Drive/Tesla Autopilot/Cruise/Argo 条目。",
+      "companies": [
+        {
+          "name": "Mobileye (2014–2017 上市期)",
+          "ticker_then": "MBLY",
+          "yahoo_ticker": null,
+          "role_cn": "龙头（视觉芯片）",
+          "hype_date": "2014-08",
+          "peak_date": "2015",
+          "peak_price": 64.14,
+          "price_basis": "nominal（20-F 2015 年最高收盘价）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2017-08",
+          "final_value_per_share": 63.54,
+          "fate_detail_cn": "2014-08-01 NYSE 上市；2016 年因 Autopilot 致死事故与 Tesla 分手；Intel 以每股 $63.54 现金收购（2017-03 宣布、2017-08 完成），几乎等于 2015 年最高收盘价 $64.14。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1607310/000157104917001997/t1700397_20f.htm",
+            "https://www.sec.gov/Archives/edgar/data/50863/000119312517112019/d352811dsctot.htm",
+            "https://en.wikipedia.org/wiki/Mobileye"
+          ],
+          "confidence": "high",
+          "notes": "2014 年 IPO 价（约 $25）未在一手来源核实。"
+        },
+        {
+          "name": "Mobileye Global (2022 再上市)",
+          "ticker_then": "MBLY",
+          "yahoo_ticker": "MBLY",
+          "role_cn": "明星（Intel 分拆再上市）",
+          "hype_date": "2022-10",
+          "peak_date": "2023-02",
+          "peak_price": 48.11,
+          "price_basis": "split_adjusted（无拆股）",
+          "peak_mcap_usd_bn": 17.0,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "Intel 2022-10 以每股 $21、估值约 $170 亿让其重回纳斯达克；2023-02-15 盘中 $48.11 见顶；2026-10-06 收约 $7.4（-85%，低于再上市价）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mobileye",
+            "https://finance.yahoo.com/quote/MBLY/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "NVIDIA",
+          "ticker_then": "NVDA",
+          "yahoo_ticker": "NVDA",
+          "role_cn": "卖铲子（Drive 平台）",
+          "hype_date": "2015-01",
+          "peak_date": "2018-10",
+          "peak_price": 7.32,
+          "price_basis": "split_adjusted（2021 4:1、2024 10:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "自动驾驶是 2015–18 年 NVDA 叙事的一部分（Drive PX、Tesla HW2 采用 Drive PX 2）；2018Q4 加密矿卡库存问题令股价腰斩；最终靠数据中心/AI 而非汽车成为巨头，2026-10-06 收约 $242（较 2018 峰值 +3200%）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Nvidia_Drive",
+            "https://finance.yahoo.com/quote/NVDA/history/"
+          ],
+          "confidence": "high",
+          "notes": "赢的原因不是自动驾驶本身。"
+        },
+        {
+          "name": "Tesla",
+          "ticker_then": "TSLA",
+          "yahoo_ticker": "TSLA",
+          "role_cn": "明星（Autopilot/FSD 承诺）",
+          "hype_date": "2015-10",
+          "peak_date": "2017-09",
+          "peak_price": 25.97,
+          "price_basis": "split_adjusted（2020 5:1、2022 3:1）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2019-12",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2015-10 推送 Autopilot、2016-10 宣称新车具备完全自动驾驶硬件；多次自动驾驶时间表落空；2025-06 才在奥斯汀试运营 Robotaxi；股价靠电动车放量于 2019-12 收复并暴涨，2026-10-06 收约 $381。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tesla_Autopilot",
+            "https://finance.yahoo.com/quote/TSLA/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Aptiv (原 Delphi Automotive)",
+          "ticker_then": "DLPH→APTV",
+          "yahoo_ticker": "APTV",
+          "role_cn": "明星（自动驾驶供应商，收购 nuTonomy）",
+          "hype_date": "2017-12",
+          "peak_date": "2018-06",
+          "peak_price": 103.23,
+          "price_basis": "split_adjusted（含 2017-12 Delphi Technologies 分拆调整）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2017-12 拆分后以 Aptiv 名义主打自动驾驶；2018-06 高 $103.23，2021-11 $180.81；2026-10-06 收约 $44.8（较 2018 峰值 -57%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/APTV/history/"
+          ],
+          "confidence": "medium",
+          "notes": "2026 年价格是否受业务分拆等公司行动影响，本 agent 未核实；nuTonomy/Motional 细节未取一手来源。"
+        },
+        {
+          "name": "Cruise (GM 子公司)",
+          "ticker_then": "GM（母公司）",
+          "yahoo_ticker": null,
+          "role_cn": "明星（Robotaxi）",
+          "hype_date": "2016-03",
+          "peak_date": "2021-01",
+          "peak_price": null,
+          "price_basis": "n/a（私有，估值 $300 亿）",
+          "peak_mcap_usd_bn": 30.0,
+          "fate": "dead",
+          "fate_date": "2024-12",
+          "final_value_per_share": null,
+          "fate_detail_cn": "GM 2016-03 收购（报道价 $5.8 亿至 $10 亿以上）；软银 2018-05 投 $22.5 亿；2021-01 估值 $300 亿；2023-10 拖行行人事故后加州吊销牌照；2024-12 GM 停止资助 Robotaxi，业务并入辅助驾驶。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Cruise_(autonomous_vehicle)"
+          ],
+          "confidence": "medium",
+          "notes": "子公司，无公开股价；GM 股票本身已创新高（Yahoo GM）。"
+        },
+        {
+          "name": "Argo AI (Ford/VW 合资)",
+          "ticker_then": "F（母公司）",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2017-02",
+          "peak_date": "2021-07",
+          "peak_price": null,
+          "price_basis": "n/a（私有，估值 $124 亿）",
+          "peak_mcap_usd_bn": 12.4,
+          "fate": "dead",
+          "fate_date": "2022-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "Ford 2017-02 承诺五年投 $10 亿；VW 2020 入股后估值 $72.5 亿，2021-07 $124 亿；2022-10 宣布解散，Ford 计提 $27 亿、VW 计提 €19 亿。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Argo_AI"
+          ],
+          "confidence": "medium",
+          "notes": "子公司，无公开股价。"
+        },
+        {
+          "name": "Uber ATG",
+          "ticker_then": "UBER（母公司）",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2015",
+          "peak_date": "2019",
+          "peak_price": null,
+          "price_basis": "n/a（私有）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2021-01",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2018-03-18 测试车在亚利桑那州坦佩撞死行人，全美测试暂停；2021-01-19 卖给 Aurora，Uber 同时向 Aurora 投 $4 亿现金，交易后持有 Aurora 约 26%（完全摊薄）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Death_of_Elaine_Herzberg",
+            "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000014/uber-20201231.htm"
+          ],
+          "confidence": "high",
+          "notes": "2019 年外部融资估值未在一手来源核实；以股权置换方式出售，无每股价格。"
+        },
+        {
+          "name": "Waymo (Alphabet 子公司)",
+          "ticker_then": "GOOGL（母公司）",
+          "yahoo_ticker": null,
+          "role_cn": "龙头（最终赢家）",
+          "hype_date": "2016-12",
+          "peak_date": "2026-02",
+          "peak_price": null,
+          "price_basis": "n/a（私有）",
+          "peak_mcap_usd_bn": 126.0,
+          "fate": "in_progress",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "2009 年 Google 立项，2016-12 拆分为 Waymo；2018-12 凤凰城推出 Waymo One；2020-10 首家向公众提供无安全员服务；2026-02 融资 $160 亿、估值 $1260 亿；2026-06 每周 50 万次付费乘车。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Waymo"
+          ],
+          "confidence": "medium",
+          "notes": "未上市，fate 记为 in_progress；peak_mcap 为最新一轮估值。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1017 @@
+{
+  "era_id": "e1_1985_1994",
+  "era_range": "1985-1994",
+  "macro_context_cn": "沃尔克压下通胀后利率逐级下行：联邦基金利率月均值 1984-07 为 11.23%，1986-07 降到 6.56%（FRED）；1985-09 广场协议推动美元贬值。低利率 + 垃圾债让 1984–1989 年成为杠杆收购和敌意收购的时代。1987-10-19 道指单日跌 22.6%（508 点），美联储次日声明随时提供流动性，股市不到两年收复。1989 年利率回升到约 9.8%（1989-03），1989-08-09 FIRREA 禁止储贷机构再买垃圾债、要求 1994 年前出清；1989-10-13 UAL 收购融资破裂，道指当天跌 6.91%。储贷危机中 RTC 关闭 747 家储贷机构（资产逾 4,070 亿美元），纳税人成本最高估计 1,240 亿美元。1990-07 至 1991-03 经济衰退（NBER），美联储把利率从 1990 年初的约 8.2% 一路降到 1992-12 的 2.92%，廉价资金推动了 1991–92 年的生物科技 IPO 窗口和大盘成长股行情；1994-02-04 美联储开始加息，到 1994-12 升到 5.45%，小盘成长股与生物科技股在 1994 年见底。",
+  "macro_sources": [
+    "https://fred.stlouisfed.org/series/FEDFUNDS",
+    "https://en.wikipedia.org/wiki/Plaza_Accord",
+    "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987",
+    "https://en.wikipedia.org/wiki/Financial_Institutions_Reform,_Recovery,_and_Enforcement_Act_of_1989",
+    "https://en.wikipedia.org/wiki/Friday_the_13th_mini-crash",
+    "https://www.federalreservehistory.org/essays/savings-and-loan-crisis",
+    "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions",
+    "https://www.federalreserve.gov/fomc/19940204default.htm"
+  ],
+  "themes": [
+    {
+      "id": "pc_minicomputer",
+      "name_cn": "个人电脑 / 小型机 / 硬盘：繁荣与洗牌",
+      "name_en": "PC, minicomputer & disk-drive boom and shake-out",
+      "one_line_cn": "赌“每张桌子上一台电脑”会让做硬件的公司（IBM、DEC、Wang、Commodore、Compaq、硬盘厂）长期高增长、高利润。",
+      "hype_start": {
+        "date": "1983-01",
+        "event_cn": "《时代》周刊把 1982 年度人物换成“年度机器”——个人电脑（1983-01-03 刊）；1981-08 IBM PC 发布后，硬盘与 PC 公司在 1983 年掀起上市潮",
+        "source": "https://en.wikipedia.org/wiki/Time_Person_of_the_Year"
+      },
+      "peak": {
+        "date": "1987-08",
+        "event_cn": "IBM 复权月线 1987-08 见历史高点（Yahoo）；DEC 1987/88 财年最高 $199（10-K 十一年摘要），雇员 1987 年超过 14 万；1987-10-19 股灾前一刻",
+        "source": "https://www.sec.gov/Archives/edgar/data/28887/0000028887-94-000022.txt"
+      },
+      "trough": {
+        "date": "1993-08",
+        "event_cn": "IBM 复权月线 1993-08 见底，较 1987 年高点约 -77%（Yahoo），1993-04 Gerstner 接任 CEO；Wang 1992-08-18 申请破产，Commodore 1994-04 清算，DEC 1994 财年最低跌到 $18",
+        "source": "https://finance.yahoo.com/quote/IBM/history/"
+      },
+      "proxy_tickers": [
+        "IBM",
+        "^IXIC"
+      ],
+      "proxy_note_cn": "没有 PC 硬件主题指数。IBM（Yahoo 复权，1962 年起）是这个主题最好的单一代理；^IXIC 在 Yahoo 上从 1985-01 才有数据，1983 年 6 月那一波科技/上市潮的顶点看不到。半导体指数 ^SOX 1993 年才有。",
+      "what_killed_it_cn": "利润被标准化拿走了。IBM PC 用的是外购的 Intel 芯片和微软 DOS，兼容机（Compaq、Dell 等）一拥而上，价格战在 1991–92 年打穿硬件利润；同时 PC 和工作站把 DEC、Wang 这样的小型机厂商的老客户整个吃掉（Olsen 曾说个人电脑在商业上会失败）。硬盘行业供给泛滥、几乎每年降价，MiniScribe 甚至靠在箱子里装砖头虚报库存。最终利润集中到了“卖铲子”的两家：微软（软件）和 Intel（芯片）。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "2000-08 美国 51% 的家庭拥有电脑，是 1984 年（人口普查首次统计）的五倍以上",
+          "date": "2000-08",
+          "source": "https://www.census.gov/content/dam/Census/library/publications/2001/demo/p23-207.pdf"
+        },
+        {
+          "claim_cn": "DEC 雇员 1990 财年约 11.7 万（正式），1994 财年降到 7.78 万；1994 财年税前亏损 20 亿美元",
+          "date": "1994",
+          "source": "https://www.sec.gov/Archives/edgar/data/28887/0000028887-94-000022.txt"
+        },
+        {
+          "claim_cn": "IBM 复权股价 1993-08 比 1987-08 低约 77%，直到 1997-06 才收复（Yahoo 月线）",
+          "date": "1997-06",
+          "source": "https://finance.yahoo.com/quote/IBM/history/"
+        }
+      ],
+      "time_to_reality": {
+        "years": 17,
+        "from": "1983",
+        "to": "2000",
+        "marker_cn": "以“过半数美国家庭拥有电脑”（2000-08，51%）为兑现标志；技术兑现了，但 1983 年的硬件明星大多在兑现前就死了或被收购",
+        "source": "https://www.census.gov/content/dam/Census/library/publications/2001/demo/p23-207.pdf"
+      },
+      "basket_method": "当年口径：按 1983–1987 年 PC/小型机/硬盘/PC 软件各环节最受追捧的上市公司选取——IBM（PC 标准制定者）、DEC 与 Wang（小型机双雄）、Apple 与 Commodore（家用机）、Compaq（兼容机）、Seagate 与 MiniScribe（硬盘）、Lotus（1-2-3 电子表格）、Microsoft（1986 IPO）。故意包括破产的 Wang、Commodore、MiniScribe。选择依据为各公司 10-K/Wikipedia 中的行业地位描述，非单一当年榜单，可信度 medium。",
+      "companies": [
+        {
+          "name": "IBM",
+          "ticker_then": "IBM",
+          "yahoo_ticker": "IBM",
+          "role_cn": "龙头",
+          "hype_date": "1981-08",
+          "peak_date": "1987-08",
+          "peak_price": 42.04,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1997-06",
+          "final_value_per_share": null,
+          "fate_detail_cn": "PC 标准的制定者却没拿到 PC 的利润。复权股价 1987-08 见顶，1993-08 低点约 -77%；1993-04 Gerstner 接任后转向服务，1997-06 才收复 1987 年高点，用了约 10 年。",
+          "sources": [
+            "https://finance.yahoo.com/quote/IBM/history/",
+            "https://en.wikipedia.org/wiki/Lou_Gerstner"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复日期全部来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Digital Equipment Corp (DEC)",
+          "ticker_then": "DEC",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1985",
+          "peak_date": "1987",
+          "peak_price": 199.0,
+          "price_basis": "nominal（1988 财年[1987-07 至 1988-06]最高成交价，10-K 十一年摘要取整）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1998-06",
+          "final_value_per_share": 60.0,
+          "fate_detail_cn": "全球第二大计算机公司，1987 年雇员超过 14 万。错过 PC 后连年亏损，1992-07 创始人 Ken Olsen 被迫辞职，1994 财年股价最低 $18。1998-01 Compaq 以每股 $30 现金 + 0.945 股 Compaq 收购（总价 96 亿美元，其中现金 48 亿），1998-06 完成；按 8-K 数字推算每股约 $60，约为 1987 年高点的 30%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/28887/0000028887-94-000022.txt",
+            "https://www.sec.gov/Archives/edgar/data/28887/0000950172-98-000075.txt",
+            "https://cse.sc.edu/~mgv/csce190f15/olsen.pdf"
+          ],
+          "confidence": "high",
+          "notes": "$60 是按 8-K 的 96 亿美元总价 ÷（48 亿现金 ÷ $30）≈ 1.6 亿股推算的宣布日价值，交割日价值未核实。"
+        },
+        {
+          "name": "Wang Laboratories",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1983",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1993-09",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "1980 年代文字处理/办公小型机龙头，峰值年收入约 30 亿美元、雇员 3.3 万以上。被 PC 取代后 1992-08-18 申请 Chapter 11，1993-09 重整计划生效：旧 B 类、C 类普通股全部注销，新股给了无担保债权人，旧股东只分到行权价 $21.45 的认股权证。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/0000104519/000095013595002027/0000950135-95-002027.txt",
+            "https://en.wikipedia.org/wiki/Wang_Laboratories"
+          ],
+          "confidence": "high",
+          "notes": "1980 年代股价高点未从可靠来源取得，peak_price 留空。认股权证价值接近 0，故 final 记为 0。"
+        },
+        {
+          "name": "Apple Computer",
+          "ticker_then": "AAPL",
+          "yahoo_ticker": "AAPL",
+          "role_cn": "明星",
+          "hype_date": "1984-01",
+          "peak_date": "1991-04",
+          "peak_price": 0.654,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1999-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "Sculley 时代先后在 1987-10（股灾前）和 1991-04 两次见顶，随后在 Windows 兼容机的价格战中失去份额，1997-07 复权月线见底，Jobs 回归后 1999-10 收复 1991 年高点。",
+          "sources": [
+            "https://finance.yahoo.com/quote/AAPL/history/"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 复权数据；1980 年代以后做过多次拆股，名义价无意义。"
+        },
+        {
+          "name": "Commodore International",
+          "ticker_then": "CBU",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1982",
+          "peak_date": "1983",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1994-04",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "Commodore 64 让它成为第一家年销售额超过 10 亿美元的微电脑公司（1983 年）；1984-01 创始人 Tramiel 辞职。Amiga 之后连年亏损，1994-04-26 被纽交所摘牌，1994-04-29 宣布把资产交给债权人受托人、主要子公司自愿清算；最后收盘约 $0.875。",
+          "sources": [
+            "https://commodore.ca/commodore-executive-rift-denied-as-tramiel-quits-new-york-times/",
+            "https://commodore.international/?p=183",
+            "https://www.commodore.ca/commodore-bankruptcy-associated-press-1994/"
+          ],
+          "confidence": "medium",
+          "notes": "1983 年股价高点未从可靠来源取得；清算中股东实际所得未核实，按 0 处理。"
+        },
+        {
+          "name": "Compaq Computer",
+          "ticker_then": "CPQ",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1983-12",
+          "peak_date": "1993-Q4",
+          "peak_price": 75.75,
+          "price_basis": "nominal（季度盘中最高，10-K；此后多次拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2002-05",
+          "final_value_per_share": null,
+          "fate_detail_cn": "IBM 兼容机的头号赢家。1992Q2 曾跌到 $22 1/4，1993 年靠降价抢份额又涨到 $75 3/4（本时代内高点）。1998 年收购 DEC，2001-09 宣布被 HP 以每股 0.6325 股 HP 换股收购，2002-05 完成。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/714154/0000714154-94-000005.txt",
+            "https://www.sec.gov/Archives/edgar/data/714154/000095012902000383/h93864e10-k.txt"
+          ],
+          "confidence": "medium",
+          "notes": "1994 年后的拆股次数未核实，所以无法把 0.6325 股 HP 直接与 $75.75 比较；Compaq 真正的股价顶点在 1999-01（属于 e2 时代）。可用 HPQ（Yahoo）推算换股后价值。"
+        },
+        {
+          "name": "Seagate Technology（旧股，1981 IPO）",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子",
+          "hype_date": "1983",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2000-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1983 年硬盘上市潮的龙头之一，后来成为最大的硬盘厂。2000-03 宣布：Silver Lake 等以约 20 亿美元现金买下全部经营业务，旧 Seagate 与 VERITAS 合并；2000-11-22 完成，每股旧 Seagate 得 0.4465 股 VERITAS + $8.5484 现金。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/354952/0000891618-00-001986.txt",
+            "https://forums.anandtech.com/threads/seagate-and-veritas-finish-up-merger.408747/post-687020"
+          ],
+          "confidence": "medium",
+          "notes": "代码陷阱：Yahoo 上的 STX 是 2002 年重新上市的 Seagate Technology Holdings（开曼），与旧 Seagate 股东无关。0.4465/$8.5484 的数字来自论坛转引的公司公告，未读到 SEC 原文；旧股高点未取得。"
+        },
+        {
+          "name": "MiniScribe",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "1983",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1990-01",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "科罗拉多硬盘厂，1985 年失去 IBM 订单后连续数年伪造销售，1989 年甚至把约 2.6 万块砖头装进硬盘箱发往新加坡充库存。1990-01-02 申请 Chapter 11，资产以约 4,600 万美元现金加股票卖给 Maxtor；1992 年前高管、Hambrecht & Quist 和 Coopers & Lybrand 合计赔付 1.281 亿美元给债权人和股东。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/MiniScribe",
+            "https://www.storagenewsletter.com/2019/10/10/history-1989-unbelievable-miniscribe-shipped-bricks-rather-than-hdds/"
+          ],
+          "confidence": "medium",
+          "notes": "ticker_then 未核实；股价高点未取得；股东从和解中所得未核实，按约等于 0 处理。"
+        },
+        {
+          "name": "Lotus Development",
+          "ticker_then": "LOTS",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1983",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1995-07",
+          "final_value_per_share": 64.0,
+          "fate_detail_cn": "1-2-3 电子表格让它成为 1980 年代最大的 PC 软件公司，后来输给了微软 Excel/Windows。1995-06 IBM 发起敌意要约，最终以每股 $64 现金收购，较要约前一天（1995-06-02）收盘价 $32.50 溢价近一倍。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/711761/0000950112-95-001622.txt",
+            "https://www.sec.gov/Archives/edgar/data/711761/0000950112-95-001838.txt"
+          ],
+          "confidence": "high",
+          "notes": "1980 年代高点未取得（EDGAR 上 1994 年 10-K 未列历史股价），所以 $64 与高点的比较缺失。"
+        },
+        {
+          "name": "Microsoft",
+          "ticker_then": "MSFT",
+          "yahoo_ticker": "MSFT",
+          "role_cn": "卖铲子",
+          "hype_date": "1986-03",
+          "peak_date": "1992-11",
+          "peak_price": 2.97,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1994-05",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1986-03-13 IPO。为 IBM PC 提供 DOS、后来又推出 Windows，拿走了 PC 产业链上最厚的利润。本时代内只在 1993 年小幅回调，1994-05 即创新高。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/History_of_Microsoft",
+            "https://finance.yahoo.com/quote/MSFT/history/"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 复权数据。"
+        }
+      ]
+    },
+    {
+      "id": "lbo_junk",
+      "name_cn": "杠杆收购 / 垃圾债 / 收购概念股",
+      "name_en": "LBO, junk-bond and takeover mania",
+      "one_line_cn": "赌任何现金流稳定的公司都能被垃圾债撬动收购，股价应按“收购价”而不是按盈利定价；垃圾债的高利率足以覆盖违约。",
+      "hype_start": {
+        "date": "1984",
+        "event_cn": "Drexel Burnham Lambert 推出“highly confident letter”（高度确信函），为 Pickens 竞购 Gulf Oil、Icahn 竞购 Phillips 等敌意收购承诺融资，垃圾债成为收购武器；Drexel 1986 财年净利 5.455 亿美元，Milken 当年薪酬 2.95 亿",
+        "source": "https://en.wikipedia.org/wiki/Drexel_Burnham_Lambert"
+      },
+      "peak": {
+        "date": "1988-11",
+        "event_cn": "1988-10 至 11 月 RJR Nabisco 争夺战，KKR 以每股 $109、总额 250 亿美元胜出（1989-02 完成）；1989-10 UAL 的 $300/股杠杆收购仍在融资中",
+        "source": "https://en.wikipedia.org/wiki/RJR_Nabisco"
+      },
+      "trough": {
+        "date": "1990-02",
+        "event_cn": "1989-10-13 UAL 67.5 亿美元收购融资破裂，道指当天跌 6.91%；1990-01 Campeau 旗下 Allied/Federated 申请破产；1990-02-13 Drexel 与 Integrated Resources 同日申请 Chapter 11；垃圾债违约率从约 4% 升到 10%",
+        "source": "https://www.tampabay.com/archive/1990/02/14/drexel-files-for-chapter-11-wall-street-firm-shutting-down/"
+      },
+      "proxy_tickers": [
+        "^GSPC"
+      ],
+      "proxy_note_cn": "Yahoo 上没有 1980 年代的垃圾债指数或收购概念指数，只能用 ^GSPC 看大盘（1989-10 见顶、1990-10 见底）。主题本身的“价格”更适合用 Drexel 盈利、垃圾债违约率、收购交易额来衡量，主分析师无法用单一代码复算。",
+      "what_killed_it_cn": "监管与信用同时收紧。1988-12 Drexel 认罪并同意交 6.5 亿美元罚款，1989-03 Milken 被起诉；1989 年储贷危机立法（FIRREA）迫使储贷机构出清垃圾债，最大的买家消失；1989-10-13 UAL 收购的银行贷款募不齐，交易破裂引发小股灾；1990 年经济衰退让高杠杆公司现金流不足，违约率升到 10%，Drexel 自己也在 1990-02 破产。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "垃圾债违约率到 1990 年从约 4% 升至 10%",
+          "date": "1990",
+          "source": "https://en.wikipedia.org/wiki/Drexel_Burnham_Lambert"
+        },
+        {
+          "claim_cn": "First Executive 到 1990 年末持有账面约 90 亿美元的高收益债（大多由 Drexel 承销），1990Q4 亏损 4.66 亿美元，1991-04 被加州保险监理接管，是当时最大的保险公司倒闭",
+          "date": "1991-04",
+          "source": "https://en.wikipedia.org/wiki/Executive_Life_Insurance_Company"
+        },
+        {
+          "claim_cn": "杠杆收购作为一种融资方式活了下来并成为主流：2007-06-21 Blackstone 上市，卖出 12.3% 股权募资 41.3 亿美元，是第一家大型私募股权公司 IPO",
+          "date": "2007-06",
+          "source": "https://en.wikipedia.org/wiki/Blackstone_Inc."
+        }
+      ],
+      "time_to_reality": {
+        "years": 23,
+        "from": "1984",
+        "to": "2007",
+        "marker_cn": "以 2007 年 Blackstone 上市（私募股权成为主流资产类别）为“兑现”标志。中间先经历了 1989–91 年的整体崩塌：1980 年代的垃圾债体系（Drexel、First Executive、储贷机构）几乎全部死亡",
+        "source": "https://en.wikipedia.org/wiki/Blackstone_Inc."
+      },
+      "basket_method": "当年口径：1985–1989 年最著名的收购/杠杆重组标的与垃圾债体系的上市公司——被收购方（RJR Nabisco、Federated）、收购破裂方（UAL）、杠杆重组自保方（Kroger、Interco）、垃圾债买家与经销商（First Executive、Integrated Resources、American Continental/Lincoln S&L）。Drexel 本身是私人合伙制，没有上市股票，未列入。依据：Drexel 的 Wikipedia 交易清单和各公司当年报道。",
+      "companies": [
+        {
+          "name": "RJR Nabisco",
+          "ticker_then": "RJR",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1988-10",
+          "peak_date": "1989-02",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 25.0,
+          "fate": "acquired",
+          "fate_date": "1989-02",
+          "final_value_per_share": 109.0,
+          "fate_detail_cn": "1988-10 CEO Ross Johnson 发起管理层收购，引发与 KKR 的竞购战，KKR 以每股 $109、总价 250 亿美元胜出，1989-02 完成。对老股东来说是大赢家；之后的 RJR Nabisco Holdings 于 1991-03 重新上市，1999 年拆分烟草与食品，2000 年 Nabisco 卖给 Philip Morris——那是新股东的故事。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/RJR_Nabisco",
+            "https://en.wikipedia.org/wiki/Drexel_Burnham_Lambert"
+          ],
+          "confidence": "medium",
+          "notes": "peak_mcap_usd_bn 填的是交易总额 250 亿美元，不是市值。$109 中现金与证券（PIK 优先股、可转债）的比例未从一手来源核实，证券部分后来的实际价值也未核实。"
+        },
+        {
+          "name": "Federated Department Stores",
+          "ticker_then": "FDS",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1988-01",
+          "peak_date": "1988-04",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 6.6,
+          "fate": "acquired",
+          "fate_date": "1988-04",
+          "final_value_per_share": 73.5,
+          "fate_detail_cn": "1988 年与 Macy's 竞购后，被加拿大地产商 Campeau 以每股 $73.50、总价 66 亿美元收购（比差点胜出的 $68 报价多出约 5 亿美元；Campeau 1986 年已收购 Allied Stores），老股东拿现金离场。收购方背上约 80 亿美元债务，1990-01 Allied 与 Federated 申请 Chapter 11，是当时美国零售业最大的破产。",
+          "sources": [
+            "https://www.tampabay.com/archive/1990/01/16/campeau-files-for-bankruptcy-protection-burdines-maas-will-stay-open/",
+            "https://www.tampabay.com/archive/1990/01/14/how-campeau-doomed-his-dream/",
+            "https://en.wikipedia.org/wiki/Campeau_Corporation"
+          ],
+          "confidence": "medium",
+          "notes": "peak_mcap_usd_bn 填的是收购总价 66 亿美元。$73.50 来自 Tampa Bay Times 1990-01-14 回顾文章（检索摘要，未逐字核对原文）。1992 年走出破产的新 Federated（后改名 Macy's，代码 M）与 1988 年的老股东无关。"
+        },
+        {
+          "name": "UAL Corp (United Airlines)",
+          "ticker_then": "UAL",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1989-08",
+          "peak_date": "1989-10",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2006-02",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "1989-08-04 收于 $164 1/2，次日 Marvin Davis 出价 $240，随后管理层与机师工会联合体出价 $300/股（总额 67.5 亿美元）。1989-10-13 银行贷款募不齐、交易破裂，引发当天道指 -6.91% 的小股灾；十天后股价 $170。1994-07 员工以降薪换取约 55% 股权的 ESOP 重组，1996-05 1 拆 4；2002-12-09 申请 Chapter 11，2006-02-01 走出破产时所有旧股注销。",
+          "sources": [
+            "https://www.euromoney.com/article/27bjsstsqxhkmh1wmk6em/capital-markets/ual-inside-the-fiasco-of-the-decade/",
+            "https://en.wikipedia.org/wiki/Friday_the_13th_mini-crash",
+            "https://time.com/archive/6703650/boom-ka-boom/",
+            "https://www.sec.gov/Archives/edgar/data/100517/0000100517-97-000005.txt",
+            "https://www.sec.gov/Archives/edgar/data/100517/000010051702000079/body.htm",
+            "https://www.sec.gov/Archives/edgar/data/100517/000110465906005256/a06-3892_18k.htm"
+          ],
+          "confidence": "high",
+          "notes": "代码陷阱：Yahoo 的 UAL 从 2006-02 开始，是破产后发行的新股（今 United Airlines Holdings），与旧股东无关。1989 年盘中最高价未取得。1994 年重组时老股东拿到的现金和证券的金额未核实，所以“最终价值 0”只代表一直持有到 2006 年的结果。"
+        },
+        {
+          "name": "Kroger",
+          "ticker_then": "KR",
+          "yahoo_ticker": "KR",
+          "role_cn": "沾边蹭概念",
+          "hype_date": "1988-09",
+          "peak_date": "1988-09",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "1988 年同时被 KKR 和 Haft 家族的 Dart Group 盯上，Kroger 选择自己加杠杆：发行约 53 亿美元垃圾债，向股东派发每股 $40 现金加约 $8 的证券，成功击退 KKR。之后靠超市主业慢慢降杠杆，股票一直存活。",
+          "sources": [
+            "https://supermarketnews.com/foodservice-retail/former-kroger-ceo-lyle-everingham-dies-at-94",
+            "https://www.progressivegrocer.com/grocerys-greatest-stories-part-2",
+            "https://finance.yahoo.com/quote/KR/history/"
+          ],
+          "confidence": "medium",
+          "notes": "复权陷阱：$40 特别股息会让 Yahoo 的未复权“高点”严重失真，请用 adjclose（含股息复权）计算 1988 年前后的回报；fate 为最佳猜测（Yahoo 月线显示 1991-03 高点在 1994-07 被超过）。"
+        },
+        {
+          "name": "Interco",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "1988-07",
+          "peak_date": "1988-08",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1991-01",
+          "final_value_per_share": null,
+          "fate_detail_cn": "家具与鞋业集团（Broyhill、Lane、Converse、Florsheim）。1988 年 Rales 兄弟出价从 $64 提到 $70/股，Interco 在 Wasserstein Perella 建议下做杠杆重组，借约 18 亿美元派发号称价值 $76 的特别分配。债务压垮公司，1991-01-24 申请 Chapter 11，1992-08-03 走出破产（后改名 Furniture Brands International，2013 年再次破产）。",
+          "sources": [
+            "https://www.upi.com/Archives/1991/01/25/Interco-files-for-Chapter-11-bankruptcy-protection/5833664779600/",
+            "https://www.fundinguniverse.com/company-histories/furniture-brands-international-inc-history/"
+          ],
+          "confidence": "medium",
+          "notes": "ticker_then 未核实；1992 年重整时旧股东所得比例未核实，final_value 留空。$76 特别分配大部分是后来违约的债券，实际价值低于名义值。"
+        },
+        {
+          "name": "Integrated Resources",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子",
+          "hype_date": "1985",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1990-02",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "当时美国最大的避税投资产品经销商，重度依赖 Drexel 体系的短期融资；1990-02-13 与 Drexel 同一天申请 Chapter 11。",
+          "sources": [
+            "https://www.tampabay.com/archive/1990/02/14/drexel-files-for-chapter-11-wall-street-firm-shutting-down/"
+          ],
+          "confidence": "low",
+          "notes": "股价高点、股东最终所得均未核实；final 0 为基于破产顺位的推断。"
+        },
+        {
+          "name": "First Executive Corp (Executive Life)",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子",
+          "hype_date": "1985",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1991-04",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "Fred Carr 把一家濒临破产的寿险控股公司做成加州最大寿险公司，靠高利率年金吸储、再买 Drexel 承销的垃圾债（1990 年末账面约 90 亿美元）。1990Q4 亏损 4.66 亿美元，1991-04 子公司被加州保险监理接管，母公司随后申请破产，是当时最大的保险公司倒闭。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Executive_Life_Insurance_Company",
+            "https://www.bloomberg.com/news/articles/1991-04-14/is-first-exec-on-its-last-legs"
+          ],
+          "confidence": "medium",
+          "notes": "母公司申请破产的确切日期、股价高点与股东所得未核实；final 0 为推断。"
+        },
+        {
+          "name": "American Continental Corp (Lincoln Savings)",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "1984",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "1989-04",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "Charles Keating 的地产集团，1984 年收购 Lincoln Savings 后把储蓄存款投向地产和高风险证券，并在网点向储户推销母公司的次级债。1989-04-14 母公司申请破产，次日 Lincoln 被联邦接管，政府承担近 30 亿美元损失，2.1 万多名（多为老年）债券持有人损失约 2.85 亿美元。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Lincoln_Savings_and_Loan_Association"
+          ],
+          "confidence": "medium",
+          "notes": "股价高点未取得；普通股按清零处理（推断）。"
+        }
+      ]
+    },
+    {
+      "id": "biotech1",
+      "name_cn": "第一次生物科技泡沫（“下一个 Amgen”与脓毒症抗体）",
+      "name_en": "First biotech bubble (1991–92)",
+      "one_line_cn": "赌重组蛋白和单克隆抗体会复制 Amgen（Epogen 1989、Neupogen 1991 获批）的成功：任何手里有一个 III 期药的公司都值几十亿美元。",
+      "hype_start": {
+        "date": "1991",
+        "event_cn": "1991 年 Immune Response 从 $2 7/8 涨到 $62 3/4，Synergen 从 $3 5/8 涨到 $70 3/4（USA Today 1992-04-23 回顾）；1991-02 Amgen 的 Neupogen 获 FDA 批准，成为第二个重磅生物药",
+        "source": "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61"
+      },
+      "peak": {
+        "date": "1992-01",
+        "event_cn": "Centocor 1992-01 冲上 $60 以上（10-K：1992Q1 最高 $60 1/4），Synergen 1992Q1 最高 $75，Gensia 1992-02-27 冲到 $62；Amgen 复权月线 1992-01 见顶。此后 Smith Barney 生物科技指数到 1992-04 已跌 39%",
+        "source": "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61"
+      },
+      "trough": {
+        "date": "1994-10",
+        "event_cn": "1993 年两大脓毒症药相继失败（Centocor HA-1A 1993 年终止 III 期并在欧洲召回；Synergen Antril 1993-02 III 期失败，单日跌 $29）；1994-10-17 Gensia 的 Protara 失败，股价跌到 $5.06；Synergen 1994Q3 最低 $3 7/8，1994-11 被 Amgen 以 $9.25 收购",
+        "source": "https://www.bioworld.com/articles/488993"
+      },
+      "proxy_tickers": [
+        "AMGN",
+        "^IXIC"
+      ],
+      "proxy_note_cn": "主题期没有合适的指数：Nasdaq Biotechnology Index (^NBI) 在 Yahoo 上从 1993-10 才有数据，晚于 1992-01 的顶点。当年媒体引用的 Smith Barney、Hambrecht & Quist 生物科技指数在 Yahoo 上没有。可以用龙头 AMGN（复权）近似：月线高点 1992-01，最低 1993-08（约 -60%（月线最低价对高点）），1995-06 收复。",
+      "what_killed_it_cn": "临床失败 + 供给泛滥 + 政策恐慌。1991 年的估值建立在脓毒症单抗（Centocor 的 HA-1A/Centoxin、Xoma 的 E5）和 Synergen 的 Antril 一定会获批的假设上。1992-04 FDA 认为 HA-1A 证据不足，1993 年 Centocor 的第二个 III 期因没有降低死亡率而终止、产品在欧洲召回；1993-02 Antril III 期失败，Synergen 一天跌掉 $29；1994-10 Gensia 的 Protara 失败。同时公司趁高位大量增发（Immune Response 1991-11 以 $44 增发、Synergen 高管 1992-01 在 $65–73.50 区间卖股），1993 年克林顿医改带来的药价管制担忧又压住了整个医药板块。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "被炒的脓毒症药全部失败，但同一批公司的“第二个分子”后来成了重磅药：Centocor 的 CenTNF（cA2，即后来的 Remicade/英夫利昔单抗）1993 年还在 II/III 期，1999 年 J&J 以约 $61/股的换股价收购 Centocor",
+          "date": "1999-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/708823/0001036050-99-001529.txt"
+        },
+        {
+          "claim_cn": "Synergen 的 IL-1ra（Antril）脓毒症失败，Amgen 1994 年以 $9.25/股收购后，作为类风湿关节炎药 Kineret（阿那白滞素）于 2001 年获批",
+          "date": "2001-11",
+          "source": "https://en.wikipedia.org/wiki/Anakinra"
+        },
+        {
+          "claim_cn": "Roche 2009 年以 $95/股、约 468 亿美元买下 Genentech 少数股东权益——生物药成了大药厂的核心资产",
+          "date": "2009-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/318771/000119312509055440/dex991.htm"
+        }
+      ],
+      "time_to_reality": {
+        "years": 8,
+        "from": "1991",
+        "to": "1999",
+        "marker_cn": "以 1998–2001 年第一批单抗/细胞因子重磅药（Remicade、Kineret 等）获批、J&J 1999 年收购 Centocor 为“兑现”标志；当年被炒的具体药物（HA-1A、E5、Antril 用于脓毒症、Protara）一个都没有兑现",
+        "source": "https://www.sec.gov/Archives/edgar/data/708823/0001036050-99-001529.txt"
+      },
+      "basket_method": "当年口径：USA Today 1992-02-27 生物科技专题和 1992-04-23 “Personal Investing” 专栏点名的公司（Centocor、Xoma、Immune Response、Synergen，以及分析师偏爱的 Amgen、Chiron、Genzyme），加上市值最大的 Genentech、Biogen 和 1992-02 最热的 Gensia。故意包括三家押注脓毒症药的公司（Centocor、Xoma、Synergen）。来源：USA Today 两篇转载（stuff.mit.edu 存档）。",
+      "companies": [
+        {
+          "name": "Amgen",
+          "ticker_then": "AMGN",
+          "yahoo_ticker": "AMGN",
+          "role_cn": "龙头",
+          "hype_date": "1989",
+          "peak_date": "1992-01",
+          "peak_price": 9.78,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数；名义价未从一手来源取得）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1995-06",
+          "final_value_per_share": null,
+          "fate_detail_cn": "Epogen（1989）和 Neupogen（1991-02）让 Amgen 成为第一家真正盈利的生物科技公司，也是这轮泡沫的标杆。复权月线 1992-01 见顶后跌到 1993-08 的低点（约 -60%（月线最低价对高点）），1995-06 收复高点，此后长期创新高。1994 年还以 $9.25/股捡走了失败的 Synergen。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Amgen",
+            "https://finance.yahoo.com/quote/AMGN/history/",
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61"
+          ],
+          "confidence": "high",
+          "notes": "高点/低点/收复日期来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Genentech",
+          "ticker_then": "GNE",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1980-10",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1999-06",
+          "final_value_per_share": 82.5,
+          "fate_detail_cn": "1990-09 Roche 取得多数股权，此后公众持有的是可被 Roche 按约定价格赎回的 Special Common Stock；1999-06 Genentech 以每股 $82.50 现金赎回全部公众股，Roche 持股 100%。1999-07 Roche 重新公开发售（代码 DNA），2009-03 再以 $95/股（约 468 亿美元）买下少数股东。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/318771/000095012309002224/y74405exv99waw5wxvii.htm",
+            "https://www.sec.gov/Archives/edgar/data/318771/000095012309002224/y74405exv99waw1wi.htm",
+            "https://www.sec.gov/Archives/edgar/data/318771/000119312509055440/dex991.htm"
+          ],
+          "confidence": "medium",
+          "notes": "1991–92 年 GNE 的高点没有从可靠来源取得，所以无法计算 $82.50 相对高点的比例。1999 年后重新上市的 DNA 与旧 GNE 股东是两段不同的持有期。"
+        },
+        {
+          "name": "Biogen",
+          "ticker_then": "BGEN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-Q4",
+          "peak_price": 49.75,
+          "price_basis": "nominal（季度最高收盘价，10-K）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2003-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "Biogen 并没有随脓毒症股一起崩盘：1992Q4 最高收盘 $49 3/4，1993Q1 仍有 $47 3/4。1999-06 做过 1 拆 2；2003-11 与 IDEC 合并，每股 Biogen 换 1.15 股 IDEC（改名 Biogen Idec，今 Biogen，BIIB）。按 1992 高点 ÷（2 × 1.15）≈ $21.6 的 BIIB 等价价格计，今天 BIIB 远高于此——股权通过换股延续并创新高（最佳猜测，需复核 1993–1999 是否还有其他拆股）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/714655/0000714655-94-000011.txt",
+            "https://www.sec.gov/Archives/edgar/data/714655/000095013501001092/b38146bgex13.txt",
+            "https://www.sec.gov/Archives/edgar/data/714655/000095013503005347/b48037bie10vq.htm"
+          ],
+          "confidence": "medium",
+          "notes": "代码陷阱：Yahoo 的 BIIB 历史从 1991-09 开始，是 IDEC 的股价，不是旧 Biogen（BGEN）的。旧 Biogen 股东要用 1 BGEN = 2 × 1.15 = 2.3 BIIB 换算（只计入已核实的 1999 年拆股）。"
+        },
+        {
+          "name": "Chiron",
+          "ticker_then": "CHIR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1994-Q1",
+          "peak_price": 95.125,
+          "price_basis": "nominal（季度最高收盘价，1996 年 1 拆 4 之前）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2006-04",
+          "final_value_per_share": 48.0,
+          "fate_detail_cn": "1991 年收购 Cetus 后成为第二梯队龙头，1994Q1 最高收盘 $95 1/8（1996-08 做 1 拆 4，相当于新股 $23.8）。2006-04 Novartis 以每股 $48 现金收购（原协议 $45，后加价），相当于拆股前约 $192，约为 1994 年高点的 2 倍。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/706539/0000912057-95-001479.txt",
+            "https://www.sec.gov/Archives/edgar/data/706539/0001047469-98-012226.txt",
+            "https://www.sec.gov/Archives/edgar/data/706539/000110465906023570/a06-8627_18k.htm",
+            "https://www.sec.gov/Archives/edgar/data/706539/000089882206000395/f15a17.txt"
+          ],
+          "confidence": "medium",
+          "notes": "1991–92 年的高点未取得（EDGAR 上最早的 10-K 只列 1993–94 年季度价格），因此 peak 取的是 EDGAR 可查的 1994Q1。"
+        },
+        {
+          "name": "Genzyme",
+          "ticker_then": "GENZ",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2011-04",
+          "final_value_per_share": 74.0,
+          "fate_detail_cn": "1992 年 USA Today 列为分析师偏爱的三家之一（与 Amgen、Chiron 并列）。2011-04 Sanofi 以每股 $74 现金 + 1 份 CVR 完成收购。",
+          "sources": [
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61",
+            "https://www.sec.gov/Archives/edgar/data/732485/000095012311034216/b85960e8vk.htm"
+          ],
+          "confidence": "medium",
+          "notes": "1991–92 年高点未取得；1994–2003 年 Genzyme 发行过多种追踪股（Genzyme General 等），加上拆股，收购价与 1992 年价格的可比性需要另行核实。"
+        },
+        {
+          "name": "Centocor",
+          "ticker_then": "CNTO",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-01",
+          "peak_price": 60.25,
+          "price_basis": "nominal（季度盘中最高，10-K）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1999-10",
+          "final_value_per_share": 61.0,
+          "fate_detail_cn": "押注脓毒症单抗 HA-1A（Centoxin）。1992-01 冲上 $60 1/4，1992-04 FDA 认为疗效证据不足，1993 年第二个 III 期因不降低死亡率而终止、欧洲召回，1993Q2 最低 $5 1/4（较高点 -91%）。真正救活它的是 CenTNF（后来的 Remicade）：1999-07 J&J 以换股方式收购，按协议每股约值 $61（0.5823–0.7117 股 J&J 的区间），1999-10 完成——7 年后才回到 1992 年高点附近。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/708823/0000950130-94-000565.txt",
+            "https://www.sec.gov/Archives/edgar/data/708823/0001036050-99-001529.txt",
+            "https://www.sec.gov/Archives/edgar/data/708823/000095015799000539/",
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61"
+          ],
+          "confidence": "high",
+          "notes": "$61 是协议的目标价值（按 J&J 20 日均价计算换股比例，带上下限），实际交割价值取决于当时 J&J 股价，未核实。"
+        },
+        {
+          "name": "Synergen",
+          "ticker_then": "SYGN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-Q1",
+          "peak_price": 75.0,
+          "price_basis": "nominal（季度盘中最高，Amgen 要约文件）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1994-12",
+          "final_value_per_share": 9.25,
+          "fate_detail_cn": "科罗拉多 Boulder 的明星股，押注 Antril（IL-1ra）治疗脓毒症。1991 年从 $3 5/8 涨到 $70 3/4，1992Q1 最高 $75；1992-01 多名高管在 $65–73.50 卖股。1993-02-22 Antril III 期失败，单日跌 $29；1994-08 跌到 $3.88。1994-11 Amgen 以 $9.25/股现金要约收购，约为高点的 12%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/730358/0000950150-94-000746.txt",
+            "https://www.sec.gov/Archives/edgar/data/730358/0000950150-94-000764.txt",
+            "https://www.sec.gov/Archives/edgar/data/730358/000095015095000013/",
+            "https://den-experimental.voicemediagroup.com/?p=40613516",
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Xoma",
+          "ticker_then": "XOMA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": null,
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2026-07",
+          "final_value_per_share": 0.13,
+          "fate_detail_cn": "押注脓毒症单抗 E5（与 Pfizer 合作）。1992-02-26 收于 $22 1/2，当时分析师预期 E5 会获批；1992 年 FDA 未批准，此后 E5 试验终止。公司靠融资活了 30 多年，做过两次反向拆股（2010-08 1 换 15、2016-10 1 换 20，合计 1 换 300），2024 年改名 XOMA Royalty。2026-07-14 被 Ligand 以每股 $39 现金 + CVR 收购；折算成 1992 年的原始股只值约 $0.13，约为 1992-02 价格的 0.6%。",
+          "sources": [
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/20",
+            "https://www.sec.gov/Archives/edgar/data/791908/000095016210000285/ex99_1.htm",
+            "https://www.sec.gov/Archives/edgar/data/791908/000117184316012481/f8k_101716.htm",
+            "https://www.sec.gov/Archives/edgar/data/791908/000119312526302648/d165297d8k.htm"
+          ],
+          "confidence": "medium",
+          "notes": "final_value_per_share = $39 ÷ 300（按原始股折算，未计 CVR）。1991–92 年最高价未从可靠来源取得（有行业报道提到 $26.25 的 52 周高点，未核实原文），peak_price 留空。Yahoo 现已查不到 XOMA（2026-07 退市）。"
+        },
+        {
+          "name": "Gensia",
+          "ticker_then": "GNSA",
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "1991",
+          "peak_date": "1992-02",
+          "peak_price": 62.0,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2004-01",
+          "final_value_per_share": 27.5,
+          "fate_detail_cn": "圣地亚哥的心脏药公司，1992-02-27 公布 Protara II 期结果后冲到 $62；1992-09 国际 III 期失败跌到 $22；1994-10-17 美国 III 期失败，单日从 $10.37 跌到 $5.06。1997 年与 Sicor 合并（Gensia Sicor，1999 改名 Sicor），转做仿制注射剂后股价回升；2004-01 Teva 以每股 $16.50 现金 + 0.1906 股 Teva ADR 收购（宣布时约值 $27.50），约为 1992 年高点的 44%。",
+          "sources": [
+            "https://www.bioworld.com/articles/488330",
+            "https://www.bioworld.com/articles/488993",
+            "https://www.bioworld.com/articles/486079",
+            "https://www.sec.gov/Archives/edgar/data/807873/0001012870-98-000824.txt",
+            "https://www.sec.gov/Archives/edgar/data/807873/000091205701505766/a2043001z10-k405.txt",
+            "https://www.sec.gov/Archives/edgar/data/807873/000089914003000879/t1287749.txt",
+            "https://www.sec.gov/Archives/edgar/data/807873/000119312504007289/d1512g.htm"
+          ],
+          "confidence": "medium",
+          "notes": "role 标为“沾边蹭概念”是因为 Gensia 本质是小分子/器械公司，被当作生物科技股炒。1995–2000 年 10-K 股价表连续，未发现反向拆股，所以 $27.50 与 $62 可直接比较。$27.50 是宣布日价值，交割日价值未核实。"
+        },
+        {
+          "name": "Immune Response Corp",
+          "ticker_then": "IMNR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1991",
+          "peak_price": 62.75,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2008-10",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "Jonas Salk 参与创办，押注 HIV 治疗性疫苗 Remune。1991 年从 $2 7/8 涨到 $62 3/4，1991-11 趁高位以 $44 增发 130 万股；1992-11 已跌到约 $20。Remune 始终没有获批，公司 2007 年改名 Orchestra Therapeutics，2008-10 申请 Chapter 7 清算，2012 年 SEC 撤销其证券注册。",
+          "sources": [
+            "https://stuff.mit.edu/afs/net.mit.edu/user/tytso/usenet/usa-today/invest/61",
+            "https://www.bioworld.com/articles/486643",
+            "https://stuff.mit.edu/afs/net/user/tytso/usenet/americast/ibd/143",
+            "https://www.fiercebiotech.com/biotech/orchestra-therapeutics-goes-under",
+            "https://www.sec.gov/Archives/edgar/data/817785/999999999712011137/filename1.pdf"
+          ],
+          "confidence": "medium",
+          "notes": "$62 3/4 的高点只来自 USA Today 1992-04-23 一处；$44 增发价（以及 1991–92 年生物科技融资窗口共募资 37 亿美元）来自 BioWorld 1996-06-11 原文。"
+        }
+      ]
+    },
+    {
+      "id": "bluechip_growth_1992",
+      "name_cn": "大盘医药与品牌消费成长股（“新漂亮 50”，1991–92）",
+      "name_en": "Big-cap drug & brand-name growth stocks (Nifty-Fifty redux)",
+      "one_line_cn": "赌医药巨头和品牌消费龙头（Merck、Pfizer、Bristol-Myers、J&J、Philip Morris、Coca-Cola、P&G、Wal-Mart）能在任何经济环境下持续两位数增长，所以值得长期溢价持有。",
+      "hype_start": {
+        "date": "1991",
+        "event_cn": "1990–91 年衰退和降息中，盈利稳定的大盘成长股领涨；Yahoo 月线显示 Merck、Pfizer、Bristol-Myers、J&J 四家同在 1992-01 见顶，Philip Morris 与 Coca-Cola 1992-09、P&G 1992-12、Wal-Mart 1993-03 见顶",
+        "source": "https://finance.yahoo.com/quote/MRK/history/"
+      },
+      "peak": {
+        "date": "1992-01",
+        "event_cn": "医药股 1992-01 集体见顶（Yahoo）；Ellison & Mullin 的研究把 1992-01 作为医药股下跌的起点",
+        "source": "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+      },
+      "trough": {
+        "date": "1993-10",
+        "event_cn": "1992-01 至 1993-10，大型药企经市场调整后的股价下跌 52.3%，研究将其归因于克林顿医改（药价管制）预期；1993-04-02“万宝路星期五”Philip Morris 宣布 Marlboro 降价 20%，当天股价跌 26%，其他品牌消费股同跌；Merck 复权月线 1994-04 见底",
+        "source": "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+      },
+      "proxy_tickers": [
+        "MRK",
+        "PFE",
+        "BMY",
+        "JNJ",
+        "MO",
+        "KO",
+        "PG",
+        "WMT"
+      ],
+      "proxy_note_cn": "没有对应的主题 ETF（XLV、XLP 1998 年才成立）。可用这 8 只成分股等权自建篮子。注意 MO 在 2007（Kraft）和 2008（PMI）分拆后，Yahoo 早年的未复权高点可能不可比，请用 adjclose。",
+      "what_killed_it_cn": "政策与竞争两记重拳，而不是业务失败。1993 年克林顿政府的医改工作组讨论药价管制，药股在 1992-01 到 1993-10 间（市场调整后）跌了约一半；1993-04-02 Philip Morris 为对抗廉价烟把 Marlboro 降价 20%，市场突然怀疑“品牌溢价”能否持续，品牌消费股一起下跌。医改方案 1994 年在国会搁浅后，药股在 1995–96 年陆续收复高点（Yahoo 月线）。",
+      "reality_verdict": "真实且巨大",
+      "reality_evidence": [
+        {
+          "claim_cn": "8 只成分股全部在 1993-11 至 1997-07 之间收复 1992–93 年高点（Yahoo 复权月线），此后长期创新高",
+          "date": "1997-07",
+          "source": "https://finance.yahoo.com/quote/WMT/history/"
+        },
+        {
+          "claim_cn": "1992-01 至 1993-10 制药股经市场调整后跌 52.3%，研究认为与克林顿医改方案的演进相关，且大部分跌幅是逐步发生的（Ellison & Mullin, Journal of Law and Economics, 2001）",
+          "date": "1993-10",
+          "source": "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+        }
+      ],
+      "time_to_reality": {
+        "years": 4,
+        "from": "1992",
+        "to": "1996",
+        "marker_cn": "以成分股收复 1992 年高点为“兑现”标志：P&G 1993-11 最快，J&J 1995-03、Pfizer 1995-05、Merck 1995-10、Philip Morris 1995-11、Bristol-Myers 1996-09，Wal-Mart 1997-07 最慢",
+        "source": "https://finance.yahoo.com/quote/MRK/history/"
+      },
+      "basket_method": "当年口径：Ellison & Mullin (2001) 研究的美国大型制药股中的四家龙头（Merck、Pfizer、Bristol-Myers Squibb、J&J），加上“万宝路星期五”直接冲击的品牌消费股（Philip Morris、Coca-Cola、P&G）和当时零售业的成长龙头 Wal-Mart。篮子没有死亡案例，这本身就是结论：龙头的估值回撤不等于业务失败。可信度 medium（无单一的当年“新漂亮 50”榜单）。",
+      "companies": [
+        {
+          "name": "Merck",
+          "ticker_then": "MRK",
+          "yahoo_ticker": "MRK",
+          "role_cn": "龙头",
+          "hype_date": "1991",
+          "peak_date": "1992-01",
+          "peak_price": 27.0,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1995-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "制药龙头。1992-01 见顶后受医改药价管制预期打压，复权月线最低 1994-04，较高点约 -50%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MRK/history/",
+            "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Pfizer",
+          "ticker_then": "PFE",
+          "yahoo_ticker": "PFE",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-01",
+          "peak_price": 6.88,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1995-05",
+          "final_value_per_share": null,
+          "fate_detail_cn": "与其他大药企同月见顶，复权月线最低 1993-02，约 -40%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PFE/history/",
+            "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Bristol-Myers Squibb",
+          "ticker_then": "BMY",
+          "yahoo_ticker": "BMY",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-01",
+          "peak_price": 21.44,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1996-09",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1989 年由 Bristol-Myers 与 Squibb 合并而成，复权月线最低 1994-03，约 -45%；1996-09 才收复。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BMY/history/",
+            "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Johnson & Johnson",
+          "ticker_then": "JNJ",
+          "yahoo_ticker": "JNJ",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-01",
+          "peak_price": 14.67,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1995-03",
+          "final_value_per_share": null,
+          "fate_detail_cn": "多元化医疗龙头，同样在 1992-01 见顶，复权月线最低 1993-08，约 -39%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/JNJ/history/",
+            "https://economics.mit.edu/research/publications/gradual-incorporation-information-pharmaceutical-stocks-and-evolution"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Philip Morris (Altria)",
+          "ticker_then": "MO",
+          "yahoo_ticker": "MO",
+          "role_cn": "龙头",
+          "hype_date": "1991",
+          "peak_date": "1992-09",
+          "peak_price": 28.88,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1995-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "烟草与食品（Kraft、General Foods）巨头，1993-04-02 万宝路星期五单日跌 26%，复权月线最低 1993-04，约 -48%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MO/history/",
+            "https://en.wikipedia.org/wiki/Marlboro_Friday"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点来自 Yahoo；MO 后来分拆 Kraft（2007）和 PMI（2008），老股东的完整回报需把分拆股合并计算。"
+        },
+        {
+          "name": "Coca-Cola",
+          "ticker_then": "KO",
+          "yahoo_ticker": "KO",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-09",
+          "peak_price": 11.34,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1994-08",
+          "final_value_per_share": null,
+          "fate_detail_cn": "品牌溢价的代表，万宝路星期五当天同步下跌，复权月线最低 1992-10，约 -20%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/KO/history/",
+            "https://en.wikipedia.org/wiki/Marlboro_Friday"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Procter & Gamble",
+          "ticker_then": "PG",
+          "yahoo_ticker": "PG",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1992-12",
+          "peak_price": 13.94,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1993-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "品牌消费龙头，复权月线最低 1993-04，约 -19%；1993-11 即收复，是篮子里最快的。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PG/history/",
+            "https://en.wikipedia.org/wiki/Marlboro_Friday"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        },
+        {
+          "name": "Wal-Mart Stores",
+          "ticker_then": "WMT",
+          "yahoo_ticker": "WMT",
+          "role_cn": "明星",
+          "hype_date": "1991",
+          "peak_date": "1993-03",
+          "peak_price": 5.69,
+          "price_basis": "split-adjusted（Yahoo 月线高点，2026-10 取数）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "1997-07",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1980 年代高速扩张的零售龙头，复权月线最低 1996-01，约 -44%；1997-07 才收复，是篮子里最慢的。",
+          "sources": [
+            "https://finance.yahoo.com/quote/WMT/history/"
+          ],
+          "confidence": "high",
+          "notes": "高点、低点、收复月份均来自 Yahoo 复权月线（主分析师复核）。"
+        }
+      ]
+    }
+  ]
+}

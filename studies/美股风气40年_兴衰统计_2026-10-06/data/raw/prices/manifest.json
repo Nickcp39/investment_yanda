@@ -1,0 +1,5423 @@
+{
+ "3350.T": {
+  "currency": "JPY",
+  "exchange": "Tokyo",
+  "fetched_utc": "2026-10-06T15:11:21+00:00",
+  "first": "2004-11-16",
+  "firstTradeDate": 1100563200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Metaplanet Inc.",
+  "rows": 5404,
+  "sha256_raw": "414199c1a265bd6255e140d37f8eb784462d53b4302e93fb95efe26c3de7b0c3",
+  "splits": [
+   [
+    "2005-02-23",
+    "2.0:1.0"
+   ],
+   [
+    "2013-02-26",
+    "100.0:1.0"
+   ],
+   [
+    "2019-04-05",
+    "1.0:10.0"
+   ],
+   [
+    "2024-07-30",
+    "1.0:10.0"
+   ],
+   [
+    "2025-03-28",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/3350.T?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AAPL": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:22+00:00",
+  "first": "1980-12-12",
+  "firstTradeDate": 345479400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Apple Inc.",
+  "rows": 11545,
+  "sha256_raw": "2f6ae9d8f7b342932dc58c7370284b114bcbabc2bd0c33a4efecfe4de5f43249",
+  "splits": [
+   [
+    "1987-06-16",
+    "2.0:1.0"
+   ],
+   [
+    "2000-06-21",
+    "2.0:1.0"
+   ],
+   [
+    "2005-02-28",
+    "2.0:1.0"
+   ],
+   [
+    "2014-06-09",
+    "7.0:1.0"
+   ],
+   [
+    "2020-08-31",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ACB": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:40:41+00:00",
+  "first": "2014-07-15",
+  "firstTradeDate": 1405431000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Aurora Cannabis Inc.",
+  "rows": 3075,
+  "sha256_raw": "6551c73c03da07ed4daa71a748d732693dbc6965022e73f24d655081dd1c7a52",
+  "splits": [
+   [
+    "2020-05-11",
+    "1.0:12.0"
+   ],
+   [
+    "2024-02-20",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ACB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ADBE": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:23+00:00",
+  "first": "1986-08-13",
+  "firstTradeDate": 524323800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Adobe Inc.",
+  "rows": 10113,
+  "sha256_raw": "f72750d8fa5dae2a0af4b5ad50eeb34820e010d0b95869234a89f5bb423ee85d",
+  "splits": [
+   [
+    "1987-03-12",
+    "2.0:1.0"
+   ],
+   [
+    "1988-11-23",
+    "2.0:1.0"
+   ],
+   [
+    "1993-08-11",
+    "2.0:1.0"
+   ],
+   [
+    "1999-10-27",
+    "2.0:1.0"
+   ],
+   [
+    "2000-10-25",
+    "2.0:1.0"
+   ],
+   [
+    "2005-05-24",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AES": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:42+00:00",
+  "first": "1991-06-26",
+  "firstTradeDate": 677943000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The AES Corporation",
+  "rows": 8882,
+  "sha256_raw": "43ef5f76394780b337b59ec1762425c28410a6d050d8adb72ca6007620956cfb",
+  "splits": [
+   [
+    "1994-02-01",
+    "3.0:2.0"
+   ],
+   [
+    "1994-03-04",
+    "103.0:100.0"
+   ],
+   [
+    "1997-08-29",
+    "2.0:1.0"
+   ],
+   [
+    "2000-06-02",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AES?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AEVA": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:42+00:00",
+  "first": "2020-02-27",
+  "firstTradeDate": 1582813800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Aeva Technologies, Inc.",
+  "rows": 1660,
+  "sha256_raw": "5860d90746efb4924365214ce564c6d130a68a876c6bfecc51f86d46dba425d7",
+  "splits": [
+   [
+    "2024-03-19",
+    "1.0:5.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AEVA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AI": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:24+00:00",
+  "first": "2020-12-09",
+  "firstTradeDate": 1607524200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "C3.ai, Inc.",
+  "rows": 1461,
+  "sha256_raw": "979b878926051438531fedd193ec55441f7b2584c90ffd215cd4040b2a810946",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AIG": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:25+00:00",
+  "first": "1973-01-02",
+  "firstTradeDate": 94833000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "American International Group, Inc.",
+  "rows": 13553,
+  "sha256_raw": "3c41bd5d881d7f3f4f87c8a536f5a2aeece995fbcece1b76903df78a45e6e32e",
+  "splits": [
+   [
+    "1974-04-01",
+    "5.0:4.0"
+   ],
+   [
+    "1977-03-29",
+    "5.0:4.0"
+   ],
+   [
+    "1981-05-28",
+    "3.0:2.0"
+   ],
+   [
+    "1983-04-26",
+    "5.0:4.0"
+   ],
+   [
+    "1986-11-18",
+    "2.0:1.0"
+   ],
+   [
+    "1990-07-23",
+    "5.0:4.0"
+   ],
+   [
+    "1993-07-30",
+    "3.0:2.0"
+   ],
+   [
+    "1995-07-31",
+    "3.0:2.0"
+   ],
+   [
+    "1997-07-28",
+    "3.0:2.0"
+   ],
+   [
+    "1998-08-03",
+    "3.0:2.0"
+   ],
+   [
+    "1999-08-02",
+    "5.0:4.0"
+   ],
+   [
+    "2000-07-31",
+    "3.0:2.0"
+   ],
+   [
+    "2009-07-01",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AIG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AKAM": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:43+00:00",
+  "first": "1999-10-29",
+  "firstTradeDate": 941203800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Akamai Technologies, Inc.",
+  "rows": 6773,
+  "sha256_raw": "8764bf54c3a20a87dd759ff58b3dce8b393d9f3be79ecb8e71a26909d6dc5d39",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKAM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ALTO": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:11:26+00:00",
+  "first": "2005-03-24",
+  "firstTradeDate": 1111674600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Alto Ingredients, Inc.",
+  "rows": 5417,
+  "sha256_raw": "a573c40b24296432e7819f89c29922adf23b6cf2ed3dcc4d4dae54c1f27def67",
+  "splits": [
+   [
+    "2011-06-08",
+    "1.0:7.0"
+   ],
+   [
+    "2013-05-14",
+    "1.0:15.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ALTO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AMC": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:26+00:00",
+  "first": "2013-12-18",
+  "firstTradeDate": 1387377000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "AMC Entertainment Holdings, Inc.",
+  "rows": 3217,
+  "sha256_raw": "45592100780711b477c8726f066c15549c2eabb1a375414884083c6f7e362f80",
+  "splits": [
+   [
+    "2023-08-24",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AMD": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:27+00:00",
+  "first": "1980-03-17",
+  "firstTradeDate": 322151400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Advanced Micro Devices, Inc.",
+  "rows": 11733,
+  "sha256_raw": "0eab0582f97446c163384c347262da88602dc24133339eafe6f0819925b61f47",
+  "splits": [
+   [
+    "1980-10-24",
+    "2.0:1.0"
+   ],
+   [
+    "1982-10-28",
+    "3.0:2.0"
+   ],
+   [
+    "1983-08-23",
+    "2.0:1.0"
+   ],
+   [
+    "2000-08-22",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AMGN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T03:16:16+00:00",
+  "first": "1983-06-17",
+  "firstTradeDate": 424704600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Amgen Inc.",
+  "rows": 10910,
+  "sha256_raw": "603ae0de4e71d28c83a9540a994dd3f237357590fe4b498c69dc8b036cb72641",
+  "splits": [
+   [
+    "1990-08-13",
+    "2.0:1.0"
+   ],
+   [
+    "1991-09-11",
+    "3.0:1.0"
+   ],
+   [
+    "1995-08-16",
+    "2.0:1.0"
+   ],
+   [
+    "1999-03-01",
+    "2.0:1.0"
+   ],
+   [
+    "1999-11-22",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMGN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AMZN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:28+00:00",
+  "first": "1997-05-15",
+  "firstTradeDate": 863703000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Amazon.com, Inc.",
+  "rows": 7393,
+  "sha256_raw": "628459bc737bd90e9c04bdc353156da047181201a67cc3fbdd9e390376730a83",
+  "splits": [
+   [
+    "1998-06-02",
+    "2.0:1.0"
+   ],
+   [
+    "1999-01-05",
+    "3.0:1.0"
+   ],
+   [
+    "1999-09-02",
+    "2.0:1.0"
+   ],
+   [
+    "2022-06-06",
+    "20.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "APLD": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:29+00:00",
+  "first": "2022-04-13",
+  "firstTradeDate": 1649856600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Applied Digital Corporation",
+  "rows": 1123,
+  "sha256_raw": "6bdfc29032f850611afb32055964670d63ad3349add7d59b5303087ee4da8cd8",
+  "splits": [
+   [
+    "2022-04-13",
+    "1.0:6.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/APLD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "APTV": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:44+00:00",
+  "first": "2011-11-17",
+  "firstTradeDate": 1321540200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Aptiv PLC",
+  "rows": 3740,
+  "sha256_raw": "be2f1d69ac05483b2a3c4b6153e9b4477a52c9b7afd48f24fd5f5886836b6065",
+  "splits": [
+   [
+    "2017-12-05",
+    "1193.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/APTV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARKG": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-07T02:40:45+00:00",
+  "first": "2014-10-31",
+  "firstTradeDate": 1414762200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ARK Genomic Revolution ETF",
+  "rows": 2998,
+  "sha256_raw": "f1c4a5d44b3ca9c980aa61d8ccd3023d7cd72394f22d885a2bd0e6b25bbf888e",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARKG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARKK": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-06T15:10:00+00:00",
+  "first": "2014-10-31",
+  "firstTradeDate": 1414762200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ARK Innovation ETF",
+  "rows": 2998,
+  "sha256_raw": "5935c470b0dc2bc2ab098c1e81ec57e90190e9fa2e93080b8fce0b04379c7a84",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARKK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARKQ": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-07T02:40:45+00:00",
+  "first": "2014-09-30",
+  "firstTradeDate": 1412083800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ARK Autonomous Technology & Robotics ETF",
+  "rows": 3021,
+  "sha256_raw": "2c0d9890bd9aeb77866e0c3cce0a66ca65c39d2d412d72a7c7e80ab86357eb9e",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARKQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARKX": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-07T02:40:46+00:00",
+  "first": "2021-03-30",
+  "firstTradeDate": 1617111000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ARK Space & Defense Innovation ETF",
+  "rows": 1386,
+  "sha256_raw": "622b7d85347c1963d73a4b70170085d7097c7accbb45096489995ed3638f6ef3",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARKX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARM": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:29+00:00",
+  "first": "2023-09-14",
+  "firstTradeDate": 1694698200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Arm Holdings plc",
+  "rows": 767,
+  "sha256_raw": "d52a9ad00386feca4ba10c664a9afbb69f0cb6046294e34bad29eb3101763afb",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARQQ": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:11:30+00:00",
+  "first": "2021-04-01",
+  "firstTradeDate": 1617283800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Arqit Quantum Inc.",
+  "rows": 1384,
+  "sha256_raw": "75b53ce68148943835ee2f34d7a9095b79dd7914419e74319101f9bbbd6402ec",
+  "splits": [
+   [
+    "2024-09-25",
+    "1.0:25.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARQQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ARVLF": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-07T02:40:47+00:00",
+  "first": "2021-03-25",
+  "firstTradeDate": 1616679000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Arrival",
+  "rows": 1348,
+  "sha256_raw": "406326d7698d85d8230f301c52ccb0107e3dd2943105750b62149a3c52849445",
+  "splits": [
+   [
+    "2023-04-14",
+    "1.0:50.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARVLF?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ASST": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:11:30+00:00",
+  "first": "2023-02-03",
+  "firstTradeDate": 1675434600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Strive, Inc.",
+  "rows": 920,
+  "sha256_raw": "8fe758d67609015ee751d456cfc42e2cd8b80abf3f3debd86c22884523497702",
+  "splits": [
+   [
+    "2024-07-02",
+    "1.0:5.0"
+   ],
+   [
+    "2026-02-06",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASST?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ASTS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:47+00:00",
+  "first": "2019-11-01",
+  "firstTradeDate": 1572615000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "AST SpaceMobile, Inc.",
+  "rows": 1739,
+  "sha256_raw": "0050d9a6b8568a7943d82b949ecf4a4b5f4500ac3be87df521ee097b82c87c08",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASTS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AUR": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:48+00:00",
+  "first": "2021-05-10",
+  "firstTradeDate": 1620653400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Aurora Innovation, Inc.",
+  "rows": 1358,
+  "sha256_raw": "b45748d835df565ebfe2e23e70d143499616ef697effe3afd0ba796a7732271b",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AUR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "AVGO": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:31+00:00",
+  "first": "2009-08-06",
+  "firstTradeDate": 1249565400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Broadcom Inc.",
+  "rows": 4317,
+  "sha256_raw": "55b3d06dde2878c4a6a5bfde7b9e130673cef17feb655592e06184d0d6b89ac7",
+  "splits": [
+   [
+    "2024-07-15",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BABA": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:49+00:00",
+  "first": "2014-09-19",
+  "firstTradeDate": 1411133400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Alibaba Group Holding Limited",
+  "rows": 3028,
+  "sha256_raw": "20c08c9b242d45a68429dba2b8e02eacf0ef665c45722c332ccc33ec71f52046",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BABA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BB": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:32+00:00",
+  "first": "1999-02-04",
+  "firstTradeDate": 918138600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "BlackBerry Limited",
+  "rows": 6959,
+  "sha256_raw": "80636e7bbd2124ae1d15c101796a28b48d146e6d9dc1286b21b72abf3eeba147",
+  "splits": [
+   [
+    "2004-06-07",
+    "2.0:1.0"
+   ],
+   [
+    "2007-08-21",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BBAI": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:33+00:00",
+  "first": "2021-04-05",
+  "firstTradeDate": 1617629400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "BigBear.ai Holdings, Inc.",
+  "rows": 1383,
+  "sha256_raw": "2f56c2431e4a7a17db8cfef8345e4991f9040780ebbcd1ca842c5b1b328355c1",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BBAI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BE": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:33+00:00",
+  "first": "2018-07-25",
+  "firstTradeDate": 1532525400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Bloom Energy Corporation",
+  "rows": 2060,
+  "sha256_raw": "ccf071fac9513e4f3240f8fe30e2907a0ac336094ab16a66d4ab4ff31f0d8292",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BEAM": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:49+00:00",
+  "first": "2020-02-06",
+  "firstTradeDate": 1580999400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Beam Therapeutics Inc.",
+  "rows": 1674,
+  "sha256_raw": "0e94fe2a28be3cb0a2e7db514723c47d3df68d498be56f3165268d06ab7b67b7",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BEAM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BIDU": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:34+00:00",
+  "first": "2005-08-05",
+  "firstTradeDate": 1123248600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Baidu, Inc.",
+  "rows": 5324,
+  "sha256_raw": "514d74fe952ffe9f802bf196a2c4a8c7fd08755d0b19baeb9bd24216fb38539c",
+  "splits": [
+   [
+    "2010-05-12",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BIDU?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BKNG": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:50+00:00",
+  "first": "1999-03-31",
+  "firstTradeDate": 922890600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Booking Holdings Inc.",
+  "rows": 6921,
+  "sha256_raw": "55640893602073943461c8bc0e61f63ba42ae6978092ba829126028a673cdb51",
+  "splits": [
+   [
+    "2003-06-16",
+    "1.0:6.0"
+   ],
+   [
+    "2026-04-06",
+    "25.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BKNG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BLOK": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:16+00:00",
+  "first": "2018-01-25",
+  "firstTradeDate": 1516890600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Amplify Blockchain Technology ETF",
+  "rows": 2185,
+  "sha256_raw": "5d0c3c82db0dd60e9804efe2768666eec9c4e66174a8fc3ee73beaea3198e8e7",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BLOK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BMNR": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:35+00:00",
+  "first": "2025-06-05",
+  "firstTradeDate": 1749130200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Bitmine Immersion Technologies, Inc.",
+  "rows": 335,
+  "sha256_raw": "bc9c50df0c5e7b62a7b944c0d9fe04d468769ca490b2dd0dde6c2af54ee02c5a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BMNR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BMY": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:18+00:00",
+  "first": "1972-06-01",
+  "firstTradeDate": 76253400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Bristol-Myers Squibb Company",
+  "rows": 13699,
+  "sha256_raw": "fe871b27a8cd2489e4bad87e805dfbaf14e2aaeced56b824f251f8f287e1772e",
+  "splits": [
+   [
+    "1977-05-31",
+    "2.0:1.0"
+   ],
+   [
+    "1983-05-27",
+    "2.0:1.0"
+   ],
+   [
+    "1987-06-10",
+    "2.0:1.0"
+   ],
+   [
+    "1997-03-03",
+    "2.0:1.0"
+   ],
+   [
+    "1999-03-01",
+    "2.0:1.0"
+   ],
+   [
+    "2001-08-07",
+    "1000000.0:951777.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BMY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BOX": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:51+00:00",
+  "first": "2015-01-23",
+  "firstTradeDate": 1422023400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Box, Inc.",
+  "rows": 2942,
+  "sha256_raw": "7056d17fd76d63b6d47a1ce72125d2ec937faf5e0b6b3d5dc62e7b06ddcfefb7",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BOX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BTC-USD": {
+  "currency": "USD",
+  "exchange": "CCC",
+  "fetched_utc": "2026-10-06T15:11:35+00:00",
+  "first": "2014-09-17",
+  "firstTradeDate": 1410912000,
+  "instrumentType": "CRYPTOCURRENCY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Bitcoin USD",
+  "rows": 4402,
+  "sha256_raw": "7b415b7074f836b2d6b5f126111572d569d670f47a5ecffc08dbbf3a806e74f2",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BYND": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:51+00:00",
+  "first": "2019-05-02",
+  "firstTradeDate": 1556803800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Beyond Meat, Inc.",
+  "rows": 1867,
+  "sha256_raw": "cd706c5743e6fdf60d621a5bccb071a1f2933d99ef0f908910f940f42722e63e",
+  "splits": [
+   [
+    "2026-08-14",
+    "1.0:30.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BYND?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "BZH": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:36+00:00",
+  "first": "1994-02-23",
+  "firstTradeDate": 762013800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Beazer Homes USA, Inc.",
+  "rows": 8208,
+  "sha256_raw": "412d7a324d8f4aee2721bd38b559d22d327996269f4ea6726cb5e9af03aea072",
+  "splits": [
+   [
+    "2005-03-23",
+    "3.0:1.0"
+   ],
+   [
+    "2012-10-12",
+    "1.0:5.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BZH?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "C": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:37+00:00",
+  "first": "1977-01-03",
+  "firstTradeDate": 221149800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Citigroup Inc.",
+  "rows": 12542,
+  "sha256_raw": "b1429f2abc02bf4fe587c4ce035a12f0e9938797f79bcf651b829dec6a84f355",
+  "splits": [
+   [
+    "1987-03-13",
+    "2.0:1.0"
+   ],
+   [
+    "1993-03-01",
+    "3.0:2.0"
+   ],
+   [
+    "1993-08-30",
+    "4.0:3.0"
+   ],
+   [
+    "1995-10-03",
+    "1000.0:996.0"
+   ],
+   [
+    "1996-05-28",
+    "3.0:2.0"
+   ],
+   [
+    "1996-11-25",
+    "4.0:3.0"
+   ],
+   [
+    "1997-11-20",
+    "3.0:2.0"
+   ],
+   [
+    "1999-06-01",
+    "3.0:2.0"
+   ],
+   [
+    "2000-08-28",
+    "4.0:3.0"
+   ],
+   [
+    "2011-05-09",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/C?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CEG": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:38+00:00",
+  "first": "2022-01-19",
+  "firstTradeDate": 1642602600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Constellation Energy Corporation",
+  "rows": 1182,
+  "sha256_raw": "a30b497d58ebf7d351ce402cc2e5e8d7d17519ac256dd9430dcb706002c1a5b0",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CENN": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:11:39+00:00",
+  "first": "2012-09-25",
+  "firstTradeDate": 1348579800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Cenntro Inc.",
+  "rows": 3526,
+  "sha256_raw": "38c9bd062b270e4fcfcd63726f24e3b83177927702041b2e682f0568dd9e0152",
+  "splits": [
+   [
+    "2015-08-10",
+    "1.0:40.0"
+   ],
+   [
+    "2019-12-20",
+    "1.0:100.0"
+   ],
+   [
+    "2021-12-22",
+    "1.0:15.0"
+   ],
+   [
+    "2023-12-01",
+    "1.0:10.0"
+   ],
+   [
+    "2023-12-08",
+    "1.0:10.0"
+   ],
+   [
+    "2026-04-13",
+    "1.0:60.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CENN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CGC": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:52+00:00",
+  "first": "2014-04-07",
+  "firstTradeDate": 1396877400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Canopy Growth Corporation",
+  "rows": 3143,
+  "sha256_raw": "b2736fb1d25f784acd64fb25ce6e41d89c6e12658e2d56fac08aa97ab59131d2",
+  "splits": [
+   [
+    "2023-12-20",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CGC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CHGG": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:39+00:00",
+  "first": "2013-11-13",
+  "firstTradeDate": 1384353000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Chegg, Inc.",
+  "rows": 3241,
+  "sha256_raw": "89d806bd30c42ba5bd9c5fb55d2dced3f4346b88df0a0bb0934fbd3a8acbd3cf",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CHGG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CHPT": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:53+00:00",
+  "first": "2019-09-16",
+  "firstTradeDate": 1568640600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ChargePoint Holdings, Inc.",
+  "rows": 1773,
+  "sha256_raw": "0134375955de809da0577e374d7a04514b6acb8e4b2057f2c48a752252ee724b",
+  "splits": [
+   [
+    "2025-07-28",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CHPT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CIEN": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:53+00:00",
+  "first": "1997-02-07",
+  "firstTradeDate": 855325800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Ciena Corporation",
+  "rows": 7460,
+  "sha256_raw": "87b01f83f2261e2e24c0bab17e03e6262e1aa9aed2d941e0effad783afb3fa5a",
+  "splits": [
+   [
+    "2000-09-19",
+    "2.0:1.0"
+   ],
+   [
+    "2006-09-25",
+    "1.0:7.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIEN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CIFR": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:40+00:00",
+  "first": "2020-10-20",
+  "firstTradeDate": 1603200600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Cipher Digital Inc.",
+  "rows": 1496,
+  "sha256_raw": "d43521f96358b78bcf367da7a0107f01997baf18ad5ddd812494307b76af320d",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIFR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CLF": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:41+00:00",
+  "first": "1973-02-21",
+  "firstTradeDate": 99153000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Cleveland-Cliffs Inc.",
+  "rows": 13519,
+  "sha256_raw": "3e36b60771dd374f382c3c3b43ad6ae64bb914c842f5aa353d6adeca98476033",
+  "splits": [
+   [
+    "1975-12-16",
+    "2.0:1.0"
+   ],
+   [
+    "1978-09-18",
+    "2.0:1.0"
+   ],
+   [
+    "2005-01-03",
+    "2.0:1.0"
+   ],
+   [
+    "2006-07-03",
+    "2.0:1.0"
+   ],
+   [
+    "2008-05-16",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CLF?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CLX": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:42+00:00",
+  "first": "1973-02-21",
+  "firstTradeDate": 99153000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Clorox Company",
+  "rows": 13519,
+  "sha256_raw": "027ab7680b745bb080ff5eadbf3ecdcde3939d615f810b6cd06475ffb01b2bf4",
+  "splits": [
+   [
+    "1987-06-02",
+    "2.0:1.0"
+   ],
+   [
+    "1997-09-03",
+    "2.0:1.0"
+   ],
+   [
+    "1999-08-24",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CLX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "COIN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:43+00:00",
+  "first": "2021-04-14",
+  "firstTradeDate": 1618407000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Coinbase Global, Inc.",
+  "rows": 1376,
+  "sha256_raw": "51b83a591920e46f0d6ba9bcd9502d01e1079cffb982fa0f3e421721629fabdd",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/COIN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CORZ": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:11:43+00:00",
+  "first": "2024-01-24",
+  "firstTradeDate": 1706106600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Core Scientific, Inc.",
+  "rows": 677,
+  "sha256_raw": "c70dc2069259c53d0c7c119603f553980faa33c78df2d6f10198e376c53cda98",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CORZ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CRCL": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:44+00:00",
+  "first": "2025-06-05",
+  "firstTradeDate": 1749130200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Circle Internet Group",
+  "rows": 335,
+  "sha256_raw": "6037ab0227bb09ac83fd22a9531616154449a67cf28056f58ce29773ab3f9a00",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRCL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CRM": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:11:45+00:00",
+  "first": "2004-06-23",
+  "firstTradeDate": 1087997400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Salesforce, Inc.",
+  "rows": 5607,
+  "sha256_raw": "4d7760182ab45d2e3d810bc46800239191bf6c68166e62efbb1ef18c27769d21",
+  "splits": [
+   [
+    "2013-04-18",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CRON": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:40:54+00:00",
+  "first": "2018-02-27",
+  "firstTradeDate": 1519741800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Cronos Group Inc.",
+  "rows": 2163,
+  "sha256_raw": "4fb84e6928def2bf0d18ca4707b3c8ea33e49ab464c63d3014c0dfeec1103be2",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRON?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CRSP": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:12:06+00:00",
+  "first": "2016-10-19",
+  "firstTradeDate": 1476883800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "CRISPR Therapeutics AG",
+  "rows": 2503,
+  "sha256_raw": "18d78a138a87e03b451808d905c47be66ef1728473cd5a73a96794119ea4ea47",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRSP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CRWV": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:07+00:00",
+  "first": "2025-03-28",
+  "firstTradeDate": 1743168600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "CoreWeave, Inc.",
+  "rows": 382,
+  "sha256_raw": "cdc96459397c04d2b53d2d08ac633da749879b0da6f2ee620be3bee70bface99",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRWV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "CSCO": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:55+00:00",
+  "first": "1990-02-16",
+  "firstTradeDate": 635178600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Cisco Systems, Inc.",
+  "rows": 9224,
+  "sha256_raw": "ad234b9ad9eb5b6ce492787e51b493d8dedb425681ac068a155802d1bf4aa12c",
+  "splits": [
+   [
+    "1991-03-18",
+    "2.0:1.0"
+   ],
+   [
+    "1992-03-23",
+    "2.0:1.0"
+   ],
+   [
+    "1993-03-22",
+    "2.0:1.0"
+   ],
+   [
+    "1994-03-21",
+    "2.0:1.0"
+   ],
+   [
+    "1996-02-20",
+    "2.0:1.0"
+   ],
+   [
+    "1997-12-17",
+    "3.0:2.0"
+   ],
+   [
+    "1998-09-16",
+    "3.0:2.0"
+   ],
+   [
+    "1999-06-22",
+    "2.0:1.0"
+   ],
+   [
+    "2000-03-23",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CSCO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "DBC": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:12:08+00:00",
+  "first": "2006-02-06",
+  "firstTradeDate": 1139236200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco DB Commodity Index Tracking Fund",
+  "rows": 5198,
+  "sha256_raw": "9f6f049db5ffb75ffe6ad343ff912b3ef946a46acef8c87ec0b741120ea84bf3",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DBC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "DDD": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:56+00:00",
+  "first": "1988-03-10",
+  "firstTradeDate": 574007400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "3D Systems Corporation",
+  "rows": 9715,
+  "sha256_raw": "f45a09cca4426a7b4a848506febae44aeb02e0a841790501058c8380ed925fa4",
+  "splits": [
+   [
+    "1995-05-24",
+    "1.0:3.0"
+   ],
+   [
+    "2011-05-19",
+    "2.0:1.0"
+   ],
+   [
+    "2013-02-25",
+    "3.0:2.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DDD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "DNA": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:40:56+00:00",
+  "first": "2021-04-19",
+  "firstTradeDate": 1618839000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Ginkgo Bioworks Holdings, Inc.",
+  "rows": 1373,
+  "sha256_raw": "510a240514bb09826f6b94d813f2bbce2d55862be83fd9ce5a4c5f0425bca3cf",
+  "splits": [
+   [
+    "2024-08-20",
+    "1.0:40.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DNA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "DOCU": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:09+00:00",
+  "first": "2018-04-27",
+  "firstTradeDate": 1524835800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "DocuSign, Inc.",
+  "rows": 2121,
+  "sha256_raw": "fe563f744b5affb3e9dfd3e02a8f8b86b1972a178373375c2a786bab1feb9ccf",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOCU?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "DRIV": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:40:57+00:00",
+  "first": "2018-04-17",
+  "firstTradeDate": 1523971800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Global X Autonomous & Electric Vehicles ETF",
+  "rows": 2129,
+  "sha256_raw": "e06240fa1725a31c59580ed8aef7795a63a993dbe1b26ace5cbb1fcc9a18145d",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DRIV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "EBAY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:58+00:00",
+  "first": "1998-09-24",
+  "firstTradeDate": 906643800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "eBay Inc.",
+  "rows": 7050,
+  "sha256_raw": "b324a8cbe9cfcb8681dcc30b0dd0de495a58d616c7348d17ada066e1f4954cdd",
+  "splits": [
+   [
+    "1999-03-02",
+    "3.0:1.0"
+   ],
+   [
+    "2000-05-25",
+    "2.0:1.0"
+   ],
+   [
+    "2003-08-29",
+    "2.0:1.0"
+   ],
+   [
+    "2005-02-17",
+    "2.0:1.0"
+   ],
+   [
+    "2015-07-20",
+    "2376.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/EBAY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "EDIT": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:40:58+00:00",
+  "first": "2016-02-03",
+  "firstTradeDate": 1454509800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Editas Medicine, Inc.",
+  "rows": 2683,
+  "sha256_raw": "c9559508fc6c3cee83ac3d18719dae8a5b6bb74d0dad33dd991a08773c8b0428",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/EDIT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "EEM": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:12:10+00:00",
+  "first": "2003-04-14",
+  "firstTradeDate": 1050327000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares MSCI Emerging Markets ETF",
+  "rows": 5907,
+  "sha256_raw": "e43e1e92d192e16b5befdb00f187f2cd160b100bd47ae00453197ad5ffdd4ffe",
+  "splits": [
+   [
+    "2005-06-09",
+    "3.0:1.0"
+   ],
+   [
+    "2008-07-24",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/EEM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ENPH": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:40:59+00:00",
+  "first": "2012-03-30",
+  "firstTradeDate": 1333114200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Enphase Energy, Inc.",
+  "rows": 3649,
+  "sha256_raw": "044b888da29d65f1c007a9769e8d97dc4f9cadabc3803812b1bef5fa30d00212",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ENPH?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ETSY": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:11+00:00",
+  "first": "2015-04-16",
+  "firstTradeDate": 1429191000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Etsy, Inc.",
+  "rows": 2885,
+  "sha256_raw": "55061ad0e6fbb6c63def2d7efe9ec311f22b5c351682a032f22d2ac8a93a77ca",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETSY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FCEL": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:41:00+00:00",
+  "first": "1992-06-25",
+  "firstTradeDate": 709479000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "FuelCell Energy, Inc.",
+  "rows": 8629,
+  "sha256_raw": "1eee4ce8af662f7f3f799804cd49f3f60f168ee5d87f3e3ade45a06cc6131332",
+  "splits": [
+   [
+    "1999-11-17",
+    "3.0:2.0"
+   ],
+   [
+    "2000-09-14",
+    "2.0:1.0"
+   ],
+   [
+    "2001-06-20",
+    "2.0:1.0"
+   ],
+   [
+    "2015-12-04",
+    "1.0:12.0"
+   ],
+   [
+    "2019-05-09",
+    "1.0:12.0"
+   ],
+   [
+    "2024-11-11",
+    "1.0:30.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FCEL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FCX": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:12+00:00",
+  "first": "1995-07-10",
+  "firstTradeDate": 805383000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Freeport-McMoRan Inc.",
+  "rows": 7862,
+  "sha256_raw": "32443290ab70ce9ee3286b8e9dc1202d4e48c85428b1fb57f5e5fe4529bfcb28",
+  "splits": [
+   [
+    "2011-02-02",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FCX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FDN": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:27+00:00",
+  "first": "2006-06-23",
+  "firstTradeDate": 1151069400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "First Trust Dow Jones Internet Index Fund",
+  "rows": 5102,
+  "sha256_raw": "61e28c0d6e1ddac6e503b5b27849cf16e3b2223bccf732b98d49abdafc50b21f",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FFAI": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:41:01+00:00",
+  "first": "2020-09-02",
+  "firstTradeDate": 1599053400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Faraday Future Intelligent Electric Inc.",
+  "rows": 1529,
+  "sha256_raw": "3139204e42606e4122a138ccf790879faea16ee5c965827310b4f18bbc890045",
+  "splits": [
+   [
+    "2023-08-28",
+    "1.0:80.0"
+   ],
+   [
+    "2024-03-01",
+    "1.0:3.0"
+   ],
+   [
+    "2024-08-19",
+    "1.0:40.0"
+   ],
+   [
+    "2026-07-24",
+    "1.0:150.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FFAI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FMCC": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCQB",
+  "fetched_utc": "2026-10-06T15:12:13+00:00",
+  "first": "1988-12-02",
+  "firstTradeDate": 597076200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Federal Home Loan Mortgage Corporation",
+  "rows": 9529,
+  "sha256_raw": "705bcdd6eeefb1ba71b7bc1576e67ce21882a43b1bca05c0d49a805812d90ed7",
+  "splits": [
+   [
+    "1992-04-09",
+    "3.0:1.0"
+   ],
+   [
+    "1997-01-13",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FMCC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FNGS": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-07T02:41:01+00:00",
+  "first": "2019-11-13",
+  "firstTradeDate": 1573655400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "MicroSectors FANG+ ETN",
+  "rows": 1731,
+  "sha256_raw": "df9b4147f3d05252a4943f194fa63a5b63f3460d7759e36324bdc9f8ba9f9b93",
+  "splits": [
+   [
+    "2021-02-12",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FNGS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FNMA": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCQB",
+  "fetched_utc": "2026-10-06T15:12:15+00:00",
+  "first": "1977-01-03",
+  "firstTradeDate": 221149800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Federal National Mortgage Association",
+  "rows": 12542,
+  "sha256_raw": "54b6456a31e9963b98aba8c7cf493e6958750297a6d6ad51cb3e76b0ad8d01a8",
+  "splits": [
+   [
+    "1989-10-17",
+    "3.0:1.0"
+   ],
+   [
+    "1996-01-16",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FNMA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FSLR": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:15+00:00",
+  "first": "2006-11-17",
+  "firstTradeDate": 1163773800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "First Solar, Inc.",
+  "rows": 4999,
+  "sha256_raw": "3715d0a74e6f090b99110a828fc816298fd14bfc807c24877454cdc64f9cebfc",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FSLR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FSLY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:16+00:00",
+  "first": "2019-05-17",
+  "firstTradeDate": 1558099800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Fastly, Inc.",
+  "rows": 1856,
+  "sha256_raw": "c5cf9bec02bdafac03626eb3349d2474a220703b095d2a98e05663095391d705",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FSLY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "FXI": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:12:17+00:00",
+  "first": "2004-10-08",
+  "firstTradeDate": 1097242200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares China Large-Cap ETF",
+  "rows": 5532,
+  "sha256_raw": "4c0391086be31e0da1d1cad3d6c5aa4108d2d4b19f5fea71855d9557187080d3",
+  "splits": [
+   [
+    "2008-07-24",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/FXI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GDX": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:20+00:00",
+  "first": "2006-05-22",
+  "firstTradeDate": 1148304600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "VanEck Gold Miners ETF",
+  "rows": 5125,
+  "sha256_raw": "98857e02a0a69df8e5334293400add5d3fbd4303bb6a60896e309c036059ef70",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GEV": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:18+00:00",
+  "first": "2024-03-27",
+  "firstTradeDate": 1711546200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "GE Vernova Inc.",
+  "rows": 633,
+  "sha256_raw": "d38b1e2dca11970fe63962a1935eabddf5a03f07b28a937be8d699c9ed7edb71",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GLW": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:02+00:00",
+  "first": "1981-12-31",
+  "firstTradeDate": 378657000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Corning Incorporated",
+  "rows": 11280,
+  "sha256_raw": "3d73ef82c052cb8a0d68cb6e9fc959e1de5b4e1220d5ca976b0199e7cf81ee9d",
+  "splits": [
+   [
+    "1985-02-13",
+    "2.0:1.0"
+   ],
+   [
+    "1989-02-15",
+    "2.0:1.0"
+   ],
+   [
+    "1992-02-11",
+    "2.0:1.0"
+   ],
+   [
+    "2000-10-04",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLW?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GLXY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:18+00:00",
+  "first": "2025-05-16",
+  "firstTradeDate": 1747402200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Galaxy Digital",
+  "rows": 348,
+  "sha256_raw": "70aae09be54858537a4958753e583f0ed0c2fadb2e73b240817085127bb21937",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLXY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GME": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:19+00:00",
+  "first": "2002-02-13",
+  "firstTradeDate": 1013610600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "GameStop Corp.",
+  "rows": 6200,
+  "sha256_raw": "b3066898fb1356d6dee3498c344e91374d9bae33883f206090c562d5360199b1",
+  "splits": [
+   [
+    "2007-03-19",
+    "2.0:1.0"
+   ],
+   [
+    "2022-07-22",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GME?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GOEVQ": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-07T02:41:03+00:00",
+  "first": "2026-07-29",
+  "firstTradeDate": 1608820200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Canoo Inc.",
+  "rows": 37,
+  "sha256_raw": "f6a8217833a878dc4d125cd6bca21141dee4366cddd0c707fb443f21b7489f13",
+  "splits": [
+   [
+    "2026-07-29",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOEVQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GOOGL": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:20+00:00",
+  "first": "2004-08-19",
+  "firstTradeDate": 1092922200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Alphabet Inc.",
+  "rows": 5567,
+  "sha256_raw": "2edfe505a11021eafc04102dfa04f3b542e884c4a67ddc9c1f2386a8c1282956",
+  "splits": [
+   [
+    "2014-04-03",
+    "1998.0:1000.0"
+   ],
+   [
+    "2022-07-18",
+    "20.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GRPN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:04+00:00",
+  "first": "2011-11-04",
+  "firstTradeDate": 1320413400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Groupon, Inc.",
+  "rows": 3749,
+  "sha256_raw": "4da1b38be5839ce6bde996b7204579ef3230115a752efeac56a91f91a9aa35e1",
+  "splits": [
+   [
+    "2020-06-11",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GRPN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "GS": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:21+00:00",
+  "first": "1999-05-04",
+  "firstTradeDate": 925824600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Goldman Sachs Group, Inc.",
+  "rows": 6898,
+  "sha256_raw": "64222fa75c2be476adbdc19df4a82b7d52c9be1917a7b17b9cfbe4e224e3e891",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "HACK": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:18+00:00",
+  "first": "2014-11-12",
+  "firstTradeDate": 1415802600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Amplify Cybersecurity ETF",
+  "rows": 2990,
+  "sha256_raw": "5416ca9bd983243e08579b37ccd1d73bf5c6757e304c958ab7dbce9d1d7acfe2",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/HACK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "HIMS": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:22+00:00",
+  "first": "2019-09-13",
+  "firstTradeDate": 1568381400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Hims & Hers Health, Inc.",
+  "rows": 1774,
+  "sha256_raw": "d6cda269501a1033e884beb5dec43280934d33eb56b6cf41836292fa98be1497",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/HIMS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "HOOD": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:22+00:00",
+  "first": "2021-07-29",
+  "firstTradeDate": 1627565400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Robinhood Markets, Inc.",
+  "rows": 1302,
+  "sha256_raw": "73ee336d9b8659fc3fdbf1432d22a6828fe074287206b217097803e7a00bd197",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/HOOD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IBB": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:10:25+00:00",
+  "first": "2001-02-12",
+  "firstTradeDate": 981988200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares Biotechnology ETF",
+  "rows": 6449,
+  "sha256_raw": "bdf7b8740b59d95906a99cc81c56679fccd2de878af3a9e5ef4a8e17f05d1a8e",
+  "splits": [
+   [
+    "2017-12-01",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IBIT": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:12:23+00:00",
+  "first": "2024-01-11",
+  "firstTradeDate": 1704983400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares Bitcoin Trust ETF",
+  "rows": 685,
+  "sha256_raw": "b3c0c413f7cb6a545ed589d74933b6fb1c869981e9131e9850915a0e67e7af46",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBIT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IBM": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:19+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "International Business Machines Corporation",
+  "rows": 14311,
+  "sha256_raw": "9f5b9c41d19632a6fabf611c7ffbdee727c98d697f2663f71c898988d2f59e29",
+  "splits": [
+   [
+    "1973-05-29",
+    "5.0:4.0"
+   ],
+   [
+    "1979-06-01",
+    "4.0:1.0"
+   ],
+   [
+    "1997-05-28",
+    "2.0:1.0"
+   ],
+   [
+    "1999-05-27",
+    "2.0:1.0"
+   ],
+   [
+    "2021-11-04",
+    "1046.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ICLN": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:10:01+00:00",
+  "first": "2008-06-25",
+  "firstTradeDate": 1214400600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares Global Clean Energy ETF",
+  "rows": 4598,
+  "sha256_raw": "c815025052a0b0ce0e5142303a3bc885cb7cdf30dbfd1686d4f348b090f102c2",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IGV": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-06T15:10:27+00:00",
+  "first": "2001-07-17",
+  "firstTradeDate": 995376600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares Expanded Tech-Software Sector ETF",
+  "rows": 6342,
+  "sha256_raw": "56fceef749a9b078597982ff8d733200f1044ef4ad3c3455166c430fe8a9b00d",
+  "splits": [
+   [
+    "2024-03-07",
+    "5.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "INCY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:04+00:00",
+  "first": "1993-11-04",
+  "firstTradeDate": 752423400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Incyte Corporation",
+  "rows": 8284,
+  "sha256_raw": "ed43d83ccac55449dc5c951b1ff89c70909dd0b03c31abdbebbaceccdf996549",
+  "splits": [
+   [
+    "1997-11-10",
+    "2.0:1.0"
+   ],
+   [
+    "2000-09-01",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/INCY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "INTC": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:05+00:00",
+  "first": "1980-03-17",
+  "firstTradeDate": 322151400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Intel Corporation",
+  "rows": 11733,
+  "sha256_raw": "a0c27bf61041964a34724bed680bf3d847cc908822bfd29c5d3cb211ac896860",
+  "splits": [
+   [
+    "1980-10-09",
+    "2.0:1.0"
+   ],
+   [
+    "1983-07-01",
+    "2.0:1.0"
+   ],
+   [
+    "1987-10-29",
+    "3.0:2.0"
+   ],
+   [
+    "1993-06-07",
+    "2.0:1.0"
+   ],
+   [
+    "1995-06-19",
+    "2.0:1.0"
+   ],
+   [
+    "1997-07-14",
+    "2.0:1.0"
+   ],
+   [
+    "1999-04-12",
+    "2.0:1.0"
+   ],
+   [
+    "2000-07-31",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "INVZ": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:41:06+00:00",
+  "first": "2020-06-29",
+  "firstTradeDate": 1593437400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Innoviz Technologies Ltd.",
+  "rows": 1575,
+  "sha256_raw": "61cb7c79688ce658a92ef2f982a57e7ce7c1f66425bb4ecf936e6cef5e30ed29",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/INVZ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IONQ": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:23+00:00",
+  "first": "2021-01-04",
+  "firstTradeDate": 1609770600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "IonQ, Inc.",
+  "rows": 1445,
+  "sha256_raw": "dec7dbcf2202fdcd3aa486b871fe5d8209c380402ff716a8416860ef5d8a0fb0",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IONQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IPO": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:17+00:00",
+  "first": "2013-10-16",
+  "firstTradeDate": 1381930200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Renaissance IPO ETF",
+  "rows": 3261,
+  "sha256_raw": "699ab0ab40da00c3b6fadbfee367174d331f478a7c213af1dcfba79b83007429",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IPO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "IREN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:24+00:00",
+  "first": "2021-11-17",
+  "firstTradeDate": 1637159400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "IREN Limited",
+  "rows": 1224,
+  "sha256_raw": "999200772e26815a3a8f582aa838844a7e19416b1d6258a735318028680d6ab0",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IREN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ITB": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-06T15:12:25+00:00",
+  "first": "2006-05-05",
+  "firstTradeDate": 1146835800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares U.S. Home Construction ETF",
+  "rows": 5136,
+  "sha256_raw": "54408e56c894c62a1000c6bcc266d6dc0faaf53772b1ffdb2b5bac4073628da9",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ITB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ITP": {
+  "currency": "USD",
+  "exchange": "NYSE American",
+  "fetched_utc": "2026-10-06T15:12:26+00:00",
+  "first": "2007-10-01",
+  "firstTradeDate": 1191245400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "IT Tech Packaging, Inc.",
+  "rows": 4783,
+  "sha256_raw": "c7ef94c73eee05d991c9ec1294c989e6782a301ee3fcb2228575bbb5dce3adac",
+  "splits": [
+   [
+    "2009-11-05",
+    "1.0:4.0"
+   ],
+   [
+    "2022-07-08",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ITP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "JNJ": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:20+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Johnson & Johnson",
+  "rows": 14311,
+  "sha256_raw": "42b1add9c72d86ac6ff601fd45c26be6a881c27684928fedbe57663d37cb4463",
+  "splits": [
+   [
+    "1970-05-18",
+    "3.0:1.0"
+   ],
+   [
+    "1981-05-19",
+    "3.0:1.0"
+   ],
+   [
+    "1989-05-11",
+    "2.0:1.0"
+   ],
+   [
+    "1992-06-10",
+    "2.0:1.0"
+   ],
+   [
+    "1996-06-12",
+    "2.0:1.0"
+   ],
+   [
+    "2001-06-13",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KARS": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-07T02:41:07+00:00",
+  "first": "2018-01-25",
+  "firstTradeDate": 1516890600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "KraneShares Electric Vehicles and Future Mobility Index ETF",
+  "rows": 2185,
+  "sha256_raw": "79bf13cb53965d4884a8cf11ba1c12f3b60698807d6c51037e018ae3216e94b4",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KARS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KBE": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:52+00:00",
+  "first": "2005-11-15",
+  "firstTradeDate": 1132065000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street SPDR S&P Bank ETF",
+  "rows": 5253,
+  "sha256_raw": "6a63a12bdbbc7aff50b030a46a212744b4ac53649a7bab7da7a34ed044ae8774",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KO": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:21+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Coca-Cola Company",
+  "rows": 14311,
+  "sha256_raw": "d0f76a82277e0420c01ba14227741b102905bed76ccd6a3f7b19d952edd560ca",
+  "splits": [
+   [
+    "1977-06-01",
+    "2.0:1.0"
+   ],
+   [
+    "1986-07-01",
+    "3.0:1.0"
+   ],
+   [
+    "1990-05-14",
+    "2.0:1.0"
+   ],
+   [
+    "1992-05-12",
+    "2.0:1.0"
+   ],
+   [
+    "1996-05-13",
+    "2.0:1.0"
+   ],
+   [
+    "2012-08-13",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KODK": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:07+00:00",
+  "first": "2013-09-23",
+  "firstTradeDate": 1379943000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Eastman Kodak Company",
+  "rows": 3278,
+  "sha256_raw": "7313c303114c701c5e467e96210c688648678922f1bab8131fe7ee7c96a1c0f1",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KODK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KOSS": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:12:27+00:00",
+  "first": "1980-03-17",
+  "firstTradeDate": 322151400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Koss Corporation",
+  "rows": 11733,
+  "sha256_raw": "d6b3f5badabe11184fd029d493124a7d3b971b2f4da8abd7ab216a11f13bd72f",
+  "splits": [
+   [
+    "1980-10-28",
+    "3.0:2.0"
+   ],
+   [
+    "1981-08-26",
+    "3.0:2.0"
+   ],
+   [
+    "2001-11-06",
+    "2.0:1.0"
+   ],
+   [
+    "2009-12-02",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KOSS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KR": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:22+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Kroger Co.",
+  "rows": 14311,
+  "sha256_raw": "e8d7ed12529b44ab523c18b792e0af62c12ca93399b9195eb9a56f16caca4993",
+  "splits": [
+   [
+    "1979-05-29",
+    "2.0:1.0"
+   ],
+   [
+    "1986-10-01",
+    "2.0:1.0"
+   ],
+   [
+    "1997-04-23",
+    "2.0:1.0"
+   ],
+   [
+    "1999-06-29",
+    "2.0:1.0"
+   ],
+   [
+    "2015-07-14",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "KWEB": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:55+00:00",
+  "first": "2013-08-01",
+  "firstTradeDate": 1375363800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "KraneShares CSI China Internet ETF",
+  "rows": 3314,
+  "sha256_raw": "6c50ae1d5905f178bd037452a8db67ff711c5440641bf048ac736e1e14c8f0b8",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KWEB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "LCID": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:08+00:00",
+  "first": "2020-09-18",
+  "firstTradeDate": 1600435800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Lucid Group, Inc.",
+  "rows": 1518,
+  "sha256_raw": "22c0ee11d9c60ef7b97ccd5369113a095e4b37320068a01070c10e9ccaab7a8f",
+  "splits": [
+   [
+    "2025-09-02",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LCID?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "LEN": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:28+00:00",
+  "first": "1980-03-17",
+  "firstTradeDate": 322151400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Lennar Corporation",
+  "rows": 11733,
+  "sha256_raw": "09900610b427a26c5a2edcfb3a0c3094fa02512e1113c1cf598e42ee920e4587",
+  "splits": [
+   [
+    "1980-10-31",
+    "2.0:1.0"
+   ],
+   [
+    "1992-02-26",
+    "2.0:1.0"
+   ],
+   [
+    "1994-04-21",
+    "3.0:2.0"
+   ],
+   [
+    "2004-01-21",
+    "2.0:1.0"
+   ],
+   [
+    "2017-11-09",
+    "1017.0:1000.0"
+   ],
+   [
+    "2025-01-21",
+    "1033.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LEN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "LIT": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:54+00:00",
+  "first": "2010-07-23",
+  "firstTradeDate": 1279891800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Global X Lithium & Battery Tech ETF",
+  "rows": 4075,
+  "sha256_raw": "912eb91dd89994bd3b505b8bbeb339a2430a2021ccc679c4e5be2687d32254b5",
+  "splits": [
+   [
+    "2015-11-18",
+    "1.0:2.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "LLY": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:29+00:00",
+  "first": "1972-06-01",
+  "firstTradeDate": 76253400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Eli Lilly and Company",
+  "rows": 13699,
+  "sha256_raw": "b38689f5545b3e4937b724b9361928f4571b1b8f9de55f752d99639f10bdb6b1",
+  "splits": [
+   [
+    "1986-01-30",
+    "2.0:1.0"
+   ],
+   [
+    "1989-05-01",
+    "2.0:1.0"
+   ],
+   [
+    "1995-12-21",
+    "2.0:1.0"
+   ],
+   [
+    "1997-10-16",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LLY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "LYFT": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:09+00:00",
+  "first": "2019-03-29",
+  "firstTradeDate": 1553866200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Lyft, Inc.",
+  "rows": 1890,
+  "sha256_raw": "692ab6c139f62cf472146da082724825a8d1ecd5a6d66d32a436dbad0441939a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LYFT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MAGS": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-06T15:12:29+00:00",
+  "first": "2023-04-11",
+  "firstTradeDate": 1681219800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Roundhill Magnificent Seven ETF",
+  "rows": 875,
+  "sha256_raw": "7b0a5cf42fd881202d7afd0d0a48e57914d3b1521852ab6f3e6f616a327fb2c8",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MAGS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MARA": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:12:30+00:00",
+  "first": "2012-05-04",
+  "firstTradeDate": 1336138200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "MARA Holdings, Inc.",
+  "rows": 3625,
+  "sha256_raw": "835981f345c70879cfc0ad41553886f97b842564fe346dd343e94326a9266934",
+  "splits": [
+   [
+    "2013-07-22",
+    "1.0:13.0"
+   ],
+   [
+    "2014-12-23",
+    "2.0:1.0"
+   ],
+   [
+    "2017-10-30",
+    "1.0:4.0"
+   ],
+   [
+    "2019-04-08",
+    "1.0:4.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MARA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MBLY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:09+00:00",
+  "first": "2022-10-26",
+  "firstTradeDate": 1666791000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Mobileye Global Inc.",
+  "rows": 988,
+  "sha256_raw": "a0927d46829c0004fcc32e59679fd3a7e8bbccbd61c8a6bad444b38d44ea4e4c",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MBLY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "META": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:31+00:00",
+  "first": "2012-05-18",
+  "firstTradeDate": 1337347800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Meta Platforms, Inc.",
+  "rows": 3615,
+  "sha256_raw": "dbcd3f93e06f3aeaca45278ec58f738103d4f08cdb1039cfd1ebef16a3afaea7",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "METV": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:12:52+00:00",
+  "first": "2021-06-30",
+  "firstTradeDate": 1625059800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Roundhill Ball Metaverse ETF",
+  "rows": 1322,
+  "sha256_raw": "53aed9fda8365439298c4f0febaaea7e8c07816f7d43272b674dfda49f21016e",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/METV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MJ": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:23+00:00",
+  "first": "2015-12-03",
+  "firstTradeDate": 1449153000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Amplify Alternative Harvest ETF",
+  "rows": 2724,
+  "sha256_raw": "d37db97a5ba0e4d4609904a25b2579b646a6f8998ccb50ba93f01cd0c9e92687",
+  "splits": [
+   [
+    "2025-02-21",
+    "1.0:12.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MJ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MMATQ": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-06T15:12:53+00:00",
+  "first": "2021-06-28",
+  "firstTradeDate": 1624887000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Meta Materials Inc.",
+  "rows": 1324,
+  "sha256_raw": "c3981a585e9dfd912d0140dbdd32f9a9fa209215657d33f363a7bc0eda055c51",
+  "splits": [
+   [
+    "2024-01-29",
+    "1.0:100.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MMATQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MNDY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:54+00:00",
+  "first": "2021-06-10",
+  "firstTradeDate": 1623331800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "monday.com Ltd.",
+  "rows": 1336,
+  "sha256_raw": "c29ecab4ea2cbe4b004d11d961d4f6e59ae039d06588cfb10a573c34963dcf36",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MNDY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MNTS": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:41:10+00:00",
+  "first": "2020-01-02",
+  "firstTradeDate": 1577975400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Momentus Inc.",
+  "rows": 1698,
+  "sha256_raw": "1c1d1a259252ef87e10ce5af128720b47c7ae9325b46c957aa53d96b637c2171",
+  "splits": [
+   [
+    "2023-08-24",
+    "1.0:50.0"
+   ],
+   [
+    "2024-12-13",
+    "1.0:14.0"
+   ],
+   [
+    "2025-12-18",
+    "56.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MNTS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MO": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:23+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Altria Group, Inc.",
+  "rows": 14311,
+  "sha256_raw": "ed26884243196801cb8eed11422e855a8ad92816ba5dfa6932ea15ee8041f568",
+  "splits": [
+   [
+    "1974-06-03",
+    "2.0:1.0"
+   ],
+   [
+    "1979-06-01",
+    "2.0:1.0"
+   ],
+   [
+    "1986-04-11",
+    "2.0:1.0"
+   ],
+   [
+    "1989-10-11",
+    "4.0:1.0"
+   ],
+   [
+    "1997-04-11",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MRK": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:24+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Merck & Co., Inc.",
+  "rows": 14311,
+  "sha256_raw": "fa4dbaa3828e248409c43c22d95418662701b3813ab0c8985c6694d8cf06bd13",
+  "splits": [
+   [
+    "1972-06-01",
+    "2.0:1.0"
+   ],
+   [
+    "1986-05-27",
+    "2.0:1.0"
+   ],
+   [
+    "1988-05-26",
+    "3.0:1.0"
+   ],
+   [
+    "1992-05-26",
+    "3.0:1.0"
+   ],
+   [
+    "1999-02-17",
+    "2.0:1.0"
+   ],
+   [
+    "2021-06-03",
+    "1048.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MRK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MS": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:12:55+00:00",
+  "first": "1993-02-23",
+  "firstTradeDate": 730477800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Morgan Stanley",
+  "rows": 8462,
+  "sha256_raw": "47e3bd8a356bfeaf80ac85ee7274a00632fcf53da48b8e5162fccd1a9c3cdba5",
+  "splits": [
+   [
+    "1997-01-15",
+    "2.0:1.0"
+   ],
+   [
+    "2000-01-27",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MSFT": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:12:56+00:00",
+  "first": "1986-03-13",
+  "firstTradeDate": 511108200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Microsoft Corporation",
+  "rows": 10219,
+  "sha256_raw": "198937d2be79d8614166813602adfd8ac9572598dd171fa592d757d9cf2c4c64",
+  "splits": [
+   [
+    "1987-09-21",
+    "2.0:1.0"
+   ],
+   [
+    "1990-04-16",
+    "2.0:1.0"
+   ],
+   [
+    "1991-06-27",
+    "3.0:2.0"
+   ],
+   [
+    "1992-06-15",
+    "3.0:2.0"
+   ],
+   [
+    "1994-05-23",
+    "2.0:1.0"
+   ],
+   [
+    "1996-12-09",
+    "2.0:1.0"
+   ],
+   [
+    "1998-02-23",
+    "2.0:1.0"
+   ],
+   [
+    "1999-03-29",
+    "2.0:1.0"
+   ],
+   [
+    "2003-02-18",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MSI": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:13:18+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Motorola Solutions, Inc.",
+  "rows": 14311,
+  "sha256_raw": "fe2588349db0b131ee236667e5ac62dce239b5d993acc675d5e9c623ba14c9b7",
+  "splits": [
+   [
+    "1970-05-26",
+    "2.0:1.0"
+   ],
+   [
+    "1973-06-04",
+    "2.0:1.0"
+   ],
+   [
+    "1984-06-04",
+    "3.0:1.0"
+   ],
+   [
+    "1993-01-19",
+    "2.0:1.0"
+   ],
+   [
+    "1994-04-19",
+    "2.0:1.0"
+   ],
+   [
+    "2000-06-02",
+    "3.0:1.0"
+   ],
+   [
+    "2004-12-03",
+    "1000.0:895.0"
+   ],
+   [
+    "2011-01-04",
+    "10000.0:40425.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MSTR": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:13:40+00:00",
+  "first": "1998-06-11",
+  "firstTradeDate": 897571800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Strategy Inc",
+  "rows": 7123,
+  "sha256_raw": "00596353c0ed2c75a4de9e5d79ebdb991211fd407a6747711320cea569dbe7b1",
+  "splits": [
+   [
+    "2000-01-27",
+    "2.0:1.0"
+   ],
+   [
+    "2002-07-31",
+    "1.0:10.0"
+   ],
+   [
+    "2024-08-08",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSTR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MTLS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:10+00:00",
+  "first": "2014-06-25",
+  "firstTradeDate": 1403703000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Materialise NV",
+  "rows": 3088,
+  "sha256_raw": "7e7a5dae0447b6e9801ff553676f8a806ac71dd40e1b6ec540107473715375aa",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MTLS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MU": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:13:41+00:00",
+  "first": "1984-06-01",
+  "firstTradeDate": 454944600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Micron Technology, Inc.",
+  "rows": 10668,
+  "sha256_raw": "5b3ca16b3653181590c8c83866a34d9334c3d5a9db154ed7844a1d89254349f4",
+  "splits": [
+   [
+    "1994-04-19",
+    "5.0:2.0"
+   ],
+   [
+    "1995-05-23",
+    "2.0:1.0"
+   ],
+   [
+    "2000-05-02",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "MYGN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:11+00:00",
+  "first": "1995-10-06",
+  "firstTradeDate": 812986200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Myriad Genetics, Inc.",
+  "rows": 7799,
+  "sha256_raw": "53f267ca8a54cc0c8d1f51244eecd673bed54b9cb12ed6db6bb783914c99559a",
+  "splits": [
+   [
+    "2000-09-12",
+    "2.0:1.0"
+   ],
+   [
+    "2009-03-26",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/MYGN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NAKA": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:13:42+00:00",
+  "first": "2024-05-31",
+  "firstTradeDate": 1717162200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Nakamoto Inc.",
+  "rows": 588,
+  "sha256_raw": "83582ef9e8777120ee999bb2aa5a3248f0f68e50b8b63d1c54399a46214907e1",
+  "splits": [
+   [
+    "2026-05-22",
+    "1.0:40.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NAKA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NBIS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:13:42+00:00",
+  "first": "2024-10-21",
+  "firstTradeDate": 1729517400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Nebius Group N.V.",
+  "rows": 490,
+  "sha256_raw": "1475d16079d1f13e947c7856f90ecf3832ecd0072d8d71d7958229d683aaa513",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NFLX": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:13:43+00:00",
+  "first": "2002-05-23",
+  "firstTradeDate": 1022160600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Netflix, Inc.",
+  "rows": 6131,
+  "sha256_raw": "5d6e0b6f1ed27313361b026ef43bc1c8872567eee6e1e422b578b5389e0f6554",
+  "splits": [
+   [
+    "2004-02-12",
+    "2.0:1.0"
+   ],
+   [
+    "2015-07-15",
+    "7.0:1.0"
+   ],
+   [
+    "2025-11-17",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NFLX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NIO": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:12+00:00",
+  "first": "2018-09-12",
+  "firstTradeDate": 1536759000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NIO Inc.",
+  "rows": 2026,
+  "sha256_raw": "a07870cff3d413bdd547d4795c87aa716879fc3040048a7d7bb77fbc87c9d7ab",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NIO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NLR": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:13:44+00:00",
+  "first": "2007-08-15",
+  "firstTradeDate": 1187184600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "VanEck Uranium and Nuclear ETF",
+  "rows": 4815,
+  "sha256_raw": "e92827db955a61caa1b75b61266ffd9185d0e63241ea6b96c84917832c35ea05",
+  "splits": [
+   [
+    "2013-07-01",
+    "1.0:3.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NLR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NNE": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:13:44+00:00",
+  "first": "2024-05-08",
+  "firstTradeDate": 1715175000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NANO Nuclear Energy Inc.",
+  "rows": 604,
+  "sha256_raw": "4287fdcd8cc387164e0c5dd4189ab6cf174ee517418d9d1bb0d3deeedf5a01f5",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NNE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NOK": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:13:45+00:00",
+  "first": "1994-07-01",
+  "firstTradeDate": 773069400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Nokia Oyj",
+  "rows": 8119,
+  "sha256_raw": "3eec982b0748a1a19e15a835af15cd3b299ba6bd8293cba0b2b69510871b6ab1",
+  "splits": [
+   [
+    "1995-04-25",
+    "2.0:1.0"
+   ],
+   [
+    "1998-04-16",
+    "2.0:1.0"
+   ],
+   [
+    "1999-04-12",
+    "2.0:1.0"
+   ],
+   [
+    "2000-04-11",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOK?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NOW": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:13:46+00:00",
+  "first": "2012-06-29",
+  "firstTradeDate": 1340976600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "ServiceNow, Inc.",
+  "rows": 3586,
+  "sha256_raw": "38d5878c3b28b31cf84a8ce64fa50bc1e0bfd9f5d7f4e8eacd0d2192bde964b0",
+  "splits": [
+   [
+    "2025-12-18",
+    "5.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOW?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NTLA": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:41:13+00:00",
+  "first": "2016-05-06",
+  "firstTradeDate": 1462541400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Intellia Therapeutics, Inc.",
+  "rows": 2618,
+  "sha256_raw": "8e9ca398671f03db42b659a324fef15e9816d6817ee9e6cb51b5e23eade8c3ac",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NTLA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NVDA": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:13:47+00:00",
+  "first": "1999-01-22",
+  "firstTradeDate": 917015400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NVIDIA Corporation",
+  "rows": 6968,
+  "sha256_raw": "88ec84e3d1fd8999afacc7a7c6743f214a2dc4400627d57c10f7c415eba0f017",
+  "splits": [
+   [
+    "2000-06-27",
+    "2.0:1.0"
+   ],
+   [
+    "2001-09-10",
+    "2.0:1.0"
+   ],
+   [
+    "2006-04-07",
+    "2.0:1.0"
+   ],
+   [
+    "2007-09-11",
+    "3.0:2.0"
+   ],
+   [
+    "2021-07-20",
+    "4.0:1.0"
+   ],
+   [
+    "2024-06-10",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NVO": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:13:48+00:00",
+  "first": "1981-04-30",
+  "firstTradeDate": 357485400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Novo Nordisk A/S",
+  "rows": 11450,
+  "sha256_raw": "9b696d27cea7ec9530f54e7a9da89720bbdc8ee26393916b7aeefdcd60048474",
+  "splits": [
+   [
+    "1994-04-18",
+    "4.0:1.0"
+   ],
+   [
+    "2001-04-11",
+    "5.0:2.0"
+   ],
+   [
+    "2007-12-17",
+    "2.0:1.0"
+   ],
+   [
+    "2014-01-09",
+    "5.0:1.0"
+   ],
+   [
+    "2023-09-20",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "NXH": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:13+00:00",
+  "first": "2002-05-30",
+  "firstTradeDate": 1022765400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Neighborhood Intelligence, Inc.",
+  "rows": 6127,
+  "sha256_raw": "4b97090ed31f5355b82d2228d809b01de244cd472c7281c135d651e1aea51f4a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NXH?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "OKLO": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:14:31+00:00",
+  "first": "2021-07-08",
+  "firstTradeDate": 1625751000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Oklo Inc.",
+  "rows": 1317,
+  "sha256_raw": "7d3d41f463153e48a459f6585379843e856684d5c83f1f0968167be63ee88be3",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/OKLO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ORCL": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:14+00:00",
+  "first": "1986-03-12",
+  "firstTradeDate": 511021800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Oracle Corporation",
+  "rows": 10220,
+  "sha256_raw": "670754d830a93cfd6084b627b1d6187cef672e38426789b476174e8c509dfaae",
+  "splits": [
+   [
+    "1987-03-25",
+    "2.0:1.0"
+   ],
+   [
+    "1987-12-21",
+    "2.0:1.0"
+   ],
+   [
+    "1989-07-03",
+    "2.0:1.0"
+   ],
+   [
+    "1993-11-09",
+    "2.0:1.0"
+   ],
+   [
+    "1995-02-23",
+    "3.0:2.0"
+   ],
+   [
+    "1996-04-17",
+    "3.0:2.0"
+   ],
+   [
+    "1997-08-18",
+    "3.0:2.0"
+   ],
+   [
+    "1999-03-01",
+    "3.0:2.0"
+   ],
+   [
+    "2000-01-19",
+    "2.0:1.0"
+   ],
+   [
+    "2000-10-13",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "OUST": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:15+00:00",
+  "first": "2020-10-09",
+  "firstTradeDate": 1602250200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Ouster, Inc.",
+  "rows": 1503,
+  "sha256_raw": "c9ff540cecdb6668cfc570ee1f214f534425425736e932c5362ac10f295356a8",
+  "splits": [
+   [
+    "2023-04-21",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/OUST?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PACB": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:15+00:00",
+  "first": "2010-10-27",
+  "firstTradeDate": 1288186200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Pacific Biosciences of California, Inc.",
+  "rows": 4008,
+  "sha256_raw": "9dddf7ade23d6ca97b9b092d3b7b785d461b5b6f4dca9f3c0757e12a4b79ac1a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PACB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PBW": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:14:32+00:00",
+  "first": "2005-03-03",
+  "firstTradeDate": 1109860200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco WilderHill Clean Energy ETF",
+  "rows": 5432,
+  "sha256_raw": "b1059dcb9992cf0fed03315193ee95e309606251c7b1a7ff51172487c2ab1061",
+  "splits": [
+   [
+    "2017-10-23",
+    "1.0:5.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PBW?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PFE": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:25+00:00",
+  "first": "1972-06-01",
+  "firstTradeDate": 76253400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Pfizer Inc.",
+  "rows": 13699,
+  "sha256_raw": "f0ad41b09dc716492c5eb645f56038bec74b36235a0e6430c04999a6330f8b15",
+  "splits": [
+   [
+    "1983-07-01",
+    "2.0:1.0"
+   ],
+   [
+    "1991-04-01",
+    "2.0:1.0"
+   ],
+   [
+    "1995-07-03",
+    "2.0:1.0"
+   ],
+   [
+    "1997-07-01",
+    "2.0:1.0"
+   ],
+   [
+    "1999-07-01",
+    "3.0:1.0"
+   ],
+   [
+    "2020-11-17",
+    "1054.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PFE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PG": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T03:16:26+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -252322200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Procter & Gamble Company",
+  "rows": 14311,
+  "sha256_raw": "2c026cd71bf885dd78d2d8e9c0f6767e3cb34741351c15882308826806b30129",
+  "splits": [
+   [
+    "1970-05-19",
+    "2.0:1.0"
+   ],
+   [
+    "1983-02-22",
+    "2.0:1.0"
+   ],
+   [
+    "1989-11-20",
+    "2.0:1.0"
+   ],
+   [
+    "1992-06-15",
+    "2.0:1.0"
+   ],
+   [
+    "1997-09-22",
+    "2.0:1.0"
+   ],
+   [
+    "2004-06-21",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PGJ": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:14:54+00:00",
+  "first": "2004-12-09",
+  "firstTradeDate": 1102602600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco Golden Dragon China ETF",
+  "rows": 5489,
+  "sha256_raw": "b8c00b8df1eadaabf479f886f5f3234a32db4a640f79219cb054f53bb60742b0",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PGJ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PINS": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:16+00:00",
+  "first": "2019-04-18",
+  "firstTradeDate": 1555594200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Pinterest, Inc.",
+  "rows": 1876,
+  "sha256_raw": "76ede8dfe33662da242a98184debe5d5c5a75100a7a976ba33847d83597560fb",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PINS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PL": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:16+00:00",
+  "first": "2021-04-26",
+  "firstTradeDate": 1619443800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Planet Labs PBC",
+  "rows": 1368,
+  "sha256_raw": "0dd50a6b5d3165a6b55948fd3af0e4765cd33b4ff8b221eb5610c7b42ca65ef1",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PLTR": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:14:54+00:00",
+  "first": "2020-09-30",
+  "firstTradeDate": 1601472600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Palantir Technologies Inc.",
+  "rows": 1510,
+  "sha256_raw": "3b95bfab47c9f0aa46f75035530bb5279f744b126efaa8d0fbfc74d890cb0c74",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PLTR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PLUG": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:41:17+00:00",
+  "first": "1999-10-29",
+  "firstTradeDate": 941203800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Plug Power Inc.",
+  "rows": 6773,
+  "sha256_raw": "aec43064a463bac38647332cd8b5a2f69c18450055626a3619d1ff60f5e683fa",
+  "splits": [
+   [
+    "2011-05-20",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PLUG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PRLB": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:14:55+00:00",
+  "first": "2012-02-24",
+  "firstTradeDate": 1330093800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Proto Labs, Inc.",
+  "rows": 3674,
+  "sha256_raw": "1df09b4a7edaaa0e469ffd8b3a324b17f7bb28b887a574d4fad1dd0ae450d91b",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PRLB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PRNT": {
+  "currency": "USD",
+  "exchange": "Cboe US",
+  "fetched_utc": "2026-10-07T02:41:18+00:00",
+  "first": "2016-07-20",
+  "firstTradeDate": 1469021400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The 3D Printing ETF",
+  "rows": 2567,
+  "sha256_raw": "91adc0faa5525581190f166ae522c4993ae535dd13909fb90e6bdad29ef5a9b1",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PRNT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "PTON": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:14:56+00:00",
+  "first": "2019-09-26",
+  "firstTradeDate": 1569504600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Peloton Interactive, Inc.",
+  "rows": 1765,
+  "sha256_raw": "e2a1211721946188d7a4480ef8a92b64598a70b26562ed112fcdd1a1a1f05a1f",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/PTON?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QBTS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:14:56+00:00",
+  "first": "2020-12-11",
+  "firstTradeDate": 1607697000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "D-Wave Quantum Inc.",
+  "rows": 1459,
+  "sha256_raw": "68e57598f1c1a6d249cc6df89a7904a1f224da881ddd91ff4370f45d2bf574d8",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QBTS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QCOM": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:19+00:00",
+  "first": "1991-12-13",
+  "firstTradeDate": 692634600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "QUALCOMM Incorporated",
+  "rows": 8763,
+  "sha256_raw": "2bb29c54248207c1fb7243a3d3f373c9663e8721fd4e74b4a59adefd75e21cc9",
+  "splits": [
+   [
+    "1994-02-24",
+    "2.0:1.0"
+   ],
+   [
+    "1999-05-11",
+    "2.0:1.0"
+   ],
+   [
+    "1999-12-31",
+    "4.0:1.0"
+   ],
+   [
+    "2004-08-16",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QMCO": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:14:57+00:00",
+  "first": "1999-08-02",
+  "firstTradeDate": 933600600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Quantum Corporation",
+  "rows": 6836,
+  "sha256_raw": "581f189f313f7dcb112b51e7fa24b499ac413179e776439e86fc01c85fd4c294",
+  "splits": [
+   [
+    "2017-04-19",
+    "1.0:8.0"
+   ],
+   [
+    "2024-08-27",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QMCO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QQQ": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:09:58+00:00",
+  "first": "1999-03-10",
+  "firstTradeDate": 921076200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco QQQ Trust",
+  "rows": 6936,
+  "sha256_raw": "d379140777eeb7d6b1ccff52f55512ae62834fb4a940f6aef49c0e56ace33d90",
+  "splits": [
+   [
+    "2000-03-20",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:19+00:00",
+  "first": "2020-08-17",
+  "firstTradeDate": 1597671000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "QuantumScape Corporation",
+  "rows": 1541,
+  "sha256_raw": "cb9217963255366cbb0381fc3ac2b116825c5d62c3ef79691dcfa381864548ee",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QTUM": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:15:19+00:00",
+  "first": "2018-09-05",
+  "firstTradeDate": 1536154200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Defiance Quantum ETF",
+  "rows": 2031,
+  "sha256_raw": "8be906603dfa8441f93777cbf19cafc4ec817c6a69855dceebdd8725574b89ae",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QTUM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "QUBT": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:15:19+00:00",
+  "first": "2007-02-01",
+  "firstTradeDate": 1170340200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Quantum Computing Inc.",
+  "rows": 4950,
+  "sha256_raw": "478539d8876f3ce9001b3b6c72ce9d252e9a046228d990dda6491c1d43bf36ed",
+  "splits": [
+   [
+    "2007-08-29",
+    "1.0:100.0"
+   ],
+   [
+    "2018-07-03",
+    "1.0:200.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QUBT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RBLX": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:15:41+00:00",
+  "first": "2021-03-10",
+  "firstTradeDate": 1615386600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Roblox Corporation",
+  "rows": 1400,
+  "sha256_raw": "fd3ba8a04943adfa20dd53a3a19899a7d97b21f80469ec1c08ca943dda9367d9",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RBLX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RGTI": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:15:42+00:00",
+  "first": "2021-04-22",
+  "firstTradeDate": 1619098200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Rigetti Computing, Inc.",
+  "rows": 1370,
+  "sha256_raw": "1a2fc3424cc69a09f29a4e67e533a37db6139b5aea096bc4b50b84a8cc21ca74",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RGTI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RIG": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:15:43+00:00",
+  "first": "1993-05-28",
+  "firstTradeDate": 738595800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Transocean Ltd.",
+  "rows": 8395,
+  "sha256_raw": "392c52ae328b124ab9629c1c04e40b57ed6507e4873565cdfbcbe8e73a6d4a8b",
+  "splits": [
+   [
+    "1997-09-22",
+    "2.0:1.0"
+   ],
+   [
+    "2007-11-27",
+    "6996.0:10000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RIG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RIOT": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:15:43+00:00",
+  "first": "2016-03-31",
+  "firstTradeDate": 1459431000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Riot Platforms, Inc.",
+  "rows": 2644,
+  "sha256_raw": "d2a2b6659c77e150aa64d2848b6e70ae4c6b79576df22e9a79376cce05b42a6b",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RIOT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RIVN": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:20+00:00",
+  "first": "2021-11-10",
+  "firstTradeDate": 1636554600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Rivian Automotive, Inc.",
+  "rows": 1229,
+  "sha256_raw": "d6f6c9582cf5fe6f375ece6f4fcbdbcca6174ebc9cc889436edc1b9df6145e5e",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RIVN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RKLB": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:21+00:00",
+  "first": "2020-11-24",
+  "firstTradeDate": 1606228200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Rocket Lab Corporation",
+  "rows": 1471,
+  "sha256_raw": "39fa31317b2581fddfe239584c3f98cc39ccc8f1e325c8d8ee6e168d06ed4e88",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RKLB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ROBO": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:18+00:00",
+  "first": "2013-10-22",
+  "firstTradeDate": 1382448600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Robo Global Robotics and Automation Index ETF",
+  "rows": 3257,
+  "sha256_raw": "ffee4f08dfd121cb770136f7739193c0de024d5b415de54eb151910334eba881",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ROBO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ROKU": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:15:44+00:00",
+  "first": "2017-09-28",
+  "firstTradeDate": 1506605400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Roku, Inc.",
+  "rows": 2266,
+  "sha256_raw": "c31964c83b7fd6e196a54075c6abf1d22811f29324a2b32ca2a115c06a9d4e23",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ROKU?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "RSP": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:15:45+00:00",
+  "first": "2003-05-01",
+  "firstTradeDate": 1051795800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco S&P 500 Equal Weight ETF",
+  "rows": 5895,
+  "sha256_raw": "b35003401ffaeb21a7228bc5948807cedc7630f0d807fbb6ed5a80368e210cad",
+  "splits": [
+   [
+    "2006-04-27",
+    "4.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SBET": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:15:46+00:00",
+  "first": "1997-05-21",
+  "firstTradeDate": 864221400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Sharplink, Inc.",
+  "rows": 7389,
+  "sha256_raw": "c951307211aa5097540c70a20a80319656dd52228e7a1e0d1e78e0bf3f0e6588",
+  "splits": [
+   [
+    "2010-03-02",
+    "1.0:2.0"
+   ],
+   [
+    "2021-07-28",
+    "1.0:2.0"
+   ],
+   [
+    "2023-04-26",
+    "1.0:10.0"
+   ],
+   [
+    "2025-05-06",
+    "1.0:12.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SBET?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SICP": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-06T15:15:46+00:00",
+  "first": "2019-11-07",
+  "firstTradeDate": 1573137000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Silvergate Capital Corporation",
+  "rows": 1735,
+  "sha256_raw": "a00d0e8c16543c361c58dbc1a6a2ed48d5a500ada1bab0ff405f002b6632bac5",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SICP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SKYY": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:10:49+00:00",
+  "first": "2011-07-06",
+  "firstTradeDate": 1309959000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "First Trust Cloud Computing ETF",
+  "rows": 3835,
+  "sha256_raw": "30fe728cf7348c254eb657c0790e90c52efba0a87c2267797cdf1c2a21725682",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SKYY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SMCI": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:15:47+00:00",
+  "first": "2007-03-29",
+  "firstTradeDate": 1175175000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Super Micro Computer, Inc.",
+  "rows": 4911,
+  "sha256_raw": "4a3d0d80b27abcc877d2928c4a3a852b2d360a0be96c4c1f2bddc0b373d4512b",
+  "splits": [
+   [
+    "2024-10-01",
+    "10.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMCI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SMH": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:15:48+00:00",
+  "first": "2000-06-05",
+  "firstTradeDate": 960211800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "VanEck Semiconductor ETF",
+  "rows": 6623,
+  "sha256_raw": "efccbb113ac811b8c6f2da34b9eaac9bff5d14520637249200fd0110f3be69f1",
+  "splits": [
+   [
+    "2023-05-05",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SMLR": {
+  "error": "https://query1.finance.yahoo.com/v8/finance/chart/SMLR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true: HTTP Error 404: Not Found",
+  "fetched_utc": "2026-10-07T03:16:47+00:00",
+  "status": "error",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMLR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SMR": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:30+00:00",
+  "first": "2022-03-01",
+  "firstTradeDate": 1646145000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NuScale Power Corporation",
+  "rows": 1154,
+  "sha256_raw": "a31d411a7f873c877595b7940e34167571aae8a5d6c585a7390ccf2651d21942",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SNAP": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:42+00:00",
+  "first": "2017-03-02",
+  "firstTradeDate": 1488465000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Snap Inc.",
+  "rows": 2412,
+  "sha256_raw": "4b0c890634a30a0786de490a4b8d66ae5ad7ba0afc74a6180584c51836d2d6a6",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNAP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SNFI": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-07T02:41:43+00:00",
+  "first": "2019-04-18",
+  "firstTradeDate": 1555594200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Stark Novus Financial Inc.",
+  "rows": 1876,
+  "sha256_raw": "102d8d5be28bf6c52877f82d01e41f570bbda18ca630770ea4a176ad2a48f9fa",
+  "splits": [
+   [
+    "2023-05-24",
+    "1.0:15.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNFI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SNOW": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:43+00:00",
+  "first": "2020-09-16",
+  "firstTradeDate": 1600263000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Snowflake Inc.",
+  "rows": 1520,
+  "sha256_raw": "5c57bab204ac4599acaf551097f328aa4b720e7a954f85b785d696df23ad227d",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNOW?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SOCL": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:41:44+00:00",
+  "first": "2011-11-15",
+  "firstTradeDate": 1321367400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Global X Social Media ETF",
+  "rows": 3742,
+  "sha256_raw": "b9c762fabdf20eace2abfea94679ad674f476de61075740ef1bbeebd38eb571c",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SOCL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SOUN": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:16:52+00:00",
+  "first": "2022-04-28",
+  "firstTradeDate": 1651152600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "SoundHound AI, Inc.",
+  "rows": 1113,
+  "sha256_raw": "b017dd67abbea80fe3c334d0a3e3f7c2ee2ec67a56576aeff10522ef191a35cb",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SOUN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SOXX": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:10:26+00:00",
+  "first": "2001-07-13",
+  "firstTradeDate": 995031000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "iShares Semiconductor ETF",
+  "rows": 6344,
+  "sha256_raw": "95f876d7fb43fc09c79033a27c8ab646eb8620724be6571dfd3f7049bb998f74",
+  "splits": [
+   [
+    "2024-03-07",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SPCE": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:45+00:00",
+  "first": "2017-09-29",
+  "firstTradeDate": 1506691800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Virgin Galactic Holdings, Inc.",
+  "rows": 2265,
+  "sha256_raw": "06beb13ebbbf87f6d8717a1197944e9c17e8341cb7e025a0648b2d14d5183aaf",
+  "splits": [
+   [
+    "2024-06-17",
+    "1.0:20.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPCE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SPIR": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:45+00:00",
+  "first": "2020-11-03",
+  "firstTradeDate": 1604413800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Spire Global, Inc.",
+  "rows": 1486,
+  "sha256_raw": "5c399f8628cad161d5816e6a365b645b4d3ccc1a89a2fef81c6f854c05ef68d8",
+  "splits": [
+   [
+    "2023-08-31",
+    "1.0:8.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPIR?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SPOT": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:53+00:00",
+  "first": "2018-04-03",
+  "firstTradeDate": 1522762200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Spotify Technology S.A.",
+  "rows": 2139,
+  "sha256_raw": "6ab3352ae896750968fd89e27d6ccce8965efa9afddf68a69a5ee789ff1f602c",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPOT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SPY": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:09:59+00:00",
+  "first": "1993-01-29",
+  "firstTradeDate": 728317800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street SPDR S&P 500 ETF Trust",
+  "rows": 8478,
+  "sha256_raw": "573ec3ba0f4b5ea6c87fead0bb325d8384d923f8988e8a6094bd5c8d8bfcd95c",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "SSYS": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:46+00:00",
+  "first": "1994-10-21",
+  "firstTradeDate": 782746200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Stratasys Ltd.",
+  "rows": 8041,
+  "sha256_raw": "63e12daa68419f8285745e0c4d7241647097648749756879c350e6efeb583b34",
+  "splits": [
+   [
+    "2003-12-22",
+    "3.0:2.0"
+   ],
+   [
+    "2007-08-30",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SSYS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TAN": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:23+00:00",
+  "first": "2008-04-15",
+  "firstTradeDate": 1208266200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Invesco Solar ETF",
+  "rows": 4648,
+  "sha256_raw": "7fcd9dff732d9ba3bcf866c4fb467b0daac7a9f1e2d7592b75b6f6639b4a4e5e",
+  "splits": [
+   [
+    "2012-02-15",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TDOC": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:53+00:00",
+  "first": "2015-06-30",
+  "firstTradeDate": 1435671000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Teladoc Health, Inc.",
+  "rows": 2833,
+  "sha256_raw": "90e6f72e287d81540c5052d82be228b469e4cc546fb15fddf1c50df87e8090ac",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TDOC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TGLO": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-07T02:41:47+00:00",
+  "first": "1998-11-13",
+  "firstTradeDate": 910967400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "theglobe.com, inc.",
+  "rows": 7014,
+  "sha256_raw": "36071d4361858c6b69cd04a0d5f6848a03c306592200c7aa0109f3ed4fe3dd48",
+  "splits": [
+   [
+    "1999-05-17",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TGLO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TLRY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:48+00:00",
+  "first": "2018-07-19",
+  "firstTradeDate": 1532007000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Tilray Brands, Inc.",
+  "rows": 2064,
+  "sha256_raw": "0d24dd6034a6e92cfdef43b7638111f3a6ad65ddf99e5a2b6a19f5fb40d1df29",
+  "splits": [
+   [
+    "2025-12-02",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TLRY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TOL": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:55+00:00",
+  "first": "1986-07-08",
+  "firstTradeDate": 521213400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Toll Brothers, Inc.",
+  "rows": 10139,
+  "sha256_raw": "5bddc37ba6e5287cab0df773dfc5b4e51cff7f63ffade4ec5fc8f21103cfb801",
+  "splits": [
+   [
+    "1987-02-27",
+    "3.0:2.0"
+   ],
+   [
+    "1987-04-21",
+    "2.0:1.0"
+   ],
+   [
+    "2002-04-01",
+    "2.0:1.0"
+   ],
+   [
+    "2005-07-11",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOL?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TSLA": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:16:56+00:00",
+  "first": "2010-06-29",
+  "firstTradeDate": 1277818200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Tesla, Inc.",
+  "rows": 4092,
+  "sha256_raw": "c6e93f04c99a88f54d7f4f2244080015e94d406d6a4181e98786494231bdf557",
+  "splits": [
+   [
+    "2020-08-31",
+    "5.0:1.0"
+   ],
+   [
+    "2022-08-25",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TSM": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:57+00:00",
+  "first": "1997-10-09",
+  "firstTradeDate": 876403800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Taiwan Semiconductor Manufacturing Company Limited",
+  "rows": 7291,
+  "sha256_raw": "ec3dd6954588517e3a66c39066fa72fe54c14702871e8f2c1ab09f0a611d8b79",
+  "splits": [
+   [
+    "1998-08-26",
+    "145.0:100.0"
+   ],
+   [
+    "1999-08-16",
+    "123.0:100.0"
+   ],
+   [
+    "2000-05-15",
+    "128.0:100.0"
+   ],
+   [
+    "2001-06-26",
+    "140.0:100.0"
+   ],
+   [
+    "2002-06-19",
+    "11.0:10.0"
+   ],
+   [
+    "2003-07-07",
+    "108.0:100.0"
+   ],
+   [
+    "2004-06-14",
+    "114.0:100.0"
+   ],
+   [
+    "2005-06-13",
+    "105.0:100.0"
+   ],
+   [
+    "2006-06-20",
+    "103.0:100.0"
+   ],
+   [
+    "2009-07-15",
+    "1005.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "TSPH": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-07T02:41:48+00:00",
+  "first": "2021-04-15",
+  "firstTradeDate": 1618493400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "CreateAI Holdings Inc.",
+  "rows": 1375,
+  "sha256_raw": "cfcf382dc07a008c7ca8b70ad5db59e877fb3e0c8e6bd16c0da80a4156b35e0c",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSPH?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "U": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:58+00:00",
+  "first": "2020-09-18",
+  "firstTradeDate": 1600435800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Unity Software Inc.",
+  "rows": 1518,
+  "sha256_raw": "e7ea85553e408f289d40bb0b44d5a230c214f146a607e5dd89a4728c284d722f",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/U?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "UBER": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:49+00:00",
+  "first": "2019-05-10",
+  "firstTradeDate": 1557495000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Uber Technologies, Inc.",
+  "rows": 1861,
+  "sha256_raw": "a166f88357036bebc8d90a4df8584d5667eeb17454c3a2da64bfab177c25b24b",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/UBER?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "UFO": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-07T02:41:50+00:00",
+  "first": "2019-04-11",
+  "firstTradeDate": 1554989400,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Procure Space ETF",
+  "rows": 1881,
+  "sha256_raw": "0306966a5c8b02d7f04ade670d887495918901819d7f72a6fa4ce2f2844d257d",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/UFO?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "URA": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:53+00:00",
+  "first": "2010-11-05",
+  "firstTradeDate": 1288963800,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Global X Uranium ETF",
+  "rows": 4001,
+  "sha256_raw": "5b8b412a31ea5f0d34deee2c9a5bfc371dd27b7f04ede55b040ee7fe84a33228",
+  "splits": [
+   [
+    "2013-05-16",
+    "1.0:3.0"
+   ],
+   [
+    "2015-11-18",
+    "1.0:2.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/URA?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VIAV": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:50+00:00",
+  "first": "1993-11-17",
+  "firstTradeDate": 753546600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Viavi Solutions Inc.",
+  "rows": 8275,
+  "sha256_raw": "dddb4fe5aaabcf2776a1f2c7c32da8a09992042f3e2d8f6c33a55d7dd64f85ee",
+  "splits": [
+   [
+    "1996-06-04",
+    "2.0:1.0"
+   ],
+   [
+    "1997-11-13",
+    "2.0:1.0"
+   ],
+   [
+    "1999-07-27",
+    "2.0:1.0"
+   ],
+   [
+    "1999-12-30",
+    "2.0:1.0"
+   ],
+   [
+    "2000-03-13",
+    "2.0:1.0"
+   ],
+   [
+    "2006-10-17",
+    "1.0:8.0"
+   ],
+   [
+    "2015-08-04",
+    "1758.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VIAV?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VIVS": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-07T02:41:51+00:00",
+  "first": "2012-02-14",
+  "firstTradeDate": 1329229800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "VivoSim Labs, Inc.",
+  "rows": 3681,
+  "sha256_raw": "7f3a7fb2ea2dfd76599e6a3ffc0ff59acaff09195f77f4e4287e5516ac4d0d90",
+  "splits": [
+   [
+    "2020-08-19",
+    "1.0:20.0"
+   ],
+   [
+    "2025-03-21",
+    "1.0:12.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VIVS?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VKTX": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:16:58+00:00",
+  "first": "2015-04-28",
+  "firstTradeDate": 1430227800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Viking Therapeutics, Inc.",
+  "rows": 2877,
+  "sha256_raw": "c71e30443b49526c74e68a09f88ef9c87fffc72f731e65bdf2beecc50d351654",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VKTX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VRT": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:16:59+00:00",
+  "first": "2018-08-02",
+  "firstTradeDate": 1533216600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Vertiv Holdings Co",
+  "rows": 2054,
+  "sha256_raw": "c76f1076dfc6ef41c8e221b07589a38134b40e4fe226124c11d9b4f62a6fbec9",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VST": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:17:00+00:00",
+  "first": "2016-10-05",
+  "firstTradeDate": 1475674200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Vistra Corp.",
+  "rows": 2513,
+  "sha256_raw": "3584c6da072faf956961a0136eebcaf78e85632b623a6828c451e40094758d22",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VST?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "VYGVQ": {
+  "currency": "USD",
+  "exchange": "OTC Markets OTCPK",
+  "fetched_utc": "2026-10-06T15:17:00+00:00",
+  "first": "2014-05-29",
+  "firstTradeDate": 1401370200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Voyager Digital Ltd.",
+  "rows": 3107,
+  "sha256_raw": "42b1d48d1ef654af56f6a4db5a2c50ada87ba9c5ff9955b03dcf238707f8b9aa",
+  "splits": [
+   [
+    "2014-06-27",
+    "1.0:10.0"
+   ],
+   [
+    "2017-07-05",
+    "1.0:10.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VYGVQ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "WCLD": {
+  "currency": "USD",
+  "exchange": "NasdaqGM",
+  "fetched_utc": "2026-10-06T15:10:50+00:00",
+  "first": "2019-09-06",
+  "firstTradeDate": 1567776600,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "WisdomTree Cloud Computing Fund",
+  "rows": 1779,
+  "sha256_raw": "a90b88369f4285e193e669431355128fc28ad6cc4b0d7b9bb476283d21eaa6f8",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/WCLD?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "WDAY": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T02:41:52+00:00",
+  "first": "2012-10-12",
+  "firstTradeDate": 1350048600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Workday, Inc.",
+  "rows": 3513,
+  "sha256_raw": "c597976ccb925a86122090b7ed1bc1b0bd1d33172f08cb1b9e68212dbddb9dbd",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/WDAY?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "WMB": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:53+00:00",
+  "first": "1981-12-31",
+  "firstTradeDate": 378657000,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "The Williams Companies, Inc.",
+  "rows": 11280,
+  "sha256_raw": "1dda41319965aa1c02c71744b56656c43f14b058d6be7baa3a421ad45c776633",
+  "splits": [
+   [
+    "1993-11-08",
+    "2.0:1.0"
+   ],
+   [
+    "1996-12-31",
+    "3.0:2.0"
+   ],
+   [
+    "1997-12-30",
+    "2.0:1.0"
+   ],
+   [
+    "2001-04-24",
+    "1000.0:918.0"
+   ],
+   [
+    "2012-01-03",
+    "10000.0:8152.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/WMB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "WMT": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-07T03:16:48+00:00",
+  "first": "1972-08-25",
+  "firstTradeDate": 83597400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Walmart Inc.",
+  "rows": 13639,
+  "sha256_raw": "d848725088fa67d71fa4a25a6186d4c9c90969aca94936a1124f49aca17f683f",
+  "splits": [
+   [
+    "1975-08-25",
+    "2.0:1.0"
+   ],
+   [
+    "1980-12-17",
+    "2.0:1.0"
+   ],
+   [
+    "1982-07-12",
+    "2.0:1.0"
+   ],
+   [
+    "1983-07-11",
+    "2.0:1.0"
+   ],
+   [
+    "1985-10-07",
+    "2.0:1.0"
+   ],
+   [
+    "1987-07-13",
+    "2.0:1.0"
+   ],
+   [
+    "1990-07-09",
+    "2.0:1.0"
+   ],
+   [
+    "1993-02-26",
+    "2.0:1.0"
+   ],
+   [
+    "1999-04-20",
+    "2.0:1.0"
+   ],
+   [
+    "2024-02-26",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "WULF": {
+  "currency": "USD",
+  "exchange": "NasdaqCM",
+  "fetched_utc": "2026-10-06T15:17:01+00:00",
+  "first": "1994-04-05",
+  "firstTradeDate": 765552600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "TeraWulf Inc.",
+  "rows": 8180,
+  "sha256_raw": "8b2ad3ce70692b92ad2e19330ea6eb806b6fa471bff42bf98d6bcd0b705178ed",
+  "splits": [
+   [
+    "1997-09-22",
+    "3.0:2.0"
+   ],
+   [
+    "1999-12-29",
+    "11.0:10.0"
+   ],
+   [
+    "2004-05-14",
+    "3.0:2.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/WULF?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XBI": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:24+00:00",
+  "first": "2006-02-06",
+  "firstTradeDate": 1139236200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street SPDR S&P Biotech ETF",
+  "rows": 5198,
+  "sha256_raw": "ad4b41631e2849fa7de282b45e3ddf5de8fca5ff3c632ef0efe3117048335f12",
+  "splits": [
+   [
+    "2015-09-11",
+    "3.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XHB": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:51+00:00",
+  "first": "2006-02-06",
+  "firstTradeDate": 1139236200,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street SPDR S&P Homebuilders ETF",
+  "rows": 5198,
+  "sha256_raw": "dee66a90dccc90359760b219da963af992f31c4a00ac28da13a0c54fb7e6ca7a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XLE": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:11:19+00:00",
+  "first": "1998-12-22",
+  "firstTradeDate": 914337000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street Energy Select Sector SPDR ETF",
+  "rows": 6988,
+  "sha256_raw": "0728fd8aad79d3c48b8f5437278ab0b121d0ed052bdfcb3673e998ea33c08942",
+  "splits": [
+   [
+    "2025-12-05",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XLF": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:17:02+00:00",
+  "first": "1998-12-22",
+  "firstTradeDate": 914337000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street Financial Select Sector SPDR ETF",
+  "rows": 6988,
+  "sha256_raw": "8285825376367771c183cc0740dfaa48c1378d191244de5585fd4526cf18efa8",
+  "splits": [
+   [
+    "2016-09-19",
+    "1231.0:1000.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XLU": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:17:03+00:00",
+  "first": "1998-12-22",
+  "firstTradeDate": 914337000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street Utilities Select Sector SPDR ETF",
+  "rows": 6988,
+  "sha256_raw": "174a7489daa946e15655f8ec9fce979ba2e8765ef7e0d6544062844453ded51c",
+  "splits": [
+   [
+    "2025-12-05",
+    "2.0:1.0"
+   ]
+  ],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XME": {
+  "currency": "USD",
+  "exchange": "NYSEArca",
+  "fetched_utc": "2026-10-06T15:10:52+00:00",
+  "first": "2006-06-22",
+  "firstTradeDate": 1150983000,
+  "instrumentType": "ETF",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "State Street SPDR S&P Metals & Mining ETF",
+  "rows": 5103,
+  "sha256_raw": "ffc7f85a5ba65c7bcd837fce7be376dd69f46492b147534b1399b8f67ecf9b46",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XME?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XXI": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:17:04+00:00",
+  "first": "2024-08-13",
+  "firstTradeDate": 1723555800,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Twenty One Capital, Inc.",
+  "rows": 538,
+  "sha256_raw": "90ad9f9f6e07026e99f9b6746b013320e4620624b106849b0fdb4e09639140db",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XXI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "XYZ": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-06T15:17:04+00:00",
+  "first": "2015-11-19",
+  "firstTradeDate": 1447943400,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Block, Inc.",
+  "rows": 2733,
+  "sha256_raw": "f22619eba2ff045ae639bf991af3f699ab5fe1f89f38b7170dc7b28d276ad74a",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/XYZ?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "YELP": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:53+00:00",
+  "first": "2012-03-02",
+  "firstTradeDate": 1330698600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Yelp Inc.",
+  "rows": 3669,
+  "sha256_raw": "f0aa6d10a02d169f32bb89d1b7482bdc7419a0d38cfd15c61316c600220252aa",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/YELP?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "Z": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:17:05+00:00",
+  "first": "2015-08-03",
+  "firstTradeDate": 1438608600,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Zillow Group, Inc.",
+  "rows": 2810,
+  "sha256_raw": "1af83d4a479c01ae0b50328bd0fee7825002b2203b975e5a407eae873eb0a571",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/Z?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "ZM": {
+  "currency": "USD",
+  "exchange": "NasdaqGS",
+  "fetched_utc": "2026-10-06T15:17:06+00:00",
+  "first": "2019-04-18",
+  "firstTradeDate": 1555594200,
+  "instrumentType": "EQUITY",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Zoom Communications, Inc.",
+  "rows": 1876,
+  "sha256_raw": "3fe1d597d63f057732f7f86835352b66d5244a3a71c1756c859951e63b68c276",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZM?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^BKX": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-06T15:02:35+00:00",
+  "first": "1993-02-22",
+  "firstTradeDate": 730391400,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "KBW Nasdaq Bank Index",
+  "rows": 8461,
+  "sha256_raw": "7d651f040b455251351e7296a9315abb0fb59d28fb36fbd631fe9d9ab9e1eaae",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EBKX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^GSPC": {
+  "currency": "USD",
+  "exchange": "SNP",
+  "fetched_utc": "2026-10-06T14:35:15+00:00",
+  "first": "1970-01-02",
+  "firstTradeDate": -1325583000,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "S&P 500",
+  "rows": 14311,
+  "sha256_raw": "f58f99d769b5e83af0ee11d5ba61ca9d19ba6ac8970c6a4c845ea200808ccaa7",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^HGX": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-06T15:02:36+00:00",
+  "first": "2002-07-03",
+  "firstTradeDate": 1025703000,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "PHLX Housing Sector",
+  "rows": 6100,
+  "sha256_raw": "b2cc08332e0ed49195e07f13e8c697ed5303b555eb0802f7a926cc52b8dd9dcf",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EHGX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^IXIC": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-06T14:34:52+00:00",
+  "first": "1971-02-05",
+  "firstTradeDate": 34612200,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NASDAQ Composite",
+  "rows": 14033,
+  "sha256_raw": "9971f4860a471ab32bac89865824d2c520eea5dc2c5906be9125c08804a248d0",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^IXTC": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-07T02:41:54+00:00",
+  "first": "1996-05-13",
+  "firstTradeDate": 831994200,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "Nasdaq Telecommunications",
+  "rows": 7648,
+  "sha256_raw": "7f8052401b68bd47ebad3a232f43779c3d2deb1524628b5078e763984d7cf94d",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXTC?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^NBI": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-07T02:41:55+00:00",
+  "first": "1993-10-29",
+  "firstTradeDate": 751901400,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NASDAQ Biotechnology",
+  "rows": 8287,
+  "sha256_raw": "069cd2dcd22e8e6e2089961c5b9d4dfe9edebce71bdc091a6ead160a80672d57",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENBI?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^NDX": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-06T14:35:16+00:00",
+  "first": "1985-10-01",
+  "firstTradeDate": 497021400,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NASDAQ-100",
+  "rows": 10332,
+  "sha256_raw": "56e9eafd93f045e4dc586742b700fba79939790f762dde1252ebf2207c09a217",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^NYFANG": {
+  "currency": "USD",
+  "exchange": "NYSE",
+  "fetched_utc": "2026-10-07T02:41:56+00:00",
+  "first": "2014-09-22",
+  "firstTradeDate": 1411392600,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "NYSE FANG+ Index",
+  "rows": 3027,
+  "sha256_raw": "a15ed1e924dd2c2b9a2ffecb13b541379a50654e6f713182c47db7b1af946460",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENYFANG?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ },
+ "^SOX": {
+  "currency": "USD",
+  "exchange": "Nasdaq GIDS",
+  "fetched_utc": "2026-10-06T15:02:37+00:00",
+  "first": "1994-05-04",
+  "firstTradeDate": 768058200,
+  "instrumentType": "INDEX",
+  "interval": "1d",
+  "last": "2026-10-05",
+  "longName": "PHLX Semiconductor",
+  "rows": 8160,
+  "sha256_raw": "e983d55088bfe8a4385bb2a40582624fa8787e20b8a504074c0bee3ce75a4990",
+  "splits": [],
+  "status": "ok",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX?period1=0&period2=1791244800&interval=1d&events=div%7Csplit&includeAdjustedClose=true"
+ }
+}

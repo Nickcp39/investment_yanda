@@ -1,0 +1,233 @@
+{
+ "^IXIC": {
+  "first": "1971-02-05",
+  "last": "2026-10-05",
+  "last_close": 27477.310547,
+  "drawdowns_ge20": [
+   {
+    "peak": "1987-08-27",
+    "peak_close": 455.799988,
+    "trough": "1987-10-28",
+    "trough_close": 291.899994,
+    "drawdown": -0.3595875346973463,
+    "recovered": "1989-08-03",
+    "years_peak_to_trough": 0.17,
+    "years_peak_to_recover": 1.94
+   },
+   {
+    "peak": "1989-10-09",
+    "peak_close": 485.700012,
+    "trough": "1990-10-16",
+    "trough_close": 325.399994,
+    "drawdown": -0.33003914770337706,
+    "recovered": "1991-04-02",
+    "years_peak_to_trough": 1.02,
+    "years_peak_to_recover": 1.48
+   },
+   {
+    "peak": "1998-07-20",
+    "peak_close": 2014.25,
+    "trough": "1998-10-08",
+    "trough_close": 1419.119995,
+    "drawdown": -0.295459851061189,
+    "recovered": "1998-11-27",
+    "years_peak_to_trough": 0.22,
+    "years_peak_to_recover": 0.36
+   },
+   {
+    "peak": "2000-03-10",
+    "peak_close": 5048.620117,
+    "trough": "2002-10-09",
+    "trough_close": 1114.109985,
+    "drawdown": -0.7793238629207799,
+    "recovered": "2015-04-23",
+    "years_peak_to_trough": 2.58,
+    "years_peak_to_recover": 15.12
+   },
+   {
+    "peak": "2018-08-29",
+    "peak_close": 8109.689941,
+    "trough": "2018-12-24",
+    "trough_close": 6192.919922,
+    "drawdown": -0.23635552443372998,
+    "recovered": "2019-04-23",
+    "years_peak_to_trough": 0.32,
+    "years_peak_to_recover": 0.65
+   },
+   {
+    "peak": "2020-02-19",
+    "peak_close": 9817.179688,
+    "trough": "2020-03-23",
+    "trough_close": 6860.669922,
+    "drawdown": -0.30115673339603644,
+    "recovered": "2020-06-08",
+    "years_peak_to_trough": 0.09,
+    "years_peak_to_recover": 0.3
+   },
+   {
+    "peak": "2021-11-19",
+    "peak_close": 16057.44043,
+    "trough": "2022-12-28",
+    "trough_close": 10213.290039,
+    "drawdown": -0.3639527991074728,
+    "recovered": "2024-02-29",
+    "years_peak_to_trough": 1.11,
+    "years_peak_to_recover": 2.28
+   },
+   {
+    "peak": "2024-12-16",
+    "peak_close": 20173.890625,
+    "trough": "2025-04-08",
+    "trough_close": 15267.910156,
+    "drawdown": -0.24318464693768016,
+    "recovered": "2025-06-27",
+    "years_peak_to_trough": 0.31,
+    "years_peak_to_recover": 0.53
+   }
+  ]
+ },
+ "^GSPC": {
+  "first": "1970-01-02",
+  "last": "2026-10-05",
+  "last_close": 7773.950195,
+  "drawdowns_ge20": [
+   {
+    "peak": "1987-08-25",
+    "peak_close": 336.769989,
+    "trough": "1987-12-04",
+    "trough_close": 223.919998,
+    "drawdown": -0.3350951530303967,
+    "recovered": "1989-07-26",
+    "years_peak_to_trough": 0.28,
+    "years_peak_to_recover": 1.92
+   },
+   {
+    "peak": "2000-03-24",
+    "peak_close": 1527.459961,
+    "trough": "2002-10-09",
+    "trough_close": 776.76001,
+    "drawdown": -0.4914694788520221,
+    "recovered": "2007-05-30",
+    "years_peak_to_trough": 2.54,
+    "years_peak_to_recover": 7.18
+   },
+   {
+    "peak": "2007-10-09",
+    "peak_close": 1565.150024,
+    "trough": "2009-03-09",
+    "trough_close": 676.530029,
+    "drawdown": -0.5677538775030553,
+    "recovered": "2013-03-28",
+    "years_peak_to_trough": 1.42,
+    "years_peak_to_recover": 5.47
+   },
+   {
+    "peak": "2020-02-19",
+    "peak_close": 3386.149902,
+    "trough": "2020-03-23",
+    "trough_close": 2237.399902,
+    "drawdown": -0.33924960006097216,
+    "recovered": "2020-08-18",
+    "years_peak_to_trough": 0.09,
+    "years_peak_to_recover": 0.5
+   },
+   {
+    "peak": "2022-01-03",
+    "peak_close": 4796.560059,
+    "trough": "2022-10-12",
+    "trough_close": 3577.030029,
+    "drawdown": -0.25425096631735933,
+    "recovered": "2024-01-19",
+    "years_peak_to_trough": 0.77,
+    "years_peak_to_recover": 2.04
+   }
+  ]
+ },
+ "^NDX": {
+  "first": "1985-10-01",
+  "last": "2026-10-05",
+  "last_close": 31076.439453,
+  "drawdowns_ge20": [
+   {
+    "peak": "1987-10-05",
+    "peak_close": 213.809998,
+    "trough": "1987-10-26",
+    "trough_close": 128.425003,
+    "drawdown": -0.39934987043964143,
+    "recovered": "1989-05-26",
+    "years_peak_to_trough": 0.06,
+    "years_peak_to_recover": 1.64
+   },
+   {
+    "peak": "1990-07-16",
+    "peak_close": 246.179993,
+    "trough": "1990-10-11",
+    "trough_close": 165.195007,
+    "drawdown": -0.328966562282744,
+    "recovered": "1991-02-06",
+    "years_peak_to_trough": 0.24,
+    "years_peak_to_recover": 0.56
+   },
+   {
+    "peak": "1998-07-20",
+    "peak_close": 1465.890015,
+    "trough": "1998-10-08",
+    "trough_close": 1128.880005,
+    "drawdown": -0.22990129310622254,
+    "recovered": "1998-11-09",
+    "years_peak_to_trough": 0.22,
+    "years_peak_to_recover": 0.31
+   },
+   {
+    "peak": "2000-03-27",
+    "peak_close": 4704.72998,
+    "trough": "2002-10-07",
+    "trough_close": 804.640015,
+    "drawdown": -0.828972115632447,
+    "recovered": "2015-11-03",
+    "years_peak_to_trough": 2.53,
+    "years_peak_to_recover": 15.6
+   },
+   {
+    "peak": "2018-08-29",
+    "peak_close": 7660.180176,
+    "trough": "2018-12-24",
+    "trough_close": 5899.350098,
+    "drawdown": -0.22986797145017968,
+    "recovered": "2019-04-17",
+    "years_peak_to_trough": 0.32,
+    "years_peak_to_recover": 0.63
+   },
+   {
+    "peak": "2020-02-19",
+    "peak_close": 9718.730469,
+    "trough": "2020-03-20",
+    "trough_close": 6994.290039,
+    "drawdown": -0.2803288391102309,
+    "recovered": "2020-06-05",
+    "years_peak_to_trough": 0.08,
+    "years_peak_to_recover": 0.29
+   },
+   {
+    "peak": "2021-11-19",
+    "peak_close": 16573.339844,
+    "trough": "2022-12-28",
+    "trough_close": 10679.339844,
+    "drawdown": -0.3556313968987842,
+    "recovered": "2023-12-15",
+    "years_peak_to_trough": 1.11,
+    "years_peak_to_recover": 2.07
+   },
+   {
+    "peak": "2025-02-19",
+    "peak_close": 22175.599609,
+    "trough": "2025-04-08",
+    "trough_close": 17090.400391,
+    "drawdown": -0.22931507186557276,
+    "recovered": "2025-06-24",
+    "years_peak_to_trough": 0.13,
+    "years_peak_to_recover": 0.34
+   }
+  ]
+ }
+}

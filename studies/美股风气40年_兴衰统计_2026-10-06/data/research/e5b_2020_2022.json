@@ -1,0 +1,1167 @@
+{
+  "era_id": "e5b_2020_2022",
+  "era_range": "2020-2022",
+  "macro_context_cn": "零利率流动性狂潮（B 部分：SPAC 驱动的硬科技故事）。2020-03-15 美联储把联邦基金利率降到 0–0.25%，2020-03-23 宣布按'所需数量'购买国债和 MBS（无上限 QE）；10 年期美债收益率 2020-08-04 低至 0.52%（FRED DGS10）。SPAC 成为把'远期故事'卖给散户的主要管道：按 Ritter 统计 SPAC IPO 2020 年 248 家、2021 年 613 家（募资不含超额配售 $75.3bn / $144.5bn；SEC 2024 年终规则引用 SPAC Analytics 口径为 $83.4bn / $162.5bn，占全美 IPO 数量 55% / 63%），2021Q1 一个季度就有 298 家。ARKK 2021-02-12 收盘 $156.58 见顶，纳指 2021-11-19 收盘 16,057 见顶。转折：2021-04 SEC 员工声明要求 SPAC 认股权证按负债入账，SPAC 发行骤降；通胀上行（CPI 同比 2022-06 达 9.06%，FRED CPIAUCNS 计算），2022-03-16 美联储首次加息，10 年期收益率 2022-10-24 升至 4.25%；2022-03-30 SEC 提出 SPAC 新规（2024-01 定稿）。纳指 2022-12-28 收盘 10,213 见底。远期现金流折现率从 0 抬到 4–5%，对'无收入、只有 PPT 预测'的 de-SPAC 公司是致命一击。 de-SPAC 回报（Ritter 表 15c，2026-09-25 更新）：2020 年合并的 64 家等权 1 年 -3.0%（超额 -35.6%）、3 年 -56.0%（超额 -84.6%）；2021 年合并的 198 家 1 年 -64.2%、3 年 -72.6%（超额 -89.0%）。Klausner-Ohlrogge-Ruan：2019-01 至 2020-06 合并的 47 家 SPAC，合并后 3 个月中位收益 -14.5%。",
+  "macro_sources": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200323b.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+    "https://fred.stlouisfed.org/series/DGS10",
+    "https://fred.stlouisfed.org/series/CPIAUCNS",
+    "https://site.warrington.ufl.edu/ritter/files/IPOs-SPACs.pdf",
+    "https://www.sec.gov/files/rules/final/2024/33-11265.pdf",
+    "https://www.sec.gov/news/public-statement/accounting-reporting-warrants-issued-spacs",
+    "https://www.sec.gov/news/press-release/2022-56",
+    "https://finance.yahoo.com/quote/ARKK/history/",
+    "https://finance.yahoo.com/quote/%5EIXIC/history/",
+    "https://site.warrington.ufl.edu/ritter/files/SPACs.pdf",
+    "https://corpgov.law.harvard.edu/2020/11/19/a-sober-look-at-spacs/"
+  ],
+  "themes": [
+    {
+      "id": "ev_spac",
+      "name_cn": "电动车狂热 + 电动车 SPAC",
+      "name_en": "EV mania and EV SPACs",
+      "one_line_cn": "赌'下一个特斯拉'：任何有电动车/电池/充电桩 PPT 的公司都能经 SPAC 上市并按 2025–2030 年的预测收入估值。",
+      "hype_start": {
+        "date": "2020-06",
+        "event_cn": "Nikola 经 VectoIQ SPAC 于 2020-06-04 开始交易，首周股价翻倍，市值一度超过福特；2020-07 起特斯拉成为全球市值最高车企",
+        "source": "https://en.wikipedia.org/wiki/Nikola_Corporation"
+      },
+      "peak": {
+        "date": "2021-11",
+        "event_cn": "特斯拉 2021-11-04 收盘 $409.97（拆股调整）、市值超 $1 万亿；Rivian 2021-11-10 以 $78 IPO，2021-11-16 收盘 $172.01；KARS/DRIV 电动车 ETF 同期（2021-11-08）见顶",
+        "source": "https://finance.yahoo.com/quote/TSLA/history/"
+      },
+      "trough": {
+        "date": "2023-01",
+        "event_cn": "TSLA 2023-01-03 收盘 $108.10（-74%）；但小票的'底'延续到 2024–2025 年的连环破产（Lordstown 2023-06、Fisker 2024-06、Canoo 2025-01、Nikola 2025-02），KARS ETF 2025-04-08 再创新低 $17.65",
+        "source": "https://finance.yahoo.com/quote/KARS/history/"
+      },
+      "proxy_tickers": [
+        "KARS",
+        "DRIV",
+        "TSLA"
+      ],
+      "proxy_note_cn": "KARS（2018-01 上市）与 DRIV（2018-04 上市）均早于本主题，可直接用；但二者含大量传统车企/中国车企，只能粗略代表。KARS 2021-11-08 收盘 $55.09 → 2025-04-08 $17.65 → 2026-10-06 $28.16。",
+      "what_killed_it_cn": "(1) 加息让'2025 年才有收入'的估值模型崩塌；(2) 供给泛滥：几十家电动车 SPAC 同时募资，产品晚于承诺 2–3 年；(3) 欺诈/虚假宣传：Hindenburg 2020-09 指 Nikola 卡车视频是'溜坡'，创始人 Trevor Milton 2022-10 被判证券欺诈（2025-03 获特朗普赦免）；Lordstown 被做空机构质疑预订单真实性（2021-03，本轮未一手核实）；(4) 竞争：中国车企以成本优势夺走全球份额（特斯拉 2025 年底也失去全球电动车销量第一，见 Wikipedia）——赛道是真的，但小玩家被挤死。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "全球电动车销量 2024 年超过 1,700 万辆，占新车销量 20% 以上；中国接近一半新车为电动",
+          "date": "2025",
+          "source": "https://www.iea.org/reports/global-ev-outlook-2025/executive-summary"
+        },
+        {
+          "claim_cn": "2025 年全球电动车销量超过 2,000 万辆（占新车 1/4）；美国仍略低于 10%，税收抵免结束后年末销量下滑",
+          "date": "2026",
+          "source": "https://www.iea.org/reports/global-ev-outlook-2026/executive-summary"
+        },
+        {
+          "claim_cn": "特斯拉 2025 年底失去全球最大电动车制造商地位（被中国车企超越）",
+          "date": "2025",
+          "source": "https://en.wikipedia.org/wiki/Tesla,_Inc."
+        },
+        {
+          "claim_cn": "本篮子 12 家中 5 家破产/退市清零（Nikola、Lordstown、Fisker、Canoo、Arrival），只有特斯拉超过 2021 年高点",
+          "date": "2026-10",
+          "source": "https://www.sec.gov/Archives/edgar/data/1731289/000173128925000004/nkla-20250218.htm"
+        }
+      ],
+      "time_to_reality": {
+        "years": 4,
+        "from": "2020",
+        "to": "2024",
+        "marker_cn": "全球电动车销量占新车比例超过 20%（IEA）。需求兑现很快，但利润集中在特斯拉和中国车企，SPAC 新势力几乎全军覆没。",
+        "source": "https://www.iea.org/reports/global-ev-outlook-2025/executive-summary"
+      },
+      "basket_method": "当年口径：2020–2021 年经 SPAC/IPO 上市、被媒体称为'下一个特斯拉'的电动车/电池/充电公司（均有 SEC S-4 或 424B4 文件），加龙头特斯拉与中概 NIO；名单按调用方给定（12 家，略超 brief 建议的 10 家）。SPAC 上市的公司 Yahoo 历史包含合并前 SPAC 壳的价格（CCIV、SBE、PSAC 等），峰值可能落在合并前的传闻期。",
+      "companies": [
+        {
+          "name": "Tesla",
+          "ticker_then": "TSLA",
+          "yahoo_ticker": "TSLA",
+          "role_cn": "龙头",
+          "hype_date": "2020-06",
+          "peak_date": "2021-11-04",
+          "peak_price": 409.97,
+          "price_basis": "split-adjusted close (Yahoo; 2020-08 5:1 与 2022-08 3:1 拆股已调整)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-12-11",
+          "final_value_per_share": 380.96,
+          "fate_detail_cn": "2023-01-03 跌到 $108.10（-74%），2024-12-11 收盘 $424.77 首次超过 2021 峰值，2025-12-16 收盘 $489.88 创新高；2025-06-22 在奥斯汀启动 Robotaxi。2026-10-06 收 $380.96。",
+          "sources": [
+            "https://finance.yahoo.com/quote/TSLA/history/",
+            "https://en.wikipedia.org/wiki/Tesla,_Inc."
+          ],
+          "confidence": "high",
+          "notes": "2020-12-21 纳入标普 500（当时纳入的市值最大公司）；2021-10 首次市值破 $1 万亿（Wikipedia，medium）。final_value 为 2026-10-06 价格。"
+        },
+        {
+          "name": "NIO",
+          "ticker_then": "NIO",
+          "yahoo_ticker": "NIO",
+          "role_cn": "明星",
+          "hype_date": "2020-07",
+          "peak_date": "2021-02-09",
+          "peak_price": 62.84,
+          "price_basis": "nominal close (无拆股；盘中最高 2021-01-11 $66.99)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 3.4,
+          "fate_detail_cn": "2026-10-06 收 $3.40，较峰值 -95%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/NIO/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Lucid Group (Churchill Capital IV)",
+          "ticker_then": "CCIV → LCID",
+          "yahoo_ticker": "LCID",
+          "role_cn": "明星",
+          "hype_date": "2021-01",
+          "peak_date": "2021-02-18",
+          "peak_price": 580.5,
+          "price_basis": "split-adjusted close (Yahoo；2025-09-02 1:10 反向拆股；名义价 $58.05，为合并前 CCIV 传闻高点)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 4.185,
+          "fate_detail_cn": "合并前传闻即见顶，合并后 2021-11 再冲高；此后持续下跌并 1:10 反向拆股。2026-10-06 约 $4.19（拆股调整），较峰值约 -99%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/LCID/history/",
+            "https://www.sec.gov/Archives/edgar/data/1811210/000110465921039318/tm219359-1_s4.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:10（2025-09-02）。"
+        },
+        {
+          "name": "Rivian Automotive",
+          "ticker_then": "RIVN",
+          "yahoo_ticker": "RIVN",
+          "role_cn": "明星",
+          "hype_date": "2021-11",
+          "peak_date": "2021-11-16",
+          "peak_price": 172.01,
+          "price_basis": "nominal close (无拆股；IPO 价 $78，盘中最高 $179.47)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 14.545,
+          "fate_detail_cn": "2021-11-10 以 $78 IPO，6 个交易日后见顶；2024-04 低至 $8.40。2026-10-06 约 $14.5，较峰值 -92%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1874178/000119312521328239/d157488d424b4.htm",
+            "https://finance.yahoo.com/quote/RIVN/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "QuantumScape",
+          "ticker_then": "KCAC → QS",
+          "yahoo_ticker": "QS",
+          "role_cn": "卖铲子",
+          "hype_date": "2020-11",
+          "peak_date": "2020-12-22",
+          "peak_price": 131.67,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 4.64,
+          "fate_detail_cn": "固态电池故事，经 Kensington SPAC 上市后一个月见顶；2025-10 一度反弹到 $18.44，2026-10-06 $4.64，较峰值 -96%。至今未大规模量产。",
+          "sources": [
+            "https://finance.yahoo.com/quote/QS/history/",
+            "https://www.sec.gov/Archives/edgar/data/1811414/000119312520249736/d14810ds4.htm"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "ChargePoint (Switchback Energy)",
+          "ticker_then": "SBE → CHPT",
+          "yahoo_ticker": "CHPT",
+          "role_cn": "卖铲子",
+          "hype_date": "2020-09",
+          "peak_date": "2020-12-24",
+          "peak_price": 922.0,
+          "price_basis": "split-adjusted close (Yahoo；2025-07-28 1:20 反向拆股；名义价 $46.10，为合并前 SBE 壳价格)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 8.78,
+          "fate_detail_cn": "充电桩'卖铲子'逻辑，但硬件毛利低、持续亏损；1:20 反向拆股。2026-10-06 $8.78（调整后），较峰值 -99%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CHPT/history/",
+            "https://www.sec.gov/Archives/edgar/data/1777393/000121390020032076/fs42020_switchbackenergy.htm"
+          ],
+          "confidence": "high",
+          "notes": "调用方提示为 1:30，但 Yahoo 拆股事件显示 1:20（2025-07-28），以 Yahoo 为准，建议 lead 用 8-K 再核一次。"
+        },
+        {
+          "name": "Faraday Future (Property Solutions Acq.)",
+          "ticker_then": "PSAC → FFIE → FFAI",
+          "yahoo_ticker": "FFAI",
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2021-01",
+          "peak_date": "2021-02-01",
+          "peak_price": 27590400.0,
+          "price_basis": "split-adjusted close (Yahoo；累计反向拆股 1:1,440,000 = 1:80 2023-08-28、1:3 2024-03-01、1:40 2024-08-19、1:150 2026-07-24；名义价约 $19.16，为 SPAC 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 1.115,
+          "fate_detail_cn": "四次反向拆股、持续增发，股价调整后跌幅接近 100%；2024 年曾被散户当作 meme 股炒作。仍在 Nasdaq 以 FFAI 交易。",
+          "sources": [
+            "https://finance.yahoo.com/quote/FFAI/history/",
+            "https://www.sec.gov/Archives/edgar/data/1805521/000121390021020004/fs42021_propertysolutions.htm"
+          ],
+          "confidence": "high",
+          "notes": "实质上股东价值已基本清零，只是未破产。"
+        },
+        {
+          "name": "Nikola",
+          "ticker_then": "VTIQ → NKLA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-06",
+          "peak_date": "2020-06",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2025-02-19",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2020-09 Hindenburg 做空报告；创始人 Milton 2021-07 被 SEC 起诉、2022-10 定罪（2025-03-27 获赦免）；2024-06-24 1:30 反向拆股；2025-02-19 申请 Chapter 11 并出售资产，2025-04 提交 Form 25 退市、2025-10 Form 15 注销，普通股预计无回收。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1731289/000173128925000004/nkla-20250218.htm",
+            "https://www.sec.gov/Archives/edgar/data/1731289/000173128924000195/nkla-20240620.htm",
+            "https://www.sec.gov/news/press-release/2021-141",
+            "https://www.sec.gov/Archives/edgar/data/1731289/000173128925000026/form25.htm",
+            "https://en.wikipedia.org/wiki/Nikola_Corporation"
+          ],
+          "confidence": "high",
+          "notes": "峰值价未能从一手数据核实（Yahoo 已无历史）。Wikipedia：2020 年中股价超过 $65、市值一度超过福特；申请破产时每股约 $0.44。final_value=0 为'预计无回收'口径（8-K 警示 significant or complete loss）。"
+        },
+        {
+          "name": "Lordstown Motors (DiamondPeak)",
+          "ticker_then": "DPHC → RIDE",
+          "yahoo_ticker": "SNFI",
+          "role_cn": "明星",
+          "hype_date": "2020-08",
+          "peak_date": "2020-09-21",
+          "peak_price": 471.0,
+          "price_basis": "split-adjusted close (Yahoo SNFI 历史；2023-05-24 1:15 反向拆股；名义价 $31.40，盘中 $31.80)",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2023-06-27",
+          "final_value_per_share": 1.66,
+          "fate_detail_cn": "2023-06-27 申请 Chapter 11 并起诉富士康；2024-03-14 重整生效，股权保留、更名 Nu Ride（OTC: NRDE），业务清零只剩诉讼壳；2026-07-21 再更名 Stark Novus Financial（SNFI）转做财富管理。2026-10-06 $1.66 vs 调整后峰值 $471（-99.6%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1759546/000110465923074944/tm2319664d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1759546/000110465924034627/tm248893d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1759546/000149315226034092/form8-k.htm",
+            "https://finance.yahoo.com/quote/SNFI/history/"
+          ],
+          "confidence": "high",
+          "notes": "特殊：破产后股权未被注销（壳延续），按'业务死亡+股东损失>99%'归入 dead；final_value 为 2026-10-06 OTC 价（调整后）。"
+        },
+        {
+          "name": "Fisker",
+          "ticker_then": "SPAQ → FSR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-10",
+          "peak_date": "2021-02",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-06-17",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "Ocean SUV 2023 年交付后质量与现金问题爆发；2024-03 被 NYSE 摘牌（2024-04 Form 25），2024-06-17/19 申请 Chapter 11，2024-10 与债权人达成清算方案，股东无回收（预计）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1720990/000119312524167032/d798771d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1720990/000087666124000265/xslF25X02/primary_doc.xml",
+            "https://en.wikipedia.org/wiki/Fisker_Inc."
+          ],
+          "confidence": "medium",
+          "notes": "峰值价未核实（Yahoo 无历史）。股权注销细节未从计划文件一手核实，按清算型 Chapter 11 惯例与 Wikipedia 记为 0。"
+        },
+        {
+          "name": "Canoo (Hennessy Capital IV)",
+          "ticker_then": "HCAC → GOEV",
+          "yahoo_ticker": "GOEVQ",
+          "role_cn": "明星",
+          "hype_date": "2020-08",
+          "peak_date": "2021-01-13",
+          "peak_price": 8740.0,
+          "price_basis": "split-adjusted close (Yahoo GOEVQ；1:23 2024-03-08、1:20 2024-12-24 反向拆股；名义价约 $19.00)",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2025-01-17",
+          "final_value_per_share": 0.0011,
+          "fate_detail_cn": "2025-01-17 直接申请 Chapter 7 清算，资产由托管人变卖；2025-06 Form 25 退市。OTC 残值 $0.0011（调整后）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1750153/000162828025001918/goev-20250117.htm",
+            "https://www.sec.gov/Archives/edgar/data/1750153/000135445725000483/xslF25X02/primary_doc.xml",
+            "https://finance.yahoo.com/quote/GOEVQ/history/"
+          ],
+          "confidence": "high",
+          "notes": "Canoo 2024-03 还收购过 Arrival 的资产（Wikipedia）。"
+        },
+        {
+          "name": "Arrival (CIIG Merger)",
+          "ticker_then": "CIIC → ARVL",
+          "yahoo_ticker": "ARVLF",
+          "role_cn": "明星",
+          "hype_date": "2020-11",
+          "peak_date": "2021-03-25",
+          "peak_price": 1140.0,
+          "price_basis": "split-adjusted close (Yahoo ARVLF；2023-04-14 1:50 反向拆股；名义价 $22.80，为合并后首日；合并前 CIIC 壳的更高价不在此序列)",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-03-21",
+          "final_value_per_share": 0.0001,
+          "fate_detail_cn": "英国电动货车公司，2024-02 英国子公司进入破产管理，2024-03 被 Nasdaq 摘牌（Form 25-NSE），资产被 Canoo 收购；OTC 残值 $0.0001。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1835059/000135445724000191/xslF25X02/primary_doc.xml",
+            "https://en.wikipedia.org/wiki/Arrival_(company)",
+            "https://finance.yahoo.com/quote/ARVLF/history/"
+          ],
+          "confidence": "medium",
+          "notes": "卢森堡母公司层面的破产程序日期未一手核实。"
+        }
+      ]
+    },
+    {
+      "id": "av_lidar_spac",
+      "name_cn": "自动驾驶 / 激光雷达 SPAC 潮",
+      "name_en": "Autonomous driving and lidar SPAC wave",
+      "one_line_cn": "赌 L4 自动驾驶 3–5 年内普及，每辆车都要装几颗激光雷达，于是 lidar 和无人卡车公司按 2025 年的收入预测上市。",
+      "hype_start": {
+        "date": "2020-09",
+        "event_cn": "Velodyne 与 Graf Industrial SPAC 于 2020-09-29 完成合并上市，是这一轮第一家 SPAC 上市的 lidar 公司；随后 Luminar（2020-12）、Innoviz、Ouster、Aeva 接踵而至",
+        "source": "https://www.sec.gov/Archives/edgar/data/1745317/000110465920112259/tm2032425d1_8k.htm"
+      },
+      "peak": {
+        "date": "2020-12",
+        "event_cn": "lidar 股大多在 2020-12 至 2021-02 见顶：Innoviz 2020-12-23、Ouster(CLA) 2020-12-24、Aeva(IPV) 2021-02-10；无人卡车股 TuSimple 2021-06-30、Aurora 2021-11-19 见顶",
+        "source": "https://finance.yahoo.com/quote/OUST/history/"
+      },
+      "trough": {
+        "date": "2022-12",
+        "event_cn": "Aurora 2022-12-27 收盘 $1.14（-93%）；lidar 继续下探：Ouster 2023-04-25 调整后 $3.24、Aeva 2024-07-02 调整后 $2.29；Embark 2023 年清盘出售、TuSimple 2024 年退市、Luminar 2025-12 破产",
+        "source": "https://finance.yahoo.com/quote/AUR/history/"
+      },
+      "proxy_tickers": [
+        "ARKQ"
+      ],
+      "proxy_note_cn": "没有纯 lidar/自动驾驶 ETF；ARKQ（自主技术与机器人，2014 上市）含特斯拉等，只能粗略参考。建议用本篮子等权计算。",
+      "what_killed_it_cn": "(1) 技术时间表严重滞后：车企把 L3/L4 一再推迟，lidar 定点订单变成小批量；(2) 中国 lidar 厂（禾赛、速腾、华为）把单价打下来并拿走大部分份额；(3) 加息 + 现金消耗，de-SPAC 公司反复增发、反向拆股；(4) 治理问题：Luminar 创始人 2025-05 因道德调查辞职，2025-11 沃尔沃取消标配后 2025-12 破产。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "Waymo 2020-10 在凤凰城首家向公众提供无安全员服务；截至 2026-06 在 10 个美国都会区运营、3,871 辆车、每周 50 万次付费出行，2026-02 融资 $160 亿估值 $1,260 亿",
+          "date": "2026-06",
+          "source": "https://en.wikipedia.org/wiki/Waymo"
+        },
+        {
+          "claim_cn": "特斯拉 Robotaxi 2025-06-22 在奥斯汀限量启动；截至 2026-09 在德州（奥斯汀、达拉斯、休斯顿）和佛州（迈阿密、奥兰多、坦帕）无车内安全员运营，湾区仍有安全员；2026-09-03 奥斯汀加入 Cybercab",
+          "date": "2026-09",
+          "source": "https://en.wikipedia.org/wiki/Tesla_Robotaxi"
+        },
+        {
+          "claim_cn": "Aurora 2025-05-01 在德州启动商业无人驾驶卡车服务；2026Q2 信：新一代 International LT 无人卡车上路，目标 2026 年底 200 辆，累计约 44 万英里无人里程",
+          "date": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/1828108/000182810826000075/aurora26q2shareholderlet.htm"
+        },
+        {
+          "claim_cn": "Yole《Automotive LiDAR 2025》：车载 lidar 份额禾赛 33% 居首，其后为速腾、华为、图达通——前四全是中国厂商",
+          "date": "2025",
+          "source": "https://en.wikipedia.org/wiki/Hesai_Technology"
+        }
+      ],
+      "time_to_reality": {
+        "years": 6,
+        "from": "2020",
+        "to": "2026",
+        "marker_cn": "Robotaxi 进入多城市商业规模（Waymo 每周 50 万次付费出行）。但价值主要归 Alphabet（未上市子公司）和中国 lidar 厂，当年 SPAC 篮子里 8 家只有 Ouster/Aurora 还算'活着'。",
+        "source": "https://en.wikipedia.org/wiki/Waymo"
+      },
+      "basket_method": "当年口径：2020–2021 年经 SPAC 上市的 lidar 公司（Velodyne/Luminar/Ouster/Aeva/Innoviz，均有 SEC S-4/F-4）与无人卡车公司（TuSimple IPO、Aurora/Embark SPAC），名单按调用方给定。",
+      "companies": [
+        {
+          "name": "Luminar Technologies (Gores Metropoulos)",
+          "ticker_then": "GMHI → LAZR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-08",
+          "peak_date": "2020-12",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2025-12-15",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2020-12 合并上市；2024-11-20 1:15 反向拆股；创始人 Austin Russell 2025-05-14 因道德调查辞去 CEO；2025-12-15 申请 Chapter 11，2026-01 退市，2026-04-06 计划生效，普通股'无对价注销、无价值'；资产 2026-02 出售（Wikipedia 称 MicroVision 以 $3,300 万收购）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1758057/000114036125045494/ef20061234_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1758057/000114036126013403/ef20069881_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1758057/000162828024048992/lazr-20241120.htm",
+            "https://www.sec.gov/Archives/edgar/data/1758057/000162828025025599/lazr-20250514.htm",
+            "https://en.wikipedia.org/wiki/Luminar_Technologies"
+          ],
+          "confidence": "high",
+          "notes": "注意：Yahoo 的 LAZR 代码自 2026-06-30 已被 Tema Photonics & Optical ETF 占用，勿误拉。峰值价未核实。"
+        },
+        {
+          "name": "Velodyne Lidar (Graf Industrial)",
+          "ticker_then": "GRAF → VLDR",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "2020-07",
+          "peak_date": "2020-09",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2023-02-10",
+          "final_value_per_share": 1.26,
+          "fate_detail_cn": "与 Ouster 换股合并，每股 VLDR 换 0.8204 股 OUST；按 OUST 2023-02-10 收盘（拆股前名义 $1.53）折合约 $1.26/股。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1745317/000119312523033024/d443276d8k.htm",
+            "https://finance.yahoo.com/quote/OUST/history/"
+          ],
+          "confidence": "medium",
+          "notes": "final_value 为本研究按换股比例 × OUST 收盘价推算（OUST Yahoo 调整后 $15.30 ÷ 10）。峰值价未核实（Yahoo 无 VLDR 历史）。"
+        },
+        {
+          "name": "Ouster (Colonnade Acquisition)",
+          "ticker_then": "CLA → OUST",
+          "yahoo_ticker": "OUST",
+          "role_cn": "明星",
+          "hype_date": "2020-12",
+          "peak_date": "2020-12-24",
+          "peak_price": 162.5,
+          "price_basis": "split-adjusted close (Yahoo；2023-04-21 1:10 反向拆股；名义 $16.25，为合并前 CLA 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 44.91,
+          "fate_detail_cn": "吞并 Velodyne 后成为美国 lidar 幸存者；2023-04 低至调整后 $3.24，2026-06 回到 $62.5，2026-10-06 $44.91，仍较峰值 -72%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/OUST/history/",
+            "https://www.sec.gov/Archives/edgar/data/1816581/000119312520324674/d10549ds4.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:10。"
+        },
+        {
+          "name": "Aeva Technologies (InterPrivate)",
+          "ticker_then": "IPV → AEVA",
+          "yahoo_ticker": "AEVA",
+          "role_cn": "明星",
+          "hype_date": "2020-11",
+          "peak_date": "2021-02-10",
+          "peak_price": 100.0,
+          "price_basis": "split-adjusted close (Yahoo；2024-03-19 1:5 反向拆股；名义 $20.00，为合并前 IPV 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 14.695,
+          "fate_detail_cn": "FMCW 4D lidar；2024-07 低至调整后 $2.29，2025-06 反弹至 $37.79，2026-10-06 $14.70（-85%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/AEVA/history/",
+            "https://www.sec.gov/Archives/edgar/data/1789029/000121390020040791/fs42020_interprivateacq.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:5。"
+        },
+        {
+          "name": "Innoviz Technologies (Collective Growth)",
+          "ticker_then": "CGRO → INVZ",
+          "yahoo_ticker": "INVZ",
+          "role_cn": "明星",
+          "hype_date": "2020-12",
+          "peak_date": "2020-12-23",
+          "peak_price": 16.0,
+          "price_basis": "nominal close (无拆股；为合并前 CGRO 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 0.327,
+          "fate_detail_cn": "以色列 lidar，拿到大众等定点但量小；2026-10-06 $0.33，较峰值 -98%，已低于 Nasdaq $1 门槛。",
+          "sources": [
+            "https://finance.yahoo.com/quote/INVZ/history/"
+          ],
+          "confidence": "high",
+          "notes": "低于 $1，存在退市/反向拆股风险（未核实是否已收到通知）。"
+        },
+        {
+          "name": "TuSimple",
+          "ticker_then": "TSP",
+          "yahoo_ticker": "TSPH",
+          "role_cn": "明星",
+          "hype_date": "2021-04",
+          "peak_date": "2021-06-30",
+          "peak_price": 71.24,
+          "price_basis": "nominal close (IPO 价 $40；盘中最高 $79.84)",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-01-29",
+          "final_value_per_share": 0.165,
+          "fate_detail_cn": "2021-04-15 以 $40 IPO；后退出美国无人卡车业务（原因细节本轮未一手核实），2024-01 主动从 Nasdaq 退市（Form 25）、2024-02 注销登记；现名 CreateAI（转做 AI 动画/游戏），OTC 约 $0.165（-99.8%）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1823593/000119312521119311/d909743d424b4.htm",
+            "https://www.sec.gov/Archives/edgar/data/1823593/000119312524017435/d632423d25.htm",
+            "https://www.sec.gov/Archives/edgar/data/1823593/000119312524027409/d625582d1512g.htm",
+            "https://finance.yahoo.com/quote/TSPH/history/"
+          ],
+          "confidence": "medium",
+          "notes": "未破产，股权仍在 OTC 交易；按'退市 + 损失 >99%'归入 dead。更名 CreateAI 仅见于 Yahoo 名称，未从 SEC 文件核实。"
+        },
+        {
+          "name": "Aurora Innovation (Reinvent Technology Partners Y)",
+          "ticker_then": "RTPY → AUR",
+          "yahoo_ticker": "AUR",
+          "role_cn": "明星",
+          "hype_date": "2021-07",
+          "peak_date": "2021-11-19",
+          "peak_price": 17.11,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 5.655,
+          "fate_detail_cn": "2022-12 低至 $1.14；2025-05-01 在德州启动商业无人卡车，技术兑现但股价 2026-10-06 $5.66 仍较峰值 -67%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/AUR/history/",
+            "https://www.sec.gov/Archives/edgar/data/1828108/000182810825000078/aur-20250501.htm",
+            "https://www.sec.gov/Archives/edgar/data/1828108/000182810826000075/aurora26q2shareholderlet.htm"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Embark Trucks (Northern Genesis II)",
+          "ticker_then": "NGAB → EMBK",
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2021-06",
+          "peak_date": "2021-11",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2023-08-02",
+          "final_value_per_share": 2.88,
+          "fate_detail_cn": "2021-11 合并上市；2022-08-16 1:20 反向拆股；2023-03-01 裁员约 230 人、实际停业；2023-08 被 Applied Intuition 以每股 $2.88 现金收购（相当于拆股前 $0.144）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1827980/000110465923086614/tm2322401d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1827980/000182798022000069/embk-20220815.htm",
+            "https://www.sec.gov/Archives/edgar/data/1827980/000114036123009933/brhc10049273_8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "收购价对应的是拆股后股数；峰值价未核实（Yahoo 无历史），收购价相对 $10 SPAC 发行价（拆股前口径）约 -98.6%。"
+        }
+      ]
+    },
+    {
+      "id": "space_spac",
+      "name_cn": "太空 SPAC",
+      "name_en": "Space SPACs",
+      "one_line_cn": "赌太空旅游、小火箭发射、卫星直连手机会在几年内变成千亿市场，SPAC 让散户第一次能买到'太空股'。",
+      "hype_start": {
+        "date": "2019-10",
+        "event_cn": "Virgin Galactic 与 Social Capital Hedosophia（IPOA）合并，2019-10 成为首家上市的太空旅游公司",
+        "source": "https://www.sec.gov/Archives/edgar/data/1706946/000119312519215509/d785777ds4.htm"
+      },
+      "peak": {
+        "date": "2021-02",
+        "event_cn": "SPCE 2021-02-11 收盘调整后 $1,188.2（名义 $59.41）；Procure Space ETF（UFO）2021-02-12 收盘 $31.98",
+        "source": "https://finance.yahoo.com/quote/SPCE/history/"
+      },
+      "trough": {
+        "date": "2023-10",
+        "event_cn": "UFO ETF 2023-10-27 收盘 $15.09（-53%）；个股底更晚：Rocket Lab 2024-04-15 $3.53、AST SpaceMobile 2024-04-02 $2.01、Planet 2024-04-30 $1.69",
+        "source": "https://finance.yahoo.com/quote/UFO/history/"
+      },
+      "proxy_tickers": [
+        "UFO",
+        "ARKX"
+      ],
+      "proxy_note_cn": "UFO 于 2019-04 上市，覆盖整个主题；ARKX 2021-03-30 才上市（几乎买在顶部），不适合测上涨段。",
+      "what_killed_it_cn": "(1) 太空旅游被证伪为小生意：Virgin Galactic 2023-06 才首飞商业航班，2024 年 Unity 退役，只飞了 7 次商业任务；(2) 欺诈/误导：SEC 2021-07-13 起诉 Stable Road SPAC 与 Momentus 夸大技术和隐瞒国安风险；(3) 加息 + 持续增发、反向拆股；2024–2026 复苏只发生在真有收入和合同的公司（Rocket Lab 发射+卫星部件、AST 与 AT&T/Verizon 的直连手机、Planet 的政府数据合同）。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "Rocket Lab 的 Electron 截至 2026-01 是全球在役最频繁的小型运载火箭；中型可复用火箭 Neutron 仍在研制",
+          "date": "2026-01",
+          "source": "https://en.wikipedia.org/wiki/Rocket_Lab"
+        },
+        {
+          "claim_cn": "Virgin Galactic 首次商业飞行 Galactic 01 在 2023-06，一年后 Unity 完成最后一次飞行（Galactic 07）转向 Delta 级；2026 年重新接受预订，票价 $75 万",
+          "date": "2026",
+          "source": "https://en.wikipedia.org/wiki/Virgin_Galactic"
+        },
+        {
+          "claim_cn": "AST SpaceMobile 2024 年开始有政府合同收入；BlueBird 卫星为低轨最大商业通信阵列之一，大规模商业收入依赖与 AT&T、Verizon 等运营商的服务开通",
+          "date": "2025",
+          "source": "https://en.wikipedia.org/wiki/AST_SpaceMobile"
+        }
+      ],
+      "time_to_reality": {
+        "years": 4,
+        "from": "2021",
+        "to": "2025",
+        "marker_cn": "RKLB（2024-11-21）、ASTS（2024-08-15）、PL（2025-09-23）收盘先后超过 2021 年高点，对应发射频次和卫星合同兑现；太空旅游一支至今未兑现。",
+        "source": "https://finance.yahoo.com/quote/RKLB/history/"
+      },
+      "basket_method": "当年口径：2019–2021 年经 SPAC 上市的太空公司（均有 SEC S-4）：太空旅游 SPCE、小火箭 RKLB/ASTR、在轨运输 MNTS、卫星数据 SPIR/PL、卫星直连手机 ASTS。调用方给 6 家，另加 2021-12 上市的 Planet Labs 以补足'卫星数据'类。",
+      "companies": [
+        {
+          "name": "Virgin Galactic (Social Capital Hedosophia)",
+          "ticker_then": "IPOA → SPCE",
+          "yahoo_ticker": "SPCE",
+          "role_cn": "龙头",
+          "hype_date": "2019-10",
+          "peak_date": "2021-02-11",
+          "peak_price": 1188.2,
+          "price_basis": "split-adjusted close (Yahoo；2024-06-17 1:20 反向拆股；名义 $59.41，盘中最高名义 $62.80 于 2021-02-04)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 3.08,
+          "fate_detail_cn": "首家太空 SPAC；2021-07 Branson 亲自试飞成为高光。商业飞行只进行了 7 次即停飞等待 Delta 级飞船。2026-10-06 $3.08，较调整后峰值 -99.7%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/SPCE/history/",
+            "https://www.sec.gov/Archives/edgar/data/1706946/000119312524161660/d813761d8k.htm",
+            "https://en.wikipedia.org/wiki/Virgin_Galactic"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:20。"
+        },
+        {
+          "name": "Astra Space (Holicity)",
+          "ticker_then": "HOL → ASTR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2021-02",
+          "peak_date": "2021",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2024-07-18",
+          "final_value_per_share": 0.5,
+          "fate_detail_cn": "2021-07 合并上市；火箭多次发射失败；2023-09 1:15 反向拆股；2024-07-18 由创始人 Kemp 和 London 以每股 $0.50 现金私有化（相当于拆股前 $0.033）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1814329/000119312524180782/d833105d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1814329/000119312523233978/d520955d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1814329/000119312521205288/d196589d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值价未核实（Yahoo 无历史）。"
+        },
+        {
+          "name": "Momentus (Stable Road Acquisition)",
+          "ticker_then": "SRAC → MNTS",
+          "yahoo_ticker": "MNTS",
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2020-10",
+          "peak_date": "2021-02-09",
+          "peak_price": 342750.0,
+          "price_basis": "split-adjusted close (Yahoo；累计反向拆股约 1:12,495 = 1:50 2023-08、1:14 2024-12、1:17.85 2025-12-17；名义约 $27.4，为合并前 SRAC 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 3.59,
+          "fate_detail_cn": "SEC 2021-07-13 起诉 SPAC、发起人与 Momentus 及其创始人误导性披露；合并后连续三次反向拆股。2026-10-06 $3.59，调整后跌幅接近 100%。",
+          "sources": [
+            "https://www.sec.gov/news/press-release/2021-124",
+            "https://www.sec.gov/Archives/edgar/data/1781162/000114036125045491/ef20061090_8k.htm",
+            "https://finance.yahoo.com/quote/MNTS/history/"
+          ],
+          "confidence": "high",
+          "notes": "SEC 2026-08-11 有一份 Form 25-NSE（可能针对认股权证），Yahoo 仍显示 NasdaqCM 交易，lead 需核实普通股是否仍在 Nasdaq。"
+        },
+        {
+          "name": "Rocket Lab (Vector Acquisition)",
+          "ticker_then": "VACQ → RKLB",
+          "yahoo_ticker": "RKLB",
+          "role_cn": "明星",
+          "hype_date": "2021-03",
+          "peak_date": "2021-09-09",
+          "peak_price": 20.72,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-11-21",
+          "final_value_per_share": 75.76,
+          "fate_detail_cn": "2021-08-25 合并上市；2024-04 低至 $3.53；2024-11-21 收盘 $22.41 首次超过 2021 峰值，2026-05-27 收盘 $150.23；2026-10-06 $75.76。",
+          "sources": [
+            "https://finance.yahoo.com/quote/RKLB/history/",
+            "https://www.sec.gov/Archives/edgar/data/1819994/000119312521200567/d169841ds4.htm",
+            "https://en.wikipedia.org/wiki/Rocket_Lab"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Spire Global (NavSight)",
+          "ticker_then": "NSH → SPIR",
+          "yahoo_ticker": "SPIR",
+          "role_cn": "明星",
+          "hype_date": "2021-03",
+          "peak_date": "2021-09-22",
+          "peak_price": 147.6,
+          "price_basis": "split-adjusted close (Yahoo；2023-08-31 1:8 反向拆股；名义 $18.45)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 10.935,
+          "fate_detail_cn": "卫星数据公司；2023-06 低至调整后 $3.34，2026-10-06 $10.94，较峰值 -93%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/SPIR/history/",
+            "https://www.sec.gov/Archives/edgar/data/1816017/000095017023045434/spir-20230830.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:8。"
+        },
+        {
+          "name": "AST SpaceMobile (New Providence)",
+          "ticker_then": "NPA → ASTS",
+          "yahoo_ticker": "ASTS",
+          "role_cn": "明星",
+          "hype_date": "2020-12",
+          "peak_date": "2021-02-09",
+          "peak_price": 22.5,
+          "price_basis": "nominal close (无拆股；为合并前 NPA 壳价)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-08-15",
+          "final_value_per_share": 63.34,
+          "fate_detail_cn": "2024-04 低至 $2.01；BlueBird 发射与运营商协议推动，2024-08-15 收盘 $31.36 首超 2021 峰值，2026-05-28 收盘 $133.09；2026-10-06 $63.34。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ASTS/history/",
+            "https://en.wikipedia.org/wiki/AST_SpaceMobile"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Planet Labs (dMY Technology IV)",
+          "ticker_then": "DMYQ → PL",
+          "yahoo_ticker": "PL",
+          "role_cn": "明星",
+          "hype_date": "2021-07",
+          "peak_date": "2021-11-22",
+          "peak_price": 11.84,
+          "price_basis": "nominal close (无拆股；SPAC 壳期间)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2025-09-23",
+          "final_value_per_share": 18.48,
+          "fate_detail_cn": "2024-04 低至 $1.69；2025-09-23 收盘首超 2021 峰值，2026-05-28 收盘 $51.40；2026-10-06 $18.48。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PL/history/"
+          ],
+          "confidence": "medium",
+          "notes": "调用方名单外的补充；合并完成日期（2021-12）未从 SEC 一手核实。"
+        }
+      ]
+    },
+    {
+      "id": "clean_energy_v2",
+      "name_cn": "清洁能源 2.0（2020–21）",
+      "name_en": "Clean energy v2 (2020-21)",
+      "one_line_cn": "赌零利率 + 拜登绿色政策让光伏、氢能、燃料电池进入指数级增长，ETF 资金流推着成分股一起涨。",
+      "hype_start": {
+        "date": "2020-04",
+        "event_cn": "ICLN 从 2020-03-23 收盘 $8.33 起涨，美国大选日 2020-11-03 已到 $20.15；Plug Power 同期从 $2.76 涨到 $16.95",
+        "source": "https://finance.yahoo.com/quote/ICLN/history/"
+      },
+      "peak": {
+        "date": "2021-01",
+        "event_cn": "ICLN 2021-01-07 收盘 $33.41（较 2020-03 低点 4 倍）；PLUG 2021-01-26 收盘 $73.18（26 倍）；PBW 2021-02-09、TAN 2021-02-09 见顶",
+        "source": "https://finance.yahoo.com/quote/ICLN/history/"
+      },
+      "trough": {
+        "date": "2025-04",
+        "event_cn": "ICLN 2025-04-08 收盘 $10.56（-68%）、PBW $13.42（-90%）、TAN $26.03（-79%）；期间 SunPower（2024-08）、Sunnova（2025-06）破产",
+        "source": "https://finance.yahoo.com/quote/PBW/history/"
+      },
+      "proxy_tickers": [
+        "ICLN",
+        "TAN",
+        "PBW"
+      ],
+      "proxy_note_cn": "三只 ETF 均早于本主题（2005–2008 上市），可直接用于主题回撤。注意 Enphase 的峰值在 2022-12（IRA 通过后），晚于 ETF 峰值。",
+      "what_killed_it_cn": "(1) 估值透支：ETF 资金涌入使小盘成分股估值失真；(2) 加息直接打击户用光伏的贷款/租赁模式（SunPower、Sunnova 都是融资型商业模式）；(3) 加州 NEM 3.0 削减户用光伏上网收益（本轮未一手核实日期）；(4) 氢能需求和政策补贴远低于预期，Plug Power 长期亏损和持续稀释；(5) 2025 年联邦税收抵免收紧（本轮未逐条核实）。反例：Bloom Energy 因 AI 数据中心'即用型'现场电力需求在 2025 年创新高——兑现的是一个当年没人讲的故事。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "美国 2023 年公用事业级光伏发电 1,650 亿千瓦时（占 3.9%），另有约 736 亿千瓦时小型屋顶光伏",
+          "date": "2023",
+          "source": "https://www.eia.gov/tools/faqs/faq.php?id=427&t=3"
+        },
+        {
+          "claim_cn": "SunPower 2024-08-05 申请 Chapter 11、Sunnova 2025-06-08 申请 Chapter 11——户用光伏两大龙头破产",
+          "date": "2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1772695/000177269525000105/nova-20250608.htm"
+        },
+        {
+          "claim_cn": "Bloom Energy 2024-11 获 AEP 1 GW 燃料电池合同、2025-02 Equinix 合同扩至 100 MW 以上，服务 AI 数据中心",
+          "date": "2025",
+          "source": "https://en.wikipedia.org/wiki/Bloom_Energy"
+        }
+      ],
+      "time_to_reality": {
+        "years": null,
+        "from": "2020",
+        "to": null,
+        "marker_cn": "光伏装机本身在 2020 年前已是现实并持续增长，但'清洁能源股'没有兑现：ICLN 2026-10-06 $17.45 仍较 2021 峰值 -48%。氢能至 2026 年仍未形成规模。唯一大赢家 Bloom 的兑现来自 AI 用电（2024–25），与当年叙事不同。",
+        "source": "https://finance.yahoo.com/quote/ICLN/history/"
+      },
+      "basket_method": "当年口径：2021-01 清洁能源 ETF（ICLN/PBW/TAN）中涨幅最大、被媒体反复点名的美股成分：氢能 PLUG、燃料电池 FCEL/BE、光伏 ENPH/SPWR、户用光伏 NOVA。名单按调用方给定；ETF 当时的精确持仓权重本轮未取得一手文件。",
+      "companies": [
+        {
+          "name": "Plug Power",
+          "ticker_then": "PLUG",
+          "yahoo_ticker": "PLUG",
+          "role_cn": "明星",
+          "hype_date": "2020-06",
+          "peak_date": "2021-01-26",
+          "peak_price": 73.18,
+          "price_basis": "nominal close (2011 年后无拆股；盘中 $75.49)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 1.89,
+          "fate_detail_cn": "绿氢故事；长期亏损与持续增发，2025-05 低至 $0.70。2026-10-06 $1.89，较峰值 -97%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PLUG/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Enphase Energy",
+          "ticker_then": "ENPH",
+          "yahoo_ticker": "ENPH",
+          "role_cn": "卖铲子",
+          "hype_date": "2020-06",
+          "peak_date": "2022-12-02",
+          "peak_price": 336.0,
+          "price_basis": "nominal close (无拆股；盘中最高 2022-12-05 $339.92)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 33.285,
+          "fate_detail_cn": "微型逆变器龙头，唯一盈利的明星；但其峰值在 2022-12（IRA 后），比 ETF 晚近两年；户用光伏需求崩塌后 2025-11 低至 $26.12，2026-10-06 $33.29（-90%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ENPH/history/"
+          ],
+          "confidence": "high",
+          "notes": "如只看 2021 年第一波，峰值在 2021 年初（本轮未单独取值）。"
+        },
+        {
+          "name": "SunPower",
+          "ticker_then": "SPWR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-08",
+          "peak_date": "2021-01",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-08-05",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2024-08-05 申请 Chapter 11，Blue Raven 等资产卖给 Complete Solaria；2024-09 NYSE 摘牌。股东预计无回收。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/867773/000086777324000086/spwr-20240802.htm",
+            "https://www.sec.gov/Archives/edgar/data/867773/000135445724000708/xslF25X02/primary_doc.xml"
+          ],
+          "confidence": "high",
+          "notes": "重要：Yahoo 的 SPWR 现在是 Complete Solaria 改名的'SunPower Inc.'（CIK 1838987，历史从 2023 年开始），不是老 SunPower（CIK 867773），勿拉错。峰值价未核实。"
+        },
+        {
+          "name": "Sunnova Energy International",
+          "ticker_then": "NOVA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-08",
+          "peak_date": "2021-02",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2025-06-08",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "户用光伏租赁/贷款平台；2025-06-08 申请 Chapter 11，次日 NYSE 摘牌，2025-06 出售资产。8-K 警示普通股可能全部损失。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1772695/000177269525000105/nova-20250608.htm",
+            "https://www.sec.gov/Archives/edgar/data/1772695/000087666125000435/xslF25X02/primary_doc.xml",
+            "https://www.sec.gov/Archives/edgar/data/1772695/000177269525000114/nova-20250616.htm"
+          ],
+          "confidence": "medium",
+          "notes": "峰值价未核实；股权最终注销未从计划文件核实（按破产惯例记 0）。"
+        },
+        {
+          "name": "FuelCell Energy",
+          "ticker_then": "FCEL",
+          "yahoo_ticker": "FCEL",
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2020-11",
+          "peak_date": "2021-02-09",
+          "peak_price": 838.8,
+          "price_basis": "split-adjusted close (Yahoo；2024-11-11 1:30 反向拆股；名义 $27.96)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 18.68,
+          "fate_detail_cn": "长期亏损的老燃料电池公司，2021 年借题暴涨；1:30 反向拆股后 2025-04 低至 $3.73，2026-10-06 $18.68，仍较峰值 -98%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/FCEL/history/",
+            "https://www.sec.gov/Archives/edgar/data/886128/000110465924115093/tm2427658d1_8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:30（此前 2015、2019 各有 1:12）。"
+        },
+        {
+          "name": "Bloom Energy",
+          "ticker_then": "BE",
+          "yahoo_ticker": "BE",
+          "role_cn": "明星",
+          "hype_date": "2020-11",
+          "peak_date": "2021-02-08",
+          "peak_price": 42.65,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2025-08-13",
+          "final_value_per_share": 291.31,
+          "fate_detail_cn": "2024-02 低至 $8.58；AI 数据中心现场供电需求爆发，2025-08-13 首超 2021 峰值，2026-06-22 收盘 $345.85；2026-10-06 $291.31。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BE/history/",
+            "https://en.wikipedia.org/wiki/Bloom_Energy"
+          ],
+          "confidence": "high",
+          "notes": "兑现的是新故事（AI 电力），不是 2021 年的'氢能/碳中和'故事。"
+        }
+      ]
+    },
+    {
+      "id": "gene_editing",
+      "name_cn": "基因编辑 / 基因组学",
+      "name_en": "Gene editing and genomics",
+      "one_line_cn": "赌 CRISPR 很快变成'可治愈遗传病的平台'，测序和合成生物学成为'生物学的摩尔定律'（ARK 叙事）。",
+      "hype_start": {
+        "date": "2020-10",
+        "event_cn": "2020-10-07 诺贝尔化学奖授予 CRISPR 发明者 Charpentier 与 Doudna；ARKG 从 2020-03-16 $24.50 涨到大选日 $67.08",
+        "source": "https://www.nobelprize.org/prizes/chemistry/2020/press-release/"
+      },
+      "peak": {
+        "date": "2021-01",
+        "event_cn": "ARKG 2021-01-20 收盘 $112.47；CRSP 2021-01-14 $210.04、EDIT 2021-01-08 见顶；Intellia 因首个体内 CRISPR 人体数据（NEJM 2021）在 2021-06/09 再冲高",
+        "source": "https://finance.yahoo.com/quote/ARKG/history/"
+      },
+      "trough": {
+        "date": "2025-04",
+        "event_cn": "ARKG 2025-04-08 收盘 $18.34（-84%）；同日 CRSP $31.27、NTLA $6.28、EDIT $0.98、BEAM $14.54",
+        "source": "https://finance.yahoo.com/quote/ARKG/history/"
+      },
+      "proxy_tickers": [
+        "ARKG",
+        "XBI"
+      ],
+      "proxy_note_cn": "ARKG（2014 上市）即当年叙事的载体；XBI 为更宽的生物科技对照（2021-02-08 见顶，2026-08 已基本收复）。",
+      "what_killed_it_cn": "(1) 临床时间表：从首个人体数据到获批、再到商业放量都要数年，Casgevy 获批后放量很慢（复杂的骨髓清除+细胞回输流程）；(2) 加息对长久期、无收入生物科技估值打击最大，XBI 2022-05 跌去 64%；(3) 安全事件：Intellia 2025-10 暂停 III 期 MAGNITUDE 给药；(4) 基因组学'平台'公司（Invitae、Ginkgo）靠增发和并购扩张，现金流始终为负，Invitae 2024 年破产、Ginkgo 1:40 反向拆股。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "FDA 2023-12-08 批准 Casgevy 治疗镰状细胞病，为首个获批的基因组编辑疗法",
+          "date": "2023-12-08",
+          "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+        },
+        {
+          "claim_cn": "Casgevy 收入：2026 上半年 $1.193 亿（Q2 $7,640 万；2025 年 Q2 仅 $3,040 万）——真实但规模很小",
+          "date": "2026-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/875320/000087532026000256/ex-991_q22026.htm"
+        },
+        {
+          "claim_cn": "Intellia 2025-10-27 暂停 nex-z 的 MAGNITUDE / MAGNITUDE-2 III 期试验给药与筛选",
+          "date": "2025-10-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652130/000119312525250757/d44351d8k.htm"
+        },
+        {
+          "claim_cn": "首个体内 CRISPR 人体数据：CRISPR-Cas9 In Vivo Gene Editing for Transthyretin Amyloidosis（NEJM 2021）",
+          "date": "2021",
+          "source": "https://doi.org/10.1056/NEJMoa2107454"
+        }
+      ],
+      "time_to_reality": {
+        "years": 3,
+        "from": "2020",
+        "to": "2023",
+        "marker_cn": "首个 CRISPR 疗法获 FDA 批准（2023-12-08）。但'获批'≠'商业成功'：到 2026 年 Casgevy 年化收入仍只有约 $2–3 亿量级，股价篮子无一家收复 2021 年高点。",
+        "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+      },
+      "basket_method": "当年口径：2021 年初媒体与 ARK Genomic Revolution（ARKG）叙事中的 CRISPR 三巨头（CRSP/EDIT/NTLA）+ 碱基编辑 BEAM + 长读长测序 PACB + 基因检测 NVTA + 合成生物 SPAC Ginkgo（DNA）；名单按调用方给定，ARKG 精确持仓本轮未取得一手文件。",
+      "companies": [
+        {
+          "name": "CRISPR Therapeutics",
+          "ticker_then": "CRSP",
+          "yahoo_ticker": "CRSP",
+          "role_cn": "龙头",
+          "hype_date": "2020-10",
+          "peak_date": "2021-01-14",
+          "peak_price": 210.04,
+          "price_basis": "nominal close (无拆股；盘中 2021-01-15 $220.20)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 54.04,
+          "fate_detail_cn": "与 Vertex 合作的 Casgevy 2023-12 获批（技术兑现）；股价 2025-04 低至 $31.27，2026-10-06 $54.04（-74%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CRSP/history/",
+            "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Editas Medicine",
+          "ticker_then": "EDIT",
+          "yahoo_ticker": "EDIT",
+          "role_cn": "明星",
+          "hype_date": "2020-10",
+          "peak_date": "2021-01-08",
+          "peak_price": 90.58,
+          "price_basis": "nominal close (无拆股；盘中 $99.95)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 2.74,
+          "fate_detail_cn": "2025-04 一度跌破 $1；2026-10-06 $2.74，较峰值 -97%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/EDIT/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Intellia Therapeutics",
+          "ticker_then": "NTLA",
+          "yahoo_ticker": "NTLA",
+          "role_cn": "明星",
+          "hype_date": "2020-10",
+          "peak_date": "2021-09-03",
+          "peak_price": 176.78,
+          "price_basis": "nominal close (无拆股；盘中最高 2021-06-30 $202.73)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 12.23,
+          "fate_detail_cn": "2021-06 首个体内 CRISPR 人体数据推高股价；2025-10-27 暂停 III 期 MAGNITUDE 给药。2026-10-06 $12.23（-93%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/NTLA/history/",
+            "https://www.sec.gov/Archives/edgar/data/1652130/000119312525250757/d44351d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Beam Therapeutics",
+          "ticker_then": "BEAM",
+          "yahoo_ticker": "BEAM",
+          "role_cn": "明星",
+          "hype_date": "2020-10",
+          "peak_date": "2021-07-01",
+          "peak_price": 133.6,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 25.16,
+          "fate_detail_cn": "碱基编辑；2025-04 低至 $14.54，2026-10-06 $25.16（-81%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BEAM/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Pacific Biosciences",
+          "ticker_then": "PACB",
+          "yahoo_ticker": "PACB",
+          "role_cn": "卖铲子",
+          "hype_date": "2020-11",
+          "peak_date": "2021-02-11",
+          "peak_price": 51.15,
+          "price_basis": "nominal close (无拆股)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 2.645,
+          "fate_detail_cn": "长读长测序；2025-05 低至 $0.91，2026-10-06 $2.65（-95%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PACB/history/"
+          ],
+          "confidence": "high",
+          "notes": ""
+        },
+        {
+          "name": "Invitae",
+          "ticker_then": "NVTA",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2020-07",
+          "peak_date": "2021-02",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-02-13",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "靠并购（2020 年 $14 亿收购 ArcherDX 等）扩张的基因检测平台；2024-02 NYSE 摘牌，2024-02-13 申请 Chapter 11，业务卖给 Labcorp；2024-08 计划生效，普通股注销且无价值。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1501134/000150113424000016/nvta-20240213.htm",
+            "https://www.sec.gov/Archives/edgar/data/1501134/000119312524196195/d859163d8k.htm",
+            "https://en.wikipedia.org/wiki/Invitae"
+          ],
+          "confidence": "high",
+          "notes": "峰值价未核实（Yahoo 无历史）。"
+        },
+        {
+          "name": "Ginkgo Bioworks (Soaring Eagle)",
+          "ticker_then": "SRNG → DNA",
+          "yahoo_ticker": "DNA",
+          "role_cn": "明星",
+          "hype_date": "2021-05",
+          "peak_date": "2021-11-08",
+          "peak_price": 596.8,
+          "price_basis": "split-adjusted close (Yahoo；2024-08-20 1:40 反向拆股；名义 $14.92)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": 13.325,
+          "fate_detail_cn": "合成生物'细胞编程平台'，2021-09 经 SPAC 上市；2024-09 低至调整后 $5.36，2026-10-06 $13.33（-98%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/DNA/history/",
+            "https://www.sec.gov/Archives/edgar/data/1830214/000162828024037685/dna-20240819.htm",
+            "https://www.sec.gov/Archives/edgar/data/1830214/000119312521161781/d177007ds4.htm"
+          ],
+          "confidence": "high",
+          "notes": "反向拆股 1:40。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1732 @@
+{
+  "era_id": "e2_1995_2002",
+  "era_range": "1995-2002",
+  "macro_context_cn": "1994 年加息周期后，美联储 1995-07 至 1996-01 三次小幅降息至 5.25%，1997-03 加到 5.5% 后按兵不动；格林斯潘 1996-12-05 发出“非理性繁荣”之问，但市场又涨了三年多。1996-02 电信法放开竞争，点燃电信/光纤投资。1998 年秋 LTCM/俄罗斯危机，美联储 9–11 月连降三次至 4.75%，为最后一段狂热注入流动性；1999 年 IPO 476 家、首日平均涨 71.2%。1999-06 至 2000-05 六次加息至 6.5%（2000-05-16 一次 50bp），纳指 2000-03-10 收盘 5048.62 见顶。2001-01-03 紧急降息起全年 11 次降至 1.75%，2002-11 再降至 1.25%，但 2001 年衰退、9·11、安然（2001-12 破产）与世通（2002-07 破产）会计丑闻使股市直到 2002-10-09 才见底（纳指 1114.11，−78.4%）。监管收尾：2002-07-30 萨班斯-奥克斯利法案；2003-04-28 十家投行就研究分析师利益冲突达成约 $14 亿全球和解。",
+  "macro_sources": [
+    "https://fred.stlouisfed.org/series/DFEDTAR",
+    "https://www.federalreserve.gov/boarddocs/speeches/1996/19961205.htm",
+    "https://www.federalreserve.gov/boarddocs/press/general/1998/19981117/",
+    "https://www.federalreserve.gov/boarddocs/press/general/1999/19990630/",
+    "https://www.federalreserve.gov/boarddocs/press/general/2000/20000516/",
+    "https://www.federalreserve.gov/boarddocs/press/general/2001/20010103/",
+    "https://www.federalreserve.gov/boarddocs/press/general/2001/20011211/",
+    "https://www.fortune.com/2015/04/23/nasdaq-supasses-internet-bubble-peak-to-set-new-record",
+    "https://site.warrington.ufl.edu/ritter/files/IPO-Statistics.pdf",
+    "https://www.govinfo.gov/app/details/PLAW-104publ104",
+    "https://www.govinfo.gov/app/details/PLAW-107publ204",
+    "https://www.sec.gov/news/press/2003-54.htm"
+  ],
+  "themes": [
+    {
+      "id": "dotcom_consumer",
+      "name_cn": "互联网 .com（消费端门户/电商）",
+      "name_en": "Dot-com consumer internet",
+      "one_line_cn": "赌“上网的人会把注意力和购物全搬到网上”，先圈用户和流量、利润以后再说。",
+      "hype_start": {
+        "date": "1995-08",
+        "event_cn": "1995-08-09 Netscape IPO：发行价 $28（拆股后 $14），首日收 $58.25，开启互联网 IPO 热潮",
+        "source": "https://www.sec.gov/Archives/edgar/data/944458/0000912057-96-025818.txt"
+      },
+      "peak": {
+        "date": "2000-03",
+        "event_cn": "纳指 2000-03-10 收盘 5048.62；Yahoo 2000Q1 收盘高点 $237.50（2000 年拆股口径，即 2004 年拆股后 $118.75）",
+        "source": "https://www.fortune.com/2015/04/23/nasdaq-supasses-internet-bubble-peak-to-set-new-record"
+      },
+      "trough": {
+        "date": "2002-10",
+        "event_cn": "纳指 2002-10-09 收 1114.11，较峰值跌 78.4%；此前 Pets.com、eToys、Webvan 已于 2000-11 至 2001-07 相继清算/破产",
+        "source": "https://www.fortune.com/2015/04/23/nasdaq-supasses-internet-bubble-peak-to-set-new-record"
+      },
+      "proxy_tickers": [
+        "^IXIC"
+      ],
+      "proxy_note_cn": "当年没有可长期追踪的“互联网主题 ETF”；纳指综合 ^IXIC 是最接近的主题层代理（2015-04-23 才收复 2000 年高点，约 15 年）。FDN 等互联网 ETF 均成立于泡沫之后，覆盖不到 1999–2002 的崩盘。",
+      "what_killed_it_cn": "(1) 估值与供给同时到顶：1999 年 476 家 IPO、首日平均涨 71.2%、“留在桌上的钱”达 $371 亿；(2) 美联储 1999-06 至 2000-05 六次加息，联邦基金目标利率由 4.75% 升到 6.5%；(3) 2000 年 3 月后资本市场关门，烧钱模式无法再融资，现金耗尽即死（Pets.com 上市 9 个月即清算）；(4) 需求远未跟上：线上零售占比 1999Q4 仅 0.6%、2000Q4 1.0%；(5) 2001 年衰退、9·11 与 2001–2002 年会计丑闻进一步压低风险偏好。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "美国电商占零售比（季调）1999Q4 仅 0.6%，2000Q4 1.0%，2010Q4 4.6%",
+          "date": "1999-2010",
+          "source": "https://fred.stlouisfed.org/series/ECOMPCTSA"
+        },
+        {
+          "claim_cn": "电商占比 2019Q1 才首次达到 10.0%，2020Q2 疫情跳升到 16.3%，2026Q2 为 17.1%",
+          "date": "2019-2026",
+          "source": "https://fred.stlouisfed.org/series/ECOMPCTSA"
+        },
+        {
+          "claim_cn": "美国家庭上网率：1997 年仅 18%，2007 年 62%，2017 年 78%（CPS）；2018 年 85% 家庭有宽带（ACS）；2000 年约 51% 家庭有电脑",
+          "date": "1997-2018",
+          "source": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-49.pdf"
+        },
+        {
+          "claim_cn": "IPO 狂热：1999 年 476 家 IPO、首日平均回报 71.2%、留在桌上的钱 $371.1 亿；2000 年 380 家、56.3%；2001 年骤降到 80 家、2002 年 66 家",
+          "date": "1999-2002",
+          "source": "https://site.warrington.ufl.edu/ritter/files/IPO-Statistics.pdf"
+        },
+        {
+          "claim_cn": "少数幸存者后来远超泡沫高点：AMZN 2009-10、BKNG 2013-08 首次超过 1999 年高点（Yahoo 拆股调整月高点粗算）",
+          "date": "2009-2013",
+          "source": "https://finance.yahoo.com/quote/AMZN/history"
+        }
+      ],
+      "time_to_reality": {
+        "years": 20,
+        "from": "1999",
+        "to": "2019",
+        "marker_cn": "电商占美国零售比首次达到 10%（2019Q1，FRED ECOMPCTSA）；家庭上网率 2007 年达 62%、宽带 2018 年达 85%",
+        "source": "https://fred.stlouisfed.org/series/ECOMPCTSA"
+      },
+      "basket_method": "当年口径、主观选样并刻意包含失败者：(a) 开启热潮与 1999–2000 年最受追捧的门户/电商龙头（Netscape、AOL、Yahoo、Amazon、eBay、Priceline），均为当年市值最大或 IPO 首日最轰动的消费互联网股；(b) 泡沫末期 IPO 的标志性失败者（Pets.com 2000-02 IPO、Webvan 1999-11 IPO、eToys 1999-05 IPO）和 IPO 首日涨幅纪录代表 theGlobe.com（1998-11 首日盘中较发行价 +978%）。价格/IPO 数据均取自各公司 SEC 10-K/招股书；IPO 热度背景见 Ritter IPO 统计 https://site.warrington.ufl.edu/ritter/files/IPO-Statistics.pdf 。宽带/门户基础设施类（Excite@Home、CMGI 等）放在 b2b_infra 主题。",
+      "companies": [
+        {
+          "name": "Netscape Communications",
+          "ticker_then": "NSCP",
+          "yahoo_ticker": null,
+          "role_cn": "龙头（开启者）",
+          "hype_date": "1995-08",
+          "peak_date": "1995-12",
+          "peak_price": 87.0,
+          "price_basis": "split-adjusted（1996-01 2:1 拆股；名义价约 $174，媒体常引 1995-12-05 收盘 $171）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "1999-03",
+          "final_value_per_share": 94.7,
+          "fate_detail_cn": "1998-11-24 宣布被 AOL 换股收购（每股换 0.45 股 AOL，AOL 1999-02 拆股后为 0.9 股，无价格调整条款），宣布时约 $42 亿，1999-03-17 完成时因 AOL 暴涨而值约 $100 亿；推算约 $95/股，略高于拆股后峰值 $87。但对价是 AOL 股票，继续持有者随后经历 AOL 时代华纳的崩盘。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/944458/0000912057-96-025818.txt",
+            "https://www.sec.gov/Archives/edgar/data/944458/0001047469-99-006509.txt",
+            "https://www.sec.gov/Archives/edgar/data/0000883780/000088378099000038/0000883780-99-000038.txt",
+            "https://www.sec.gov/Archives/edgar/data/0000883780/000088378099000039/0000883780-99-000039.txt",
+            "https://en.wikipedia.org/wiki/Netscape"
+          ],
+          "confidence": "medium",
+          "notes": "峰值 $87 为 1996-11 招股书中 1995Q4 季度最高价（拆股调整后）。final_value_per_share=94.7 为推算值：$100 亿（Wikipedia）÷（AOL 8-K/A 所称约 9500 万股 AOL ÷ 0.9）；$100 亿未在一手文件核实。1999-01-12 Netscape 流通 1.038 亿股。Yahoo 无 NSCP 历史数据。"
+        },
+        {
+          "name": "America Online (AOL)",
+          "ticker_then": "AOL",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1998-11",
+          "peak_date": "1999-12",
+          "peak_price": 95.63,
+          "price_basis": "split-adjusted（截至 2000 年的全部拆股；AOL 10-K 季度最高成交价）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2018-06",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2000-01-10 宣布与时代华纳合并（AOL 股东 1:1 换 AOL Time Warner，持股约 55%），2001-01 完成；2002 年净亏 $986.96 亿（含 $542 亿会计变更减值）。之后改名 Time Warner（TWX），2009-03 实施 1:3 反向拆股（三股并一股）并分拆 TWC、2009-12 分拆 AOL；2018-06-14 被 AT&T 以每股 $53.75 现金 + 1.437 股 AT&T 收购。原 AOL 股东始终未回到 $95.63。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/883780/0000883780-00-000098.txt",
+            "https://www.sec.gov/Archives/edgar/data/0001105705/000094018000000500/0000940180-00-000500.txt",
+            "https://www.sec.gov/Archives/edgar/data/1105705/0000950144-03-004064.txt",
+            "https://www.sec.gov/Archives/edgar/data/1105705/0000950123-10-014479.txt",
+            "https://www.sec.gov/Archives/edgar/data/1105705/0000950157-18-000694.txt"
+          ],
+          "confidence": "medium",
+          "notes": "合并公告前一交易日 2000-01-07 AOL 收 $72.88。每股终值未给出：需把 1 股原 AOL → 1/3 股 TWX（2009 反向拆股）× AT&T 对价，再加 TWC(2009)、AOL(2009)、Time Inc.(2014) 分拆股票价值，本次未逐项定价；仅 AT&T 对价部分折合原 AOL 每股 $17.92 现金 + 0.479 股 AT&T。Wikipedia 称 AOL 1999 年市值峰值约 $2220 亿（未核实）。fate 记为 acquired（终局为 2018 年被 AT&T 收购），中间 17 年一直低于峰值。"
+        },
+        {
+          "name": "Yahoo!",
+          "ticker_then": "YHOO",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1996-04",
+          "peak_date": "2000-01",
+          "peak_price": 118.75,
+          "price_basis": "split-adjusted（2000-02 与 2004-05 两次 2:1 拆股后；2000 年 10-K 所列 2000Q1 收盘高点 $237.50 只调了 2000 年拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2017-06",
+          "final_value_per_share": 73.88,
+          "fate_detail_cn": "2017-06-13 把经营业务卖给 Verizon（约 $44.8 亿），剩下的阿里巴巴/雅虎日本股权改名 Altaba，2019 年起清算。截至 2025-05 累计清算分配 $73.88/股（2019-09 $51.50 + 2020–2025 共 11 次），2026-06-30 尚余净值 $1.63/股，合计约为 2000 年高点的 64%——主要靠阿里巴巴股权，而非门户业务本身。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1011006/0000912057-97-011353.txt",
+            "https://www.sec.gov/Archives/edgar/data/1011006/0000912057-01-007693.txt",
+            "https://www.sec.gov/Archives/edgar/data/1011006/0001047469-05-006235.txt",
+            "https://www.sec.gov/Archives/edgar/data/1011006/0001193125-18-058471.txt",
+            "https://www.sec.gov/Archives/edgar/data/1011006/0001193125-26-349115.txt",
+            "https://en.wikipedia.org/wiki/Yahoo"
+          ],
+          "confidence": "high",
+          "notes": "Verizon 收购价约 $44.8 亿来自 Wikipedia（medium）；其余数字来自 Yahoo/Altaba 的 SEC 文件。Altaba 于 2019-10-07 从纳斯达克摘牌，Yahoo Finance 无 YHOO/AABA 完整数据。hype_date 1996-04 为 IPO 月份（Yahoo 1996 年 10-K：0000912057-97-011353）。"
+        },
+        {
+          "name": "Amazon.com",
+          "ticker_then": "AMZN",
+          "yahoo_ticker": "AMZN",
+          "role_cn": "明星",
+          "hype_date": "1997-05",
+          "peak_date": "1999-12",
+          "peak_price": 113.0,
+          "price_basis": "split-adjusted（截至 2000 年；再经 2022 年 20:1 拆股后约 $5.65）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2009-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1997-05 IPO；1999Q4 最高 $113 后跌去九成以上，2009-10 才首次超过 1999 年高点（Yahoo 拆股调整月高点 5.65→6.28），此后成为万亿美元公司。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1018724/0000891020-00-000622.txt",
+            "https://www.sec.gov/Archives/edgar/data/1018724/0000891020-98-000448.txt",
+            "https://finance.yahoo.com/quote/AMZN/history"
+          ],
+          "confidence": "high",
+          "notes": "收复日期由 Yahoo 月度数据粗算，最终以主分析师重算为准。"
+        },
+        {
+          "name": "eBay",
+          "ticker_then": "EBAY",
+          "yahoo_ticker": "EBAY",
+          "role_cn": "明星",
+          "hype_date": "1998-09",
+          "peak_date": "2000-03",
+          "peak_price": 127.5,
+          "price_basis": "split-adjusted（只调整 1999、2000 年拆股；之后还有 2003、2005 年 2:1 拆股及 2015 年 PayPal 分拆）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2003-12",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1998-09-24 以 $18（拆股调整后 $6）上市；少数自始盈利的 .com 之一，泡沫破裂后跌幅相对小，2003–2004 年即创新高。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1065088/0001012870-00-001759.txt",
+            "https://www.sec.gov/Archives/edgar/data/1065088/0001095811-01-001836.txt",
+            "https://www.sec.gov/Archives/edgar/data/1065088/0001012870-99-000878.txt",
+            "https://finance.yahoo.com/quote/EBAY/history"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 序列对 2015 年 PayPal 分拆的处理会影响“何时创新高”的判断（Yahoo 月高点粗算为 2003-12），请主分析师复核。"
+        },
+        {
+          "name": "priceline.com",
+          "ticker_then": "PCLN",
+          "yahoo_ticker": "BKNG",
+          "role_cn": "明星",
+          "hype_date": "1999-03",
+          "peak_date": "1999-04",
+          "peak_price": 162.375,
+          "price_basis": "nominal 收盘价（1999Q2 最高收盘；2003-06 实施 1:6 反向拆股（六股并一股）后相当于 $974.25）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2013-08",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1999-03-29 上市，一个月内收盘高见 $162.375；2000 年跌到个位数，2003 年反向拆股保住上市资格；转型酒店预订（Booking.com）后 2013-08 才超过 1999 年高点，2018 年改名 Booking Holdings。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1075531/0001005477-00-002686.txt",
+            "https://www.sec.gov/Archives/edgar/data/1075531/0001104659-04-007430.txt",
+            "https://finance.yahoo.com/quote/BKNG/history"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo BKNG 序列已做反向拆股（及之后拆股）调整。"
+        },
+        {
+          "name": "Pets.com",
+          "ticker_then": "IPET",
+          "yahoo_ticker": null,
+          "role_cn": "明星（泡沫末期 IPO）",
+          "hype_date": "2000-01",
+          "peak_date": "2000-02",
+          "peak_price": 14.0,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 0.41,
+          "fate": "dead",
+          "fate_date": "2000-11",
+          "final_value_per_share": 0.172,
+          "fate_detail_cn": "2000-02-11 以 $11 上市（募资 $8250 万），当季最高 $14；2000-11-07 宣布停业清算，当日股价约 $0.19。股东 2001–2004 年分三次拿到清算款 $0.09 + $0.075 + $0.00747 ≈ $0.172/股，之后股票宣布无价值。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1100683/0001095811-01-002065.txt",
+            "https://www.sec.gov/Archives/edgar/data/1100683/0001095811-00-004383.txt",
+            "https://www.sec.gov/Archives/edgar/data/1100683/0001095811-01-504828.txt",
+            "https://www.sec.gov/Archives/edgar/data/1100683/0000891618-02-004315.txt",
+            "https://www.sec.gov/Archives/edgar/data/1100683/0000950134-04-008643.txt",
+            "https://en.wikipedia.org/wiki/Pets.com"
+          ],
+          "confidence": "high",
+          "notes": "峰值市值 $4.1 亿为推算：招股书发行后约 2954 万股（含未归属股）× $14。hype_date 2000-01 指 Super Bowl XXXIV 广告（2000-01-30）前后。"
+        },
+        {
+          "name": "Webvan Group",
+          "ticker_then": "WBVN",
+          "yahoo_ticker": null,
+          "role_cn": "明星（泡沫末期 IPO）",
+          "hype_date": "1999-11",
+          "peak_date": "1999-11",
+          "peak_price": 34.0,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 10.9,
+          "fate": "dead",
+          "fate_date": "2001-07",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "1999-11 以 $15 上市募资 $3.75 亿，当季最高 $34；2000Q4 跌到 $0.28 附近；2001-07 停业，2001-07-13 申请第 11 章破产并出售资产，股权归零。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1092657/0000891618-99-004914.txt",
+            "https://www.sec.gov/Archives/edgar/data/1092657/0001012870-01-001485.txt",
+            "https://www.sec.gov/Archives/edgar/data/1092657/0001021408-01-504054.txt",
+            "https://en.wikipedia.org/wiki/Webvan"
+          ],
+          "confidence": "high",
+          "notes": "峰值市值 $109 亿为推算（招股书发行后 3.218 亿股 × 盘中高点 $34），不同媒体口径不一（Wikipedia 写 $48 亿）。股权归零依据：第 11 章程序为资产出售/清算，未见股东分配（medium）。"
+        },
+        {
+          "name": "eToys",
+          "ticker_then": "ETYS",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1999-05",
+          "peak_date": "1999-10",
+          "peak_price": 84.5,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2001-03",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "1999-05-20 以 $20 上市，1999-10~12 季度最高 $84.50；2000 年圣诞季不及预期，2001-03-07 申请第 11 章破产（负债约 $2.74 亿），次日被纳斯达克摘牌，资产清算，股权归零。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1052245/0001047469-99-021620.txt",
+            "https://www.sec.gov/Archives/edgar/data/1052245/0000912057-00-027125.txt",
+            "https://www.sec.gov/Archives/edgar/data/1052245/0000912057-01-517634.txt",
+            "https://www.sec.gov/Archives/edgar/data/1052245/0000912057-02-018621.txt"
+          ],
+          "confidence": "high",
+          "notes": "峰值市值未直接查到：IPO 后约 1.018 亿股、2000-05 为 1.216 亿股，× $84.50 约 $86–103 亿（推算）。破产后月报显示股东权益为负 $1.6 亿。peak_date 取该季度起始月，具体日期未核实。"
+        },
+        {
+          "name": "theGlobe.com",
+          "ticker_then": "TGLO",
+          "yahoo_ticker": "TGLO",
+          "role_cn": "沾边蹭概念（IPO 首日纪录）",
+          "hype_date": "1998-11",
+          "peak_date": "1998-11",
+          "peak_price": 48.5,
+          "price_basis": "split-adjusted（1999-05 2:1 拆股；名义价为 1998-11-13 盘中 $97，发行价名义 $9）",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2001-04",
+          "final_value_per_share": 0.13,
+          "fate_detail_cn": "1998-11-13 以 $9 上市，首日盘中 $97、收 $63.50；2001-04 被纳斯达克摘牌，2008 年卖掉最后业务成为空壳，2017 年起由 Delfin Midstream 控股，至今仍以壳公司身份在场外（TGLO）报价并向 SEC 报送 10-K。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1066684/0000895345-00-000218.txt",
+            "https://www.sec.gov/Archives/edgar/data/1066684/0001104659-26-038019.txt",
+            "https://en.wikipedia.org/wiki/TheGlobe.com",
+            "https://finance.yahoo.com/quote/TGLO/history"
+          ],
+          "confidence": "high",
+          "notes": "final_value_per_share 为 2026-10 场外报价约 $0.13（Yahoo），属壳价值；按 dead 处理。10-K 所列最高季度收盘价（拆股调整）为 1999Q2 的 $39.47。"
+        }
+      ]
+    },
+    {
+      "id": "bigtech_horsemen",
+      "name_cn": "新经济大盘科技（纳指四骑士 / “.com 里的那个点”）",
+      "name_en": "New-economy large-cap tech (Four Horsemen of the Nasdaq)",
+      "one_line_cn": "赌“卖铲子的大公司”会随互联网无限增长——PC、芯片、路由器、服务器、存储、数据库，以 100 倍市盈率买确定性。",
+      "hype_start": {
+        "date": "1998-10",
+        "event_cn": "LTCM 危机后美联储 1998-09-29、10-15、11-17 三次降息至 4.75%，大盘科技开始 1998Q4–2000Q1 最后冲刺；MSFT 季度最高价由 FY1999Q1（1998-07~09）的 $59.81 翻倍至 FY2000Q2（1999-10~12）的 $119.94（名义，MSFT FY2000 10-K）",
+        "source": "https://www.federalreserve.gov/boarddocs/press/general/1998/19981117/"
+      },
+      "peak": {
+        "date": "2000-03",
+        "event_cn": "2000 年 3 月下旬 Cisco 市值超过 $5000 亿，一度成为全球市值最高公司；Cisco 2000-02~04 季度收盘高点 $80.06",
+        "source": "https://en.wikipedia.org/wiki/Cisco"
+      },
+      "trough": {
+        "date": "2002-10",
+        "event_cn": "纳指 2002-10-09 收 1114.11（较峰值 −78.4%），大盘科技股同步见底",
+        "source": "https://www.fortune.com/2015/04/23/nasdaq-supasses-internet-bubble-peak-to-set-new-record"
+      },
+      "proxy_tickers": [
+        "^NDX",
+        "QQQ"
+      ],
+      "proxy_note_cn": "纳斯达克 100（^NDX）是这批大盘科技股的主题层代理；QQQ 1999 年 3 月才上市，覆盖了崩盘但不覆盖 1995–1998 的上涨段。",
+      "what_killed_it_cn": "业务本身是真的，杀死股价的是估值和“客户先死”：(1) 1999–2000 年这些公司以数十至上百倍市盈率交易，价格已预支十几年的增长；(2) 美联储 1999-06 至 2000-05 加息至 6.5%；(3) 下游 .com 与新兴电信运营商在 2000–2002 年大批倒闭，Y2K 前提前采购的 PC/服务器需求也透支，订单断崖——Cisco 在 FY2001Q3（2001-02~04）计提 $22.5 亿超额库存损失，产品毛利率由 64.9% 跌到 47.9%；(4) 2001 年衰退与会计丑闻压低估值。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "Cisco 收入 FY2000 $189.3 亿（同比 +55.5%）→ FY2026 $633.3 亿，约 3.3 倍；但股价直到 2026-02 才首次超过 2000-03 的月高点（约 26 年）",
+          "date": "2000-2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/858877/0001095811-00-003692.txt"
+        },
+        {
+          "claim_cn": "Microsoft 收入 FY2000 $229.56 亿 → FY2026 $3318.4 亿；股价 2016-10 才超过 1999-12 高点（约 17 年）",
+          "date": "2000-2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/0001032210-00-001961.txt"
+        },
+        {
+          "claim_cn": "Intel 收入 2000 年 $337.26 亿 → 2025 年 $528.5 亿，25 年仅增约 57%；股价 2026-04 才超过 2000-08 月高点",
+          "date": "2000-2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/50863/0000912057-01-503434.txt"
+        },
+        {
+          "claim_cn": "FY2026 收入数据来自 SEC XBRL（Cisco FY2026 截至 2026-07-25：$633.3 亿；MSFT FY2026 截至 2026-06-30：$3318.4 亿）",
+          "date": "2026",
+          "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000858877/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
+        }
+      ],
+      "time_to_reality": {
+        "years": 0,
+        "from": "2000",
+        "to": "2000",
+        "marker_cn": "需求在当年就真实存在（Cisco FY2000 收入 +55.5%、Intel/Microsoft 均高利润）；问题在估值——股价收复 2000 年高点：MSFT 2016-10（约 17 年）、ORCL 2014-12、QCOM 2020-07、CSCO 2026-02（约 26 年）、INTC 2026-04；SUNW、EMC、旧 Dell 在收复前被收购",
+        "source": "https://www.sec.gov/Archives/edgar/data/858877/0001095811-00-003692.txt"
+      },
+      "basket_method": "当年口径：(a) 用户指定的“纳指四骑士”MSFT/INTC/CSCO/DELL——四家均在 Nasdaq 上市、为 1990 年代末最大的科技股；FT Global 500（2000 年版）全球市值前十中，美国科技股正是 Microsoft（#1，$5862 亿）、Cisco（#4，$3490 亿）、Intel（#6，$2771 亿）与 Lucent（#9，归入电信主题），见 https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization （引 FT，medium）；(b) Sun 自称“.com 里的那个点”，Sun/Oracle/EMC（与 Cisco）是互联网基础设施的大盘代表；(c) Qualcomm 为 1999 年全美涨幅冠军（+2,621%，Fortune 2000-05-15，经 Wikipedia 转引）。“四骑士”称呼本身的当年出处本次未能核实（检索额度用尽）。",
+      "companies": [
+        {
+          "name": "Microsoft",
+          "ticker_then": "MSFT",
+          "yahoo_ticker": "MSFT",
+          "role_cn": "龙头",
+          "hype_date": "1998-10",
+          "peak_date": "1999-12",
+          "peak_price": 119.94,
+          "price_basis": "nominal（FY2000Q2 即 1999-10~12 季度最高价；2003 年 2:1 拆股后约 $59.97）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2016-10",
+          "final_value_per_share": null,
+          "fate_detail_cn": "司法部 1998-05 起诉的反垄断案（1999-11-05 法院事实认定对其不利）叠加泡沫破裂，股价腰斩后横盘十余年；云计算转型后 2016-10 首次超过 1999 年高点（Yahoo 月高点 59.97→61.37），此后成为全球市值最高公司之一。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/789019/0001032210-00-001961.txt",
+            "https://www.justice.gov/atr/case/us-v-microsoft-corporation-browser-and-middleware",
+            "https://finance.yahoo.com/quote/MSFT/history"
+          ],
+          "confidence": "high",
+          "notes": "收复日期按 Yahoo 拆股调整（不含股息）月高点粗算。"
+        },
+        {
+          "name": "Intel",
+          "ticker_then": "INTC",
+          "yahoo_ticker": "INTC",
+          "role_cn": "龙头（卖铲子）",
+          "hype_date": "1998-10",
+          "peak_date": "2000-08",
+          "peak_price": 75.83,
+          "price_basis": "split-adjusted（Yahoo 月度盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2026-04",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2000-08 见顶后长期低于高点，2020–2024 年还因制程落后大跌；按 Yahoo 月高点，2026-04 才首次超过 2000 年高点（95.69 vs 75.83），耗时约 25.7 年。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/50863/0000912057-01-503434.txt",
+            "https://finance.yahoo.com/quote/INTC/history"
+          ],
+          "confidence": "medium",
+          "notes": "fate 依 Yahoo 截至 2026-10 的月度数据判断（2026-10 月收约 $114.8），请主分析师用日线复核。"
+        },
+        {
+          "name": "Cisco Systems",
+          "ticker_then": "CSCO",
+          "yahoo_ticker": "CSCO",
+          "role_cn": "龙头（卖铲子）",
+          "hype_date": "1998-10",
+          "peak_date": "2000-03",
+          "peak_price": 80.06,
+          "price_basis": "split-adjusted 收盘价（FY2000Q3 季度收盘高点，已调整 2000-03 拆股；之后无拆股；Yahoo 月盘中高点 82.0）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2026-02",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2000 年 3 月下旬一度为全球市值最高公司（>$5000 亿）；2001 年订单崩塌、计提 $22.5 亿库存损失，2002 年跌约 80%；收入 26 年增至约 3.3 倍，股价直到 2026-02 才首次超过 2000 年高点。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/858877/0001095811-00-003692.txt",
+            "https://www.sec.gov/Archives/edgar/data/858877/0001095811-01-505065.txt",
+            "https://en.wikipedia.org/wiki/Cisco",
+            "https://finance.yahoo.com/quote/CSCO/history"
+          ],
+          "confidence": "medium",
+          "notes": "fate 依 Yahoo 截至 2026-10 的月度数据判断（2026-02 月高 88.19 > 82.0；2026-10 月收约 $114.4）。市值 >$5000 亿来自 Wikipedia（medium）。"
+        },
+        {
+          "name": "Dell Computer（旧 Dell，2013 年私有化前）",
+          "ticker_then": "DELL",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1998-10",
+          "peak_date": "2000-03",
+          "peak_price": 59.69,
+          "price_basis": "split-adjusted（FY2001Q1 即 2000-02~04 季度最高价，已调整 1998–1999 年三次拆股）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2013-10",
+          "final_value_per_share": 13.88,
+          "fate_detail_cn": "PC 直销模式的明星，2000 年见顶后 PC 行业停滞；2013-10-29 由 Michael Dell 与 Silver Lake 私有化，每股 $13.75 现金 + $0.13 特别股息，约为 2000 年高点的 23%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/826083/0000950134-01-501052.txt",
+            "https://www.sec.gov/Archives/edgar/data/826083/0001193125-13-416110.txt"
+          ],
+          "confidence": "high",
+          "notes": "今天 Yahoo 的 DELL 是 2018 年通过 DVMT 换股重新上市的 Dell Technologies（Class C），与旧 Dell 股东权益不连续，不能直接拼接。peak_date 取季度内月份，具体日期未核实。"
+        },
+        {
+          "name": "Sun Microsystems",
+          "ticker_then": "SUNW",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子（“.com 里的点”）",
+          "hype_date": "1998-10",
+          "peak_date": "2000-09",
+          "peak_price": 64.66,
+          "price_basis": "split-adjusted（已调整 1999-12、2000-12 两次 2:1 拆股；未调整 2007-11 的 1:4 反向拆股——按反向拆股后口径为 $258.64）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2010-01",
+          "final_value_per_share": 2.375,
+          "fate_detail_cn": "互联网服务器龙头，泡沫后被 Linux/x86 服务器替代；2007 年 1:4 反向拆股，2010-01-26 被 Oracle 以每股 $9.50 现金收购，折合泡沫期口径 $2.375，仅为 2000 年高点的约 3.7%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/709519/0000912057-01-532905.txt",
+            "https://www.sec.gov/Archives/edgar/data/709519/0001193125-08-187118.txt",
+            "https://www.sec.gov/Archives/edgar/data/709519/0001193125-10-017049.txt"
+          ],
+          "confidence": "high",
+          "notes": "final_value_per_share=2.375 与 peak_price 同一口径（$9.50÷4）。peak_date 为 FY2001Q1（2000-07~09）季度内，具体日期未核实。"
+        },
+        {
+          "name": "Oracle",
+          "ticker_then": "ORCL",
+          "yahoo_ticker": "ORCL",
+          "role_cn": "卖铲子（数据库）",
+          "hype_date": "1998-10",
+          "peak_date": "2000-09",
+          "peak_price": 46.47,
+          "price_basis": "split-adjusted（Yahoo 月度盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2014-12",
+          "final_value_per_share": null,
+          "fate_detail_cn": "泡沫后靠并购（PeopleSoft、Sun 等）和维护费维持高利润，2014-12 首次超过 2000 年高点；2025 年因 AI 云合同再次暴涨（Yahoo 2025-09 月高约 $345.7）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ORCL/history"
+          ],
+          "confidence": "medium",
+          "notes": "全部价格由 Yahoo 月度数据粗算，待主分析师复核。"
+        },
+        {
+          "name": "EMC",
+          "ticker_then": "EMC",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子（存储）",
+          "hype_date": "1998-10",
+          "peak_date": "2000-07",
+          "peak_price": 103.25,
+          "price_basis": "split-adjusted（已调整 1997、1999、2000 年拆股；FY2000Q3 即 2000-07~09 季度最高价，NYSE）",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2016-09",
+          "final_value_per_share": 24.05,
+          "fate_detail_cn": "1990 年代涨幅最大的大盘股之一，2002 年跌至个位数；2016-09-07 被 Dell 收购，每股 $24.05 现金 + 0.11146 股 VMware 追踪股（DVMT），约为 2000 年高点的四分之一左右。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/790070/0000912057-01-007516.txt",
+            "https://www.sec.gov/Archives/edgar/data/790070/0001193125-16-703391.txt"
+          ],
+          "confidence": "high",
+          "notes": "final_value_per_share 只计现金部分 $24.05；另有 0.11146 股 DVMT 未计价（按当时 DVMT 价格约增加数美元，未核实）。peak_date 取季度起始月。"
+        },
+        {
+          "name": "Qualcomm",
+          "ticker_then": "QCOM",
+          "yahoo_ticker": "QCOM",
+          "role_cn": "明星（1999 涨幅冠军）",
+          "hype_date": "1999-01",
+          "peak_date": "2000-01",
+          "peak_price": 100.0,
+          "price_basis": "split-adjusted（Yahoo 月度盘中高点）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2020-07",
+          "final_value_per_share": null,
+          "fate_detail_cn": "1999 年股价涨 2,621%（全美第一），2000-01 见顶；3G/4G 专利授权业务真实但增速远低于股价隐含，2020-07 才首次超过 2000 年高点（约 20 年）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Qualcomm",
+            "https://finance.yahoo.com/quote/QCOM/history"
+          ],
+          "confidence": "medium",
+          "notes": "+2,621% 出自 Fortune 2000-05-15（经 Wikipedia 转引）。"
+        }
+      ]
+    },
+    {
+      "id": "telecom_fiber",
+      "name_cn": "电信与光纤大建设",
+      "name_en": "Telecom / fiber-optic build-out bubble",
+      "one_line_cn": "赌1996年电信法放开竞争后互联网流量“每100天翻一番”：谁先铺满长途光纤、谁卖光设备和光器件，谁就能吃下无限的带宽需求。",
+      "hype_start": {
+        "date": "1996-02",
+        "event_cn": "1996-02-08 克林顿签署《1996年电信法》(Public Law 104-104)，放开长途/本地/有线互相进入；此后约5年行业投入逾5000亿美元(多为举债)铺光纤、换交换机、建无线网",
+        "source": "https://www.govinfo.gov/app/details/PLAW-104publ104"
+      },
+      "peak": {
+        "date": "2000-03",
+        "event_cn": "纳斯达克电信指数(^IXTC)2000-03-10收盘1230.06见顶(Yahoo)；但个股峰值分散：运营商(WorldCom、Global Crossing)1999年Q2见顶，光设备股晚到2000年Q3-Q4(Nortel 2000Q3、Corning 2000-08/09、Ciena 2000-10)",
+        "source": "https://finance.yahoo.com/quote/%5EIXTC/history"
+      },
+      "trough": {
+        "date": "2002-10",
+        "event_cn": "^IXTC 2002-10-09收盘81.43，较峰值-93.4%(同日纳指1114.11见底)；Lucent 2002-10最低0.55美元，Corning 2002-10-08收盘1.10美元；此前Global Crossing(2002-01-28)与WorldCom(2002-07-21，当时美国史上最大破产)相继破产",
+        "source": "https://finance.yahoo.com/quote/%5EIXTC/history"
+      },
+      "proxy_tickers": [
+        "^IXTC"
+      ],
+      "proxy_note_cn": "^IXTC(纳斯达克电信指数)Yahoo数据始于1996-05-13，可算主题层面回撤：1230.06(2000-03-10)→81.43(2002-10-09)，-93.4%；截至2026-10-05收盘589.04，2026年最高收盘679.71(2026-06-02)，26年后仍未收复2000年高点。注意它含无线/本地电话股，且不含NYSE上市的Lucent/Nortel/Corning/Qwest；当年没有光通信专题ETF。Paul Starr(2002-09)引用的道琼斯通信技术指数同期跌86%。",
+      "what_killed_it_cn": "(1)供给泛滥：1996-2001年行业投入逾5000亿美元，多为举债和设备商卖方融资(Lucent/Nortel借钱给客户买自己的设备)，Brookings 2002-12估计北美新增长途容量使用率不超过2%，价格战把带宽价格打穿；(2)需求被神话：“互联网流量每100天翻一番”部分源自WorldCom/UUNET 1997年宣传，实际约每年翻一番(Odlyzko)——增长很快，但远不足以消化超建；(3)融资断供：2000年科网泡沫破裂后高收益债/股权融资关闭，高负债运营商接连破产(360networks 2001-06、Global Crossing 2002-01、WorldCom 2002-07)，FCC主席Powell 2002-07-30称行业负债约1万亿美元、大量无法收回；(4)欺诈：WorldCom把38亿美元线路费用资本化(最终约110亿美元)，Qwest被SEC指控虚增逾38亿美元收入，Lucent靠卖方融资和提前确认收入；(5)运营商砍资本开支→设备商(Lucent/Nortel/JDSU/Ciena/Corning)订单断崖、巨额商誉减值、裁员数十万。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "Odlyzko：1997年起美国互联网骨干流量约每年翻一番(年增70-150%)，“每100天翻一番”是神话，其源头之一是1997-02-19 WorldCom新闻稿",
+          "date": "2003",
+          "source": "http://www.dtc.umn.edu/~odlyzko/doc/itcom.internet.growth.pdf"
+        },
+        {
+          "claim_cn": "Brookings(Litan)：1996年电信法后行业投入逾5000亿美元，北美新增长途容量“no more than two percent”在使用",
+          "date": "2002-12",
+          "source": "https://www.brookings.edu/research/the-telecommunications-crash-what-to-do-now/"
+        },
+        {
+          "claim_cn": "Odlyzko：2002年底全美骨干流量上限估计约140PB/月，平均仅约420Gb/s，按峰值约800Gb/s计算一根光纤就能装下——光纤过剩的直观证据",
+          "date": "2003",
+          "source": "http://www.dtc.umn.edu/~odlyzko/doc/itcom.internet.growth.pdf"
+        },
+        {
+          "claim_cn": "Paul Starr：两年内电信业约50万人失业；美股自峰值蒸发的7万亿美元中约2万亿来自电信；FCC主席Powell称行业负债约1万亿美元",
+          "date": "2002-09",
+          "source": "https://www.princeton.edu/~starr/articles/articles02/Starr-TelecomImplosion-9-02.htm"
+        },
+        {
+          "claim_cn": "Cisco VNI(经Wikipedia汇总)：全球IP流量2002年405PB/月→2017年约122,000PB/月，约300倍；MINTS美国骨干流量2002年8-14万TB/月→2011年340-410万TB/月",
+          "date": "2017",
+          "source": "https://en.wikipedia.org/wiki/Internet_traffic"
+        },
+        {
+          "claim_cn": "Lumen(即CenturyLink，先后吞并Qwest、Level 3及其名下的Global Crossing资产)2024-08-05宣布AI带来50亿美元新订单，称光纤容量日益宝贵、可能受限，计划5年内长途网络里程翻倍以上，并选Corning为光缆首选伙伴——泡沫期的光纤过剩终被吸收",
+          "date": "2024-08",
+          "source": "https://www.sec.gov/Archives/edgar/data/18926/000119312524193967/d858658dex991.htm"
+        },
+        {
+          "claim_cn": "NVIDIA 2026-03-02宣布向Lumentum(2015年由JDSU拆出)投资20亿美元，并签多年采购承诺",
+          "date": "2026-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526085412/d41019dex991.htm"
+        },
+        {
+          "claim_cn": "NVIDIA与Corning 2026-05-06宣布合作：Corning美国光连接产能扩10倍、光纤产能扩50%以上；Corning 2026年Q2光通信销售+32%至20.7亿美元，其中企业网络+65%，生成式AI产品增速更快",
+          "date": "2026-07",
+          "source": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000253/glw-20260728xex99xq22026.htm"
+        },
+        {
+          "claim_cn": "Ciena 2026财年Q3营收16.7亿美元(+37%)，全年指引64.2亿美元(+35%)，管理层称AI推动一波接一波的网络投资",
+          "date": "2026-09",
+          "source": "https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm"
+        }
+      ],
+      "time_to_reality": {
+        "years": 28,
+        "from": "1996",
+        "to": "2024",
+        "marker_cn": "流量增长本身一直是真的(约每年翻一番)，但泡沫期超建的长途光纤要到2024年才重新被视为稀缺：Lumen 2024-08宣布AI驱动的50亿美元光纤订单并扩建长途网络。股价层面，10家当年明星中只有Corning在2026-01(距2000年峰值约25年半)首次突破旧高",
+        "source": "https://www.sec.gov/Archives/edgar/data/18926/000119312524193967/d858658dex991.htm"
+      },
+      "basket_method": "当年口径：取泡沫期(1999-2000)市值最大、媒体最常点名的光纤/光网络明星——设备端Lucent、Nortel、JDS Uniphase、Corning、Ciena(5家)，运营商端WorldCom、Global Crossing、Qwest、Level 3、360networks(5家)。按各公司10-K/20-F峰值季度高价×当时股本，峰值市值约：Nortel(3980亿加元)、Lucent 2580亿、WorldCom约1800亿、JDSU约1200亿、Corning约1000亿、Qwest 910亿、Global Crossing约470亿、Level 3约445亿、Ciena约433亿、360networks约189亿美元。同期报道把WorldCom、Global Crossing列为丑闻核心，把Lucent、Nortel列为卖方融资的设备商(Paul Starr 2002-09, https://www.princeton.edu/~starr/articles/articles02/Starr-TelecomImplosion-9-02.htm)；Wikipedia“Telecoms crash”词条也以WorldCom、Global Crossing、Lucent为代表(https://en.wikipedia.org/wiki/Telecoms_crash)。未纳入：Cisco(归入 bigtech_horsemen 主题)、Sycamore、Williams Communications、XO、Metromedia Fiber、McLeodUSA、Winstar等，可作补充的死亡样本。",
+      "companies": [
+        {
+          "name": "WorldCom (MCI WorldCom)",
+          "ticker_then": "WCOM",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1997-11",
+          "peak_date": "1999-04",
+          "peak_price": 64.5,
+          "price_basis": "split-adjusted (按1999-12-30 3:2拆股追溯调整；当时实际交易价约96.75美元)",
+          "peak_mcap_usd_bn": 180,
+          "fate": "dead",
+          "fate_date": "2002-07",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2002-06-25披露把约38.5亿美元线路费用违规资本化(后查实约110亿美元)，2002-07-21申请第11章破产，为当时美国最大破产；2003年重整计划注销全部旧股、股东零分配，2004年以MCI名义脱困。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/723527/000091205701505916/a2043540z10-k405.txt",
+            "https://www.sec.gov/Archives/edgar/data/723527/000091205702025338/0000912057-02-025338.txt",
+            "https://www.sec.gov/Archives/edgar/data/723527/000090951802000544/mv7-22_8k.txt",
+            "https://www.sec.gov/Archives/edgar/data/723527/000119312503082881/0001193125-03-082881.txt",
+            "https://en.wikipedia.org/wiki/WorldCom_scandal"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“1999-Q2”(10-K仅给季度)，按季度起始月记为1999-04；常见说法为1999-06，月份未核实。峰值价来自2000年10-K季度高低价表(1999Q2高64.50，已按1999-12的3:2拆股追溯调整)。市值为估算：28.56亿股(2000-03-06，1999年10-K封面)×64.50≈1842亿美元，1999年中股本略少，取约1800亿。欺诈金额：2001年30.55亿+2002Q1 7.97亿(2002-06-26 8-K附件新闻稿)。2003-11-18 8-K：股权持有人在重整计划下不获任何分配。hype_date取1997-11 MCI合并宣布(370亿美元，Wikipedia)。"
+        },
+        {
+          "name": "Global Crossing",
+          "ticker_then": "GBLX (2000-11起NYSE: GX)",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1998-08",
+          "peak_date": "1999-04",
+          "peak_price": 64.25,
+          "price_basis": "nominal (1999-03 2:1拆股之后，之后无拆股)",
+          "peak_mcap_usd_bn": 47,
+          "fate": "dead",
+          "fate_date": "2002-01",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "1998-08以9.5美元IPO的海底光缆新贵，从未有过盈利年度；2002-01-28申请第11章破产，重整计划注销全部普通股与优先股、旧股东零对价，2003-12由新加坡ST Telemedia控股的新公司脱困(2011年被Level 3收购)。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1061322/000095013000001357/0000950130-00-001357.txt",
+            "https://www.sec.gov/Archives/edgar/data/1061322/000095013001001603/0000950130-01-001603.txt",
+            "https://www.sec.gov/Archives/edgar/data/1061322/000089375002000072/form8k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1061322/000090951803000964/0000909518-03-000964.txt",
+            "https://en.wikipedia.org/wiki/Global_Crossing"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“1999-Q2”，按季度起始月记为1999-04，月份未核实。峰值价：1999年10-K(收盘高价)与2000年10-K(成交高价)均显示1999Q2高64.25。市值470亿美元来自Wikipedia(“1999年估值470亿”，medium)；1999-09并购Frontier后股本增至约8.02亿股，2000Q1高价61.82×8.02亿≈496亿，故市值峰值可能在2000Q1。创始人Winnick约2000万美元投入、套现约7.35亿美元(Wikipedia)。"
+        },
+        {
+          "name": "Lucent Technologies",
+          "ticker_then": "LU",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1996-04",
+          "peak_date": "1999-10",
+          "peak_price": 84.19,
+          "price_basis": "nominal (84 3/16；1998-04与1999-04两次2:1拆股之后，之后无拆股)",
+          "peak_mcap_usd_bn": 258,
+          "fate": "acquired",
+          "fate_date": "2006-11",
+          "final_value_per_share": 2.6,
+          "fate_detail_cn": "AT&T 1996年拆出的设备巨头，曾是持股人数最多的美股(530万股东)，靠卖方融资和激进确认收入冲业绩，2000-01起连续盈利预警，2002-10跌到0.55美元；2006-11-30被Alcatel换股合并，每股换0.1952股Alcatel-Lucent ADS，折合约2.6美元，较峰值-97%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1006240/000095012300011855/y43690e10-k405.txt",
+            "https://www.sec.gov/Archives/edgar/data/1006240/000089882206001443/fm8kdec6.txt",
+            "https://www.sec.gov/Archives/edgar/data/886125/000130817907000075/alcatelform20f.htm",
+            "https://en.wikipedia.org/wiki/Lucent_Technologies"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“1999-Q4”，按季度起始月记为1999-10，月份未核实。峰值价来自2000财年10-K(截至1999-12-31季度高84 3/16)。市值2580亿美元来自Wikipedia(medium)；按1999-12-31股本31.79亿股×84.19算约2676亿(盘中高价口径)。合并完成日2006-11-30(2006-12-06 8-K)。隐含价值=0.1952×€10.16(Alcatel 2006-11-29巴黎收盘价，见Alcatel-Lucent 2006年20-F)=€1.98/股；20-F披露2006年11月欧元兑美元区间1.2705-1.3261、月末接近上沿，折合约2.58-2.63美元，取2.6(汇率为近似)。"
+        },
+        {
+          "name": "Nortel Networks",
+          "ticker_then": "NT (NYSE/TSX)",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1999-10",
+          "peak_date": "2000-07",
+          "peak_price": 89.0,
+          "price_basis": "nominal (NYSE美元，2000-05 2:1拆股之后；按2006-12-01 1:10并股调整为890美元)",
+          "peak_mcap_usd_bn": 283,
+          "fate": "dead",
+          "fate_date": "2009-01",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "鼎盛时占多伦多交易所总市值三分之一以上，2000-09市值约3980亿加元；光设备需求崩塌、大客户WorldCom破产，2006年1:10并股后仍于2009-01-14在美加英申请破产保护，2009-06公司表示普通股预计得不到任何价值，随后退市。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/72911/000095014401003499/t26083ke10-k405.txt",
+            "https://www.sec.gov/Archives/edgar/data/72911/000090956706001744/o33649e8vk.htm",
+            "https://www.sec.gov/Archives/edgar/data/72911/000119312509006031/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/72911/000119312510055645/d10k.htm",
+            "https://en.wikipedia.org/wiki/Nortel"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“2000-Q3”，按季度起始月记为2000-07(Wikipedia称市值峰值在2000-09)；hype_date 原为“1999-Q4”。2000年10-K：2000Q3 NYSE高89.00美元、TSX高124.50加元(具体日期未核实)。市值：Wikipedia称2000-09为3980亿加元(medium)；美元数为上限估算=31.82亿股(2001-02-28)×89≈2832亿美元，峰值时股本略少。1:10并股2006-12-01生效(2006-11-07 8-K)。2009-01-14破产(8-K)；NYSE 2009-01暂停其交易(2009-01-16 8-K)；2009年10-K写明普通股持有人预计不获任何价值。hype_date按10-K季度价：1999Q3高28.94→1999Q4高55.00。"
+        },
+        {
+          "name": "JDS Uniphase (现 Viavi Solutions + Lumentum)",
+          "ticker_then": "JDSU",
+          "yahoo_ticker": "VIAV",
+          "role_cn": "卖铲子",
+          "hype_date": "1999-07",
+          "peak_date": "2000-03",
+          "peak_price": 153.42,
+          "price_basis": "split-adjusted (按2000-03-13 2:1拆股调整；当时实际交易价约307美元；按2006年1:8并股口径为1227美元；Yahoo VIAV另按2015年分拆Lumentum再除以1.758，显示为698.17)",
+          "peak_mcap_usd_bn": 120,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "光器件“卖铲人”，1999下半年至2000初约每90天拆一次股，用高估值股票并购SDL(约450亿美元)和E-TEK(约150亿美元)；泡沫破裂后创纪录商誉减值，员工从近2.9万降到约5300，股价跌破2美元；2006年1:8并股，2015-08拆为Viavi与Lumentum。即使算上AI暴涨的Lumentum，持有至今仍比峰值低约78%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/912093/000091209300500006/body10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/912093/000119312506210204/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/912093/000110465915056495/a15-16911_18k.htm",
+            "https://finance.yahoo.com/quote/VIAV/history",
+            "https://en.wikipedia.org/wiki/JDS_Uniphase"
+          ],
+          "confidence": "high",
+          "notes": "2000财年10-K：截至2000-03-31季度高153.42(表头称收盘价，但与Yahoo对照实为2000-03-07盘中高点；最高收盘为2000-03-06，约146.5)。市值估算：5.964亿普通股+1.856亿可交换股(2000-04-30，10-Q)×153.42≈1200亿美元。hype_date取1999-06-30 JDS FITEL与Uniphase合并完成后(10-K)。1:8并股2006-10-16生效(8-K)；2015-08每5股VIAV派1股LITE(8-K)。截至2026-10-05：VIAV 46.91、LITE 1091.67 → 每股(2006并股后)JDSU≈46.91+1091.67/5≈265美元，对比峰值1227美元约-78%。Yahoo核对：VIAV调整后峰值高点698.17，现约48。fate_date无单一事件，故为null(2015-08为拆分日)。主分析师计算时须把LITE(2015-08起)一并计入。"
+        },
+        {
+          "name": "Corning",
+          "ticker_then": "GLW",
+          "yahoo_ticker": "GLW",
+          "role_cn": "卖铲子",
+          "hype_date": "1999-10",
+          "peak_date": "2000-08",
+          "peak_price": 113.11,
+          "price_basis": "split-adjusted (按2000-10-03 3:1拆股调整；当时实际交易价约339美元；Yahoo显示高点113.33)",
+          "peak_mcap_usd_bn": 100,
+          "fate": "survived_new_high",
+          "fate_date": "2026-01",
+          "final_value_per_share": null,
+          "fate_detail_cn": "全球最大光纤厂，2000年押注全套光通信与光子器件失败，股价从113美元(拆股调整)跌到2002-10约1.1美元；靠显示玻璃等业务活了下来，2024年起AI数据中心光连接需求爆发，2026-01首次突破2000年高点(相隔约25年半)，2026-05与NVIDIA宣布扩产合作。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/24741/000091205701503245/0000912057-01-503245.txt",
+            "https://www.sec.gov/Archives/edgar/data/24741/000002474100000057/0000024741-00-000057.txt",
+            "https://www.sec.gov/Archives/edgar/data/24741/000120677426000273/glw4631061-ex991.htm",
+            "https://www.sec.gov/Archives/edgar/data/24741/000002474126000253/glw-20260728xex99xq22026.htm",
+            "https://finance.yahoo.com/quote/GLW/history"
+          ],
+          "confidence": "high",
+          "notes": "hype_date 原为“1999-Q4”。2000年10-K季度高价：Q1 73.33/Q2 89.96/Q3 113.11/Q4 105.94(已按3:1拆股调整)；1999年Q4高42.98(Q1仅20.31)。Yahoo：2000-08-30盘中高113.33，最高收盘113.33(2000-09-01)；2002-10-08收盘1.10。市值估算：8.842亿股(2000-10 10-Q)×113.11≈1000亿美元。Yahoo月线核对：2026-01盘中高113.99首次超越；按收盘首次超越为2026-02-06(122.16)；2026年最高收盘255.69(2026-06-29)，2026-10-05收盘159.37。"
+        },
+        {
+          "name": "Qwest Communications",
+          "ticker_then": "QWST (Nasdaq) → Q (NYSE)",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1997-06",
+          "peak_date": "2000-07",
+          "peak_price": 55.0,
+          "price_basis": "nominal (1998-02与1999-05两次2:1拆股之后，之后无拆股)",
+          "peak_mcap_usd_bn": 91,
+          "fate": "acquired",
+          "fate_date": "2011-04",
+          "final_value_per_share": 6.91,
+          "fate_detail_cn": "沿铁路铺光纤起家，用高估值股票吞并Baby Bell US West(约480亿美元)；SEC指控其1999-2002年虚增逾38亿美元收入，市值从910亿跌到19亿美元(2002-08低点1.11美元)，没破产但前CEO Nacchio因内幕交易定罪；2011-04-01被CenturyLink以每股0.1664股换股收购，折合约6.91美元，较峰值-87%。",
+          "sources": [
+            "https://www.sec.gov/files/litigation/complaints/comp18936.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1037949/000092735600000463/0000927356-00-000463.txt",
+            "https://www.sec.gov/Archives/edgar/data/1037949/000103570401000204/0001035704-01-000204.txt",
+            "https://www.sec.gov/Archives/edgar/data/1037949/000110465911018718/a11-9685_18k.htm",
+            "https://finance.yahoo.com/quote/LUMN/history"
+          ],
+          "confidence": "high",
+          "notes": "峰值价取SEC起诉书：合并后高点55美元(2000-07)、市值高点910亿美元；2000年10-K显示2000Q3盘中高57.875。合并前独立Qwest在2000Q1可能更高(Wikipedia称2000年“超过60美元”，未核实)；注意2000年10-K中2000-06-30前的价格是US West股价，不可误用。成交价：0.1664×CenturyLink 2011-03-31收盘41.55(Yahoo LUMN)=6.91美元(8-K确认0.1664比例，2011-04-01完成)。若换成CTL后一直持有(LUMN 2026-10-05收盘5.62)，约合每股旧Q 0.94美元(未计股息)。hype_date取1997-06-27 IPO(1999年10-K)。"
+        },
+        {
+          "name": "360networks",
+          "ticker_then": "TSIX (Nasdaq) / TSX (Toronto)",
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2000-04",
+          "peak_date": "2000-07",
+          "peak_price": 23.06,
+          "price_basis": "nominal (收盘价)",
+          "peak_mcap_usd_bn": 18.9,
+          "fate": "dead",
+          "fate_date": "2001-06",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "温哥华光纤铺设商(前身Worldwide Fiber)，2000-04-20才上市、净募资约6.75亿美元，前微软CFO Maffei任CEO；上市仅14个月后于2001-06-28在加美两地申请破产保护，2002-10重整计划把新股权给了债权人和员工，旧股东出局，SEC于2013年撤销其证券注册。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1084587/000091205701517196/a2036999z20-f.txt",
+            "https://www.sec.gov/Archives/edgar/data/1084587/000091205701522229/a2053408z6-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1084587/000091205702037607/a2090591z6-k.txt",
+            "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001084587",
+            "https://en.wikipedia.org/wiki/360networks"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“2000-Q3”，按季度起始月记为2000-07，月份未核实。2000年20-F：2000Q3最高收盘23.06美元，2001-04跌到1.38美元。市值估算：7.382亿次级投票股+0.818亿多重投票股(2000-12-31)×23.06≈189亿美元。Wikipedia称IPO日为2000-01-02、IPO市值206亿加元——与20-F“2000-04-20开始交易”矛盾，以20-F为准。旧股零回收系据2002-10-02 6-K“新股权由担保债权人、贸易债权人和员工持有”推断(未见明确写“股东零分配”的原文)。EDGAR显示2013-07-22证券注册被撤销(REVOKED)。"
+        },
+        {
+          "name": "Level 3 Communications",
+          "ticker_then": "LVLT",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1998-04",
+          "peak_date": "2000-01",
+          "peak_price": 130.19,
+          "price_basis": "nominal (收盘价；按2011-10-19 1:15并股调整为1952.85美元)",
+          "peak_mcap_usd_bn": 44.5,
+          "fate": "acquired",
+          "fate_date": "2017-11",
+          "final_value_per_share": 3.58,
+          "fate_detail_cn": "1998-04从Peter Kiewit分拆上市、举债自建全美IP光纤网的“新一代运营商”，没破产但长年亏损，2011年1:15并股并收购了破产重生的Global Crossing；2017-11-01被CenturyLink以每股26.5美元现金+1.4286股收购，折合2000年口径每股约3.58美元，较峰值-97%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/794323/000095013001001198/0000950130-01-001198.txt",
+            "https://www.sec.gov/Archives/edgar/data/794323/000094018000000164/0000940180-00-000164.txt",
+            "https://www.sec.gov/Archives/edgar/data/794323/000110465911056985/a11-28236_38k.htm",
+            "https://www.sec.gov/Archives/edgar/data/794323/000119312517329395/d459582d8k.htm",
+            "https://finance.yahoo.com/quote/LUMN/history"
+          ],
+          "confidence": "high",
+          "notes": "peak_date 原为“2000-Q1”，按季度起始月记为2000-01；常见说法为2000-03，月份未核实。2000年10-K：2000Q1最高收盘130.19。市值估算：3.418亿股(2000-02-01)×130.19≈445亿美元。成交对价(2017-11-01 8-K)：26.50+1.4286×CTL 2017-10-31收盘18.99(Yahoo LUMN)=53.63美元/并股后股，÷15=3.58美元/2000年口径股。1998-04-01起在Nasdaq交易(1999年10-K)。"
+        },
+        {
+          "name": "Ciena",
+          "ticker_then": "CIEN",
+          "yahoo_ticker": "CIEN",
+          "role_cn": "卖铲子",
+          "hype_date": "1997-02",
+          "peak_date": "2000-10",
+          "peak_price": 151.0,
+          "price_basis": "nominal (2000-09-18 2:1拆股后的实际交易价；按2006-09-22 1:7并股调整为1057美元)",
+          "peak_mcap_usd_bn": 43.3,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "DWDM光传输设备新星，1997-02上市，2000-10见顶后2002-10跌到约2.45美元(实际交易价)；没破产，靠收购整合和2006年1:7并股撑过来；2024-2026年AI数据中心互联需求推动营收和股价大涨，但2026年高点637.5美元仍只有2000年并股调整后峰值的约六成。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/936395/000095013300004793/w43335e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/936395/000095013306004172/w25346e8vk.htm",
+            "https://www.sec.gov/Archives/edgar/data/936395/000162828026060245/ex9912026q3earningspressre.htm",
+            "https://finance.yahoo.com/quote/CIEN/history"
+          ],
+          "confidence": "high",
+          "notes": "2000财年10-K：截至2000-10-31季度高151.00(盘中)；Yahoo最高收盘1046.5(并股调整)=2000-10-20，约合当时149.5美元。市值估算：2.865亿股(2000-10-31)×151≈433亿美元。Yahoo 2002-10-07收盘17.15(调整后)÷7≈2.45美元。Yahoo月线：调整后峰值高点1057.0，2026-06最高637.5；日线2026年最高收盘627.0(2026-06-02)，2026-10-05收盘389.69。hype_date取Yahoo数据起点1997-02-07(上市)。"
+        }
+      ]
+    },
+    {
+      "id": "b2b_infra",
+      "name_cn": "B2B 电商与互联网基础设施（含孵化器）",
+      "name_en": "B2B e-commerce & Internet infrastructure (incl. incubators)",
+      "one_line_cn": "赌企业间采购会大规模搬到互联网“交易所”上，由纯互联网中介（Commerce One、Ariba、VerticalNet）抽成，“卖铲子”的托管/搜索缓存/CDN/宽带公司（Exodus、Inktomi、Akamai、Excite@Home）收过路费，孵化器（CMGI、ICG）把这一切打包持有。",
+      "hype_start": {
+        "date": "1999-02",
+        "event_cn": "B2B 第一股 VerticalNet 1999-02-11 以每股 $16 IPO（424B1），首日涨约 180%、市值约 16 亿美元（首日涨幅据维基/Forbes）",
+        "source": "https://www.sec.gov/Archives/edgar/data/1043946/0000950130-99-000729.txt"
+      },
+      "peak": {
+        "date": "2000-03",
+        "event_cn": "2000-03-10 纳指收 5,048.62，同日 VerticalNet 市值见顶 108.9 亿美元；美林 B2B Internet HOLDRs（20 只 B2B 股）从 3-10 到 4-14 暴跌 68.6%（同期纳指 -34.2%），即“2000 年 4 月 B2B 崩盘”",
+        "source": "https://archive.nytimes.com/www.nytimes.com/library/financial/investing/050700invest-btob.html"
+      },
+      "trough": {
+        "date": "2002-10",
+        "event_cn": "纳指 2002-10-09 跌至约 1,114；主题股同期见底：Ariba 2002 年 7–12 月低点 $1.30（逆拆前）、Inktomi 2002 年 7–9 月低点 $0.25 并于 2002-12 以 $1.65 卖给 Yahoo、Commerce One 2002 Q3 低点 $2.08（1:10 逆拆后）；Exodus、Excite@Home 已于 2001-09 破产",
+        "source": "https://www.sec.gov/Archives/edgar/data/1084755/000119312503090847/d10k.htm"
+      },
+      "proxy_tickers": [
+        "^IXIC",
+        "AKAM"
+      ],
+      "proxy_note_cn": "当年有美林 B2B Internet HOLDRs（20 只 B2B 股，2000 年初设立）可作主题指数，但该信托已不存在、Yahoo 无数据；主题层面只能用纳指 ^IXIC 近似（会低估 B2B 跌幅：2000-03-10 至 04-14 B2B HOLDRs -68.6% vs 纳指 -34.2%）。AKAM 是篮子里唯一仍上市的个股。无对应现代 ETF。",
+      "what_killed_it_cn": "(1) 供给泛滥+估值离谱：约十几只 1999 年中以后才上市的 B2B 股在约 6 个月里堆出 1,250 亿美元市值，Yahoo、eBay 在 2000-03 相继宣布做 B2B 交易所，几乎任何公司都自称“B2B 概念”（NYT 2000-05-07）。(2) 商业模式证伪：交易所靠撮合抽成，但 GM、Ford、GE 等行业巨头自建采购平台；连被广泛引用的 Gartner“2004 年 7.3 万亿美元”报告本身也写明约三分之二的支出会在制造商与供应商之间直接发生、不经过 B2B 中介（同上 NYT）。(3) 拿高估值股票当货币并购：Ariba 换股买 Tradex（宣布时 18.6 亿美元），FY2000 一年记入 39 亿美元商誉和无形资产；Exodus 以 65 亿美元股票买 GlobalCenter，交割时只值 19.5 亿美元——股价一跌，这些并购全变成负担。(4) 基础设施层重资产扩张、客户多是 .com，泡沫破裂后 Exodus（2001-09-26）、Excite@Home（2001-09-28）相继破产。(5) 触发点是 2000-04 的急跌：纳指 4-14 单日 -9%、当周 -25%，B2B 是重灾区。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "2000 年美国制造业电子出货 7,558 亿美元，占制造业总出货 18.0%（Census 修订口径；Census 电子商务口径包含 EDI 等专用网络交易，不只是互联网交易所）",
+          "date": "2000",
+          "source": "https://www2.census.gov/programs-surveys/e-stats/tables/2019/historic/table_1.xlsx"
+        },
+        {
+          "claim_cn": "2019 年美国制造业电子出货 3.888 万亿美元，占制造业总出货 67.8%（2012 年首次过半：52.4%）",
+          "date": "2019",
+          "source": "https://www2.census.gov/programs-surveys/e-stats/tables/2019/table_1.0.xlsx"
+        },
+        {
+          "claim_cn": "2019 年美国批发业（含制造商销售分支）电子销售 2.873 万亿美元，占批发总销售 33.3%；2000 年批发电子销售仅 2,128 亿美元、占 7.7%（口径不完全可比）",
+          "date": "2019",
+          "source": "https://www2.census.gov/programs-surveys/e-stats/tables/2019/table_2.0.xls"
+        },
+        {
+          "claim_cn": "当年预测：Forrester 称美国 B2B 电商将从 1998 年 430 亿美元增至 2003 年 1.3 万亿美元（ICG 1999 年报）、2004 年 2.7 万亿美元（Ariba 2000 年报）；Census 口径制造业+批发电子交易 2005 年约 2.60 万亿、2006 年约 2.91 万亿美元——量级兑现，只晚了约 2 年（两项相加可能有重叠）",
+          "date": "2006",
+          "source": "https://www2.census.gov/programs-surveys/e-stats/tables/2019/historic/table_2.xlsx"
+        },
+        {
+          "claim_cn": "CDN 真实存在且长期成长：Akamai 收入 1999 年 400 万美元、2000 年 8,980 万美元、2025 年 42.08 亿美元（但传统分发业务 2023→2025 从 15.4 亿降到 12.6 亿美元，增长来自安全和云计算）",
+          "date": "2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000022/akam-20251231.htm"
+        },
+        {
+          "claim_cn": "“互联网基础设施外包”最终由当年不在篮子里的 AWS 兑现：2025 年 AWS 净销售 1,287 亿美元、营业利润 456 亿美元",
+          "date": "2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+        }
+      ],
+      "time_to_reality": {
+        "years": 7,
+        "from": "1999",
+        "to": "2006",
+        "marker_cn": "Census 口径美国制造业电子出货（1.567 万亿）+ 批发电子销售（1.340 万亿）合计约 2.91 万亿美元，首次超过 Forrester 当年给 2004 年的 2.7 万亿预测（晚约 2 年）；制造业电子出货占比 2012 年首次过半。注意 Census 口径含 EDI、两项相加可能重叠，仅作量级参考；且兑现的主体是 ERP/EDI/供应商门户和行业巨头自建平台，而非当年的第三方交易所。",
+        "source": "https://www2.census.gov/programs-surveys/e-stats/tables/2019/historic/table_2.xlsx"
+      },
+      "basket_method": "当年口径：以 NYT 2000-05-07 Bob Tedeschi《How Killer B-to-B's Slid to the Endangered List》点名的 B2B 明星（Internet Capital、Ariba、Commerce One、PurchasePro 等“十几只半年内堆出 1,250 亿美元市值”的股票）为核心，加上 1999 年 B2B 第一股 VerticalNet（ICG 持股约 28%，维基）；“卖铲子”层取当年托管/搜索缓存/CDN/宽带四大名字 Exodus、Inktomi、Akamai、Excite@Home（NYT 同文把基础设施股称作“卖枪”策略）；孵化器取 CMGI（1995–99 美国表现最好的股票，+4,921%，维基）与 ICG（Forbes 2001-01-19《Incubators On Life Support: ICG》，经维基引用）。刻意保留已破产者（Commerce One、Exodus、Excite@Home、PurchasePro）。来源：https://archive.nytimes.com/www.nytimes.com/library/financial/investing/050700invest-btob.html ；https://www.forbes.com/2001/01/19/0119icg.html ；https://en.wikipedia.org/wiki/CMGI",
+      "companies": [
+        {
+          "name": "Commerce One",
+          "ticker_then": "CMRC",
+          "yahoo_ticker": null,
+          "role_cn": "龙头（B2B 交易所/电子采购软件）",
+          "hype_date": "1999-07",
+          "peak_date": "2000-01",
+          "peak_price": 135.63,
+          "price_basis": "split-adjusted for 1999-12 3:1 and 2000-04 2:1 splits (FY2000 10-K quarterly high); NOT adjusted for 2002-09-16 1:10 reverse split",
+          "peak_mcap_usd_bn": 21.5,
+          "fate": "dead",
+          "fate_date": "2004-10",
+          "final_value_per_share": 0.11,
+          "fate_detail_cn": "2004-10-06 申请第 11 章破产，网络服务专利以 1,550 万美元卖给 JGR，其余资产以 410 万美元抵债卖给 ComVest 关联方；2005-10 破产清算首期向股东分配每股 $0.11（1:10 逆拆后股），折合峰值口径约 $0.011，较峰值跌 99.99%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1069450/0001047469-99-026301.txt",
+            "https://www.sec.gov/Archives/edgar/data/1069450/000091205701506507/a2041680z10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1131806/000110465903005553/j7047_10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1131806/000113180604000075/body8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1131806/000113180604000085/body8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1131806/000113180605000020/body8k.htm",
+            "https://en.wikipedia.org/wiki/Commerce_One"
+          ],
+          "confidence": "high",
+          "notes": "IPO 1999-07-01 每股 $21（424B4），首日涨约 190%（Wired/维基）。峰值 $135.63 是 2000 Q1 季度最高（已调整 3:1 与 2:1 拆股），当时实际成交价约为其 2 倍（约 $271，2000-04 拆股前）；按 2002 年 1:10 逆拆后口径为 $1,356.3。峰值具体日期未在一手资料核实，故写季度。市值 215 亿美元来自维基（medium）。$0.11 是首期分配；该 8-K 称后续视清算结果最多可能再分 $0.03/股，最终是否追加未查到。峰值口径等值 final ≈ $0.011。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Ariba",
+          "ticker_then": "ARBA",
+          "yahoo_ticker": null,
+          "role_cn": "龙头（电子采购软件/B2B 交易平台）",
+          "hype_date": "1999-06",
+          "peak_date": "2000-09",
+          "peak_price": 168.75,
+          "price_basis": "split-adjusted for 1999-11 and 2000-03 2:1 splits (FY2001 10-K quarterly high, quarter ended 2000-09-30); NOT adjusted for 2004-07-01 1:6 reverse split",
+          "peak_mcap_usd_bn": 40.0,
+          "fate": "acquired",
+          "fate_date": "2012-10",
+          "final_value_per_share": 45.0,
+          "fate_detail_cn": "SAP 2012-05-22 宣布以每股 $45 现金（约 43 亿美元）收购，2012-10-01 完成；因 2004 年 1:6 逆拆，$45 折合峰值口径 $7.50，较峰值 -95.6%，但较 2002 年低点 $1.30 高约 5.8 倍。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1084755/0001047469-99-025186.txt",
+            "https://www.sec.gov/Archives/edgar/data/1084755/000091205700055033/a2033975z10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1084755/000101287001503251/d10k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1084755/000119312503090847/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1084755/000119312504212316/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1084755/000119312512243628/d357255d8k.htm",
+            "https://en.wikipedia.org/wiki/SAP_Ariba"
+          ],
+          "confidence": "high",
+          "notes": "IPO 1999-06-23 每股 $23（424B4），首日涨 291%（CNET/维基）。10-K 季度高点呈双顶：2000-03 季度 $165.50、2000-09 季度 $168.75；维基称 2000-03-09 收盘 $173（与 10-K 不一致，未核实）。按逆拆后口径峰值约 $1,012.5。FY2000 因换股并购记入商誉和无形资产 39 亿美元（FY2000 10-K）。市值 400 亿美元来自维基/San Jose Mercury News（medium）。峰值口径等值 final = $7.50。"
+        },
+        {
+          "name": "VerticalNet",
+          "ticker_then": "VERT",
+          "yahoo_ticker": null,
+          "role_cn": "明星（垂直行业 B2B 门户/交易所，B2B 第一股）",
+          "hype_date": "1999-02",
+          "peak_date": "2000-03",
+          "peak_price": 138.88,
+          "price_basis": "split-adjusted for 1999-08 and 2000-03 2:1 splits (FY2000 10-K highest closing price, Q1 2000); NOT adjusted for later reverse splits 1:10 (2002-07-15), 1:7 (2006-06-12), 1:8 (2007-08)",
+          "peak_mcap_usd_bn": 10.89,
+          "fate": "acquired",
+          "fate_date": "2008-01",
+          "final_value_per_share": 2.56,
+          "fate_detail_cn": "意大利 BravoSolution 2007-10-25 签约以每股 $2.56 现金收购，2008-01 股东批准并完成（总价约 1,520 万美元，维基）；三次逆拆累计 560:1，$2.56 折合峰值口径约 $0.0046，较峰值 -99.997%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1043946/0000950130-99-000729.txt",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000089322001000421/w46798e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000095010903001887/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000119312507072212/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000089322007003967/w42936fdefm14a.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000119312507231188/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043946/000129993308000264/htm_24993.htm",
+            "https://en.wikipedia.org/wiki/VerticalNet"
+          ],
+          "confidence": "high",
+          "notes": "IPO 1999-02-11 每股 $16（拆股调整后 $4）。峰值市值 108.9 亿美元（2000-03-10）及 2008 年总价 1,520 万美元来自维基（medium）。2000 Q2 收盘低点 $28，较 Q1 高点跌约 80%。按最终股本口径峰值约 $77,773。峰值口径等值 final ≈ $0.0046。"
+        },
+        {
+          "name": "Akamai Technologies",
+          "ticker_then": "AKAM",
+          "yahoo_ticker": "AKAM",
+          "role_cn": "卖铲子（CDN 内容分发）",
+          "hype_date": "1999-10",
+          "peak_date": "2000-01",
+          "peak_price": 345.5,
+          "price_basis": "nominal = split-adjusted (no splits or reverse splits); FY2000 10-K Q1 2000 high",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "篮子里唯一仍上市的公司：收入从 1999 年 400 万、2000 年 8,980 万美元增长到 2025 年 42.08 亿美元，重心转向安全与云计算；但股价 26 年未收复 2000 年初 $345.50 的峰值（Yahoo 月线：此后最高约 $165，2026-10 约 $112）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1086222/0000950135-99-004929.txt",
+            "https://www.sec.gov/Archives/edgar/data/1086222/000095013501000445/b37716ate10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000022/akam-20251231.htm",
+            "https://query1.finance.yahoo.com/v8/finance/chart/AKAM?period1=631152000&period2=1791331200&interval=1mo"
+          ],
+          "confidence": "high",
+          "notes": "IPO 1999-10-29 每股 $26（424B1）。10-K：1999 Q4 最高 $344.88，2000 Q1 最高 $345.50；Yahoo 月线显示峰值在 2000-01（主分析员已拉取：2000 年后最高 $165.45 于 2026-05，2026-10 约 $111.6）。峰值市值未找到一手数据，填 null。"
+        },
+        {
+          "name": "Inktomi",
+          "ticker_then": "INKT",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子（搜索引擎/网络缓存软件）",
+          "hype_date": "1998-06",
+          "peak_date": "2000-03",
+          "peak_price": 231.63,
+          "price_basis": "split-adjusted for 1998-12 and 1999-12 2:1 splits (FY2000 10-K quarterly high, Jan–Mar 2000); no later reverse split",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2003-03",
+          "final_value_per_share": 1.65,
+          "fate_detail_cn": "Yahoo 2002-12-23 宣布以每股 $1.65 现金（约 2.35 亿美元）收购，2003-03 完成；较峰值 -99.3%，但较 2002 年 7–9 月低点 $0.25 高约 6.6 倍。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1024302/000089161802005647/f86708exv99w1.txt",
+            "https://www.sec.gov/Archives/edgar/data/1024302/000109238800500447/inktomi_10kv4.htm",
+            "https://www.sec.gov/Archives/edgar/data/1024302/0000891618-02-005695.txt",
+            "https://en.wikipedia.org/wiki/Inktomi"
+          ],
+          "confidence": "high",
+          "notes": "维基写 $1.63/股、2.41 亿美元，与 SEC 8-K 附件（$1.65、约 2.35 亿美元）不符，以 SEC 为准。维基称 2000-03 峰值 $241（可能为盘中价）。峰值市值粗估：2000-11 股本 1.2715 亿股 × $231.63 ≈ 295 亿美元（仅估算，未填入字段）。完成日 2003-03-19 来自维基/BusinessWire（medium）。"
+        },
+        {
+          "name": "Exodus Communications",
+          "ticker_then": "EXDS",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子（数据中心托管）",
+          "hype_date": "1999-04",
+          "peak_date": "2000-01",
+          "peak_price": 86.66,
+          "price_basis": "split-adjusted for four 2:1 splits (1999-04-12, 1999-08-12, 1999-12-14, 2000-06-20), FY2000 10-K quarterly high; as-traded in Q1 2000 ≈ 2× (before 2000-06 split)",
+          "peak_mcap_usd_bn": 32.0,
+          "fate": "dead",
+          "fate_date": "2001-09",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2001-09-26 在特拉华申请第 11 章破产；美国业务资产 2002-02-01 以约 5.69 亿美元（其中现金 5.6 亿）卖给 Cable & Wireless 旗下 Digital Island；2002-06-19 重整计划生效，普通股全部注销。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1013740/0001012870-01-001433.txt",
+            "https://www.sec.gov/Archives/edgar/data/1013740/000089161801501801/f76014e8-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1013740/000095017202000292/pal67051.txt",
+            "https://www.sec.gov/Archives/edgar/data/1013740/000095017202001346/pal78211.txt",
+            "https://en.wikipedia.org/wiki/Exodus_Communications"
+          ],
+          "confidence": "high",
+          "notes": "峰值市值约 320 亿美元来自维基（medium）。2000-09 以 65 亿美元股票收购 Global Crossing 的 GlobalCenter，2001-01 交割时仅值 19.5 亿美元（维基）。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Excite@Home (At Home Corp)",
+          "ticker_then": "ATHM",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子+门户（有线宽带接入+Excite 门户）",
+          "hype_date": "1999-01",
+          "peak_date": "1999-04",
+          "peak_price": 99.0,
+          "price_basis": "split-adjusted for 1999-06 2:1 split (FY1999/FY2000 10-K quarterly high, Apr–Jun 1999)",
+          "peak_mcap_usd_bn": 35.0,
+          "fate": "dead",
+          "fate_date": "2001-09",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2001-09-28 申请第 11 章破产，同日同意把宽带接入业务卖给 AT&T（维基称作价 3.07 亿美元现金）；清算计划 2002-09-30 生效，普通股注销，仅在债权人全额受偿后才可能有剩余分配，未查到股东获分配记录。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1020620/0001012870-00-001788.txt",
+            "https://www.sec.gov/Archives/edgar/data/1020620/0001012870-01-001498.txt",
+            "https://www.sec.gov/Archives/edgar/data/1020620/000101287001502290/d8k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1020620/000101968702002295/athome_8k-111802.txt",
+            "https://en.wikipedia.org/wiki/@Home_Network"
+          ],
+          "confidence": "medium",
+          "notes": "1999-01-19 @Home 以 67 亿美元合并 Excite（维基）。维基称股价“1999 Q1 曾达 $128.34、市值 350 亿美元”，与 10-K（拆股调整后 1999 Q1 最高 $81.75、Q2 最高 $99.00）不一致，可能是拆股前名义价，未能核实；peak_price 用 10-K，市值用维基（medium）。final=0 为按清算计划推定。 [peak_date 原值“1999-Q2”，仅知区间，按区间起始月记为 1999-04]"
+        },
+        {
+          "name": "CMGI (→ ModusLink → Steel Connect)",
+          "ticker_then": "CMGI",
+          "yahoo_ticker": null,
+          "role_cn": "孵化器（互联网控股/风投，持有 Lycos、Engage、NaviSite 等）",
+          "hype_date": "1999-01",
+          "peak_date": "1999-11",
+          "peak_price": 163.5,
+          "price_basis": "split-adjusted for 2:1 splits 1998-05, 1999-01, 1999-05, 2000-01-11 (FY2000 10-K high, fiscal quarter ended 2000-01-31); NOT adjusted for 2007 1:10 reverse split or 2023-06 1:3,500 reverse + 375:1 forward split",
+          "peak_mcap_usd_bn": 41.0,
+          "fate": "acquired",
+          "fate_date": "2025-01",
+          "final_value_per_share": 11.45,
+          "fate_detail_cn": "2008 年更名 ModusLink（供应链外包），2018 年更名 Steel Connect；2025-01 被持股超 90% 的 Steel Partners 以简易合并私有化，每股 $11.45 现金加 1 份诉讼 CVR，随即从纳斯达克退市。按累计约 93.3 倍逆拆折算，峰值口径约 $0.12，较峰值 -99.9%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/914712/0000927016-00-003670.txt",
+            "https://www.sec.gov/Archives/edgar/data/914712/000119312508210115/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/914712/000162828023037522/stcn-20230731.htm",
+            "https://www.sec.gov/Archives/edgar/data/914712/000121390024103743/ea0222827-8k_steelcon.htm",
+            "https://www.sec.gov/Archives/edgar/data/914712/000121390025000385/ea022628901-8k_steel.htm",
+            "https://en.wikipedia.org/wiki/CMGI"
+          ],
+          "confidence": "high",
+          "notes": "1:10 逆拆：2008 年 10-K 写明董事会 2007-09 授权执行（非 2008 年），价格按 2006-08-01 起追溯调整。2023-06 先 1:3,500 逆拆再 375:1 正拆，净约 1:9.33。累计因子 10×9.333≈93.3，峰值按最终股本口径约 $15,260；峰值口径等值 final ≈ $0.1227（未计 CVR，CVR 价值未定）。若峰值出现在 2000-01-11 拆股前，名义成交价约为 2 倍，未核实。市值 410 亿美元与“1995–99 年回报 4,921%”来自维基（medium）。Yahoo 上 STCN 已无数据（主分析员核实），故 yahoo_ticker 填 null。 [peak_date 原值“1999-11~2000-01”，仅知区间，按区间起始月记为 1999-11]"
+        },
+        {
+          "name": "Internet Capital Group (→ Actua)",
+          "ticker_then": "ICGE",
+          "yahoo_ticker": null,
+          "role_cn": "孵化器（专做 B2B 的控股/孵化公司，VerticalNet 大股东）",
+          "hype_date": "1999-08",
+          "peak_date": "1999-12",
+          "peak_price": 212.0,
+          "price_basis": "nominal intraday high on 1999-12-22 per NYT (after 1999-12 2:1 split); FY2000 10-K quarterly highs (split-adjusted): Q4 1999 $193.63, Q1 2000 $200.94; NOT adjusted for 2004-05 1:20 reverse split",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2018-04",
+          "final_value_per_share": 17.82,
+          "fate_detail_cn": "2014 年更名 Actua；2017–2018 卖掉 VelocityEHS、Bolt、FolioDynamix 后清算，2018-02 主动退市、2018-04-19 关闭过户；2018–2022 累计清算分配每股 $17.82（1:20 逆拆后股），折合峰值口径约 $0.89，较峰值 -99.6%。",
+          "sources": [
+            "https://archive.nytimes.com/www.nytimes.com/library/financial/investing/050700invest-btob.html",
+            "https://www.sec.gov/Archives/edgar/data/1085621/000089322001000425/w47166e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1085621/000089322005000586/w06701e10vk.htm",
+            "https://www.sec.gov/Archives/edgar/data/1085621/000119312518014144/d523559d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1085621/000119312518018398/d524060d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1085621/000119312522267699/d370667dex101.htm",
+            "https://en.wikipedia.org/wiki/Actua_Corporation"
+          ],
+          "confidence": "high",
+          "notes": "IPO 1999-08-05 每股 $12（拆股调整后 $6，10-K），首日翻倍（CNET/维基）。NYT 盘中高点 $212 与 10-K 季度最高价（$193.63/$200.94）不一致，原因未查明。按逆拆后口径峰值约 $4,240。fate 记为 dead：属自愿清算而非破产，名义上收回 $17.82/股，但相对峰值已近乎归零（-99.6%），如分析口径不同可改记。峰值市值维基两处说法（“超 500 亿”与“近 600 亿”美元）不一致，填 null。"
+        },
+        {
+          "name": "PurchasePro.com",
+          "ticker_then": "PPRO",
+          "yahoo_ticker": null,
+          "role_cn": "明星（B2B 电子交易平台，NYT 点名的十几只 B2B 股之一）",
+          "hype_date": "1999-09",
+          "peak_date": "1999-10",
+          "peak_price": 87.5,
+          "price_basis": "split-adjusted for 2000-10-12 2:1 split (FY2000 10-K405 quarterly high, Q4 1999); as-traded ≈ 2× if no other splits",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2002-09",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2002-09-12 在内华达申请第 11 章破产，2003-01-17 以 263.8 万美元现金把几乎全部资产卖给 Perfect Commerce，并被要求更名 Pro-After；未查到股东获任何分配。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1087831/0000929624-99-001703.txt",
+            "https://www.sec.gov/Archives/edgar/data/1087831/000091205701506050/a2043229z10-k405.txt",
+            "https://www.sec.gov/Archives/edgar/data/1087831/000109000202000384/pp8k9102.txt",
+            "https://www.sec.gov/Archives/edgar/data/1087831/000109000203000018/ppro8k11703.htm"
+          ],
+          "confidence": "medium",
+          "notes": "IPO 1999-09 每股 $12（424B4，名义价）。final=0 为推定（资产售价远低于峰值市值，未找到股东分配记录）。Perfect Commerce 后来也收购了 Commerce One 的残余业务（维基）。峰值市值未找到，填 null。 [peak_date 原值“1999-Q4”，仅知区间，按区间起始月记为 1999-10]"
+        }
+      ]
+    },
+    {
+      "id": "genomics_2000",
+      "name_cn": "基因组泡沫",
+      "name_en": "Genomics bubble 2000",
+      "one_line_cn": "赌人类基因组测序一完成，卖基因数据库、握基因专利、做基因组药物平台的公司就会迅速变成新药和个体化医疗的巨头。",
+      "hype_start": {
+        "date": "1999-12",
+        "event_cn": "1999-12 人类第22号染色体测序完成，基因组板块市值一天涨约10亿美元；CNNfn 称这些股票估值“像互联网股”。Celera 跟踪股从 1999 年中约 $7 涨到 1999Q4 最高约 $96；2000-01-10 Celera 宣布年内测完全基因组后板块再度狂飙",
+        "source": "https://web.archive.org/web/2000/http://money.cnn.com:80/1999/12/13/companies/genes/"
+      },
+      "peak": {
+        "date": "2000-03",
+        "event_cn": "纳斯达克生物科技指数 ^NBI 2000-03-06 收盘 1596.53（盘中高点 2000-03-07 1619.98）；Celera 3 月初最高 $276，并于 2000-03-06 以每股 $225 增发 437 万股、净募 9.43 亿美元；2000-03-14 克林顿与布莱尔联合声明基因序列数据应免费开放，当天 NBI 跌逾 12%、Celera 跌 25%",
+        "source": "https://web.archive.org/web/2000/http://money.cnn.com:80/2000/03/14/companies/biotech/"
+      },
+      "trough": {
+        "date": "2002-07",
+        "event_cn": "^NBI 2002-07-10 收盘 403.98，较 2000-03-06 高点跌约 74.7%（Yahoo 日线数据）；该指数要到 2013-03-05 才收复 2000 年峰值",
+        "source": "https://finance.yahoo.com/quote/%5ENBI/history/"
+      },
+      "proxy_tickers": [
+        "^NBI"
+      ],
+      "proxy_note_cn": "没有纯基因组指数。^NBI（纳斯达克生物科技指数，Yahoo 有 1993 年起数据）是最接近的主题代理，但包含 Amgen 等非基因组公司。IBB ETF 2001 年才上市（Yahoo 数据从 2001-03 开始），晚于峰值，不能用来衡量泡沫顶部。^BTK 的峰值在 2000-08/09，与基因组股节奏不一致，不建议使用。",
+      "what_killed_it_cn": "(1) 商业模式被政治和公共科研釜底抽薪：公共人类基因组计划从 1996 年起就按百慕大原则在 24 小时内公开序列数据。2000-03-14 克林顿与布莱尔声明数据应免费，当天 NBI 跌逾 12%，打击了“卖基因数据库/基因专利”模式的稀缺性。(2) 利好兑现即见顶：2000-06-26 白宫宣布草图完成当天，Celera 反跌 $15。(3) 科学现实比故事复杂：2001 年初步分析估计人类基因只有约 3.5 万个，后来又修正为约 2 万个；从“找到基因”到“上市新药”要 10 年以上，HGS 首个药 Benlysta 2011 年才获批。(4) 供给泛滥：2000 年初生物科技 IPO 窗口大开，Celera 等在顶部增发。(5) 2000-03 后纳斯达克整体崩盘，资金撤离。(6) 法律终局：2013-06-13 美国最高法院在 AMP v. Myriad 案中裁定天然 DNA 片段不可申请专利。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "NHGRI 统计的单个人类基因组测序成本：2001-09 约 $9,526 万，2019-02 首次跌破 $1,000（$993），2022-05 约 $525，20 年间下降约 18 万倍",
+          "date": "2001-2022",
+          "source": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data"
+        },
+        {
+          "claim_cn": "人类基因组计划 2003-04-14 宣布完成；2001 年估计人类基因约 3.5 万个，后修正为约 2 万个",
+          "date": "2003",
+          "source": "https://www.genome.gov/human-genome-project/timeline"
+        },
+        {
+          "claim_cn": "HGS 与 GSK 的 Benlysta（狼疮药）2011-03-09 获 FDA 批准，距泡沫峰值约 11 年",
+          "date": "2011-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/901219/000095012311023782/c13929e8vk.htm"
+        },
+        {
+          "claim_cn": "Incyte 的 Jakafi 2011-11-16 获批。2025 财年总营收 $51.4 亿（2000 年为 $1.94 亿），但这时公司早已在 2001-2003 年放弃基因组数据库业务，转做小分子新药",
+          "date": "2011-2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/879169/000110465911064632/a11-30045_18k.htm"
+        },
+        {
+          "claim_cn": "首个针对遗传病的 FDA 批准基因疗法 Luxturna 于 2017-12-19 获批",
+          "date": "2017-12",
+          "source": "https://www.sec.gov/Archives/edgar/data/1609351/000160935117000127/luxturnaapproval8-k.htm"
+        },
+        {
+          "claim_cn": "截至 2026-09-17，FDA 已批准细胞与基因治疗产品清单共 54 项（含脐带血等细胞产品，不全是基因疗法）",
+          "date": "2026-09",
+          "source": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products"
+        },
+        {
+          "claim_cn": "美国最高法院 2013-06-13 在 AMP v. Myriad 案中裁定：天然 DNA 片段即使被分离也不能申请专利（cDNA 可以），基因专利独占模式被否定",
+          "date": "2013-06",
+          "source": "https://www.law.cornell.edu/supremecourt/text/12-398"
+        }
+      ],
+      "time_to_reality": {
+        "years": 19,
+        "from": "2000",
+        "to": "2019",
+        "marker_cn": "NHGRI 统计的单基因组测序成本首次跌破 $1,000（2019-02，$993），“千元基因组”实现；同期首个遗传病基因疗法 Luxturna 于 2017-12 获批。首批基因组时代新药（Benlysta、Jakafi）在 2011 年获批，距峰值约 11 年",
+        "source": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data"
+      },
+      "basket_method": "按当年口径选股。母本是 CNNfn 1999-12-13《Wall St. keen on genes》对基因组板块的三层划分：工具层 PE Biosystems/Affymetrix/Qiagen；数据库层 Celera/Incyte/Gene Logic；药物发现层 Millennium/Myriad/HGSI；文中另点名 CuraGen。再用 CNNfn 2000-02-22、2000-03-14、2000-06-26 三篇报道点名的个股交叉确认。最终取其中 8 家，PE Biosystems 与 Qiagen 未入篮（PE Biosystems 的结局见叙事 notes）。来源：https://web.archive.org/web/2000/http://money.cnn.com:80/1999/12/13/companies/genes/ ；https://web.archive.org/web/2000/http://money.cnn.com:80/2000/03/14/companies/biotech/ ；https://web.archive.org/web/2000/http://money.cnn.com/2000/06/26/companies/biotech/",
+      "companies": [
+        {
+          "name": "Celera Genomics (PE Corp/Applera–Celera Genomics Group tracking stock; 2008 起为独立的 Celera Corp)",
+          "ticker_then": "CRA",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1999-12",
+          "peak_date": "2000-03",
+          "peak_price": 276.0,
+          "price_basis": "nominal（2000-02 完成 1拆2 后的成交价，之后没有再拆股；2008 年 1:1 换成 Celera Corp 股票）",
+          "peak_mcap_usd_bn": 16.6,
+          "fate": "acquired",
+          "fate_date": "2011-05",
+          "final_value_per_share": 8.0,
+          "fate_detail_cn": "2008-07-01 Applera 将 Celera 跟踪股按 1:1 赎回为独立的 Celera Corp 股票；Quest Diagnostics 以每股 $8.00 现金收购，2011-05-17 完成。收购价约为 2000 年峰值 $276 的 2.9%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/77551/0001086144-00-000093.txt",
+            "https://web.archive.org/web/2000/http://money.cnn.com/2000/06/26/companies/biotech/",
+            "https://www.sec.gov/Archives/edgar/data/1428156/000119312508148047/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1428156/000119312511070517/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1428156/000119312511143178/d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "$276 是 Applera FY2000 10-K 披露的 2000-01~03 季度最高价（已按 2000-02 拆股调整），CNNfn 说高点出现在“3 月初”。当年在 NYSE 交易。峰值市值为估算值（$276 × 2000-09-18 的 6024 万股），不是报道数。2000-03-06 公司以 $225 增发 437 万股，随后遭集体诉讼。"
+        },
+        {
+          "name": "Human Genome Sciences",
+          "ticker_then": "HGSI",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-01",
+          "peak_price": 112.63,
+          "price_basis": "split-adjusted（季度最高收盘价，已按 2000-01、2000-10 两次 1拆2 调整；当时名义收盘价约 $225.25）",
+          "peak_mcap_usd_bn": 11.6,
+          "fate": "acquired",
+          "fate_date": "2012-08",
+          "final_value_per_share": 14.25,
+          "fate_detail_cn": "首个产品 Benlysta 直到 2011-03 才获批。GSK 先以每股 $13 发起要约，后加价至 $14.25 现金，2012-08-02 完成合并。收购价约为 2000 年峰值（拆股调整后）的 12.7%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/901219/000095013301500342/w47106e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/901219/0000950133-00-000977.txt",
+            "https://www.sec.gov/Archives/edgar/data/901219/000095012311023782/c13929e8vk.htm",
+            "https://www.sec.gov/Archives/edgar/data/901219/000119312512303624/d381110d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/901219/000119312512343761/d392416d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "具体峰值日期未核实，只能定在 2000Q1。由 10-K 封面推算，2000-01-31 名义股价约 $98；CNNfn 显示 2000-03-13 名义收盘约 $152.56，所以峰值应在 2000-02-01 至 03-13 之间。峰值市值为估算值（名义 $225.25 × 2000-01-31 的 5152 万股），不是报道数。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Millennium Pharmaceuticals",
+          "ticker_then": "MLNM",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-10",
+          "peak_price": 86.5,
+          "price_basis": "nominal（2000-10 拆股后的成交价，已等于两次 1拆2 调整后的口径；2000Q1 高点 $78.64 为调整后数字，当时名义约 $314.56）",
+          "peak_mcap_usd_bn": 18.7,
+          "fate": "acquired",
+          "fate_date": "2008-05",
+          "final_value_per_share": 25.0,
+          "fate_detail_cn": "后来价值主要来自 2003-05 获批的抗骨髓瘤药 Velcade，而不是基因组平台。Takeda 以每股 $25.00 现金收购，2008-05-14 完成，约为 2000 年高点 $86.50 的 28.9%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1002637/0000912057-01-007626.txt",
+            "https://www.sec.gov/Archives/edgar/data/1002637/000104746908004416/a2184684z8-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1002637/000110465908033222/a08-14414_48k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1002637/000104746908002055/a2183043z10-k.htm"
+          ],
+          "confidence": "high",
+          "notes": "全年最高点出现在 2000Q4（秋季第二波），不在 3 月。CNNfn 记录 2000-03-14 名义收盘 $176（当天跌 $59.5）。峰值市值为估算值（$86.50 × 2001-02-28 的 2.157 亿股），不是报道数；具体峰值日期未核实。 [peak_date 原值“2000-Q4”，仅知区间，按区间起始月记为 2000-10]"
+        },
+        {
+          "name": "Incyte (Incyte Pharmaceuticals → Incyte Genomics → Incyte Corp)",
+          "ticker_then": "INCY",
+          "yahoo_ticker": "INCY",
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-02",
+          "peak_price": 144.53,
+          "price_basis": "split-adjusted（2000-02-25 盘中高点，已按 2000-08 的 1拆2 调整；当时名义约 $289）",
+          "peak_mcap_usd_bn": 9.2,
+          "fate": "survived_new_high",
+          "fate_date": "2017-03",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2001-2003 年放弃基因组数据库业务，转型小分子新药；2011-11 Jakafi 获批后成功，2025 年营收 $51.4 亿。股价 2017-03-10 才首次超过 2000 年峰值，2026-10-06 收盘约 $112，又回到该峰值以下。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/879169/0001012870-01-001449.txt",
+            "https://www.sec.gov/Archives/edgar/data/879169/0000891618-00-001634.txt",
+            "https://www.sec.gov/Archives/edgar/data/879169/000119312504042081/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/879169/000110465911064632/a11-30045_18k.htm",
+            "https://www.sec.gov/Archives/edgar/data/879169/000087916926000010/incy-20251231.htm",
+            "https://finance.yahoo.com/quote/INCY/history/"
+          ],
+          "confidence": "high",
+          "notes": "10-K 披露 2000Q1 最高成交价 $144.53，与 Yahoo 拆股调整口径一致。2000-02-29 非关联方市值为 $87.4 亿（10-K 封面，一手数据）；9.2 为估算值（名义 $289.06 × 3172 万股）。Yahoo 日线：2017-03-10 收盘 $149.24 首次超过 2000 年峰值，2017-03-15 收盘 $152.66 为历史最高收盘。"
+        },
+        {
+          "name": "Affymetrix",
+          "ticker_then": "AFFX",
+          "yahoo_ticker": null,
+          "role_cn": "卖铲子",
+          "hype_date": "1999-12",
+          "peak_date": "2000-01",
+          "peak_price": 162.06,
+          "price_basis": "split-adjusted（季度最高买价，已按 2000-08 的 1拆2 调整；当时名义约 $324）",
+          "peak_mcap_usd_bn": 8.9,
+          "fate": "acquired",
+          "fate_date": "2016-03",
+          "final_value_per_share": 14.0,
+          "fate_detail_cn": "作为基因芯片工具公司活了下来，但股价始终没有起色。Thermo Fisher 以每股 $14.00 现金收购，2016-03-31 完成，约为 2000 年峰值（拆股调整后）的 8.6%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/913077/000091205701505577/a2043446z10-k405.htm",
+            "https://www.sec.gov/Archives/edgar/data/913077/0000912057-00-015008.txt",
+            "https://www.sec.gov/Archives/edgar/data/913077/000119312516429136/d100504d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/913077/000119312516526009/d162991d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值是 10-K 披露的季度最高买价（bid），不是收盘价。CNNfn 记录 2000-03-13 名义收盘约 $237.25，所以峰值在此之前，具体日期未核实。峰值市值为估算值（名义 $324.12 × 2000-03-20 的 2731 万股）；同日非关联方市值为 $41.1 亿（10-K 封面）。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Gene Logic (2008 更名 Ore Pharmaceuticals，2009 改为 Ore Pharmaceutical Holdings)",
+          "ticker_then": "GLGC",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-01",
+          "peak_price": 144.625,
+          "price_basis": "nominal（季度最高收盘价；按 2008-05 的 1:5 反向拆股调整后约 $723.13）",
+          "peak_mcap_usd_bn": 3.7,
+          "fate": "dead",
+          "fate_date": "2010-03",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2007-12 以 $700 万现金加 $300 万票据把基因组资产卖给 Ocimum，随后转做老药新用。1:5 反拆后股价仍跌破 $1，2010-03-25 被纳斯达克停牌摘牌，2010-09 注销 SEC 登记。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1043914/000095013301500318/w46553e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1043914/0000950133-00-001336.txt",
+            "https://www.sec.gov/Archives/edgar/data/1043914/000115752307012382/a5571753.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043914/000115752310001855/a6229817.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043914/000115752310001660/a6222883.htm",
+            "https://www.sec.gov/Archives/edgar/data/1043914/000115752310005617/a6443015.txt"
+          ],
+          "confidence": "high",
+          "notes": "没有找到清算分配或最终每股价值，所以 final 填 null。最后公开成交区间是 2009Q4 的 $0.40–0.81（反拆后），约合反拆前 $0.08–0.16，约为峰值的 0.1%。峰值市值为估算值（$144.625 × 2000-03-15 的 2538 万股）；2000-03-15（崩盘次日）非关联方市值为 $17.4 亿。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "CuraGen",
+          "ticker_then": "CRGN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-01",
+          "peak_price": 118.25,
+          "price_basis": "split-adjusted（季度最高收盘价，按 2000-03 的 1拆2 调整；若出现在拆股前，名义约 $236.50）",
+          "peak_mcap_usd_bn": 4.3,
+          "fate": "acquired",
+          "fate_date": "2009-09",
+          "final_value_per_share": 1.5,
+          "fate_detail_cn": "基因组药物研发失败后不断出售资产，2009 年被 Celldex 以换股方式收购（每股 CuraGen 换 0.2729 股 Celldex），2009-09-30 完成。按当日 Celldex 收盘价折算约 $1.50/股，约为峰值的 1.3%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1030653/000092701601500076/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1030653/000095010900000821/0000950109-00-000821-d1.html",
+            "https://www.sec.gov/Archives/edgar/data/1030653/000110465909057376/a09-29415_18k.htm",
+            "https://finance.yahoo.com/quote/CLDX/history/"
+          ],
+          "confidence": "medium",
+          "notes": "$1.50 是推算值：Yahoo 上 CLDX 2009-09-30 调整后收盘 $82.35，按 2019 年 1:15 反拆还原为名义约 $5.49，再乘 0.2729。合并协议的初始总对价为 $9450 万（会随现金净额调整）。峰值市值为估算值（$236.50 × 2000-02-29 有表决权和无表决权股合计 1825 万股，拆股前后结果相同）。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Myriad Genetics",
+          "ticker_then": "MYGN",
+          "yahoo_ticker": "MYGN",
+          "role_cn": "明星",
+          "hype_date": "1999-12",
+          "peak_date": "2000-11",
+          "peak_price": 138.0,
+          "price_basis": "nominal（2000-11-06 盘中高点，是 2000-09 拆股后的成交价；按 2009-03 的 1拆2 调整后为 $69.00，即 Yahoo 口径）",
+          "peak_mcap_usd_bn": 3.1,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "BRCA 基因检测做成了真生意，但 2013-06-13 最高法院裁定天然 DNA 片段不可专利，独占模式被打破。股价（拆股调整后）从未回到 2000-11 的 $69，2026-10-06 收盘约 $4.26。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/899923/000102140801507485/d10k.txt",
+            "https://www.sec.gov/Archives/edgar/data/899923/0000927356-00-002089.txt",
+            "https://www.law.cornell.edu/supremecourt/text/12-398",
+            "https://finance.yahoo.com/quote/MYGN/history/"
+          ],
+          "confidence": "high",
+          "notes": "10-K 显示：2000Q1（财年 Q3）高点 $116.06，2000Q4（财年 2001 Q2）高点 $138.00，峰值在秋季第二波。峰值市值为估算值（$138 × 2000-11-09 的 2275 万股）。2009 年分拆过 Myrexis，Yahoo 价格未按分拆调整。 fate_date 原为 2026-10（只是观察日），已改为 null，与其他 survived_below_peak 一致。"
+        }
+      ]
+    },
+    {
+      "id": "energy_trading_merchant_power",
+      "name_cn": "“新经济”能源交易 / 商人电力（Enron 式能源交易与独立发电商）",
+      "name_en": "\"New economy\" energy trading & merchant power",
+      "one_line_cn": "赌电力/天然气放松管制后，靠交易平台（EnronOnline）和不受监管的商人电厂（merchant power）把慢吞吞的公用事业变成高增长、高估值的“新经济”平台公司。",
+      "hype_start": {
+        "date": "1999-11",
+        "event_cn": "Enron 于 1999 年底上线 EnronOnline 网上交易平台；2000 年批发业务量同比 +59%，按毛额记账的营收从 1999 年 401 亿美元跳到 2000 年 1008 亿美元（营业利润仅约 19.5 亿）",
+        "source": "https://www.sec.gov/Archives/edgar/data/1024401/000102440101500010/ene10-k.txt"
+      },
+      "peak": {
+        "date": "2001-05",
+        "event_cn": "龙头 Enron 在 2000 年三季度见顶（盘中 $90.75），其余商人电力股在 2001 年上半年加州电力危机最烈时见顶：Calpine 一季度 $58.04、El Paso 一季度 $75.30、Dynegy 二季度 $57.95、Mirant 二季度 $47.20；2001-05 Reliant Energy 趁高以 $30 分拆 IPO Reliant Resources，当季冲到 $37.50",
+        "source": "https://www.sec.gov/Archives/edgar/data/1126294/000089924303000824/d10k.txt"
+      },
+      "trough": {
+        "date": "2002-10",
+        "event_cn": "2002 年三、四季度集体跌到 1 美元上下（10-K 季度表，无具体日，2002-10 为近似）：Dynegy 收盘低 $0.51（Q3）、Williams 收盘低 $0.88（Q3）、AES 低 $0.95、Reliant Resources 低 $0.99、Mirant 低 $1.06（均为 Q4）；评级机构把几乎整个行业降为垃圾级",
+        "source": "https://www.sec.gov/Archives/edgar/data/879215/000089924303000863/d10k.htm"
+      },
+      "proxy_tickers": [
+        "XLU"
+      ],
+      "proxy_note_cn": "当年没有能源交易/商人电力主题 ETF。XLU（1998-12 上市）以受监管公用事业为主，会严重稀释该主题的涨跌，只能作背景参照；主题层面回撤建议用本篮子 8 家的 10-K 季度高低价自建等权篮子（Enron/Dynegy/El Paso/Calpine/Mirant/Reliant 在 Yahoo 均无历史，只有 WMB、AES 有）。",
+      "what_killed_it_cn": "① 欺诈+信用连锁：Enron 用 Raptor/LJM 等特殊目的实体藏债、虚增利润，2001-10-16 三季报暴露 12 亿美元股东权益缩减，11-08 宣布重述 1997–2000 年报表，交易对手撤离，12-02 破产；能源交易本质是靠投资级信用做中间人，评级一降就要追加抵押品。② 繁荣部分是假的：2002-05 FERC PA02-2 西部市场调查要求各卖方承认/否认对倒(round-trip/wash)交易，SEC 2002-09 认定 Dynegy 用对倒交易虚增交易量（称为首例），Reliant 等也卷入；Enron 在加州的 Death Star 等操纵策略曝光，GAO 认定供应商在加州行使市场力抬价。③ 周期反转：2001-06 FERC 扩大西部价格限制、电价回落，同时高电价引发的燃气电厂建设潮带来过剩产能。④ 高杠杆：建厂与并购靠借债，2002 年评级机构把几乎所有主要参与者降到投资级以下，抵押品要求暴增、交易量萎缩（Reliant 2002 年报原意）。⑤ 电信泡沫外溢：Enron 宽带、Williams Communications（2002-04-22 破产）、Dynegy 通信业务一起拖累。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "批发电力市场化成真：2009 年美国各 RTO 管理了约 60% 供给负荷服务商的电力",
+          "date": "2009",
+          "source": "https://www.eia.gov/todayinenergy/detail.php?id=790"
+        },
+        {
+          "claim_cn": "独立发电商(IPP)成为主力：2024 年美国公用事业规模净发电 4,308,634 千MWh 中 IPP 占 1,900,291 千MWh，约 44.1%",
+          "date": "2024",
+          "source": "https://www.eia.gov/electricity/annual/html/epa_01_01.html"
+        },
+        {
+          "claim_cn": "电子化能源交易成真，但赢家是交易所而非做市商：ICE 自述 2000 年为改造能源市场而成立，2025 年能源期货期权收入 21.82 亿美元（+16%）",
+          "date": "2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1571949/000157194926000004/ice-20251231.htm"
+        },
+        {
+          "claim_cn": "当年破产的 Calpine 资产 20 年后被高价兑现：Constellation 2026-01-07 完成收购 Calpine（45 亿美元现金 + 5000 万股 CEG，原 Calpine 股东得约 13.8% CEG），合并后 55GW、自称全美最大发电商——受益者是 2008 年重整后的债权人与 2018 年私有化的 PE，不是 2001 年的股东",
+          "date": "2026-01",
+          "source": "https://www.sec.gov/Archives/edgar/data/1868275/000110465926001780/tm2532248d1_8k.htm"
+        },
+        {
+          "claim_cn": "商人电力 2024 年才成为资本市场宠儿：Vistra（2018 年吞并 Dynegy）2024 年股价 +258%（月收盘 38.52→137.87），Constellation +91%，NRG +75%（AI/数据中心用电需求）",
+          "date": "2024",
+          "source": "https://finance.yahoo.com/quote/VST/history"
+        },
+        {
+          "claim_cn": "当年的“交易量/利润”部分是假的：SEC 2002-09-24 认定 Dynegy 用 Project Alpha 把贷款包装成经营现金流，并用对倒交易虚增交易量",
+          "date": "2002-09",
+          "source": "https://www.sec.gov/news/press/2002-140.htm"
+        },
+        {
+          "claim_cn": "加州危机的高价是真的：2000-12 加州批发电价 $376.99/MWh，是 1999-12 均价 $29.71 的 11 倍以上；PG&E 2001-04-06 申请破产",
+          "date": "2001",
+          "source": "https://www.eia.gov/electricity/policies/legislation/california/subsequentevents.html"
+        }
+      ],
+      "time_to_reality": {
+        "years": 24,
+        "from": "2000",
+        "to": "2024",
+        "marker_cn": "两段式：市场结构很快成真（2009 年 RTO 管理约 60% 电力，2024 年 IPP 占发电 44%），但“商人电力是高利润成长业务”这一股价假设直到 2024–2026 年 AI 数据中心用电潮才兑现（Vistra 2024 年 +258%，Constellation 2026-01 完成收购 Calpine）；中间 20 年是 Mirant、Calpine、Dynegy 轮番破产的低利润周期",
+        "source": "https://www.sec.gov/Archives/edgar/data/1868275/000110465926001780/tm2532248d1_ex99-1.htm"
+      },
+      "basket_method": "当年口径：选 2000–2001 年自我定位为“能源交易/商人能源(merchant energy)”、并在 2002 年 FERC PA02-2 西部市场操纵调查（2002-05-21/22 对倒交易数据要求，见 Williams 与 El Paso 2002 年报）中被点名的大市值上市公司，加上龙头 Enron（Fortune 连续 6 年评为“美国最具创新力公司”，见 Wikipedia）；再加 2000–01 年母公司趁高分拆上市的 Mirant（Southern Co）与 Reliant Resources（Reliant Energy），以及全球独立发电商 AES。共 8 家，刻意包括破产者。未纳入 Duke（受监管业务为主）、NRG（当时由 Xcel 控股）、CMS 等。来源：https://www.sec.gov/Archives/edgar/data/107263/000095013403004171/d03793e10vk.txt ; https://www.sec.gov/Archives/edgar/data/1066107/000095012903001717/h01594e10vk.txt ; https://en.wikipedia.org/wiki/Enron",
+      "companies": [
+        {
+          "name": "Enron",
+          "ticker_then": "ENE",
+          "yahoo_ticker": null,
+          "role_cn": "龙头",
+          "hype_date": "1999-11",
+          "peak_date": "2000-08",
+          "peak_price": 90.75,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 67.7,
+          "fate": "dead",
+          "fate_date": "2001-12",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2001-08-14 CEO Skilling 突然辞职；10-16 三季报巨亏（10-Q 口径净亏 6.44 亿美元）并宣布股东权益减少 12 亿；11-08 宣布重述 1997–2000 年报表；11-09 与 Dynegy 签并购（每股换 0.2685 股），11-28 Dynegy 以违约为由终止；12-02 申请破产。2004-11-17 重整计划生效，普通股注销，旧股东只获不可转让的信托权益（仅在资产超过全部债权这一“极不可能”情形下才有分配）。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1024401/000102440101500010/ene10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1024401/000102440100500007/ene10-q.txt",
+            "https://www.sec.gov/litigation/complaints/comp18582.htm",
+            "https://www.sec.gov/Archives/edgar/data/1024401/000095012901503835/h91831e8-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1024401/000095012901504218/h92492e10-q.txt",
+            "https://www.sec.gov/Archives/edgar/data/879215/000095012901504043/h92192e8-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/879215/000091205701541263/a2064751z8-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1024401/000095012904009127/h20315e8vk.txt",
+            "https://en.wikipedia.org/wiki/Enron"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $90.75 = 2000 年三季度盘中高点（2000 年 10-K 季度表 90 3/4，1999 年拆股之后，即当年成交价）；具体日 2000-08-23 来自 Wikipedia（引 McLean & Elkind，称当日收盘约 $90），日期为 medium。峰值市值 677 亿美元为估算 = $90.75 × 746,550,863 股（2000-10-31 10-Q 封面股数）。另：JEP 2003 称 2000-12-31 收盘 $83.13、市值超 600 亿（经 Wikipedia 转引）。10-16 当天新闻稿的原始亏损数未取得一手稿，故用 2001-11-19 10-Q 重述后数字；2001-11-28 收盘 $0.61 来自 Wikipedia（medium）。"
+        },
+        {
+          "name": "Dynegy",
+          "ticker_then": "DYN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2000-02",
+          "peak_date": "2001-04",
+          "peak_price": 57.95,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 18.9,
+          "fate": "dead",
+          "fate_date": "2012-10",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2001-11 想吞并 Enron 失败但拿到 Northern Natural 管道；2002 年因 Project Alpha 与对倒交易被 SEC 处罚，2002Q3 收盘最低 $0.51，2002-08 把 Northern Natural 以约 8.79 亿美元现金卖给巴菲特旗下 MidAmerican 续命。2010-05 1:5 缩股；子公司 2011-11、母公司 2012-07-06 申请破产，2012-10-01 重整生效，旧普通股注销，只换得行权价 $40、2017-10 到期的 5 年期权证（新股 99% 归债权人）。重整后的新 Dynegy 2018-04-09 以 0.652 股 VST 并入 Vistra——那已是债权人的股份。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/879215/000091205702009822/a2072473z10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/879215/000089924303000863/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/879215/000091205701528619/a2056884z10-q.txt",
+            "https://www.sec.gov/news/press/2002-140.htm",
+            "https://www.sec.gov/Archives/edgar/data/1105055/000137989510000012/rss8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1379895/000110465912047881/a12-16012_18k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1379895/000110465912067588/a12-22721_18k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1379895/000119312518111619/d548684d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $57.95 = 2001 年二季度盘中高点（已按 2000-08-22 1:2 拆股调整，即当年成交价；若换算到 2010 年 1:5 缩股后的口径相当于 $289.75）；具体日期未查到。峰值市值 189 亿为估算 = $57.95 × 325.7M 股（2001-08-08：A 股 239.2M + 雪佛龙持有、不上市的 B 股 86.5M）。2012 年 8-K 另有 100 万股新股发给“Dynegy 对 DH 的行政债权持有人”，常被报道为旧股东的 1%，但 8-K 文字未明说归旧股东，故不计入；权证行权价 $40，而 2018 年并购时新 DYN 折合约 0.652×VST（2018-03 月收盘约 $20.8，Yahoo）≈ $14，权证显然价外作废（推算）。final_value 按 0 处理。注意：brief 所称“2002 年 Dynegy 破产”不准确，2002 年只是股价崩盘。 [peak_date 原值“2001-Q2”，仅知区间，按区间起始月记为 2001-04]"
+        },
+        {
+          "name": "El Paso Corp.",
+          "ticker_then": "EP",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2001-01",
+          "peak_date": "2001-01",
+          "peak_price": 75.3,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 38.3,
+          "fate": "acquired",
+          "fate_date": "2012-05",
+          "final_value_per_share": 26.87,
+          "fate_detail_cn": "2001-01 合并 Coastal，设“商人能源(Merchant Energy)”板块；2002Q4 跌到 $4.39，靠卖资产、退出交易、把季度股息从 $0.2175 砍到 $0.04 活下来。2011-10-16 同意被 Kinder Morgan 收购（每股 $14.65 现金 + 0.4187 股 KMI + 0.640 份 KMI 权证，宣布时作价 $26.87），2012-05-25 完成，较 2001 年峰值约 -64%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1066107/000095012902001319/h93211e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1066107/000095012903001717/h01594e10vk.txt",
+            "https://www.sec.gov/Archives/edgar/data/1066107/000095012901500637/h85962e10-q.txt",
+            "https://www.sec.gov/Archives/edgar/data/1506307/000150630711000114/kmiex991.htm",
+            "https://www.sec.gov/Archives/edgar/data/1066107/000119312512253764/d360854d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $75.30 = 2001 年一季度盘中高点（10-K）；具体日期未查到。峰值市值 383 亿为估算 = $75.30 × 509,175,906 股（2001-05-04）。$26.87 为 KMI 按 2011-10-14 收盘价的宣布作价；若按交割日 2012-05-25 KMI 收盘 $32.42（Yahoo）计，混合对价约 $14.65 + 0.4187×32.42 ≈ $28.22，再加 0.64 份权证（权证价格未取得），且现金/股票选择有比例分配。 [peak_date 原值“2001-Q1”，仅知区间，按区间起始月记为 2001-01]"
+        },
+        {
+          "name": "Williams Companies",
+          "ticker_then": "WMB",
+          "yahoo_ticker": "WMB",
+          "role_cn": "明星",
+          "hype_date": "2000-01",
+          "peak_date": "2000-01",
+          "peak_price": 48.69,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2014-06",
+          "final_value_per_share": null,
+          "fate_detail_cn": "管道+能源交易+电信（WCG）三合一；2002 年 7 月流动性危机，收盘价最低 $0.88（2002Q3），向 Lehman 与伯克希尔关联方借 9 亿美元有担保贷款，并把 Kern River 管道卖给 MidAmerican；电信子公司 WCG 2002-04-22 破产。此后缩回天然气管道主业，Yahoo 调整后序列 2014 年收复 2000 年高点，2026-10 约 $70.5。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/107263/000095013402001868/d93687e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/107263/000095013403004171/d03793e10vk.txt",
+            "https://finance.yahoo.com/quote/WMB/history"
+          ],
+          "confidence": "high",
+          "notes": "$48.69 是 2000 年一季度“收盘价”高点（Williams 10-K 用收盘价表，盘中高点未取得），未扣除 2001-04 WCG 分拆与 2012-01 WPX 分拆。Yahoo 把两次分拆按 1000:918 与 10000:8152 当拆股处理，调整后 1995–2002 峰值为 1999-06 高点 $40.22；调整后序列 2014-01 首次超过 $40.22，2014-06 连名义 $48.69 也超过（fate_date 取 2014-06，请 lead 用 Yahoo 复核）。峰值市值未计算。 [peak_date 原值“2000-Q1”，仅知区间，按区间起始月记为 2000-01]"
+        },
+        {
+          "name": "Calpine",
+          "ticker_then": "CPN",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2000-06",
+          "peak_date": "2001-01",
+          "peak_price": 58.04,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 17.3,
+          "fate": "dead",
+          "fate_date": "2005-12",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "借加州危机高电价疯狂扩建燃气电厂，2000 年两次 1:2 拆股；2005-12-20 申请破产。2008-01-31 重整生效，旧股注销，旧股东只按比例分得可认购约 4850 万股新股、行权价 $23.88 的权证；新股 2008 年最高 $23.36，仅 21,499 股被行权，其余 2008-08-25 作废。重整后的新 Calpine 2018-03-08 以每股 $15.25 被 ECP 财团私有化，2026-01-07 被 Constellation 收购——收益归债权人与 PE。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/916457/000089161802001569/f80168e10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/916457/000091645701500015/q1-2001q.txt",
+            "https://www.sec.gov/Archives/edgar/data/916457/000091645705000107/i22305.txt",
+            "https://www.sec.gov/Archives/edgar/data/916457/000119312508017427/d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/916457/000119312509039559/d10k.htm",
+            "https://www.sec.gov/Archives/edgar/data/916457/000091645718000100/cpn8k-02212018.htm",
+            "https://www.sec.gov/Archives/edgar/data/1868275/000110465926001780/tm2532248d1_8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $58.04 = 2001 年一季度盘中高点（10-K，已按 2000-06-08 与 2000-11-14 两次拆股调整，即 2001 年当时成交价）；具体日期未查到。峰值市值 173 亿为估算 = $58.04 × 298,652,450 股（2001-05-14）。2007 年旧股在粉单市场仍有 $0.18–$4.15 的报价（FY2008 10-K），但最终只换得几乎全部作废的权证，按 0 处理。 [peak_date 原值“2001-Q1”，仅知区间，按区间起始月记为 2001-01]"
+        },
+        {
+          "name": "Mirant (ex-Southern Energy)",
+          "ticker_then": "MIR",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2000-10",
+          "peak_date": "2001-04",
+          "peak_price": 47.2,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 16.1,
+          "fate": "dead",
+          "fate_date": "2003-07",
+          "final_value_per_share": 1.1,
+          "fate_detail_cn": "Southern Co 2000-10 以 $22 IPO 其商人电力子公司、2001-04-02 全部分拆；2002Q4 跌到 $1.06，2003-07-14 申请破产。2006-01-03 重整生效，旧股注销，旧股东合计获新 Mirant 3.75% 股份 + 可再认购约 10% 的权证（行权价 $21.87）+ 部分追偿款，折合每旧股约 $1（约为峰值的 2%）。新 Mirant 2010-12 以 1:2.835 并入 RRI 成为 GenOn。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1010775/000101077502000016/form_10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000095014403005775/g82217e10vk.txt",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000101077501500056/mirant10-q.txt",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000101077503000057/mir_8-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000110465906000127/a06-1020_18k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000110465906016299/a06-1906_110k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1010775/000110465907015542/a07-5488_110k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000095012310111604/c09394e8vk.htm"
+          ],
+          "confidence": "medium",
+          "notes": "峰值 $47.20 = 2001 年二季度盘中高点（10-K）；具体日期未查到。峰值市值 161 亿为估算 = $47.20 × 340,379,000 股（2001-07-31）。final_value ≈ $1.1 为推算：300M 新股 × 3.75% ÷ 404,052,225 旧股（2003-04-28）≈ 0.0278 新股/旧股，按新 Mirant 2006Q1 价格区间 $23.93–29.00 约 $0.67–0.81；再加约 0.087 份 A 类权证/旧股（35,294,118 份，按 10-K“额外 10%”归旧股东推定），按约 $26.5 计内在价值约 $0.40；未计追偿款。2006-01 8-K 另称旧股东约占 3.66%，口径略有差异。brief 所称“2002 年 Mirant 破产”应为 2003-07。 [peak_date 原值“2001-Q2”，仅知区间，按区间起始月记为 2001-04]"
+        },
+        {
+          "name": "Reliant Resources (later Reliant Energy / RRI Energy / GenOn)",
+          "ticker_then": "RRI",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2001-05",
+          "peak_date": "2001-05",
+          "peak_price": 37.5,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": 11.2,
+          "fate": "acquired",
+          "fate_date": "2012-12",
+          "final_value_per_share": 2.8,
+          "fate_detail_cn": "Reliant Energy 2001-05 以 $30 IPO 约 20% 的商人电力/交易子公司，当季冲到 $37.50；2002Q4 跌到 $0.99（对倒交易、加州市场行为被调查），但未破产。2004 改名 Reliant Energy、2009 改名 RRI Energy，2010-12-03 吞并 Mirant 改名 GenOn，2012-12-14 被 NRG 以每股 0.1216 股 NRG 收购，按当日 NRG 收盘 $23.00 约合 $2.80，较峰值约 -93%。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1126294/000095012902001932/h95930e10-k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000089924303000824/d10k.txt",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000095012901502432/h89271e10-q.txt",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000095012904002349/h14711e8vk.txt",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000095012310111604/c09394e8vk.htm",
+            "https://www.sec.gov/Archives/edgar/data/1126294/000110465912084362/a12-29439_28k.htm",
+            "https://finance.yahoo.com/quote/NRG/history"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $37.50 = 2001 年二季度盘中高点（FY2002 10-K）；FY2001 10-K 另列 2001-05-21 高点 $36.75（口径可能为收盘）。峰值市值 112 亿为估算 = $37.50 × 298,964,000 股（2001-08-07，其中 2.4 亿股由母公司 Reliant Energy 持有，后分派给其股东）。$2.80 = 0.1216 × NRG 2012-12-14 收盘 $23.00（Yahoo；NRG 2007 年后无拆股）。在所读 8-K 中未见 RRI/GenOn 缩股，如 lead 发现缩股需调整。"
+        },
+        {
+          "name": "AES Corp.",
+          "ticker_then": "AES",
+          "yahoo_ticker": "AES",
+          "role_cn": "明星",
+          "hype_date": "2000-06",
+          "peak_date": "2000-10",
+          "peak_price": 72.81,
+          "price_basis": "split-adjusted",
+          "peak_mcap_usd_bn": 35.7,
+          "fate": "survived_below_peak",
+          "fate_date": null,
+          "final_value_per_share": null,
+          "fate_detail_cn": "全球独立发电商，2000-06 拆股后 10 月冲到 $72.81；2002-10 跌到约 $0.92，此后从未收复，2022-12 最高约 $29.89。2026-03-01 同意以每股 $15 现金被 GIP（贝莱德旗下）与 EQT 私有化（股权价值约 107 亿美元），截至 2026-09-17 已获 HSR、CFIUS、俄亥俄 PUCO 批准，但仍待其余监管批准，尚未完成。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/874761/000091205702011424/a2074070z10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/874761/000104746903010240/a2105668z10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/874761/000091205701008514/a2042927z10-k.htm",
+            "https://www.sec.gov/Archives/edgar/data/874761/000119312526084157/d100078d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/874761/000114036126036994/ef20082051_8k.htm",
+            "https://finance.yahoo.com/quote/AES/history"
+          ],
+          "confidence": "high",
+          "notes": "峰值 $72.81 = 2000 年四季度盘中高点（10-K；已按 2000-06 1:2 拆股调整，与 Yahoo 2000-10 月线高点一致；拆股在峰值之前，所以也等于当时成交价）。峰值市值 357 亿为估算 = $72.81 × 490,226,393 股（2001-03-02）。若私有化按 $15 完成，较峰值 -79%，届时 fate 应改为 acquired。"
+        }
+      ]
+    }
+  ]
+}

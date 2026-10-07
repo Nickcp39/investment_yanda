@@ -1,0 +1,1239 @@
+{
+  "era_id": "e5a_2020_2022",
+  "era_range": "2020-2022",
+  "macro_context_cn": "2020-03-15 美联储紧急把联邦基金利率降到 0–0.25%，03-23 宣布'按需'无上限购买国债和 MBS；零利率维持两年，2022-03-16 才首次加息到 0.25–0.5%，2022-12-14 已升至 4.25–4.5%（全年累计 +425bp）。M2 同比 2021-02 达 26.9%，远超 2008–15 年 QE 和 1970–80 年代通胀期；2022 年底起出现 1959 年以来首次同比负增长。CPI 2022-06 同比 9.1%，为 40 年最高。供给端：SPAC IPO 2020 年 248 家/约 830 亿美元，2021 年 613 家/约 1,600 多亿美元（2021Q1 单季 317 家），均为纪录（SPACInsider 数据，经律所报告转引）。纳斯达克综指（价格）2020 年 +43.6%、2021 年 +21.4%、2022 年 −33.1%（2021-11-19 收盘 16,057 见顶，2022-12-28 收 10,213，−36%；Yahoo ^IXIC 计算）。零利率 + 刺激资金 + 免佣金 App 让散户成为边际买家：GME 2021-01-13 单日交易账户数增长 6 倍以上（SEC）。",
+  "macro_sources": [
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200323a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+    "https://www.stlouisfed.org/en/financial-crisis/data/m2-monetary-aggregate",
+    "https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm",
+    "https://www.morganlewis.com/ja/pubs/2022/04/a-look-at-the-spac-market-in-2022",
+    "https://www.mayerbrown.com/ebooks/insurance-industry-year-in-review-2021/inc/html/24.html",
+    "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+    "https://finance.yahoo.com/quote/%5EIXIC/history/"
+  ],
+  "themes": [
+    {
+      "id": "stay_at_home",
+      "name_cn": "疫情宅经济股",
+      "name_en": "Pandemic stay-at-home stocks",
+      "one_line_cn": "赌封城带来的远程办公/居家健身/远程医疗/网购/在线教育需求是永久性的，按永久高增长给估值。",
+      "hype_start": {
+        "date": "2020-02",
+        "event_cn": "2020-02-27 MKM 点名 Netflix、Peloton、Zoom 等为疫情受益股；2020-03 封城、03-15 美联储降息至零后宅经济股领涨；Cramer 2020-04 建立 100 只股票的 'Cramer Covid-19 Index'",
+        "source": "https://www.cnbc.com/2020/02/27/mkm-suggests-stay-at-home-stocks-like-peloton-netflix-vs-coronavirus.html"
+      },
+      "peak": {
+        "date": "2020-10",
+        "event_cn": "Zoom 2020-10-19 收盘 568.34 见顶；2020-11-09 辉瑞宣布疫苗有效率超 90%，当天 Zoom 盘中最多跌 20%、Peloton 跌 14%；Peloton(2021-01)、Teladoc/Chegg(2021-02) 随后见顶",
+        "source": "https://fortune.com/2020/11/09/stock-markets-soar-as-pfizer-reports-vaccine-hope"
+      },
+      "trough": {
+        "date": "2024-08",
+        "event_cn": "Zoom 2024-08-12 收 55.32（较峰值 −90%），Peloton 2024-08-14 收 2.88（−98%）；Teladoc 2026-02、Chegg 2026-03 又创新低",
+        "source": "https://finance.yahoo.com/quote/PTON/history/"
+      },
+      "proxy_tickers": [
+        "ZM",
+        "PTON",
+        "DOCU",
+        "TDOC"
+      ],
+      "proxy_note_cn": "无合适的同期主题 ETF（Direxion 'WFH' 2020-06 才发行，本次未核实存续），建议用篮子等权计算。",
+      "what_killed_it_cn": "需求是一次性'提前透支'而非永久增量：疫苗(2020-11)与复工让增速断崖式回落（Zoom 收入 FY2022 后增速降至个位数，Peloton 收入 FY2021 后连年萎缩）；2022 年加息使长久期成长股估值压缩；部分公司在高位做大额并购（Teladoc 2020 年并购 Livongo，2022 年计提 134 亿美元商誉减值）；Chegg 随后又被生成式 AI 冲击。",
+      "reality_verdict": "真实但利润没留给当年的股东",
+      "reality_evidence": [
+        {
+          "claim_cn": "Zoom 收入 FY2020 约 6.2 亿美元 → FY2021 26.5 亿（约 4.3 倍）→ FY2026 48.7 亿：需求真实且留存，但高增长只持续一年多",
+          "date": "FY2020-FY2026",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001585521.json"
+        },
+        {
+          "claim_cn": "Peloton 收入 FY2021 40.2 亿美元见顶，FY2026 降至 24.5 亿",
+          "date": "FY2021-FY2026",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001639825.json"
+        },
+        {
+          "claim_cn": "Teladoc 2022 年商誉减值 134 亿美元；收入 2021 年 20.3 亿 → 2025 年 25.3 亿，几乎停滞",
+          "date": "2022-2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477449.json"
+        },
+        {
+          "claim_cn": "Chegg 收入 2021 年 7.8 亿 → 2025 年 3.8 亿；2026-07 收到 NYSE 股价低于 1 美元的不合规通知",
+          "date": "2021-2026",
+          "source": "https://www.sec.gov/Archives/edgar/data/1364954/000136495426000082/chgg-20260724.htm"
+        },
+        {
+          "claim_cn": "DocuSign 收入 FY2021 14.5 亿 → FY2026 32.2 亿、Etsy 2019 年 8.2 亿 → 2025 年 28.8 亿：业务继续增长，但股价仍较峰值 −75%~−86%（纯估值压缩）",
+          "date": "2019-2026",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001261333.json"
+        }
+      ],
+      "time_to_reality": {
+        "years": 1,
+        "from": "2020",
+        "to": "2021",
+        "marker_cn": "需求当年即兑现（2020–2021 收入暴增）随后回落或平台化；问题不在'是否兑现'，而在估值把一次性需求当成永久增长",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001585521.json"
+      },
+      "basket_method": "当年口径：CNBC 报道的 Cramer Covid-19 Index 最大赢家（Zoom、DocuSign、Etsy、Peloton、Fastly 等；2020-06-29、2020-09-08）+ 2020-11-09 疫苗日被点名大跌的宅经济股（Zoom、Peloton、DocuSign；CNBC 2020-11-10 另点名 Etsy、Netflix）+ 研究计划指定的 Teladoc、Chegg、Clorox（这三只未检索到同一份当年名单；Teladoc 在 Cramer 文中以 Livongo 合并方出现）。加入 Netflix 作为当年被点名、后来创新高的对照。",
+      "companies": [
+        {
+          "name": "Zoom Video Communications",
+          "ticker_then": "ZM",
+          "yahoo_ticker": "ZM",
+          "role_cn": "龙头",
+          "hype_date": "2020-03",
+          "peak_date": "2020-10-19",
+          "peak_price": 568.34,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 94.15,
+          "fate_detail_cn": "收入 FY2021 增约 4.3 倍后增速降至个位数；股价 2024-08-12 低点 55.32（较收盘峰值 −90%），2026-10-06 收 94.15。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ZM/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001585521.json",
+            "https://www.cnbc.com/2020/09/08/jim-cramer-reviews-biggest-winners-on-the-cramer-covid-19-index.html",
+            "https://fortune.com/2020/11/09/stock-markets-soar-as-pfizer-reports-vaccine-hope"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 588.84（2020-10-19）。"
+        },
+        {
+          "name": "Peloton Interactive",
+          "ticker_then": "PTON",
+          "yahoo_ticker": "PTON",
+          "role_cn": "明星",
+          "hype_date": "2020-03",
+          "peak_date": "2021-01-13",
+          "peak_price": 167.42,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 5.0,
+          "fate_detail_cn": "FY2021 收入 40.2 亿见顶后连年萎缩；股价 2024-08-14 低点 2.88（−98%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PTON/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001639825.json",
+            "https://www.cnbc.com/2020/09/08/jim-cramer-reviews-biggest-winners-on-the-cramer-covid-19-index.html",
+            "https://fortune.com/2020/11/09/stock-markets-soar-as-pfizer-reports-vaccine-hope"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 171.09（2021-01-14）。"
+        },
+        {
+          "name": "DocuSign",
+          "ticker_then": "DOCU",
+          "yahoo_ticker": "DOCU",
+          "role_cn": "明星",
+          "hype_date": "2020-03",
+          "peak_date": "2021-09-03",
+          "peak_price": 310.05,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 69.87,
+          "fate_detail_cn": "业务持续增长（FY2026 收入 32.2 亿），但估值压缩，2023-10-27 低点 38.53（−88%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/DOCU/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001261333.json",
+            "https://www.cnbc.com/2020/09/08/jim-cramer-reviews-biggest-winners-on-the-cramer-covid-19-index.html",
+            "https://www.fool.com/investing/2020/11/13/why-peloton-zoom-docusign-and-other-stay-at-home-s"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 314.76（2021-08-10）。"
+        },
+        {
+          "name": "Teladoc Health",
+          "ticker_then": "TDOC",
+          "yahoo_ticker": "TDOC",
+          "role_cn": "明星（远程医疗）",
+          "hype_date": "2020-03",
+          "peak_date": "2021-02-08",
+          "peak_price": 294.54,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 5.8,
+          "fate_detail_cn": "2020 年并购 Livongo，2022 年计提商誉减值 134 亿美元；2026-02-12 低点 4.47（−98%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/TDOC/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477449.json",
+            "https://www.cnbc.com/2020/09/08/jim-cramer-reviews-biggest-winners-on-the-cramer-covid-19-index.html"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 308.00（2021-02-16）。同时是 ARKK 2021-01-31 第 3 大持仓，ark_innovation 主题中重复出现，统计时去重。"
+        },
+        {
+          "name": "Chegg",
+          "ticker_then": "CHGG",
+          "yahoo_ticker": "CHGG",
+          "role_cn": "明星（在线教育）",
+          "hype_date": "2020-03",
+          "peak_date": "2021-02-12",
+          "peak_price": 113.51,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 0.73,
+          "fate_detail_cn": "收入 2021 年 7.8 亿 → 2025 年 3.8 亿（疫情退潮 + 生成式 AI 冲击）；2025-12 与 2026-07 两次收到 NYSE 低于 1 美元通知，仍上市，较峰值 −99%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CHGG/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001364954.json",
+            "https://www.sec.gov/Archives/edgar/data/1364954/000136495426000082/chgg-20260724.htm"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 115.21（2021-02-16）。当年把它列为宅经济股的同期媒体名单未检索到（检索额度用尽），按研究计划纳入。若之后反向拆股，Yahoo 会复权。"
+        },
+        {
+          "name": "Clorox",
+          "ticker_then": "CLX",
+          "yahoo_ticker": "CLX",
+          "role_cn": "沾边（消毒用品必需品）",
+          "hype_date": "2020-03",
+          "peak_date": "2020-08-04",
+          "peak_price": 237.74,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 83.32,
+          "fate_detail_cn": "收入 FY2021 73.4 亿为峰值后回落（FY2025 71.0 亿）；股价 2026-10 跌至约 80 美元，为多年低位。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CLX/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021076.json"
+          ],
+          "confidence": "medium",
+          "notes": "盘中高点 239.87（2020-08-05）。Yahoo close 未计股息（CLX 年股息率数个百分点），总回报跌幅小于价格跌幅。当年名单来源未检索到，按研究计划纳入。"
+        },
+        {
+          "name": "Etsy",
+          "ticker_then": "ETSY",
+          "yahoo_ticker": "ETSY",
+          "role_cn": "明星（居家网购）",
+          "hype_date": "2020-03",
+          "peak_date": "2021-11-24",
+          "peak_price": 296.91,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 72.67,
+          "fate_detail_cn": "收入 2019 年 8.2 亿 → 2020 年 17.3 亿 → 2025 年 28.8 亿；股价 2025-04-08 低点 40.80（−86%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ETSY/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001370637.json",
+            "https://www.cnbc.com/2020/11/10/peloton-netflix-and-etsy-stock-and-stay-at-home-plays-what-to-watch.html",
+            "https://www.cnbc.com/2020/06/29/cramer-adds-new-stocks-recommends-buying-12-laggards-in-his-covid-19-index.html"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 307.75（2021-11-26）。"
+        },
+        {
+          "name": "Fastly",
+          "ticker_then": "FSLY",
+          "yahoo_ticker": "FSLY",
+          "role_cn": "卖铲子（CDN/边缘云）",
+          "hype_date": "2020-03",
+          "peak_date": "2020-10-13",
+          "peak_price": 128.83,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 25.95,
+          "fate_detail_cn": "Cramer 2020-09 称其为'教科书式宅经济标的'；峰值后 2025-04-08 低点 5.00（−96%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/FSLY/history/",
+            "https://www.cnbc.com/2020/09/08/jim-cramer-reviews-biggest-winners-on-the-cramer-covid-19-index.html",
+            "https://www.cnbc.com/2020/06/29/cramer-adds-new-stocks-recommends-buying-12-laggards-in-his-covid-19-index.html"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 136.50（2020-10-13）。"
+        },
+        {
+          "name": "Netflix",
+          "ticker_then": "NFLX",
+          "yahoo_ticker": "NFLX",
+          "role_cn": "龙头（对照：后来的赢家）",
+          "hype_date": "2020-02",
+          "peak_date": "2021-11-17",
+          "peak_price": 69.17,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-08-20",
+          "final_value_per_share": 67.72,
+          "fate_detail_cn": "2024-08-20 收盘首次超过 2021-11 峰值，2025-06-30 收盘高点 133.91；但 2026-10-06 收 67.72，又跌回 2021 峰值下方。",
+          "sources": [
+            "https://finance.yahoo.com/quote/NFLX/history/",
+            "https://www.cnbc.com/2020/02/27/mkm-suggests-stay-at-home-stocks-like-peloton-netflix-vs-coronavirus.html",
+            "https://www.cnbc.com/2020/11/10/peloton-netflix-and-etsy-stock-and-stay-at-home-plays-what-to-watch.html"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 已按 2025-11-17 的 1 拆 10 复权（2021 峰值名义收盘约 691.7）。"
+        }
+      ]
+    },
+    {
+      "id": "meme_stocks",
+      "name_cn": "Meme 股（散户逼空）",
+      "name_en": "Meme stocks / retail short squeezes",
+      "one_line_cn": "赌社交媒体组织起来的散户能用股票和看涨期权逼空高空头仓位的'夕阳'公司，与基本面无关。",
+      "hype_start": {
+        "date": "2021-01-13",
+        "event_cn": "GME 单日交易账户数从 9,220 增至 60,515（6 倍以上），r/WallStreetBets 讨论升温",
+        "source": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+      },
+      "peak": {
+        "date": "2021-01-28",
+        "event_cn": "GME 盘中 483 美元（名义价；2022 年 1 拆 4 后约 120.75）；同日 Robinhood 限制买入 AMC、BB、BBBY、EXPR、GME、KOSS、NAKD、NOK 8 只股票；第二波 AMC 于 2021-06-02 盘中 72.62（名义价）见顶",
+        "source": "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
+      },
+      "trough": {
+        "date": "2024-04",
+        "event_cn": "Bed Bath & Beyond 2023-04-23 申请破产、2023-09-29 普通股无对价注销；GME 2024-04-22 收盘 10.01（复权）为峰值后低点，随后 2024-05 'Roaring Kitty' 回归又被短暂炒高",
+        "source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/d579010d8k.htm"
+      },
+      "proxy_tickers": [
+        "GME",
+        "AMC"
+      ],
+      "proxy_note_cn": "Roundhill 'MEME' ETF 2021-12 才发行且本次未核实存续，用 GME/AMC 代表；AMC 复权数据需人工校正（见公司备注）。",
+      "what_killed_it_cn": "逼空是一次性事件：空头回补后买盘消失；券商因清算保证金要求限制买入（2021-01-28）切断动能；标的公司基本面大多在恶化（GME 收入 FY2020 50.9 亿 → FY2025 36.3 亿），靠高股价增发或反向拆股续命；2022 年加息、散户资金枯竭后，Bed Bath & Beyond（2023）、Express（2024）先后破产。",
+      "reality_verdict": "基本是炒作",
+      "reality_evidence": [
+        {
+          "claim_cn": "SEC 工作人员报告：2021-01-27 KOSS 单日 +480%、AMC +301.2%、NAKD +252.3%、EXPR +214.1%，都大于 GME 任一单日涨幅；GME 空头曾达流通股 122.97%",
+          "date": "2021-10",
+          "source": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+        },
+        {
+          "claim_cn": "Bed Bath & Beyond 2023-09-29 重整计划生效，普通股与优先股'无对价注销、无价值'",
+          "date": "2023-09-29",
+          "source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/d579010d8k.htm"
+        },
+        {
+          "claim_cn": "真正变大的是'卖铲子'：Robinhood 2021-01 募资 34 亿美元，2021-07-29 以 38 美元 IPO，2025 年股价创新高",
+          "date": "2021-2025",
+          "source": "https://en.wikipedia.org/wiki/Robinhood_Markets"
+        }
+      ],
+      "time_to_reality": {
+        "years": null,
+        "from": "2021",
+        "to": null,
+        "marker_cn": "标的公司无可兑现的基本面主题；只有零售交易平台（Robinhood）的业务后来兑现",
+        "source": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+      },
+      "basket_method": "当年口径：2021-01-28 Robinhood 限制买入的 8 只证券（AMC、BlackBerry、BBBY、EXPR、GME、KOSS、NAKD、Nokia），见 SEC《Staff Report on Equity and Options Market Structure Conditions in Early 2021》第 33 页；另加 Robinhood（2021-07 IPO，meme 热潮的交易平台）。",
+      "companies": [
+        {
+          "name": "GameStop",
+          "ticker_then": "GME",
+          "yahoo_ticker": "GME",
+          "role_cn": "龙头",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-27",
+          "peak_price": 86.88,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 25.1,
+          "fate_detail_cn": "2022-07 1 拆 4；2024-05 再炒至收盘 48.75（复权），仍远低于 2021 峰值；收入 FY2020 50.9 亿 → FY2025 36.3 亿。",
+          "sources": [
+            "https://finance.yahoo.com/quote/GME/history/",
+            "https://en.wikipedia.org/wiki/GameStop_short_squeeze",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1326380/000132638022000100/gme-20220706.htm",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326380.json"
+          ],
+          "confidence": "high",
+          "notes": "收盘峰值名义价 347.51；盘中 483.00（2021-01-28，复权 120.75）。"
+        },
+        {
+          "name": "AMC Entertainment",
+          "ticker_then": "AMC",
+          "yahoo_ticker": "AMC",
+          "role_cn": "明星（第二波龙头）",
+          "hype_date": "2021-01",
+          "peak_date": "2021-06-02",
+          "peak_price": 625.5,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 2.876,
+          "fate_detail_cn": "2023-08-24 1:10 反向拆股，同时 APE 优先股单位转换为普通股，并按每 7.5 股派 1 股诉讼和解股；股价较复权峰值 −99.5%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/AMC/history/",
+            "https://www.sec.gov/Archives/edgar/data/1411579/000110465923094947/tm2324329d3_8k.htm",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001411579.json"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 已按 1:10 反向拆股复权（峰值名义收盘 62.55，盘中 72.62）。注意：2022-08 派发的 APE 单位与 2023 和解股的稀释，Yahoo 复权可能未完全反映，回撤需人工校正。"
+        },
+        {
+          "name": "BlackBerry",
+          "ticker_then": "BB",
+          "yahoo_ticker": "BB",
+          "role_cn": "明星",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-27",
+          "peak_price": 25.1,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 9.605,
+          "fate_detail_cn": "2021-01-28 被列入 Robinhood 限买名单；之后股价未回峰值，2024-08-07 低点 2.11。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BB/history/",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 28.77（2021-01-27）。"
+        },
+        {
+          "name": "Bed Bath & Beyond Inc. (1971–2023)",
+          "ticker_then": "BBBY",
+          "yahoo_ticker": null,
+          "role_cn": "明星",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2023-09-29",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2021-01 空头占流通股 66.02%（SEC）；2023-04-23 申请 Chapter 11；2023-09-29 计划生效，普通股无对价注销；SEC 登记名改为 20230930-DK-Butterfly-1, Inc.",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/886158/000119312523247428/d579010d8k.htm",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://en.wikipedia.org/wiki/Bed_Bath_%26_Beyond_(1987%E2%80%932023)"
+          ],
+          "confidence": "high",
+          "notes": "峰值价格未取得：原 BBBY 历史已从 Yahoo 删除，'BBBY' 代码已被原 Overstock（Beyond）改名后的新公司重新使用（Yahoo 新 BBBY 数据始于 2026-07），勿用。2022 年还有一波与 Ryan Cohen 持股相关的二次炒作（本次未取得价格来源）。"
+        },
+        {
+          "name": "Express, Inc.",
+          "ticker_then": "EXPR",
+          "yahoo_ticker": null,
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-27",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-04-22",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2021-01-27 单日 +214.1%；2023-09 1:20 反向拆股；2024-03 NYSE 启动摘牌；2024-04-22 申请 Chapter 11，SEC 登记名改为 EXP OldCo Winddown, Inc.",
+          "sources": [
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1483510/000119312523226828/d550419d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1483510/000119312524060821/d747930d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1483510/000119312524103828/d827429d8k.htm"
+          ],
+          "confidence": "medium",
+          "notes": "峰值价格未取得（Yahoo 无 EXPR/EXPRQ 历史）。破产 8-K 警示普通股回收'可能很少或没有'；未找到计划生效后普通股注销的文件，final_value 留空（大概率为 0）。"
+        },
+        {
+          "name": "Koss Corp",
+          "ticker_then": "KOSS",
+          "yahoo_ticker": "KOSS",
+          "role_cn": "沾边蹭概念",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-29",
+          "peak_price": 64.0,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 3.855,
+          "fate_detail_cn": "2021-01-27 单日 +480%（SEC）；高管与董事借机卖股套现约 4,500 万美元（Wikipedia）；之后较收盘峰值 −94%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/KOSS/history/",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 127.4（2021-01-28）。"
+        },
+        {
+          "name": "Naked Brand Group → Cenntro",
+          "ticker_then": "NAKD",
+          "yahoo_ticker": "CENN",
+          "role_cn": "沾边蹭概念（仙股）",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-28",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 3.88,
+          "fate_detail_cn": "2021-01-27 单日 +252.3%（SEC）；2021-12-31 与 Cenntro 反向合并并改名，现为 Cenntro Inc.（CENN），历经多次反向拆股，复权后较 2021 峰值约 −99.99%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CENN/history/",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1707919/000114036122000063/brhc10032459_6k.htm"
+          ],
+          "confidence": "medium",
+          "notes": "Yahoo CENN 记录的拆股：2021-12 1:15、2023-12 1:10（列两次，可能重复）、2026-04 1:60；复权序列数值异常，峰值请勿直接取 Yahoo 数，需人工核对。业务已换成电动车，原 Naked 股东实质被稀释。"
+        },
+        {
+          "name": "Nokia",
+          "ticker_then": "NOK",
+          "yahoo_ticker": "NOK",
+          "role_cn": "沾边（老牌大盘股被卷入）",
+          "hype_date": "2021-01",
+          "peak_date": "2021-01-27",
+          "peak_price": 6.55,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2025-10-28",
+          "final_value_per_share": 10.56,
+          "fate_detail_cn": "被列入 Robinhood 限买名单；靠基本面（网络/数据中心业务）2025-10-28 收盘首次超过 2021-01 收盘峰值，2026-06-02 收 16.85，也高于当日盘中 9.79。",
+          "sources": [
+            "https://finance.yahoo.com/quote/NOK/history/",
+            "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+            "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
+          ],
+          "confidence": "high",
+          "notes": "ADR；盘中高点 9.79（2021-01-27）。2026-10-06 收 10.56。"
+        },
+        {
+          "name": "Robinhood Markets",
+          "ticker_then": "HOOD",
+          "yahoo_ticker": "HOOD",
+          "role_cn": "卖铲子（散户交易平台）",
+          "hype_date": "2021-01",
+          "peak_date": "2021-08-04",
+          "peak_price": 70.39,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": 32.0,
+          "fate": "survived_new_high",
+          "fate_date": "2025-06-03",
+          "final_value_per_share": 114.2,
+          "fate_detail_cn": "2021-07-29 以 38 美元 IPO（估值约 320 亿美元），2021-08-04 盘中 85；2022-06-16 低点 6.89（−90%）；2025-06-03 收盘创新高，2025-10-09 收 152.5。",
+          "sources": [
+            "https://finance.yahoo.com/quote/HOOD/history/",
+            "https://www.sec.gov/Archives/edgar/data/1783879/000162828021015076/robinhood424.htm",
+            "https://en.wikipedia.org/wiki/Robinhood_Markets"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为 IPO 估值约 320 亿美元（Wikipedia），非峰值市值。"
+        }
+      ]
+    },
+    {
+      "id": "ark_innovation",
+      "name_cn": "ARK '颠覆式创新'",
+      "name_en": "ARK Invest disruptive innovation",
+      "one_line_cn": "赌 Cathie Wood 的颠覆式创新平台（电动车/自动驾驶、基因编辑与测序、数字支付、流媒体、远程医疗等）会在 5 年内指数级增长，买高估值、未盈利的成长股。",
+      "hype_start": {
+        "date": "2020-03",
+        "event_cn": "ARKK 自 2020-03-18 收盘 34.69 起步，2020 年全年价格上涨 148.7%；到 2021-01-31 ARKK 净资产达 226 亿美元",
+        "source": "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+      },
+      "peak": {
+        "date": "2021-02-12",
+        "event_cn": "ARKK 收盘 156.58 历史最高（盘中 2021-02-16 159.70）",
+        "source": "https://finance.yahoo.com/quote/ARKK/history/"
+      },
+      "trough": {
+        "date": "2022-12-28",
+        "event_cn": "ARKK 收盘 29.64，较峰值 −81.1%；2026-10-06 收 91.62，仍较峰值 −41%",
+        "source": "https://finance.yahoo.com/quote/ARKK/history/"
+      },
+      "proxy_tickers": [
+        "ARKK"
+      ],
+      "proxy_note_cn": "ARKK 本身即当年的风气载体（2014 年成立，非事后 ETF）；Yahoo 价格未含分红。",
+      "what_killed_it_cn": "长久期、未盈利成长股对利率最敏感：2022 年加息 425bp、CPI 9.1%，估值大幅压缩；持仓集中且多为中小盘，资金流出时被动卖出放大跌幅；部分技术兑现慢于预期（基因检测/远程医疗），个别公司（Invitae）在高利率下融资断裂而破产。",
+      "reality_verdict": "真实但比股价预期慢得多",
+      "reality_evidence": [
+        {
+          "claim_cn": "FDA 2023-12-08 批准首个 CRISPR/Cas9 疗法 Casgevy（Vertex 与 CRISPR Therapeutics 合作）：技术兑现，但 CRSP 股价仍较 2021 峰值 −74%",
+          "date": "2023-12-08",
+          "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+        },
+        {
+          "claim_cn": "Invitae 2024-02-13 申请 Chapter 11，资产以 2.39 亿美元现金卖给 Labcorp，2024-08-07 普通股无对价注销",
+          "date": "2024",
+          "source": "https://www.sec.gov/Archives/edgar/data/1501134/000119312524196195/d859163d8k.htm"
+        },
+        {
+          "claim_cn": "前十大中只有 Tesla、Spotify 后来创新高；其余 8 只（含 1 只破产）截至 2026-10-06 仍远低于 2021 峰值",
+          "date": "2026-10-06",
+          "source": "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+        }
+      ],
+      "time_to_reality": {
+        "years": 3,
+        "from": "2021",
+        "to": "2023",
+        "marker_cn": "以首个 CRISPR 疗法获批（2023-12）等为部分兑现标志；多数持仓的商业化远慢于股价隐含的 5 年指数增长",
+        "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+      },
+      "basket_method": "当年口径：ARK ETF Trust 2021-01-31 半年报（Form N-CSRS）中 ARKK 按市值排序的前十大持仓（ARKK 2021-02-12 见顶前两周），一个不删，含后来破产的 Invitae。权重 = 持仓市值 / 净资产 226.09 亿美元。",
+      "companies": [
+        {
+          "name": "Tesla",
+          "ticker_then": "TSLA",
+          "yahoo_ticker": "TSLA",
+          "role_cn": "龙头",
+          "hype_date": "2020",
+          "peak_date": "2021-11-04",
+          "peak_price": 409.97,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-12-11",
+          "final_value_per_share": 380.7,
+          "fate_detail_cn": "2021-11-04 收盘见顶（复权）；2024-12-11 收盘首次超过，2025-12-16 收 489.9；2026-10-06 收 380.7，又低于 2021 峰值。",
+          "sources": [
+            "https://finance.yahoo.com/quote/TSLA/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：9.57%（第 1）。Yahoo 已按 2020 年 1 拆 5、2022 年 1 拆 3 复权。ARKK 见顶日（2021-02-12）Tesla 尚未见顶。"
+        },
+        {
+          "name": "Roku",
+          "ticker_then": "ROKU",
+          "yahoo_ticker": "ROKU",
+          "role_cn": "明星（流媒体）",
+          "hype_date": "2020",
+          "peak_date": "2021-07-26",
+          "peak_price": 479.5,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 152.9,
+          "fate_detail_cn": "2022-12-28 低点 38.8（−92%）；2026-10-06 收 152.9。",
+          "sources": [
+            "https://finance.yahoo.com/quote/ROKU/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：6.71%（第 2）；盘中高点 490.8（2021-07-27）。"
+        },
+        {
+          "name": "Teladoc Health",
+          "ticker_then": "TDOC",
+          "yahoo_ticker": "TDOC",
+          "role_cn": "明星（远程医疗）",
+          "hype_date": "2020",
+          "peak_date": "2021-02-08",
+          "peak_price": 294.54,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 5.8,
+          "fate_detail_cn": "同 stay_at_home 主题：2022 年商誉减值 134 亿美元，较峰值 −98%。",
+          "sources": [
+            "https://finance.yahoo.com/quote/TDOC/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477449.json"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：5.25%（第 3）。与 stay_at_home 重复，统计去重。"
+        },
+        {
+          "name": "Square / Block",
+          "ticker_then": "SQ",
+          "yahoo_ticker": "XYZ",
+          "role_cn": "明星（数字支付）",
+          "hype_date": "2020",
+          "peak_date": "2021-08-05",
+          "peak_price": 281.8,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 76.46,
+          "fate_detail_cn": "2023-10-30 低点 39.22（−86%）；公司更名 Block，代码现为 XYZ。",
+          "sources": [
+            "https://finance.yahoo.com/quote/XYZ/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm",
+            "https://www.sec.gov/files/company_tickers.json"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：4.64%（第 4）；盘中高点 289.2。代码陷阱：SQ→XYZ（2025）。"
+        },
+        {
+          "name": "CRISPR Therapeutics",
+          "ticker_then": "CRSP",
+          "yahoo_ticker": "CRSP",
+          "role_cn": "明星（基因编辑）",
+          "hype_date": "2020",
+          "peak_date": "2021-01-14",
+          "peak_price": 210.0,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 54.13,
+          "fate_detail_cn": "合作疗法 Casgevy 2023-12-08 获 FDA 批准（首个 CRISPR 疗法）；股价 2025-04-08 低点 31.27（−85%）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/CRSP/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm",
+            "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：4.42%（第 5）；盘中高点 220.2（2021-01-15）。"
+        },
+        {
+          "name": "Invitae",
+          "ticker_then": "NVTA",
+          "yahoo_ticker": null,
+          "role_cn": "明星（基因检测）",
+          "hype_date": "2020",
+          "peak_date": "2021-01",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-08-07",
+          "final_value_per_share": 0.0,
+          "fate_detail_cn": "2024-02-13 申请 Chapter 11；资产以 2.39 亿美元现金卖给 Labcorp；2024-08-07 计划生效，普通股无对价注销。",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm",
+            "https://www.sec.gov/Archives/edgar/data/1501134/000150113424000016/nvta-20240213.htm",
+            "https://www.sec.gov/Archives/edgar/data/1501134/000119312524129432/d827617d8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1501134/000119312524196195/d859163d8k.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：3.80%（第 6）。ARKK 持 1,734 万股、市值 8.59 亿美元，推得 2021-01-31 股价约 49.52 美元（非峰值；峰值未取得，Yahoo 已无 NVTA 历史）。ARK 为其关联持股人（>5%）。"
+        },
+        {
+          "name": "Proto Labs",
+          "ticker_then": "PRLB",
+          "yahoo_ticker": "PRLB",
+          "role_cn": "沾边（3D 打印/数字制造）",
+          "hype_date": "2020",
+          "peak_date": "2021-01-27",
+          "peak_price": 251.5,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 98.49,
+          "fate_detail_cn": "2022-11-09 低点 22.09（−91%）；2026-10-06 收 98.49。",
+          "sources": [
+            "https://finance.yahoo.com/quote/PRLB/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：2.89%（第 7）；盘中高点 286.6。"
+        },
+        {
+          "name": "Baidu",
+          "ticker_then": "BIDU",
+          "yahoo_ticker": "BIDU",
+          "role_cn": "沾边（AI/自动驾驶）",
+          "hype_date": "2020",
+          "peak_date": "2021-02-19",
+          "peak_price": 339.9,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 86.83,
+          "fate_detail_cn": "2022-10-31 低点 76.57（−77%）；2026-10-06 收 86.83。",
+          "sources": [
+            "https://finance.yahoo.com/quote/BIDU/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：2.82%（第 8）；ADR；盘中高点 354.8。"
+        },
+        {
+          "name": "Zillow Group (Class C)",
+          "ticker_then": "Z",
+          "yahoo_ticker": "Z",
+          "role_cn": "沾边（地产科技）",
+          "hype_date": "2020",
+          "peak_date": "2021-02-16",
+          "peak_price": 199.9,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 27.97,
+          "fate_detail_cn": "2022-10-14 低点 26.97（−87%）；2025-09 曾回升至约 90，2026 年再跌至约 28。",
+          "sources": [
+            "https://finance.yahoo.com/quote/Z/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：2.76%（第 9）；盘中高点 208.1。"
+        },
+        {
+          "name": "Spotify",
+          "ticker_then": "SPOT",
+          "yahoo_ticker": "SPOT",
+          "role_cn": "明星（流媒体）",
+          "hype_date": "2020",
+          "peak_date": "2021-02-19",
+          "peak_price": 364.6,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-09-20",
+          "final_value_per_share": 491.1,
+          "fate_detail_cn": "2022-11-04 低点 71.05（−81%）；盈利改善后 2024-09-20 收盘创新高，2025-06-26 收 775.9。",
+          "sources": [
+            "https://finance.yahoo.com/quote/SPOT/history/",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "2021-01-31 ARKK 持仓权重（按 N-CSRS 市值/净资产 226.1 亿美元计算）：2.75%（第 10）；盘中高点 387.4。"
+        }
+      ]
+    },
+    {
+      "id": "metaverse_nft",
+      "name_cn": "元宇宙 / NFT",
+      "name_en": "Metaverse & NFTs",
+      "one_line_cn": "赌人们会把社交、工作、消费搬进 3D 虚拟世界，数字物品（NFT）会成为新的资产类别。",
+      "hype_start": {
+        "date": "2021-03",
+        "event_cn": "Roblox 2021-03-10 在 NYSE 直接上市（首日估值约 419 亿美元）；同年 Beeple 的 NFT 作品在佳士得拍出 6,930 万美元",
+        "source": "https://en.wikipedia.org/wiki/Roblox_Corporation"
+      },
+      "peak": {
+        "date": "2021-11",
+        "event_cn": "Facebook 2021-10-28 改名 Meta Platforms（原计划代码 MVRS）；Roblox(11-19)、Unity(11-18)、元宇宙 ETF METV(11-19) 收盘见顶；OpenSea 2022-01 以 133 亿美元估值融资，2022-05-01 日成交 27 亿美元为单日峰值",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000071/fb-20211028.htm"
+      },
+      "trough": {
+        "date": "2022-11",
+        "event_cn": "OpenSea 日成交 2022-08-28 降至 934 万美元（较峰值 −99%）；Meta 股价 2022-11-03 收 88.91（较 2021-09 高点 −77%）",
+        "source": "https://en.wikipedia.org/wiki/OpenSea"
+      },
+      "proxy_tickers": [
+        "METV",
+        "META"
+      ],
+      "proxy_note_cn": "Roundhill Ball Metaverse ETF（METV）2021-06-30 才发行，属热潮中段产物；2025-06 起收盘超过 2021 高点，主要因持仓含 AI 赢家，不代表元宇宙兑现。",
+      "what_killed_it_cn": "需求没有出现：VR/AR 硬件普及有限，Meta Reality Labs 2020–2025 累计经营亏损约 836 亿美元，而 2025 年该部门收入仅 22 亿；NFT 是纯投机品，2022 年加密崩盘与加息后交易量下降 99%；Meta 2023 年起把重心转向 AI，'元宇宙'叙事被 AI 取代。",
+      "reality_verdict": "基本是炒作",
+      "reality_evidence": [
+        {
+          "claim_cn": "Meta Reality Labs 经营亏损：2020 年 66.2 亿、2021 年 101.9 亿、2022 年 137.2 亿、2023 年 161.2 亿、2024 年 177.3 亿、2025 年 191.9 亿美元，六年合计约 836 亿；2025 年该部门收入 22.1 亿",
+          "date": "2020-2025",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+        },
+        {
+          "claim_cn": "2020–2022 年 Reality Labs 亏损数字（66.2/101.9/137.2 亿）见 Meta FY2022 10-K 分部数据",
+          "date": "2020-2022",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000013/meta-20221231.htm"
+        },
+        {
+          "claim_cn": "OpenSea 日成交从 2022-05-01 的 27 亿美元降至 2022-08-28 的 934 万美元（−99%）",
+          "date": "2022",
+          "source": "https://en.wikipedia.org/wiki/OpenSea"
+        },
+        {
+          "claim_cn": "例外：Roblox 作为游戏平台真实增长（收入 2021 年 19.2 亿 → 2025 年 48.9 亿），但这是游戏而非'元宇宙'",
+          "date": "2021-2025",
+          "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001315098.json"
+        }
+      ],
+      "time_to_reality": {
+        "years": null,
+        "from": "2021",
+        "to": null,
+        "marker_cn": "截至 2026-10 元宇宙/NFT 尚未形成可持续的大众需求；Meta 股价新高来自广告与 AI，而非 Reality Labs",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+      },
+      "basket_method": "当年口径：改名事件主角 Facebook/Meta；2021 年以'元宇宙'概念上市或走红的 Roblox（直接上市）、Unity（3D 引擎，2020-09 IPO）、Matterport（数字孪生，SPAC 上市）；名字相近被炒作的 meme 股 Meta Materials。NVIDIA 等'卖铲子'因未取得当年把其归为元宇宙股的来源，未列入。来源：Meta 8-K、Wikipedia（Roblox/Matterport）、SEC 文件。",
+      "companies": [
+        {
+          "name": "Facebook → Meta Platforms",
+          "ticker_then": "FB",
+          "yahoo_ticker": "META",
+          "role_cn": "龙头",
+          "hype_date": "2021-10-28",
+          "peak_date": "2021-09-07",
+          "peak_price": 382.18,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-01-19",
+          "final_value_per_share": 742.3,
+          "fate_detail_cn": "2021-10-28 改名；2022-11-03 低点 88.91（−77%）；靠广告复苏与 AI 叙事 2024-01-19 收盘创新高，2025-08-12 收 790；Reality Labs 仍年亏近 200 亿。",
+          "sources": [
+            "https://finance.yahoo.com/quote/META/history/",
+            "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000071/fb-20211028.htm",
+            "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000013/meta-20221231.htm",
+            "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+          ],
+          "confidence": "high",
+          "notes": "代码 FB →（原计划 MVRS）→ META。峰值出现在改名之前；盘中高点 384.33（2021-09-01）。"
+        },
+        {
+          "name": "Roblox",
+          "ticker_then": "RBLX",
+          "yahoo_ticker": "RBLX",
+          "role_cn": "明星",
+          "hype_date": "2021-03-10",
+          "peak_date": "2021-11-19",
+          "peak_price": 134.72,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": 41.9,
+          "fate": "survived_new_high",
+          "fate_date": "2025-07-31",
+          "final_value_per_share": 45.49,
+          "fate_detail_cn": "2021-03-10 直接上市；2022-05-10 低点 23.19（−83%）；2025-07-31 收盘首次超过 2021 峰值、2025-09-29 收 141.6；但 2026 年大幅回落，2026-10-06 收 45.49。",
+          "sources": [
+            "https://finance.yahoo.com/quote/RBLX/history/",
+            "https://en.wikipedia.org/wiki/Roblox_Corporation",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001315098.json"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为首日估值 419 亿美元（Wikipedia），非峰值市值；盘中高点 141.6（2021-11-22）。按定义算 survived_new_high，但当前价较 2021 峰值 −66%。"
+        },
+        {
+          "name": "Unity Software",
+          "ticker_then": "U",
+          "yahoo_ticker": "U",
+          "role_cn": "卖铲子（3D 引擎）",
+          "hype_date": "2021",
+          "peak_date": "2021-11-18",
+          "peak_price": 201.1,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 45.54,
+          "fate_detail_cn": "2024-08-07 低点 13.93（−93%）；收入 2021 年 11.1 亿 → 2025 年 18.5 亿。",
+          "sources": [
+            "https://finance.yahoo.com/quote/U/history/",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001810806.json",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 210.0。亦为 ARKK 2021-01-31 持仓（约 2.7 亿美元）。"
+        },
+        {
+          "name": "Matterport",
+          "ticker_then": "GHVI (SPAC) / MTTR",
+          "yahoo_ticker": null,
+          "role_cn": "沾边（数字孪生）",
+          "hype_date": "2021-02-08",
+          "peak_date": "2021",
+          "peak_price": null,
+          "price_basis": "nominal",
+          "peak_mcap_usd_bn": null,
+          "fate": "acquired",
+          "fate_date": "2025-02-28",
+          "final_value_per_share": 5.46,
+          "fate_detail_cn": "2021-02-08 宣布与 SPAC Gores Holdings VI 合并（交易估值 29 亿美元）；2025-02-28 被 CoStar 收购：每股 2.75 美元现金 + 0.03552 股 CoStar（按当日 CSGP 收盘 76.25 折合约 5.46 美元）。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Matterport",
+            "https://www.sec.gov/Archives/edgar/data/1819394/000110465924049761/tm2411308d1_8k.htm",
+            "https://www.sec.gov/Archives/edgar/data/1819394/000110465925018773/tm257720d3_8k.htm",
+            "https://finance.yahoo.com/quote/CSGP/history/"
+          ],
+          "confidence": "medium",
+          "notes": "峰值价格未取得（Yahoo 已无 MTTR/GHVI 历史），无法与收购价比较。5.46 为派生值。CoStar 股价其后跌至约 28（2026-10），保留 CoStar 股份者损失更大。"
+        },
+        {
+          "name": "Meta Materials (ex-Torchlight Energy)",
+          "ticker_then": "MMAT",
+          "yahoo_ticker": "MMATQ",
+          "role_cn": "沾边蹭概念（名字/meme）",
+          "hype_date": "2021-06",
+          "peak_date": "2021-06-28",
+          "peak_price": 7.96,
+          "price_basis": "nominal（Yahoo MMATQ 收盘 796 按 2024-01 的 1:100 反向拆股还原）",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2024-08-09",
+          "final_value_per_share": 0.0001,
+          "fate_detail_cn": "2021-06 与 Torchlight 合并后作为 meme 股被炒作，合并后首个交易日即为收盘高点；2024-01 1:100 反向拆股；2024-08-09 停业并申请 Chapter 7 清算；随后 Nasdaq 摘牌（Form 25，2024-09）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MMATQ/history/",
+            "https://www.sec.gov/Archives/edgar/data/1431959/000095017024094376/mmat-20240807.htm",
+            "https://www.sec.gov/Archives/edgar/data/1431959/000135445724000709/xslF25X02/primary_doc.xml"
+          ],
+          "confidence": "medium",
+          "notes": "盘中高点名义约 9.97（2021-06-28）。final_value 为 OTC 最后报价 0.0001（Yahoo MMATQ），实际清零。'因名字与 Meta/元宇宙相近而被炒'属常见说法，本次未取得具体报道来源。"
+        }
+      ]
+    },
+    {
+      "id": "crypto_v2",
+      "name_cn": "加密货币第二轮（2020–22）",
+      "name_en": "Crypto boom v2",
+      "one_line_cn": "赌比特币成为机构级'数字黄金'、加密交易所/借贷平台成为新金融基础设施，并通过上市公司股票间接参与。",
+      "hype_start": {
+        "date": "2020-08-11",
+        "event_cn": "MicroStrategy 公告以 2.5 亿美元买入 21,454 枚比特币，开启'上市公司比特币财库'模式",
+        "source": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm"
+      },
+      "peak": {
+        "date": "2021-11-10",
+        "event_cn": "BTC 盘中 68,789 美元（收盘高点 2021-11-08 67,567）；此前 Coinbase 2021-04-14 直接上市（参考价 250 美元，估值约 470 亿）当日盘中 429.54",
+        "source": "https://finance.yahoo.com/quote/BTC-USD/history/"
+      },
+      "trough": {
+        "date": "2022-11-21",
+        "event_cn": "FTX 2022-11-11 申请 Chapter 11 后，BTC 2022-11-21 收 15,787（较收盘峰值 −77%）；COIN 2022-12-28 收 32.53",
+        "source": "https://en.wikipedia.org/wiki/FTX"
+      },
+      "proxy_tickers": [
+        "BTC-USD",
+        "COIN"
+      ],
+      "proxy_note_cn": "BTC-USD 为资产本身；美国现货比特币 ETF 2024-01 才获批，晚于本轮。",
+      "what_killed_it_cn": "高杠杆 + 期限错配 + 欺诈：2022-05 Terra/LUNA 算法稳定币崩盘（一周蒸发约 450 亿美元市值）→ Three Arrows 违约（欠 Voyager 6.66 亿美元）→ Celsius 停兑（06-13）并破产（07-13）、Voyager 破产（07-05）→ FTX 破产（11-11）、BlockFi 破产（11-28）→ 加密银行 Silvergate 遭挤兑，2023-03 自愿清算。叠加 2022 年加息使投机资金退潮。",
+      "reality_verdict": "进行中",
+      "reality_evidence": [
+        {
+          "claim_cn": "SEC 2024-01-10 批准现货比特币 ETP 上市交易：资产类别被主流金融体系接纳",
+          "date": "2024-01-10",
+          "source": "https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023"
+        },
+        {
+          "claim_cn": "BTC 2024-03-04 收盘超过 2021 高点，2025-10-06 收盘约 124,800 美元；2026-10-06 约 86,300 美元",
+          "date": "2024-2026",
+          "source": "https://finance.yahoo.com/quote/BTC-USD/history/"
+        },
+        {
+          "claim_cn": "当年的中心化借贷/经纪/交易所大面积倒闭：Celsius、Voyager、FTX、BlockFi 2022 年破产，Silvergate 2023 年清算",
+          "date": "2022-2024",
+          "source": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
+        },
+        {
+          "claim_cn": "Terra/UST 2022-05 崩盘，一周内蒸发近 450 亿美元市值",
+          "date": "2022-05",
+          "source": "https://en.wikipedia.org/wiki/Terra_(blockchain)"
+        }
+      ],
+      "time_to_reality": {
+        "years": 3,
+        "from": "2021",
+        "to": "2024",
+        "marker_cn": "现货比特币 ETF 获批（2024-01-10）、BTC 创新高（2024-03）作为'机构化'兑现标志；Web3 应用层面尚未兑现",
+        "source": "https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023"
+      },
+      "basket_method": "按 2021 年加密产业链的上市/准上市明星分层选取：交易所 Coinbase（2021 年最大的加密上市事件）、比特币财库 MicroStrategy、加密银行 Silvergate（2021-01-31 被 ARKW/ARKF 持有，见 ARK N-CSRS；ARKW 同时持有 2.45 亿美元 GBTC）、加密经纪/借贷 Voyager（TSX 上市）、矿企 Marathon/Riot、商人银行 Galaxy（TSX 上市）；FTX、Celsius 为非上市公司，仅作背景、不计入上市股票统计。",
+      "companies": [
+        {
+          "name": "Coinbase Global",
+          "ticker_then": "COIN",
+          "yahoo_ticker": "COIN",
+          "role_cn": "龙头",
+          "hype_date": "2021-04-14",
+          "peak_date": "2021-11-09",
+          "peak_price": 357.39,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": 47.0,
+          "fate": "survived_new_high",
+          "fate_date": "2025-06-26",
+          "final_value_per_share": 191.0,
+          "fate_detail_cn": "2021-04-14 直接上市（参考价 250，估值约 470 亿），当日盘中 429.54；2022-12-28 收 32.53（较收盘峰值 −91%）；收入 2021 年 78.4 亿 → 2022 年 31.9 亿 → 2025 年 71.8 亿；2025-06-26 收盘超过 2021 收盘峰值；2025-07-18 盘中 444.65、收 419.8，也超过了上市日盘中 429.54。",
+          "sources": [
+            "https://finance.yahoo.com/quote/COIN/history/",
+            "https://en.wikipedia.org/wiki/Coinbase",
+            "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json"
+          ],
+          "confidence": "high",
+          "notes": "peak_mcap 为参考价估值（Wikipedia）。收盘与盘中口径均已创新高（2025-07）；2026-10-06 收 191.0，又跌回 2021 峰值之下。"
+        },
+        {
+          "name": "MicroStrategy → Strategy Inc",
+          "ticker_then": "MSTR",
+          "yahoo_ticker": "MSTR",
+          "role_cn": "明星（比特币财库）",
+          "hype_date": "2020-08-11",
+          "peak_date": "2021-02-09",
+          "peak_price": 127.3,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2024-03-04",
+          "final_value_per_share": 167.1,
+          "fate_detail_cn": "2020-08-11 首次买币；2022-12-29 低点 13.66（−89%）；2024-03-04 收盘创新高，2024-11-20 收 473.8；2026-10-06 收 167.1。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MSTR/history/",
+            "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm",
+            "https://www.sec.gov/files/company_tickers.json"
+          ],
+          "confidence": "high",
+          "notes": "Yahoo 已按 2024-08-08 的 1 拆 10 复权（2021 峰值名义收盘约 1,273，盘中约 1,315）。公司现名 Strategy Inc，代码仍为 MSTR。"
+        },
+        {
+          "name": "Silvergate Capital",
+          "ticker_then": "SI",
+          "yahoo_ticker": "SICP",
+          "role_cn": "卖铲子（加密银行）",
+          "hype_date": "2020",
+          "peak_date": "2021-11-03",
+          "peak_price": 222.1,
+          "price_basis": "nominal close（Yahoo SICP 继承 NYSE 历史）",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2023-03-08",
+          "final_value_per_share": 0.7,
+          "fate_detail_cn": "2021-01-31 股价约 93（ARK N-CSRS 推算）；FTX 倒闭后遭挤兑，2023-03-08 宣布银行自愿清算；2023-05 NYSE 摘牌；2024-09 母公司申请 Chapter 11。",
+          "sources": [
+            "https://finance.yahoo.com/quote/SICP/history/",
+            "https://www.sec.gov/Archives/edgar/data/1312109/000131210923000058/si-20230308.htm",
+            "https://www.sec.gov/Archives/edgar/data/1312109/000087666123000397/xslF25X02/primary_doc.xml",
+            "https://en.wikipedia.org/wiki/Silvergate_Bank",
+            "https://www.sec.gov/Archives/edgar/data/1579982/000110465921043137/tm217753d2_ncsrs.htm"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 239.3（2021-11-22）。代码陷阱：Yahoo 'SI' 自 2025-07 起是另一家公司，勿用。final_value 为 2026-10-06 OTC 收盘 0.70（较峰值 −99.7%）；Wikipedia 称 Chapter 11 申请时资产 1–5 亿美元、负债 0.1–0.5 亿美元，股东或有少量剩余分配，未核实。"
+        },
+        {
+          "name": "Voyager Digital",
+          "ticker_then": "VOYG (TSX) / VYGVF (OTC)",
+          "yahoo_ticker": "VYGVQ",
+          "role_cn": "明星（加密经纪/借贷）",
+          "hype_date": "2021",
+          "peak_date": "2021-04-05",
+          "peak_price": 29.0,
+          "price_basis": "nominal close USD（OTC，Yahoo VYGVQ）",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2022-07-05",
+          "final_value_per_share": 0.0001,
+          "fate_detail_cn": "Three Arrows 欠款 6.66 亿美元未还后，2022-07-05 申请 Chapter 11；2022-07-07 宣布自 TSX 退市；资产先后由 FTX、Binance.US 竞得，均未完成（FTX 自身破产）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/VYGVQ/history/",
+            "https://en.wikipedia.org/wiki/Voyager_Digital",
+            "https://theblock.co/news/regulation/2022-07-06-crypto-broker-voyager-digital-files-for-chapter-11-bankruptcy-155990",
+            "https://www.barchart.com/story/news/9061310/voyager-digital-ltd-provides-update-on-listing-of-its-shares"
+          ],
+          "confidence": "medium",
+          "notes": "TSX 上市、美国 OTC 交易；价格为 OTC 美元价。final_value 为 OTC 最后报价 0.0001，股权实质清零。"
+        },
+        {
+          "name": "Marathon Digital → MARA Holdings",
+          "ticker_then": "MARA",
+          "yahoo_ticker": "MARA",
+          "role_cn": "卖铲子（比特币矿企）",
+          "hype_date": "2020",
+          "peak_date": "2021-11-09",
+          "peak_price": 76.09,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 11.07,
+          "fate_detail_cn": "2022-12-28 低点 3.15（−96%）；BTC 创新高后股价也未回峰值（2023-12-27 最高收 31.07）。",
+          "sources": [
+            "https://finance.yahoo.com/quote/MARA/history/"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 83.45（2021-11-09）。"
+        },
+        {
+          "name": "Riot Blockchain → Riot Platforms",
+          "ticker_then": "RIOT",
+          "yahoo_ticker": "RIOT",
+          "role_cn": "卖铲子（比特币矿企）",
+          "hype_date": "2020",
+          "peak_date": "2021-02-17",
+          "peak_price": 77.9,
+          "price_basis": "split_adjusted_close (Yahoo close, 未含股息复权)",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_below_peak",
+          "fate_date": "2026-10-06",
+          "final_value_per_share": 19.14,
+          "fate_detail_cn": "2022-12-28 低点 3.29（−96%）；2026-10-06 收 19.14。",
+          "sources": [
+            "https://finance.yahoo.com/quote/RIOT/history/"
+          ],
+          "confidence": "high",
+          "notes": "盘中高点 79.5（2021-02-17）。"
+        },
+        {
+          "name": "Galaxy Digital",
+          "ticker_then": "GLXY (TSX)",
+          "yahoo_ticker": "GLXY",
+          "role_cn": "明星（加密商人银行）",
+          "hype_date": "2021",
+          "peak_date": "2021-11",
+          "peak_price": null,
+          "price_basis": "nominal（加元，TSX）",
+          "peak_mcap_usd_bn": null,
+          "fate": "survived_new_high",
+          "fate_date": "2025-10",
+          "final_value_per_share": 22.73,
+          "fate_detail_cn": "2021 年在多伦多交易所交易；2025-05 完成重组为美国公司并在 Nasdaq 上市；Nasdaq 收盘高点 42.86 美元（2025-10-21），2026-10-06 收 22.73。",
+          "sources": [
+            "https://finance.yahoo.com/quote/GLXY/history/",
+            "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000010/glxy-20250507.htm"
+          ],
+          "confidence": "low",
+          "notes": "Yahoo GLXY 只有 2025-05-16 起的 Nasdaq 数据，TSX 时期峰值未取得，fate 为猜测：若 2021 年 TSX 峰值约 45 加元（未核实），则 2025-10 的 42.86 美元按汇率已超过。需用 TSX 历史数据复核。"
+        },
+        {
+          "name": "FTX（非上市）",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "非上市（仅背景，不计入上市股票统计）",
+          "hype_date": "2021",
+          "peak_date": "2022",
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": 32.0,
+          "fate": "dead",
+          "fate_date": "2022-11-11",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2022-11 时为第三大交易所、估值约 320 亿美元；2022-11-11 申请 Chapter 11；创始人 2022-12-12 被捕。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/FTX",
+            "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
+          ],
+          "confidence": "medium",
+          "notes": "私营公司估值，非市值。其倒闭直接引发 Silvergate 挤兑与 BTC 本轮最低点。"
+        },
+        {
+          "name": "Celsius Network（非上市）",
+          "ticker_then": null,
+          "yahoo_ticker": null,
+          "role_cn": "非上市（仅背景，不计入上市股票统计）",
+          "hype_date": "2021",
+          "peak_date": "2021",
+          "peak_price": null,
+          "price_basis": "n/a",
+          "peak_mcap_usd_bn": null,
+          "fate": "dead",
+          "fate_date": "2022-07-13",
+          "final_value_per_share": null,
+          "fate_detail_cn": "2022-06-13 以'极端市场状况'为由暂停提现，2022-07-13 申请 Chapter 11。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Celsius_Network"
+          ],
+          "confidence": "medium",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}
