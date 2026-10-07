@@ -1,0 +1,2590 @@
+{
+ "as_of": "2026-10-06",
+ "fetched_at": "2026-10-07T09:46:29",
+ "tickers": {
+  "IBKR": {
+   "cik": 1381197,
+   "yahoo": {
+    "last_close": 90.58,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 98.75,
+    "wk52_low_meta": 58.95,
+    "wk52_high_close": 98.19,
+    "wk52_low_close": 61.05,
+    "wk52_high_intraday": 98.75,
+    "wk52_low_intraday": 58.95,
+    "close_1y_ago": 69.35,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Interactive Brokers Group, Inc."
+   },
+   "nasdaq": {
+    "last_close": 90.58,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "INTERACTIVE BROKERS GROUP, INC.",
+   "ttm": {
+    "revenue": {
+     "concept": "RevenuesNetOfInterestExpense",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 6863000000,
+     "fy_val": 6205000000,
+     "fy_end": "2025-12-31",
+     "ytd": 3565000000,
+     "ytd_days": 180,
+     "prior_ytd": 2907000000,
+     "latest_q": 1896000000,
+     "prior_year_q": 1480000000
+    },
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": {
+     "concept": "NetIncomeLossAvailableToCommonStockholdersBasic",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1126000000,
+     "fy_val": 984000000,
+     "fy_end": "2025-12-31",
+     "ytd": 579000000,
+     "ytd_days": 180,
+     "prior_ytd": 437000000,
+     "latest_q": 312000000,
+     "prior_year_q": 224000000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 15915000000,
+     "fy_val": 15811000000,
+     "fy_end": "2025-12-31",
+     "ytd": 9827000000,
+     "ytd_days": 180,
+     "prior_ytd": 9723000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": null,
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 124000000,
+     "fy_val": 118000000,
+     "fy_end": "2025-12-31",
+     "ytd": 65000000,
+     "ytd_days": 180,
+     "prior_ytd": 59000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationAmortizationAndAccretionNet",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 64000000,
+     "fy_val": 61000000,
+     "fy_end": "2025-12-31",
+     "ytd": 33000000,
+     "ytd_days": 180,
+     "prior_ytd": 30000000,
+     "latest_q": 17000000,
+     "prior_year_q": 15000000
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseOperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4462000000,
+     "fy_val": 4219000000,
+     "fy_end": "2025-12-31",
+     "ytd": 2222000000,
+     "ytd_days": 180,
+     "prior_ytd": 1979000000,
+     "latest_q": 1179000000,
+     "prior_year_q": 1031000000
+    },
+    "buybacks": null,
+    "dividends_paid": {
+     "concept": "PaymentsOfDividendsCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 147000000,
+     "fy_val": 134000000,
+     "fy_end": "2025-12-31",
+     "ytd": 75000000,
+     "ytd_days": 180,
+     "prior_ytd": 62000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 7711000000,
+     "filed": "2026-08-06",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 5904000000,
+     "filed": "2026-08-06",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 247309000000,
+     "filed": "2026-08-06",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": null
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 42231651,
+     "as_of": "2011-05-06",
+     "filed": "2011-05-06",
+     "form": "10-Q"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 450088032,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "RevenuesNetOfInterestExpense",
+    "series": {
+     "2020-12-31": 2218000000,
+     "2021-12-31": 2714000000,
+     "2022-12-31": 3067000000,
+     "2023-12-31": 4340000000,
+     "2024-12-31": 5185000000,
+     "2025-12-31": 6205000000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLossAvailableToCommonStockholdersBasic",
+    "series": {
+     "2020-12-31": 195000000,
+     "2021-12-31": 308000000,
+     "2022-12-31": 380000000,
+     "2023-12-31": 600000000,
+     "2024-12-31": 755000000,
+     "2025-12-31": 984000000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 8068000000,
+     "2021-12-31": 5896000000,
+     "2022-12-31": 3968000000,
+     "2023-12-31": 4544000000,
+     "2024-12-31": 8724000000,
+     "2025-12-31": 15811000000
+    }
+   },
+   "annual_capex": null
+  },
+  "HOOD": {
+   "cik": 1783879,
+   "yahoo": {
+    "last_close": 112.0,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 153.56,
+    "wk52_low_meta": 63.515,
+    "wk52_high_close": 152.46,
+    "wk52_low_close": 65.16,
+    "wk52_high_intraday": 153.56,
+    "wk52_low_intraday": 63.51,
+    "close_1y_ago": 145.0,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Robinhood Markets, Inc."
+   },
+   "nasdaq": {
+    "last_close": 112.0,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Robinhood Markets, Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "Revenues",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4932000000,
+     "fy_val": 4473000000,
+     "fy_end": "2025-12-31",
+     "ytd": 2375000000,
+     "ytd_days": 180,
+     "prior_ytd": 1916000000,
+     "latest_q": 1308000000,
+     "prior_year_q": 989000000
+    },
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2072000000,
+     "fy_val": 1883000000,
+     "fy_end": "2025-12-31",
+     "ytd": 911000000,
+     "ytd_days": 180,
+     "prior_ytd": 722000000,
+     "latest_q": 561000000,
+     "prior_year_q": 386000000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 245000000,
+     "fy_val": 1638000000,
+     "fy_end": "2025-12-31",
+     "ytd": 2758000000,
+     "ytd_days": 180,
+     "prior_ytd": 4151000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": null,
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 351000000,
+     "fy_val": 305000000,
+     "fy_end": "2025-12-31",
+     "ytd": 197000000,
+     "ytd_days": 180,
+     "prior_ytd": 151000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationDepletionAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 91000000,
+     "fy_val": 86000000,
+     "fy_end": "2025-12-31",
+     "ytd": 46000000,
+     "ytd_days": 180,
+     "prior_ytd": 41000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "interest_expense": null,
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 871000000,
+     "fy_val": 653000000,
+     "fy_end": "2025-12-31",
+     "ytd": 664000000,
+     "ytd_days": 180,
+     "prior_ytd": 446000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 5362000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+     "period_end": "2026-06-30",
+     "val": 9541000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 56550000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 17243000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 516000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "diluted_wtd_latest_q": {
+     "val": 912000000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "Revenues",
+    "series": {
+     "2020-12-31": 958000000,
+     "2021-12-31": 1815000000,
+     "2022-12-31": 1358000000,
+     "2023-12-31": 1865000000,
+     "2024-12-31": 2951000000,
+     "2025-12-31": 4473000000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 7000000,
+     "2021-12-31": -3687000000,
+     "2022-12-31": -1028000000,
+     "2023-12-31": -541000000,
+     "2024-12-31": 1411000000,
+     "2025-12-31": 1883000000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 1876000000,
+     "2021-12-31": -885000000,
+     "2022-12-31": -852000000,
+     "2023-12-31": 1181000000,
+     "2024-12-31": -157000000,
+     "2025-12-31": 1638000000
+    }
+   },
+   "annual_capex": null
+  },
+  "COIN": {
+   "cik": 1679788,
+   "yahoo": {
+    "last_close": 185.74,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 402.16,
+    "wk52_low_meta": 139.11,
+    "wk52_high_close": 387.27,
+    "wk52_low_close": 141.09,
+    "wk52_high_intraday": 402.16,
+    "wk52_low_intraday": 139.11,
+    "close_1y_ago": 375.78,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Coinbase Global, Inc."
+   },
+   "nasdaq": {
+    "last_close": 185.74,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Coinbase Global, Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "Revenues",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 6282872000,
+     "fy_val": 7181325000,
+     "fy_end": "2025-12-31",
+     "ytd": 2633050000,
+     "ytd_days": 180,
+     "prior_ytd": 3531503000,
+     "latest_q": 1220068000,
+     "prior_year_q": 1497208000
+    },
+    "gross_profit": null,
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 619376000,
+     "fy_val": 1435441000,
+     "fy_end": "2025-12-31",
+     "ytd": -134909000,
+     "ytd_days": 180,
+     "prior_ytd": 681156000,
+     "latest_q": -113488000,
+     "prior_year_q": -24650000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": -987766000,
+     "fy_val": 1260327000,
+     "fy_end": "2025-12-31",
+     "ytd": -753585000,
+     "ytd_days": 180,
+     "prior_ytd": 1494508000,
+     "latest_q": -359468000,
+     "prior_year_q": 1428900000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1713665000,
+     "fy_val": 2426383000,
+     "fy_end": "2025-12-31",
+     "ytd": 380054000,
+     "ytd_days": 180,
+     "prior_ytd": 1092772000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": null,
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 938947000,
+     "fy_val": 839440000,
+     "fy_end": "2025-12-31",
+     "ytd": 486396000,
+     "ytd_days": 180,
+     "prior_ytd": 386889000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationDepletionAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 253603000,
+     "fy_val": 188428000,
+     "fy_end": "2025-12-31",
+     "ytd": 132409000,
+     "ytd_days": 180,
+     "prior_ytd": 67234000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseNonoperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 89452000,
+     "fy_val": 85413000,
+     "fy_end": "2025-12-31",
+     "ytd": 45085000,
+     "ytd_days": 180,
+     "prior_ytd": 41046000,
+     "latest_q": 22516000,
+     "prior_year_q": 20535000
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2033683000,
+     "fy_val": 790195000,
+     "fy_end": "2025-12-31",
+     "ytd": 1243488000,
+     "ytd_days": 180,
+     "prior_ytd": 0,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": null,
+    "rd": {
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1926411000,
+     "fy_val": 1670605000,
+     "fy_end": "2025-12-31",
+     "ytd": 998496000,
+     "ytd_days": 180,
+     "prior_ytd": 742690000,
+     "latest_q": 472848000,
+     "prior_year_q": 387322000
+    }
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 8614065000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "st_investments": {
+     "concept": "MarketableSecuritiesCurrent",
+     "period_end": "2026-06-30",
+     "val": 174778000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "lt_debt_noncurrent": {
+     "concept": "LongTermDebtNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 5944232000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "debt_current": {
+     "concept": "LongTermDebtCurrent",
+     "period_end": "2026-06-30",
+     "val": 0,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "short_term_borrowings": {
+     "concept": "ShortTermBorrowings",
+     "period_end": "2026-06-30",
+     "val": 539195000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "total_debt_tag": {
+     "concept": "LongTermDebt",
+     "period_end": "2026-06-30",
+     "val": 5900000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 13079665000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 26460286000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 4139490000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "diluted_wtd_latest_q": {
+     "val": 263412000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "Revenues",
+    "series": {
+     "2020-12-31": 1277481000,
+     "2021-12-31": 7839444000,
+     "2022-12-31": 3194208000,
+     "2023-12-31": 3108383000,
+     "2024-12-31": 6564028000,
+     "2025-12-31": 7181325000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 322317000,
+     "2021-12-31": 3624120000,
+     "2022-12-31": -2624949000,
+     "2023-12-31": 94871000,
+     "2024-12-31": 2579066000,
+     "2025-12-31": 1260327000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 293548000,
+     "2021-12-31": 4038172000,
+     "2022-12-31": -1585419000,
+     "2023-12-31": 673376000,
+     "2024-12-31": 3103935000,
+     "2025-12-31": 2426383000
+    }
+   },
+   "annual_capex": null
+  },
+  "FUTU": {
+   "cik": 1754581,
+   "yahoo": {
+    "last_close": 113.21,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 202.53,
+    "wk52_low_meta": 80.5,
+    "wk52_high_close": 199.04,
+    "wk52_low_close": 89.76,
+    "wk52_high_intraday": 202.53,
+    "wk52_low_intraday": 80.5,
+    "close_1y_ago": 170.93,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Futu Holdings Limited"
+   },
+   "nasdaq": {
+    "last_close": 113.21,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Futu Holdings Ltd",
+   "ttm": {
+    "revenue": null,
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": null,
+    "ocf": null,
+    "capex": null,
+    "sbc": null,
+    "d_and_a": null,
+    "interest_expense": null,
+    "buybacks": null,
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": null,
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": null,
+    "total_assets": null,
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": null
+   },
+   "shares": {},
+   "annual_revenue": null,
+   "annual_net_income": null,
+   "annual_ocf": null,
+   "annual_capex": null
+  },
+  "VIRT": {
+   "cik": 1592386,
+   "yahoo": {
+    "last_close": 61.62,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 68.76,
+    "wk52_low_meta": 31.55,
+    "wk52_high_close": 67.93,
+    "wk52_low_close": 32.38,
+    "wk52_high_intraday": 68.76,
+    "wk52_low_intraday": 31.55,
+    "close_1y_ago": 32.38,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Virtu Financial, Inc."
+   },
+   "nasdaq": {
+    "last_close": 61.62,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Virtu Financial,\u00a0Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "Revenues",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4079956000,
+     "fy_val": 3632118000,
+     "fy_end": "2025-12-31",
+     "ytd": 2285280000,
+     "ytd_days": 180,
+     "prior_ytd": 1837442000,
+     "latest_q": 1189953000,
+     "prior_year_q": 999573000
+    },
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 550701000,
+     "fy_val": 468361000,
+     "fy_end": "2025-12-31",
+     "ytd": 333208000,
+     "ytd_days": 180,
+     "prior_ytd": 250868000,
+     "latest_q": 150899000,
+     "prior_year_q": 151187000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 557616000,
+     "fy_val": 518386000,
+     "fy_end": "2025-12-31",
+     "ytd": 116959000,
+     "ytd_days": 180,
+     "prior_ytd": 77729000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 36507000,
+     "fy_val": 22802000,
+     "fy_end": "2025-12-31",
+     "ytd": 24649000,
+     "ytd_days": 180,
+     "prior_ytd": 10944000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 123765000,
+     "fy_val": 100403000,
+     "fy_end": "2025-12-31",
+     "ytd": 67821000,
+     "ytd_days": 180,
+     "prior_ytd": 44459000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": null,
+    "interest_expense": {
+     "concept": "InterestExpenseDebt",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 140089000,
+     "fy_val": 132859000,
+     "fy_end": "2025-12-31",
+     "ytd": 69672000,
+     "ytd_days": 180,
+     "prior_ytd": 62442000,
+     "latest_q": 34827000,
+     "prior_year_q": 32551000
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 0,
+     "fy_val": 1566000,
+     "fy_end": "2025-12-31",
+     "ytd": 0,
+     "ytd_days": 180,
+     "prior_ytd": 1566000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 1069254000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": {
+     "concept": "LongTermDebt",
+     "period_end": "2026-06-30",
+     "val": 2025883000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 1867760000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 27477122000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 1148926000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "diluted_wtd_latest_q": {
+     "val": 87603606,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "Revenues",
+    "series": {
+     "2020-12-31": 3239331000,
+     "2021-12-31": 2811485000,
+     "2022-12-31": 2364812000,
+     "2023-12-31": 2293373000,
+     "2024-12-31": 2876949000,
+     "2025-12-31": 3632118000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 649197000,
+     "2021-12-31": 476878000,
+     "2022-12-31": 265026000,
+     "2023-12-31": 142036000,
+     "2024-12-31": 276415000,
+     "2025-12-31": 468361000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 1060884000,
+     "2021-12-31": 1171626000,
+     "2022-12-31": 706803000,
+     "2023-12-31": 491777000,
+     "2024-12-31": 598991000,
+     "2025-12-31": 518386000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2020-12-31": 28888000,
+     "2021-12-31": 24562000,
+     "2022-12-31": 27201000,
+     "2023-12-31": 37774000,
+     "2024-12-31": 12427000,
+     "2025-12-31": 22802000
+    }
+   }
+  },
+  "CBOE": {
+   "cik": 1374310,
+   "yahoo": {
+    "last_close": 278.2,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 371.18,
+    "wk52_low_meta": 227.15,
+    "wk52_high_close": 366.7,
+    "wk52_low_close": 231.51,
+    "wk52_high_intraday": 371.18,
+    "wk52_low_intraday": 227.15,
+    "close_1y_ago": 240.9,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Cboe Global Markets, Inc."
+   },
+   "nasdaq": {
+    "last_close": 278.2,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Cboe Global Markets, Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 5061300000,
+     "fy_val": 4714200000,
+     "fy_end": "2025-12-31",
+     "ytd": 2715600000,
+     "ytd_days": 180,
+     "prior_ytd": 2368500000,
+     "latest_q": 1442800000,
+     "prior_year_q": 1173500000
+    },
+    "gross_profit": {
+     "concept": "GrossProfit",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2737100000,
+     "fy_val": 2429100000,
+     "fy_end": "2025-12-31",
+     "ytd": 1460500000,
+     "ytd_days": 180,
+     "prior_ytd": 1152500000,
+     "latest_q": 731600000,
+     "prior_year_q": 587300000
+    },
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1755700000,
+     "fy_val": 1467100000,
+     "fy_end": "2025-12-31",
+     "ytd": 981600000,
+     "ytd_days": 180,
+     "prior_ytd": 693000000,
+     "latest_q": 476000000,
+     "prior_year_q": 339100000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1353100000,
+     "fy_val": 1100000000,
+     "fy_end": "2025-12-31",
+     "ytd": 738800000,
+     "ytd_days": 180,
+     "prior_ytd": 485700000,
+     "latest_q": 353100000,
+     "prior_year_q": 235100000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1962800000,
+     "fy_val": 1752600000,
+     "fy_end": "2025-12-31",
+     "ytd": 1456800000,
+     "ytd_days": 180,
+     "prior_ytd": 1246600000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-03-31",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 75500000,
+     "fy_val": 71000000,
+     "fy_end": "2025-12-31",
+     "ytd": 19200000,
+     "ytd_days": 89,
+     "prior_ytd": 14700000,
+     "latest_q": 19200000,
+     "prior_year_q": 14700000
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 53200000,
+     "fy_val": 50400000,
+     "fy_end": "2025-12-31",
+     "ytd": 28500000,
+     "ytd_days": 180,
+     "prior_ytd": 25700000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationDepletionAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 119800000,
+     "fy_val": 122400000,
+     "fy_end": "2025-12-31",
+     "ytd": 57600000,
+     "ytd_days": 180,
+     "prior_ytd": 60200000,
+     "latest_q": 28100000,
+     "prior_year_q": 29900000
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseNonoperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 53100000,
+     "fy_val": 52300000,
+     "fy_end": "2025-12-31",
+     "ytd": 26500000,
+     "ytd_days": 180,
+     "prior_ytd": 25700000,
+     "latest_q": 13200000,
+     "prior_year_q": 12900000
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 75300000,
+     "fy_val": 66700000,
+     "fy_end": "2025-12-31",
+     "ytd": 75300000,
+     "ytd_days": 180,
+     "prior_ytd": 66700000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": {
+     "concept": "PaymentsOfDividendsCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 303000000,
+     "fy_val": 284300000,
+     "fy_end": "2025-12-31",
+     "ytd": 151500000,
+     "ytd_days": 180,
+     "prior_ytd": 132800000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 2276200000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "st_investments": {
+     "concept": "MarketableSecuritiesCurrent",
+     "period_end": "2026-06-30",
+     "val": 114500000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "lt_debt_noncurrent": {
+     "concept": "LongTermDebtNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 794200000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "debt_current": {
+     "concept": "LongTermDebtCurrent",
+     "period_end": "2026-06-30",
+     "val": 649600000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "short_term_borrowings": null,
+    "total_debt_tag": {
+     "concept": "LongTermDebt",
+     "period_end": "2026-06-30",
+     "val": 1443800000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 5625800000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 10609300000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 13000000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 3047600000,
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 104431019,
+     "as_of": "2026-07-24",
+     "filed": "2026-07-31",
+     "form": "10-Q"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 104900000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "RevenueFromContractWithCustomerIncludingAssessedTax",
+    "series": {
+     "2020-12-31": 3427100000,
+     "2021-12-31": 3494800000,
+     "2022-12-31": 3958500000,
+     "2023-12-31": 3773500000,
+     "2024-12-31": 4094500000,
+     "2025-12-31": 4714200000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2019-12-31": 374900000,
+     "2020-12-31": 468200000,
+     "2021-12-31": 529000000,
+     "2023-12-31": 761400000,
+     "2024-12-31": 764900000,
+     "2025-12-31": 1100000000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 1458800000,
+     "2021-12-31": 596800000,
+     "2022-12-31": 651100000,
+     "2023-12-31": 1075600000,
+     "2024-12-31": 1100600000,
+     "2025-12-31": 1752600000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2020-12-31": 47400000,
+     "2021-12-31": 51000000,
+     "2022-12-31": 59800000,
+     "2023-12-31": 45000000,
+     "2024-12-31": 60900000,
+     "2025-12-31": 71000000
+    }
+   }
+  },
+  "CME": {
+   "cik": 1156375,
+   "yahoo": {
+    "last_close": 270.18,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 329.16,
+    "wk52_low_meta": 218.31,
+    "wk52_high_close": 326.46,
+    "wk52_low_close": 218.58,
+    "wk52_high_intraday": 329.16,
+    "wk52_low_intraday": 218.31,
+    "close_1y_ago": 263.6,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "CME Group Inc."
+   },
+   "nasdaq": {
+    "last_close": 270.18,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "CME GROUP INC.",
+   "ttm": {
+    "revenue": {
+     "concept": "Revenues",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 6772600000,
+     "fy_val": 6520600000,
+     "fy_end": "2025-12-31",
+     "ytd": 3586300000,
+     "ytd_days": 180,
+     "prior_ytd": 3334300000,
+     "latest_q": 1706200000,
+     "prior_year_q": 1692000000
+    },
+    "gross_profit": null,
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4409000000,
+     "fy_val": 4229500000,
+     "fy_end": "2025-12-31",
+     "ytd": 2416800000,
+     "ytd_days": 180,
+     "prior_ytd": 2237300000,
+     "latest_q": 1107100000,
+     "prior_year_q": 1129300000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4287000000,
+     "fy_val": 4072200000,
+     "fy_end": "2025-12-31",
+     "ytd": 2196100000,
+     "ytd_days": 180,
+     "prior_ytd": 1981300000,
+     "latest_q": 1041800000,
+     "prior_year_q": 1025100000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4309000000,
+     "fy_val": 4277100000,
+     "fy_end": "2025-12-31",
+     "ytd": 2207000000,
+     "ytd_days": 180,
+     "prior_ytd": 2175100000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 96300000,
+     "fy_val": 83500000,
+     "fy_end": "2025-12-31",
+     "ytd": 45400000,
+     "ytd_days": 180,
+     "prior_ytd": 32600000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 99500000,
+     "fy_val": 94800000,
+     "fy_end": "2025-12-31",
+     "ytd": 46600000,
+     "ytd_days": 180,
+     "prior_ytd": 41900000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": null,
+    "interest_expense": null,
+    "buybacks": null,
+    "dividends_paid": {
+     "concept": "PaymentsOfDividends",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4076000000,
+     "fy_val": 3933000000,
+     "fy_end": "2025-12-31",
+     "ytd": 3165700000,
+     "ytd_days": 180,
+     "prior_ytd": 3022700000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 2144200000,
+     "filed": "2026-07-24",
+     "form": "10-Q"
+    },
+    "st_investments": {
+     "concept": "MarketableSecuritiesCurrent",
+     "period_end": "2026-06-30",
+     "val": 131400000,
+     "filed": "2026-07-24",
+     "form": "10-Q"
+    },
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 26520400000,
+     "filed": "2026-07-24",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 194676600000,
+     "filed": "2026-07-24",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 10505800000,
+     "filed": "2026-07-24",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 66643583,
+     "as_of": "2010-02-17",
+     "filed": "2010-02-26",
+     "form": "10-K"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 361282000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "Revenues",
+    "series": {
+     "2020-12-31": 4883600000,
+     "2021-12-31": 4689700000,
+     "2022-12-31": 5019400000,
+     "2023-12-31": 5578900000,
+     "2024-12-31": 6130100000,
+     "2025-12-31": 6520600000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 2106000000,
+     "2021-12-31": 2637000000,
+     "2022-12-31": 2691000000,
+     "2023-12-31": 3226000000,
+     "2024-12-31": 3525800000,
+     "2025-12-31": 4072200000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 2715600000,
+     "2021-12-31": 2402400000,
+     "2022-12-31": 3056000000,
+     "2023-12-31": 3453800000,
+     "2024-12-31": 3690500000,
+     "2025-12-31": 4277100000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2020-12-31": 197500000,
+     "2021-12-31": 127200000,
+     "2022-12-31": 89700000,
+     "2023-12-31": 76400000,
+     "2024-12-31": 94000000,
+     "2025-12-31": 83500000
+    }
+   }
+  },
+  "ICE": {
+   "cik": 1571949,
+   "yahoo": {
+    "last_close": 153.49,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 176.05,
+    "wk52_low_meta": 121.79,
+    "wk52_high_close": 175.1,
+    "wk52_low_close": 122.91,
+    "wk52_high_intraday": 176.05,
+    "wk52_low_intraday": 121.79,
+    "close_1y_ago": 161.98,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Intercontinental Exchange, Inc."
+   },
+   "nasdaq": {
+    "last_close": 153.49,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Intercontinental Exchange, Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 13426000000,
+     "fy_val": 12640000000,
+     "fy_end": "2025-12-31",
+     "ytd": 7277000000,
+     "ytd_days": 180,
+     "prior_ytd": 6491000000,
+     "latest_q": 3611000000,
+     "prior_year_q": 3262000000
+    },
+    "gross_profit": null,
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 5467000000,
+     "fy_val": 4929000000,
+     "fy_end": "2025-12-31",
+     "ytd": 3056000000,
+     "ytd_days": 180,
+     "prior_ytd": 2518000000,
+     "latest_q": 1391000000,
+     "prior_year_q": 1297000000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 4038000000,
+     "fy_val": 3315000000,
+     "fy_end": "2025-12-31",
+     "ytd": 2371000000,
+     "ytd_days": 180,
+     "prior_ytd": 1648000000,
+     "latest_q": 958000000,
+     "prior_year_q": 851000000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 5514000000,
+     "fy_val": 4662000000,
+     "fy_end": "2025-12-31",
+     "ytd": 3324000000,
+     "ytd_days": 180,
+     "prior_ytd": 2472000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 436000000,
+     "fy_val": 373000000,
+     "fy_end": "2025-12-31",
+     "ytd": 208000000,
+     "ytd_days": 180,
+     "prior_ytd": 145000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 268000000,
+     "fy_val": 238000000,
+     "fy_end": "2025-12-31",
+     "ytd": 145000000,
+     "ytd_days": 180,
+     "prior_ytd": 115000000,
+     "latest_q": 67000000,
+     "prior_year_q": 58000000
+    },
+    "d_and_a": {
+     "concept": "DepreciationAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1549000000,
+     "fy_val": 1560000000,
+     "fy_end": "2025-12-31",
+     "ytd": 773000000,
+     "ytd_days": 180,
+     "prior_ytd": 784000000,
+     "latest_q": 389000000,
+     "prior_year_q": 395000000
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseNonoperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 804000000,
+     "fy_val": 803000000,
+     "fy_end": "2025-12-31",
+     "ytd": 408000000,
+     "ytd_days": 180,
+     "prior_ytd": 407000000,
+     "latest_q": 205000000,
+     "prior_year_q": 201000000
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2000000000,
+     "fy_val": 1294000000,
+     "fy_end": "2025-12-31",
+     "ytd": 1202000000,
+     "ytd_days": 180,
+     "prior_ytd": 496000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": {
+     "concept": "PaymentsOfDividendsCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1141000000,
+     "fy_val": 1105000000,
+     "fy_end": "2025-12-31",
+     "ytd": 591000000,
+     "ytd_days": 180,
+     "prior_ytd": 555000000,
+     "latest_q": 294000000,
+     "prior_year_q": 277000000
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 1067000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": {
+     "concept": "LongTermDebtNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 18628000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "debt_current": {
+     "concept": "LongTermDebtCurrent",
+     "period_end": "2026-06-30",
+     "val": 1218000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "short_term_borrowings": {
+     "concept": "ShortTermBorrowings",
+     "period_end": "2026-06-30",
+     "val": 1218000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "total_debt_tag": {
+     "concept": "DebtLongtermAndShorttermCombinedAmount",
+     "period_end": "2026-06-30",
+     "val": 19846000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 29551000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 174247000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 567000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "deferred_revenue_noncurrent": {
+     "concept": "ContractWithCustomerLiabilityNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 86000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 30632000000,
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 561394487,
+     "as_of": "2026-07-27",
+     "filed": "2026-07-30",
+     "form": "10-Q"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 566000000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "series": {
+     "2020-12-31": 8244000000,
+     "2021-12-31": 9168000000,
+     "2022-12-31": 9636000000,
+     "2023-12-31": 9903000000,
+     "2024-12-31": 11761000000,
+     "2025-12-31": 12640000000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 2089000000,
+     "2021-12-31": 4058000000,
+     "2022-12-31": 1446000000,
+     "2023-12-31": 2368000000,
+     "2024-12-31": 2754000000,
+     "2025-12-31": 3315000000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 2881000000,
+     "2021-12-31": 3123000000,
+     "2022-12-31": 3554000000,
+     "2023-12-31": 3542000000,
+     "2024-12-31": 4609000000,
+     "2025-12-31": 4662000000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2020-12-31": 207000000,
+     "2021-12-31": 179000000,
+     "2022-12-31": 225000000,
+     "2023-12-31": 190000000,
+     "2024-12-31": 406000000,
+     "2025-12-31": 373000000
+    }
+   }
+  },
+  "NDAQ": {
+   "cik": 1120193,
+   "yahoo": {
+    "last_close": 92.27,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 101.79,
+    "wk52_low_meta": 76.55,
+    "wk52_high_close": 100.98,
+    "wk52_low_close": 76.85,
+    "wk52_high_intraday": 101.79,
+    "wk52_low_intraday": 76.55,
+    "close_1y_ago": 88.44,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Nasdaq, Inc."
+   },
+   "nasdaq": {
+    "last_close": 92.27,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Nasdaq, Inc.",
+   "ttm": {
+    "revenue": {
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 8736000000,
+     "fy_val": 8262000000,
+     "fy_end": "2025-12-31",
+     "ytd": 4670000000,
+     "ytd_days": 180,
+     "prior_ytd": 4196000000,
+     "latest_q": 2532000000,
+     "prior_year_q": 2101000000
+    },
+    "gross_profit": {
+     "concept": "GrossProfit",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 5614000000,
+     "fy_val": 5249000000,
+     "fy_end": "2025-12-31",
+     "ytd": 2908000000,
+     "ytd_days": 180,
+     "prior_ytd": 2543000000,
+     "latest_q": 1500000000,
+     "prior_year_q": 1306000000
+    },
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2585000000,
+     "fy_val": 2331000000,
+     "fy_end": "2025-12-31",
+     "ytd": 1369000000,
+     "ytd_days": 180,
+     "prior_ytd": 1115000000,
+     "latest_q": 712000000,
+     "prior_year_q": 568000000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1967000000,
+     "fy_val": 1788000000,
+     "fy_end": "2025-12-31",
+     "ytd": 1026000000,
+     "ytd_days": 180,
+     "prior_ytd": 847000000,
+     "latest_q": 507000000,
+     "prior_year_q": 452000000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2246000000,
+     "fy_val": 2255000000,
+     "fy_end": "2025-12-31",
+     "ytd": 1400000000,
+     "ytd_days": 180,
+     "prior_ytd": 1409000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 295000000,
+     "fy_val": 266000000,
+     "fy_end": "2025-12-31",
+     "ytd": 137000000,
+     "ytd_days": 180,
+     "prior_ytd": 108000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 171000000,
+     "fy_val": 165000000,
+     "fy_end": "2025-12-31",
+     "ytd": 87000000,
+     "ytd_days": 180,
+     "prior_ytd": 81000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 650000000,
+     "fy_val": 632000000,
+     "fy_end": "2025-12-31",
+     "ytd": 331000000,
+     "ytd_days": 180,
+     "prior_ytd": 313000000,
+     "latest_q": 165000000,
+     "prior_year_q": 158000000
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseNonoperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 347000000,
+     "fy_val": 367000000,
+     "fy_end": "2025-12-31",
+     "ytd": 172000000,
+     "ytd_days": 180,
+     "prior_ytd": 192000000,
+     "latest_q": 86000000,
+     "prior_year_q": 95000000
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 1304000000,
+     "fy_val": 616000000,
+     "fy_end": "2025-12-31",
+     "ytd": 903000000,
+     "ytd_days": 180,
+     "prior_ytd": 215000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": {
+     "concept": "PaymentsOfDividends",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 635000000,
+     "fy_val": 601000000,
+     "fy_end": "2025-12-31",
+     "ytd": 327000000,
+     "ytd_days": 180,
+     "prior_ytd": 293000000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 520000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": {
+     "concept": "LongTermDebtNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 8492000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "debt_current": {
+     "concept": "DebtCurrent",
+     "period_end": "2026-06-30",
+     "val": 269000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "short_term_borrowings": {
+     "concept": "ShortTermBorrowings",
+     "period_end": "2026-06-30",
+     "val": 269000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "total_debt_tag": {
+     "concept": "LongTermDebt",
+     "period_end": "2026-06-30",
+     "val": 8492000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 11988000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 27341000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 931000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 14245000000,
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 558977372,
+     "as_of": "2026-07-16",
+     "filed": "2026-07-23",
+     "form": "10-Q"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 567750216,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "series": {
+     "2020-12-31": 5625000000,
+     "2021-12-31": 5886000000,
+     "2022-12-31": 6226000000,
+     "2023-12-31": 6064000000,
+     "2024-12-31": 7400000000,
+     "2025-12-31": 8262000000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2020-12-31": 933000000,
+     "2021-12-31": 1187000000,
+     "2022-12-31": 1125000000,
+     "2023-12-31": 1059000000,
+     "2024-12-31": 1117000000,
+     "2025-12-31": 1788000000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2020-12-31": 1252000000,
+     "2021-12-31": 1083000000,
+     "2022-12-31": 1706000000,
+     "2023-12-31": 1696000000,
+     "2024-12-31": 1939000000,
+     "2025-12-31": 2255000000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2020-12-31": 188000000,
+     "2021-12-31": 163000000,
+     "2022-12-31": 152000000,
+     "2023-12-31": 158000000,
+     "2024-12-31": 207000000,
+     "2025-12-31": 266000000
+    }
+   }
+  },
+  "BR": {
+   "cik": 1383312,
+   "yahoo": {
+    "last_close": 158.66,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 237.98,
+    "wk52_low_meta": 133.83,
+    "wk52_high_close": 236.9,
+    "wk52_low_close": 135.44,
+    "wk52_high_intraday": 238.73,
+    "wk52_low_intraday": 133.83,
+    "close_1y_ago": 236.9,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Broadridge Financial Solutions, Inc."
+   },
+   "nasdaq": {
+    "last_close": 158.66,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+   "ttm": {
+    "revenue": {
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 7476800000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "gross_profit": null,
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 1300600000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 1124300000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 1345600000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 67200000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "AllocatedShareBasedCompensationExpense",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 93900000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "d_and_a": {
+     "concept": "DepreciationAmortizationAndAccretionNet",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 137700000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseDebt",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 111800000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "buybacks": {
+     "concept": "PaymentsForRepurchaseOfCommonStock",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 603700000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "dividends_paid": {
+     "concept": "PaymentsOfDividends",
+     "period_end": "2026-06-30",
+     "method": "annual",
+     "ttm": 443500000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 402900000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "st_investments": {
+     "concept": "MarketableSecuritiesCurrent",
+     "period_end": "2026-06-30",
+     "val": 900000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "lt_debt_noncurrent": {
+     "concept": "LongTermDebtNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 3254600000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "debt_current": {
+     "concept": "LongTermDebtCurrent",
+     "period_end": "2026-06-30",
+     "val": 0,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "short_term_borrowings": null,
+    "total_debt_tag": {
+     "concept": "LongTermDebt",
+     "period_end": "2026-06-30",
+     "val": 3254600000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 2840500000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 8945300000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 276600000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "deferred_revenue_noncurrent": {
+     "concept": "ContractWithCustomerLiabilityNoncurrent",
+     "period_end": "2026-06-30",
+     "val": 312800000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 3787800000,
+     "filed": "2026-08-04",
+     "form": "10-K"
+    }
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 114021798,
+     "as_of": "2026-07-31",
+     "filed": "2026-08-04",
+     "form": "10-K"
+    },
+    "diluted_wtd_latest_q": {
+     "val": 117000000,
+     "period_end": "2026-03-31"
+    }
+   },
+   "annual_revenue": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "series": {
+     "2021-06-30": 4993700000,
+     "2022-06-30": 5709100000,
+     "2023-06-30": 6060900000,
+     "2024-06-30": 6506800000,
+     "2025-06-30": 6889100000,
+     "2026-06-30": 7476800000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2021-06-30": 547500000,
+     "2022-06-30": 539100000,
+     "2023-06-30": 630600000,
+     "2024-06-30": 698100000,
+     "2025-06-30": 839500000,
+     "2026-06-30": 1124300000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2021-06-30": 640100000,
+     "2022-06-30": 443500000,
+     "2023-06-30": 823300000,
+     "2024-06-30": 1056200000,
+     "2025-06-30": 1171300000,
+     "2026-06-30": 1345600000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2021-06-30": 51900000,
+     "2022-06-30": 29000000,
+     "2023-06-30": 38400000,
+     "2024-06-30": 57400000,
+     "2025-06-30": 43800000,
+     "2026-06-30": 67200000
+    }
+   }
+  },
+  "CRCL": {
+   "cik": 1876042,
+   "yahoo": {
+    "last_close": 84.13,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 159.47,
+    "wk52_low_meta": 49.9,
+    "wk52_high_close": 150.48,
+    "wk52_low_close": 50.23,
+    "wk52_high_intraday": 159.47,
+    "wk52_low_intraday": 49.9,
+    "close_1y_ago": 148.72,
+    "close_1y_ago_date": "2025-10-07",
+    "long_name": "Circle Internet Group"
+   },
+   "nasdaq": {
+    "last_close": 84.13,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "CIRCLE INTERNET GROUP, INC.",
+   "ttm": {
+    "revenue": {
+     "concept": "Revenues",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 2905439000,
+     "fy_val": 2746642000,
+     "fy_end": "2025-12-31",
+     "ytd": 1395448000,
+     "ytd_days": 180,
+     "prior_ytd": 1236651000,
+     "latest_q": 701315000,
+     "prior_year_q": 658078000
+    },
+    "gross_profit": null,
+    "operating_income": {
+     "concept": "OperatingIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 215568000,
+     "fy_val": -96435000,
+     "fy_end": "2025-12-31",
+     "ytd": 79361000,
+     "ytd_days": 180,
+     "prior_ytd": -232642000,
+     "latest_q": 34359000,
+     "prior_year_q": -325582000
+    },
+    "net_income": {
+     "concept": "NetIncomeLoss",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 451275000,
+     "fy_val": -69508000,
+     "fy_end": "2025-12-31",
+     "ytd": 103474000,
+     "ytd_days": 180,
+     "prior_ytd": -417309000,
+     "latest_q": 48221000,
+     "prior_year_q": -482100000
+    },
+    "ocf": {
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 776918000,
+     "fy_val": 542129000,
+     "fy_end": "2025-12-31",
+     "ytd": 538505000,
+     "ytd_days": 180,
+     "prior_ytd": 303716000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "capex": {
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 15402000,
+     "fy_val": 12432000,
+     "fy_end": "2025-12-31",
+     "ytd": 10389000,
+     "ytd_days": 180,
+     "prior_ytd": 7419000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "sbc": {
+     "concept": "ShareBasedCompensation",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 223930000,
+     "fy_val": 566177000,
+     "fy_end": "2025-12-31",
+     "ytd": 105435000,
+     "ytd_days": 180,
+     "prior_ytd": 447682000,
+     "latest_q": 53600000,
+     "prior_year_q": 435000000
+    },
+    "d_and_a": {
+     "concept": "DepreciationDepletionAndAmortization",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 105201000,
+     "fy_val": 76627000,
+     "fy_end": "2025-12-31",
+     "ytd": 56663000,
+     "ytd_days": 180,
+     "prior_ytd": 28089000,
+     "latest_q": null,
+     "prior_year_q": null
+    },
+    "interest_expense": {
+     "concept": "InterestExpenseNonoperating",
+     "period_end": "2026-06-30",
+     "method": "FY+YTD-priorYTD",
+     "ttm": 649000,
+     "fy_val": 1226000,
+     "fy_end": "2025-12-31",
+     "ytd": 102000,
+     "ytd_days": 180,
+     "prior_ytd": 679000,
+     "latest_q": 64000,
+     "prior_year_q": 344000
+    },
+    "buybacks": null,
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 1730126000,
+     "filed": "2026-08-05",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 3508582000,
+     "filed": "2026-08-05",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 77165460000,
+     "filed": "2026-08-05",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": {
+     "concept": "Goodwill",
+     "period_end": "2026-06-30",
+     "val": 265742000,
+     "filed": "2026-08-05",
+     "form": "10-Q"
+    }
+   },
+   "shares": {
+    "diluted_wtd_latest_q": {
+     "val": 268637000,
+     "period_end": "2026-06-30"
+    }
+   },
+   "annual_revenue": {
+    "concept": "Revenues",
+    "series": {
+     "2023-12-31": 1450466000,
+     "2024-12-31": 1676253000,
+     "2025-12-31": 2746642000
+    }
+   },
+   "annual_net_income": {
+    "concept": "NetIncomeLoss",
+    "series": {
+     "2023-12-31": 267562000,
+     "2024-12-31": 155667000,
+     "2025-12-31": -69508000
+    }
+   },
+   "annual_ocf": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "series": {
+     "2023-12-31": 139568000,
+     "2024-12-31": 344576000,
+     "2025-12-31": 542129000
+    }
+   },
+   "annual_capex": {
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "series": {
+     "2023-12-31": 654000,
+     "2024-12-31": 18128000,
+     "2025-12-31": 12432000
+    }
+   }
+  },
+  "BTGO": {
+   "cik": 1740604,
+   "yahoo": {
+    "last_close": 7.19,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 24.5,
+    "wk52_low_meta": 4.652,
+    "wk52_high_close": 18.49,
+    "wk52_low_close": 4.69,
+    "wk52_high_intraday": 24.5,
+    "wk52_low_intraday": 4.65,
+    "close_1y_ago": 18.0,
+    "close_1y_ago_date": "2026-01-21",
+    "long_name": null
+   },
+   "nasdaq": {
+    "last_close": 7.19,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "BITGO HOLDINGS, INC.",
+   "ttm": {
+    "revenue": null,
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": null,
+    "ocf": null,
+    "capex": null,
+    "sbc": null,
+    "d_and_a": null,
+    "interest_expense": null,
+    "buybacks": null,
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 158963000,
+     "filed": "2026-08-12",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": {
+     "concept": "ShortTermBorrowings",
+     "period_end": "2026-06-30",
+     "val": 133169000,
+     "filed": "2026-08-12",
+     "form": "10-Q"
+    },
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+     "period_end": "2026-06-30",
+     "val": 423059000,
+     "filed": "2026-08-12",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 6047795000,
+     "filed": "2026-08-12",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": {
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "period_end": "2026-06-30",
+     "val": 4507000,
+     "filed": "2026-08-12",
+     "form": "10-Q"
+    },
+    "deferred_revenue_noncurrent": null,
+    "goodwill": null
+   },
+   "shares": {},
+   "annual_revenue": null,
+   "annual_net_income": null,
+   "annual_ocf": null,
+   "annual_capex": null
+  },
+  "SECZ": {
+   "cik": 2094496,
+   "yahoo": {
+    "last_close": 12.7,
+    "last_close_date": "2026-10-06",
+    "wk52_high_meta": 17.01,
+    "wk52_low_meta": 5.14,
+    "wk52_high_close": 16.63,
+    "wk52_low_close": 5.39,
+    "wk52_high_intraday": 17.01,
+    "wk52_low_intraday": 5.14,
+    "close_1y_ago": 12.3,
+    "close_1y_ago_date": "2026-07-02",
+    "long_name": "Securitize Corp."
+   },
+   "nasdaq": {
+    "last_close": 12.7,
+    "last_close_date": "2026-10-06"
+   },
+   "entity": "Securitize Corp.",
+   "ttm": {
+    "revenue": null,
+    "gross_profit": null,
+    "operating_income": null,
+    "net_income": null,
+    "ocf": null,
+    "capex": null,
+    "sbc": null,
+    "d_and_a": null,
+    "interest_expense": null,
+    "buybacks": null,
+    "dividends_paid": null,
+    "rd": null
+   },
+   "balance": {
+    "cash": {
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_end": "2026-06-30",
+     "val": 1,
+     "filed": "2026-08-13",
+     "form": "10-Q"
+    },
+    "st_investments": null,
+    "lt_debt_noncurrent": null,
+    "debt_current": null,
+    "short_term_borrowings": null,
+    "total_debt_tag": null,
+    "equity": {
+     "concept": "StockholdersEquity",
+     "period_end": "2026-06-30",
+     "val": 1,
+     "filed": "2026-08-13",
+     "form": "10-Q"
+    },
+    "total_assets": {
+     "concept": "Assets",
+     "period_end": "2026-06-30",
+     "val": 1,
+     "filed": "2026-08-13",
+     "form": "10-Q"
+    },
+    "deferred_revenue_current": null,
+    "deferred_revenue_noncurrent": null,
+    "goodwill": null
+   },
+   "shares": {
+    "cover_shares": {
+     "val": 163265685,
+     "as_of": "2026-08-13",
+     "filed": "2026-08-13",
+     "form": "10-Q"
+    }
+   },
+   "annual_revenue": null,
+   "annual_net_income": null,
+   "annual_ocf": null,
+   "annual_capex": null
+  }
+ }
+}

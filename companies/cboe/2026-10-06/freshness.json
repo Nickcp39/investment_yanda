@@ -1,0 +1,132 @@
+{
+  "ticker": "CBOE",
+  "as_of": "2026-10-06",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "trading_rails_2026-10-06",
+  "note": "run 2026-10-07 09:45 EDT (market open) -> as_of locked to the completed session 2026-10-06; last close <= as_of is 2026-10-06. Shares basis for market cap: Q2 2026 摊薄加权 105.0M（8-K）. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 278.2,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CBOE",
+          "fetched_at": "2026-10-06",
+          "value": 278.2
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/CBOE/historical",
+          "fetched_at": "2026-10-06",
+          "value": 278.2
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 29211000000,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "105.0M x 278.2",
+          "fetched_at": "2026-10-06",
+          "value": 29211000000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/CBOE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 31148231000.0
+        }
+      ],
+      "cross_check_delta_pct": 6.22,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis: the card uses the valuation (diluted / fully-converted) count; Nasdaq uses its own snapshot, often a single share class; price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 371.18,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CBOE",
+          "fetched_at": "2026-10-06",
+          "value": 371.18
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/CBOE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 371.18
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 227.15,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CBOE",
+          "fetched_at": "2026-10-06",
+          "value": 227.15
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/CBOE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 227.15
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 105.0,
+      "unit": "million shares",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "Q2 2026 摊薄加权 105.0M（8-K）",
+          "fetched_at": "2026-10-06",
+          "value": 105.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026051217/cboe-20260731xex991.htm",
+          "public_date": "2026-07-31",
+          "fetched_at": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}

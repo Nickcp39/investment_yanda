@@ -1,0 +1,132 @@
+{
+  "ticker": "FUTU",
+  "as_of": "2026-10-06",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "trading_rails_2026-10-06",
+  "note": "run 2026-10-07 09:45 EDT (market open) -> as_of locked to the completed session 2026-10-06; last close <= as_of is 2026-10-06. Shares basis for market cap: Q2 2026 摊薄普通股 1,120.1M ÷ 8 = 140.0M ADS（6-K）. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 113.21,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/FUTU",
+          "fetched_at": "2026-10-06",
+          "value": 113.21
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/FUTU/historical",
+          "fetched_at": "2026-10-06",
+          "value": 113.21
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 15849400000,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "140.0M x 113.21",
+          "fetched_at": "2026-10-06",
+          "value": 15849400000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/FUTU/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 15007747823.0
+        }
+      ],
+      "cross_check_delta_pct": 5.61,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis: the card uses the valuation (diluted / fully-converted) count; Nasdaq uses its own snapshot, often a single share class; price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 202.53,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/FUTU",
+          "fetched_at": "2026-10-06",
+          "value": 202.53
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/FUTU/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 202.5299
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 80.5,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/FUTU",
+          "fetched_at": "2026-10-06",
+          "value": 80.5
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/FUTU/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 80.5
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 140.0,
+      "unit": "million shares",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "Q2 2026 摊薄普通股 1,120.1M ÷ 8 = 140.0M ADS（6-K）",
+          "fetched_at": "2026-10-06",
+          "value": 140.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1754581/000110465926098911/tm2623384d1_ex99-1.htm",
+          "public_date": "2026-08-20",
+          "fetched_at": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}

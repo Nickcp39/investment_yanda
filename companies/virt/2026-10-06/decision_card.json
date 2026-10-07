@@ -1,0 +1,128 @@
+{
+ "ticker": "VIRT",
+ "name": "Virtu Financial",
+ "as_of": "2026-10-06",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-07",
+ "batch": "trading_rails_2026-10-06",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-06",
+ "valuation_method": "batch valuation_model.py (same formula as Pelosi / oil / power batches); OE0 = normalized after-tax earnings (brokers/exchanges: OCF distorted by client funds); cycle-normalized below TTM where TTM is at a volume/rate peak",
+ "currency": "USD",
+ "as_of_price": 61.62,
+ "as_of_market_cap": 9853038000,
+ "shares_out_m": 159.9,
+ "wk52_high": 68.76,
+ "wk52_low": 31.55,
+ "role_in_value_chain": "做市商（订单流买家 = 券商的上游铲子）",
+ "context_label": "cyclical_inflection",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 4,
+ "module_signals": {
+  "M1": 0,
+  "M2": 0,
+  "M3": 0,
+  "M4": 1,
+  "M5": -1,
+  "M6": 1
+ },
+ "binding_constraint": "CYCLE + COMPLETENESS: TTM 处在调整后净交易收入的历史高位；按周期中位 OE 价格刚过 8% 线（+7.2%），TTM 调整后 EPS 为二手数据",
+ "completeness_pct": 54,
+ "price_passes_8pct_base": true,
+ "verdict_cap_note": "completeness 40-60% -> verdict capped at WATCH (PIPELINE.md); price passes 8% base: follow-up to >=60% + independent Checker could unlock STARTER",
+ "kill_criteria": [
+  "K-V1 调整后净交易收入日均连续 2 个季度 < $7M -> 观察",
+  "K-V2 美国限制 PFOF -> 重估",
+  "K-V3 失去一家大型零售券商的订单流 -> 观察"
+ ],
+ "next_monitor_event": "Q3 2026 财报（约 10 月底）：调整后净交易收入日均",
+ "buy_below_price": 66.04,
+ "hurdle_prices": {
+  "8pct": 66.04,
+  "10pct": 57.37,
+  "12pct": 50.12,
+  "8pct_on_bull": 107.0,
+  "8pct_on_bear": 25.54
+ },
+ "zones": {
+  "starter": "<= 66.04 (base >= 8%)",
+  "add": "<= 57.37 (base >= 10%)",
+  "no_chase": "> 66.04",
+  "avoid": "> 107.0"
+ },
+ "implied_g_for_8pct": 0.0307,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 0.45,
+   "g": 0.0,
+   "exit": 8,
+   "p": 0.8,
+   "oe_1": 0.45,
+   "oe_10": 0.45,
+   "tv_10_b": 3.6,
+   "irr": -0.0388,
+   "irr_lib": -0.0958
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 0.75,
+   "g": 0.04,
+   "exit": 11,
+   "p": 0.8,
+   "oe_1": 0.78,
+   "oe_10": 1.11,
+   "tv_10_b": 12.2,
+   "irr": 0.0897,
+   "irr_lib": 0.0217
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 1.0,
+   "g": 0.06,
+   "exit": 13,
+   "p": 0.7,
+   "oe_1": 1.06,
+   "oe_10": 1.791,
+   "tv_10_b": 23.3,
+   "irr": 0.1574,
+   "irr_lib": 0.0898
+  }
+ },
+ "factor_check": "交易活跃度 / 波动因子；与 AI 因子弱相关（波动上升时反而受益）",
+ "related_studies": [
+  "studies/铲子百年实证_2026-09-23",
+  "studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06"
+ ],
+ "sources_used": [
+  {
+   "source_id": "VIRT-annual",
+   "public_date": "2026-02-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000009/virt-20251231.htm"
+  },
+  {
+   "source_id": "VIRT-earnings",
+   "public_date": "2026-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000023/exhibit991q226.htm"
+  },
+  {
+   "source_id": "VIRT-10Q",
+   "public_date": "2026-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000028/virt-20260630.htm"
+  }
+ ]
+}

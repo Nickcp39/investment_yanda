@@ -1,0 +1,75 @@
+{
+  "ticker": "VIRT",
+  "as_of": "2026-10-06",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 61.62,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 61.619998931884766,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 61.62
+      },
+      {
+        "source_name": "nasdaq",
+        "value": 61.62
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "nasdaq",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-10-06"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "31.55 <= 61.62 <= 68.76"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+95.3% off low, -10.4% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "160M x 61.62 = 0.010T vs card 0.010T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -10.4% vs card-implied -10.4% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 61.62 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-07-30 is 68d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-07-30 is 68d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

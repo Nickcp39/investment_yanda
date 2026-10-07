@@ -1,0 +1,75 @@
+{
+  "ticker": "COIN",
+  "as_of": "2026-10-06",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 185.74,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 185.74000549316406,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 185.74
+      },
+      {
+        "source_name": "nasdaq",
+        "value": 185.74
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "nasdaq",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-10-06"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "139.11 <= 185.74 <= 402.16"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+33.5% off low, -53.8% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "275M x 185.74 = 0.051T vs card 0.051T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -53.8% vs card-implied -53.8% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 185.74 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-07-30 is 68d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-07-30 is 68d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

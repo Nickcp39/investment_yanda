@@ -1,0 +1,75 @@
+{
+  "ticker": "SECZ",
+  "as_of": "2026-10-06",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 12.7,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 12.699999809265137,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 12.7
+      },
+      {
+        "source_name": "nasdaq",
+        "value": 12.7
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "nasdaq",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-10-06"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "5.14 <= 12.7 <= 17.01"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+147.1% off low, -25.3% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "163M x 12.7 = 0.002T vs card 0.002T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -25.3% vs card-implied -25.3% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 12.70 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "WARN",
+      "detail": "newest source 2026-08-12 is 55d before as_of (> 45d) -confirm it is still the latest authoritative event"
+    }
+  ],
+  "warnings": [
+    "T6:LIVE-qualitative freshness [guidance] -newest source 2026-08-12 is 55d before as_of (> 45d) -confirm it is still the latest authoritative event"
+  ],
+  "failures": []
+}

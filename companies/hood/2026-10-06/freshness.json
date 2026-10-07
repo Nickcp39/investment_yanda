@@ -1,0 +1,132 @@
+{
+  "ticker": "HOOD",
+  "as_of": "2026-10-06",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "trading_rails_2026-10-06",
+  "note": "run 2026-10-07 09:45 EDT (market open) -> as_of locked to the completed session 2026-10-06; last close <= as_of is 2026-10-06. Shares basis for market cap: A 类 790.6M + B 类 108.5M（10-Q 封面 2026-07-23）；估值用 Q2 摊薄加权 912M + 2026-06 可转债 12.6M ≈ 925M. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 112.0,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/HOOD",
+          "fetched_at": "2026-10-06",
+          "value": 112.0
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/HOOD/historical",
+          "fetched_at": "2026-10-06",
+          "value": 112.0
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 103600000000,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "925.0M x 112.0",
+          "fetched_at": "2026-10-06",
+          "value": 103600000000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/HOOD/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 97379600989.0
+        }
+      ],
+      "cross_check_delta_pct": 6.39,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis: the card uses the valuation (diluted / fully-converted) count; Nasdaq uses its own snapshot, often a single share class; price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 153.56,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/HOOD",
+          "fetched_at": "2026-10-06",
+          "value": 153.56
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/HOOD/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 153.5597
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 63.515,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/HOOD",
+          "fetched_at": "2026-10-06",
+          "value": 63.515
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/HOOD/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 63.515
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 925.0,
+      "unit": "million shares",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "A 类 790.6M + B 类 108.5M（10-Q 封面 2026-07-23）；估值用 Q2 摊薄加权 912M + 2026-06 可转债 12.6M ≈ 925M",
+          "fetched_at": "2026-10-06",
+          "value": 925.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000113/q22026robinhoodexhibit991.htm",
+          "public_date": "2026-07-29",
+          "fetched_at": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}

@@ -133,6 +133,7 @@ notebooks/            Jupyter 分析
 |---|---|
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
+| **券商 / 交易所 / 做市商 / 稳定币：23 小时交易下谁值得买（IBKR、HOOD、COIN、FUTU、VIRT、CBOE、CME、ICE、NDAQ、BR、CRCL、BTGO、SECZ）** | `companies/_trading_rails_2026-10-06/synthesis.md`（13 张卡；各家在 `companies/<ticker>/2026-10-06/`，Circle 在 `circle/`） |
 | **历史上的"英伟达"们：卖铲子的公司从开始到衰落，每个阶段舆论怎么说 / 今天英伟达在哪个阶段** | `studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06/report.md`（+ PDF；20 家 + 思科 / 英伟达，四阶段舆论表 + 信号清单）；长期收益口径见姊妹篇 `studies/铲子百年实证_2026-09-23/` |
 | **英国 / 日本 / 中国电力百年：需求爆发时电力股东赚钱了吗** | `studies/电力大国百年_英日中_2026-10-03/report.md`（+ PDF，10 张图；姊妹篇是 09-16 美国百年）；10 家公司卡见 `companies/_power_majors_2026-10-03/synthesis.md` |
 | **巴菲特怎么投石油 / 石油股什么价格能买** | `studies/巴菲特与石油投资_2026-09-30/report.md`（致股东信 + 13F + 百年冲击表 + 检查清单）；公司卡见 `companies/_oil_2026-09-30/` |

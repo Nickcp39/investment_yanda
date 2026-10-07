@@ -1,0 +1,128 @@
+{
+ "ticker": "CRCL",
+ "name": "Circle",
+ "as_of": "2026-10-06",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-07",
+ "batch": "trading_rails_2026-10-06",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-06",
+ "valuation_method": "batch valuation_model.py (same formula as Pelosi / oil / power batches); OE0 = normalized after-tax earnings (brokers/exchanges: OCF distorted by client funds); cycle-normalized below TTM where TTM is at a volume/rate peak",
+ "currency": "USD",
+ "as_of_price": 84.13,
+ "as_of_market_cap": 22597318000,
+ "shares_out_m": 268.6,
+ "wk52_high": 159.47,
+ "wk52_low": 49.9,
+ "role_in_value_chain": "稳定币发行方（USDC）",
+ "context_label": "cyclical_inflection",
+ "business_verdict": "uncertain",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 3,
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 0,
+  "M4": -1,
+  "M5": -1,
+  "M6": -1
+ },
+ "binding_constraint": "PRICE + RATES: 现价要求第 10 年 OE $2.44B（现约 $0.2B 年化）；储备收益随利率下行，分销商拿走 58%",
+ "completeness_pct": 52,
+ "price_passes_8pct_base": false,
+ "verdict_cap_note": "completeness 40-60% -> verdict capped at WATCH (PIPELINE.md); price does NOT pass 8% base: price binds before completeness",
+ "kill_criteria": [
+  "K-L1 USDC 流通量连续 2 个季度下降 -> 观察",
+  "K-L2 与 Coinbase 的分成条款变差 -> 重估",
+  "K-L3 联邦基金利率 < 2% -> 重估"
+ ],
+ "next_monitor_event": "Q3 2026 财报（约 11 月初）：USDC 流通量、储备收益率、分销成本占比",
+ "buy_below_price": 62.08,
+ "hurdle_prices": {
+  "8pct": 62.08,
+  "10pct": 51.67,
+  "12pct": 43.15,
+  "8pct_on_bull": 215.56,
+  "8pct_on_bear": 10.35
+ },
+ "zones": {
+  "starter": "<= 62.08 (base >= 8%)",
+  "add": "<= 51.67 (base >= 10%)",
+  "no_chase": "> 62.08",
+  "avoid": "> 215.56"
+ },
+ "implied_g_for_8pct": 0.288,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "ramp",
+   "oe1": 0.1,
+   "oe10": 0.4,
+   "exit": 15,
+   "p": 0.0,
+   "oe_1": 0.1,
+   "oe_10": 0.4,
+   "tv_10_b": 6.0,
+   "irr": -0.1242,
+   "irr_lib": -0.1242
+  },
+  "base": {
+   "mode": "ramp",
+   "oe1": 0.25,
+   "oe10": 1.8,
+   "exit": 20,
+   "p": 0.0,
+   "oe_1": 0.25,
+   "oe_10": 1.8,
+   "tv_10_b": 36.0,
+   "irr": 0.0477,
+   "irr_lib": 0.0477
+  },
+  "bull": {
+   "mode": "ramp",
+   "oe1": 0.4,
+   "oe10": 5.0,
+   "exit": 25,
+   "p": 0.0,
+   "oe_1": 0.4,
+   "oe_10": 5.0,
+   "tv_10_b": 125.0,
+   "irr": 0.1865,
+   "irr_lib": 0.1865
+  }
+ },
+ "factor_check": "利率 + 加密因子；与用户 BTC 中度同向",
+ "related_studies": [
+  "studies/铲子百年实证_2026-09-23",
+  "studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06"
+ ],
+ "sources_used": [
+  {
+   "source_id": "CRCL-annual",
+   "public_date": "2026-03-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm"
+  },
+  {
+   "source_id": "CRCL-10Q",
+   "public_date": "2026-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm"
+  },
+  {
+   "source_id": "CRCL-earnings",
+   "public_date": "2026-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000246/0001876042-26-000246-index-headers.html"
+  }
+ ]
+}

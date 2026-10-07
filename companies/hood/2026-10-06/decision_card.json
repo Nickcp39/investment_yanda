@@ -1,0 +1,129 @@
+{
+ "ticker": "HOOD",
+ "name": "Robinhood",
+ "as_of": "2026-10-06",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-07",
+ "batch": "trading_rails_2026-10-06",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-06",
+ "valuation_method": "batch valuation_model.py (same formula as Pelosi / oil / power batches); OE0 = normalized after-tax earnings (brokers/exchanges: OCF distorted by client funds); cycle-normalized below TTM where TTM is at a volume/rate peak",
+ "currency": "USD",
+ "as_of_price": 112.0,
+ "as_of_market_cap": 103600000000,
+ "shares_out_m": 925.0,
+ "wk52_high": 153.56,
+ "wk52_low": 63.515,
+ "role_in_value_chain": "券商（零售，App 一体化）",
+ "context_label": "cyclical_inflection",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 5,
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 1,
+  "M4": 1,
+  "M5": -1,
+  "M6": -1
+ },
+ "binding_constraint": "PRICE + CYCLE: 现价要求 OE 10 年 +17.7%/年；收入的 59% 是交易收入，2021 → 2022 年股价曾 −90%",
+ "completeness_pct": 57,
+ "price_passes_8pct_base": false,
+ "verdict_cap_note": "completeness 40-60% -> verdict capped at WATCH (PIPELINE.md); price does NOT pass 8% base: price binds before completeness",
+ "kill_criteria": [
+  "K-H1 股票 / 期权月度成交同比连续 3 个月为负 -> 观察（8 月 +68% / +50%）",
+  "K-H2 联邦层面不利裁决或多州禁止事件合约 -> 观察",
+  "K-H3 美国出台 PFOF 限制 -> 重估",
+  "K-H4 净入金年化增速 < 15% -> 增长假设失效（现 28%）"
+ ],
+ "next_monitor_event": "Q3 2026 财报（约 10 月底）+ 月度运营数据",
+ "buy_below_price": 88.74,
+ "hurdle_prices": {
+  "8pct": 88.74,
+  "10pct": 74.03,
+  "12pct": 61.98,
+  "8pct_on_bull": 246.35,
+  "8pct_on_bear": 15.87
+ },
+ "zones": {
+  "starter": "<= 88.74 (base >= 8%)",
+  "add": "<= 74.03 (base >= 10%)",
+  "no_chase": "> 88.74",
+  "avoid": "> 246.35"
+ },
+ "implied_g_for_8pct": 0.1774,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 1.1,
+   "g": 0.06,
+   "exit": 15,
+   "p": 0.1,
+   "oe_1": 1.166,
+   "oe_10": 1.97,
+   "tv_10_b": 29.5,
+   "irr": -0.115,
+   "irr_lib": -0.1179
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 1.7,
+   "g": 0.15,
+   "exit": 25,
+   "p": 0.1,
+   "oe_1": 1.955,
+   "oe_10": 6.877,
+   "tv_10_b": 171.9,
+   "irr": 0.0549,
+   "irr_lib": 0.052
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 2.2,
+   "g": 0.22,
+   "exit": 30,
+   "p": 0.1,
+   "oe_1": 2.684,
+   "oe_10": 16.07,
+   "tv_10_b": 482.1,
+   "irr": 0.1694,
+   "irr_lib": 0.1662
+  }
+ },
+ "factor_check": "交易活跃度 + 加密 + 流动性：与用户 BTC / NBIS 高度同向",
+ "related_studies": [
+  "studies/铲子百年实证_2026-09-23",
+  "studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06"
+ ],
+ "sources_used": [
+  {
+   "source_id": "HOOD-annual",
+   "public_date": "2026-02-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000023/hood-20251231.htm"
+  },
+  {
+   "source_id": "HOOD-earnings",
+   "public_date": "2026-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000113/q22026robinhoodexhibit991.htm"
+  },
+  {
+   "source_id": "HOOD-10Q",
+   "public_date": "2026-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000114/hood-20260630.htm"
+  }
+ ]
+}

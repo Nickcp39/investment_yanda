@@ -1,0 +1,1281 @@
+SOURCE: https://www.sec.gov/Archives/edgar/data/1740604/000174060426000050/btgo-20260630.htm
+FILED: 2026-08-12 10-Q
+
+btgo-20260630 
+ Table of Contents 
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ ___________________________ 
+ FORM 10-Q 
+ ___________________________ 
+ (Mark One) 
+x | QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+ For the quarterly period ended June 30, 2026 
+ OR 
+o | TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+ For the transition period from ___________ to ___________ 
+ Commission file number 001-43057 
+ _________________________ 
+ BITGO HOLDINGS, INC. 
+ (Exact name of registrant as specified in its charter) 
+ _________________________ 
+Delaware | 82-3998490
+(State or other jurisdiction of incorporation or organization) | (I.R.S. Employer Identification No.)
+101 S. Reid Street, Suite 307, PMB# 9793 , Sioux Falls , SD | 57103
+(Address of Principal Executive Offices) | (Zip Code)
+ ( 650 ) 847-0009 
+ (Registrant’s telephone number, including area code) 
+ Not Applicable 
+ (Former name, former address and former fiscal year, if changed since last report) 
+ Securities registered pursuant to Section 12(b) of the Act: 
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Class A Common Stock, $0.0001 par value | BTGO | New York Stock Exchange
+ Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. 
+ Yes x No o 
+ Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§ 232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). 
+ Yes x No o 
+ Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act. 
+Large accelerated filer | ☐ | Accelerated filer | ☐
+Non-accelerated filer | x | Smaller reporting company | ☐
+Emerging growth company | ☐
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. 
+ o 
+ Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). 
+ Yes o No x 
+ On August 7, 2026, the registrant had 108,690,240 shares of Class A common stock and 8,855,382 shares of Class B common stock outstanding. 
+BITGO HOLDINGS, INC.
+TABLE OF CONTENTS
+Page
+Part I — FINANCIAL INFORMATION
+Item 1. | Financial Statements (Unaudited) | 3
+Condensed Consolidated Balance Sheets | 3
+Condensed Consolidated Statements of Operations | 4
+Condensed Consolidated Statements of Stockholders’ Equity | 6
+Condensed Consolidated Statements of Cash Flows | 7
+Notes to Condensed Consolidated Financial Statements | 9
+Item 2. | Management's Discussion and Analysis of Financial Condition and Results of Operations | 30
+Item 3. | Quantitative and Qualitative Disclosures About Market Risk | 48
+Item 4. | Controls and Procedures | 49
+Part II — OTHER INFORMATION
+Item 1. | Legal Proceedings | 51
+Item 1A. | Risk Factors | 51
+Item 2. | Unregistered Sales of Equity Securities and Use of Proceeds | 51
+Item 3. | Defaults Upon Senior Securities | 52
+Item 4. | Mine Safety Disclosures | 52
+Item 5. | Other Information | 52
+Item 6. | Exhibits | 52
+Signatures | 54
+ Table of Contents 
+ Note Regarding Forward-Looking Statements 
+ This Quarterly Report on Form 10-Q contains forward-looking statements about us and our industry that involve substantial risks and uncertainties. All statements contained in this Quarterly Report on Form 10-Q other than statements of historical fact, including statements regarding our future operating results and financial condition, our business strategy and plans, market growth and our objectives for future operations, are forward-looking statements. The words “believe,” “may,” “will,” “potentially,” “estimate,” “continue,” “anticipate,” “intend,” “could,” “would,” “project,” “target,” “plan,” “expect,” and similar expressions are intended to identify forward-looking statements. 
+ Forward-looking statements contained in this Quarterly Report on Form 10-Q include, but are not limited to, statements about: 
+ • our future financial performance, including our expectations regarding our revenue, cost of revenue, gross profit or gross margin, operating expenses, including changes in operating expenses, and our ability to maintain profitability; 
+ • our business plan and our ability to effectively manage our growth; 
+ • our total market opportunity; 
+ • anticipated trends, growth rates and challenges in our business, the digital asset economy, the price and market capitalization of digital assets in the markets in which we operate; 
+ • market acceptance of our products and services; 
+ • beliefs and objectives for future operations; 
+ • our ability to attract and successfully retain new clients and increase adoption and use of our products and services by existing clients; 
+ • our ability to develop and introduce new products and services and bring them to market in a timely manner; 
+ • our expectations concerning relationships with third parties; 
+ • our ability to maintain, protect, and enhance our intellectual property; 
+ • our ability to continue to expand internationally; 
+ • the effects of increased competition in our markets and our ability to compete effectively; 
+ • future acquisitions or investments in complementary companies, products, technologies, or services; 
+ • our key business metrics used to evaluate our business, measure our performance, identify trends affecting our business, and make strategic decisions; 
+ • our ability to stay in compliance with laws and regulations that currently apply or may become applicable to our business both in the United States and internationally given the highly evolving and uncertain regulatory landscape; 
+ • economic and industry trends, projected growth or trend analysis; 
+ • general economic conditions in the United States and globally, including the effects of global geopolitical conflicts, inflation, interest rates, any instability in the global banking sector and foreign currency exchange rates; 
+ • our ability to operate and grow our business in light of macroeconomic uncertainty; 
+ • our ability to remediate identified material weaknesses in our internal control over financial reporting; 
+ • increased expenses associated with being a public company; and 
+ • other statements regarding our future operations, financial condition, prospects and business strategies. 
+ We have based these forward-looking statements largely on our management’s current expectations and projections about future events and trends that we believe may affect our financial condition, operating results, business strategy, and short-term and long-term business operations and objectives. These forward-looking statements are subject to a number of risks, 
+ 1 
+ Table of Contents 
+ uncertainties, and assumptions, including those described in the section titled “ Risk Factors ” in our Annual Report on Form 10-K for the year ended December 31, 2025 and elsewhere in this Quarterly Report on Form 10-Q. Moreover, we operate in a very competitive and rapidly changing environment, and new risks emerge from time to time. It is not possible for our management to predict all risks, nor can we assess the impact of all factors on our business or the extent to which any factor, or combination of factors, may cause actual results to differ materially from those contained in any forward-looking statements we may make. In light of these risks, uncertainties, and assumptions, the forward-looking events and circumstances discussed in this Quarterly Report on Form 10-Q may not occur, and actual results could differ materially and adversely from those anticipated or implied in the forward-looking statements. 
+ You should not rely upon forward-looking statements as predictions of future events. The events and circumstances reflected in the forward-looking statements may not be achieved or occur. Any forward-looking statement speaks only as of the date of such statement. We undertake no obligation to update or revise, or publicly announce any update or revision to, any of these forward-looking statements for any reason after the date of this Quarterly Report on Form 10-Q or to conform these statements to actual results or to changes in our expectations, except as required by law. These forward-looking statements do not reflect the potential impact of any future acquisitions, mergers, dispositions, joint ventures, or investments. 
+ In addition, statements that “we believe” and similar statements reflect our beliefs and opinions on the relevant subject. These statements are based on information available to us as of the date of this Quarterly Report on Form 10-Q and we undertake no obligation to update or revise, or publicly announce any update or revision to, any of these forward-looking statements for any reason after the date of this Quarterly Report on Form 10-Q . While we believe such information provides a reasonable basis for these statements, such information may be limited or incomplete. Our statements should not be read to indicate that we have conducted an exhaustive inquiry into, or review of, all potentially available relevant information. These statements are inherently uncertain, and investors are cautioned not to unduly rely on these statements. 
+ You should read this Quarterly Report on Form 10-Q and the documents that we reference in this Quarterly Report on Form 10-Q and have filed with the Securities and Exchange Commission ( “ SEC ” ) with the understanding that our actual future results, performance, and events and circumstances and the development of the industry and markets in which we operate, may be materially different from what we expect. 
+ Additional Information 
+ Unless otherwise indicated, the terms “BitGo,” “Company,” “we,” “us,” and “our” refer to BitGo Holdings, Inc. and our subsidiaries. 
+ 2 
+ Table of Contents 
+ PART I — FINANCIAL INFORMATION 
+ Item 1. Financial Statements 
+ BitGo Holdings, Inc. 
+ Condensed Consolidated Balance Sheets 
+ (unaudited, in thousands, except share data) 
+As of
+June 30, 2026 | December 31, 2025
+ASSETS
+Current assets:
+Cash and cash equivalents | 158,963 | 106,275
+Cash and cash equivalents segregated for the benefit of stablecoin holders - restricted | 4,634,863 | 3,313,527
+Accounts receivables, net of allowance for credit losses | 17,357 | 15,774
+Loan receivables, at amortized cost | 157,411 | 176,655
+Digital intangible assets loan receivables | 10,314 | 30,774
+Digital intangible assets, at fair value | 391,345 | 344,439
+Digital intangible assets collateral, at fair value | 330,265 | 260,358
+Deferred tax assets | 20,931 | 7,130
+Other current assets | 304,486 | 272,270
+Total current assets | 6,025,935 | 4,527,202
+Equipment and software, net | 15,078 | 13,180
+Operating lease right-of-use assets | 5,651 | 6,346
+Intangible assets, net | 407 | 1,226
+Other non-current assets | 724 | 713
+Total assets | 6,047,795 | 4,548,667
+LIABILITIES AND STOCKHOLDERS’ EQUITY
+Current liabilities:
+Accounts payable | 9,347 | 9,955
+Deferred revenue, current | 4,507 | 4,710
+Deposits from stablecoin holders | 4,634,863 | 3,313,527
+Borrowings | 133,169 | 118,848
+Borrowings of digital intangible assets | 305,810 | 233,687
+Obligations to return collateral | 302,516 | 400,132
+Deferred tax liability, current | 21,148 | 7,674
+Operating lease liabilities, current | 2,552 | 2,483
+Other current liabilities | 207,371 | 135,125
+Total current liabilities | 5,621,283 | 4,226,141
+Operating lease liabilities, non-current | 3,453 | 3,978
+Total liabilities | 5,624,736 | 4,230,119
+Commitments and contingencies (Note 14)
+Stockholders’ equity:
+Common stock A, $ 0.0001 par value - 3,000,000,000 and 139,950,076 shares authorized as of June 30, 2026 and December 31, 2025; 108,219,469 and 33,822,318 shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | 10 | 3
+Common stock B, $ 0.0001 par value - 300,000,000 and 140,000,000 shares authorized as of June 30, 2026 and December 31, 2025, respectively; 8,855,382 and 8,855,382 shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | 1 | 1
+Convertible preferred stock, $ 0.0001 par value - 200,000,000 and 68,965,833 shares authorized as of June 30, 2026 and December 31, 2025, respectively; nil and 60,778,788 shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | — | 222,480
+Minority interest | 1,638 | 1,953
+Additional paid-in capital | 439,003 | 32,006
+Retained earnings | ( 17,593 ) | 62,105
+Total stockholders’ equity | 423,059 | 318,548
+Total liabilities and stockholders’ equity | 6,047,795 | 4,548,667
+ See accompanying notes to condensed consolidated financial statements. 
+ 3 
+ Table of Contents 
+ BitGo Holdings, Inc. 
+ Condensed Consolidated Statements of Operations 
+ (unaudited, in thousands, except per share data) 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Revenue
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+Expenses
+Digital assets sales cost | 4,190,435 | 2,273,948 | 7,838,280 | 3,876,124
+Staking fees | 60,781 | 81,810 | 102,224 | 209,532
+Stablecoin sponsor fees | 35,710 | 15,249 | 71,047 | 15,249
+Interest expense | 5,845 | 1,252 | 11,863 | 2,937
+Compensation and benefits | 29,528 | 23,511 | 70,330 | 47,828
+General and administrative expenses | 21,086 | 17,476 | 41,391 | 33,025
+Depreciation and amortization | 2,121 | 875 | 3,848 | 1,741
+Restructuring charges | 1,300 | — | 1,300 | —
+Total expenses | 4,346,806 | 2,414,121 | 8,140,283 | 4,186,436
+Loss from operations | ( 17,411 ) | ( 3,659 ) | ( 37,315 ) | ( 1,310 )
+Other income (loss)
+Net change in unrealized appreciation (loss) on digital assets | ( 18,842 ) | 55,846 | ( 72,565 ) | 22,034
+Gain (loss) on disposal of digital assets | 5,551 | 1,260 | 7,538 | ( 272 )
+Total other income (loss) | ( 13,291 ) | 57,106 | ( 65,027 ) | 21,762
+Income (loss) before income taxes | ( 30,702 ) | 53,447 | ( 102,342 ) | 20,452
+Tax provision for (benefit from) income taxes | ( 11,677 ) | 15,132 | ( 22,644 ) | 7,871
+Net income (loss) | ( 19,025 ) | 38,315 | ( 79,698 ) | 12,581
+Net income (loss) attributable to common stockholders, of which: | ( 19,025 ) | 13,453 | ( 79,698 ) | 1,267
+Basic - Class A common stock and Class B common stock | ( 19,025 ) | — | ( 79,698 ) | —
+Basic - Class A common stock | — | 10,928 | — | 1,019
+Basic - Class F common stock | — | 2,525 | — | 248
+Diluted - Class A common stock and Class B common stock | — | — | — | —
+Diluted - Class A common stock | — | 14,036 | — | 1,082
+Diluted - Class F common stock | — | 2,322 | — | 185
+Net income (loss) per share:
+Basic - Class A common stock and Class B common stock | ( 0.16 ) | — | ( 0.74 ) | —
+Basic - Class A common stock | — | 0.33 | — | 0.03
+Basic - Class F common stock | — | 0.33 | — | 0.03
+Diluted - Class A common stock and Class B common stock | ( 0.16 ) | — | ( 0.74 ) | —
+Diluted - Class A common stock | — | 0.28 | — | 0.02
+Diluted - Class F common stock | — | 0.28 | — | 0.02
+Weighted-average shares used in computing net income (loss) per share:
+Basic - Class A common stock and Class B common stock | 116,341 | — | 107,422 | —
+Basic - Class A common stock | — | 32,900 | — | 31,209
+Basic - Class F common stock | — | 7,601 | — | 7,601
+Diluted - Class A common stock and Class B common stock | 116,341 | — | 107,422 | —
+Diluted - Class A common stock | — | 49,356 | — | 47,712
+Diluted - Class F common stock | — | 8,164 | — | 8,164
+ See accompanying notes to condensed consolidated financial statements. 
+ 4 
+ Table of Contents 
+ BitGo Holdings, Inc. 
+ Condensed Consolidated Statements of Stockholders’ Equity 
+ (unaudited, in thousands, except share data) 
+Three Months Ended June 30, 2026
+Balance at April 1, 2026 | Issuance of common stock upon exercises of stock options | Additional offering costs incurred related to issuance of common stock upon initial public offering | Issuance of common stock upon release of restricted stock units, net of shares withheld for taxes | Stock-based compensation expense | Minority interest | Net income (loss) | Balance at June 30, 2026
+Common Stock Class A | Shares | 106,811,561 | 693,843 | — | 714,065 | — | — | — | 108,219,469
+Amount | 10 | — | — | — | — | — | 10
+Common Stock Class B | Shares | 8,855,382 | — | — | — | — | — | — | 8,855,382
+Amount | 1 | — | — | — | — | — | 1
+Minority Interest | 1,787 | — | — | — | — | ( 149 ) | — | 1,638
+Additional Paid-in Capital | 435,610 | 323 | ( 300 ) | ( 121 ) | 3,491 | — | — | 439,003
+Retained Earnings | 1,432 | — | — | — | — | — | ( 19,025 ) | ( 17,593 )
+Total | 438,840 | 323 | ( 300 ) | ( 121 ) | 3,491 | ( 149 ) | ( 19,025 ) | 423,059
+Three Months Ended June 30, 2025
+Balance at April 1, 2025 | Issuance of common stock upon exercises of stock options | Stock-based compensation expense | Minority interest | Net income (loss) | Balance at June 30, 2025
+Common Stock Class A | Shares | 32,799,630 | 415,785 | — | — | — | 33,215,415
+Amount | 3 | — | — | — | — | 3
+Common Stock Class F | Shares | 7,600,717 | — | — | — | — | 7,600,717
+Amount | 1 | — | — | — | — | 1
+Convertible Preferred Stock | Shares | 60,806,143 | — | — | — | — | 60,806,143
+Amount | 222,540 | — | — | — | — | 222,540
+Minority Interest | 2,331 | — | — | ( 127 ) | — | 2,204
+Additional Paid-in Capital | 28,189 | 130 | 848 | — | — | 29,167
+Retained Earnings | 51,153 | — | — | — | 38,315 | 89,468
+Total | 304,217 | 130 | 848 | ( 127 ) | 38,315 | 343,383
+ See accompanying notes to condensed consolidated financial statements. 
+ 5 
+ Table of Contents 
+ BitGo Holdings, Inc. 
+ Condensed Consolidated Statements of Stockholders’ Equity 
+ (unaudited, in thousands, except share data) 
+Six Months Ended June 30, 2026
+Balance at January 1, 2026 | Issuance of common stock upon exercises of stock options | Conversion of preferred stock to common stock upon initial public offering | Issuance of common stock upon initial public offering, net of underwriting discounts and offering costs | Issuance of common stock upon release of restricted stock units, net of shares withheld for taxes | Stock-based compensation expense | Minority interest | Net income (loss) | Balance at June 30, 2026
+Common Stock Class A | Shares | 33,822,318 | 1,184,857 | 60,778,788 | 11,026,365 | 1,407,141 | — | — | — | 108,219,469
+Amount | 3 | — | 6 | 1 | — | — | — | 10
+Common Stock Class B | Shares | 8,855,382 | — | — | — | — | — | — | — | 8,855,382
+Amount | 1 | — | — | — | — | — | — | 1
+Convertible preferred stock | Shares | 60,778,788 | — | ( 60,778,788 ) | — | — | — | — | — | —
+Amount | 222,480 | — | ( 222,480 ) | — | — | — | — | — | —
+Minority Interest | 1,953 | — | — | — | — | ( 315 ) | — | 1,638
+Additional Paid-in Capital | 32,006 | 1,342 | 222,474 | 173,984 | ( 3,105 ) | 12,302 | — | — | 439,003
+Retained Earnings | 62,105 | — | — | — | — | — | — | ( 79,698 ) | ( 17,593 )
+Total | 318,548 | 1,342 | — | 173,985 | ( 3,105 ) | 12,302 | ( 315 ) | ( 79,698 ) | 423,059
+Six Months Ended June 30, 2025
+Balance at January 1, 2025 | Issuance of common stock upon exercises of stock options | Stock-based compensation expense | Minority interest | Net income (loss) | Balance at June 30, 2025
+Common Stock Class A | Shares | 32,419,520 | 795,895 | — | — | — | 33,215,415
+Amount | 3 | — | — | — | — | 3
+Common Stock Class F | Shares | 7,600,717 | — | — | — | — | 7,600,717
+Amount | 1 | — | — | — | — | 1
+Convertible Preferred Stock | Shares | 60,806,143 | — | — | — | — | 60,806,143
+Amount | 222,540 | — | — | — | — | 222,540
+Minority Interest | 2,429 | — | — | ( 225 ) | — | 2,204
+Additional Paid-in Capital | 27,011 | 358 | 1,798 | — | — | 29,167
+Retained Earnings | 76,887 | — | — | — | 12,581 | 89,468
+Total | 328,871 | 358 | 1,798 | ( 225 ) | 12,581 | 343,383
+ See accompanying notes to condensed consolidated financial statements. 
+ 6 
+ Table of Contents 
+ BitGo Holdings, Inc. 
+ Condensed Consolidated Statements of Cash Flows 
+ (unaudited, in thousands) 
+Six Months Ended June 30,
+2026 | 2025
+Cash flow from operating activities:
+Net income (loss) | ( 79,698 ) | 12,581
+Adjustment to reconcile net income (loss) to net cash provided by (used in) operating activities:
+Stock-based compensation expense | 14,861 | 1,798
+Depreciation and amortization | 3,848 | 1,741
+Provision for credit losses | 530 | 802
+Digital asset fair value adjustment | 72,296 | ( 23,782 )
+Digital intangible assets received as revenue payments | ( 24,098 ) | ( 51,148 )
+Digital intangible assets used as accounts payable payments | 6,089 | 9,499
+(Gain) loss on disposal of digital intangible assets | ( 7,538 ) | 272
+Change in fair value of receivables denominated in digital intangible assets | 291 | 1,965
+Change in fair value of payables denominated in digital intangible assets | ( 22 ) | ( 217 )
+Changes in assets and liabilities
+Accounts receivable, net | ( 2,404 ) | 3,646
+Digital intangible assets | 13,171 | 32,531
+Deferred tax asset | ( 13,801 ) | 1,478
+Other assets | ( 17,338 ) | ( 11,411 )
+Accounts payables | ( 585 ) | 2,014
+Deferred revenue | ( 203 ) | 3,436
+Deferred tax liability | 13,474 | ( 7,462 )
+Other liabilities. | ( 15,046 ) | 14,204
+Net cash used in operating activities | ( 36,173 ) | ( 8,053 )
+Cash flow from investing activities:
+Purchase of equipment and capitalization of internally developed software costs | ( 4,927 ) | ( 4,939 )
+Purchase of digital intangible assets for treasury | ( 22,266 ) | ( 124 )
+Origination of loans receivable | ( 100,241 ) | ( 193,796 )
+Repayment of loans receivable | 119,485 | 159,079
+Net cash used in investing activities | ( 7,949 ) | ( 39,780 )
+Cash flow from financing activities:
+Proceeds from the issuance of common stock upon exercise of options | 1,342 | 358
+Payments of withholding taxes on net share settlement of restricted stock units | ( 3,105 ) | —
+Proceeds from initial public offering, net of issuance costs | 173,985 | —
+Share of earnings attributable to minority interest in joint venture | ( 315 ) | ( 225 )
+Proceeds from borrowings to support loans | 118,779 | 39,354
+Repayment of borrowings | ( 104,458 ) | —
+Deposits from stablecoin holders, net of redemptions | 1,321,336 | 2,206,613
+Payments to non custodial customer assets pending settlement | ( 26,523 ) | ( 4,804 )
+Payments to settle derivative contracts | ( 41,202 ) | —
+Fiat currency received as collateral | 8,149 | 581
+Fiat currency returned as collateral | ( 29,842 ) | ( 18,471 )
+Net cash provided by financing activities | 1,418,146 | 2,223,406
+Net increase in cash and cash equivalents | 1,374,024 | 2,175,573
+Cash and cash equivalents, beginning of period | 3,419,802 | 87,424
+Cash and cash equivalents, end of period | 4,793,826 | 2,262,997
+Reconciliation of cash, cash equivalents, and restricted cash to consolidated balance sheets:
+Cash and cash equivalents | 158,963 | 55,586
+Cash and cash equivalents segregated for the benefit of stablecoin holders - restricted | 4,634,863 | 2,207,411
+Total cash, cash equivalents, and restricted cash | 4,793,826 | 2,262,997
+ 7 
+ Table of Contents 
+Supplemental cash disclosure:
+Cash paid for income taxes | 2,181 | 5,861
+Cash paid for interest | 2,950 | 2,989
+Supplemental non cash disclosure:
+Operating lease liabilities arising from obtaining right of use assets | 812 | 580
+Digital intangible assets received as collateral | 394,947 | 478,877
+Digital intangible assets returned as collateral | 174,478 | 339,681
+Origination of borrowings of digital intangible assets | 456,080 | 6,000
+Repayment of borrowings of digital intangible assets | 266,486 | 5,000
+Origination of digital intangible asset loans | 11,751 | 9,718
+Repayment of digital intangible asset loans | 26,779 | 5,000
+Digital assets transferred to lenders for collateral for borrowing | 122,241 | 33,091
+ See accompanying notes to condensed consolidated financial statements. 
+ 8 
+ Table of Contents 
+ BitGo Holdings, Inc. 
+ Notes to Condensed Consolidated Financial Statements 
+ Note 1. Description of Business 
+ BitGo, Inc., a Delaware corporation formed in 2011, became a wholly owned subsidiary of BitGo Holdings, Inc., a Delaware corporation formed in 2017, in connection with a series of reorganization transactions between the two entities. In 2018, BitGo, Inc. became a wholly owned subsidiary of BitGo Holdings, Inc., and its stockholders became stockholders of BitGo Holdings, Inc. BitGo Holdings, Inc. and its wholly owned subsidiaries (collectively, the “Company”) provide various offerings to its clients including multi-signature (“multi-sig”) blockchain wallet solutions allowing for secure storage, trade settlement, staking solutions, and lending of digital assets. The Company also provides professional services to develop smart contracts. 
+ Initial Public Offering — In January 2026, the Company completed its initial public offering (“IPO”), and its Class A common stock began trading on the New York Stock Exchange under the symbol “BTGO” on January 22, 2026. The Company sold 11,026,365 shares of its Class A common stock at $ 18.00 per share, generating approximately $ 198.5 million in gross proceeds. The Company granted the underwriters a 30-day option from the date of the IPO to purchase up to 1,770,000 additional shares at an IPO price of $ 18.00 per share. The underwriters did not exercise this option. Net proceeds to the Company were approximately $ 174.0 million, after deducting underwriting discounts and other offering expenses. 
+ In connection with the IPO, the Company amended and restated its certificate of incorporation to authorize the issuance of up to 3,600,000,000 shares of capital stock, consisting of: (i) 3,400,000,000 shares of Common Stock, par value $ 0.0001 per share, including (a) 3,000,000,000 shares designated as Class A Common Stock, par value $ 0.0001 per share, (b) 300,000,000 shares designated as Class B Common Stock, par value $ 0.0001 per share, and (c) 100,000,000 shares of Blockchain Common Stock, par value $ 0.0001 per share; and (ii) 200,000,000 shares of Preferred Stock, par value $ 0.0001 per share. 
+ Among other provisions, the amended and restated certificate of incorporation provides (i) for Class A common stock, with each share of the Class A common stock entitling its holder to one vote per share on all matters presented to the stockholders generally; (ii) for Class B common stock, with each share of Class B common stock entitling its holder to fifteen votes per share. Other than voting rights, Class A common stock and Class B common stock have identical rights, including the liquidation and dividend rights. 
+ Upon the completion of the IPO, all shares of the Company’s then outstanding convertible preferred stock automatically converted into an aggregate of 60,778,788 shares of Class A common stock. 
+ Risks and Uncertainties — The Company is subject to a number of risks similar to those of other early-stage companies, including, but not limited to, a limited operating history; the potential need for additional capital or financing to fund operating losses; competition from alternative offerings and services, both from other early-stage and larger more established companies; protection of proprietary technology; and dependence on key individuals. 
+ The limited history of digital asset markets has shown that market participants must continually adapt to technological change and to innovate new solutions in order to secure and safeguard assets. The regulatory environment for the custody of digital intangible assets is complex, evolving, and uncertain, requiring the Company to allocate resources in legal, accounting, compliance, technology, and other functions that could impact the Company’s consolidated financial statements. Future regulatory rules adopted domestically and internationally may impose obligations and restrictions on how the Company manages and conducts its business activities in the future. 
+ The growth of the digital assets industry in general is subject to a high degree of uncertainty and volatility. The Company is dependent on fee-based business for a majority of its revenue that may be materially impacted by how its customers and other market participants engage in activities around transfers of digital assets. In addition, the Company holds positions in digital assets, which are subject to a high degree of uncertainty and volatility, including the ability to liquidate those positions at favorable prices, impacting the Company’s consolidated financial statements. 
+ As a digital asset custodian, the Company is responsible for the safeguarding of customer digital assets. A cybersecurity incident, or a failure to protect the Company’s computer systems, networks, and information, and clients’ information against cybersecurity threats, could result in the theft, loss, unauthorized access to, disclosure, use, or alteration of digital assets. Any such incident or failure could adversely impact the Company’s ability to conduct business and impact the Company’s consolidated financial statements. 
+ 9 
+ Table of Contents 
+ While BitGo believes that its custodial arrangements, including those associated with BitGo’s custodial operations, are all permissible under existing laws and regulations, various governmental and regulatory bodies, including legislative and executive bodies, in the United States and in other countries may adopt new laws and regulations, or new interpretations of existing laws, and regulations may be issued by such bodies or the judiciary, which may adversely affect BitGo’s ability to provide custodial solutions or the Company’s use of third-party custodians. 
+ BitGo’s technological infrastructure depends, in part, on the virtual cloud infrastructure hosted by third-party vendors. Although the Company has disaster recovery plans that utilize multiple locations, any incident affecting the third-party providers’ infrastructure could adversely affect BitGo’s cloud-native platform. A prolonged service disruption would adversely impact its ability to service the Company’s customers and could damage BitGo’s reputation with current and potential customers, expose BitGo to liability, result in substantial costs for remediation, could cause BitGo to lose customers, or otherwise harm its business, financial condition and results of operations. 
+ The assets under custody are covered by insurance, with a $ 250.0 million limit, which covers digital assets in the event of theft or loss of keys. There is a risk that such insurance policy could be insufficient to cover all losses or that the Company’s insurers would seek to deny coverage for a claim, even where BitGo believes that its insurance policies cover an applicable loss. 
+ Additionally, digital intangible asset loans extended to clients carry counterparty risk. The Company assesses such risks on each transaction including the probability that the counterparty may not fulfill its contractual obligations which may result in a default. Any contractual default by a counterparty may have a material impact on the Company’s business and impact the Company’s condensed consolidated financial statements. 
+ Note 2. Summary of Significant Accounting Policies 
+ Basis of Presentation and Consolidation — The accompanying unaudited condensed consolidated financial statements have been prepared in accordance with accounting principles generally accepted in the United States (“GAAP”) and applicable rules and regulations of the SEC regarding interim financial information. Certain information and disclosures normally included in consolidated financial statements prepared in accordance with GAAP have been condensed or omitted. Accordingly, these condensed consolidated financial statements should be read in conjunction with the audited consolidated financial statements and related notes for the year ended December 31, 2025, which can be found in the Company’s Annual Report on Form 10-K. In management’s opinion, the unaudited interim condensed consolidated financial statements have been prepared on the same basis as the annual financial statements and reflect all adjustments, which include only normal recurring adjustments necessary for the fair statement of the condensed consolidated financial statements. The condensed consolidated balance sheet as of December 31, 2025 has been derived from the audited financial statements at that date but does not include all of the disclosures required by GAAP. 
+ The condensed consolidated financial statements include the accounts of the Company and its wholly owned subsidiaries after elimination of all intercompany accounts and transactions. The condensed consolidated financial statements reflect all adjustments and reclassifications that, in the opinion of management, are necessary for the fair presentation of the Company’s results of operations and financial condition as of and for the periods presented. The results for the interim periods are not necessarily indicative of the results to be expected for the full year or any other future interim or annual period. 
+ There have been no significant changes to the Company’s significant accounting policies described in the Company’s Annual Report on Form 10-K for the year ended December 31, 2025 that have had a material impact on the condensed consolidated financial statements and related notes, other than as discussed below. 
+ Derivatives — The Company enters into derivative contracts for risk management purposes and facilitates client trading activities in a principal capacity. These derivative instruments include over-the-counter and exchange-traded digital asset futures, digital asset options, perpetual swaps and other derivatives. The Company accounts for derivative transactions in accordance with ASC Topic 815, Derivatives and Hedging (“ASC 815”). Under this guidance, derivative instruments are recognized as either assets or liabilities on the condensed consolidated balance sheets and are measured at fair value using quoted prices in active markets. Derivative assets are included in other current assets, and derivative liabilities are included in other current liabilities. Realized and unrealized gains and losses are recognized within total revenue in the condensed consolidated statements of operations. 
+ The Company borrows fiat, stablecoins, and digital assets to support its lending activities. Fiat borrowings are recorded as cash and cash equivalents, stablecoin borrowings as financial assets, and digital assets borrowings as short-term borrowings. These borrowing liabilities are treated as hybrid instruments consisting of a debt-host contract and embedded derivatives. 
+ 10 
+ Table of Contents 
+ Collateral pledged in connection with these borrowings contains two components: the borrowing is initially recorded at cost and the bifurcated embedded derivatives associated with digital asset price exposure are subsequently remeasured at fair value. Lenders may require the Company to provide additional collateral if the value of the pledged collateral falls below specified collateralization thresholds. The Company derecognizes the collateral and records a collateral receivable when it no longer controls the underlying assets. Changes in the fair value of the bifurcated embedded derivatives are recognized in the condensed consolidated statement of operations. 
+ Restructuring Charges — Costs associated with the Company’s restructuring plan primarily consist of severance payments, benefits continuation, and other employee separation costs. In general, the Company records involuntary employee-related exit costs when it communicates to employees that they are entitled to receive such benefits and the amount can be reasonably estimated. These costs are recorded in restructuring charges in the condensed consolidated statements of operations. The remaining restructuring liability is included in accrued liabilities in the condensed consolidated balance sheet. See Note 21 — “Restructuring Charges” for further discussion. 
+ Other Current Assets — Other current assets consist primarily of prepaid expenses, prepaid income taxes, collateral on deposit with lenders, collateral from clients related to lending and trading arrangements that are in the financial assets, and assets related to trading business that remain in a settlement position at June 30, 2026. Collateral on deposit with lenders is derecognized when control is surrendered, at which time a corresponding collateral receivable is recognized within other current assets in the Consolidated Balance Sheets. 
+ Digital Intangible Assets as Collateral — As part of its digital asset lending and trading arrangements, the Company may require borrowers and trading clients to provide digital intangible assets or fiat currency as collateral to secure against the risk of default. Digital intangible assets collateral received is generally under the Company’s control upon receipt and is not subject to restrictions. Digital intangible assets received as collateral are measured at fair value at each reporting period, with changes in fair value recognized in net income. Fiat currency received as collateral was classified as other current assets on the Company’s balance sheet as of June 30, 2026. Collateral received in the form of financial assets are recorded in other assets on the Company’s balance sheet as of June 30, 2026. 
+ Other Current Liabilities — Other current liabilities consist primarily of accrued compensation and related benefits, and accrued general and administrative expenses, trading collateral, and liabilities related to trading business that remain in a settlement position at June 30, 2026. 
+ Reclassification — Certain prior period amounts reported in the Company’s Condensed Consolidated Balance Sheets and Condensed Consolidated Statements of Stockholders' Equity have been reclassified to conform to the current period’s presentation. Individual classes of convertible preferred stock previously presented separately as of December 31, 2025 have been presented on an aggregated basis as “Convertible preferred stock.” This reclassification had no effect on total assets, total liabilities or total stockholders’ equity (deficit). See Note 15 — “Stockholders’ Equity ” for a breakdown of the individual classes of convertible preferred stock as of December 31, 2025. 
+ Segment Information — The Company’s Chief Operating Decision Maker (“CODM”), the chief executive officer, reviews discrete financial information presented on a consolidated basis for purposes of regularly making operating decisions, allocation of resources, and assessing financial performance. The Company operates its business in one operating segment and, therefore, has one reportable segment. 
+ The CODM uses consolidated net income (loss) to measure segment profit or loss in order to identify underlying trends in the performance of the business for purposes of allocating resources and evaluating financial performance. The Company’s objective in making resource allocation decisions is to optimize the consolidated financial results. 
+ Total revenue consists of digital assets sales revenue, staking revenue, Stablecoin-as-a-Service revenue, and subscription and services revenue on a consolidated basis. The CODM uses these revenue categories, together with the related costs, to evaluate profit and loss. Related costs include digital assets sales cost, staking fees and stablecoin sponsor fees, which are included in the Company’s consolidated results. Significant segment expenses that the CODM reviews and utilizes to manage the Company’s operations are compensation and benefits, legal and professional fees, other expenses and depreciation and amortization at the consolidated level, which are presented in the Company’s consolidated statements of operations. Other segment items included in consolidated net income include other income, and provision for (benefit from) income taxes which are presented in the Company’s consolidated statements of operations. 
+ The table below provides details on reported segment revenue, segment profit or loss, and key segment expenses (in thousands): 
+ 11 
+ Table of Contents 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Revenue
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+Expenses
+Digital assets sales cost | 4,190,435 | 2,273,948 | 7,838,280 | 3,876,124
+Staking fees | 60,781 | 81,810 | 102,224 | 209,532
+Stablecoin sponsor fees | 35,710 | 15,249 | 71,047 | 15,249
+Interest expense | 5,845 | 1,252 | 11,863 | 2,937
+Compensation and benefits | 29,528 | 23,511 | 70,330 | 47,828
+Legal and professional fees | 10,277 | 11,864 | 21,996 | 21,737
+Other (1) | 10,809 | 5,612 | 19,395 | 11,288
+Depreciation and amortization | 2,121 | 875 | 3,848 | 1,741
+Restructuring charges | 1,300 | — | 1,300 | —
+Total expenses | 4,346,806 | 2,414,121 | 8,140,283 | 4,186,436
+Loss from operations | ( 17,411 ) | ( 3,659 ) | ( 37,315 ) | ( 1,310 )
+Other income (loss) | ( 13,291 ) | 57,106 | ( 65,027 ) | 21,762
+Income (loss) before income taxes | ( 30,702 ) | 53,447 | ( 102,342 ) | 20,452
+Tax provision for (benefit from) income taxes | ( 11,677 ) | 15,132 | ( 22,644 ) | 7,871
+Net income (loss) | ( 19,025 ) | 38,315 | ( 79,698 ) | 12,581
+ _______________ 
+ (1) Other expenses include insurance, marketing, equipment and technology, occupancy and other expenses. 
+ Cash and Cash Equivalents — The Company considers all highly liquid investments with an original maturity of three months or less at the date of purchase to be cash and cash equivalents. As of June 30, 2026, and December 31, 2025, cash and cash equivalents consists primarily of investments in U.S. dollar-denominated money market funds, checking, and savings deposits. The Company’s cash balances exceed those that are federally insured. 
+ In accordance with Accounting Standards Codification (“ASC”) 820, Fair Value Measurements and Disclosures, the Company determined the fair value hierarchy of its money market fund accounts as Level 1, as the valuation is based on quoted prices in active markets. The fair value of the Company’s money market fund, excluding restricted cash and cash equivalents segregated for the benefit of stablecoin holders, approximated $ 41.0 million and $ 49.1 million, as of June 30, 2026, and December 31, 2025, respectively. 
+ Cash and cash equivalents segregated for the benefit of stablecoin holders – restricted — Cash and cash equivalents segregated for the benefit of stablecoin holders represent cash and cash equivalents maintained in segregated bank accounts that are held for the exclusive benefit of stablecoin holders. 
+ The Company segregates assets backing stablecoins issued by BitGo to satisfy its obligations under all applicable regulatory requirements and commercial laws and classifies these assets as current based on their purpose and availability to fulfill its direct obligation to customers. The Company maintains no legal, equitable, financial or other ownership interest over the reserve assets. The reserve assets are maintained on a basis where they are held by the Company for the benefit of stablecoin holders and are restricted as to use for any purpose other than to redeem stablecoin holders’ deposits. As of June 30, 2026, and December 31, 2025, the assets backing stablecoins, included within Cash and cash equivalents segregated for the benefit of stablecoin holders, amounted to $ 4.6 billion and $ 3.3 billion, respectively. The Company earns interest on these reserve assets and recognizes revenue on a gross basis, based on the total interest income earned, which is reflected in revenue as Stablecoin-as-a-Service revenue. 
+ Concentrations of Credit Risk — Financial instruments that potentially subject the Company to concentrations of credit risk consist primarily of cash and cash equivalents, trade accounts receivable and loans and digital intangible asset loans. The Company invests its excess cash in low-risk, highly liquid money market funds with major financial institutions. The Company closely monitors the extension of credit to its customers, while maintaining allowances, if necessary, for potential credit losses. On a regular basis, the Company evaluates its accounts receivable and establishes an allowance for credit losses, based on a 
+ 12 
+ Table of Contents 
+ history of partial write-offs and collections and current credit conditions. Risks related to digital intangible asset and loan receivables, including customer concentration limits, collateral and margin requirements, are monitored on a daily basis. 
+ Significant customers are those that represent more than 10% of the Company’s total revenue, gross accounts receivable, or total loan balance at each balance sheet date. For the three and six months ended June 30, 2026, the Company’s largest customers accounted for 20.7 % and 19.9 % of total revenue, respectively. For the three and six months ended June 30, 2025, the Company’s largest customers accounted for 20.0 % and 12.0 % of total revenue, respectively. 
+ As of June 30, 2026 and December 31, 2025, no customers accounted for more than 10% of net accounts receivable. 
+ As of June 30, 2026 and December 31, 2025, two customers accounted for 36.4 % and 15.9 % and 30.2 % and 12.1 %, respectively, of total loan receivables. 
+ Recent Accounting Pronouncements Not Yet Adopted 
+ In November 2024, the Financial Accounting Standards Board (“FASB”) issued ASU No. 2024-03, Income Statement—Reporting Comprehensive Income—Expense Disaggregation Disclosures (Subtopic 220-40): Disaggregation of Income Statement Expenses, which requires more detailed disclosures, on an annual and interim basis, about specified categories of expenses (including employee compensation, depreciation, and amortization) included in certain expense captions presented on the consolidated statements of operations. This guidance as further clarified through ASU No. 2025-01, Income Statement Reporting Comprehensive Income—Expense Disaggregation Disclosures (Subtopic 220-40) will be effective for annual periods beginning after December 15, 2026, and for interim periods within fiscal years beginning after December 15, 2027. Early adoption is permitted. Upon adoption, the guidance can be applied either prospectively or retrospectively. The Company is currently evaluating the impact this amended guidance may have on its consolidated financial statements. 
+ In September 2025, the FASB issued ASU 2025-06, Intangibles—Goodwill and Other—Internal–Use Software (Subtopic 350-40), related to accounting for internal–use software costs. The amendments in this ASU improve the operability of the guidance by removing all references to software development project stages so that the guidance is neutral to different software development methods. This ASU is effective for annual periods beginning after December 15, 2027, including interim periods within those fiscal years, and permits prospective, modified prospective or retrospective adoption. The Company is currently evaluating the impact this guidance may have on its consolidated financial statements. 
+ In December 2025, the FASB issued ASU 2025-11—Interim Reporting (“ASU 2025-11”), which is intended to improve the navigability of the guidance in ASC 270, Interim Reporting, and clarify when it applies. Under the amendments, an entity is subject to ASC 270 if it provides interim financial statements and notes in accordance with GAAP. ASU 2025-11 also addresses the form and content of such financial statements, interim disclosure requirements, and establishes a principle under which an entity must disclose events since the end of the last annual reporting period that have a material impact on the entity. ASU 2025-11 is effective for interim reporting periods within annual reporting periods beginning after December 15, 2027 and early adoption is permitted. The Company is currently evaluating the impact this guidance may have on its consolidated financial statements. 
+ In December 2025, the FASB issued ASU 2025-12—Codification Improvements to address suggestions received from stakeholders on the Accounting Standards Codification and to make other incremental improvements to GAAP. The update represents changes to the Codification that (1) clarify, (2) correct errors, or (3) make minor improvements. The amendments make the Codification easier to understand and apply. The guidance is effective for fiscal years beginning after December 15, 2026, including interim periods within those fiscal years. The Company is currently evaluating the impact this guidance may have on its consolidated financial statements. 
+ Note 3. Revenue 
+ The following table presents revenue disaggregated by type during the periods presented (in thousands): 
+ 13 
+ Table of Contents 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Digital assets sales | 4,197,517 | 2,278,163 | 7,857,025 | 3,883,630
+Staking | 64,684 | 90,895 | 114,085 | 236,858
+Subscriptions and services | 27,548 | 25,395 | 53,123 | 48,365
+Stablecoin-as-a-Service | 38,824 | 15,655 | 76,981 | 15,659
+Interest income | 822 | 354 | 1,754 | 614
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+ The following table presents revenue disaggregated by geography, based on the invoice address of the Company’s customers, during the periods presented (in thousands): 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+U.S. | 2,609,356 | 944,531 | 4,556,778 | 1,650,321
+International (1) | 1,720,039 | 1,465,931 | 3,546,190 | 2,534,805
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+ _______________ 
+ (1) For the three months ended June 30, 2026, no individual country accounted for more than 10% of total revenue, except for the Cayman Islands, which accounted for 10.8 %. For the six months ended June 30, 2026, no individual country accounted for more than 10% of total revenue, except for the United Kingdom and the Cayman Islands, which accounted for 10.7 % and 11.2 %, respectively. For the three and six months ended June 30, 2025, no individual country accounted for more than 10% of total revenue, except for the Cayman Islands, which accounted for 29.0 % and 24.0 %, respectively. 
+ Note 4. Accounts Receivable and Allowance for Credit Losses 
+ The following table presents accounts receivable, net for the periods presented (in thousands). 
+As of
+June 30, 2026 | December 31, 2025
+Accounts receivable | 19,303 | 17,734
+Allowance for credit losses | ( 1,946 ) | ( 1,960 )
+Accounts receivable, net | 17,357 | 15,774
+ The following table presents a roll forward of allowance for credit losses for the periods presented (in thousands). 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Balance at beginning of period | 1,427 | 2,894 | 1,960 | 2,467
+Credit loss expense for the period | 748 | 94 | 530 | 802
+Bad debt write-offs | ( 229 ) | ( 468 ) | ( 544 ) | ( 749 )
+Balance at end of period | 1,946 | 2,520 | 1,946 | 2,520
+ Note 5. Equipment and Software, Net 
+ Equipment and software as of the periods presented are composed of the following (in thousands): 
+ 14 
+ Table of Contents 
+As of
+June 30, 2026 | December 31, 2025
+Computer equipment and software | 5,467 | 5,137
+Furniture and office equipment | 1,260 | 1,101
+Leasehold improvements | 1,122 | 1,122
+Capitalized internally developed software | 15,434 | 10,996
+Total Equipment and Software | 23,283 | 18,356
+Less accumulated depreciation and amortization | ( 8,205 ) | ( 5,176 )
+Equipment and Software, net | 15,078 | 13,180
+ Total depreciation and amortization expense was $ 1.8 million and $ 3.0 million for the three and six months ended June 30, 2026, respectively, and $ 0.3 million and $ 0.5 million for the three and six months ended June 30, 2025, respectively. 
+ Equipment and software by geography as of the periods presented are as follows (in thousands). 
+As of
+June 30, 2026 | December 31, 2025
+United States | 13,379 | 11,563
+International (1) | 1,699 | 1,617
+Equipment and Software, net | 15,078 | 13,180
+ _______________ 
+ (1) No individual country accounted for more than 10% of total equipment and software, net, as of June 30, 2026 and December 31, 2025. 
+ Note 6. Intangible Assets, Net and Goodwill 
+ Acquired intangible assets consist of developed technology and trade name and are amortized on a straight-line basis (in thousands). 
+As of
+June 30, 2026 | December 31, 2025
+Gross Amount | Accumulated Amortization | Net Carrying Amount | Gross Amount | Accumulated Amortization | Net Carrying Amount
+Acquired developed technology | 12,249 | ( 11,842 ) | 407 | 12,249 | ( 11,044 ) | 1,205
+Trade name | 499 | ( 499 ) | — | 499 | ( 478 ) | 21
+Total | 12,748 | ( 12,341 ) | 407 | 12,748 | ( 11,522 ) | 1,226
+ Total amortization expense was $ 0.4 million and $ 0.8 million for the three and six months ended June 30, 2026, respectively, and $ 0.6 million and $ 1.2 million for the three and six months ended June 30, 2025, respectively. 
+ The weighted average amortization period remaining for acquired intangible assets was 0.28 years as of June 30, 2026. As of June 30, 2026, the remaining balance of acquired intangible assets of $ 0.4 million will be fully amortized in October 2026. 
+ 15 
+ Table of Contents 
+ Note 7. Digital Intangible Assets 
+ The following table summarizes digital intangible assets (in thousands, except unit data): 
+As of
+June 30, 2026
+Bitcoin (“BTC”) | Solana (“SOL”) | USDT (“USDT”) | Other | Total
+Units | Units | Units
+Balance as of June 30, 2026 - fair value | 5,207 | 304,873 | 400,797 | 29,467 | 18,859,453 | 18,858 | 38,147 | 391,345
+Balance as of June 30, 2026 - cost basis | 345,691 | 33,948 | 18,546 | 59,419 | 457,604
+As of
+December 31, 2025
+Bitcoin (“BTC”) | Solana (“SOL”) | USDT (“USDT”) | Other | Total
+Units | Units | Units
+Balance as of December 31, 2025 - fair value basis | 3,138 | 274,508 | 274,430 | 34,161 | 21,433,477 | 21,432 | 14,359 | 344,460
+Balance as of December 31, 2025 - cost basis | 192,662 | 34,833 | 21,424 | 20,256 | 269,175
+ Significant holdings are those digital assets that represent more than 10% of the Company’s digital assets at each balance sheet date. As of June 30, 2026, the Company’s Bitcoin holdings accounted for 77.9 % of total digital asset value. As of December 31, 2025, the Company’s Bitcoin holdings accounted for 79.7 % of total digital asset value. 
+ The Company accounts for its digital asset inventory using the first-in, first-out (“FIFO”) costing method. 
+ The fair value of digital assets as of June 30, 2026, and December 31, 2025, is classified as Level 1 under ASC 820—Fair Value Measurement (“ASC 820”). 
+ 16 
+ Table of Contents 
+ Note 8. Digital Intangible Assets Collateral 
+ Digital intangible assets collateral activity based on fair value and corresponding cost basis for the periods presented is as follows (in thousands, except unit data): 
+As of
+June 30, 2026
+Bitcoin (“BTC”) | Solana (“SOL”) | XRP | Other | Total
+Units | Units | Units
+Balance as of June 30, 2026 - fair value | 2,142 | 125,405 | 1,514,787 | 111,372 | 49,325,045 | 51,221 | 42,267 | 330,265
+Balance as of June 30, 2026 - cost basis | 177,069 | 175,553 | 79,452 | 47,243 | 479,317
+As of
+December 31, 2025
+Bitcoin (“BTC”) | Solana (“SOL”) | XRP | Other | Total
+Units | Units | Units
+Balance as of December 31, 2025 - fair value basis | 405 | 35,416 | 1,308,083 | 162,830 | 31,696,528 | 58,322 | 3,790 | 260,358
+Balance as of December 31, 2025 - cost basis | 21,835 | 185,751 | 68,979 | 4,879 | 281,444
+ Fair value for digital assets as of June 30, 2026, and December 31, 2025, is classified as Level 1 under ASC 820. As of June 30, 2026, the Company's digital intangible assets collateral included $ 118.5 million of Bitcoin holdings and $ 4.2 million of other digital assets that the Company held as trading collateral. 
+ Note 9. Loan Receivables and Digital Intangible Assets Loan Receivables 
+ Loan receivables for the periods presented are as follows (in thousands): 
+As of
+June 30, 2026 | December 31, 2025
+Beginning balance | 176,655 | 87,488
+Origination of loan receivable | 100,241 | 305,576
+Repayment of loan receivable | ( 119,485 ) | ( 216,409 )
+Ending balance | 157,411 | 176,655
+ All loan receivables are substantially overcollateralized. In the event that the value of the collateral falls below a specific threshold, the Company has the ability to make collateral calls to request that the borrower deposit additional capital. After a prespecified period of time, the Company may call the loan to the borrower and in the event of nonpayment liquidate the collateral as satisfaction of the loan. The Company’s policy is to regularly evaluate its credit exposure to each borrower to determine whether to provide an allowance for loan loss. As of June 30, 2026 and December 31, 2025, no loan receivable are past due, and Company did not record an allowance for credit losses. 
+ 17 
+ Table of Contents 
+ Digital intangible assets loan receivables for the periods presented are as follows (in thousands, except unit data): 
+As of
+June 30, 2026
+Bitcoin ( “ BTC ” ) | Solana (“SOL”) | Other | Total
+Units | Units
+Balance as of June 30, 2026 | — | — | 75,000 | 5,514 | 4,800 | 10,314
+Balance as of June 30, 2026 - cost basis | — | 12,550 | 3,196 | 15,746
+As of
+December 31, 2025
+Bitcoin ( “ BTC ” ) | Solana (“SOL”) | Other | Total
+Units | Units
+Balance as of December 31, 2025 | — | — | 165,000 | 20,539 | 10,235 | 30,774
+Balance as of December 31, 2025 - cost basis | — | 36,098 | 10,628 | 46,726
+ As of June 30, 2026 and December 31, 2025, all loans outstanding were classified as current. 
+ The Company may require cash or digital asset collateral from its borrowers as security in the event of borrower default. The Company recognizes an obligation to return the cash collateral or digital asset collateral in an amount equal to either the cash or the digital assets received. Total collateral as of June 30, 2026 and December 31, 2025, was $ 302.5 million and $ 400.1 million, respectively. 
+ Note 10. Borrowings and Borrowings of Digital Intangible Assets 
+ The Company enters into arrangements with counterparties to borrow financial assets and digital assets to support its lending business. The obligation is fulfilled by returning financial assets or digital assets in accordance with the contractual terms of the borrowing agreements. Borrowings for the periods presented are as follows (in thousands): 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Balance at beginning of period | 139,679 | 50,000 | 118,848 | 30,000
+Origination of borrowings | 21,028 | 38,354 | 118,779 | 78,354
+Repayment of borrowings | ( 27,538 ) | ( 20,000 ) | ( 104,458 ) | ( 40,000 )
+Balance at end of period | 133,169 | 68,354 | 133,169 | 68,354
+ The weighted average interest rate related to these borrowings of financial assets as of June 30, 2026 and 2025 was 7.2 % and 7.6 %, respectively. The loan durations range from demand terms to maturities of up to one year. 
+ 18 
+ Table of Contents 
+ Borrowings of digital intangible assets for the periods presented are as follows (in thousands, except unit data): 
+As of
+June 30, 2026
+Bitcoin ( “ BTC ” ) | Solana ( “ SOL ” ) | USDT ( “ USDT ” ) | Other | Total
+Units | Units | Units
+Balance as of June 30, 2026 | 4,100 | 240,088 | 350,350 | 25,759 | 13,059,023 | 13,038 | 26,925 | 305,810
+Balance as of June 30, 2026 - cost basis | 325,783 | 46,280 | 13,032 | 38,186 | 423,281
+As of
+December 31, 2025
+Bitcoin ( “ BTC ” ) | Solana ( “ SOL ” ) | USDT ( “ USDT ” ) | Other | Total
+Units | Units | Units
+Balance as of December 31, 2025 | 1,714 | 149,998 | 394,000 | 49,045 | 19,500,000 | 19,468 | 15,176 | 233,687
+Balance as of December 31, 2025 - cost basis | 185,558 | 70,741 | 19,499 | 19,292 | 295,090
+ Certain of the Company’s lending arrangements require the Company to provide collateral in the form of digital assets. As of June 30, 2026 and December 31, 2025, digital assets with a fair value of $ 107.1 million and $ 135.4 million, respectively, were held by lenders as collateral under these agreements. This amount is included in other current assets on the Company’s condensed consolidated balance sheet. 
+ The weighted average interest rate related to these borrowings of digital assets as of June 30, 2026 and December 31, 2025 was 4.0 % and 5.3 %, respectively. The loan durations range from demand terms to maturities of up to one year. 
+ Note 11. Fair Value Measurements 
+ The following table sets forth by level, within the fair value hierarchy, the Company’s assets and liabilities measured and recorded at fair value on a recurring basis (in thousands): 
+ Level 1: Quoted prices in active markets for identical assets or liabilities. An active market for an asset or liability is a market in which transactions for the asset or liability occur with sufficient frequency and volume to provide pricing information on an ongoing basis. 
+ Level 2: Observable inputs other than Level 1 inputs. Examples of Level 2 inputs include quoted prices in active markets for similar assets or liabilities and quoted prices for identical assets or liabilities in markets that are not active. 
+ Level 3: Unobservable inputs based on the Company’s assessment of the assumptions that market participants would use in pricing the asset or liability 
+ 19 
+ Table of Contents 
+As of June 30, 2026 | As of December 31, 2025
+Level 1 | Level 2 | Level 1 | Level 2
+Assets
+Cash equivalents (1) | 40,972 | — | 49,114 | —
+Cash and cash equivalents segregated for the benefit of stablecoin holders - restricted | 3,455,974 | — | 2,814,802 | —
+Digital intangible assets | 391,345 | — | 344,439 | —
+Digital intangible assets as collateral | 330,265 | — | 260,358 | —
+Derivative assets | 95 | 314 | — | —
+Total assets | 4,218,650 | 314 | 3,468,713 | —
+Liabilities
+Embedded derivatives - borrowings of digital intangible assets | — | ( 117,470 ) | 233,687 | —
+Embedded derivatives - obligations to return collateral | — | ( 165,803 ) | 400,132 | —
+Derivative liabilities | 744 | 496 | — | —
+Total liabilities | 744 | ( 282,777 ) | 633,819 | —
+ __________ 
+ (1) Represents money market funds. 
+ The Company has valued all Level 2 assets and liabilities measured at fair value on a recurring basis using quoted market prices as an observable input. This includes prices for underlying crypto assets and, for non-crypto denominated assets and liabilities, prices for similar assets and liabilities in inactive markets. 
+ There were no transfers into or out of Level 3 of the fair value hierarchy during the six months ended June 30, 2026 or the year ended December 31, 2025. 
+ Assets Recognized at Fair Value on a Nonrecurring Basis 
+ The Company’s loan receivables are carried at amortized cost, which approximates their fair value. The loan receivables are measured at fair value on a nonrecurring basis and are Level 1 in the fair value hierarchy. 
+ Note 12. Derivatives 
+ The following table shows the gross and net amounts of recognized derivative assets and liabilities at fair value (in thousands): 
+As of
+June 30, 2026
+Gross Notional | Assets | Liabilities
+Options | 304,660 | 409 | 349
+Futures | 27,921 | — | 395
+Total Return Swap | 3,036 | — | 496
+Total | 409 | 1,240
+ For the three and six months ended June 30, 2026, the Company recognized a net derivatives gain of $ 1.3 million and $ 4.2 million, within total revenue in the condensed consolidated statements of operations, respectively. No net derivatives gain was recognized during the three and six months ended June 30, 2025. 
+ As of June 30, 2026, exchange traded derivative contracts are classified as Level 1 and over-the-counter derivative contracts are classified as Level 2 under ASC 820. 
+ Note 13. Leases 
+ 20 
+ Table of Contents 
+ Leases—The Company enters into operating leases in the normal course of business primarily for office space. The Company’s leases have remaining terms which expire through 2030. The Company’s leases do not include residual value guarantees or covenants. 
+ The following table presents various components of the lease costs (in thousands): 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Operating lease cost | 754 | 515 | 1,467 | 969
+Short-term lease and variable lease expense (1) | 230 | 139 | 437 | 277
+Total lease cost | 984 | 654 | 1,904 | 1,246
+ _______________ 
+ (1) Leases with an initial term of 12 months or less are not recorded on the condensed consolidated balance sheets, and the Company recognizes lease expense for these leases on a straight-line basis over the lease term. Variable lease expense for the periods presented primarily included common area maintenance charges. 
+ Future undiscounted lease payments for operating leases with initial terms of one year or more as of June 30, 2026, are as follows (in thousands): 
+Amount
+2026 (remainder) | 1,310
+2027 | 2,806
+2028 | 1,454
+2029 | 1,243
+2030 | 514
+Thereafter | —
+Total undiscounted lease payments | 7,327
+Less: imputed interest | ( 1,322 )
+Net lease liabilities | 6,005
+ Supplemental information related to operating leases was as follows: 
+As of
+June 30, 2026 | December 31, 2025
+Weighted average remaining lease term (in years) | 3.0 | 4.6
+Weighted average discount rate of operating lease liabilities | 7.6% | 8.2%
+ Note 14. Commitments and Contingencies 
+ Operating Leases 
+ See Note 13 — “Leases” for the discussion about the Company’s lease commitments. 
+ Non-Cancelable Purchase Obligations 
+ In the normal course of business, the Company enters into agreements containing non-cancelable purchase commitments for goods or services with various parties, which include agreements to purchase goods or services that are enforceable and legally binding to the Company. Recognition of purchase obligations occurs when products or services are delivered to the Company, generally within accounts payable, or accrued and other current liabilities. As of June 30, 2026, the Company had a total of $ 2.2 million in outstanding non-cancelable purchase obligations with a term of 12 months or longer that have not been recognized on its condensed consolidated balance sheets. 
+ Safeguarding of Customer Digital Assets 
+ 21 
+ Table of Contents 
+ The Company is obligated to safeguard certain digital assets held on behalf of its customers, which are not recognized on the Company’s condensed consolidated balance sheets. As such, the Company may be liable to its customers for losses arising from the Company’s failure to safeguard those digital assets from loss. The Company has not incurred any losses related to such obligations and therefore has not accrued any liabilities as of June 30, 2026 and December 31, 2025. 
+ Litigation 
+ From time to time, the Company is involved in various legal proceedings arising from the normal course of business activities. The Company is not presently a party to any litigation the outcome of which, it believes, if determined adversely to the Company, would individually or taken together have a material adverse effect on its business, results of operations, cash flows or financial condition. The Company has received, and may in the future continue to receive, claims from third parties asserting, among other things, infringement of their intellectual property rights. Defending such proceedings is costly and can impose a significant burden on management and employees. The Company may receive unfavorable preliminary or interim rulings in the course of litigation, and there can be no assurances that favorable final outcomes will be obtained. Management believes that any liability of the Company that may arise out of or with respect to these matters will not materially adversely affect the Company’s consolidated financial statements. 
+ In September 2022, the Company filed suit against Galaxy Digital Holdings Ltd. (“Galaxy”), alleging that Galaxy breached and wrongfully repudiated the terms of that certain Agreement and Plan of Merger, dated as of May 5, 2021 (the “Merger Agreement”) relating to Galaxy’s proposed $ 1.2 billion acquisition of the Company. In November 2022, the Company filed an Amended Complaint, which seeks at least $ 100 million in damages. In June 2023, the Court of Chancery of the State of Delaware (the “Delaware Court of Chancery”) granted Galaxy’s motion to dismiss the suit, concluding that the financial statements the Company provided to Galaxy did not comply with the requirements of the Merger Agreement, thus providing Galaxy with a valid basis to terminate the Merger Agreement. The Company appealed that ruling and in May 2024 the Delaware Supreme Court reversed the dismissal ruling and remanded the case to the Delaware Court of Chancery, finding that the definition of the financial statements in the Merger Agreement is ambiguous, necessitating consideration of extrinsic evidence. The trial was held from May 18, 2026 to May 22, 2026, and the Company is currently awaiting the Court’s decision. 
+ In June 2026, a purported securities class action was filed in the U.S. District Court for the Eastern District of New York against the Company, and certain of its directors and officers, docketed as Jacques Arsenault v. BitGo Holdings, Inc., et al., Case No. 26-cv-03428. The complaint alleges violations of Sections 11 and 15 of the Securities Act, and Sections 10(b) and 20(a) of the Exchange Act, in connection with the registration statement and prospectus filed in connection with the Company's January 2026 initial public offering, and in connection with statements made during the putative class period of January 22, 2025 through May 13, 2026. The plaintiff seeks, among other relief, unspecified compensatory damages, attorneys' fees, and costs. The deadline for motions for appointment as lead plaintiff was August 7, 2026, and the Company expects the case to proceed following appointment of a lead plaintiff and lead counsel. The Company disputes the claims and intends to vigorously defend against them. The Company is unable to predict the outcome of this matter or estimate a range of reasonably possible loss, and no amounts have been accrued as of the date of this filing. The Company has subsequently received, and expects to receive in the future, similar shareholder claims and demands. 
+ Indemnification of Officers and Directors 
+ In the normal course of business, the Company may agree to indemnify third parties with whom it enters into contractual relationships, including customers, lessors, and parties to other transactions with the Company, with respect to certain matters. The Company has agreed, under certain conditions, to hold these third parties harmless against specified losses, such as those arising from a breach of representations or covenants, other third-party claims that the Company’s offerings, when used for their intended purposes, infringe the intellectual property rights of such other third parties, or other claims made against certain parties. It is not possible to determine the maximum potential amount of liability under these indemnification obligations due to the Company’s limited history of prior indemnification claims and the unique facts and circumstances that are likely to be involved in each claim. 
+ Note 15. Stockholders’ Equity 
+ Convertible Preferred Stock 
+ Immediately prior to the Company’s IPO on January 22, 2026, all convertible preferred shares then outstanding were converted into shares of the Company’s Class A common stock on a one -to-one basis. In connection with the IPO, the Company’s Amended and Restated Certificate of Incorporation became effective, which authorizes the issuance of 200,000,000 
+ 22 
+ Table of Contents 
+ shares of undesignated preferred stock with par value of $ 0.0001 with rights and preferences, including voting rights, designated from time to time by the Company’s board of directors. 
+ As of June 30, 2026, there were no shares of convertible preferred stock issued or outstanding. 
+ The following table summarizes the Company’s convertible preferred stock as of December 31, 2025 (in thousands, except share data). 
+Shares Authorized | Shares Issued and Outstanding | Issuance Price Per Share | Liquidation Preference | Carrying Value
+Series Seed | 2,780,080 | 2,756,913 | 2.16 | 2,459 | 5,950
+Series A | 21,005,676 | 21,005,676 | 0.59 | 13,465 | 11,913
+Series B | 16,820,400 | 16,820,350 | 2.53 | 45,899 | 42,310
+Series B-1 | 4,235,374 | 4,235,374 | 3.54 | 15,000 | 14,959
+Series B-2 | 1,896,757 | 1,896,757 | 1.85 | 3,500 | 2,963
+Series B-3 | 7,000,000 | 5,972,572 | 4.00 | 23,907 | 14,651
+Series C | 12,464,321 | 5,383,136 | 16.05 | 86,285 | 86,285
+Series C-1 | 93,482 | 93,482 | 16.05 | 1,500 | 1,486
+Series C-2 | 2,669,743 | 2,614,528 | 16.05 | 41,952 | 41,963
+68,965,833 | 60,778,788 | 233,967 | 222,480
+ Class F Common Stock 
+ On September 30, 2025, the Company and Michael Belshe entered into that certain Equity Exchange Right Agreement (the “Exchange Agreement”) pursuant to which Michael Belshe exchanged all of his shares of Class F common stock into Class B common stock. As such, there were no shares of Class F common stock authorized or outstanding as of June 30, 2026 and no Class F common stock outstanding as of December 31, 2025. 
+ In connection with the closing of the Company’s January 2026 IPO, the Company sold 11,026,365 shares of its Class A common stock and certain selling stockholders sold an additional 795,230 shares. Concurrently, all convertible preferred shares then outstanding were converted into shares of the Company’s Class A common stock on a one -to-one basis. In connection with the IPO, the Company’s Amended and Restated Certificate of Incorporation became effective, which authorizes the issuance of up to 3,600,000,000 shares of capital stock, consisting of: (i) 3,400,000,000 shares of Common Stock, $ 0.0001 par value per share, including (a) 3,000,000,000 shares designated as Class A Common Stock, $ 0.0001 par value per share, (b) 300,000,000 shares designated as Class B Common Stock, par value $ 0.0001 per share, and (c) 100,000,000 shares of Blockchain Common Stock, $ 0.0001 par value per share; and (ii) 200,000,000 shares of Preferred Stock, $ 0.0001 par value per share. 
+ Blockchain Common Stock 
+ The Company’s Amended and Restated Certificate of Incorporation authorized the issuance of 100,000,000 shares of Blockchain Common Stock, $ 0.0001 par value per share, with rights and preferences, including without limitation, voting powers, dividend rights, liquidation rights, redemption rights, and conversion rights, designated from time to time by the Board. As of June 30, 2026, there were no shares of blockchain common stock issued and outstanding. 
+ Common Stock 
+ The Company has two classes of common stock outstanding — Class A common stock and Class B common stock. Shares of Class A common stock and Class B common stock are identical, except with respect to voting, conversion, and transfer rights. Holders of Class A common stock are entitled to one vote per share, and holders of Class B common stock are entitled to 15 votes per share. Holders of common stock are entitled to receive dividends as may be declared from time to time by the Board of Directors. Shares of Class B common stock are convertible at any time at the option of the holder into shares of Class A common stock on a one -to-one basis. In addition, each share of Class B common stock will automatically convert into a share of Class A common stock upon a sale or transfer (other than with respect to certain estate planning and other transfers). Further, upon certain events specified in the Restated Certificate of Incorporation, all outstanding shares of Class B common stock will 
+ 23 
+ Table of Contents 
+ convert automatically into shares of Class A common stock. Class A common stock and Class B common stock are referred to as common stock throughout these notes to the consolidated financial statements, unless otherwise noted. 
+ As of June 30, 2026, there were 25,015,006 shares of Class A common stock reserved to cover stock-based awards, of which 2,866,702,402 shares were available for future issuance, As of June 30, 2026, no shares of Class B common stock were reserved and 291,144,618 shares were available for future issuance. 
+ Share Repurchase Program 
+ In June 2026, the Board of Directors authorized and approved a share repurchase program, which permits the Company to repurchase up to $ 50.0 million of its common stock. Repurchases may be made from time-to-time in open market, in privately negotiated transactions or as may otherwise be determined by the Company in its discretion. The share repurchase program has no expiration date, does not obligate the Company to repurchase any specific amount of common stock, and may be suspended, recommenced, or terminated at any time without prior notice. The timing and amount of any shares repurchased will be determined by the Company based on its evaluation of market conditions, applicable legal requirements and other factors. No shares of the Company’s common stock were repurchased under the share repurchase program during the three months ended June 30, 2026. 
+ Note 16. Stock-Based Compensation 
+ 2026 Equity Incentive Plan — In September 2025, the Company’s board of directors approved the 2026 Equity Incentive Plan (“2026 Plan”) as a successor to its Amended & Restated 2018 Stock Incentive Plan (“2018 Plan”), which became effective upon the Company’s IPO. The 2026 Plan provides for the grant of incentive stock options (“ISOs”), nonstatutory stock options (“NSOs”), restricted stock awards (“RSAs”), stock appreciation rights (“SARs”), restricted stock units (“RSUs”), and performance and stock bonus awards. Upon adoption, an aggregate of 9,028,124 shares of the Company’s Class A common stock have been reserved for future issuance with (i) an automatic increase on January 1 of each calendar year by 5 % of the aggregate number of shares of common stock of all classes issued and outstanding on December 31 of the preceding calendar year, or (ii) a lesser number of shares as may be determined by the Company’s board of directors prior to January 1 of each year. The share reserve is reduced by the number of shares granted under the 2026 Plan, and increased by the number of shares subject to stock options or other stock awards granted under the 2018 Plan that expire, are forfeited, or are otherwise returned to the 2018 Plan. 
+ Stock Options — The 2026 Plan provides for the grant of ISOs and NSOs to purchase shares of Class A common stock at an exercise price determined at the grant date. ISOs may be granted only to employees, including officers and directors who are also employees. The exercise price of all stock options must be at least equal to the fair market value of the Company’s Class A common stock on the grant date. For ISOs granted to individuals who own more than 10 % of the total combined voting power of all classes of the Company’s capital stock, the exercise price must be at least 110 % of fair market value on the grant date. Stock options generally have a maximum term of ten years from the grant date. However, ISOs granted to holders of more than 10 % of the Company’s voting power are limited to a maximum term of five years . Stock options typically vest over three to four years . Each option entitles the holder to purchase one share of Class A common stock upon exercise. 
+ On September 18, 2019, the Company granted a non-statutory option to Mr. Belshe to acquire 1,500,960 shares of BitGo Class A common stock outside of the Company’s 2018 Plan, as a non-Plan grant (the “Non-Plan Option Grant”). On June 23, 2020, the Non-Plan Option Grant was repriced from an exercise price of $ 0.97 to an exercise price of $ 0.18 (the “Repricing”). To effectuate the Repricing, the Company cancelled the Non-Plan Option Grant and regranted it as a Non-Plan Option (the “Non-Plan Repriced Option”), with all terms, other than the exercise price, remaining unchanged, including the vesting schedule. On March 30, 2021, and on April 8, 2022, Mr. Belshe exercised the Non-Plan Repriced Option for 531,590 and 406,510 shares, respectively. The Non-Plan Repriced Option remains outstanding for 562,860 shares. 
+ In connection with the Company’s IPO, the Company registered the shares underlying this award on a Form S-8 for administrative and settlement purposes. As a result, the Non-Plan Repriced Option is treated as granted under the 2018 Plan solely with respect to the registration of the underlying shares. 
+ A summary of the Company’s stock option activity is presented below (in thousands, except per share amounts and terms). 
+ 24 
+ Table of Contents 
+Number of Shares | Weighted- Average Exercise Price | Weighted- Average Remaining Contractual Terms (In Years) | Aggregate Intrinsic Value
+Balance - January 1, 2026 | 9,991 | 2.08 | 7.23 | 136,365
+Options granted | 2,467 | 7.49
+Options exercised | ( 1,185 ) | 1.13
+Options canceled/forfeited | ( 188 ) | 4.99
+Balance - June 30, 2026, | 11,085 | 3.34 | 7.28 | 26,551
+Exercisable - June 30, 2026 | 6,707 | 1.43 | 6.09 | 25,294
+Vested and expected to vest - June 30, 2026 | 11,085 | 3.34 | 7.28 | 26,551
+ The weighted-average grant-date fair value of options granted during the six months ended June 30, 2026 and 2025 was $ 4.46 and $ 3.23 , respectively. The total intrinsic value of options exercised during the six months ended June 30, 2026 and 2025 was $ 10.0 million and $ 5.5 million, respectively. As of June 30, 2026, unrecognized stock-based compensation expense related to unvested stock options was $ 15.3 million, which is expected to be recognized over a weighted-average period of 3.14 years. 
+ The Company estimates the fair value of stock options on the date of grant using the Black-Scholes model with the following assumptions: 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Fair value of common stock | $ 5.91 | $ 5.65 | $ 5.91 - $ 7.49 | $ 5.36 - $ 5.65
+Expected volatility | 51.30 % | 58.86 % - 59.06 % | 51.30 % - 60.03 % | 57.90 % - 59.75 %
+Expected life (in years) | 6.25 | 6.0 - 6.1 | 5.6 - 6.4 | 5.7 - 6.1
+Risk-free interest rate | 4.29 % | 4.07 % - 4.08 % | 3.99 % - 4.29 % | 4.04 % - 4.09 %
+Expected dividend yield | — % | — % | — % | — %
+ Stock-Based Compensation Expense — For the three and six months ended June 30, 2026, stock-based compensation expense related to stock options was $ 1.4 million and $ 2.1 million, respectively. For the three and six months ended June 30, 2025, stock-based compensation expense related to stock options was $ 0.8 million and $ 1.8 million, respectively. 
+ Restricted Stock Units — Under the 2026 Plan, RSUs may be granted to employees, directors, and consultants. RSUs generally vest ratably over four years , subject to continued service, except for one RSU that vests immediately upon the completion of the Company’s IPO. RSUs granted prior to the Company’s IPO were subject to both service-based and liquidity-event vesting conditions; the liquidity condition was satisfied upon completion of the Company’s IPO. RSUs granted subsequent to the IPO are subject only to service-based vesting conditions. Until vested, RSUs do not have the voting and dividend participation rights of common stock and the shares underlying the awards are not considered issued and outstanding. 
+ Under the Company’s RSU settlement procedures, for RSUs granted in fiscal year 2024 (the “2024 RSUs”), settlement is structured such that 50 % of the vested RSUs are settled in shares and 50 % in cash, except for RSUs granted to certain employees and officers, for which shares are withheld to satisfy tax obligations. RSUs granted in fiscal year 2025 and thereafter are settled upon vesting with shares withheld to satisfy tax obligations. For 2024 RSUs, the cash-settled portion is primarily used to satisfy employee tax withholding obligations, with any excess cash remitted to the employee. 
+ The Company accounts for the cash-settled portion of the 2024 RSUs as liability awards and remeasures the related liability and expense at each reporting date until settlement. The equity-settled portion of the 2024 RSUs and all RSUs granted in fiscal year 2025 and thereafter are accounted for as equity awards based on the fair value on the grant date. 
+ During the three and six months ended June 30, 2026, the Company recognized stock-based compensation expense of $ 2.2 million and $ 12.7 million related to RSUs, respectively, of which $ 2.1 million and $ 10.1 million related to RSUs settled in 
+ 25 
+ Table of Contents 
+ shares, respectively, and $ 0.1 million and $ 2.6 million related to RSUs settled in cash during the three and six months ended June 30, 2026, respectively. 
+ As of June 30, 2026, the Company recorded a liability of $ 82 thousand related to the cash-settled portion of the 2024 RSUs, which is included in other current liabilities in the condensed consolidated balance sheets. In connection with the settlement of RSUs granted to certain employees and officers, the Company withheld 40,343 shares and 206,099 shares during the three and six months ended June 30, 2026, respectively, to satisfy tax obligations. 
+ The weighted-average grant-date fair value of RSUs granted during the six months ended June 30, 2026 was $ 7.08 . No RSUs were granted during the six months ended June 30, 2025. The total fair value of RSUs that vested during the six months ended June 30, 2026 was $ 8.4 million. No RSUs vested during the six months ended June 30, 2025. 
+ As of June 30, 2026, there was total unrecognized compensation cost of $ 21.8 million related to RSUs settled in shares, which is expected to be recognized over a weighted-average period of 2.93 years, and $ 0.8 million related to RSUs settled in cash, which is expected to be recognized over a weighted-average period of 1.83 years. 
+ The following table summarizes unvested RSUs as of June 30, 2026 (in thousands, except per share amount). 
+Cash Settled Awards | Share Settled Awards
+Shares | Weighted Average Grant Date Fair Value Per Share | Shares | Weighted Average Grant Date Fair Value Per Share
+Unvested, January 1, 2026 | 306 | 5.24 | 3,234 | 6.65
+Granted | — | — | 1,359 | 7.08
+Vested | ( 151 ) | 5.22 | ( 988 ) | 7.05
+Cancelled/Forfeited | ( 44 ) | 5.27 | ( 333 ) | 7.42
+Unvested, June 30, 2026 | 111 | 5.25 | 3,272 | 7.56
+ 2026 Employee Stock Purchase Plan — In September 2025, the Company’s board of directors approved the 2026 Employee Stock Purchase Plan (“2026 ESPP”), which became effective upon the Company’s IPO. An initial reserve of 2,600,000 shares of Class A common stock has been reserved for future issuance, with (i) an automatic increase to such reserve on January 1 of each calendar year by 1 % of the aggregate number of shares of common stock of all classes issued and outstanding on December 31 of the preceding calendar year, or (ii) a lesser number of shares as may be determined by the Company’s board of directors prior to January 1 of each year. Under the 2026 ESPP, eligible employees may purchase shares of Class A common stock at a purchase price equal to 85 % of the fair market value of a share of Class A common stock on either the first or last day of the applicable offering period, whichever is lower. Except for the first and second offering periods, the 2026 ESPP provides for six-month offering periods, each consisting of a single purchase period ending on May 31 and November 30 of each year. The initial purchase period commenced upon the completion of the Company’s IPO on January 22, 2026 and will conclude on August 31, 2026, with employee contributions beginning on February 1, 2026. The second purchase period will commence on September 1, 2026 and conclude on May 31, 2027. As of June 30, 2026, 2,600,000 shares were authorized and available for issuance. 
+ The Company estimates the fair value of purchase rights granted under the 2026 ESPP on the date of grant using the Black-Scholes model with the following assumptions: 
+Six Months Ended June 30, 2026
+Grant date fair value per share | $ 18.49
+Expected volatility | 45.80 %
+Expected life (years) | 0.61
+Risk-free interest rate | 3.6 %
+Expected dividend yield | — %
+ 26 
+ Table of Contents 
+ For the three and six months ended June 30, 2026, stock-based compensation expense related to the 2026 ESPP was $ 0.1 million and $ 0.1 million, respectively. As of June 30, 2026, unrecognized stock-based compensation expense related to the 2026 ESPP was $ 46 thousand, which is expected to be recognized over a weighted-average period of 0.17 years. 
+ There were no ESPP shares granted or issued during the three months ended June 30, 2026 and June 30, 2025 . 
+ Note 17. Net Income (Loss) Per Share 
+ The Company computes earnings per share using the two-class method, which applies to issuers with multiple classes of common stock and participating securities. Under this method, earnings available to common stockholders are allocated between common stock and participating securities based upon their respective rights to receive dividends as if all earnings for the period had been distributed. Prior to the IPO, the outstanding convertible preferred stock was deemed to be participating securities. However, these participating securities were excluded from the computation of net loss per share during periods of net loss because the convertible preferred stockholders had no contractual obligation to participate in losses. 
+ In connection with the IPO, the Company amended its certificate of incorporation to authorize the issuance of Class A common stock and Class B common stock. Other than voting rights, Class A common stock and Class B common stock have identical rights, including liquidation and dividend rights. Accordingly, Class A common stock and Class B common stock share equally in the Company’s net income (loss), and as such have been combined for the purpose of calculating net income (loss) per share. 
+ Basic net income (loss) per share is computed by dividing net income (loss) attributable to common stockholders by the weighted-average number of shares of total common stock outstanding. For the three and six months ended June 30, 2026, because the Company was in a loss position, diluted net loss per share is the same as basic net loss per share as the inclusion of the potential common shares outstanding would have been anti-dilutive. 
+ The computation of net income (loss) per share, including the weighted average shares outstanding used in the computation, is as follows (in thousands, except per share amounts): 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Net income (loss) | ( 19,025 ) | 38,315 | ( 79,698 ) | 12,581
+Less: Net income allocated to participating securities | — | ( 24,862 ) | ( 11,314 )
+Net income (loss) attributable to common stockholders, basic and diluted | ( 19,025 ) | 13,453 | ( 79,698 ) | 1,267
+of which:
+Net income (loss) attributable to Class A common stock and Class B common stock - basic | ( 19,025 ) | — | ( 79,698 ) | —
+Net income (loss) attributable to Class A common stock - basic | — | 10,928 | — | 1,019
+Net income (loss) attributable to Class F common stock - basic | — | 2,525 | — | 248
+Net income (loss) attributable to Class A common stock - dilutive | — | 14,036 | — | 1,082
+Net income (loss) attributable to Class F common stock - dilutive | — | 2,322 | — | 185
+Class A common stock and Class B common stock
+Weighted average shares used in computing net loss - basic and dilutive | 116,341 | — | 107,422 | —
+Net loss per share - basic and diluted | ( 0.16 ) | — | ( 0.74 ) | —
+Class A common stock
+ 27 
+ Table of Contents 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Weighted average shares used in computing net income - basic | — | 32,900 | — | 31,209
+Effect of potentially dilutive securities - stock options | — | 16,456 | — | 16,503
+Weighted average shares used in computing net income - dilutive | — | 49,356 | — | 47,712
+Net income per share - basic | — | 0.33 | — | 0.03
+Net income per share - dilutive | — | 0.28 | — | 0.02
+Class F common stock
+Weighted average shares used in computing net income - basic | — | 7,601 | — | 7,601
+Effect of potentially dilutive securities - stock options | — | 563 | — | 563
+Weighted average shares used in computing net income - dilutive | — | 8,164 | — | 8,164
+Net income per share - basic | — | 0.33 | — | 0.03
+Net income per share - dilutive | — | 0.28 | — | 0.02
+ Anti-Dilutive Securities 
+ The following securities were excluded from the computation of diluted net income (loss) per share because the impact of including them would have been anti-dilutive. 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Outstanding stock options | 1,078 | — | 298 | —
+Unvested RSUs | 6 | — | 2 | —
+ESPP | 46 | — | 33 | —
+ Note 18. Joint Venture 
+ On March 4, 2024, the Company entered into a joint venture agreement with a local bank in South Korea and a third-party investor to form BitGo Korea Inc. (“Korea JV”) in the Republic of Korea. This venture aims to further expand BitGo’s global reach. 
+ The Korea JV is consolidated under the voting interest entity consolidation model as it does not meet the variable interest entity characteristics, and BitGo controls the board with 3 out of 5 directors, making all board decisions subject to majority approval. Consequently, interests held by two other investors are recognized as Non-Controlling Interests. 
+ The total consideration the Company invested is KRW 2,501.7 million ($ 1.8 million USD), thereby acquiring a majority interest of 53 % in the Korea JV. As of June 30, 2026 and December 31, 2025, the carrying amount of the assets was $ 2.1 million and $ 2.9 million, respectively, and liabilities of $ 0.1 million and $ 0.1 million, respectively, of the condensed consolidated Korea JV. Total earnings attributable to Non-Controlling Interests for the three and six months ended June 30, 2026 and 2025 were immaterial. The Company’s involvement with the Korea JV does not have a significant effect on the Company's financial condition, results of operations or cash flows. 
+ Note 19. Income Taxes 
+ The tax provision for interim periods is determined using an estimated annual effective tax rate, calculated based on six months actual results and forecasted results for the remainder of the year, adjusted for the tax effects of discrete items recognized during the period. 
+ 28 
+ Table of Contents 
+ The annualized effective tax rates for the three and six months ended June 30, 2026 were 38.0 % and 21.8 %, respectively. The effective rates for the three and six months ended June 30, 2026 differed from the U.S. federal statutory rate of 21.0 % primarily due to the excess tax benefit recognized on settlement of employee share-based awards, research and development credits, and state, local and foreign taxes, partially offset by executive compensation limitations and other non-deductible expenses. 
+ Note 20. Related Party Transactions 
+ For the three and six months ended June 30, 2026, there were $ 69.4 million and $ 436.4 million, respectively, of revenue transactions with executive officers and shareholders, of which $ 68.8 million and $ 433.5 million, respectively, were digital asset sales and $ 0.6 million and $ 2.9 million, respectively, were wallet solutions and staking revenue. Additionally, the Company acquired digital assets from executive officers and shareholders to be resold. For the three and six months ended June 30, 2026, there were $ 100.4 million and $ 464.2 million, respectively, of related party digital assets sales costs. As of June 30, 2026, the Company had no borrowings and $ 0.5 million of accounts receivable outstanding with related parties. 
+ For the three and six months ended June 30, 2025, there were $ 514.7 million and $ 609.2 million, respectively, of revenue transactions with executive officers and shareholders, of which $ 509.5 million and $ 595.9 million, respectively, were digital asset sales and $ 5.3 million and $ 13.2 million, respectively, were wallet solutions and staking revenue. Additionally, the Company acquired digital assets from executive officers and shareholders to be resold. For the three and six months ended June 30, 2025, there were $ 503.8 million and $ 594.8 million, respectively, of related party digital assets sales costs. As of December 31, 2025, the Company had $ 22.9 million in borrowings and $ 0.5 million of accounts receivable outstanding with related parties. 
+ Note 21. Restructuring Charges 
+ In June 2026, the Company approved a reduction in force as part of its efforts to align the Company’s talent with its strategic priorities and to improve operating efficiency. As a result, during the six months ended June 30, 2026, the Company recorded restructuring charges of $ 1.3 million, within restructuring charges in the condensed consolidated statements of operations, all of which was related to severance payments and benefits continuation costs. The restructuring plan is substantially complete and the Company does not expect to incur any further material expenses. As of June 30, 2026, the remaining restructuring liability is expected to be paid out in the second half of fiscal 2026. 
+ The following table shows the total amount incurred and accrued related to restructuring charges (in thousands): 
+Amount
+Accrued restructuring costs as of April 1, 2026 | —
+Restructuring charges incurred during the period | 1,300
+Amounts paid during the period | ( 319 )
+Accrued restructuring costs as of June 30, 2026 | 981
+ 29 
+ Table of Contents 
+ Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations 
+ The following discussion and analysis of our results of operations and financial condition should be read in conjunction with our condensed consolidated financial statements and related notes included elsewhere in this Quarterly Report on Form 10-Q and our audited consolidated financial statements and the related notes disclosed in our Annual Report on Form 10-K for the year ended December 31, 2025. The following discussion contains forward-looking statements that are based on current plans, expectations and beliefs that involve risks and uncertainties. Our actual results may differ materially from those anticipated in these forward-looking statements as a result of various factors, including, but not limited to, those identified below and those discussed in the section titled “Risk Factors” in our Annual Report on Form 10-K for the year ended December 31, 2025 and other sections, including the “Note Regarding Forward-Looking Statements” of this Quarterly Report on Form 10-Q. Our historical results are not necessarily indicative of the results that may be expected for any period in the future. 
+ For purposes of clarity and ease of presentation, numbers presented within this section may not sum precisely to the totals provided. The underlying data used in the calculations, including percentages, is not rounded. 
+ Overview 
+ We aim to be the institutional digital asset infrastructure company of choice, allowing our institutional clients to safely secure, manage, utilize and create digital assets through our holistic technology platform. 
+ Over the last 12 years, we have grown to become a critical partner to digital asset ecosystems, financial institutions, technology platforms, corporations, and governments seeking secure, scalable and compliant access to digital assets. Our mission is to accelerate the transition of the financial system to a digital asset economy. 
+ Our platform combines self-custody wallet, qualified custody, liquidity and prime, and infrastructure-as-a-service solutions, including stablecoin issuance and management. This unified suite of solutions is designed to meet the operational and regulatory demands of our clients. We supported over 2,200 digital assets as of June 30, 2026, and helped pioneer institutional-grade multi-signature (“multi-sig”) security architecture and cold storage solutions. With a client base that includes digital asset ecosystem companies, financial institutions, technology platforms, corporations and government agencies, as well as high net worth individuals (“HNWIs”), our Number of Clients, who were located across over 100 countries, exceeded 5,800 as of June 30, 2026, and we had approximately $65.2 billion in Assets on Platform (“AoP”) for the three months ended June 30, 2026. Our principal markets are the United States and other major financial centers in North America, Europe, and Asia. See “—Key Business Metrics” for a definition of “Number of Clients” and “Assets on Platform.” 
+ We believe we are uniquely positioned at the precipice of growing institutional adoption of digital assets. Today, our team is focused on building out our platform and financial services on top of the foundational technology that our institutional clients depend upon for their business. Our clients range from crypto native companies that use our self-custody wallet technology to traditional financial services firms that leverage our licensed custody, staking and trading capabilities within their own products and services. 
+ We began as a specialized custodian, integrating directly with advanced blockchain technologies, eliminating the need for institutional and retail clients to compromise security for market access. We have continued to innovate in the space having been the first to commercially introduce self-custody wallets. Over time, we have added the BitGo Trust Companies, allowing us to become one of the first custodians purpose-built for digital assets. In 2020, we expanded our platform’s capabilities through the introduction of BitGo Prime which introduced liquidity solutions on top of our custody and wallet layers. Our platform continues to grow. For the three months ended June 30, 2026 we had approximately $65.2 billion in AoP, including $11.9 billion in Assets Staked for the three months ended June 30, 2026. See “—Key Business Metrics” for definitions of “Assets on Platform” and “Assets Staked.” 
+ Financial and Operational Highlights 
+ Certain of our financial and operating results are summarized below: 
+ • The fair value of AoP decreased from $90.3 billion for the three months ended June 30, 2025 to $65.2 billion for the three months ended June 30, 2026. 
+ 30 
+ Table of Contents 
+ • Number of Clients increased from 4,621 as of June 30, 2025 to 5,833 as of June 30, 2026. 
+ • The fair value of Assets Staked decreased from $25.6 billion for the three months ended June 30, 2025 to $11.9 billion for the three months ended June 30, 2026. 
+ • Digital asset sales revenue increased from $2,278.2 million for the three months ended June 30, 2025 to $4,197.5 million for the three months ended June 30, 2026. 
+ • Total revenue increased from $2,410.5 million for the three months ended June 30, 2025 to $4,329.4 million for the three months ended June 30, 2026. 
+ • Net income was $38.3 million for the three months ended June 30, 2025, compared to net loss of $19.0 million for the three months ended June 30, 2026. 
+ . 
+ • Adjusted EBITDA decreased from 3.0 million for the three months ended June 30, 2025 to an Adjusted EBITDA loss of $(4.2) million for the three months ended June 30, 2026. 
+ See “—Non-GAAP Financial Measures” for a definition of Adjusted EBITDA and related reconciliation to net income, the most directly comparable GAAP (as defined below) measure, and “—Key Business Metrics” for definitions of our key operational metrics. 
+ Key Business Metrics 
+ In addition to the measures presented in our consolidated financial statements, we use the following key business metrics to assess our operations, track performance, identify trends impacting our business and inform our strategic decision-making. 
+ Assets on Platform 
+ We define AoP as the median of the daily balances of total assets on our platform over the measured period, where daily balances represent the fair value of both fiat currency and digital assets, whether custodied or non-custodied, held by clients in their accounts on our platform at the end of each day, calculated based on the market price of the applicable assets at the end of such day. We believe that presenting a median of the daily balances of total assets on our platform over a measured period is a more accurate representation than presenting the sum of balances of total assets on our platform at the end of such measured period due, in part, to the volatility of the prices of digital assets, which may change significantly in any given day. AoP demonstrates the scale of balances held across our suite of products and services, as well as the underlying performance of the digital asset economy and corresponding trends in prices of digital assets. 
+ We view AoP as a key measure of the fundamental health, direction and monetization opportunity of our platform. AoP also has a correlation with our total revenues as we earn revenues from the suite of products and services we provide in connection with the balances held by our clients on our platform. We have also found that increasing AoP tends to result in more client services being requested, since our institutional clients often go on to seek out other value added services that we offer, such as trading and staking. 
+ Our AoP has fluctuated over time due, in part, to fluctuations in the digital asset economy and corresponding fluctuations in the prices of digital assets. For the three months ended June 30, 2026, our AoP was $65.2 billion, representing a decrease of 27.8% from the three months ended June 30, 2025, primarily driven by declines in digital asset prices. 
+ AoP is influenced by multiple factors, including certain market-dependent factors, and thus can fluctuate based not only on the quantity of assets held on our platform, but also the price of such assets. For example, over the period from the three months ended June 30, 2025 to three months ended June 30, 2026, the digital assets market capitalization fell 38% from a high of $3.4 trillion to $2.1 trillion. In comparison, AoP for the three months ended June 30, 2025 and 2026 were $90.3 billion and $65.2 billion, respectively, representing a 27.8% decrease. 
+Three Months Ended June 30,
+2025 | 2026
+(in millions)
+Assets on Platform | 90,274 | 65,172
+ 31 
+ Table of Contents 
+ The value of a majority of our AoP has been, and continues to be, concentrated in a few digital assets held by our clients, including Bitcoin, Ethereum, Sui, XRP, and Solana, which constituted 51.5%, 9.4%, 6.3%, 4.7%, and 3.9%, of our AoP as of June 30, 2026, respectively. In addition to digital assets, our AoP includes a negligible amount of fiat currencies. In line with the historical market cap dominance of Bitcoin, Bitcoin has consistently been the largest single digital asset in our AoP. Our mix of digital assets does, however, fluctuate depending on the price performance of individual digital assets as well as the onboarding and offboarding of client accounts. 
+ Number of Clients 
+ We define Number of Clients as the cumulative number as of the end of the measured period of (i) institutional clients that have (A) an executed service agreement with us that has not been terminated as of the end of such measured period and (B) have been onboarded to at least one of our core solutions, ( i.e ., custody, wallet platform or trading) and (ii) HNWIs, which we define as any individual with a net worth of $1 million or more, who (A) have an executed service agreement with us that has not been terminated as of the end of such measured period and (B) have been onboarded to at least one of our core solutions ( i.e ., custody, wallet platform or trading). We frequently observe that our clients, who may initially begin by using one of our products or service offerings, expand into multiple products and/or services across our platform as we deepen our relationship with them. Therefore, we view Number of Clients as a key indicator of our market penetration, client adoption and platform monetization potential, and Number of Clients informs our client acquisition strategy. 
+As of June 30,
+2025 | 2026
+Number of Clients | 4,621 | 5,833
+ While our Number of Clients was less than 100 prior to January 1, 2017, as of June 30, 2026, our Number of Clients exceeded 5,800. Our Number of Clients has grown at a compound annual growth rate (“CAGR”) of 84.0% over the past two years, through June 30, 2026, which has been predominantly driven by organic growth and the resulting increased utilization of our services rather than through acquisitions. 
+ Our Number of Clients is calculated on a cumulative basis commencing in 2013. Therefore, although our Number of Clients metric (i) indicates the number of institutional clients and HNWIs that have demonstrated an interest in our platform or a direct intent to transact with digital assets and (ii) removes institutional clients and HNWIs with terminated contracts as of the end of such measured period, it does not measure the type, frequency or duration of such clients’ or HNWIs interaction with our platform. Further, Number of Clients may also (i) include clients that have not interacted with our platform at all for extended periods of time and (ii) overstate the number of unique institutional clients who have entered into service agreements with us and been onboarded, since one client may enter into multiple service agreements (either for itself or through its affiliates). Nonetheless, we view Number of Clients as an indication of our scale and a representation of a potential revenue opportunity for us given these users have demonstrated an interest in our platform or intent to potentially perform revenue generating activities within our platform by executing service agreements with us. 
+ Our Number of Clients is influenced by several factors, including broader digital asset market conditions, the highly speculative and volatile nature of digital assets, level of market adoption of digital assets, level of our investment in sales and marketing efforts, our ability to effectively compete with other digital asset market participants and the quality of our services and products. 
+ As we continue to expand our platform, we intend to deepen our relationships with our existing clients to increase their adoption of additional products and services across our platform, and to onboard new institutional clients on our platform in line with increased adoption of digital assets and new use cases on top of blockchain. We believe that this strategy, combined with increasing regulatory clarity and institutional demand for secure custody and capital-efficient trading solutions, positions us to capture a growing share of the expanding market. Just like traditional banking services, we have found that clients tend to prefer dealing with an entity registered and regulated in their local domain. To that end, we are constantly exploring ways in which we can responsibly expand our worldwide presence. To support these initiatives, we opened offices in Singapore and Dubai in 2024. We believe that tracking the Number of Clients on our platform assists us in executing effectively on the foregoing growth strategy. 
+ Number of Users 
+ 32 
+ Table of Contents 
+ We define Number of Users as the cumulative number as of the end of the measured period of (i) individuals authorized to access the account of any of our institutional clients on such institutional client’s behalf, which institutional client (A) has an executed service agreement with us that has not been terminated as of the end of such measured period and (B) has been onboarded to at least one of our core solutions ( i.e ., custody, wallet platform or trading), (ii) HNWIs who (A) have an executed service agreement with us that has not been terminated as of the end of such measured period and (B) have been onboarded to at least one of our core solutions ( i.e ., custody, wallet platform or trading) and (iii) retail users that have registered an account with BitGo, in each case who have conducted at least one of the following activities at any point since onboarding our platform (through the applicable methods described above) and prior to the end of such measured period. We believe the following activities indicate meaningful interactions with our platform. 
+ • An API Call, which is a programmatic interaction with our platform using our application program interfaces (“APIs”) (e.g., initiating a transaction, querying wallet balance, or generating an address). Passive or system-generated pings (such as uptime monitoring) are excluded from our definition of “API Call.” 
+ • A UI Session, which is a web-based login session where a user accesses our wallet user interface. A session must include a successful login and at least one interaction (e.g., viewing wallet balances, initiating a transfer, or downloading reports) to be counted. 
+ • An Event in Audit Logs, which includes user-initiated actions that are recorded in our audit logs, such as transaction approvals, policy changes or wallet configuration updates. These events are meaningful indicators of platform usage and exclude purely background or system-automated entries. 
+ We view Number of Users as a key indicator of our scale as it portrays not only the number of institutional clients and HNWIs who have demonstrated an interest in our platform or direct intent to transact with digital assets (which we track through the Number of Clients metric), but also the number of retail users who have conducted at least one meaningful usage of, and meaningful activity with, our platform. Although we generally do not generate incremental revenue solely from an institutional client adding any one additional authorized user, we have observed that the number of users authorized by our institutional clients positively correlates with overall client activity, engagement with our solutions and revenue generated from such client. For example, with respect to institutional clients, there are typically many individuals who are authorized to interact with our platform through a single institutional client account. As of June 30, 2026, the average number of authorized individuals using our platform through a single institutional client was 5.2. By assessing the Number of Users, together with the Number of Clients, we can assess our total platform usage as well as the rate of the general market adoption of digital assets. In addition, because we generate revenue from certain activities by retail users (e.g., when retail users engage in transactional activities on our platform), the “Number of Users” metric provides meaningful insight into the revenue-generating retail activity on our platform. 
+As of June 30,
+2025 | 2026
+Number of Users | 1,148,542 | 1,218,863
+ However, because our Number of Users is calculated on a cumulative basis commencing in 2013, the Number of Users metric could include clients who have only had one meaningful interaction since onboarding onto the platform. Therefore, Number of Users does not measure the frequency or duration of such clients’ interaction with our platform and may also include clients that have not interacted with our platform at all for extended periods of time. In addition, Number of Users may also overstate the number of unique individuals authorized to access accounts of institutional clients who have entered into service agreements with us and been onboarded, since one client may enter into multiple service agreements (either themselves or through their affiliates) and one individual could be authorized to access such multiple accounts. Our Number of Users metric also includes individuals that may have not engaged in any economic activity (for example, where the individual has been authorized by an institutional client to access an account for operational purposes). A substantial majority of our Number of Users is comprised of the individuals who are authorized to access the account of any of our institutional clients on such institutional clients’ behalf and HNWIs, particularly since the number of our retail users is currently relatively low, albeit growing in number. Accordingly, our Number of Users is largely an extension of our Number of Clients. Therefore, while our Number of Users is calculated on a cumulative basis since 2013, the regular interaction of a majority of our institutional clients and HNWIs with our platform as described under “—Number of Clients” can largely be attributed to our Number of Users. 
+ 33 
+ Table of Contents 
+ Our Number of Users is influenced by several factors, including broader digital asset market conditions, level of market adoption of digital assets, level of our investment in sales and marketing efforts, our ability to effectively compete with other digital asset market participants and the quality of our services and products. 
+ Assets Staked 
+ We define Assets Staked as the median of the daily balances of total client assets actively delegated to proof-of-stake (“PoS”) and restaking protocols through our staking solutions over the measured period. The daily balances of total client assets represent the fair value of digital assets staked by our clients on our platform at the end of each day, calculated by the market prices of the applicable assets at the end of such day. Assets Staked is a subset of our AoP and, similar to AoP, we believe that presenting a median of the daily balances of total staked assets on our platform over a measured period is a more accurate representation than presenting the sum of balances of total staked assets on our platform at the end of such measured period due, in part, to the volatility of the prices of digital assets, which may change significantly in any given day. We believe Assets Staked serves as a key indicator of our clients’ engagement with our staking solutions and reflects the scale of assets entrusted to our secure and regulated platform. In addition, Assets Staked has a direct impact on our financial results in that we earn staking revenue by participating in proof-of-stake blockchain networks, as well as rewards in the form of the networks’ digital assets by providing validation and block-creation services, and the more Assets Staked, the more staking revenue and rewards we earn. 
+Three Months Ended June 30,
+2025 | 2026
+(in millions)
+Assets Staked | 25,592 | 11,873
+ Similar to AoP, Assets Staked is influenced by multiple factors, including certain market-dependent factors, and thus can fluctuate based not only on the quantity of assets staked on our platform, but also the price of such assets. In addition, similar to AoP, the value of a majority of our Assets Staked has been, and continues to be, concentrated in a few digital assets held by our clients, namely Sui, Ethereum and Solana, which constituted approximately 33.3%, 33.5%, and 17.0%, of our Assets Staked as of June 30, 2026, respectively. 
+ Non-GAAP Financial Measures 
+ We collect and analyze operating and financial data to evaluate the health of our business, allocate our resources and assess our performance. In addition to total revenue, net income (loss) and net income (loss) margin, we utilize the non–GAAP calculation of Adjusted EBITDA. This non-GAAP measure is presented for supplemental informational purposes only, has limitations as an analytical tool, and should not be considered in isolation or as a substitute for financial information presented in accordance with accounting principles generally accepted in the United States (“GAAP”). In addition, other companies, including companies in our industry, may calculate Adjusted EBITDA differently or may use other measures to evaluate their performance, all of which could reduce the usefulness of our disclosure of such non–GAAP measure as a tool for comparison. Investors are encouraged to review the related GAAP financial measure and the reconciliation of net income (loss), the most directly comparable GAAP measure, to Adjusted EBITDA, and not to rely on any single financial measure to evaluate our business. 
+ Adjusted EBITDA 
+ We define Adjusted EBITDA as net income (loss), excluding (i) provision for income taxes, (ii) depreciation and amortization, (iii) stock-based compensation expense, (iv) employer payroll taxes on employee stock transactions, (v) net changes in unrealized appreciation (loss) on digital assets, (vi) certain non-recurring charges (which are specified in detail below), and (vii) restructuring charges. 
+ The above items are excluded from our Adjusted EBITDA measure because they are non-cash in nature, their amount and timing are volatile and influenced by digital asset prices, they are unpredictable, or they are not driven by the core results of operations. In any case, including such items would reduce the comparability of our financial performance across periods and with industry peers. We believe that Adjusted EBITDA provides useful information to investors and others in understanding and evaluating our results of operations, as well as providing a useful measure for period-to-period comparisons of our business performance in a consistent manner. Moreover, Adjusted EBITDA is a key measure used by our management internally for financial, risk management and operational decision-making. 
+ 34 
+ Table of Contents 
+ The following table provides a reconciliation of net loss, the most directly comparable GAAP measure, to Adjusted EBITDA for the periods presented (in thousands): 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Net income (loss) | (19,025) | 38,315 | (79,698) | 12,581
+Provision for (benefit from) income taxes | (11,677) | 15,132 | (22,644) | 7,871
+Depreciation and amortization expense | 2,121 | 875 | 3,848 | 1,741
+Stock-based compensation expense | 3,613 | 848 | 14,861 | 1,798
+Employer payroll taxes on employee stock transactions | 104 | — | 391 | —
+Net change in unrealized appreciation (loss) on digital assets (1) | 18,842 | (55,846) | 72,565 | (22,034)
+Legal, IPO-related and other costs (2) | 559 | 3,639 | 3,530 | 4,907
+Restructuring charges | 1,300 | — | 1,300 | —
+Adjusted EBITDA (3) | (4,163) | 2,963 | (5,847) | 6,864
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+Net income (loss) margin | (0.4)% | 1.6% | (1.0)% | 0.3%
+ _______________ 
+ (1) Fluctuating and volatile digital asset prices primarily drive net change in unrealized appreciation (loss) on digital assets, which we exclude from the definition of Adjusted EBITDA because (i) such net change is not driven by the core results of the Company’s operations; (ii) removing such net change illustrates the way in which the Company’s products and services, instead of fluctuating and volatile digital asset prices, drive the sustainability of the Company’s operations, margins and growth; and (iii) digital assets on our balance sheet are considered long-term holdings and our investing activities in digital assets are not part of our revenue generating activities, which are based on transactions on our platform, staking revenue, subscriptions and services revenue and revenue generated from our Stablecoin-as-a-Service solution. Accordingly, net change in unrealized appreciation/loss on digital assets is materially all related to proprietary digital assets held for investment. 
+ (2) Legal, IPO-related and other costs include (i) litigation costs of $3.2 million and $4.5 million in the three and six months ended June 30, 2025, respectively, and nil and $0.9 million in the three and six months ended June 30, 2026, respectively, associated with our ongoing suit against Galaxy alleging that Galaxy breached and wrongfully repudiated the terms of the Merger Agreement, by terminating Galaxy’s proposed $1.2 billion acquisition of the Company, (ii) legal settlement of nil and $0.1 million in three and six months ended June 30, 2026, respectively (iii) one-time bonus payment of nil and $0.5 million made in the three and six months ended June 30, 2026, in connection with the IPO, (iv) IPO-related expense borne by us of $0.4 million in the three and six months ended June 30, 2025, and nil and $0.3 million in the three and six months ended June 30, 2026, respectively, (v) legal and professional fees borne by us of $0.6 million and $1.8 million in the three and six months ended June 30, 2026, respectively, related to entity wind-down costs and the evaluation of strategic opportunities. See the section titled “ Business—Legal Proceedings ” in our Annual Report on Form 10-K for the year ended December 31, 2025 and Note 14—Commitments and Contingencies in Part I, Item 1 of this Quarterly Report on Form 10-Q for more information relating to our ongoing litigation with Galaxy. 
+ (3) May not foot due to rounding. 
+ Key Factors Impacting Our Performance 
+ Price and Volatility of Digital Assets 
+ Our core business revolves around providing custody, security, and trading and infrastructure solutions for a range of digital assets. Accordingly, our business correlates to trends in the broader digital assets market, including client sentiment and macroeconomic ongoings. 
+ These factors largely impact price and volatility of digital assets, which underlie the foundation of our business model. Significant price increases or declines in digital assets can substantially influence the value of the assets on our platform, directly impacting our revenue due to our percentage-based fee model. Similarly, high volatility in the digital assets market continues to impact our operations, generating user and investor uncertainty that may potentially lower transaction volumes on our platform and revenue outcomes. In addition, while we support a wide range of digital assets, the digital assets, whether custodied or non-custodied, held by our clients in their accounts on our platform have historically been, and continue to be, concentrated in a small number of distinct digital assets (including Bitcoin, Ethereum, Sui, Solana and XRP). Therefore, declines in demand for such digital assets or in the prices of such digital assets could negatively impact our operating performance and financial condition. 
+ 35 
+ Table of Contents 
+ While we have experienced fluctuations in our business related to these pricing and volatility uncertainties, we believe that the fundamentals of our business continue to be strong and resilient over time, which has resulted in trading activity on our platform progressively increasing since our inception. 
+ Adoption of Digital Assets 
+ Our origin story and go-forward mission have closely tracked the development of the digital asset economy. Increased adoption of digital assets and new use cases on top of blockchain in the past decade have translated to higher demand for secure custody, trading infrastructure and other related solutions that we provide. 
+ Our business has expanded rapidly over time, and our conviction in the strength of the digital assets market is unwavering. The digital assets market has grown over 41% in size over the last five years to reach a total market capitalization of approximately $2.1 trillion as of June 30, 2026, with use cases continuing to expand. We believe that our unified suite of solutions: self-custody wallet, qualified custody, liquidity and prime, and infrastructure-as-a-service, will enable us to offer a variety of products and services to a growing total addressable market. In addition, we support over 2,200 digital assets as of June 30, 2026 and have helped pioneer institutional-grade multi-sig security architecture and cold storage solutions, which we believe provide a strong foundation for success. 
+ Regulation in United States and International Markets 
+ Our business is subject to various regulations in both the United States and international markets. In addition, the rules and regulations surrounding digital assets continue to evolve and the international regulatory landscape remains fragmented. As a result, we monitor regulatory changes closely and we expect to continue to invest significant resources in our legal, compliance, product and engineering teams to ensure our business practices comply with, and plan and prepare for, current and future regulations. 
+ Client Acquisition, Retention and Expansion 
+ Our business is significantly impacted by our ability to acquire, retain and expand our client base, which presents several risks for us. Expanding our client base and increasing the services used by existing clients, are essential for our revenue growth as our total revenues are driven by the use of our services and products by our clients. Successfully managing user acquisition, retention and expansion strategies is crucial for our sustained growth and market leadership in the digital asset industry. 
+ We have an ambitious goal to onboard a significant percentage of the institutional market, and believe that this is an achievable target even as institutional digital asset stakeholders proliferate with increasing digital asset adoption. Although the customer acquisition cost for institutional clients is generally higher than retail clients, we believe there is significantly more upside potential in deepening our relationship with institutional clients and in turn, offering additional solutions to them once they are within our ecosystem. 
+ Types and Number of Assets that We Provide Services for on Platform 
+ Our business is significantly influenced by the types and number of digital assets we custody, presenting several associated risks. Not only does AoP correlate with our total revenues, but the range of digital assets supported also directly impacts our market appeal and potential client base. If we support fewer digital assets than our competitors, we risk losing clients to platforms that offer broader custody options. Conversely, supporting obscure or illiquid assets could expose us to increased operational and regulatory complexities, without a commensurate increase in revenue. 
+ Adding new digital assets to our custody platform necessitates significant investment in research, development and security protocols. Failure to adequately protect these digital assets could result in breaches and loss of client assets, leading to financial loss and reputational damage. Furthermore, regulatory classifications of different digital assets are not uniform across jurisdictions. Uncertainty surrounding the legal status of certain assets could also limit our ability to custody them in specific regions, impacting our global reach. 
+ Successfully navigating the challenges and unknowns related to the breadth and nature of custodied digital assets is crucial for our long term viability and competitive positioning, and we believe that we have a demonstrated track record of success in this regard. We were one of the first to commercialize the multi-sig wallet, one of the first to introduce a trust structure to keep our clients’ assets safe from theft and loss, and one of the first to introduce prime brokerage services to allow our clients to better access the broader digital asset market. In addition, when the broader digital asset industry undergoes downturns, we are 
+ 36 
+ Table of Contents 
+ often chosen as the distributor of assets in bankruptcies due to our strong reputation and track record of “getting it right.” We played a key role in the Mt. Gox bankruptcy in 2014 by facilitating the distribution of digital assets during its bankruptcy process, and in 2024, we were selected by FTX Trading Ltd. (“FTX”) and its affiliated debtors to assist in distributing recoveries to retail and institutional clients in supported jurisdictions, per the U.S. bankruptcy court-approved FTX Chapter 11 Plan of Reorganization. 
+ Competitive Landscape 
+ Our success as a business is dependent on our ability to win market share against our competitors and to keep pace in an ever-evolving competitive landscape. The digital assets services industry is increasingly crowded and also seeing increasing competition from new entrants, along with ongoing risk from traditional finance institutions that are increasingly entering the digital assets markets. We believe we must continually invest in research and development to enhance our service offerings, maintain a competitive advantage, and reliably differentiate ourselves in the market. While we are confident in our ability to continue to lead across custody, staking, and our broad range of products and services, our ability to do so is subject to certain limitations and risks. 
+ Critical Accounting Policies and Estimates 
+ Our condensed consolidated financial statements and the related notes thereto included elsewhere in this Quarterly Report on Form 10-Q are prepared in accordance with GAAP. The preparation of condensed consolidated financial statements in accordance with GAAP requires us to make certain estimates, judgments, and assumptions that affect the reported amounts of assets and liabilities and the related disclosures at the date of the financial statements, as well as the reported amounts of revenue and expenses during the period presented. We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances. Actual results could differ significantly from our estimates. To the extent that there are differences between our estimates and actual results, our future financial statement presentation, financial condition, results of operations, and cash flows could be affected. 
+ There have been no material changes to our critical accounting policies and estimates as described in our Annual Report on Form 10-K for the year ended December 31, 2025, filed with the SEC on March 26, 2026, other than as described in Note 2 — “Summary of Significant Accounting Policies” in our condensed consolidated financial statements in this Quarterly Report on Form 10-Q. 
+ Key Components of Results of Operations 
+ Revenue 
+ Digital Assets Sales Revenue 
+ Digital assets sales revenue consists of (i) the gross sales proceeds from the sales of digital intangible assets on our platform, expressed in U.S. dollar equivalent value, (ii) the net gain or loss, if any, recognized in connection with the purchase and sales of certain stablecoins that are classified as financial assets, and (iii) the net gain or loss recognized on derivative contracts under ASC 815. We present digital assets sales revenue on a gross basis (other than the portion of digital assets sales revenue recognized in connection with sales on our platform of certain stablecoins that are classified as financial assets, which is recognized on a net basis). See the section titled “—Critical Accounting Policies and Estimates” for further information on how we recognize and present digital assets sales revenue, including gross revenue reporting. 
+ Digital assets sales revenue is primarily driven by overall market dynamics, such as digital asset pricing, volatility and macroeconomic trends. 
+ Staking Revenue 
+ Staking revenue consists of the total rewards earned in connection with our staking solutions. Through our staking solutions, our clients may stake their digital intangible assets by delegating such assets to us or a third-party staking validator selected by us. The decision to use a third-party validator is based primarily on providing our clients with the ability to leverage a variety of providers or where we do not yet provide internal support for a newly launched network. We or such third-party staking validator participate in PoS blockchain networks on behalf of our clients, and earn rewards in the form of the networks’ native tokens in exchange for providing validation or block creation services to such networks. We present staking revenue on a 
+ 37 
+ Table of Contents 
+ gross basis. See the section titled “—Critical Accounting Policies and Estimates” for further information on how we recognize and present staking revenue, including gross revenue reporting. 
+ Subscriptions and Services Revenue 
+ Subscriptions and services revenue consists primarily of providing digital intangible asset wallet solutions to institutional and retail customers in exchange for certain up-front, plus monthly fees for providing access to our platform for multi-sig wallets that provide security and custody for digital assets. Subscriptions and services revenue is recognized monthly based on usage each month, with any onboarding fees recognized ratably over the contract duration, commencing when the service is made available to the customer (generally upon onboarding). 
+ Subscriptions and services revenue also encompasses our Crypto-as-a-Service offering, which allows clients to issue and manage the issuance of their own digital assets. Subscriptions and services revenue also consists of interest income from loan receivables and fee income from digital intangible assets loan receivables. Interest income generated from our loan receivables is accrued when interest payments become contractually due. Fee income from digital intangible asset loans includes revenue generated from lending digital intangible assets. In some instances, we may charge a fee for loan origination. 
+ In addition, subscriptions and services revenue also includes fees related to our Wrapped Bitcoin (“WBTC”) solution. Fee income is recognized when the performance obligation of issuing a WBTC, referred to as a mint event, occurs. Fee income is also recognized upon the redemption of the WBTC, referred to as a burn event. 
+ Stablecoin-as-a-Service Revenue 
+ Revenue from our Stablecoin-as-a-Service offering, which we launched in 2025, allows institutional clients to issue U.S. dollar-backed stablecoins using our regulated trust infrastructure. We earn implementation and ongoing service fees for the issuance, reserve management, and transaction processing of white-labeled stablecoins. These fees can be paid based on the interest earned on the reserve management as defined in the fee schedule of the agreement. 
+ Interest Income 
+ Interest income consists primarily of interest earned on the portion of our cash and cash equivalents in our treasury that is held in money market accounts and money market funds. 
+ Expenses 
+ Digital Assets Sales Costs 
+ Digital assets sales costs represent the cost basis of the digital intangible assets transferred corresponding to our digital assets sales revenues. 
+ Staking Fees 
+ Staking fees consist primarily of rewards earned by, and distributed to, customers utilizing our validation infrastructure corresponding to our staking revenues. 
+ Stablecoin sponsor fees 
+ Stablecoin sponsor fees primarily consist of interest income earned on fiat reserves owed to institutional clients that issue U.S. dollar-backed stablecoins through our Stablecoin-as-a-Service solution. 
+ Interest Expense 
+ Interest expense includes charges related to servicing our borrowing obligations to support our lending product. 
+ Compensation and Benefits 
+ Compensation and benefits expenses consist primarily of employees’ salaries, bonuses, travel, amortization of equity awards, and other items, such as benefits. 
+ 38 
+ Table of Contents 
+ General and Administrative Expenses 
+ General and administrative expenses consist of professional fees, equipment and technology, occupancy, insurance, marketing, sales-related and other expenses. 
+ Depreciation and Amortization 
+ Depreciation and amortization expenses consist of depreciation of equipment and software and amortization of acquired intangible assets. 
+ Restructuring Charges 
+ Restructuring charges primarily consist of employee severance and benefits continuation associated with the restructuring plan that we initiated in June 2026. Refer to Note 21 — “Restructuring Charges” of our condensed consolidated financial statements included elsewhere in this Quarterly Report on Form 10-Q for additional information. 
+ Other Income 
+ Net Change in Unrealized Appreciation (loss) on Digital Assets 
+ Net change in unrealized appreciation (loss) on digital assets reflects the remeasurement of our owned and controlled digital assets to fair value at each financial reporting date. 
+ Gain (loss) on Disposal of Digital Assets 
+ Gain (loss) on disposal of digital assets represents the net proceeds from the sale of digital assets and assets associated with an asset purchase agreement. 
+ Provision for (benefit from) Income Taxes 
+ Provision for (benefit from) income taxes includes the provision for (benefit from) income taxes in the United States and other jurisdictions. As we expand our international business activities, any changes in a jurisdiction’s taxation of such activities may increase our overall provision for income taxes in the future. 
+ 39 
+ Table of Contents 
+ Results of Operations 
+ The following table summarizes our results of operations for the periods presented and as a percentage of our total revenue for those periods. The period-to-period comparison of financial results is not necessarily indicative of financial results to be achieved in future periods. 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+(in thousands)
+Revenue
+Total revenue | 4,329,395 | 2,410,462 | 8,102,968 | 4,185,126
+Expenses
+Digital assets sales cost | 4,190,435 | 2,273,948 | 7,838,280 | 3,876,124
+Staking fees | 60,781 | 81,810 | 102,224 | 209,532
+Stablecoin sponsor fees | 35,710 | 15,249 | 71,047 | 15,249
+Interest expense | 5,845 | 1,252 | 11,863 | 2,937
+Compensation and benefits | 29,528 | 23,511 | 70,330 | 47,828
+General and administrative expenses | 21,086 | 17,476 | 41,391 | 33,025
+Depreciation and amortization | 2,121 | 875 | 3,848 | 1,741
+Restructuring charges | 1,300 | — | 1,300 | —
+Total expenses | 4,346,806 | 2,414,121 | 8,140,283 | 4,186,436
+Loss from operations | (17,411) | (3,659) | (37,315) | (1,310)
+Other income (loss)
+Net change in unrealized appreciation (loss) on digital assets | (18,842) | 55,846 | (72,565) | 22,034
+Gain (loss) on disposal of digital assets | 5,551 | 1,260 | 7,538 | (272)
+Total other income (loss) | (13,291) | 57,106 | (65,027) | 21,762
+Income (loss) before income taxes | (30,702) | 53,447 | (102,342) | 20,452
+Tax provision for (benefit from) income taxes | (11,677) | 15,132 | (22,644) | 7,871
+Net income (loss) | (19,025) | 38,315 | (79,698) | 12,581
+ 40 
+ Table of Contents 
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+(as percentage of revenue)
+Revenue
+Total revenue | 100.0% | 100.0% | 100.0% | 100.0%
+Expenses
+Digital assets sales cost | 96.8 | 94.3 | 96.7 | 92.6
+Staking fees | 1.4 | 3.4 | 1.3 | 5.0
+Stablecoin sponsor fees | 0.8 | 0.6 | 0.9 | 0.4
+Interest expense | 0.1 | 0.1 | 0.1 | 0.1
+Compensation and benefits | 0.7 | 1.0 | 0.9 | 1.1
+General and administrative expenses | 0.5 | 0.7 | 0.5 | 0.8
+Depreciation and amortization | — | — | — | —
+Restructuring charges | — | — | — | —
+Total expenses (1) | 100.4 | 100.2 | 100.4 | 100.0
+Loss from operations | (0.4) | (0.2) | (0.5) | —
+Other income (loss)
+Net change in unrealized appreciation (loss) on digital assets | (0.4) | 2.3 | (0.9) | 0.5
+Gain (loss) on disposal of digital assets | 0.1 | 0.1 | 0.1 | —
+Total other income (loss) | (0.3) | 2.4 | (0.8) | 0.5
+Income (loss) before income taxes | (0.7) | 2.2 | (1.3) | 0.5
+Tax provision for (benefit from) income taxes | (0.3) | 0.6 | (0.3) | 0.2
+Net income (loss) | (0.4)% | 1.6% | (1.0)% | 0.3%
+ _______________ 
+ (1) May not foot due to rounding. 
+ Comparison of the three months ended June 30, 2026 and June 30, 2025 
+ Total Revenue 
+Three Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Digital assets sales | 4,197,517 | 2,278,163 | 1,919,354 | 84.3%
+Staking | 64,684 | 90,895 | (26,211) | (28.8)%
+Subscriptions and services | 27,548 | 25,395 | 2,153 | 8.5%
+Stablecoin-as-a-Service | 38,824 | 15,655 | 23,169 | 148.0%
+Interest income | 822 | 354 | 468 | 132.2%
+Total revenue | 4,329,395 | 2,410,462 | 1,918,933 | 79.6%
+ Digital assets sales revenue 
+ Digital asset sales revenue increased by $1,919.4 million, or 84.3%, for the three months ended June 30, 2026 compared to the same period in the prior year. 
+ The increase was primarily attributable to higher digital asset trading activity resulting from the expansion of trading pairs on the platform, increased activity from existing clients, and an expanding client base. We present digital assets sales revenue on a gross basis (other than the portion of digital assets sales revenue recognized in connection with sales and purchases on our platform of certain stablecoins that are classified as financial assets, which is recognized on a net basis) because of our role as principal for accounting purposes in sales of digital assets, as we control the digital assets prior to transfer to the customer, are 
+ 41 
+ Table of Contents 
+ primarily responsible for fulfilling the transaction, and have discretion in pricing, including the ability to incorporate spreads relative to market prices. As a result, the significant volume of digital asset transactions on our platform results in significant digital assets sales revenue with corresponding digital assets sales costs. For the three months ended June 30, 2026, digital assets sales costs increased by $1,916.5 million, or 84.3%, over the corresponding period in the prior year. 
+ Staking revenue 
+ Staking revenue decreased by $26.2 million, or 28.8%, for the three months ended June 30, 2026 compared to the same period in the prior year, primarily driven by lower staked digital asset volume on our platform and a decline in digital asset prices. We present staking revenue on a gross basis because of our role as principal for accounting purposes in connection with our clients’ staking activities. As a result, the significant volume of staking activities on our platform results in staking revenue with corresponding staking fees. For the three months ended June 30, 2026, staking fees decreased by $21.0 million, or 25.7%, over the corresponding period in the prior year. 
+ Subscriptions and services revenue 
+ Subscriptions and services revenue increased by $2.2 million, or 8.5%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily driven by an increase in our Number of Clients and higher lending activity. 
+ Stablecoin-as-a-Service revenue 
+ Stablecoin-as-a-Service revenue increased by $23.2 million, for the three months ended June 30, 2026 compared to $15.7 million in the same period in the prior year. The increase results from the launch of this new service in March 2025. We earn interest on stablecoin reserve assets and recognize that revenue on a gross basis. We recognize stablecoin sponsor fees, which largely offset the interest revenue. For the three months ended June 30, 2026, stablecoin sponsor fees increased by $20.5 million over the corresponding period in the prior year. 
+ Interest income 
+ Interest income increased by $0.5 million, or 132.2%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily attributable to an increase in fiat treasury investments. 
+ Expenses 
+Three Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Digital assets sales cost | 4,190,435 | 2,273,948 | 1,916,487 | 84.3%
+Staking fees | 60,781 | 81,810 | (21,029) | (25.7)%
+Stablecoin sponsor fees | 35,710 | 15,249 | 20,461 | 134.2%
+Interest expense | 5,845 | 1,252 | 4,593 | 366.9%
+Compensation and benefits | 29,528 | 23,511 | 6,017 | 25.6%
+General and administrative expenses | 21,086 | 17,476 | 3,610 | 20.7%
+Depreciation and amortization | 2,121 | 875 | 1,246 | 142.4%
+Restructuring charges | 1,300 | — | 1,300 | 100.0%
+Total expenses | 4,346,806 | 2,414,121 | 1,932,685 | 80.1%
+ Digital Assets Sales Costs 
+ Digital assets sales costs increased by $1,916.5 million, or 84.3%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily attributable to higher transaction volumes driven by the expansion of trading pairs on the platform, increased activity from existing clients, and growth in the overall client base. 
+ Staking Fees 
+ 42 
+ Table of Contents 
+ Staking fees decreased by $21.0 million, or 25.7%, for the three months ended June 30, 2026 compared to the same period in the prior year. The decrease was primarily driven by lower staked digital asset volume on our platform and a decline in digital asset prices. 
+ Stablecoin Sponsor Fees 
+ Stablecoin sponsor fees increased by $20.5 million for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was driven by the launch of this new service in March 2025. 
+ Interest Expense 
+ Interest expense increased by $4.6 million, or 366.9%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase in interest expense was primarily attributable to higher borrowings and related interest costs incurred to support the expansion of our lending product. 
+ Compensation and Benefits 
+ Compensation and benefits expenses increased by $6.0 million, or 25.6%, for the three months ended June 30, 2026 compared to the same period in the prior year, primarily driven by increased headcount as a result of our continued investments in research and development initiatives and go-to-market teams, as well as higher stock-based compensation expense, primarily related to the satisfaction of the performance vesting condition on outstanding RSUs upon completion of our IPO. 
+ General and Administrative Expenses 
+ General and administrative expenses increased by $3.6 million, or 20.7%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was driven primarily by higher audit and accounting fees, conference and event costs, and dues and subscriptions. 
+ Depreciation and Amortization Expenses 
+ Depreciation and amortization expenses increased by $1.2 million, or 142.4%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was driven primarily by depreciation and amortization charges related to intangible assets acquired through the Brassica and HeightZero acquisitions, as well as higher capital expenditures and capitalized development costs incurred. 
+ Restructuring Charges 
+ Restructuring charges of $1.3 million for the three months ended June 30, 2026, consisted of employee severance and termination benefits related to the restructuring plan that we initiated in June 2026. 
+ Other Income (Loss) 
+Three Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Net change in unrealized appreciation (loss) on digital assets | (18,842) | 55,846 | (74,688) | (133.7)%
+Gain (loss) on disposal of digital assets | 5,551 | 1,260 | 4,291 | 340.6%
+Total other income (loss) | (13,291) | 57,106 | (70,397) | (123.3)%
+ Net Change in Unrealized Appreciation (Loss) on Digital Assets 
+ Net change in unrealized appreciation (loss) on digital assets decreased by $74.7 million, or 133.7%, for the three months ended June 30, 2026 compared to the same period in the prior year. The decrease in net change in unrealized appreciation (loss) of digital assets was primarily driven by decline in digital asset prices. 
+ Gain (Loss) on Disposal of Digital Assets 
+ 43 
+ Table of Contents 
+ Gain on disposal of digital assets increased by $4.3 million, or 340.6%, for the three months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily attributable to the sale of treasury digital assets with historical costs that were significantly lower than their fair values at the time of sale, resulting in higher realized gains. 
+ Provision for (Benefit from) Income Taxes 
+Three Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Provision for (benefit from) income taxes | (11,677) | 15,132 | (26,809) | (177.2)%
+ Provision for (benefit from) income taxes changed by $26.8 million, or 177.2%, for the three months ended June 30, 2026 compared to the same period in the prior year, from a tax expense of $15.1 million to a tax benefit of $11.7 million. The change was primarily due to the loss from operations during the three months ended June 30, 2026, as well as our annualized effective income tax rate of 38.0% for the three months ended June 30, 2026 compared to the effective income tax rate of 21.0% for the three months ended June 30, 2025, primarily due to state, local, and foreign taxes and the benefit recognized upon the settlement of employee stock-based awards, partially offset by the limitations on the deductibility of executive compensation. 
+ Comparison of the six months ended June 30, 2026 and June 30, 2025 
+ Total Revenue 
+Six Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Digital assets sales | 7,857,025 | 3,883,630 | 3,973,395 | 102.3%
+Staking | 114,085 | 236,858 | (122,773) | (51.8)%
+Subscriptions and services | 53,123 | 48,365 | 4,758 | 9.8%
+Stablecoin-as-a-Service | 76,981 | 15,659 | 61,322 | 391.6%
+Interest income | 1,754 | 614 | 1,140 | 185.7%
+Total revenue | 8,102,968 | 4,185,126 | 3,917,842 | 93.6%
+ Digital assets sales revenue 
+ Digital asset sales revenue increased by $3,973.4 million, or 102.3%, for the six months ended June 30, 2026 compared to the same period in the prior year. 
+ The increase was primarily attributable to higher digital asset trading activity resulting from the expansion of trading pairs on the platform, increased activity from existing clients, and an expanding client base. We present digital assets sales revenue on a gross basis (other than the portion of digital assets sales revenue recognized in connection with sales and purchases on our platform of certain stablecoins that are classified as financial assets, which is recognized on a net basis) because of our role as principal for accounting purposes in sales of digital assets, as we control the digital assets prior to transfer to the customer, are primarily responsible for fulfilling the transaction, and have discretion in pricing, including the ability to incorporate spreads relative to market prices. As a result, the significant volume of digital asset transactions on our platform results in significant digital assets sales revenue with corresponding digital assets sales costs. For the six months ended June 30, 2026, digital assets sales costs increased by $3,962.2 million, or 102.2%, over the corresponding period in the prior year. 
+ Staking revenue 
+ Staking revenue decreased by $122.8 million, or 51.8%, for the six months ended June 30, 2026 compared to the same period in the prior year, primarily driven by lower staked digital asset volume on our platform and a decline in digital asset prices. We present staking revenue on a gross basis because of our role as principal for accounting purposes in connection with our clients’ staking activities. As a result, the significant volume of staking activities on our platform results in staking revenue 
+ 44 
+ Table of Contents 
+ with corresponding staking fees. For the six months ended June 30, 2026, staking fees decreased by $107.3 million, or 51.2%, over the corresponding period in the prior year. 
+ Subscriptions and services revenue 
+ Subscriptions and services revenue increased by $4.8 million, or 9.8%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily driven by an increase in our Number of Clients and higher lending activity. 
+ Stablecoin-as-a-Service revenue 
+ Stablecoin-as-a-Service revenue increased by $61.3 million, for the six months ended June 30, 2026 compared to $15.7 million in the same period in the prior year. The increase results from the launch of this new service in March 2025. We earn interest on stablecoin reserve assets and recognize that revenue on a gross basis. We recognize stablecoin sponsor fees, which largely offset the interest revenue. For the six months ended June 30, 2026, stablecoin sponsor fees increased by $55.8 million over the corresponding period in the prior year. 
+ Interest income 
+ Interest income increased by $1.1 million, or 185.7%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily attributable to an increase in fiat treasury investments. 
+ Expenses 
+Six Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Digital assets sales cost | 7,838,280 | 3,876,124 | 3,962,156 | 102.2%
+Staking fees | 102,224 | 209,532 | (107,308) | (51.2)%
+Stablecoin sponsor fees | 71,047 | 15,249 | 55,798 | 365.9%
+Interest expense | 11,863 | 2,937 | 8,926 | 303.9%
+Compensation and benefits | 70,330 | 47,828 | 22,502 | 47.0%
+General and administrative expenses | 41,391 | 33,025 | 8,366 | 25.3%
+Depreciation and amortization | 3,848 | 1,741 | 2,107 | 121.0%
+Restructuring charges | 1,300 | — | 1,300 | 100.0%
+Total expenses | 8,140,283 | 4,186,436 | 3,953,847 | 94.4%
+ Digital Assets Sales Costs 
+ Digital assets sales costs increased by $3,962.2 million, or 102.2%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily attributable to higher transaction volumes driven by the expansion of trading pairs on the platform, increased activity from existing clients, and growth in the overall client base. 
+ Staking Fees 
+ Staking fees decreased by $107.3 million, or 51.2%, for the six months ended June 30, 2026 compared to the same period in the prior year. The decrease was primarily driven by lower staked digital asset volume on our platform and a decline in digital asset prices. 
+ Stablecoin Sponsor Fees 
+ Stablecoin sponsor fees increased by $55.8 million for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was driven by the launch of this new service in March 2025. 
+ Interest Expense 
+ 45 
+ Table of Contents 
+ Interest expense increased by $8.9 million, or 303.9%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase in interest expense was primarily attributable to higher borrowings and related interest costs incurred to support the expansion of our lending product. 
+ Compensation and Benefits 
+ Compensation and benefits expenses increased by $22.5 million, or 47.0%, for the six months ended June 30, 2026 compared to the same period in the prior year, primarily driven by increased headcount as a result of our continued investments in research and development initiatives and go-to-market teams, as well as higher stock-based compensation expense, primarily related to the satisfaction of the performance vesting condition on outstanding RSUs upon completion of our IPO. 
+ General and Administrative Expenses 
+ General and administrative expenses increased by $8.4 million, or 25.3%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was driven primarily by higher audit and accounting fees, legal fees, conference and event costs, and dues and subscriptions. 
+ Depreciation and Amortization Expenses 
+ Depreciation and amortization expenses increased by $2.1 million, or 121.0%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was driven primarily by depreciation and amortization charges related to intangible assets acquired through the Brassica and HeightZero acquisitions, as well as higher capital expenditures and capitalized development costs incurred. 
+ Restructuring Charges 
+ Restructuring charges of $1.3 million for the six months ended June 30, 2026, consisted of employee severance and termination benefits related to the restructuring plan that we initiated in June 2026. 
+ Other Income (Loss) 
+Six Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Net change in unrealized appreciation (loss) on digital assets | (72,565) | 22,034 | (94,599) | (429.3)%
+Gain (loss) on disposal of digital assets | 7,538 | (272) | 7,810 | (2871.3)%
+Total other income (loss) | (65,027) | 21,762 | (86,789) | (398.8)%
+ Net Change in Unrealized Loss on Digital Assets 
+ Net change in unrealized loss on digital assets decreased by $94.6 million, or 429.3%, for the six months ended June 30, 2026 compared to the same period in the prior year. The decrease in net change in unrealized loss of digital assets was primarily driven by decline in digital asset prices. 
+ Gain (Loss) on Disposal of Digital Assets 
+ Gain on disposal of digital assets increased by $7.8 million, or 2871.3%, for the six months ended June 30, 2026 compared to the same period in the prior year. The increase was primarily driven by the sale of treasury digital assets with historical costs that were substantially lower than the proceeds received upon sale, resulting in higher realized gains. 
+ Provision for (Benefit from) Income Taxes 
+ 46 
+ Table of Contents 
+Six Months Ended June 30, | Change
+2026 | 2025%
+(in thousands, except %)
+Provision for (benefit from) income taxes | (22,644) | 7,871 | (30,515) | (387.7)%
+ Provision for (benefit from) income taxes changed by $30.5 million, or 387.7%, for the six months ended June 30, 2026 compared to the same period in the prior year, from a tax expense of $7.9 million to a tax benefit of $22.6 million. The change was primarily due to the loss from operations during the six months ended June 30, 2026, as well as our annualized effective income tax rate of 21.8% for the six months ended June 30, 2026 compared to the effective income tax rate of 21.0% for the six months ended June 30, 2025, primarily due to state, local, and foreign taxes and the benefit recognized upon the settlement of employee stock-based awards, partially offset by the limitations on the deductibility of executive compensation, 
+ Liquidity and Capital Resources 
+ Prior to our IPO, we financed our operations primarily through issuances of preferred stock, cash generated from operations, and holdings in our Bitcoin treasury reserve. As of June 30, 2026, our primary sources of liquidity were our cash and cash equivalents of $159.0 million, excluding cash and cash equivalents segregated for the benefit of stablecoin holders - restricted. As of June 30, 2026 our digital assets included both treasury and borrowed Bitcoin. The Company owned Bitcoin treasury held as of June 30, 2026 was 2,523 Bitcoin with a fair value of $147.7 million based on observable market prices, representing approximately 2.4% of our total assets. 
+ In January 2026, we completed our IPO, in which we sold 11,026,365 shares of Class A common stock, resulting in net proceeds of $174.0 million after deducting underwriting discounts and other offering costs. 
+ Upon the closing of the IPO, all shares of the Company ’ s then outstanding convertible preferred stock were automatically converted into a total of 60,778,788 shares of Class A common stock. Additionally, we issued 594,862 shares of our Class A common stock upon settlement of the restricted stock units (“RSUs”) for which a liquidity-event performance-based vesting condition was satisfied upon the completion of the IPO and for which the service-based vesting condition had also been satisfied as of that date. Of the shares issued, 270,700 shares were withheld to satisfy employee tax withholding obligations. Based on the IPO price of $18.00 per share, we expect to pay approximately $4.0 million in taxes on net share settlement of these RSUs. 
+ In June 2026, the Board of Directors authorized and approved a share repurchase program, which permits the Company to repurchase up to $50.0 million of its common stock (the “Share Repurchase Program”). Repurchases may be made from time-to-time in open market, in privately negotiated transactions or as may otherwise be determined by the Company in its discretion. The Share Repurchase Program has no expiration date, does not obligate the Company to repurchase any specific amount of common stock, and may be suspended, recommenced, or terminated at any time without prior notice. The timing and amount of any shares repurchased will be determined by the Company based on its evaluation of market conditions, applicable legal requirements and other factors. No shares of the Company’s common stock were repurchased under the Share Repurchase Program during the three months ended June 30, 2026. As of June 30, 2026, $50.0 million remained available for future repurchases under the Share Repurchase Program. 
+ Our material cash requirements from known contractual and other obligations consist of our obligations under operating leases for office space and contractual obligations for hosting services to support our business operations. See Note 14— “Commitments and Contingencies” of the notes to our condensed consolidated financial statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for additional discussion of our principal contractual commitments. 
+ We believe our available cash, available borrowings, and cash collected from our revenue will be adequate to meet our future liquidity needs for at least the next twelve months. Our future capital requirements will depend on many factors, including but not limited to price and volatility of digital assets, the adoption of digital assets, our growth rate, client acquisition, retention and expansion, our ability to increase our Bitcoin holdings as part of our Bitcoin treasury strategy, our headcount, our sales and marketing activities, the introduction of new products and offerings, and potential merger and acquisition activity and other strategic initiatives. 
+ We may be required to seek additional equity or debt financing from time to time. In the event that we require additional financing, we may not be able to raise such financing on terms acceptable to us or at all. If we are unable to raise additional 
+ 47 
+ Table of Contents 
+ capital or generate cash flows necessary to expand our operations and invest in continued innovation, we may not be able to compete successfully, which would harm our business, results of operations and financial condition. 
+ Off-Balance Sheet Arrangements 
+ As of June 30, 2026, we did not have any relationships with unconsolidated organizations or financial partnerships, such as structured finance or special purpose entities that would have been established for the purpose of facilitating off-balance sheet arrangements or other contractually narrow or limited purposes. 
+ Operating Activities 
+ Net cash used in operating activities was $36.2 million for the six months ended June 30, 2026, primarily driven by net loss generated during the period of $79.7 million, partially offset by non-cash adjustments totaling $66.3 million. These adjustments primarily consisted of fair value changes related to digital assets, stock-based compensation, and depreciation and amortization. Additionally, changes in working capital contributed to operating cash flow, including $13.2 million generated from the sale of digital assets, offset by net cash use of $35.4 million from changes in accounts receivable (net), other assets, accounts payable and other liabilities. 
+ Net cash used in operating activities was $8.1 million for the six months ended June 30, 2025, primarily driven by non-cash adjustments totaling $59.1 million, primarily consisted of fair value changes related to digital assets, stock-based compensation, and depreciation and amortization. These are partially offset by net income generated during the period of $12.6 million. Additionally, changes in working capital contributed to operating cash flow, including $32.5 million generated from the sale of digital assets, offset by net cash use of $8.5 million from changes in accounts receivable (net), other assets, accounts payable and other liabilities. 
+ Investing Activities 
+ Net cash used in investing activities was $7.9 million for the six months ended June 30, 2026. This cash outflow was primarily driven by $19.2 million in net loan originations and repayments, $22.3 million invested in digital assets, and $4.9 million in equipment and software purchases. 
+ Net cash used in investing activities was $39.8 million for the six months ended June 30, 2025. This cash outflow was primarily driven by $34.7 million in net loan originations and repayments, $0.1 million invested in digital assets, and $4.9 million in equipment and software purchases. 
+ Financing Activities 
+ Net cash provided by from financing activities was $1,418.1 million for the six months ended June 30, 2026, primarily driven by net proceeds of $174.0 million from our initial public offering, $1,321.3 million in deposits from stablecoin holders, $14.3 million in proceeds received from borrowings, net of repayment, to support loan originations, and $1.3 million in proceeds from stock option exercises, offset by $26.5 million related to customer activity pending settlement, $21.7 million in net fiat currency received and returned as collaterals, $41.2 million payment to settle derivative contracts, $3.1 million for tax payment related to net settlement of RSUs, and $0.3 million attributable to minority interest in a joint venture. 
+ Net cash provided by financing activities was $2,223.4 million for the six months ended June 30, 2025, primarily driven by $2,206.6 million in deposits from stablecoin holders, $39.4 million in proceeds received from borrowings to support loan originations, and $0.4 million in proceeds from stock option exercises, offset by $17.9 million from fiat currency returned as collateral, $4.8 million of customer activity pending settlement, and $0.2 million attributable to minority interest in a joint venture. 
+ Recent Accounting Pronouncements 
+ Refer to Note 2 — “Summary of Significant Accounting Policies” of the notes to our condensed consolidated financial statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for a full description of recent accounting pronouncements. 
+ Item 3. Quantitative and Qualitative Disclosures About Market Risk 
+ 48 
+ Table of Contents 
+ We are exposed to market risk in the ordinary course of our business. Market risk represents the risk of loss that may impact our financial position due to adverse changes in financial market prices and rates. Our market risk exposure is primarily the result of fluctuations in interest rates and the fluctuation in the market value of digital assets. 
+ Interest Rate Risk 
+ Prevailing short-term interest rates have a significant impact on our profitability, as a portion of our revenue and net income is generated from interest earned on client funds held in segregated accounts, as well as on the Company’s corporate cash and cash equivalents. Higher interest rates typically increase the interest income earned. The Company also generates interest income through its lending products, with the rates charged being influenced by the broader short-term interest rate environment. While rising rates can enhance lending-related income, they may also increase borrowing costs, potentially limiting our access to capital on favorable terms. Conversely, declining interest rates may reduce both interest income and lending fees, which could adversely affect the Company’s profitability. A hypothetical 100 basis points increase or decrease in interest rates during the three and six months ended June 30, 2026 and June 30, 2025 would not have had a material effect on our financial results. 
+ Foreign Currency Exchange Risk 
+ Our reporting currency is the U.S. dollar, which is also the functional currency of our foreign subsidiaries. Substantially all of our revenue is currently denominated in U.S. dollars, with only an insignificant amount generated from international sales in foreign currencies. Accordingly, our revenue is not presently subject to significant foreign currency exchange risk, however, this exposure may increase as our international operations expand. Our operating expenses are denominated in the currencies of the countries in which we operate. As a result, our primary exposure to foreign currency risk arises from transactions denominated in Euros, British Pounds, Korean Won, and Singapore Dollars. As a result, our consolidated results of operations and cash flows are subject to fluctuations resulting from changes in foreign currency exchange rates and may be adversely affected by future changes in such rates. We may use derivative instruments or other financial tools to manage foreign currency exposure. No such instruments were outstanding or entered into during the three and six months ended June 30, 2026 and June 30, 2025. We do not believe a 10% increase or decrease in the relative value of the U.S. dollar would have a material impact on our operating results. 
+ Market Risk of Digital Assets 
+ A significant portion of our total revenue is generated from transaction fees associated with the purchase, sale and trading of digital assets on our platform. These fees are structured either as a fixed amount or as a percentage of the transaction value and may vary based on payment method and transaction size. In addition to transaction-based revenue, we also derive substantial income from our subscription and services offerings. 
+ Our financial performance is subject to digital asset price risk, with profitability partially dependent on the market value of certain digital assets. Historically, digital asset prices—and by extension, our operating results—have exhibited considerable volatility on a quarterly basis. There is no guarantee that future price movements will mirror historical patterns. Declines in the market value of key digital assets have adversely affected our earnings in the past and could negatively impact future profitability, cash flows, liquidity, and our ability to meet ongoing and future financial obligations. 
+ As part of our treasury strategy, we also hold digital assets, primarily Bitcoin, as long-term investments. These assets are presented at fair value at each reporting date, with changes in fair value recognized in net income. Digital asset prices have been historically volatile. A hypothetical 50.0% increase or decrease in the fair value of our Bitcoin holdings would have resulted in an impact on net income of approximately $73.9 million and $157.4 million for the three and six months ended June 30, 2026, respectively, and $126.8 million and $225.1 million for the three and six months ended June 30, 2025, respectively. 
+ Item 4. Controls and Procedures 
+ Evaluation of Disclosure Controls and Procedures 
+ Our management, with the participation and supervision of our Chief Executive Officer (our principal executive officer) and our Chief Financial Officer (our principal financial officer), have evaluated the effectiveness of our disclosure controls and procedures (as defined in Rules 13a-15(e) and 15d-15(e) under the Securities Exchange Act of 1934, as amended (the “Exchange Act”), as of the end of the period covered by this Quarterly Report on Form 10-Q. Based on such evaluation, our Chief Executive Officer and Chief Financial Officer have concluded that, as of such date, our disclosure controls and 
+ 49 
+ Table of Contents 
+ procedures were not effective to accomplish their objectives at the reasonable assurance level due to material weaknesses in internal control over financial reporting as described below. 
+ Material Weaknesses 
+ As previously disclosed in our Annual Report on Form 10-K for the year ended December 31, 2025, we have previously identified material weaknesses in our internal control over financial reporting. As of the end of the period covered by this Quarterly Report on Form 10-Q, the material weaknesses identified pertained to the 
+ • lack of effectively designed, implemented, and maintained information technology (“IT”) general controls including: 
+ • logical access to applications and data, software change management, 
+ • review of reports for third-party service organizations associated with IT systems and related complementary user entity controls maintained by management, over applications that support our financial reporting processes, 
+ • insufficient manual review controls over key inputs and/or outputs from our applications that support our financial reporting processes, 
+ • insufficient segregation of duties across financially relevant functions, and 
+ • lack of sufficient number of qualified personnel within our accounting, finance, and operations functions who possessed an appropriate level of expertise to provide reasonable assurance that transactions were being appropriately recorded and disclosed, including evaluating whether new accounting policies are in accordance with GAAP. 
+ We have concluded that these material weaknesses existed because we did not have the necessary business processes, systems, personnel, and related internal controls due, in part, to the rapid growth we have experienced in the past years, which growth placed considerable strains on our IT and accounting systems, processes and personnel. 
+ Notwithstanding such material weaknesses in internal controls over financial reporting, our Chief Executive Officer and Chief Financial Officer have concluded that our unaudited condensed financial statements included in this Quarterly Report on Form 10-Q present fairly, in all material respects, our financial position, results of operations and cash flows for the periods presented in conformity with GAAP. The aforementioned material weaknesses also did not result in a material misstatement in any previously issued consolidated financial statements. 
+ Remediation Effects and Status 
+ As previously disclosed in our Annual Report on Form 10-K for the year ended December 31, 2025, management has completed the following remedial actions: 
+ • expanded our resources and personnel with the appropriate level of expertise within our accounting, financial, and operations functions and to implement, monitor, and maintain business processes and IT General Controls (“ITGC”); 
+ • designed, developed and deployed an enhanced ITGC framework, including the implementation of a number of systems, processes, and tools to enable the effectiveness and consistent execution of these controls; and 
+ • hired an outside consultant to help oversee the implementation of and suggest remedial actions. 
+ While management has taken certain remedial actions with respect to the identified material weaknesses, the identified material weaknesses remain unremediated. Management has developed a plan to remediate the material weaknesses identified, and we expect the implementation of such plan to continue to take place in 2026, and to include the following measures: 
+ • continuing to implement ITGCs to support the evaluation, monitoring, and ongoing effectiveness of key application controls, access controls, program changes and key reports; 
+ • implement a process to review third-party attestation reports on financially significant IT applications; 
+ 50 
+ Table of Contents 
+ • continuing to implement processes and controls to better manage and monitor our segregation of duties, including enhancing the usage of technology and tools for segregation of duties within the Company’s systems, applications, and tools; 
+ • continuing to enhance manual review controls, as necessary, over key inputs and/or outputs from our applications that support our financial reporting processes; and 
+ • implement controls to assess whether accounting for new or changed revenue streams is consistent with GAAP. 
+ Changes in Internal Control Over Financial Reporting 
+ Except for the material weakness and remediation efforts described above, there were no changes in our internal control over financial reporting as defined in Rule 13a-15(d) and 15d-15(d) under the Exchange Act that have materially affected, or are reasonably likely to materially affect, our internal control over financial reporting. 
+ Inherent Limitations on the Effectiveness of Controls 
+ The effectiveness of any system of internal control over financial reporting, including ours, is subject to inherent limitations, including the exercise of judgment in designing, implementing, operating, and evaluating the controls and procedures, and the inability to eliminate misconduct completely. Accordingly, in designing and evaluating the disclosure controls and procedures, management recognizes that any system of internal control over financial reporting, including ours, no matter how well designed and operated, can only provide reasonable, not absolute assurance of achieving the desired control objectives. In addition, the design of disclosure controls and procedures must reflect the fact that there are resource constraints and that management is required to apply its judgment in evaluating the benefits of possible controls and procedures relative to their costs. Moreover, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate. We intend to continue to monitor and upgrade our internal controls as necessary or appropriate for our business but cannot assure you that such improvements will be sufficient to provide us with effective internal control over financial reporting. 
+ Part II — OTHER INFORMATION 
+ Item 1. Legal Proceedings 
+ The information required to be set forth under this Item 1 is incorporated by reference to Note 14 — Commitments and Contingencies — Litigation in the notes to the condensed consolidated financial statements included in Part I, Item 1 of this Quarterly Report on Form 10-Q. 
+ Item 1A. Risk Factors 
+ There have been no material changes to the risk factors set forth in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2025. Such disclosures reflect our beliefs and opinions as to factors that could materially affect our business, financial condition or future results. References to past events are provided by way of example only and are not intended to be a complete listing of such events or a representation as to whether or not such factors or similar events have occurred in the past or their likelihood of occurring in the future. The risks described in our Annual Report on Form 10-K for the year ended December 31, 2025 may not be the only risks facing the Company. Additional risks and uncertainties not currently known to the Company or that the Company deems to be immaterial also may materially adversely affect the Company's business, financial condition and/or operating results. 
+ Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 
+ (a) Recent Sales of Unregistered Equity Securities 
+ None. 
+ (b) Use of IPO Proceeds 
+ 51 
+ Table of Contents 
+ On January 21, 2026, our registration statement on Form S-1 (File No. 333-290409) relating to our IPO was declared effective by the SEC. There has been no material change to the expected use of the net proceeds from our IPO as described in the Final Prospectus and other periodic reports previously filed with the SEC. 
+ (c) Issuer Purchases of Equity Securities 
+ In June 2026, the Board of Directors authorized and approved a share repurchase program, which permits the Company to repurchase up to $50.0 million of its common stock. Repurchases may be made from time-to-time in open market, in privately negotiated transactions or as may otherwise be determined by the Company in its discretion. The Share Repurchase Program has no expiration date, does not obligate the Company to repurchase any specific amount of common stock, and may be suspended, recommenced, or terminated at any time without prior notice. The timing and amount of any shares repurchased will be determined by the Company based on its evaluation of market conditions, applicable legal requirements and other factors. No shares of the Company’s common stock were repurchased under the Share Repurchase Program during the three months ended June 30, 2026. As of June 30, 2026, $50.0 million remained available for future repurchases under the Share Repurchase Program. 
+ Item 3. Defaults Upon Senior Securities 
+ Not applicable. 
+ Item 4. Mine Safety Disclosures 
+ Not applicable. 
+ Item 5. Other Information 
+ Rule 10b5-1 Trading Plans 
+ For the three months ended June 30, 2026, none of our directors or officers (as defined in Rule 16a-1(f) under the Exchange Act) adopted , modified or terminated a “Rule 10b5-1 trading arrangement” or “non-Rule 10b5-1 trading arrangement,” as those terms are defined in Item 408 of Regulation S-K promulgated under the Securities Act. 
+ Item 6. Exhibits 
+ The exhibits listed below are filed as part of this Quarterly Report on Form 10-Q, or are incorporated herein by reference, in each case as indicated below: 
+ 52 
+ Table of Contents 
+Incorporated by Reference
+Exhibit No. | Exhibit Description | Form | File No. | Exhibit | Filing Date | Filed Herewith
+31.1 | Certification of the Chief Executive Officer pursuant to Rule 13a-14(a) and Rule 15d-14(a) under the Securities Exchange Act of 1934, as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. | X
+31.2 | Certification of the Chief Financial Officer pursuant to Rule 13a-14(a) and Rule 15d-14(a) under the Securities Exchange Act of 1934, as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. | X
+32.1* | Certification of the Chief Executive Officer pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. | X
+32.2* | Certification of the Chief Financial Officer pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. | X
+101.INS | Inline XBRL Instance Document—the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document. | X
+101.SCH | Inline XBRL Taxonomy Extension Schema Document. | X
+101.CAL | Inline XBRL Taxonomy Extension Calculation Linkbase Document. | X
+101.DEF | Inline XBRL Taxonomy Extension Definition Linkbase Document. | X
+101.LAB | Inline XBRL Taxonomy Extension Label Linkbase Document. | X
+101.PRE | Inline XBRL Taxonomy Extension Presentation Linkbase Document. | X
+104 | Cover Page Interactive Data File (formatted as inline XBRL and contained in Exhibit 101).
+ ____________ 
+ * This certification is furnished and deemed not filed for purposes of Section 18 of the Exchange Act and is not to be incorporated by reference into any filing of BitGo Holdings, Inc. under the Securities Act, or the Exchange Act, whether made before or after the date hereof, regardless of any general incorporation language in such filing. 
+ 53 
+ Table of Contents 
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the registrant has duly caused this Quarterly Report on Form 10-Q to be signed on its behalf by the undersigned, thereunto duly authorized. 
+BitGo Holdings, Inc.
+Date: | August 12, 2026 | By: | /s/ Michael A. Belshe
+Michael A. Belshe, Chief Executive Officer, Chief Technology Officer, President, and Director
+Date: | August 12, 2026 | By: | /s/ Edward Reginelli
+Edward Reginelli, Chief Financial Officer
+ 54

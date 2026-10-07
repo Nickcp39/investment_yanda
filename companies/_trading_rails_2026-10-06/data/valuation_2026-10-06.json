@@ -1,0 +1,715 @@
+{
+ "as_of": "2026-10-06",
+ "hurdles": [
+  0.08,
+  0.1,
+  0.12
+ ],
+ "tickers": {
+  "IBKR": {
+   "name": "Interactive Brokers",
+   "ccy": "USD",
+   "price": 90.58,
+   "shares_m": 1703.8,
+   "mcap_b": 154.3,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 3.0,
+     "g": 0.04,
+     "exit": 15,
+     "p": 0.1,
+     "oe_1": 3.12,
+     "oe_10": 4.441,
+     "tv_10_b": 66.6,
+     "irr": -0.0769,
+     "irr_lib": -0.0806
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 3.7,
+     "g": 0.11,
+     "exit": 22,
+     "p": 0.1,
+     "oe_1": 4.107,
+     "oe_10": 10.506,
+     "tv_10_b": 231.1,
+     "irr": 0.0448,
+     "irr_lib": 0.0412
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 4.2,
+     "g": 0.15,
+     "exit": 25,
+     "p": 0.1,
+     "oe_1": 4.83,
+     "oe_10": 16.991,
+     "tv_10_b": 424.8,
+     "irr": 0.1103,
+     "irr_lib": 0.1066
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 65.37,
+    "10pct": 54.58,
+    "12pct": 45.75,
+    "8pct_on_bull": 119.02,
+    "8pct_on_bear": 19.55
+   },
+   "distance_to_8pct": -0.2783,
+   "implied_g_for_8pct": 0.1474
+  },
+  "HOOD": {
+   "name": "Robinhood",
+   "ccy": "USD",
+   "price": 112.0,
+   "shares_m": 925.0,
+   "mcap_b": 103.6,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 1.1,
+     "g": 0.06,
+     "exit": 15,
+     "p": 0.1,
+     "oe_1": 1.166,
+     "oe_10": 1.97,
+     "tv_10_b": 29.5,
+     "irr": -0.115,
+     "irr_lib": -0.1179
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 1.7,
+     "g": 0.15,
+     "exit": 25,
+     "p": 0.1,
+     "oe_1": 1.955,
+     "oe_10": 6.877,
+     "tv_10_b": 171.9,
+     "irr": 0.0549,
+     "irr_lib": 0.052
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 2.2,
+     "g": 0.22,
+     "exit": 30,
+     "p": 0.1,
+     "oe_1": 2.684,
+     "oe_10": 16.07,
+     "tv_10_b": 482.1,
+     "irr": 0.1694,
+     "irr_lib": 0.1662
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 88.74,
+    "10pct": 74.03,
+    "12pct": 61.98,
+    "8pct_on_bull": 246.35,
+    "8pct_on_bear": 15.87
+   },
+   "distance_to_8pct": -0.2077,
+   "implied_g_for_8pct": 0.1774
+  },
+  "COIN": {
+   "name": "Coinbase",
+   "ccy": "USD",
+   "price": 185.74,
+   "shares_m": 275.0,
+   "mcap_b": 51.1,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 0.4,
+     "g": 0.05,
+     "exit": 18,
+     "p": 0.0,
+     "oe_1": 0.42,
+     "oe_10": 0.652,
+     "tv_10_b": 11.7,
+     "irr": -0.1368,
+     "irr_lib": -0.1368
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 1.2,
+     "g": 0.12,
+     "exit": 25,
+     "p": 0.0,
+     "oe_1": 1.344,
+     "oe_10": 3.727,
+     "tv_10_b": 93.2,
+     "irr": 0.062,
+     "irr_lib": 0.062
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 2.5,
+     "g": 0.18,
+     "exit": 30,
+     "p": 0.0,
+     "oe_1": 2.95,
+     "oe_10": 13.085,
+     "tv_10_b": 392.5,
+     "irr": 0.2262,
+     "irr_lib": 0.2262
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 156.94,
+    "10pct": 130.63,
+    "12pct": 109.09,
+    "8pct_on_bull": 661.17,
+    "8pct_on_bear": 19.75
+   },
+   "distance_to_8pct": -0.1551,
+   "implied_g_for_8pct": 0.139
+  },
+  "FUTU": {
+   "name": "Futu Holdings",
+   "ccy": "USD",
+   "price": 113.21,
+   "shares_m": 140.0,
+   "mcap_b": 15.8,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 0.8,
+     "g": 0.03,
+     "exit": 8,
+     "p": 0.2,
+     "oe_1": 0.824,
+     "oe_10": 1.075,
+     "tv_10_b": 8.6,
+     "irr": -0.0433,
+     "irr_lib": -0.0593
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 1.35,
+     "g": 0.1,
+     "exit": 12,
+     "p": 0.2,
+     "oe_1": 1.485,
+     "oe_10": 3.502,
+     "tv_10_b": 42.0,
+     "irr": 0.121,
+     "irr_lib": 0.1024
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 1.7,
+     "g": 0.15,
+     "exit": 16,
+     "p": 0.2,
+     "oe_1": 1.955,
+     "oe_10": 6.877,
+     "tv_10_b": 110.0,
+     "irr": 0.2335,
+     "irr_lib": 0.2138
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 160.38,
+    "10pct": 135.0,
+    "12pct": 114.12,
+    "8pct_on_bull": 398.93,
+    "8pct_on_bear": 37.34
+   },
+   "distance_to_8pct": 0.4167,
+   "implied_g_for_8pct": 0.0598
+  },
+  "VIRT": {
+   "name": "Virtu Financial",
+   "ccy": "USD",
+   "price": 61.62,
+   "shares_m": 159.9,
+   "mcap_b": 9.9,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 0.45,
+     "g": 0.0,
+     "exit": 8,
+     "p": 0.8,
+     "oe_1": 0.45,
+     "oe_10": 0.45,
+     "tv_10_b": 3.6,
+     "irr": -0.0388,
+     "irr_lib": -0.0958
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 0.75,
+     "g": 0.04,
+     "exit": 11,
+     "p": 0.8,
+     "oe_1": 0.78,
+     "oe_10": 1.11,
+     "tv_10_b": 12.2,
+     "irr": 0.0897,
+     "irr_lib": 0.0217
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 1.0,
+     "g": 0.06,
+     "exit": 13,
+     "p": 0.7,
+     "oe_1": 1.06,
+     "oe_10": 1.791,
+     "tv_10_b": 23.3,
+     "irr": 0.1574,
+     "irr_lib": 0.0898
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 66.04,
+    "10pct": 57.37,
+    "12pct": 50.12,
+    "8pct_on_bull": 107.0,
+    "8pct_on_bear": 25.54
+   },
+   "distance_to_8pct": 0.0717,
+   "implied_g_for_8pct": 0.0307
+  },
+  "CBOE": {
+   "name": "Cboe Global Markets",
+   "ccy": "USD",
+   "price": 278.2,
+   "shares_m": 105.0,
+   "mcap_b": 29.2,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 1.05,
+     "g": 0.04,
+     "exit": 16,
+     "p": 0.55,
+     "oe_1": 1.092,
+     "oe_10": 1.554,
+     "tv_10_b": 24.9,
+     "irr": 0.0104,
+     "irr_lib": -0.016
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 1.25,
+     "g": 0.08,
+     "exit": 22,
+     "p": 0.55,
+     "oe_1": 1.35,
+     "oe_10": 2.699,
+     "tv_10_b": 59.4,
+     "irr": 0.0996,
+     "irr_lib": 0.0735
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 1.36,
+     "g": 0.11,
+     "exit": 26,
+     "p": 0.55,
+     "oe_1": 1.51,
+     "oe_10": 3.862,
+     "tv_10_b": 100.4,
+     "irr": 0.1576,
+     "irr_lib": 0.1314
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 327.38,
+    "10pct": 277.27,
+    "12pct": 235.95,
+    "8pct_on_bull": 525.99,
+    "8pct_on_bear": 154.66
+   },
+   "distance_to_8pct": 0.1768,
+   "implied_g_for_8pct": 0.0608
+  },
+  "CME": {
+   "name": "CME Group",
+   "ccy": "USD",
+   "price": 270.18,
+   "shares_m": 361.3,
+   "mcap_b": 97.6,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 3.8,
+     "g": 0.03,
+     "exit": 17,
+     "p": 0.9,
+     "oe_1": 3.914,
+     "oe_10": 5.107,
+     "tv_10_b": 86.8,
+     "irr": 0.0315,
+     "irr_lib": -0.0117
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 4.3,
+     "g": 0.06,
+     "exit": 22,
+     "p": 0.9,
+     "oe_1": 4.558,
+     "oe_10": 7.701,
+     "tv_10_b": 169.4,
+     "irr": 0.0993,
+     "irr_lib": 0.0567
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 4.5,
+     "g": 0.085,
+     "exit": 25,
+     "p": 0.9,
+     "oe_1": 4.883,
+     "oe_10": 10.174,
+     "tv_10_b": 254.4,
+     "irr": 0.143,
+     "irr_lib": 0.1005
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 313.98,
+    "10pct": 268.65,
+    "12pct": 231.09,
+    "8pct_on_bull": 441.08,
+    "8pct_on_bear": 184.91
+   },
+   "distance_to_8pct": 0.1621,
+   "implied_g_for_8pct": 0.0414
+  },
+  "ICE": {
+   "name": "Intercontinental Exchange",
+   "ccy": "USD",
+   "price": 153.49,
+   "shares_m": 568.0,
+   "mcap_b": 87.2,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 3.8,
+     "g": 0.04,
+     "exit": 16,
+     "p": 0.6,
+     "oe_1": 3.952,
+     "oe_10": 5.625,
+     "tv_10_b": 90.0,
+     "irr": 0.035,
+     "irr_lib": 0.0032
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 4.3,
+     "g": 0.07,
+     "exit": 21,
+     "p": 0.6,
+     "oe_1": 4.601,
+     "oe_10": 8.459,
+     "tv_10_b": 177.6,
+     "irr": 0.105,
+     "irr_lib": 0.0738
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 4.5,
+     "g": 0.095,
+     "exit": 24,
+     "p": 0.6,
+     "oe_1": 4.928,
+     "oe_10": 11.152,
+     "tv_10_b": 267.6,
+     "irr": 0.1497,
+     "irr_lib": 0.1187
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 188.03,
+    "10pct": 159.71,
+    "12pct": 136.33,
+    "8pct_on_bull": 269.58,
+    "8pct_on_bear": 106.2
+   },
+   "distance_to_8pct": 0.225,
+   "implied_g_for_8pct": 0.0458
+  },
+  "NDAQ": {
+   "name": "Nasdaq",
+   "ccy": "USD",
+   "price": 92.27,
+   "shares_m": 567.8,
+   "mcap_b": 52.4,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 1.9,
+     "g": 0.04,
+     "exit": 16,
+     "p": 0.5,
+     "oe_1": 1.976,
+     "oe_10": 2.812,
+     "tv_10_b": 45.0,
+     "irr": 0.009,
+     "irr_lib": -0.0151
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 2.15,
+     "g": 0.08,
+     "exit": 22,
+     "p": 0.5,
+     "oe_1": 2.322,
+     "oe_10": 4.642,
+     "tv_10_b": 102.1,
+     "irr": 0.0922,
+     "irr_lib": 0.069
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 2.3,
+     "g": 0.11,
+     "exit": 26,
+     "p": 0.5,
+     "oe_1": 2.553,
+     "oe_10": 6.531,
+     "tv_10_b": 169.8,
+     "irr": 0.1478,
+     "irr_lib": 0.1248
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 102.24,
+    "10pct": 86.48,
+    "12pct": 73.49,
+    "8pct_on_bull": 162.14,
+    "8pct_on_bear": 50.38
+   },
+   "distance_to_8pct": 0.1081,
+   "implied_g_for_8pct": 0.0679
+  },
+  "BR": {
+   "name": "Broadridge",
+   "ccy": "USD",
+   "price": 158.66,
+   "shares_m": 115.6,
+   "mcap_b": 18.3,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 1.0,
+     "g": 0.02,
+     "exit": 12,
+     "p": 0.55,
+     "oe_1": 1.02,
+     "oe_10": 1.219,
+     "tv_10_b": 14.6,
+     "irr": 0.0145,
+     "irr_lib": -0.0224
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 1.11,
+     "g": 0.07,
+     "exit": 18,
+     "p": 0.55,
+     "oe_1": 1.188,
+     "oe_10": 2.184,
+     "tv_10_b": 39.3,
+     "irr": 0.1136,
+     "irr_lib": 0.0792
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 1.15,
+     "g": 0.1,
+     "exit": 22,
+     "p": 0.55,
+     "oe_1": 1.265,
+     "oe_10": 2.983,
+     "tv_10_b": 65.6,
+     "irr": 0.1692,
+     "irr_lib": 0.136
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 207.68,
+    "10pct": 176.59,
+    "12pct": 150.91,
+    "8pct_on_bull": 323.55,
+    "8pct_on_bear": 93.83
+   },
+   "distance_to_8pct": 0.309,
+   "implied_g_for_8pct": 0.0378
+  },
+  "CRCL": {
+   "name": "Circle",
+   "ccy": "USD",
+   "price": 84.13,
+   "shares_m": 268.6,
+   "mcap_b": 22.6,
+   "scenarios": {
+    "bear": {
+     "mode": "ramp",
+     "oe1": 0.1,
+     "oe10": 0.4,
+     "exit": 15,
+     "p": 0.0,
+     "oe_1": 0.1,
+     "oe_10": 0.4,
+     "tv_10_b": 6.0,
+     "irr": -0.1242,
+     "irr_lib": -0.1242
+    },
+    "base": {
+     "mode": "ramp",
+     "oe1": 0.25,
+     "oe10": 1.8,
+     "exit": 20,
+     "p": 0.0,
+     "oe_1": 0.25,
+     "oe_10": 1.8,
+     "tv_10_b": 36.0,
+     "irr": 0.0477,
+     "irr_lib": 0.0477
+    },
+    "bull": {
+     "mode": "ramp",
+     "oe1": 0.4,
+     "oe10": 5.0,
+     "exit": 25,
+     "p": 0.0,
+     "oe_1": 0.4,
+     "oe_10": 5.0,
+     "tv_10_b": 125.0,
+     "irr": 0.1865,
+     "irr_lib": 0.1865
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 62.08,
+    "10pct": 51.67,
+    "12pct": 43.15,
+    "8pct_on_bull": 215.56,
+    "8pct_on_bear": 10.35
+   },
+   "distance_to_8pct": -0.2621,
+   "implied_oe10_for_8pct_b": 2.439,
+   "implied_g_for_8pct": 0.288
+  },
+  "BTGO": {
+   "name": "BitGo",
+   "ccy": "USD",
+   "price": 7.19,
+   "shares_m": 117.5,
+   "mcap_b": 0.8,
+   "scenarios": {
+    "bear": {
+     "mode": "ramp",
+     "oe1": 0.005,
+     "oe10": 0.03,
+     "exit": 12,
+     "p": 0.0,
+     "oe_1": 0.005,
+     "oe_10": 0.03,
+     "tv_10_b": 0.4,
+     "irr": -0.0818,
+     "irr_lib": -0.0818
+    },
+    "base": {
+     "mode": "ramp",
+     "oe1": 0.01,
+     "oe10": 0.1,
+     "exit": 15,
+     "p": 0.0,
+     "oe_1": 0.01,
+     "oe_10": 0.1,
+     "tv_10_b": 1.5,
+     "irr": 0.0591,
+     "irr_lib": 0.0591
+    },
+    "bull": {
+     "mode": "ramp",
+     "oe1": 0.02,
+     "oe10": 0.25,
+     "exit": 20,
+     "p": 0.0,
+     "oe_1": 0.02,
+     "oe_10": 0.25,
+     "tv_10_b": 5.0,
+     "irr": 0.1946,
+     "irr_lib": 0.1946
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 5.91,
+    "10pct": 4.92,
+    "12pct": 4.11,
+    "8pct_on_bull": 19.71,
+    "8pct_on_bear": 1.42
+   },
+   "distance_to_8pct": -0.178,
+   "implied_oe10_for_8pct_b": 0.122,
+   "implied_g_for_8pct": 0.3199
+  },
+  "SECZ": {
+   "name": "Securitize",
+   "ccy": "USD",
+   "price": 12.7,
+   "shares_m": 163.3,
+   "mcap_b": 2.1,
+   "scenarios": {
+    "bear": {
+     "mode": "ramp",
+     "oe1": 0.005,
+     "oe10": 0.05,
+     "exit": 15,
+     "p": 0.0,
+     "oe_1": 0.005,
+     "oe_10": 0.05,
+     "tv_10_b": 0.8,
+     "irr": -0.0967,
+     "irr_lib": -0.0967
+    },
+    "base": {
+     "mode": "ramp",
+     "oe1": 0.01,
+     "oe10": 0.25,
+     "exit": 20,
+     "p": 0.0,
+     "oe_1": 0.01,
+     "oe_10": 0.25,
+     "tv_10_b": 5.0,
+     "irr": 0.092,
+     "irr_lib": 0.092
+    },
+    "bull": {
+     "mode": "ramp",
+     "oe1": 0.02,
+     "oe10": 0.6,
+     "exit": 25,
+     "p": 0.0,
+     "oe_1": 0.02,
+     "oe_10": 0.6,
+     "tv_10_b": 15.0,
+     "irr": 0.2188,
+     "irr_lib": 0.2188
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 14.18,
+    "10pct": 11.8,
+    "12pct": 9.86,
+    "8pct_on_bull": 42.55,
+    "8pct_on_bear": 2.13
+   },
+   "distance_to_8pct": 0.1165,
+   "implied_oe10_for_8pct_b": 0.224,
+   "implied_g_for_8pct": 0.4125
+  }
+ }
+}

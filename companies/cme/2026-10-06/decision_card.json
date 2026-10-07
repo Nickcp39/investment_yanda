@@ -1,0 +1,128 @@
+{
+ "ticker": "CME",
+ "name": "CME Group",
+ "as_of": "2026-10-06",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-07",
+ "batch": "trading_rails_2026-10-06",
+ "run_type": "first_dossier",
+ "refresh_of": null,
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met: single agent, self-checked only",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-06",
+ "valuation_method": "batch valuation_model.py (same formula as Pelosi / oil / power batches); OE0 = normalized after-tax earnings (brokers/exchanges: OCF distorted by client funds); cycle-normalized below TTM where TTM is at a volume/rate peak",
+ "currency": "USD",
+ "as_of_price": 270.18,
+ "as_of_market_cap": 97616034000,
+ "shares_out_m": 361.3,
+ "wk52_high": 329.16,
+ "wk52_low": 218.31,
+ "role_in_value_chain": "交易所（期货与清算）",
+ "context_label": "quality_compounder",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "WATCH",
+ "runner_proposed_size_pct": 0,
+ "existing_position_verdict": "N/A (not held)",
+ "suggested_initial_size_pct": 0,
+ "suggested_max_size_pct": 8,
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 2,
+  "M4": 1,
+  "M5": 0,
+  "M6": 1
+ },
+ "binding_constraint": "COMPLETENESS: 价格通过 8% 线（距门槛价 +16.2%）；完整度 57% < 60%，且需独立 Checker",
+ "completeness_pct": 57,
+ "price_passes_8pct_base": true,
+ "verdict_cap_note": "completeness 40-60% -> verdict capped at WATCH (PIPELINE.md); price passes 8% base: follow-up to >=60% + independent Checker could unlock STARTER",
+ "kill_criteria": [
+  "K-M1 利率期货份额被竞争者拿走 > 10% -> 重估",
+  "K-M2 日均量同比连续 3 个季度为负 -> 观察",
+  "K-M3 大额稀释性并购 -> 观察"
+ ],
+ "next_monitor_event": "Q3 2026 财报（约 10 月下旬）：日均量、每张费率",
+ "buy_below_price": 313.98,
+ "hurdle_prices": {
+  "8pct": 313.98,
+  "10pct": 268.65,
+  "12pct": 231.09,
+  "8pct_on_bull": 441.08,
+  "8pct_on_bear": 184.91
+ },
+ "zones": {
+  "starter": "<= 313.98 (base >= 8%)",
+  "add": "<= 268.65 (base >= 10%)",
+  "no_chase": "> 313.98",
+  "avoid": "> 441.08"
+ },
+ "implied_g_for_8pct": 0.0414,
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 3.8,
+   "g": 0.03,
+   "exit": 17,
+   "p": 0.9,
+   "oe_1": 3.914,
+   "oe_10": 5.107,
+   "tv_10_b": 86.8,
+   "irr": 0.0315,
+   "irr_lib": -0.0117
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 4.3,
+   "g": 0.06,
+   "exit": 22,
+   "p": 0.9,
+   "oe_1": 4.558,
+   "oe_10": 7.701,
+   "tv_10_b": 169.4,
+   "irr": 0.0993,
+   "irr_lib": 0.0567
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 4.5,
+   "g": 0.085,
+   "exit": 25,
+   "p": 0.9,
+   "oe_1": 4.883,
+   "oe_10": 10.174,
+   "tv_10_b": 254.4,
+   "irr": 0.143,
+   "irr_lib": 0.1005
+  }
+ },
+ "factor_check": "波动 / 利率因子；与 AI 因子弱相关 —— 本批最像分散器的一家",
+ "related_studies": [
+  "studies/铲子百年实证_2026-09-23",
+  "studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06"
+ ],
+ "sources_used": [
+  {
+   "source_id": "CME-annual",
+   "public_date": "2026-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000009/cme-20251231.htm"
+  },
+  {
+   "source_id": "CME-earnings",
+   "public_date": "2026-07-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000042/exhibit9916302026.htm"
+  },
+  {
+   "source_id": "CME-10Q",
+   "public_date": "2026-07-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000047/cme-20260630.htm"
+  }
+ ]
+}

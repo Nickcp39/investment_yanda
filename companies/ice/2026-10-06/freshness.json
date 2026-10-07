@@ -1,0 +1,132 @@
+{
+  "ticker": "ICE",
+  "as_of": "2026-10-06",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "trading_rails_2026-10-06",
+  "note": "run 2026-10-07 09:45 EDT (market open) -> as_of locked to the completed session 2026-10-06; last close <= as_of is 2026-10-06. Shares basis for market cap: 561.4M（10-Q 封面 2026-07-27）；估值用 H1 摊薄加权 568M. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 153.49,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICE",
+          "fetched_at": "2026-10-06",
+          "value": 153.49
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/ICE/historical",
+          "fetched_at": "2026-10-06",
+          "value": 153.49
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 87182320000,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "568.0M x 153.49",
+          "fetched_at": "2026-10-06",
+          "value": 87182320000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ICE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 85567747709.0
+        }
+      ],
+      "cross_check_delta_pct": 1.89,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis: the card uses the valuation (diluted / fully-converted) count; Nasdaq uses its own snapshot, often a single share class; price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 176.05,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICE",
+          "fetched_at": "2026-10-06",
+          "value": 176.05
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ICE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 176.05
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 121.79,
+      "unit": "USD",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICE",
+          "fetched_at": "2026-10-06",
+          "value": 121.79
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ICE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-06",
+          "value": 121.79
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 568.0,
+      "unit": "million shares",
+      "as_of": "2026-10-06",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "561.4M（10-Q 封面 2026-07-27）；估值用 H1 摊薄加权 568M",
+          "fetched_at": "2026-10-06",
+          "value": 568.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1571949/000110465926088462/tm2621213d1_ex99-1.htm",
+          "public_date": "2026-07-30",
+          "fetched_at": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}
