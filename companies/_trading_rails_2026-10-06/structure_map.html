@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>23 小时交易与代币股票：结构图</title>
+<style>
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; color: #1F2933; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 297mm; height: 210mm; padding: 11mm 13mm 9mm 13mm; box-sizing: border-box; page-break-after: always; position: relative; background: #fff; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+h1 { font-size: 19pt; font-weight: 600; margin: 0 0 1.5mm 0; letter-spacing: 0.02em; }
+h2 { font-size: 15pt; font-weight: 600; margin: 0 0 1.5mm 0; }
+.sub { font-size: 9.5pt; color: #5B6475; margin: 0 0 4mm 0; }
+.foot { position: absolute; left: 13mm; right: 13mm; bottom: 5mm; font-size: 7.5pt; color: #8A93A2; display: flex; justify-content: space-between; border-top: 0.3pt solid #D8DEE8; padding-top: 1.5mm; }
+.legend { display: flex; gap: 6mm; font-size: 8.5pt; color: #5B6475; align-items: center; margin-bottom: 2.5mm; }
+.sw { display: inline-block; width: 4mm; height: 4mm; border-radius: 1mm; vertical-align: -0.8mm; margin-right: 1.5mm; }
+.teal { background: #E3F3F0; border: 0.6pt solid #008C7E; }
+.orange { background: #FBEAE1; border: 0.6pt solid #C2410C; }
+.slate { background: #EDEFF2; border: 0.6pt solid #5B6475; }
+.sand { background: #F3E8DC; border: 0.6pt solid #B8A58F; }
+
+/* ---------- page 1: layer stack ---------- */
+.stack { display: grid; grid-template-columns: 38mm repeat(3, 1fr); column-gap: 3.5mm; row-gap: 2.8mm; }
+.layer { display: contents; }
+.lname { align-self: center; padding-right: 3mm; border-right: 1.2pt solid #D8DEE8; }
+.lname b { display: block; font-size: 10.5pt; font-weight: 600; }
+.lname span { display: block; font-size: 8pt; color: #5B6475; margin-top: 0.5mm; }
+.card { border-radius: 2.2mm; padding: 1.8mm 2.6mm; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+.card b { font-size: 10pt; font-weight: 600; display: block; line-height: 1.35; }
+.card span { font-size: 8pt; display: block; margin-top: 0.6mm; line-height: 1.3; }
+.card span.tag, .card.teal span.tag, .card.orange span.tag { display: inline-block; margin-top: 0; line-height: 1.5; color: #fff; }
+.card { min-height: 20mm; }
+.card.teal b { color: #04342C; } .card.teal span { color: #0F6E56; }
+.card.orange b { color: #4A1B0C; } .card.orange span { color: #993C1D; }
+.card.slate b { color: #2C2C2A; } .card.slate span { color: #5F5E5A; }
+.card.sand b { color: #3D2E1E; } .card.sand span { color: #6B5841; }
+.card.lock { box-shadow: inset 0 0 0 1.2pt #008C7E; }
+.tag { display: inline-block; font-size: 7.5pt; padding: 0.2mm 1.6mm; border-radius: 1mm; margin-left: 1.5mm; vertical-align: 0.4mm; background: #008C7E; color: #fff; font-weight: 500; }
+.tag.o { background: #C2410C; }
+
+/* ---------- page 2: paths ---------- */
+.path { border: 0.5pt dashed #B9C2CF; border-radius: 3mm; padding: 4mm 5mm 4mm 5mm; margin-bottom: 4.5mm; }
+.path h3 { margin: 0 0 3mm 0; font-size: 12pt; font-weight: 600; display: flex; align-items: baseline; gap: 3mm; }
+.path h3 small { font-size: 9pt; color: #5B6475; font-weight: 400; }
+.flow { display: flex; align-items: center; gap: 0; }
+.node { flex: 1; border-radius: 2.4mm; padding: 2.5mm 2mm; text-align: center; min-height: 18mm; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+.node b { font-size: 11pt; font-weight: 600; display: block; }
+.node span { font-size: 8.5pt; display: block; margin-top: 0.8mm; }
+.node.teal b { color: #04342C; } .node.teal span { color: #0F6E56; }
+.node.orange b { color: #4A1B0C; } .node.orange span { color: #993C1D; }
+.node.slate b { color: #2C2C2A; } .node.slate span { color: #5F5E5A; }
+.arrow { width: 9mm; flex: none; text-align: center; color: #8A93A2; font-size: 14pt; line-height: 1; }
+.facts { display: flex; gap: 6mm; margin-top: 3mm; font-size: 9pt; color: #5B6475; line-height: 1.45; }
+.facts div { flex: 1; } .facts b { color: #1F2933; font-weight: 600; }
+
+/* ---------- page 4: mapping ---------- */
+table { border-collapse: collapse; width: 100%; font-size: 9pt; }
+th { text-align: left; font-weight: 600; background: #EEF2F8; padding: 1.8mm 2.5mm; border-bottom: 0.6pt solid #B9C2CF; }
+td { padding: 1.7mm 2.5mm; border-bottom: 0.3pt solid #D8DEE8; vertical-align: top; line-height: 1.4; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pill { display: inline-block; padding: 0.3mm 2mm; border-radius: 1.2mm; font-size: 8pt; font-weight: 500; }
+.pill.w { background: #FDF6E8; color: #7A4F07; border: 0.4pt solid #E0B25A; }
+.pill.g { background: #FDEEEE; color: #8A1F1F; border: 0.4pt solid #E09999; }
+.callout { background: #F3E8DC; border-left: 2pt solid #C2410C; padding: 3mm 4mm; border-radius: 0 2mm 2mm 0; font-size: 10pt; line-height: 1.55; margin-top: 4mm; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="page">
+  <h1>23 小时交易与代币股票：六层结构</h1>
+  <p class="sub">同一个问题（美股收盘后怎么交易）有两条解决通道：交易所延长营业时间（传统通道）和股票上链（链上通道）。每层列出代表公司；加粗边框 = 带锁（客户换不走）；标签 = 本批已建档、评级。截至 2026-10-07。</p>
+  <div class="legend">
+    <span><i class="sw teal"></i>传统通道（23 小时交易）</span>
+    <span><i class="sw orange"></i>链上通道（代币股票）</span>
+    <span><i class="sw slate"></i>规则制定者</span>
+    <span><i class="sw sand"></i>不可投资 / 未上市</span>
+  </div>
+
+  <div class="stack">
+    <div class="layer">
+      <div class="lname"><b>① 入口</b><span>谁拥有用户 · 竞争最激烈</span></div>
+      <div class="card teal"><b>美股零售券商<span class="tag">HOOD · IBKR 卡在价格</span></b><span>Robinhood 收入 59% 来自交易；IBKR 账户 +34%，税前利润率 77%。两家都在往下层扩张：自建交易所、自建链</span></div>
+      <div class="card teal"><b>亚洲券商<span class="tag">FUTU 价格过线</span></b><span>富途二季度成交额的 78% 是美股；美股夜盘正是它客户的白天。便宜的原因：中国证监会约 18.5 亿元罚款</span></div>
+      <div class="card orange"><b>加密 App<span class="tag o">COIN 卡在价格</span></b><span>Coinbase 在 Base 上给非美国用户提供代币股票；Kraken 做 xStocks（未上市）；争的都是海外散户</span></div>
+    </div>
+
+    <div class="layer">
+      <div class="lname"><b>② 流动性</b><span>谁报价 · 价差归谁</span></div>
+      <div class="card teal"><b>批发做市商<span class="tag">VIRT 周期顶部</span></b><span>付钱买券商订单流（PFOF）。Citadel 约占美股零售成交 35%，Jane Street、Susquehanna 未上市；Virtu 是唯一上市的</span></div>
+      <div class="card sand"><b>夜盘 ATS：Blue Ocean</b><span>目前拿走约 83% 的夜盘成交。2026-12-06 交易所开夜盘后，独占地位结束。未上市</span></div>
+      <div class="card orange"><b>链上做市</b><span>周末股市不开、无法对冲，做市商只能报宽价差、小数量。2024 年特斯拉代币曾与周一开盘价差 14%</span></div>
+    </div>
+
+    <div class="layer">
+      <div class="lname"><b>③ 交易场所</b><span>谁撮合 · 收过路费</span></div>
+      <div class="card teal lock"><b>交易所夜盘<span class="tag">CBOE · CME · ICE · NDAQ 价格过线</span></b><span>12-06 起 Nasdaq、Arca、EDGX、24X 开 21:00–04:00 夜盘。锁：SPX / VIX 独家期权、国债期货、纳指 100 授权</span></div>
+      <div class="card orange lock"><b>合规代币场所</b><span>NYSE 自建代币平台（24/7、即时结算、稳定币入金）；Nasdaq 代币交易规则已获批；SEC 五年"创新豁免"允许新场所（TSV）</span></div>
+      <div class="card orange"><b>境外代币场所</b><span>xStocks、Solana 上的 DEX、Robinhood 欧盟股票代币。多数只复制价格、无投票权，SEC 豁免明确不覆盖</span></div>
+    </div>
+
+    <div class="layer">
+      <div class="lname"><b>④ 清算与登记</b><span>谁记账 · 锁最硬</span></div>
+      <div class="card sand lock"><b>DTCC / NSCC / OCC</b><span>NSCC 2026-06-28 起 24×5 清算；OCC 清算全部美股期权。行业共有，买不到。交易日仍以美东 20:00 为界</span></div>
+      <div class="card orange lock"><b>DTC 代币化试点</b><span>SEC 2025-12 无异议函，2026 下半年启动，覆盖罗素 1000 与指数 ETF。合规代币股票没有绕开 DTC，只是换了外壳</span></div>
+      <div class="card orange"><b>发行 · 过户 · 托管<span class="tag o">BR 价格过线 · SECZ / BTGO 信息不足</span></b><span>Broadridge（委托书、交易后处理）；Securitize（NYSE、Computershare 合作）；BitGo（托管）</span></div>
+    </div>
+
+    <div class="layer">
+      <div class="lname"><b>⑤ 资金</b><span>用什么结算</span></div>
+      <div class="card teal"><b>美元银行账户</b><span>T+1 交收，经 DTCC。夜盘成交仍归入下一个交易日</span></div>
+      <div class="card orange"><b>USDC<span class="tag o">CRCL 卡在价格</span></b><span>Circle 发行；流通 $733 亿，储备收益率 3.5%。二季度储备收益 $6.68 亿，约 44% 分给 Coinbase</span></div>
+      <div class="card orange"><b>USDT</b><span>Tether，境外代币股票的主要通货。未上市，不受美国 GENIUS 法案直接约束</span></div>
+    </div>
+
+    <div class="layer">
+      <div class="lname"><b>⑥ 规则</b><span>谁说了算</span></div>
+      <div class="card slate"><b>SEC</b><span>2026-04-10 批准 Nasdaq 23/5；2026-09-17 代币股票创新豁免：须带分红与投票权，发行人 30 天反对权；2025 年撤回 PFOF 限制规则</span></div>
+      <div class="card slate"><b>CFTC 与各州</b><span>预测市场（Kalshi、Polymarket、Robinhood）约 20 起州政府与部落诉讼；第三巡回法院判联邦管辖优先，纽约法院未暂停州执法</span></div>
+      <div class="card slate"><b>海外监管</b><span>欧盟 2026-06-30 起全面禁止 PFOF；中国证监会 2026 年对富途罚款约 18.5 亿元；美国对中概 ADR 的退市风险</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>交易通道批次 2026-10-06 · 结构图 1 / 4</span><span>来源：各公司 10-Q / 8-K / 6-K、SEC、DTCC、NYSE、Nasdaq 公告；二手报道见批次 synthesis.md</span></div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page">
+  <h1>凌晨三点买一股英伟达：三条路径</h1>
+  <p class="sub">同一笔订单在三条通道上各经过哪些环节，拿到的是什么、风险在哪。路径 A 是存量体系的延伸，路径 B 是存量体系吸收新技术，路径 C 是体系外的灰色地带。</p>
+
+  <div class="path">
+    <h3>路径 A · 交易所夜盘 <small>2026-12-06 起 · 工作日 21:00–04:00 美东 · 周末休市</small></h3>
+    <div class="flow">
+      <div class="node teal"><b>亚洲散户</b><span>美股夜盘 = 他们的白天</span></div><div class="arrow">→</div>
+      <div class="node teal"><b>富途 / IBKR</b><span>23 小时最直接受益者</span></div><div class="arrow">→</div>
+      <div class="node teal"><b>交易所夜盘</b><span>Nasdaq · Arca · EDGX · 24X</span></div><div class="arrow">→</div>
+      <div class="node teal"><b>NSCC 清算</b><span>24×5，交易日 20:00 为界</span></div><div class="arrow">→</div>
+      <div class="node teal"><b>DTC 登记</b><span>真股票，T+1 交收</span></div>
+    </div>
+    <div class="facts">
+      <div><b>拿到什么</b>　同一只股票，全部股东权利</div>
+      <div><b>规模</b>　夜盘 2025 年约占美股成交 0.11%；Blue Ocean 2025 年成交 $3,750 亿</div>
+      <div><b>风险</b>　流动性薄、价差宽；12-06 后 Blue Ocean 独占结束，交易所接管</div>
+    </div>
+  </div>
+
+  <div class="path">
+    <h3>路径 B · 合规代币股票 <small>DTC 试点 2026 下半年 · SEC 创新豁免 2026-09-17 起五年 · NYSE 平台待批</small></h3>
+    <div class="flow">
+      <div class="node orange"><b>投资者</b><span>美国或海外</span></div><div class="arrow">→</div>
+      <div class="node orange"><b>券商或 TSV</b><span>SEC 豁免下的代币场所</span></div><div class="arrow">→</div>
+      <div class="node orange"><b>代币交易</b><span>NYSE 平台 · Nasdaq 规则</span></div><div class="arrow">→</div>
+      <div class="node orange"><b>DTC 代币份额</b><span>罗素 1000 · 指数 ETF</span></div><div class="arrow">→</div>
+      <div class="node orange"><b>稳定币即时结算</b><span>USDC 入金与交收</span></div>
+    </div>
+    <div class="facts">
+      <div><b>拿到什么</b>　必须带分红与投票权，和正股同权；发行人有 30 天反对权</div>
+      <div><b>规模</b>　尚未上线。DTC 试点为期三年</div>
+      <div><b>风险</b>　同一家公司两个市场的价差；稳定币发行方与分销商的分成；由交易所和 DTC 主导，新进入者空间有限</div>
+    </div>
+  </div>
+
+  <div class="path">
+    <h3>路径 C · 境外代币 <small>已在运行 · 含周末 24/7 · 多数无投票权</small></h3>
+    <div class="flow">
+      <div class="node slate"><b>境外用户</b><span>55% 成交在美股收盘后</span></div><div class="arrow">→</div>
+      <div class="node slate"><b>Kraken 等</b><span>xStocks · Robinhood 欧盟</span></div><div class="arrow">→</div>
+      <div class="node slate"><b>Solana DEX</b><span>链上撮合</span></div><div class="arrow">→</div>
+      <div class="node slate"><b>发行方托管正股</b><span>对手方风险</span></div><div class="arrow">→</div>
+      <div class="node slate"><b>仅价格敞口</b><span>像衍生品，不像股权</span></div>
+    </div>
+    <div class="facts">
+      <div><b>拿到什么</b>　价格敞口；分红多数可得，投票权多数没有</div>
+      <div><b>规模</b>　2026 年 7 月链上成交 $182 亿（环比 4.4 倍），不到美股月成交的 0.1%</div>
+      <div><b>风险</b>　周末无参考价（曾出现 14% 价差）；发行方托管是否可靠；SEC 豁免不覆盖</div>
+    </div>
+  </div>
+  <div class="foot"><span>交易通道批次 2026-10-06 · 结构图 2 / 4</span><span>来源：NYSE Data Insights、Blue Ocean、DTCC、SEC、Crypto Briefing、Financemagnates</span></div>
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<div class="page">
+  <h1>看不见的线：谁给谁付钱、谁持有谁</h1>
+  <p class="sub">方框按四列排：入口与流动性、交易所与清算、加密与代币、自建与底层。实线 = 付费或持股关系；虚线 = 替代或被接管。数字来自 2026 年二季度 10-Q / 8-K。</p>
+  <svg width="271mm" viewBox="0 0 1140 600" xmlns="http://www.w3.org/2000/svg" style="display:block">
+    <defs>
+      <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5B6475" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+      <marker id="aho" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#C2410C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    </defs>
+    <style>
+      .h { font-size: 13px; font-weight: 600; fill: #5B6475; letter-spacing: .04em; }
+      .bt { font-size: 14px; font-weight: 600; }
+      .bs { font-size: 11px; }
+      .el { font-size: 11px; fill: #5B6475; }
+      .elo { font-size: 11px; fill: #C2410C; }
+      .teal rect { fill: #E3F3F0; stroke: #008C7E; } .teal .bt { fill: #04342C; } .teal .bs { fill: #0F6E56; }
+      .orange rect { fill: #FBEAE1; stroke: #C2410C; } .orange .bt { fill: #4A1B0C; } .orange .bs { fill: #993C1D; }
+      .sand rect { fill: #F3E8DC; stroke: #B8A58F; } .sand .bt { fill: #3D2E1E; } .sand .bs { fill: #6B5841; }
+      .slate rect { fill: #EDEFF2; stroke: #5B6475; } .slate .bt { fill: #2C2C2A; } .slate .bs { fill: #5F5E5A; }
+      rect { stroke-width: 0.9; rx: 8; }
+      .e { fill: none; stroke: #5B6475; stroke-width: 1.3; }
+      .eo { fill: none; stroke: #C2410C; stroke-width: 1.3; }
+      .ed { fill: none; stroke: #8A93A2; stroke-width: 1.2; stroke-dasharray: 5 4; }
+    </style>
+
+    <text class="h" x="125" y="34" text-anchor="middle">入口与流动性</text>
+    <text class="h" x="470" y="34" text-anchor="middle">交易所与清算</text>
+    <text class="h" x="810" y="34" text-anchor="middle">加密与代币</text>
+    <text class="h" x="1030" y="34" text-anchor="middle">自建与底层</text>
+
+    <!-- left column -->
+    <g class="sand"><rect x="40" y="60" width="170" height="56"/><text class="bt" x="125" y="82" text-anchor="middle">Blue Ocean</text><text class="bs" x="125" y="101" text-anchor="middle">夜盘 ATS · 未上市</text></g>
+    <g class="teal"><rect x="40" y="170" width="170" height="56"/><text class="bt" x="125" y="192" text-anchor="middle">券商</text><text class="bs" x="125" y="211" text-anchor="middle">HOOD · IBKR · 富途</text></g>
+    <g class="teal"><rect x="40" y="300" width="170" height="56"/><text class="bt" x="125" y="322" text-anchor="middle">批发做市商</text><text class="bs" x="125" y="341" text-anchor="middle">Citadel · Virtu · Jane Street</text></g>
+
+    <!-- center column -->
+    <g class="teal"><rect x="390" y="60" width="160" height="56"/><text class="bt" x="470" y="82" text-anchor="middle">Nasdaq</text><text class="bs" x="470" y="101" text-anchor="middle">23/5 · 代币规则已获批</text></g>
+    <g class="teal"><rect x="390" y="170" width="160" height="56"/><text class="bt" x="470" y="192" text-anchor="middle">NYSE / ICE</text><text class="bs" x="470" y="211" text-anchor="middle">Arca 22 小时 · 代币平台</text></g>
+    <g class="teal"><rect x="390" y="280" width="160" height="56"/><text class="bt" x="470" y="302" text-anchor="middle">Cboe · CME</text><text class="bs" x="470" y="321" text-anchor="middle">期权 · 期货 · 事件合约</text></g>
+    <g class="sand"><rect x="390" y="410" width="160" height="56"/><text class="bt" x="470" y="432" text-anchor="middle">DTCC</text><text class="bs" x="470" y="451" text-anchor="middle">NSCC 24×5 · DTC 代币试点</text></g>
+    <g class="sand"><rect x="390" y="510" width="160" height="56"/><text class="bt" x="470" y="532" text-anchor="middle">OCC</text><text class="bs" x="470" y="551" text-anchor="middle">期权清算 · 行业共有</text></g>
+
+    <!-- right column -->
+    <g class="orange"><rect x="730" y="60" width="160" height="56"/><text class="bt" x="810" y="82" text-anchor="middle">Coinbase</text><text class="bs" x="810" y="101" text-anchor="middle">交易所 · Base 链</text></g>
+    <g class="orange"><rect x="730" y="170" width="160" height="56"/><text class="bt" x="810" y="192" text-anchor="middle">Circle</text><text class="bs" x="810" y="211" text-anchor="middle">USDC 发行方</text></g>
+    <g class="sand"><rect x="730" y="280" width="160" height="56"/><text class="bt" x="810" y="302" text-anchor="middle">Polymarket</text><text class="bs" x="810" y="321" text-anchor="middle">预测市场 · 未上市</text></g>
+    <g class="orange"><rect x="730" y="410" width="160" height="56"/><text class="bt" x="810" y="432" text-anchor="middle">Securitize</text><text class="bs" x="810" y="451" text-anchor="middle">代币发行与过户</text></g>
+    <g class="slate"><rect x="730" y="510" width="160" height="56"/><text class="bt" x="810" y="532" text-anchor="middle">过户代理</text><text class="bs" x="810" y="551" text-anchor="middle">Computershare · Continental</text></g>
+
+    <!-- far right column -->
+    <g class="orange"><rect x="960" y="110" width="140" height="56"/><text class="bt" x="1030" y="132" text-anchor="middle">Robinhood 自建</text><text class="bs" x="1030" y="151" text-anchor="middle">Rothera 交易所 · 自建链</text></g>
+    <g class="slate"><rect x="960" y="280" width="140" height="56"/><text class="bt" x="1030" y="302" text-anchor="middle">底层链</text><text class="bs" x="1030" y="321" text-anchor="middle">Optimism · Arbitrum</text></g>
+    <g class="orange"><rect x="960" y="430" width="140" height="56"/><text class="bt" x="1030" y="452" text-anchor="middle">Kraken</text><text class="bs" x="1030" y="471" text-anchor="middle">xStocks · Ink 链</text></g>
+
+    <!-- edges: left -->
+    <path class="ed" d="M210 88 L388 88" marker-end="url(#ah)"/>
+    <text class="el" x="299" y="78" text-anchor="middle">12-06 后夜盘被交易所接管</text>
+    <path class="e" d="M210 198 L388 198" marker-end="url(#ah)"/>
+    <text class="el" x="299" y="188" text-anchor="middle">交易费 · 清算费</text>
+    <path class="e" d="M125 300 L125 228" marker-end="url(#ah)"/>
+    <text class="el" x="134" y="268">订单流付费（PFOF）</text>
+
+    <!-- edges: center -->
+    <path class="e" d="M470 336 L470 408" marker-end="url(#ah)"/>
+    <text class="el" x="478" y="376">清算与登记</text>
+    <path class="e" d="M390 226 L370 226 L370 538 L388 538" marker-end="url(#ah)"/>
+    <text class="el" x="362" y="470" text-anchor="end">ICE 权益法持股</text>
+
+    <!-- edges: center -> right -->
+    <path class="eo" d="M550 198 L640 198 L640 308 L728 308" marker-end="url(#aho)"/>
+    <text class="elo" x="560" y="188">ICE 持股 14%（约 $20 亿）</text>
+    <path class="eo" d="M550 212 L600 212 L600 438 L728 438" marker-end="url(#aho)"/>
+    <text class="elo" x="606" y="380">NYSE 代币平台设计伙伴</text>
+
+    <!-- edges: right column -->
+    <path class="eo" d="M810 170 L810 118" marker-end="url(#aho)"/>
+    <text class="elo" x="802" y="147" text-anchor="end">储备收益约 44% 分给 Coinbase</text>
+    <path class="eo" d="M810 510 L810 468" marker-end="url(#aho)"/>
+    <text class="elo" x="818" y="492">合作做代币化股票</text>
+
+    <!-- edges: to underlying chains -->
+    <path class="eo" d="M890 88 L925 88 L925 308 L958 308" marker-end="url(#aho)"/>
+    <text class="elo" x="919" y="252" text-anchor="end">Base 建在 Optimism 上</text>
+    <path class="eo" d="M1030 166 L1030 278" marker-end="url(#aho)"/>
+    <text class="elo" x="1038" y="226">在 Arbitrum 上</text>
+    <path class="eo" d="M1030 430 L1030 338" marker-end="url(#aho)"/>
+    <text class="elo" x="1022" y="392" text-anchor="end">Ink 建在 Optimism 上</text>
+
+    <!-- legend -->
+    <path class="e" d="M40 586 L80 586" marker-end="url(#ah)"/><text class="el" x="88" y="590">付费 · 持股 · 合作</text>
+    <path class="ed" d="M230 586 L270 586" marker-end="url(#ah)"/><text class="el" x="278" y="590">替代 · 被接管</text>
+    <text class="el" x="420" y="590">底层链代币：OP 距高点 −97%，ARB −92%（链在长，代币没拿到价值）</text>
+  </svg>
+  <div class="foot"><span>交易通道批次 2026-10-06 · 结构图 3 / 4</span><span>来源：ICE 10-Q（2026-06-30）、Circle 与 Coinbase 10-Q、Securitize 8-K、The Block、Yahoo 价格</span></div>
+</div>
+
+<!-- ================= PAGE 4 ================= -->
+<div class="page">
+  <h1>价值往哪流：对应到 13 张决策卡</h1>
+  <p class="sub">价格 = 2026-10-06 收盘。"base IRR" = 10 年基准情景年化回报；"8% 买入价" = 基准情景恰好 8% 回报对应的股价。全部 WATCH，未经独立 Checker。判据，不是建议。</p>
+  <table>
+    <tr><th style="width:17%">层</th><th style="width:13%">公司</th><th style="width:9%">现价</th><th style="width:9%">base IRR</th><th style="width:10%">8% 买入价</th><th>卡在哪 · 在这张网里的位置</th></tr>
+    <tr><td rowspan="4">③ 交易场所</td><td>CME</td><td class="num">$270.18</td><td class="num">+9.9%</td><td class="num">$313.98</td><td><span class="pill w">完整度</span> 锁最硬：利率与国债期货 + 自有清算；与 AI 因子相关性最低</td></tr>
+    <tr><td>ICE</td><td class="num">$153.49</td><td class="num">+10.5%</td><td class="num">$188.03</td><td><span class="pill w">完整度</span> 纽交所代币平台 + Polymarket 14% + 布伦特基准；这张网里连线最多的节点</td></tr>
+    <tr><td>Cboe</td><td class="num">$278.20</td><td class="num">+10.0%</td><td class="num">$327.38</td><td><span class="pill w">完整度</span> SPX / VIX 独家期权；EDGX 开 24×5</td></tr>
+    <tr><td>Nasdaq</td><td class="num">$92.27</td><td class="num">+9.2%</td><td class="num">$102.24</td><td><span class="pill w">完整度</span> 23/5 发起者；真正的锁是纳指 100 授权和金融软件</td></tr>
+    <tr><td>② 流动性</td><td>Virtu</td><td class="num">$61.62</td><td class="num">+9.0%</td><td class="num">$66.04</td><td><span class="pill w">周期顶部</span> 夜盘和周末代币都靠它报价；没有锁，只有规模</td></tr>
+    <tr><td rowspan="3">④ 清算与登记</td><td>Broadridge</td><td class="num">$158.66</td><td class="num">+11.4%</td><td class="num">$207.68</td><td><span class="pill w">替代叙事</span> 市场怕它被 AI 和代币化绕开；SEC 豁免要求代币带投票权，代理投票仍要走它</td></tr>
+    <tr><td>Securitize</td><td class="num">$12.70</td><td class="num">—</td><td class="num">—</td><td><span class="pill g">信息不足</span> 上市 3 个月、亏损；NYSE 代币平台设计伙伴</td></tr>
+    <tr><td>BitGo</td><td class="num">$7.19</td><td class="num">+5.9%</td><td class="num">$5.91</td><td><span class="pill g">价格 + 完整度</span> 托管平台资产同比 −28%</td></tr>
+    <tr><td>⑤ 资金</td><td>Circle</td><td class="num">$84.13</td><td class="num">+4.8%</td><td class="num">$62.08</td><td><span class="pill g">价格 + 利率</span> 路径 B / C 的通货；近一半收益分给 Coinbase</td></tr>
+    <tr><td rowspan="4">① 入口</td><td>富途</td><td class="num">$113.21</td><td class="num">+12.1%</td><td class="num">$160.38</td><td><span class="pill w">中国监管</span> 23 小时交易最直接受益者（美股占成交 78%）</td></tr>
+    <tr><td>IBKR</td><td class="num">$90.58</td><td class="num">+4.5%</td><td class="num">$65.37</td><td><span class="pill g">价格</span> 要求十年每年 +14.7%；DARTs 增速 6 月 +53% → 9 月 +6%</td></tr>
+    <tr><td>Robinhood</td><td class="num">$112.00</td><td class="num">+5.5%</td><td class="num">$88.74</td><td><span class="pill g">价格 + 周期</span> 要求十年每年 +17.7%；正在往下层造铲子（Rothera、自建链）</td></tr>
+    <tr><td>Coinbase</td><td class="num">$185.74</td><td class="num">+6.2%</td><td class="num">$156.94</td><td><span class="pill g">价格 + 加密周期</span> 锁在 USDC 分成和托管；零售手续费在被压缩</td></tr>
+  </table>
+  <div class="callout">
+    <b>一句话：</b>新通道的价值在往两头走。下层的交易所和 DTC 在把代币化收进自己的体系，上层的券商在抢用户、并向下自建交易所和链；夹在中间、没有锁的环节最容易被挤压：独占夜盘的 Blue Ocean、包装境外代币的发行方、靠底层技术的链代币。"收手续费又有自己代币"的公司，美股上市公司里一家也没有。
+  </div>
+  <div class="foot"><span>交易通道批次 2026-10-06 · 结构图 4 / 4</span><span>决策卡：companies/&lt;ticker&gt;/2026-10-06/ · 汇总：companies/_trading_rails_2026-10-06/synthesis.md</span></div>
+</div>
+
+</body>
+</html>
