@@ -1,0 +1,11 @@
+case_id,market,point,date,gross_rental_yield_pct,mortgage_rate_pct,spread_pp,basis,source_id,note
+tokyo_bottom,东京,历史底部,2002-2004,5.5,2.4,3.1,est,S39,回报率区间5-6;Flat35利率约2-2.5
+hk_bottom,香港,历史底部,2003,5.5,2.5,3.0,est,S39,HIBOR挂钩低利率
+us_bottom,美国,历史底部,2012,5.3,3.7,1.6,est,S39,30年期固定3.7
+cn_now,中国一线,当前,2026-09,2.2,3.0,-0.8,est,S07;S08,回报率区间1.79-2.7;首套商贷约3.0
+beijing_now,北京,当前,2026-09,2.3,3.0,-0.7,est,S07,区间2.0-2.66
+shanghai_now,上海,当前,2026-09,2.5,3.0,-0.5,est,S07,区间2.2-2.68
+shenzhen_now,深圳,当前,2026-09,2.3,3.0,-0.7,est,S07,区间2.0-2.64
+hk_now,香港,当前,2026,3.5,3.1,0.4,est,S16;S39,利差刚转正后价格止跌
+ny_now,纽约,当前,2026,4.5,6.3,-1.8,est,S15;S39,现金买家占比高抵消负利差
+tokyo_now,东京,当前,2026,3.5,0.8,2.7,est,S17;S39,全球唯一新高+正利差

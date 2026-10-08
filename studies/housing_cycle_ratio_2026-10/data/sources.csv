@@ -1,0 +1,49 @@
+source_id,type,title,url,used_for,reliability
+S01,official_via_media,NBS 70城指数2026-07(TradingEconomics转引),https://tradingeconomics.com/china/housing-index/news/494181,中国一线月度同比/连跌37月,high
+S02,media,中商情报网 2026-05二手房同比排行,https://www.askci.com/news/20260616/101945278157557750027520.shtml,城市级月度同比,medium
+S03,media,中新网 2026-08京沪深成交,https://www.chinanews.com.cn/cj/2026/09-02/10688407.shtml,月度成交量,high
+S04,media,新浪财经 贝壳挂牌量650万套,https://finance.sina.com.cn/roll/2025-12-16/doc-inhaymzi1128022.shtml,挂牌量,medium
+S05,official,国家统计局 2024房地产市场基本情况,https://www.stats.gov.cn/sj/zxfb/202501/t20250117_1958328.html,全国销售面积,high
+S06,media,Asia Times 法拍房加速,https://asiatimes.com/2026/08/flood-of-discounted-auction-homes-deepens-chinas-property-slump/,供给压力,medium
+S07,aggregator,GlobalPropertyGuide 中国租金回报率,https://www.globalpropertyguide.com/asia/china/rental-yields,一线租金回报率,medium
+S08,media,一财 大城市租金回报率超存款利率,https://www.yicaiglobal.com/news/rental-yields-in-chinas-big-cities-top-deposit-interest-rates-may-spur-housing-market-economist-says,一线回报率1.79%,medium
+S09,institute_via_media,中指院 2024一线租金年度盘点(腾讯),https://news.qq.com/rain/a/20241227A06LZD00,一线租金累计跌幅,medium
+S10,official,邮储银行 LPR页面,https://www.psbc.com/cn/common/bjfw/dkscbjllcx/,LPR 5Y 3.5%,high
+S11,academic,IMF WP 日本人口与住房,https://www.elibrary.imf.org/view/journals/001/2020/200/article-A001-en.xml,日本地价-70%,high
+S12,industry,HousingJapan 东京房价史,https://housingjapan.com/resources/a-history-of-tokyo-houses-and-real-estate-prices/,东京35年回本/2002见底,medium
+S13,media,SCMP 香港2017创97后新高,https://www.scmp.com/property/hong-kong-china/article/2094340/hong-kong-home-prices-scale-new-peak-20-years-after-1997,香港回本年数/负资产10.5万户,high
+S14,academic_media,Wharton 香港泡沫教训,https://knowledge.wharton.upenn.edu/article/attention-speculators-heres-a-lesson-from-hong-kongs-housing-bubble/,香港-65%,high
+S15,official,FRED Case-Shiller NY,https://fred.stlouisfed.org/series/NYXRSA,纽约指数341/新高,high
+S16,media,Mingtiandi S&P香港2021-26,https://www.mingtiandi.com/real-estate/research-policy/hong-kong-home-prices-could-rise-another-5-this-year-sp/,香港-30%触底反弹,medium
+S17,media,Japan Times 东京新盘破1亿日元,https://www.japantimes.co.jp/business/2026/07/21/tokyo-area-condos-first-half-prices/,东京+13.1%/供应50年最低,high
+S18,media,SCMP 沪深或跟进松限购,https://www.scmp.com/business/article/3321434/china-property-shanghai-shenzhen-could-drop-buying-curbs-after-surprise-beijing-move,政策阶段,high
+S19,media,网易 一线部分区域回调15-20%,https://www.163.com/dy/article/KSC41B3D0542I2TH.html,官方口径累计回撤,low
+S20,media,腾讯 挂牌850万/成交周期187天/全国累计30-40%,https://news.qq.com/rain/a/20260519A03I1S00,成交周期/全国回撤,low
+S21,aggregator,GlobalPropertyGuide 中国价格史,https://www.globalpropertyguide.com/asia/china/price-history,连跌月数交叉验证,medium
+S22,media,界面 2016房地产十大事件,https://www.jiemian.com/article/1037459.html,2016排队离婚/抢房,high
+S23,media,21财经 成都7万人摇号640套,https://m.21jingji.com/article/20180514/herald/7b04fe2778798c9fcc185173957f129e.html,2018摇号狂热,high
+S24,ugc,知乎 六个钱包,https://zhuanlan.zhihu.com/p/666421296,2018六个钱包,medium
+S25,reference,维基百科 恒大债务危机,https://zh.wikipedia.org/zh-hans/恒大債務危機,2021暴雷时间线,high
+S26,media,观察者 2021房企暴雷之年,https://www.guancha.cn/ChanJing/2021_12_31_620620.shtml,2021下半年转折,high
+S27,media,中国基金报 多地烂尾楼集体停贷,https://www.chnfund.com/article/AR2022071222542799155614,2022停贷潮,high
+S28,media,RFA 停贷风暴300+楼盘,https://www.rfa.org/mandarin/yataibaodao/huanjing/jt-07182022140907.html,2022停贷规模,medium
+S29,media,澎湃 排队提前还房贷,https://www.thepaper.cn/newsDetail_forward_21842958,2023还贷潮,high
+S30,media,每经 近20城认房不认贷,https://www.nbd.com.cn/articles/2023-09-06/3008326.html,2023政策脉冲,high
+S31,survey,澎湃 2024年轻人买房意愿调查,https://www.thepaper.cn/newsDetail_forward_27959516,2024购房意愿数据,medium
+S32,media,前瞻 2019深圳房价全国第一,https://www.qianzhan.com/analyst/detail/220/200223-920ccd3f.html,2019深圳打新,medium
+S33,media,澎湃 深圳2020暴涨解密,https://m.thepaper.cn/newsDetail_forward_12614625,2020深圳+27%,medium
+S34,media,财富中文网 2026房地产会更惨吗,https://www.fortunechina.com/shangye/c/2026-02/03/content_471897.htm,2026分歧,medium
+S35,ugc,知乎 2026大佬观点汇总,https://zhuanlan.zhihu.com/p/2005992336501536139,2026专家分裂,low
+S36,academic,中欧CEIBS 2026房地产能触底吗,https://cn.ceibs.edu/emba/global-view/28419,2026触底争论,medium
+S37,institute,中房协 2024成交筑底展望,http://m.fangchan.com/data/13/2024-12-26/7277888258418479366.html,2025销售面积预测,medium
+S38,media,Chinadaily 2025-08 70城,https://global.chinadaily.com.cn/a/202509/15/WS68c7be3ea3108622abca0d45.html,2025-08一线新房-0.9,high
+S39,knowledge,历史公开常识锚点(教科书级),n/a,日本泡沫/美国2008/香港97/英国89-95的公认史实数字,medium
+S40,official,国家统计局CPI月度解读2026,https://www.stats.gov.cn/sj/sjjd/202607/t20260709_1964082.html,2026月度CPI,high
+S41,media,网易 全国房地产政策变动监测(2026-09),https://www.163.com/dy/article/L8I79NTS0515AR2E.html,9月69/79宽松+公积金新规,medium
+S42,official_via_media,光明网 贷款贴息新政,https://m.gmw.cn/2026-09/29/content_1304570020.htm,10·1贴息细则,high
+S43,media,虎嗅 中央财政首次商贷贴息,https://www.huxiu.com/article/4894906.html,贴息150万上限解读,medium
+S44,official_via_media,腾讯/21财经 2026-08 70城数据,https://news.qq.com/rain/a/20260915A09B4M00,8月一线环比转涨/同比收窄,high
+S45,media,21财经 828新政10月实施,https://m.21jingji.com/article/20260929/herald/d63316eb5910f48d9f44fc4489b40ca3.html,现房销售制度,high
+S46,media,搜狐/中华网 国庆一线楼市,https://www.sohu.com/a/1084725584_122014422,北京+52%/到访+50%,medium
+S47,media,虎嗅 上海金九银十,https://www.huxiu.com/moment/1285979.html,沪二手2.3万套6年新高,medium
+S48,media,腾讯 金九银十分化主旋律,https://news.qq.com/rain/a/20260915A0B0KL00,冰火两重天,medium
