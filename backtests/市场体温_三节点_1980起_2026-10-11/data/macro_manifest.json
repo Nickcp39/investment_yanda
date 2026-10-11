@@ -1,0 +1,33 @@
+{
+  "fetched_utc": "2026-10-11T15:38:34",
+  "series": [
+    {
+      "name": "BLS CPI-U NSA + unemployment rate SA",
+      "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/",
+      "rows": 584,
+      "first": "1978-01",
+      "last": "2026-09"
+    },
+    {
+      "name": "LBMA gold PM USD/oz (cached copy, fetch failed)",
+      "error": "HTTP Error 403: Forbidden",
+      "copied_from": "I:\\yc_research\\2026 investment yanda\\backtests\\黄金_货币供应_估值_2026-08-07\\data\\gold_lbma_pm_daily.csv"
+    },
+    {
+      "name": "us_m2_monthly.csv",
+      "copied_from": "I:\\yc_research\\2026 investment yanda\\backtests\\黄金_货币供应_估值_2026-08-07\\data\\us_m2_monthly.csv"
+    },
+    {
+      "name": "multpl_shiller_pe.csv",
+      "copied_from": "I:\\yc_research\\2026 investment yanda\\backtests\\QQQ_现在高不高_2026-10-08\\data\\multpl_shiller_pe.csv"
+    },
+    {
+      "name": "multpl_sp500_pe.csv",
+      "copied_from": "I:\\yc_research\\2026 investment yanda\\backtests\\QQQ_现在高不高_2026-10-08\\data\\multpl_sp500_pe.csv"
+    },
+    {
+      "name": "ndx_forward_pe_weekly.csv",
+      "copied_from": "I:\\yc_research\\2026 investment yanda\\backtests\\QQQ_现在高不高_2026-10-08\\data\\ndx_forward_pe_weekly.csv"
+    }
+  ]
+}
