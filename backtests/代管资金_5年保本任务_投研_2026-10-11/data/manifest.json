@@ -1,0 +1,185 @@
+{
+  "fetched_utc": "2026-10-11T08:56:30",
+  "series": {
+    "QQQ": {
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6940,
+      "first": "1999-03-10",
+      "last": "2026-10-09",
+      "last_close": 751.27001953125,
+      "currency": "USD",
+      "exchange": "NGM"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 8482,
+      "first": "1993-01-29",
+      "last": "2026-10-09",
+      "last_close": 778.5700073242188,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "RSP": {
+      "symbol": "RSP",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 5899,
+      "first": "2003-05-01",
+      "last": "2026-10-09",
+      "last_close": 213.0399932861328,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "EFA": {
+      "symbol": "EFA",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/EFA?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6317,
+      "first": "2001-08-27",
+      "last": "2026-10-09",
+      "last_close": 103.4000015258789,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "EEM": {
+      "symbol": "EEM",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/EEM?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 5911,
+      "first": "2003-04-14",
+      "last": "2026-10-09",
+      "last_close": 66.80000305175781,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "GLD": {
+      "symbol": "GLD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLD?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 5507,
+      "first": "2004-11-18",
+      "last": "2026-10-09",
+      "last_close": 384.5799865722656,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "IEF": {
+      "symbol": "IEF",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/IEF?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6089,
+      "first": "2002-07-30",
+      "last": "2026-10-09",
+      "last_close": 89.4000015258789,
+      "currency": "USD",
+      "exchange": "NGM"
+    },
+    "TLT": {
+      "symbol": "TLT",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TLT?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6089,
+      "first": "2002-07-30",
+      "last": "2026-10-09",
+      "last_close": 77.9800033569336,
+      "currency": "USD",
+      "exchange": "NGM"
+    },
+    "BRKB": {
+      "symbol": "BRK-B",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 7654,
+      "first": "1996-05-09",
+      "last": "2026-10-09",
+      "last_close": 515.6199951171875,
+      "currency": "USD",
+      "exchange": "NYQ"
+    },
+    "IRX": {
+      "symbol": "^IRX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIRX?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14212,
+      "first": "1970-01-02",
+      "last": "2026-10-08",
+      "last_close": 4.043000221252441,
+      "currency": "USD",
+      "exchange": "CGI"
+    },
+    "FVX": {
+      "symbol": "^FVX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFVX?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14212,
+      "first": "1970-01-02",
+      "last": "2026-10-08",
+      "last_close": 4.991000175476074,
+      "currency": "USD",
+      "exchange": "CGI"
+    },
+    "TNX": {
+      "symbol": "^TNX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14212,
+      "first": "1970-01-02",
+      "last": "2026-10-08",
+      "last_close": 5.230999946594238,
+      "currency": "USD",
+      "exchange": "CGI"
+    },
+    "CNY": {
+      "symbol": "CNY=X",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6334,
+      "first": "2001-06-24",
+      "last": "2026-10-11",
+      "last_close": 6.692200183868408,
+      "currency": "CNY",
+      "exchange": "CCY"
+    },
+    "NDX": {
+      "symbol": "^NDX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 10336,
+      "first": "1985-10-01",
+      "last": "2026-10-09",
+      "last_close": 30883.150390625,
+      "currency": "USD",
+      "exchange": "NIM"
+    },
+    "SP500TR": {
+      "symbol": "^SP500TR",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESP500TR?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 9766,
+      "first": "1988-01-04",
+      "last": "2026-10-09",
+      "last_close": 17525.23046875,
+      "currency": "USD",
+      "exchange": "SNP"
+    },
+    "VXUS": {
+      "symbol": "VXUS",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/VXUS?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 3948,
+      "first": "2011-01-28",
+      "last": "2026-10-09",
+      "last_close": 84.81999969482422,
+      "currency": "USD",
+      "exchange": "NGM"
+    },
+    "SCHD": {
+      "symbol": "SCHD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SCHD?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 3764,
+      "first": "2011-10-20",
+      "last": "2026-10-09",
+      "last_close": 33.040000915527344,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "BIL": {
+      "symbol": "BIL",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BIL?period1=0&period2=1791896190&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 4873,
+      "first": "2007-05-30",
+      "last": "2026-10-09",
+      "last_close": 91.51000213623047,
+      "currency": "USD",
+      "exchange": "PCX"
+    }
+  }
+}

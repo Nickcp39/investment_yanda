@@ -1,0 +1,45 @@
+{
+  "fetched_utc": "2026-10-08T07:02:54",
+  "series": {
+    "QQQ": {
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1791630174&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6938,
+      "first": "1999-03-10",
+      "last": "2026-10-07",
+      "last_close": 757.72998046875,
+      "currency": "USD",
+      "exchange": "NGM"
+    },
+    "NDX": {
+      "symbol": "^NDX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=0&period2=1791630174&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 10334,
+      "first": "1985-10-01",
+      "last": "2026-10-07",
+      "last_close": 31160.080078125,
+      "currency": "USD",
+      "exchange": "NIM"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1791630174&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 8480,
+      "first": "1993-01-29",
+      "last": "2026-10-07",
+      "last_close": 777.219970703125,
+      "currency": "USD",
+      "exchange": "PCX"
+    },
+    "GSPC": {
+      "symbol": "^GSPC",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1791630174&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14313,
+      "first": "1970-01-02",
+      "last": "2026-10-07",
+      "last_close": 7801.77001953125,
+      "currency": "USD",
+      "exchange": "SNP"
+    }
+  }
+}
