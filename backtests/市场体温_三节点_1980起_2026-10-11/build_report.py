@@ -8,6 +8,14 @@ HERE = Path(__file__).resolve().parent
 S = json.load(open(HERE/"stats_temp.json", encoding="utf-8")); G = pd.read_csv(HERE/"gauges.csv")
 AS = S["as_of"]; L = S["levels"]; N = S["nodes"]; NE = S["ndx_eras"]; SE = S["spx_eras"]; GL = S["gold_levels"]; H = S["heat_by_group"]; GS = S["gold_splice"]
 g = {r["指标"]: r for r in G.to_dict("records")}
+PF = json.load(open(HERE/"panel_fits.json", encoding="utf-8"))
+
+
+def frow(lab, era):
+    r = PF[lab][era]; return f"| {lab} | {era} 底起 {r['start']} | P = {r['a']:,.0f} × {1+r['g']/100:.3f}^t | {r['g']:.1f}% | {r['dev']:+.0f}% | {r['pct']:.0f} | {r['implied']['3']:,.0f} / {r['implied']['5']:,.0f} |"
+
+
+FROWS = chr(10).join(frow(lab, era) for lab in ("纳指100", "标普500", "黄金") for era in ("2000", "2008", "2015", "2021"))
 
 
 def f(r, v):
