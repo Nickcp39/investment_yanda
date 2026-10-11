@@ -13,6 +13,7 @@
 python fetch_prices.py       # Yahoo：^GSPC ^SP500TR SPY ^NDX QQQ ^TNX ^IRX ^FVX ^VIX GC=F HG=F CL=F DX-Y.NYB
 python fetch_macro.py        # BLS v1（CPI-U、失业率，10 年分段）；LBMA 黄金（403 则复制黄金批次缓存）；复制 M2 / CAPE / NDX 前瞻 PE
 python build_temperature.py  # → fig/, gauges.csv, stats_temp.json
+python build_panels.py       # → fig/03_ndx_three_panels.png, fig/01b_spx_three_panels.png（三把尺子并列，共用坐标）
 python build_report.py       # report_template.md（f-string 模板）→ report.md
 python ../../scripts/md_to_pdf.py report.md ../../output/pdf/市场体温计_三节点_1980起_2026-10-11.pdf "市场体温计 · 三节点与 1980 起 · 2026-10-11"
 ```
