@@ -1,0 +1,46 @@
+company,year,weight_pct,pe
+AT&T,1981,5.2,0
+IBM,1982,5.1,12
+IBM,1983,5.9,13
+IBM,1984,6.0,11
+IBM,1985,5.6,13
+IBM,1986,4.6,12
+IBM,1987,3.9,14
+IBM,1988,3.75,11
+Exxon Mobil,1989,2.7,14
+IBM,1990,3.35,15
+Exxon Mobil,1991,3.1,12
+Walmart,1992,2.8,40
+General Electric,1993,2.9,13
+General Electric,1994,2.65,8
+General Electric,1995,2.85,11
+General Electric,1996,3.15,15
+General Electric,1997,3.3,19
+Microsoft,1998,3.5,74
+Microsoft,1999,4.2,62
+General Electric,2000,4.4,25
+General Electric,2001,3.6,16
+Microsoft,2002,3.65,32
+General Electric,2003,3.0,12
+General Electric,2004,3.5,16
+General Electric,2005,3.2,13
+Exxon Mobil,2006,3.5,12
+Exxon Mobil,2007,3.7,13
+Exxon Mobil,2008,5.1,9
+Exxon Mobil,2009,3.6,18
+Exxon Mobil,2010,3.15,12
+Exxon Mobil,2011,3.25,10
+Apple,2012,4.2,13
+Apple,2013,3.0,14
+Apple,2014,3.6,18
+Apple,2015,3.4,13
+Apple,2016,2.95,13
+Apple,2017,3.7,19
+Apple,2018,3.55,16
+Apple,2019,4.3,22
+Apple,2020,6.5,38
+Apple,2021,6.7,29
+Apple,2022,6.5,24
+Apple,2023,7.3,31
+Apple,2024,6.7,35
+NVIDIA,2025,7.2,46
