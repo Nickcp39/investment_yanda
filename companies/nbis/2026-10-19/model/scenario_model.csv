@@ -1,0 +1,7 @@
+scenario,exit_2026_arr_usd_b,ev_basis,ev_usd_b,ev_over_arr,as_of_price,note
+guide_low,7.0,A pro-forma post-converts: cash+restricted 9.10 + net proceeds 5.68 = 14.78 vs debt 0.775 ABF + 5.75 new converts + ~0.2 residual = 6.73,37.3,5.33,165.47,basis used in this card; no Q3 burn included
+guide_mid,8.0,A pro-forma post-converts,37.3,4.66,165.47,basis used in this card
+guide_high,9.0,A pro-forma post-converts,37.3,4.14,165.47,basis used in this card
+current_jun26,3.0,A pro-forma post-converts,37.3,12.43,165.47,basis used in this card
+guide_mid_basisB,8.0,B prior-card method: cash 8.0 vs 0.775 ABF (converts ignored both sides),38.1,4.76,165.47,shown to make the basis question visible; residual 2029/2031 principal unverified
+current_jun26_basisB,3.0,B prior-card method,38.1,12.70,165.47,shown to make the basis question visible

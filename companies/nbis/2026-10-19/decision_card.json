@@ -1,0 +1,82 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-10-16",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-10-19",
+  "batch": "nbis_nvda_selloff_rerun_2026-10-19",
+  "refresh_of": "companies/nbis/2026-09-05",
+  "refresh_type": "SELLOFF RERUN + CONVERT FINANCING (no new financial statements since Q2'26; four new primary 6-Ks folded in; price inside band for the first time)",
+  "as_of_note": "as_of_price is the Friday 2026-10-16 close. Run made Monday 2026-10-19 during the session; the in-progress session is excluded.",
+  "context_label": "price_inside_band_for_the_first_time_proof_metric_still_open_leverage_leg_realised_peer_credit_stress",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 70,
+  "as_of_price": 165.47,
+  "as_of_market_cap": 45355327000,
+  "share_basis_note": "274.10M shares x $165.47 close of 2026-10-16 = $45.36B, matching stockanalysis. EV ~$37.3B pro-forma post-converts (cash+restricted $9.10B + ~$5.68B net proceeds vs $775M ABF + $5.75B new converts + ~$0.2B residual 2029/2031 notes), before any Q3 burn. Residual 2029/2031 principal after the $800M exchange is NOT verified in this run.",
+  "prior_card": {
+    "as_of": "2026-09-05",
+    "price_used": 226.39,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below_band": [150.0, 180.0],
+    "no_chase_zone": ">= $250",
+    "max_size_pct": 4,
+    "net_signal": -1
+  },
+  "price_change_vs_prior_pct": -26.9,
+  "distance_from_52wk_high_pct": -44.8,
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 0, "confidence": "med", "finding": "Four primary 6-K exhibits since 09-05 reached directly (convert pricing 08-19, closing 08-24, AGM 08-26, Palantir 09-08, Inferize 10-01). No new financial statements. Active MW still undisclosed (fourth quarter). C110 and C-NEW-ATM remain unreconciled."},
+    {"module": "M2 Theme / Mechanism", "role": "context+conviction", "signal": 1, "confidence": "med", "finding": "Company-level evidence unchanged: 5 GW contracted, RPO $33.6B, connected guidance 800MW-1GW not raised. Palantir sovereign-stack partnership is primary but carries no dollar or MW terms. Sector narrative hits (OpenAI revenue shortfall report, Gartner neocloud warning, CoreWeave credit stress) are scored in M5."},
+    {"module": "M3 Profit Pool / Durability", "role": "conviction", "signal": 1, "confidence": "med", "finding": "Carried. No new transacted price-per-MW data. Reported 2026-10-01 list-price increases (H100 ~+17%, B300 ~+21%) come from a single low-profile source and are not credited."},
+    {"module": "M4 Financial Reality", "role": "conviction/warning", "signal": 0, "confidence": "med", "finding": "Liquidity improved by ~$5.68B net from the converts; gross debt rose by $5.75B at 0.50%/4.50%. Last reported quarter still shows FCF ~ -$3.4B (capex ~$5.7B vs OCF ~$2.3B). Nets to zero until Q3 shows cash conversion."},
+    {"module": "M5 Inversion / Trap", "role": "risk", "signal": -2, "confidence": "high", "finding": "Leverage leg realised: $5.75B converts done vs the $3.75B plan the K-G flag was written for; conversion prices $313-325 are 90-96% above spot so the notes behave as debt. Peer CoreWeave bonds ~79c / CDS ~643bp; Gartner: most neoclouds will not survive independently; short interest 19.5% of float; Burry leveraged puts (secondary). Not relaxed."},
+    {"module": "M6 Price / Position", "role": "price+output", "signal": 1, "confidence": "med", "finding": "First card with price inside the $150-180 band: 8.1% below the $180 STARTER gate, 10.3% above the floor. EV/exit-2026 ARR mid ~4.7x (was 6.85x); EV/current ARR ~12.4x (was 18.3x)."}
+  ],
+  "net_signal": 1,
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "new_money_size_pct": 0,
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "max_size_pct": 4,
+  "buy_below_band": [150.0, 180.0],
+  "buy_below": 180.0,
+  "no_chase_zone": ">= $250",
+  "binding_constraint": "EVIDENCE (active MW undisclosed four quarters; Q3'26 is the fifth test), no longer PRICE",
+  "watch_to_starter_trigger": {
+    "condition_1_price_below_180": "MET at 165.47",
+    "condition_2_active_mw_disclosed": "OPEN - resolves on the Q3'26 release (date not announced; calendars project 2026-11-11, unconfirmed)",
+    "ramp_test": "ARR $3.0B (Jun-26) -> $7-9B exit-2026; Q3 should show >= ~$5B with FY26 guidance intact"
+  },
+  "kill_criteria_status": {
+    "K-A_active_mw_undisclosed": "yellow - open, fourth quarter",
+    "K-B_anchor_risk": "green",
+    "K-C_prepayment_dilution": "yellow - partly realised: $800M of 2029/2031 notes exchanged for ~15.8M shares (08-24); $2.8B ATM at $223.6 avg (C-NEW-ATM) still unreconciled",
+    "K-D_rev_per_mw_declining": "green",
+    "K-E_capex_without_conversion": "green",
+    "K-F_concentration_icfr": "undeterminable",
+    "K-G_leverage_branch": "RED - triggered on quantity: $5.75B converts vs $3.75B plan; total convertible stock ~$5.95B+ plus $775M ABF; peer credit stress is the market pricing this branch",
+    "K-VAL": "green - price inside band (downgraded from red)",
+    "reds": 1,
+    "monitor_rule_2_reds_trim": "NOT triggered"
+  },
+  "conflicts_carried": [
+    {"id": "C110", "status": "unresolved", "what": "deferred-revenue basis ~$1.2B apart"},
+    {"id": "C111", "status": "superseded", "what": "net-debt basis: after the converts the company is a net borrower on gross debt; EV shown on two bases in model/"},
+    {"id": "C-NEW-ATM", "status": "unresolved", "what": "$2.8B ATM at $223.6 avg vs 08-12 'undrawn'; not used to fire K-C beyond 'partly realised'"}
+  ],
+  "sources_used": [
+    {"id": "S1", "tier": "A1", "what": "SEC 6-K 2026-08-20 Ex-99.1 convert pricing", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm", "public_date": "2026-08-19"},
+    {"id": "S2", "tier": "A1", "what": "SEC 6-K 2026-08-24 Ex-99.1 convert closing ($5.75B)", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926100347/tm2623863d1_ex99-1.htm", "public_date": "2026-08-24"},
+    {"id": "S3", "tier": "A1", "what": "SEC 6-K 2026-09-08 Palantir partnership", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_6k.htm", "public_date": "2026-09-08"},
+    {"id": "S4", "tier": "A1", "what": "SEC 6-K 2026-10-01 Ex-99.1 Inferize acquisition (terms undisclosed)", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm", "public_date": "2026-10-01"},
+    {"id": "S5", "tier": "B1", "what": "nebius.com newsroom listing (no Q3 date announced)", "url": "https://nebius.com/newsroom", "public_date": "2026-10-19"},
+    {"id": "S6", "tier": "B2", "what": "Yahoo v8 chart + stockanalysis history/statistics (price, 52wk, shares, short interest)", "url": "https://stockanalysis.com/stocks/nbis/statistics/", "public_date": "2026-10-16"},
+    {"id": "S7", "tier": "C1", "what": "Benzinga: Gartner neocloud warning, short interest ~20%, Burry puts", "url": "https://www.benzinga.com/markets/equities/26/10/62428420/nebius-stock-falls-after-key-gartner-warning-as-short-interest-nears-20", "public_date": "2026-10-16"},
+    {"id": "S8", "tier": "C1", "what": "CoreWeave bonds ~79c / CDS ~643bp; neocloud contagion (Bloomberg/Fool/CNN via search)", "url": "https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave", "public_date": "2026-10-16"},
+    {"id": "S9", "tier": "A1", "what": "Carried: SEC 6-K Q2'26 (read 2026-09-05)", "url": "companies/nbis/2026-09-05/facts.md", "public_date": "2026-08-12"}
+  ],
+  "runner_dissent": "The case for moving today: EV ~4.7x exit-2026 ARR against a $33.6B RPO and 5 GW contracted is a price this card has never seen, the drawdown is 45%, and waiting for a disclosure the company has withheld four times may mean never buying. The case against: the company set its own equity reference at $223.90 when it priced $5.75B of converts eight weeks ago with conversion prices above $313, and the market has since repriced the entire neocloud credit stack. The price got cheap because the leverage branch this card flagged in August is being tested in public. The cost of waiting is bounded: Q3 is weeks away. And under trading-desk/risk_limits.md the book is at T0 with a $500 single-name cap, so for real money this is a $500 question."
+}

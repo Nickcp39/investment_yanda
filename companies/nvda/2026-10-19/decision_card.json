@@ -1,0 +1,75 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-10-16",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-10-19",
+  "batch": "nbis_nvda_selloff_rerun_2026-10-19",
+  "refresh_of": "companies/nvda/2026-09-05",
+  "refresh_type": "SELLOFF RERUN + 10-Q READ (the Q2 FY27 10-Q the prior card had not read; price inside the band for the first time)",
+  "as_of_note": "as_of_price is the Friday 2026-10-16 close. Run made Monday 2026-10-19 during the session; the in-progress session is excluded.",
+  "context_label": "price_inside_band_top_10q_explains_the_cash_gap_but_does_not_close_it_receivables_now_the_variable",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 70,
+  "as_of_price": 214.13,
+  "as_of_market_cap": 5195650320000,
+  "share_basis_note": "24,264M diluted shares (Q2 FY27 10-Q, carried) x $214.13 close of 2026-10-16 = $5.196T. stockanalysis basic 24.15B shares x 214.13 = $5.171T (delta 0.47%).",
+  "prior_card": {
+    "as_of": "2026-09-05",
+    "price_used": 230.36,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below_band": [148.30, 222.44],
+    "base_5y_irr_pct": 7.25,
+    "net_signal": 3
+  },
+  "price_change_vs_prior_pct": -7.0,
+  "distance_from_52wk_high_pct": -12.0,
+  "module_signals": [
+    {"module": "M1 Evidence Spine", "role": "confidence", "signal": 2, "confidence": "high", "finding": "Q2 FY27 10-Q read via SEC XBRL companyfacts and the document. The two OPEN items of 09-05 are answered: GAAP>non-GAAP inversion = $7,771M non-cash equity gains in Q2 ($23,707M H1); OCF 40% of NI because of receivables +$22.4B, inventories +$5.8B, prepaids +$5.5B. Five customers >=10% of AR (22/14/13/11/10%); payment terms 90 days to one year for investment-grade customers on large builds; supply commitments $279B (from $119B)."},
+    {"module": "M2 Theme / Mechanism", "role": "context+conviction", "signal": 1, "confidence": "med", "finding": "Q3 guide ~$108B stands (8-K 08-26). Hugging Face acquisition ~$11.9B (8-K 09-03). Downgraded from +2 on two secondary demand-narrative hits: CNBC 10-08 report that OpenAI annualised revenue runs ~$20B below what it signalled; hyperscaler/neocloud capex-delay talk; reported $400M H200 excess-inventory charge (unverified in the 10-Q)."},
+    {"module": "M3 Profit Pool / Durability", "role": "conviction", "signal": 2, "confidence": "high", "finding": "75.0% GM held in Q2; Q3 guided 74.0%; ~$99B buyback authorisation remaining; ~$26B returned in Q2."},
+    {"module": "M4 Financial Reality", "role": "conviction/warning", "signal": -1, "confidence": "high", "finding": "Downgraded 0 -> -1 on evidence, not inference. Q2 OCF $24,077M vs NI $59,688M (40%); H1 63%; Q1 alone 86%. AR $40.7B -> $63.1B in one quarter; AR/quarterly revenue 0.66 (0.50 at Q1). Inventory $31,575M with $784M provisions in Q2. The gap is working capital, not margin, but the working capital is credit extended to customers."},
+    {"module": "M5 Inversion / Trap", "role": "risk", "signal": -2, "confidence": "med", "finding": "New trap leg K7: NVDA is a vendor-financier of its customers (receivables on 90d-1y terms, $42.8B marketable + $47.9B non-marketable equity book incl. CoreWeave ~10% stake and Nebius, $3.3B equity-method infrastructure financiers, SB Energy/OpenAI-affiliated guarantees capped $105B) while the neocloud credit stack reprices (CoreWeave bonds ~79c). Q3 will mark the equity book down. $279B supply commitments make a demand air-pocket land on inventory first."},
+    {"module": "M6 Price / Position", "role": "price+output", "signal": 0, "confidence": "med", "finding": "Price inside the $148.30-222.44 band, 3.7% below the top. Base 5y IRR +8.8% at 214.13 clears the 8% hurdle on the accounting-OE basis for the first time; cash-haircut basis +0.4%. Forward P/E ~17.9x. Scored 0 not +1 because the cash basis is still at hurdle-zero."}
+  ],
+  "net_signal": 2,
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "new_money_size_pct": 0,
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "max_size_pct": 5,
+  "buy_below_band": [148.30, 222.44],
+  "buy_below": 222.44,
+  "binding_constraint": "OWNER-EARNINGS QUALITY: 10-Q shows OCF at 40% of NI and names receivables as the reason; price no longer binding",
+  "step1_status": {
+    "inversion_is_investment_gains": "CONFIRMED - $7,771M Q2 gains from equity securities (10-Q cash-flow reconciliation)",
+    "ocf_converges_toward_non_gaap_ni": "NOT CONFIRMED - OCF 40% of NI; AR +$22.4B, inventory +$5.8B, prepaid +$5.5B in Q2"
+  },
+  "watch_to_starter_trigger": {
+    "step1_respecified": "Q3 FY27 (expected ~2026-11-18, unconfirmed): (a) quarterly OCF >= ~70% of GAAP NI OR AR/quarterly revenue back toward ~0.45-0.50 from 0.66, AND (b) no allowance/write-down against the >=10%-of-AR customers",
+    "step2": "with step 1 met and price <= 222.44, open a 3-5% STARTER (trading-desk T0 single-name cap $500 applies)",
+    "fallback": "if AR still outgrows revenue or any large-customer reserve appears, anchor at the cash-haircut basis ($148.30) and stay WATCH"
+  },
+  "kill_criteria_status": {
+    "K1_revenue_or_gm": "green pending Q3",
+    "K2_custom_silicon": "escalation only",
+    "K3_inventory_writedown": "yellow - $400M H200 charge reported (secondary); inventory $31.6B; commitments $279B",
+    "K4_price_above_band": "cleared - price inside band",
+    "K5_ocf_gap_structural": "partial - AR-driven, one quarter; re-test at Q3",
+    "K6_key_man": "green",
+    "K7_customer_credit_leg_NEW": "yellow - active monitor: any >=10%-of-AR customer in distress or further NVDA financing to sustain orders"
+  },
+  "sources_used": [
+    {"id": "S1", "tier": "A1", "what": "SEC XBRL companyfacts CIK0001045810 (OCF, NI, AR, inventory, equity gains, working-capital lines; H1 minus Q1 for Q2)", "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json", "public_date": "2026-08-26"},
+    {"id": "S2", "tier": "A1", "what": "SEC 10-Q Q2 FY27 document (AR concentration, payment terms, inventory detail, commitments $279B/$366B, equity investments, SB Energy guarantees)", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm", "public_date": "2026-08-26"},
+    {"id": "S3", "tier": "A1", "what": "SEC 8-K 2026-09-03 Hugging Face acquisition ~$11.9B", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm", "public_date": "2026-09-02"},
+    {"id": "S4", "tier": "A1", "what": "Carried: SEC 8-K Q2 FY27 results and Q3 guidance (read 2026-09-05)", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm", "public_date": "2026-08-26"},
+    {"id": "S5", "tier": "B2", "what": "Yahoo v8 chart + stockanalysis history/statistics (price, 52wk, shares, forward P/E, short interest)", "url": "https://stockanalysis.com/stocks/nvda/", "public_date": "2026-10-16"},
+    {"id": "S6", "tier": "C1", "what": "CNBC 2026-10-08 OpenAI revenue report (403 to fetcher; via search index)", "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html", "public_date": "2026-10-08"},
+    {"id": "S7", "tier": "C1", "what": "CoreWeave credit stress; Huang 10-15 comments; NVDA stakes in CoreWeave/Nebius (Fool/Yahoo/CNN)", "url": "https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave", "public_date": "2026-10-16"},
+    {"id": "S8", "tier": "C2", "what": "Reported $400M H200 excess-inventory charge and 16% single-customer revenue share (cryptobriefing/kucoin; 10-Q note not reached directly)", "url": "https://cryptobriefing.com/nvidia-400m-charge-h200-inventory/", "public_date": "2026-08-27"}
+  ],
+  "runner_dissent": "The dissent says the obvious thing: the five receivables customers are almost certainly hyperscalers and Oracle, not neoclouds; 90-day-to-one-year terms on ~$100B of quarterly shipments are a commercial choice by a company with ~$57B of cash and securities, not distress; the stock is at ~17.9x forward with 75% gross margins; base IRR clears the hurdle at this price; and the 09-05 card's own words were 'the first STARTER candidate this book has had in this complex'. The discipline answer: that card put the cash-flow statement ahead of the entry on purpose; the statement came and did not close the gap; the names on the receivables ledger are not disclosed; and four weeks to the Q3 print is a bounded cost. Better four weeks late than sized on a cash conversion the filing does not yet show."
+}
