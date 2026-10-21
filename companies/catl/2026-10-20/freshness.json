@@ -1,0 +1,119 @@
+{
+  "ticker": "3750.HK",
+  "as_of": "2026-10-20",
+  "generated_by": "runner",
+  "batch": "catl_battery_screen_2026-10-20",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Instrument = H share 3750.HK in HKD. as_of is the 2026-10-20 HKEX close; the 10-21 HKT session was in progress at run time (H ~370, A ~231, both about -10% on the Q3 report) and is excluded. The price sits ~2% above the 10-20 intraday low because the stock IS at a 15-month low; low_high_hug_justified is set true for that reason, with the close verified against two sources.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 411.80,
+      "unit": "HKD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "hug_justification": "Close of 2026-10-20 verified on Yahoo and stockanalysis history (O 427.60 H 430.00 L 402.60 C 411.80); the 52wk low used is the same day's intraday low, so proximity is real, not a grabbed extreme.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/3750.HK?range=1y&interval=1d", "fetched_at": "2026-10-20", "value": 411.80},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/quote/hkg/3750/history/", "fetched_at": "2026-10-20", "value": 411.80}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "price_a_share",
+      "value": 259.08,
+      "unit": "CNY",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/300750.SZ?range=1y&interval=1d", "fetched_at": "2026-10-20", "value": 259.08},
+        {"source_name": "sina", "url": "https://finance.sina.com.cn/roll/2026-10-21/doc-inivxrny7935833.shtml (10-20 close 259.08, -2.97%)", "fetched_at": "2026-10-20", "value": 259.08}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1905501420695,
+      "unit": "HKD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "4,627.25M total shares (HKEX monthly return Sep-2026) x 411.80 HKD", "fetched_at": "2026-10-20", "value": 1905501420695},
+        {"source_name": "cnbc", "url": "https://quote.cnbc.com (3750-HK mktcapView 1.713T HKD at the 10-21 live 370.20 => 4,627M shares; 4,627M x 411.80 = 1,905.5B)", "fetched_at": "2026-10-21", "value": 1905500000000}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 794.50,
+      "unit": "HKD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/3750.HK?range=1y (meta.fiftyTwoWeekHigh; intraday 2026-06-03)", "fetched_at": "2026-10-20", "value": 794.50},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/quote/hkg/3750/ (52-Week Range 370.20 - 794.50)", "fetched_at": "2026-10-20", "value": 794.50}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 402.60,
+      "unit": "HKD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/3750.HK?range=1y (intraday low 2026-10-20, excluding the in-progress 10-21 session)", "fetched_at": "2026-10-20", "value": 402.60},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/quote/hkg/3750/history/ (Oct 20, 2026 low 402.60)", "fetched_at": "2026-10-20", "value": 402.60}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 4627.25,
+      "unit": "M shares (A 4,408.95 incl. 28.3 treasury + H 218.30)",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "hkex_monthly_return", "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1002/2026100201758.pdf", "fetched_at": "2026-10-20", "value": 4627.25},
+        {"source_name": "hkex_q3_report", "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1020/2026102001315.pdf (share capital RMB 4,627,250K)", "fetched_at": "2026-10-20", "value": 4627.25}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "fx_hkd_cny",
+      "value": 0.8506,
+      "unit": "CNY per HKD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HKDCNY=X", "fetched_at": "2026-10-20", "value": 0.8506},
+        {"source_name": "derived", "url": "USDCNY 6.6783 / USDHKD 7.8472 (Yahoo)", "fetched_at": "2026-10-20", "value": 0.8510}
+      ],
+      "cross_check_delta_pct": 0.05,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "No numeric guidance in the Q3'26 report. Policy: lithium-ion battery consumption tax 2% from 2026-09-01 and 4% from 2027-09-01 (MOF/GAC/STA Announcement 2026 No. 20); export VAT rebate change reported but terms unverified. Next primary event: FY2026 results (A-share annual report, ~March 2027); monthly installation data (CABIA) and SNE share data in between.",
+      "unit": "text",
+      "as_of": "2026-10-20",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "hkex_q3_report", "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1020/2026102001315.pdf", "public_date": "2026-10-20", "fetched_at": "2026-10-20"},
+        {"source_name": "reuters_via_kfgo", "url": "https://kfgo.com/2026/10/20/chinas-catl-profit-growth-slows-in-third-quarter-as-competition-intensifies/", "public_date": "2026-10-20", "fetched_at": "2026-10-20"}
+      ]
+    }
+  ]
+}
