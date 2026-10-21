@@ -1,0 +1,132 @@
+{
+  "ticker": "ADBE",
+  "as_of": "2026-10-20",
+  "generated_by": "runner (make_freshness.py)",
+  "batch": "refresh_uber_adbe_2026-10-20",
+  "note": "run 2026-10-20 23:35 EDT (after the close); as_of = 2026-10-20; last close <= as_of is 2026-10-20. Shares basis for market cap: Q3 FY26 摊薄加权 395M（8-K）；2026-08-28 在外 391M（10-Q 封面）. Valuation uses the diluted count stated in valuation.md. FILED data (10-K/10-Q/8-K line items) is not here; it rides the dated-source discipline in facts.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 256.73,
+      "unit": "USD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {
+          "source_name": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE",
+          "fetched_at": "2026-10-20",
+          "value": 256.73
+        },
+        {
+          "source_name": "nasdaq",
+          "url": "https://api.nasdaq.com/api/quote/ADBE/historical",
+          "fetched_at": "2026-10-20",
+          "value": 256.73
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 101408350000,
+      "unit": "USD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "derived",
+          "url": "395.0M x 256.73",
+          "fetched_at": "2026-10-20",
+          "value": 101408350000
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ADBE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-20",
+          "value": 99919316000.0
+        }
+      ],
+      "cross_check_delta_pct": 1.49,
+      "pass": true,
+      "delta_note": "delta reflects share-count basis: the card uses the valuation (diluted / fully-converted) count; Nasdaq uses its own snapshot, often a single share class; price identical"
+    },
+    {
+      "field": "52wk_high",
+      "value": 363.7,
+      "unit": "USD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE",
+          "fetched_at": "2026-10-20",
+          "value": 363.7
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ADBE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-20",
+          "value": 363.7
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 190.12,
+      "unit": "USD",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "yahoo_meta",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE",
+          "fetched_at": "2026-10-20",
+          "value": 190.12
+        },
+        {
+          "source_name": "nasdaq_summary",
+          "url": "https://api.nasdaq.com/api/quote/ADBE/summary?assetclass=stocks",
+          "fetched_at": "2026-10-20",
+          "value": 190.12
+        }
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 395.0,
+      "unit": "million shares",
+      "as_of": "2026-10-20",
+      "is_quantitative": true,
+      "sources": [
+        {
+          "source_name": "sec_filing",
+          "url": "Q3 FY26 摊薄加权 395M（8-K）；2026-08-28 在外 391M（10-Q 封面）",
+          "fetched_at": "2026-10-20",
+          "value": 395.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "latest earnings release guidance (see facts.md)",
+      "sources": [
+        {
+          "source_name": "sec_8k",
+          "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+          "public_date": "2026-09-10",
+          "fetched_at": "2026-10-20"
+        }
+      ]
+    }
+  ]
+}

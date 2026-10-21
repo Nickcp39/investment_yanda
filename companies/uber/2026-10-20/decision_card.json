@@ -1,0 +1,171 @@
+{
+ "ticker": "UBER",
+ "name": "Uber Technologies",
+ "as_of": "2026-10-20",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-20",
+ "batch": "refresh_uber_adbe_2026-10-20",
+ "run_type": "refresh",
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met for this version: single agent, self-checked",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-20",
+ "currency": "USD",
+ "valuation_method": "batch valuation_model.py (same 10y formula as Pelosi / oil / power / trading-rails batches); UBER adds a Delivery Hero cash-flow overlay (year-2 outflow $11.1B, then DH FCF); OE0 = after-tax owner earnings",
+ "suggested_initial_size_pct": 0,
+ "refresh_of": "companies/uber/2026-09-28",
+ "as_of_price": 68.94,
+ "as_of_market_cap": 141340788000,
+ "shares_out_m": 2050.2,
+ "wk52_high": 100.35,
+ "wk52_low": 65.41,
+ "context_label": "structural_decline_trap",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "STARTER",
+ "runner_proposed_size_pct": 2,
+ "existing_position_verdict": "HOLD",
+ "suggested_max_size_pct": 8,
+ "completeness_pct": 72,
+ "module_signals": {
+  "M1": 1,
+  "M2": 0,
+  "M3": 1,
+  "M4": 1,
+  "M5": -1,
+  "M6": 1
+ },
+ "binding_constraint": "THIN CUSHION (0.9pt over 8%: g -2pt, exit -3x or OE0 -10% each breaks it) + Delivery Hero outcome (acceptance period ends 2026-11-05; antitrust long-stop 2027-11-10) + independent Checker not run on the corrected version",
+ "kill_criteria": [
+  "K-U1 Mobility GB cc <10% two straight quarters OR >=2 more top-10 US cities go AV-direct -> green",
+  "K-U2 AV spend >$3B/yr with no volume/revenue disclosure -> yellow",
+  "K-U3 buybacks < SBC -> green (2027 DH closing year may trigger; treat as neutral)",
+  "K-U4 Mobility segment profit/GB falls two straight quarters -> green (7.28% -> 7.64%)",
+  "K-U5 driver-classification regulation >1pp GB cost -> unquantified",
+  "K-U6 NEW: DH offer fails with EUR 700M fee, OR post-close gross leverage >2.5x with buybacks halted >4 quarters -> green",
+  "K-U7 NEW: another CFO change, or AV lead vacant >2 quarters -> yellow (3rd CFO in 3 years; AV lead leaving Nov)"
+ ],
+ "next_monitor_event": "2026-11-04 Q3 2026 earnings (Mobility GB cc, segment profit/GB, AV trips); 2026-11-05 Delivery Hero acceptance period ends",
+ "factor_check": "negative exposure to AV success -> diversifier vs BTC/GOOGL/NBIS; but GOOGL (Waymo) is the counterparty",
+ "checker_fixes_applied": [
+  "C.1-1 Delivery Hero terms/financing in facts, M4, M5, M6",
+  "C.1-2 OE0 on completed-tax basis (cash tax normalised -$1.44B)",
+  "C.1-3 'half of AV spend' now actually deducted ($1.25B)",
+  "C.1-4 p lowered to 0.5/0.6/0.7",
+  "C.1-5 O-U3 (EUR 4.5B notes) and O-U4 ($15.7B buyback authorisation) closed",
+  "C.1-6 zones aligned to library convention (starter <= 8% line, add <= 10% line)"
+ ],
+ "buy_below_price": 74.48,
+ "buy_below_basis": "base 8pct hurdle",
+ "hurdle_prices": {
+  "8pct": 74.48,
+  "10pct": 62.8,
+  "12pct": 53.18,
+  "8pct_on_bull": 157.43,
+  "8pct_on_bear": 23.06
+ },
+ "zones": {
+  "starter": "<= 74.48 (base >= 8%, incl. Delivery Hero overlay)",
+  "add": "<= 62.8 (base >= 10%) AND K-U1 green",
+  "no_chase": "> 74.48",
+  "avoid": "> 157.43"
+ },
+ "implied_g_for_8pct": 0.0909,
+ "sensitivity_base": {
+  "g-2pt": 0.0691,
+  "g-4pt": 0.0493,
+  "exit-3x": 0.0715,
+  "exit-5x": 0.0582,
+  "oe0-10%": 0.0762
+ },
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 5.0,
+   "g": 0.03,
+   "exit": 12,
+   "p": 0.5,
+   "note": "AV 全额计为维护；DH 并入后零自由现金流",
+   "extra_cf_sum_b": -11.1,
+   "oe_1": 5.15,
+   "oe_10": 6.72,
+   "tv_10_b": 80.6,
+   "irr": -0.0362,
+   "irr_lib": -0.0546
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 5.9,
+   "g": 0.1,
+   "exit": 17,
+   "p": 0.6,
+   "note": "局部侵蚀；DH 按指引下限 FCF 并入",
+   "extra_cf_sum_b": -7.03,
+   "oe_1": 6.49,
+   "oe_10": 15.303,
+   "tv_10_b": 260.2,
+   "irr": 0.089,
+   "irr_lib": 0.0629
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 6.9,
+   "g": 0.14,
+   "exit": 22,
+   "p": 0.7,
+   "note": "Uber 成为 AV 车队的需求层；DH 协同兑现",
+   "extra_cf_sum_b": -1.45,
+   "oe_1": 7.866,
+   "oe_10": 25.58,
+   "tv_10_b": 562.8,
+   "irr": 0.1816,
+   "irr_lib": 0.1482
+  },
+  "base_no_DH": {
+   "mode": "oe",
+   "oe0": 5.9,
+   "g": 0.1,
+   "exit": 17,
+   "p": 0.6,
+   "note": "对照：不含 Delivery Hero（与 09-28 Checker 盲估同口径）",
+   "extra_cf_sum_b": 0.0,
+   "oe_1": 6.49,
+   "oe_10": 15.303,
+   "tv_10_b": 260.2,
+   "irr": 0.0949,
+   "irr_lib": 0.0629
+  }
+ },
+ "sources_used": [
+  {
+   "source_id": "UBER-10Q-Q2",
+   "public_date": "2026-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm"
+  },
+  {
+   "source_id": "UBER-8K-DH",
+   "public_date": "2026-07-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001543151/000155278126000382/e26302_ex99-1.htm"
+  },
+  {
+   "source_id": "UBER-8K-0915",
+   "public_date": "2026-09-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000486/e26383_uber-8k.htm"
+  },
+  {
+   "source_id": "UBER-IR-OFFER",
+   "public_date": "2026-08-27",
+   "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx"
+  },
+  {
+   "source_id": "UBER-8K-CFO",
+   "public_date": "2026-02-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000011/uber-20260130.htm"
+  }
+ ]
+}

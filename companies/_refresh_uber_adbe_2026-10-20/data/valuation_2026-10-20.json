@@ -1,0 +1,172 @@
+{
+ "as_of": "2026-10-20",
+ "hurdles": [
+  0.08,
+  0.1,
+  0.12
+ ],
+ "tickers": {
+  "UBER": {
+   "name": "Uber Technologies",
+   "ccy": "USD",
+   "price": 68.94,
+   "shares_m": 2050.2,
+   "mcap_b": 141.3,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 5.0,
+     "g": 0.03,
+     "exit": 12,
+     "p": 0.5,
+     "note": "AV 全额计为维护；DH 并入后零自由现金流",
+     "extra_cf_sum_b": -11.1,
+     "oe_1": 5.15,
+     "oe_10": 6.72,
+     "tv_10_b": 80.6,
+     "irr": -0.0362,
+     "irr_lib": -0.0546
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 5.9,
+     "g": 0.1,
+     "exit": 17,
+     "p": 0.6,
+     "note": "局部侵蚀；DH 按指引下限 FCF 并入",
+     "extra_cf_sum_b": -7.03,
+     "oe_1": 6.49,
+     "oe_10": 15.303,
+     "tv_10_b": 260.2,
+     "irr": 0.089,
+     "irr_lib": 0.0629
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 6.9,
+     "g": 0.14,
+     "exit": 22,
+     "p": 0.7,
+     "note": "Uber 成为 AV 车队的需求层；DH 协同兑现",
+     "extra_cf_sum_b": -1.45,
+     "oe_1": 7.866,
+     "oe_10": 25.58,
+     "tv_10_b": 562.8,
+     "irr": 0.1816,
+     "irr_lib": 0.1482
+    },
+    "base_no_DH": {
+     "mode": "oe",
+     "oe0": 5.9,
+     "g": 0.1,
+     "exit": 17,
+     "p": 0.6,
+     "note": "对照：不含 Delivery Hero（与 09-28 Checker 盲估同口径）",
+     "extra_cf_sum_b": 0.0,
+     "oe_1": 6.49,
+     "oe_10": 15.303,
+     "tv_10_b": 260.2,
+     "irr": 0.0949,
+     "irr_lib": 0.0629
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 74.48,
+    "10pct": 62.8,
+    "12pct": 53.18,
+    "8pct_on_bull": 157.43,
+    "8pct_on_bear": 23.06
+   },
+   "distance_to_8pct": 0.0804,
+   "implied_g_for_8pct": 0.0909,
+   "sensitivity_base": {
+    "g-2pt": 0.0691,
+    "g-4pt": 0.0493,
+    "exit-3x": 0.0715,
+    "exit-5x": 0.0582,
+    "oe0-10%": 0.0762
+   }
+  },
+  "ADBE": {
+   "name": "Adobe",
+   "ccy": "USD",
+   "price": 256.73,
+   "shares_m": 395.0,
+   "mcap_b": 101.4,
+   "scenarios": {
+    "bear": {
+     "mode": "oe",
+     "oe0": 8.5,
+     "g": -0.06,
+     "exit": 7,
+     "p": 0.9,
+     "note": "生成式替代咬进来：收入归零转负、利润率 45% → 33%",
+     "extra_cf_sum_b": 0.0,
+     "oe_1": 7.99,
+     "oe_10": 4.578,
+     "tv_10_b": 32.0,
+     "irr": -0.0213,
+     "irr_lib": -0.1088
+    },
+    "base": {
+     "mode": "oe",
+     "oe0": 8.5,
+     "g": 0.06,
+     "exit": 13,
+     "p": 0.9,
+     "note": "有机 ARR 稳在 7–8%、利润率守住、回购继续；倍数不重估",
+     "extra_cf_sum_b": 0.0,
+     "oe_1": 9.01,
+     "oe_10": 15.222,
+     "tv_10_b": 197.9,
+     "irr": 0.1465,
+     "irr_lib": 0.0691
+    },
+    "bull": {
+     "mode": "oe",
+     "oe0": 8.5,
+     "g": 0.1,
+     "exit": 18,
+     "p": 0.9,
+     "note": "freemium 转化跑通 + AI-first ARR 上量；倍数部分修复",
+     "extra_cf_sum_b": 0.0,
+     "oe_1": 9.35,
+     "oe_10": 22.047,
+     "tv_10_b": 396.8,
+     "irr": 0.217,
+     "irr_lib": 0.1462
+    },
+    "harvest": {
+     "mode": "oe",
+     "oe0": 8.5,
+     "g": 0.02,
+     "exit": 10,
+     "p": 0.9,
+     "note": "对照：净新增 ARR 持续 −36% 的延伸 —— 收入增速滑到低个位数、倍数再压",
+     "extra_cf_sum_b": 0.0,
+     "oe_1": 8.67,
+     "oe_10": 10.361,
+     "tv_10_b": 103.6,
+     "irr": 0.0846,
+     "irr_lib": 0.0022
+    }
+   },
+   "hurdle_prices": {
+    "8pct": 407.05,
+    "10pct": 352.02,
+    "12pct": 306.17,
+    "8pct_on_bull": 679.89,
+    "8pct_on_bear": 135.17
+   },
+   "distance_to_8pct": 0.5855,
+   "implied_g_for_8pct": -0.0015,
+   "sensitivity_base": {
+    "g-2pt": 0.1248,
+    "g-4pt": 0.1032,
+    "exit-3x": 0.1272,
+    "exit-5x": 0.1121,
+    "oe0-10%": 0.1305
+   }
+  }
+ }
+}

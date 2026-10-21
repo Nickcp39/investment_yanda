@@ -1,0 +1,73 @@
+{
+  "ticker": "ADBE",
+  "as_of": "2026-10-20",
+  "validator_version": "verify_freshness-v1",
+  "pipeline_version": "lean-6module-v1.1",
+  "mode": "live",
+  "status": "PASS",
+  "exit_code": 0,
+  "price_basis": "yahoo_adjclose",
+  "price": {
+    "card_value": 256.73,
+    "tolerance_pct": 1.0,
+    "refetched_yahoo": 256.7300109863281,
+    "manifest_sources": [
+      {
+        "source_name": "yahoo",
+        "value": 256.73
+      },
+      {
+        "source_name": "nasdaq",
+        "value": 256.73
+      }
+    ],
+    "max_pairwise_delta_pct": 0.0,
+    "independent_sources": [
+      "nasdaq",
+      "yahoo"
+    ],
+    "result": "PASS",
+    "detail": "2 independent sources agree within 1%",
+    "refetched_date": "2026-10-20"
+  },
+  "tripwires": [
+    {
+      "id": "T1",
+      "name": "52wk band containment",
+      "status": "PASS",
+      "detail": "190.12 <= 256.73 <= 363.7"
+    },
+    {
+      "id": "T2",
+      "name": "low/high hug",
+      "status": "PASS",
+      "detail": "+35.0% off low, -29.4% off high"
+    },
+    {
+      "id": "T3",
+      "name": "market-cap identity",
+      "status": "PASS",
+      "detail": "395M x 256.73 = 0.101T vs card 0.101T (0.00%)"
+    },
+    {
+      "id": "T4",
+      "name": "distance-from-high reconciliation",
+      "status": "PASS",
+      "detail": "narrative -29.4% vs card-implied -29.4% (gap 0.0pt)"
+    },
+    {
+      "id": "T5",
+      "name": "single value of truth",
+      "status": "PASS",
+      "detail": "as_of_price 256.73 present in all price-bearing files"
+    },
+    {
+      "id": "T6",
+      "name": "LIVE-qualitative freshness [guidance]",
+      "status": "PASS",
+      "detail": "newest source 2026-09-10 (40d)"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

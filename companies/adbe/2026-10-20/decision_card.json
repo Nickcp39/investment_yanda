@@ -1,0 +1,161 @@
+{
+ "ticker": "ADBE",
+ "name": "Adobe",
+ "as_of": "2026-10-20",
+ "pipeline_version": "lean-6module-v1.1",
+ "weights_version": "none",
+ "run_date": "2026-10-20",
+ "batch": "refresh_uber_adbe_2026-10-20",
+ "run_type": "refresh",
+ "status": "DECISION_DRAFT",
+ "clean": false,
+ "clean_blocked_reason": "Checker != Runner (PROTOCOL §3) not met for this version: single agent, self-checked",
+ "price_sources": [
+  "yahoo_chart_api",
+  "nasdaq_historical_api"
+ ],
+ "price_date": "2026-10-20",
+ "currency": "USD",
+ "valuation_method": "batch valuation_model.py (same 10y formula as Pelosi / oil / power / trading-rails batches); UBER adds a Delivery Hero cash-flow overlay (year-2 outflow $11.1B, then DH FCF); OE0 = after-tax owner earnings",
+ "suggested_initial_size_pct": 0,
+ "refresh_of": "companies/adbe/2026-08-07",
+ "as_of_price": 256.73,
+ "as_of_market_cap": 101408350000,
+ "shares_out_m": 395.0,
+ "wk52_high": 363.7,
+ "wk52_low": 190.12,
+ "context_label": "multiple_broke_not_the_business_but_the_proof_metric_was_retired",
+ "business_verdict": "good",
+ "new_money_verdict": "WATCH",
+ "runner_proposed_verdict": "STARTER",
+ "runner_proposed_size_pct": 3,
+ "existing_position_verdict": "HOLD_TO_ADD",
+ "suggested_max_size_pct": 6,
+ "completeness_pct": 74,
+ "module_signals": {
+  "M1": 1,
+  "M2": 1,
+  "M3": 0,
+  "M4": 2,
+  "M5": -1,
+  "M6": 2
+ },
+ "binding_constraint": "COMPLETENESS / VERIFIABILITY + LEADERSHIP TRANSITION, not price: net-new ARR is undisclosed (derived -36% YoY), CFO still interim (4 months), Digital Media president leaving, outgoing CEO sold $18.7M; the 'growth-for-users' trade is only falsifiable at Q4 FY26 (mid-Dec)",
+ "kill_criteria": [
+  "K-A organic Total ARR growth <7% two straight quarters -> yellow (Q3 +11.2% incl. ~1.8pt Semrush)",
+  "K-B revenue cc growth <8% -> green (+12%)",
+  "K-C non-GAAP op margin <40% -> green (44-45%)",
+  "K-D leadership: CEO named (Dec 1) -> half-cleared; interim CFO reaches 2 quarters mid-Dec -> yellow",
+  "K-E disclosure degradation -> green this quarter (MAU, Firefly ARR QoQ added)",
+  "K-F buybacks > FCF -> green (9M 91% of FCF)",
+  "K-G price > ~$352 without upgrade -> green",
+  "K-H quantifiable share loss -> yellow (indirect: net-new ARR -36%, RPO +8%, Figma +48%, Canva +35-43%)",
+  "K-I NEW: growth-for-users trade fails: Q4 net-new ARR <$0.6B or FY27 ARR guide <8% -> decided mid-Dec"
+ ],
+ "next_monitor_event": "Adobe MAX (~2026-11-10); new CEO effective 2026-12-01; Q4 FY26 results + FY27 targets mid-Dec 2026",
+ "factor_check": "software/subscription factor; AI is a threat narrative -> diversifier vs the user's AI + liquidity factor",
+ "checker_fixes_applied": [],
+ "buy_below_price": 306.17,
+ "buy_below_basis": "base 12pct hurdle",
+ "hurdle_prices": {
+  "8pct": 407.05,
+  "10pct": 352.02,
+  "12pct": 306.17,
+  "8pct_on_bull": 679.89,
+  "8pct_on_bear": 135.17
+ },
+ "zones": {
+  "starter": "<= 306.17 (base >= 12%: verifiability discount, as in 2026-08-07)",
+  "add": "<= 240 (base ~15%) OR K-I passes",
+  "no_chase": "> 352.02 (base 10%)",
+  "avoid": "> 679.89"
+ },
+ "implied_g_for_8pct": -0.0015,
+ "sensitivity_base": {
+  "g-2pt": 0.1248,
+  "g-4pt": 0.1032,
+  "exit-3x": 0.1272,
+  "exit-5x": 0.1121,
+  "oe0-10%": 0.1305
+ },
+ "scenarios_10y": {
+  "bear": {
+   "mode": "oe",
+   "oe0": 8.5,
+   "g": -0.06,
+   "exit": 7,
+   "p": 0.9,
+   "note": "生成式替代咬进来：收入归零转负、利润率 45% → 33%",
+   "extra_cf_sum_b": 0.0,
+   "oe_1": 7.99,
+   "oe_10": 4.578,
+   "tv_10_b": 32.0,
+   "irr": -0.0213,
+   "irr_lib": -0.1088
+  },
+  "base": {
+   "mode": "oe",
+   "oe0": 8.5,
+   "g": 0.06,
+   "exit": 13,
+   "p": 0.9,
+   "note": "有机 ARR 稳在 7–8%、利润率守住、回购继续；倍数不重估",
+   "extra_cf_sum_b": 0.0,
+   "oe_1": 9.01,
+   "oe_10": 15.222,
+   "tv_10_b": 197.9,
+   "irr": 0.1465,
+   "irr_lib": 0.0691
+  },
+  "bull": {
+   "mode": "oe",
+   "oe0": 8.5,
+   "g": 0.1,
+   "exit": 18,
+   "p": 0.9,
+   "note": "freemium 转化跑通 + AI-first ARR 上量；倍数部分修复",
+   "extra_cf_sum_b": 0.0,
+   "oe_1": 9.35,
+   "oe_10": 22.047,
+   "tv_10_b": 396.8,
+   "irr": 0.217,
+   "irr_lib": 0.1462
+  },
+  "harvest": {
+   "mode": "oe",
+   "oe0": 8.5,
+   "g": 0.02,
+   "exit": 10,
+   "p": 0.9,
+   "note": "对照：净新增 ARR 持续 −36% 的延伸 —— 收入增速滑到低个位数、倍数再压",
+   "extra_cf_sum_b": 0.0,
+   "oe_1": 8.67,
+   "oe_10": 10.361,
+   "tv_10_b": 103.6,
+   "irr": 0.0846,
+   "irr_lib": 0.0022
+  }
+ },
+ "sources_used": [
+  {
+   "source_id": "ADBE-8K-Q3FY26",
+   "public_date": "2026-09-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+  },
+  {
+   "source_id": "ADBE-10Q-Q3FY26",
+   "public_date": "2026-09-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000156/adbe-20260828.htm"
+  },
+  {
+   "source_id": "ADBE-8K-CEO",
+   "public_date": "2026-09-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbeex9918-k9826.htm"
+  },
+  {
+   "source_id": "ADBE-CALL",
+   "public_date": "2026-09-11",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/09/11/adobe-adbe-q3-2026-earnings-call-transcript/"
+  }
+ ]
+}

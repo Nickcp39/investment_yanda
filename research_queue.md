@@ -1,6 +1,6 @@
 # Research Queue
 
-最后更新: 2026-10-07（交易通道批次：13 家券商 / 交易所 / 做市商 / 配套）
+最后更新: 2026-10-20（UBER + ADBE 全量刷新；此前 2026-10-07 交易通道批次）
 
 用途: 小型买方研究部的 idea backlog。任何公司/主题先入队，再决定是否深研。
 
@@ -10,7 +10,8 @@
 | **2026-10-SHOVEL** | 历史上的"英伟达"们：20 家关键设备商 + 思科 / 英伟达的四阶段舆论 | Study | 7 - Monitor | P1 | 卖铲子的公司从顶点转入衰落前，舆论和经营上出现过哪些信号？今天的英伟达出现了几个？ | ✅ `studies/卖铲子的人_历史上的NVIDIA舆论周期_2026-10-06/report.md`（+ PDF）。英伟达：顶点信号 5/6（④散户未核实），触发信号 A（买家资本开支掉头）未核查、B（买家自研芯片）部分发生、C（公司下调指引）未出现。下一步：每季度跟踪四大云厂商资本开支指引与英伟达指引；如要量化 A，补一份云厂商 capex 时间序列 | YC | 2026-10-06 |
 | **2026-10-POWER** | 东电 / 关西 / Kyuden HD / J-POWER / National Grid / SSE / 长江电力 / 中广核 / 华能 / 华润 + 历史研究 | Batch + Study | 7 - Monitor（NG 待独立 Checker） | P1 | 工业化大国的用电爆发里，电力股东赚到钱了吗？今天有没有能当 AI 因子分散的电力资产？ | ✅ 历史研究 `studies/电力大国百年_英日中_2026-10-03/report.md`（+ PDF）；10 张卡全部 WATCH（`companies/_power_majors_2026-10-03/`）。**NG runner 提议 STARTER 2–3%（base +8.2%，buy_below 1,169.13p）待 Checker**；Kyuden HD / 华润电力在 8% 线上但完整度 < 60%。下一步：用户决定是否派 Checker；各家 10 月末 / 11 月中期业绩 | YC | 2026-10-03 |
 | **2026-09-OIL** | XOM / CVX / OXY / COP / KMI + 学习专题 | Batch + Study | 7 - Monitor | P1 | 像巴菲特一样投资石油：什么价格买、买哪一层、何时卖 | ✅ 5 张卡全部 WATCH（`companies/_oil_2026-09-30/`）；学习报告 `studies/巴菲特与石油投资_2026-09-30/report.md`。**四家生产商现价隐含长期油价 WTI $72 ~ Brent $94（高于十年均价）；KMI 离 8% 线约 4%（$29.19）**。下一步：Q3 财报（10 月中下旬）+ 伯克希尔 Q3 13F（约 11-14）；KMI 到价则派独立 Checker | YC | 2026-09-30 |
-| **2026-09-UBER** | Uber | Company | 6 - Decision（待独立 Checker） | **P0** | AV 去中介化是局部侵蚀还是全局替代？ | ✅ 卡已建 `companies/uber/2026-09-28/`。**base IRR +12.8%，runner 提议 STARTER 3%，以 WATCH 落锁**。buy_below $101.71（现价 $69.62）。CEO/COO 公开市场买入 $15.3M（Form 4）。**下一步：独立 Checker；Q3 读 Mobility GB cc（K-U1）** | YC | 2026-09-28 |
+| **2026-09-UBER** | Uber | Company | 6 - Decision（刷新后待独立 Checker） | **P0** | AV 去中介化是局部侵蚀还是全局替代？Delivery Hero $13.7B 是对冲还是买坑？ | ✅ 刷新卡 `companies/uber/2026-10-20/`（refresh_of 09-28，落实独立 Checker 全部 6 条修正）。**完税 OE₀ $5.9B、含 DH 叠加后 base +8.9%，8% 线 $74.48 vs 现价 $68.94，垫子 0.9pt；runner 提议 STARTER 2%，以 WATCH 落锁**。新增 K-U6（DH 失败 / 杠杆 >2.5x）、K-U7（CFO 三年第三任、AV 负责人离职）。**下一步：11-04 Q3（Mobility GB cc ≥15%）+ 11-05 要约截止后轻量重跑；独立 Checker 复核修正版（重点税盾摊回）** | YC | 2026-10-20 |
+| **2026-10-ADBE** | Adobe | Company | 6 - Decision（待独立 Checker） | **P0** | 跌的是倍数还是生意？"用增速换用户"是策略还是转化失灵？ | ✅ 刷新卡 `companies/adbe/2026-10-20/`（refresh_of 08-07，并入 Q3 FY26）。收入 +13%、指引第三次上调；净新增 ARR 推算 −36%、RPO +8% 首次个位数；CEO Chakravarthy 12-01 到任、CFO 仍临时、Narayen 卖 $18.7M。**OE₀ $8.5B，base +14.6%，12% 锚 $306.17 vs 现价 $256.73；harvest（g 2%、10x）仍 +8.5%；runner 提议 STARTER 3%，以 WATCH 落锁**。**下一步：12 月中 Q4 + FY27 指引判 K-I（净新增 ≥$0.78B、ARR 指引 ≥8%）；独立 Checker** | YC | 2026-10-20 |
 | **2026-09-AB** | AllianceBernstein Holding | Company | 6 - Decision（待独立 Checker + CPA） | **P0** | 9.7% 分配率是可持续的现金，还是市场在定价分配下滑？ | ✅ 卡已建 `companies/ab/2026-09-28/`。**base +13.1%（非居民税后 +10.4%），runner 提议 STARTER 3%，以 WATCH 落锁**。**13 个佩洛西名字里唯一与 AI 无关**。**阻碍：PTP 载体 —— 非居民 37% 预扣（一手 qualified notice），需 CPA** | YC | 2026-09-28 |
 | **2026-09-VST** | Vistra | Company | 6 - Decision（待独立 Checker） | P1 | 2028 年对冲滚动后电价体制 × 3.2x 杠杆 | ✅ 卡已建 `companies/vst/2026-09-28/`。**base +10.4%，runner 提议 STARTER 3%，以 WATCH 落锁**。增长腿属 AI 因子（黄灯）。**下一步：Q3 的 2027 指引与 2028 对冲价格（O-V1）** | YC | 2026-09-28 |
 | 2026-09-PELOSI | AVGO / BE / INTC / CRWD / PANW | Batch | 7 - Monitor | P2 | 价格关 | ✅ 5 张卡均 WATCH（价格封顶；INTC/CRWD/PANW 连 bull 都不过 8%）。见 `companies/_pelosi_book_2026-09-28/synthesis.md` | YC | 2026-09-28 |

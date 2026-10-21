@@ -36,6 +36,13 @@ push 时刷新一次，避免回头时丢失上下文。
   **只在深圳/香港上市，美国无 ADR，美股无对标**；三季报后 H 股 411.80（10-21 盘中再跌 10%），
   业务好但 H 股比 8% 门槛带顶高 36%（全是 H/A 35% 溢价），A 股在带顶、证据未满足，
   裁决 WATCH 0%。下一步：出口退税官方文本、CABIA 10 月装机、2026 年报（Q4 毛利）重跑。
+- **2026-10-20 本轮（二）**：UBER + ADBE 全量刷新（`companies/_refresh_uber_adbe_2026-10-20/` PLAN / CHECKER / synthesis；卡在 `uber/2026-10-20`、`adbe/2026-10-20`）。
+  **UBER 采纳 09-28 独立 Checker 全部 6 条修正**（完税 OE₀ $5.9B、真扣一半 AV、Delivery Hero $13.7B 现金流叠加、p 降到 0.6、区间改库惯例）：
+  base IRR 从 +12.8% 降到 **+8.9%**，8% 线 $74.48 vs 现价 $68.94，垫子只有 0.9pt；裁决 WATCH 0%，runner 提议 STARTER 2%
+  但建议等 11-04 Q3 + 11-05 要约截止。**ADBE 补入 Q3 FY26**：收入 +13%、指引第三次上调，但净新增 ARR 推算同比 −36%、
+  RPO 首次个位数；CEO 定了（Chakravarthy 12-01）、CFO 仍临时、Narayen 卖 $18.7M；base +14.6%、12% 锚 $306.17 vs 现价
+  $256.73，新增 harvest 情景（g 2%、10x）仍 +8.5%；裁决 WATCH 0%，runner 提议 STARTER 3% 但建议等 12 月中 Q4 + FY27 指引
+  （新判据 K-I：Q4 净新增 ≥$0.78B、FY27 ARR 指引 ≥8%）。freshness 2/2 PASS。
 
 ---
 
@@ -87,7 +94,7 @@ push 时刷新一次，避免回头时丢失上下文。
 ### 下一步（本轮新增）
 1. **National Grid 是否派独立 Checker**（用户决定）
 2. Kyuden HD（控股公司化后的资本政策）、华润电力（华润新能源分拆后的少数股东份额）补到 60%
-3. 佩洛西 UBER / AB / VST 三张卡按 Checker 意见修订 —— 仍待用户决定
+3. 佩洛西 AB / VST 两张卡按 Checker 意见修订 —— 仍待用户决定（UBER 已于 2026-10-20 全量刷新时采纳 Checker 全部 6 条修正，见 `companies/uber/2026-10-20/`）
 
 ---
 
