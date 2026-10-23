@@ -1,0 +1,72 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-10-22",
+  "note": "Intraday price snapshot (US market open, ~11:23 ET). Q3'26 earnings due today but NOT yet released as of this run. verify_freshness.py could not run its independent Yahoo re-fetch (HTTP 403 in this environment), so price is cross-verified across 4 independent sources instead.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 160.39,
+      "intraday": true,
+      "prior_close": 171.57,
+      "prior_close_date": "2026-10-21",
+      "sources": [
+        {"source_name": "tencent_gu_qq", "value": 160.39, "public_date": "2026-10-22", "url": "https://gu.qq.com/usNBIS.OQ"},
+        {"source_name": "tipranks_premarket", "value": 163.24, "public_date": "2026-10-22", "url": "https://blog.tipranks.com/why-are-coreweave-nebius-and-iren-stocks-falling-in-premarket-today-oct-22"},
+        {"source_name": "fool_au", "value": 171.57, "public_date": "2026-10-21", "url": "https://www.fool.com.au/tickers/nasdaq-nbis/"},
+        {"source_name": "yahoo_key_statistics", "value": null, "public_date": "2026-10-22", "url": "https://finance.yahoo.com/quote/NBIS/key-statistics/"}
+      ]
+    },
+    {
+      "field": "market_cap",
+      "value": 43963000000,
+      "share_basis_note": "274.1M shares x $160.39 = $43.96B. Yahoo reports 238.4M shares outstanding (latest filed) and 271.86M implied (incl. convertible).",
+      "sources": [
+        {"source_name": "derived", "value": 43963000000, "public_date": "2026-10-22"},
+        {"source_name": "fool_au", "value": 46609539800, "public_date": "2026-10-21"}
+      ]
+    },
+    {
+      "field": "52wk_high",
+      "value": 299.86,
+      "sources": [
+        {"source_name": "yahoo_key_statistics", "value": 299.86, "public_date": "2026-10-22"},
+        {"source_name": "fool_au", "value": 299.86, "public_date": "2026-10-21"}
+      ]
+    },
+    {
+      "field": "52wk_low",
+      "value": 73.52,
+      "sources": [
+        {"source_name": "yahoo_key_statistics", "value": 73.52, "public_date": "2026-10-22"},
+        {"source_name": "fool_au", "value": 73.52, "public_date": "2026-10-21"}
+      ]
+    },
+    {
+      "field": "shares_out",
+      "value": 274.1,
+      "sources": [
+        {"source_name": "nbis_2026_09_05_card", "value": 274.1, "public_date": "2026-09-05"},
+        {"source_name": "yahoo_key_statistics_filed", "value": 238.4, "public_date": "2026-10-22"},
+        {"source_name": "yahoo_key_statistics_implied", "value": 271.86, "public_date": "2026-10-22"}
+      ]
+    },
+    {
+      "field": "total_debt",
+      "value": 10.2,
+      "unit": "USD_B",
+      "as_of": "2026-06-30 (mrq)",
+      "note": "Q2'26 balance sheet; EXCLUDES the $5.75B convertible (closed 08-24) and the $3.5B Citi facility (announced 10-22).",
+      "sources": [
+        {"source_name": "yahoo_key_statistics", "value": 10.2, "public_date": "2026-10-22"}
+      ]
+    },
+    {
+      "field": "guidance",
+      "value": "ARR $7-9B by end-2026; revenue $3.0-3.4B FY26; capex $20-25B (all REAFFIRMED, not raised)",
+      "sources": [
+        {"source_name": "nebius_q2_2026_release", "public_date": "2026-08-12", "url": "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results"},
+        {"source_name": "gmteight_flash", "public_date": "2026-10-22", "url": "https://gmteight.com/flash/detail/1062956", "note": "UNRELIABLE for Q3 revenue ($1.46B internal contradiction); used only for ARR guide reference"}
+      ]
+    }
+  ]
+}

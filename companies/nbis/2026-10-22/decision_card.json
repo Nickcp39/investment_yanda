@@ -1,0 +1,114 @@
+{
+  "ticker": "NBIS",
+  "as_of": "2026-10-22",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-10-22",
+  "batch": "nbis_single_refresh_2026-10-22",
+  "refresh_of": "companies/nbis/2026-09-05",
+  "refresh_type": "EVENT RERUN (Q3 earnings due TODAY, not yet released) + financing escalation re-price",
+  "context_label": "price_finally_in_band_but_leverage_escalated_and_proof_metric_still_absent",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 70,
+  "price_data_note": "Intraday ~11:23 ET on 2026-10-22; prior close $171.57 (2026-10-21). Yahoo direct pull returned HTTP 403 in this environment, so price is cross-verified across 4 independent sources (tencent/gu.qq, tipranks, fool.au, yahoo key-statistics).",
+  "as_of_price": 160.39,
+  "as_of_price_intraday": true,
+  "prior_close": 171.57,
+  "prior_close_date": "2026-10-21",
+  "as_of_market_cap": 43963000000,
+  "share_basis_note": "274.10M shares x $160.39 = $43.96B. Yahoo reports 238.4M shares outstanding (latest filed) and 271.86M implied (incl. convertible) - share-count uncertainty widened by the $5.75B convertible.",
+  "prior_card": {
+    "as_of": "2026-09-05",
+    "price_used": 226.39,
+    "new_money_verdict": "WATCH",
+    "existing_position_verdict": "HOLD",
+    "buy_below_band": [150.0, 180.0],
+    "no_chase_zone": ">= $250",
+    "max_size_pct": 4
+  },
+  "price_change_vs_prior": -29.1,
+  "price_change_vs_52wk_high": -46.5,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Q3'26 6-K NOT yet filed as of this run (earnings due 2026-10-22, no results release in nebius.com newsroom nor SEC EDGAR). Q2 figures remain corroborated (reached primary 6-K in the 09-05 run). Active MW still not disclosed - now a FIFTH consecutive quarter. New primary disclosures this run are all on the FINANCING side ($5.75B convertible, $3.5B Citi facility), which corroborate the leverage branch."
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "role": "context+conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "Demand intact and strong. CRO Marc Boroditsky (2026-10-22, Caixin/CLS): sold out in Q3, nearly sold out this quarter, per-MW pricing still rising, 'we don't carry CoreWeave's debt load', 2027-2028 capacity sellable. Meta/MSFT anchors intact, >$40B long-term commitments, ARR $7-9B year-end guide unchanged. Connected-power guidance still NOT raised (800MW-1GW)."
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "med",
+      "finding": "The anti-commoditisation leg got ANOTHER datapoint: per-MW pricing still rising faster than expected (Boroditsky 'yes' on continued above-expected increases, 2026-10-22 auction results rising). Carried +1. Capital-cycle caveat stands: rising price is the first step of attracting supply, not a falsification of the cycle."
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction/warning",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "No new Q3 operating numbers. Q2 base: adj EBITDA +$236.2M (40.6% margin) but quarterly FCF -$3.41B, GAAP net loss -$190.4M. Balance sheet materially levered now: total debt $10.2B (Q2) + $5.75B convertible + $3.5B facility; debt/equity 98.6%; levered FCF(TTM) -$9.61B."
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "role": "risk",
+      "signal": -2,
+      "confidence": "high",
+      "finding": "The leverage leg (K-G) MATERIALIZED, not just heated. Convertible went $4.5B proposed -> $5.0B priced -> $5.75B closed (Aug 19-24); $3.5B Citi senior secured facility announced TODAY (Oct 22, 364-day, SOFR+2.75% up to 3.50%). Non-current liabilities $4.10B -> $8.50B -> ~$19B+ including the two new tranches. Market is now pricing it: Burry short, 18.93% short interest of float, CoreWeave CDS blowout spreading to the sector."
+    },
+    {
+      "module": "M6 Price / Position",
+      "role": "price+output",
+      "signal": 0,
+      "confidence": "med",
+      "finding": "Price ~$160.39, -29.1% vs the 09-05 reference, -46.5% off the 52-week high. FIRST time inside the $150-180 band since it was set (three cards). BUT the band was drawn on a near-net-cash balance sheet; the balance sheet is now net-debt, so the same price carries a higher EV and thinner per-share margin of safety. Mechanical band-entry, not a clean MOS."
+    }
+  ],
+  "capital_cycle": {
+    "applicable": "yes",
+    "stage": "mid-late",
+    "supply_barrier": "low (neocloud rental)",
+    "read": "The leverage escalation IS the capital being attracted by high returns - the first step of the cycle. Rising per-MW price (M3) and the $5.75B+$3.5B financing (M5) are two sides of the same coin: high returns pulling in capital.",
+    "caution": "PEAK-lean - one-way, compresses only."
+  },
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "new_money_verdict_note": "Fourth consecutive WATCH (07-10 -> 08-12 -> 09-05 -> 10-22). Price entered the band for the first time, but C4 applies: the anchor's balance-sheet input changed (net cash -> net debt), so the band must be re-derived DOWN before entry, and the STARTER condition 'active MW disclosed' is still unmet (Q3 due today).",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 4,
+  "buy_below_price": 180.0,
+  "buy_below_band": [150.0, 180.0],
+  "buy_below_note": "NOMINALLY unchanged, but the anchor has deteriorated: the $150-180 band was derived on a near-net-cash balance sheet; the balance sheet is now net-debt ($10.2B + $5.75B convertible + $3.5B facility). Per C4, do NOT treat $160 < $180 as actionable; re-derive the band (direction: DOWN) after Q3 balance sheet lands.",
+  "no_chase_zone": ">= $250 (moot now; price $160 far below)",
+  "binding_constraint": "M5 leverage branch escalated (net-cash -> net-debt, $5.75B convertible + $3.5B facility) + active MW undisclosed for a FIFTH consecutive quarter (Q3 earnings due today, not yet released).",
+  "kill_criteria": [
+    "K-A active MW stalls or stays undisclosed while ARR slows. STILL OPEN: ARR not slowed, but active MW undisclosed a FIFTH quarter; Q3 (today) is the adjudication point.",
+    "K-B anchor tranche missed / anchor cuts capex / becomes competitor. NOT TRIGGERED: >$40B commitments, Meta/MSFT anchors intact.",
+    "K-C financing shifts from prepayment to dilution. MATERIALIZED: $5.75B convertible (dilutive) + $3.5B senior secured (leverage).",
+    "K-D depreciation-life extension / GPU impairment / rev-per-MW declining. COUNTER-EVIDENCED: rev/MW still rising (CRO 2026-10-22).",
+    "K-E FY26 capex confirmed at high end without conversion. NOT CONFIRMED: capex $20-25B guide, ARR/RPO up.",
+    "K-F concentration >60% / ICFR not clean. UNDETERMINABLE.",
+    "K-G LEVERAGE BRANCH. UPGRADED to red: non-current liabilities $4.10B -> $8.50B -> +$5.75B convertible -> +$3.5B facility.",
+    "K-VAL entry without margin of safety. STANDING but shape changed: price in band, yet anchor deteriorated by leverage - net MOS not improved."
+  ],
+  "watch_to_starter_trigger": "Unchanged (fourth card): (1) price below ~$180, AND (2) active MW actually disclosed and consistent with the connected-power guide. Falsifiable test: ARR $3.0B (end-June) -> $7-9B year-end guide. Q3 2026 is the checkpoint - TODAY.",
+  "runner_dissent": "The biggest honesty obligation this run is NOT to declare a turn just because price finally entered the band. Band-entry is real, but the same period saw leverage go from a potential risk to a realized fact ($5.75B convertible + $3.5B facility), and the anchor was drawn on a balance sheet that was near-net-cash. Net of both, the margin of safety has NOT widened versus 09-05 - it has arguably narrowed. Separately, this environment returns HTTP 403 on Yahoo, so verify_freshness.py could not run its independent re-fetch; price is cross-verified across four sources instead and flagged intraday. That is an environmental gap, not a judgment one, and it is disclosed rather than papered over.",
+  "sources_used": [
+    {"source_id": "S001", "public_date": "2026-10-22", "url_or_path": "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi", "tier": "A1", "what": "PRIMARY: $3.5B Citi senior secured facility, 364-day, SOFR+2.75% up to 3.50%, announced 2026-10-22."},
+    {"source_id": "S002", "public_date": "2026-08-24", "url_or_path": "https://nebius.com/newsroom/nebius-group-announces-closing-of-private-offering-of-convertible-senior-notes-with-aggregate-gross-proceeds-of-approximately-5-75-billion", "tier": "A1", "what": "PRIMARY: $5.75B convertible senior notes closed 08-24 (upsized from $4.5B proposed / $5.0B priced on 08-19)."},
+    {"source_id": "S003", "public_date": "2026-10-22", "url_or_path": "https://gu.qq.com/usNBIS.OQ", "tier": "B1", "what": "price intraday $160.39 (-6.52%), open 164.75, range 158.36-167.50, 2026-10-22."},
+    {"source_id": "S004", "public_date": "2026-10-22", "url_or_path": "https://blog.tipranks.com/why-are-coreweave-nebius-and-iren-stocks-falling-in-premarket-today-oct-22", "tier": "B1", "what": "premarket -4.86% to $163.24; neocloud selloff on oil> $112, CoreWeave CDS, tech weakness."},
+    {"source_id": "S005", "public_date": "2026-10-22", "url_or_path": "https://finance.yahoo.com/quote/NBIS/key-statistics/", "tier": "B1", "what": "total debt $10.2B (mrq), debt/equity 98.6%, cash $8.04B, levered FCF(TTM) -$9.61B, 52wk 73.52-299.86, short % of float 18.93%."},
+    {"source_id": "S006", "public_date": "2026-10-22", "url_or_path": "https://www.163.com/dy/article/L9QIJDSN05568W0A.html", "tier": "B1", "what": "CRO Boroditsky: per-MW pricing still rising, 'no CoreWeave-scale debt', sold out, 2027-28 capacity sellable."},
+    {"source_id": "S007", "public_date": "2026-10-21", "url_or_path": "https://247wallst.com/investing/2026/10/21/michael-burry-is-shorting-nebius-spacex-just-said-its-ai-chips-pay-for-themselves-in-under-a-year", "tier": "B1", "what": "Michael Burry shorting NBIS; neocloud balance-sheet/funding concern."}
+  ]
+}

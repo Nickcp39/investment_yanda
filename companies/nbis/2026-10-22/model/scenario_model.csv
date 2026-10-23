@@ -1,0 +1,7 @@
+﻿scenario,exit_2026_arr_usd_b,ev_basis,ev_usd_b,ev_over_arr,as_of_price,note
+guide_low,7.0,net debt ~$2.2B (Q2 only),46.2,6.60,160.39,new price; leverage not yet in EV
+guide_mid,8.0,net debt ~$2.2B (Q2 only),46.2,5.77,160.39,basis that flatters most - uses Q2 balance sheet
+guide_high,9.0,net debt ~$2.2B (Q2 only),46.2,5.13,160.39,new price; leverage not yet in EV
+current_q2end,3.0,net debt ~$2.2B (Q2 only),46.2,15.40,160.39,current ARR basis still expensive
+guide_mid_altbasis,8.0,net debt ~$6B (conv spent on capex + facility partly drawn),50.0,6.25,160.39,K-G materialized
+guide_mid_altbasis2,8.0,net debt ~$9B (all facilities drawn and spent),53.0,6.62,160.39,worst-case leverage
