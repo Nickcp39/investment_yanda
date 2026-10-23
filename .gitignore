@@ -42,3 +42,6 @@ sources/channels/*/runs/
 # Local vendored deps / temp
 .pdf_deps/
 tmp/
+
+# market_temp pipeline skill is ours, keep it in git
+!.claude/skills/market-temp/

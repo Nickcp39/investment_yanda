@@ -4,7 +4,7 @@
 > 读这一份 + `current_process.md` 就能定位任何工作，**不要全仓扫描**——
 > `sources/`、`notes/`、`logs/` 是海量原始素材，按需检索即可。
 >
-> 最后更新: 2026-10-02 · 结构变动时同步更新本文件
+> 最后更新: 2026-10-23 · 结构变动时同步更新本文件
 
 ## 快速入口（按优先级）
 
@@ -105,11 +105,15 @@ scripts/              Python 脚本
 ├── channel_video_index.py / *_queue.py       频道采集三件套（索引/元数据/ASR）
 ├── wechat_mp_*.py                            公众号采集与 dashboard
 ├── verify_freshness.py                       dossier 数据新鲜度校验
+├── market_temp/                              ★ 一键「市场体温」流水线（取数→25 指标/四把尺子/σ 通道/GDP 线→temp.md+dashboard.png→history.csv；
+│                                             根目录 run_market_temp.bat 双击即跑，/market-temp 在会话里跑并补 AI 注释；README 在目录内）
 ├── agents/                                   agent 相关脚本
 └── _archive/                                 弃用脚本
 
 notebooks/            Jupyter 分析
-.claude/skills/       本仓库自定义 Claude skills
+.claude/skills/       本仓库自定义 Claude skills（market-temp 进 git，其余 clone 的不进）
+output/market_temp/   市场体温每次运行的带日期目录 + history.csv 体温日志 + LATEST.txt
+data/market_temp/     体温流水线的行情/宏观缓存与 manifest.json
 ```
 
 ## 关键约定
@@ -131,6 +135,7 @@ notebooks/            Jupyter 分析
 
 | 想干什么 | 去哪里 |
 |---|---|
+| **QQQ 现在在哪 / 在不在水下 / 市场过热还是过冷** | 双击 `run_market_temp.bat`（或 `/market-temp`）→ `output/market_temp/<日期>/temp.md` + `dashboard.png`；历史读数 `history.csv` |
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
 | **UBER / ADBE 跌了三成后值不值得买（Delivery Hero 并购与 AV、Adobe 净新增 ARR −36% 与换 CEO）** | `companies/_refresh_uber_adbe_2026-10-20/synthesis.md`（2 张刷新卡：`uber/2026-10-20`、`adbe/2026-10-20`；UBER 09-28 卡的独立 Checker 修正在此落实） |

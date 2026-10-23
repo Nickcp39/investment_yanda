@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "stderr_tail": "",
+  "total_cost_usd": 0.47570299999999993,
+  "duration_api_ms": 98763,
+  "num_turns": 17,
+  "is_error": false,
+  "stop_reason": "end_turn",
+  "session_id": "ce082c3c-5c55-4656-b50a-06d8c618d74d",
+  "result_tail": "done"
+}

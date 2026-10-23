@@ -1,0 +1,362 @@
+{
+  "series": {
+    "yahoo_GSPC": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:03",
+      "error": null,
+      "symbol": "^GSPC",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14324,
+      "first": "1970-01-02",
+      "last": "2026-10-22",
+      "last_close": 7663.43017578125,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_SP500TR": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:03",
+      "error": null,
+      "symbol": "^SP500TR",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESP500TR?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 9775,
+      "first": "1988-01-04",
+      "last": "2026-10-22",
+      "last_close": 17195.5703125,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_SPY": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:03",
+      "error": null,
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 8491,
+      "first": "1993-01-29",
+      "last": "2026-10-22",
+      "last_close": 763.9600219726562,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_NDX": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:04",
+      "error": null,
+      "symbol": "^NDX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 10345,
+      "first": "1985-10-01",
+      "last": "2026-10-22",
+      "last_close": 28958.689453125,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_QQQ": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:04",
+      "error": null,
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6949,
+      "first": "1999-03-10",
+      "last": "2026-10-22",
+      "last_close": 704.469970703125,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_W5000": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:04",
+      "error": null,
+      "symbol": "^W5000",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EW5000?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 9423,
+      "first": "1989-01-03",
+      "last": "2026-10-22",
+      "last_close": 76246.7265625,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_TNX": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:04",
+      "error": null,
+      "symbol": "^TNX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14222,
+      "first": "1970-01-02",
+      "last": "2026-10-22",
+      "last_close": 4.953000068664551,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_IRX": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:05",
+      "error": null,
+      "symbol": "^IRX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIRX?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14222,
+      "first": "1970-01-02",
+      "last": "2026-10-22",
+      "last_close": 4.021999835968018,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_FVX": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:05",
+      "error": null,
+      "symbol": "^FVX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFVX?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14222,
+      "first": "1970-01-02",
+      "last": "2026-10-22",
+      "last_close": 4.76800012588501,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_VIX": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:05",
+      "error": null,
+      "symbol": "^VIX",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 9272,
+      "first": "1990-01-02",
+      "last": "2026-10-22",
+      "last_close": 19.030000686645508,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_GCF": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:05",
+      "error": null,
+      "symbol": "GC=F",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 6562,
+      "first": "2000-08-30",
+      "last": "2026-10-22",
+      "last_close": 4060.39990234375,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "yahoo_DXY": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:06",
+      "error": null,
+      "symbol": "DX-Y.NYB",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?period1=0&period2=1792931942&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "rows": 14170,
+      "first": "1971-01-04",
+      "last": "2026-10-22",
+      "last_close": 101.61000061035156,
+      "kind": "yahoo",
+      "stale_days": 0,
+      "stale": false
+    },
+    "bls": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:07",
+      "error": null,
+      "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/",
+      "rows": 584,
+      "first": "1978-01",
+      "last": "2026-09",
+      "kind": "bls",
+      "last_values": {
+        "cpi_u_nsa": 336.94,
+        "unrate_sa": 4.2
+      },
+      "stale_days": 51,
+      "stale": false
+    },
+    "hom_forward_pe": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:07",
+      "error": null,
+      "url": "https://historyofmarket.com/api/ndx/forward-pe.json",
+      "rows": 1289,
+      "first": "2001-04-27",
+      "last": "2026-10-22",
+      "kind": "hom_forward_pe",
+      "updated": "2026-10-23",
+      "current": {
+        "trailing": 24.98,
+        "forward": 22.37,
+        "forwardOwn": 20.08,
+        "trailingCoverage": 88.98,
+        "forwardCoverage": 99.59,
+        "totalWeight": 100.0
+      },
+      "splice": {
+        "weekly_last": "2026-08-05",
+        "weekly_last_value": 22.37,
+        "own_from": "2026-08-06",
+        "own_first_value": 22.25,
+        "own_last": "2026-10-22",
+        "own_basis": "dl-blended-fy1fy2"
+      },
+      "attribution": "History of Market (historyofmarket.com)",
+      "license": "CC BY 4.0",
+      "stale_days": 0,
+      "stale": false
+    },
+    "multpl_cape": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:08",
+      "error": null,
+      "url": "https://www.multpl.com/shiller-pe/table/by-month",
+      "rows": 1870,
+      "first": "1871-02-01",
+      "last": "2026-10-22",
+      "last_value": 40.58,
+      "kind": "multpl_cape",
+      "stale_days": 0,
+      "stale": false
+    },
+    "multpl_pe": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:08",
+      "error": null,
+      "url": "https://www.multpl.com/s-p-500-pe-ratio/table/by-month",
+      "rows": 1871,
+      "first": "1871-01-01",
+      "last": "2026-10-22",
+      "last_value": 26.15,
+      "kind": "multpl_pe",
+      "stale_days": 0,
+      "stale": false
+    },
+    "fred_m2": {
+      "status": "cached",
+      "error": "The read operation timed out",
+      "failed_utc": "2026-10-23T08:39:23",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL",
+      "kind": "fred_m2",
+      "seeded_from": "backtests\\黄金_货币供应_估值_2026-08-07\\data\\us_m2_monthly.csv",
+      "last": "2026-07",
+      "stale_days": 113,
+      "stale": true
+    },
+    "bea_gdp": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:25",
+      "error": null,
+      "url": "https://apps.bea.gov/national/Release/TXT/NipaDataQ.txt",
+      "rows": 318,
+      "first": "1947q1",
+      "last": "2026-06-30",
+      "last_quarter": "2026q2",
+      "last_nominal_bn": 32563.03,
+      "kind": "bea_gdp",
+      "annual_rows": 79,
+      "stale_days": 114,
+      "stale": false
+    },
+    "lbma_gold": {
+      "status": "cached",
+      "error": "HTTP Error 403: Forbidden",
+      "failed_utc": "2026-10-23T08:39:25",
+      "url": "https://prices.lbma.org.uk/json/gold_pm.json",
+      "kind": "lbma_gold",
+      "note": "compute.py splices COMEX GC=F after the cache ends",
+      "seeded_from": "backtests\\黄金_货币供应_估值_2026-08-07\\data\\gold_lbma_pm_daily.csv",
+      "last": "2026-09-08",
+      "stale_days": 44,
+      "stale": true
+    },
+    "sa_qqq": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:25",
+      "error": null,
+      "url": "https://stockanalysis.com/etf/qqq/holdings/",
+      "rows": 25,
+      "last": "2026-10-23",
+      "top": [
+        [
+          "NVDA",
+          8.26,
+          "NVIDIA Corporation"
+        ],
+        [
+          "AAPL",
+          7.75,
+          "Apple Inc."
+        ],
+        [
+          "MSFT",
+          6.11,
+          "Microsoft Corporation"
+        ]
+      ],
+      "kind": "sa_qqq",
+      "stale_days": -1,
+      "stale": false
+    },
+    "sa_spy": {
+      "status": "ok",
+      "fetched_utc": "2026-10-23T08:39:26",
+      "error": null,
+      "url": "https://stockanalysis.com/etf/spy/holdings/",
+      "rows": 25,
+      "last": "2026-10-23",
+      "top": [
+        [
+          "NVDA",
+          8.04,
+          "NVIDIA Corporation"
+        ],
+        [
+          "AAPL",
+          7.51,
+          "Apple Inc."
+        ],
+        [
+          "MSFT",
+          5.92,
+          "Microsoft Corporation"
+        ]
+      ],
+      "kind": "sa_spy",
+      "stale_days": -1,
+      "stale": false
+    }
+  },
+  "fetched_utc": "2026-10-23T08:43:34",
+  "needs_ai": [
+    {
+      "key": "fred_m2",
+      "status": "cached",
+      "last": "2026-07",
+      "stale_days": 113,
+      "threshold_days": 60,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL",
+      "error": "The read operation timed out",
+      "what": "美国 M2（季调，十亿美元，月频）。FRED 本机不可达：请从 federalreserve.gov H.6 或其它镜像取最近几个月的 M2SL，写明来源与发布日期。"
+    },
+    {
+      "key": "lbma_gold",
+      "status": "cached",
+      "last": "2026-09-08",
+      "stale_days": 44,
+      "threshold_days": 10,
+      "url": "https://prices.lbma.org.uk/json/gold_pm.json",
+      "error": "HTTP Error 403: Forbidden",
+      "what": "LBMA 黄金 PM 定盘价。本机 403：pipeline 已用 COMEX GC=F 接续，只需确认接续日前后价差 <1%。"
+    }
+  ]
+}
