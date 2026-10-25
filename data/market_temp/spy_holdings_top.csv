@@ -1,26 +1,26 @@
 symbol,weight,name
-NVDA,8.04,NVIDIA Corporation
-AAPL,7.51,Apple Inc.
-MSFT,5.92,Microsoft Corporation
-AMZN,3.85,"Amazon.com, Inc."
-GOOGL,2.94,Alphabet Inc.
-AVGO,2.4,Broadcom Inc.
-GOOG,2.35,Alphabet Inc.
-META,2.3,"Meta Platforms, Inc."
-TSLA,1.63,"Tesla, Inc."
-MU,1.54,"Micron Technology, Inc."
-LLY,1.52,Eli Lilly and Company
-BRK.B,1.5,Berkshire Hathaway Inc.
-AMD,1.35,"Advanced Micro Devices, Inc."
-JPM,1.33,JPMorgan Chase &amp; Co.
-XOM,1.1,ExxonMobil Holdings Corporation
-V,1.04,Visa Inc.
-JNJ,0.93,Johnson &amp; Johnson
-WMT,0.79,Walmart Inc.
-MA,0.75,Mastercard Incorporated
-ABBV,0.75,AbbVie Inc.
+NVDA,7.75,NVIDIA Corporation
+AAPL,7.71,Apple Inc.
+MSFT,5.91,Microsoft Corporation
+AMZN,3.7,"Amazon.com, Inc."
+GOOGL,2.85,Alphabet Inc.
+AVGO,2.32,Broadcom Inc.
+GOOG,2.29,Alphabet Inc.
+META,2.15,"Meta Platforms, Inc."
+TSLA,1.59,"Tesla, Inc."
+LLY,1.55,Eli Lilly and Company
+BRK.B,1.53,Berkshire Hathaway Inc.
+MU,1.51,"Micron Technology, Inc."
+JPM,1.34,JPMorgan Chase &amp; Co.
+AMD,1.28,"Advanced Micro Devices, Inc."
+XOM,1.14,ExxonMobil Holdings Corporation
+V,1.06,Visa Inc.
+JNJ,0.97,Johnson &amp; Johnson
+WMT,0.81,Walmart Inc.
+ABBV,0.77,AbbVie Inc.
+MA,0.77,Mastercard Incorporated
+CVX,0.7,Chevron Corporation
 PLTR,0.69,Palantir Technologies Inc.
-INTC,0.69,Intel Corporation
-CVX,0.67,Chevron Corporation
-COST,0.66,Costco Wholesale Corporation
-CSCO,0.63,"Cisco Systems, Inc."
+COST,0.68,Costco Wholesale Corporation
+INTC,0.66,Intel Corporation
+CSCO,0.64,"Cisco Systems, Inc."
