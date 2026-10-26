@@ -80,7 +80,8 @@ S["brk_r2_on_spy"] = float(np.corrcoef(R["SPY"], R["BRK.B"])[0, 1] ** 2)
 
 MIX = {"SPY": {"SPY": 1}, "QQQ": {"QQQ": 1}, "BRK.B": {"BRK.B": 1}, "QQQ50/SPY50": {"QQQ": .5, "SPY": .5}, "SPY50/BRK50": {"SPY": .5, "BRK.B": .5},
        "QQQ50/BRK50": {"QQQ": .5, "BRK.B": .5}, "三者各1/3": {"QQQ": 1 / 3, "SPY": 1 / 3, "BRK.B": 1 / 3}, "QQQ40/SPY30/BRK30（你的定投比例）": {"QQQ": .4, "SPY": .3, "BRK.B": .3},
-       "QQQ60/BRK40": {"QQQ": .6, "BRK.B": .4}}
+       "QQQ60/BRK40": {"QQQ": .6, "BRK.B": .4}, "QQQ40/SPY20/BRK40": {"QQQ": .4, "SPY": .2, "BRK.B": .4}, "QQQ40/SPY10/BRK50": {"QQQ": .4, "SPY": .1, "BRK.B": .5},
+       "QQQ40/BRK60": {"QQQ": .4, "BRK.B": .6}, "QQQ50/SPY10/BRK40": {"QQQ": .5, "SPY": .1, "BRK.B": .4}, "QQQ30/BRK70": {"QQQ": .3, "BRK.B": .7}}
 rows = {}
 for name, w in MIX.items():
     r = sum(R[k] * v for k, v in w.items())
