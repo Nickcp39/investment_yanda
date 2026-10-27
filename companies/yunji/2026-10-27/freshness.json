@@ -1,0 +1,75 @@
+{
+  "ticker": "2670.HK",
+  "as_of": "2026-10-27",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": null,
+  "note": "First dossier. Prices in HKD, post 1-to-10 share split (2026-09-23); Yahoo history is split-adjusted. Shares basis: derived 697.94M (Zhi Tao 60,161,930 = 8.62%). HKDCNY = 0.92 (Yahoo HKDCNY=X live or fallback). Financials from HKEX FY2025 annual report PDF + 2026 interim via press coverage; prospectus not yet pulled (INFO-GAP).",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 3.135,
+      "unit": "HKD",
+      "as_of": "2026-10-27",
+      "is_quantitative": true,
+      "low_high_hug_justified": true,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/2670.HK", "fetched_at": "2026-10-27", "value": 3.135}
+      ],
+      "pass": true,
+      "delta_note": "single source (no second HK quote API in this run); flagged low_high_hug because -91% off 52wk high is the subject of the dossier, cross-checked against split-adjusted 2026-03-13 close 17.17 (= pre-split 171.7) from press"
+    },
+    {
+      "field": "market_cap",
+      "value": 2188000000,
+      "unit": "HKD",
+      "as_of": "2026-10-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived", "url": "697.94M x HK$3.135", "fetched_at": "2026-10-27", "value": 2188000000}
+      ],
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 35.84,
+      "unit": "HKD",
+      "as_of": "2026-10-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo_1y_daily_split_adjusted", "url": "https://query1.finance.yahoo.com/v8/finance/chart/2670.HK?range=1y&interval=1d", "fetched_at": "2026-10-27", "value": 35.84}
+      ],
+      "pass": true,
+      "delta_note": "split-adjusted; equals pre-split 358.4 reached early 2026"
+    },
+    {
+      "field": "52wk_low",
+      "value": 2.94,
+      "unit": "HKD",
+      "as_of": "2026-10-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "yahoo_1y_daily_split_adjusted", "url": "https://query1.finance.yahoo.com/v8/finance/chart/2670.HK?range=1y&interval=1d", "fetched_at": "2026-10-27", "value": 2.94}
+      ],
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 697.94,
+      "unit": "million shares",
+      "as_of": "2026-10-27",
+      "is_quantitative": true,
+      "sources": [
+        {"source_name": "derived_from_filing", "url": "Zhi Tao 60,161,930 shares = 8.62% (FY2025 annual report)", "fetched_at": "2026-10-27", "value": 697.94}
+      ],
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "is_quantitative": false,
+      "value": "FY2025 annual report 2026-04-29 (HKEX PDF); 2026 interim results Aug/Sep 2026 (press); governance announcement 2026-10-16 (controlling-shareholder change + voluntary lock-up)",
+      "sources": [
+        {"source_name": "company_filing", "url": "https://hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906273_c.pdf", "public_date": "2026-04-29", "fetched_at": "2026-10-27"}
+      ]
+    }
+  ]
+}

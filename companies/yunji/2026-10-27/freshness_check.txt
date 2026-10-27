@@ -1,0 +1,10 @@
+FRESHNESS CHECK - 2670.HK as_of 2026-10-27  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=3.135 refetched_yahoo=3.135 (2026-10-27 intraday) -> PASS :: single source, flagged
+tripwires:
+  [PASS] T1 52wk band containment: 2.94 <= 3.135 <= 35.84
+  [PASS] T2 low/high hug: +6.6% off low, -91.3% off high (justified: collapse is the dossier subject, cross-checked vs split-adjusted 2026-03-13 close 17.17 from press)
+  [PASS] T3 market-cap identity: 697.94M x 3.135 = HK$2.19B vs card HK$2.19B (0.0%)
+  [PASS] T4 distance-from-high reconciliation: narrative -91% vs card-implied -91.3% (gap 0.3pt)
+  [PASS] T5 single value of truth: as_of_price 3.135 present in all price-bearing files (facts.md, valuation.md, decision_card.md/.json)
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest governance source 2026-10-16 (11d); annual report 2026-04-29 (181d, latest available)
