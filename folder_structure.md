@@ -135,6 +135,7 @@ data/market_temp/     体温流水线的行情/宏观缓存与 manifest.json
 
 | 想干什么 | 去哪里 |
 |---|---|
+| **日本医疗影像国产厂商（东芝、日立、岛津）为何没赢下全球 / 国家扶持低价冲击的说法核对 / 对中国集采与联影的启示** | `studies/日本医疗影像国产化_2026-10-27/README.md`（报告 + PDF + 四份带出处笔记；含对 jp_cn_relative_timeline 旧笔记的更正） |
 | **QQQ 现在在哪 / 在不在水下 / 市场过热还是过冷** | 双击 `run_market_temp.bat`（或 `/market-temp`）→ `output/market_temp/<日期>/temp.md` + `dashboard.png`；历史读数 `history.csv` |
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
 | **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
