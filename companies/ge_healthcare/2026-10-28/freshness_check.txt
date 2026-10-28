@@ -1,0 +1,10 @@
+FRESHNESS CHECK - GEHC as_of 2026-10-28  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=76.16 (CNBC intraday 2026-10-28 ~10:08 ET) vs yahoo=76.01 (9:57 ET) vs robinhood=76.18 -> PASS :: Q3 EARNINGS DAY intraday print (+6.9%), price not settled; yahoo chart API 429 rate-limited
+tripwires:
+  [PASS] T1 52wk band containment: 58.75 <= 76.16 <= 89.77
+  [PASS] T2 low/high hug: +29.6% off low, -15.2% off high (not hugging)
+  [PASS] T3 market-cap identity: 452.14M x 76.16 = USD 34.4B vs Morningstar 34.1B / Robinhood 34.41B (delta <=0.9%)
+  [PASS] T4 distance-from-high reconciliation: narrative -15.2% vs card-implied -15.2% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 76.16 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: Q3 2026 results published 2026-10-28 = card date (0d); guidance raised same morning; maximal fundamental freshness

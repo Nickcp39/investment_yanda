@@ -1,0 +1,43 @@
+{
+  "ticker": "GEHC",
+  "as_of": "2026-10-28",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": "industrial_majors_2026-10-28",
+  "note": "First dossier. Yahoo chart API rate-limited (429) this run; price USD 76.16 from CNBC quote API (GEHC, 2026-10-28 ~10:08 ET intraday) — Q3 2026 earnings released the same morning, stock +6.9%, intraday price not settled. Cross-checks: Yahoo 76.01 (9:57 ET), Robinhood 76.18. 52wk band 89.77 / 58.75 four-source agreement (Morningstar, Robinhood, Markets Insider, heygotrade). Shares 452.14M (Morningstar); diluted weighted 453M per Q3 release. Financials from company Q3 2026 press release (published 2026-10-28, primary, full text reviewed). FY2025 anchors from TIKR (2026-02-20) + Q4 2025 coverage. FRESHNESS IS MAXIMAL on fundamentals (earnings day = card date) but price is an earnings-day intraday print — treat as unsettled.",
+  "live_fields": [
+    {"field": "price", "value": 76.16, "unit": "USD", "as_of": "2026-10-28", "is_quantitative": true, "low_high_hug_justified": false,
+     "sources": [
+       {"source_name": "cnbc", "url": "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=GEHC", "fetched_at": "2026-10-28", "value": 76.16},
+       {"source_name": "yahoo", "url": "https://finance.yahoo.com/quote/GEHC/", "fetched_at": "2026-10-28", "value": 76.01},
+       {"source_name": "robinhood", "url": "https://robinhood.com/us/en/stocks/GEHC/", "fetched_at": "2026-10-28", "value": 76.18}],
+     "cross_check_delta_pct": 0.2, "pass": true,
+     "delta_note": "three-source intraday agreement within 0.2%; earnings-day volatility noted"},
+    {"field": "market_cap", "value": 34400000000, "unit": "USD", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "derived", "url": "452.14M x 76.16", "fetched_at": "2026-10-28", "value": 34400000000},
+       {"source_name": "morningstar", "url": "https://www.morningstar.com/stocks/xnas/gehc/quote", "fetched_at": "2026-10-28", "value": 34100000000},
+       {"source_name": "robinhood", "url": "https://robinhood.com/us/en/stocks/GEHC/", "fetched_at": "2026-10-28", "value": 34410000000}],
+     "cross_check_delta_pct": 0.9, "pass": true},
+    {"field": "52wk_high", "value": 89.77, "unit": "USD", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "morningstar", "url": "https://www.morningstar.com/stocks/xnas/gehc/quote", "fetched_at": "2026-10-28", "value": 89.77},
+       {"source_name": "markets_insider", "url": "https://markets.businessinsider.com/stocks/gehc-stock", "fetched_at": "2026-10-28", "value": 89.77},
+       {"source_name": "robinhood", "url": "https://robinhood.com/us/en/stocks/GEHC/", "fetched_at": "2026-10-28", "value": 89.77}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "52wk_low", "value": 58.75, "unit": "USD", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "morningstar", "url": "https://www.morningstar.com/stocks/xnas/gehc/quote", "fetched_at": "2026-10-28", "value": 58.75},
+       {"source_name": "markets_insider", "url": "https://markets.businessinsider.com/stocks/gehc-stock", "fetched_at": "2026-10-28", "value": 58.75},
+       {"source_name": "robinhood", "url": "https://robinhood.com/us/en/stocks/GEHC/", "fetched_at": "2026-10-28", "value": 58.75}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "shares_out", "value": 452, "unit": "million shares", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "morningstar", "url": "https://www.morningstar.com/stocks/xnas/gehc/quote", "fetched_at": "2026-10-28", "value": 452.14},
+       {"source_name": "company_q3_release", "url": "https://investor.gehealthcare.com/news-releases/news-release-details/ge-healthcare-reports-third-quarter-2026-financial-results", "fetched_at": "2026-10-28", "value": 453}],
+     "cross_check_delta_pct": 0.2, "pass": true,
+     "delta_note": "company figure is diluted weighted-average Q3; Morningstar is point-in-time outstanding"},
+    {"field": "guidance", "is_quantitative": false,
+     "value": "FY2026 raised (2nd time): organic revenue ~4.0%, adj EBIT margin 15.5-15.7%, adj EPS $4.95-5.05 (was $4.80-5.00), FCF $1.6B+; Q3: orders +4.0% organic, btb 1.03, backlog $23.7B; PCS under strategic review",
+     "sources": [{"source_name": "company_press", "url": "https://investor.gehealthcare.com/news-releases/news-release-details/ge-healthcare-reports-third-quarter-2026-financial-results", "public_date": "2026-10-28", "fetched_at": "2026-10-28"}]}
+  ]
+}
