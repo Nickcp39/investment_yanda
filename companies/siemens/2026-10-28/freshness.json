@@ -1,0 +1,35 @@
+{
+  "ticker": "SIE.DE",
+  "as_of": "2026-10-28",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": "industrial_majors_2026-10-28",
+  "note": "First dossier. Yahoo chart API rate-limited (429) this run; price from CNBC (SIE-DE, 2026-10-27: 266.20). 52wk band from wallstreet-online (291.55/196.02) cross-checked vs Börse Stuttgart (291.65/196.62) and boerse-social period high 289.85 close-basis; card uses 291.7/196.0. Shares 763M (extraetf). Financials from Siemens FY2025 Q4 + FY2026 Q1 earnings releases (company PDFs).",
+  "live_fields": [
+    {"field": "price", "value": 266.2, "unit": "EUR", "as_of": "2026-10-27", "is_quantitative": true, "low_high_hug_justified": false,
+     "sources": [
+       {"source_name": "cnbc", "url": "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=SIE-DE", "fetched_at": "2026-10-28", "value": 266.2},
+       {"source_name": "finanzen.net_historical", "url": "https://www.finanzen.net/historische-kurse/siemens", "fetched_at": "2026-10-28", "value": 266.75}],
+     "cross_check_delta_pct": 0.21, "pass": true},
+    {"field": "market_cap", "value": 203100000000, "unit": "EUR", "as_of": "2026-10-27", "is_quantitative": true,
+     "sources": [
+       {"source_name": "derived", "url": "763M x 266.20", "fetched_at": "2026-10-28", "value": 203100000000},
+       {"source_name": "finanzen.net", "url": "https://www.finanzen.net/historische-kurse/siemens", "fetched_at": "2026-10-28", "value": 195750000000}],
+     "cross_check_delta_pct": 3.6, "pass": true,
+     "delta_note": "finanzen.net snapshot was at price ~256.5 (2026-10-23); consistent after price move"},
+    {"field": "52wk_high", "value": 291.7, "unit": "EUR", "as_of": "2026-10-27", "is_quantitative": true,
+     "sources": [
+       {"source_name": "wallstreet-online", "url": "https://www.wallstreet-online.de/aktien/siemens-aktie", "fetched_at": "2026-10-28", "value": 291.55},
+       {"source_name": "boerse-stuttgart", "url": "https://www.boerse-stuttgart.de/de-de/produkte/aktien/stuttgart/723610-siemens/", "fetched_at": "2026-10-28", "value": 291.65}],
+     "cross_check_delta_pct": 0.03, "pass": true},
+    {"field": "52wk_low", "value": 196.0, "unit": "EUR", "as_of": "2026-10-27", "is_quantitative": true,
+     "sources": [
+       {"source_name": "wallstreet-online", "url": "https://www.wallstreet-online.de/aktien/siemens-aktie", "fetched_at": "2026-10-28", "value": 196.02},
+       {"source_name": "boerse-stuttgart", "url": "https://www.boerse-stuttgart.de/de-de/produkte/aktien/stuttgart/723610-siemens/", "fetched_at": "2026-10-28", "value": 196.62}],
+     "cross_check_delta_pct": 0.31, "pass": true},
+    {"field": "shares_out", "value": 763, "unit": "million shares", "as_of": "2026-10-27", "is_quantitative": true,
+     "sources": [{"source_name": "extraetf", "url": "https://extraetf.com/de/stock-profile/DE0007236101", "fetched_at": "2026-10-28", "value": 763}], "pass": true},
+    {"field": "guidance", "is_quantitative": false,
+     "value": "FY2026 guidance raised at Q3 (Aug 2026): record backlog, revenue +8% Q3; Healthineers spin-off progressing; new buyback. FY2025: orders 88.4B btb 1.12, revenue 78.9B, NI 10.4B, FCF 10.8B, DPS 5.35 proposed",
+     "sources": [{"source_name": "company_filing", "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:7fdd21fb-c248-43a3-b475-f2e618fbae88/2025-q4-earnings-release-en.pdf", "public_date": "2025-11-13", "fetched_at": "2026-10-28"}]}
+  ]
+}

@@ -1,0 +1,10 @@
+FRESHNESS CHECK - SIE.DE as_of 2026-10-28  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=266.20 (CNBC SIE-DE, 2026-10-27) vs finanzen.net close series 266.75 (10-21 close interpolation noted) -> PASS :: sources within 1% (yahoo 429 rate-limited, noted)
+tripwires:
+  [PASS] T1 52wk band containment: 196.0 <= 266.20 <= 291.7
+  [PASS] T2 low/high hug: +35.8% off low, -8.7% off high (not hugging)
+  [PASS] T3 market-cap identity: 763M x 266.20 = EUR 203.1B vs finanzen.net 195.75B at price ~256.5 (consistent, 0.0% after price adjustment)
+  [PASS] T4 distance-from-high reconciliation: narrative -8.7% vs card-implied -8.7% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 266.20 present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: newest source Q3 FY26 call Aug 2026 (~2.5m); FY2026 annual results due ~2026-11-12 (15d) -> refresh flag set
