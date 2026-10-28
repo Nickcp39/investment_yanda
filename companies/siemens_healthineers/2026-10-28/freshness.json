@@ -1,0 +1,36 @@
+{
+  "ticker": "SHL.DE",
+  "as_of": "2026-10-28",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": "industrial_majors_2026-10-28",
+  "note": "First dossier. Yahoo chart API rate-limited (429) this run. Price EUR 42.04 from CNBC (SHL-DE, 2026-10-28 11:23 CET intraday; Xetra still trading). 52wk band 49.78 (2025-10-27) / 32.84 (2026-05-18) from wallstreet-online, cross-checked vs finanzen.net (49.68/32.84) and justETF (49.59/33.31) — intraday vs close basis varies <0.6pt. Shares 1.13B (wallstreet-online Stammdaten). Financials from company Q3 FY2026 press release + call transcript; estimates from mwb research hub PDF. FY2026 annual results due 2026-11-05 -> refresh flag.",
+  "live_fields": [
+    {"field": "price", "value": 42.04, "unit": "EUR", "as_of": "2026-10-28", "is_quantitative": true, "low_high_hug_justified": false,
+     "sources": [
+       {"source_name": "cnbc", "url": "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=SHL-DE", "fetched_at": "2026-10-28", "value": 42.04},
+       {"source_name": "justetf", "url": "https://www.justetf.com/at/stock-profiles/DE000SHL1006", "fetched_at": "2026-10-28", "value": 41.50}],
+     "cross_check_delta_pct": 1.3, "pass": true,
+     "delta_note": "justETF snapshot dated 2026-10-19; consistent given 10-day drift"},
+    {"field": "market_cap", "value": 47500000000, "unit": "EUR", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "derived", "url": "1.13B x 42.04", "fetched_at": "2026-10-28", "value": 47500000000},
+       {"source_name": "parqet", "url": "https://app.parqet.com/aktien/siemens-healthineers-DE000SHL1006", "fetched_at": "2026-10-28", "value": 46850000000}],
+     "cross_check_delta_pct": 1.4, "pass": true,
+     "delta_note": "parqet snapshot 2026-10-25/26 at price ~41.5"},
+    {"field": "52wk_high", "value": 49.78, "unit": "EUR", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "wallstreet-online", "url": "https://www.wallstreet-online.de/aktien/siemens-healthineers-aktie", "fetched_at": "2026-10-28", "value": 49.78},
+       {"source_name": "finanzen.net", "url": "https://www.finanzen.net/aktien/siemens_healthineers-aktie", "fetched_at": "2026-10-28", "value": 49.68}],
+     "cross_check_delta_pct": 0.2, "pass": true},
+    {"field": "52wk_low", "value": 32.84, "unit": "EUR", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "wallstreet-online", "url": "https://www.wallstreet-online.de/aktien/siemens-healthineers-aktie", "fetched_at": "2026-10-28", "value": 32.84},
+       {"source_name": "finanzen.net", "url": "https://www.finanzen.net/aktien/siemens_healthineers-aktie", "fetched_at": "2026-10-28", "value": 32.84}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "shares_out", "value": 1130, "unit": "million shares", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [{"source_name": "wallstreet-online", "url": "https://www.wallstreet-online.de/aktien/siemens-healthineers-aktie", "fetched_at": "2026-10-28", "value": 1130}], "pass": true},
+    {"field": "guidance", "is_quantitative": false,
+     "value": "FY2026 (ends Sep): revenue comp +3.5-4.0% (cut from 4.5-5%), adj EPS EUR 2.35-2.45 (raised by EUR 0.15 one-off tariff refunds); CMD commitment: double-digit EPS growth midterm from FY2027; FY2026 results 2026-11-05",
+     "sources": [{"source_name": "company_press", "url": "https://www.siemens-healthineers.com/press/releases/2026q3", "public_date": "2026-07-30", "fetched_at": "2026-10-28"}]}
+  ]
+}

@@ -1,0 +1,10 @@
+FRESHNESS CHECK - SHL.DE as_of 2026-10-28  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=42.04 (CNBC intraday 2026-10-28) vs justETF=41.50 (10-19) -> PASS with note :: intraday quote, Xetra still trading; yahoo 429 rate-limited
+tripwires:
+  [PASS] T1 52wk band containment: 32.84 <= 42.04 <= 49.78
+  [PASS] T2 low/high hug: +28.0% off low, -15.5% off high (not hugging)
+  [PASS] T3 market-cap identity: 1.13B x 42.04 = EUR 47.5B vs parqet 46.85B at 41.5 (consistent after price adjustment)
+  [PASS] T4 distance-from-high reconciliation: narrative -15.5% vs card-implied -15.5% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 42.04 present in all price-bearing files
+  [WARN] T6 LIVE-qualitative freshness [guidance]: newest source Q3 FY26 2026-07-31 (89d) BUT FY2026 annual results scheduled 2026-11-05 (8d) -> refresh flag set; card will need Q4 update
