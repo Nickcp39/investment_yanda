@@ -1,0 +1,31 @@
+{
+  "ticker": "300759.SZ",
+  "as_of": "2026-10-28",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": "industrial_majors_2026-10-28",
+  "note": "First dossier. Prices: A-share 300759 CNY 39.60 and H-share 3759.HK HKD 26.96 both 2026-10-28 close (CNBC; A +6.31% day after Q3 beat). Shares 1,837.28M total / 1,420.03M A-float (eastmoney push2). 52wk 44.70/29.80 (eastmoney). HKDCNY 0.915 (CNBC live or fallback). Q3 2026 report (cninfo PDF 2026-10-27) is primary; FY2025 annual report via sina full-text repost.",
+  "live_fields": [
+    {"field": "price", "value": 39.60, "unit": "CNY", "as_of": "2026-10-28", "is_quantitative": true, "low_high_hug_justified": false,
+     "sources": [
+       {"source_name": "cnbc", "url": "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=300759-CN", "fetched_at": "2026-10-28", "value": 39.60},
+       {"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=0.300759", "fetched_at": "2026-10-28", "value": 39.60}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "price_h", "value": 26.96, "unit": "HKD", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [{"source_name": "cnbc", "url": "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=3759-HK", "fetched_at": "2026-10-28", "value": 26.96}],
+     "pass": true, "delta_note": "single source (yahoo 429)"},
+    {"field": "market_cap", "value": 72756431669, "unit": "CNY", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [
+       {"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=0.300759", "fetched_at": "2026-10-28", "value": 72756431669},
+       {"source_name": "derived", "url": "1837.28M x 39.60", "fetched_at": "2026-10-28", "value": 72757000000}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "52wk_high", "value": 44.70, "unit": "CNY", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [{"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=0.300759", "fetched_at": "2026-10-28", "value": 44.70}], "pass": true},
+    {"field": "52wk_low", "value": 29.80, "unit": "CNY", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [{"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=0.300759", "fetched_at": "2026-10-28", "value": 29.80}], "pass": true},
+    {"field": "shares_out", "value": 1837.28, "unit": "million shares", "as_of": "2026-10-28", "is_quantitative": true,
+     "sources": [{"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=0.300759", "fetched_at": "2026-10-28", "value": 1837.28}], "pass": true},
+    {"field": "guidance", "is_quantitative": false,
+     "value": "FY2026 revenue guide raised at H1 from +12-18% to +15-20%; 9M26 +19.0% in range; new orders +30%, CDMO orders +40%, TOP20 pharma revenue +52.5%",
+     "sources": [{"source_name": "company_filing", "url": "http://static.cninfo.com.cn/finalpage/2026-10-28/1225629302.PDF", "public_date": "2026-10-27", "fetched_at": "2026-10-28"}]}
+  ]
+}

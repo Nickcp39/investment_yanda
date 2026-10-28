@@ -1,0 +1,10 @@
+FRESHNESS CHECK - 300759.SZ as_of 2026-10-28  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=39.60 (CNBC 2026-10-28 close) vs eastmoney=39.60 -> PASS :: 2 independent sources agree (H-share 26.96 single source, yahoo 429 rate-limited, noted)
+tripwires:
+  [PASS] T1 52wk band containment: 29.80 <= 39.60 <= 44.70
+  [PASS] T2 low/high hug: +32.9% off low, -11.4% off high (not hugging)
+  [PASS] T3 market-cap identity: 1837.28M x 39.60 = 72.76B vs eastmoney 72.76B (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -11.4% vs card-implied -11.4% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 39.60 (A) / 26.96 (H) present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [guidance]: Q3 2026 report dated 2026-10-27 (1d)
