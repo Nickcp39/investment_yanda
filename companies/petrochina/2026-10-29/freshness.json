@@ -1,0 +1,40 @@
+{
+  "ticker": "601857.SH",
+  "as_of": "2026-10-29",
+  "generated_by": "runner (manual, self-checked)",
+  "batch": "energy_majors_2026-10-29",
+  "note": "First dossier. Q3 2026 report released 2026-10-28 (1d before card) — fundamental freshness maximal. Price CNY 13.69 = 2026-10-29 A-share close (+3.24%, closed AT day high = 52wk high = ~18yr high): low/high hug is REAL and flagged, justified as live earnings reaction, not stale data. H HK$10.24 intraday (eastmoney push2). 52wk band A: 8.33 (futu) / 8.26 (MarketWatch) / 8.04 (sohu 1yr) — intraday-vs-close basis, use 8.33; high = today 13.69. Shares 183.021B (161.922B A + 21.099B H, company monthly return). Consensus 2026E NP 186.36B (futunn/证券之星 tool). Oil: Brent spot ~106-112 late Oct (war premium), EIA Oct STEO 2026/2027 = 96.32/83.74, Barclays 100/85 — forward consensus DOWN, central to base case. Yahoo API rate-limited (429) this run; CNBC API access-denied for CN symbols; eastmoney push2 used as primary.",
+  "live_fields": [
+    {"field": "price_a", "value": 13.69, "unit": "CNY", "as_of": "2026-10-29", "is_quantitative": true, "low_high_hug_justified": true,
+     "sources": [
+       {"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=1.601857", "fetched_at": "2026-10-29", "value": 13.69},
+       {"source_name": "futu", "url": "https://www.futunn.com/stock/601857-SH", "fetched_at": "2026-10-29", "value": 13.69},
+       {"source_name": "cfi", "url": "https://quote.cfi.cn/quote8741_601857.html", "fetched_at": "2026-10-29", "value": 13.69}],
+     "cross_check_delta_pct": 0.0, "pass": true,
+     "delta_note": "three-source agreement; close = day high = 52wk high (hug justified, earnings reaction)"},
+    {"field": "price_h", "value": 10.24, "unit": "HKD", "as_of": "2026-10-29", "is_quantitative": true,
+     "sources": [
+       {"source_name": "eastmoney", "url": "https://push2.eastmoney.com/api/qt/stock/get?secid=116.00857", "fetched_at": "2026-10-29", "value": 10.24}],
+     "pass": true, "delta_note": "single live source; day range 9.975-10.40"},
+    {"field": "market_cap_a", "value": 2505600000000, "unit": "CNY", "as_of": "2026-10-29", "is_quantitative": true,
+     "sources": [
+       {"source_name": "derived", "url": "183.021B x 13.69", "fetched_at": "2026-10-29", "value": 2505600000000},
+       {"source_name": "eastmoney", "url": "push2 f116", "fetched_at": "2026-10-29", "value": 2505557186328}],
+     "cross_check_delta_pct": 0.0, "pass": true},
+    {"field": "52wk_high", "value": 13.69, "unit": "CNY", "as_of": "2026-10-29", "is_quantitative": true,
+     "sources": [
+       {"source_name": "futu", "url": "https://www.futunn.com/stock/601857-SH", "fetched_at": "2026-10-29", "value": 13.69},
+       {"source_name": "marketwatch", "url": "https://www.marketwatch.com/investing/stock/601857?countrycode=cn", "fetched_at": "2026-10-29", "value": 13.69}],
+     "cross_check_delta_pct": 0.0, "pass": true, "delta_note": "set today"},
+    {"field": "52wk_low", "value": 8.33, "unit": "CNY", "as_of": "2026-10-29", "is_quantitative": true,
+     "sources": [
+       {"source_name": "futu", "url": "https://www.futunn.com/stock/601857-SH", "fetched_at": "2026-10-29", "value": 8.33},
+       {"source_name": "marketwatch", "url": "https://www.marketwatch.com/investing/stock/601857?countrycode=cn", "fetched_at": "2026-10-29", "value": 8.26}],
+     "cross_check_delta_pct": 0.8, "pass": true, "delta_note": "intraday vs close basis"},
+    {"field": "shares_out", "value": 183021, "unit": "million shares", "as_of": "2026-10-29", "is_quantitative": true,
+     "sources": [{"source_name": "company_monthly_return", "url": "https://stock.stockstar.com/RB2026070700029975.shtml", "fetched_at": "2026-10-29", "value": 183021}], "pass": true},
+    {"field": "guidance", "is_quantitative": false,
+     "value": "No formal EPS guidance. Consensus 2026E NP RMB 186.36B (EPS 1.02); BOC Intl 26/27/28E = 182.2/182.6/183.8B (flat). Oil forward consensus down: EIA Oct STEO Brent 2026 96.32 / 2027 83.74; Barclays 100/85. Payout policy: charter floor 30%, actual 54.7% FY25.",
+     "sources": [{"source_name": "futunn_consensus", "url": "https://news.futunn.com/en/post/78585690", "public_date": "2026-09-01", "fetched_at": "2026-10-29"}]}
+  ]
+}

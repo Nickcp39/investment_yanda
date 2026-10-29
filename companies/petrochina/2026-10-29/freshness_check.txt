@@ -1,0 +1,10 @@
+FRESHNESS CHECK - 601857.SH as_of 2026-10-29  [manual, CLEAN (self-checked)]
+STATUS: PASS (clean=false: Checker != Runner, single agent)
+price: card=13.69 (eastmoney push2, 2026-10-29 close) vs futu=13.69 vs cfi=13.69 -> PASS :: earnings-reaction close AT day high; CNBC denied for CN symbols, yahoo 429
+tripwires:
+  [PASS] T1 52wk band containment: 8.33 <= 13.69 <= 13.69 (boundary: high set today)
+  [WARN] T2 low/high hug: +64% off low, 0.0% off high -> HUGGING 52WK HIGH (and ~18yr high); justified: 三季报次日放量收高, live data not stale; flagged prominently in card (no-chase for A)
+  [PASS] T3 market-cap identity: 183.021B x 13.69 = 2.506T vs eastmoney f116 2.5056T (delta 0.0%)
+  [PASS] T4 distance-from-high reconciliation: narrative 0% vs card-implied 0% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 13.69 (A) / 10.24 HKD (H) present in all price-bearing files
+  [PASS] T6 LIVE-qualitative freshness [earnings]: Q3 2026 report 2026-10-28 (1d); oil macro (EIA/Barclays) Oct 2026; H 52wk band is a 2026-07 snapshot (stale, noted as approximate)
