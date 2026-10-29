@@ -1,0 +1,101 @@
+{
+  "ticker": "META",
+  "as_of": "2026-10-28",
+  "generated_by": "runner",
+  "batch": "mega7_refresh_2026-10-29",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is Wednesday 2026-10-28 (last complete session); run made Thursday 2026-10-29 during the session, in-progress session excluded. Every quantitative LIVE field carries >=2 sources. FILED data (EX-99.1 / 10-Q line items) is cited with URLs in decision_card.json sources_used and copied as plain text in raw/.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 612.49,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=1y&interval=1d", "fetched_at": "2026-10-29", "value": 612.49},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/history/", "fetched_at": "2026-10-29", "value": 612.49}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1565672205050,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "2,556,241,253 shares outstanding (10-Q cover as of 2026-10-16: Class A 2,214,472,367 + Class B 341,768,886) x 612.49", "fetched_at": "2026-10-29", "value": 1565672205050},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/ (Shares Out 2.56B x 612.49 = $1.568T; page showed $1.61T at an intraday 630.68 on 2026-10-29)", "fetched_at": "2026-10-29", "value": 1567974400000}
+      ],
+      "cross_check_delta_pct": 0.15,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 779.82,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=1y&interval=1d (max daily high over bars 2025-10-29..2026-10-28 = 779.82 intraday 2026-09-24; meta.fiftyTwoWeekHigh also 779.82)", "fetched_at": "2026-10-29", "value": 779.82},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/ (52-Week Range 520.26 - 779.82)", "fetched_at": "2026-10-29", "value": 779.82}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 520.26,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=1y&interval=1d (min daily low over bars 2025-10-29..2026-10-28 = 520.26 intraday 2026-03-27; meta.fiftyTwoWeekLow also 520.26)", "fetched_at": "2026-10-29", "value": 520.26},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/ (52-Week Range 520.26 - 779.82)", "fetched_at": "2026-10-29", "value": 520.26}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 2556.241253,
+      "unit": "M shares (outstanding, 10-Q cover)",
+      "as_of": "2026-10-16",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026_cover", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm (cover: Class A 2,214,472,367 + Class B 341,768,886 as of 2026-10-16)", "fetched_at": "2026-10-29", "value": 2556.241253},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/meta/statistics/ (Shares Outstanding 2.56B)", "fetched_at": "2026-10-29", "value": 2560.0}
+      ],
+      "cross_check_delta_pct": 0.15,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "Q4 2026 revenue $73-76B; FY2026 total expenses $175-179B incl. $9.9B legal charge; FY2026 capex incl. finance lease principal $135-145B (narrowed from $130-145B); Reality Labs 2026 loss $18-19B, 2027 ~$15B; Q4 tax rate 15-17%; no 2027 capex or revenue number ('expect to continue investing aggressively'). New non-voting Class C stock effective 2027-01-19 with a 1:1 stock dividend (economically 2-for-1); company expects Class C equity offerings.",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_8k_ex99_1_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm", "public_date": "2026-10-21", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm", "public_date": "2026-10-22", "fetched_at": "2026-10-29"}
+      ]
+    },
+    {
+      "field": "active_litigation",
+      "value": "August 2026 settlement with 52 state AGs (youth mental health): up to ~$18.59B, $9.89B charged in Q3, ~$5.3B contingent unaccrued. Consolidated personal-injury bellwether trial began 2026-10-28; school district bellwether Feb 2027; PI bellwethers 2027-03-16 and 2027-08-06; New Mexico judgment ($375M penalty + ~$567M abatement) stayed pending motions.",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm", "public_date": "2026-10-22", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_8k_ex99_1_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm", "public_date": "2026-10-21", "fetched_at": "2026-10-29"}
+      ]
+    }
+  ]
+}

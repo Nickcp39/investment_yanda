@@ -1,0 +1,61 @@
+scenario,driver,value,unit,source_id,notes
+# ===== Anchors (shared) - as_of 2026-10-28 (run 2026-10-29; the 10-29 session is excluded) =====,,,,,
+shared,current_price,324.89,USD_per_share,S-YHOO-2026-10-28 + S-SA-2026-10-28,"CANONICAL as_of_price = 324.89 = 2026-10-28 close (last complete session). Yahoo v8 chart and stockanalysis history both 324.89 (delta 0.00%). 52wk (intraday, bars <= 10-28) 408.61 / 267.67 -> -20.5% off the 52-week high, +21.4% off the low; NOT a low/high-hug"
+shared,shares_diluted,12294,shares_M,GOOG.A1.10Q.2026Q3 cover,"Class A 5,888 + B 827 + C 5,579 outstanding at 2026-10-21 (balance sheet 9/30: 12,294). Up from 12,230 (6/30) and 12,088 (12/31/25) = +1.7% YTD. Excludes 19M 6.25% mandatory convertible preferred (converts ~May 2029 into ~43-54M common, +0.35-0.44%). GOOG (Class C) trades at a different price; whole-company cap uses the GOOGL price for all classes, same as prior cards"
+shared,market_cap,3994.2,USD_B,derived,"= 324.89 x 12,294M (stockanalysis 12.23B shares x 324.89 = 3973.4B, delta 0.52%)"
+shared,net_cash_marketable,140.0,USD_B,GOOG.A1.8K.20261028 balance sheet,"like-for-like with prior: cash+marketable 265.098 - LT debt 125.102 = 140.0 (Q2: 144.3). Of the 265.1, 90.4 is marketable EQUITY (SpaceX 75.2); ex-equity: 174.7 - 126.1 (incl. current portion 1.0) = 48.6. Terminal model keeps conservative 100 (unchanged)"
+shared,ttm_fcf,19.747,USD_B,GOOG.A1.8K.20261028,"TTM FCF at Q3'26; DOWN from 53.273 (Q2 TTM) and 73.266 (FY2025). Q3 quarter FCF = -9.065"
+# ===== Owner-earnings starting base (year-0) - see owner_earnings_bridge.csv =====,,,,,
+# TTM owner-earnings range ~43B (defensive; combined capex) to ~100B (growth); cash read (TTM FCF - TTM SBC) = -13.4B -> NOT MEASURABLE,,,,,
+bear,owner_earnings_y0,42,USD_B,owner_earnings_bridge.csv,"DEFENSIVE read: maint = 50% of COMBINED capex 171.9B (prior 54 on cash capex). Q3-annualized defensive read only ~25B"
+base,owner_earnings_y0,62,USD_B,owner_earnings_bridge.csv,"same 32% position between defensive and growth reads as prior (prior 68). Data alone keeps 68.5; -6.5 from basis changes (combined capex -4.1, note-total SBC -2.7)"
+bull,owner_earnings_y0,95,USD_B,owner_earnings_bridge.csv,"GROWTH read x 0.945 (prior 90); growth read rose 95.2 -> 100.3 on +6.3% TTM operating income"
+# ===== Scenario assumptions (UNCHANGED from 2026-07-24 for comparability; only OE0 / price / shares updated) =====,,,,,
+bear,revenue_cagr_10y,0.06,ratio,ASSUMPTION,"descriptive; not in IRR formula"
+base,revenue_cagr_10y,0.11,ratio,ASSUMPTION,"descriptive; TTM revenue 471.1B, Q3 +25%"
+bull,revenue_cagr_10y,0.15,ratio,ASSUMPTION,"descriptive"
+bear,operating_margin_path,32_to_28,pct,ASSUMPTION,"descriptive; Q3 31.8%"
+base,operating_margin_path,34_to_34,pct,ASSUMPTION,"descriptive"
+bull,operating_margin_path,34_to_38,pct,ASSUMPTION,"descriptive"
+shared,capex_intensity_actual,0.34,ratio_of_rev,derived,"TTM cash capex 159.8 / TTM revenue 471.1 = 34% (combined 36%); 2026 guide ~200 / ~490 = ~41%. The 6/19-era path labels (0.20-0.24 falling to 0.12-0.18) are descriptive only, NOT in the IRR formula, and already stale"
+bear,owner_earnings_cagr_y1_5,0.02,ratio,ASSUMPTION,
+bear,owner_earnings_cagr_y6_10,0.02,ratio,ASSUMPTION,
+base,owner_earnings_cagr_y1_5,0.09,ratio,ASSUMPTION,
+base,owner_earnings_cagr_y6_10,0.07,ratio,ASSUMPTION,
+bull,owner_earnings_cagr_y1_5,0.14,ratio,ASSUMPTION,
+bull,owner_earnings_cagr_y6_10,0.10,ratio,ASSUMPTION,
+bear,terminal_P_to_OE,14,x,ASSUMPTION,
+base,terminal_P_to_OE,20,x,ASSUMPTION,
+bull,terminal_P_to_OE,26,x,ASSUMPTION,
+bear,payout_ratio_y1_5,0.25,ratio,ASSUMPTION,"kept; actual 9M26 net shareholder flow is NEGATIVE (dividends 8.2B vs equity raised 61.9B) -> see sensitivity S3 in valuation.md"
+bear,payout_ratio_y6_10,0.45,ratio,ASSUMPTION,
+base,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+base,payout_ratio_y6_10,0.55,ratio,ASSUMPTION,
+bull,payout_ratio_y1_5,0.30,ratio,ASSUMPTION,
+bull,payout_ratio_y6_10,0.60,ratio,ASSUMPTION,
+# ===== Outputs (interim payouts + terminal = OE_y10 x mult + 100 net cash; bisection IRR) =====,,,,,
+bear,owner_earnings_y10,51.2,USD_B,derived,"42 grown 2%/2%"
+base,owner_earnings_y10,133.8,USD_B,derived,"62 grown 9%/7%"
+bull,owner_earnings_y10,294.6,USD_B,derived,"95 grown 14%/10%"
+bear,terminal_equity_value,817,USD_B,derived,"51.2 x 14 + 100"
+base,terminal_equity_value,2776,USD_B,derived,"133.8 x 20 + 100"
+bull,terminal_equity_value,7759,USD_B,derived,"294.6 x 26 + 100"
+bear,irr_10y_at_current_price,-0.136,ratio,derived,"-13.6% at 324.89 (8/28 card: -12.0% at 340.65)"
+base,irr_10y_at_current_price,-0.022,ratio,derived,"-2.2% at 324.89 (8/28 card: -1.7% at 340.65)"
+bull,irr_10y_at_current_price,0.085,ratio,derived,"+8.5% at 324.89 (8/28 card: +7.4% at 340.65) -> bull clears 8% again, as at 7/24"
+shared,owner_earnings_yield_at_price_base,0.0155,ratio,derived,"base OE0 62 / mktcap 3994.2 = 1.55%; P/OE 64x"
+shared,mktcap_to_fcf_TTM,202.3,x,derived,"3994.2 / 19.747 (8/28: 78.2x)"
+shared,implied_OE_cagr_for_10pct_at_20x,0.218,ratio,derived,"current price needs ~21.8% OE CAGR for a decade from 62B to clear 10% (terminal 20x)"
+# ===== Margin-of-safety ladder (BASE path, term 20x, payout 30->55%, net cash 100) =====,,,,,
+mos,buy_below_8pct,126,USD_per_share,derived,"was 139"
+mos,buy_below_10pct_starter,107,USD_per_share,derived,"was 117; -67% vs 324.89"
+mos,buy_below_12pct_core,90,USD_per_share,derived,"was 99"
+mos,avoid_above,338,USD_per_share,derived,"BULL 8% line; was 322. 324.89 now sits ~4% BELOW it"
+mos,base_breakeven_0pct,262,USD_per_share,derived,"was 288"
+mos,downside_anchor_bear_8pct,39,USD_per_share,derived,"was 50"
+# ===== Sensitivities (NOT adopted; see valuation.md section 5-6) =====,,,,,
+sens,S1_data_only_same_basis_buy_below,117,USD_per_share,derived,"cash capex + cash-flow SBC: OE0 51/68/97 -> base -1.3%, buy_below 117 (unchanged)"
+sens,S2_SBC_not_double_counted_buy_below,158,USD_per_share,derived,"OE0 75/93/126 -> bear -8.7% / base +1.9% / bull +11.7%; ladder 0%=389, 8%=188, 10%=158, 12%=134"
+sens,S3_external_funding_as_negative_payout_buy_below,94,USD_per_share,derived,"years 1-2 payout -36B each (9M26 net shareholder flow), years 3-5 zero -> base -2.7%"
+sens,netcash_48.6_ex_equity_buy_below,105,USD_per_share,derived,
+sens,netcash_275_incl_all_stakes_buy_below,112,USD_per_share,derived,"140 + 135.2 non-marketable carrying"

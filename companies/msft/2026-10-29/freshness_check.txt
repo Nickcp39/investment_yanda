@@ -1,0 +1,9 @@
+FRESHNESS CHECK -MSFT as_of 2026-10-28  [verify_freshness-v1]
+STATUS: PASS  (exit 0)
+price: card=531.01 refetched_yahoo=531.010009765625 (2026-10-28) -> PASS :: 2 independent sources agree within 1%
+tripwires:
+  [PASS] T1 52wk band containment: 349.2 <= 531.01 <= 551.15
+  [PASS] T2 low/high hug: +52.1% off low, -3.7% off high
+  [PASS] T3 market-cap identity: 7426M x 531.01 = 3.943T vs card 3.943T (0.00%)
+  [PASS] T4 distance-from-high reconciliation: narrative -3.7% vs card-implied -3.7% (gap 0.0pt)
+  [PASS] T5 single value of truth: as_of_price 531.01 present in all price-bearing files

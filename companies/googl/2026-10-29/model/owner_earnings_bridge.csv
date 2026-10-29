@@ -1,0 +1,38 @@
+period,line,value,unit,scenario,source_id,notes
+# ===== TTM (through Q3'26 = Q4'25+Q1'26+Q2'26+Q3'26) owner earnings bridge - OPERATING-INCOME basis (same structure as 2026-07-24/model/owner_earnings_bridge.csv) =====,,,,,,
+TTM_Q3_26,ttm_operating_income,156976,USD_M,both,GOOG.A1.10Q.2026Q3 + XBRL,"FY2025 129039 - 9M25 93105 + 9M26 121042; +6.3% vs TTM_Q2_26 147628; +26.5% vs TTM_Q3_25 124077"
+TTM_Q3_26,less_normalized_tax_at_16pct,-25116,USD_M,both,ASSUMPTION (unchanged),"same 16% normalized rate as prior bridge; 9M26 GAAP ETR 19.0% is distorted by tax on equity marks"
+TTM_Q3_26,after_tax_operating_income,131860,USD_M,both,derived,"= 156976 x 0.84"
+TTM_Q3_26,add_normalized_net_interest_invest_income,1500,USD_M,both,ASSUMPTION (unchanged),"Q3 actual interest income 1768 - interest expense 967 = +801/qtr; NOT raised because the cash pile is debt/equity-funded and earmarked for capex while the debt is permanent; excludes ALL equity-security marks"
+TTM_Q3_26,net_income_normalized_operating,133360,USD_M,both,derived,"cross-check: reported TTM NI 235694 less ~101200 after-tax equity marks (TTM pre-tax 129584 x ~0.78) = ~134500 -> within 1% of this line"
+TTM_Q3_26,add_DandA,29000,USD_M,both,XBRL Depreciation + Note 9,"TTM depreciation 27995 (21136-15096+21955) + intangible amortization ~1050 (9M26 920 + Q4'25 est ~130); prior 26000"
+TTM_Q3_26,less_SBC_real_cost,-33100,USD_M,both,GOOG.A1.10Q.2026Q3 Note 13,"Note-13 total SBC TTM = FY25 27100 - 9M25 17900 + 9M26 23900 (6/19 house rule: use note total when disclosed). Prior TTM_Q2 used a mixed 30294; the prior's own mixed formula would give 32556 here (immaterial 0.5B). METHOD FLAG: operating income already deducts SBC -> this line double-counts SBC; kept for continuity, see valuation.md section 6"
+TTM_Q3_26,working_capital_adjustment,0,USD_M,both,ASSUMPTION (unchanged),"9M26 OCF hit by inventory -10959 (TPU) and other assets -17757; treated as growth investment, not owner earnings"
+# ---- Capex basis (Mega7 rule 2026-09-26: cash capex + finance-lease ROU additions + operating-lease ROU additions) ----,,,,,,
+TTM_Q3_26,cash_capex,159804,USD_M,both,GOOG.A1.8K.20261028 FCF table,"Q4'25 27851 + Q1 35674 + Q2 44924 + Q3 51355; +20.7% vs TTM_Q2 132402"
+TTM_Q3_26,finance_lease_ROU_additions,3604,USD_M,both,XBRL RightOfUseAssetObtained...FinanceLease,"FY25 1606 - 9M25 989 + 9M26 2987"
+TTM_Q3_26,operating_lease_ROU_additions,8483,USD_M,both,XBRL RightOfUseAssetObtained...OperatingLease,"FY25 4070 - 9M25 2589 + 9M26 7002"
+TTM_Q3_26,combined_capex,171891,USD_M,both,derived,"combined/OCF 95.7% (cash 89.0%); Q3 single quarter combined 56703 / OCF 42290 = 134%. Leases NOT yet commenced (130.5B, +45.3B QoQ) are forward commitments and NOT added to TTM"
+# ---- Scenario A: maintenance capex = D&A (GROWTH read) ----,,,,,,
+TTM_Q3_26,less_maintenance_capex_LOW,-29000,USD_M,maint_low,ASSUMPTION,"maint = D&A"
+TTM_Q3_26,owner_earnings_maint_low,100260,USD_M,maint_low,derived,"= 133360 + 29000 - 33100 - 29000 (prior TTM_Q2: 95214)"
+# ---- Scenario B: maintenance capex = 50% of COMBINED capex (DEFENSIVE read) ----,,,,,,
+TTM_Q3_26,less_maintenance_capex_HIGH,-85946,USD_M,maint_high,ASSUMPTION,"50% of combined capex 171891 (cash-only basis would be 79902)"
+TTM_Q3_26,owner_earnings_maint_high,43314,USD_M,maint_high,derived,"= 133360 + 29000 - 33100 - 85946 (prior TTM_Q2: 55013 on cash capex). Cash-capex basis would give 49358"
+TTM_Q3_26,owner_earnings_maint_high_Q3_annualized,24600,USD_M,maint_high,derived,"Q3 x4: OI 40576 x4 x0.84 + 1500 + D&A (8369+375) x4 - SBC 8700 x4 - 50% x combined 56703 x4 -> the defensive lens has halved on the latest quarter"
+# memo TTM: owner earnings RANGE ~43B (defensive) to ~100B (growth); prior ~55B to ~95B -> range WIDENED both ways,,,,,,
+# ===== Scenario OE0 mapping (same positions as prior: bear = defensive - 1.0; base = defensive + 0.323 x range; bull = 0.945 x growth) =====,,,,,,
+TTM_Q3_26,bear_OE0,42,USD_B,bear,derived,"42.3 rounded; prior 54"
+TTM_Q3_26,base_OE0,62,USD_B,base,derived,"61.7 rounded; prior 68. Decomposition: same-basis data-only bridge (cash capex, cash-flow SBC 30409) gives 68.5 = unchanged; -4.1 from combined-capex rule; -2.7 from note-total SBC"
+TTM_Q3_26,bull_OE0,95,USD_B,bull,derived,"94.8 rounded; prior 90"
+# ===== Cash cross-check (the harsh read) =====,,,,,,
+TTM_Q3_26,ttm_free_cash_flow,19747,USD_M,both,GOOG.A1.8K.20261028,"OCF 179551 - capex 159804; quarters 24551 / 10116 / -5855 / -9065"
+TTM_Q3_26,cash_owner_earnings_fcf_less_sbc,-13353,USD_M,both,derived,"19747 - 33100 = NEGATIVE -> conservative cash lens marked NOT MEASURABLE (Mega7 rule), not forced positive"
+# ===== Reconciliation to reported =====,,,,,,
+TTM_Q3_26,reported_net_income_TTM,235694,USD_M,both,XBRL NetIncomeLoss,"FY25 132170 - 9M25 97715 + 9M26 201239"
+TTM_Q3_26,equity_securities_gain_TTM_pretax,129584,USD_M,both,XBRL EquitySecuritiesFvNiGainLoss,"FY25 24080 - 9M25 21778 + 9M26 127282; after tax ~101200 (~43% of TTM NI)"
+Q3_26,equity_securities_gain_qtr_pretax,-8664,USD_M,both,GOOG.A1.10Q.2026Q3 Note 3,"company: -1.9B tax, -6.7B NI, -0.55 EPS; mostly SpaceX unrealized loss (marketable & other equity -12436) offset by +3027 non-marketable upward marks"
+# ===== Forward pressure =====,,,,,,
+FWD,capex_guidance_2026,200000,USD_M,both,B-tier transcript; 10-Q says 'expect to significantly increase relative to 2025',"195-205B unchanged per call transcript (secondary). 9M26 cash capex 131953 -> implied Q4 ~68B. FY2026E FCF ~ 127149 + Q4 OCF ~50000 (assume ~Q4'25 52402) - 200000 = ~ -23B (derived, assumption)"
+FWD,purchase_commitments,924400,USD_M,both,GOOG.A1.10Q.2026Q3 MD&A,"of which 213400 due within 12 months; Q2 811000 (200700 short-term)"
+FWD,leases_not_yet_commenced,130500,USD_M,both,GOOG.A1.10Q.2026Q3 Note 4,"Q2 85200 -> +45300 in one quarter; commence 2026-2031, terms 1-26 years"

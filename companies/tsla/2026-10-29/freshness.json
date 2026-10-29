@@ -1,0 +1,93 @@
+{
+  "ticker": "TSLA",
+  "as_of": "2026-10-28",
+  "generated_by": "runner",
+  "batch": "mega7_refresh_2026-10-29",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is Wednesday 2026-10-28 (last full close); run made Thursday 2026-10-29 during the session, in-progress session excluded. 52-week band computed from Yahoo daily bars dated 2025-10-29..2026-10-28 only. FILED data (10-Q / 8-K line items) rides the dated-source discipline in decision_card.json sources_used and raw/.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 404.22,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d", "fetched_at": "2026-10-29", "value": 404.22},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/history/", "fetched_at": "2026-10-29", "value": 404.22}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 1597783816932,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "3,952,757,946 shares (10-Q cover 2026-10-15) x 404.22", "fetched_at": "2026-10-29", "value": 1597783816932},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/ (sharesOut 3.95B x prev close 404.22 = $1.5967T; page showed marketCap 1.60T at an intraday 405.52)", "fetched_at": "2026-10-29", "value": 1596669000000}
+      ],
+      "cross_check_delta_pct": 0.07,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 498.83,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d (max daily high over bars <= 2026-10-28, intraday 2025-12-22; meta.fiftyTwoWeekHigh also 498.83)", "fetched_at": "2026-10-29", "value": 498.83},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/ (quote h52)", "fetched_at": "2026-10-29", "value": 498.83}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 297.38,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1y&interval=1d (min daily low over bars <= 2026-10-28, intraday 2026-07-29; meta.fiftyTwoWeekLow also 297.38)", "fetched_at": "2026-10-29", "value": 297.38},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/ (quote l52)", "fetched_at": "2026-10-29", "value": 297.38}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 3952.757946,
+      "unit": "M shares (outstanding, 10-Q cover)",
+      "as_of": "2026-10-15",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm (cover: 3,952,757,946 as of 2026-10-15)", "fetched_at": "2026-10-29", "value": 3952.757946},
+        {"source_name": "sec_def14a_2026", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm (record date 2026-10-13: 3,952,730,153)", "fetched_at": "2026-10-29", "value": 3952.730153},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/tsla/ (sharesOut 3.95B)", "fetched_at": "2026-10-29", "value": 3950.0}
+      ],
+      "cross_check_delta_pct": 0.07,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "2026 capex 'in excess of $20 billion' (Q3 10-Q; Q2 10-Q said 'in excess of $25 billion'). No numeric 2026 delivery target; Outlook: 'focused on maximum capacity utilization'. $30B undrawn credit facilities (8-K 2026-09-29), 'Tesla does not currently plan to draw on the facilities in 2026'. Board Special Committee exploring a possible SpaceX transaction (10-Q Part II Item 5). Annual meeting 2026-12-03, no new award or share authorization on the ballot.",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm", "public_date": "2026-10-22", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_8k_q3_2026_update", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm", "public_date": "2026-10-21", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_8k_2026_09_29", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm", "public_date": "2026-09-29", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_def14a_2026", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm", "public_date": "2026-10-19", "fetched_at": "2026-10-29"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-10-28",
+  "generated_by": "runner",
+  "batch": "mega7_refresh_2026-10-29",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of = 2026-10-28 (last complete session); run made 2026-10-29 during the session, in-progress session excluded. Canonical as_of_price = 324.89 = the 2026-10-28 close; Yahoo v8 chart and stockanalysis history agree exactly. 52wk band computed from Yahoo daily bars <= 2026-10-28 (intraday basis), matching stockanalysis 52-Week Range. Price -20.5% off the 52wk high and +21.4% off the low -> NOT a low/high-hug. FILED data (10-Q / 8-K line items) rides the dated-source discipline in decision_card.json sources_used.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 324.89,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=1y&interval=1d", "fetched_at": "2026-10-29", "value": 324.89},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/history/ (Oct 28, 2026 close)", "fetched_at": "2026-10-29", "value": 324.89}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 3994197660000,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "12,294M A+B+C shares (10-Q cover, 2026-10-21) x 324.89", "fetched_at": "2026-10-29", "value": 3994197660000},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/ (Shares Out 12.23B x 324.89 = $3.973T; page header showed $3.49T at the 10-29 intraday price, not used)", "fetched_at": "2026-10-29", "value": 3973404700000}
+      ],
+      "cross_check_delta_pct": 0.52,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 408.61,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=1y&interval=1d (max daily high over bars 2025-10-29..2026-10-28; intraday 2026-05-18; close-basis high 402.62 on 2026-05-13)", "fetched_at": "2026-10-29", "value": 408.61},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/ (52-Week Range 267.67 - 408.61)", "fetched_at": "2026-10-29", "value": 408.61}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 267.67,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=1y&interval=1d (min daily low over bars 2025-10-29..2026-10-28; intraday 2025-10-29; close-basis low 273.50 on 2026-03-30)", "fetched_at": "2026-10-29", "value": 267.67},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/ (52-Week Range 267.67 - 408.61)", "fetched_at": "2026-10-29", "value": 267.67}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 12294.0,
+      "unit": "M shares (A+B+C outstanding)",
+      "as_of": "2026-10-21",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm (cover: Class A 5,888M + Class B 827M + Class C 5,579M as of 2026-10-21)", "fetched_at": "2026-10-29", "value": 12294.0},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/googl/ (Shares Out 12.23B; lags the 10-Q cover)", "fetched_at": "2026-10-29", "value": 12230.0}
+      ],
+      "cross_check_delta_pct": 0.52,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "No numeric guidance in the 8-K or 10-Q. 10-Q MD&A: 'In 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure.' 9M26 cash capex $132.0B. FY2026 capex $195-205B unchanged and 2027 'significant increase' come only from the call transcript (secondary, B-tier). TPU-system agreements: significant majority of revenue to be recognized in 2027 (10-Q).",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_8k_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm", "public_date": "2026-10-28", "fetched_at": "2026-10-29"}
+      ]
+    },
+    {
+      "field": "active_litigation",
+      "value": "Per 10-Q Note 10 (state at 2026-10-29): DOJ adtech remedies decision (2026-09) denied structural divestiture, ordered behavioral remedies; Google plans to appeal the April 2025 liability ruling after final judgment; Texas state AG trial follows. DOJ search: final judgment Dec 2025, cross-appeals pending. EC Android fine final, $5.2B paid July 2026. EC DMA non-compliance fines EUR 430M + EUR 460M (Q3 charge $1.0B), appealed Oct 2026. PriceRunner ~$2.1B damages (Q2 charge), appealed. EC adtech EUR 3.0B fine on appeal. Accrued fines and settlements $13.8B.",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm (Note 10 Legal Matters)", "public_date": "2026-10-29", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_10q_q2_2026", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm (Note 10, prior-quarter state for comparison)", "public_date": "2026-07-23", "fetched_at": "2026-10-29"}
+      ]
+    }
+  ]
+}

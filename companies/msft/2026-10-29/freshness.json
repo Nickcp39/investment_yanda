@@ -1,0 +1,79 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-10-28",
+  "generated_by": "runner",
+  "batch": "mega7_refresh_2026-10-29",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is Wednesday 2026-10-28 (last complete session); run made Thursday 2026-10-29 during the session, in-progress session excluded. 52-week band computed from the Yahoo range=1y daily bars (first bar 2025-10-29) using only bars <= 2026-10-28; a 365-day window that also includes the 2025-10-28 bar would give a high of 553.72 (immaterial: price still 4.1% below it). FILED data (10-Q / 8-K line items) rides the dated-source discipline in valuation.md.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 531.01,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=1y&interval=1d", "fetched_at": "2026-10-29", "value": 531.01},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/history/", "fetched_at": "2026-10-29", "value": 531.01}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 3943383569058,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "7,426,194,552 shares outstanding (10-Q cover, as of 2026-10-22) x 531.01", "fetched_at": "2026-10-29", "value": 3943383569058},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/ (Shares Out 7.43B x 531.01 = $3.945T; page showed $3.88T at the 2026-10-29 intraday price)", "fetched_at": "2026-10-29", "value": 3945404300000}
+      ],
+      "cross_check_delta_pct": 0.05,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 551.15,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=1y&interval=1d (max daily high over bars <= 2026-10-28; intraday 2026-10-13)", "fetched_at": "2026-10-29", "value": 551.15},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/ (52-Week Range 349.20 - 551.15)", "fetched_at": "2026-10-29", "value": 551.15}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 349.20,
+      "unit": "USD",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=1y&interval=1d (min daily low over bars <= 2026-10-28; intraday 2026-06-25)", "fetched_at": "2026-10-29", "value": 349.20},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/ (52-Week Range 349.20 - 551.15)", "fetched_at": "2026-10-29", "value": 349.20}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 7426.194552,
+      "unit": "M shares (10-Q cover, outstanding as of 2026-10-22)",
+      "as_of": "2026-10-28",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q1fy27", "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm (cover: 7,426,194,552 shares outstanding as of October 22, 2026)", "fetched_at": "2026-10-29", "value": 7426.194552},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/msft/statistics/ (Shares Outstanding 7.43B)", "fetched_at": "2026-10-29", "value": 7430.0}
+      ],
+      "cross_check_delta_pct": 0.05,
+      "pass": true
+    }
+  ]
+}
