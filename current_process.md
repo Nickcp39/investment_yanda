@@ -1,6 +1,6 @@
 # 当前进度 (Current Process)
 
-最后更新: 2026-10-23
+最后更新: 2026-10-29
 
 ## 这份文档的用途
 
@@ -48,6 +48,12 @@ push 时刷新一次，避免回头时丢失上下文。
   RPO 首次个位数；CEO 定了（Chakravarthy 12-01）、CFO 仍临时、Narayen 卖 $18.7M；base +14.6%、12% 锚 $306.17 vs 现价
   $256.73，新增 harvest 情景（g 2%、10x）仍 +8.5%；裁决 WATCH 0%，runner 提议 STARTER 3% 但建议等 12 月中 Q4 + FY27 指引
   （新判据 K-I：Q4 净新增 ≥$0.78B、FY27 ARR 指引 ≥8%）。freshness 2/2 PASS。
+- **2026-10-29 本轮**：Mega7 重跑（`companies/_mega7_refresh_2026-10-29/` PLAN / CHECKER / synthesis）。MSFT / GOOGL / META / TSLA / AMZN
+  用 9 月季报重跑，AAPL（11-02）、NVDA（约 11-18）只核价。**7/7 WATCH，无翻转，新钱 0**；freshness 5/5 PASS。
+  buy_below：MSFT 441→375、GOOGL 117→107（量法变严）、META 492→408（生意：FCF −30%、计划 C 类股增发）、TSLA 144→142、
+  AMZN 170→193（营业利润上调，但 TTM FCF −$42.4B、净债务 $59B，保守镜头不可计量）。主发现：capex 开始靠外部融资
+  （停回购 → 发债 → 发股），被投公司/关联方同时是大客户。**待用户决定**：GOOGL 桥 SBC 重复扣除（修正后约 $158）。
+  待补：AMZN Q3 10-Q（股数占位、AWS 积压）。
 
 ---
 

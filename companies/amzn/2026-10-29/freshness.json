@@ -1,0 +1,91 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-10-29",
+  "generated_by": "runner",
+  "batch": "mega7_refresh_2026-10-29",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is Thursday 2026-10-29 close: the session was complete at run time (run started 16:10 ET) and Amazon filed its Q3 8-K at 16:05 ET after the close, so this is the PRE-EARNINGS close. The rest of the batch uses 2026-10-28 (AMZN 254.60). After-hours prints are recorded in decision_card.json but not used. Shares use the Q2 10-Q cover count as a PLACEHOLDER because the Q3 10-Q was not on EDGAR at run time. FILED data is cited in decision_card.json sources_used and copied as plain text in raw/.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 243.79,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=1y&interval=1d (bar 2026-10-29: close 243.79, adjclose 243.79, regularMarketTime 16:00:01 ET)", "fetched_at": "2026-10-29", "value": 243.79},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/history/ (row 2026-10-29: c 243.76, a 243.76)", "fetched_at": "2026-10-29", "value": 243.76}
+      ],
+      "cross_check_delta_pct": 0.01,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 2629595385718,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "10,786,313,572 shares (Q2 2026 10-Q cover as of 2026-07-22, placeholder) x 243.79", "fetched_at": "2026-10-29", "value": 2629595385718},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/statistics/ (Market Cap 2.64T displayed, rounded; Shares Outstanding 10,786,313,572)", "fetched_at": "2026-10-29", "value": 2640000000000}
+      ],
+      "cross_check_delta_pct": 0.40,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 287.20,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=1y&interval=1d (max daily high over bars 2025-10-30..2026-10-29 = 287.20 intraday 2026-08-03; meta.fiftyTwoWeekHigh 287.2)", "fetched_at": "2026-10-29", "value": 287.20},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/ (52-Week Range 196.00 - 287.20)", "fetched_at": "2026-10-29", "value": 287.20}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 196.00,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=1y&interval=1d (min daily low over bars 2025-10-30..2026-10-29 = 196.00 intraday 2026-02-17; meta.fiftyTwoWeekLow 196.0)", "fetched_at": "2026-10-29", "value": 196.00},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/ (52-Week Range 196.00 - 287.20)", "fetched_at": "2026-10-29", "value": 196.00}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 10786.313572,
+      "unit": "M shares (outstanding, 10-Q cover; PLACEHOLDER = Q2 cover until the Q3 10-Q is filed)",
+      "as_of": "2026-07-22",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q2_2026_cover", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm (cover: 10,786,313,572 shares outstanding as of 2026-07-22)", "fetched_at": "2026-10-29", "value": 10786.313572},
+        {"source_name": "sec_8k_ex99_1_q3_2026_balance_sheet", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm (balance sheet: 10,811M shares outstanding at 2026-09-30; +0.23% vs placeholder)", "fetched_at": "2026-10-29", "value": 10811.0},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/amzn/statistics/ (Shares Outstanding 10,786,313,572 - same filing, not independent)", "fetched_at": "2026-10-29", "value": 10786.313572}
+      ],
+      "cross_check_delta_pct": 0.23,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "Q4 2026 net sales $240.0-247.0B (+12% to +16%), operating income $28.5-33.5B (Q4 2025: $25.0B), advertising growth high teens; 'We continue to expect 2026 cash capital expenditures to be approximately $220 billion' (implies Q4 ~$47.8B net vs Q3 $75.9B); no 2027 capex number; Jassy: AWS revenue growth projected over 40% in both 2027 and 2028.",
+      "unit": "text",
+      "as_of": "2026-10-29",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_8k_ex99_1_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-29"},
+        {"source_name": "sec_8k_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-29"}
+      ]
+    }
+  ]
+}
