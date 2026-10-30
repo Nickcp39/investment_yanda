@@ -1,0 +1,90 @@
+{
+  "ticker": "MCD",
+  "as_of": "2026-10-23",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_date": "2026-10-23",
+  "context_label": "defensive_quality_cash_cow_but_growth_engine_degrading_to_price_only",
+  "as_of_price": 248.46,
+  "as_of_market_cap": 175820615000,
+  "shares_outstanding": 707641531,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "role": "confidence",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "8-K/10-K XBRL 一手充分；财报电话会逐字稿；价格双源（Yahoo API 本机 403，用 westock + 财经源替代）",
+      "drivers": ["MCD.A1.Q2-8-K-20260804", "MCD.A1.FY2025-10-K-XBRL", "MCD.A1.westock-usMCD-20261023"]
+    },
+    {
+      "module": "M2 Theme / Mechanism Thesis",
+      "role": "context",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "防御性现金牛主题成立，但 CEO 定调'客流持平就是新常态'，增长只靠提价+抢份额",
+      "drivers": ["MCD.A2.earnings-call-20260804"]
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "加盟制(95%+)+品牌+不动产+2.2亿会员；但相对性价比下滑使护城河边际变窄",
+      "drivers": ["MCD.A1.FY2025-10-K-XBRL", "MCD.B1.investor-day-20260923"]
+    },
+    {
+      "module": "M4 Financial Reality",
+      "role": "conviction",
+      "signal": 1,
+      "confidence": "high",
+      "finding": "46% 利润率、$7.2B FCF、SBC 仅 OCF 1.6%、51 年增股息；但负净资产、增长动能弱",
+      "drivers": ["MCD.A1.FY2025-10-K-XBRL"]
+    },
+    {
+      "module": "M5 Inversion / Trap Test",
+      "role": "risk",
+      "signal": -1,
+      "confidence": "med",
+      "finding": "价值陷阱风险：提价透支(客单价+55% vs 行业+34%)、美国客流连续为负、反垄断诉讼",
+      "drivers": ["MCD.B1.stockstory-20260805", "MCD.B1.antitrust-202610"]
+    },
+    {
+      "module": "M6 Price / Position / Monitor",
+      "role": "price",
+      "signal": 0,
+      "confidence": "high",
+      "finding": "20x PE 合理但无安全边际：base IRR 6.8% < 8%，8% 门槛价 $225.78 比现价低 9.1%",
+      "drivers": ["MCD.valuation_model-20261023"]
+    }
+  ],
+  "business_verdict": "good",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "HOLD",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 3,
+  "buy_below_price": 225,
+  "starter_zone": "225 以下且美国同店企稳",
+  "add_zone": "",
+  "trim_or_no_chase_zone": ">=290",
+  "binding_constraint": "M6 无安全边际 + M2 美国客流停滞是新常态",
+  "kill_criteria": [
+    "K-A 美国同店连续3季为负+客流加速流失（Q3 11-04 裁决点）",
+    "K-B IOM/IDLM 也转负",
+    "K-C 提价空间耗尽",
+    "K-D 反垄断诉讼升级为实质性处罚",
+    "K-E 负债进一步恶化",
+    "K-VAL 入场无安全边际（base IRR < 8%）"
+  ],
+  "runner_dissent": "不要因'防御性+51年增股息+距高点-26%'就当好买点：20x PE 在 base 下仅 6.8% 回报，防御性已被充分定价；风险不是公司变差，而是买贵后靠 3% 股息+低个位数增长，安全边际要等很久才回来。",
+  "sources_used": [
+    {"source_id": "MCD.A1.Q2-8-K-20260804", "public_date": "2026-08-04", "url_or_path": "SEC 8-K 000006390826000067"},
+    {"source_id": "MCD.A1.FY2025-10-K-XBRL", "public_date": "2026-02", "url_or_path": "SEC EDGAR CIK 63908"},
+    {"source_id": "MCD.A2.earnings-call-20260804", "public_date": "2026-08-04", "url_or_path": "Q2 财报电话会逐字稿"},
+    {"source_id": "MCD.B1.investor-day-20260923", "public_date": "2026-09-23", "url_or_path": "投资者日 NEXT 战略"},
+    {"source_id": "MCD.B1.stockstory-20260805", "public_date": "2026-08-05", "url_or_path": "StockStory Q2 Deep Dive"},
+    {"source_id": "MCD.B1.antitrust-202610", "public_date": "2026-10", "url_or_path": "芝加哥联邦法院 AI 定价反垄断诉讼"},
+    {"source_id": "MCD.A1.westock-usMCD-20261023", "public_date": "2026-10-23", "url_or_path": "westock 行情 usMCD"},
+    {"source_id": "MCD.C.sellside-202610", "public_date": "2026-10", "url_or_path": "瑞银320/Jefferies325/花旗295 等目标价"}
+  ]
+}
