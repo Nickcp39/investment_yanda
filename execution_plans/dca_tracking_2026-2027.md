@@ -105,3 +105,9 @@
 > **"我有没有按当月日额执行?"**
 
 不问买得贵不贵,不拿事后最低点羞辱自己。**一次买贵不致命,破坏纪律才致命。**
+
+---
+
+## 对账记录
+
+- 2026-10-30：两情景模拟 [btc_dca_reconciliation_2026-10-30.md](btc_dca_reconciliation_2026-10-30.md)；用户裁定情景 A（06-11 起 $200/天）+ 余钱重算 [btc_dca_confirmation_2026-10-30.md](btc_dca_confirmation_2026-10-30.md)。上表三行待按 Robinhood 实际数填。
