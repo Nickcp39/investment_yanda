@@ -1,0 +1,23 @@
+company,metric,period_end,value,unit,source_url,source_type,note
+Howmet,gas_turbines_revenue,2024-09-30,191,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000162828025047584/hwm-20250930.htm,P,derived: Industrial Gas Turbine 124 + Oil and Gas 67 (3Q24 comps in 3Q25 10-Q; categories merged from 4Q25)
+Howmet,gas_turbines_revenue,2024-12-31,201,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm,P,derived: FY2024 755 (10-K) minus 9M2024 554 (IGT 359 + O&G 195 in 3Q25 10-Q)
+Howmet,gas_turbines_revenue,2025-03-31,204,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000019/hwm-20260331.htm,P,1Q25 comps in 1Q26 10-Q
+Howmet,gas_turbines_revenue,2025-06-30,233,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000025/hwm-20260630.htm,P,2Q25 comps in 2Q26 10-Q
+Howmet,gas_turbines_revenue,2025-09-30,241,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,3Q25 comps in 3Q26 10-Q; = IGT 152 + O&G 89 in 3Q25 10-Q
+Howmet,gas_turbines_revenue,2025-12-31,266,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm,P,derived: FY2025 944 (10-K) minus 9M2025 678 (3Q26 10-Q comps)
+Howmet,gas_turbines_revenue,2026-03-31,284,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000019/hwm-20260331.htm,P,
+Howmet,gas_turbines_revenue,2026-06-30,321,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000025/hwm-20260630.htm,P,
+Howmet,gas_turbines_revenue,2026-09-30,349,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,Engine Products 348 + Fastening Systems 1 (CAM acquisition)
+Howmet,gas_turbines_revenue_yoy,2025-09-30,26.2,pct,https://www.sec.gov/Archives/edgar/data/4281/000162828025047584/hwm-20250930.htm,P,derived: 241/191-1; IGT +22.6% (152/124) and O&G +32.8% (89/67)
+Howmet,gas_turbines_revenue_yoy,2025-12-31,32,pct,https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm,P,"""growth in the gas turbines market of 32%"""
+Howmet,gas_turbines_revenue_yoy,2026-03-31,39,pct,https://www.sec.gov/Archives/edgar/data/4281/000110465926056645/tm2613779d1_ex99-1.htm,P,"""39% growth in the gas turbines market"""
+Howmet,gas_turbines_revenue_yoy,2026-06-30,38,pct,https://www.sec.gov/Archives/edgar/data/4281/000110465926091610/tm2622325d1_ex99-1.htm,P,"""38% growth in the gas turbines market"""
+Howmet,gas_turbines_revenue_yoy,2026-09-30,45,pct,https://www.sec.gov/Archives/edgar/data/4281/000110465926119857/tm2628456d1_ex99-1.htm,P,"""45% growth in the gas turbines market""; 10-Q table 349/241-1 = 44.8%"
+Howmet,gas_turbines_revenue_fy,2023-12-31,674,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm,P,
+Howmet,gas_turbines_revenue_fy,2024-12-31,755,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm,P,
+Howmet,gas_turbines_revenue_fy,2025-12-31,944,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000012/hwm-20251231.htm,P,"FY growth 25% per 4Q25 release; ~11% of company revenue per 10-K"
+Howmet,total_end_market_revenue,2025-09-30,2089,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,
+Howmet,total_end_market_revenue,2026-09-30,2703,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,gas turbines share 12.9% (vs 11.5% in 3Q25)
+Howmet,capex,2025-09-30,108,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,
+Howmet,capex,2026-09-30,147,USD_m,https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm,P,"""elevated spend beyond 2027"" for aerospace/defense and gas turbines"
+Howmet,revenue_guide_2027,2026-09-30,11.5,USD_bn,https://www.sec.gov/Archives/edgar/data/4281/000110465926119857/tm2628456d1_ex99-1.htm,P,"""approximately $11.5 billion, representing approximately 12% growth from the increased 2026 guidance"""
