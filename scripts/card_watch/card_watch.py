@@ -138,6 +138,34 @@ def fetch_price(symbol: str):
     return {"price": None, "ccy": "", "time": "", "err": err}
 
 
+SEC_UA = {"User-Agent": "YandaResearchLab/1.0 (contact: admin@yanda-research-lab.example)", "Accept-Encoding": "identity"}
+SEC_FORMS = {"10-Q", "10-K", "20-F", "40-F"}   # 季报 / 年报；6-K 太频繁不算
+
+
+def sec_ticker_map():
+    """SEC 官方 ticker → CIK 表（约 1MB，每次下载）。失败返回空 dict，后面只按卡龄判断。"""
+    try:
+        d = json.load(urllib.request.urlopen(urllib.request.Request("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA), timeout=30))
+        return {v["ticker"].upper(): f"{int(v['cik_str']):010d}" for v in d.values()}
+    except Exception as ex:  # noqa: BLE001
+        print("SEC ticker map failed:", str(ex)[:80])
+        return {}
+
+
+def sec_new_filing(cik: str, as_of: str):
+    """卡 as_of 之后有没有新的 10-Q / 10-K / 20-F / 40-F。返回 'form date' 或 ''。"""
+    try:
+        d = json.load(urllib.request.urlopen(urllib.request.Request(f"https://data.sec.gov/submissions/CIK{cik}.json", headers=SEC_UA), timeout=30))
+        r = d["filings"]["recent"]
+        hits = [(r["filingDate"][i], r["form"][i]) for i in range(len(r["form"])) if r["form"][i] in SEC_FORMS and r["filingDate"][i] > as_of]
+        if hits:
+            dte, form = max(hits)
+            return f"{form} {dte}"
+        return ""
+    except Exception as ex:  # noqa: BLE001
+        return "ERR " + str(ex)[:40]
+
+
 def classify(c, today):
     p, bb = c.get("price"), c.get("buy_below")
     if p is None:
@@ -155,6 +183,7 @@ def classify(c, today):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-fetch", action="store_true")
+    ap.add_argument("--no-sec", action="store_true", help="不查 SEC 新财报，只按卡龄判断是否重跑")
     a = ap.parse_args()
     today = dt.date.today()
     cards = load_cards()
@@ -167,9 +196,22 @@ def main():
     else:
         for c in cards:
             c.update(price=None, yccy="", ptime="", err="")
+    # 财报后 / 超过一季度 → 提示重跑
+    tmap = {} if (a.no_sec or a.no_fetch) else sec_ticker_map()
+    for c in cards:
+        c["age_days"] = (today - dt.date.fromisoformat(c["as_of"])).days if re.match(r"\d{4}-\d{2}-\d{2}$", c["as_of"]) else None
+        c["cik"] = tmap.get(c["symbol"].upper(), "") if "." not in c["symbol"] else ""
+        c["new_filing"] = sec_new_filing(c["cik"], c["as_of"]) if c["cik"] else ""
+        if c["cik"]:
+            time.sleep(0.12)
+        if c["new_filing"] and not c["new_filing"].startswith("ERR"):
+            c["rerun"] = f"财报后（{c['new_filing']}）"
+        elif c["age_days"] is not None and c["age_days"] > STALE_DAYS:
+            c["rerun"] = f"超过一季度（{c['age_days']} 天" + ("，未查到新财报）" if c["cik"] else "，非 SEC 申报或无 CIK）")
+        else:
+            c["rerun"] = ""
     for c in cards:
         c["group"], c["pct_vs_line"] = classify(c, today)
-        c["age_days"] = (today - dt.date.fromisoformat(c["as_of"])).days if re.match(r"\d{4}-\d{2}-\d{2}$", c["as_of"]) else None
         c["pct_since_card"] = (c["price"] / c["card_price"] - 1) * 100 if (c.get("price") and c.get("card_price")) else None
         flags = []
         if c["group"] == "A" and c.get("card_price") and c["buy_below"] and c["card_price"] > c["buy_below"]:
@@ -193,12 +235,14 @@ def main():
     with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["group", "folder", "symbol", "card_date", "as_of", "age_days", "verdict", "completeness", "currency",
-                    "buy_below", "bb_source", "card_price", "price", "yahoo_ccy", "price_time", "pct_vs_line", "pct_since_card", "flags", "note"])
+                    "buy_below", "bb_source", "card_price", "price", "yahoo_ccy", "price_time", "pct_vs_line", "pct_since_card",
+                    "rerun", "new_filing", "cik", "flags", "note"])
         for c in cards:
             w.writerow([c["group"], c["folder"], c["symbol"], c["card_date"], c["as_of"], c["age_days"], c["verdict"], c["completeness"],
                         c["currency"], c["buy_below"], c["bb_source"], c["card_price"], c.get("price"), c.get("yccy"), c.get("ptime"),
                         None if c["pct_vs_line"] is None else round(c["pct_vs_line"], 1),
-                        None if c["pct_since_card"] is None else round(c["pct_since_card"], 1), c["flags"], c["note"]])
+                        None if c["pct_since_card"] is None else round(c["pct_since_card"], 1),
+                        c["rerun"], c["new_filing"], c["cik"], c["flags"], c["note"]])
 
     titles = {"A": "A. 现价已在买入线之下（或带内）—— 需要重跑卡，不是买入信号",
               "B": f"B. 现价高于线 ≤{NEAR_PCT:.0f}% —— 快到了",
@@ -210,6 +254,17 @@ def main():
           "> **规矩**：① 价格过线 ≠ 可执行入场（C4）。每张卡的裁决上限由完整度决定，runner 提议的 STARTER 在独立 Checker 之前一律 WATCH；"
           "② 本表**不按距线远近排名**，组内按代码字母序；③ 卡龄 > 90 天的线可能已过时，先重跑再看；④ 非美股按本币比较，币种不一致的行已标出。",
           ""]
+    rr = [c for c in cards if c["rerun"]]
+    md += [f"## 需要重跑的卡（财报后 / 超过一季度）（{len(rr)}）", "",
+           "美股按 SEC 申报判断：卡 as_of 之后出了 10-Q / 10-K / 20-F 就该重跑；非美股或查不到 CIK 的按卡龄 > 90 天。", ""]
+    if rr:
+        md += ["| 公司 | 代码 | 卡 as_of | 卡龄 | 原因 | 价格组 | 现价/线 |", "|---|---|---|---:|---|:--:|---:|"]
+        for c in rr:
+            pl = "" if c["pct_vs_line"] is None else f"{c['pct_vs_line']:+.1f}%"
+            md.append(f"| {c['folder']} | {c['symbol']} | {c['as_of']} | {c['age_days']} | {c['rerun']} | {c['group']} | {pl} |")
+        md.append("")
+    else:
+        md += ["（无）", ""]
     for g in "ABCD":
         rows = [c for c in cards if c["group"] == g]
         md += [f"## {titles[g]}（{len(rows)}）", ""]
@@ -230,6 +285,9 @@ def main():
     md_path = OUT / f"card_watch_{stamp}.md"
     md_path.write_text("\n".join(md), encoding="utf-8")
     print()
+    print("需要重跑（财报后 / 超过一季度）", len(rr))
+    for c in rr:
+        print(f"   {c['symbol']:<12} {c['as_of']}  {c['rerun']}")
     for g in "ABCD":
         rows = [c for c in cards if c["group"] == g]
         print(titles[g], len(rows))

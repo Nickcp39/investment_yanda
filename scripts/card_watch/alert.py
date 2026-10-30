@@ -97,6 +97,15 @@ def main():
         body += [f"## 离开线下（{len(exited_A)}）—— 上次在线下，今天涨回线上", "", "、".join(exited_A), ""]
     if entered_B:
         body += [f"## 新进入 10% 以内（{len(entered_B)}）", ""] + HDR + [row_line(by[s]) for s in entered_B] + [""]
+    rr = [r for r in rows if r.get("rerun")]
+    if rr:
+        body += [f"## 需要重跑的卡（财报后 / 超过一季度）（{len(rr)}）", "",
+                 "| 公司 | 代码 | 卡 as_of | 卡龄 | 原因 | 价格组 | 现价/线 |", "|---|---|---|---:|---|:--:|---:|"]
+        for r in sorted(rr, key=lambda x: x["symbol"]):
+            pct = r.get("pct_vs_line") or ""
+            pct = f"{float(pct):+.1f}%" if pct not in ("", None) else ""
+            body.append(f"| {r['folder']} | {r['symbol']} | {r['as_of']} | {r['age_days']} | {r['rerun']} | {r['group']} | {pct} |")
+        body.append("")
     if digest:
         body += [f"## 全表 · A 组（现价 ≤ 线，{len(A)}）", ""] + HDR + [row_line(by[s]) for s in A] + [""]
         body += [f"## 全表 · B 组（高于线 ≤10%，{len(B)}）", ""] + HDR + [row_line(by[s]) for s in B] + [""]
