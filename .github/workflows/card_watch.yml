@@ -1,0 +1,77 @@
+name: card-watch
+
+# 每个美股交易日收盘后跑一次卡片价格巡检；有卡新到买入线就开 Issue 并指派给仓库所有者 → GitHub 发邮件。
+# 周一另发一次全表周报。手动触发：Actions → card-watch → Run workflow（可勾 digest 强制发全表）。
+on:
+  schedule:
+    - cron: "45 21 * * 1-5"   # 21:45 UTC = 美东 16:45（夏令时）/ 17:45（冬令时），美股收盘后
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: "强制发全表周报"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: card-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run card_watch (prices vs buy-below lines)
+        run: python scripts/card_watch/card_watch.py
+
+      - name: Compare with last state
+        id: decide
+        env:
+          DIGEST: ${{ (github.event_name == 'workflow_dispatch' && inputs.digest) && '1' || '0' }}
+        run: python scripts/card_watch/alert.py
+
+      - name: Open issue (GitHub e-mails the assignee)
+        if: steps.decide.outputs.alert == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const title = fs.readFileSync('scripts/card_watch/out/alert_title.txt', 'utf8').trim();
+            const body = fs.readFileSync('scripts/card_watch/out/alert_body.md', 'utf8');
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title, body, assignees: [context.repo.owner],
+            });
+
+      - name: Keep today's tables as an artifact (90 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: card_watch_${{ github.run_id }}
+          path: |
+            scripts/card_watch/out/card_watch_*.md
+            scripts/card_watch/out/card_watch_*.csv
+            scripts/card_watch/out/alert_body.md
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: Commit state.json if it changed
+        run: |
+          git config user.name "card-watch bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts/card_watch/state.json
+          if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
+          git commit -m "card_watch state $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -122,8 +122,10 @@ def load_cards():
 
 
 def fetch_price(symbol: str):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=5d&interval=1d"
+    hosts = ["query1.finance.yahoo.com", "query2.finance.yahoo.com"]
+    err = ""
     for attempt in range(3):
+        url = f"https://{hosts[attempt % 2]}/v8/finance/chart/{symbol}?range=5d&interval=1d"
         try:
             d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=20))["chart"]["result"][0]
             m = d["meta"]

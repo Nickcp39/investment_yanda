@@ -46,3 +46,6 @@ tmp_pdf_preview/
 
 # market_temp pipeline skill is ours, keep it in git
 !.claude/skills/market-temp/
+
+# card_watch run artifacts (kept as GitHub Actions artifacts, not in git)
+scripts/card_watch/out/alert_*
