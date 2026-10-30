@@ -1,16 +1,12 @@
 name: card-watch
 
-# 每个美股交易日收盘后跑一次卡片价格巡检；有卡新到买入线就开 Issue 并指派给仓库所有者 → GitHub 发邮件。
-# 周一另发一次全表周报。手动触发：Actions → card-watch → Run workflow（可勾 digest 强制发全表）。
+# 每周一次（周五美股收盘后）跑卡片价格巡检，开一个 Issue 指派给仓库所有者 → GitHub 发邮件。
+# 信里有：本周新到买入线的卡、涨回线上的卡、新进 10% 以内的卡，以及 A/B 组全表。
+# 手动触发：Actions → card-watch → Run workflow。
 on:
   schedule:
-    - cron: "45 21 * * 1-5"   # 21:45 UTC = 美东 16:45（夏令时）/ 17:45（冬令时），美股收盘后
+    - cron: "45 21 * * 5"   # 周五 21:45 UTC = 美东 16:45（夏令时）/ 17:45（冬令时），美股收盘后；北京时间周六早上
   workflow_dispatch:
-    inputs:
-      digest:
-        description: "强制发全表周报"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -39,7 +35,7 @@ jobs:
       - name: Compare with last state
         id: decide
         env:
-          DIGEST: ${{ (github.event_name == 'workflow_dispatch' && inputs.digest) && '1' || '0' }}
+          DIGEST: "1"   # 每次都发全表（一周一封）
         run: python scripts/card_watch/alert.py
 
       - name: Open issue (GitHub e-mails the assignee)

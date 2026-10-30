@@ -31,12 +31,13 @@
 
 ## 邮件提醒（GitHub Actions → Issue → 邮件）
 
-`.github/workflows/card_watch.yml` 每个美股交易日 21:45 UTC（收盘后）在 GitHub 上跑一遍，然后 `alert.py` 把今天的 A/B 组和 `state.json` 里上一次的比：
+`.github/workflows/card_watch.yml` **每周一次**（周五 21:45 UTC，美股收盘后，北京时间周六早上）在 GitHub 上跑一遍，然后 `alert.py` 把本周的 A/B 组和 `state.json` 里上一周的比，开一个 Issue 指派给仓库所有者 → GitHub 把 Issue 内容发到所有者的通知邮箱。一封信里有：
 
-- **有卡新进 A 组**（上次在线上、今天在线下）→ 开一个 Issue 并指派给仓库所有者 → GitHub 把 Issue 内容发到所有者的通知邮箱。
-- **每周一**另发一封全表周报（A 组、B 组全列）。
-- 其余日子不发。`state.json` 变了才由 bot 提交一次；当天的完整表作为 Actions artifact 保存 90 天。
-- 手动测试：GitHub → Actions → card-watch → Run workflow（勾 digest 可强制发全表）。
+- 本周**新到买入线**的卡（上周在线上、本周在线下）；
+- 涨回线上的卡；新进 10% 以内的卡；
+- A 组、B 组全表。
+
+`state.json` 变了才由 bot 提交一次；当周的完整表作为 Actions artifact 保存 90 天。手动测试：GitHub → Actions → card-watch → Run workflow。
 
 要收到邮件只需一件事：GitHub → Settings → Notifications，确认通知邮箱是你常看的那个，"Participating" 勾了 Email。
 注意：仓库是公开的，Issue 也是公开的；内容只有买入线和现价，和仓库里已公开的卡一致。要改成私密邮件，得用 SMTP（需要你自己在仓库 Secrets 里放发件账号的应用密码），脚本可以加。
