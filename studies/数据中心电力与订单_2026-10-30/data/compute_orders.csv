@@ -1,0 +1,217 @@
+company,metric,period_end,value,unit,source_url,source_type,note
+NBIS,RPO,2025-09-30,未披露,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925110831/tm2531034d1_ex99-2.htm,P,Q3'25 中期报表未给 RPO
+NBIS,RPO,2025-12-31,21.333,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm,P,20-F XBRL RevenueRemainingPerformanceObligation
+NBIS,RPO,2026-03-31,33.585,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d2.htm,P,29% 在 24 个月内确认
+NBIS,RPO,2026-06-30,37.491,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm,P,36% 在 24 个月内；40% 在 25-48 个月
+NBIS,RPO,2026-09-30,未披露,USD_B,https://data.sec.gov/submissions/CIK0001513845.json,P,Q3'26 未发布；2026-10-22 之后无 6-K（2026-10-30 查询）
+NBIS,customer_commitments_long_term,2026-08-12,40,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,原文 '$40 billion in customer commitments'；10-22 6-K 称 'more than $40 billion of long-term contracts'；与 RPO 口径不同
+NBIS,ARR,2025-03-31,0.249,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-2.htm,P,核心 AI 基础设施业务；末月收入x12
+NBIS,ARR,2025-06-30,0.43,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-2.htm,P,核心 AI 基础设施业务
+NBIS,ARR,2025-09-30,0.551,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm,P,[~] approximately $551 million
+NBIS,ARR,2025-12-31,1.25,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm,P,
+NBIS,ARR,2026-03-31,1.92,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm,P,Q1'26 起口径为 Nebius AI cloud revenue 末月x12
+NBIS,ARR,2026-06-30,3.0,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,+598% YoY；+56% QoQ
+NBIS,ARR_guidance_YE,2026-12-31,7-9,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,2025-11-11 首次给出；Q2'26 重申
+NBIS,revenue_guidance_FY,2026-12-31,3.0-3.4,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm,P,Q2'26 重申全部指引
+NBIS,contracted_power,2026-02-12,2.0,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm,P,[>] 'more than 2 GW of contracted power'（信件日期）
+NBIS,contracted_power,2026-05-13,3.5,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm,P,[>] 'Contracted capacity already exceeds 3.5 GW'；自有 >75%
+NBIS,contracted_power,2026-06-30,未披露,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,Q2 信只给年底目标 5 GW
+NBIS,contracted_power_target_YE2026,2025-08-07,1.0,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-2.htm,P,[>] 发布日
+NBIS,contracted_power_target_YE2026,2025-11-11,2.5,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm,P,[>] 发布日
+NBIS,contracted_power_target_YE2026,2026-02-12,3.0,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm,P,[>] 发布日
+NBIS,contracted_power_target_YE2026,2026-05-13,4.0,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm,P,[>] 发布日
+NBIS,contracted_power_target_YE2026,2026-08-12,5.0,GW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,发布日；2027 起每年部署 >1 GW
+NBIS,active_power,2025-12-31,170,MW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm,P,[~] 年初目标 100 MW
+NBIS,active_power,2026-03-31,未披露,MW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm,P,Q1 信未更新
+NBIS,active_power,2026-06-30,未披露,MW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,Q2 信未更新
+NBIS,connected_power_target,2025-12-31,220,MW,https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm,P,目标；YE2025 实际 connected 未披露
+NBIS,connected_power_target,2026-12-31,800-1000,MW,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm,P,Q4'25、Q1'26 信重申；Q2'26 称重申全部指引
+NBIS,deferred_revenue,2025-06-30,0.0193,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm,P,仅流动部分
+NBIS,deferred_revenue,2025-09-30,0.0156,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm,P,主要为 TripleTen
+NBIS,deferred_revenue,2025-12-31,1.5775,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-1.htm,P,流动 275.5 + 非流动 1302.0（USD_M）
+NBIS,deferred_revenue,2026-03-31,4.7781,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-1.htm,P,685.6 + 4092.5
+NBIS,deferred_revenue,2026-06-30,5.9752,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm,P,979.4 + 4995.8；含可能可退部分
+NBIS,prepayments_guidance_FY,2026-12-31,9,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,[>] 'over $9 billion in customer prepayments in 2026'
+NBIS,capex_quarter,2026-03-31,2.4729,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d2.htm,P,PP&E 与无形资产购置（repo 10-23 资产负债表研究）
+NBIS,capex_quarter,2026-06-30,5.6574,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm,P,Q2 信写约 $5.7B
+NBIS,capex_guidance_FY,2026-12-31,20-25,USD_B,https://www.marketbeat.com/instant-alerts/nebius-group-q2-earnings-call-highlights-2026-08-12/,S,电话会转述；书面材料无全年数
+NBIS,contract_Microsoft_TCV,2025-09-08,17.4,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm,P,最高 19.4；5 年；预付约 6.958；截至 2026-08-12 已全部交付
+NBIS,contract_Meta1_TCV,2025-11-01,2.88,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm,P,约 $3B；5 年
+NBIS,contract_Meta2_TCV,2026-03-16,27,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm,P,$12B 专用（Vera Rubin；2027 初起）+ 最高 $15B 未售产能兜底
+NBIS,Q2_deals_avg_TCV,2026-06-30,1.0,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm,P,[>] 4 笔（Reflection、Cohere 等）；$20-25M/MW；预付覆盖相关 capex 50-60%
+NBIS,customer_concentration_top3_rev,2026-06-30,59,%,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm,P,客户 C/D/E = 24%/21%/14%（repo 10-23 资产负债表研究）
+NBIS,MSFT_Meta_share_of_RPO_derived,2026-06-30,86,%,https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm,P,推算上限 = (17.4+2.88+12)/37.49；未扣已确认收入；公司未披露分客户
+NBIS,secured_bridge_loan,2026-10-17,3.5,USD_B,https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_6k.htm,P,Citi 364 天有担保过桥；提款状态未披露
+CRWV,revenue_backlog,2025-03-31,25.9,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000010/coreweave1q25earningspress.htm,P,RPO + 已签合同中其他预计收入
+CRWV,revenue_backlog,2025-06-30,30.1,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000039/coreweave2q25earningspress.htm,P,RPO + 已签合同中其他预计收入
+CRWV,revenue_backlog,2025-09-30,55.6,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,RPO + 已签合同中其他预计收入
+CRWV,revenue_backlog,2025-12-31,66.8,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000094/coreweave4q25earningspress.htm,P,RPO + 已签合同中其他预计收入
+CRWV,revenue_backlog,2026-03-31,99.4,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000220/coreweave1q26earningspress.htm,P,RPO + 已签合同中其他预计收入
+CRWV,revenue_backlog,2026-06-30,104.2,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,RPO + 已签合同中其他预计收入；新闻稿写 approximately $104B，融资路演写 $104.2B
+CRWV,net_new_commitments_early_Q3,2026-08-11,25,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm,P,[>] 未计入 6/30 backlog
+CRWV,RPO,2025-03-31,14.7,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000010/coreweave1q25earningspress.htm,P,10-Q/10-K 附注
+CRWV,RPO,2025-06-30,30.1,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/RevenueRemainingPerformanceObligation.json,P,10-Q/10-K 附注
+CRWV,RPO,2025-09-30,50.0,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,P,10-Q/10-K 附注
+CRWV,RPO,2025-12-31,60.7,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,P,10-Q/10-K 附注
+CRWV,RPO,2026-03-31,98.8,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,P,10-Q/10-K 附注
+CRWV,RPO,2026-06-30,103.7,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,P,10-Q/10-K 附注
+CRWV,RPO_pct_within_24m,2025-09-30,42,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,P,
+CRWV,RPO_pct_within_24m,2025-12-31,43,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,P,
+CRWV,RPO_pct_within_24m,2026-03-31,36,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,P,
+CRWV,RPO_pct_within_24m,2026-06-30,41,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,P,
+CRWV,active_power,2025-03-31,420,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000010/coreweave1q25earningspress.htm,P,[~]
+CRWV,active_power,2025-06-30,470,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000039/coreweave2q25earningspress.htm,P,[~]
+CRWV,active_power,2025-09-30,590,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,[~] 本季 +120
+CRWV,active_power,2025-12-31,850,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000094/coreweave4q25earningspress.htm,P,[>] 本季 +260
+CRWV,active_power,2026-03-31,1000,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000220/coreweave1q26earningspress.htm,P,[>] 'Surpassed 1 GW'
+CRWV,active_power,2026-06-30,1500,MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm,P,[~] 本季 +近 500
+CRWV,contracted_power,2025-03-31,1.6,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000010/coreweave1q25earningspress.htm,P,[~]
+CRWV,contracted_power,2025-06-30,2.2,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000039/coreweave2q25earningspress.htm,P,[~]
+CRWV,contracted_power,2025-09-30,2.9,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,[~]
+CRWV,contracted_power,2025-12-31,3.1,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000094/coreweave4q25earningspress.htm,P,[~]
+CRWV,contracted_power,2026-03-31,3.5,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000220/coreweave1q26earningspress.htm,P,[>]
+CRWV,contracted_power,2026-06-30,3.7,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm,P,[~]
+CRWV,contracted_power,2026-08-11,4.2,GW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,[~] 路演注明 contracted power as of 2026-08-11
+CRWV,top_customer_pct_rev,2025-09-30,67,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,P,Microsoft（点名）；单季
+CRWV,top_customer_pct_rev,2025-12-31,67,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,P,Microsoft；FY2025 全年
+CRWV,top_customer_pct_rev,2026-03-31,45,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,P,客户 A；B 20%；前二 65%；2026 起不再点名
+CRWV,top_customer_pct_rev,2026-06-30,36,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,P,客户 A；B 26%；C 10%；前三 72%
+CRWV,contract_OpenAI_total,2025-09-30,22.4,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,up to；11.9（2025-03）+4（2025-05）+6.5（2025-09，至 2031-05）
+CRWV,contract_Meta_1,2025-09-30,14.2,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,up to；可扩展
+CRWV,contract_Meta_2,2026-03-31,21.0,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000154/crwv-20260331.htm,P,至 2032-12；含行使旧期权；双方可因故终止
+CRWV,contract_Anthropic,2026-03-31,未披露,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000220/coreweave1q26earningspress.htm,P,多年协议；金额未披露
+CRWV,Meta_OpenAI_share_of_backlog_derived,2026-06-30,55,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,推算上限 = (14.2+21.0+22.4)/104.2；均为 up to 金额；未扣已确认收入
+CRWV,NVIDIA_capacity_collaboration,2025-09-30,6.3,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000059/coreweave3q25earningspress.htm,P,'$6.3 billion strategic collaboration'；二手称为至 2032-04 的未售产能兜底
+CRWV,deferred_revenue,2025-09-30,5.3,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,P,流动+非流动
+CRWV,deferred_revenue,2025-12-31,8.2,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,P,流动+非流动
+CRWV,deferred_revenue,2026-03-31,7.5,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,P,流动+非流动
+CRWV,deferred_revenue,2026-06-30,9.7,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,P,流动+非流动
+CRWV,customer_liabilities,2026-03-31,1.469,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,P,12-31 为 0.137；Q1 把 $1.3B 递延收入重分类至此，原因未披露；6-30 其他流动负债合计仅 0.070
+CRWV,capex_quarter,2026-06-30,9.4,USD_B,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,公司口径：PP&E 增加 + 融资租赁资产 - 在建工程变动
+CRWV,price_increase_across_SKUs,2026-07-31,70,%,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,[~] '~70% price increase across SKUs in July 2026'
+CRWV,short_term_contract_price,2026-09-17,40,USD_M_per_MW,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm,P,[~] 3-6 个月短约年化收入/MW
+CRWV,DDTL3_amendment_delivery_timing,2026-01-02,事件,,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000003/crwv-20251231.htm,P,修订以对齐 Q3'25 电话会所述交付时间；DSCR 首测推至 2027-10-31；最低流动性下调
+CRWV,ATM_program_shares,2026-09-17,35,M_shares,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv-20260917.htm,P,含 collared forward；同期发 2033 可转债
+CRWV,contract_cancellations_2026,2026-10-30,未发现,,https://data.sec.gov/submissions/CIK0001769628.json,P,2026 年 8-K 未见客户取消或降额；最近 8-K 为 2026-09-22
+IREN,RPO_ASC606,2025-09-30,0.195,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884825000081/iren-20250930.htm,P,只含已交付并验收部分；微软未交付批次不计入
+IREN,RPO_ASC606,2025-12-31,0.289,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm,P,只含已交付并验收部分；微软未交付批次不计入
+IREN,RPO_ASC606,2026-03-31,0.71,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm,P,只含已交付并验收部分；微软未交付批次不计入
+IREN,RPO_ASC606,2026-06-30,5.1,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm,P,只含已交付并验收部分；微软未交付批次不计入
+IREN,RPO_plus_lease_contract_value,2026-06-30,16.6,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm,P,[~] ASC 606 RPO + ASC 842 租赁合同总值
+IREN,contract_Microsoft_TCV,2025-11-02,9.7,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_8k.htm,P,5 年；20% 预付；Horizon 1-4 约 200 MW IT；2026 年分批；延迟可被终止
+IREN,contract_Microsoft_ARR,2025-11-06,1.9,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884825000079/q1fy26resultspressreleas.htm,P,预期 ARR 贡献
+IREN,contract_NVIDIA_TCV,2026-05-07,3.4,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm,P,5 年；60 MW 现有风冷机房；2027 初爬坡
+IREN,ARR_target_YE2026,2025-11-06,3.4,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884825000079/q1fy26resultspressreleas.htm,P,发布日；140k GPU
+IREN,ARR_target_YE2026,2026-02-05,3.4,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000014/a991irenreportsq2fy26res.htm,P,发布日；on track
+IREN,ARR_target_YE2026,2026-03-04,3.7,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm,P,[>] 发布日；150k GPU
+IREN,ARR_target_YE2026,2026-05-07,3.7,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm,P,发布日
+IREN,ARR_target_incl_NVIDIA,2026-05-26,4.4,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000030/irentrgts44bninarrwithbl.htm,P,NVIDIA 合同 2027 初投运后
+IREN,contracted_ARR,2026-05-07,3.1,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm,P,under contract
+IREN,contracted_ARR,2026-08-27,4.0,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm,P,for 2026 capacity
+IREN,operating_ARR,2026-08-26,1.0,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm,P,
+IREN,AI_cloud_revenue_quarter,2026-03-31,33.6,USD_M,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm,P,
+IREN,AI_cloud_revenue_quarter,2026-06-30,70.5,USD_M,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm,P,
+IREN,AI_cloud_capacity_target,2026-12-31,480,MW,https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_ex99-1.htm,P,gross；FY26 稿另写 2026 约 0.3 GW IT
+IREN,AI_cloud_capacity_target,2027-12-31,1200,MW,https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_ex99-1.htm,P,gross；约 0.8 GW IT
+IREN,deferred_revenue,2026-06-30,1.8425,USD_B,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm,P,资产负债表 46.5+1796.1（USD_M）；附注 4 只写 ASC 606 部分 219.1M
+IREN,contract_price,2026-08-27,20,USD_M_per_MW,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm,P,[>] 3 年合同 >$20M/MW(IT)；在谈约 $25M；预付占 GPU capex 45-55%
+IREN,Microsoft_delivery_status,2026-08-13,Horizon 1 已交付,,https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_ex99-1.htm,P,Horizon 2-4 目标 2026 Q4
+APLD,leased_critical_IT,2025-05-31,250,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000068/apldq126earningsrelease.htm,P,CoreWeave 首两份约 15 年租约
+APLD,leased_critical_IT,2025-08-31,400,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000068/apldq126earningsrelease.htm,P,CoreWeave 全租 Polaris Forge 1
+APLD,leased_critical_IT,2025-11-30,600,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000002/apldq226earningsrelease.htm,P,+ 投资级 hyperscaler 200 MW（PF2）
+APLD,leased_critical_IT,2026-02-28,600,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000029/apldq326earningsrelease.htm,P,季报未见新租约（推断未变）
+APLD,leased_critical_IT,2026-05-31,1200,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000044/apldq426earningsreleaseasf.htm,P,推算 = 600 + DF1 300 + PF3 300
+APLD,leased_critical_IT,2026-08-31,1410,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apldq127earningsrelease.htm,P,[~] 含 2026-06-08 签的 DF2 210 MW
+APLD,contracted_lease_revenue_base,2025-05-31,7,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000068/apldq126earningsrelease.htm,P,[~]
+APLD,contracted_lease_revenue_base,2025-08-31,11,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000068/apldq126earningsrelease.htm,P,[~]
+APLD,contracted_lease_revenue_base,2025-11-30,16,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000002/apldq226earningsrelease.htm,P,[~]
+APLD,contracted_lease_revenue_base,2026-02-28,16,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000029/apldq326earningsrelease.htm,P,[~] 推断未变
+APLD,contracted_lease_revenue_base,2026-05-31,31,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000044/apldq426earningsreleaseasf.htm,P,推算 = 16 + 7.5 + 7.5
+APLD,contracted_lease_revenue_base,2026-08-31,36,USD_B,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apldq127earningsrelease.htm,P,[~] 含续约选择权约 $86B
+APLD,tenant_CoreWeave,2026-08-31,400,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000029/apldq326earningsrelease.htm,P,约 $11B；FQ3 FY26 改由 CoreWeave SPV 承租 + 母公司 springing 担保 + $50M 信用证
+APLD,tenant_IG_hyperscaler_PF2,2026-08-31,200,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000002/apldq226earningsrelease.htm,P,约 $5B
+APLD,tenant_tier1_IG_hyperscaler,2026-08-31,810,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000044/apldq426earningsreleaseasf.htm,P,DF1 300 + PF3 300 + DF2 210；约 $20.2B；均 15 年 take-or-pay
+APLD,live_capacity_PF1,2026-10-01,250,MW,https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apldq127earningsrelease.htm,P,2025-10 为 100 MW；2026-07-01 为 175 MW
+ORCL,RPO,2025-02-28,130.2,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2025-05-31,137.8,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2025-08-31,455.3,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2025-11-30,523.3,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2026-02-28,552.6,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2026-05-31,638.0,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO,2026-08-31,664.0,USD_B,https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json,P,财季末；XBRL
+ORCL,RPO_pct_next_12m,2026-08-31,13,%,https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm,P,[~] 13-36 月 37%；37-60 月 34%
+ORCL,AI_cloud_contracts_booked_quarter,2026-08-31,30,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,[>] 'more than $30 billion of additional AI cloud contracts'
+ORCL,capex_quarter,2025-08-31,8.502,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,新闻稿表；与 XBRL 累计数相减一致
+ORCL,capex_quarter,2025-11-30,12.033,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,新闻稿表；与 XBRL 累计数相减一致
+ORCL,capex_quarter,2026-02-28,18.635,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,新闻稿表；与 XBRL 累计数相减一致
+ORCL,capex_quarter,2026-05-31,16.493,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,新闻稿表；与 XBRL 累计数相减一致
+ORCL,capex_quarter,2026-08-31,28.499,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,新闻稿表；与 XBRL 累计数相减一致
+ORCL,customer_prepayments_for_capex,2026-05-31,4.592,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,含重大融资成分的客户预付
+ORCL,customer_prepayments_for_capex,2026-08-31,11.363,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,占当季 capex 40%（推算）
+ORCL,net_cash_outlay_capex,2026-08-31,17.966,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm,P,公司非 GAAP 口径
+ORCL,leases_not_yet_commenced,2026-08-31,288,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm,P,FQ2 FY27 至 FY29 起租；15-19 年
+ORCL,ATM_net_proceeds,2026-08-31,19.9,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm,P,141M 股；ATM 用尽
+ORCL,OpenAI_contract,2025-09-10,300,USD_B,https://www.ebc.com/forex/oracle-stock-falling-ai-backlog,S,[~] 约 5 年，FY2028 起；WSJ 报道；公司未在申报文件点名
+ORCL,OpenAI_share_of_RPO,2026-05-31,50,%,https://cryptobriefing.com/oracle-ai-backlog-638-billion/,S,[>] 媒体与 S&P 估计约一半
+ORCL,capex_guidance_FY27,2027-05-31,未披露,USD_B,https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538dex991.htm,P,10-Q：FY27 高于 FY26；Investor Day：FY27-28 为峰值、FY29 回落；S&P 估 90-95（S）
+ORCL,vendor_financing_disclosed,2026-10-28,事件,,https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538dex991.htm,P,"'Vendor financing, customer-provided hardware and customer prepayments are expected to reduce upfront cash requirements'"
+MSFT,commercial_RPO,2025-06-30,368,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm,P,
+MSFT,commercial_RPO,2025-09-30,392,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm,P,+51% YoY
+MSFT,commercial_RPO,2025-12-31,625,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm,P,+110% YoY；加权久期约 2.5 年
+MSFT,commercial_RPO,2026-03-31,627,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm,P,+99%
+MSFT,commercial_RPO,2026-06-30,678,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm,P,+84%；久期约 2.3 年
+MSFT,commercial_RPO,2026-09-30,677,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm,P,+73%；环比 -1
+MSFT,total_RPO,2025-06-30,375,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm,P,
+MSFT,total_RPO,2025-09-30,398,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm,P,
+MSFT,total_RPO,2025-12-31,631,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm,P,
+MSFT,total_RPO,2026-03-31,633,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm,P,
+MSFT,total_RPO,2026-06-30,684,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm,P,
+MSFT,total_RPO,2026-09-30,683,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm,P,
+MSFT,RPO_pct_next_12m,2025-06-30,40,%,https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm,P,全公司 RPO
+MSFT,RPO_pct_next_12m,2025-09-30,40,%,https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm,P,全公司 RPO
+MSFT,RPO_pct_next_12m,2025-12-31,25,%,https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm,P,全公司与商业
+MSFT,RPO_pct_next_12m,2026-03-31,25,%,https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm,P,商业（全公司 30%）
+MSFT,RPO_pct_next_12m,2026-06-30,30,%,https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm,P,
+MSFT,RPO_pct_next_12m,2026-09-30,30,%,https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm,P,
+MSFT,OpenAI_share_of_commercial_RPO,2025-12-31,45,%,https://www.constellationr.com/insights/news/microsoft-q2-strong-azure-growth-39-openai-45-rpo,S,[~] CFO 电话会；约 $281B（推算）；剔除 OpenAI 增 28%
+MSFT,commercial_RPO_growth_ex_OpenAI,2026-06-30,25,%,https://www.marketbeat.com/instant-alerts/microsoft-q4-earnings-call-highlights-2026-07-29/,S,电话会 'RPO increased 25% when excluding OpenAI'（repo 09-26 卡转述）；9-30 一手未披露
+MSFT,OpenAI_revenue_quarter,2026-09-30,10.0,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm,P,占总收入 10.8%；FY26 全年 24.1（约 7.3%）；应收 7.2
+MSFT,leases_not_yet_commenced,2026-09-30,364.6,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm,P,6-30 为 329.1；起租延至 FY2034
+MSFT,capex_cash_quarter,2026-09-30,39.37,USD_B,https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm,P,含融资租赁约 45.2（CFO 口径，S）
+MSFT,capex_guidance_CY2026,2026-07-29,175,USD_B,https://www.marketbeat.com/instant-alerts/microsoft-q4-earnings-call-highlights-2026-07-29/,S,[~] 发布日；7 月电话会；原约 190，差额主要是租赁重分类
+MSFT,capex_guidance_CY2026,2026-10-28,170,USD_B,https://www.tradingkey.com/news/transcripts/262249601-tradingkey,S,[~] 发布日；10-28 电话会转录：'approximately $170 billion due to the 3P capacity delays'
+MSFT,capex_guidance_FY27,2027-06-30,同比增长,,https://www.marketbeat.com/instant-alerts/microsoft-q4-earnings-call-highlights-2026-07-29/,S,无数字；10-28 称 H2 FY27 capex 加速，主要是 CPU
+MSFT,capex_guidance_next_quarter,2026-12-31,50,USD_B,https://www.tradingkey.com/news/transcripts/262249601-tradingkey,S,[>] 10-28 电话会转录
+MSFT,third_party_capacity_delays,2026-10-28,事件,,https://www.tradingkey.com/news/transcripts/262249601-tradingkey,S,CFO：'some third-party capacity deliveries we expected in Q1 were delayed'；'3P GPU-as-a-Service contracts that have been delayed to H2'；未点名供应商
+GOOGL,revenue_backlog_total,2025-06-30,108.2,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/goog-20250630.htm,P,primarily Google Cloud；约 55% 在 24 个月内
+GOOGL,revenue_backlog_total,2025-09-30,157.7,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm,P,just over 55% 在 24 个月内
+GOOGL,revenue_backlog_total,2025-12-31,242.8,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm,P,just over 50%
+GOOGL,revenue_backlog_total,2026-03-31,467.6,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm,P,Q1 起含原始期限 1 年以内合同，该部分约 7.3
+GOOGL,revenue_backlog_total,2026-06-30,519.5,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm,P,just over 50%
+GOOGL,revenue_backlog_total,2026-09-30,567.7,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm,P,just over 55%
+GOOGL,cloud_backlog,2026-03-31,462.3,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm,P,10-Q 自 Q1'26 起单列 Cloud 部分
+GOOGL,cloud_backlog,2026-06-30,513.9,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm,P,10-Q 自 Q1'26 起单列 Cloud 部分
+GOOGL,cloud_backlog,2026-09-30,560.8,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm,P,10-Q 自 Q1'26 起单列 Cloud 部分
+GOOGL,Crux_AI_related_party_backlog,2026-09-30,16.8,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm,P,权益法合营、关联方；占 Cloud backlog 3.0%（推算）；Google 另对其有 $10B 兜底承诺
+GOOGL,datacenter_backstops,2026-09-30,75.7,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm,P,其中 48.0 给第三方数据中心（信用衍生品）；27.7 为未来兜底义务，含 Crux 10.0
+GOOGL,Anthropic_commitment,2026-04-30,200,USD_B,companies/nbis/2026-10-23/research/gpu_cloud_economics_peers.md,S,[~] The Information 报道 5 年约 $200B，未证实（repo 10-23 同业研究转述）
+GOOGL,capex_cash_quarter,2026-09-30,51.36,USD_B,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm,P,9M 132.0（10-Q）
+GOOGL,capex_guidance_2026,2026-12-31,195-205,USD_B,https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037,S,电话会，未变；10-Q 只写 significantly increase vs 2025
+GOOGL,capex_guidance_2027,2027-12-31,显著增加,,https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037,S,无数字
+AMZN,AWS_backlog_gt1y,2025-06-30,195,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/amzn-20250630.htm,P,[~] 原始期限 >1 年合同的未确认承诺，primarily AWS
+AMZN,AWS_backlog_gt1y,2025-09-30,200,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm,P,[~] 原始期限 >1 年合同的未确认承诺，primarily AWS
+AMZN,AWS_backlog_gt1y,2025-12-31,244,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm,P,[~] 原始期限 >1 年合同的未确认承诺，primarily AWS
+AMZN,AWS_backlog_gt1y,2026-03-31,364,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm,P,[~] 原始期限 >1 年合同的未确认承诺，primarily AWS
+AMZN,AWS_backlog_gt1y,2026-06-30,496,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm,P,[~] 原始期限 >1 年合同的未确认承诺，primarily AWS
+AMZN,AWS_backlog_gt1y,2026-09-30,未披露,USD_B,https://data.sec.gov/submissions/CIK0001018724.json,P,Q3 10-Q 截至 2026-10-30 未递交；8-K 新闻稿不含
+AMZN,OpenAI_AWS_commitment,2026-03-31,138,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm,P,原 38.0 + Q1'26 扩 100.0（8 年）
+AMZN,Anthropic_AWS_commitment_expansion,2026-06-30,100,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm,P,[>] Q2'26 扩 >100.0（10 年）
+AMZN,investee_commitments_vs_backlog_derived,2026-06-30,48,%,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm,P,推算名义对照 = (138+100)/496；宣布金额不等于已入积压金额
+AMZN,OpenAI_investment_2026,2026-09-30,50.0,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm,P,Q1 15.0 + Q2 13.7（10-Q）+ Q3 21.3（repo 10-29 refresh，待 Q3 10-Q）
+AMZN,capex_cash_quarter,2026-09-30,75.9,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm,P,净现金 capex；Q2 53.1
+AMZN,capex_guidance_2026,2026-12-31,220,USD_B,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm,P,[~] 'approximately $220 billion' 现金 capex
+AMZN,capex_guidance_2027,2027-12-31,未披露,,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm,P,只给 AWS 2027、2028 增速 >40% 的预测
+META,capex_quarter,2026-09-30,34.91,USD_B,https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm,P,含融资租赁本金
+META,capex_guidance_2026,2026-12-31,135-145,USD_B,https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm,P,由 130-145 收窄
+META,capex_guidance_2027,2027-12-31,未披露,,https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm,P,'continue investing aggressively'
+BIG4,capex_guidance_2026_sum_derived,2026-12-31,730,USD_B,,S,推算 = AMZN 220(P) + GOOGL 200(S 中值) + META 140(P 中值) + MSFT 170(S，日历年)；7 月底约 733；混合 P/S，故整体标 S

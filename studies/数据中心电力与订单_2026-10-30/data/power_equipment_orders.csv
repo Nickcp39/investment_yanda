@@ -1,0 +1,427 @@
+﻿company,metric,period_end,value,unit,source_url,source_type,note
+GEV,orders_total,2025-03-31,10.269,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,derived: sum of recast segment orders (Power 6263+Elec 3366+Wind 640) shown as 1Q25 comps in 1Q26 release
+GEV,orders_total,2025-06-30,12.455,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,derived: sum of recast segment orders (7109+3283+2063) shown as 2Q25 comps in 2Q26 release
+GEV,orders_total,2025-09-30,14.6,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,+55% organic
+GEV,orders_total,2025-12-31,22.2,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,+65% organic
+GEV,orders_total,2026-03-31,18.3,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,+71% organic
+GEV,orders_total,2026-06-30,24.2,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,+88% organic
+GEV,orders_total,2026-09-30,29.3,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,"+96% organic; $29,282m implied by release text ""$29.3 billion"""
+GEV,orders_total_organic_yoy,2026-09-30,96,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,book_to_bill_total,2026-09-30,2.32,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,"derived: orders 29.3 / revenue 12.642; mgmt said "">2-for-1"""
+GEV,revenue_total,2025-03-31,8032,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,revenue_total,2025-06-30,9111,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,revenue_total,2025-09-30,9969,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,revenue_total,2025-12-31,10956,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+GEV,revenue_total,2026-03-31,9339,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,revenue_total,2026-06-30,11104,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,revenue_total,2026-09-30,12642,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,"+27% reported, +18% organic"
+GEV,adj_ebitda_margin,2025-03-31,5.7,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2025-06-30,8.5,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2025-09-30,8.1,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2025-12-31,10.6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2026-03-31,9.6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2026-06-30,11.3,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,non-GAAP
+GEV,adj_ebitda_margin,2026-09-30,15.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,non-GAAP
+GEV,adj_ebitda,2026-09-30,1943,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,non-GAAP; 3Q25 = 811
+GEV,adj_ebitda_margin_9M,2026-09-30,12.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,9M adj EBITDA 4089 / revenue 33084
+GEV,adj_ebitda_margin_implied_Q4_guide_mid,2026-12-31,17.9,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,derived: FY guide mid rev 47.0B x 14.0% = 6.58B minus 9M 4.089B = 2.49B on implied Q4 rev 13.92B; range 16.3%-19.4%
+GEV,backlog_rpo_total,2025-03-31,123438,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2025-06-30,128650,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2025-09-30,135269,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2025-12-31,150238,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2026-03-31,163276,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2026-06-30,176284,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_total,2026-09-30,196721,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:RevenueRemainingPerformanceObligation (10-Q/10-K)
+GEV,backlog_rpo_equipment,2026-09-30,104054,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,33%/60%/97% to be recognized within 1/2/5 yrs
+GEV,backlog_rpo_services,2026-09-30,92667,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,
+GEV,backlog_rpo_equipment,2025-12-31,64245,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,
+GEV,backlog_rpo_equipment,2025-09-30,54092,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,
+GEV,Power_rpo_total,2025-09-30,84216,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Power_rpo_equipment,2025-09-30,18977,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Power_rpo_total,2025-12-31,94548,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Power_rpo_equipment,2025-12-31,24707,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Power_rpo_total,2026-09-30,130854,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Power_rpo_equipment,2026-09-30,54422,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_total,2025-09-30,29772,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_equipment,2025-09-30,26455,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_total,2025-12-31,34242,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_equipment,2025-12-31,30508,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_total,2026-09-30,46148,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_rpo_equipment,2026-09-30,42204,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_total,2025-09-30,21508,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_equipment,2025-09-30,8782,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_total,2025-12-31,21630,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_equipment,2025-12-31,9112,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_total,2026-09-30,19952,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Wind_rpo_equipment,2026-09-30,7584,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,realigned 2026 segment basis
+GEV,Electrification_equipment_backlog,2025-09-30,26.455,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,
+GEV,Electrification_equipment_backlog,2025-12-31,30.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+GEV,Electrification_equipment_backlog,2026-03-31,38.6,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,includes ~$5B Prolec GE from 1Q26
+GEV,Electrification_equipment_backlog,2026-06-30,40.6,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,includes ~$5B Prolec GE from 1Q26
+GEV,Electrification_equipment_backlog,2026-09-30,42.2,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,includes ~$5B Prolec GE from 1Q26
+GEV,Power_orders,2025-03-31,6263,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Power_revenue,2025-03-31,4449,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Power_segment_ebitda_margin,2025-03-31,11.6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Power_orders,2025-06-30,7109,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Power_revenue,2025-06-30,4785,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Power_segment_ebitda_margin,2025-06-30,16.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Power_orders,2025-09-30,7832,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Power_revenue,2025-09-30,4863,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Power_segment_ebitda_margin,2025-09-30,13.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Power_orders,2025-12-31,11693,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Power_revenue,2025-12-31,5749,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Power_segment_ebitda_margin,2025-12-31,16.9,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Power_orders,2026-03-31,10008,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Power_revenue,2026-03-31,4971,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Power_segment_ebitda_margin,2026-03-31,16.3,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Power_orders,2026-06-30,16729,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Power_revenue,2026-06-30,5477,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Power_segment_ebitda_margin,2026-06-30,18.8,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Power_orders,2026-09-30,21780,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders +178% organic
+GEV,Power_revenue,2026-09-30,6067,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders +178% organic
+GEV,Power_segment_ebitda_margin,2026-09-30,21.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders +178% organic
+GEV,Electrification_orders,2025-03-31,3366,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Electrification_revenue,2025-03-31,1840,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Electrification_segment_ebitda_margin,2025-03-31,11.1,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Electrification_orders,2025-06-30,3283,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Electrification_revenue,2025-06-30,2162,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Electrification_segment_ebitda_margin,2025-06-30,14.5,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Electrification_orders,2025-09-30,5069,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Electrification_revenue,2025-09-30,2565,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Electrification_segment_ebitda_margin,2025-09-30,15.1,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Electrification_orders,2025-12-31,7424,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Electrification_revenue,2025-12-31,2960,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Electrification_segment_ebitda_margin,2025-12-31,17.1,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Electrification_orders,2026-03-31,7112,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,orders +86% organic
+GEV,Electrification_revenue,2026-03-31,2959,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,orders +86% organic
+GEV,Electrification_segment_ebitda_margin,2026-03-31,17.8,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,orders +86% organic
+GEV,Electrification_orders,2026-06-30,6347,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,orders +66% organic
+GEV,Electrification_revenue,2026-06-30,3637,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,orders +66% organic
+GEV,Electrification_segment_ebitda_margin,2026-06-30,18.4,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,orders +66% organic
+GEV,Electrification_orders,2026-09-30,5371,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders -9% organic (+6% reported incl. Prolec); tough comp from large synchronous condenser orders in 3Q25
+GEV,Electrification_revenue,2026-09-30,3862,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders -9% organic (+6% reported incl. Prolec); tough comp from large synchronous condenser orders in 3Q25
+GEV,Electrification_segment_ebitda_margin,2026-09-30,19.1,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,orders -9% organic (+6% reported incl. Prolec); tough comp from large synchronous condenser orders in 3Q25
+GEV,Wind_orders,2025-06-30,2063,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Wind_revenue,2025-06-30,2245,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Wind_segment_ebitda_margin,2025-06-30,-7.3,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,recast comp
+GEV,Wind_orders,2025-09-30,1833,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Wind_revenue,2025-09-30,2647,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Wind_segment_ebitda_margin,2025-09-30,-2.3,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,recast comp
+GEV,Wind_orders,2025-12-31,3145,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Wind_revenue,2025-12-31,2368,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Wind_segment_ebitda_margin,2025-12-31,-9.5,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,pre-2026 segment basis (not recast)
+GEV,Wind_orders,2026-03-31,1199,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Wind_revenue,2026-03-31,1432,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Wind_segment_ebitda_margin,2026-03-31,-26.7,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,Wind_orders,2026-06-30,1249,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Wind_revenue,2026-06-30,2026,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Wind_segment_ebitda_margin,2026-06-30,-13.6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,Wind_orders,2026-09-30,2140,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,Wind_revenue,2026-09-30,2741,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,Wind_segment_ebitda_margin,2026-09-30,2.6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,Wind_orders,2025-03-31,640,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Wind_revenue,2025-03-31,1850,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,recast comp
+GEV,Power_book_to_bill,2026-09-30,3.59,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,derived: 21780/6067
+GEV,Wind_book_to_bill,2026-09-30,0.78,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,derived: 2140/2741
+GEV,Electrification_book_to_bill,2026-03-31,2.5,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,"company: ""approximately"""
+GEV,Electrification_book_to_bill,2026-06-30,1.7,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,"company: ""approximately"""
+GEV,Electrification_book_to_bill,2026-09-30,1.4,x,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,"company: ""approximately"""
+GEV,gas_equipment_backlog_plus_SRA,2025-06-30,55,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,"total stated as 55 GW; split 29+25 per 3Q25 release (sum 54, rounding)"
+GEV,gas_equipment_backlog,2025-06-30,29,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2025-06-30,25,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,
+GEV,gas_equipment_backlog_plus_SRA,2025-09-30,62,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,"""just over 12 GW"" signed: 12 SRA + 1 order"
+GEV,gas_equipment_backlog,2025-09-30,33,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2025-09-30,29,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,
+GEV,gas_new_contracts_signed,2025-09-30,12,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,"""just over 12 GW"" signed: 12 SRA + 1 order"
+GEV,gas_SRA_converted_to_orders,2025-09-30,7,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,
+GEV,gas_shipped,2025-09-30,4,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm,P,
+GEV,gas_equipment_backlog_plus_SRA,2025-12-31,83,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,24 GW signed: 21 SRA + 3 orders
+GEV,gas_equipment_backlog,2025-12-31,40,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2025-12-31,43,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+GEV,gas_new_contracts_signed,2025-12-31,24,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,24 GW signed: 21 SRA + 3 orders
+GEV,gas_SRA_converted_to_orders,2025-12-31,8,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+GEV,gas_shipped,2025-12-31,3,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+GEV,gas_equipment_backlog_plus_SRA,2026-03-31,100,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,21 GW signed: 19 SRA + 2 orders
+GEV,gas_equipment_backlog,2026-03-31,44,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2026-03-31,56,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,gas_new_contracts_signed,2026-03-31,21,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,21 GW signed: 19 SRA + 2 orders
+GEV,gas_SRA_converted_to_orders,2026-03-31,6,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,gas_shipped,2026-03-31,4,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,
+GEV,gas_equipment_backlog_plus_SRA,2026-06-30,116,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,20 GW signed: 18 SRA + 2 orders
+GEV,gas_equipment_backlog,2026-06-30,53,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2026-06-30,63,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,gas_new_contracts_signed,2026-06-30,20,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,20 GW signed: 18 SRA + 2 orders
+GEV,gas_SRA_converted_to_orders,2026-06-30,10,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,gas_shipped,2026-06-30,3,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,
+GEV,gas_equipment_backlog_plus_SRA,2026-09-30,122,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,11 GW signed: 8 SRA + 3 orders; backlog now > SRA balance
+GEV,gas_equipment_backlog,2026-09-30,64,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,firm orders
+GEV,gas_slot_reservation_agreements,2026-09-30,58,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,gas_new_contracts_signed,2026-09-30,11,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,11 GW signed: 8 SRA + 3 orders; backlog now > SRA balance
+GEV,gas_SRA_converted_to_orders,2026-09-30,13,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,gas_shipped,2026-09-30,5,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,gas_backlog_plus_SRA_target_YE,2026-12-31,130,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,"""at least 130 GW"" (raised from >=125 in 2Q26, >=110 in 1Q26)"
+GEV,gas_turbine_orders,2026-09-30,16.6,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,112 units: 55 heavy-duty (21 HA) + 57 aeroderivative; 3Q25 = 7.4 GW / 29 units
+GEV,gas_turbine_orders,2025-09-30,7.4,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,29 units
+GEV,gas_turbine_sales,2026-09-30,5.3,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,32 units; 3Q25 = 4.0 GW / 20 units
+GEV,gas_turbine_orders_9M,2026-09-30,36.7,GW,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,262 units; 9M25 = 19.6 GW / 114 units
+GEV,gas_GW_under_contract_data_center_share,2026-09-30,20,pct,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf,P,"quote: ""approximately 80% are traditional customers and 20% are for data centers"" (company-posted transcript); same ~20% in 1Q26/2Q26"
+GEV,gas_price_per_kW_vs_4Q25,2026-09-30,>20,pct,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf,P,"quote: ""3Q orders were priced more than 20% above 4Q25 equipment orders"" (mix: more aeroderivatives)"
+GEV,gas_price_per_kW_FY26_vs_FY25,2026-12-31,50,pct,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf,P,"quote: ""Full year 2026 Gas orders pricing per kW will be approximately 50% higher than full year 2025 orders""; Q4 $/kW expected lower than Q3 on mix"
+GEV,gas_price_per_kW_1H26_vs_4Q25,2026-06-30,10-20,pct,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_04222026.pdf,P,1Q26 call: 1H26 orders 10-20 points higher on $/kW; 2Q26 call: 2H at higher end
+GEV,Electrification_data_center_orders,2026-03-31,2.4,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,"""more than all of last year"" -> FY2025 < $2.4B"
+GEV,Electrification_data_center_orders,2026-06-30,2.7,USD_bn,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_07222026.pdf,P,"1H26 > $5B, ""more than double full-year 25"""
+GEV,Electrification_data_center_orders,2026-09-30,1.4,USD_bn,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf,P,"""roughly $1.4 billion in 3Q""; YTD > $6B"
+GEV,Electrification_data_center_orders_YTD,2026-09-30,>6,USD_bn,https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf,P,
+GEV,contract_liabilities_and_deferred_income_total,2025-03-31,18851,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2025-06-30,19751,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2025-09-30,20304,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2025-12-31,25950,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2026-03-31,31949,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2026-06-30,40037,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,contract_liabilities_and_deferred_income_total,2026-09-30,45747,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,us-gaap:ContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2025-03-31,1124,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2025-06-30,736,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2025-09-30,559,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2025-12-31,5600,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2026-03-31,5574,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2026-06-30,8121,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,cashflow_increase_in_contract_liabilities_quarter,2026-09-30,5816,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json,P,derived: quarterly difference of cumulative us-gaap:IncreaseDecreaseInContractWithCustomerLiability
+GEV,contract_liabilities_Power,2026-09-30,33167,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,12/31/25 = 16547
+GEV,contract_liabilities_Electrification,2026-09-30,9986,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,12/31/25 = 6462
+GEV,contract_liabilities_Wind,2026-09-30,2591,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm,P,12/31/25 = 2938
+GEV,free_cash_flow,2026-09-30,5409,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,non-GAAP; 3Q25 = 732; working capital benefit $5.3B per call
+GEV,free_cash_flow_9M,2026-09-30,15307,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,free_cash_flow_implied_Q4_from_guide,2026-12-31,0.7-1.7,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,derived: FY guide 16-17B minus 9M 15.307B
+GEV,cash,2026-09-30,16.8,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,FY2026_guide_revenue,2026-01-28,44-45,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,period_end = guidance date
+GEV,FY2026_guide_adj_ebitda_margin,2026-01-28,11-13,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,period_end = guidance date
+GEV,FY2026_guide_free_cash_flow,2026-01-28,5.0-5.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,period_end = guidance date
+GEV,FY2026_guide_revenue,2026-04-22,44.5-45.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_adj_ebitda_margin,2026-04-22,12-14,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_free_cash_flow,2026-04-22,6.5-7.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_revenue,2026-07-22,45.5-46.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_adj_ebitda_margin,2026-07-22,12-14,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_free_cash_flow,2026-07-22,11.5-12.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_revenue,2026-10-28,46.5-47.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_adj_ebitda_margin,2026-10-28,13.5-14.5,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_free_cash_flow,2026-10-28,16-17,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,period_end = guidance date
+GEV,FY2026_guide_Power_segment_margin,2026-10-28,19-21,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,raised from 17-19
+GEV,FY2026_guide_Electrification_margin,2026-10-28,18-20 (higher end),pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,
+GEV,FY2026_guide_Wind_ebitda_loss,2026-10-28,400-500,USD_m,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm,P,widened from ~400
+GEV,2028_outlook_revenue,2026-01-28,56,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,raised from 52 (Dec-2025); not restated in 1Q-3Q26 releases
+GEV,2028_outlook_adj_ebitda_margin,2026-01-28,20,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,unchanged through 3Q26; 2030 guide promised at next Capital Markets Day (date to be set on Jan-2027 call)
+GEV,2028_outlook_cumulative_FCF_2025_2028,2026-01-28,>=24,USD_bn,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,raised from >=22
+GEV,2028_outlook_Power_segment_margin,2026-01-28,22,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,3Q26 actual 21.4%
+GEV,2028_outlook_Electrification_segment_margin,2026-01-28,22,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,3Q26 actual 19.1%
+GEV,2028_outlook_Wind_segment_margin,2026-01-28,6,pct,https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm,P,
+Siemens Energy,group_orders,2025-12-31,17609,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,fiscal year ends Sep; period_end = calendar quarter end
+Siemens Energy,group_revenue,2025-12-31,9675,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,group_book_to_bill,2025-12-31,1.82,x,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,group_backlog,2025-12-31,146,EUR_bn,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,group_orders,2026-03-31,17749,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,fiscal year ends Sep; period_end = calendar quarter end
+Siemens Energy,group_revenue,2026-03-31,10294,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_book_to_bill,2026-03-31,1.72,x,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_backlog,2026-03-31,154,EUR_bn,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_orders,2026-06-30,17926,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,fiscal year ends Sep; period_end = calendar quarter end
+Siemens Energy,group_revenue,2026-06-30,11447,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_book_to_bill,2026-06-30,1.57,x,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_backlog,2026-06-30,162,EUR_bn,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,group_orders,2024-12-31,13668,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,group_orders,2025-03-31,14433,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,group_orders,2025-06-30,16613,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GasServices_orders,2025-12-31,8751,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,comparable yoy +81.4%
+Siemens Energy,GasServices_revenue,2025-12-31,3097,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_book_to_bill,2025-12-31,2.83,x,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_backlog,2025-12-31,60,EUR_bn,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_margin_before_SI,2025-12-31,16.6,pct,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_orders,2026-03-31,8869,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,comparable yoy +32.4%
+Siemens Energy,GasServices_revenue,2026-03-31,3478,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_book_to_bill,2026-03-31,2.55,x,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_backlog,2026-03-31,66,EUR_bn,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_margin_before_SI,2026-03-31,15.9,pct,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_orders,2026-06-30,9967,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,comparable yoy +61.9%
+Siemens Energy,GasServices_revenue,2026-06-30,3756,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_book_to_bill,2026-06-30,2.65,x,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_backlog,2026-06-30,73,EUR_bn,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_margin_before_SI,2026-06-30,17.3,pct,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_orders,2024-12-31,5009,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GasServices_orders,2025-03-31,7038,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GasServices_orders,2025-06-30,6180,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GridTech_orders,2025-12-31,5964,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,comparable yoy +21.8%
+Siemens Energy,GridTech_revenue,2025-12-31,3054,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_book_to_bill,2025-12-31,1.95,x,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_backlog,2025-12-31,45,EUR_bn,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_margin_before_SI,2025-12-31,17.6,pct,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_orders,2026-03-31,6996,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,comparable yoy +41.5%
+Siemens Energy,GridTech_revenue,2026-03-31,3067,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_book_to_bill,2026-03-31,2.28,x,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_backlog,2026-03-31,49,EUR_bn,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_margin_before_SI,2026-03-31,17.1,pct,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_orders,2026-06-30,5367,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,comparable yoy +27.6%
+Siemens Energy,GridTech_revenue,2026-06-30,3624,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_book_to_bill,2026-06-30,1.48,x,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_backlog,2026-06-30,51,EUR_bn,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_margin_before_SI,2026-06-30,19.9,pct,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,
+Siemens Energy,GridTech_orders,2024-12-31,5117,EUR_m,https://p3.aprimocdn.net/siemensenergy/f8b7f2d2-e4f2-4fe5-8295-b3ee005765a4/2026-02-11_Earnings-Release-Q1-FY26-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GridTech_orders,2025-03-31,5209,EUR_m,https://p3.aprimocdn.net/siemensenergy/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GridTech_orders,2025-06-30,4218,EUR_m,https://p3.aprimocdn.net/siemensenergy/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf,P,prior-year comp
+Siemens Energy,GasServices_GW_booked,2026-06-30,15,GW,https://p3.aprimocdn.net/siemensenergy/3e846440-66dd-4a56-be75-b49d004e6741/2026-08-05_Q3_Analyst_presentation-pdf_Original%20file.pdf,P,12 GW converted from SRAs; 6 GW shipped
+Siemens Energy,GasServices_firm_backlog_GW,2026-06-30,69,GW,https://p3.aprimocdn.net/siemensenergy/3e846440-66dd-4a56-be75-b49d004e6741/2026-08-05_Q3_Analyst_presentation-pdf_Original%20file.pdf,P,
+Siemens Energy,GasServices_SRA_GW,2026-06-30,26,GW,https://p3.aprimocdn.net/siemensenergy/3e846440-66dd-4a56-be75-b49d004e6741/2026-08-05_Q3_Analyst_presentation-pdf_Original%20file.pdf,P,total commitments 95 GW
+Siemens Energy,GasServices_firm_orders_9M_FY26,2026-06-30,40,GW,https://p3.aprimocdn.net/siemensenergy/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf,P,"pre-close call 2026-09-30: ""around 40 gigawatts of firm gas turbine orders, including 15 gigawatts in Q3"""
+Siemens Energy,GasServices_commitments_target_FYE,2026-09-30,100,GW,https://p3.aprimocdn.net/siemensenergy/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf,P,"""trending towards ... approximately 100 gigawatts by fiscal year-end"""
+Siemens Energy,Q4FY26_order_intake_guidance,2026-09-30,below Q1-Q3 levels,text,https://p3.aprimocdn.net/siemensenergy/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf,P,"quote: ""fourth-quarter order intake is expected to be below the exceptionally strong levels of the first three quarters""; Q4 FY26 results due 2026-11-11"
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2025-03-31,25,units,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,FY2024 full year
+Mitsubishi Heavy Industries,large_frame_GT_orders_GW,2025-03-31,11,GW,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,FY2024 full year
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2025-06-30,8,units,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY25
+Mitsubishi Heavy Industries,large_frame_GT_orders_GW,2025-06-30,4,GW,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY25
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2025-09-30,15,units,https://www.mhi.com/finance/library/result/pdf/fy20252q/presentation.pdf,P,derived: 1H FY25 23 units minus Q1 8
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2025-12-31,8,units,https://www.mhi.com/finance/library/result/pdf/fy20253q/presentation.pdf,P,derived: Q1-3 FY25 31 units minus 1H 23
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2026-03-31,4,units,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,derived: FY25 35 units minus Q1-3 31
+Mitsubishi Heavy Industries,large_frame_GT_orders_units,2026-06-30,10,units,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY26: 4 US + 6 Japan (Q&A)
+Mitsubishi Heavy Industries,large_frame_GT_orders_GW,2026-06-30,4,GW,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY26: 4 US + 6 Japan (Q&A)
+Mitsubishi Heavy Industries,large_frame_GT_orders_units_FY,2026-03-31,35,units,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,FY2025 = 16 GW; FY2024 = 25 units / 11 GW
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2025-03-31,48,units,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_GW,2025-03-31,21,GW,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2025-06-30,53,units,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_GW,2025-06-30,23,GW,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2025-09-30,67,units,https://www.mhi.com/finance/library/result/pdf/fy20252q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2025-12-31,75,units,https://www.mhi.com/finance/library/result/pdf/fy20253q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2026-03-31,74,units,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_GW,2026-03-31,33,GW,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_units,2026-06-30,80,units,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,
+Mitsubishi Heavy Industries,large_frame_GT_contract_backlog_GW,2026-06-30,35,GW,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,
+Mitsubishi Heavy Industries,GTCC_order_intake,2025-06-30,602.5,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY25 (restated for Apr-2026 org change)
+Mitsubishi Heavy Industries,GTCC_order_intake,2026-06-30,930.0,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,Q1 FY26
+Mitsubishi Heavy Industries,GTCC_order_intake_FY,2025-03-31,1474.4,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,FY2024
+Mitsubishi Heavy Industries,GTCC_order_intake_FY,2026-03-31,2652.6,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20254q/presentation.pdf,P,FY2025
+Mitsubishi Heavy Industries,GTCC_order_intake_FY_forecast,2027-03-31,2400.0,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,"FY2026 forecast raised from 2,300 in Aug-2026; still below FY25 actual (company: ""despite YoY decline"")"
+Mitsubishi Heavy Industries,EnergySystems_order_intake_FY_forecast,2027-03-31,3550.0,JPY_bn,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,"raised from 3,450; FY25 actual 3,936.7 -> -386.7 YoY"
+Mitsubishi Heavy Industries,FY2026_H1_results,2026-09-30,未发布,text,https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf,P,not yet released as of 2026-10-30; prior-year 1H released early Nov
+Caterpillar,backlog_total,2025-09-30,39.8,USD_bn,https://www.sec.gov/Archives/edgar/data/18230/000001823025000048/cat-20250930.htm,P,
+Caterpillar,backlog_total,2025-12-31,51.2,USD_bn,https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm,P,
+Caterpillar,backlog_total,2026-03-31,62.7,USD_bn,https://www.sec.gov/Archives/edgar/data/18230/000001823026000021/cat-20260331.htm,P,+11.5B QoQ; largest increase in Power & Energy
+Caterpillar,backlog_total,2026-06-30,72.1,USD_bn,https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/cat-20260630.htm,P,+9.4B QoQ; largest increase in Power & Energy
+Caterpillar,backlog_total,2026-09-30,78,USD_bn,https://www.fool.com/earnings/call-transcripts/2026/10/29/caterpillar-cat-q3-2026-earnings-call-transcript/,S,"call: ""record $78 billion"", +~$38B / 96% YoY; 3Q26 10-Q not yet filed; implies ~+5.9B QoQ"
+Caterpillar,backlog_share_beyond_12m,2026-09-30,42,pct,https://www.fool.com/earnings/call-transcripts/2026/10/29/caterpillar-cat-q3-2026-earnings-call-transcript/,S,derived: call says 58% to be sold within 12 months (59% last quarter)
+Caterpillar,backlog_beyond_12m,2026-06-30,29.2,USD_bn,https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/cat-20260630.htm,P,
+Caterpillar,PowerEnergy_backlog,2026-09-30,未披露,text,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,segment backlog $ not disclosed in release/10-Q text reviewed
+Caterpillar,PowerEnergy_total_sales,2025-03-31,5783,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2025-03-31,1996,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit,2025-03-31,1288,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit_margin,2025-03-31,22.3,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerEnergy_total_sales,2025-06-30,7037,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2025-06-30,2407,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit,2025-06-30,1554,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit_margin,2025-06-30,22.1,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerEnergy_total_sales,2025-09-30,7463,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2025-09-30,2634,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit,2025-09-30,1633,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,recast comp
+Caterpillar,PowerEnergy_segment_profit_margin,2025-09-30,21.9,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerEnergy_total_sales,2026-03-31,7031,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2026-03-31,2817,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit,2026-03-31,1450,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit_margin,2026-03-31,20.6,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000017/ex991toformcat1q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerEnergy_total_sales,2026-06-30,8238,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2026-06-30,3098,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit,2026-06-30,2027,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit_margin,2026-06-30,24.6,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerEnergy_total_sales,2026-09-30,8784,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,
+Caterpillar,PowerEnergy_PowerGeneration_external_sales,2026-09-30,3421,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit,2026-09-30,2143,USD_m,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,
+Caterpillar,PowerEnergy_segment_profit_margin,2026-09-30,24.4,pct,https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm,P,derived: profit/sales
+Caterpillar,PowerGeneration_sales_to_users_yoy,2026-09-30,75,pct,https://www.fool.com/earnings/call-transcripts/2026/10/29/caterpillar-cat-q3-2026-earnings-call-transcript/,S,call: driven by turbines and large reciprocating engines in data center applications
+Caterpillar,order_horizon,2026-09-30,recips into 2029; turbines into 2030,text,https://www.fool.com/earnings/call-transcripts/2026/10/29/caterpillar-cat-q3-2026-earnings-call-transcript/,S,CEO Creed on call
+Cummins,PowerSystems_sales,2025-03-31,1649,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2025-03-31,1001,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_sales,2025-06-30,1889,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2025-06-30,1205,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_sales,2025-09-30,1996,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2025-09-30,1280,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_sales,2025-12-31,1929,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2025-12-31,1245,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,product-line table
+Cummins,PowerSystems_sales,2026-03-31,1956,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2026-03-31,1283,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,product-line table
+Cummins,PowerSystems_sales,2026-06-30,2255,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,product-line table
+Cummins,PowerSystems_power_generation_sales,2026-06-30,1536,USD_m,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,product-line table
+Cummins,PowerSystems_segment_ebitda_margin,2025-09-30,22.9,pct,https://www.sec.gov/Archives/edgar/data/26172/000002617225000036/cmi2025q38-kex99.htm,P,
+Cummins,PowerSystems_segment_ebitda_margin,2025-12-31,21.7,pct,https://www.sec.gov/Archives/edgar/data/26172/000002617226000004/cmi2025q48-kex99.htm,P,
+Cummins,PowerSystems_segment_ebitda_margin,2026-03-31,29.5,pct,https://www.sec.gov/Archives/edgar/data/26172/000002617226000013/cmi2026q18-kex99.htm,P,
+Cummins,PowerSystems_segment_ebitda_margin,2026-06-30,24.5,pct,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,
+Cummins,PowerSystems_backlog,2026-06-30,未披露,text,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,not disclosed in release
+Cummins,Q3_2026_results,2026-09-30,未发布,text,https://www.sec.gov/Archives/edgar/data/26172/000002617226000026/cmi2026q28-kex99.htm,P,no Q3-2026 8-K on EDGAR as of 2026-10-30; 3Q25 was released 2025-11-06
+Vertiv,net_sales,2025-06-30,2638,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000006/q22025exhibit991vrt7302025.htm,P,
+Vertiv,net_sales,2025-09-30,2676,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm,P,
+Vertiv,net_sales,2025-12-31,2880,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm,P,
+Vertiv,net_sales,2026-03-31,2650,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm,P,
+Vertiv,net_sales,2026-06-30,3274,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm,P,
+Vertiv,net_sales,2026-09-30,4313,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,3Q26: +61% (55% organic)
+Vertiv,organic_orders_yoy,2025-06-30,~15,pct,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000006/q22025exhibit991vrt7302025.htm,P,
+Vertiv,organic_orders_yoy,2025-09-30,~60,pct,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm,P,+20% QoQ
+Vertiv,organic_orders_yoy,2025-12-31,~252,pct,https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm,P,+117% QoQ; TTM +81%
+Vertiv,organic_orders_yoy,2026-03-31,未披露,pct,https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm,P,release silent on orders
+Vertiv,organic_orders_yoy,2026-06-30,未披露,pct,https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm,P,release silent on orders
+Vertiv,organic_orders_yoy,2026-09-30,>100,pct,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,"headline ""Organic Orders Growth over 100%""; call: will not share orders data going forward"
+Vertiv,book_to_bill,2025-06-30,~1.2,x,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000006/q22025exhibit991vrt7302025.htm,P,
+Vertiv,backlog,2025-06-30,8.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000006/q22025exhibit991vrt7302025.htm,P,
+Vertiv,book_to_bill,2025-09-30,~1.4,x,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm,P,
+Vertiv,backlog,2025-09-30,9.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm,P,
+Vertiv,book_to_bill,2025-12-31,~2.9,x,https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm,P,
+Vertiv,backlog,2025-12-31,15.0,USD_bn,https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm,P,
+Vertiv,book_to_bill,2026-03-31,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm,P,
+Vertiv,backlog,2026-03-31,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm,P,
+Vertiv,book_to_bill,2026-06-30,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm,P,
+Vertiv,backlog,2026-06-30,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm,P,
+Vertiv,book_to_bill,2026-09-30,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,
+Vertiv,backlog,2026-09-30,未披露,text,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,
+Vertiv,deferred_revenue_current,2025-03-31,1095.1,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2025-06-30,1257.3,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2025-09-30,1131.9,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2025-12-31,1814.7,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2026-03-31,2461.8,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2026-06-30,3633.7,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,deferred_revenue_current,2026-09-30,4120.5,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json,P,us-gaap:ContractWithCustomerLiabilityCurrent; proxy for customer prepayments
+Vertiv,adj_operating_margin,2026-09-30,25.2,pct,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,non-GAAP
+Vertiv,FY2026_guide_net_sales_mid,2026-10-28,14650,USD_m,https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm,P,organic +38% mid; Q4 guide organic +49-51%
+Eaton,ElectricalAmericas_backlog,2025-09-30,12009,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000036/etn-20250930.htm,P,pre-2026 segment basis
+Eaton,ElectricalAmericas_backlog_organic_yoy,2025-09-30,9,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000036/etn-20250930.htm,P,pre-2026 segment basis
+Eaton,ElectricalAmericas_orders_TTM_organic_yoy,2025-09-30,7,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000036/etn-20250930.htm,P,trailing-12-month firm orders
+Eaton,ElectricalAmericas_book_to_bill_TTM,2025-09-30,1.1,x,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000036/etn-20250930.htm,P,avg of last 4 quarters
+Eaton,ElectricalAmericas_backlog,2025-12-31,13246,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm,P,pre-2026 segment basis
+Eaton,ElectricalAmericas_backlog_organic_yoy,2025-12-31,19,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm,P,pre-2026 segment basis
+Eaton,ElectricalAmericas_orders_TTM_organic_yoy,2025-12-31,16,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm,P,trailing-12-month firm orders
+Eaton,ElectricalAmericas_book_to_bill_TTM,2025-12-31,1.2,x,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm,P,avg of last 4 quarters
+Eaton,ElectricalAmericas_backlog,2026-03-31,14459,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm,P,2026 segment basis; reported backlog +44% incl. acquisitions
+Eaton,ElectricalAmericas_backlog_organic_yoy,2026-03-31,32,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm,P,2026 segment basis; reported backlog +44% incl. acquisitions
+Eaton,ElectricalAmericas_orders_TTM_organic_yoy,2026-03-31,42,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm,P,trailing-12-month firm orders
+Eaton,ElectricalAmericas_book_to_bill_TTM,2026-03-31,1.2,x,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm,P,avg of last 4 quarters
+Eaton,ElectricalAmericas_backlog,2026-06-30,15175,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm,P,2026 segment basis
+Eaton,ElectricalAmericas_backlog_organic_yoy,2026-06-30,33,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm,P,2026 segment basis
+Eaton,ElectricalAmericas_orders_TTM_organic_yoy,2026-06-30,41,pct,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm,P,trailing-12-month firm orders
+Eaton,ElectricalAmericas_book_to_bill_TTM,2026-06-30,1.3,x,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm,P,avg of last 4 quarters
+Eaton,ElectricalAmericas_sales,2025-09-30,3410,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000033/etn09302025exhibit99.htm,P,
+Eaton,ElectricalAmericas_sales,2025-12-31,3506,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000002/etn12312025exhibit99.htm,P,
+Eaton,ElectricalAmericas_sales,2026-03-31,3600,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000010/etn03312026exhibit99.htm,P,
+Eaton,ElectricalAmericas_sales,2026-06-30,3951,USD_m,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000027/etn06302026exhibit99.htm,P,
+Eaton,total_backlog,2025-09-30,18.4,USD_bn,https://www.sec.gov/Archives/edgar/data/1551182/000155118225000036/etn-20250930.htm,P,
+Eaton,total_backlog,2025-12-31,19.8,USD_bn,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm,P,
+Eaton,total_backlog,2026-03-31,22.8,USD_bn,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm,P,
+Eaton,total_backlog,2026-06-30,24.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm,P,
+Eaton,data_center_orders_growth,2026-06-30,未披露(定性),text,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000027/etn06302026exhibit99.htm,P,"quote: ""While data centers remain a key growth driver, we are benefiting from robust demand across our end markets."""
+Eaton,Q3_2026_results,2026-09-30,未发布,text,https://www.sec.gov/Archives/edgar/data/1551182/000155118226000027/etn06302026exhibit99.htm,P,no Q3-2026 8-K on EDGAR as of 2026-10-30; 3Q25 was released 2025-11-04
+Bloom Energy,revenue,2025-03-31,326.0,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,
+Bloom Energy,revenue,2025-06-30,401.2,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,per 10-Q/A
+Bloom Energy,revenue,2025-09-30,519.0,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,
+Bloom Energy,revenue,2025-12-31,777.7,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,derived: FY 2024.0 minus 9M 1246.3
+Bloom Energy,revenue,2026-03-31,751.1,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,
+Bloom Energy,revenue,2026-06-30,1065.4,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,per 10-Q/A
+Bloom Energy,revenue,2026-09-30,1235.8,USD_m,https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json,P,+138.1% YoY
+Bloom Energy,customer_deposits,2025-12-31,78.2,USD_m,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm,P,
+Bloom Energy,customer_deposits,2026-09-30,661.4,USD_m,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm,P,"""new deposits associated with recently executed customer agreements"""
+Bloom Energy,unsatisfied_performance_obligations,2025-12-31,394.4,USD_m,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm,P,narrow RPO (product+install); not the commercial backlog
+Bloom Energy,unsatisfied_performance_obligations,2026-09-30,661.2,USD_m,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm,P,narrow RPO; recognized within 1-2 years
+Bloom Energy,commercial_backlog,2026-09-30,未披露,text,https://www.fool.com/earnings/call-transcripts/2026/10/22/bloom-energy-be-q3-2026-earnings-call-transcript/,S,"call: ""our backlog is continuing to expand faster than our revenue"" (no $ figure)"
+Bloom Energy,gross_margin,2026-09-30,33.8,pct,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm,P,non-GAAP 34.5%
+Bloom Energy,FY2026_guide_revenue,2026-10-22,4.4-4.6,USD_bn,https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm,P,third raise this year
+Schneider Electric,revenue,2026-09-30,~11.5,EUR_bn,https://www.utilitydive.com/news/schneider-electric-data-center-earnings/833358/,S,press: ~+17% organic; record quarter; primary release not retrieved
+Schneider Electric,data_center_orders_growth,2026-09-30,triple-digit,text,https://www.utilitydive.com/news/schneider-electric-data-center-earnings/833358/,S,CFO per press: triple-digit DC demand growth in 3 of last 4 quarters; no exposure split to neoclouds
