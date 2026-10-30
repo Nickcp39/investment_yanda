@@ -170,6 +170,8 @@ def main():
         c["age_days"] = (today - dt.date.fromisoformat(c["as_of"])).days if re.match(r"\d{4}-\d{2}-\d{2}$", c["as_of"]) else None
         c["pct_since_card"] = (c["price"] / c["card_price"] - 1) * 100 if (c.get("price") and c.get("card_price")) else None
         flags = []
+        if c["group"] == "A" and c.get("card_price") and c["buy_below"] and c["card_price"] > c["buy_below"]:
+            flags.append("新过线（写卡时在线上）")
         if c["age_days"] is not None and c["age_days"] > STALE_DAYS:
             flags.append(f"旧卡 {c['age_days']}d")
         if c["currency"] and c.get("yccy") and c["currency"].upper() != str(c["yccy"]).upper().replace("GBP", "GBP"):
