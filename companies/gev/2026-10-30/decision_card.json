@@ -1,0 +1,673 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-10-29",
+  "run_date": "2026-10-30",
+  "batch": "single_refresh_gev_q3_2026",
+  "pipeline_version": "lean-6module-v1.1",
+  "weights_version": "none",
+  "run_type": "refresh",
+  "supersedes": "companies/gev/2026-09-05/decision_card.json",
+  "refresh_of": "companies/gev/2026-09-05",
+  "status": "DECISION_DRAFT",
+  "completeness_pct": 80,
+  "as_of_note": "Folder date 2026-10-30 = run_date (run started ~06:00 ET on 10-30, before the session). as_of is the price date: the 2026-10-29 close, the last complete session. Q3 2026 results and 10-Q were both filed on the morning of 2026-10-28 before the open.",
+  "as_of_price": 887.85,
+  "price_sources": [
+    "yahoo_chart_api",
+    "nasdaq_api"
+  ],
+  "price_source_values": {
+    "yahoo_close": 887.85,
+    "yahoo_adjclose": 887.85,
+    "nasdaq_close": 887.85
+  },
+  "price_max_pairwise_delta_pct": 0.0,
+  "shares_outstanding_cover": {
+    "total": 264677066,
+    "as_of": "2026-09-30",
+    "source": "Q3 2026 10-Q cover",
+    "cross_check_stockanalysis": 263277066,
+    "cross_check_note": "stockanalysis = cover minus 1.4M shares repurchased 2026-10-01..10-23 (press release); delta 0.53%",
+    "q3_diluted_weighted_m": 268,
+    "prior_card_cover_2026_06_30": 266333581
+  },
+  "as_of_market_cap": 234993533048,
+  "as_of_market_cap_usd_b": 234.99,
+  "price_context": {
+    "52wk_high": 1195.94,
+    "52wk_high_date": "2026-07-06 (intraday)",
+    "52wk_low": 530.16,
+    "52wk_low_date": "2025-11-21 (intraday)",
+    "pct_off_52wk_high": -25.8,
+    "pct_above_52wk_low": 67.5,
+    "prior_card_price_2026-09-04_close": 941.95,
+    "pct_vs_prior_card": -5.7,
+    "recent_path": "10-21 925.92 -> 10-22 827.42 (-10.6%, cause not verified, not attributed) -> 10-23 815.00 (intraday low 796.41, above the old 786 line) -> 10-26 855.12 -> 10-27 895.08 -> 10-28 878.03 (earnings day) -> 10-29 887.85"
+  },
+  "latest_reported_period": "Q3 2026 (ended 2026-09-30); 8-K 0001996810-26-000162 accepted 2026-10-28 10:16:59 UTC; 10-Q 0001996810-26-000163 accepted 2026-10-28 10:19:15 UTC",
+  "ten_q_status": {
+    "available": true,
+    "filed": "2026-10-28",
+    "used_for": [
+      "contract liabilities",
+      "cash flow statement and MD&A",
+      "borrowings",
+      "cover share count",
+      "RPO",
+      "Trench (Part II Item 5)",
+      "repurchase table"
+    ]
+  },
+  "balance_sheet_2026_09_30_usd_m": {
+    "cash_incl_restricted": 16764,
+    "borrowings_total": 2826,
+    "reported_net_cash": 13938,
+    "contract_liabilities_and_current_deferred_income": 45669,
+    "of_which_power": 33163,
+    "of_which_electrification": 9976,
+    "of_which_wind": 2529,
+    "contract_liabilities_2026_06_30": 39944,
+    "contract_liabilities_2025_12_31": 25774,
+    "reported_net_cash_2026_06_30": 10271
+  },
+  "ev_usd_b": 221.06,
+  "latest_quarter": {
+    "orders_usd_m": 29318,
+    "orders_organic_yoy_pct": 96,
+    "revenue_usd_m": 12642,
+    "revenue_yoy_pct": 27,
+    "revenue_organic_yoy_pct": 18,
+    "adj_ebitda_usd_m": 1943,
+    "adj_ebitda_margin_pct": 15.4,
+    "adj_organic_ebitda_margin_pct": 14.7,
+    "prior_quarter_adj_ebitda_margin_pct": 11.3,
+    "net_income_usd_m": 1289,
+    "diluted_eps": 4.81,
+    "cfo_usd_m": 6057,
+    "fcf_usd_m": 5409,
+    "contract_liability_inflow_usd_m": 5816,
+    "contract_liability_inflow_note": "9M 19,511 (Q3 10-Q) minus H1 13,695 (Q2 10-Q)",
+    "fcf_ex_contract_liability_inflow_usd_m": -407,
+    "rpo_usd_m": 196721,
+    "rpo_equipment_usd_m": 104054,
+    "rpo_equipment_recognised_1y_2y_5y_pct": [
+      33,
+      60,
+      97
+    ],
+    "rpo_services_usd_m": 92667,
+    "power": {
+      "orders_usd_m": 21780,
+      "orders_organic_yoy_pct": 178,
+      "revenue_usd_m": 6067,
+      "segment_ebitda_usd_m": 1297,
+      "margin_pct": 21.4
+    },
+    "electrification": {
+      "orders_usd_m": 5371,
+      "orders_organic_yoy_pct": -9,
+      "revenue_usd_m": 3862,
+      "segment_ebitda_usd_m": 739,
+      "margin_pct": 19.1,
+      "equipment_backlog_usd_b": 42.2,
+      "data_center_orders_q3_usd_b": "roughly 1.4 (transcript, S)",
+      "data_center_orders_q1_usd_b": 2.4
+    },
+    "wind": {
+      "orders_usd_m": 2140,
+      "revenue_usd_m": 2741,
+      "segment_ebitda_usd_m": 72,
+      "margin_pct": 2.6,
+      "segment_ebitda_9m_usd_m": -585
+    },
+    "gas_gw": {
+      "backlog_plus_sra": 122,
+      "backlog": 64,
+      "sra": 58,
+      "new_signings": 11,
+      "new_signings_sra": 8,
+      "new_signings_orders": 3,
+      "sra_converted": 13,
+      "shipped": 5,
+      "signings_series_4q25_to_3q26": [
+        24,
+        21,
+        20,
+        11
+      ],
+      "ye2026_target": ">=130 (was >=125)"
+    }
+  },
+  "nine_months_2026_usd_m": {
+    "cfo": 16737,
+    "contract_liability_inflow": 19511,
+    "fcf": 15307,
+    "fcf_ex_contract_liability_inflow": -4204,
+    "buybacks": 5296,
+    "dividends": 406,
+    "prolec_net_cash_paid": 4877,
+    "new_debt": 2567,
+    "cash_taxes_paid": 2681,
+    "inventory_build": 2052
+  },
+  "guidance_fy2026": {
+    "as_of": "2026-10-28",
+    "revenue_usd_b": [
+      46.5,
+      47.5
+    ],
+    "adj_ebitda_margin_pct": [
+      13.5,
+      14.5
+    ],
+    "fcf_usd_b": [
+      16,
+      17
+    ],
+    "prior_2026_07_22": {
+      "revenue_usd_b": [
+        45.5,
+        46.5
+      ],
+      "adj_ebitda_margin_pct": [
+        12,
+        14
+      ],
+      "fcf_usd_b": [
+        11.5,
+        12.5
+      ]
+    },
+    "segments": "Power organic revenue +19-21%, margin 19-21% (was 17-19%); Electrification revenue $14.5-15.0B, margin 18-20% trending to high end; Wind organic revenue down mid-single digits, segment EBITDA losses $400-500M (was ~$400M); corporate costs $450-500M",
+    "implied_adj_ebitda_usd_b": [
+      6.28,
+      6.89
+    ],
+    "implied_q4_margin_pct": [
+      16.3,
+      19.4
+    ],
+    "implied_q4_fcf_usd_b": [
+      0.7,
+      1.7
+    ],
+    "fcf_to_ebitda_x": [
+      2.3,
+      2.7
+    ]
+  },
+  "outlook_2028": {
+    "source": "4Q25 8-K EX-99 filed 2026-01-28 (not restated or changed in Q3 materials)",
+    "revenue_usd_b": 56,
+    "prior_revenue_usd_b": 52,
+    "adj_ebitda_margin_pct": 20,
+    "cumulative_fcf_2025_2028_usd_b": ">=24",
+    "segment_margins_pct": {
+      "power": 22,
+      "electrification": 22,
+      "wind": 6
+    },
+    "prolec_revenue_in_2028_usd_b": "approximately 4",
+    "implied_2027_2028_fcf_if_floor_unchanged_usd_b": [
+      3.3,
+      4.3
+    ]
+  },
+  "capital_allocation": {
+    "q3_buyback_shares_m": 1.718,
+    "q3_buyback_usd_m": 1630,
+    "q3_avg_price": 948.72,
+    "oct_1_23_buyback_usd_m": 1316,
+    "oct_1_23_buyback_shares_m": 1.4,
+    "oct_avg_price": 924,
+    "authorization_usd_b": 20,
+    "authorization_prior_usd_b": 10,
+    "authorization_remaining_usd_b": 10.1,
+    "dividend_quarterly": 0.5,
+    "trench": {
+      "signed": "2026-10-25",
+      "price_eur_b": 8.0,
+      "price_usd_b_at_1_12": 9.0,
+      "multiple": "13x 2028E adjusted EBITDA before synergies",
+      "trench_2028e_adj_ebitda_usd_b": 0.7,
+      "funding": "about half cash, half debt",
+      "expected_close": "late 2027"
+    },
+    "fitch": "A- (upgraded 2026-08-12)",
+    "cfo_succession": "Ken Parks retires 2027-04-02; Claire McDonough CFO from 2027-01-01 (8-K 2026-08-27)"
+  },
+  "reproduction_of_prior_card": {
+    "inputs": "base 2028 EBITDA 8.5B x 28 + free net cash 9B, 263M shares, horizon 2.32y, price 941.95",
+    "base_per_share": 939.16,
+    "base_irr_pct": -0.13,
+    "buy_below_8pct": 785.59,
+    "bear_per_share": 632.08,
+    "bear_irr_pct": -15.8,
+    "bull_per_share": 1333.85,
+    "bull_irr_pct": 16.2,
+    "matches_prior_card": true,
+    "note": "prior md rounds bear to -15.9% and bull to +16.0%; prior CSV -0.158 / 0.1618; reproduction follows the CSV; buy_below unaffected"
+  },
+  "bridge_to_buy_below": [
+    {
+      "step": "0 reproduce 09-05",
+      "buy_below": 785.59,
+      "delta": 0.0,
+      "kind": "-"
+    },
+    {
+      "step": "1 time roll: as_of 2026-10-29, horizon 2.17y",
+      "buy_below": 794.72,
+      "delta": 9.13,
+      "kind": "mechanical (time)"
+    },
+    {
+      "step": "2 2028 anchor 52B -> 56B (x20% = 10.4B -> 11.2B), base ratio 81.7% kept",
+      "buy_below": 853.62,
+      "delta": 58.9,
+      "kind": "method (consistency: prior net cash measured after the Prolec purchase, prior anchor excluded Prolec ~4B revenue; data public since 2026-01-28, not Q3 business news)"
+    },
+    {
+      "step": "3 free net cash kept at 9B (Q3 net-cash build +3.67B < contract-liability build +5.73B)",
+      "buy_below": 853.62,
+      "delta": 0.0,
+      "kind": "method kept (09-05 float correction)"
+    },
+    {
+      "step": "4 shares: 10-Q cover for market cap; 2028 assumption 263M kept",
+      "buy_below": 853.62,
+      "delta": 0.0,
+      "kind": "data"
+    },
+    {
+      "step": "5 Trench treated as value-neutral at purchase price",
+      "buy_below": 853.62,
+      "delta": 0.0,
+      "kind": "method"
+    },
+    {
+      "step": "6 Q3 business evidence: base achievement ratio not changed (two-sided evidence)",
+      "buy_below": 853.62,
+      "delta": 0.0,
+      "kind": "business"
+    },
+    {
+      "step": "final (rounded)",
+      "buy_below": 854.0,
+      "delta_total_vs_prior": 68.0
+    }
+  ],
+  "buy_below_change_attribution": {
+    "mechanical_time": 9.1,
+    "method_anchor_consistency": 58.9,
+    "business_q3": 0.0,
+    "rounding": 0.4,
+    "largest_mover": "2028 anchor 52B -> 56B, a method/consistency correction, not Q3 business"
+  },
+  "load_bearing_assumptions": [
+    {
+      "name": "2028 adj EBITDA anchor",
+      "old": "52B x 20% = 10.4B",
+      "new": "56B x 20% = 11.2B",
+      "changed": true,
+      "reason": "company raised outlook on 2026-01-28 to include Prolec GE; both prior cards missed it",
+      "primary_quote": "For GE Vernova's outlook by 2028, the company now expects revenue of $56 billion, up from $52 billion, with low-teens organic growth, adjusted EBITDA margin* of 20%, and cumulative free cash flow* of at least $24 billion, up from at least $22 billion.",
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm"
+    },
+    {
+      "name": "base achievement ratio",
+      "old": "81.7% (8.5/10.4)",
+      "new": "81.7% (unchanged)",
+      "changed": false,
+      "reason": "Q3 margin evidence pushes up (15.4%, Power 21.4%) while demand evidence pushes the exit multiple down (signings 24->21->20->11 GW, data-centre Electrification orders ~1.4B in Q3); cross-check: 56B x FY26-guided segment margins = 9.04B vs base 9.15B; taking both sides (H2 margins + 25x) gives 859 vs 854"
+    },
+    {
+      "name": "free net cash 2028",
+      "old": "bear 5 / base 9 / bull 14 (B)",
+      "new": "unchanged",
+      "changed": false,
+      "reason": "Q3 10-Q: 9M working-capital inflow driven by contract liabilities and current deferred income of $19.5B; 9M FCF 15.3B < that inflow; Q3 reported net cash +3.67B < contract liabilities +5.73B",
+      "primary_quote": "an increase from contract liabilities and current deferred income of $17.1 billion, primarily due to higher down payments on orders and slot reservation agreements at Power, higher down payments at Electrification, and lower revenue recognition at Wind",
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm"
+    },
+    {
+      "name": "exit EV/EBITDA",
+      "old": "25/28/32x",
+      "new": "unchanged",
+      "changed": false
+    },
+    {
+      "name": "2028 shares",
+      "old": "265/263/260M",
+      "new": "unchanged",
+      "changed": false,
+      "reason": "outstanding already ~263.3M after October buybacks; buybacks near base value are ~neutral (+$3 if the remaining 10.1B authorization is used)"
+    },
+    {
+      "name": "horizon",
+      "old": "to 2028-12-31 (2.32y)",
+      "new": "to 2028-12-31 (2.17y)",
+      "changed": false,
+      "reason": "same method; the coordinator brief said '5y IRR' but the prior card's method is end-2028; a 5y horizon would need a 2031 anchor that does not exist (2030 guide pending Capital Markets Day)"
+    }
+  ],
+  "scenarios_to_2028": {
+    "horizon_years": 2.17,
+    "bear": {
+      "ebitda_2028_usd_b": 7.0,
+      "exit_multiple": 25,
+      "free_net_cash_usd_b": 5,
+      "shares_m": 265,
+      "per_share": 679.25,
+      "irr_pct": -11.6
+    },
+    "base": {
+      "ebitda_2028_usd_b": 9.154,
+      "exit_multiple": 28,
+      "free_net_cash_usd_b": 9,
+      "shares_m": 263,
+      "per_share": 1008.77,
+      "irr_pct": 6.1
+    },
+    "bull": {
+      "ebitda_2028_usd_b": 11.2,
+      "exit_multiple": 32,
+      "free_net_cash_usd_b": 14,
+      "shares_m": 260,
+      "per_share": 1432.31,
+      "irr_pct": 24.7
+    }
+  },
+  "sensitivities_buy_below": [
+    {
+      "change": "cross-check: 56B x FY26-guided segment margins (9.04B)",
+      "buy_below": 843.0
+    },
+    {
+      "change": "base at H2-2026 exit margins (10.33B, 92% of target)",
+      "buy_below": 959.1
+    },
+    {
+      "change": "base ratio 90% (10.08B)",
+      "buy_below": 937.1
+    },
+    {
+      "change": "exit multiple 28x -> 25x",
+      "buy_below": 765.3
+    },
+    {
+      "change": "H2 margins + 25x (both sides of Q3 evidence)",
+      "buy_below": 859.4
+    },
+    {
+      "change": "credit Trench at 28x (+0.7B EBITDA, -9.0B net cash) - NOT adopted (multiple arbitrage)",
+      "buy_below": 887.7
+    },
+    {
+      "change": "roll actual Q3 buybacks (free net cash -2.06B, shares x 264.68/266.33)",
+      "buy_below": 852.3
+    },
+    {
+      "change": "use remaining 10.1B authorization at ~$924",
+      "buy_below": 856.7
+    },
+    {
+      "change": "free net cash to zero",
+      "buy_below": 824.7
+    },
+    {
+      "change": "WRONG basis for reference: reported net cash 13.94B as free net cash",
+      "buy_below": 869.5
+    }
+  ],
+  "hurdle_prices": {
+    "8pct": 854,
+    "10pct": 820,
+    "12pct": 789
+  },
+  "price_vs_buy_below_pct": 4.0,
+  "module_signals": [
+    {
+      "module": "M1 Evidence Spine",
+      "signal": 2,
+      "prior": 1,
+      "confidence": "high",
+      "finding": "10-Q available the same morning; segment orders/revenue/EBITDA, contract liabilities by segment and both balance sheets are primary"
+    },
+    {
+      "module": "M2 Theme / Mechanism",
+      "signal": 2,
+      "prior": 2,
+      "confidence": "med",
+      "finding": "orders 29.3B (+96% organic), RPO 196.7B, 122 GW; but new gas signings 24->21->20->11 GW and data-centre Electrification orders ~1.4B in Q3 (S) - first deceleration"
+    },
+    {
+      "module": "M3 Profit Pool / Durability",
+      "signal": 2,
+      "prior": 2,
+      "confidence": "high",
+      "finding": "Power margin 21.4% vs 22% 2028 target; 2026 gas order pricing ~+50% per kW vs 2025 (S); backlog now larger than SRA; 2032 slots sold"
+    },
+    {
+      "module": "M4 Financial Reality",
+      "signal": 1,
+      "prior": 0,
+      "confidence": "high",
+      "finding": "adj EBITDA margin 11.3% -> 15.4%, FY26 guide raised on all three lines; but 9M FCF ex contract-liability inflow is -4.2B and FY26 FCF/EBITDA is 2.3-2.7x - float dependence not reduced"
+    },
+    {
+      "module": "M5 Inversion / Trap",
+      "signal": -1,
+      "prior": -1,
+      "confidence": "med",
+      "finding": "9M buybacks 5.3B + Prolec 4.9B funded by customer float; Trench 9.0B half debt-funded; Q4 implied FCF only 0.7-1.7B; Wind 9M loss 585M vs 600M K-C threshold"
+    },
+    {
+      "module": "M6 Price / Position",
+      "signal": -1,
+      "prior": -1,
+      "confidence": "med",
+      "finding": "base IRR +6.1% to end-2028 < 8%; price 4.0% above buy_below 854"
+    }
+  ],
+  "module_signal_net": 5,
+  "capital_cycle": {
+    "applicable": "partial",
+    "stage": "mid (first deceleration in new signings)",
+    "supply_barrier": "high (slots sold into 2032)",
+    "caution": "LOW - new signings halved quarter on quarter; watch K-G"
+  },
+  "business_verdict": "exceptional",
+  "new_money_verdict": "WATCH",
+  "existing_position_verdict": "no position (position_book.md has no GEV); HOLD if held",
+  "suggested_initial_size_pct": 0,
+  "suggested_max_size_pct": 7,
+  "prior_new_money_verdict": "WATCH",
+  "verdict_flipped": false,
+  "verdict_flip_reason": "price 887.85 is 4.0% above the re-derived 854 line; the gap narrowed from ~20% mainly through the method correction (+59) and the price fall (-5.7%), not Q3 business",
+  "is_buy_under_lab_rules": false,
+  "is_buy_reason": "BUY requires verdict >= STARTER AND price <= buy_below (position_book.md). Verdict is WATCH and price is above buy_below.",
+  "buy_below_price": 854.0,
+  "buy_below_prior": 786.0,
+  "binding_constraint": "PRICE (4.0% above the line) plus undiminished float dependence (9M FCF 15.3B entirely from 19.5B contract-liability inflow; ex-float -4.2B)",
+  "single_judgment_that_flips_verdict": "raising the base achievement ratio from 81.7% (FY26 full-year margins) to ~90-92% (H2-2026 exit margins) moves buy_below to ~937-959, above the price. Not adopted; would be a STARTER proposal requiring an independent checker.",
+  "kill_criteria": [
+    {
+      "id": "K-A",
+      "rule": "gas turbine pricing negative YoY for two consecutive quarters",
+      "prior": "green",
+      "now": "green",
+      "evidence": "Q3 orders priced >20% above 4Q25; FY26 ~+50% per kW (S); 'favorable price' (P)"
+    },
+    {
+      "id": "K-B",
+      "rule": "slot cancellations without firm replacement",
+      "prior": "green",
+      "now": "green",
+      "evidence": "SRA 63->58 GW from 13 GW converted to orders; total 116->122 GW; 'No, David, we're not' (S)"
+    },
+    {
+      "id": "K-C",
+      "rule": "Wind FY2026 losses > $600M with no credible recovery plan",
+      "prior": "green",
+      "now": "yellow",
+      "evidence": "9M segment EBITDA -585M; FY guide widened to -400 to -500M, requiring Q4 +85 to +185M"
+    },
+    {
+      "id": "K-D",
+      "rule": "hyperscaler 2027 capex -30% with Electrification orders -40%",
+      "prior": "green",
+      "now": "green (first crack)",
+      "evidence": "Electrification orders -9% organic in Q3; data-centre orders Q1 2.4B (P) -> Q3 ~1.4B (S)"
+    },
+    {
+      "id": "K-E",
+      "rule": "contract liabilities stop growing or reverse while reported FCF stays in guide",
+      "prior": "yellow",
+      "now": "yellow",
+      "evidence": "contract liabilities +5.7B in Q3 (still growing); Q4 implied FCF 0.7-1.7B; 9M ex-float FCF -4.2B"
+    },
+    {
+      "id": "K-F",
+      "rule": "adjusted EBITDA margin fails to progress toward the 2028 path",
+      "prior": "yellow",
+      "now": "green",
+      "evidence": "11.3% -> 15.4%; FY26 guide 13.5-14.5%"
+    },
+    {
+      "id": "K-G",
+      "rule": "NEW: gas new signings (SRA + orders) < 10 GW for two consecutive quarters, or year-end 2026 GW under contract < 125",
+      "prior": null,
+      "now": "yellow",
+      "evidence": "signings 24->21->20->11 GW; CEO expects Q4 '13GW plus' (S); signings are also the source of new down payments (links to K-E)"
+    }
+  ],
+  "starter_conditions": {
+    "path_1_price": [
+      "price <= 854 (recompute if FY26 10-K changes free net cash or the 2028 anchor)",
+      "K-C, K-E, K-G not red",
+      "independent checker sign-off"
+    ],
+    "path_2_evidence_then_reexamine_base_ratio": [
+      "FY26 Q4 adj EBITDA margin >= 16%, Power Q4 >= 21%, Wind Q4 positive",
+      "FY26 FCF within 16-17B and year-end contract liabilities above 45.7B",
+      "Q4 new gas signings >= 13 GW",
+      "independent checker sign-off"
+    ]
+  },
+  "prior_card_triggers_status": {
+    "price_le_786": "not met (period low 796.41 intraday on 10-23)",
+    "margin_converging": "met",
+    "fcf_sustained_after_contract_liability_normalises": "not met / not yet testable"
+  },
+  "runner_dissent": "Discomfort runs both ways. Bullish: Power is already at 21.4%, H2 exit margins are close to the 2028 target and 2026 orders are priced ~50% higher per kW (S); if the base should use H2 margins the right line is ~$937-959 and the price is already below it (and traded at $815-827 on 10-22/23). Bearish: the same quarter saw new signings fall from 20 to 11 GW, data-centre Electrification orders halve, and the CEO guide 2027 quarters to look like 3Q/4Q; float is the company's entire cash source (9M ex-float FCF -$4.2B) and it is being spent on buybacks and M&A; the unchanged >=$24B 2025-2028 cumulative FCF floor would leave only $3-4B for 2027-2028 - the shape of a float unwind; the 28x exit multiple was set at peak signings. I keep both load-bearing assumptions: margin evidence pushes EBITDA up, demand evidence pushes the multiple down, and taking both gives $859 vs $854. The conclusion is fragile only to taking one side. Next test: FY26 Q4 (late January 2027).",
+  "open_gaps": [
+    "SRA deposit refundability terms not disclosed in the 10-Q",
+    "cause of the -10.6% move on 2026-10-22 not verified",
+    "Q3 data-centre Electrification orders (~1.4B) only in the transcript (S)",
+    "pricing +50%, 'No, David, we're not', 2027 signing cadence, H2 margins as 2027 jump-off point - transcript only (S)",
+    "whether the >=24B 2025-2028 cumulative FCF floor will be revised",
+    "Trench 2028E EBITDA ~0.7B is a GE Vernova forecast based on Trench-provided data, non-GAAP",
+    "FY26 Q4: Wind profitability, FCF landing, year-end contract liabilities"
+  ],
+  "sources_used": [
+    {
+      "source_id": "P01",
+      "tier": "P",
+      "public_date": "2026-10-28",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm",
+      "what": "3Q26 press release: orders, revenue, adj EBITDA, segments, GW, FY26 guidance, buybacks, Trench"
+    },
+    {
+      "source_id": "P02",
+      "tier": "P",
+      "public_date": "2026-10-28",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm",
+      "what": "3Q26 10-Q: cover shares 264,677,066; balance sheet; cash flow statement; MD&A contract-liability quote; borrowings; RPO; Trench; repurchase table"
+    },
+    {
+      "source_id": "P03",
+      "tier": "P",
+      "public_date": "2026-10-28",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gev-20261028.htm",
+      "what": "8-K Items 2.02/9.01"
+    },
+    {
+      "source_id": "P04",
+      "tier": "P",
+      "public_date": "2026-07-22",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm",
+      "what": "2Q26 10-Q: 6-30 cash, borrowings, contract liabilities, H1 contract-liability inflow 13,695, cover 266,333,581"
+    },
+    {
+      "source_id": "P05",
+      "tier": "P",
+      "public_date": "2026-01-28",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+      "what": "2028 outlook: revenue 56B (was 52B), adj EBITDA margin 20%, cumulative FCF >=24B; segment margins; FY25 adj EBITDA 3,196M, FCF 3,710M"
+    },
+    {
+      "source_id": "P06",
+      "tier": "P",
+      "public_date": "2026-07-22",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+      "what": "Q2 signings 20 GW; data-centre orders over 5B YTD; guidance history"
+    },
+    {
+      "source_id": "P07",
+      "tier": "P",
+      "public_date": "2026-04-22",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm",
+      "what": "Q1 signings 21 GW; data-centre Electrification orders 2.4B; Q1 margin 9.6%"
+    },
+    {
+      "source_id": "P08",
+      "tier": "P",
+      "public_date": "2026-08-27",
+      "url_or_path": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000153/gev-20260825.htm",
+      "what": "8-K Item 5.02 CFO succession"
+    },
+    {
+      "source_id": "P09",
+      "tier": "P",
+      "public_date": "2026-10-28",
+      "url_or_path": "https://www.gevernova.com/sites/default/files/gev_webcast_presentation_10282026.pdf",
+      "what": "3Q26 presentation: Trench financials, repurchase summary, trending metrics"
+    },
+    {
+      "source_id": "P10",
+      "tier": "P",
+      "public_date": "2026-10-30",
+      "url_or_path": "https://data.sec.gov/submissions/CIK0001996810.json",
+      "what": "filing list and acceptance times"
+    },
+    {
+      "source_id": "S01",
+      "tier": "S",
+      "public_date": "2026-10-28",
+      "url_or_path": "https://www.gevernova.com/sites/default/files/gev_webcast_transcript_10282026.pdf",
+      "what": "earnings call transcript (company-hosted): pricing, cancellations answer, Q4/2027 signing cadence, H2 margins, data-centre orders ~1.4B, 2030 guide at CMD"
+    },
+    {
+      "source_id": "M01",
+      "tier": "market",
+      "public_date": "2026-10-29",
+      "url_or_path": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=2y&interval=1d",
+      "what": "close 887.85; 52wk 530.16-1195.94"
+    },
+    {
+      "source_id": "M02",
+      "tier": "market",
+      "public_date": "2026-10-29",
+      "url_or_path": "https://api.nasdaq.com/api/quote/GEV/historical?assetclass=stocks&fromdate=2025-10-29&limit=400&todate=2026-10-29",
+      "what": "close 887.85; 52wk 530.16-1195.94"
+    },
+    {
+      "source_id": "M03",
+      "tier": "market",
+      "public_date": "2026-10-30",
+      "url_or_path": "https://stockanalysis.com/stocks/gev/statistics/",
+      "what": "shares 263,277,066 cross-check; market cap 233.75B"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# GEV price snapshot for as_of 2026-10-29 close (fetched 2026-10-30 ~06:25 ET, before the 10-30 session)
+# Yahoo: https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=2y&interval=1d
+# Nasdaq: https://api.nasdaq.com/api/quote/GEV/historical?assetclass=stocks&fromdate=2025-10-29&limit=400&todate=2026-10-29 ; https://api.nasdaq.com/api/quote/GEV/summary?assetclass=stocks
+# stockanalysis: https://stockanalysis.com/stocks/gev/statistics/ (shares 263,277,066; market cap 233.75B; net cash 12.62B = cash 16.36B - debt 3.75B)
+
+Yahoo meta: fiftyTwoWeekHigh=1195.94 fiftyTwoWeekLow=530.16 regularMarketPrice=887.85
+Nasdaq summary: 52 Week High/Low=$1195.94/$530.16 ; PreviousClose=$887.85 ; MarketCap=229,113,463,055 (implied shares 258.05M, stale basis)
+
+date | yahoo_close | yahoo_adjclose | yahoo_high | yahoo_low | nasdaq_close | nasdaq_high | nasdaq_low
+2025-11-21 | 555.84 | 554.49 | 565.75 | 530.16 | $555.84 | $565.75 | $530.16
+2026-06-30 | 1174.86 | 1174.17 | 1178.20 | 1103.35 | $1,174.86 | $1,178.20 | $1,103.35
+2026-07-06 | 1152.04 | 1151.37 | 1195.94 | 1138.49 | $1,152.04 | $1,195.94 | $1,138.49
+2026-07-22 | 985.03 | 984.45 | 1038.98 | 985.03 | $985.03 | $1,038.985 | $985.03
+2026-09-04 | 941.95 | 941.40 | 959.00 | 939.32 | $941.95 | $959.00 | $939.315
+2026-10-20 | 890.33 | 889.81 | 917.05 | 877.44 | $890.33 | $917.05 | $877.44
+2026-10-21 | 925.92 | 925.38 | 935.16 | 914.35 | $925.92 | $935.16 | $914.35
+2026-10-22 | 827.42 | 826.94 | 901.60 | 813.26 | $827.42 | $901.60 | $813.26
+2026-10-23 | 815.00 | 814.52 | 832.43 | 796.41 | $815.00 | $832.43 | $796.415
+2026-10-26 | 855.12 | 854.62 | 861.98 | 819.85 | $855.12 | $861.98 | $819.85
+2026-10-27 | 895.08 | 895.08 | 899.33 | 868.00 | $895.08 | $899.33 | $868.00
+2026-10-28 | 878.03 | 878.03 | 892.13 | 836.24 | $878.03 | $892.13 | $836.24
+2026-10-29 | 887.85 | 887.85 | 914.88 | 860.00 | $887.85 | $914.88 | $860.00

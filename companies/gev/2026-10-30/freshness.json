@@ -1,0 +1,90 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-10-29",
+  "generated_by": "runner",
+  "batch": "single_refresh_gev_q3_2026",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. Folder date 2026-10-30 is the run date (run started ~06:00 ET on 10-30, before the session opened); as_of is the price date, the 2026-10-29 close (last complete session). Q3 2026 8-K and 10-Q were filed 2026-10-28 before the open. Shares use the Q3 10-Q cover count (as of 2026-09-30). FILED data is cited in decision_card.json sources_used and copied as plain text in raw/.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 887.85,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=2y&interval=1d (bar 2026-10-29: close 887.85, adjclose 887.85; meta.regularMarketPrice 887.85 at 2026-10-29 16:00 ET)", "fetched_at": "2026-10-30", "value": 887.85},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/GEV/historical?assetclass=stocks&fromdate=2025-10-29&limit=400&todate=2026-10-29 (row 10/29/2026: close $887.85)", "fetched_at": "2026-10-30", "value": 887.85}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 234993533048,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "264,677,066 shares (Q3 2026 10-Q cover, as of 2026-09-30) x 887.85", "fetched_at": "2026-10-30", "value": 234993533048},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/gev/statistics/ (Market Cap 233.75B on 263,277,066 shares = cover minus 1.4M October repurchases)", "fetched_at": "2026-10-30", "value": 233750000000}
+      ],
+      "cross_check_delta_pct": 0.53,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 1195.94,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=2y&interval=1d (max daily high over bars 2025-10-29..2026-10-29 = 1195.94 intraday 2026-07-06; meta.fiftyTwoWeekHigh 1195.94)", "fetched_at": "2026-10-30", "value": 1195.94},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/GEV/summary?assetclass=stocks (52 Week High/Low $1195.94/$530.16); historical max high 07/06/2026 $1,195.94", "fetched_at": "2026-10-30", "value": 1195.94}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 530.16,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?range=2y&interval=1d (min daily low over bars 2025-10-29..2026-10-29 = 530.16 intraday 2025-11-21; meta.fiftyTwoWeekLow 530.16)", "fetched_at": "2026-10-30", "value": 530.16},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/GEV/summary?assetclass=stocks (52 Week High/Low $1195.94/$530.16); historical min low 11/21/2025 $530.16", "fetched_at": "2026-10-30", "value": 530.16}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 264.677066,
+      "unit": "M shares (outstanding, Q3 2026 10-Q cover, as of 2026-09-30)",
+      "as_of": "2026-09-30",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026_cover", "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm (cover: 264,677,066 shares outstanding at September 30, 2026)", "fetched_at": "2026-10-30", "value": 264.677066},
+        {"source_name": "stockanalysis", "url": "https://stockanalysis.com/stocks/gev/statistics/ (Shares Outstanding 263,277,066 = cover minus 1.4M shares repurchased 10-01..10-23 per the 3Q26 press release; -0.53%)", "fetched_at": "2026-10-30", "value": 263.277066}
+      ],
+      "cross_check_delta_pct": 0.53,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "FY2026 guidance RAISED 2026-10-28 with Q3: revenue $46.5-47.5B (was $45.5-46.5B), adjusted EBITDA margin 13.5-14.5% (was 12-14%), free cash flow $16-17B (was $11.5-12.5B). Segments: Power organic revenue +19-21%, segment EBITDA margin 19-21% (was 17-19%); Electrification revenue $14.5-15.0B, margin 18-20% trending toward the high end; Wind organic revenue down mid-single digits, segment EBITDA losses $400-500M (was ~$400M). Gas equipment backlog + SRA 122 GW, target >=130 GW by YE2026 (was >=125). 2028 outlook not restated in Q3 (last set 2026-01-28: revenue $56B, adj EBITDA margin 20%, cumulative 2025-2028 FCF >=$24B). Caveat from the Q3 10-Q: 9M FCF $15.3B vs contract-liability inflow $19.5B (customer down payments and slot reservations), so the raised FCF guide remains float, not earnings power.",
+      "unit": "text",
+      "as_of": "2026-10-28",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_8k_ex99_3q2026", "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm", "public_date": "2026-10-28", "fetched_at": "2026-10-30"},
+        {"source_name": "sec_10q_3q2026", "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm", "public_date": "2026-10-28", "fetched_at": "2026-10-30"}
+      ]
+    }
+  ]
+}

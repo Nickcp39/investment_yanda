@@ -1,0 +1,106 @@
+{
+  "ticker": "HWM",
+  "as_of": "2026-10-29",
+  "generated_by": "runner",
+  "run_date": "2026-10-30",
+  "note": "LIVE-data manifest for the lean-6module-v1.1 freshness gate. as_of is the 2026-10-29 close, POST-earnings (8-K accepted 07:05 ET before the open; 10-Q 16:40 ET). Run date 2026-10-30. The Nasdaq info endpoint's primaryData.lastSalePrice 204.8232 is the 2026-10-30 PRE-MARKET print (6:05 AM ET, ~846 shares), not the 10-29 close; its secondaryData shows 'Closed at Oct 29, 2026 4:00 PM ET' = 205.94, and the Nasdaq historical endpoint row 10/29/2026 = 205.94. 52-week band is intraday (Yahoo meta and Nasdaq agree: 183.52 - 310.00). FILED data is cited in decision_card.json sources_used and copied as plain text in raw/.",
+  "live_fields": [
+    {
+      "field": "price",
+      "value": 205.94,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Last settled close 2026-10-29 = 205.94 (+5.51% on the earnings day; prior close 10-28 195.19). 33.6% below the 52-week intraday high 310.00 (2026-08-06) and 12.2% above the 52-week intraday low 183.52 (2026-10-23) -> not hugging either extreme.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM?range=1y&interval=1d (bar 2026-10-29: close 205.94, adjclose 205.94; meta.regularMarketPrice 205.94)", "fetched_at": "2026-10-30", "value": 205.94},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/HWM/historical?assetclass=stocks&fromdate=2026-10-20&todate=2026-10-30&limit=20 (row 10/29/2026 Close/Last $205.94); cross-check https://api.nasdaq.com/api/quote/HWM/info?assetclass=stocks secondaryData 'Closed at Oct 29, 2026 4:00 PM ET' $205.94 (primaryData $204.8232 = 10-30 pre-market, not used)", "fetched_at": "2026-10-30", "value": 205.94}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "market_cap",
+      "value": 81894201311,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "sources": [
+        {"source_name": "derived", "url": "397,660,490 shares (Q3 2026 10-Q cover as of 2026-10-26) x 205.94", "fetched_at": "2026-10-30", "value": 81894201311},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/HWM/summary?assetclass=stocks (MarketCap 81,683,778,708; implies ~396.64M shares at 205.94, share basis not stated)", "fetched_at": "2026-10-30", "value": 81683778708}
+      ],
+      "cross_check_delta_pct": 0.26,
+      "pass": true
+    },
+    {
+      "field": "52wk_high",
+      "value": 310.00,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Intraday high on 2026-08-06 (Q2 earnings day: open 299.00, high 310.00, close 289.72). Closing high over the window is 292.65 on 2026-08-18.",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM?range=1y&interval=1d (max daily high over bars 2025-10-30..2026-10-29 = 310.00 on 2026-08-06; meta.fiftyTwoWeekHigh 310.0)", "fetched_at": "2026-10-30", "value": 310.00},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/HWM/info?assetclass=stocks (52 Week Range 183.52 - 310.00)", "fetched_at": "2026-10-30", "value": 310.00}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "52wk_low",
+      "value": 183.52,
+      "unit": "USD",
+      "as_of": "2026-10-29",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Intraday low on 2026-10-23 (close that day 185.91, the closing low).",
+      "sources": [
+        {"source_name": "yahoo", "url": "https://query1.finance.yahoo.com/v8/finance/chart/HWM?range=1y&interval=1d (min daily low = 183.52 on 2026-10-23; meta.fiftyTwoWeekLow 183.52)", "fetched_at": "2026-10-30", "value": 183.52},
+        {"source_name": "nasdaq", "url": "https://api.nasdaq.com/api/quote/HWM/historical (row 10/23/2026 Low $183.52); info endpoint 52 Week Range 183.52 - 310.00", "fetched_at": "2026-10-30", "value": 183.52}
+      ],
+      "cross_check_delta_pct": 0.0,
+      "pass": true
+    },
+    {
+      "field": "shares_out",
+      "value": 397.66049,
+      "unit": "M shares (outstanding, Q3 2026 10-Q cover)",
+      "as_of": "2026-10-26",
+      "is_quantitative": true,
+      "low_high_hug_justified": false,
+      "note": "Valuation EPS math uses company diluted adjusted EPS (Q3 diluted weighted 400M; diluted outstanding 399,450,237 at 2026-09-30).",
+      "sources": [
+        {"source_name": "sec_10q_q3_2026_cover", "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm (cover: 'As of October 26, 2026, there were 397,660,490 shares of common stock ... outstanding')", "fetched_at": "2026-10-30", "value": 397.66049},
+        {"source_name": "sec_10q_q3_2026_mdna", "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm ('Common stock outstanding as of September 30, 2026 ... was 397,656,778'; same filing, not independent)", "fetched_at": "2026-10-30", "value": 397.656778},
+        {"source_name": "nasdaq_implied", "url": "https://api.nasdaq.com/api/quote/HWM/summary?assetclass=stocks (MarketCap / 205.94 = 396.64M)", "fetched_at": "2026-10-30", "value": 396.64}
+      ],
+      "cross_check_delta_pct": 0.26,
+      "pass": true
+    },
+    {
+      "field": "guidance",
+      "value": "FY2026 guidance raised (2026-10-29): revenue $10,290-10,310M (baseline $10,300M, +$250M); adj EBITDA $3,325-3,335M (32.3%); adj EPS $5.49-5.51 (baseline $5.50, +$0.23); FCF $1,950-2,050M (baseline $2,000M, +$100M). Q4 2026: revenue $2,740-2,760M, adj EBITDA $895-905M, adj EPS $1.49-1.51. 2027: revenue approximately $11.5B (~+12%); no 2027 EPS/EBITDA/capex numbers. Buyback authorization raised by $5B to $5.397B (2026-10-28).",
+      "unit": "text",
+      "as_of": "2026-10-29",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_8k_ex99_1_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/4281/000110465926119857/tm2628456d1_ex99-1.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-30"},
+        {"source_name": "sec_10q_q3_2026", "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-30"}
+      ]
+    },
+    {
+      "field": "active_litigation",
+      "value": "No material new litigation in the Q3 2026 10-Q (Note Q). Grenfell-related civil claim by RBKC/KCTMO (Howmet joined 2024-06-21) continues; next case management conference 2027-12-13. Raul v. Albaugh derivative case settled and closed (approved 2026-02-10, no material impact). Environmental remediation reserve $18M. No 8-K other than the 2026-10-29 earnings 8-K since 2026-08-06 (EDGAR submissions).",
+      "unit": "text",
+      "as_of": "2026-10-29",
+      "is_quantitative": false,
+      "sources": [
+        {"source_name": "sec_10q_q3_2026_note_q", "url": "https://www.sec.gov/Archives/edgar/data/4281/000000428126000036/hwm-20260930.htm", "public_date": "2026-10-29", "fetched_at": "2026-10-30"},
+        {"source_name": "edgar_submissions", "url": "https://data.sec.gov/submissions/CIK0000004281.json", "public_date": "2026-10-30", "fetched_at": "2026-10-30"}
+      ]
+    }
+  ]
+}
