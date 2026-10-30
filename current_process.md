@@ -48,6 +48,11 @@ push 时刷新一次，避免回头时丢失上下文。
   RPO 首次个位数；CEO 定了（Chakravarthy 12-01）、CFO 仍临时、Narayen 卖 $18.7M；base +14.6%、12% 锚 $306.17 vs 现价
   $256.73，新增 harvest 情景（g 2%、10x）仍 +8.5%；裁决 WATCH 0%，runner 提议 STARTER 3% 但建议等 12 月中 Q4 + FY27 指引
   （新判据 K-I：Q4 净新增 ≥$0.78B、FY27 ARR 指引 ≥8%）。freshness 2/2 PASS。
+- **2026-10-30 本轮**：① BTC 定投对账裁定（`execution_plans/btc_dca_confirmation_2026-10-30.md`）：用户确认 06-11 起 $200/天，
+  本轮底部约 0.40–0.42 BTC、均价约 $71k，BTC 桶实际 63%，11-01 关 recurring；NVDA $4,000 @ $215 记入 `position_book.md`（卡为 WATCH，违约记录待填理由）。
+  ② 新工具 **card_watch**（`run_card_watch.bat` / `scripts/card_watch/`）：全库最新卡的买入线 vs 今日价，分 A（已过线）/ B（≤10%）/ C / D 四组，
+  首跑 2026-10-30：94 张卡，**A 组 22 张**（AB、ADBE、BR、CBOE、CME、FUTU、GEHC、ICE、NFLX、NVDA、UBER、VIRT、VST 等；6 张为 7 月旧卡），B 组 12 张。
+  规矩：过线 ≠ 可买，只是重跑队列；不按距线排名。
 - **2026-10-29 本轮**：Mega7 重跑（`companies/_mega7_refresh_2026-10-29/` PLAN / CHECKER / synthesis）。MSFT / GOOGL / META / TSLA / AMZN
   用 9 月季报重跑，AAPL（11-02）、NVDA（约 11-18）只核价。**7/7 WATCH，无翻转，新钱 0**；freshness 5/5 PASS。
   buy_below：MSFT 441→375、GOOGL 117→107（量法变严）、META 492→408（生意：FCF −30%、计划 C 类股增发）、TSLA 144→142、

@@ -1,0 +1,6 @@
+{
+  "nbis": {"symbol": "NBIS", "buy_below": 151, "note": "2026-10-23 卡只有 md：带 $126–151（pro-forma 净债≈0）/ $104–129（YE26 净债）；取带顶 151；Q3 后重推"},
+  "catl": {"symbol": "3750.HK", "note": "卡按 H 股定价（HKD）；A 股 300750.SZ 另看"},
+  "petrochina": {"symbol": "601857.SS", "note": "卡按 A 股（CNY）定价；H 股 0857.HK 另看"},
+  "pharmaron": {"symbol": "300759.SZ", "note": "卡按 A 股（CNY）定价；H 股 3759.HK 另看"}
+}

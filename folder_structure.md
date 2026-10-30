@@ -138,6 +138,7 @@ data/market_temp/     体温流水线的行情/宏观缓存与 manifest.json
 | **日本医疗影像国产厂商（东芝、日立、岛津）为何没赢下全球 / 国家扶持低价冲击的说法核对 / 对中国集采与联影的启示** | `studies/日本医疗影像国产化_2026-10-27/README.md`（报告 + PDF + 四份带出处笔记；含对 jp_cn_relative_timeline 旧笔记的更正） |
 | **QQQ 现在在哪 / 在不在水下 / 市场过热还是过冷** | 双击 `run_market_temp.bat`（或 `/market-temp`）→ `output/market_temp/<日期>/temp.md` + `dashboard.png`；历史读数 `history.csv` |
 | 了解某公司的最新结论 | `companies/<ticker>/` 最新日期的 `decision_card.md` |
+| **哪些公司的价格已经跌到卡上的买入线了（全库 90+ 张卡一键巡检）** | 双击根目录 `run_card_watch.bat` → `scripts/card_watch/out/card_watch_<日期>.md`（A 组 = 已过线、要重跑卡；说明见 `scripts/card_watch/README.md`） |
 | **BTC 周期 / 下一个顶（2029）/ 减半和暴涨路标** | `studies/btc_cycle_2026-10-01/README.md`（报告 PDF 在同目录；原始脚本在 `I:\yc_research\claude code\BTC_analysis_tool`） |
 | **UBER / ADBE 跌了三成后值不值得买（Delivery Hero 并购与 AV、Adobe 净新增 ARR −36% 与换 CEO）** | `companies/_refresh_uber_adbe_2026-10-20/synthesis.md`（2 张刷新卡：`uber/2026-10-20`、`adbe/2026-10-20`；UBER 09-28 卡的独立 Checker 修正在此落实） |
 | **券商 / 交易所 / 做市商 / 稳定币：23 小时交易下谁值得买（IBKR、HOOD、COIN、FUTU、VIRT、CBOE、CME、ICE、NDAQ、BR、CRCL、BTGO、SECZ）** | `companies/_trading_rails_2026-10-06/synthesis.md`（13 张卡；各家在 `companies/<ticker>/2026-10-06/`，Circle 在 `circle/`） |
