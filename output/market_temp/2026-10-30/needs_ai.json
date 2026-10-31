@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-10-30",
+  "items": [
+    {
+      "key": "fred_m2",
+      "status": "cached",
+      "last": "2026-07",
+      "stale_days": 121,
+      "threshold_days": 60,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL",
+      "error": "The read operation timed out",
+      "what": "美国 M2（季调，十亿美元，月频）。FRED 本机不可达：请从 federalreserve.gov H.6 或其它镜像取最近几个月的 M2SL，写明来源与发布日期。"
+    },
+    {
+      "key": "lbma_gold",
+      "status": "cached",
+      "last": "2026-09-08",
+      "stale_days": 52,
+      "threshold_days": 10,
+      "url": "https://prices.lbma.org.uk/json/gold_pm.json",
+      "error": "HTTP Error 403: Forbidden",
+      "what": "LBMA 黄金 PM 定盘价。本机 403：pipeline 已用 COMEX GC=F 接续，只需确认接续日前后价差 <1%。"
+    }
+  ]
+}

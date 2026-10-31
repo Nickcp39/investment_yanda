@@ -1,0 +1,35 @@
+[07:56:06] OK   yahoo_GSPC {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 14330, 'last': '2026-10-30'}
+[07:56:06] OK   yahoo_SP500TR {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5ESP500TR?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 9781, 'last': '2026-10-30'}
+[07:56:06] OK   yahoo_SPY {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 8497, 'last': '2026-10-30'}
+[07:56:07] OK   yahoo_NDX {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 10351, 'last': '2026-10-30'}
+[07:56:07] OK   yahoo_QQQ {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 6955, 'last': '2026-10-30'}
+[07:56:07] OK   yahoo_W5000 {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5EW5000?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 9429, 'last': '2026-10-30'}
+[07:56:08]       TNX dropped live in-progress row
+[07:56:08] OK   yahoo_TNX {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 14227, 'last': '2026-10-29'}
+[07:56:08]       IRX dropped live in-progress row
+[07:56:08] OK   yahoo_IRX {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5EIRX?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 14227, 'last': '2026-10-29'}
+[07:56:09]       FVX dropped live in-progress row
+[07:56:09] OK   yahoo_FVX {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5EFVX?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 14227, 'last': '2026-10-29'}
+[07:56:09] OK   yahoo_VIX {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 9278, 'last': '2026-10-30'}
+[07:56:09]       GCF dropped live in-progress row
+[07:56:09] OK   yahoo_GCF {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 6567, 'last': '2026-10-29'}
+[07:56:10]       DXY dropped live in-progress row
+[07:56:10] OK   yahoo_DXY {'url': 'https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?period1=0&period2=1793638566&interval=1d&events=div%2Csplits&includeAdjustedClose=true', 'rows': 14175, 'last': '2026-10-29'}
+[07:56:11] OK   bls {'url': 'https://api.bls.gov/publicAPI/v1/timeseries/data/', 'rows': 584, 'last': '2026-09'}
+[07:56:11] OK   hom_forward_pe {'url': 'https://historyofmarket.com/api/ndx/forward-pe.json', 'rows': 1295, 'last': '2026-10-30'}
+[07:56:11] OK   multpl_cape {'url': 'https://www.multpl.com/shiller-pe/table/by-month', 'rows': 1870, 'last': '2026-10-30'}
+[07:56:11] OK   multpl_pe {'url': 'https://www.multpl.com/s-p-500-pe-ratio/table/by-month', 'rows': 1871, 'last': '2026-10-30'}
+[07:56:30] FAIL fred_m2 The read operation timed out -> using cache
+[07:56:32]       bea_gdp: gdplev stale, using NipaDataQ.txt through 2026q3
+[07:56:32] OK   bea_gdp {'url': 'https://apps.bea.gov/national/Release/TXT/NipaDataQ.txt', 'rows': 319, 'last': '2026-09-30'}
+[07:56:33] FAIL lbma_gold HTTP Error 403: Forbidden -> using cache
+[07:56:33] OK   sa_qqq {'url': 'https://stockanalysis.com/etf/qqq/holdings/', 'rows': 25, 'last': '2026-10-31'}
+[07:56:33] OK   sa_spy {'url': 'https://stockanalysis.com/etf/spy/holdings/', 'rows': 25, 'last': '2026-10-31'}
+[07:56:35] wrote output\market_temp\2026-10-30
+[07:56:35] ------------------------------------------------------------------------
+[07:56:35] as_of 2026-10-30 | QQQ 690.49 (-3.5% d/d) | 距最高 -9.1% | vs200dma +1.6%
+[07:56:35] 纳指四把尺子 偏离/分位: 2000: +24% / 82 | 2008: +1% / 55 | 2015: -1% / 49 | 2021: -8% / 9
+[07:56:35] 前瞻PE 19.5 (2026-10-30) | CAPE 40.1 | 10y 4.99% | VIX 19.4 | 金 4,031
+[07:56:35] 热度: 价格 67 | 估值 69 | 流动性 52 | 经济 69 | 黄金 81 | 总 68
+[07:56:35] QQQ σ 通道(2010起): +0.13σ | −1σ 翻倍线 617 (需 -11%)
+[07:56:35] AI 待补 2 项 | 输出 output\market_temp\2026-10-30 | 30s
